@@ -18,5 +18,6 @@ deploy:
   github_token: $GITHUB_TOKEN
   email: chris.guindon@eclipse-foundation.org
   name: Christopher Guindon
+  fqdn: jakarta.ee
   on:
     branch: src
