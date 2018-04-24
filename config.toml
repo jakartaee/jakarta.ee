@@ -1,0 +1,57 @@
+baseurl = "https://jakarta.ee/"
+DefaultContentLanguage = "en"
+title = "Jakarta EE: The New Home of Cloud Native Java"
+theme = "hugo-solstice-theme"
+metaDataFormat = "yaml"
+googleAnalytics = "UA-910670-30"
+disableKinds = ["taxonomy", "taxonomyTerm"]
+
+[Params]
+  description = "Jakarta Enterprise Edition (EE) is the future of cloud native Java. Jakarta EE open source software drives cloud native innovation, modernizes enterprise applications and protects investments in Java EE."
+  subtitle = "The New Home of Cloud Native Java"
+  seo_title_suffix = " | The Eclipse Foundation"
+  keywords = ["Jakarta EE software", "Java EE", "cloud", "microservices", "enterprise", "open source", "innovation"]
+  logo = "public/images/jakarta/jakarta-ee-logo.svg"
+  favicon = "public/images/jakarta/favicon.ico"
+  share_img = "public/images/jakarta/jakarta_ee_400x400.png"
+  gcse = "011805775785170369411:p3ec0igo0qq"
+  subtheme = "jakarta"
+# call_for_action_text = ""
+# call_for_action_url = ""
+# call_for_action_icon = ""
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+  
+[Author]
+  name = "Christopher Guindon"
+  website = "https://www.eclipse.org"
+  email = "webdev@eclipse-foundation.org"
+  facebook = "eclipse.org"
+  twitter = "EclipseFdn"
+  youtube = "EclipseFdn"
+  googleplus = "+Eclipse"
+  linkedin = "company/eclipse-foundation/"
+
+[permalinks]
+  news = "/:sections/:year/:month/:day/:slug/"
+
+[blackfriday]
+  plainIDAnchors = true
+  hrefTargetBlank = true
+
+[[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 1
+
+[[menu.main]]
+    name = "Members"
+    url = "/members/"
+    weight = 2
+
+[[menu.main]]
+    name = "Connect"
+    url = "/connect/"
+    weight = 3

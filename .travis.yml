@@ -1,0 +1,22 @@
+sudo: true
+dist: trusty
+
+install:
+  - sudo apt-get --yes install snapd
+  - sudo snap install hugo
+
+script:
+  - /snap/bin/hugo
+
+deploy:
+  local-dir: public
+  repo: jakartaee/jakarta.ee-website
+  target-branch: gh-pages
+  provider: pages
+  keep-history: true
+  skip-cleanup: true
+  github_token: $GITHUB_TOKEN
+  email: chris.guindon@eclipse-foundation.org
+  name: Christopher Guindon
+  on:
+    branch: src
