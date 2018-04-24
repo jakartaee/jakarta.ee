@@ -20,4 +20,4 @@ deploy:
   name: Christopher Guindon
   fqdn: jakarta.ee
   on:
-    branch: src
+    branch: master
