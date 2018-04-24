@@ -6,16 +6,16 @@ Repository of the [Jakarta.ee](https://jakarta.ee) website. Jakarta Enterprise E
 
 ## Contributing
 
-1. Fork it! To contribute to this project, you need to [create a fork](https://help.github.com/articles/fork-a-repo/) of [jakartaee/jakartaee.github.io](https://github.com/jakartaee/jakartaee.github.io). 
+1. Fork it! To contribute to this project, please [create a fork](https://help.github.com/articles/fork-a-repo/) of [jakartaee/jakartaee.github.io](https://github.com/jakartaee/jakartaee.github.io). 
 2. Download source code with dependencies : `git clone --recursive https://github.com/[your_github_username]/jakartaee.github.io.git`
 3. Create your feature branch: `git checkout -b my-new-feature`
 4. Commit your changes: `git commit -m 'Add some feature' -s`
-5. Push to the branch: `git push origin my-new-feature`
+5. Push the feature branch: `git push origin my-new-feature`
 6. Submit a pull request
 
 ## Bugs and feature requests
 
-Have a bug or a feature request? Please first search for existing and closed issues. If your problem or idea is not addressed yet, [please open a new issue](https://github.com/jakartaee/jakartaee.github.io/issues/new).
+Have a bug or a feature request? Please search for existing and closed issues. If your problem or idea is not addressed yet, [please open a new issue](https://github.com/jakartaee/jakartaee.github.io/issues/new).
 
 ## Creators
 
@@ -23,7 +23,6 @@ Have a bug or a feature request? Please first search for existing and closed iss
 
 - <https://twitter.com/chrisguindon>
 - <https://github.com/chrisguindon>
-
 
 ## Copyright and license
 
