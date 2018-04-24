@@ -2,7 +2,7 @@
 
 Repository of the [Jakarta.ee](https://jakarta.ee) website. Jakarta Enterprise Edition (EE) is the future of cloud native Java. Jakarta EE open source software drives cloud native innovation, modernizes enterprise applications and protects investments in Java EE.
 
-[![Build Status](https://travis-ci.org/jakartaee/jakartaee.github.io.svg?branch=master)](https://travis-ci.org/jakartaee/jakartaee.github.io)
+[![Build Status](https://travis-ci.org/jakartaee/jakartaee.github.io.svg?branch=src)](https://travis-ci.org/jakartaee/jakartaee.github.io)
 
 ## Contributing
 
