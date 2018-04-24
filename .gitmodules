@@ -1,3 +1,3 @@
 [submodule "themes/hugo-solstice-theme"]
 	path = themes/hugo-solstice-theme
-	url = git@github.com:EclipseFdn/hugo-solstice-theme.git
+	url = https://github.com/EclipseFdn/hugo-solstice-theme.git
