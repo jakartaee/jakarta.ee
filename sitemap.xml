@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://jakarta.ee/news/2018/04/24/background-on-oracles-contribution-to-jakarta-ee/</loc>
+    <lastmod>2018-04-24T06:03:58-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jakarta.ee/news/2018/04/24/the-road-to-jakarta-ee/</loc>
+    <lastmod>2018-04-24T06:03:58-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jakarta.ee/news/2018/04/24/the-eclipse-foundation-has-established-jakarta-ee-working-group/</loc>
+    <lastmod>2018-04-24T05:04:58-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jakarta.ee/news/2018/04/24/eclipse-foundation-unveils-new-cloud-native-java-future-with-jakarta-ee/</loc>
+    <lastmod>2018-04-24T05:03:58-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jakarta.ee/news/2018/04/24/in-support-of-jakarta-ees-quest-to-accelerate-cloud-native-java/</loc>
+    <lastmod>2018-04-24T05:03:58-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jakarta.ee/news/2018/04/24/jakarta-ee---the-new-home-for-enterprise-java/</loc>
+    <lastmod>2018-04-24T05:03:58-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jakarta.ee/news/2018/04/24/jakarta-ee-community-survey/</loc>
+    <lastmod>2018-04-24T05:03:58-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jakarta.ee/news/2018/04/24/jakarta-ee-is-officially-out/</loc>
+    <lastmod>2018-04-24T05:03:58-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jakarta.ee/news/2018/04/24/the-future-of-cloud-native-open-source-java-with-jakarta-ee/</loc>
+    <lastmod>2018-04-24T05:03:58-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jakarta.ee/about/faq/</loc>
+    <lastmod>2018-04-07T16:09:45-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jakarta.ee/connect/</loc>
+    <lastmod>2018-04-05T16:10:38-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jakarta.ee/about/</loc>
+    <lastmod>2018-04-05T16:09:45-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jakarta.ee/members/</loc>
+    <lastmod>2018-04-05T16:09:45-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jakarta.ee/</loc>
+    <lastmod>2018-04-05T15:50:25-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jakarta.ee/news/</loc>
+    <lastmod>2018-04-24T06:03:58-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+</urlset>

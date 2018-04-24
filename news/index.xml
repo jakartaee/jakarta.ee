@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>News on Jakarta EE: The New Home of Cloud Native Java</title>
+    <link>https://jakarta.ee/news/</link>
+    <description>Recent content in News on Jakarta EE: The New Home of Cloud Native Java</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>webdev@eclipse-foundation.org (Christopher Guindon)</managingEditor>
+    <webMaster>webdev@eclipse-foundation.org (Christopher Guindon)</webMaster>
+    <lastBuildDate>Tue, 24 Apr 2018 06:03:58 -0400</lastBuildDate>
+    
+	<atom:link href="https://jakarta.ee/news/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Background on Oracle’s contribution to Jakarta EE</title>
+      <link>https://jakarta.ee/news/2018/04/24/background-on-oracles-contribution-to-jakarta-ee/</link>
+      <pubDate>Tue, 24 Apr 2018 06:03:58 -0400</pubDate>
+      <author>webdev@eclipse-foundation.org (Christopher Guindon)</author>
+      <guid>https://jakarta.ee/news/2018/04/24/background-on-oracles-contribution-to-jakarta-ee/</guid>
+      <description>We are on our way to making the contribution we proposed last September a reality!</description>
+    </item>
+    
+    <item>
+      <title>The road to Jakarta EE</title>
+      <link>https://jakarta.ee/news/2018/04/24/the-road-to-jakarta-ee/</link>
+      <pubDate>Tue, 24 Apr 2018 06:03:58 -0400</pubDate>
+      <author>webdev@eclipse-foundation.org (Christopher Guindon)</author>
+      <guid>https://jakarta.ee/news/2018/04/24/the-road-to-jakarta-ee/</guid>
+      <description>Jakarta EE launch is a good occasion to reflect on how we got here&amp;hellip;</description>
+    </item>
+    
+    <item>
+      <title>The Eclipse Foundation has established Jakarta EE Working Group</title>
+      <link>https://jakarta.ee/news/2018/04/24/the-eclipse-foundation-has-established-jakarta-ee-working-group/</link>
+      <pubDate>Tue, 24 Apr 2018 05:04:58 -0400</pubDate>
+      <author>webdev@eclipse-foundation.org (Christopher Guindon)</author>
+      <guid>https://jakarta.ee/news/2018/04/24/the-eclipse-foundation-has-established-jakarta-ee-working-group/</guid>
+      <description>Fujitsu is now a Strategic Member of Eclipse Foundation and will be an active member of the Eclipse Board of Directors and Jakarta EE.</description>
+    </item>
+    
+    <item>
+      <title>Eclipse Foundation Unveils New Cloud Native Java Future with Jakarta EE</title>
+      <link>https://jakarta.ee/news/2018/04/24/eclipse-foundation-unveils-new-cloud-native-java-future-with-jakarta-ee/</link>
+      <pubDate>Tue, 24 Apr 2018 05:03:58 -0400</pubDate>
+      <author>webdev@eclipse-foundation.org (Christopher Guindon)</author>
+      <guid>https://jakarta.ee/news/2018/04/24/eclipse-foundation-unveils-new-cloud-native-java-future-with-jakarta-ee/</guid>
+      <description>&lt;p&gt;Future evolution of Java EE, Jakarta EE stack moves to the Eclipse Foundation.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>In Support of Jakarta EE’s Quest to Accelerate Cloud Native Java</title>
+      <link>https://jakarta.ee/news/2018/04/24/in-support-of-jakarta-ees-quest-to-accelerate-cloud-native-java/</link>
+      <pubDate>Tue, 24 Apr 2018 05:03:58 -0400</pubDate>
+      <author>webdev@eclipse-foundation.org (Christopher Guindon)</author>
+      <guid>https://jakarta.ee/news/2018/04/24/in-support-of-jakarta-ees-quest-to-accelerate-cloud-native-java/</guid>
+      <description>The right environment is now in place to reinvigorate Java’s most popular run-time platform with an open source-first approach and a commitment to truly putting the community into Jakarta EE.</description>
+    </item>
+    
+    <item>
+      <title>Jakarta EE - the new home for enterprise Java</title>
+      <link>https://jakarta.ee/news/2018/04/24/jakarta-ee---the-new-home-for-enterprise-java/</link>
+      <pubDate>Tue, 24 Apr 2018 05:03:58 -0400</pubDate>
+      <author>webdev@eclipse-foundation.org (Christopher Guindon)</author>
+      <guid>https://jakarta.ee/news/2018/04/24/jakarta-ee---the-new-home-for-enterprise-java/</guid>
+      <description>Official Moving Day! New Open Community Stewardship and Governance Model now with Eclipse Foundation.</description>
+    </item>
+    
+    <item>
+      <title>Jakarta EE Community Survey of 1,800&#43; Java Developers Reveals “Cloud Native” Top Requirement in Platform’s Evolution</title>
+      <link>https://jakarta.ee/news/2018/04/24/jakarta-ee-community-survey/</link>
+      <pubDate>Tue, 24 Apr 2018 05:03:58 -0400</pubDate>
+      <author>webdev@eclipse-foundation.org (Christopher Guindon)</author>
+      <guid>https://jakarta.ee/news/2018/04/24/jakarta-ee-community-survey/</guid>
+      <description>&lt;p&gt;The Eclipse Foundation conducts largest survey to date of Java community on key priorities for future releases of Jakarta EE.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Jakarta EE is Officially Out!</title>
+      <link>https://jakarta.ee/news/2018/04/24/jakarta-ee-is-officially-out/</link>
+      <pubDate>Tue, 24 Apr 2018 05:03:58 -0400</pubDate>
+      <author>webdev@eclipse-foundation.org (Christopher Guindon)</author>
+      <guid>https://jakarta.ee/news/2018/04/24/jakarta-ee-is-officially-out/</guid>
+      <description>Jakarta EE is officially out! With Jakarta EE all of us involved in working towards the release hope that we can use it as a catalyst to bring together communities under a single banner.</description>
+    </item>
+    
+    <item>
+      <title>The Future of Cloud Native Open Source Java with Jakarta EE</title>
+      <link>https://jakarta.ee/news/2018/04/24/the-future-of-cloud-native-open-source-java-with-jakarta-ee/</link>
+      <pubDate>Tue, 24 Apr 2018 05:03:58 -0400</pubDate>
+      <author>webdev@eclipse-foundation.org (Christopher Guindon)</author>
+      <guid>https://jakarta.ee/news/2018/04/24/the-future-of-cloud-native-open-source-java-with-jakarta-ee/</guid>
+      <description>It&amp;rsquo;s here! The Eclipse Foundation has announced the future of Java EE with the release of Jakarta EE: a cloud-native Java and an open source governance model.</description>
+    </item>
+    
+  </channel>
+</rss>
