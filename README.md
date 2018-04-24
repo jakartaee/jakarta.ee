@@ -24,6 +24,7 @@ Have a bug or a feature request? Please first search for existing and closed iss
 - <https://twitter.com/chrisguindon>
 - <https://github.com/chrisguindon>
 
-## License
 
-[EPL-2.0 License](https://github.com/jakartaee/jakartaee.github.io/blob/master/LICENSE) © Christopher Guindon
+## Copyright and license
+
+Code copyright 2018 the [jakartaee.github.io Authors](https://github.com/jakartaee/jakartaee.github.io/graphs/contributors) and [Eclipse Foundation, Inc.](https://www.eclipse.org) Code released under the [EPL-2.0 License](https://github.com/jakartaee/jakartaee.github.io/blob/src/LICENSE). 
