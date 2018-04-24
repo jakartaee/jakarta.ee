@@ -16,6 +16,7 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
   share_img = "public/images/jakarta/jakarta_ee_400x400.png"
   gcse = "011805775785170369411:p3ec0igo0qq"
   subtheme = "jakarta"
+  header_wrapper_class = "header-default-bg-img"
 # call_for_action_text = ""
 # call_for_action_url = ""
 # call_for_action_icon = ""
