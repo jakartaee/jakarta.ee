@@ -10,8 +10,8 @@ script:
 
 deploy:
   local-dir: public
-  repo: jakartaee/jakarta.ee-website
-  target-branch: gh-pages
+  repo: jakartaee/jakartaee.github.io
+  target-branch: master
   provider: pages
   keep-history: true
   skip-cleanup: true
@@ -20,4 +20,4 @@ deploy:
   name: Christopher Guindon
   fqdn: jakarta.ee
   on:
-    branch: master
+    branch: src
