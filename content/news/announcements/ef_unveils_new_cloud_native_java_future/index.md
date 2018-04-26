@@ -37,7 +37,7 @@ By joining the Jakarta EE Working Group, members can participate in an open proc
 
 The Eclipse Foundation provides a global community of individuals and organizations with a mature, scalable and commercially-focused environment for open source software collaboration and innovation. The Foundation is home to the Eclipse IDE, Jakarta EE and over 350 open source projects, including runtimes, tools and frameworks for a wide range of technology domains such as IoT, automotive, geospatial, systems engineering and many others. The Eclipse Foundation is a not-for-profit organization supported by over 275 corporate members, including industry leaders who value open source as a key enabler for business strategy. To learn more, follow us on Twitter [@EclipseFdn](https://twitter.com/EclipseFdn), [LinkedIn](https://www.linkedin.com/company/eclipse-foundation/) or visit [eclipse.org](https://www.eclipse.org).
 
-*Third-party trademarks mentioned are the property of their respective owners.*
+*Third-party trademarks mentioned are the property of their respective owners*
 
 ###
 
