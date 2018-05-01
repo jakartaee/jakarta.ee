@@ -13,6 +13,15 @@
     
     
     <item>
+      <title>Goodbye, Java Enterprise Edition. Hello, Jakarta EE</title>
+      <link>https://jakarta.ee/news/2018/05/01/goodbye-java-enterprise-edition.-hello-jakarta-ee/</link>
+      <pubDate>Tue, 01 May 2018 05:03:58 -0400</pubDate>
+      <author>webdev@eclipse-foundation.org (Christopher Guindon)</author>
+      <guid>https://jakarta.ee/news/2018/05/01/goodbye-java-enterprise-edition.-hello-jakarta-ee/</guid>
+      <description>Developers who use Java Enterprise Edition will be happy to know that the development and runtime platform is gaining new life as Jakarta EE. As part of an agreement with Oracle, the tech giant will give up control over the platform to Eclipse Foundation, which has big plans to remake enterprise Java for the emerging cloud world.</description>
+    </item>
+    
+    <item>
       <title>Background on Oracle’s contribution to Jakarta EE</title>
       <link>https://jakarta.ee/news/2018/04/24/background-on-oracles-contribution-to-jakarta-ee/</link>
       <pubDate>Tue, 24 Apr 2018 06:03:58 -0400</pubDate>
