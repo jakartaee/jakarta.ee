@@ -2,11 +2,18 @@ sudo: true
 dist: trusty
 
 install:
-  - sudo apt-get --yes install snapd
-  - sudo snap install hugo
-
+  - sudo apt-get --yes install autoconf libtool nasm
+  - npm install
+  - wget https://github.com/gohugoio/hugo/releases/download/v0.40.1/hugo_0.40.1_Linux-64bit.deb
+  - sudo dpkg -i hugo*.deb
+  
 script:
-  - /snap/bin/hugo
+  - npm run production
+  - hugo
+
+cache:
+  directories:
+    - "node_modules"
 
 deploy:
   local-dir: public
