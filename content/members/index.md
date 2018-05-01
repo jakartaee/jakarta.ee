@@ -21,6 +21,9 @@ Key benefits of membership include:
 * Protect your strategic investment in Java EE
 * Provide a desirable career path for your developers and experts
 
+<p class="margin-bottom-40"><a class="btn btn-primary btn-lg" href="/documents/membership/jakarta-ee-membership-flyer.pdf">Download Membership Flyer</a></p>
+
+
 ### Who Should Participate
 
 The working group is led by key vendors who are stakeholders in the Jakarta EE technology. Members also include: 
