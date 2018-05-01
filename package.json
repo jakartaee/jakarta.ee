@@ -1,0 +1,24 @@
+{
+  "name": "eclipsefdn-hugo-jakartaee",
+  "description": "Source code for jakarta.ee",
+  "main": "webpack.min.js",
+  "author": "Christopher Guindon",
+  "license": "EPL-2.0",
+  "version": "0.0.1",
+  "bugs": {
+    "url": "https://github.com/jakartaee/jakartaee.github.io/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jakartaee/jakartaee.github.io.git"
+  },
+  "scripts": {
+    "dev": "NODE_ENV=development webpack --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "NODE_ENV=development webpack --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "hot": "NODE_ENV=development webpack-dev-server --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "production": "NODE_ENV=production webpack --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+  },
+  "dependencies": {
+    "eclipsefdn-hugo-solstice-theme": "0.0.3"
+  }
+}
