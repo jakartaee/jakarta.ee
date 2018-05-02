@@ -23,6 +23,14 @@ npm install && npm run dev && hugo server --disableFastRender --buildFuture
 5. Push feature branch: `git push origin my-new-feature`
 6. Submit a pull request
 
+### Declared Project Licenses
+
+This program and the accompanying materials are made available under the terms
+of the Eclipse Public License v. 2.0 which is available at
+http://www.eclipse.org/legal/epl-2.0.
+
+SPDX-License-Identifier: EPL-2.0
+
 ## Related projects
 
 ### [EclipseFdn/solstice-assets](https://github.com/EclipseFdn/solstice-assets)
@@ -52,4 +60,4 @@ Have a bug or a feature request? Please search for existing and closed issues. I
 
 ## Copyright and license
 
-Copyright 2018 the [Eclipse Foundation, Inc.](https://www.eclipse.org) and the [jakartaee.github.io authors](https://github.com/jakartaee/jakartaee.github.io/graphs/contributors). Code released under the [Eclipse Public License Version 2.0 (EPL-2.0)](https://github.com/jakartaee/jakartaee.github.io/blob/src/LICENSE). 
+Copyright 2018 the [Eclipse Foundation, Inc.](https://www.eclipse.org) and the [jakartaee.github.io authors](https://github.com/jakartaee/jakartaee.github.io/graphs/contributors). Code released under the [Eclipse Public License Version 2.0 (EPL-2.0)](https://github.com/jakartaee/jakartaee.github.io/blob/src/LICENSE).
