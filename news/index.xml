@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>webdev@eclipse-foundation.org (Christopher Guindon)</managingEditor>
     <webMaster>webdev@eclipse-foundation.org (Christopher Guindon)</webMaster>
-    <lastBuildDate>Tue, 15 May 2018 05:03:58 -0400</lastBuildDate>
+    <lastBuildDate>Tue, 15 May 2018 06:04:58 -0400</lastBuildDate>
     
 	<atom:link href="https://jakarta.ee/news/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Latest Roundup of EE4J Activities for Jakarta EE</title>
+      <link>https://jakarta.ee/news/2018/05/15/latest-roundup-of-ee4j-activities-for-jakarta-ee/</link>
+      <pubDate>Tue, 15 May 2018 06:04:58 -0400</pubDate>
+      <author>webdev@eclipse-foundation.org (Christopher Guindon)</author>
+      <guid>https://jakarta.ee/news/2018/05/15/latest-roundup-of-ee4j-activities-for-jakarta-ee/</guid>
+      <description>There has been a recent flurry of EE4J activity as the Eclipse Foundation is positioning Jakarta EE as the new home for cloud native Java.</description>
+    </item>
     
     <item>
       <title>Java roadmap: Eclipse’s Jakarta EE enterprise Java takes shape</title>
