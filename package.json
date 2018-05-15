@@ -4,7 +4,7 @@
   "main": "webpack.min.js",
   "author": "Christopher Guindon",
   "license": "EPL-2.0",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "bugs": {
     "url": "https://github.com/jakartaee/jakartaee.github.io/issues"
   },
@@ -19,6 +19,7 @@
     "production": "NODE_ENV=production webpack --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
   },
   "dependencies": {
-    "eclipsefdn-hugo-solstice-theme": "0.0.3"
+    "eclipsefdn-hugo-solstice-theme": "0.0.4",
+    "eclipsefdn-solstice-assets": "0.0.23"
   }
 }
