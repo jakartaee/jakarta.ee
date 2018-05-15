@@ -22,6 +22,7 @@ mix.less('./node_modules/eclipsefdn-solstice-assets/less/quicksilver/jakarta/sty
 mix.scripts([
     './node_modules/jquery/dist/jquery.min.js',
     './node_modules/bootstrap/dist/js/bootstrap.min.js',
+    './node_modules/cookieconsent/build/cookieconsent.min.js',
     './node_modules/feather-icons/dist/feather.min.js',
     './node_modules/eclipsefdn-solstice-assets/js/solstice.js'
 ], 'static/js/solstice.js');

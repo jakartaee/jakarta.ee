@@ -30,7 +30,6 @@ hide_sidebar: "true"
     <h3>Sign up to our Newsletter</h3>
     <form action="https://eclipsecon.us6.list-manage.com/subscribe/post" method="post" target="_blank">
       <div class="form-group col-md-12 col-md-offset-6 text-center">
-       <input type="email" value="" name="EMAIL" class="form-control text-center" id="mce-EMAIL" placeholder="Enter your email here">
        <input type="hidden" name="u" value="eaf9e1f06f194eadc66788a85">
        <input type="hidden" name="id" value="98ae69e304">
       </div>
