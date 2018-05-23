@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://jakarta.ee/news/2018/05/22/proprietary-to-open-a-sea-change-for-jakarta-ee/</loc>
+    <lastmod>2018-05-22T05:04:58-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://jakarta.ee/news/2018/05/15/latest-roundup-of-ee4j-activities-for-jakarta-ee/</loc>
     <lastmod>2018-05-15T06:04:58-04:00</lastmod>
   </url>
@@ -89,7 +94,7 @@
   
   <url>
     <loc>https://jakarta.ee/news/</loc>
-    <lastmod>2018-05-15T06:04:58-04:00</lastmod>
+    <lastmod>2018-05-22T05:04:58-04:00</lastmod>
     <priority>0</priority>
   </url>
   
