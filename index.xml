@@ -13,6 +13,15 @@
     
     
     <item>
+      <title>Lightbend Podcast: Why Lightbend Joined The Eclipse Foundation’s Jakarta EE Working Group (9 Min)</title>
+      <link>https://jakarta.ee/news/2018/06/11/lightbend-podcast-why-lightbend-joined-the-eclipse-foundations-jakarta-ee-working-group-9-min/</link>
+      <pubDate>Mon, 11 Jun 2018 10:00:00 +0000</pubDate>
+      <author>webdev@eclipse-foundation.org (Christopher Guindon)</author>
+      <guid>https://jakarta.ee/news/2018/06/11/lightbend-podcast-why-lightbend-joined-the-eclipse-foundations-jakarta-ee-working-group-9-min/</guid>
+      <description>In this Lightbend Podcast, we sit down with our CEO, Mark Brewer, to discuss what joining the Eclipse Foundation as a founding member of the Jakarta EE Working Group means for bringing Reactive closer to the traditional Java enterprise landscape.</description>
+    </item>
+    
+    <item>
       <title>Enter Jakarta EE: an Inoculation Against Fear, Uncertainty and Doubt in the Java Community</title>
       <link>https://jakarta.ee/news/2018/06/08/enter-jakarta-ee-an-inoculation-against-fear-uncertainty-and-doubt-in-the-java-community/</link>
       <pubDate>Fri, 08 Jun 2018 15:30:00 +0000</pubDate>
