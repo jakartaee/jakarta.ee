@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://jakarta.ee/news/2018/06/27/jakarta-ee-marketing-and-social-media-update/</loc>
+    <lastmod>2018-06-27T11:30:24+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://jakarta.ee/news/2018/06/22/testing-javaee-backward-and-forward-compatibility-with-servlet-jax-rs-batch-and-microprofile/</loc>
     <lastmod>2018-06-22T10:30:00+00:00</lastmod>
   </url>
@@ -149,7 +154,7 @@
   
   <url>
     <loc>https://jakarta.ee/news/</loc>
-    <lastmod>2018-06-22T10:30:00+00:00</lastmod>
+    <lastmod>2018-06-27T11:30:24+00:00</lastmod>
     <priority>0</priority>
   </url>
   
