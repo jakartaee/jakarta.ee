@@ -5,4 +5,4 @@ link: "https://blogs.eclipse.org/post/thabang-mashologu/jakarta-ee-marketing-and
 categories: ["announcements"]
 ---
 
-I recently read a great post about the often misunderstood, yet important role of marketing in open source community advocacy.
+An update on our marketing efforts to promote awareness, contributions, adoption, and support of Jakarta EE.
