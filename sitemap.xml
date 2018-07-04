@@ -8,6 +8,11 @@
   </url>
   
   <url>
+    <loc>https://jakarta.ee/meeting_minutes/</loc>
+    <lastmod>2018-06-22T13:30:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://jakarta.ee/news/2018/06/22/testing-javaee-backward-and-forward-compatibility-with-servlet-jax-rs-batch-and-microprofile/</loc>
     <lastmod>2018-06-22T10:30:00+00:00</lastmod>
   </url>
