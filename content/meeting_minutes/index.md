@@ -6,6 +6,9 @@ description: "Meeting Minutes"
 
 <h2>Jakarta EE Steering Committee</h2>
 <ul>
+  <li><a href="minutes-june-26-2018.pdf">June 26, 2018 (pdf)</a></li>
+  <li><a href="minutes-june-19-2018.pdf">June 19, 2018 (pdf)</a></li>
+  <li><a href="minutes-june-5-2018.pdf">June 5, 2018 (pdf)</a></li>
   <li><a href="minutes-may-29-2018.pdf">May 29, 2018 (pdf)</a></li>
   <li><a href="minutes-may-22-2018.pdf">May 22, 2018 (pdf)</a></li>
   <li><a href="minutes-may-15-2018.pdf">May 15, 2018 (pdf)</a></li>
@@ -23,8 +26,10 @@ description: "Meeting Minutes"
 
 <!-- <h2>Jakarta EE Specification Committee</h2> -->
 
-<!-- <h2>Jakarta EE Marketing Committee</h2> -->
-
+<h2>Jakarta EE Marketing Committee</h2>
+<ul>
+  <li><a href="minutes-marketing-july-19-2018.pdf">July 19, 2018 (pdf)</a></li>
+</ul>
 
 
 
