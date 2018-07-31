@@ -4,7 +4,7 @@
   "main": "webpack.min.js",
   "author": "Christopher Guindon",
   "license": "EPL-2.0",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "bugs": {
     "url": "https://github.com/jakartaee/jakartaee.github.io/issues"
   },
