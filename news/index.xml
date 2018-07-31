@@ -7,10 +7,21 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>webdev@eclipse-foundation.org (Christopher Guindon)</managingEditor>
     <webMaster>webdev@eclipse-foundation.org (Christopher Guindon)</webMaster>
-    <lastBuildDate>Fri, 20 Jul 2018 11:15:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 31 Jul 2018 05:10:00 +0000</lastBuildDate>
     
 	<atom:link href="https://jakarta.ee/news/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Eclipse Foundation Announces Jakarta EE Committee Election Results</title>
+      <link>https://jakarta.ee/news/2018/07/31/eclipse-foundation-announces-jakarta-ee-committee-election-results/</link>
+      <pubDate>Tue, 31 Jul 2018 05:10:00 +0000</pubDate>
+      <author>webdev@eclipse-foundation.org (Christopher Guindon)</author>
+      <guid>https://jakarta.ee/news/2018/07/31/eclipse-foundation-announces-jakarta-ee-committee-election-results/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Ottawa, Canada - July 31, 2018&lt;/strong&gt; - Today we are pleased to announce the results of the Participant and Committer Member elections for representatives to the Jakarta EE Working Group Steering Committee, Specification Committee, and Marketing &amp;amp; Brand Committee. These committees provide governance for the evolution and adoption of Jakarta EE, the community-led platform created from the contribution of Java EE technologies and hosted by the Eclipse Foundation.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Jakarta EE: No turning back</title>
