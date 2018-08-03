@@ -13,7 +13,7 @@ categories: ["announcements"]
 
 <ul>
   <li>Specification Committee - Participant: Alex Theedom (LJC)</li>
-  <li>Specification Committee - Committer Member: Ivar Grimstad</li>
+  <li>Specification Committee - Committer Member: Werner Keil</li>
   <li>Marketing & Brand Committee - Participant: Simon Maple (LJC)</li>
   <li>Marketing & Brand Committee - Committer Member: Ivar Grimstad</li>
   <li>Steering Committee - Participant: Martijn Verburg (LJC)</li>
