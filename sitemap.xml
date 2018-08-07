@@ -3,8 +3,28 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://jakarta.ee/news/2018/08/01/understanding-jakarta-ee-jakarta-ee-should-become-more-modular-than-it-is-right-now/</loc>
+    <lastmod>2018-08-01T11:15:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://jakarta.ee/news/2018/07/31/eclipse-foundation-announces-jakarta-ee-committee-election-results/</loc>
     <lastmod>2018-07-31T05:10:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jakarta.ee/news/2018/07/30/thoughts-on-jakarta-ees-vision/</loc>
+    <lastmod>2018-07-30T11:15:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jakarta.ee/news/2018/07/30/understanding-jakarta-ee-the-platform-needs-to-evolve-more-dynamically-than-it-had-done-in-the-past/</loc>
+    <lastmod>2018-07-30T11:15:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jakarta.ee/news/2018/07/27/understanding-jakarta-ee-i-strongly-believe-there-is-a-lot-to-do-to-make-jakarta-ee-ready-for-the-future/</loc>
+    <lastmod>2018-07-27T11:15:00+00:00</lastmod>
   </url>
   
   <url>
@@ -174,7 +194,7 @@
   
   <url>
     <loc>https://jakarta.ee/news/</loc>
-    <lastmod>2018-07-31T05:10:00+00:00</lastmod>
+    <lastmod>2018-08-01T11:15:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

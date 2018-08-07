@@ -13,6 +13,15 @@
     
     
     <item>
+      <title>Understanding Jakarta EE: “Jakarta EE should become more modular than it is right now”</title>
+      <link>https://jakarta.ee/news/2018/08/01/understanding-jakarta-ee-jakarta-ee-should-become-more-modular-than-it-is-right-now/</link>
+      <pubDate>Wed, 01 Aug 2018 11:15:00 +0000</pubDate>
+      <author>webdev@eclipse-foundation.org (Christopher Guindon)</author>
+      <guid>https://jakarta.ee/news/2018/08/01/understanding-jakarta-ee-jakarta-ee-should-become-more-modular-than-it-is-right-now/</guid>
+      <description>Confused about what’s going on with Jakarta EE? This interview series is meant to help you navigate through all the changes and understand where it’s headed, as well as how Jakarta EE plans to become the new home of cloud-native Java. Our fourth guest is Werner Keil. Let’s dive deeper into the Jakarta EE universe!</description>
+    </item>
+    
+    <item>
       <title>Eclipse Foundation Announces Jakarta EE Committee Election Results</title>
       <link>https://jakarta.ee/news/2018/07/31/eclipse-foundation-announces-jakarta-ee-committee-election-results/</link>
       <pubDate>Tue, 31 Jul 2018 05:10:00 +0000</pubDate>
@@ -21,6 +30,33 @@
       <description>&lt;p&gt;&lt;strong&gt;Ottawa, Canada - July 31, 2018&lt;/strong&gt; - Today we are pleased to announce the results of the Participant and Committer Member elections for representatives to the Jakarta EE Working Group Steering Committee, Specification Committee, and Marketing &amp;amp; Brand Committee. These committees provide governance for the evolution and adoption of Jakarta EE, the community-led platform created from the contribution of Java EE technologies and hosted by the Eclipse Foundation.&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Thoughts On Jakarta EE’s Vision</title>
+      <link>https://jakarta.ee/news/2018/07/30/thoughts-on-jakarta-ees-vision/</link>
+      <pubDate>Mon, 30 Jul 2018 11:15:00 +0000</pubDate>
+      <author>webdev@eclipse-foundation.org (Christopher Guindon)</author>
+      <guid>https://jakarta.ee/news/2018/07/30/thoughts-on-jakarta-ees-vision/</guid>
+      <description>Jakarta EE is currently being formed under the Eclipse Foundation. In order to align the future development, directions, and marketing to the industry, many claim that it’s crucial for the Jakarta EE community to share a common vision or mission statement that the technology will follow.</description>
+    </item>
+    
+    <item>
+      <title>Understanding Jakarta EE: “The platform needs to evolve more dynamically than it had done in the past”</title>
+      <link>https://jakarta.ee/news/2018/07/30/understanding-jakarta-ee-the-platform-needs-to-evolve-more-dynamically-than-it-had-done-in-the-past/</link>
+      <pubDate>Mon, 30 Jul 2018 11:15:00 +0000</pubDate>
+      <author>webdev@eclipse-foundation.org (Christopher Guindon)</author>
+      <guid>https://jakarta.ee/news/2018/07/30/understanding-jakarta-ee-the-platform-needs-to-evolve-more-dynamically-than-it-had-done-in-the-past/</guid>
+      <description>Confused about what’s going on with Jakarta EE? This interview series is meant to help you navigate through all the changes and understand where it’s headed, as well as how Jakarta EE plans to become the new home of cloud-native Java. Our third guest is Java Champion Josh Juneau. Let’s dive deeper into the Jakarta EE universe!</description>
+    </item>
+    
+    <item>
+      <title>Understanding Jakarta EE: “I strongly believe there is a lot to do to make Jakarta EE ready for the future”</title>
+      <link>https://jakarta.ee/news/2018/07/27/understanding-jakarta-ee-i-strongly-believe-there-is-a-lot-to-do-to-make-jakarta-ee-ready-for-the-future/</link>
+      <pubDate>Fri, 27 Jul 2018 11:15:00 +0000</pubDate>
+      <author>webdev@eclipse-foundation.org (Christopher Guindon)</author>
+      <guid>https://jakarta.ee/news/2018/07/27/understanding-jakarta-ee-i-strongly-believe-there-is-a-lot-to-do-to-make-jakarta-ee-ready-for-the-future/</guid>
+      <description>Confused about what’s going on with Jakarta EE? This interview series is meant to help you navigate through all the changes and understand where it’s headed, as well as how Jakarta EE plans to become the new home of cloud-native Java. Our second guest is Markus Eisele, Java Champion and Head of Developer Advocacy at Lightbend. Let’s dive deeper into the Jakarta EE universe!</description>
     </item>
     
     <item>
