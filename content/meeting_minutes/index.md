@@ -6,6 +6,7 @@ description: "Meeting Minutes"
 
 <h2>Jakarta EE Steering Committee</h2>
 <ul>
+  <li><a href="minutes-july-17-2018.pdf">July 17, 2018 (pdf)</a></li>
   <li><a href="minutes-june-26-2018.pdf">June 26, 2018 (pdf)</a></li>
   <li><a href="minutes-june-19-2018.pdf">June 19, 2018 (pdf)</a></li>
   <li><a href="minutes-june-5-2018.pdf">June 5, 2018 (pdf)</a></li>
@@ -24,7 +25,13 @@ description: "Meeting Minutes"
   <li><a href="https://www.eclipse.org/ee4j/minutes/" target="_blank">EE4J PMC Meeting</a></li>
 </ul>
 
-<!-- <h2>Jakarta EE Specification Committee</h2> -->
+<h2>Jakarta EE Specification Committee</h2>
+<ul>
+  <li><a href="minutes-specification-july-25-2018.pdf">July 25, 2018 (pdf)</a></li>
+  <li><a href="minutes-specification-july-18-2018.pdf">July 18, 2018 (pdf)</a></li>
+  <li><a href="minutes-specification-july-12-2018.pdf">July 12, 2018 (pdf)</a></li>
+  <li><a href="minutes-specification-june-28-2018.pdf">June 28, 2018 (pdf)</a></li>
+</ul>
 
 <h2>Jakarta EE Marketing Committee</h2>
 <ul>
