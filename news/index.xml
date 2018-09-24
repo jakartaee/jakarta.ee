@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>webdev@eclipse-foundation.org (Christopher Guindon)</managingEditor>
     <webMaster>webdev@eclipse-foundation.org (Christopher Guindon)</webMaster>
-    <lastBuildDate>Tue, 18 Sep 2018 08:45:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 24 Sep 2018 08:00:00 -0400</lastBuildDate>
     
 	<atom:link href="https://jakarta.ee/news/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>JNoSQL and Jakarta EE</title>
+      <link>https://jakarta.ee/news/2018/09/24/jnosql-and-jakarta-ee/</link>
+      <pubDate>Mon, 24 Sep 2018 08:00:00 -0400</pubDate>
+      <author>webdev@eclipse-foundation.org (Christopher Guindon)</author>
+      <guid>https://jakarta.ee/news/2018/09/24/jnosql-and-jakarta-ee/</guid>
+      <description>The Enterprise Java platform has been evolving steadily since 1999 when it was first introduced as Java 2, Enterprise Edition. Today, Enterprise Java is being standardized under the Eclipse Foundation with the new brand, Jakarta EE. Jakarta EE picks up where Java EE 8 left off, but the roadmap going forward will be focused on modern innovations such as microservices, modularity, and, now, NoSQL databases.</description>
+    </item>
     
     <item>
       <title>Welcoming GlassFish to the Eclipse Foundation</title>
