@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://jakarta.ee/news/2018/09/27/how-java-ee-development-has-kept-up-with-microservices/</loc>
+    <lastmod>2018-09-27T11:15:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://jakarta.ee/news/2018/09/24/jnosql-and-jakarta-ee/</loc>
     <lastmod>2018-09-24T08:00:00-04:00</lastmod>
   </url>
@@ -10,6 +15,11 @@
   <url>
     <loc>https://jakarta.ee/news/2018/09/18/welcoming-glassfish-to-the-eclipse-foundation/</loc>
     <lastmod>2018-09-18T08:45:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jakarta.ee/news/2018/09/14/ondrej-will-be-very-busy-at-oracle-code-one/</loc>
+    <lastmod>2018-09-14T11:15:00+00:00</lastmod>
   </url>
   
   <url>
@@ -204,7 +214,7 @@
   
   <url>
     <loc>https://jakarta.ee/news/</loc>
-    <lastmod>2018-09-24T08:00:00-04:00</lastmod>
+    <lastmod>2018-09-27T11:15:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
