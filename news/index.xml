@@ -22,6 +22,28 @@
     </item>
     
     <item>
+      <title>Jakarta EE Status – September 2018 Update</title>
+      <link>https://jakarta.ee/news/2018/09/27/jakarta-ee-status--september-2018-update/</link>
+      <pubDate>Thu, 27 Sep 2018 05:10:00 +0000</pubDate>
+      <author>webdev@eclipse-foundation.org (Christopher Guindon)</author>
+      <guid>https://jakarta.ee/news/2018/09/27/jakarta-ee-status--september-2018-update/</guid>
+      <description>&lt;p&gt;Migrating Java EE to the Eclipse Foundation and Jakarta EE is a process not an event. In the past couple of weeks however, several very important milestones have occurred that deserve to be recognized.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Java EE TCK is now open sourced at Eclipse Foundation</title>
+      <link>https://jakarta.ee/news/2018/09/27/java-ee-tck-is-now-open-sourced-at-eclipse-foundation/</link>
+      <pubDate>Thu, 27 Sep 2018 05:10:00 +0000</pubDate>
+      <author>webdev@eclipse-foundation.org (Christopher Guindon)</author>
+      <guid>https://jakarta.ee/news/2018/09/27/java-ee-tck-is-now-open-sourced-at-eclipse-foundation/</guid>
+      <description>&lt;p&gt;A major milestone was achieved this September 2018! The Jakarta EE TCKs are here and finally open sourced! It was long wished for and waited on by many. But what exactly does that mean?&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>JNoSQL and Jakarta EE</title>
       <link>https://jakarta.ee/news/2018/09/24/jnosql-and-jakarta-ee/</link>
       <pubDate>Mon, 24 Sep 2018 08:00:00 -0400</pubDate>
