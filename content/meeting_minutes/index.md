@@ -48,6 +48,8 @@ description: "Meeting Minutes"
 
 <h2>Jakarta EE Marketing Committee</h2>
 <ul>
+  <li><a href="marketing_committee/minutes-marketing-october-4-2018.pdf">October 4, 2018 (pdf)</a></li>
+  <li><a href="marketing_committee/minutes-marketing-september-27-2018.pdf">September 27, 2018 (pdf)</a></li>
   <li><a href="marketing_committee/minutes-marketing-september-20-2018.pdf">September 20, 2018 (pdf)</a></li>
   <li><a href="marketing_committee/minutes-marketing-september-13-2018.pdf">September 13, 2018 (pdf)</a></li>
   <li><a href="marketing_committee/minutes-marketing-september-6-2018.pdf">September 6, 2018 (pdf)</a></li>
