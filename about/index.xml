@@ -18,8 +18,12 @@
       <pubDate>Sat, 07 Apr 2018 16:09:45 -0400</pubDate>
       <author>webdev@eclipse-foundation.org (Christopher Guindon)</author>
       <guid>https://jakarta.ee/about/faq/</guid>
-      <description>Q: What are we announcing on April 24? A: The key elements of the announcement are:
- Java EE technologies contributed by Oracle will be used to create the new Jakarta EE platform, including a fresh new logo selected by the community. The Eclipse Foundation is the new home of Cloud Native Java Jakarta EE Working Group[link to charter] priorities for modernizing the technology and its governance processes to be more open and community-based Results of inaugural Jakarta EE developer survey.</description>
+      <description>Last Updated: October 19, 2018
+
+Q: What is Jakarta EE? A: Jakarta EE is the future for cloud-native, light-weight, and traditional enterprise Java applications
+ Java EE technologies contributed by Oracle are being used to create the new Jakarta EE platform
+ The Eclipse Foundation is the home of Cloud Native Java open innovation
+ The Jakarta EE Working Group is focused on modernizing Java EE technologies and governance processes to be more open and community-based</description>
     </item>
     
   </channel>

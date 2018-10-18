@@ -3,6 +3,16 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://jakarta.ee/news/2018/10/17/the-draft-of-jakarta-ee-specification-process-is-live/</loc>
+    <lastmod>2018-10-17T05:10:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jakarta.ee/news/2018/10/16/introducing-the-jakarta-ee-specification-process/</loc>
+    <lastmod>2018-10-16T05:10:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://jakarta.ee/news/2018/09/27/how-java-ee-development-has-kept-up-with-microservices/</loc>
     <lastmod>2018-09-27T11:15:00+00:00</lastmod>
   </url>
@@ -224,7 +234,7 @@
   
   <url>
     <loc>https://jakarta.ee/news/</loc>
-    <lastmod>2018-09-27T11:15:00+00:00</lastmod>
+    <lastmod>2018-10-17T05:10:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
