@@ -6,6 +6,9 @@ description: "Meeting Minutes"
 
 <h2>Jakarta EE Steering Committee</h2>
 <ul>
+  <li><a href="steering_committee/minutes-september-25-2018.pdf">September 25, 2018 (pdf)</a></li>
+  <li><a href="steering_committee/minutes-september-18-2018.pdf">September 18, 2018 (pdf)</a></li>
+  <li><a href="steering_committee/minutes-september-11-2018.pdf">September 11, 2018 (pdf)</a></li>
   <li><a href="steering_committee/minutes-september-4-2018.pdf">September 4, 2018 (pdf)</a></li>
   <li><a href="steering_committee/minutes-august-28-2018.pdf">August 28, 2018 (pdf)</a></li>
   <li><a href="steering_committee/minutes-august-21-2018.pdf">August 21, 2018 (pdf)</a></li>
