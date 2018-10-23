@@ -35,6 +35,9 @@ description: "Meeting Minutes"
 
 <h2>Jakarta EE Specification Committee</h2>
 <ul>
+  <li><a href="specification_committee/minutes-specification-october-10-2018.pdf">October 10, 2018 (pdf)</a></li>
+  <li><a href="specification_committee/minutes-specification-october-3-2018.pdf">October 3, 2018 (pdf)</a></li>
+  <li><a href="specification_committee/minutes-specification-september-12-2018.pdf">September 12, 2018 (pdf)</a></li>
   <li><a href="specification_committee/minutes-specification-september-5-2018.pdf">September 5, 2018 (pdf)</a></li>
   <li><a href="specification_committee/minutes-specification-august-29-2018.pdf">August 29, 2018 (pdf)</a></li>
   <li><a href="specification_committee/minutes-specification-august-22-2018.pdf">August 22, 2018 (pdf)</a></li>
