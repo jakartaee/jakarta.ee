@@ -6,6 +6,9 @@ description: "Meeting Minutes"
 
 <h2>Jakarta EE Steering Committee</h2>
 <ul>
+  <li><a href="steering_committee/minutes-september-25-2018.pdf">September 25, 2018 (pdf)</a></li>
+  <li><a href="steering_committee/minutes-september-18-2018.pdf">September 18, 2018 (pdf)</a></li>
+  <li><a href="steering_committee/minutes-september-11-2018.pdf">September 11, 2018 (pdf)</a></li>
   <li><a href="steering_committee/minutes-september-4-2018.pdf">September 4, 2018 (pdf)</a></li>
   <li><a href="steering_committee/minutes-august-28-2018.pdf">August 28, 2018 (pdf)</a></li>
   <li><a href="steering_committee/minutes-august-21-2018.pdf">August 21, 2018 (pdf)</a></li>
@@ -32,6 +35,9 @@ description: "Meeting Minutes"
 
 <h2>Jakarta EE Specification Committee</h2>
 <ul>
+  <li><a href="specification_committee/minutes-specification-october-10-2018.pdf">October 10, 2018 (pdf)</a></li>
+  <li><a href="specification_committee/minutes-specification-october-3-2018.pdf">October 3, 2018 (pdf)</a></li>
+  <li><a href="specification_committee/minutes-specification-september-12-2018.pdf">September 12, 2018 (pdf)</a></li>
   <li><a href="specification_committee/minutes-specification-september-5-2018.pdf">September 5, 2018 (pdf)</a></li>
   <li><a href="specification_committee/minutes-specification-august-29-2018.pdf">August 29, 2018 (pdf)</a></li>
   <li><a href="specification_committee/minutes-specification-august-22-2018.pdf">August 22, 2018 (pdf)</a></li>
@@ -45,6 +51,8 @@ description: "Meeting Minutes"
 
 <h2>Jakarta EE Marketing Committee</h2>
 <ul>
+  <li><a href="marketing_committee/minutes-marketing-october-4-2018.pdf">October 4, 2018 (pdf)</a></li>
+  <li><a href="marketing_committee/minutes-marketing-september-27-2018.pdf">September 27, 2018 (pdf)</a></li>
   <li><a href="marketing_committee/minutes-marketing-september-20-2018.pdf">September 20, 2018 (pdf)</a></li>
   <li><a href="marketing_committee/minutes-marketing-september-13-2018.pdf">September 13, 2018 (pdf)</a></li>
   <li><a href="marketing_committee/minutes-marketing-september-6-2018.pdf">September 6, 2018 (pdf)</a></li>
