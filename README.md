@@ -11,7 +11,7 @@ Jakarta Enterprise Edition (EE) is the future of cloud native Java. Jakarta EE o
 Install dependencies, build assets and start a webserver:
 
 ```bash
-npm install && npm run dev && hugo server --disableFastRender --buildFuture
+npm install && npm run generate-projects && npm run dev && hugo server --disableFastRender --buildFuture
 ```
 
 ## Contributing

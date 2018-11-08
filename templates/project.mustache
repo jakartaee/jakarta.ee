@@ -1,0 +1,13 @@
+---
+title: "{{ name }}"
+headline: "{{ name }}" 
+date: 2018-04-05T16:10:38-04:00
+description: "{{ description }}"
+hide_sidebar: "false"
+---
+
+{{#contributors}}
+<a href="https://github.com/{{login}}"><img src="{{{avatar}}}" width="50px" alt="{{login}}"/></a>
+{{/contributors}}
+
+{{ text }}
