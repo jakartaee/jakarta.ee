@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://jakarta.ee/news/2018/12/13/eclipse-ee4j-and-glassfish-now-being-fully-built-and-tested-as-open-source/</loc>
+    <lastmod>2018-12-13T10:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://jakarta.ee/news/2018/11/08/jakarta-ee-spec-process-paves-way-for-enterprise-java/</loc>
     <lastmod>2018-11-08T10:00:00+00:00</lastmod>
   </url>
@@ -249,7 +254,7 @@
   
   <url>
     <loc>https://jakarta.ee/news/</loc>
-    <lastmod>2018-11-08T10:00:00+00:00</lastmod>
+    <lastmod>2018-12-13T10:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
