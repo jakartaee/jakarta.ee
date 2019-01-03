@@ -6,6 +6,11 @@ description: "Meeting Minutes"
 
 <h2>Jakarta EE Steering Committee</h2>
 <ul>
+  <li><a href="steering_committee/minutes-november-27-2018.pdf">November 27, 2018 (pdf)</a></li>
+  <li><a href="steering_committee/minutes-november-6-2018.pdf">November 6, 2018 (pdf)</a></li>
+  <li><a href="steering_committee/minutes-october-30-2018.pdf">October 30, 2018 (pdf)</a></li>
+  <li><a href="steering_committee/minutes-october-9-2018.pdf">October 9, 2018 (pdf)</a></li>
+  <li><a href="steering_committee/minutes-october-2-2018.pdf">October 2, 2018 (pdf)</a></li>
   <li><a href="steering_committee/minutes-september-25-2018.pdf">September 25, 2018 (pdf)</a></li>
   <li><a href="steering_committee/minutes-september-18-2018.pdf">September 18, 2018 (pdf)</a></li>
   <li><a href="steering_committee/minutes-september-11-2018.pdf">September 11, 2018 (pdf)</a></li>
@@ -35,6 +40,10 @@ description: "Meeting Minutes"
 
 <h2>Jakarta EE Specification Committee</h2>
 <ul>
+  <li><a href="specification_committee/minutes-specification-december-19-2018.pdf">December 19, 2018 (pdf)</a></li>
+  <li><a href="specification_committee/minutes-specification-december-12-2018.pdf">December 12, 2018 (pdf)</a></li>
+  <li><a href="specification_committee/minutes-specification-november-28-2018.pdf">November 28, 2018 (pdf)</a></li>
+  <li><a href="specification_committee/minutes-specification-november-14-2018.pdf">November 14, 2018 (pdf)</a></li>
   <li><a href="specification_committee/minutes-specification-november-7-2018.pdf">November 7, 2018 (pdf)</a></li>
   <li><a href="specification_committee/minutes-specification-october-17-2018.pdf">October 17, 2018 (pdf)</a></li>
   <li><a href="specification_committee/minutes-specification-october-10-2018.pdf">October 10, 2018 (pdf)</a></li>
@@ -53,6 +62,14 @@ description: "Meeting Minutes"
 
 <h2>Jakarta EE Marketing Committee</h2>
 <ul>
+  <li><a href="marketing_committee/minutes-marketing-december-13-2018.pdf">December 13, 2018 (pdf)</a></li>
+  <li><a href="marketing_committee/minutes-marketing-december-6-2018.pdf">December 6, 2018 (pdf)</a></li>
+  <li><a href="marketing_committee/minutes-marketing-november-29-2018.pdf">November 29, 2018 (pdf)</a></li>
+  <li><a href="marketing_committee/minutes-marketing-november-15-2018.pdf">November 15, 2018 (pdf)</a></li>
+  <li><a href="marketing_committee/minutes-marketing-november-8-2018.pdf">November 8, 2018 (pdf)</a></li>
+  <li><a href="marketing_committee/minutes-marketing-november-1-2018.pdf">November 1, 2018 (pdf)</a></li>
+  <li><a href="marketing_committee/minutes-marketing-october-18-2018.pdf">October 18, 2018 (pdf)</a></li>
+  <li><a href="marketing_committee/minutes-marketing-october-11-2018.pdf">October 11, 2018 (pdf)</a></li>
   <li><a href="marketing_committee/minutes-marketing-october-4-2018.pdf">October 4, 2018 (pdf)</a></li>
   <li><a href="marketing_committee/minutes-marketing-september-27-2018.pdf">September 27, 2018 (pdf)</a></li>
   <li><a href="marketing_committee/minutes-marketing-september-20-2018.pdf">September 20, 2018 (pdf)</a></li>
