@@ -19,7 +19,7 @@ A: Jakarta EE is the future for cloud-native, light-weight, and traditional ente
 
 ---
 
-#### Q: What is the significance of the name "Jakarta EE"? How did you come up with the name?
+#### Q: What is the significance of the name “Jakarta EE”? How did you come up with the name?
 
 A: In the early days of Java, the Apache Jakarta project was the home of many exciting innovations in the Java ecosystem. It was particularly instrumental in establishing a strong open source community in and around the Java platform. [According to Wikipedia](https://en.wikipedia.org/wiki/Jakarta_Project#Project_name) the name was originally selected because it was the meeting room used at Sun Microsystems for the meetings that led to the project creation.
 
@@ -50,6 +50,16 @@ The Eclipse Foundation Specification Process is under development. It is being l
 #### Q: How will the new release cycles work for Jakarta EE?
 
 A: We are still working through the release cycles, so we cannot commit to any particular schedule or cadence at this time. However, there is a strong commitment by all involved to significantly increase the pace of innovation. We intend to also listen to both the developer community and the enterprise consumers of Jakarta EE technologies to understand what their desires are. Obviously there are trade-offs to be made between things such as stability versus pace of new innovation, but it is the fact these trade-offs are being addressed in an open and inclusive manner that will help drive the success of Jakarta EE.
+
+---
+
+#### Q: What’s going to be in the next release of GlassFish, and when will it get launched?
+
+A: As part of the move to Eclipse, GlassFish is now Eclipse GlassFish. There are going to be two releases of Eclipse GlassFish:
+
+1.  On January 29, 2019, the community will release an **Eclipse GlassFish 5.1** which is certified as Java EE 8 compatible. This will also be the first release of all of the projects being moved to the Eclipse Foundation, and as such will be a significant event in the on-boarding of the Java EE 8 technologies into the Eclipse community.
+
+2.  Later in 2019, the community will release an Eclipse GlassFish 5.2 which is certified as **Jakarta EE 8** compatible. 
 
 ---
 
