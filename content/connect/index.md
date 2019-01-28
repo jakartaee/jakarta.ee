@@ -34,7 +34,8 @@ hide_sidebar: "true"
        <input type="hidden" name="id" value="98ae69e304">
       </div>
       <div class="col-md-24">
-      <input type="submit" value="Subscribe" name="subscribe" class="button btn btn-primary btn-lg">
+        <input type="submit" value="Subscribe" name="subscribe" class="button btn btn-primary btn-lg">
+      </div>
     </form>
   </div>
 </div>
@@ -47,5 +48,15 @@ hide_sidebar: "true"
     <p><a class="btn btn-primary btn-lg" href="https://accounts.eclipse.org/user/edit#open_tab_privacy"> Edit Preferences</a></p>
     <p>- Or -</p>
     <p> <a class="" href="https://accounts.eclipse.org/user/register">Create Account</a></p>
+  </div>
+</div>
+
+<div class="row text-center margin-bottom-30">
+  <div class="col-md-18 col-md-offset-3">
+    <h2 class="text-center heading-line">
+      <span>Jakarta Blogs</span>
+    </h2>
+    <p>Visit Jakartablogs.ee to stay updated with posts from our global community on Jakarta EE news, technologies, best practices, and compatible products.</p>
+    <p><a class="btn btn-primary btn-lg" href="https://jakartablogs.ee">View</a></p>
   </div>
 </div>
