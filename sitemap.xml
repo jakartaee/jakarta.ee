@@ -3,6 +3,41 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://jakarta.ee/news/2019/01/29/eclipse-glassfish-5.1-is-here/</loc>
+    <lastmod>2019-01-29T11:15:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jakarta.ee/news/2019/01/29/eclipse-glassfish-5.1-is-released/</loc>
+    <lastmod>2019-01-29T11:15:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jakarta.ee/news/2019/01/29/jakarta-ee-milestone---eclipse-glassfish-5.1-is-java-ee-8-compatible/</loc>
+    <lastmod>2019-01-29T11:15:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jakarta.ee/news/2019/01/26/eclipse-glassfish-5.1.0.rc2-has-been-released/</loc>
+    <lastmod>2019-01-26T11:15:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jakarta.ee/news/2019/01/22/jersey-2.28-rc4-has-been-released/</loc>
+    <lastmod>2019-01-22T11:15:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jakarta.ee/news/2019/01/21/efsp-the-specification-committee-votes/</loc>
+    <lastmod>2019-01-21T11:15:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jakarta.ee/news/2019/01/01/2018-annual-summary/</loc>
+    <lastmod>2019-01-01T11:15:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://jakarta.ee/news/2018/12/13/eclipse-ee4j-and-glassfish-now-being-fully-built-and-tested-as-open-source/</loc>
     <lastmod>2018-12-13T10:00:00+00:00</lastmod>
   </url>
@@ -265,7 +300,7 @@
   
   <url>
     <loc>https://jakarta.ee/news/</loc>
-    <lastmod>2018-12-13T10:00:00+00:00</lastmod>
+    <lastmod>2019-01-29T11:15:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

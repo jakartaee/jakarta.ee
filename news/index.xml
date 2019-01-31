@@ -7,10 +7,73 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>webdev@eclipse-foundation.org (Christopher Guindon)</managingEditor>
     <webMaster>webdev@eclipse-foundation.org (Christopher Guindon)</webMaster>
-    <lastBuildDate>Thu, 13 Dec 2018 10:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 29 Jan 2019 11:15:00 +0000</lastBuildDate>
     
 	<atom:link href="https://jakarta.ee/news/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Eclipse GlassFish 5.1 is here!</title>
+      <link>https://jakarta.ee/news/2019/01/29/eclipse-glassfish-5.1-is-here/</link>
+      <pubDate>Tue, 29 Jan 2019 11:15:00 +0000</pubDate>
+      <author>webdev@eclipse-foundation.org (Christopher Guindon)</author>
+      <guid>https://jakarta.ee/news/2019/01/29/eclipse-glassfish-5.1-is-here/</guid>
+      <description>The release of Eclipse GlassFish 5.1 is an important milestone for Jakarta EE!</description>
+    </item>
+    
+    <item>
+      <title>Eclipse GlassFish 5.1 is released</title>
+      <link>https://jakarta.ee/news/2019/01/29/eclipse-glassfish-5.1-is-released/</link>
+      <pubDate>Tue, 29 Jan 2019 11:15:00 +0000</pubDate>
+      <author>webdev@eclipse-foundation.org (Christopher Guindon)</author>
+      <guid>https://jakarta.ee/news/2019/01/29/eclipse-glassfish-5.1-is-released/</guid>
+      <description>I am very excited to bring you some great news. Today Eclipse GlassFish 5.1 has finally been released and available</description>
+    </item>
+    
+    <item>
+      <title>Jakarta EE Milestone - Eclipse GlassFish 5.1 is Java EE 8 Compatible</title>
+      <link>https://jakarta.ee/news/2019/01/29/jakarta-ee-milestone---eclipse-glassfish-5.1-is-java-ee-8-compatible/</link>
+      <pubDate>Tue, 29 Jan 2019 11:15:00 +0000</pubDate>
+      <author>webdev@eclipse-foundation.org (Christopher Guindon)</author>
+      <guid>https://jakarta.ee/news/2019/01/29/jakarta-ee-milestone---eclipse-glassfish-5.1-is-java-ee-8-compatible/</guid>
+      <description>Oracle is very pleased that Eclipse GlassFish 5.1 has been released and certified as Java EE 8 compatible.</description>
+    </item>
+    
+    <item>
+      <title>Eclipse Glassfish 5.1.0.RC2 has been released!</title>
+      <link>https://jakarta.ee/news/2019/01/26/eclipse-glassfish-5.1.0.rc2-has-been-released/</link>
+      <pubDate>Sat, 26 Jan 2019 11:15:00 +0000</pubDate>
+      <author>webdev@eclipse-foundation.org (Christopher Guindon)</author>
+      <guid>https://jakarta.ee/news/2019/01/26/eclipse-glassfish-5.1.0.rc2-has-been-released/</guid>
+      <description>That&amp;rsquo;s right, Eclipse Glassfish 5.1.0.RC2, the Jakarta EE implementation, has been published in maven central. Eclipse Glassfish 5.1.0 release is terribly close.</description>
+    </item>
+    
+    <item>
+      <title>Jersey 2.28-RC4 has been released</title>
+      <link>https://jakarta.ee/news/2019/01/22/jersey-2.28-rc4-has-been-released/</link>
+      <pubDate>Tue, 22 Jan 2019 11:15:00 +0000</pubDate>
+      <author>webdev@eclipse-foundation.org (Christopher Guindon)</author>
+      <guid>https://jakarta.ee/news/2019/01/22/jersey-2.28-rc4-has-been-released/</guid>
+      <description>Jersey 2.28-RC4 is available in maven central! Jersey 2.28-RC4, the first Jakarta EE publicly available version of Jersey, is an almost final version of Jersey 2.28.</description>
+    </item>
+    
+    <item>
+      <title>EFSP: The Specification Committee Votes</title>
+      <link>https://jakarta.ee/news/2019/01/21/efsp-the-specification-committee-votes/</link>
+      <pubDate>Mon, 21 Jan 2019 11:15:00 +0000</pubDate>
+      <author>webdev@eclipse-foundation.org (Christopher Guindon)</author>
+      <guid>https://jakarta.ee/news/2019/01/21/efsp-the-specification-committee-votes/</guid>
+      <description>One key difference between Eclipse open source software projects as defined by the Eclipse Development Process (EDP), and open source specification projects as defined by the Eclipse Foundation Specification Process (EFSP) is that specification projects must be aligned with exactly one specification committee.</description>
+    </item>
+    
+    <item>
+      <title>2018 Annual Summary</title>
+      <link>https://jakarta.ee/news/2019/01/01/2018-annual-summary/</link>
+      <pubDate>Tue, 01 Jan 2019 11:15:00 +0000</pubDate>
+      <author>webdev@eclipse-foundation.org (Christopher Guindon)</author>
+      <guid>https://jakarta.ee/news/2019/01/01/2018-annual-summary/</guid>
+      <description>It’s this time of the year again. Time for the yearly summary of conferences, travels, community activities, open source projects, amazing people!</description>
+    </item>
     
     <item>
       <title>Eclipse EE4J and Glassfish Now Being Fully Built and Tested as Open Source</title>
