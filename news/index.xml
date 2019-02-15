@@ -94,6 +94,15 @@
     </item>
     
     <item>
+      <title>Discovering JNoSQL</title>
+      <link>https://jakarta.ee/news/2019/01/18/discovering-jnosql/</link>
+      <pubDate>Fri, 18 Jan 2019 11:15:00 +0000</pubDate>
+      <author>webdev@eclipse-foundation.org (Christopher Guindon)</author>
+      <guid>https://jakarta.ee/news/2019/01/18/discovering-jnosql/</guid>
+      <description>JNoSQL is an Eclipse project which, according to its definition: “is a Java framework that streamlines the integration of Java applications with NoSQL databases. It defines a set of APIs to interact with NoSQL databases and provides a standard implementation for most NoSQL databases.”</description>
+    </item>
+    
+    <item>
       <title>2018 Annual Summary</title>
       <link>https://jakarta.ee/news/2019/01/01/2018-annual-summary/</link>
       <pubDate>Tue, 01 Jan 2019 11:15:00 +0000</pubDate>
