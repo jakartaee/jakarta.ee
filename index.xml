@@ -58,6 +58,15 @@
     </item>
     
     <item>
+      <title>Java EE 8 Compatible Eclipse GlassFish 5.1 Released</title>
+      <link>https://jakarta.ee/news/2019/01/29/java-ee-8-compatible-eclipse-glassfish-5.1-released/</link>
+      <pubDate>Tue, 29 Jan 2019 05:10:00 +0000</pubDate>
+      <author>webdev@eclipse-foundation.org (Christopher Guindon)</author>
+      <guid>https://jakarta.ee/news/2019/01/29/java-ee-8-compatible-eclipse-glassfish-5.1-released/</guid>
+      <description>Eclipse Foundation completes migration of 13.5 million lines of code in 95,000 files with full testing of open source TCK and proprietary Oracle TCK</description>
+    </item>
+    
+    <item>
       <title>Eclipse releases GlassFish 5.1 for Java EE 8</title>
       <link>https://jakarta.ee/news/2019/01/28/eclipse-releases-glassfish-5.1-for-java-ee-8/</link>
       <pubDate>Mon, 28 Jan 2019 05:10:00 +0000</pubDate>
