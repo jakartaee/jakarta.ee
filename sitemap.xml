@@ -3,162 +3,172 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://jakarta.ee/news/2019/01/30/eclipse-glassfish-5.1-released/</loc>
+    <loc>https://jakarta.ee/news/announcements/</loc>
+    <lastmod>2019-02-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jakarta.ee/news/community-news/</loc>
+    <lastmod>2019-02-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jakarta.ee/news/community-news/2019/01/30/eclipse-glassfish-5.1-released/</loc>
     <lastmod>2019-01-30T11:15:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://jakarta.ee/news/2019/01/29/eclipse-glassfish-5.1-is-here/</loc>
+    <loc>https://jakarta.ee/news/community-news/2019/01/29/eclipse-glassfish-5.1-is-here/</loc>
     <lastmod>2019-01-29T11:15:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://jakarta.ee/news/2019/01/29/eclipse-glassfish-5.1-is-released/</loc>
+    <loc>https://jakarta.ee/news/community-news/2019/01/29/eclipse-glassfish-5.1-is-released/</loc>
     <lastmod>2019-01-29T11:15:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://jakarta.ee/news/2019/01/29/jakarta-ee-milestone---eclipse-glassfish-5.1-is-java-ee-8-compatible/</loc>
+    <loc>https://jakarta.ee/news/community-news/2019/01/29/jakarta-ee-milestone---eclipse-glassfish-5.1-is-java-ee-8-compatible/</loc>
     <lastmod>2019-01-29T11:15:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://jakarta.ee/news/2019/01/29/jakartablogs.ee-is-live-ps-bloggers-we-need-you/</loc>
+    <loc>https://jakarta.ee/news/announcements/2019/01/29/jakartablogs.ee-is-live-ps-bloggers-we-need-you/</loc>
     <lastmod>2019-01-29T05:10:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://jakarta.ee/news/2019/01/29/java-ee-8-compatible-eclipse-glassfish-5.1-released/</loc>
+    <loc>https://jakarta.ee/news/announcements/2019/01/29/java-ee-8-compatible-eclipse-glassfish-5.1-released/</loc>
     <lastmod>2019-01-29T05:10:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://jakarta.ee/news/2019/01/28/eclipse-releases-glassfish-5.1-for-java-ee-8/</loc>
+    <loc>https://jakarta.ee/news/announcements/2019/01/28/eclipse-releases-glassfish-5.1-for-java-ee-8/</loc>
     <lastmod>2019-01-28T05:10:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://jakarta.ee/news/2019/01/26/eclipse-glassfish-5.1.0.rc2-has-been-released/</loc>
+    <loc>https://jakarta.ee/news/community-news/2019/01/26/eclipse-glassfish-5.1.0.rc2-has-been-released/</loc>
     <lastmod>2019-01-26T11:15:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://jakarta.ee/news/2019/01/22/jersey-2.28-rc4-has-been-released/</loc>
+    <loc>https://jakarta.ee/news/community-news/2019/01/22/jersey-2.28-rc4-has-been-released/</loc>
     <lastmod>2019-01-22T11:15:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://jakarta.ee/news/2019/01/21/efsp-the-specification-committee-votes/</loc>
+    <loc>https://jakarta.ee/news/community-news/2019/01/21/efsp-the-specification-committee-votes/</loc>
     <lastmod>2019-01-21T11:15:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://jakarta.ee/news/2019/01/18/discovering-jnosql/</loc>
+    <loc>https://jakarta.ee/news/community-news/2019/01/18/discovering-jnosql/</loc>
     <lastmod>2019-01-18T11:15:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://jakarta.ee/news/2019/01/01/2018-annual-summary/</loc>
+    <loc>https://jakarta.ee/news/community-news/2019/01/01/2018-annual-summary/</loc>
     <lastmod>2019-01-01T11:15:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://jakarta.ee/news/2018/12/13/eclipse-ee4j-and-glassfish-now-being-fully-built-and-tested-as-open-source/</loc>
+    <loc>https://jakarta.ee/news/community-news/2018/12/13/eclipse-ee4j-and-glassfish-now-being-fully-built-and-tested-as-open-source/</loc>
     <lastmod>2018-12-13T10:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://jakarta.ee/news/2018/11/08/jakarta-ee-spec-process-paves-way-for-enterprise-java/</loc>
+    <loc>https://jakarta.ee/news/community-news/2018/11/08/jakarta-ee-spec-process-paves-way-for-enterprise-java/</loc>
     <lastmod>2018-11-08T10:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://jakarta.ee/news/2018/11/08/jakarta-ee-what-is-it-and-what-does-it-mean-for-enterprise-java/</loc>
+    <loc>https://jakarta.ee/news/community-news/2018/11/08/jakarta-ee-what-is-it-and-what-does-it-mean-for-enterprise-java/</loc>
     <lastmod>2018-11-08T10:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://jakarta.ee/news/2018/10/25/announcing-eclipse-glassfish-5.1.0-rc1-release/</loc>
+    <loc>https://jakarta.ee/news/announcements/2018/10/25/announcing-eclipse-glassfish-5.1.0-rc1-release/</loc>
     <lastmod>2018-10-25T05:10:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://jakarta.ee/news/2018/10/17/the-draft-of-jakarta-ee-specification-process-is-live/</loc>
+    <loc>https://jakarta.ee/news/community-news/2018/10/17/the-draft-of-jakarta-ee-specification-process-is-live/</loc>
     <lastmod>2018-10-17T05:10:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://jakarta.ee/news/2018/10/16/introducing-the-jakarta-ee-specification-process/</loc>
+    <loc>https://jakarta.ee/news/announcements/2018/10/16/introducing-the-jakarta-ee-specification-process/</loc>
     <lastmod>2018-10-16T05:10:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://jakarta.ee/news/2018/09/27/how-java-ee-development-has-kept-up-with-microservices/</loc>
+    <loc>https://jakarta.ee/news/community-news/2018/09/27/how-java-ee-development-has-kept-up-with-microservices/</loc>
     <lastmod>2018-09-27T11:15:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://jakarta.ee/news/2018/09/27/jakarta-ee-status--september-2018-update/</loc>
+    <loc>https://jakarta.ee/news/announcements/2018/09/27/jakarta-ee-status--september-2018-update/</loc>
     <lastmod>2018-09-27T05:10:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://jakarta.ee/news/2018/09/27/java-ee-tck-is-now-open-sourced-at-eclipse-foundation/</loc>
+    <loc>https://jakarta.ee/news/announcements/2018/09/27/java-ee-tck-is-now-open-sourced-at-eclipse-foundation/</loc>
     <lastmod>2018-09-27T05:10:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://jakarta.ee/news/2018/09/24/jnosql-and-jakarta-ee/</loc>
+    <loc>https://jakarta.ee/news/community-news/2018/09/24/jnosql-and-jakarta-ee/</loc>
     <lastmod>2018-09-24T08:00:00-04:00</lastmod>
   </url>
   
   <url>
-    <loc>https://jakarta.ee/news/2018/09/18/welcoming-glassfish-to-the-eclipse-foundation/</loc>
+    <loc>https://jakarta.ee/news/announcements/2018/09/18/welcoming-glassfish-to-the-eclipse-foundation/</loc>
     <lastmod>2018-09-18T08:45:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://jakarta.ee/news/2018/09/14/ondrej-will-be-very-busy-at-oracle-code-one/</loc>
+    <loc>https://jakarta.ee/news/community-news/2018/09/14/ondrej-will-be-very-busy-at-oracle-code-one/</loc>
     <lastmod>2018-09-14T11:15:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://jakarta.ee/news/2018/08/01/understanding-jakarta-ee-jakarta-ee-should-become-more-modular-than-it-is-right-now/</loc>
+    <loc>https://jakarta.ee/news/community-news/2018/08/01/understanding-jakarta-ee-jakarta-ee-should-become-more-modular-than-it-is-right-now/</loc>
     <lastmod>2018-08-01T11:15:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://jakarta.ee/news/2018/07/31/eclipse-foundation-announces-jakarta-ee-committee-election-results/</loc>
+    <loc>https://jakarta.ee/news/announcements/2018/07/31/eclipse-foundation-announces-jakarta-ee-committee-election-results/</loc>
     <lastmod>2018-07-31T05:10:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://jakarta.ee/news/2018/07/30/thoughts-on-jakarta-ees-vision/</loc>
+    <loc>https://jakarta.ee/news/community-news/2018/07/30/thoughts-on-jakarta-ees-vision/</loc>
     <lastmod>2018-07-30T11:15:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://jakarta.ee/news/2018/07/30/understanding-jakarta-ee-the-platform-needs-to-evolve-more-dynamically-than-it-had-done-in-the-past/</loc>
+    <loc>https://jakarta.ee/news/community-news/2018/07/30/understanding-jakarta-ee-the-platform-needs-to-evolve-more-dynamically-than-it-had-done-in-the-past/</loc>
     <lastmod>2018-07-30T11:15:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://jakarta.ee/news/2018/07/27/understanding-jakarta-ee-i-strongly-believe-there-is-a-lot-to-do-to-make-jakarta-ee-ready-for-the-future/</loc>
+    <loc>https://jakarta.ee/news/community-news/2018/07/27/understanding-jakarta-ee-i-strongly-believe-there-is-a-lot-to-do-to-make-jakarta-ee-ready-for-the-future/</loc>
     <lastmod>2018-07-27T11:15:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://jakarta.ee/news/2018/07/20/jakarta-ee-no-turning-back/</loc>
+    <loc>https://jakarta.ee/news/community-news/2018/07/20/jakarta-ee-no-turning-back/</loc>
     <lastmod>2018-07-20T11:15:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://jakarta.ee/news/2018/07/13/jakarta-ee-eclipse-microprofile-and-cloud-native-at-eclipsecon-france/</loc>
+    <loc>https://jakarta.ee/news/community-news/2018/07/13/jakarta-ee-eclipse-microprofile-and-cloud-native-at-eclipsecon-france/</loc>
     <lastmod>2018-07-13T13:53:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://jakarta.ee/news/2018/06/27/jakarta-ee-marketing-and-social-media-update/</loc>
+    <loc>https://jakarta.ee/news/announcements/2018/06/27/jakarta-ee-marketing-and-social-media-update/</loc>
     <lastmod>2018-06-27T11:30:24+00:00</lastmod>
   </url>
   
@@ -168,42 +178,42 @@
   </url>
   
   <url>
-    <loc>https://jakarta.ee/news/2018/06/22/testing-javaee-backward-and-forward-compatibility-with-servlet-jax-rs-batch-and-microprofile/</loc>
+    <loc>https://jakarta.ee/news/community-news/2018/06/22/testing-javaee-backward-and-forward-compatibility-with-servlet-jax-rs-batch-and-microprofile/</loc>
     <lastmod>2018-06-22T10:30:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://jakarta.ee/news/2018/06/18/2018-java-ecosystem-executive-insights/</loc>
+    <loc>https://jakarta.ee/news/community-news/2018/06/18/2018-java-ecosystem-executive-insights/</loc>
     <lastmod>2018-06-18T11:15:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://jakarta.ee/news/2018/06/18/proposed-jakarta-ee-design-principles/</loc>
+    <loc>https://jakarta.ee/news/community-news/2018/06/18/proposed-jakarta-ee-design-principles/</loc>
     <lastmod>2018-06-18T11:15:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://jakarta.ee/news/2018/06/11/lightbend-podcast-why-lightbend-joined-the-eclipse-foundations-jakarta-ee-working-group-9-min/</loc>
+    <loc>https://jakarta.ee/news/community-news/2018/06/11/lightbend-podcast-why-lightbend-joined-the-eclipse-foundations-jakarta-ee-working-group-9-min/</loc>
     <lastmod>2018-06-11T10:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://jakarta.ee/news/2018/06/08/enter-jakarta-ee-an-inoculation-against-fear-uncertainty-and-doubt-in-the-java-community/</loc>
+    <loc>https://jakarta.ee/news/community-news/2018/06/08/enter-jakarta-ee-an-inoculation-against-fear-uncertainty-and-doubt-in-the-java-community/</loc>
     <lastmod>2018-06-08T15:30:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://jakarta.ee/news/2018/06/08/enterprise-java-in-the-blogosphere/</loc>
+    <loc>https://jakarta.ee/news/community-news/2018/06/08/enterprise-java-in-the-blogosphere/</loc>
     <lastmod>2018-06-08T15:30:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://jakarta.ee/news/2018/06/08/where-does-java-in-the-enterprise-go-from-here/</loc>
+    <loc>https://jakarta.ee/news/community-news/2018/06/08/where-does-java-in-the-enterprise-go-from-here/</loc>
     <lastmod>2018-06-08T15:30:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://jakarta.ee/news/2018/06/04/jakarta-ee-newsletter---a-first-look/</loc>
+    <loc>https://jakarta.ee/news/announcements/2018/06/04/jakarta-ee-newsletter---a-first-look/</loc>
     <lastmod>2018-06-04T10:00:58-04:00</lastmod>
   </url>
   
@@ -213,77 +223,77 @@
   </url>
   
   <url>
-    <loc>https://jakarta.ee/news/2018/05/28/jakarta-ee-progress-to-date/</loc>
+    <loc>https://jakarta.ee/news/announcements/2018/05/28/jakarta-ee-progress-to-date/</loc>
     <lastmod>2018-05-28T08:10:24+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://jakarta.ee/news/2018/05/24/jakarta-ee-at-eclipsecon-france-2018/</loc>
+    <loc>https://jakarta.ee/news/announcements/2018/05/24/jakarta-ee-at-eclipsecon-france-2018/</loc>
     <lastmod>2018-05-24T08:15:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://jakarta.ee/news/2018/05/22/proprietary-to-open-a-sea-change-for-jakarta-ee/</loc>
+    <loc>https://jakarta.ee/news/community-news/2018/05/22/proprietary-to-open-a-sea-change-for-jakarta-ee/</loc>
     <lastmod>2018-05-22T05:04:58-04:00</lastmod>
   </url>
   
   <url>
-    <loc>https://jakarta.ee/news/2018/05/15/latest-roundup-of-ee4j-activities-for-jakarta-ee/</loc>
+    <loc>https://jakarta.ee/news/community-news/2018/05/15/latest-roundup-of-ee4j-activities-for-jakarta-ee/</loc>
     <lastmod>2018-05-15T06:04:58-04:00</lastmod>
   </url>
   
   <url>
-    <loc>https://jakarta.ee/news/2018/05/15/java-roadmap-eclipses-jakarta-ee-enterprise-java-takes-shape/</loc>
+    <loc>https://jakarta.ee/news/community-news/2018/05/15/java-roadmap-eclipses-jakarta-ee-enterprise-java-takes-shape/</loc>
     <lastmod>2018-05-15T05:03:58-04:00</lastmod>
   </url>
   
   <url>
-    <loc>https://jakarta.ee/news/2018/05/01/goodbye-java-enterprise-edition.-hello-jakarta-ee/</loc>
+    <loc>https://jakarta.ee/news/community-news/2018/05/01/goodbye-java-enterprise-edition.-hello-jakarta-ee/</loc>
     <lastmod>2018-05-01T05:03:58-04:00</lastmod>
   </url>
   
   <url>
-    <loc>https://jakarta.ee/news/2018/04/24/background-on-oracles-contribution-to-jakarta-ee/</loc>
+    <loc>https://jakarta.ee/news/community-news/2018/04/24/background-on-oracles-contribution-to-jakarta-ee/</loc>
     <lastmod>2018-04-24T06:03:58-04:00</lastmod>
   </url>
   
   <url>
-    <loc>https://jakarta.ee/news/2018/04/24/the-road-to-jakarta-ee/</loc>
+    <loc>https://jakarta.ee/news/community-news/2018/04/24/the-road-to-jakarta-ee/</loc>
     <lastmod>2018-04-24T06:03:58-04:00</lastmod>
   </url>
   
   <url>
-    <loc>https://jakarta.ee/news/2018/04/24/the-eclipse-foundation-has-established-jakarta-ee-working-group/</loc>
+    <loc>https://jakarta.ee/news/community-news/2018/04/24/the-eclipse-foundation-has-established-jakarta-ee-working-group/</loc>
     <lastmod>2018-04-24T05:04:58-04:00</lastmod>
   </url>
   
   <url>
-    <loc>https://jakarta.ee/news/2018/04/24/eclipse-foundation-unveils-new-cloud-native-java-future-with-jakarta-ee/</loc>
+    <loc>https://jakarta.ee/news/announcements/2018/04/24/eclipse-foundation-unveils-new-cloud-native-java-future-with-jakarta-ee/</loc>
     <lastmod>2018-04-24T05:03:58-04:00</lastmod>
   </url>
   
   <url>
-    <loc>https://jakarta.ee/news/2018/04/24/in-support-of-jakarta-ees-quest-to-accelerate-cloud-native-java/</loc>
+    <loc>https://jakarta.ee/news/community-news/2018/04/24/in-support-of-jakarta-ees-quest-to-accelerate-cloud-native-java/</loc>
     <lastmod>2018-04-24T05:03:58-04:00</lastmod>
   </url>
   
   <url>
-    <loc>https://jakarta.ee/news/2018/04/24/jakarta-ee---the-new-home-for-enterprise-java/</loc>
+    <loc>https://jakarta.ee/news/community-news/2018/04/24/jakarta-ee---the-new-home-for-enterprise-java/</loc>
     <lastmod>2018-04-24T05:03:58-04:00</lastmod>
   </url>
   
   <url>
-    <loc>https://jakarta.ee/news/2018/04/24/jakarta-ee-community-survey/</loc>
+    <loc>https://jakarta.ee/news/announcements/2018/04/24/jakarta-ee-community-survey/</loc>
     <lastmod>2018-04-24T05:03:58-04:00</lastmod>
   </url>
   
   <url>
-    <loc>https://jakarta.ee/news/2018/04/24/jakarta-ee-is-officially-out/</loc>
+    <loc>https://jakarta.ee/news/community-news/2018/04/24/jakarta-ee-is-officially-out/</loc>
     <lastmod>2018-04-24T05:03:58-04:00</lastmod>
   </url>
   
   <url>
-    <loc>https://jakarta.ee/news/2018/04/24/the-future-of-cloud-native-open-source-java-with-jakarta-ee/</loc>
+    <loc>https://jakarta.ee/news/community-news/2018/04/24/the-future-of-cloud-native-open-source-java-with-jakarta-ee/</loc>
     <lastmod>2018-04-24T05:03:58-04:00</lastmod>
   </url>
   
@@ -325,7 +335,6 @@
   
   <url>
     <loc>https://jakarta.ee/news/</loc>
-    <lastmod>2019-01-30T11:15:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

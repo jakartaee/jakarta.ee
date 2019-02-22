@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Announcements on Jakarta EE: The New Home of Cloud Native Java</title>
+    <link>https://jakarta.ee/news/announcements/</link>
+    <description>Recent content in Announcements on Jakarta EE: The New Home of Cloud Native Java</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>webdev@eclipse-foundation.org (Christopher Guindon)</managingEditor>
+    <webMaster>webdev@eclipse-foundation.org (Christopher Guindon)</webMaster>
+    <lastBuildDate>Thu, 21 Feb 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://jakarta.ee/news/announcements/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Jakartablogs.ee is Live! PS: Bloggers, We Need You!</title>
+      <link>https://jakarta.ee/news/announcements/2019/01/29/jakartablogs.ee-is-live-ps-bloggers-we-need-you/</link>
+      <pubDate>Tue, 29 Jan 2019 05:10:00 +0000</pubDate>
+      <author>webdev@eclipse-foundation.org (Christopher Guindon)</author>
+      <guid>https://jakarta.ee/news/announcements/2019/01/29/jakartablogs.ee-is-live-ps-bloggers-we-need-you/</guid>
+      <description>Just in time for the Eclipse 5.1 GA release January 29, 2019 , we are happy to announce that our new Jakartablogs.ee blog aggregator is live!</description>
+    </item>
+    
+    <item>
+      <title>Java EE 8 Compatible Eclipse GlassFish 5.1 Released</title>
+      <link>https://jakarta.ee/news/announcements/2019/01/29/java-ee-8-compatible-eclipse-glassfish-5.1-released/</link>
+      <pubDate>Tue, 29 Jan 2019 05:10:00 +0000</pubDate>
+      <author>webdev@eclipse-foundation.org (Christopher Guindon)</author>
+      <guid>https://jakarta.ee/news/announcements/2019/01/29/java-ee-8-compatible-eclipse-glassfish-5.1-released/</guid>
+      <description>Eclipse Foundation completes migration of 13.5 million lines of code in 95,000 files with full testing of open source TCK and proprietary Oracle TCK</description>
+    </item>
+    
+    <item>
+      <title>Eclipse releases GlassFish 5.1 for Java EE 8</title>
+      <link>https://jakarta.ee/news/announcements/2019/01/28/eclipse-releases-glassfish-5.1-for-java-ee-8/</link>
+      <pubDate>Mon, 28 Jan 2019 05:10:00 +0000</pubDate>
+      <author>webdev@eclipse-foundation.org (Christopher Guindon)</author>
+      <guid>https://jakarta.ee/news/announcements/2019/01/28/eclipse-releases-glassfish-5.1-for-java-ee-8/</guid>
+      <description>Eclipse Foundation reaches a key Jakarta EE milestone with the release of its own GlassFish application server</description>
+    </item>
+    
+    <item>
+      <title>Announcing Eclipse GlassFish 5.1.0-RC1 release</title>
+      <link>https://jakarta.ee/news/announcements/2018/10/25/announcing-eclipse-glassfish-5.1.0-rc1-release/</link>
+      <pubDate>Thu, 25 Oct 2018 05:10:00 +0000</pubDate>
+      <author>webdev@eclipse-foundation.org (Christopher Guindon)</author>
+      <guid>https://jakarta.ee/news/announcements/2018/10/25/announcing-eclipse-glassfish-5.1.0-rc1-release/</guid>
+      <description>I am very excited to say that Eclipse GlassFish 5.1-RC1 is now released!</description>
+    </item>
+    
+    <item>
+      <title>Introducing the Jakarta EE Specification Process</title>
+      <link>https://jakarta.ee/news/announcements/2018/10/16/introducing-the-jakarta-ee-specification-process/</link>
+      <pubDate>Tue, 16 Oct 2018 05:10:00 +0000</pubDate>
+      <author>webdev@eclipse-foundation.org (Christopher Guindon)</author>
+      <guid>https://jakarta.ee/news/announcements/2018/10/16/introducing-the-jakarta-ee-specification-process/</guid>
+      <description>I am very happy to announce that we are publishing a draft of the Eclipse Foundation Specification Process for community review and feedback</description>
+    </item>
+    
+    <item>
+      <title>Jakarta EE Status – September 2018 Update</title>
+      <link>https://jakarta.ee/news/announcements/2018/09/27/jakarta-ee-status--september-2018-update/</link>
+      <pubDate>Thu, 27 Sep 2018 05:10:00 +0000</pubDate>
+      <author>webdev@eclipse-foundation.org (Christopher Guindon)</author>
+      <guid>https://jakarta.ee/news/announcements/2018/09/27/jakarta-ee-status--september-2018-update/</guid>
+      <description>Migrating Java EE to the Eclipse Foundation and Jakarta EE is a process not an event. In the past couple of weeks however, several very important milestones have occurred that deserve to be recognized.</description>
+    </item>
+    
+    <item>
+      <title>Java EE TCK is now open sourced at Eclipse Foundation</title>
+      <link>https://jakarta.ee/news/announcements/2018/09/27/java-ee-tck-is-now-open-sourced-at-eclipse-foundation/</link>
+      <pubDate>Thu, 27 Sep 2018 05:10:00 +0000</pubDate>
+      <author>webdev@eclipse-foundation.org (Christopher Guindon)</author>
+      <guid>https://jakarta.ee/news/announcements/2018/09/27/java-ee-tck-is-now-open-sourced-at-eclipse-foundation/</guid>
+      <description>&lt;p&gt;A major milestone was achieved this September 2018! The Jakarta EE TCKs are here and finally open sourced! It was long wished for and waited on by many. But what exactly does that mean?&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Welcoming GlassFish to the Eclipse Foundation</title>
+      <link>https://jakarta.ee/news/announcements/2018/09/18/welcoming-glassfish-to-the-eclipse-foundation/</link>
+      <pubDate>Tue, 18 Sep 2018 08:45:00 +0000</pubDate>
+      <author>webdev@eclipse-foundation.org (Christopher Guindon)</author>
+      <guid>https://jakarta.ee/news/announcements/2018/09/18/welcoming-glassfish-to-the-eclipse-foundation/</guid>
+      <description>A major milestone was achieved yesterday! The GlassFish code from Oracle made its home in the Eclipse Foundation&amp;rsquo;s Git repositories, starting a new era of Eclipse GlassFish. This is another step in making Jakarta EE a vehicle for innovation in cloud-native application development.</description>
+    </item>
+    
+    <item>
+      <title>Eclipse Foundation Announces Jakarta EE Committee Election Results</title>
+      <link>https://jakarta.ee/news/announcements/2018/07/31/eclipse-foundation-announces-jakarta-ee-committee-election-results/</link>
+      <pubDate>Tue, 31 Jul 2018 05:10:00 +0000</pubDate>
+      <author>webdev@eclipse-foundation.org (Christopher Guindon)</author>
+      <guid>https://jakarta.ee/news/announcements/2018/07/31/eclipse-foundation-announces-jakarta-ee-committee-election-results/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Ottawa, Canada - July 31, 2018&lt;/strong&gt; - Today we are pleased to announce the results of the Participant and Committer Member elections for representatives to the Jakarta EE Working Group Steering Committee, Specification Committee, and Marketing &amp;amp; Brand Committee. These committees provide governance for the evolution and adoption of Jakarta EE, the community-led platform created from the contribution of Java EE technologies and hosted by the Eclipse Foundation.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Jakarta EE Marketing and Social Media Update</title>
+      <link>https://jakarta.ee/news/announcements/2018/06/27/jakarta-ee-marketing-and-social-media-update/</link>
+      <pubDate>Wed, 27 Jun 2018 11:30:24 +0000</pubDate>
+      <author>webdev@eclipse-foundation.org (Christopher Guindon)</author>
+      <guid>https://jakarta.ee/news/announcements/2018/06/27/jakarta-ee-marketing-and-social-media-update/</guid>
+      <description>An update on our marketing efforts to promote awareness, contributions, adoption, and support of Jakarta EE.</description>
+    </item>
+    
+    <item>
+      <title>Jakarta EE Newsletter - A First Look</title>
+      <link>https://jakarta.ee/news/announcements/2018/06/04/jakarta-ee-newsletter---a-first-look/</link>
+      <pubDate>Mon, 04 Jun 2018 10:00:58 -0400</pubDate>
+      <author>webdev@eclipse-foundation.org (Christopher Guindon)</author>
+      <guid>https://jakarta.ee/news/announcements/2018/06/04/jakarta-ee-newsletter---a-first-look/</guid>
+      <description>The first issue of the Jakarta EE quarterly newsletter has been published. Read it now!</description>
+    </item>
+    
+    <item>
+      <title>Jakarta EE Progress to Date</title>
+      <link>https://jakarta.ee/news/announcements/2018/05/28/jakarta-ee-progress-to-date/</link>
+      <pubDate>Mon, 28 May 2018 08:10:24 +0000</pubDate>
+      <author>webdev@eclipse-foundation.org (Christopher Guindon)</author>
+      <guid>https://jakarta.ee/news/announcements/2018/05/28/jakarta-ee-progress-to-date/</guid>
+      <description>Last September Oracle announced, with the support of IBM and Red Hat, that Java EE was going to move to the Eclipse Foundation.</description>
+    </item>
+    
+    <item>
+      <title>Jakarta EE at EclipseCon France 2018</title>
+      <link>https://jakarta.ee/news/announcements/2018/05/24/jakarta-ee-at-eclipsecon-france-2018/</link>
+      <pubDate>Thu, 24 May 2018 08:15:00 +0000</pubDate>
+      <author>webdev@eclipse-foundation.org (Christopher Guindon)</author>
+      <guid>https://jakarta.ee/news/announcements/2018/05/24/jakarta-ee-at-eclipsecon-france-2018/</guid>
+      <description>Meet the community at the Unconference and take in the talks on Jakarta EE, MicroServices, Microprofile and EE4J, June 11-13 in Toulouse.</description>
+    </item>
+    
+    <item>
+      <title>Eclipse Foundation Unveils New Cloud Native Java Future with Jakarta EE</title>
+      <link>https://jakarta.ee/news/announcements/2018/04/24/eclipse-foundation-unveils-new-cloud-native-java-future-with-jakarta-ee/</link>
+      <pubDate>Tue, 24 Apr 2018 05:03:58 -0400</pubDate>
+      <author>webdev@eclipse-foundation.org (Christopher Guindon)</author>
+      <guid>https://jakarta.ee/news/announcements/2018/04/24/eclipse-foundation-unveils-new-cloud-native-java-future-with-jakarta-ee/</guid>
+      <description>&lt;p&gt;Future evolution of Java EE, Jakarta EE stack moves to the Eclipse Foundation.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Jakarta EE Community Survey of 1,800&#43; Java Developers Reveals “Cloud Native” Top Requirement in Platform’s Evolution</title>
+      <link>https://jakarta.ee/news/announcements/2018/04/24/jakarta-ee-community-survey/</link>
+      <pubDate>Tue, 24 Apr 2018 05:03:58 -0400</pubDate>
+      <author>webdev@eclipse-foundation.org (Christopher Guindon)</author>
+      <guid>https://jakarta.ee/news/announcements/2018/04/24/jakarta-ee-community-survey/</guid>
+      <description>&lt;p&gt;The Eclipse Foundation conducts largest survey to date of Java community on key priorities for future releases of Jakarta EE.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
