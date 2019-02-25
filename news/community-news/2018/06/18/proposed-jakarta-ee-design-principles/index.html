@@ -1,36 +1,36 @@
 
 <!DOCTYPE html>
 <html lang="en">
-  
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
   
-  <title>Proposed Jakarta EE Design Principles | The Eclipse Foundation</title>
-  <meta property="og:title" content="Proposed Jakarta EE Design Principles | The Eclipse Foundation" />
-  <meta name="twitter:title" content="Proposed Jakarta EE Design Principles | The Eclipse Foundation" />
-  <meta name="description" content="Let&rsquo;s take a look at some suggested design principles that some feel Jakarta EE should follow. What suggestions do you have?">
-  <meta property="og:description" content="Let&rsquo;s take a look at some suggested design principles that some feel Jakarta EE should follow. What suggestions do you have?">
-  <meta name="twitter:description" content="Let&rsquo;s take a look at some suggested design principles that some feel Jakarta EE should follow. What suggestions do you have?">
-  <meta name="author" content="Christopher Guindon"/>
-  <link href='https://jakarta.ee/images/jakarta/favicon.ico' rel='icon' type='image/x-icon'/>
-  <meta property="og:image" content="https://jakarta.ee/images/jakarta/jakarta_ee_400x400.png" />
-  <meta name="twitter:image" content="https://jakarta.ee/images/jakarta/jakarta_ee_400x400.png" />
-  <meta name="twitter:card" content="summary" />
-  <meta name="twitter:site" content="@EclipseFdn" />
-  <meta name="twitter:creator" content="@EclipseFdn" />
-  <meta property="og:url" content="https://jakarta.ee/news/community-news/2018/06/18/proposed-jakarta-ee-design-principles/" />
-  <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="Jakarta EE: The New Home of Cloud Native Java" />
-  <meta name="keywords" content="Jakarta EE software, Java EE, cloud, microservices, enterprise, open source, innovation">
-  
-  
-  <meta name="generator" content="Hugo 0.40.1" />
-  <link rel="canonical" href="https://jakarta.ee/news/community-news/2018/06/18/proposed-jakarta-ee-design-principles/" />
-  <link rel="alternate" href="https://jakarta.ee/index.xml" type="application/rss+xml" title="Jakarta EE: The New Home of Cloud Native Java">
-  <link rel="stylesheet" href="https://jakarta.ee/css/styles.css">
-  <link href="//fonts.googleapis.com/css?family=Libre+Franklin:400,700,300,600,100" rel="stylesheet" type="text/css"/>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Proposed Jakarta EE Design Principles | The Eclipse Foundation</title>
+<meta property="og:title" content="Proposed Jakarta EE Design Principles | The Eclipse Foundation" />
+<meta name="twitter:title" content="Proposed Jakarta EE Design Principles | The Eclipse Foundation" />
+<meta name="description" content="Let&rsquo;s take a look at some suggested design principles that some feel Jakarta EE should follow. What suggestions do you have?">
+<meta property="og:description" content="Let&rsquo;s take a look at some suggested design principles that some feel Jakarta EE should follow. What suggestions do you have?">
+<meta name="twitter:description" content="Let&rsquo;s take a look at some suggested design principles that some feel Jakarta EE should follow. What suggestions do you have?">
+<meta name="author" content="Christopher Guindon"/>
+<link href='https://jakarta.ee/images/jakarta/favicon.ico' rel='icon' type='image/x-icon'/>
+<meta property="og:image" content="https://jakarta.ee/images/jakarta/jakarta_ee_400x400.png" />
+<meta name="twitter:image" content="https://jakarta.ee/images/jakarta/jakarta_ee_400x400.png" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@EclipseFdn" />
+<meta name="twitter:creator" content="@EclipseFdn" />
+<meta property="og:url" content="https://jakarta.ee/news/community-news/2018/06/18/proposed-jakarta-ee-design-principles/" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Jakarta EE: The New Home of Cloud Native Java" />
+<meta name="keywords" content="Jakarta EE software, Java EE, cloud, microservices, enterprise, open source, innovation">
+
+
+<meta name="generator" content="Hugo 0.40.1" />
+<link rel="canonical" href="https://jakarta.ee/news/community-news/2018/06/18/proposed-jakarta-ee-design-principles/" />
+<link rel="alternate" href="https://jakarta.ee/index.xml" type="application/rss+xml" title="Jakarta EE: The New Home of Cloud Native Java">
+
+<link rel="stylesheet" href="https://jakarta.ee/css/styles.css">
   
   <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
   new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -38,40 +38,46 @@
   'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
   })(window,document,'script','dataLayer','GTM-5WLCZXC');</script>
   
+  
+<link href="//fonts.googleapis.com/css?family=Libre+Franklin:400,700,300,600,100" rel="stylesheet" type="text/css"/>
+
+  
 </head>
-  <body>
-    
+<body>
+  
 <a class="sr-only" href="#content">Skip to main content</a>
 <header class="header-wrapper header-default-bg-img" id="header-wrapper">
-  <div class="clearfix toolbar-container-wrapper">
-    <div class="container">
-      <div class="text-right toolbar-row row hidden-print">
-        <div class="col-md-24 row-toolbar-col">
-          <ul class="list-inline">
-            <li><a href="https://accounts.eclipse.org/user/edit" class="" data-tab-destination="tab-profile"><i class="fa fa-edit fa-fw"></i> Edit my account</a></li>
-            <li><a class="toolbar-link toolbar-manage-cookies dropdown-toggle"><i class="fa fa-wrench"></i> Manage Cookies</a></li>
-          </ul>
-        </div>
+  
+
+<div class="clearfix toolbar-container-wrapper">
+  <div class="container">
+    <div class="text-right toolbar-row row hidden-print">
+      <div class="col-md-24 row-toolbar-col">
+        <ul class="list-inline">
+          <li><a href="https://accounts.eclipse.org/user/edit" class="" data-tab-destination="tab-profile"><i class="fa fa-edit fa-fw"></i> Edit my account</a></li>
+          <li><a class="toolbar-link toolbar-manage-cookies dropdown-toggle"><i class="fa fa-wrench"></i> Manage Cookies</a></li>
+        </ul>
       </div>
     </div>
   </div>
-  <div class="container">
-    <div class="row" id="header-row">
-      <div class="col-sm-5 col-md-4" id="header-left">
-        <div class="wrapper-logo-default">
-            <a title="Jakarta EE: The New Home of Cloud Native Java" href="https://jakarta.ee/">
-              <img width="140" class="logo-eclipse-default img-responsive hidden-xs" src="https://jakarta.ee/images/jakarta/jakarta-ee-logo.svg" alt="Jakarta EE: The New Home of Cloud Native Java" />
-            </a>
-          
-        </div>
+</div>
+<div class="container">
+  <div class="row" id="header-row">
+    <div class="col-sm-5 col-md-4" id="header-left">
+      <div class="wrapper-logo-default">
+          <a title="Jakarta EE: The New Home of Cloud Native Java" href="https://jakarta.ee/">
+            <img width="140" class="logo-eclipse-default img-responsive hidden-xs" src="https://jakarta.ee/images/jakarta/jakarta-ee-logo.svg" alt="Jakarta EE: The New Home of Cloud Native Java" />
+          </a>
+        
       </div>
-      
-      <div class="col-sm-19 col-md-20 reset margin-top-10" id="main-menu-wrapper">
-      
-        <div class="navbar yamm" id="main-menu">
-          <div class="navbar-collapse collapse reset float-right" id="navbar-main-menu">
-            <ul class="nav navbar-nav">
-              
+    </div>
+    
+    <div class="col-sm-19 col-md-20 reset margin-top-10" id="main-menu-wrapper">
+    
+      <div class="navbar yamm" id="main-menu">
+        <div class="navbar-collapse collapse reset float-right" id="navbar-main-menu">
+          <ul class="nav navbar-nav">
+            
 
 
 
@@ -144,6 +150,7 @@
               <p><strong>Eclipse IDE</strong></p>
             </li>
             <li><a href="https://www.eclipse.org/downloads">Download</a></li>
+            <li><a href="https://www.eclipse.org/eclipseide/">Learn more</a></li>
             <li><a href="https://help.eclipse.org">Documentation</a></li>
             <li><a href="https://www.eclipse.org/getting_started">Getting Started / Support</a></li>
             <li><a href="https://www.eclipse.org/contribute/">How to Contribute</a></li>
@@ -155,6 +162,8 @@
     </li>
   </ul>
 </li>
+
+
 
 
 <li class="dropdown eclipse-more hidden-xs">
@@ -192,34 +201,33 @@
   </ul>
 </li>
 
-
-            </ul>
-          </div>
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-main-menu">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            </button>
-            <div class="wrapper-logo-mobile">
-              
-                <a class="navbar-brand visible-xs" title="Jakarta EE: The New Home of Cloud Native Java" href="https://jakarta.ee/">
-                  <img width="140" class="logo-eclipse-default-mobile img-responsive" src="https://jakarta.ee/images/jakarta/jakarta-ee-logo.svg" alt="Jakarta EE: The New Home of Cloud Native Java" />
-                </a>
-              
-            </div>
+          </ul>
+        </div>
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-main-menu">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          </button>
+          <div class="wrapper-logo-mobile">
+            
+              <a class="navbar-brand visible-xs" title="Jakarta EE: The New Home of Cloud Native Java" href="https://jakarta.ee/">
+                <img width="140" class="logo-eclipse-default-mobile img-responsive" src="https://jakarta.ee/images/jakarta/jakarta-ee-logo.svg" alt="Jakarta EE: The New Home of Cloud Native Java" />
+              </a>
+            
           </div>
         </div>
       </div>
     </div>
   </div>
+</div>
   
 
 </header>
 
-    
+  
 <section class="default-breadcrumbs hidden-print" id="breadcrumb">
   <div class="container">
   <h3 class="sr-only">Breadcrumbs</h3>
@@ -259,7 +267,7 @@
   </div>
 </section>
 
-    
+  
 <main>
   <div class="container">
     
@@ -330,10 +338,7 @@
   </div>
 </main>
 
-    
-<p id="back-to-top">
-  <a class="visible-xs" href="#top">Back to the top</a>
-</p>
+  
 
 <div class="background-secondary events padding-bottom-50 padding-top-30">
   <div class="container">
@@ -423,6 +428,10 @@
   </div>
 </div>
 
+  
+<p id="back-to-top">
+  <a class="visible-xs" href="#top">Back to the top</a>
+</p>
 <footer id="solstice-footer">
   <div class="container">
     <div class="row">
@@ -518,6 +527,7 @@
 
 </body>
 </html>
-  </body>
+  
+</body>
 </html>
 
