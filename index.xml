@@ -536,20 +536,6 @@
     </item>
     
     <item>
-      <title>Frequently Asked Questions</title>
-      <link>https://jakarta.ee/about/faq/</link>
-      <pubDate>Sat, 07 Apr 2018 16:09:45 -0400</pubDate>
-      <author>webdev@eclipse-foundation.org (Christopher Guindon)</author>
-      <guid>https://jakarta.ee/about/faq/</guid>
-      <description>Last Updated: October 19, 2018
-
-Q: What is Jakarta EE? A: Jakarta EE is the future for cloud-native, light-weight, and traditional enterprise Java applications
- Java EE technologies contributed by Oracle are being used to create the new Jakarta EE platform
- The Eclipse Foundation is the home of Cloud Native Java open innovation
- The Jakarta EE Working Group is focused on modernizing Java EE technologies and governance processes to be more open and community-based</description>
-    </item>
-    
-    <item>
       <title>Jakarta EE Trademark Guidelines</title>
       <link>https://jakarta.ee/legal/trademark_guidelines/</link>
       <pubDate>Thu, 05 Apr 2018 16:10:38 -0400</pubDate>
@@ -569,6 +555,17 @@ This document supplements the Eclipse Foundation Guidelines for Eclipse Logos &a
       <description>Mailing Lists Jakarta EE Community Mailing List jakarta.ee-community is the mailing list for Jakarta EE community discussions. Subscribe to this list for all things Jakarta EE
  Subscribe  Jakarta EE Working Group Mailing List jakarta.ee-wg is the mailing list for the Jakarta EE Working Group. Subscribe to this list to share general information regarding Jakarta EE
 Subscribe   Newsletter  Sign up to our Newsletter      Updates  Receive updates from the Eclipse Foundation on Jakarta EE and other Eclipse projects, events and community announcements</description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>https://jakarta.ee/about/</link>
+      <pubDate>Thu, 05 Apr 2018 16:09:45 -0400</pubDate>
+      <author>webdev@eclipse-foundation.org (Christopher Guindon)</author>
+      <guid>https://jakarta.ee/about/</guid>
+      <description>Direction The Future of Cloud Native Java For many years, Java EE has been a major platform for mission-critical enterprise applications. In order to accelerate business application development for a cloud-native world, leading software vendors collaborated to move Java EE technologies to the Eclipse Foundation where they will evolve under the Jakarta EE brand.
+Guiding Principles The Jakarta EE Working Group seeks to:
+ deliver more frequent releases lower barriers to participation develop the community manage the Jakarta EE brand on behalf the community  Key to this approach is a community-based specification process, with everyone encouraged to participate in an open process that more accurately reflect the needs of the wider community.</description>
     </item>
     
     <item>
