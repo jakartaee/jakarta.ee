@@ -4,7 +4,6 @@ headline: "Jakarta EE Working Group"
 date: 2018-04-05T16:09:45-04:00
 description: "Explore and learn about us and the future direction of Jakarta EE."
 hide_page_title: "true"
-layout: "single"
 ---
 
 ## Direction
@@ -26,5 +25,3 @@ Key to this approach is a community-based specification process, with everyone e
 We expect the Jakarta EE platform to evolve rapidly, incorporating Java innovations from open source communities like Eclipse MicroProfile into new versions of the platform to help developers create portable cloud-native applications. 
 
 Jakarta EE represents the best way to drive cloud-native, mission critical applications and build upon the decades of experience of real world deployments and developers.
-
-<p><a class="btn btn-primary btn-lg" href="https://eclipse.org/org/workinggroups?utm_source=jakarta_ee_website&utm_medium=about%20page&utm_campaign=jakarta_ee_launch">Explore Eclipse Working Groups</a></p>
