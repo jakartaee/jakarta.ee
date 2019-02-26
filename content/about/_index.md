@@ -4,6 +4,7 @@ headline: "Jakarta EE Working Group"
 date: 2018-04-05T16:09:45-04:00
 description: "Explore and learn about us and the future direction of Jakarta EE."
 hide_page_title: "true"
+layout: "single"
 ---
 
 ## Direction
