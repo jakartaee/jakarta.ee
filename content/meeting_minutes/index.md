@@ -43,6 +43,8 @@ description: "Meeting Minutes"
 
 <h2>Jakarta EE Specification Committee</h2>
 <ul>
+  <li><a href="specification_committee/minutes-specification-february-6-2019.pdf">February 6, 2019 (pdf)</a></li>
+  <li><a href="specification_committee/minutes-specification-january-30-2019.pdf">January 30, 2019 (pdf)</a></li>
   <li><a href="specification_committee/minutes-specification-january-23-2019.pdf">January 23, 2019 (pdf)</a></li>
   <li><a href="specification_committee/minutes-specification-january-16-2019.pdf">January 16, 2019 (pdf)</a></li>
   <li><a href="specification_committee/minutes-specification-january-9-2019.pdf">January 9, 2019 (pdf)</a></li>
