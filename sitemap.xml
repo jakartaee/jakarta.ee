@@ -3,6 +3,16 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://jakarta.ee/membership/members/</loc>
+    <lastmod>2019-02-28T16:09:45-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jakarta.ee/resources/</loc>
+    <lastmod>2019-02-27T16:10:38-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://jakarta.ee/news/announcements/</loc>
     <lastmod>2019-02-21T00:00:00+00:00</lastmod>
   </url>
@@ -318,7 +328,7 @@
   </url>
   
   <url>
-    <loc>https://jakarta.ee/members/</loc>
+    <loc>https://jakarta.ee/membership/</loc>
     <lastmod>2018-04-05T16:09:45-04:00</lastmod>
   </url>
   
