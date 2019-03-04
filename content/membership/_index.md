@@ -55,9 +55,9 @@ layout: "single"
 <hr>
   <h2 id="contact">Contact Us About Membership</h2>
 
-To learn more about the benefits of your organization joining the Jakarta EE Working Group, and the different levels of membership available, please complete the form below. We will get back to you soon. We look forward to speaking with you!
+To learn more about the benefits of your organization joining the Jakarta EE Working Group, and the different levels of membership available, please click below to complete a contact form and we will be in touch soon.
 
-<p class="margin-top-20"><a class="btn btn-lg btn-primary" href="https://accounts.eclipse.org/contact/membership/working-group/jakarta">Join Jakarta EE</a></p>
+<p class="margin-top-20"><a class="btn btn-lg btn-primary" href="https://accounts.eclipse.org/contact/membership/working-group/jakarta">Fill out Contact Form</a></p>
 
 
 
