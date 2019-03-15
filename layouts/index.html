@@ -168,7 +168,7 @@
           {{ range first 5 (where (index .Site.Taxonomies.categories "community").Pages "Section" "news") }}
           <ul class="news-list-media list-unstyled">
             <li>
-              <a href="{{- with .Params.link | default .RelPermalink }} {{.}} {{- end }}" class="media media-link match-height-item-by-row">
+              <a href="{{- with .Params.link | default .RelPermalink }} {{.}} {{- end }}" class="media media-link match-height-item">
                 <p class="media-date">{{ .Date.Format "Monday, Jan 2, 2006" }}</p>
                 <h4 class="media-heading">{{ .Title }}</h4>
                 <p class="media-text">{{ .Summary }}</p>
