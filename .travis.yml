@@ -1,20 +1,16 @@
 sudo: true
 dist: trusty
-
 install:
-  - sudo apt-get --yes install autoconf libtool nasm
-  - npm install
-  - wget https://github.com/gohugoio/hugo/releases/download/v0.40.1/hugo_0.40.1_Linux-64bit.deb
-  - sudo dpkg -i hugo*.deb
-  
+- sudo apt-get --yes install autoconf libtool nasm
+- npm install
+- wget https://github.com/gohugoio/hugo/releases/download/v0.40.1/hugo_0.40.1_Linux-64bit.deb
+- sudo dpkg -i hugo*.deb
 script:
-  - npm run production
-  - hugo
-
+- npm run production
+- hugo
 cache:
   directories:
-    - "node_modules"
-
+  - node_modules
 deploy:
   local-dir: public
   repo: jakartaee/jakartaee.github.io
@@ -22,9 +18,12 @@ deploy:
   provider: pages
   keep-history: true
   skip-cleanup: true
-  github_token: $GITHUB_TOKEN
+  github_token: "$GITHUB_TOKEN"
   email: chris.guindon@eclipse-foundation.org
   name: Christopher Guindon
   fqdn: jakarta.ee
   on:
     branch: src
+env:
+  global:
+    secure: aZFO/H/1DegBmDPRi7nFBDNLwiEh2OOV8CXmsxuJRM4SINQ9j3piV2JG3ZNrH2LXr/SMFEFZQMlNJWajm/H90fzC5um+/SX7BDu/03BwGL0g84QRwNLrSCu5vwvT9ipqx/8XXMJ0SWe/qkCQ18/yAshUOYdyTntMHLhX9chRMLfQ0tL5H7NEgLOlC4VsQgawQ36KGJrfz/mt/Z8hTClB3OGNFmq7cGYzPoEI+OGUlXbWxiqcxbNkzWqQFmJBT+6bxYUkp9sZD7/A8dvVgVuF04utTme0wAUvwNr0esf+V+dhadUqfE9sxdrRwa8WxUYyc9+HxfptiKyGGokuzRn/6XcGt+/E7rK3rGLkSPXC1P0+YXyyVv8YGEL4WlBR57Y7DKplgMa2RqdD/E3FeTfCSbo2pLOxLppItJ/hyk+pVd0IYc1wlC9dszd+foeuI715gbQm2asuk9Vc+uONSlgCPMu4wLfjTLYqeSxkBQ3AGspOZpcoEG8qrBvhxLkJThFJpIWriE5JeSZUQzWMQ2B4gMmnoYlAxhZXgMu5h9AIDNFLyDoXmi2l0AF5vUTFXmcvBlwy/iFZLKloPMf7r0Wk1Q4AJG30A8taekdm5d9MHdA1R1u2Kk7FrN8hIDLmTGfYsYwdRmC1vFk69t0O1Fu8upyrISY9H6dEsQsi2lHdmGI=
