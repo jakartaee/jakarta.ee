@@ -3,7 +3,7 @@ dist: trusty
 install:
 - sudo apt-get --yes install autoconf libtool nasm
 - npm install
-- wget https://github.com/gohugoio/hugo/releases/download/v0.40.1/hugo_0.40.1_Linux-64bit.deb
+- wget https://github.com/gohugoio/hugo/releases/download/v0.54.0/hugo_0.54.0_Linux-64bit.deb
 - sudo dpkg -i hugo*.deb
 script:
 - npm run production
