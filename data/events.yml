@@ -1,0 +1,64 @@
+title: Events
+tagline: Come meet the Jakarta EE Community at these upcoming events!
+
+#buttons
+more_button_text: View More Events <i class="fa fa-arrow-down"></i>
+submit_button_text: Submit Event
+submit_button_link: https://goo.gl/forms/xIlhGdX1qfKCyCZn1
+
+items:
+  -
+    name: OpenInfra Days UK 2019
+    location: London, UK
+    date: April 1-2, 2019
+    expire_date: 2019-04-02T23:59:00-00:00
+    button_url: https://openinfradays.co.uk/
+    button_text: Register Now
+
+  -
+    name: Java EE 8 with Microprofile Bootstrap
+    location: Munich Airport, Terminal 2
+    date: April 2, 2019
+    expire_date: 2019-04-02T23:59:00-00:00
+    button_url: http://workshops.adam-bien.com/bootstrap.htm
+    button_text: Register Now
+    
+  -
+    name: Effective Java EE 8 with MicroProfile
+    location: Munich Airport, Terminal 2
+    date: April 3, 2019
+    expire_date: 2019-04-03T23:59:00-00:00
+    button_url: http://workshops.adam-bien.com/effective-javaee.htm
+    button_text: Register Now
+    
+  -
+    name: CD, Testing and Quality
+    location: Munich Airport, Terminal 2
+    date: April 4, 2019
+    expire_date: 2019-04-04T23:59:00-00:00
+    button_url: http://workshops.adam-bien.com/about-testing.htm
+    button_text: Register Now
+    
+  -
+    name: Devoxx FR
+    location: Paris, France
+    date: April 17-19, 2019
+    expire_date: 2019-04-19T23:59:00-00:00
+    button_url: https://www.devoxx.fr/
+    button_text: Register Now
+    
+  -
+    name: JAX 2019
+    location: Mainz, Germany
+    date: May 6-10, 2019
+    expire_date: 2019-05-10T23:59:00-00:00
+    button_url: https://jax.de/
+    button_text: Register Now
+    
+  -
+    name: KubeCon Europe 2019
+    location: Barcelona, Spain
+    date: May 20-23, 2019
+    expire_date: 2019-04-23T23:59:00-00:00
+    button_url: https://events.linuxfoundation.org/events/kubecon-cloudnativecon-europe-2019/
+    button_text: Register Now
