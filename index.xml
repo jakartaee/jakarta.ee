@@ -328,15 +328,6 @@
     </item>
     
     <item>
-      <title>Jakarta EE Working Group Committees Meeting Minutes</title>
-      <link>https://jakarta.ee/meeting_minutes/</link>
-      <pubDate>Fri, 22 Jun 2018 13:30:00 +0000</pubDate>
-      <author>webdev@eclipse-foundation.org (Christopher Guindon)</author>
-      <guid>https://jakarta.ee/meeting_minutes/</guid>
-      <description>Jakarta EE Steering Committee  January 8, 2019 (pdf) December 18, 2018 (pdf) December 11, 2018 (pdf) November 27, 2018 (pdf) November 6, 2018 (pdf) October 30, 2018 (pdf) October 9, 2018 (pdf) October 2, 2018 (pdf) September 25, 2018 (pdf) September 18, 2018 (pdf) September 11, 2018 (pdf) September 4, 2018 (pdf) August 28, 2018 (pdf) August 21, 2018 (pdf) August 7, 2018 (pdf) July 31, 2018 (pdf) July 17, 2018 (pdf) June 26, 2018 (pdf) June 19, 2018 (pdf) June 5, 2018 (pdf) May 29, 2018 (pdf) May 22, 2018 (pdf) May 15, 2018 (pdf) May 8, 2018 (pdf) May 1, 2018 (pdf) April 24, 2018 (pdf) April 17, 2018 (pdf) April 10, 2018 (pdf)</description>
-    </item>
-    
-    <item>
       <title>Testing JavaEE backward and forward compatibility with Servlet, JAX-RS, Batch and Microprofile</title>
       <link>https://jakarta.ee/news/community-news/2018/06/22/testing-javaee-backward-and-forward-compatibility-with-servlet-jax-rs-batch-and-microprofile/</link>
       <pubDate>Fri, 22 Jun 2018 10:30:00 +0000</pubDate>
