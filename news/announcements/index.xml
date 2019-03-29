@@ -77,10 +77,10 @@
     
     <item>
       <title>Jakarta EE Status – September 2018 Update</title>
-      <link>https://jakarta.ee/news/announcements/2018/09/27/jakarta-ee-status--september-2018-update/</link>
+      <link>https://jakarta.ee/news/announcements/2018/09/27/jakarta-ee-status-september-2018-update/</link>
       <pubDate>Thu, 27 Sep 2018 05:10:00 +0000</pubDate>
       <author>webdev@eclipse-foundation.org (Christopher Guindon)</author>
-      <guid>https://jakarta.ee/news/announcements/2018/09/27/jakarta-ee-status--september-2018-update/</guid>
+      <guid>https://jakarta.ee/news/announcements/2018/09/27/jakarta-ee-status-september-2018-update/</guid>
       <description>Migrating Java EE to the Eclipse Foundation and Jakarta EE is a process not an event. In the past couple of weeks however, several very important milestones have occurred that deserve to be recognized.</description>
     </item>
     
@@ -90,9 +90,7 @@
       <pubDate>Thu, 27 Sep 2018 05:10:00 +0000</pubDate>
       <author>webdev@eclipse-foundation.org (Christopher Guindon)</author>
       <guid>https://jakarta.ee/news/announcements/2018/09/27/java-ee-tck-is-now-open-sourced-at-eclipse-foundation/</guid>
-      <description>&lt;p&gt;A major milestone was achieved this September 2018! The Jakarta EE TCKs are here and finally open sourced! It was long wished for and waited on by many. But what exactly does that mean?&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;A major milestone was achieved this September 2018! The Jakarta EE TCKs are here and finally open sourced! It was long wished for and waited on by many. But what exactly does that mean?&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -110,9 +108,7 @@
       <pubDate>Tue, 31 Jul 2018 05:10:00 +0000</pubDate>
       <author>webdev@eclipse-foundation.org (Christopher Guindon)</author>
       <guid>https://jakarta.ee/news/announcements/2018/07/31/eclipse-foundation-announces-jakarta-ee-committee-election-results/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Ottawa, Canada - July 31, 2018&lt;/strong&gt; - Today we are pleased to announce the results of the Participant and Committer Member elections for representatives to the Jakarta EE Working Group Steering Committee, Specification Committee, and Marketing &amp;amp; Brand Committee. These committees provide governance for the evolution and adoption of Jakarta EE, the community-led platform created from the contribution of Java EE technologies and hosted by the Eclipse Foundation.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;strong&gt;Ottawa, Canada - July 31, 2018&lt;/strong&gt; - Today we are pleased to announce the results of the Participant and Committer Member elections for representatives to the Jakarta EE Working Group Steering Committee, Specification Committee, and Marketing &amp;amp; Brand Committee. These committees provide governance for the evolution and adoption of Jakarta EE, the community-led platform created from the contribution of Java EE technologies and hosted by the Eclipse Foundation.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -126,10 +122,10 @@
     
     <item>
       <title>Jakarta EE Newsletter - A First Look</title>
-      <link>https://jakarta.ee/news/announcements/2018/06/04/jakarta-ee-newsletter---a-first-look/</link>
+      <link>https://jakarta.ee/news/announcements/2018/06/04/jakarta-ee-newsletter-a-first-look/</link>
       <pubDate>Mon, 04 Jun 2018 10:00:58 -0400</pubDate>
       <author>webdev@eclipse-foundation.org (Christopher Guindon)</author>
-      <guid>https://jakarta.ee/news/announcements/2018/06/04/jakarta-ee-newsletter---a-first-look/</guid>
+      <guid>https://jakarta.ee/news/announcements/2018/06/04/jakarta-ee-newsletter-a-first-look/</guid>
       <description>The first issue of the Jakarta EE quarterly newsletter has been published. Read it now!</description>
     </item>
     
@@ -157,9 +153,7 @@
       <pubDate>Tue, 24 Apr 2018 05:03:58 -0400</pubDate>
       <author>webdev@eclipse-foundation.org (Christopher Guindon)</author>
       <guid>https://jakarta.ee/news/announcements/2018/04/24/eclipse-foundation-unveils-new-cloud-native-java-future-with-jakarta-ee/</guid>
-      <description>&lt;p&gt;Future evolution of Java EE, Jakarta EE stack moves to the Eclipse Foundation.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;Future evolution of Java EE, Jakarta EE stack moves to the Eclipse Foundation.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -168,9 +162,7 @@
       <pubDate>Tue, 24 Apr 2018 05:03:58 -0400</pubDate>
       <author>webdev@eclipse-foundation.org (Christopher Guindon)</author>
       <guid>https://jakarta.ee/news/announcements/2018/04/24/jakarta-ee-community-survey/</guid>
-      <description>&lt;p&gt;The Eclipse Foundation conducts largest survey to date of Java community on key priorities for future releases of Jakarta EE.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;The Eclipse Foundation conducts largest survey to date of Java community on key priorities for future releases of Jakarta EE.&lt;/p&gt;</description>
     </item>
     
   </channel>
