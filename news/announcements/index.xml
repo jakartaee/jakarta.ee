@@ -13,6 +13,24 @@
     
     
     <item>
+      <title>Renaming Java EE Specifications for Jakarta EE</title>
+      <link>https://jakarta.ee/news/announcements/2019/04/04/renaming-java-ee-specifications-for-jakarta-ee/</link>
+      <pubDate>Thu, 04 Apr 2019 05:10:00 +0000</pubDate>
+      <author>webdev@eclipse-foundation.org (Christopher Guindon)</author>
+      <guid>https://jakarta.ee/news/announcements/2019/04/04/renaming-java-ee-specifications-for-jakarta-ee/</guid>
+      <description>When we first moved the APIs and TCKs for the Java EE specifications over to the Eclipse Foundation under the Jakarta EE banner, we kept the existing names for the specifications in place, and adopted placeholder names for the open source projects that hold their artifacts.</description>
+    </item>
+    
+    <item>
+      <title>How to participate in advancing Jakarta EE Specification: Technical and Collateral material related work</title>
+      <link>https://jakarta.ee/news/announcements/2019/04/03/how-to-participate-in-advancing-jakarta-ee-specification-technical-and-collateral-material-related-work/</link>
+      <pubDate>Wed, 03 Apr 2019 05:10:00 +0000</pubDate>
+      <author>webdev@eclipse-foundation.org (Christopher Guindon)</author>
+      <guid>https://jakarta.ee/news/announcements/2019/04/03/how-to-participate-in-advancing-jakarta-ee-specification-technical-and-collateral-material-related-work/</guid>
+      <description>Technical Work: We will need a lot of help on this front as well</description>
+    </item>
+    
+    <item>
       <title>Thank You for Taking the Jakarta EE 2019 Developer Survey!</title>
       <link>https://jakarta.ee/news/announcements/2019/03/26/thank-you-for-taking-the-jakarta-ee-2019-developer-survey/</link>
       <pubDate>Tue, 26 Mar 2019 05:10:00 +0000</pubDate>
