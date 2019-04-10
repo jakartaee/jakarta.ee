@@ -13,6 +13,15 @@
     
     
     <item>
+      <title>What’s in a Name?</title>
+      <link>https://jakarta.ee/news/community-news/2019/04/07/whats-in-a-name/</link>
+      <pubDate>Sun, 07 Apr 2019 05:10:00 +0000</pubDate>
+      <author>webdev@eclipse-foundation.org (Christopher Guindon)</author>
+      <guid>https://jakarta.ee/news/community-news/2019/04/07/whats-in-a-name/</guid>
+      <description>As Wayne Beaton wrote about in his blog Renaming Java EE Specifications for Jakarta EE, the process of renaming the Java EE specifications as a part of the path towards Jakarta EE 8 has started.</description>
+    </item>
+    
+    <item>
       <title>Renaming Java EE Specifications for Jakarta EE</title>
       <link>https://jakarta.ee/news/announcements/2019/04/04/renaming-java-ee-specifications-for-jakarta-ee/</link>
       <pubDate>Thu, 04 Apr 2019 05:10:00 +0000</pubDate>
@@ -31,6 +40,33 @@
     </item>
     
     <item>
+      <title>Adopting Jakarta EE</title>
+      <link>https://jakarta.ee/news/community-news/2019/04/02/adopting-jakarta-ee/</link>
+      <pubDate>Tue, 02 Apr 2019 05:10:00 +0000</pubDate>
+      <author>webdev@eclipse-foundation.org (Christopher Guindon)</author>
+      <guid>https://jakarta.ee/news/community-news/2019/04/02/adopting-jakarta-ee/</guid>
+      <description>Jakarta EE’s official launch is here! Have you made the switch? In this article, Edwin Derks explores three of the most common reasons why some developers haven’t moved on over and explains why Jakarta EE is worth the effort.</description>
+    </item>
+    
+    <item>
+      <title>Easy integration testing for Java EE and MicroProfile applications with Testcontainers</title>
+      <link>https://jakarta.ee/news/community-news/2019/03/27/easy-integration-testing-for-java-ee-and-microprofile-applications-with-testcontainers/</link>
+      <pubDate>Wed, 27 Mar 2019 05:10:00 +0000</pubDate>
+      <author>webdev@eclipse-foundation.org (Christopher Guindon)</author>
+      <guid>https://jakarta.ee/news/community-news/2019/03/27/easy-integration-testing-for-java-ee-and-microprofile-applications-with-testcontainers/</guid>
+      <description>Have you ever toiled with creating mock objects for unit tests? How about custom setup steps for integration tests? Ever had an issue in production because of differences in behavior between testing and production environments?</description>
+    </item>
+    
+    <item>
+      <title>Jakarta EE 9: 2019 Outlook</title>
+      <link>https://jakarta.ee/news/community-news/2019/03/26/jakarta-ee-9-2019-outlook/</link>
+      <pubDate>Tue, 26 Mar 2019 05:10:00 +0000</pubDate>
+      <author>webdev@eclipse-foundation.org (Christopher Guindon)</author>
+      <guid>https://jakarta.ee/news/community-news/2019/03/26/jakarta-ee-9-2019-outlook/</guid>
+      <description>As Java EE moves into the Eclipse Foundation, it’s important to keep an eye on various milestones along the way. Today, Arjan Tijms of Payara explains how the transfer is going and explores some of the proposals for future EE releases.</description>
+    </item>
+    
+    <item>
       <title>Thank You for Taking the Jakarta EE 2019 Developer Survey!</title>
       <link>https://jakarta.ee/news/announcements/2019/03/26/thank-you-for-taking-the-jakarta-ee-2019-developer-survey/</link>
       <pubDate>Tue, 26 Mar 2019 05:10:00 +0000</pubDate>
@@ -46,6 +82,15 @@
       <author>webdev@eclipse-foundation.org (Christopher Guindon)</author>
       <guid>https://jakarta.ee/news/announcements/2019/03/18/how-to-participate-in-advancing-jakarta-ee-specification/</guid>
       <description>It is March already, and excitement for Jakarta EE is growing. The migration to Jakarta EE is almost complete! In the wake of the successful launch of the Java EE 8-compatible Eclipse GlassFish 5.1 in January, we are keeping our sights set firmly forward.</description>
+    </item>
+    
+    <item>
+      <title>Jakarta EE 8 Status</title>
+      <link>https://jakarta.ee/news/community-news/2019/03/18/jakarta-ee-8-status/</link>
+      <pubDate>Mon, 18 Mar 2019 05:10:00 +0000</pubDate>
+      <author>webdev@eclipse-foundation.org (Christopher Guindon)</author>
+      <guid>https://jakarta.ee/news/community-news/2019/03/18/jakarta-ee-8-status/</guid>
+      <description>Those of you following Jakarta EE probably know that the upcoming Jakarta EE 8 release will be functionally equivalent to Java EE 8. The reason for this is that we want to prove that the transfer from Oracle is complete and that we are able to produce the processes, specifications, test suites and a compatible implementation through the Eclipse Foundation.</description>
     </item>
     
     <item>
