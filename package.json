@@ -6,11 +6,11 @@
   "license": "EPL-2.0",
   "version": "0.0.3",
   "bugs": {
-    "url": "https://github.com/jakartaee/jakartaee.github.io/issues"
+    "url": "https://github.com/jakartaee/jakarta.ee/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/jakartaee/jakartaee.github.io.git"
+    "url": "git://github.com/jakartaee/jakarta.ee.git"
   },
   "scripts": {
     "dev": "NODE_ENV=development webpack --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
