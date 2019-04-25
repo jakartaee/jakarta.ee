@@ -653,5 +653,15 @@ This document supplements the Eclipse Foundation Guidelines for Eclipse Logos &a
 Subscribe   Newsletter  Sign up to our Newsletter      Updates  Receive updates from the Eclipse Foundation on Jakarta EE and other Eclipse projects, events and community announcements</description>
     </item>
     
+    <item>
+      <title>Compatible Implementations of Jakarta EE</title>
+      <link>https://jakarta.ee/compatibility/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>webdev@eclipse-foundation.org (Christopher Guindon)</author>
+      <guid>https://jakarta.ee/compatibility/</guid>
+      <description>This page is to list downloadable Compatible Implementations of Jakarta EE. For a Compatible Implementation to be listed on the Jakarta EE official list please follow this two-step process:
+1. Github issue Open a Github issue.   2. Email Send an email to tck@eclipse.org with a pointer to the GitHub issue described in the previous step.    </description>
+    </item>
+    
   </channel>
 </rss>

@@ -388,6 +388,10 @@
   </url>
   
   <url>
+    <loc>https://jakarta.ee/compatibility/</loc>
+  </url>
+  
+  <url>
     <loc>https://jakarta.ee/legal/</loc>
     <lastmod>2018-04-05T16:10:38-04:00</lastmod>
     <priority>0</priority>
