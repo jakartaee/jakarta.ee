@@ -7,12 +7,12 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>Community News | The Eclipse Foundation</title>
-<meta property="og:title" content="Community News | The Eclipse Foundation" />
-<meta name="twitter:title" content="Community News | The Eclipse Foundation" />
-<meta name="description" content="Jakarta Enterprise Edition (EE) is the future of cloud native Java. Jakarta EE open source software drives cloud native innovation, modernizes enterprise applications and protects investments in Java EE.">
-<meta property="og:description" content="Jakarta Enterprise Edition (EE) is the future of cloud native Java. Jakarta EE open source software drives cloud native innovation, modernizes enterprise applications and protects investments in Java EE.">
-<meta name="twitter:description" content="Jakarta Enterprise Edition (EE) is the future of cloud native Java. Jakarta EE open source software drives cloud native innovation, modernizes enterprise applications and protects investments in Java …">
+<title>Using Jakarta EE/MicroProfile to Connect to Apache Kafka: Part 1 — Hello World | The Eclipse Foundation</title>
+<meta property="og:title" content="Using Jakarta EE/MicroProfile to Connect to Apache Kafka: Part 1 — Hello World | The Eclipse Foundation" />
+<meta name="twitter:title" content="Using Jakarta EE/MicroProfile to Connect to Apache Kafka: Part 1 — … | The Eclipse Foundation" />
+<meta name="description" content="Apache Kafka is a community-distributed streaming platform that has three key capabilities: publish and subscribe to streams of records, store streams of records in a fault-tolerant durable way, and then process streams as they occur. Apache Kafka has several success cases in the Java world. This post will cover how to benefit from this powerful tool in the Jakarta EE/MicroProfile universe.">
+<meta property="og:description" content="Apache Kafka is a community-distributed streaming platform that has three key capabilities: publish and subscribe to streams of records, store streams of records in a fault-tolerant durable way, and then process streams as they occur. Apache Kafka has several success cases in the Java world. This post will cover how to benefit from this powerful tool in the Jakarta EE/MicroProfile universe.">
+<meta name="twitter:description" content="Apache Kafka is a community-distributed streaming platform that has three key capabilities: publish and subscribe to streams of records, store streams of records in a fault-tolerant durable way, and …">
 <meta name="author" content="Christopher Guindon"/>
 <link href='https://jakarta.ee/images/jakarta/favicon.ico' rel='icon' type='image/x-icon'/>
 <meta property="og:image" content="https://jakarta.ee/images/jakarta/jakarta_ee_400x400.png" />
@@ -20,15 +20,15 @@
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@EclipseFdn" />
 <meta name="twitter:creator" content="@EclipseFdn" />
-<meta property="og:url" content="https://jakarta.ee/news/community-news/" />
+<meta property="og:url" content="https://jakarta.ee/news/community-news/2019/03/07/using-jakarta-ee/microprofile-to-connect-to-apache-kafka-part-1-hello-world/" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Jakarta EE: The New Home of Cloud Native Java" />
 <meta name="keywords" content="Jakarta EE software, Java EE, cloud, microservices, enterprise, open source, innovation">
 
 
 <meta name="generator" content="Hugo 0.54.0" />
-<link rel="canonical" href="https://jakarta.ee/news/community-news/" />
-<link rel="alternate" href="https://jakarta.ee/news/community-news/index.xml" type="application/rss+xml" title="Jakarta EE: The New Home of Cloud Native Java">
+<link rel="canonical" href="https://jakarta.ee/news/community-news/2019/03/07/using-jakarta-ee/microprofile-to-connect-to-apache-kafka-part-1-hello-world/" />
+<link rel="alternate" href="https://jakarta.ee/index.xml" type="application/rss+xml" title="Jakarta EE: The New Home of Cloud Native Java">
 
 <link rel="stylesheet" href="https://jakarta.ee/css/styles.css">
   
@@ -230,6 +230,8 @@
       
       
       
+      
+      
       <li>
         <a href="https://jakarta.ee/">Home</a>
       </li>
@@ -240,8 +242,13 @@
       </li>
       
       
-      <li class="active">
+      <li>
         <a href="https://jakarta.ee/news/community-news/">Community News</a>
+      </li>
+      
+      
+      <li class="active">
+        <a href="https://jakarta.ee/news/community-news/2019/03/07/using-jakarta-ee/microprofile-to-connect-to-apache-kafka-part-1-hello-world/">Using Jakarta EE/MicroProfile to Connect to Apache Kafka: Part 1 — Hello World</a>
       </li>
       
       </ol>
@@ -254,201 +261,18 @@
 <main>
   <div class="container">
     
-      <div class="row">
-        <div class="col-md-18 padding-bottom-30">
-    
-    <h1>Community News</h1>
-     
-    
-      
-        <div class="news-list">
-          <div class="news-list-col">
-            
-              <ul class="news-list-media list-unstyled">
-                <li>
-                  <a href=" https://www.infoq.com/news/2018/05/latest-ee4j-activities" class="media media-link">
-                  <p class="media-date">Tuesday, May 15, 2018</p>
-                  <h4 class="media-heading">Latest Roundup of EE4J Activities for Jakarta EE</h4>
-                  <p class="media-text">There has been a recent flurry of EE4J activity as the Eclipse Foundation is positioning Jakarta EE as the new home for cloud native Java.</p>
-                </a>
-              </li>
-            </ul>
-          
-              <ul class="news-list-media list-unstyled">
-                <li>
-                  <a href=" https://www.infoworld.com/article/3269210/java/java-roadmap-eclipses-jakarta-ee-enterprise-java-takes-shape.html" class="media media-link">
-                  <p class="media-date">Tuesday, May 15, 2018</p>
-                  <h4 class="media-heading">Java roadmap: Eclipse’s Jakarta EE enterprise Java takes shape</h4>
-                  <p class="media-text">The Eclipse Foundation outlines the 39 projects that will make up the new cloud-native, microservices-friendly enterprise Java effort, and how GlassFish will evolve.</p>
-                </a>
-              </li>
-            </ul>
-          
-              <ul class="news-list-media list-unstyled">
-                <li>
-                  <a href=" https://www.itjungle.com/2018/04/30/goodbye-java-enterprise-edition-hello-jakarta-ee/" class="media media-link">
-                  <p class="media-date">Tuesday, May 1, 2018</p>
-                  <h4 class="media-heading">Goodbye, Java Enterprise Edition. Hello, Jakarta EE</h4>
-                  <p class="media-text">Developers who use Java Enterprise Edition will be happy to know that the development and runtime platform is gaining new life as Jakarta EE. As part of an agreement with Oracle, the tech giant will give up control over the platform to Eclipse Foundation, which has big plans to remake enterprise Java for the emerging cloud world.</p>
-                </a>
-              </li>
-            </ul>
-          
-              <ul class="news-list-media list-unstyled">
-                <li>
-                  <a href=" https://blogs.oracle.com/theaquarium/background-on-oracle%e2%80%99s-contribution-to-jakarta-ee" class="media media-link">
-                  <p class="media-date">Tuesday, Apr 24, 2018</p>
-                  <h4 class="media-heading">Background on Oracle’s contribution to Jakarta EE</h4>
-                  <p class="media-text">We are on our way to making the contribution we proposed last September a reality!</p>
-                </a>
-              </li>
-            </ul>
-          
-              <ul class="news-list-media list-unstyled">
-                <li>
-                  <a href=" https://blogs.oracle.com/theaquarium/the-road-to-jakarta-ee" class="media media-link">
-                  <p class="media-date">Tuesday, Apr 24, 2018</p>
-                  <h4 class="media-heading">The road to Jakarta EE</h4>
-                  <p class="media-text">Jakarta EE launch is a good occasion to reflect on how we got here&hellip;</p>
-                </a>
-              </li>
-            </ul>
-          
-              <ul class="news-list-media list-unstyled">
-                <li>
-                  <a href=" http://www.fujitsu.com/global/products/software/middleware/application-infrastructure/interstage/solutions/ai/apserver/20180424-jakartaee.html" class="media media-link">
-                  <p class="media-date">Tuesday, Apr 24, 2018</p>
-                  <h4 class="media-heading">The Eclipse Foundation has established Jakarta EE Working Group</h4>
-                  <p class="media-text">Fujitsu is now a Strategic Member of Eclipse Foundation and will be an active member of the Eclipse Board of Directors and Jakarta EE.</p>
-                </a>
-              </li>
-            </ul>
-          
-              <ul class="news-list-media list-unstyled">
-                <li>
-                  <a href=" https://www.lightbend.com/blog/in-support-of-jakarta-ees-quest-to-accelerate-cloud-native-java" class="media media-link">
-                  <p class="media-date">Tuesday, Apr 24, 2018</p>
-                  <h4 class="media-heading">In Support of Jakarta EE’s Quest to Accelerate Cloud Native Java</h4>
-                  <p class="media-text">The right environment is now in place to reinvigorate Java’s most popular run-time platform with an open source-first approach and a commitment to truly putting the community into Jakarta EE.</p>
-                </a>
-              </li>
-            </ul>
-          
-              <ul class="news-list-media list-unstyled">
-                <li>
-                  <a href=" https://developer.ibm.com/dwblog/2018/jakarta-ee-eclipse-foundation/" class="media media-link">
-                  <p class="media-date">Tuesday, Apr 24, 2018</p>
-                  <h4 class="media-heading">Jakarta EE - the new home for enterprise Java</h4>
-                  <p class="media-text">Official Moving Day! New Open Community Stewardship and Governance Model now with Eclipse Foundation.</p>
-                </a>
-              </li>
-            </ul>
-          
-              <ul class="news-list-media list-unstyled">
-                <li>
-                  <a href=" https://developers.redhat.com/blog/2018/04/24/jakarta-ee-is-officially-out/" class="media media-link">
-                  <p class="media-date">Tuesday, Apr 24, 2018</p>
-                  <h4 class="media-heading">Jakarta EE is Officially Out!</h4>
-                  <p class="media-text">Jakarta EE is officially out! With Jakarta EE all of us involved in working towards the release hope that we can use it as a catalyst to bring together communities under a single banner.</p>
-                </a>
-              </li>
-            </ul>
-          
-              <ul class="news-list-media list-unstyled">
-                <li>
-                  <a href=" https://blog.payara.fish/the-future-of-cloud-native-open-source-java-with-jakarta-ee" class="media media-link">
-                  <p class="media-date">Tuesday, Apr 24, 2018</p>
-                  <h4 class="media-heading">The Future of Cloud Native Open Source Java with Jakarta EE</h4>
-                  <p class="media-text">It&rsquo;s here! The Eclipse Foundation has announced the future of Java EE with the release of Jakarta EE: a cloud-native Java and an open source governance model.</p>
-                </a>
-              </li>
-            </ul>
-          
-          
-
-<ul class="pagination">
-    
-    <li class="page-item">
-        <a href="/news/community-news/" class="page-link" aria-label="First"><span aria-hidden="true">&laquo;&laquo;</span></a>
-    </li>
-    
-    <li class="page-item">
-    <a href="/news/community-news/page/4/" class="page-link" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a>
-    </li>
-    
-    
-    
-    
-    
-    
+    <div class="row">
+      <div class="col-md-18 padding-bottom-30">
         
         
-    
-    
-    <li class="page-item"><a class="page-link" href="/news/community-news/">1</a></li>
-    
-    
-    
-    
-    
-    
+        <h1>Using Jakarta EE/MicroProfile to Connect to Apache Kafka: Part 1 — Hello World</h1>
         
+        <p>Apache Kafka is a community-distributed streaming platform that has three key capabilities: publish and subscribe to streams of records, store streams of records in a fault-tolerant durable way, and then process streams as they occur. Apache Kafka has several success cases in the Java world. This post will cover how to benefit from this powerful tool in the Jakarta EE/MicroProfile universe.</p>
+  
         
-    
-    
-    <li class="page-item"><a class="page-link" href="/news/community-news/page/2/">2</a></li>
-    
-    
-    
-    
-    
-    
-        
-        
-    
-    
-    <li class="page-item"><a class="page-link" href="/news/community-news/page/3/">3</a></li>
-    
-    
-    
-    
-    
-    
-        
-        
-    
-    
-    <li class="page-item"><a class="page-link" href="/news/community-news/page/4/">4</a></li>
-    
-    
-    
-    
-    
-    
-        
-        
-    
-    
-    <li class="page-item active"><a class="page-link" href="/news/community-news/page/5/">5</a></li>
-    
-    
-    <li class="page-item disabled">
-    <a href="" class="page-link" aria-label="Next"><span aria-hidden="true">&raquo;</span></a>
-    </li>
-    
-    <li class="page-item">
-        <a href="/news/community-news/page/5/" class="page-link" aria-label="Last"><span aria-hidden="true">&raquo;&raquo;</span></a>
-    </li>
-    
-</ul>
-
-        </div>
       </div>
-    
-     
-      </div>
-        <div class="col-md-6  padding-bottom-30">
-          
+      <div class="col-md-6  padding-bottom-30">
+        
 <aside id="main-sidebar">
   <ul id="leftnav" class="ul-left-nav fa-ul hidden-print">
     <li class="separator">
@@ -494,10 +318,10 @@
   </ul>
 </aside>
 
-        </div>
       </div>
-    
     </div>
+    
+  </div>
 </main>
 
   

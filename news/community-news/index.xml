@@ -13,6 +13,42 @@
     
     
     <item>
+      <title>MicroProfile and Jakarta EE -- The Lightweight Stuff Session</title>
+      <link>https://jakarta.ee/news/community-news/2019/04/24/microprofile-and-jakarta-ee-the-lightweight-stuff-session/</link>
+      <pubDate>Wed, 24 Apr 2019 05:10:00 +0000</pubDate>
+      <author>webdev@eclipse-foundation.org (Christopher Guindon)</author>
+      <guid>https://jakarta.ee/news/community-news/2019/04/24/microprofile-and-jakarta-ee-the-lightweight-stuff-session/</guid>
+      <description>An itkonekt session for building a MicroProfile / Java EE application from scratch. Metrics, OpenAPI, FaultTolerance, Configuration, multi-server deployments, ThinWARs, and even reactive (easter) eggs included:</description>
+    </item>
+    
+    <item>
+      <title>MicroProfile JWT with Keycloak</title>
+      <link>https://jakarta.ee/news/community-news/2019/04/23/microprofile-jwt-with-keycloak/</link>
+      <pubDate>Tue, 23 Apr 2019 05:10:00 +0000</pubDate>
+      <author>webdev@eclipse-foundation.org (Christopher Guindon)</author>
+      <guid>https://jakarta.ee/news/community-news/2019/04/23/microprofile-jwt-with-keycloak/</guid>
+      <description>In this tutorial, we will learn how to secure our services using MicroProfile JWT and Keycloak. Go to https://www.keycloak.org/downloads.html and download latest Standalone server distribution.</description>
+    </item>
+    
+    <item>
+      <title>Red Hat replaces Oracle as OpenJDK 8, OpenJDK 11 steward</title>
+      <link>https://jakarta.ee/news/community-news/2019/04/18/red-hat-replaces-oracle-as-openjdk-8-openjdk-11-steward/</link>
+      <pubDate>Thu, 18 Apr 2019 05:10:00 +0000</pubDate>
+      <author>webdev@eclipse-foundation.org (Christopher Guindon)</author>
+      <guid>https://jakarta.ee/news/community-news/2019/04/18/red-hat-replaces-oracle-as-openjdk-8-openjdk-11-steward/</guid>
+      <description>Red Hat has taken control of two popular versions of the open source Java implementation, so developers can continue to build apps after Oracle&amp;rsquo;s support ends.</description>
+    </item>
+    
+    <item>
+      <title>Configuring Microservices With MicroProfile and Kubernetes</title>
+      <link>https://jakarta.ee/news/community-news/2019/04/12/configuring-microservices-with-microprofile-and-kubernetes/</link>
+      <pubDate>Fri, 12 Apr 2019 05:10:00 +0000</pubDate>
+      <author>webdev@eclipse-foundation.org (Christopher Guindon)</author>
+      <guid>https://jakarta.ee/news/community-news/2019/04/12/configuring-microservices-with-microprofile-and-kubernetes/</guid>
+      <description>Read on to take a look at the YAML, Java, and terminal commands you need to get your microservices up and running with MicroProfile and Kubernetes.</description>
+    </item>
+    
+    <item>
       <title>What’s in a Name?</title>
       <link>https://jakarta.ee/news/community-news/2019/04/07/whats-in-a-name/</link>
       <pubDate>Sun, 07 Apr 2019 05:10:00 +0000</pubDate>
@@ -55,6 +91,15 @@
       <author>webdev@eclipse-foundation.org (Christopher Guindon)</author>
       <guid>https://jakarta.ee/news/community-news/2019/03/18/jakarta-ee-8-status/</guid>
       <description>Those of you following Jakarta EE probably know that the upcoming Jakarta EE 8 release will be functionally equivalent to Java EE 8. The reason for this is that we want to prove that the transfer from Oracle is complete and that we are able to produce the processes, specifications, test suites and a compatible implementation through the Eclipse Foundation.</description>
+    </item>
+    
+    <item>
+      <title>Using Jakarta EE/MicroProfile to Connect to Apache Kafka: Part 1 — Hello World</title>
+      <link>https://jakarta.ee/news/community-news/2019/03/07/using-jakarta-ee/microprofile-to-connect-to-apache-kafka-part-1-hello-world/</link>
+      <pubDate>Thu, 07 Mar 2019 05:10:00 +0000</pubDate>
+      <author>webdev@eclipse-foundation.org (Christopher Guindon)</author>
+      <guid>https://jakarta.ee/news/community-news/2019/03/07/using-jakarta-ee/microprofile-to-connect-to-apache-kafka-part-1-hello-world/</guid>
+      <description>Apache Kafka is a community-distributed streaming platform that has three key capabilities: publish and subscribe to streams of records, store streams of records in a fault-tolerant durable way, and then process streams as they occur. Apache Kafka has several success cases in the Java world. This post will cover how to benefit from this powerful tool in the Jakarta EE/MicroProfile universe.</description>
     </item>
     
     <item>
