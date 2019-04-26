@@ -55,10 +55,91 @@ items:
     button_url: https://jax.de/
     button_text: Register Now
     
+    
+  -
+    name: Devoxx United Kingdom
+    location: London, United Kingdom
+    date: May 8-10, 2019
+    expire_date: 2019-05-10T23:59:00-00:00
+    button_url: https://www.devoxx.co.uk/
+    button_text: Register Now
+    
+  -
+    name: GeeCon Krakow
+    location: Krakow, Poland
+    date: May 15-17 2019
+    expire_date: 2019-05-17T23:59:00-00:00
+    button_url: https://2019.geecon.org/
+    button_text: Register Now
+    
+  -
+    name: J on the Beach
+    location: Malaga, Spain
+    date: May 15-17 2019
+    expire_date: 2019-05-17T23:59:00-00:00
+    button_url: https://jonthebeach.com/
+    button_text: Register Now
+    
   -
     name: KubeCon Europe 2019
     location: Barcelona, Spain
     date: May 20-23, 2019
-    expire_date: 2019-04-23T23:59:00-00:00
+    expire_date: 2019-05-23T23:59:00-00:00
     button_url: https://events.linuxfoundation.org/events/kubecon-cloudnativecon-europe-2019/
+    button_text: Register Now
+    
+  -
+    name: Oracle Code New York
+    location: New York, USA
+    date: May 21 2019
+    expire_date: 2019-05-21T23:59:00-00:00
+    button_url: https://developer.oracle.com/code/newyork-may-2019
+    button_text: Register Now
+    
+  -
+    name: Glue Conference
+    location: Broomfield, CO
+    date: May 22-23 2019
+    expire_date: 2019-05-23T23:59:00-00:00
+    button_url: http://gluecon.com/
+    button_text: Register Now
+    
+  -
+    name: JBCNConf
+    location: Barcelona, Spain
+    date: May 27-29 2019
+    expire_date: 2019-05-29T23:59:00-00:00
+    button_url: https://www.jbcnconf.com/2019/
+    button_text: Register Now
+    
+  -
+    name: JNation 2019
+    location: Coimbra, Portugal
+    date: June 4 2019
+    expire_date: 2019-06-04T23:59:00-00:00
+    button_url: https://jnation.pt/
+    button_text: Register Now
+    
+  -
+    name: Dev Talks Bucharest
+    location: Bucharest, Romania
+    date: June 6-7 2019
+    expire_date: 2019-06-07T23:59:00-00:00
+    button_url: https://www.devtalks.ro/bucharest/
+    button_text: Register Now
+    
+  -
+    name: The Lead Developer London
+    location: London, United Kingdom
+    date: June 11-12 2019
+    expire_date: 2019-06-12T23:59:00-00:00
+    button_url: https://london2019.theleaddeveloper.com
+    button_text: Register Now
+    
+  -
+    name: GOTO Amsterdam
+    location: Amsterdam, Netherlands
+    date: June 11-14 2019
+    expire_date: 2019-06-14T23:59:00-00:00
+    button_url: https://gotoams.nl/
     button_text: Register Now
