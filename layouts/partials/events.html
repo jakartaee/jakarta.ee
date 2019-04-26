@@ -1,0 +1,57 @@
+{{ $scratch := newScratch }}
+{{ range $index, $item := .Site.Data.events.items }}
+  {{$t := time .expire_date }}
+  {{ if $t.After now }}
+    {{ $scratch.SetInMap "events" (string $index) $item }}
+  {{ end }}
+{{ end }}
+
+{{ if and (isset .Site.Params "show_events") (eq .Site.Params.show_events true) (ne ($scratch.GetSortedMapValues "events") nil) }}
+  <div class="events padding-bottom-50 padding-top-30">
+    <div class="container">
+      {{ if isset .Site.Data.events "title" }}
+        <h2 class="text-center heading-line"><span style="background-color:#fff;">{{ .Site.Data.events.title }}</span></h2>
+      {{ end }}
+      
+      {{ if isset .Site.Data.events "tagline" }}
+        <h3 class="h4 text-center">{{ .Site.Data.events.tagline }}</h3>
+      {{ end }}
+
+      <div class="row text-center">
+        {{ range first 4 (sort ($scratch.GetSortedMapValues "events") "expire_date" "asc") }}
+          <div class="col-sm-12 col-md-6 event">
+            <h3 class="h4">{{ .name }}</h3>
+            <p>{{ .location }}</p>
+            <p>{{ .date }}</p>
+            <p class="margin-bottom-0"><a class="btn btn-secondary" href="{{ .button_url }}">{{ .button_text }}</a></p>
+          </div>
+        {{ end }}
+      </div>
+      {{if gt (len ($scratch.GetSortedMapValues "events")) 4}}
+        <div class="collapse" id="featured-more-items" aria-expanded="true" style="">
+          <div class="row text-center">
+          {{ range after 4 (sort ($scratch.GetSortedMapValues "events") "expire_date" "asc") }}
+            <div class="col-sm-12 col-md-6 event">
+              <h3 class="h4">{{ .name }}</h3>
+              <p>{{ .location }}</p>
+              <p>{{ .date }}</p>
+              <p class="margin-bottom-0"><a class="btn btn-secondary" href="{{ .button_url }}">{{ .button_text }}</a></p>
+            </div>
+          {{ end }}
+          </div>
+        </div>
+      {{ end }}
+      <hr>
+      {{ if or (isset .Site.Data.events "more_button_text") (and (isset .Site.Data.events "submit_button_text") (isset .Site.Data.events "submit_button_link")) }}
+      <ul class="text-center margin-top-15 list-inline">
+        {{ if and (gt (len .Site.Data.events.items) 4) (isset .Site.Data.events "more_button_text") }}
+        <li><a style="width:160px;" data-toggle-text="Close" role="button" data-toggle="collapse" href="#featured-more-items" aria-expanded="true" aria-controls="featured-more-items" class="btn btn-primary toggle-text">{{.Site.Data.events.more_button_text | safeHTML }}</a></li>
+        {{ end }}
+        {{ if and (isset .Site.Data.events "submit_button_text") (isset .Site.Data.events "submit_button_link") }}
+        <li><a style="width:160px;" class="btn btn-primary" href="{{.Site.Data.events.submit_button_link}}" target="_blank">{{.Site.Data.events.submit_button_text}}</a></li>
+        {{ end }}
+      </ul>
+      {{end}}
+    </div>
+  </div>
+{{ end }}
