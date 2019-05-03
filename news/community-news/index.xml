@@ -13,6 +13,24 @@
     
     
     <item>
+      <title>Jakarta EE has landed</title>
+      <link>https://jakarta.ee/news/community-news/2019/05/03/jakarta-ee-has-landed/</link>
+      <pubDate>Fri, 03 May 2019 05:10:00 +0000</pubDate>
+      <author>webdev@eclipse-foundation.org (Christopher Guindon)</author>
+      <guid>https://jakarta.ee/news/community-news/2019/05/03/jakarta-ee-has-landed/</guid>
+      <description>The Jakarta EE platform has finished moving into its new home at the Eclipse Foundation after a year of significant effort to contribute, build, and test the Java EE technologies in a new community.</description>
+    </item>
+    
+    <item>
+      <title>Jakarta EE has landed</title>
+      <link>https://jakarta.ee/news/community-news/2019/05/02/jakarta-ee-has-landed/</link>
+      <pubDate>Thu, 02 May 2019 05:10:00 +0000</pubDate>
+      <author>webdev@eclipse-foundation.org (Christopher Guindon)</author>
+      <guid>https://jakarta.ee/news/community-news/2019/05/02/jakarta-ee-has-landed/</guid>
+      <description>Learn everything you need to know about MicroProfile.</description>
+    </item>
+    
+    <item>
       <title>MicroProfile and Jakarta EE -- The Lightweight Stuff Session</title>
       <link>https://jakarta.ee/news/community-news/2019/04/24/microprofile-and-jakarta-ee-the-lightweight-stuff-session/</link>
       <pubDate>Wed, 24 Apr 2019 05:10:00 +0000</pubDate>
