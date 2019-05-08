@@ -38,7 +38,6 @@ layout: "single"
           <li><a href="http://www.rcp-vision.com/" target="_blank"><img src="/images/members/jakarta-member_rcp_vision.png" width="100" class="img-responsive"></a></li>
           <li><a href="https://www.sap.com/" target="_blank"><img src="/images/members/jakarta-member_sap.png" width="100" class="img-responsive"></a></li>
           <li><a href="https://www.tradista.finance/" target="_blank"><img src="/images/members/jakarta-member_tradista.png" width="100" class="img-responsive"></a></li>
-          <li><a href="http://www.useopen.com/" target="_blank"><img src="/images/members/jakarta-member_useopen.svg" width="100" class="img-responsive"></a></li>
           <li><a href="https://webtide.com/" target="_blank"><img src="/images/members/jakarta-member_webtide.svg" width="100" class="img-responsive"></a></li>
         </ul>
       </div>
