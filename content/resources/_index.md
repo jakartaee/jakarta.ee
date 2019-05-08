@@ -8,7 +8,8 @@ layout: "single"
 
 ## Surveys{#surveys}
 
-* [2018 Developer Survey](https://jakarta.ee/documents/insights/2018-jakarta-ee-developer-survey.pdf)
+* [2018 Developer Survey](/documents/insights/2018-jakarta-ee-developer-survey.pdf)
+* [2019 Developer Survey](/documents/insights/2019-jakarta-ee-developer-survey.pdf)
 
 <hr>
 
