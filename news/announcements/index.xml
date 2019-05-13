@@ -13,6 +13,33 @@
     
     
     <item>
+      <title>The Cloud Native Imperative — Results from the 2019 Jakarta EE Developer Survey</title>
+      <link>https://jakarta.ee/news/announcements/2019/05/10/the-cloud-native-imperative-results-from-the-2019-jakarta-ee-developer-survey/</link>
+      <pubDate>Fri, 10 May 2019 05:10:00 +0000</pubDate>
+      <author>webdev@eclipse-foundation.org (Christopher Guindon)</author>
+      <guid>https://jakarta.ee/news/announcements/2019/05/10/the-cloud-native-imperative-results-from-the-2019-jakarta-ee-developer-survey/</guid>
+      <description>The results of the 2019 Jakarta EE Developer Survey are out.</description>
+    </item>
+    
+    <item>
+      <title>New Eclipse Foundation Community Survey of Java Developers Shows Cloud Native Adoption Accelerating Dramatically with Jakarta EE</title>
+      <link>https://jakarta.ee/news/announcements/2019/05/09/new-eclipse-foundation-community-survey-of-java-developers-shows-cloud-native-adoption-accelerating-dramatically-with-jakarta-ee/</link>
+      <pubDate>Thu, 09 May 2019 05:10:00 +0000</pubDate>
+      <author>webdev@eclipse-foundation.org (Christopher Guindon)</author>
+      <guid>https://jakarta.ee/news/announcements/2019/05/09/new-eclipse-foundation-community-survey-of-java-developers-shows-cloud-native-adoption-accelerating-dramatically-with-jakarta-ee/</guid>
+      <description>Eclipse Foundation enterprise Java survey shows cloud deployments increasing over 2018 findings with 62% of Java developers building cloud native architectures now or within the year</description>
+    </item>
+    
+    <item>
+      <title>Jakarta EE Community Call</title>
+      <link>https://jakarta.ee/news/announcements/2019/05/08/jakarta-ee-community-call/</link>
+      <pubDate>Wed, 08 May 2019 05:10:00 +0000</pubDate>
+      <author>webdev@eclipse-foundation.org (Christopher Guindon)</author>
+      <guid>https://jakarta.ee/news/announcements/2019/05/08/jakarta-ee-community-call/</guid>
+      <description>The Jakarta EE Community call is a monthly meetup via Zoom that drives community conversation and provides a space for participants to ask questions on topics of interest in an Ask Me Anything (AMA) format.</description>
+    </item>
+    
+    <item>
       <title>Update on Jakarta EE Rights to Java Trademarks</title>
       <link>https://jakarta.ee/news/announcements/2019/05/03/update-on-jakarta-ee-rights-to-java-trademarks/</link>
       <pubDate>Fri, 03 May 2019 05:10:00 +0000</pubDate>
