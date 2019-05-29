@@ -18,11 +18,12 @@
   </style>
 {{ end }}
 
+{{ define "main_prefix"}}
+  {{ partial "featured_story.html" . }}
+{{ end }}
+
 {{ define "main" }}
 <main>
-
-  <!-- Uncomment to add the featured story section -->
-  {{ partial "featured_story.html" . }}
 
   {{ partial "events.html" . }}
 
