@@ -13,12 +13,48 @@
     
     
     <item>
+      <title>Jakarta EE without javax: the world won&#39;t end this time either</title>
+      <link>https://jakarta.ee/news/community-news/2019/05/27/jakarta-ee-without-javax-the-world-wont-end-this-time-either/</link>
+      <pubDate>Mon, 27 May 2019 05:10:00 +0000</pubDate>
+      <author>webdev@eclipse-foundation.org (Christopher Guindon)</author>
+      <guid>https://jakarta.ee/news/community-news/2019/05/27/jakarta-ee-without-javax-the-world-wont-end-this-time-either/</guid>
+      <description>If you missed the news, Oracle is donating the Java EE specification to the Eclipse foundation.</description>
+    </item>
+    
+    <item>
+      <title>Eclipse Enterprise Survey Shows What Java Devs Want in 2019</title>
+      <link>https://jakarta.ee/news/community-news/2019/05/22/eclipse-enterprise-survey-shows-what-java-devs-want-in-2019/</link>
+      <pubDate>Wed, 22 May 2019 05:10:00 +0000</pubDate>
+      <author>webdev@eclipse-foundation.org (Christopher Guindon)</author>
+      <guid>https://jakarta.ee/news/community-news/2019/05/22/eclipse-enterprise-survey-shows-what-java-devs-want-in-2019/</guid>
+      <description>What do enterprise Java developers want the Eclipse Foundation to prioritize as the new shepherd of Jakarta EE?</description>
+    </item>
+    
+    <item>
+      <title>Jakarta EE and Docker: What You Should Know</title>
+      <link>https://jakarta.ee/news/community-news/2019/05/22/jakarta-ee-and-docker-what-you-should-know/</link>
+      <pubDate>Wed, 22 May 2019 05:10:00 +0000</pubDate>
+      <author>webdev@eclipse-foundation.org (Christopher Guindon)</author>
+      <guid>https://jakarta.ee/news/community-news/2019/05/22/jakarta-ee-and-docker-what-you-should-know/</guid>
+      <description>As a Java developer, you might wonder why you should be concerned about Docker. This will show you why you should and how to use Jakarta EE.</description>
+    </item>
+    
+    <item>
       <title>I am an Incrementalist: Jakarta EE and package renaming</title>
       <link>https://jakarta.ee/news/community-news/2019/05/21/i-am-an-incrementalist-jakarta-ee-and-package-renaming/</link>
       <pubDate>Tue, 21 May 2019 05:10:00 +0000</pubDate>
       <author>webdev@eclipse-foundation.org (Christopher Guindon)</author>
       <guid>https://jakarta.ee/news/community-news/2019/05/21/i-am-an-incrementalist-jakarta-ee-and-package-renaming/</guid>
       <description>Eclipse Jakarta EE has been placed in the position that it may not evolve the enterprise APIs under their existing package names.</description>
+    </item>
+    
+    <item>
+      <title>Update for Jakarta EE community: May 2019</title>
+      <link>https://jakarta.ee/news/community-news/2019/05/18/update-for-jakarta-ee-community-may-2019/</link>
+      <pubDate>Sat, 18 May 2019 05:10:00 +0000</pubDate>
+      <author>webdev@eclipse-foundation.org (Christopher Guindon)</author>
+      <guid>https://jakarta.ee/news/community-news/2019/05/18/update-for-jakarta-ee-community-may-2019/</guid>
+      <description>The Jakarta EE community is the driving force behind the future of cloud-native Java.</description>
     </item>
     
     <item>

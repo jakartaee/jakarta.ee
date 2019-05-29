@@ -3,6 +3,26 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://jakarta.ee/news/community-news/2019/05/27/jakarta-ee-without-javax-the-world-wont-end-this-time-either/</loc>
+    <lastmod>2019-05-27T05:10:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jakarta.ee/news/announcements/2019/05/24/election-time-for-jakarta-ee-working-group-committees/</loc>
+    <lastmod>2019-05-24T05:10:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jakarta.ee/news/community-news/2019/05/22/eclipse-enterprise-survey-shows-what-java-devs-want-in-2019/</loc>
+    <lastmod>2019-05-22T05:10:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jakarta.ee/news/community-news/2019/05/22/jakarta-ee-and-docker-what-you-should-know/</loc>
+    <lastmod>2019-05-22T05:10:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://jakarta.ee/news/announcements/2019/05/21/cloud-native-java-innovation-at-the-eclipse-foundation/</loc>
     <lastmod>2019-05-21T05:10:00+00:00</lastmod>
   </url>
@@ -14,6 +34,11 @@
   
   <url>
     <loc>https://jakarta.ee/news/announcements/2019/05/18/cloud-native-java-innovation-at-the-eclipse-foundation/</loc>
+    <lastmod>2019-05-18T05:10:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jakarta.ee/news/community-news/2019/05/18/update-for-jakarta-ee-community-may-2019/</loc>
     <lastmod>2019-05-18T05:10:00+00:00</lastmod>
   </url>
   
