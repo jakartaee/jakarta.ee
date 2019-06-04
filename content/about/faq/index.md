@@ -63,16 +63,6 @@ A: As part of the move to Eclipse, GlassFish is now Eclipse GlassFish. There are
 
 ---
 
-#### Q: What's going to be in the next release of GlassFish, and when will it get launched?
-
-A: As part of the move to Eclipse, GlassFish is now Eclipse GlassFish. There are going to be two releases of Eclipse GlassFish:
-
-1.  In Q4 2018 the community will release an Eclipse GlassFish 5.1 which is certified as Java EE 8 compatible. This will also be the first release of all of the projects being moved to the Eclipse Foundation, and as such will be a significant event in the on-boarding of the Java EE 8 technologies into the Eclipse community.
-
-2.  In Q1 2019 the community will release an Eclipse GlassFish 5.2 which is certified as Jakarta EE 8 compatible.
-
----
-
 #### Q: Beyond the immediate roadmap, what is the overall vision for the technical future of Jakarta EE? What are the most important areas to evolve?
 
 A: The key areas that we have heard that developers and other stakeholders want us to focus on include:
