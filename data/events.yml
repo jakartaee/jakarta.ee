@@ -129,6 +129,13 @@ items:
     button_text: Register Now
     
   -
+    name: Eclipse DemoCamp Florence 2019
+    location: Florence, Italy
+    date: June 11 2019
+    expire_date: 2019-06-11T23:59:00-00:00
+    button_url: https://wiki.eclipse.org/Eclipse_DemoCamp_Florence_2019
+    button_text: Register Now
+  -
     name: The Lead Developer London
     location: London, United Kingdom
     date: June 11-12 2019
