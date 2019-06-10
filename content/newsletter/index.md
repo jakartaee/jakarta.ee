@@ -1,5 +1,5 @@
 ---
-title: "Jakarte EE Newsletter Archives"
+title: "Jakarta EE Newsletter Archives"
 date: 2018-06-04T10:00:58-04:00
 description: "Keep up to date with Jakarta EE working group updates, community news and announcement."
 ---
@@ -15,12 +15,28 @@ description: "Keep up to date with Jakarta EE working group updates, community n
     </div>
     <div id="collapse2019" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading2019">
       <div class="panel-body">
-        <div class="row">
+        <div class="row margin-bottom-15">
           <div class="col-sm-12">
             <div class="col-md-8 col-sm-6">
               <span class="newsletter-archive-icons">
               <i class="fa fa-calendar-o" aria-hidden="true"></i>
               <span class="newsletter-archive-month">May</span>
+              </span>
+            </div>
+            <div class="col-md-16 col-sm-18">
+              <p><a href="https://www.eclipse.org/community/eclipse_newsletter/2019/may/" target="_blank">Onwards and Upwards for the Jakarta Community
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="col-md-8 col-sm-6">
+              <span class="newsletter-archive-icons">
+              <i class="fa fa-calendar-o" aria-hidden="true"></i>
+              <span class="newsletter-archive-month">February</span>
               </span>
             </div>
             <div class="col-md-16 col-sm-18">
