@@ -71,13 +71,7 @@ themesDir = "node_modules/"
     name = "Blog"
     url = "https://Jakartablogs.ee"
     weight = 5
-    
-[[menu.main]]
-    name = "Compatibility"
-    url = "/compatibility/"
-    weight = 6
 
-    
 # Resource sub-menu
 
 [[menu.main]]
