@@ -2,6 +2,11 @@
 {{ define "head-suffix" }}
   <link rel="stylesheet" type="text/css" href="//www.eclipse.org/home/featured-story.css?v=1.05" media="screen" />
   <style>
+  	.featured-story-block-content {
+  	  background-image: url('/images/jakarta-one-cfp-2019.png');
+  	  background-position: bottom left;
+  	  background-repeat: repeat-x;
+  	}
     .featured-ad-content-jakarta p, .featured-ad-content-jakarta .feather {
       margin-bottom:0px;
       color:#fff;
@@ -9,11 +14,28 @@
     .featured-ad:after, .featured-ad:before, .featured-ad {
       background-color: #6b747b;
     }
-    .featured-alternate .featured-story-block h2 {
+    .featured-alternate .featured-story-block h2,  .featured-alternate .featured-story-block .h2 {
       margin-top:10px;
+      font-weight: 700;
     }
+    
+    @media(min-width: 767px){
+      .featured-story.featured-alternate {
+        background-image: url('/images/jakarta-one-cfp-2019.png');
+	    background-position: bottom left;
+	    background-repeat: repeat-x;
+	  }
+	  .featured-story-block-content {
+	    background-image: none;
+       }
+	}
+	
     .featured-story-block-content h2 {
       color:#333;
+    }
+    .featured-story-block-content a {
+      font-weight: 700;
+      letter-spacing: 1px;
     }
   </style>
 {{ end }}
