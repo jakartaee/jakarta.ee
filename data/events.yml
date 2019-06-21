@@ -142,11 +142,66 @@ items:
     expire_date: 2019-06-12T23:59:00-00:00
     button_url: https://london2019.theleaddeveloper.com
     button_text: Register Now
-    
   -
-    name: GOTO Amsterdam
-    location: Amsterdam, Netherlands
-    date: June 11-14 2019
-    expire_date: 2019-06-14T23:59:00-00:00
-    button_url: https://gotoams.nl/
+    name: Java Forum Stuttgart
+    date: July 4, 2019
+    expire_date: 2019-07-04T23:59:00-00:00
+    location: Stuttgart Germany
+    button_url: https://www.java-forum-stuttgart.de/de/Home.html
+    button_text: Register Now
+  -
+    name: JCONF COLOMBIA 2019
+    date: July 5-6, 2019
+    expire_date: 2019-07-06T23:59:00-00:00
+    location: Medellín, Colombia
+    button_url: http://www.jconfcolombia.org/2019/index_EN.html
+    button_text: Register Now
+  -
+    name: Java Cloud
+    date: July 24-26, 2019
+    expire_date: 2019-07-26T23:59:00-00:00
+    location: Johannesburg, South Africa
+    button_url: http://j-sa.co/
+    button_text: Register Now
+  -
+    name: JakartaOne Livestream
+    date: September 10, 2019
+    expire_date: 2019-09-10T23:59:00-00:00
+    location: Online Virtual Conference
+    button_url: https://jakartaone.org/
+    button_text: Register Now
+  -
+    name: JavaZone
+    date: Sep 10-Sep 12, 2019
+    expire_date: 2019-09-12T23:59:00-00:00
+    location: Oslo Norway
+    button_url: https://javazone.no
+    button_text: Register Now
+  -
+    name: Oracle CodeOne 2019
+    date: Sep 15 - Sep 19, 2019
+    expire_date: 2019-09-19T23:59:00-00:00
+    location: San Francisco, CA
+    button_url: https://www.oracle.com/code-one/
+    button_text: Register Now
+  -
+    name: JCON 2019
+    date: Sep 24 - Sep 26, 2019
+    expire_date: 2019-09-26T23:59:00-00:00
+    location: Dusseldorf, Germany
+    button_url: https://jcon.one/de/
+    button_text: Register Now
+  -
+    name: JAX London
+    date: Oct 7 - Oct 10, 2019
+    expire_date: 2019-10-10T23:59:00-00:00
+    location: London, UK
+    button_url: https://jaxlondon.com/
+    button_text: Register Now
+  -
+    name: EclipseCon Europe 2019
+    date: Oct 21 - Oct 24
+    expire_date: 2019-10-24T23:59:00-00:00
+    location: Ludwigsburg, Germany
+    button_url: https://www.eclipsecon.org/europe2019
     button_text: Register Now
