@@ -47,6 +47,11 @@
   
   <link rel="stylesheet" type="text/css" href="//www.eclipse.org/home/featured-story.css?v=1.05" media="screen" />
   <style>
+  	.featured-story-block-content {
+  	  background-image: url('/images/jakarta-one-cfp-2019.png');
+  	  background-position: bottom left;
+  	  background-repeat: repeat-x;
+  	}
     .featured-ad-content-jakarta p, .featured-ad-content-jakarta .feather {
       margin-bottom:0px;
       color:#fff;
@@ -54,11 +59,28 @@
     .featured-ad:after, .featured-ad:before, .featured-ad {
       background-color: #6b747b;
     }
-    .featured-alternate .featured-story-block h2 {
+    .featured-alternate .featured-story-block h2,  .featured-alternate .featured-story-block .h2 {
       margin-top:10px;
+      font-weight: 700;
     }
+    
+    @media(min-width: 767px){
+      .featured-story.featured-alternate {
+        background-image: url('/images/jakarta-one-cfp-2019.png');
+	    background-position: bottom left;
+	    background-repeat: repeat-x;
+	  }
+	  .featured-story-block-content {
+	    background-image: none;
+       }
+	}
+	
     .featured-story-block-content h2 {
       color:#333;
+    }
+    .featured-story-block-content a {
+      font-weight: 700;
+      letter-spacing: 1px;
     }
   </style>
 
@@ -264,12 +286,13 @@
 
   
   
-  <div class="featured-story featured-alternate">
+  <div class="featured-story featured-alternate" >
   <div class="container">
     <div class="row">
       <div class="col-sm-12 col-sm-offset-2 col-md-16 col-md-offset-0 featured-story-block featured-story-block-content match-height-item-by-row" style="height: 270px;min-height: 270px;">
-        <h2>The 2019 Jakarta EE<br> <strong>Developer Survey</strong><br> results are out!</h2>
-        <p><a class="btn btn-primary btn-lg" href="/documents/insights/2019-jakarta-ee-developer-survey.pdf">See the report!</a></p>
+        <h2>JakartaOne Livestream</h2>
+        <h3 class="h2 margin-bottom-30">Call for Papers is now open!</h3>
+        <p><a class="btn btn-primary btn-lg font-weight-bold" href="https://www.papercall.io/jakartaone-cfp">Submit your talk!</a></p>
       </div>
       <div class="col-sm-9 col-md-8 featured-ad featured-story-block match-height-item-by-row" style="height: 270px;min-height: 270px;">
         <div class="featured-ad-content featured-ad-content-jakarta text-center">
@@ -352,8 +375,147 @@
 
   
   
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
 
 
+
+  <div class="events padding-bottom-50 padding-top-30">
+    <div class="container">
+      
+        <h2 class="text-center heading-line"><span style="background-color:#fff;">Events</span></h2>
+      
+      
+      
+        <h3 class="h4 text-center">Come meet the Jakarta EE Community at these upcoming events!</h3>
+      
+
+      <div class="row text-center">
+        
+          <div class="col-sm-12 col-md-6 event">
+            <h3 class="h4">Java Forum Stuttgart</h3>
+            <p>Stuttgart Germany</p>
+            <p>July 4, 2019</p>
+            <p class="margin-bottom-0"><a class="btn btn-secondary" href="https://www.java-forum-stuttgart.de/de/Home.html">Register Now</a></p>
+          </div>
+        
+          <div class="col-sm-12 col-md-6 event">
+            <h3 class="h4">JCONF COLOMBIA 2019</h3>
+            <p>Medellín, Colombia</p>
+            <p>July 5-6, 2019</p>
+            <p class="margin-bottom-0"><a class="btn btn-secondary" href="http://www.jconfcolombia.org/2019/index_EN.html">Register Now</a></p>
+          </div>
+        
+          <div class="col-sm-12 col-md-6 event">
+            <h3 class="h4">Java Cloud</h3>
+            <p>Johannesburg, South Africa</p>
+            <p>July 24-26, 2019</p>
+            <p class="margin-bottom-0"><a class="btn btn-secondary" href="http://j-sa.co/">Register Now</a></p>
+          </div>
+        
+          <div class="col-sm-12 col-md-6 event">
+            <h3 class="h4">JakartaOne Livestream</h3>
+            <p>Online Virtual Conference</p>
+            <p>September 10, 2019</p>
+            <p class="margin-bottom-0"><a class="btn btn-secondary" href="https://jakartaone.org/">Register Now</a></p>
+          </div>
+        
+      </div>
+      
+        <div class="collapse" id="featured-more-items" aria-expanded="true" style="">
+          <div class="row text-center">
+          
+            <div class="col-sm-12 col-md-6 event">
+              <h3 class="h4">JavaZone</h3>
+              <p>Oslo Norway</p>
+              <p>Sep 10-Sep 12, 2019</p>
+              <p class="margin-bottom-0"><a class="btn btn-secondary" href="https://javazone.no">Register Now</a></p>
+            </div>
+          
+            <div class="col-sm-12 col-md-6 event">
+              <h3 class="h4">Oracle CodeOne 2019</h3>
+              <p>San Francisco, CA</p>
+              <p>Sep 15 - Sep 19, 2019</p>
+              <p class="margin-bottom-0"><a class="btn btn-secondary" href="https://www.oracle.com/code-one/">Register Now</a></p>
+            </div>
+          
+            <div class="col-sm-12 col-md-6 event">
+              <h3 class="h4">JCON 2019</h3>
+              <p>Dusseldorf, Germany</p>
+              <p>Sep 24 - Sep 26, 2019</p>
+              <p class="margin-bottom-0"><a class="btn btn-secondary" href="https://jcon.one/de/">Register Now</a></p>
+            </div>
+          
+            <div class="col-sm-12 col-md-6 event">
+              <h3 class="h4">JAX London</h3>
+              <p>London, UK</p>
+              <p>Oct 7 - Oct 10, 2019</p>
+              <p class="margin-bottom-0"><a class="btn btn-secondary" href="https://jaxlondon.com/">Register Now</a></p>
+            </div>
+          
+            <div class="col-sm-12 col-md-6 event">
+              <h3 class="h4">EclipseCon Europe 2019</h3>
+              <p>Ludwigsburg, Germany</p>
+              <p>Oct 21 - Oct 24</p>
+              <p class="margin-bottom-0"><a class="btn btn-secondary" href="https://www.eclipsecon.org/europe2019">Register Now</a></p>
+            </div>
+          
+          </div>
+        </div>
+      
+      <hr>
+      
+      <ul class="text-center margin-top-15 list-inline">
+        
+        <li><a style="width:160px;" data-toggle-text="Close" role="button" data-toggle="collapse" href="#featured-more-items" aria-expanded="true" aria-controls="featured-more-items" class="btn btn-primary toggle-text">View More Events <i class="fa fa-arrow-down"></i></a></li>
+        
+        
+        <li><a style="width:160px;" class="btn btn-primary" href="https://goo.gl/forms/xIlhGdX1qfKCyCZn1" target="_blank">Submit Event</a></li>
+        
+      </ul>
+      
+    </div>
+  </div>
 
 
   <div class="container">
@@ -364,6 +526,16 @@
           <h2 class="heading-line text-center">
             <span>Announcements</span>
           </h2>
+          
+          <ul class="news-list-media list-unstyled">
+            <li>
+              <a href=" https://blogs.eclipse.org/post/jameka-woodberry/become-sponsor-eclipsecon-europe-2019" class="media media-link match-height-item">
+                <p class="media-date">Friday, Jun 21, 2019</p>
+                <h4 class="media-heading">Become a Sponsor at EclipseCon Europe 2019!</h4>
+                <p class="media-text">We&rsquo;re gearing up for EclipseCon Europe 2019, our biggest event of the year which brings together developers, architects, and open source business leaders.</p>
+              </a>
+            </li>
+          </ul>
           
           <ul class="news-list-media list-unstyled">
             <li>
@@ -405,16 +577,6 @@
             </li>
           </ul>
           
-          <ul class="news-list-media list-unstyled">
-            <li>
-              <a href=" https://blogs.eclipse.org/post/mike-milinkovich/cloud-native-imperative-%E2%80%94-results-2019-jakarta-ee-developer-survey" class="media media-link match-height-item">
-                <p class="media-date">Friday, May 10, 2019</p>
-                <h4 class="media-heading">The Cloud Native Imperative — Results from the 2019 Jakarta EE Developer Survey</h4>
-                <p class="media-text">The results of the 2019 Jakarta EE Developer Survey are out.</p>
-              </a>
-            </li>
-          </ul>
-          
           <ul class="list-inline news-list-links">
             <li class="news-list-links-view-all"><a href="news/announcements">View all</a></li>
             <li class="news-list-links-rss"><a href="news/index.xml" title="Subscribe to our RSS-feed">Subscribe to our RSS-feed <i class="fa fa-rss"></i></a></li>
@@ -426,6 +588,26 @@
           <h2 class="heading-line text-center">
             <span>Community News</span>
           </h2>
+          
+          <ul class="news-list-media list-unstyled">
+            <li>
+              <a href=" https://blogs.eclipse.org/post/jameka-woodberry/eclipsecon-europe-2019-call-papers-open-until-july-15-submit-talk-today" class="media media-link match-height-item">
+                <p class="media-date">Monday, Jun 17, 2019</p>
+                <h4 class="media-heading">EclipseCon Europe Call for Papers now open</h4>
+                <p class="media-text">You can now submit your proposals to be part of EclipseCon Europe 2019’s speaker lineup. The conference takes place in Ludwigsburg, Germany on October 21 - 24, 2019. Early bird submissions are due July 1, and the final deadline is July 15.</p>
+              </a>
+            </li>
+          </ul>
+          
+          <ul class="news-list-media list-unstyled">
+            <li>
+              <a href=" https://blogs.eclipse.org/post/tanja-obradovic/jcp-copyright-licensing-request" class="media media-link match-height-item">
+                <p class="media-date">Monday, Jun 17, 2019</p>
+                <h4 class="media-heading">JCP Copyright Licensing request</h4>
+                <p class="media-text">We are reaching out to all companies and individuals who made contributions to Java EE in the past to help out, execute the agreements and return them back to Eclipse Foundation.</p>
+              </a>
+            </li>
+          </ul>
           
           <ul class="news-list-media list-unstyled">
             <li>
@@ -453,26 +635,6 @@
                 <p class="media-date">Wednesday, May 22, 2019</p>
                 <h4 class="media-heading">Jakarta EE and Docker: What You Should Know</h4>
                 <p class="media-text">As a Java developer, you might wonder why you should be concerned about Docker. This will show you why you should and how to use Jakarta EE.</p>
-              </a>
-            </li>
-          </ul>
-          
-          <ul class="news-list-media list-unstyled">
-            <li>
-              <a href=" https://blog.hargrave.io/2019/05/jakarta-ee-and-package-renaming.html" class="media media-link match-height-item">
-                <p class="media-date">Tuesday, May 21, 2019</p>
-                <h4 class="media-heading">I am an Incrementalist: Jakarta EE and package renaming</h4>
-                <p class="media-text">Eclipse Jakarta EE has been placed in the position that it may not evolve the enterprise APIs under their existing package names.</p>
-              </a>
-            </li>
-          </ul>
-          
-          <ul class="news-list-media list-unstyled">
-            <li>
-              <a href=" https://blogs.eclipse.org/post/tanja-obradovic/update-jakarta-ee-community-may-2019" class="media media-link match-height-item">
-                <p class="media-date">Saturday, May 18, 2019</p>
-                <h4 class="media-heading">Update for Jakarta EE community: May 2019</h4>
-                <p class="media-text">The Jakarta EE community is the driving force behind the future of cloud-native Java.</p>
               </a>
             </li>
           </ul>
