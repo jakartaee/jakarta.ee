@@ -6,7 +6,8 @@ hide_sidebar: "false"
 ---
 
 <p><em>Guidelines for the use of existing Oracle/JCP Acronyms.  Supplement to the Eclipse
-Foundation Guidelines for Eclipse Logos & Trademarks Policy for Oracle/JCP Acronyms</em></p>
+Foundation <a href="https://jakarta.ee/legal/trademark_guidelines/">Guidelines for Eclipse Logos &
+Trademarks Policy</a> for Oracle/JCP Acronyms</em></p>
 
 <p>Version 1.0 - June 26, 2019</p>
 
