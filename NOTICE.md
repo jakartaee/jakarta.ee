@@ -1,8 +1,8 @@
-# Notices for jakartaee.github.io
+# Notices for jakarta.ee
 
 This content is produced and maintained by the Eclipse Foundation.
 
-* Project home: https://github.com/jakartaee/jakartaee.github.io
+* Project home: https://github.com/jakartaee/jakarta.ee
 
 ## Trademarks
 
@@ -28,7 +28,7 @@ SPDX-License-Identifier: EPL-2.0
 
 The project maintains the following source code repositories:
 
-* https://github.com/jakartaee/jakartaee.github.io
+* https://github.com/jakartaee/jakarta.ee
 
 ## Third-party Content
 
