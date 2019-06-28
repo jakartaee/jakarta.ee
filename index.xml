@@ -13,6 +13,18 @@
     
     
     <item>
+      <title>Oracle/JCP Acronym Guidelines</title>
+      <link>https://jakarta.ee/legal/acronym_guidelines/</link>
+      <pubDate>Wed, 26 Jun 2019 16:10:38 -0400</pubDate>
+      <author>webdev@eclipse-foundation.org (Christopher Guindon)</author>
+      <guid>https://jakarta.ee/legal/acronym_guidelines/</guid>
+      <description>Guidelines for the use of existing Oracle/JCP Acronyms. Supplement to the Eclipse Foundation Guidelines for Eclipse Logos &amp; Trademarks Policy
+Version 1.0 - June 26, 2019
+The goal of these guidelines is to avoid confusion and ensure that the developer community can easily identify whether a Jakarta EE project, specification, test suite, or other related item originates from Oracle/JCP or from the Eclipse/Jakarta EE process.
+The list of Oracle/JCP acronyms appears at the bottom of this document.</description>
+    </item>
+    
+    <item>
       <title>Become a Sponsor at EclipseCon Europe 2019!</title>
       <link>https://jakarta.ee/news/announcements/2019/06/21/become-a-sponsor-at-eclipsecon-europe-2019/</link>
       <pubDate>Fri, 21 Jun 2019 05:10:00 +0000</pubDate>
