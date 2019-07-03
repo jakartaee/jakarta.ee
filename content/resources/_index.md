@@ -32,5 +32,4 @@ layout: "single"
 
 Talks & presentations:
 
-* [Introducing the EFSP](https://docs.google.com/presentation/d/1Gf8awQxHs1J13LG9dAcGc_q-YC4EtHeIc5Gjm54eDAA/edit#slide=id.g42b8515be3_0_0)
-* [Director's Pick: Introducing The Eclipse Foundation Specification Process](https://www.eclipsecon.org/europe2018/sessions/directors-pick-introducing-eclipse-foundation-specification-process)
+* [Introducing the EFSP](introducing-the-efsp-ece-2018.pdf)
