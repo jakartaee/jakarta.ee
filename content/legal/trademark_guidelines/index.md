@@ -8,7 +8,7 @@ hide_sidebar: "false"
 
 <p>Version 1.1 - June 13, 2019</p>
 
-<p>This document supplements the Eclipse Foundation <a href="/legal/logo_guidelines.php" >Guidelines for Eclipse Logos & Trademarks Policy</a> (this Supplement, together with the Eclipse Foundation Guidelines for Eclipse Logos & Trademarks Policy, collectively, the “Policy”) to address the permitted usage of the Jakarta EE Marks (as defined below).  The Jakarta EE marks include, but are not limited to, the following names and/or logos: Jakarta EE, Jakarta EE Working Group, Jakarta EE Member, and Jakarta EE Compatible, (collectively the “Jakarta EE Marks”).  The full guidelines on the usage of the Jakarta EE Marks are described in the <a href="jakarta-ee-branding-guidelines.pdf" >Jakarta EE Brand Usage Handbook</a>. Use of the Jakarta EE Marks must at all times conform to the Policy. </p>
+<p>This document supplements the Eclipse Foundation <a href="https://www.eclipse.org/legal/logo_guidelines.php" >Guidelines for Eclipse Logos & Trademarks Policy</a> (this Supplement, together with the Eclipse Foundation Guidelines for Eclipse Logos & Trademarks Policy, collectively, the “Policy”) to address the permitted usage of the Jakarta EE Marks (as defined below).  The Jakarta EE marks include, but are not limited to, the following names and/or logos: Jakarta EE, Jakarta EE Working Group, Jakarta EE Member, and Jakarta EE Compatible, (collectively the “Jakarta EE Marks”).  The full guidelines on the usage of the Jakarta EE Marks are described in the <a href="jakarta-ee-branding-guidelines.pdf" >Jakarta EE Brand Usage Handbook</a>. Use of the Jakarta EE Marks must at all times conform to the Policy. </p>
 
 <p>Use of the Jakarta EE Marks is restricted as follows:</p>
 
