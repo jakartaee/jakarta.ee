@@ -3,11 +3,12 @@ var GitHub = require('github-api');
 var fs = require('fs');
 
 var org = 'eclipse-ee4j';
-var projectNames = ['jta-api'];
 
 var gh = new GitHub({
     token: ''
 });
+
+//var projectNames = ['jta-api', 'javamail', 'jms-api'];
 
 async function asyncForEach(array, callback) {
     for (let index = 0; index < array.length; index++) {
@@ -18,25 +19,31 @@ async function asyncForEach(array, callback) {
 async function getProjectData() {
     var projects = [];
 
+    var projectNames = (await gh.getOrganization(org).getRepos()).data.map(repo => {
+        return repo.name;
+    });
+
     await asyncForEach(projectNames, async (projectName) => {
         var repo = gh.getRepo(org, projectName);
     
         var project = {};
         project.contributors = [];
     
-        var values = await Promise.all([repo.getContributors(), repo.getDetails(), repo.getContents('master', 'README.md', true)]);
-        
-        values[0].data.forEach(contributor => {
-            var contrib = {};
-            contrib['login'] = contributor.login;
-            contrib['avatar'] = contributor.avatar_url;
-            project.contributors.push(contrib);
-        });
+        var values = await Promise.all([repo.getContributors(), repo.getDetails(), repo.getContents('master', 'README.md', true).catch(p =>'No README.md')]);
+       
+        if(values[0].data) {
+            values[0].data.forEach(contributor => {
+                var contrib = {};
+                contrib['login'] = contributor.login;
+                contrib['avatar'] = contributor.avatar_url;
+                project.contributors.push(contrib);
+            });
     
-        project.name = values[1].data.name;
-        project.description = values[1].data.description;
-        project.text = values[2].data;
-        projects.push(project);
+            project.name = values[1].data.name;
+            project.description = values[1].data.description;
+            project.text = values[2].data;
+            projects.push(project);
+        }
     });
     
     return projects;
@@ -52,7 +59,11 @@ const start = async () => {
     
             var rendered = Mustache.render(data.toString(), project);
     
-            fs.writeFile( __dirname + '/../content/projects/' + project.name + '.md', rendered, (err) => {
+            var projectDirectory = __dirname + '/../content/projects/' + project.name;
+            fs.mkdirSync(projectDirectory, { recursive: true }, (err) => {
+                if (err) throw err;
+            });
+            fs.writeFile( projectDirectory + '/index.md', rendered, (err) => {
                 if (err) throw err;
             });
         });
