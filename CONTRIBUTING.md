@@ -1,18 +1,18 @@
-# Contributing to jakartaee.github.io
+# Contributing to jakarta.ee
 
 Thanks for your interest in this project.
 
 ## Project description
 
-jakartaee.github.io is a project to regroup assets for the Eclipse Foundation look and feel. 
+jakarta.ee is a project to regroup assets for the Eclipse Foundation look and feel. 
 
-* https://github.com/jakartaee/jakartaee.github.io
+* https://github.com/jakartaee/jakarta.ee
 
 ## Developer resources
 
 The project maintains the following source code repositories
 
-* https://github.com/jakartaee/jakartaee.github.io
+* https://github.com/jakartaee/jakarta.ee
 
 ## Eclipse Contributor Agreement
 

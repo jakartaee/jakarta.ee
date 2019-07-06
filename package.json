@@ -6,21 +6,22 @@
   "license": "EPL-2.0",
   "version": "0.0.3",
   "bugs": {
-    "url": "https://github.com/jakartaee/jakartaee.github.io/issues"
+    "url": "https://github.com/jakartaee/jakarta.ee/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/jakartaee/jakartaee.github.io.git"
+    "url": "git://github.com/jakartaee/jakarta.ee.git"
   },
   "scripts": {
     "generate-projects": "node scripts/generate-project-pages.js",
     "dev": "NODE_ENV=development webpack --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
     "watch": "NODE_ENV=development webpack --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
     "hot": "NODE_ENV=development webpack-dev-server --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
-    "production": "NODE_ENV=production webpack --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+    "production": "NODE_ENV=production webpack --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "install": "NODE_ENV=production npm run production"
   },
   "dependencies": {
-    "eclipsefdn-hugo-solstice-theme": "0.0.10",
+    "eclipsefdn-hugo-solstice-theme": "0.0.21",
     "github-api": "^3.0.0",
     "mustache": "^3.0.0"
   }

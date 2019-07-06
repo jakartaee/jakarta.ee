@@ -1,0 +1,207 @@
+title: Events
+tagline: Come meet the Jakarta EE Community at these upcoming events!
+
+#buttons
+more_button_text: View More Events <i class="fa fa-arrow-down"></i>
+submit_button_text: Submit Event
+submit_button_link: https://goo.gl/forms/xIlhGdX1qfKCyCZn1
+
+items:
+  -
+    name: OpenInfra Days UK 2019
+    location: London, UK
+    date: April 1-2, 2019
+    expire_date: 2019-04-02T23:59:00-00:00
+    button_url: https://openinfradays.co.uk/
+    button_text: Register Now
+
+  -
+    name: Java EE 8 with Microprofile Bootstrap
+    location: Munich Airport, Terminal 2
+    date: April 2, 2019
+    expire_date: 2019-04-02T23:59:00-00:00
+    button_url: http://workshops.adam-bien.com/bootstrap.htm
+    button_text: Register Now
+    
+  -
+    name: Effective Java EE 8 with MicroProfile
+    location: Munich Airport, Terminal 2
+    date: April 3, 2019
+    expire_date: 2019-04-03T23:59:00-00:00
+    button_url: http://workshops.adam-bien.com/effective-javaee.htm
+    button_text: Register Now
+    
+  -
+    name: CD, Testing and Quality
+    location: Munich Airport, Terminal 2
+    date: April 4, 2019
+    expire_date: 2019-04-04T23:59:00-00:00
+    button_url: http://workshops.adam-bien.com/about-testing.htm
+    button_text: Register Now
+    
+  -
+    name: Devoxx FR
+    location: Paris, France
+    date: April 17-19, 2019
+    expire_date: 2019-04-19T23:59:00-00:00
+    button_url: https://www.devoxx.fr/
+    button_text: Register Now
+    
+  -
+    name: JAX 2019
+    location: Mainz, Germany
+    date: May 6-10, 2019
+    expire_date: 2019-05-10T23:59:00-00:00
+    button_url: https://jax.de/
+    button_text: Register Now
+    
+    
+  -
+    name: Devoxx United Kingdom
+    location: London, United Kingdom
+    date: May 8-10, 2019
+    expire_date: 2019-05-10T23:59:00-00:00
+    button_url: https://www.devoxx.co.uk/
+    button_text: Register Now
+    
+  -
+    name: GeeCon Krakow
+    location: Krakow, Poland
+    date: May 15-17 2019
+    expire_date: 2019-05-17T23:59:00-00:00
+    button_url: https://2019.geecon.org/
+    button_text: Register Now
+    
+  -
+    name: J on the Beach
+    location: Malaga, Spain
+    date: May 15-17 2019
+    expire_date: 2019-05-17T23:59:00-00:00
+    button_url: https://jonthebeach.com/
+    button_text: Register Now
+    
+  -
+    name: KubeCon Europe 2019
+    location: Barcelona, Spain
+    date: May 20-23, 2019
+    expire_date: 2019-05-23T23:59:00-00:00
+    button_url: https://events.linuxfoundation.org/events/kubecon-cloudnativecon-europe-2019/
+    button_text: Register Now
+    
+  -
+    name: Oracle Code New York
+    location: New York, USA
+    date: May 21 2019
+    expire_date: 2019-05-21T23:59:00-00:00
+    button_url: https://developer.oracle.com/code/newyork-may-2019
+    button_text: Register Now
+    
+  -
+    name: Glue Conference
+    location: Broomfield, CO
+    date: May 22-23 2019
+    expire_date: 2019-05-23T23:59:00-00:00
+    button_url: http://gluecon.com/
+    button_text: Register Now
+    
+  -
+    name: JBCNConf
+    location: Barcelona, Spain
+    date: May 27-29 2019
+    expire_date: 2019-05-29T23:59:00-00:00
+    button_url: https://www.jbcnconf.com/2019/
+    button_text: Register Now
+    
+  -
+    name: JNation 2019
+    location: Coimbra, Portugal
+    date: June 4 2019
+    expire_date: 2019-06-04T23:59:00-00:00
+    button_url: https://jnation.pt/
+    button_text: Register Now
+    
+  -
+    name: Dev Talks Bucharest
+    location: Bucharest, Romania
+    date: June 6-7 2019
+    expire_date: 2019-06-07T23:59:00-00:00
+    button_url: https://www.devtalks.ro/bucharest/
+    button_text: Register Now
+    
+  -
+    name: Eclipse DemoCamp Florence 2019
+    location: Florence, Italy
+    date: June 11 2019
+    expire_date: 2019-06-11T23:59:00-00:00
+    button_url: https://wiki.eclipse.org/Eclipse_DemoCamp_Florence_2019
+    button_text: Register Now
+  -
+    name: The Lead Developer London
+    location: London, United Kingdom
+    date: June 11-12 2019
+    expire_date: 2019-06-12T23:59:00-00:00
+    button_url: https://london2019.theleaddeveloper.com
+    button_text: Register Now
+  -
+    name: Java Forum Stuttgart
+    date: July 4, 2019
+    expire_date: 2019-07-04T23:59:00-00:00
+    location: Stuttgart Germany
+    button_url: https://www.java-forum-stuttgart.de/de/Home.html
+    button_text: Register Now
+  -
+    name: JCONF COLOMBIA 2019
+    date: July 5-6, 2019
+    expire_date: 2019-07-06T23:59:00-00:00
+    location: Medellín, Colombia
+    button_url: http://www.jconfcolombia.org/2019/index_EN.html
+    button_text: Register Now
+  -
+    name: Java Cloud
+    date: July 24-26, 2019
+    expire_date: 2019-07-26T23:59:00-00:00
+    location: Johannesburg, South Africa
+    button_url: http://j-sa.co/
+    button_text: Register Now
+  -
+    name: JakartaOne Livestream
+    date: September 10, 2019
+    expire_date: 2019-09-10T23:59:00-00:00
+    location: Online Virtual Conference
+    button_url: https://jakartaone.org/
+    button_text: Register Now
+  -
+    name: JavaZone
+    date: Sep 10-Sep 12, 2019
+    expire_date: 2019-09-12T23:59:00-00:00
+    location: Oslo Norway
+    button_url: https://javazone.no
+    button_text: Register Now
+  -
+    name: Oracle CodeOne 2019
+    date: Sep 15 - Sep 19, 2019
+    expire_date: 2019-09-19T23:59:00-00:00
+    location: San Francisco, CA
+    button_url: https://www.oracle.com/code-one/
+    button_text: Register Now
+  -
+    name: JCON 2019
+    date: Sep 24 - Sep 26, 2019
+    expire_date: 2019-09-26T23:59:00-00:00
+    location: Dusseldorf, Germany
+    button_url: https://jcon.one/de/
+    button_text: Register Now
+  -
+    name: JAX London
+    date: Oct 7 - Oct 10, 2019
+    expire_date: 2019-10-10T23:59:00-00:00
+    location: London, UK
+    button_url: https://jaxlondon.com/
+    button_text: Register Now
+  -
+    name: EclipseCon Europe 2019
+    date: Oct 21 - Oct 24
+    expire_date: 2019-10-24T23:59:00-00:00
+    location: Ludwigsburg, Germany
+    button_url: https://www.eclipsecon.org/europe2019
+    button_text: Register Now
