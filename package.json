@@ -21,8 +21,8 @@
     "install": "NODE_ENV=production npm run production"
   },
   "dependencies": {
+    "@octokit/rest": "^16.28.2",
     "eclipsefdn-hugo-solstice-theme": "0.0.22",
-    "github-api": "^3.2.2",
     "mustache": "^3.0.0"
   }
 }

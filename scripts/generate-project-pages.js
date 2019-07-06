@@ -1,14 +1,12 @@
 var Mustache = require('mustache');
-var GitHub = require('github-api');
+const Octokit = require('@octokit/rest')
 var fs = require('fs');
 
 var org = 'eclipse-ee4j';
 
-var gh = new GitHub({
-    token: ''
+const octokit = Octokit({
+    auth: ''
 });
-
-//var projectNames = ['jta-api', 'javamail', 'jms-api'];
 
 async function asyncForEach(array, callback) {
     for (let index = 0; index < array.length; index++) {
@@ -19,31 +17,53 @@ async function asyncForEach(array, callback) {
 async function getProjectData() {
     var projects = [];
 
-    var projectNames = (await gh.getOrganization(org).getRepos()).data.map(repo => {
-        return repo.name;
-    });
+    var repositories = (await octokit.repos.listForOrg({
+        org: org,
+        per_page: 100 // TODO: handle multipage
+    })).data;
 
-    await asyncForEach(projectNames, async (projectName) => {
-        var repo = gh.getRepo(org, projectName);
-    
+    await asyncForEach(repositories, async (repository) => {
         var project = {};
         project.contributors = [];
-    
-        var values = await Promise.all([repo.getContributors(), repo.getDetails(), repo.getContents('master', 'README.md', true).catch(p =>'No README.md')]);
+
+        var values = await Promise.all([
+            octokit.repos.getContributorsStats({ owner: org, repo: repository.name }),
+            octokit.repos.getReadme({ owner: org, repo: repository.name }).catch(p =>'No README'),
+            octokit.licenses.getForRepo({ owner: org, repo: repository.name }).catch(p => 'No license')]);
        
-        if(values[0].data) {
-            values[0].data.forEach(contributor => {
-                var contrib = {};
-                contrib['login'] = contributor.login;
-                contrib['avatar'] = contributor.avatar_url;
-                project.contributors.push(contrib);
-            });
-    
-            project.name = values[1].data.name;
-            project.description = values[1].data.description;
-            project.text = values[2].data;
-            projects.push(project);
+        var contributors = values[0].data;
+
+        var readme = '';
+        var readmeExtension = '';
+        if(values[1].data) {
+            readme = new Buffer(values[1].data.content, 'base64').toString('utf8');
+            var readmeName = values[1].data.name;
+            readmeExtension = readmeName.substr(readmeName.lastIndexOf(".") + 1 , readmeName.length);
         }
+        var license = values[2].data ? values[2].data.license.name : '';
+
+        if(contributors) {
+            if(Array.isArray(contributors)) {
+                contributors.forEach(contributor => {
+                    var contrib = {};
+                    contrib['login'] = contributor.login;
+                    contrib['avatar'] = contributor.avatar_url;
+                    project.contributors.push(contrib);
+                });
+            } else {
+                var contrib = {};
+                contrib['login'] = contributors.login;
+                contrib['avatar'] = contributors.avatar_url;
+                project.contributors.push(contrib);
+            }
+        }
+
+        project.name = repository.name;
+        project.description = repository.description;
+        project.text = readme;
+        project.textFormat = readmeExtension;
+        project.license = license;
+        projects.push(project);
     });
     
     return projects;
@@ -56,14 +76,14 @@ const start = async () => {
             if (err) {
                 throw err; 
             }
-    
+   
             var rendered = Mustache.render(data.toString(), project);
-    
+
             var projectDirectory = __dirname + '/../content/projects/' + project.name;
             fs.mkdirSync(projectDirectory, { recursive: true }, (err) => {
                 if (err) throw err;
             });
-            fs.writeFile( projectDirectory + '/index.md', rendered, (err) => {
+            fs.writeFile( projectDirectory + '/index.' + project.textFormat, rendered, (err) => {
                 if (err) throw err;
             });
         });
