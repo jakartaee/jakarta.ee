@@ -20,6 +20,6 @@
     "install": "NODE_ENV=production npm run production"
   },
   "dependencies": {
-    "eclipsefdn-hugo-solstice-theme": "0.0.21"
+    "eclipsefdn-hugo-solstice-theme": "0.0.23"
   }
 }
