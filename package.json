@@ -22,7 +22,7 @@
   },
   "dependencies": {
     "@octokit/rest": "^16.28.2",
-    "eclipsefdn-hugo-solstice-theme": "0.0.22",
+    "eclipsefdn-hugo-solstice-theme": "0.0.23",
     "mustache": "^3.0.0"
   }
 }
