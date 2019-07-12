@@ -13,12 +13,12 @@
     "url": "git://github.com/jakartaee/jakarta.ee.git"
   },
   "scripts": {
-    "generate-projects": "node scripts/generate-project-pages.js",
     "dev": "NODE_ENV=development webpack --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
     "watch": "NODE_ENV=development webpack --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
     "hot": "NODE_ENV=development webpack-dev-server --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
     "production": "NODE_ENV=production webpack --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
-    "install": "NODE_ENV=production npm run production"
+    "install": "NODE_ENV=production npm run production",
+    "postinstall": "node scripts/generate-project-pages.js"
   },
   "dependencies": {
     "@octokit/rest": "^16.28.2",
