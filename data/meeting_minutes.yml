@@ -1,6 +1,9 @@
 items:
    marketing_committee:
        -
+          url: marketing_committee/minutes-marketing-june-27-2019.pdf
+          title: June 27, 2019 (pdf)
+       -
           url: marketing_committee/minutes-marketing-june-13-2019.pdf
           title: June 13, 2019 (pdf)
        -
@@ -207,7 +210,7 @@ items:
        -
           url: specification_committee/minutes-specification-january-30-2019.pdf
           title: January 30, 2019 (pdf)
-      
+       -
           url: specification_committee/minutes-specification-january-23-2019.pdf
           title: January 23, 2019 (pdf)
         
