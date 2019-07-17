@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://jakarta.ee/news/announcements/2019/07/15/update-for-jakarta-ee-community-july-2019/</loc>
+    <lastmod>2019-07-15T05:10:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://jakarta.ee/news/community-news/2019/07/03/j4k-conference-one-kubernetes-one-java-all-clouds/</loc>
     <lastmod>2019-07-03T05:10:00+00:00</lastmod>
   </url>
