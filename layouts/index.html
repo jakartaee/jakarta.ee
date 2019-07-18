@@ -2,10 +2,6 @@
 {{ define "head-suffix" }}
   <link rel="stylesheet" type="text/css" href="//www.eclipse.org/home/featured-story.css?v=1.05" media="screen" />
   <style>
-  	.featured-story-block-content {
-  	  background-image: url('/images/ece-2019-cfp.jpg');
-  	  background-position: top;
-  	}
     .featured-ad-content-jakarta p, .featured-ad-content-jakarta .feather {
       margin-bottom:0px;
       color:#fff;
@@ -17,15 +13,6 @@
       margin-top:10px;
       font-weight: 700;
     }
-    
-    @media(min-width: 767px){
-      .featured-story.featured-alternate {
-        background-image: url('/images/ece-2019-cfp.jpg');
-	  }
-	  .featured-story-block-content {
-	    background-image: none;
-       }
-	}
 	
     .featured-story-block-content h2 {
       color:#333;
@@ -35,10 +22,6 @@
       letter-spacing: 1px;
     }
   </style>
-{{ end }}
-
-{{ define "main_prefix"}}
-  {{ partial "featured_story.html" . }}
 {{ end }}
 
 {{ define "main" }}
