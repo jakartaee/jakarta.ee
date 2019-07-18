@@ -47,10 +47,6 @@
   
   <link rel="stylesheet" type="text/css" href="//www.eclipse.org/home/featured-story.css?v=1.05" media="screen" />
   <style>
-  	.featured-story-block-content {
-  	  background-image: url('/images/ece-2019-cfp.jpg');
-  	  background-position: top;
-  	}
     .featured-ad-content-jakarta p, .featured-ad-content-jakarta .feather {
       margin-bottom:0px;
       color:#fff;
@@ -62,15 +58,6 @@
       margin-top:10px;
       font-weight: 700;
     }
-    
-    @media(min-width: 767px){
-      .featured-story.featured-alternate {
-        background-image: url('/images/ece-2019-cfp.jpg');
-	  }
-	  .featured-story-block-content {
-	    background-image: none;
-       }
-	}
 	
     .featured-story-block-content h2 {
       color:#333;
@@ -282,39 +269,106 @@
 </header>
 
   
-  
-  
-  <div class="featured-story featured-alternate" >
+  <div class="featured-story featured-alternate" id="featured-story">
   <div class="container">
     <div class="row">
-      <div class="col-sm-12 col-sm-offset-2 col-md-16 col-md-offset-0 featured-story-block featured-story-block-content match-height-item-by-row" style="height: 270px;min-height: 270px;">
-        <h2>EclipseCon Europe 2019</h2>
-        <h3 class="h2 margin-bottom-30">Call for Papers is open!</h3>
-        <p><a class="btn btn-primary btn-lg font-weight-bold" href="https://www.eclipsecon.org/europe2019/propose-session?session_track=729">Submit your talk!</a></p>
+      <div class="col-sm-12 col-sm-offset-2 col-md-16 col-md-offset-0 featured-story-block featured-story-block-content match-height-item-by-row">
       </div>
-      <div class="col-sm-9 col-md-8 featured-ad featured-story-block match-height-item-by-row" style="height: 270px;min-height: 270px;">
-        <div class="featured-ad-content featured-ad-content-jakarta text-center">
-          <p>
-            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail">
-              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-              <polyline points="22,6 12,13 2,6"></polyline>
-            </svg>
-          </p>
-          <p>Sign up to our <br>Newsletter</p>
-          <form action="https://eclipsecon.us6.list-manage.com/subscribe/post" method="post" target="_blank">
-            <div class="form-group">
-              <input type="hidden" name="u" value="eaf9e1f06f194eadc66788a85">
-              <input type="hidden" name="id" value="98ae69e304">
-            </div>
-            <input type="submit" value="Subscribe" name="subscribe" class="button btn btn-primary">
-          </form>
+      <div class="col-sm-9 col-md-8 featured-ad featured-story-block match-height-item-by-row">
+        <div class="featured-ad-content text-center">
+          <div class="featured-ad-content-jakarta">
+  <p>
+    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail">
+      <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+      <polyline points="22,6 12,13 2,6"></polyline>
+    </svg>
+  </p>
+  <p>Sign up to our <br>Newsletter</p>
+  <form action="https://eclipsecon.us6.list-manage.com/subscribe/post" method="post" target="_blank">
+    <div class="form-group">
+      <input type="hidden" name="u" value="eaf9e1f06f194eadc66788a85">
+      <input type="hidden" name="id" value="98ae69e304">
+    </div>
+    <input type="submit" value="Subscribe" name="subscribe" class="button btn btn-primary">
+  </form>
+</div>
+
         </div>
       </div>
     </div>
   </div>
 </div>
+<script>
+	var rawStoryJSON = "[{\"bgImgSrc\":\"/images/jakartaone-livestream-banner.jpg\",\"content\":\"You won't want to miss out on this free, one-day virtual conference focused on all things cloud native Java.\",\"endDate\":\"2019-10-10\",\"link\":\"\\u003ca class=\\\"btn btn-primary btn-lg\\\" href=\\\"https://jakartaone.org/\\\"\\u003eRegister\\u003c/a\\u003e\",\"startDate\":\"2019-07-18\",\"title\":\"\\u003cstrong\\u003eJoin us for JakartaOne Livestream!\\u003c/strong\\u003e\",\"type\":\"story\"}]";
+	var sort =  null ;
+	var json = JSON.parse(rawStoryJSON);
+	
+	json = json.filter(a => new Date(a['endDate']) > new Date())
+		.filter(a => a['type'] === "both" || a['type'] === "story" );
 
+	
+	if (json.length > 1) {
+		shuffleArray(json);
+	}
+	
+	
+	if (json.length > 0) {
+		var item = json[0];
+		var storyEl = document.querySelector("#featured-story");
+		
+		if (item['bgImgSrc'] !== undefined || item['bgImgSrc'] !== "") {
+			storyEl.style.backgroundImage = 'url(\'' + item['bgImgSrc'] + '\')';
+			storyEl.style.backgroundSize = 'cover';
+		}
+		
+		
+		var headingEl = document.createElement('h2');
+		headingEl.innerHTML =  item['title'];
+		
+		var linkEl = document.createElement('p');
+		linkEl.innerHTML =  item['link'];
 
+		
+		var preambleEl, contentEl = null;
+		if (item['preamble'] != undefined && item['premble'] != "") {
+			preambleEl = document.createElement('p');
+			preambleEl.innerHTML =  item['preamble'];
+		}
+		if (item['content'] != undefined && item['content'] != "") {
+			contentEl = document.createElement('p');
+			contentEl.innerHTML =  item['content'];
+		}
+		
+		var divEl = storyEl.querySelector(".featured-story-block-content");
+		if (preambleEl != undefined) {
+			divEl.appendChild(preambleEl);
+		}
+		divEl.appendChild(headingEl);
+		if (contentEl != undefined) {
+			divEl.appendChild(contentEl);
+		}
+		divEl.appendChild(linkEl);
+	} else {
+		
+	}
+	
+
+	function shuffleArray(array) {
+	    for (var i = array.length - 1; i > 0; i--) {
+	        var j = Math.floor(Math.random() * (i + 1));
+	        var temp = array[i];
+	        array[i] = array[j];
+	        array[j] = temp;
+	    }
+	}
+</script>
+  
+
+<main>
+  <div class="container">
+    
+
+    
   
 <main>
 
