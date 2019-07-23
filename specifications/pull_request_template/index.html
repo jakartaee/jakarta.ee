@@ -1,0 +1,468 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Jakarta EE: The New Home of Cloud Native Java | The Eclipse Foundation</title>
+<meta property="og:title" content="Jakarta EE: The New Home of Cloud Native Java | The Eclipse Foundation" />
+<meta name="twitter:title" content="Jakarta EE: The New Home of Cloud Native Java | The Eclipse Foundation" />
+
+<meta name="description" content="Specification PR template When creating a specification project release review, create two PRs with the content divided as follows.
+Include the following in PR#1: - [ ] A directory in the form wombat/x.y where x.y is the release major.minor version, and the directory contains the following. - [ ] Specification PDF in the form of wombat_x.y.pdf - [ ] Specification HTML in the form of wombat_x.y.html - [ ] A specification page named _index.">
+<meta property="og:description" content="Specification PR template When creating a specification project release review, create two PRs with the content divided as follows.
+Include the following in PR#1: - [ ] A directory in the form wombat/x.y where x.y is the release major.minor version, and the directory contains the following. - [ ] Specification PDF in the form of wombat_x.y.pdf - [ ] Specification HTML in the form of wombat_x.y.html - [ ] A specification page named _index.">
+<meta name="twitter:description" content="Specification PR template When creating a specification project release review, create two PRs with the content divided as follows.
+Include the following in PR#1: - [ ] A directory in the form …">
+<meta name="author" content="Christopher Guindon"/>
+<link href='https://jakarta.ee/images/jakarta/favicon.ico' rel='icon' type='image/x-icon'/>
+<meta property="og:image" content="https://jakarta.ee/images/jakarta/jakarta_ee_400x400.png" />
+<meta name="twitter:image" content="https://jakarta.ee/images/jakarta/jakarta_ee_400x400.png" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@EclipseFdn" />
+<meta name="twitter:creator" content="@EclipseFdn" />
+<meta property="og:url" content="https://jakarta.ee/specifications/pull_request_template/" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Jakarta EE: The New Home of Cloud Native Java" />
+<meta name="keywords" content="Jakarta EE software, Java EE, cloud, microservices, enterprise, open source, innovation">
+
+
+<meta name="generator" content="Hugo 0.54.0" />
+<link rel="canonical" href="https://jakarta.ee/specifications/pull_request_template/" />
+
+
+<link rel="stylesheet" href="https://jakarta.ee/css/styles.css">
+  
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-5WLCZXC');</script>
+  
+  
+<link href="//fonts.googleapis.com/css?family=Libre+Franklin:400,700,300,600,100" rel="stylesheet" type="text/css"/>
+
+  
+</head>
+<body>
+  
+<a class="sr-only" href="#content">Skip to main content</a>
+<header class="header-wrapper header-default-bg-img" id="header-wrapper">
+  
+
+<div class="clearfix toolbar-container-wrapper">
+  <div class="container">
+    <div class="text-right toolbar-row row hidden-print">
+      <div class="col-md-24 row-toolbar-col">
+        <ul class="list-inline">
+          <li><a href="https://accounts.eclipse.org/user/edit" class="" data-tab-destination="tab-profile"><i class="fa fa-edit fa-fw"></i> Edit my account</a></li>
+          <li><a class="toolbar-link toolbar-manage-cookies dropdown-toggle"><i class="fa fa-wrench"></i> Manage Cookies</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row" id="header-row">
+    <div class="col-sm-5 col-md-4" id="header-left">
+      <div class="wrapper-logo-default">
+          <a title="Jakarta EE: The New Home of Cloud Native Java" href="https://jakarta.ee/">
+            <img width="140" class="logo-eclipse-default img-responsive hidden-xs" src="https://jakarta.ee/images/jakarta/jakarta-ee-logo.svg" alt="Jakarta EE: The New Home of Cloud Native Java" />
+          </a>
+        
+      </div>
+    </div>
+    
+    <div class="col-sm-19 col-md-20 reset margin-top-10" id="main-menu-wrapper">
+    
+      <div class="navbar yamm" id="main-menu">
+        <div class="navbar-collapse collapse reset float-right" id="navbar-main-menu">
+          <ul class="nav navbar-nav">
+            
+
+
+
+<li>
+  <a class="" href="/about/">
+  
+  About
+  </a>
+  
+</li>
+
+
+<li>
+  <a class="" href="/membership/">
+  
+  Membership
+  </a>
+  
+</li>
+
+
+<li>
+  <a class="" href="/connect/">
+  
+  Connect
+  </a>
+  
+</li>
+
+
+<li class="dropdown">
+  <a href="#" data-toggle="dropdown" class="dropdown-toggle">
+    
+    
+    <span>Resources</span>
+    <b class="caret"></b>
+  </a>
+  <ul class="dropdown-menu">
+    
+    <li><a href="/resources#surveys">Surveys</a> </li>
+    
+    <li><a href="/resources#infographics">Infographics</a> </li>
+    
+    <li><a href="/resources#videos">Videos</a> </li>
+    
+    <li><a href="/resources#specification_process">Specification Process</a> </li>
+    
+    <li><a href="/newsletter/">Newsletter Archives</a> </li>
+    
+    <li><a href="/meeting_minutes/">Meeting Minutes</a> </li>
+    
+  </ul>
+  
+</li>
+
+
+<li>
+  <a class="" href="https://Jakartablogs.ee">
+  
+  Blog
+  </a>
+  
+</li>
+
+
+
+
+
+
+<li class="dropdown eclipse-more hidden-xs">
+  <a data-toggle="dropdown" class="dropdown-toggle" role="button"><i class="fa fa-search"></i> <b class="caret"></b></a>
+  <ul class="dropdown-menu">
+    <li>
+      
+      <div class="yamm-content">
+        <div class="row">
+          <div class="col-sm-24">
+            <p><strong>Search</strong></p>
+            <div class="row">
+              <div class="col-md-24">
+                <div id="custom-search-form" class="reset-box-sizing">
+                  <script>
+                    (function() {
+                      var cx = '011805775785170369411:p3ec0igo0qq';
+                      var gcse = document.createElement('script');
+                      gcse.type = 'text/javascript';
+                      gcse.async = true;
+                      gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+                      '//cse.google.com/cse.js?cx=' + cx;
+                      var s = document.getElementsByTagName('script')[0];
+                      s.parentNode.insertBefore(gcse, s);
+                    })();
+                  </script>
+                  <gcse:searchbox-only gname="main" resultsUrl="https://www.eclipse.org/home/search.php"></gcse:searchbox-only>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>
+  </ul>
+</li>
+
+          </ul>
+        </div>
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-main-menu">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          </button>
+          <div class="wrapper-logo-mobile">
+            
+              <a class="navbar-brand visible-xs" title="Jakarta EE: The New Home of Cloud Native Java" href="https://jakarta.ee/">
+                <img width="140" class="logo-eclipse-default-mobile img-responsive" src="https://jakarta.ee/images/jakarta/jakarta-ee-logo.svg" alt="Jakarta EE: The New Home of Cloud Native Java" />
+              </a>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  
+
+</header>
+
+  
+<section class="default-breadcrumbs hidden-print" id="breadcrumb">
+  <div class="container">
+  <h3 class="sr-only">Breadcrumbs</h3>
+  <div class="row">
+    <div class="col-sm-24">
+      <ol class="breadcrumb">
+        
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://jakarta.ee/">Home</a>
+      </li>
+      
+      
+      <li>
+        <a href="https://jakarta.ee/specifications/">Specifications</a>
+      </li>
+      
+      
+      <li class="active">
+        <a href="https://jakarta.ee/specifications/pull_request_template/"></a>
+      </li>
+      
+      </ol>
+      
+    </div>
+  </div>
+</section>
+
+  
+  
+
+<main>
+  <div class="container">
+    
+      <div class="row">
+        <div class="col-md-18 padding-bottom-30">
+    
+
+    
+      <h1></h1>
+    
+  
+  
+
+<h2 id="specification-pr-template">Specification PR template</h2>
+
+<p>When creating a specification project release review, create two PRs with the content divided as follows.</p>
+
+<p>Include the following in PR#1:
+- [ ] A directory in the form wombat/x.y where x.y is the release major.minor version, and the directory contains the following.
+- [ ] Specification PDF in the form of wombat_x.y.pdf
+- [ ] Specification HTML in the form of wombat_x.y.html
+- [ ] A specification page named _index.md following the template at:
+      <a href="https://github.com/jakartaee/specification-committee/blob/master/spec_page_template.md" target="_blank">https://github.com/jakartaee/specification-committee/blob/master/spec_page_template.md</a>
+- [ ] For a Progress Review, that sufficient progress has been made on
+      a Compatible Implementation and TCK, to ensure that the spec is
+      implementable and testable.
+- [ ] For a Release Review, a summary that a Compatible Implementation
+      is complete, passes the TCK, and that the TCK includes sufficient
+      coverage of the specification. The TCK users guide MUST include
+      the instructions to run the compatible implementations used to
+      validate the release.  Instructions MAY be by reference.
+- [ ] The URL of the OSSRH staging repository for the api, javadoc:
+      <add URL here>
+- [ ] The URL of the staging directory on downloads.eclipse.org for the proposed EFTL TCK binary:
+      <add URL here></p>
+
+<p>Include the following in PR#2:
+- [ ] Specification JavaDoc in the wombat/x.y/apidocs directory.</p>
+
+
+  
+
+     
+      </div>
+        <div class="col-md-6  padding-bottom-30">
+          
+<aside id="main-sidebar">
+  <ul id="leftnav" class="ul-left-nav fa-ul hidden-print">
+    <li class="separator">
+      <a class="separator" href="/">Innovate with Us</a>
+    </li>
+    <li>
+      <i class="fa fa-caret-right fa-fw"></i>
+      <a href="/about/" target="_self">About Jakarta EE</a>
+    </li>
+    <li>
+      <i class="fa fa-caret-right fa-fw"></i>
+      <a href="/about/faq/" target="_self">Frequently Asked Questions</a>
+    </li>
+    <li>
+      <i class="fa fa-caret-right fa-fw"></i>
+      <a href="/membership/" target="_self">Become a Member</a>
+    </li>
+    <li>
+      <i class="fa fa-caret-right fa-fw"></i>
+      <a href="/connect/" target="_self">Stay Connected </a>
+    </li>
+    <li>
+      <i class="fa fa-caret-right fa-fw"></i>
+      <a href="https://eclipse.org/org/workinggroups/jakarta_ee_charter.php" target="_self">Working Group Charter</a>
+    </li>
+     <li>
+      <i class="fa fa-caret-right fa-fw"></i>
+      <a href="https://www.eclipse.org/ee4j/direction.php" target="_self">Technical Direction</a>
+    </li>
+    <li>
+      <i class="fa fa-caret-right fa-fw"></i>
+      <a href="/newsletter" target="_self">Newsletter Archives</a>
+    </li>
+    <li>
+      <i class="fa fa-caret-right fa-fw"></i>
+      <a href="/meeting_minutes" target="_self">Meeting Minutes</a>
+    </li>
+    
+    <li>
+      <i class="fa fa-caret-right fa-fw"></i>
+      <a href="/legal/trademark_guidelines/" target="_self">Trademark Guidelines</a>
+    </li>
+    <li>
+      <i class="fa fa-caret-right fa-fw"></i>
+      <a href="/about/jesp/" target="_self">Specification Process</a>
+    </li>
+  </ul>
+</aside>
+
+        </div>
+      </div>
+    
+  </div>
+</main>
+  
+  
+
+
+  <div class="background-secondary text-center jakarta-newsletter jakarta-newsletter-default-padding">
+    <p>
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail">
+        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+        <polyline points="22,6 12,13 2,6"></polyline>
+      </svg>
+    </p>
+    <h2>Sign up to our Newsletter</h2>
+    <form action="https://eclipsecon.us6.list-manage.com/subscribe/post" method="post" target="_blank">
+      <div class="form-group">
+        <input type="hidden" name="u" value="eaf9e1f06f194eadc66788a85">
+        <input type="hidden" name="id" value="98ae69e304">
+      </div>
+      <input type="submit" value="Subscribe" name="subscribe" class="button btn btn-primary">
+    </form>
+  </div>
+
+  
+<p id="back-to-top">
+  <a class="visible-xs" href="#top">Back to the top</a>
+</p>
+<footer id="solstice-footer">
+  <div class="container">
+    <div class="row">
+      <section class="col-sm-6 hidden-print" id="footer-eclipse-foundation">
+        <h2 class="section-title">Eclipse Foundation</h2>
+        <ul class="nav">
+          <li><a href="https://www.eclipse.org/org/">About Us</a></li>
+          <li><a href="https://www.eclipse.org/org/foundation/contact.php">Contact Us</a></li>
+          <li><a href="https://www.eclipse.org/donate">Donate</a></li>
+          <li><a href="https://www.eclipse.org/org/documents/">Governance</a></li>
+          <li><a href="https://www.eclipse.org/artwork/">Logo and Artwork</a></li>
+          <li><a href="https://www.eclipse.org/org/foundation/directors.php">Board of Directors</a></li>
+        </ul>
+      </section>
+      <section class="col-sm-6 hidden-print" id="footer-legal">
+        <h2 class="section-title">Legal</h2>
+        <ul class="nav">
+          <li><a href="https://www.eclipse.org/legal/privacy.php">Privacy Policy</a></li>
+          <li><a href="https://www.eclipse.org/legal/termsofuse.php">Terms of Use</a></li>
+          <li><a href="https://www.eclipse.org/legal/copyright.php">Copyright Agent</a></li>
+          <li><a href="https://www.eclipse.org/legal/epl-2.0/">Eclipse Public License</a></li>
+          <li><a href="https://www.eclipse.org/legal/">Legal Resources </a></li>
+        </ul>
+      </section>
+      <section class="col-sm-6 hidden-print" id="footer-useful-links">
+        <h2 class="section-title">Useful Links</h2>
+        <ul class="nav">
+          <li><a href="https://bugs.eclipse.org/bugs/">Report a Bug</a></li>
+          <li><a href="//help.eclipse.org/">Documentation</a></li>
+          <li><a href="https://www.eclipse.org/contribute/">How to Contribute</a></li>
+          <li><a href="https://www.eclipse.org/mail/">Mailing Lists</a></li>
+          <li><a href="https://www.eclipse.org/forums/">Forums</a></li>
+          <li><a href="//marketplace.eclipse.org">Marketplace</a></li>
+        </ul>
+      </section>
+      <section class="col-sm-6 hidden-print" id="footer-other">
+        <h2 class="section-title">Other</h2>
+        <ul class="nav">
+          <li><a href="https://www.eclipse.org/ide/">IDE and Tools</a></li>
+          <li><a href="https://www.eclipse.org/projects">Community of Projects</a></li>
+          <li><a href="https://www.eclipse.org/org/workinggroups/">Working Groups</a></li>
+          <li><a href="https://www.eclipse.org/org/research/">Research@Eclipse</a></li>
+          <li><a href="https://www.eclipse.org/security/">Report a Vulnerability</a></li>
+          <li><a href="https://status.eclipse.org">Service Status</a></li>
+        </ul>
+      </section>
+      <div class="col-sm-24 margin-top-20">
+        <div class="row">
+          <div id="copyright" class="col-md-16">
+            <p id="copyright-text">Copyright &copy; Eclipse Foundation, Inc. All Rights Reserved.</p>
+          </div>
+          <div class="col-md-8 social-media">
+            <ul class="list-inline">
+              <li>
+                <a class="social-media-link fa-stack fa-lg" href="https://twitter.com/EclipseFdn">
+                <i class="fa fa-circle-thin fa-stack-2x"></i>
+                <i class="fa fa-twitter fa-stack-1x"></i>
+                </a>
+              </li>
+              <li>
+                <a class="social-media-link fa-stack fa-lg" href="https://www.facebook.com/eclipse.org">
+                <i class="fa fa-circle-thin fa-stack-2x"></i>
+                <i class="fa fa-facebook fa-stack-1x"></i>
+                </a>
+              </li>
+              <li>
+                <a class="social-media-link fa-stack fa-lg" href="https://www.youtube.com/user/EclipseFdn">
+                <i class="fa fa-circle-thin fa-stack-2x"></i>
+                <i class="fa fa-youtube fa-stack-1x"></i>
+                </a>
+              </li>
+              <li>
+                <a class="social-media-link fa-stack fa-lg" href="https://www.linkedin.com/company/eclipse-foundation">
+                <i class="fa fa-circle-thin fa-stack-2x"></i>
+                <i class="fa fa-linkedin fa-stack-1x"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="scrollup">Back to the top</a>
+    </div>
+  </div>
+</footer>
+
+<script src="https://jakarta.ee/js/solstice.js"></script>
+
+
+  
+</body>
+</html>
+

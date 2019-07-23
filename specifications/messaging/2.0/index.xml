@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Jakarta Messaging 2.0 on Jakarta EE: The New Home of Cloud Native Java</title>
+    <link>https://jakarta.ee/specifications/messaging/2.0/</link>
+    <description>Recent content in Jakarta Messaging 2.0 on Jakarta EE: The New Home of Cloud Native Java</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>webdev@eclipse-foundation.org (Christopher Guindon)</managingEditor>
+    <webMaster>webdev@eclipse-foundation.org (Christopher Guindon)</webMaster>
+    <lastBuildDate>Fri, 19 Jul 2019 15:57:57 -0700</lastBuildDate>
+    
+	<atom:link href="https://jakarta.ee/specifications/messaging/2.0/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+  </channel>
+</rss>
