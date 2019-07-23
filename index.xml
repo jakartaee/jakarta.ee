@@ -13,6 +13,18 @@
     
     
     <item>
+      <title>Jakarta EE Specification Process</title>
+      <link>https://jakarta.ee/about/jesp/</link>
+      <pubDate>Tue, 16 Jul 2019 13:00:00 -0400</pubDate>
+      <author>webdev@eclipse-foundation.org (Christopher Guindon)</author>
+      <guid>https://jakarta.ee/about/jesp/</guid>
+      <description>Version 1.2. Effective July 16&amp;frasl;2019
+The Jakarta EE Specification Process (JESP) is concerned with the Specification Process as it applies to Specification Projects operating under the purview of the Jakarta EE Working Group.
+The Jakarta EE Specification Committee hereby adopts the https://www.eclipse.org/projects/efsp?version=1.2[Eclipse Foundation Specification Process v1.2] (EFSP) as the Jakarta EE Specification Process with the following modifications:
+ Any modification to or revision of this Jakarta EE Specification Process, including the adoption of a new version of the EFSP, must be approved by a Super-majority of the Specification Committee, including a Super-majority of the Strategic Members of the Jakarta EE Working Group, in addition to any other ballot requirements set forth in the EFSP.</description>
+    </item>
+    
+    <item>
       <title>Update for Jakarta EE community: July 2019</title>
       <link>https://jakarta.ee/news/announcements/2019/07/15/update-for-jakarta-ee-community-july-2019/</link>
       <pubDate>Mon, 15 Jul 2019 05:10:00 +0000</pubDate>
@@ -220,18 +232,6 @@ The list of Oracle/JCP acronyms appears at the bottom of this document.</descrip
       <author>webdev@eclipse-foundation.org (Christopher Guindon)</author>
       <guid>https://jakarta.ee/news/community-news/2019/05/02/microprofile-what-you-need-to-know/</guid>
       <description>Learn everything you need to know about MicroProfile.</description>
-    </item>
-    
-    <item>
-      <title>Jakarta EE Specification Process</title>
-      <link>https://jakarta.ee/about/jesp/</link>
-      <pubDate>Wed, 24 Apr 2019 16:09:45 -0400</pubDate>
-      <author>webdev@eclipse-foundation.org (Christopher Guindon)</author>
-      <guid>https://jakarta.ee/about/jesp/</guid>
-      <description>version 1.0. Effective April 9, 2019
-The Jakarta EE Specification Process (JESP) is concerned with the Specification Process as it applies to Specification Projects operating under the purview of the Jakarta EE Working Group.
-The Jakarta EE Specification Committee hereby adopts the Eclipse Foundation Specification Process v1.1 (EFSP) as the Jakarta EE Specification Process with the following modifications:
- Any modification to or revision of this Jakarta EE Specification Process, including the adoption of a new version of the EFSP, must be approved by a Super-majority of the Specification Committee, including a Super-majority of the Strategic Members of the Jakarta EE Working Group, in addition to any other ballot requirements set forth in the EFSP.</description>
     </item>
     
     <item>
