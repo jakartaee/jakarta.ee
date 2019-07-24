@@ -21,6 +21,6 @@
     "postinstall": "NODE_ENV=production rm -rf content/specifications && git clone https://github.com/jakartaee/specifications.git content/specifications"
   },
   "dependencies": {
-    "eclipsefdn-hugo-solstice-theme": "0.0.23"
+    "eclipsefdn-hugo-solstice-theme": "0.0.25"
   }
 }
