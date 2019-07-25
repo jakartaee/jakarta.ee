@@ -1,0 +1,19 @@
+{{ define "main" }}
+<main>
+<div>{{.Content}}</div>
+<div class="news-list">
+	<div class="news-list-col">
+		{{ range .Page.Sections.ByWeight}}
+		<div class="news-list-media">
+			<a
+				href="{{.URL}}"
+				class="media media-link">
+				<h4 class="media-heading">{{ .Title }}</h4>
+				<p class="media-text">{{ .Summary }}</p>
+			</a>
+		</div>
+		{{ end }}
+	</div>
+</div>
+</main>
+{{ end }}

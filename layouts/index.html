@@ -1,52 +1,46 @@
+
+{{ define "head-suffix" }}
+  <link rel="stylesheet" type="text/css" href="//www.eclipse.org/home/featured-story.css?v=1.05" media="screen" />
+  <style>
+    .featured-ad-content-jakarta p, .featured-ad-content-jakarta .feather {
+      margin-bottom:0px;
+      color:#fff;
+    }
+    .featured-ad:after, .featured-ad:before, .featured-ad {
+      background-color: #6b747b;
+    }
+    .featured-alternate .featured-story-block h2,  .featured-alternate .featured-story-block .h2 {
+      margin-top:10px;
+      font-weight: 700;
+    }
+	
+    .featured-story-block-content h2 {
+      color:#333;
+    }
+    .featured-story-block-content a {
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+  </style>
+{{ end }}
+
 {{ define "main" }}
 <main>
+
+  {{ partial "events.html" . }}
+
   <div class="container">
-    <div class="jakarta-members margin-bottom-50">
-      <h2 class="heading-line text-center">
-        <span>Strategic Members</span>
-      </h2>
-      <ul class="list-inline text-center">
-        <li><a href="https://www.fujitsu.com/" target="_blank"><img src="images/members/jakarta-member_fujitsu.svg" width="130" class="img-responsive"></a></li>
-        <li><a href="https://www.ibm.com/" target="_blank"><img src="images/members/jakarta-member_ibm.png" width="130" class="img-responsive"></a></li>
-        <li><a href="https://www.oracle.com/" target="_blank"><img src="images/members/jakarta-member_oracle.svg" width="130" class="img-responsive"></a></li>
-        <li><a href="https://www.payara.fish/" target="_blank"><img src="images/members/jakarta-member_payara.svg" width="130" class="img-responsive"></a></li>
-        <li><a href="https://www.redhat.com/" target="_blank"><img src="images/members/jakarta-member_redhat.svg" width="130" class="img-responsive"></a></li>
-        <li><a href="https://www.tomitribe.com/" target="_blank"><img src="images/members/jakarta-member_tomitribe.svg" width="130" class="img-responsive"></a></li>
-      </ul>
-      <div class="col-md-22 col-md-offset-1">
-        <h3 class="heading-line text-center">
-          <span>Participating Members</span>
-        </h3>
-        <ul class="list-inline text-center">
-          <li><a href="https://www.cloudbees.com/" target="_blank"><img src="images/members/jakarta-member_cloudbees.png" width="100" class="img-responsive"></a></li>
-          <li><a href="https://www.docdoku.com/" target="_blank"><img src="images/members/jakarta-member_docdoku.png" width="100" class="img-responsive"></a></li>
-          <li><a href="https://www.genuitec.com/" target="_blank"><img src="images/members/jakarta-member_genuitec.svg" width="100" class="img-responsive"></a></li>
-          <li><a href="https://incquerylabs.com/" target="_blank"><img src="images/members/jakarta-member_incquerylabs.png" width="100" class="img-responsive"></a></li>
-          <li><a href="https://www.liferay.com" target="_blank"><img src="images/members/jakarta-member_liferay.svg" width="100" class="img-responsive"></a></li>
-          <li><a href="https://www.lightbend.com/" target="_blank"><img src="images/members/jakarta-member_lightbend.svg" width="100" class="img-responsive"></a></li>
-          <li><a href="https://londonjavacommunity.wordpress.com" target="_blank"><img src="images/members/jakarta-member_ljc.svg" width="100" class="img-responsive"></a></li>
-          <li><a href="https://www.microsoft.com/" target="_blank"><img src="images/members/jakarta-member_microsoft.svg" width="100" class="img-responsive"></a></li>
-          <li><a href="https://www.mizuhobank.com/index.html" target="_blank"><img src="images/members/jakarta-member_mizuho.svg" width="100" class="img-responsive"></a></li>
-          <li><a href="https://pivotal.io/" target="_blank"><img src="images/members/jakarta-member_pivotal.svg" width="100" class="img-responsive"></a></li>
-          <li><a href="http://www.rcp-vision.com/" target="_blank"><img src="images/members/jakarta-member_rcp_vision.png" width="100" class="img-responsive"></a></li>
-          <li><a href="https://www.sap.com/" target="_blank"><img src="images/members/jakarta-member_sap.png" width="100" class="img-responsive"></a></li>
-          <li><a href="http://www.useopen.com/" target="_blank"><img src="images/members/jakarta-member_useopen.svg" width="100" class="img-responsive"></a></li>
-          <li><a href="https://vaadin.com/" target="_blank"><img src="images/members/jakarta-member_vaadin.svg" width="100" class="img-responsive"></a></li>
-          <li><a href="https://webtide.com/" target="_blank"><img src="images/members/jakarta-member_webtide.svg" width="100" class="img-responsive"></a></li>
-        </ul>
-      </div>
-    </div>
     <!-- Announcements -->
-    <div class="row margin-bottom-50">
-      <div class="col-sm-16 news-list">
+    <div class="row margin-bottom-50 margin-top-20">
+      <div class="col-sm-12 news-list">
         <div class="news-list-col margin-bottom-40">
           <h2 class="heading-line text-center">
             <span>Announcements</span>
           </h2>
-          {{ range first 10 (where (index .Site.Taxonomies.categories "announcements").Pages "Section" "news") }}
+          {{ range first 5 (where (index .Site.Taxonomies.categories "announcements").Pages "Section" "news") }}
           <ul class="news-list-media list-unstyled">
             <li>
-              <a href="{{- with .Params.link | default .RelPermalink }} {{.}} {{- end }}" class="media media-link">
+              <a href="{{- with .Params.link | default .RelPermalink }} {{.}} {{- end }}" class="media media-link match-height-item">
                 <p class="media-date">{{ .Date.Format "Monday, Jan 2, 2006" }}</p>
                 <h4 class="media-heading">{{ .Title }}</h4>
                 <p class="media-text">{{ .Summary }}</p>
@@ -55,47 +49,31 @@
           </ul>
           {{ end }}
           <ul class="list-inline news-list-links">
-            <li class="news-list-links-view-all"><a href="news/">View all</a></li>
-            <li class="news-list-links-rss"><a href="news/index.xml" title="Subscribe to our RSS-feed">Subscribe to our RSS-feed <i class="fa fa-rss"></i></a></li>
-          </ul>
-        </div>
-        <div class="news-list-col margin-bottom-40">
-          <h2 class="heading-line text-center">
-            <span>Community News</span>
-          </h2>
-          {{ range first 10 (where (index .Site.Taxonomies.categories "community").Pages "Section" "news") }}
-          <ul class="news-list-media list-unstyled">
-            <li>
-              <a href="{{- with .Params.link | default .RelPermalink }} {{.}} {{- end }}" class="media media-link">
-                <p class="media-date">{{ .Date.Format "Monday, Jan 2, 2006" }}</p>
-                <h4 class="media-heading">{{ .Title }}</h4>
-                <p class="media-text">{{ .Summary }}</p>
-              </a>
-            </li>
-          </ul>
-          {{ end }}
-          <ul class="list-inline news-list-links">
-            <li class="news-list-links-view-all"><a href="news/">View all</a></li>
+            <li class="news-list-links-view-all"><a href="news/announcements">View all</a></li>
             <li class="news-list-links-rss"><a href="news/index.xml" title="Subscribe to our RSS-feed">Subscribe to our RSS-feed <i class="fa fa-rss"></i></a></li>
           </ul>
         </div>
       </div>
-      <div class="col-sm-8">
-        <div class="background-primary text-center jakarta-newsletter jakarta-newsletter-default-padding">
-          <p>
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail">
-              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-              <polyline points="22,6 12,13 2,6"></polyline>
-            </svg>
-          </p>
-          <h2>Sign up to our Newsletter</h2>
-          <form action="https://eclipsecon.us6.list-manage.com/subscribe/post" method="post" target="_blank">
-            <div class="form-group">
-              <input type="hidden" name="u" value="eaf9e1f06f194eadc66788a85">
-              <input type="hidden" name="id" value="98ae69e304">
-            </div>
-            <input type="submit" value="Subscribe" name="subscribe" class="button btn btn-default">
-          </form>
+      <div class="col-sm-12 news-list">
+        <div class="news-list-col margin-bottom-40">
+          <h2 class="heading-line text-center">
+            <span>Community News</span>
+          </h2>
+          {{ range first 5 (where (index .Site.Taxonomies.categories "community").Pages "Section" "news") }}
+          <ul class="news-list-media list-unstyled">
+            <li>
+              <a href="{{- with .Params.link | default .RelPermalink }} {{.}} {{- end }}" class="media media-link match-height-item">
+                <p class="media-date">{{ .Date.Format "Monday, Jan 2, 2006" }}</p>
+                <h4 class="media-heading">{{ .Title }}</h4>
+                <p class="media-text">{{ .Summary }}</p>
+              </a>
+            </li>
+          </ul>
+          {{ end }}
+          <ul class="list-inline news-list-links">
+            <li class="news-list-links-view-all"><a href="news/community-news">View all</a></li>
+            <li class="news-list-links-rss"><a href="news/index.xml" title="Subscribe to our RSS-feed">Subscribe to our RSS-feed <i class="fa fa-rss"></i></a></li>
+          </ul>
         </div>
       </div>
     </div>

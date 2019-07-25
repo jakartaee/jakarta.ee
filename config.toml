@@ -21,6 +21,7 @@ themesDir = "node_modules/"
   subtheme = "jakarta"
   header_wrapper_class = "header-default-bg-img"
   js = "js/solstice.js"
+  show_events = true
 # call_for_action_text = ""
 # call_for_action_url = ""
 # call_for_action_icon = ""
@@ -52,11 +53,59 @@ themesDir = "node_modules/"
     weight = 1
 
 [[menu.main]]
-    name = "Members"
-    url = "/members/"
+    name = "Membership"
+    url = "/Membership/"
     weight = 2
 
 [[menu.main]]
     name = "Connect"
     url = "/connect/"
     weight = 3
+    
+[[menu.main]]
+    name = "Resources"
+    url = "/resources/"
+    weight = 4
+    
+[[menu.main]]
+    name = "Blog"
+    url = "https://Jakartablogs.ee"
+    weight = 5
+
+# Resource sub-menu
+
+[[menu.main]]
+    name = "Surveys"
+    url = "/resources#surveys"
+    parent = "Resources"
+    weight = 1
+    
+[[menu.main]]
+    name = "Infographics"
+    url = "/resources#infographics"
+    parent = "Resources"
+    weight = 2
+    
+[[menu.main]]
+    name = "Videos"
+    url = "/resources#videos"
+    parent = "Resources"
+    weight = 3
+    
+[[menu.main]]
+    name = "Specification Process"
+    url = "/resources#specification_process"
+    parent = "Resources"
+    weight = 4
+    
+[[menu.main]]
+    name = "Newsletter Archives"
+    url = "/newsletter/"
+    parent = "Resources"
+    weight = 5
+    
+[[menu.main]]
+    name = "Meeting Minutes"
+    url = "/meeting_minutes/"
+    parent = "Resources"
+    weight = 6
