@@ -18,9 +18,11 @@
     "hot": "NODE_ENV=development webpack-dev-server --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
     "production": "NODE_ENV=production webpack --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
     "install": "NODE_ENV=production npm run production",
-    "postinstall": "NODE_ENV=production rm -rf content/specifications && git clone https://github.com/jakartaee/specifications.git content/specifications"
+    "postinstall": "NODE_ENV=production rm -rf content/specifications && git clone https://github.com/jakartaee/specifications.git content/specifications && node scripts/generate-project-pages.js"
   },
   "dependencies": {
-    "eclipsefdn-hugo-solstice-theme": "0.0.25"
+    "@octokit/rest": "^16.28.2",
+    "eclipsefdn-hugo-solstice-theme": "0.0.23",
+    "mustache": "^3.0.0"
   }
 }

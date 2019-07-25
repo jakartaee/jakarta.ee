@@ -1,0 +1,18 @@
+---
+Title: {{ name }}
+license: {{ license }}
+logo: //www.eclipse.org/artwork/images/v2/eclipse_foundation_logo.jpg
+#latest_version: 1.0.1
+download_url: https://eclipse-ee4j.github.io/{{ name }}
+website: https://eclipse-ee4j.github.io/{{ name }}
+#technology_types: ["Java"]
+#build_technologies: ["Maven"]
+#other_tags: ["lorem"]
+hide_sidebar: "false"
+---
+
+{{#contributors}}
+<a href="https://github.com/{{login}}"><img src="{{{avatar}}}" width="50px" alt="{{login}}"/></a>
+{{/contributors}}
+
+{{ text }}
