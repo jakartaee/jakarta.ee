@@ -127,7 +127,7 @@ We are working with our friends at the Apache Software Foundation to allow their
 
 We require membership in the Working Group because the Jakarta EE Compatibility logo and brand have value to our community and the industry. We rely on membership funding to financially support the management of the Jakarta EE specification process, compatibility rules, and developer outreach activities to drive awareness and adoption. Also, Working Group membership fees fund the promotion of the Jakarta EE Compatible brand and its value in the marketplace.
 
-Refer to Jakarta EE Trademark Guidelines for more details.
+Refer to [Jakarta EE Trademark Guidelines](/legal/trademark_guidelines/) for more details.
 
 ---
 
