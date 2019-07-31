@@ -45,7 +45,7 @@ To get your product listed on the Compatible Products page, please follow these 
 2. Complete the steps outlined in the [Jakarta EE Trademark Guidelines](https://jakarta.ee/legal/trademark_guidelines/), including:  
   a. Follow the Jakarta EE TCK process to completely run and satisfy all of the requirements of the applicable TCK test  
   b. Email the TCK results to [tck@eclipse.org](mailto:tck@eclipse.org)  
-  c. Execute (digitally sign) the [Jakarta EE Compatibility Trademark License Agreement](/legal/trademark_guidelines/jakarta-ee-trademark-license.pdf) (or print the PDF and return the signed agreement to [emo-records@eclipse.org](mailto:emo-records@eclipse.org))  
+  c. Execute (digitally sign) the [Jakarta EE Compatibility Trademark License Agreement](https://app.hellosign.com/s/DQ9uVw4b) (or print the [License Agreement PDF](/legal/trademark_guidelines/jakarta-ee-trademark-license.pdf) and return the signed agreement to [emo-records@eclipse.org](mailto:emo-records@eclipse.org))  
 3. Open a [GitHub issue](https://github.com/jakartaee/jakarta.ee/issues/new?template=compatibility.md) and fill in the required information
 <br />
 <br />
