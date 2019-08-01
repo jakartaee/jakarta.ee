@@ -4,7 +4,9 @@ about: For Compatible Software Products to be listed on the Jakarta EE official 
 
 ---
 
-For Compatible Software Products to be listed on the Jakarta EE official list of Software Products must provide, as a minimum:
+To include your Compatible Software Product on the Jakarta EE official list of Compatible Software Products, please provide the following information:
+
+**A corporate email address to confirm that you are an authorized representative of the company whose product information you are submitting**
 
 **A product name and version**
 

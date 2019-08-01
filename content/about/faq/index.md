@@ -113,6 +113,24 @@ A: The Jakarta EE release cadence and schedule have not yet been determined. Onc
 
 ---
 
+#### Q: Who and how can one use Jakarta EE Compatibility Logo?
+
+A: The first thing to understand is that the logo is not available for any specifications other than the Profiles (Full, Web). So, for example, implementing only Servlet does not permit the use of the Jakarta EE Compatibility logo by any organization or project.
+
+If an open source implementation of the Jakarta EE 8 Web or Full Profile follows the TCK process and is in compliance with the Eclipse Foundation TCK license, the open source project can certainly declare that it is a Compatible Implementation.
+
+In order to use the Jakarta EE Compatibility logo, an organization sponsoring the open source project must meet the membership eligibility requirements specified in the Jakarta EE Trademark Guidelines.
+
+At a high level, the use of the Compatibility logo is limited to only members of the Jakarta EE Working Group who are licensees under the Jakarta EE Trademark License Agreement or approved guest members of the Working Group (who are also licensees under the Eclipse Foundation Trademark License).
+
+We are working with our friends at the Apache Software Foundation to allow their projects to use the Compatibility logo at no charge. We are open to working with other open source foundations that are interested in making the logo available to their eligible projects.
+
+We require membership in the Working Group because the Jakarta EE Compatibility logo and brand have value to our community and the industry. We rely on membership funding to financially support the management of the Jakarta EE specification process, compatibility rules, and developer outreach activities to drive awareness and adoption. Also, Working Group membership fees fund the promotion of the Jakarta EE Compatible brand and its value in the marketplace.
+
+Refer to [Jakarta EE Trademark Guidelines](/legal/trademark_guidelines/) for more details.
+
+---
+
 #### Q: How can I get involved in Jakarta EE?
 
 A: There are a number of ways to answer that question, depending on who or what you are.
