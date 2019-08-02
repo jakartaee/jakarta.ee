@@ -939,5 +939,15 @@ Subscribe   Newsletter  Sign up to our Newsletter      Updates  Receive updates 
 Include the following in PR#1: - [ ] A directory in the form wombat/x.y where x.y is the release major.minor version, and the directory contains the following. - [ ] Specification PDF in the form of wombat_x.y.pdf - [ ] Specification HTML in the form of wombat_x.y.html - [ ] A specification page named _index.</description>
     </item>
     
+    <item>
+      <title>Compatible Products</title>
+      <link>https://jakarta.ee/compatibility/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>webdev@eclipse-foundation.org (Christopher Guindon)</author>
+      <guid>https://jakarta.ee/compatibility/</guid>
+      <description>The success of Jakarta EE technology relies on compatibility to ensure application portability, security, stability, and resiliency. Compatibility will allow more technology providers to leverage and strengthen the Jakarta EE brand in the enterprise Java community. If you are interested in featuring your product here, follow the steps on the Get Listed page.
+Stay tuned for more updates! </description>
+    </item>
+    
   </channel>
 </rss>
