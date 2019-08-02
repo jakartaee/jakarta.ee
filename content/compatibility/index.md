@@ -1,24 +1,12 @@
 ---
-title: "Compatible Implementations of Jakarta EE"
+title: "Compatible Products"
+headline: "Compatible Products"
 date: 2019-04-2T11:10:38-04:00
 description: "Compatible Implementations of Jakarta EE"
-hide_sidebar: "false"
-draft: true
+hide_sidebar: true
+draft: false
 ---
 
-This page is to list downloadable Compatible Implementations of Jakarta EE. For a Compatible Implementation to be listed on the Jakarta EE official list please follow this two-step process:
+The success of Jakarta EE technology relies on compatibility to ensure application portability, security, stability, and resiliency. Compatibility will allow more technology providers to leverage and strengthen the Jakarta EE brand in the enterprise Java community. If you are interested in featuring your product here, follow the steps on the Get Listed page.
 
-<div class="row margin-top-40">
-  <div class="col-sm-8">
-    <h2 class="block-heading">1. Github issue</h2>
-    <div class="block-box-classic padding-20 match-height-item">
-      Open a <a href="https://github.com/jakartaee/jakartaee.github.io/issues/new?template=compatibility.md">Github issue</a>.
-    </div>
-  </div>
-  <div class="col-sm-8">
-    <h2 class="block-heading">2. Email</h2>
-    <div class="block-box-classic padding-20 match-height-item">
-      Send an email to <a href="mailto:tck@eclipse.org">tck@eclipse.org</a> with a pointer to the GitHub issue described in the previous step.
-    </div>
-  </div>
-</div>
+<h2 class="text-center fw-700 margin-bottom-30">Stay tuned for more updates!</h2>
