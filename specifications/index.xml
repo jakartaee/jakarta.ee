@@ -27,7 +27,7 @@
       <author>webdev@eclipse-foundation.org (Christopher Guindon)</author>
       <guid>https://jakarta.ee/specifications/pull_request_template/</guid>
       <description>Specification PR template When creating a specification project release review, create two PRs with the content divided as follows.
-Include the following in PR#1: - [ ] A directory in the form wombat/x.y where x.y is the release major.minor version, and the directory contains the following. - [ ] Specification PDF in the form of wombat_x.y.pdf - [ ] Specification HTML in the form of wombat_x.y.html - [ ] A specification page named _index.</description>
+Include the following in PR#1: - [ ] A directory in the form wombat/x.y where x.y is the release major.minor version, and the directory contains the following. - [ ] Specification PDF in the form of wombat-spec-x.y.pdf - [ ] Specification HTML in the form of wombat-spec-x.y.html - [ ] A specification page named _index.</description>
     </item>
     
   </channel>
