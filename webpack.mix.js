@@ -17,7 +17,7 @@ mix.options({uglify: {uglifyOptions: {compress: false, output: {comments: true}}
 mix.setPublicPath('static');
 mix.setResourceRoot('../');
 
-mix.less('./node_modules/eclipsefdn-solstice-assets/less/quicksilver/jakarta/styles.less', 'static/css/styles.css');
+mix.less('./less/styles.less', 'static/css/styles.css');
 
 mix.scripts([
     './node_modules/jquery/dist/jquery.min.js',
