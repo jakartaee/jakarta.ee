@@ -3,6 +3,26 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://jakarta.ee/news/community-news/2019/08/13/eclipse-microprofile-white-paper-2019/</loc>
+    <lastmod>2019-08-13T13:53:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jakarta.ee/news/community-news/2019/08/08/die-zukunft-von-cloud-native-java/</loc>
+    <lastmod>2019-08-08T13:53:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jakarta.ee/news/community-news/2019/08/07/why-you-should-attend-jakartaone-livestream/</loc>
+    <lastmod>2019-08-07T13:53:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jakarta.ee/news/community-news/2019/08/02/how-to-develop-open-liberty-microservices-on-openshift/</loc>
+    <lastmod>2019-08-02T13:53:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://jakarta.ee/specifications/enterprise-beans/3.2/</loc>
     <lastmod>2019-07-19T15:57:57-07:00</lastmod>
   </url>
@@ -30,6 +50,11 @@
   <url>
     <loc>https://jakarta.ee/legal/acronym_guidelines/</loc>
     <lastmod>2019-06-26T16:10:38-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jakarta.ee/news/community-news/2019/06/26/jakarta-ee-39-projects-and-where-they-are-at/</loc>
+    <lastmod>2019-06-26T13:53:00+00:00</lastmod>
   </url>
   
   <url>

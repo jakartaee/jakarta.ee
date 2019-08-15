@@ -13,12 +13,57 @@
     
     
     <item>
+      <title>Eclipse MicroProfile White Paper 2019</title>
+      <link>https://jakarta.ee/news/community-news/2019/08/13/eclipse-microprofile-white-paper-2019/</link>
+      <pubDate>Tue, 13 Aug 2019 13:53:00 +0000</pubDate>
+      <author>webdev@eclipse-foundation.org (Christopher Guindon)</author>
+      <guid>https://jakarta.ee/news/community-news/2019/08/13/eclipse-microprofile-white-paper-2019/</guid>
+      <description>Now Available! In the MicroProfile Technical White Paper, Lars Röwekamp explains why NOW is the best time for developers &amp;amp; users to adopt the MicroProfile APIs when developing microservices.</description>
+    </item>
+    
+    <item>
+      <title>Die Zukunft von Cloud Native Java</title>
+      <link>https://jakarta.ee/news/community-news/2019/08/08/die-zukunft-von-cloud-native-java/</link>
+      <pubDate>Thu, 08 Aug 2019 13:53:00 +0000</pubDate>
+      <author>webdev@eclipse-foundation.org (Christopher Guindon)</author>
+      <guid>https://jakarta.ee/news/community-news/2019/08/08/die-zukunft-von-cloud-native-java/</guid>
+      <description>Tanja Obradovic (Jakarta EE Program Manager) and Mikael Barbero (Team Lead) explain what will change in detail with Jakarta EE and how to join the community to help shape the future of Cloud Native Java.</description>
+    </item>
+    
+    <item>
+      <title>Why You Should Attend JakartaOne Livestream!</title>
+      <link>https://jakarta.ee/news/community-news/2019/08/07/why-you-should-attend-jakartaone-livestream/</link>
+      <pubDate>Wed, 07 Aug 2019 13:53:00 +0000</pubDate>
+      <author>webdev@eclipse-foundation.org (Christopher Guindon)</author>
+      <guid>https://jakarta.ee/news/community-news/2019/08/07/why-you-should-attend-jakartaone-livestream/</guid>
+      <description>If you are a server-side Java developer, you should be attending JakartaOne Livestream. As the name implies, it is a virtual conference to cover all things Jakarta EE (in case you weren&amp;rsquo;t paying attention, Jakarta EE is Java EE transferred to the Eclipse Foundation from Oracle).</description>
+    </item>
+    
+    <item>
+      <title>How to Develop Open Liberty Microservices on OpenShift</title>
+      <link>https://jakarta.ee/news/community-news/2019/08/02/how-to-develop-open-liberty-microservices-on-openshift/</link>
+      <pubDate>Fri, 02 Aug 2019 13:53:00 +0000</pubDate>
+      <author>webdev@eclipse-foundation.org (Christopher Guindon)</author>
+      <guid>https://jakarta.ee/news/community-news/2019/08/02/how-to-develop-open-liberty-microservices-on-openshift/</guid>
+      <description>Open Liberty is a flexible Java application server. It comes with Eclipse MicroProfile, which is a set of tools and APIs to build microservices.</description>
+    </item>
+    
+    <item>
       <title>J4K Conference- One Kubernetes, One Java, All Clouds</title>
       <link>https://jakarta.ee/news/community-news/2019/07/03/j4k-conference-one-kubernetes-one-java-all-clouds/</link>
       <pubDate>Wed, 03 Jul 2019 05:10:00 +0000</pubDate>
       <author>webdev@eclipse-foundation.org (Christopher Guindon)</author>
       <guid>https://jakarta.ee/news/community-news/2019/07/03/j4k-conference-one-kubernetes-one-java-all-clouds/</guid>
       <description>J4K is an exciting brand new conference that combines the best of open source and middleware communities for developing applications on Kubernetes. Check it out today!</description>
+    </item>
+    
+    <item>
+      <title>Jakarta EE: 39 Projects and Where they are at?</title>
+      <link>https://jakarta.ee/news/community-news/2019/06/26/jakarta-ee-39-projects-and-where-they-are-at/</link>
+      <pubDate>Wed, 26 Jun 2019 13:53:00 +0000</pubDate>
+      <author>webdev@eclipse-foundation.org (Christopher Guindon)</author>
+      <guid>https://jakarta.ee/news/community-news/2019/06/26/jakarta-ee-39-projects-and-where-they-are-at/</guid>
+      <description>If you are wondering what the heck is going on with Java EE and Jakarta EE, watch this awesome 40 minutes video by Triber Jean-Louis Monteiro (@JLouisMonteiro) in collaboration with Jean-Francois James recorded at JNation 2019 in Portugal.</description>
     </item>
     
     <item>
