@@ -41,6 +41,11 @@
   'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
   })(window,document,'script','dataLayer','GTM-5WLCZXC');</script>
   
+<script>
+	
+		var tableClasses = "table";
+	
+</script>
   
 <link href="//fonts.googleapis.com/css?family=Libre+Franklin:400,700,300,600,100" rel="stylesheet" type="text/css"/>
 
@@ -87,23 +92,24 @@
     </div>
   </div>
 </div>
-<div class="container">
-  <div class="row" id="header-row">
-    <div class="col-sm-5 col-md-4" id="header-left">
-      <div class="wrapper-logo-default">
-          <a title="Jakarta EE: The New Home of Cloud Native Java" href="https://jakarta.ee/">
-            <img width="140" class="logo-eclipse-default img-responsive hidden-xs" src="https://jakarta.ee/images/jakarta/jakarta-ee-logo.svg" alt="Jakarta EE: The New Home of Cloud Native Java" />
-          </a>
-        
+<div class="navbar-wrapper">
+  <div class="container">
+    <div class="row" id="header-row">
+      <div class="col-sm-5 col-md-4" id="header-left">
+        <div class="wrapper-logo-default">
+            <a title="Jakarta EE: The New Home of Cloud Native Java" href="https://jakarta.ee/">
+              <img width="140" class="logo-eclipse-default img-responsive hidden-xs" src="https://jakarta.ee/images/jakarta/jakarta-ee-logo.svg" alt="Jakarta EE: The New Home of Cloud Native Java" />
+            </a>
+          
+        </div>
       </div>
-    </div>
-    
-    <div class="col-sm-19 col-md-20 reset margin-top-10" id="main-menu-wrapper">
-    
-      <div class="navbar yamm" id="main-menu">
-        <div class="navbar-collapse collapse reset float-right" id="navbar-main-menu">
-          <ul class="nav navbar-nav">
-            
+      
+      <div class="col-sm-19 col-md-20 reset margin-top-10" id="main-menu-wrapper">
+      
+        <div class="navbar yamm" id="main-menu">
+          <div class="navbar-collapse collapse reset float-right" id="navbar-main-menu">
+            <ul class="nav navbar-nav">
+              
 
 
 
@@ -217,16 +223,17 @@
   </ul>
 </li>
 
-          </ul>
-        </div>
-        <div class="navbar-header">
-          
-          <div class="wrapper-logo-mobile">
+            </ul>
+          </div>
+          <div class="navbar-header">
             
-              <a class="navbar-brand visible-xs" title="Jakarta EE: The New Home of Cloud Native Java" href="https://jakarta.ee/">
-                <img width="140" class="logo-eclipse-default-mobile img-responsive" src="https://jakarta.ee/images/jakarta/jakarta-ee-logo.svg" alt="Jakarta EE: The New Home of Cloud Native Java" />
-              </a>
-            
+            <div class="wrapper-logo-mobile">
+              
+                <a class="navbar-brand visible-xs" title="Jakarta EE: The New Home of Cloud Native Java" href="https://jakarta.ee/">
+                  <img width="140" class="logo-eclipse-default-mobile img-responsive" src="https://jakarta.ee/images/jakarta/jakarta-ee-logo.svg" alt="Jakarta EE: The New Home of Cloud Native Java" />
+                </a>
+              
+            </div>
           </div>
         </div>
       </div>
@@ -302,68 +309,69 @@
   </div>
 </div>
 <script>
-	var rawStoryJSON = "[{\"bgImgSrc\":\"/images/jakartaone-livestream-banner.jpg\",\"content\":\"You won't want to miss out on this free, one-day virtual conference focused on all things cloud native Java.\",\"endDate\":\"2019-10-10\",\"link\":\"\\u003ca class=\\\"btn btn-primary btn-lg\\\" href=\\\"https://jakartaone.org/\\\"\\u003eRegister\\u003c/a\\u003e\",\"startDate\":\"2019-07-18\",\"title\":\"\\u003cstrong\\u003eJoin us for JakartaOne Livestream!\\u003c/strong\\u003e\",\"type\":\"story\"}]";
-	var sort =  null ;
-	var json = JSON.parse(rawStoryJSON);
-	
-	json = json.filter(a => new Date(a['endDate']) > new Date())
-		.filter(a => a['type'] === "both" || a['type'] === "story" );
+  var rawStoryJSON = "[{\"bgImgSrc\":\"/images/jakartaone-livestream-banner.jpg\",\"content\":\"You won't want to miss out on this free, one-day virtual conference focused on all things cloud native Java.\",\"endDate\":\"2019-10-10\",\"link\":\"\\u003ca class=\\\"btn btn-primary btn-lg\\\" href=\\\"https://jakartaone.org/\\\"\\u003eRegister\\u003c/a\\u003e\",\"startDate\":\"2019-07-18\",\"title\":\"\\u003cstrong\\u003eJoin us for JakartaOne Livestream!\\u003c/strong\\u003e\",\"type\":\"story\"}]";
+  var sort =  null ;
+  var json = JSON.parse(rawStoryJSON);
+  
+  json = json.filter(a => new Date(a['endDate']) > new Date())
+    .filter(a => a['type'] === "both" || a['type'] === "story" );
 
-	
-	if (json.length > 1) {
-		shuffleArray(json);
-	}
-	
-	
-	if (json.length > 0) {
-		var item = json[0];
-		var storyEl = document.querySelector("#featured-story");
-		
-		if (item['bgImgSrc'] !== undefined || item['bgImgSrc'] !== "") {
-			storyEl.style.backgroundImage = 'url(\'' + item['bgImgSrc'] + '\')';
-			storyEl.style.backgroundSize = 'cover';
-		}
-		
-		
-		var headingEl = document.createElement('h2');
-		headingEl.innerHTML =  item['title'];
-		
-		var linkEl = document.createElement('p');
-		linkEl.innerHTML =  item['link'];
+  
+  if (json.length > 1) {
+    shuffleArray(json);
+  }
+  
+  
+  if (json.length > 0) {
+    var item = json[0];
+    var storyEl = document.querySelector("#featured-story");
+    
+    if (item['bgImgSrc'] !== undefined || item['bgImgSrc'] !== "") {
+      document.write("<style>.featured-story-block-content:before {background-image:url(" + item['bgImgSrc'] + ")}</style>");
+      storyEl.style.backgroundSize = 'cover';
+    }
+    
+    
+    var headingEl = document.createElement('h2');
+    headingEl.classList.add("margin-top-30");
+    headingEl.innerHTML =  item['title'];
+    
+    var linkEl = document.createElement('p');
+    linkEl.innerHTML =  item['link'];
 
-		
-		var preambleEl, contentEl = null;
-		if (item['preamble'] != undefined && item['premble'] != "") {
-			preambleEl = document.createElement('p');
-			preambleEl.innerHTML =  item['preamble'];
-		}
-		if (item['content'] != undefined && item['content'] != "") {
-			contentEl = document.createElement('p');
-			contentEl.innerHTML =  item['content'];
-		}
-		
-		var divEl = storyEl.querySelector(".featured-story-block-content");
-		if (preambleEl != undefined) {
-			divEl.appendChild(preambleEl);
-		}
-		divEl.appendChild(headingEl);
-		if (contentEl != undefined) {
-			divEl.appendChild(contentEl);
-		}
-		divEl.appendChild(linkEl);
-	} else {
-		
-	}
-	
+    
+    var preambleEl, contentEl = null;
+    if (item['preamble'] != undefined && item['premble'] != "") {
+      preambleEl = document.createElement('p');
+      preambleEl.innerHTML =  item['preamble'];
+    }
+    if (item['content'] != undefined && item['content'] != "") {
+      contentEl = document.createElement('p');
+      contentEl.innerHTML =  item['content'];
+    }
+    
+    var divEl = storyEl.querySelector(".featured-story-block-content");
+    if (preambleEl != undefined) {
+      divEl.appendChild(preambleEl);
+    }
+    divEl.appendChild(headingEl);
+    if (contentEl != undefined) {
+      divEl.appendChild(contentEl);
+    }
+    divEl.appendChild(linkEl);
+  } else {
+    
+  }
+  
 
-	function shuffleArray(array) {
-	    for (var i = array.length - 1; i > 0; i--) {
-	        var j = Math.floor(Math.random() * (i + 1));
-	        var temp = array[i];
-	        array[i] = array[j];
-	        array[j] = temp;
-	    }
-	}
+  function shuffleArray(array) {
+      for (var i = array.length - 1; i > 0; i--) {
+          var j = Math.floor(Math.random() * (i + 1));
+          var temp = array[i];
+          array[i] = array[j];
+          array[j] = temp;
+      }
+  }
 </script>
   
 
@@ -795,6 +803,8 @@
 
 <script src="https://jakarta.ee/js/solstice.js"></script>
 
+
+    <script src="https://jakarta.ee/js/solstice.hugo.js"></script>
 
   
 </body>
