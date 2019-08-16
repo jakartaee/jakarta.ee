@@ -4,7 +4,7 @@ node_js:
   - "12"
 install:
 - npm install
-- wget https://github.com/gohugoio/hugo/releases/download/v0.54.0/hugo_0.54.0_Linux-64bit.deb
+- wget https://github.com/gohugoio/hugo/releases/download/v0.57.1/hugo_0.57.1_Linux-64bit.deb
 - sudo dpkg -i hugo*.deb
 script:
 - hugo
@@ -21,7 +21,7 @@ deploy:
   fqdn: jakarta.ee
   on:
     branch: src
-    node_js: "10"
+    node_js: "12"
 env:
   global:
     secure: Rpt6V1O+/m11zkSHF5T/6HXi26HYeL6FFb02iJjepdRsOWn1AalrANGFCAbN95B3kCDo6EgHK4H+9ExZaqHPVhirhHucakCtpuckLW1ahoGVPhthvkyyJRi8A6cowSWo2HsiJO55GyZG3zNzSVID3dsnvImPZCye7eM/rGitkAXDwk4A0j/AuatRTh5zJl3tsXkzt8+QIUw7qbWaXx68mYCBtFiTi93pGgswTnEt4wWe5oSOKvDEMKTnJLdHFYGXcG9RimZSYRxAOIinABmac0O6jp0Yw6Ko+VKxjCiEFeNHHyXJOHssQBZgqWNEJzNhrUTCwKt0KWxUdnOEA+dwczJz7wu7e2F+V9EMj9XjeS++Su192EerzQgOzUchymdof7mcCIDZeviiwrjWiVXrLnGgl2gs8qPYZhAo6Uiz6IuVuGs1xxJBzxyMGM/rbNWUMWmkbu6s2aBhflD1E+4p8Qg5iC7MLlsCzrrfxqi20d2JwXAJRu+BMAguLQMKZYv0sx3yZgvH0yopg7Cwisq2Y5oawaylsFcYLsIT2WoOgDcplMz/3NGfRMnlexPDhyQK9oikM2PvhuPeYv3Haju0joTfhIb1Cz/S1OFazH0J72LgilPRCqiJPnm0OdVk29CLIMq3f2x5pKYKxbxBHBDw5rfQQQq5pp76sxna/mfQyuY=
