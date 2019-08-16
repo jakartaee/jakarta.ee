@@ -11,5 +11,14 @@
 	<atom:link href="https://jakarta.ee/specifications/enterprise-beans/index.xml" rel="self" type="application/rss+xml" />
     
     
+    <item>
+      <title>Jakarta Enterprise Beans 3.2</title>
+      <link>https://jakarta.ee/specifications/enterprise-beans/3.2/</link>
+      <pubDate>Fri, 19 Jul 2019 15:57:57 -0700</pubDate>
+      <author>webdev@eclipse-foundation.org (Christopher Guindon)</author>
+      <guid>https://jakarta.ee/specifications/enterprise-beans/3.2/</guid>
+      <description>Draft for Jakarta EE 8</description>
+    </item>
+    
   </channel>
 </rss>

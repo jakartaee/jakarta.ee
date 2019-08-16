@@ -13,6 +13,16 @@
     
     <item>
       <title></title>
+      <link>https://jakarta.ee/specifications/pull_request_template/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>webdev@eclipse-foundation.org (Christopher Guindon)</author>
+      <guid>https://jakarta.ee/specifications/pull_request_template/</guid>
+      <description>Specification PR template When creating a specification project release review, create two PRs with the content divided as follows.
+Include the following in PR#1: - [ ] A directory in the form wombat/x.y where x.y is the release major.minor version, and the directory contains the following. - [ ] Specification PDF in the form of wombat-spec-x.y.pdf - [ ] Specification HTML in the form of wombat-spec-x.y.html - [ ] A specification page named _index.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://jakarta.ee/specifications/readme/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>webdev@eclipse-foundation.org (Christopher Guindon)</author>
@@ -21,13 +31,21 @@
     </item>
     
     <item>
-      <title></title>
-      <link>https://jakarta.ee/specifications/pull_request_template/</link>
+      <title>Jakarta Enterprise Beans</title>
+      <link>https://jakarta.ee/specifications/enterprise-beans/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>webdev@eclipse-foundation.org (Christopher Guindon)</author>
-      <guid>https://jakarta.ee/specifications/pull_request_template/</guid>
-      <description>Specification PR template When creating a specification project release review, create two PRs with the content divided as follows.
-Include the following in PR#1: - [ ] A directory in the form wombat/x.y where x.y is the release major.minor version, and the directory contains the following. - [ ] Specification PDF in the form of wombat-spec-x.y.pdf - [ ] Specification HTML in the form of wombat-spec-x.y.html - [ ] A specification page named _index.</description>
+      <guid>https://jakarta.ee/specifications/enterprise-beans/</guid>
+      <description>Jakarta Enterprise Beans defines an architecture for the development and deployment of component-based business applications.</description>
+    </item>
+    
+    <item>
+      <title>Jakarta Messaging</title>
+      <link>https://jakarta.ee/specifications/messaging/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>webdev@eclipse-foundation.org (Christopher Guindon)</author>
+      <guid>https://jakarta.ee/specifications/messaging/</guid>
+      <description>Jakarta Messaging describes a means for Java applications to create, send, and receive messages via loosely coupled, reliable asynchronous communication services.</description>
     </item>
     
   </channel>
