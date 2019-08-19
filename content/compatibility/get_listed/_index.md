@@ -1,11 +1,11 @@
 ---
-title: "Benefits of Getting Listed"
+title: "Get Listed"
 headline: "Get Listed"
 date: 2019-06-5T11:10:38-04:00
 description: "Compatible Implementations of Jakarta EE"
 hide_sidebar: true
 draft: false
-links: [[href: "/compatibility", text: "Compatible Products"]]
+links: [[href: "/compatibility", text: "Compatible Products"],[href: "#how-to", text: "How to"]]
 ---
 
 There are several benefits associated with completing the process to get listed on the Compatible Products page, including:  
@@ -37,7 +37,7 @@ There are several benefits associated with completing the process to get listed 
 	</div>
 </div>
 
-## How to Get Listed
+<h2 id="how-to">How to Get Listed</h2>
 
 To get your product listed on the Compatible Products page, please follow these steps:
 
