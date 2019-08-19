@@ -1,7 +1,7 @@
 ---
 title: "Benefits of Getting Listed"
 headline: "Get Listed"
-date: 2019-06-5T11:10:38-04:00
+date: 2019-08-05T11:10:38-04:00
 description: "Compatible Implementations of Jakarta EE"
 hide_sidebar: true
 draft: false
