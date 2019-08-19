@@ -48,11 +48,6 @@
   </url>
   
   <url>
-    <loc>https://jakarta.ee/legal/</loc>
-    <lastmod>2019-06-26T16:10:38-04:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://jakarta.ee/legal/acronym_guidelines/</loc>
     <lastmod>2019-06-26T16:10:38-04:00</lastmod>
   </url>
@@ -468,11 +463,6 @@
   </url>
   
   <url>
-    <loc>https://jakarta.ee/news/</loc>
-    <lastmod>2018-06-04T10:00:58-04:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://jakarta.ee/news/announcements/2018/05/28/jakarta-ee-progress-to-date/</loc>
     <lastmod>2018-05-28T08:10:24+00:00</lastmod>
   </url>
@@ -578,13 +568,11 @@
   </url>
   
   <url>
-    <loc>https://jakarta.ee/specifications/pull_request_template/</loc>
-    <priority>0</priority>
+    <loc>https://jakarta.ee/specifications/readme/</loc>
   </url>
   
   <url>
-    <loc>https://jakarta.ee/specifications/readme/</loc>
-    <priority>0</priority>
+    <loc>https://jakarta.ee/specifications/pull_request_template/</loc>
   </url>
   
   <url>
@@ -604,7 +592,19 @@
   </url>
   
   <url>
+    <loc>https://jakarta.ee/legal/</loc>
+    <lastmod>2019-06-26T16:10:38-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://jakarta.ee/news/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://jakarta.ee/specifications/</loc>
+    <priority>0</priority>
   </url>
   
 </urlset>
