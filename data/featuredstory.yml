@@ -17,10 +17,47 @@ defaultRight: |
         </div>
 items:
   -
-    title: <strong>Join us for JakartaOne Livestream!</strong>
+    title: Register for EclipseCon Europe 2019 today!
+    content: Register now and save! Early Bird pricing ends October 1.
+    link: <a class="btn btn-primary btn-lg" href="https://www.eclipsecon.org/europe2019/registration">Register</a>
+    bgImgSrc: /images/jakartaone-livestream-banner.jpg
+    startDate: 2019-08-19
+    endDate: 2019-08-30
+    type: story
+
+  -
+    title: Join us for JakartaOne Livestream!
     content: You won't want to miss out on this free, one-day virtual conference focused on all things cloud native Java.
     link: <a class="btn btn-primary btn-lg" href="https://jakartaone.org/">Register</a>
     bgImgSrc: /images/jakartaone-livestream-banner.jpg
     startDate: 2019-07-18
     endDate: 2019-10-10
-    type: story
+    type: both
+    
+  -
+    title: Get IBM's new O'Reilly eBook
+    content: "Developing Open Cloud Native Microservices: Your Java Code in Action is up and available to download!"
+    link: <a class="btn btn-primary btn-lg" href="https://www.ibm.com/account/reg/signup?formid=urx-40233">Download</a>
+    bgImgSrc: /images/jakartaone-livestream-banner.jpg
+    startDate: 2019-07-18
+    endDate: 2019-10-10
+    type: footer
+  -
+    preamble: |
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail">
+        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+        <polyline points="22,6 12,13 2,6"></polyline> 
+      </svg>
+    title: Sign up to our Newsletter
+    footer_classes: background-secondary featured-footer featured-alternate
+    link: |
+      <form action="https://eclipsecon.us6.list-manage.com/subscribe/post" method="post" target="_blank">
+       <div class="form-group">
+          <input type="hidden" name="u" value="eaf9e1f06f194eadc66788a85">
+          <input type="hidden" name="id" value="98ae69e304">
+        </div>
+        <input type="submit" value="Subscribe" name="subscribe" class="button btn btn-primary">
+      </form>
+    startDate: 2019-07-18
+    endDate: 2099-10-10
+    type: footer
