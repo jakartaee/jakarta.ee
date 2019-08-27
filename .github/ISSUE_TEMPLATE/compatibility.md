@@ -14,6 +14,6 @@ To include your Compatible Software Product on the Jakarta EE official list of C
 
 **The Participant, Enterprise or Strategic Member name supporting the Compatible Software Product**
 
-**The URL to the published public TCK test results demonstrating compatibility as defined in the TCK Process**
+**The URL to the approved certification issue demonstrating compatibility as defined in the Jakarta EE TCK Process**
 
 **The URL where Compatible Software Product is available for download**
