@@ -14,7 +14,30 @@ items:
     expire_date: 2019-04-02T23:59:00-00:00
     button_url: https://openinfradays.co.uk/
     button_text: Register Now
-
+  -
+    name: Jakarta EE and Eclipse MicroProfile Microservices
+    location: Munich Airport
+    date: December 19, 2019
+    expire_date: 2019-12-19T23:59:00-00:00
+    button_url: http://workshops.adam-bien.com/microservices.htm
+    button_text: Register Now
+    
+  -
+    name: Streaming Architectures with Jakarta EE and Eclipse MicroProfile
+    location: Munich Airport
+    date: December 13, 2019
+    expire_date: 2019-12-13T23:59:00-00:00
+    button_url: http://workshops.adam-bien.com/streaming.htm
+    button_text: Register Now
+    
+  -
+    name: Jakarta EE, Eclipse Microprofile and Clouds
+    location: Munich Airport
+    date: December 11, 2019
+    expire_date: 2019-12-11T23:59:00-00:00
+    button_url: http://workshops.adam-bien.com/clouds.htm
+    button_text: Register Now
+    
   -
     name: Java EE 8 with Microprofile Bootstrap
     location: Munich Airport, Terminal 2
