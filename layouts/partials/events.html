@@ -22,7 +22,7 @@
           <div class="col-sm-12 col-md-6 event match-height-item-by-row flex-column">
             <h3 class="h4 flex-grow">{{ .name }}</h3>
             <p>{{ .location }}</p>
-            <p>{{ .date }}</p>
+            <p class="flex-grow">{{ .date }}</p>
             <p class="margin-bottom-0"><a class="btn btn-secondary" href="{{ .button_url }}">{{ .button_text }}</a></p>
           </div>
         {{ end }}
@@ -34,7 +34,7 @@
             <div class="col-sm-12 col-md-6 event match-height-item-by-row flex-column">
               <h3 class="h4 flex-grow">{{ .name }}</h3>
               <p>{{ .location }}</p>
-              <p>{{ .date }}</p>
+              <p class="flex-grow">{{ .date }}</p>
               <p class="margin-bottom-0"><a class="btn btn-secondary" href="{{ .button_url }}">{{ .button_text }}</a></p>
             </div>
           {{ end }}
