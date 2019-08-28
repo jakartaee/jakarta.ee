@@ -3,6 +3,21 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://jakarta.ee/news/announcements/2019/08/22/jakarta-newsletter-august-2019-jakarta-ee-8-preview/</loc>
+    <lastmod>2019-08-22T05:10:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jakarta.ee/news/community-news/2019/08/20/the-inaugural-jakartaone-virtual-conference-goes-lives-with-the-release-of-jakarta-ee-8/</loc>
+    <lastmod>2019-08-20T05:10:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jakarta.ee/news/announcements/2019/08/20/welcome-ivar-grimstad/</loc>
+    <lastmod>2019-08-20T05:10:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://jakarta.ee/news/community-news/2019/08/13/eclipse-microprofile-white-paper-2019/</loc>
     <lastmod>2019-08-13T13:53:00+00:00</lastmod>
   </url>
@@ -15,6 +30,11 @@
   <url>
     <loc>https://jakarta.ee/news/community-news/2019/08/07/why-you-should-attend-jakartaone-livestream/</loc>
     <lastmod>2019-08-07T13:53:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jakarta.ee/news/announcements/2019/08/06/update-for-jakarta-ee-community-august-2019/</loc>
+    <lastmod>2019-08-06T05:10:00+00:00</lastmod>
   </url>
   
   <url>

@@ -13,6 +13,33 @@
     
     
     <item>
+      <title>Jakarta Newsletter August 2019: Jakarta EE 8 Preview</title>
+      <link>https://jakarta.ee/news/announcements/2019/08/22/jakarta-newsletter-august-2019-jakarta-ee-8-preview/</link>
+      <pubDate>Thu, 22 Aug 2019 05:10:00 +0000</pubDate>
+      <author>webdev@eclipse-foundation.org (Christopher Guindon)</author>
+      <guid>https://jakarta.ee/news/announcements/2019/08/22/jakarta-newsletter-august-2019-jakarta-ee-8-preview/</guid>
+      <description>Get the next issue of the Jakarta EE Newsletter that puts a spotlight on the present and future of Jakarta EE, the journey to Jakarta EE 8, JakartaOne Livestream and more!</description>
+    </item>
+    
+    <item>
+      <title>The Inaugural JakartaOne Virtual Conference Goes Lives with the Release of Jakarta EE 8</title>
+      <link>https://jakarta.ee/news/community-news/2019/08/20/the-inaugural-jakartaone-virtual-conference-goes-lives-with-the-release-of-jakarta-ee-8/</link>
+      <pubDate>Tue, 20 Aug 2019 05:10:00 +0000</pubDate>
+      <author>webdev@eclipse-foundation.org (Christopher Guindon)</author>
+      <guid>https://jakarta.ee/news/community-news/2019/08/20/the-inaugural-jakartaone-virtual-conference-goes-lives-with-the-release-of-jakarta-ee-8/</guid>
+      <description>JakartaOne Livestream is scheduled in conjunction with the formal release of Jakarta EE 8, will go live on September 10th, 2019 with the first of 19 one-hour sessions starting at 7:00am EDT.</description>
+    </item>
+    
+    <item>
+      <title>Welcome Ivar Grimstad!</title>
+      <link>https://jakarta.ee/news/announcements/2019/08/20/welcome-ivar-grimstad/</link>
+      <pubDate>Tue, 20 Aug 2019 05:10:00 +0000</pubDate>
+      <author>webdev@eclipse-foundation.org (Christopher Guindon)</author>
+      <guid>https://jakarta.ee/news/announcements/2019/08/20/welcome-ivar-grimstad/</guid>
+      <description>We are happy to announce effective October 1st, Ivar Grimstad will join the Eclipse Foundation in the role of Jakarta EE Developer Advocate.</description>
+    </item>
+    
+    <item>
       <title>Eclipse MicroProfile White Paper 2019</title>
       <link>https://jakarta.ee/news/community-news/2019/08/13/eclipse-microprofile-white-paper-2019/</link>
       <pubDate>Tue, 13 Aug 2019 13:53:00 +0000</pubDate>
@@ -37,6 +64,15 @@
       <author>webdev@eclipse-foundation.org (Christopher Guindon)</author>
       <guid>https://jakarta.ee/news/community-news/2019/08/07/why-you-should-attend-jakartaone-livestream/</guid>
       <description>If you are a server-side Java developer, you should be attending JakartaOne Livestream. As the name implies, it is a virtual conference to cover all things Jakarta EE (in case you weren&amp;rsquo;t paying attention, Jakarta EE is Java EE transferred to the Eclipse Foundation from Oracle).</description>
+    </item>
+    
+    <item>
+      <title>Update for Jakarta EE community: August 2019</title>
+      <link>https://jakarta.ee/news/announcements/2019/08/06/update-for-jakarta-ee-community-august-2019/</link>
+      <pubDate>Tue, 06 Aug 2019 05:10:00 +0000</pubDate>
+      <author>webdev@eclipse-foundation.org (Christopher Guindon)</author>
+      <guid>https://jakarta.ee/news/announcements/2019/08/06/update-for-jakarta-ee-community-august-2019/</guid>
+      <description>There’s a lot happening in the Jakarta EE ecosystem, read on to get richer insight into the work that has been invested in Jakarta EE.</description>
     </item>
     
     <item>

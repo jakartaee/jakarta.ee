@@ -13,6 +13,33 @@
     
     
     <item>
+      <title>Jakarta Newsletter August 2019: Jakarta EE 8 Preview</title>
+      <link>https://jakarta.ee/news/announcements/2019/08/22/jakarta-newsletter-august-2019-jakarta-ee-8-preview/</link>
+      <pubDate>Thu, 22 Aug 2019 05:10:00 +0000</pubDate>
+      <author>webdev@eclipse-foundation.org (Christopher Guindon)</author>
+      <guid>https://jakarta.ee/news/announcements/2019/08/22/jakarta-newsletter-august-2019-jakarta-ee-8-preview/</guid>
+      <description>Get the next issue of the Jakarta EE Newsletter that puts a spotlight on the present and future of Jakarta EE, the journey to Jakarta EE 8, JakartaOne Livestream and more!</description>
+    </item>
+    
+    <item>
+      <title>Welcome Ivar Grimstad!</title>
+      <link>https://jakarta.ee/news/announcements/2019/08/20/welcome-ivar-grimstad/</link>
+      <pubDate>Tue, 20 Aug 2019 05:10:00 +0000</pubDate>
+      <author>webdev@eclipse-foundation.org (Christopher Guindon)</author>
+      <guid>https://jakarta.ee/news/announcements/2019/08/20/welcome-ivar-grimstad/</guid>
+      <description>We are happy to announce effective October 1st, Ivar Grimstad will join the Eclipse Foundation in the role of Jakarta EE Developer Advocate.</description>
+    </item>
+    
+    <item>
+      <title>Update for Jakarta EE community: August 2019</title>
+      <link>https://jakarta.ee/news/announcements/2019/08/06/update-for-jakarta-ee-community-august-2019/</link>
+      <pubDate>Tue, 06 Aug 2019 05:10:00 +0000</pubDate>
+      <author>webdev@eclipse-foundation.org (Christopher Guindon)</author>
+      <guid>https://jakarta.ee/news/announcements/2019/08/06/update-for-jakarta-ee-community-august-2019/</guid>
+      <description>There’s a lot happening in the Jakarta EE ecosystem, read on to get richer insight into the work that has been invested in Jakarta EE.</description>
+    </item>
+    
+    <item>
       <title>Update for Jakarta EE community: July 2019</title>
       <link>https://jakarta.ee/news/announcements/2019/07/15/update-for-jakarta-ee-community-july-2019/</link>
       <pubDate>Mon, 15 Jul 2019 05:10:00 +0000</pubDate>
