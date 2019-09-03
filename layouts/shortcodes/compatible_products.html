@@ -1,0 +1,31 @@
+<style>
+  ul.product-list { display:inline;list-style: none; }
+  ul.product-list img { max-height: 150px; }
+  ul.product-list p { text-align: center; }
+  
+  @media(min-width: 768px) {
+    ul.product-list p { text-align: left; }
+  }
+</style>
+{{ range $.Site.Data.compatible_products.sets }}
+<div>
+  <h2 class="brand-secondary margin-top-30 margin-bottom-30">{{ .title }}</h2>
+	<div class="row">
+	  {{ range .items }}
+	  <div class="col-xs-24 col-sm-12 col-lg-6 padding-bottom-20">
+	    <div class="match-height-item-by-row flex-column">
+	      <div class="center-block">
+	      <img class="img img-responsive" src="{{ .image }}" alt="{{ .vendor }}'s {{ .name }} logo">
+	      </div>
+	      <div class="caption flex-grow text-center flex-column">
+		      <h3 class="margin-bottom-0">{{ .name }}</h3>
+		      <p class="flex-grow">{{ .vendor }}</p>
+		      <p class="">Version: {{ .version }}</p>
+		      <p><a href="{{ .download }}" class="btn btn-primary">{{ .download_text | default "Download" }}</a></p>
+	      </div>
+      </div>
+	  </div>
+	  {{ end }}
+	<div class="clearfix"/>
+</div>
+{{ end }}
