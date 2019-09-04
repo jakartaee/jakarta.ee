@@ -18,33 +18,8 @@
   </url>
   
   <url>
-    <loc>https://jakarta.ee/specifications/transactions/1.3/</loc>
-    <lastmod>2019-08-15T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://jakarta.ee/news/community-news/2019/08/13/eclipse-microprofile-white-paper-2019/</loc>
     <lastmod>2019-08-13T13:53:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jakarta.ee/specifications/batch/1.0/</loc>
-    <lastmod>2019-08-11T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jakarta.ee/specifications/authentication/1.1/</loc>
-    <lastmod>2019-08-10T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jakarta.ee/specifications/cdi/2.0/</loc>
-    <lastmod>2019-08-10T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jakarta.ee/specifications/xml-rpc/1.1/</loc>
-    <lastmod>2019-08-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -58,18 +33,8 @@
   </url>
   
   <url>
-    <loc>https://jakarta.ee/specifications/expression-language/3.0/</loc>
-    <lastmod>2019-08-07T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://jakarta.ee/news/announcements/2019/08/06/update-for-jakarta-ee-community-august-2019/</loc>
     <lastmod>2019-08-06T05:10:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jakarta.ee/specifications/pages/2.3/</loc>
-    <lastmod>2019-08-06T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -90,11 +55,6 @@
   <url>
     <loc>https://jakarta.ee/news/announcements/2019/07/15/update-for-jakarta-ee-community-july-2019/</loc>
     <lastmod>2019-07-15T05:10:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jakarta.ee/specifications/restful-ws/2.1/</loc>
-    <lastmod>2019-07-12T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -631,10 +591,6 @@
   </url>
   
   <url>
-    <loc>https://jakarta.ee/specifications/transactions/</loc>
-  </url>
-  
-  <url>
     <loc>https://jakarta.ee/compatibility/</loc>
   </url>
   
@@ -700,6 +656,10 @@
   
   <url>
     <loc>https://jakarta.ee/specifications/pages/</loc>
+  </url>
+  
+  <url>
+    <loc>https://jakarta.ee/specifications/transactions/</loc>
   </url>
   
   <url>
