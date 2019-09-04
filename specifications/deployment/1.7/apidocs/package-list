@@ -1,0 +1,8 @@
+javax.enterprise.deploy.model
+javax.enterprise.deploy.model.exceptions
+javax.enterprise.deploy.shared
+javax.enterprise.deploy.shared.factories
+javax.enterprise.deploy.spi
+javax.enterprise.deploy.spi.exceptions
+javax.enterprise.deploy.spi.factories
+javax.enterprise.deploy.spi.status

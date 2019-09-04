@@ -1,0 +1,8 @@
+javax.batch.api
+javax.batch.api.chunk
+javax.batch.api.chunk.listener
+javax.batch.api.listener
+javax.batch.api.partition
+javax.batch.operations
+javax.batch.runtime
+javax.batch.runtime.context
