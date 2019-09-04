@@ -23,9 +23,9 @@ enableRobotsTXT = true
   header_wrapper_class = "header-default-bg-img"
   js = "js/solstice.js"
   show_events = true
-# call_for_action_text = ""
-# call_for_action_url = ""
-# call_for_action_icon = ""
+  call_for_action_text = "Releases"
+  call_for_action_url = "/release/"
+  call_for_action_icon = "fa-download"
 
 [taxonomies]
   category = "categories"
@@ -68,17 +68,12 @@ enableRobotsTXT = true
     url = "/resources/"
     weight = 4
     
+# Resource sub-menu
 [[menu.main]]
     name = "Blog"
     url = "https://Jakartablogs.ee"
-    weight = 5
-    
-[[menu.main]]
-    name = "Compatible Products"
-    url = "/compatibility/"
-    weight = 6
-
-# Resource sub-menu
+    parent = "Resources"
+    weight = 0
 
 [[menu.main]]
     name = "Surveys"
