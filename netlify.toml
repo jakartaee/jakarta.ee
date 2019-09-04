@@ -8,7 +8,7 @@ HUGO_ENV = "production"
 HUGO_ENABLEGITINFO = "true"
 
 [context.split1]
-command = "nnpm run build_netlify && hugo --enableGitInfo"
+command = "npm run build_netlify && hugo --enableGitInfo"
 
 [context.split1.environment]
 HUGO_VERSION = "0.54.0"
