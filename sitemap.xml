@@ -615,6 +615,10 @@
   </url>
   
   <url>
+    <loc>https://jakarta.ee/specifications/connectors/</loc>
+  </url>
+  
+  <url>
     <loc>https://jakarta.ee/specifications/cdi/</loc>
   </url>
   
@@ -659,11 +663,19 @@
   </url>
   
   <url>
+    <loc>https://jakarta.ee/specifications/servlet/</loc>
+  </url>
+  
+  <url>
     <loc>https://jakarta.ee/specifications/transactions/</loc>
   </url>
   
   <url>
     <loc>https://jakarta.ee/specifications/xml-rpc/</loc>
+  </url>
+  
+  <url>
+    <loc>https://jakarta.ee/specifications/xml-registries/</loc>
   </url>
   
   <url>
