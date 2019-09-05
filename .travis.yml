@@ -1,13 +1,17 @@
 language: node_js
-node_js:
-  - "10"
-  - "12"
+matrix:
+  include:
+    - node_js: 10
+      env: HUGO_ENV=dev
+    - node_js: 12
+      env: HUGO_ENV=production
 install:
 - npm install
 - wget https://github.com/gohugoio/hugo/releases/download/v0.54.0/hugo_0.54.0_Linux-64bit.deb
 - sudo dpkg -i hugo*.deb
 script:
-- hugo
+ - if [ "$HUGO_ENV" = "dev" ]; then hugo --buildFuture; fi;
+ - if [ "$HUGO_ENV" = "production" ]; then hugo; fi;
 deploy:
   local-dir: public
   repo: jakartaee/jakarta.ee

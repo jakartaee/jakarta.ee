@@ -20,7 +20,8 @@
     "install": "NODE_ENV=production npm run production",
     "postinstall": "NODE_ENV=production npm run specifications",
     "specifications": "./build.sh",
-    "build_netlify": "NODE_ENV=production npm run production && npm run specifications"
+    "disallow_robots_txt": "echo \"User-agent: *\r\nDisallow: /\" > layouts/robots.txt",
+    "build_netlify": "NODE_ENV=production npm run disallow_robots_txt && npm run production && npm run specifications"
   },
   "dependencies": {
     "eclipsefdn-hugo-solstice-theme": "0.0.34"
