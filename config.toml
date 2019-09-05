@@ -6,6 +6,7 @@ metaDataFormat = "yaml"
 googleAnalytics = "UA-910670-30"
 disableKinds = ["taxonomy", "taxonomyTerm"]
 themesDir = "node_modules/"
+enableRobotsTXT = true
 
 [Params]
   google_tag_manager = "GTM-5WLCZXC"
