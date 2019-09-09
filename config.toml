@@ -26,6 +26,10 @@ enableRobotsTXT = true
   call_for_action_text = "Releases"
   call_for_action_url = "/release/"
   call_for_action_icon = "fa-download"
+  linkedin_url="https://www.linkedin.com/groups/13597511/"
+  youtube_url="https://www.youtube.com/user/EclipseFdn"
+  twitter_url="https://twitter.com/JakartaEE"
+  facebook_url="https://www.facebook.com/JakartaEE"
 
 [taxonomies]
   category = "categories"
