@@ -23,18 +23,8 @@
   </url>
   
   <url>
-    <loc>https://jakarta.ee/specifications/enterprise-beans/3.2/</loc>
-    <lastmod>2019-08-19T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://jakarta.ee/news/community-news/2019/08/13/eclipse-microprofile-white-paper-2019/</loc>
     <lastmod>2019-08-13T13:53:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jakarta.ee/specifications/interceptors/1.2/</loc>
-    <lastmod>2019-08-12T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -50,11 +40,6 @@
   <url>
     <loc>https://jakarta.ee/news/announcements/2019/08/06/update-for-jakarta-ee-community-august-2019/</loc>
     <lastmod>2019-08-06T05:10:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jakarta.ee/specifications/management/1.1/</loc>
-    <lastmod>2019-08-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
