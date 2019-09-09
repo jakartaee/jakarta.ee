@@ -1,0 +1,191 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en" xmlns:javaee="http://xmlns.jcp.org/xml/ns/javaee" xmlns:vdldoc="http://vdldoc.omnifaces.org" xmlns:fo="http://www.w3.org/1999/XSL/Format">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>forEach (Jakarta Server Faces 2.3.2 VDL Documentation)
+			</title>
+<meta name="keywords" content="$title">
+<link rel="stylesheet" type="text/css" title="Style" href="../jsf-api.css">
+</head>
+<body>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+<div class="topNav">
+<a name="navbar_top"></a><a href="#skip-navbar_top" title="Skip navigation links"></a><a name="navbar_top_firstrow"></a>
+<ul class="navList" title="Navigation">
+<li>
+<a href="../overview-summary.html">Overview</a>
+</li>
+<li>
+<a href="tld-summary.html">Library</a>
+</li>
+<li class="navBarCell1Rev">Tag</li>
+<li>
+<a href="../help-doc.html">Help</a>
+</li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li>
+<a target="_top" href="../index.html?jstl-core/forEach.html">
+									Frames
+								</a>
+</li>
+<li>
+<a target="_top" href="forEach.html">
+									No Frames
+								</a>
+</li>
+</ul>
+<ul class="navList" id="alltags_navbar_top">
+<li>
+<a href="../alltags-noframe.html">All Tags</a>
+</li>
+</ul>
+<div>
+<script type="text/javascript">
+								document.getElementById("alltags_navbar_top").style.display = (window == top) ? "block" : "none";
+							</script>
+</div>
+<a name="skip-navbar_top"></a>
+</div>
+<div class="header">
+<h1 title="Library" class="title">jstl-core</h1>
+<h2 class="title">
+							Tag
+							forEach</h2>
+</div>
+<div class="contentContainer">
+<div class="description">
+<ul class="blockList">
+<li class="blockList">
+<dl>
+<dt>Description:</dt>
+<dd>
+<div class="block">
+            The basic iteration tag, accepting many different
+            collection types and supporting subsetting and other
+            functionality
+        </div>
+</dd>
+</dl>
+</li>
+</ul>
+</div>
+<div class="summary">
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Attribute summary table, listing attribute information">
+<caption>
+<span>Attributes</span><span class="tabEnd">&nbsp;</span>
+</caption>
+<thead>
+<tr>
+<th class="colFirst">Name</th><th class="colOne">Required</th><th class="colOne">Type</th><th class="colLast">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr id="items" class="rowColor">
+<td class="colFirst"><a href="#items"><code>items</code></a></td><td class="colOne"><code>false</code></td><td class="colOne"><code>javax.el.ValueExpression</code>
+<br>(<i>must evaluate to </i><code>java.lang.Object</code>)
+					</td><td class="colLast">
+                Collection of items to iterate over.
+            </td>
+</tr>
+<tr id="begin" class="altColor">
+<td class="colFirst"><a href="#begin"><code>begin</code></a></td><td class="colOne"><code>false</code></td><td class="colOne"><code>javax.el.ValueExpression</code>
+<br>(<i>must evaluate to </i><code>int</code>)
+					</td><td class="colLast">
+                If items specified:
+                Iteration begins at the item located at the
+                specified index. First item of the collection has
+                index 0.
+                If items not specified:
+                Iteration begins with index set at the value
+                specified.
+            </td>
+</tr>
+<tr id="end" class="rowColor">
+<td class="colFirst"><a href="#end"><code>end</code></a></td><td class="colOne"><code>false</code></td><td class="colOne"><code>javax.el.ValueExpression</code>
+<br>(<i>must evaluate to </i><code>int</code>)
+					</td><td class="colLast">
+                If items specified:
+                Iteration ends at the item located at the
+                specified index (inclusive).
+                If items not specified:
+                Iteration ends when index reaches the value
+                specified.
+            </td>
+</tr>
+<tr id="step" class="altColor">
+<td class="colFirst"><a href="#step"><code>step</code></a></td><td class="colOne"><code>false</code></td><td class="colOne"><code>javax.el.ValueExpression</code>
+<br>(<i>must evaluate to </i><code>int</code>)
+					</td><td class="colLast">
+                Iteration will only process every step items of
+                the collection, starting with the first one.
+            </td>
+</tr>
+<tr id="var" class="rowColor">
+<td class="colFirst"><a href="#var"><code>var</code></a></td><td class="colOne"><code>false</code></td><td class="colOne"><code>javax.el.ValueExpression</code>
+<br>(<i>must evaluate to </i><code>java.lang.String</code>)
+					</td><td class="colLast">
+                Name of the exported scoped variable for the
+                current item of the iteration. This scoped
+                variable has nested visibility. Its type depends
+                on the object of the underlying collection.
+            </td>
+</tr>
+<tr id="varStatus" class="altColor">
+<td class="colFirst"><a href="#varStatus"><code>varStatus</code></a></td><td class="colOne"><code>false</code></td><td class="colOne"><code>javax.el.ValueExpression</code>
+<br>(<i>must evaluate to </i><code>java.lang.String</code>)
+					</td><td class="colLast">
+                Name of the exported scoped variable for the
+                status of the iteration. Object exported is of type
+                javax.servlet.jsp.jstl.core.LoopTagStatus. This scoped variable
+                has nested
+                visibility.
+            </td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="bottomNav">
+<a name="navbar_bottom"></a><a href="#skip-navbar_bottom" title="Skip navigation links"></a><a name="navbar_bottom_firstrow"></a>
+<ul class="navList" title="Navigation">
+<li>
+<a href="../overview-summary.html">Overview</a>
+</li>
+<li>
+<a href="tld-summary.html">Library</a>
+</li>
+<li class="navBarCell1Rev">Tag</li>
+<li>
+<a href="../help-doc.html">Help</a>
+</li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li>
+<a target="_bottom" href="../index.html?jstl-core/forEach.html">
+									Frames
+								</a>
+</li>
+<li>
+<a target="_bottom" href="forEach.html">
+									No Frames
+								</a>
+</li>
+</ul>
+<ul class="navList" id="alltags_navbar_bottom">
+<li>
+<a href="../alltags-noframe.html">All Tags</a>
+</li>
+</ul>
+<script type="text/javascript">
+							document.getElementById("alltags_navbar_bottom").style.display = (window == top) ? "block" : "none";
+						</script><a name="skip-navbar_bottom"></a>
+</div>
+</body>
+</html>

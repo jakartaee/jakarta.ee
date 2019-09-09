@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>JSDoc: Namespace: push</title>
+  <script src="scripts/prettify/prettify.js"></script>
+  <script src="scripts/prettify/lang-css.js"></script>
+  <!--[if lt IE 9]>
+   <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+  <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+ </head>
+ <body>
+   <div id="main">
+    <h1 class="page-title">Namespace: push</h1>
+    
+
+
+
+
+<section>
+
+<header>
+    
+        <h2>
+            <span class="ancestors"><a href="jsf.html">jsf</a>.</span>
+        
+        push
+        </h2>
+        
+    
+</header>
+
+<article>
+    <div class="container-overview">
+    
+        
+            <div class="description"><p class="changed_added_2_3">
+The Push functionality.
+</p></div>
+        
+
+        
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="jsf-uncompressed.js.html">jsf-uncompressed.js</a>, <a href="jsf-uncompressed.js.html#line3290">line 3290</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+        
+    
+    </div>
+
+    
+
+    
+
+    
+
+     
+
+    
+
+    
+
+    
+        <h3 class="subsection-title">Methods</h3>
+
+        
+            
+
+    
+
+    <h4 class="name" id=".close"><span class="type-signature">(static) </span>close<span class="signature">(clientId)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+<div class="description">
+    Close the websocket on the given client identifier.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>clientId</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The client identifier of the websocket.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="jsf-uncompressed.js.html">jsf-uncompressed.js</a>, <a href="jsf-uncompressed.js.html#line3450">line 3450</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+<h5>Throws:</h5>
+
+        
+
+<dl>
+    <dt>
+        <div class="param-desc">
+        When client identifier is unknown. You may need to initialize it first via <code>init()</code> function.
+        </div>
+    </dt>
+    <dd></dd>
+    <dt>
+        <dl>
+            <dt>
+                Type
+            </dt>
+            <dd>
+                
+<span class="param-type">Error</span>
+
+
+            </dd>
+        </dl>
+    </dt>
+    <dd></dd>
+</dl>
+
+
+    
+
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".init"><span class="type-signature">(static) </span>init<span class="signature">(clientId, url, channel, onopen, onmessage, onclose, behaviors, autoconnect)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+<div class="description">
+    Initialize a websocket on the given client identifier. When connected, it will stay open and reconnect as
+long as URL is valid and <code>jsf.push.close()</code> hasn't explicitly been called on the same client
+identifier.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>clientId</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The client identifier of the websocket.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>url</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The URL of the websocket. All open websockets on the same URL will receive the
+same push notification from the server.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>channel</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The channel name of the websocket.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>onopen</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The JavaScript event handler function that is invoked when the websocket is opened.
+The function will be invoked with one argument: the client identifier.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>onmessage</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The JavaScript event handler function that is invoked when a message is received from
+the server. The function will be invoked with three arguments: the push message, the client identifier and
+the raw <code>MessageEvent</code> itself.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>onclose</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The JavaScript event handler function that is invoked when the websocket is closed.
+The function will be invoked with three arguments: the close reason code, the client identifier and the raw
+<code>CloseEvent</code> itself. Note that this will also be invoked on errors and that you can inspect the
+close reason code if an error occurred and which one (i.e. when the code is not 1000). See also
+<a href="http://tools.ietf.org/html/rfc6455#section-7.4.1">RFC 6455 section 7.4.1</a> and
+<a href="http://docs.oracle.com/javaee/7/api/javax/websocket/CloseReason.CloseCodes.html">CloseCodes</a> API
+for an elaborate list.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>behaviors</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Client behavior functions to be invoked when specific message is received.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>autoconnect</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">boolean</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Whether or not to automatically connect the socket. Defaults to <code>false</code>.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="jsf-uncompressed.js.html">jsf-uncompressed.js</a>, <a href="jsf-uncompressed.js.html#line3397">line 3397</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".open"><span class="type-signature">(static) </span>open<span class="signature">(clientId)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+<div class="description">
+    Open the websocket on the given client identifier.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>clientId</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The client identifier of the websocket.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="jsf-uncompressed.js.html">jsf-uncompressed.js</a>, <a href="jsf-uncompressed.js.html#line3439">line 3439</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+<h5>Throws:</h5>
+
+        
+
+<dl>
+    <dt>
+        <div class="param-desc">
+        When client identifier is unknown. You may need to initialize it first via <code>init()</code> function.
+        </div>
+    </dt>
+    <dd></dd>
+    <dt>
+        <dl>
+            <dt>
+                Type
+            </dt>
+            <dd>
+                
+<span class="param-type">Error</span>
+
+
+            </dd>
+        </dl>
+    </dt>
+    <dd></dd>
+</dl>
+
+
+    
+
+
+
+
+
+        
+    
+
+    
+
+    
+</article>
+
+</section>
+
+
+
+
+  </div>
+  <nav>
+   <h2><a href="index.html">Home</a></h2><h3>Namespaces</h3><ul><li><a href="jsf.html">jsf</a></li><li><a href="jsf.html#.ajax">ajax</a></li><li><a href="jsf.push.html">push</a></li><li><a href="jsf.util.html">util</a></li><li><a href="mojarra.html">mojarra</a></li></ul>
+  </nav>
+  <br class="clear">
+  <footer>
+  </footer>
+  <script> prettyPrint(); </script>
+  <script src="scripts/linenumber.js"> </script>
+ </body>
+</html>

@@ -1,0 +1,695 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en" xmlns:javaee="http://xmlns.jcp.org/xml/ns/javaee" xmlns:vdldoc="http://vdldoc.omnifaces.org" xmlns:fo="http://www.w3.org/1999/XSL/Format">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>selectManyListbox (Jakarta Server Faces 2.3.2 VDL Documentation)
+			</title>
+<meta name="keywords" content="$title">
+<link rel="stylesheet" type="text/css" title="Style" href="../jsf-api.css">
+</head>
+<body>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+<div class="topNav">
+<a name="navbar_top"></a><a href="#skip-navbar_top" title="Skip navigation links"></a><a name="navbar_top_firstrow"></a>
+<ul class="navList" title="Navigation">
+<li>
+<a href="../overview-summary.html">Overview</a>
+</li>
+<li>
+<a href="tld-summary.html">Library</a>
+</li>
+<li class="navBarCell1Rev">Tag</li>
+<li>
+<a href="../help-doc.html">Help</a>
+</li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li>
+<a target="_top" href="../index.html?html_basic/selectManyListbox.html">
+									Frames
+								</a>
+</li>
+<li>
+<a target="_top" href="selectManyListbox.html">
+									No Frames
+								</a>
+</li>
+</ul>
+<ul class="navList" id="alltags_navbar_top">
+<li>
+<a href="../alltags-noframe.html">All Tags</a>
+</li>
+</ul>
+<div>
+<script type="text/javascript">
+								document.getElementById("alltags_navbar_top").style.display = (window == top) ? "block" : "none";
+							</script>
+</div>
+<a name="skip-navbar_top"></a>
+</div>
+<div class="header">
+<h1 title="Library" class="title">html_basic</h1>
+<h2 class="title">
+							Tag
+							selectManyListbox</h2>
+</div>
+<div class="contentContainer">
+<div class="description">
+<ul class="blockList">
+<li class="blockList">
+<dl>
+<dt>Description:</dt>
+<dd>
+<div class="block">
+            <p><span
+            class="changed_modified_2_0">Render</span> an HTML option
+            list.</p>
+            <p>Decode Behavior</p>
+            <p>This section documents the decode behavior for all
+            renderers
+            that handle <code>UISelectMany</code> or <code>UISelectOne</code>
+            components.</p>
+            <ul>
+            <p><a name="decodeMany">Decode Behavior for
+            <code>UISelectMany</code> components</a></p>
+            <ul>
+            <p>Obtain the <code>Map</code> from the
+            "requestParameterValuesMap" property of the
+            <code>ExternalContext</code>. If the <code>Map</code>
+            contains
+            an entry for the "clientId" of the component, pass the value of
+            the entry, cast to a <code>String []</code>, to the
+            <code>setSubmittedValue()</code> method of the
+            component, which
+            must be an <code>EditableValueHolder</code>. If the
+            <code>Map</code> does not contain an entry, create an
+            empty
+            <code>String</code> array and call
+            <code>setSubmittedValue()</code> with it.</p>
+            <p class="changed_modified_2_0">Please check the javadoc for
+            <a
+            href="../../javadocs/javax/faces/component/UISelectMany.html#getConvertedvalue">UISelectMany.getConvertedValue()</a>
+            for additional requirements for renderers that render this kind
+            of component.</p>
+            </ul>
+            <p><a name="decodeOne">Decode Behavior for
+            <code>UISelectOne</code> components</a></p>
+            <ul>
+            <p>Obtain the <code>Map</code> from the
+            "requestParameterMap"
+            property of the <code>ExternalContext</code>. If there
+            is a
+            <code>Map</code> entry for the "clientId" property of
+            the
+            component, pass it to the <code>setSubmittedValue()</code>
+            method
+            of the component. <span class="changed_added_2_0">If the
+            <code>Map</code> does not contain an entry, call
+            <code>setSubmittedValue()</code> passing an empty
+            <code>String</code> as the argument.</span> </p>
+            </ul>
+            <p>Encode Behavior</p>
+            <ul>
+            <p>Render an HTML "select" element. Render the clientId of
+            the component as the value of the "name" attribute. If the
+            "styleClass"
+            attribute is specified, render its value as the value of the "class"
+            attribute on the "select" element. If the component is a
+            <code>UISelectMany</code> instance, render "multiple" as
+            the value of the
+            "multiple" attribute. If the "size" attribute is specified, render
+            its
+            value as the value of the "size" attribute. Otherwise use the number
+            of
+            items as the value of the "size" attribute.</p>
+            </ul>
+            <p><a name="option">Rendering the "option" elements</a></p>
+            <ul>
+            <p>The only valid children of this component are
+            <code>UISelectItem</code> or <code>UISelectItems</code>
+            instances. Iterate over the children of this component, and accrue
+            a list of <code>javax.faces.model.SelectItem</code>
+            instances.
+            <span class="changed_added_2_0">If the current child is a
+            <code>SelectItem</code> whose <code>noSelctionProperty</code>
+            is
+            <code>true</code>, <b>and</b> the <code>UISelectOne</code>
+            or
+            <code>UISelectMany</code> parent of this option has one
+            or more
+            selected values that <b>are not</b> the "no selection"
+            <code>SelectItem</code>, <b>and</b> the
+            component has a
+            "hideNoSelectionLabel" attribute whose value is <code>true</code>,
+            then the current option, which is the "no selection" option, must
+            not be rendered.</span> If the current child is a
+            <code>UISelectItem</code> create a <code>SelectItem</code>instance
+            from its <code>itemValue, itemLabel</code>, <code
+            class="changed_added_2_0">itemEscaped</code>, and
+            <code>itemDescription</code> properties, add it to the
+            list. If
+            the current child is a <code>UISelectItems</code>
+            instance, call
+            its <code>getValue()</code> method. If the result is a
+            <code>SelectItem</code> bean, add it to the list. If the
+            result
+            is an array of <code>SelectItem</code> beans, add each
+            one to the
+            list. If the result is a <code>Collection</code> of
+            <code>SelectItem</code> beans, add each one to the list.
+            If the
+            result is a <code>Map</code>, create a <code>SelectItem</code>
+            bean for each entry in the <code>Map</code> using the
+            key as the
+            label, the value as the value, and <code>null</code> as
+            the
+            description.</p>
+            <p>Iterate over the list of <code>SelectItem</code>
+            beans. If the
+            current element is a <code>SelectItemGroup</code>,
+            render an
+            "optgroup" element with a "label" attribute, the value of which is
+            the "label" property from the current element, then call
+            <code>getSelectItems()</code> and render each element as
+            below.
+            If the current element is not a <code>SelectItemGroup</code>,
+            render an "option" element. Follow the conversion rules in the
+            spec to obtain a renderable <code>String</code> from the
+            "value"
+            property of the current element, render that as the value of the
+            "value" atribute. Now it is time to see if the current element is
+            the selected value. Call its <code>getSubmittedValue()</code>
+            method, casting the result to an <code>Object []</code>,
+            otherwise
+            the component must be a <code>UISelectOne</code>
+            instance, call
+            its <code>getSubmittedValue()</code> method and create
+            an
+            <code>Object []</code> around the result. Determine the
+            type of
+            the resultant array, if the resultant array is non-null, otherwise
+            the type is <code>String</code>. Coerce the current item
+            value to
+            this type following the Expression Language coercion rules. If
+            the resultant array is non-null, we look in the array for a value
+            that, when we pass the renderable value to its
+            <code>equals()</code> method, it returns <code>true</code>,
+            meaning the current element is selected. If the resultant array
+            is <code>null</code>, if the component is a
+            <code>UISelectMany</code>, call its <code>getValue()</code>
+            method. If the result is a <code>List</code> obtain the
+            values in
+            the list as an array. Otherwise, the component must be a
+            <code>UISelectOne</code> instance. Call its
+            <code>getValue()</code> method, which must be an Object
+            array.
+            Look for an element in the resultant array that, 1. when we pass
+            the renderable value to its <code>equals()</code>
+            method, it
+            returns <code>true</code> , or 2. if the renderable
+            value is null,
+            and there is a null element in the array, also conclude that the
+            current element is selected. Otherwise the current element is not
+            selected. Now, if the current value is selected, write out an
+            HTML boolean property "selected". If the current
+            SelectItem.isDisabled() returns true, render "disabled" as the
+            value of the "disabled" attribute. <span
+            class="changed_added_2_0">If the value of the <code>escape</code>
+            property is true, use the <code>writeText()</code>
+            method of
+            <code>ResponseWriter</code> to write out the value of
+            the
+            <code>label</code> property. Otherwise, use the
+            <code>write()</code> method of the <code>ResponseWriter</code>
+            to
+            do so.</span></p>
+            </ul>
+            </ul>
+        </div>
+</dd>
+</dl>
+</li>
+</ul>
+</div>
+<div class="summary">
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Component summary table, listing component information">
+<caption>
+<span>Component Information</span><span class="tabEnd">&nbsp;</span>
+</caption>
+<thead>
+<tr>
+<th class="colFirst" scope="col">Info</th><th class="colLast" scope="col">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="rowColor">
+<td class="colFirst">Component Type</td><td class="colLast"><code>javax.faces.HtmlSelectManyListbox</code></td>
+</tr>
+<tr class="altColor">
+<td class="colFirst">Handler Class</td><td class="colLast"><i>None</i></td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst">Renderer Type</td><td class="colLast"><code>javax.faces.Listbox</code></td>
+</tr>
+<tr class="altColor">
+<td class="colFirst">Description</td><td class="colLast"><i>None</i></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="summary">
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Attribute summary table, listing attribute information">
+<caption>
+<span>Attributes</span><span class="tabEnd">&nbsp;</span>
+</caption>
+<thead>
+<tr>
+<th class="colFirst">Name</th><th class="colOne">Required</th><th class="colOne">Type</th><th class="colLast">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr id="converter" class="rowColor">
+<td class="colFirst"><a href="#converter"><code>converter</code></a></td><td class="colOne"><code>false</code></td><td class="colOne"><code>javax.el.ValueExpression</code>
+<br>(<i>must evaluate to </i><code>javax.faces.convert.Converter</code>)
+					</td><td class="colLast">
+                Converter instance registered with this component.
+            </td>
+</tr>
+<tr id="converterMessage" class="altColor">
+<td class="colFirst"><a href="#converterMessage"><code>converterMessage</code></a></td><td class="colOne"><code>false</code></td><td class="colOne"><code>javax.el.ValueExpression</code>
+<br>(<i>must evaluate to </i><code>java.lang.String</code>)
+					</td><td class="colLast">
+                A ValueExpression enabled attribute that, if present, will be
+                used as the text of the converter message, replacing any message
+                that comes from the converter.
+            </td>
+</tr>
+<tr id="id" class="rowColor">
+<td class="colFirst"><a href="#id"><code>id</code></a></td><td class="colOne"><code>false</code></td><td class="colOne"><code>javax.el.ValueExpression</code>
+<br>(<i>must evaluate to </i><code>java.lang.String</code>)
+					</td><td class="colLast">
+                The component identifier for this component. This value must be
+                unique within the closest parent component that is a naming
+                container.
+            </td>
+</tr>
+<tr id="immediate" class="altColor">
+<td class="colFirst"><a href="#immediate"><code>immediate</code></a></td><td class="colOne"><code>false</code></td><td class="colOne"><code>javax.el.ValueExpression</code>
+<br>(<i>must evaluate to </i><code>java.lang.Boolean</code>)
+					</td><td class="colLast">
+                Flag indicating that this component's value must be
+                converted and validated immediately (that is, during
+                Apply Request Values phase), rather than waiting
+                until Process Validations phase.
+            </td>
+</tr>
+<tr id="rendered" class="rowColor">
+<td class="colFirst"><a href="#rendered"><code>rendered</code></a></td><td class="colOne"><code>false</code></td><td class="colOne"><code>javax.el.ValueExpression</code>
+<br>(<i>must evaluate to </i><code>java.lang.Boolean</code>)
+					</td><td class="colLast">
+                Flag indicating whether or not this component should be rendered
+                (during Render Response Phase), or processed on any subsequent
+                form submit. The default value for this property is true.
+            </td>
+</tr>
+<tr id="required" class="altColor">
+<td class="colFirst"><a href="#required"><code>required</code></a></td><td class="colOne"><code>false</code></td><td class="colOne"><code>javax.el.ValueExpression</code>
+<br>(<i>must evaluate to </i><code>java.lang.Boolean</code>)
+					</td><td class="colLast">
+                Flag indicating that the user is required to provide a submitted
+                value for this input component.
+            </td>
+</tr>
+<tr id="requiredMessage" class="rowColor">
+<td class="colFirst"><a href="#requiredMessage"><code>requiredMessage</code></a></td><td class="colOne"><code>false</code></td><td class="colOne"><code>javax.el.ValueExpression</code>
+<br>(<i>must evaluate to </i><code>java.lang.String</code>)
+					</td><td class="colLast">
+                A ValueExpression enabled attribute that, if present, will be
+                used as the text of the validation message for the "required"
+                facility, if the "required" facility is used.
+            </td>
+</tr>
+<tr id="validator" class="altColor">
+<td class="colFirst"><a href="#validator"><code>validator</code></a></td><td class="colOne"><code>false</code></td><td class="colOne"><code>javax.el.MethodExpression</code>
+<br>(<i>signature must match </i><code>void validate(javax.faces.context.FacesContext,
+                javax.faces.component.UIComponent, java.lang.Object)
+            </code>)
+					</td><td class="colLast">
+                MethodExpression representing a validator method that will be
+                called
+                during Process Validations to perform correctness checks on the
+                value of this component. The expression must evaluate to a
+                public
+                method that takes FacesContext, UIComponent, and Object
+                parameters,
+                with a return type of void.
+            </td>
+</tr>
+<tr id="validatorMessage" class="rowColor">
+<td class="colFirst"><a href="#validatorMessage"><code>validatorMessage</code></a></td><td class="colOne"><code>false</code></td><td class="colOne"><code>javax.el.ValueExpression</code>
+<br>(<i>must evaluate to </i><code>java.lang.String</code>)
+					</td><td class="colLast">
+                A ValueExpression enabled attribute that, if present, will be
+                used as the text of the validator message, replacing any
+                message that comes from the validator.
+            </td>
+</tr>
+<tr id="value" class="altColor">
+<td class="colFirst"><a href="#value"><code>value</code></a></td><td class="colOne"><code>false</code></td><td class="colOne"><code>javax.el.ValueExpression</code>
+<br>(<i>must evaluate to </i><code>java.lang.Object</code>)
+					</td><td class="colLast">
+                The current value of this component.
+            </td>
+</tr>
+<tr id="valueChangeListener" class="rowColor">
+<td class="colFirst"><a href="#valueChangeListener"><code>valueChangeListener</code></a></td><td class="colOne"><code>false</code></td><td class="colOne"><code>javax.el.MethodExpression</code>
+<br>(<i>signature must match </i><code>void
+                valueChange(javax.faces.event.ValueChangeEvent)
+            </code>)
+					</td><td class="colLast">
+                <p>
+                MethodExpression representing a value change listener method
+                that will be notified when a new value has been set for this
+                input component. The expression must evaluate to a public
+                method that takes a <code>ValueChangeEvent</code>
+                parameter,
+                with a return type of void, <span class="changed_added_2_0">or
+                to a public method that takes no arguments with a return type
+                of void. In the latter case, the method has no way of easily
+                knowing what the new value is, but this can be useful in cases
+                where a notification is needed that "this value
+                changed".</span>
+                </p>
+            </td>
+</tr>
+<tr id="accesskey" class="altColor">
+<td class="colFirst"><a href="#accesskey"><code>accesskey</code></a></td><td class="colOne"><code>false</code></td><td class="colOne"><code>javax.el.ValueExpression</code>
+<br>(<i>must evaluate to </i><code>java.lang.String</code>)
+					</td><td class="colLast">
+                Access key that, when pressed, transfers focus
+                to this element.
+            </td>
+</tr>
+<tr id="collectionType" class="rowColor">
+<td class="colFirst"><a href="#collectionType"><code>collectionType</code></a></td><td class="colOne"><code>false</code></td><td class="colOne"><code>javax.el.ValueExpression</code>
+<br>(<i>must evaluate to </i><code>java.lang.String</code>)
+					</td><td class="colLast">
+                <p class="changed_modified_2_0"> Optional
+                attribute that is a literal string that is the fully qualified
+                class name of a concrete class that implements
+                <code>java.util.Collection</code>, or an EL
+                expression that
+                evaluates to either 1. such a String, or 2. the
+                <code>Class</code> object itself. </p>
+            </td>
+</tr>
+<tr id="dir" class="altColor">
+<td class="colFirst"><a href="#dir"><code>dir</code></a></td><td class="colOne"><code>false</code></td><td class="colOne"><code>javax.el.ValueExpression</code>
+<br>(<i>must evaluate to </i><code>java.lang.String</code>)
+					</td><td class="colLast">
+                Direction indication for text that does not inherit
+                directionality.
+                Valid values are "LTR" (left-to-right) and "RTL"
+                (right-to-left).
+            </td>
+</tr>
+<tr id="disabled" class="rowColor">
+<td class="colFirst"><a href="#disabled"><code>disabled</code></a></td><td class="colOne"><code>false</code></td><td class="colOne"><code>javax.el.ValueExpression</code>
+<br>(<i>must evaluate to </i><code>java.lang.Boolean</code>)
+					</td><td class="colLast">
+                Flag indicating that this element must never receive focus or
+                be included in a subsequent submit. A value of false causes
+                no attribute to be rendered, while a value of true causes the
+                attribute to be rendered as disabled="disabled".
+            </td>
+</tr>
+<tr id="disabledClass" class="altColor">
+<td class="colFirst"><a href="#disabledClass"><code>disabledClass</code></a></td><td class="colOne"><code>false</code></td><td class="colOne"><code>javax.el.ValueExpression</code>
+<br>(<i>must evaluate to </i><code>java.lang.String</code>)
+					</td><td class="colLast">
+                CSS style class to apply to the rendered label
+                on disabled options.
+            </td>
+</tr>
+<tr id="enabledClass" class="rowColor">
+<td class="colFirst"><a href="#enabledClass"><code>enabledClass</code></a></td><td class="colOne"><code>false</code></td><td class="colOne"><code>javax.el.ValueExpression</code>
+<br>(<i>must evaluate to </i><code>java.lang.String</code>)
+					</td><td class="colLast">
+                CSS style class to apply to the rendered label
+                on enabled options.
+            </td>
+</tr>
+<tr id="hideNoSelectionOption" class="altColor">
+<td class="colFirst"><a href="#hideNoSelectionOption"><code>hideNoSelectionOption</code></a></td><td class="colOne"><code>false</code></td><td class="colOne"><code>javax.el.ValueExpression</code>
+<br>(<i>must evaluate to </i><code>java.lang.Boolean</code>)
+					</td><td class="colLast">
+                <p class="changed_modified_2_0">
+                Flag indicating that, if this component is activated by the
+                user,
+                The "no selection option", if any, must be hidden.</p>
+            </td>
+</tr>
+<tr id="label" class="rowColor">
+<td class="colFirst"><a href="#label"><code>label</code></a></td><td class="colOne"><code>false</code></td><td class="colOne"><code>javax.el.ValueExpression</code>
+<br>(<i>must evaluate to </i><code>java.lang.String</code>)
+					</td><td class="colLast">
+                A localized user presentable name for this component.
+            </td>
+</tr>
+<tr id="lang" class="altColor">
+<td class="colFirst"><a href="#lang"><code>lang</code></a></td><td class="colOne"><code>false</code></td><td class="colOne"><code>javax.el.ValueExpression</code>
+<br>(<i>must evaluate to </i><code>java.lang.String</code>)
+					</td><td class="colLast">
+                Code describing the language used in the generated markup
+                for this component.
+            </td>
+</tr>
+<tr id="onblur" class="rowColor">
+<td class="colFirst"><a href="#onblur"><code>onblur</code></a></td><td class="colOne"><code>false</code></td><td class="colOne"><code>javax.el.ValueExpression</code>
+<br>(<i>must evaluate to </i><code>java.lang.String</code>)
+					</td><td class="colLast">
+                Javascript code executed when this element loses focus.
+            </td>
+</tr>
+<tr id="onchange" class="altColor">
+<td class="colFirst"><a href="#onchange"><code>onchange</code></a></td><td class="colOne"><code>false</code></td><td class="colOne"><code>javax.el.ValueExpression</code>
+<br>(<i>must evaluate to </i><code>java.lang.String</code>)
+					</td><td class="colLast">
+                Javascript code executed when this element loses focus
+                and its value has been modified since gaining focus.
+            </td>
+</tr>
+<tr id="onclick" class="rowColor">
+<td class="colFirst"><a href="#onclick"><code>onclick</code></a></td><td class="colOne"><code>false</code></td><td class="colOne"><code>javax.el.ValueExpression</code>
+<br>(<i>must evaluate to </i><code>java.lang.String</code>)
+					</td><td class="colLast">
+                Javascript code executed when a pointer button is
+                clicked over this element.
+            </td>
+</tr>
+<tr id="ondblclick" class="altColor">
+<td class="colFirst"><a href="#ondblclick"><code>ondblclick</code></a></td><td class="colOne"><code>false</code></td><td class="colOne"><code>javax.el.ValueExpression</code>
+<br>(<i>must evaluate to </i><code>java.lang.String</code>)
+					</td><td class="colLast">
+                Javascript code executed when a pointer button is
+                double clicked over this element.
+            </td>
+</tr>
+<tr id="onfocus" class="rowColor">
+<td class="colFirst"><a href="#onfocus"><code>onfocus</code></a></td><td class="colOne"><code>false</code></td><td class="colOne"><code>javax.el.ValueExpression</code>
+<br>(<i>must evaluate to </i><code>java.lang.String</code>)
+					</td><td class="colLast">
+                Javascript code executed when this element receives focus.
+            </td>
+</tr>
+<tr id="onkeydown" class="altColor">
+<td class="colFirst"><a href="#onkeydown"><code>onkeydown</code></a></td><td class="colOne"><code>false</code></td><td class="colOne"><code>javax.el.ValueExpression</code>
+<br>(<i>must evaluate to </i><code>java.lang.String</code>)
+					</td><td class="colLast">
+                Javascript code executed when a key is
+                pressed down over this element.
+            </td>
+</tr>
+<tr id="onkeypress" class="rowColor">
+<td class="colFirst"><a href="#onkeypress"><code>onkeypress</code></a></td><td class="colOne"><code>false</code></td><td class="colOne"><code>javax.el.ValueExpression</code>
+<br>(<i>must evaluate to </i><code>java.lang.String</code>)
+					</td><td class="colLast">
+                Javascript code executed when a key is
+                pressed and released over this element.
+            </td>
+</tr>
+<tr id="onkeyup" class="altColor">
+<td class="colFirst"><a href="#onkeyup"><code>onkeyup</code></a></td><td class="colOne"><code>false</code></td><td class="colOne"><code>javax.el.ValueExpression</code>
+<br>(<i>must evaluate to </i><code>java.lang.String</code>)
+					</td><td class="colLast">
+                Javascript code executed when a key is
+                released over this element.
+            </td>
+</tr>
+<tr id="onmousedown" class="rowColor">
+<td class="colFirst"><a href="#onmousedown"><code>onmousedown</code></a></td><td class="colOne"><code>false</code></td><td class="colOne"><code>javax.el.ValueExpression</code>
+<br>(<i>must evaluate to </i><code>java.lang.String</code>)
+					</td><td class="colLast">
+                Javascript code executed when a pointer button is
+                pressed down over this element.
+            </td>
+</tr>
+<tr id="onmousemove" class="altColor">
+<td class="colFirst"><a href="#onmousemove"><code>onmousemove</code></a></td><td class="colOne"><code>false</code></td><td class="colOne"><code>javax.el.ValueExpression</code>
+<br>(<i>must evaluate to </i><code>java.lang.String</code>)
+					</td><td class="colLast">
+                Javascript code executed when a pointer button is
+                moved within this element.
+            </td>
+</tr>
+<tr id="onmouseout" class="rowColor">
+<td class="colFirst"><a href="#onmouseout"><code>onmouseout</code></a></td><td class="colOne"><code>false</code></td><td class="colOne"><code>javax.el.ValueExpression</code>
+<br>(<i>must evaluate to </i><code>java.lang.String</code>)
+					</td><td class="colLast">
+                Javascript code executed when a pointer button is
+                moved away from this element.
+            </td>
+</tr>
+<tr id="onmouseover" class="altColor">
+<td class="colFirst"><a href="#onmouseover"><code>onmouseover</code></a></td><td class="colOne"><code>false</code></td><td class="colOne"><code>javax.el.ValueExpression</code>
+<br>(<i>must evaluate to </i><code>java.lang.String</code>)
+					</td><td class="colLast">
+                Javascript code executed when a pointer button is
+                moved onto this element.
+            </td>
+</tr>
+<tr id="onmouseup" class="rowColor">
+<td class="colFirst"><a href="#onmouseup"><code>onmouseup</code></a></td><td class="colOne"><code>false</code></td><td class="colOne"><code>javax.el.ValueExpression</code>
+<br>(<i>must evaluate to </i><code>java.lang.String</code>)
+					</td><td class="colLast">
+                Javascript code executed when a pointer button is
+                released over this element.
+            </td>
+</tr>
+<tr id="readonly" class="altColor">
+<td class="colFirst"><a href="#readonly"><code>readonly</code></a></td><td class="colOne"><code>false</code></td><td class="colOne"><code>javax.el.ValueExpression</code>
+<br>(<i>must evaluate to </i><code>java.lang.Boolean</code>)
+					</td><td class="colLast">
+                Flag indicating that this component will prohibit changes by
+                the user. The element may receive focus unless it has also
+                been disabled. A value of false causes
+                no attribute to be rendered, while a value of true causes the
+                attribute to be rendered as readonly="readonly".
+            </td>
+</tr>
+<tr id="size" class="rowColor">
+<td class="colFirst"><a href="#size"><code>size</code></a></td><td class="colOne"><code>false</code></td><td class="colOne"><code>javax.el.ValueExpression</code>
+<br>(<i>must evaluate to </i><code>int</code>)
+					</td><td class="colLast">
+                Number of available options to be shown at all times.
+                If not specified, all available options are shown.
+            </td>
+</tr>
+<tr id="style" class="altColor">
+<td class="colFirst"><a href="#style"><code>style</code></a></td><td class="colOne"><code>false</code></td><td class="colOne"><code>javax.el.ValueExpression</code>
+<br>(<i>must evaluate to </i><code>java.lang.String</code>)
+					</td><td class="colLast">
+                CSS style(s) to be applied when this component is rendered.
+            </td>
+</tr>
+<tr id="styleClass" class="rowColor">
+<td class="colFirst"><a href="#styleClass"><code>styleClass</code></a></td><td class="colOne"><code>false</code></td><td class="colOne"><code>javax.el.ValueExpression</code>
+<br>(<i>must evaluate to </i><code>java.lang.String</code>)
+					</td><td class="colLast">
+                Space-separated list of CSS style class(es) to be applied when
+                this element is rendered. This value must be passed through
+                as the "class" attribute on generated markup.
+            </td>
+</tr>
+<tr id="tabindex" class="altColor">
+<td class="colFirst"><a href="#tabindex"><code>tabindex</code></a></td><td class="colOne"><code>false</code></td><td class="colOne"><code>javax.el.ValueExpression</code>
+<br>(<i>must evaluate to </i><code>java.lang.String</code>)
+					</td><td class="colLast">
+                Position of this element in the tabbing order
+                for the current document. This value must be
+                an integer between 0 and 32767.
+            </td>
+</tr>
+<tr id="title" class="rowColor">
+<td class="colFirst"><a href="#title"><code>title</code></a></td><td class="colOne"><code>false</code></td><td class="colOne"><code>javax.el.ValueExpression</code>
+<br>(<i>must evaluate to </i><code>java.lang.String</code>)
+					</td><td class="colLast">
+                Advisory title information about markup elements generated
+                for this component.
+            </td>
+</tr>
+<tr id="binding" class="altColor">
+<td class="colFirst"><a href="#binding"><code>binding</code></a></td><td class="colOne"><code>false</code></td><td class="colOne"><code>javax.el.ValueExpression</code>
+<br>(<i>must evaluate to </i><code>javax.faces.component.UIComponent</code>)
+					</td><td class="colLast">
+                The ValueExpression linking this component to a property in a
+                backing bean
+            </td>
+</tr>
+<tr id="role" class="rowColor">
+<td class="colFirst"><a href="#role"><code>role</code></a></td><td class="colOne"><code>false</code></td><td class="colOne"><code>javax.el.ValueExpression</code>
+<br>(<i>must evaluate to </i><code>java.lang.String</code>)
+					</td><td class="colLast">
+                <p class="changed_added_2_2">Per the WAI-ARIA spec and its
+                relationship to HTML5 (Section title ARIA Role Attriubute),
+                every HTML element may have a "role" attribute whose value
+                must be passed through unmodified on the element on which it
+                is declared in the final rendered markup.  The attribute, if
+                specified, must have a value that is a string literal that is,
+                or an EL Expression that evaluates to, a set of
+                space-separated tokens representing the various WAI-ARIA roles
+                that the element belongs to.
+                </p>
+
+                <p class="changed_added_2_2">It is the page author's
+                responsibility to ensure that the user agent is capable of
+                correctly interpreting the value of this attribute.</p>
+            </td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="bottomNav">
+<a name="navbar_bottom"></a><a href="#skip-navbar_bottom" title="Skip navigation links"></a><a name="navbar_bottom_firstrow"></a>
+<ul class="navList" title="Navigation">
+<li>
+<a href="../overview-summary.html">Overview</a>
+</li>
+<li>
+<a href="tld-summary.html">Library</a>
+</li>
+<li class="navBarCell1Rev">Tag</li>
+<li>
+<a href="../help-doc.html">Help</a>
+</li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li>
+<a target="_bottom" href="../index.html?html_basic/selectManyListbox.html">
+									Frames
+								</a>
+</li>
+<li>
+<a target="_bottom" href="selectManyListbox.html">
+									No Frames
+								</a>
+</li>
+</ul>
+<ul class="navList" id="alltags_navbar_bottom">
+<li>
+<a href="../alltags-noframe.html">All Tags</a>
+</li>
+</ul>
+<script type="text/javascript">
+							document.getElementById("alltags_navbar_bottom").style.display = (window == top) ? "block" : "none";
+						</script><a name="skip-navbar_bottom"></a>
+</div>
+</body>
+</html>

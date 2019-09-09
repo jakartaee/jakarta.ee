@@ -1,0 +1,397 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en" xmlns:javaee="http://xmlns.jcp.org/xml/ns/javaee" xmlns:vdldoc="http://vdldoc.omnifaces.org" xmlns:fo="http://www.w3.org/1999/XSL/Format">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>message (Jakarta Server Faces 2.3.2 VDL Documentation)
+			</title>
+<meta name="keywords" content="$title">
+<link rel="stylesheet" type="text/css" title="Style" href="../jsf-api.css">
+</head>
+<body>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+<div class="topNav">
+<a name="navbar_top"></a><a href="#skip-navbar_top" title="Skip navigation links"></a><a name="navbar_top_firstrow"></a>
+<ul class="navList" title="Navigation">
+<li>
+<a href="../overview-summary.html">Overview</a>
+</li>
+<li>
+<a href="tld-summary.html">Library</a>
+</li>
+<li class="navBarCell1Rev">Tag</li>
+<li>
+<a href="../help-doc.html">Help</a>
+</li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li>
+<a target="_top" href="../index.html?html_basic/message.html">
+									Frames
+								</a>
+</li>
+<li>
+<a target="_top" href="message.html">
+									No Frames
+								</a>
+</li>
+</ul>
+<ul class="navList" id="alltags_navbar_top">
+<li>
+<a href="../alltags-noframe.html">All Tags</a>
+</li>
+</ul>
+<div>
+<script type="text/javascript">
+								document.getElementById("alltags_navbar_top").style.display = (window == top) ? "block" : "none";
+							</script>
+</div>
+<a name="skip-navbar_top"></a>
+</div>
+<div class="header">
+<h1 title="Library" class="title">html_basic</h1>
+<h2 class="title">
+							Tag
+							message</h2>
+</div>
+<div class="contentContainer">
+<div class="description">
+<ul class="blockList">
+<li class="blockList">
+<dl>
+<dt>Description:</dt>
+<dd>
+<div class="block">
+            <p>Render a single message for a specific component.</p>
+            <p>Set-up for Rendering</p>
+            <ul>
+            <p>Obtain the "summary" and "detail" properties from
+            <code>UIMessage</code> component. If not present, keep
+            the
+            empty string as the value, respectively. Obtain the first
+            <code>FacesMessage</code> to render from the component,
+            using
+            the "for" property of the <code>UIMessage</code>. This
+            will be
+            the only message we render. Obtain the severity style for this
+            message. If the severity of the message is
+            <code>FacesMessage.SEVERITY_INFO</code>, the severity
+            style
+            comes from the value of the "infoStyle" attribute. If the
+            severity of the message is
+            <code>FacesMessage.SEVERITY_WARN</code>, the severity
+            style
+            comes from the value of the "warnStyle" attribute, and so on for
+            each of the severities, <code>INFO, WARN, ERROR</code>
+            and
+            <code>FATAL</code>. The same rules apply for obtaining
+            the
+            severity style class, but instead of "infoStyle, warnStyle", etc
+            use "infoClass, warnClass", etc. Obtain the "style",
+            "styleClass" and "layout" attributes from the
+            <code>UIMessage</code> component. If we have a "style"
+            attribute and a severity style attribute, use the severity style
+            attribute as the value of the "style" attribute. If we have no
+            "style" attribute, but do have a severity style, use the
+            severity style as the value of the "style" attribute. The same
+            precedence rules apply for the style class. Obtain the value of
+            the <code>dir</code> and <code>lang</code>
+            attributes.</p>
+            </ul>
+            <p>Rendering</p>
+            <ul>
+            <p>For the message renderer, we only render one row, for the
+            first
+            message. For the messages renderer, we render as many rows as we
+            have messages. If any of the "dir", "lang", "style" or
+            "styleClass" attributes has a non-null value (as determined
+            above), render a "span" element, outputting the value of the
+            "style" attribute as the the value of the "style" attribute, and
+            outputting the value of the "styleClass" attribute as the value of
+            the "class" attribute on the "span" element. Output the "dir" and
+            "lang" attributes as well, if they are present. If the
+            <code>UIMessage</code> has a "tooltip" attribute with
+            the value of
+            "true", and the <code>UIMessage</code> has "showSummary"
+            and
+            "showDetail" properties with the value "true", if we haven't
+            already written out the "span", output the "summary" as the value
+            of the "title" attribute on the "span". If we haven't already
+            written out a "title" attribute, and "showSummary" is true, output
+            the summary. If "showDetail" is true, output the detail. Close
+            out the span if necessary.</p>
+            </ul>
+        </div>
+</dd>
+</dl>
+</li>
+</ul>
+</div>
+<div class="summary">
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Component summary table, listing component information">
+<caption>
+<span>Component Information</span><span class="tabEnd">&nbsp;</span>
+</caption>
+<thead>
+<tr>
+<th class="colFirst" scope="col">Info</th><th class="colLast" scope="col">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="rowColor">
+<td class="colFirst">Component Type</td><td class="colLast"><code>javax.faces.HtmlMessage</code></td>
+</tr>
+<tr class="altColor">
+<td class="colFirst">Handler Class</td><td class="colLast"><i>None</i></td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst">Renderer Type</td><td class="colLast"><code>javax.faces.Message</code></td>
+</tr>
+<tr class="altColor">
+<td class="colFirst">Description</td><td class="colLast"><i>None</i></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="summary">
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Attribute summary table, listing attribute information">
+<caption>
+<span>Attributes</span><span class="tabEnd">&nbsp;</span>
+</caption>
+<thead>
+<tr>
+<th class="colFirst">Name</th><th class="colOne">Required</th><th class="colOne">Type</th><th class="colLast">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr id="for" class="rowColor">
+<td class="colFirst"><a href="#for"><code>for</code></a></td><td class="colOne"><code>true</code></td><td class="colOne"><code>javax.el.ValueExpression</code>
+<br>(<i>must evaluate to </i><code>java.lang.String</code>)
+					</td><td class="colLast">
+                Client identifier of the component for which to display
+                messages.
+            </td>
+</tr>
+<tr id="id" class="altColor">
+<td class="colFirst"><a href="#id"><code>id</code></a></td><td class="colOne"><code>false</code></td><td class="colOne"><code>javax.el.ValueExpression</code>
+<br>(<i>must evaluate to </i><code>java.lang.String</code>)
+					</td><td class="colLast">
+                The component identifier for this component. This value must be
+                unique within the closest parent component that is a naming
+                container.
+            </td>
+</tr>
+<tr id="rendered" class="rowColor">
+<td class="colFirst"><a href="#rendered"><code>rendered</code></a></td><td class="colOne"><code>false</code></td><td class="colOne"><code>javax.el.ValueExpression</code>
+<br>(<i>must evaluate to </i><code>java.lang.Boolean</code>)
+					</td><td class="colLast">
+                Flag indicating whether or not this component should be rendered
+                (during Render Response Phase), or processed on any subsequent
+                form submit. The default value for this property is true.
+            </td>
+</tr>
+<tr id="showDetail" class="altColor">
+<td class="colFirst"><a href="#showDetail"><code>showDetail</code></a></td><td class="colOne"><code>false</code></td><td class="colOne"><code>javax.el.ValueExpression</code>
+<br>(<i>must evaluate to </i><code>java.lang.Boolean</code>)
+					</td><td class="colLast">
+                Flag indicating whether the detail portion of displayed messages
+                should be included. Default value is "true".
+            </td>
+</tr>
+<tr id="showSummary" class="rowColor">
+<td class="colFirst"><a href="#showSummary"><code>showSummary</code></a></td><td class="colOne"><code>false</code></td><td class="colOne"><code>javax.el.ValueExpression</code>
+<br>(<i>must evaluate to </i><code>java.lang.Boolean</code>)
+					</td><td class="colLast">
+                Flag indicating whether the summary portion of displayed
+                messages
+                should be included. Default value is "false".
+            </td>
+</tr>
+<tr id="dir" class="altColor">
+<td class="colFirst"><a href="#dir"><code>dir</code></a></td><td class="colOne"><code>false</code></td><td class="colOne"><code>javax.el.ValueExpression</code>
+<br>(<i>must evaluate to </i><code>java.lang.String</code>)
+					</td><td class="colLast">
+                Direction indication for text that does not inherit
+                directionality.
+                Valid values are "LTR" (left-to-right) and "RTL"
+                (right-to-left).
+            </td>
+</tr>
+<tr id="errorClass" class="rowColor">
+<td class="colFirst"><a href="#errorClass"><code>errorClass</code></a></td><td class="colOne"><code>false</code></td><td class="colOne"><code>javax.el.ValueExpression</code>
+<br>(<i>must evaluate to </i><code>java.lang.String</code>)
+					</td><td class="colLast">
+                CSS style class to apply to any message
+                with a severity class of "ERROR".
+            </td>
+</tr>
+<tr id="errorStyle" class="altColor">
+<td class="colFirst"><a href="#errorStyle"><code>errorStyle</code></a></td><td class="colOne"><code>false</code></td><td class="colOne"><code>javax.el.ValueExpression</code>
+<br>(<i>must evaluate to </i><code>java.lang.String</code>)
+					</td><td class="colLast">
+                CSS style(s) to apply to any message
+                with a severity class of "ERROR".
+            </td>
+</tr>
+<tr id="fatalClass" class="rowColor">
+<td class="colFirst"><a href="#fatalClass"><code>fatalClass</code></a></td><td class="colOne"><code>false</code></td><td class="colOne"><code>javax.el.ValueExpression</code>
+<br>(<i>must evaluate to </i><code>java.lang.String</code>)
+					</td><td class="colLast">
+                CSS style class to apply to any message
+                with a severity class of "FATAL".
+            </td>
+</tr>
+<tr id="fatalStyle" class="altColor">
+<td class="colFirst"><a href="#fatalStyle"><code>fatalStyle</code></a></td><td class="colOne"><code>false</code></td><td class="colOne"><code>javax.el.ValueExpression</code>
+<br>(<i>must evaluate to </i><code>java.lang.String</code>)
+					</td><td class="colLast">
+                CSS style(s) to apply to any message
+                with a severity class of "FATAL".
+            </td>
+</tr>
+<tr id="infoClass" class="rowColor">
+<td class="colFirst"><a href="#infoClass"><code>infoClass</code></a></td><td class="colOne"><code>false</code></td><td class="colOne"><code>javax.el.ValueExpression</code>
+<br>(<i>must evaluate to </i><code>java.lang.String</code>)
+					</td><td class="colLast">
+                CSS style class to apply to any message
+                with a severity class of "INFO".
+            </td>
+</tr>
+<tr id="infoStyle" class="altColor">
+<td class="colFirst"><a href="#infoStyle"><code>infoStyle</code></a></td><td class="colOne"><code>false</code></td><td class="colOne"><code>javax.el.ValueExpression</code>
+<br>(<i>must evaluate to </i><code>java.lang.String</code>)
+					</td><td class="colLast">
+                CSS style(s) to apply to any message
+                with a severity class of "INFO".
+            </td>
+</tr>
+<tr id="lang" class="rowColor">
+<td class="colFirst"><a href="#lang"><code>lang</code></a></td><td class="colOne"><code>false</code></td><td class="colOne"><code>javax.el.ValueExpression</code>
+<br>(<i>must evaluate to </i><code>java.lang.String</code>)
+					</td><td class="colLast">
+                Code describing the language used in the generated markup
+                for this component.
+            </td>
+</tr>
+<tr id="style" class="altColor">
+<td class="colFirst"><a href="#style"><code>style</code></a></td><td class="colOne"><code>false</code></td><td class="colOne"><code>javax.el.ValueExpression</code>
+<br>(<i>must evaluate to </i><code>java.lang.String</code>)
+					</td><td class="colLast">
+                CSS style(s) to be applied when this component is rendered.
+            </td>
+</tr>
+<tr id="styleClass" class="rowColor">
+<td class="colFirst"><a href="#styleClass"><code>styleClass</code></a></td><td class="colOne"><code>false</code></td><td class="colOne"><code>javax.el.ValueExpression</code>
+<br>(<i>must evaluate to </i><code>java.lang.String</code>)
+					</td><td class="colLast">
+                Space-separated list of CSS style class(es) to be applied when
+                this element is rendered. This value must be passed through
+                as the "class" attribute on generated markup.
+            </td>
+</tr>
+<tr id="title" class="altColor">
+<td class="colFirst"><a href="#title"><code>title</code></a></td><td class="colOne"><code>false</code></td><td class="colOne"><code>javax.el.ValueExpression</code>
+<br>(<i>must evaluate to </i><code>java.lang.String</code>)
+					</td><td class="colLast">
+                Advisory title information about markup elements generated
+                for this component.
+            </td>
+</tr>
+<tr id="tooltip" class="rowColor">
+<td class="colFirst"><a href="#tooltip"><code>tooltip</code></a></td><td class="colOne"><code>false</code></td><td class="colOne"><code>javax.el.ValueExpression</code>
+<br>(<i>must evaluate to </i><code>java.lang.Boolean</code>)
+					</td><td class="colLast">
+                Flag indicating whether the detail portion of the
+                message should be displayed as a tooltip.
+            </td>
+</tr>
+<tr id="warnClass" class="altColor">
+<td class="colFirst"><a href="#warnClass"><code>warnClass</code></a></td><td class="colOne"><code>false</code></td><td class="colOne"><code>javax.el.ValueExpression</code>
+<br>(<i>must evaluate to </i><code>java.lang.String</code>)
+					</td><td class="colLast">
+                CSS style class to apply to any message
+                with a severity class of "WARN".
+            </td>
+</tr>
+<tr id="warnStyle" class="rowColor">
+<td class="colFirst"><a href="#warnStyle"><code>warnStyle</code></a></td><td class="colOne"><code>false</code></td><td class="colOne"><code>javax.el.ValueExpression</code>
+<br>(<i>must evaluate to </i><code>java.lang.String</code>)
+					</td><td class="colLast">
+                CSS style(s) to apply to any message
+                with a severity class of "WARN".
+            </td>
+</tr>
+<tr id="binding" class="altColor">
+<td class="colFirst"><a href="#binding"><code>binding</code></a></td><td class="colOne"><code>false</code></td><td class="colOne"><code>javax.el.ValueExpression</code>
+<br>(<i>must evaluate to </i><code>javax.faces.component.UIComponent</code>)
+					</td><td class="colLast">
+                The ValueExpression linking this component to a property in a
+                backing bean
+            </td>
+</tr>
+<tr id="role" class="rowColor">
+<td class="colFirst"><a href="#role"><code>role</code></a></td><td class="colOne"><code>false</code></td><td class="colOne"><code>javax.el.ValueExpression</code>
+<br>(<i>must evaluate to </i><code>java.lang.String</code>)
+					</td><td class="colLast">
+                <p class="changed_added_2_2">Per the WAI-ARIA spec and its
+                relationship to HTML5 (Section title ARIA Role Attriubute),
+                every HTML element may have a "role" attribute whose value
+                must be passed through unmodified on the element on which it
+                is declared in the final rendered markup.  The attribute, if
+                specified, must have a value that is a string literal that is,
+                or an EL Expression that evaluates to, a set of
+                space-separated tokens representing the various WAI-ARIA roles
+                that the element belongs to.
+                </p>
+
+                <p class="changed_added_2_2">It is the page author's
+                responsibility to ensure that the user agent is capable of
+                correctly interpreting the value of this attribute.</p>
+            </td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="bottomNav">
+<a name="navbar_bottom"></a><a href="#skip-navbar_bottom" title="Skip navigation links"></a><a name="navbar_bottom_firstrow"></a>
+<ul class="navList" title="Navigation">
+<li>
+<a href="../overview-summary.html">Overview</a>
+</li>
+<li>
+<a href="tld-summary.html">Library</a>
+</li>
+<li class="navBarCell1Rev">Tag</li>
+<li>
+<a href="../help-doc.html">Help</a>
+</li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li>
+<a target="_bottom" href="../index.html?html_basic/message.html">
+									Frames
+								</a>
+</li>
+<li>
+<a target="_bottom" href="message.html">
+									No Frames
+								</a>
+</li>
+</ul>
+<ul class="navList" id="alltags_navbar_bottom">
+<li>
+<a href="../alltags-noframe.html">All Tags</a>
+</li>
+</ul>
+<script type="text/javascript">
+							document.getElementById("alltags_navbar_bottom").style.display = (window == top) ? "block" : "none";
+						</script><a name="skip-navbar_bottom"></a>
+</div>
+</body>
+</html>

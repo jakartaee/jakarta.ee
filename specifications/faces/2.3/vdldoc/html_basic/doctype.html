@@ -1,0 +1,253 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en" xmlns:javaee="http://xmlns.jcp.org/xml/ns/javaee" xmlns:vdldoc="http://vdldoc.omnifaces.org" xmlns:fo="http://www.w3.org/1999/XSL/Format">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>doctype (Jakarta Server Faces 2.3.2 VDL Documentation)
+			</title>
+<meta name="keywords" content="$title">
+<link rel="stylesheet" type="text/css" title="Style" href="../jsf-api.css">
+</head>
+<body>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+<div class="topNav">
+<a name="navbar_top"></a><a href="#skip-navbar_top" title="Skip navigation links"></a><a name="navbar_top_firstrow"></a>
+<ul class="navList" title="Navigation">
+<li>
+<a href="../overview-summary.html">Overview</a>
+</li>
+<li>
+<a href="tld-summary.html">Library</a>
+</li>
+<li class="navBarCell1Rev">Tag</li>
+<li>
+<a href="../help-doc.html">Help</a>
+</li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li>
+<a target="_top" href="../index.html?html_basic/doctype.html">
+									Frames
+								</a>
+</li>
+<li>
+<a target="_top" href="doctype.html">
+									No Frames
+								</a>
+</li>
+</ul>
+<ul class="navList" id="alltags_navbar_top">
+<li>
+<a href="../alltags-noframe.html">All Tags</a>
+</li>
+</ul>
+<div>
+<script type="text/javascript">
+								document.getElementById("alltags_navbar_top").style.display = (window == top) ? "block" : "none";
+							</script>
+</div>
+<a name="skip-navbar_top"></a>
+</div>
+<div class="header">
+<h1 title="Library" class="title">html_basic</h1>
+<h2 class="title">
+							Tag
+							doctype</h2>
+</div>
+<div class="contentContainer">
+<div class="description">
+<ul class="blockList">
+<li class="blockList">
+<dl>
+<dt>Description:</dt>
+<dd>
+<div class="block">
+            <div class="changed_added_2_1">
+            
+            <p><span class="changed_added_2_1 changed_modified_2_2">Render</span> the markup for
+            a <code>&lt;!DOCTYPE&gt;</code> declaration.</p>
+            
+            <p>Decode Behavior</p>
+            
+            <ul>
+            
+            <p>No action is required during decode for this renderer.</p>
+            
+            </ul>
+            
+            <p>Encode Behavior</p>
+            
+            <p>Output an XML Doctype using the provided attributes.  Output the
+            literal text <code>&lt;!DOCTYPE</code>. The "rootElement" attribute is
+            required and must be rendered next.  If the "public" attribute is
+            defined, render the literal text <code>PUBLIC</code> then render the
+            value of the attribute inside double quotes.  If the "system" attribute
+            is defined, render it next, inside double quotes.  Close the doctype
+            declaration with the literal text <code>&gt;</code>.</p>
+            
+            <div class="changed_added_2_2">
+            
+            <p>No relocation occurs with the output of this component. It is
+            rendered at whatever position in the view hierarchy it happens to be
+            encountered when traversing the view to render. Therefore, this
+            component must be located in the view hierarchy at the correct location
+            so that the final rendered markup has it in the proper place with
+            respect to the user agent that consumes the rendered markup. In practice
+            this means in front of the &lt;html&gt; or &lt;h:html&gt; element.
+            Furthermore, if multiple &lt;h:doctype&gt; components exist,
+            <strong>all</strong> of them will be rendered.</p>
+            
+            <p>If this component is present in a view, any DOCTYPE that would
+            otherwise have been rendered by virtue of being present in the VDL page
+            must be ignored.</p>
+            
+            </div>
+            
+            
+            </div>
+        </div>
+</dd>
+</dl>
+</li>
+</ul>
+</div>
+<div class="summary">
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Component summary table, listing component information">
+<caption>
+<span>Component Information</span><span class="tabEnd">&nbsp;</span>
+</caption>
+<thead>
+<tr>
+<th class="colFirst" scope="col">Info</th><th class="colLast" scope="col">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="rowColor">
+<td class="colFirst">Component Type</td><td class="colLast"><code>javax.faces.HtmlDoctype</code></td>
+</tr>
+<tr class="altColor">
+<td class="colFirst">Handler Class</td><td class="colLast"><i>None</i></td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst">Renderer Type</td><td class="colLast"><code>javax.faces.Doctype</code></td>
+</tr>
+<tr class="altColor">
+<td class="colFirst">Description</td><td class="colLast"><i>None</i></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="summary">
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Attribute summary table, listing attribute information">
+<caption>
+<span>Attributes</span><span class="tabEnd">&nbsp;</span>
+</caption>
+<thead>
+<tr>
+<th class="colFirst">Name</th><th class="colOne">Required</th><th class="colOne">Type</th><th class="colLast">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr id="converter" class="rowColor">
+<td class="colFirst"><a href="#converter"><code>converter</code></a></td><td class="colOne"><code>false</code></td><td class="colOne"><code>javax.el.ValueExpression</code>
+<br>(<i>must evaluate to </i><code>javax.faces.convert.Converter</code>)
+					</td><td class="colLast">
+                Converter instance registered with this component.
+            </td>
+</tr>
+<tr id="id" class="altColor">
+<td class="colFirst"><a href="#id"><code>id</code></a></td><td class="colOne"><code>false</code></td><td class="colOne"><code>javax.el.ValueExpression</code>
+<br>(<i>must evaluate to </i><code>java.lang.Boolean</code>)
+					</td><td class="colLast">
+                The component identifier for this component.  This value must be
+                unique within the closest parent component that is a naming
+                container.
+            </td>
+</tr>
+<tr id="value" class="rowColor">
+<td class="colFirst"><a href="#value"><code>value</code></a></td><td class="colOne"><code>false</code></td><td class="colOne"><code>javax.el.ValueExpression</code>
+<br>(<i>must evaluate to </i><code>java.lang.Object</code>)
+					</td><td class="colLast">
+                The current value of this component.
+            </td>
+</tr>
+<tr id="public" class="altColor">
+<td class="colFirst"><a href="#public"><code>public</code></a></td><td class="colOne"><code>false</code></td><td class="colOne"><code>javax.el.ValueExpression</code>
+<br>(<i>must evaluate to </i><code>java.lang.String</code>)
+					</td><td class="colLast">
+                <div class="changed_added_2_1">
+                Will be output as the public part of the DOCTYPE
+                </div>
+            </td>
+</tr>
+<tr id="rootElement" class="rowColor">
+<td class="colFirst"><a href="#rootElement"><code>rootElement</code></a></td><td class="colOne"><code>false</code></td><td class="colOne"><code>javax.el.ValueExpression</code>
+<br>(<i>must evaluate to </i><code>java.lang.String</code>)
+					</td><td class="colLast">
+                <div class="changed_added_2_1">
+                The root XML element
+                </div>
+            </td>
+</tr>
+<tr id="system" class="altColor">
+<td class="colFirst"><a href="#system"><code>system</code></a></td><td class="colOne"><code>false</code></td><td class="colOne"><code>javax.el.ValueExpression</code>
+<br>(<i>must evaluate to </i><code>java.lang.String</code>)
+					</td><td class="colLast">
+                <div class="changed_added_2_1">
+                Will be output as the system part of the DOCTYPE
+                </div>
+            </td>
+</tr>
+<tr id="binding" class="rowColor">
+<td class="colFirst"><a href="#binding"><code>binding</code></a></td><td class="colOne"><code>false</code></td><td class="colOne"><code>javax.el.ValueExpression</code>
+<br>(<i>must evaluate to </i><code>javax.faces.component.UIComponent</code>)
+					</td><td class="colLast">
+                The ValueExpression linking this component to a property in a backing bean
+            </td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="bottomNav">
+<a name="navbar_bottom"></a><a href="#skip-navbar_bottom" title="Skip navigation links"></a><a name="navbar_bottom_firstrow"></a>
+<ul class="navList" title="Navigation">
+<li>
+<a href="../overview-summary.html">Overview</a>
+</li>
+<li>
+<a href="tld-summary.html">Library</a>
+</li>
+<li class="navBarCell1Rev">Tag</li>
+<li>
+<a href="../help-doc.html">Help</a>
+</li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li>
+<a target="_bottom" href="../index.html?html_basic/doctype.html">
+									Frames
+								</a>
+</li>
+<li>
+<a target="_bottom" href="doctype.html">
+									No Frames
+								</a>
+</li>
+</ul>
+<ul class="navList" id="alltags_navbar_bottom">
+<li>
+<a href="../alltags-noframe.html">All Tags</a>
+</li>
+</ul>
+<script type="text/javascript">
+							document.getElementById("alltags_navbar_bottom").style.display = (window == top) ? "block" : "none";
+						</script><a name="skip-navbar_bottom"></a>
+</div>
+</body>
+</html>

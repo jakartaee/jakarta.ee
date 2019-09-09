@@ -1,0 +1,598 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en" xmlns:javaee="http://xmlns.jcp.org/xml/ns/javaee" xmlns:vdldoc="http://vdldoc.omnifaces.org" xmlns:fo="http://www.w3.org/1999/XSL/Format">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>commandLink (Jakarta Server Faces 2.3.2 VDL Documentation)
+			</title>
+<meta name="keywords" content="$title">
+<link rel="stylesheet" type="text/css" title="Style" href="../jsf-api.css">
+</head>
+<body>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+<div class="topNav">
+<a name="navbar_top"></a><a href="#skip-navbar_top" title="Skip navigation links"></a><a name="navbar_top_firstrow"></a>
+<ul class="navList" title="Navigation">
+<li>
+<a href="../overview-summary.html">Overview</a>
+</li>
+<li>
+<a href="tld-summary.html">Library</a>
+</li>
+<li class="navBarCell1Rev">Tag</li>
+<li>
+<a href="../help-doc.html">Help</a>
+</li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li>
+<a target="_top" href="../index.html?html_basic/commandLink.html">
+									Frames
+								</a>
+</li>
+<li>
+<a target="_top" href="commandLink.html">
+									No Frames
+								</a>
+</li>
+</ul>
+<ul class="navList" id="alltags_navbar_top">
+<li>
+<a href="../alltags-noframe.html">All Tags</a>
+</li>
+</ul>
+<div>
+<script type="text/javascript">
+								document.getElementById("alltags_navbar_top").style.display = (window == top) ? "block" : "none";
+							</script>
+</div>
+<a name="skip-navbar_top"></a>
+</div>
+<div class="header">
+<h1 title="Library" class="title">html_basic</h1>
+<h2 class="title">
+							Tag
+							commandLink</h2>
+</div>
+<div class="contentContainer">
+<div class="description">
+<ul class="blockList">
+<li class="blockList">
+<dl>
+<dt>Description:</dt>
+<dd>
+<div class="block">
+            <p><span
+            class="changed_modified_2_0">Render</span> an HTML "a"
+            anchor
+            element that acts like a form submit button when
+            clicked.</p>
+            <p>General Behaviour</p>
+            <p>Both the encode and decode behavior require the ability to
+            get
+            the id/name for a hidden field, <span
+            class="changed_added_2_0">which may be rendered in markup or
+            which
+            may be programmatically added via client DOM manipulation</span>,
+            whose value is set by the JavaScript form submit. This name must
+            be constructed as follows:</p>
+            <ul>
+            <li><p>Get the clientId for the form of which this
+            component is a
+            child.</p></li>
+            <li><p>Append
+            <code>NamingContainer.SEPARATOR_CHAR</code>.</p></li>
+            <li><p>Append a constant string that is the same for all
+            command
+            link components in the tree.</p></li>
+            </ul>
+            <p>In the following text, this String is called
+            hiddenFieldName.</p>
+            <p>Decode Behavior</p>
+            <ul>
+            <p>Obtain the "clientId" property of the component. Obtain the
+            <code>Map</code> from the "requestParameterMap" property
+            of the
+            <code>ExternalContext</code>. Derive hiddenFieldName as
+            above.
+            Get the entry in the <code>Map</code> under the key that
+            is the
+            hiddenFieldName. If the there is no entry, or the entry is the
+            empty String, or the entry is not equal to the value of the
+            "clientId" property, return immediately. If there is an entry,
+            and its value is equal to the value of the "clientId" property,
+            create a new <code>javax.faces.event.ActionEvent</code>
+            instance
+            around the component and call <code>queueActionEvent()</code>
+            on
+            the component, passing the event.</p>
+            </ul>
+            <p>Encode Behavior</p>
+            <ul>
+            <p>If the value of the <code>disabled</code>
+            attribute is
+            <code>true</code>, render a span element. Render all the
+            passthru
+            attributes and the <code>target</code> attribute as
+            pass-through
+            attributes on the span, even though the <code>target</code>
+            attribute will have no effect on a span. Render the current value
+            of the component as the content of the span. Return.</p>
+            <p>If the <code>disabled</code> attribute is not
+            present, or its
+            value is <code>false</code>, render an HTML <code>a</code>
+            element. Render "#" as the value of the "href" attribute. Render
+            the current value of the component as the link text if it is
+            specified. Render JavaScript that is functionally equivalent to
+            the following as the value of the "onclick" attribute:</p>
+            <p><code>document.forms['CLIENT_ID']['hiddenFieldName'].value='CLIENT_ID';
+            document.forms['CLIENT_ID']['PARAM1_NAME'].value='PARAM1_VALUE';
+            document.forms['CLIENT_ID']['PARAM2_NAME'].value='PARAM2_VALUE';
+            return false;</code></p>
+            <p>document.forms['CLIENT_ID'].submit()" where hiddenFieldName
+            is
+            as described above, CLIENT_ID is the clientId of the UICommand
+            component, PARAM*_NAME and PARAM*_VALUE are the names and values,
+            respectively, of any nested UIParameter children. The name and
+            the value must be URLEncoded. If an "onclick" attribute was
+            specified by the user, render this JavaScript in a function,
+            and render the user's JavaScript in a function. Render both
+            functions
+            in a choice function as follows:</p>
+            <p><code>var a=function(){#USER_FUNCTION#};
+            var b=function(){#JSF_FUNCTION#};
+            return (a()==false) ? false : b();</code></p>
+            <p>where #USER_FUNCTION# is the user's JavaScript and
+            #JSF_FUNCTION# is the JavaScript rendered by JSF. The choice
+            function should operate such that if the user's JavaScript returns
+            true, then the rendered JavaScript will also execute.</p>
+            <p>If the "styleClass" attribute is specified, render its
+            value as
+            the value of the "class" attribute. Render any non-UIParameter
+            output children as normal inside of the "a" element. These will
+            appear as the link text. Allow the form renderer to output a
+            single "input" element (for the entire page, regardless of how
+            many command link components are in the page) of "type" "hidden"
+            whose "name" is the value of hiddenFieldName, and which must not
+            have a "value" attribute. Multiple occurrences of command link
+            components in the tree should not cause multiple hiddenFieldName
+            hidden fields. Allow the form renderer to output an "input"
+            element of "type" "hidden" for each of the nested UIParameter
+            children, taking the name property (but not the value) from each
+            one in turn. If the "disabled" attribute is specified, do not
+            render the HTML "a" anchor element or its "href" attribute.
+            Instead, render a "span" element. If the "styleClass" attribute
+            is specified, render its value as the value of the "class"
+            attribute on the "span". Render any pass-through attributes on
+            the "span". The content of the span element comes from the value
+            of the component or its children as specified above.</p>
+            <p>If the user specified a <code>target</code>
+            attribute, its
+            value must be set using javascript since the <code>onclick</code>
+            handler will prevent the target attribute from being generated.
+            This must be accomplished using JavaScript that is equivalent to
+            the following.</p>
+            <p><code>document.forms['CLIENT_ID'].target='TARGET';</code></p>
+            <p>Where TARGET is the value of the target attribute on the
+            JSP
+            tag.</p>
+            </ul>
+        </div>
+</dd>
+</dl>
+</li>
+</ul>
+</div>
+<div class="summary">
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Component summary table, listing component information">
+<caption>
+<span>Component Information</span><span class="tabEnd">&nbsp;</span>
+</caption>
+<thead>
+<tr>
+<th class="colFirst" scope="col">Info</th><th class="colLast" scope="col">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="rowColor">
+<td class="colFirst">Component Type</td><td class="colLast"><code>javax.faces.HtmlCommandLink</code></td>
+</tr>
+<tr class="altColor">
+<td class="colFirst">Handler Class</td><td class="colLast"><i>None</i></td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst">Renderer Type</td><td class="colLast"><code>javax.faces.Link</code></td>
+</tr>
+<tr class="altColor">
+<td class="colFirst">Description</td><td class="colLast"><i>None</i></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="summary">
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Attribute summary table, listing attribute information">
+<caption>
+<span>Attributes</span><span class="tabEnd">&nbsp;</span>
+</caption>
+<thead>
+<tr>
+<th class="colFirst">Name</th><th class="colOne">Required</th><th class="colOne">Type</th><th class="colLast">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr id="role" class="rowColor">
+<td class="colFirst"><a href="#role"><code>role</code></a></td><td class="colOne"><code>false</code></td><td class="colOne"><code>javax.el.ValueExpression</code>
+<br>(<i>must evaluate to </i><code>java.lang.String</code>)
+					</td><td class="colLast">
+                <p class="changed_added_2_2">Per the WAI-ARIA spec and its
+                relationship to HTML5 (Section title ARIA Role Attriubute),
+                every HTML element may have a "role" attribute whose value
+                must be passed through unmodified on the element on which it
+                is declared in the final rendered markup.  The attribute, if
+                specified, must have a value that is a string literal that is,
+                or an EL Expression that evaluates to, a set of
+                space-separated tokens representing the various WAI-ARIA roles
+                that the element belongs to.
+                </p>
+                
+                <p class="changed_added_2_2">It is the page author's
+                responsibility to ensure that the user agent is capable of
+                correctly interpreting the value of this attribute.</p>
+            </td>
+</tr>
+<tr id="action" class="altColor">
+<td class="colFirst"><a href="#action"><code>action</code></a></td><td class="colOne"><code>false</code></td><td class="colOne"><code>javax.el.MethodExpression</code>
+<br>(<i>signature must match </i><code>java.lang.Object action()</code>)
+					</td><td class="colLast">
+                MethodExpression representing the application action to invoke
+                when this component is activated by the user. The expression
+                must evaluate to a public method that takes no parameters, and
+                returns an Object (the toString() of which is called to derive
+                the logical outcome) which is passed to the NavigationHandler
+                for this application.
+            </td>
+</tr>
+<tr id="actionListener" class="rowColor">
+<td class="colFirst"><a href="#actionListener"><code>actionListener</code></a></td><td class="colOne"><code>false</code></td><td class="colOne"><code>javax.el.MethodExpression</code>
+<br>(<i>signature must match </i><code>void actionListener(javax.faces.event.ActionEvent)
+            </code>)
+					</td><td class="colLast">
+                <p>
+                MethodExpression representing an action listener method that
+                will be notified when this component is activated by the user.
+                The expression must evaluate to a public method that takes an
+                ActionEvent parameter, with a return type of void, <span
+                class="changed_added_2_0">or to a public method that takes no
+                arguments with a return type of void. In the latter case, the
+                method has no way of easily knowing where the event came from,
+                but this can be useful in cases where a notification is needed
+                that "some action happened".</span>
+                </p>
+            </td>
+</tr>
+<tr id="id" class="altColor">
+<td class="colFirst"><a href="#id"><code>id</code></a></td><td class="colOne"><code>false</code></td><td class="colOne"><code>javax.el.ValueExpression</code>
+<br>(<i>must evaluate to </i><code>java.lang.String</code>)
+					</td><td class="colLast">
+                The component identifier for this component. This value must be
+                unique within the closest parent component that is a naming
+                container.
+            </td>
+</tr>
+<tr id="immediate" class="rowColor">
+<td class="colFirst"><a href="#immediate"><code>immediate</code></a></td><td class="colOne"><code>false</code></td><td class="colOne"><code>javax.el.ValueExpression</code>
+<br>(<i>must evaluate to </i><code>java.lang.Boolean</code>)
+					</td><td class="colLast">
+                Flag indicating that, if this component is activated by the
+                user,
+                notifications should be delivered to interested listeners and
+                actions
+                immediately (that is, during Apply Request Values phase) rather
+                than
+                waiting until Invoke Application phase.
+            </td>
+</tr>
+<tr id="rendered" class="altColor">
+<td class="colFirst"><a href="#rendered"><code>rendered</code></a></td><td class="colOne"><code>false</code></td><td class="colOne"><code>javax.el.ValueExpression</code>
+<br>(<i>must evaluate to </i><code>java.lang.Boolean</code>)
+					</td><td class="colLast">
+                Flag indicating whether or not this component should be rendered
+                (during Render Response Phase), or processed on any subsequent
+                form submit. The default value for this property is true.
+            </td>
+</tr>
+<tr id="value" class="rowColor">
+<td class="colFirst"><a href="#value"><code>value</code></a></td><td class="colOne"><code>false</code></td><td class="colOne"><code>javax.el.ValueExpression</code>
+<br>(<i>must evaluate to </i><code>java.lang.Object</code>)
+					</td><td class="colLast">
+                The current value of this component.
+            </td>
+</tr>
+<tr id="accesskey" class="altColor">
+<td class="colFirst"><a href="#accesskey"><code>accesskey</code></a></td><td class="colOne"><code>false</code></td><td class="colOne"><code>javax.el.ValueExpression</code>
+<br>(<i>must evaluate to </i><code>java.lang.String</code>)
+					</td><td class="colLast">
+                Access key that, when pressed, transfers focus
+                to this element.
+            </td>
+</tr>
+<tr id="charset" class="rowColor">
+<td class="colFirst"><a href="#charset"><code>charset</code></a></td><td class="colOne"><code>false</code></td><td class="colOne"><code>javax.el.ValueExpression</code>
+<br>(<i>must evaluate to </i><code>java.lang.String</code>)
+					</td><td class="colLast">
+                The character encoding of the resource designated
+                by this hyperlink.
+            </td>
+</tr>
+<tr id="coords" class="altColor">
+<td class="colFirst"><a href="#coords"><code>coords</code></a></td><td class="colOne"><code>false</code></td><td class="colOne"><code>javax.el.ValueExpression</code>
+<br>(<i>must evaluate to </i><code>java.lang.String</code>)
+					</td><td class="colLast">
+                The position and shape of the hot spot on the screen
+                (for use in client-side image maps).
+            </td>
+</tr>
+<tr id="dir" class="rowColor">
+<td class="colFirst"><a href="#dir"><code>dir</code></a></td><td class="colOne"><code>false</code></td><td class="colOne"><code>javax.el.ValueExpression</code>
+<br>(<i>must evaluate to </i><code>java.lang.String</code>)
+					</td><td class="colLast">
+                Direction indication for text that does not inherit
+                directionality.
+                Valid values are "LTR" (left-to-right) and "RTL"
+                (right-to-left).
+            </td>
+</tr>
+<tr id="disabled" class="altColor">
+<td class="colFirst"><a href="#disabled"><code>disabled</code></a></td><td class="colOne"><code>false</code></td><td class="colOne"><code>javax.el.ValueExpression</code>
+<br>(<i>must evaluate to </i><code>java.lang.Boolean</code>)
+					</td><td class="colLast">
+                Flag indicating that this element must never
+                receive focus or be included in a subsequent
+                submit.
+            </td>
+</tr>
+<tr id="hreflang" class="rowColor">
+<td class="colFirst"><a href="#hreflang"><code>hreflang</code></a></td><td class="colOne"><code>false</code></td><td class="colOne"><code>javax.el.ValueExpression</code>
+<br>(<i>must evaluate to </i><code>java.lang.String</code>)
+					</td><td class="colLast">
+                The language code of the resource designated
+                by this hyperlink.
+            </td>
+</tr>
+<tr id="lang" class="altColor">
+<td class="colFirst"><a href="#lang"><code>lang</code></a></td><td class="colOne"><code>false</code></td><td class="colOne"><code>javax.el.ValueExpression</code>
+<br>(<i>must evaluate to </i><code>java.lang.String</code>)
+					</td><td class="colLast">
+                Code describing the language used in the generated markup
+                for this component.
+            </td>
+</tr>
+<tr id="onblur" class="rowColor">
+<td class="colFirst"><a href="#onblur"><code>onblur</code></a></td><td class="colOne"><code>false</code></td><td class="colOne"><code>javax.el.ValueExpression</code>
+<br>(<i>must evaluate to </i><code>java.lang.String</code>)
+					</td><td class="colLast">
+                Javascript code executed when this element loses focus.
+            </td>
+</tr>
+<tr id="onclick" class="altColor">
+<td class="colFirst"><a href="#onclick"><code>onclick</code></a></td><td class="colOne"><code>false</code></td><td class="colOne"><code>javax.el.ValueExpression</code>
+<br>(<i>must evaluate to </i><code>java.lang.String</code>)
+					</td><td class="colLast">
+                Javascript code executed when a pointer button is
+                clicked over this element.
+            </td>
+</tr>
+<tr id="ondblclick" class="rowColor">
+<td class="colFirst"><a href="#ondblclick"><code>ondblclick</code></a></td><td class="colOne"><code>false</code></td><td class="colOne"><code>javax.el.ValueExpression</code>
+<br>(<i>must evaluate to </i><code>java.lang.String</code>)
+					</td><td class="colLast">
+                Javascript code executed when a pointer button is
+                double clicked over this element.
+            </td>
+</tr>
+<tr id="onfocus" class="altColor">
+<td class="colFirst"><a href="#onfocus"><code>onfocus</code></a></td><td class="colOne"><code>false</code></td><td class="colOne"><code>javax.el.ValueExpression</code>
+<br>(<i>must evaluate to </i><code>java.lang.String</code>)
+					</td><td class="colLast">
+                Javascript code executed when this element receives focus.
+            </td>
+</tr>
+<tr id="onkeydown" class="rowColor">
+<td class="colFirst"><a href="#onkeydown"><code>onkeydown</code></a></td><td class="colOne"><code>false</code></td><td class="colOne"><code>javax.el.ValueExpression</code>
+<br>(<i>must evaluate to </i><code>java.lang.String</code>)
+					</td><td class="colLast">
+                Javascript code executed when a key is
+                pressed down over this element.
+            </td>
+</tr>
+<tr id="onkeypress" class="altColor">
+<td class="colFirst"><a href="#onkeypress"><code>onkeypress</code></a></td><td class="colOne"><code>false</code></td><td class="colOne"><code>javax.el.ValueExpression</code>
+<br>(<i>must evaluate to </i><code>java.lang.String</code>)
+					</td><td class="colLast">
+                Javascript code executed when a key is
+                pressed and released over this element.
+            </td>
+</tr>
+<tr id="onkeyup" class="rowColor">
+<td class="colFirst"><a href="#onkeyup"><code>onkeyup</code></a></td><td class="colOne"><code>false</code></td><td class="colOne"><code>javax.el.ValueExpression</code>
+<br>(<i>must evaluate to </i><code>java.lang.String</code>)
+					</td><td class="colLast">
+                Javascript code executed when a key is
+                released over this element.
+            </td>
+</tr>
+<tr id="onmousedown" class="altColor">
+<td class="colFirst"><a href="#onmousedown"><code>onmousedown</code></a></td><td class="colOne"><code>false</code></td><td class="colOne"><code>javax.el.ValueExpression</code>
+<br>(<i>must evaluate to </i><code>java.lang.String</code>)
+					</td><td class="colLast">
+                Javascript code executed when a pointer button is
+                pressed down over this element.
+            </td>
+</tr>
+<tr id="onmousemove" class="rowColor">
+<td class="colFirst"><a href="#onmousemove"><code>onmousemove</code></a></td><td class="colOne"><code>false</code></td><td class="colOne"><code>javax.el.ValueExpression</code>
+<br>(<i>must evaluate to </i><code>java.lang.String</code>)
+					</td><td class="colLast">
+                Javascript code executed when a pointer button is
+                moved within this element.
+            </td>
+</tr>
+<tr id="onmouseout" class="altColor">
+<td class="colFirst"><a href="#onmouseout"><code>onmouseout</code></a></td><td class="colOne"><code>false</code></td><td class="colOne"><code>javax.el.ValueExpression</code>
+<br>(<i>must evaluate to </i><code>java.lang.String</code>)
+					</td><td class="colLast">
+                Javascript code executed when a pointer button is
+                moved away from this element.
+            </td>
+</tr>
+<tr id="onmouseover" class="rowColor">
+<td class="colFirst"><a href="#onmouseover"><code>onmouseover</code></a></td><td class="colOne"><code>false</code></td><td class="colOne"><code>javax.el.ValueExpression</code>
+<br>(<i>must evaluate to </i><code>java.lang.String</code>)
+					</td><td class="colLast">
+                Javascript code executed when a pointer button is
+                moved onto this element.
+            </td>
+</tr>
+<tr id="onmouseup" class="altColor">
+<td class="colFirst"><a href="#onmouseup"><code>onmouseup</code></a></td><td class="colOne"><code>false</code></td><td class="colOne"><code>javax.el.ValueExpression</code>
+<br>(<i>must evaluate to </i><code>java.lang.String</code>)
+					</td><td class="colLast">
+                Javascript code executed when a pointer button is
+                released over this element.
+            </td>
+</tr>
+<tr id="rel" class="rowColor">
+<td class="colFirst"><a href="#rel"><code>rel</code></a></td><td class="colOne"><code>false</code></td><td class="colOne"><code>javax.el.ValueExpression</code>
+<br>(<i>must evaluate to </i><code>java.lang.String</code>)
+					</td><td class="colLast">
+                The relationship from the current document
+                to the anchor specified by this hyperlink.
+                The value of this attribute is a space-separated
+                list of link types.
+            </td>
+</tr>
+<tr id="rev" class="altColor">
+<td class="colFirst"><a href="#rev"><code>rev</code></a></td><td class="colOne"><code>false</code></td><td class="colOne"><code>javax.el.ValueExpression</code>
+<br>(<i>must evaluate to </i><code>java.lang.String</code>)
+					</td><td class="colLast">
+                A reverse link from the anchor specified
+                by this hyperlink to the current document.
+                The value of this attribute is a space-separated
+                list of link types.
+            </td>
+</tr>
+<tr id="shape" class="rowColor">
+<td class="colFirst"><a href="#shape"><code>shape</code></a></td><td class="colOne"><code>false</code></td><td class="colOne"><code>javax.el.ValueExpression</code>
+<br>(<i>must evaluate to </i><code>java.lang.String</code>)
+					</td><td class="colLast">
+                The shape of the hot spot on the screen
+                (for use in client-side image maps). Valid
+                values are: default (entire region); rect
+                (rectangular region); circle (circular region);
+                and poly (polygonal region).
+            </td>
+</tr>
+<tr id="style" class="altColor">
+<td class="colFirst"><a href="#style"><code>style</code></a></td><td class="colOne"><code>false</code></td><td class="colOne"><code>javax.el.ValueExpression</code>
+<br>(<i>must evaluate to </i><code>java.lang.String</code>)
+					</td><td class="colLast">
+                CSS style(s) to be applied when this component is rendered.
+            </td>
+</tr>
+<tr id="styleClass" class="rowColor">
+<td class="colFirst"><a href="#styleClass"><code>styleClass</code></a></td><td class="colOne"><code>false</code></td><td class="colOne"><code>javax.el.ValueExpression</code>
+<br>(<i>must evaluate to </i><code>java.lang.String</code>)
+					</td><td class="colLast">
+                Space-separated list of CSS style class(es) to be applied when
+                this element is rendered. This value must be passed through
+                as the "class" attribute on generated markup.
+            </td>
+</tr>
+<tr id="tabindex" class="altColor">
+<td class="colFirst"><a href="#tabindex"><code>tabindex</code></a></td><td class="colOne"><code>false</code></td><td class="colOne"><code>javax.el.ValueExpression</code>
+<br>(<i>must evaluate to </i><code>java.lang.String</code>)
+					</td><td class="colLast">
+                Position of this element in the tabbing order
+                for the current document. This value must be
+                an integer between 0 and 32767.
+            </td>
+</tr>
+<tr id="target" class="rowColor">
+<td class="colFirst"><a href="#target"><code>target</code></a></td><td class="colOne"><code>false</code></td><td class="colOne"><code>javax.el.ValueExpression</code>
+<br>(<i>must evaluate to </i><code>java.lang.String</code>)
+					</td><td class="colLast">
+                Name of a frame where the resource
+                retrieved via this hyperlink is to
+                be displayed.
+            </td>
+</tr>
+<tr id="title" class="altColor">
+<td class="colFirst"><a href="#title"><code>title</code></a></td><td class="colOne"><code>false</code></td><td class="colOne"><code>javax.el.ValueExpression</code>
+<br>(<i>must evaluate to </i><code>java.lang.String</code>)
+					</td><td class="colLast">
+                Advisory title information about markup elements generated
+                for this component.
+            </td>
+</tr>
+<tr id="type" class="rowColor">
+<td class="colFirst"><a href="#type"><code>type</code></a></td><td class="colOne"><code>false</code></td><td class="colOne"><code>javax.el.ValueExpression</code>
+<br>(<i>must evaluate to </i><code>java.lang.String</code>)
+					</td><td class="colLast">
+                The content type of the resource designated
+                by this hyperlink.
+            </td>
+</tr>
+<tr id="binding" class="altColor">
+<td class="colFirst"><a href="#binding"><code>binding</code></a></td><td class="colOne"><code>false</code></td><td class="colOne"><code>javax.el.ValueExpression</code>
+<br>(<i>must evaluate to </i><code>javax.faces.component.UIComponent</code>)
+					</td><td class="colLast">
+                The ValueExpression linking this component to a property in a
+                backing bean
+            </td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="bottomNav">
+<a name="navbar_bottom"></a><a href="#skip-navbar_bottom" title="Skip navigation links"></a><a name="navbar_bottom_firstrow"></a>
+<ul class="navList" title="Navigation">
+<li>
+<a href="../overview-summary.html">Overview</a>
+</li>
+<li>
+<a href="tld-summary.html">Library</a>
+</li>
+<li class="navBarCell1Rev">Tag</li>
+<li>
+<a href="../help-doc.html">Help</a>
+</li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li>
+<a target="_bottom" href="../index.html?html_basic/commandLink.html">
+									Frames
+								</a>
+</li>
+<li>
+<a target="_bottom" href="commandLink.html">
+									No Frames
+								</a>
+</li>
+</ul>
+<ul class="navList" id="alltags_navbar_bottom">
+<li>
+<a href="../alltags-noframe.html">All Tags</a>
+</li>
+</ul>
+<script type="text/javascript">
+							document.getElementById("alltags_navbar_bottom").style.display = (window == top) ? "block" : "none";
+						</script><a name="skip-navbar_bottom"></a>
+</div>
+</body>
+</html>

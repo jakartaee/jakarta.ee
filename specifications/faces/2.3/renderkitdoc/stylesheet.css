@@ -1,0 +1,166 @@
+/*
+ * Copyright (c) 1997, 2018 Oracle and/or its affiliates. All rights reserved.
+ *
+ * This program and the accompanying materials are made available under the
+ * terms of the Eclipse Public License v. 2.0, which is available at
+ * http://www.eclipse.org/legal/epl-2.0.
+ *
+ * This Source Code may also be made available under the following Secondary
+ * Licenses when the conditions for such availability set forth in the
+ * Eclipse Public License v. 2.0 are satisfied: GNU General Public License,
+ * version 2 with the GNU Classpath Exception, which is available at
+ * https://www.gnu.org/software/classpath/license.html.
+ *
+ * SPDX-License-Identifier: EPL-2.0 OR GPL-2.0 WITH Classpath-exception-2.0
+ */
+
+/* Javadoc style sheet */
+
+/* Define colors, fonts and other style attributes here to override the defaults */
+
+/* Page background color */
+body { 
+  background-color: #FFFFFF;
+  background-image: url(expert-draft-bg.png);
+}
+
+/* Table colors */
+.TableHeadingColor     { background: #CCCCFF } /* Dark mauve */
+.TableSubHeadingColor  { background: #EEEEFF } /* Light mauve */
+.TableRowColor         { background: #FFFFFF } /* White */
+
+/* Font used in left-hand frame lists */
+.FrameTitleFont   { font-size: 10pt; font-family: Helvetica, Arial, san-serif }
+.FrameHeadingFont { font-size: 10pt; font-family: Helvetica, Arial, san-serif }
+.FrameItemFont    { font-size: 10pt; font-family: Helvetica, Arial, san-serif }
+
+/* Example of smaller, sans-serif font in frames */
+/* .FrameItemFont  { font-size: 10pt; font-family: Helvetica, Arial, sans-serif } */
+
+/* Navigation bar fonts and colors */
+.NavBarCell1    { background-color:#EEEEFF;}/* Light mauve */
+.NavBarCell1Rev { background-color:#00008B;}/* Dark Blue */
+.NavBarFont1    { font-family: Arial, Helvetica, sans-serif; color:#000000;}
+.NavBarFont1Rev { font-family: Arial, Helvetica, sans-serif; color:#FFFFFF;}
+
+.NavBarCell2    { font-family: Arial, Helvetica, sans-serif; background-color:#FFFFFF;}
+.NavBarCell3    { font-family: Arial, Helvetica, sans-serif; background-color:#FFFFFF;}
+
+/* put a red "change" bar in the left margin			*/
+/*
+   .changed_added_2_0 { cursor: url(changed_added_2_0_cursor.png), pointer;
+                 background: url(changed_added_2_0.png); 
+                 padding-left:0.2em; border-left:solid;
+                 border-left-width:thin; border-right:none;
+                 border-top:none; border-bottom:none; border-color:green }
+
+   .changed_modified_2_0 { cursor: url(changed_modified_2_0_cursor.png), pointer;
+                 background: url(changed_modified_2_0.png); 
+                 padding-left:0.2em; border-left:solid;
+                 border-left-width:thin; border-right:none;
+                 border-top:none; border-bottom:none; border-color:orange }
+
+   .changed_deleted_2_0 { cursor: url(changed_deleted_2_0_cursor.png), pointer;
+                 background: url(changed_deleted_2_0.png); 
+                 padding-left:0.2em; border-left:solid;
+                 border-left-width:thin; border-right:none;
+                 border-top:none; border-bottom:none; border-color:red }
+
+   .changed_added_2_0_rev_a { cursor: url(changed_added_2_0_rev_a_cursor.cur), auto;
+                 background: url(changed_added_2_0_rev_a.png); 
+                 padding-left:0.2em; border-left:solid;
+                 border-left-width:thin; border-right:none;
+                 border-top:none; border-bottom:none; border-color:green }
+
+   .changed_modified_2_0_rev_a { cursor: url(changed_modified_2_0_rev_a_cursor.cur), auto;
+                 background: url(changed_modified_2_0_rev_a.png); 
+                 padding-left:0.2em; border-left:solid;
+                 border-left-width:thin; border-right:none;
+                 border-top:none; border-bottom:none; border-color:orange }
+
+   .changed_deleted_2_0_rev_a { cursor: url(changed_deleted_2_0_rev_a_cursor.cur), auto;
+                 background: url(changed_deleted_2_0_rev_a.png); 
+                 padding-left:0.2em; border-left:solid;
+                 border-left-width:thin; border-right:none;
+                 border-top:none; border-bottom:none; border-color:red;
+                 text-decoration: line-through; }
+
+
+   .changed_added_2_1 { cursor: url(changed_added_2_1_cursor.cur), auto;
+                 background: url(changed_added_2_1.png); 
+                 padding-left:0.2em; border-left:solid;
+                 border-left-width:thin; border-right:none;
+                 border-top:none; border-bottom:none; border-color:green }
+
+   .changed_modified_2_1 { cursor: url(changed_modified_2_1_cursor.cur), auto;
+                 background: url(changed_modified_2_1.png); 
+                 padding-left:0.2em; border-left:solid;
+                 border-left-width:thin; border-right:none;
+                 border-top:none; border-bottom:none; border-color:orange }
+
+   .changed_deleted_2_1 { cursor: url(changed_deleted_2_1_cursor.cur), auto;
+                 background: url(changed_deleted_2_1.png); 
+                 padding-left:0.2em; border-left:solid;
+                 border-left-width:thin; border-right:none;
+                 border-top:none; border-bottom:none; border-color:red;
+                 text-decoration: line-through; }
+
+   .changed_added_2_2 { cursor: url(changed_added_2_2_cursor.cur), auto;
+                 background: url(changed_added_2_2.png); 
+                 padding-left:0.2em; border-left:solid;
+                 border-left-width:thin; border-right:none;
+                 border-top:none; border-bottom:none; border-color:green }
+
+   .changed_modified_2_2 { cursor: url(changed_modified_2_2_cursor.cur), auto;
+                 background: url(changed_modified_2_2.png); 
+                 padding-left:0.2em; border-left:solid;
+                 border-left-width:thin; border-right:none;
+                 border-top:none; border-bottom:none; border-color:orange }
+
+   .changed_deleted_2_2 { cursor: url(changed_deleted_2_2_cursor.cur), auto;
+                 background: url(changed_deleted_2_2.png); 
+                 padding-left:0.2em; border-left:solid;
+                 border-left-width:thin; border-right:none;
+                 border-top:none; border-bottom:none; border-color:red;
+                 text-decoration: line-through; }
+
+*/
+
+   .changed_added_2_3 { cursor: url(changed_added_2_3_cursor.cur), auto;
+                 background: url(changed_added_2_3.png); 
+                 padding-left:0.2em; border-left:solid;
+                 border-left-width:thin; border-right:none;
+                 border-top:none; border-bottom:none; border-color:green }
+
+   .changed_modified_2_3 { cursor: url(changed_modified_2_3_cursor.cur), auto;
+                 background: url(changed_modified_2_3.png); 
+                 padding-left:0.2em; border-left:solid;
+                 border-left-width:thin; border-right:none;
+                 border-top:none; border-bottom:none; border-color:orange }
+
+   .changed_deleted_2_3 { cursor: url(changed_deleted_2_3_cursor.cur), auto;
+                 background: url(changed_deleted_2_3.png); 
+                 padding-left:0.2em; border-left:solid;
+                 border-left-width:thin; border-right:none;
+                 border-top:none; border-bottom:none; border-color:red;
+                 text-decoration: line-through; }
+
+/*
+
+a[href^="HTML_BASIC/javax.faces.Commandjavax.faces.Button.html"], a[href^="HTML_BASIC/javax.faces.Commandjavax.faces.Link.html"], a[href^="HTML_BASIC/javax.faces.Outputjavax.faces.resource.Stylesheet.html"], a[href^="HTML_BASIC/javax.faces.OutcomeTargetjavax.faces.Link.html"], a[href^="HTML_BASIC/javax.faces.OutcomeTargetjavax.faces.Button.html"], a[href^="HTML_BASIC/javax.faces.Outputjavax.faces.Head.html"], a[href^="HTML_BASIC/javax.faces.Outputjavax.faces.Body.html"], a[href^="HTML_BASIC/javax.faces.Messagejavax.faces.Message.html"], a[href^="HTML_BASIC/javax.faces.Outputjavax.faces.Doctype.html"], a[href^="HTML_BASIC/javax.faces.Outputjavax.faces.Link.html"], a[href^="HTML_BASIC/javax.faces.Outputjavax.faces.Text.html"], a[href^="HTML_BASIC/javax.faces.Inputjavax.faces.Text.html"]{ cursor: url(changed_modified_2_2_cursor.cur), auto;
+                 background: url(changed_modified_2_2.png); 
+                 padding-left:0.2em; border-left:solid;
+                 border-left-width:thin; border-right:none;
+                 border-top:none; border-bottom:none; border-color:orange }
+
+a[href^="HTML_BASIC/javax.faces.Inputjavax.faces.File.html"] { cursor: url(changed_added_2_2_cursor.cur), auto;
+                 background: url(changed_added_2_2.png); 
+                 padding-left:0.2em; border-left:solid;
+                 border-left-width:thin; border-right:none;
+                 border-top:none; border-bottom:none; border-color:green }
+
+
+*/
+
+.javadocSection { font-size: large; }
+

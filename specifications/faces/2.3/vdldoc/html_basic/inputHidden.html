@@ -1,0 +1,289 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en" xmlns:javaee="http://xmlns.jcp.org/xml/ns/javaee" xmlns:vdldoc="http://vdldoc.omnifaces.org" xmlns:fo="http://www.w3.org/1999/XSL/Format">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>inputHidden (Jakarta Server Faces 2.3.2 VDL Documentation)
+			</title>
+<meta name="keywords" content="$title">
+<link rel="stylesheet" type="text/css" title="Style" href="../jsf-api.css">
+</head>
+<body>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+<div class="topNav">
+<a name="navbar_top"></a><a href="#skip-navbar_top" title="Skip navigation links"></a><a name="navbar_top_firstrow"></a>
+<ul class="navList" title="Navigation">
+<li>
+<a href="../overview-summary.html">Overview</a>
+</li>
+<li>
+<a href="tld-summary.html">Library</a>
+</li>
+<li class="navBarCell1Rev">Tag</li>
+<li>
+<a href="../help-doc.html">Help</a>
+</li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li>
+<a target="_top" href="../index.html?html_basic/inputHidden.html">
+									Frames
+								</a>
+</li>
+<li>
+<a target="_top" href="inputHidden.html">
+									No Frames
+								</a>
+</li>
+</ul>
+<ul class="navList" id="alltags_navbar_top">
+<li>
+<a href="../alltags-noframe.html">All Tags</a>
+</li>
+</ul>
+<div>
+<script type="text/javascript">
+								document.getElementById("alltags_navbar_top").style.display = (window == top) ? "block" : "none";
+							</script>
+</div>
+<a name="skip-navbar_top"></a>
+</div>
+<div class="header">
+<h1 title="Library" class="title">html_basic</h1>
+<h2 class="title">
+							Tag
+							inputHidden</h2>
+</div>
+<div class="contentContainer">
+<div class="description">
+<ul class="blockList">
+<li class="blockList">
+<dl>
+<dt>Description:</dt>
+<dd>
+<div class="block">
+            <p>Renders an HTML "input" element of type
+            "hidden".</p>
+            <p>Decode Behavior</p>
+            <ul>
+            <p>See the decode description for the <a
+            href="javax.faces.Inputjavax.faces.Text.html#encode">Input
+            Text</a> renderer.</p>
+            </ul>
+            <p>Encode Behavior</p>
+            <ul>
+            <p>Render the clientId of the component as the value of the
+            "name" attribute. Render the current value of the component as
+            the value of the "value" attribute.</p>
+            </ul>
+        </div>
+</dd>
+</dl>
+</li>
+</ul>
+</div>
+<div class="summary">
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Component summary table, listing component information">
+<caption>
+<span>Component Information</span><span class="tabEnd">&nbsp;</span>
+</caption>
+<thead>
+<tr>
+<th class="colFirst" scope="col">Info</th><th class="colLast" scope="col">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="rowColor">
+<td class="colFirst">Component Type</td><td class="colLast"><code>javax.faces.HtmlInputHidden</code></td>
+</tr>
+<tr class="altColor">
+<td class="colFirst">Handler Class</td><td class="colLast"><i>None</i></td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst">Renderer Type</td><td class="colLast"><code>javax.faces.Hidden</code></td>
+</tr>
+<tr class="altColor">
+<td class="colFirst">Description</td><td class="colLast"><i>None</i></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="summary">
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Attribute summary table, listing attribute information">
+<caption>
+<span>Attributes</span><span class="tabEnd">&nbsp;</span>
+</caption>
+<thead>
+<tr>
+<th class="colFirst">Name</th><th class="colOne">Required</th><th class="colOne">Type</th><th class="colLast">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr id="converter" class="rowColor">
+<td class="colFirst"><a href="#converter"><code>converter</code></a></td><td class="colOne"><code>false</code></td><td class="colOne"><code>javax.el.ValueExpression</code>
+<br>(<i>must evaluate to </i><code>javax.faces.convert.Converter</code>)
+					</td><td class="colLast">
+                Converter instance registered with this component.
+            </td>
+</tr>
+<tr id="converterMessage" class="altColor">
+<td class="colFirst"><a href="#converterMessage"><code>converterMessage</code></a></td><td class="colOne"><code>false</code></td><td class="colOne"><code>javax.el.ValueExpression</code>
+<br>(<i>must evaluate to </i><code>java.lang.String</code>)
+					</td><td class="colLast">
+                A ValueExpression enabled attribute that, if present, will be
+                used as the text of the converter message, replacing any message
+                that comes from the converter.
+            </td>
+</tr>
+<tr id="id" class="rowColor">
+<td class="colFirst"><a href="#id"><code>id</code></a></td><td class="colOne"><code>false</code></td><td class="colOne"><code>javax.el.ValueExpression</code>
+<br>(<i>must evaluate to </i><code>java.lang.String</code>)
+					</td><td class="colLast">
+                The component identifier for this component. This value must be
+                unique within the closest parent component that is a naming
+                container.
+            </td>
+</tr>
+<tr id="immediate" class="altColor">
+<td class="colFirst"><a href="#immediate"><code>immediate</code></a></td><td class="colOne"><code>false</code></td><td class="colOne"><code>javax.el.ValueExpression</code>
+<br>(<i>must evaluate to </i><code>java.lang.Boolean</code>)
+					</td><td class="colLast">
+                Flag indicating that this component's value must be
+                converted and validated immediately (that is, during
+                Apply Request Values phase), rather than waiting
+                until Process Validations phase.
+            </td>
+</tr>
+<tr id="rendered" class="rowColor">
+<td class="colFirst"><a href="#rendered"><code>rendered</code></a></td><td class="colOne"><code>false</code></td><td class="colOne"><code>javax.el.ValueExpression</code>
+<br>(<i>must evaluate to </i><code>java.lang.Boolean</code>)
+					</td><td class="colLast">
+                Flag indicating whether or not this component should be rendered
+                (during Render Response Phase), or processed on any subsequent
+                form submit. The default value for this property is true.
+            </td>
+</tr>
+<tr id="required" class="altColor">
+<td class="colFirst"><a href="#required"><code>required</code></a></td><td class="colOne"><code>false</code></td><td class="colOne"><code>javax.el.ValueExpression</code>
+<br>(<i>must evaluate to </i><code>java.lang.Boolean</code>)
+					</td><td class="colLast">
+                Flag indicating that the user is required to provide a submitted
+                value for this input component.
+            </td>
+</tr>
+<tr id="requiredMessage" class="rowColor">
+<td class="colFirst"><a href="#requiredMessage"><code>requiredMessage</code></a></td><td class="colOne"><code>false</code></td><td class="colOne"><code>javax.el.ValueExpression</code>
+<br>(<i>must evaluate to </i><code>java.lang.String</code>)
+					</td><td class="colLast">
+                A ValueExpression enabled attribute that, if present, will be
+                used as the text of the validation message for the "required"
+                facility, if the "required" facility is used.
+            </td>
+</tr>
+<tr id="validator" class="altColor">
+<td class="colFirst"><a href="#validator"><code>validator</code></a></td><td class="colOne"><code>false</code></td><td class="colOne"><code>javax.el.MethodExpression</code>
+<br>(<i>signature must match </i><code>void validate(javax.faces.context.FacesContext,
+                javax.faces.component.UIComponent, java.lang.Object)
+            </code>)
+					</td><td class="colLast">
+                MethodExpression representing a validator method that will be
+                called
+                during Process Validations to perform correctness checks on the
+                value of this component. The expression must evaluate to a
+                public
+                method that takes FacesContext, UIComponent, and Object
+                parameters,
+                with a return type of void.
+            </td>
+</tr>
+<tr id="validatorMessage" class="rowColor">
+<td class="colFirst"><a href="#validatorMessage"><code>validatorMessage</code></a></td><td class="colOne"><code>false</code></td><td class="colOne"><code>javax.el.ValueExpression</code>
+<br>(<i>must evaluate to </i><code>java.lang.String</code>)
+					</td><td class="colLast">
+                A ValueExpression enabled attribute that, if present, will be
+                used as the text of the validator message, replacing any
+                message that comes from the validator.
+            </td>
+</tr>
+<tr id="value" class="altColor">
+<td class="colFirst"><a href="#value"><code>value</code></a></td><td class="colOne"><code>false</code></td><td class="colOne"><code>javax.el.ValueExpression</code>
+<br>(<i>must evaluate to </i><code>java.lang.Object</code>)
+					</td><td class="colLast">
+                The current value of this component.
+            </td>
+</tr>
+<tr id="valueChangeListener" class="rowColor">
+<td class="colFirst"><a href="#valueChangeListener"><code>valueChangeListener</code></a></td><td class="colOne"><code>false</code></td><td class="colOne"><code>javax.el.MethodExpression</code>
+<br>(<i>signature must match </i><code>void
+                valueChange(javax.faces.event.ValueChangeEvent)
+            </code>)
+					</td><td class="colLast">
+                <p>
+                MethodExpression representing a value change listener method
+                that will be notified when a new value has been set for this
+                input component. The expression must evaluate to a public
+                method that takes a <code>ValueChangeEvent</code>
+                parameter,
+                with a return type of void, <span class="changed_added_2_0">or
+                to a public method that takes no arguments with a return type
+                of void. In the latter case, the method has no way of easily
+                knowing what the new value is, but this can be useful in cases
+                where a notification is needed that "this value
+                changed".</span>
+                </p>
+            </td>
+</tr>
+<tr id="binding" class="altColor">
+<td class="colFirst"><a href="#binding"><code>binding</code></a></td><td class="colOne"><code>false</code></td><td class="colOne"><code>javax.el.ValueExpression</code>
+<br>(<i>must evaluate to </i><code>javax.faces.component.UIComponent</code>)
+					</td><td class="colLast">
+                The ValueExpression linking this component to a property in a
+                backing bean
+            </td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="bottomNav">
+<a name="navbar_bottom"></a><a href="#skip-navbar_bottom" title="Skip navigation links"></a><a name="navbar_bottom_firstrow"></a>
+<ul class="navList" title="Navigation">
+<li>
+<a href="../overview-summary.html">Overview</a>
+</li>
+<li>
+<a href="tld-summary.html">Library</a>
+</li>
+<li class="navBarCell1Rev">Tag</li>
+<li>
+<a href="../help-doc.html">Help</a>
+</li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li>
+<a target="_bottom" href="../index.html?html_basic/inputHidden.html">
+									Frames
+								</a>
+</li>
+<li>
+<a target="_bottom" href="inputHidden.html">
+									No Frames
+								</a>
+</li>
+</ul>
+<ul class="navList" id="alltags_navbar_bottom">
+<li>
+<a href="../alltags-noframe.html">All Tags</a>
+</li>
+</ul>
+<script type="text/javascript">
+							document.getElementById("alltags_navbar_bottom").style.display = (window == top) ? "block" : "none";
+						</script><a name="skip-navbar_bottom"></a>
+</div>
+</body>
+</html>

@@ -8,6 +8,11 @@
   </url>
   
   <url>
+    <loc>https://jakarta.ee/specifications/enterprise-ws/1.4/</loc>
+    <lastmod>2019-08-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://jakarta.ee/news/community-news/2019/08/20/the-inaugural-jakartaone-virtual-conference-goes-lives-with-the-release-of-jakarta-ee-8/</loc>
     <lastmod>2019-08-20T05:10:00+00:00</lastmod>
   </url>
@@ -20,6 +25,11 @@
   <url>
     <loc>https://jakarta.ee/news/community-news/2019/08/13/eclipse-microprofile-white-paper-2019/</loc>
     <lastmod>2019-08-13T13:53:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jakarta.ee/specifications/faces/2.3/</loc>
+    <lastmod>2019-08-12T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -40,6 +50,11 @@
   <url>
     <loc>https://jakarta.ee/news/community-news/2019/08/02/how-to-develop-open-liberty-microservices-on-openshift/</loc>
     <lastmod>2019-08-02T13:53:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jakarta.ee/specifications/managedbeans/1.0/</loc>
+    <lastmod>2019-07-30T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -558,6 +573,11 @@
   </url>
   
   <url>
+    <loc>https://jakarta.ee/release/</loc>
+    <lastmod>2018-04-05T16:10:38-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://jakarta.ee/legal/trademark_guidelines/</loc>
     <lastmod>2018-04-05T16:10:38-04:00</lastmod>
   </url>
@@ -655,6 +675,10 @@
   </url>
   
   <url>
+    <loc>https://jakarta.ee/specifications/enterprise-ws/</loc>
+  </url>
+  
+  <url>
     <loc>https://jakarta.ee/specifications/expression-language/</loc>
   </url>
   
@@ -671,6 +695,10 @@
   </url>
   
   <url>
+    <loc>https://jakarta.ee/specifications/managedbeans/</loc>
+  </url>
+  
+  <url>
     <loc>https://jakarta.ee/specifications/messaging/</loc>
   </url>
   
@@ -684,6 +712,10 @@
   
   <url>
     <loc>https://jakarta.ee/specifications/security/</loc>
+  </url>
+  
+  <url>
+    <loc>https://jakarta.ee/specifications/faces/</loc>
   </url>
   
   <url>

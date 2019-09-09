@@ -1,0 +1,445 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en" xmlns:javaee="http://xmlns.jcp.org/xml/ns/javaee" xmlns:vdldoc="http://vdldoc.omnifaces.org" xmlns:fo="http://www.w3.org/1999/XSL/Format">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>
+            outputScript
+         (Jakarta Server Faces 2.3.2 VDL Documentation)
+			</title>
+<meta name="keywords" content="$title">
+<link rel="stylesheet" type="text/css" title="Style" href="../jsf-api.css">
+</head>
+<body>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+<div class="topNav">
+<a name="navbar_top"></a><a href="#skip-navbar_top" title="Skip navigation links"></a><a name="navbar_top_firstrow"></a>
+<ul class="navList" title="Navigation">
+<li>
+<a href="../overview-summary.html">Overview</a>
+</li>
+<li>
+<a href="tld-summary.html">Library</a>
+</li>
+<li class="navBarCell1Rev">Tag</li>
+<li>
+<a href="../help-doc.html">Help</a>
+</li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li>
+<a target="_top" href="../index.html?html_basic/%0A            outputScript%0A        .html">
+									Frames
+								</a>
+</li>
+<li>
+<a target="_top" href="%0A            outputScript%0A        .html">
+									No Frames
+								</a>
+</li>
+</ul>
+<ul class="navList" id="alltags_navbar_top">
+<li>
+<a href="../alltags-noframe.html">All Tags</a>
+</li>
+</ul>
+<div>
+<script type="text/javascript">
+								document.getElementById("alltags_navbar_top").style.display = (window == top) ? "block" : "none";
+							</script>
+</div>
+<a name="skip-navbar_top"></a>
+</div>
+<div class="header">
+<h1 title="Library" class="title">html_basic</h1>
+<h2 class="title">
+							Tag
+							
+            outputScript
+        </h2>
+</div>
+<div class="contentContainer">
+<div class="description">
+<ul class="blockList">
+<li class="blockList">
+<dl>
+<dt>Description:</dt>
+<dd>
+<div class="block">
+            <div class="changed_added_2_0">
+            
+            <p>Render the markup for a <code>&lt;script&gt;</code> element that
+            renders the script <code>Resource</code> specified by the optional
+            <code>name</code> attribute and <code>library</code> attributes.</p>
+            
+            <p>The implementation of this renderer must have a <a target="_"
+            href="../../javadocs/javax/faces/event/ListenerFor.html"><code>@ListenerFor</code></a>
+            annotation attached to it, at the class level, declaring <a target="_"
+            href="../../javadocs/javax/faces/event/PostAddToViewEvent.html"><code>PostAddToViewEvent.class</code></a>
+            as the value of the <code>systemEventClass</code> attribute.  The presence of
+            this annotation on a renderer implies the renderer implements <a
+            target="_"
+            href="../../javadocs/javax/faces/event/ComponentSystemEventListener.html"><code>ComponentSystemEventListener</code></a>,
+            which this renderer must do.  The implementation of
+            <code>processEvent()</code> must extract the <code>UIComponent</code>
+            from the argument event and look for the presence of the key
+            "<code>target</code>" in the component's attribute <code>Map</code>.  If
+            and only if such a key is present, the implementation of
+            <code>processEvent()</code> must pass the component to <a target="_"
+            href="../../javadocs/javax/faces/component/UIViewRoot.html#addComponentResource(javax.faces.context.FacesContext,%20javax.faces.component.UIComponent)"><code>UIViewRoot.addComponentResource()</code></a>.</p>
+            
+            <p>Decode Behavior</p>
+            
+            <ul>
+            
+            <p>No action is required during decode for this renderer.</p>
+            
+            </ul>
+            
+            <p>Encode Behavior</p>
+            
+            <ul>
+            
+            <p><a name="ResourceCommonGetResource">Common Algorithm for Obtaining A Resource to Render</a></p>
+            
+            <ul>
+            
+            <p>This algorithm is used by all resource renderers to obtain
+            a <code>Resource</code> instance which is then rendered in a
+            specific way depending on what kind of renderer is doing the
+            encoding.</p>
+            
+            <ul>
+            
+            <li><p>Look in the component attribute <code>Map</code> for a
+            value under the key <em>name</em>.</p></li>
+            
+            <li><p>Look in the component attribute <code>Map</code> for a
+            value under the key <em>library</em>.  This attribute is
+            optional, therefore, <em>library</em> may be
+            <code>null</code>.</p></li>
+            
+            <li><p>Create the resource by calling
+            <code>Application.getResourceHandler.createResource(<em>name</em>,
+            <em>library</em>);</code>.</p></li>
+            
+            </p></li>
+            
+            </ul>
+            
+            </ul>
+            
+            <p><a name="ResourceCommonEncode">Common Encode Behavior</a></p>
+            
+            <ul>
+            
+            <p>This algorithm is used by all resource renderers to render the
+            resource.</p>
+            
+            <p><code>encodeBegin()</code> must take no action.</p>
+            
+            <p>Because this renderer returns <code>true</code> from
+            <code>getRendersChildren()</code>, the <code>encodeChildren()
+            method must take the following action.</code></p>
+            
+            <ul>
+            
+            <li><p>If there is no <em>name</em> attribute, and the
+            argument <code>component</code> has no children, and
+            <code>ProjectStage</code> is not
+            <code>ProjectStage.Production</code>, add a
+            <code>FacesMessage</code> for this component's clientId to the
+            <code>FacesContext</code> stating that if no name attribute is
+            present, and no body content is present either, then the user
+            should take action to correct this problem.  In this case,
+            <code>encodeChildren()</code> must take no further
+            action.</p></li>
+            
+            <li><p>If there is no <em>name</em> attribute and the argument
+            <code>component</code> <b>does</b> have children, the renderer
+            must ensure that those children are encoded as usual.</p></li>
+            
+            <li><p>If there <b>is</b> a <em>name</em> attribute and the
+            argument <code>component</code> <b>does</b> have children, the
+            renderer must log a descriptive localized message stating that
+            the child content will be ignored.  The resource referenced by
+            the <em>name</em> attribute will be rendered in
+            <code>encodeEnd()</code>.</p></li>
+            
+            <li><p>If there <b>is</b> a <em>name attribute</em> and the
+            argument <code>component</code> <b>does not</b> have children,
+            <code>encodeChildren()</code> must take no action.</p></li>
+            
+            </ul>
+            
+            <p><code>encodeEnd()</code> must take specific action based on
+            the specific kind of resource being rendered.</p>
+            
+            </ul>
+            
+            <p>Use the algorithm <em>Common Encode Behavior</em> for
+            <code>encodeBegin()</code>, <code>encodeChildren()</code> and
+            <code>getRendersChildren()</code>.</p>
+            
+            <p>For <code>encodeEnd()</code>, use the algorithm <em>Common
+            Algorithm for Obtaining A Resource to Render</em> above to
+            obtain a reference to the <code>Resource</code> to be
+            encoded.</p>
+            
+            <p>If this is NOT the first time this <code>Resource</code> has
+            been referenced on this request take no action and return.</p>
+            
+            <p>Render a script element.  Use the result from calling
+            <code>resource.getRequestPath()</code> as the value of the "src"
+            attribue and the result from calling
+            <code>resource.getContentType()</code> as the value of the "type"
+            attribute.</p>
+            
+            </p>
+            
+            
+            
+            </ul>
+            
+            
+            
+            </div>
+        </div>
+</dd>
+</dl>
+</li>
+</ul>
+</div>
+<div class="summary">
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Component summary table, listing component information">
+<caption>
+<span>Component Information</span><span class="tabEnd">&nbsp;</span>
+</caption>
+<thead>
+<tr>
+<th class="colFirst" scope="col">Info</th><th class="colLast" scope="col">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="rowColor">
+<td class="colFirst">Component Type</td><td class="colLast"><code>javax.faces.Output</code></td>
+</tr>
+<tr class="altColor">
+<td class="colFirst">Handler Class</td><td class="colLast"><i>None</i></td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst">Renderer Type</td><td class="colLast"><code>javax.faces.resource.Script</code></td>
+</tr>
+<tr class="altColor">
+<td class="colFirst">Description</td><td class="colLast"><i>None</i></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="summary">
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Attribute summary table, listing attribute information">
+<caption>
+<span>Attributes</span><span class="tabEnd">&nbsp;</span>
+</caption>
+<thead>
+<tr>
+<th class="colFirst">Name</th><th class="colOne">Required</th><th class="colOne">Type</th><th class="colLast">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr id="
+                converter
+            " class="rowColor">
+<td class="colFirst"><a href="#%0A                converter%0A            "><code>
+                converter
+            </code></a></td><td class="colOne"><code>
+                false
+            </code></td><td class="colOne"><code>javax.el.ValueExpression</code>
+<br>(<i>must evaluate to </i><code>
+                javax.faces.convert.Converter
+            </code>)
+					</td><td class="colLast">
+                Converter instance registered with this component.
+            </td>
+</tr>
+<tr id="
+                id
+            " class="altColor">
+<td class="colFirst"><a href="#%0A                id%0A            "><code>
+                id
+            </code></a></td><td class="colOne"><code>
+                false
+            </code></td><td class="colOne"><code>javax.el.ValueExpression</code>
+<br>(<i>must evaluate to </i><code>
+                java.lang.String
+            </code>)
+					</td><td class="colLast">
+                The component identifier for this component.  This value must be
+                unique within the closest parent component that is a naming
+                container.
+            </td>
+</tr>
+<tr id="
+                rendered
+            " class="rowColor">
+<td class="colFirst"><a href="#%0A                rendered%0A            "><code>
+                rendered
+            </code></a></td><td class="colOne"><code>
+                false
+            </code></td><td class="colOne"><code>javax.el.ValueExpression</code>
+<br>(<i>must evaluate to </i><code>
+                boolean
+            </code>)
+					</td><td class="colLast">
+                Flag indicating whether or not this component should be rendered
+                (during Render Response Phase), or processed on any subsequent
+                form submit.  The default value for this property is true.
+            </td>
+</tr>
+<tr id="
+                value
+            " class="altColor">
+<td class="colFirst"><a href="#%0A                value%0A            "><code>
+                value
+            </code></a></td><td class="colOne"><code>
+                false
+            </code></td><td class="colOne"><code>javax.el.ValueExpression</code>
+<br>(<i>must evaluate to </i><code>
+                java.lang.Object
+            </code>)
+					</td><td class="colLast">
+                The current value of this component.
+            </td>
+</tr>
+<tr id="
+                library
+            " class="rowColor">
+<td class="colFirst"><a href="#%0A                library%0A            "><code>
+                library
+            </code></a></td><td class="colOne"><code>
+                false
+            </code></td><td class="colOne"><code>javax.el.ValueExpression</code>
+<br>(<i>must evaluate to </i><code>
+                java.lang.String
+            </code>)
+					</td><td class="colLast">
+                <div class="changed_added_2_0"><p>The <em>libraryName</em> for this resource.</p></div>
+            </td>
+</tr>
+<tr id="
+                name
+            " class="altColor">
+<td class="colFirst"><a href="#%0A                name%0A            "><code>
+                name
+            </code></a></td><td class="colOne"><code>
+                false
+            </code></td><td class="colOne"><code>javax.el.ValueExpression</code>
+<br>(<i>must evaluate to </i><code>
+                java.lang.String
+            </code>)
+					</td><td class="colLast">
+                <div class="changed_added_2_0"><p>The <em>resourceName</em> for this resource.</p></div>
+                <div class="changed_modified_2_0_rev_a changed_modified_2_3">
+                 <p>
+                  This attribute is required if the script is NOT inline.
+                 </p>
+                </div>
+            </td>
+</tr>
+<tr id="
+                target
+            " class="rowColor">
+<td class="colFirst"><a href="#%0A                target%0A            "><code>
+                target
+            </code></a></td><td class="colOne"><code>
+                false
+            </code></td><td class="colOne"><code>javax.el.ValueExpression</code>
+<br>(<i>must evaluate to </i><code>
+                java.lang.String
+            </code>)
+					</td><td class="colLast">
+                <div class="changed_added_2_0"><p>The <em>target</em> area for which this resource will be rendered.  For example, <em>target="head"</em> would cause the resource to be rendered within the <em>head</em> element.</p></div>
+            </td>
+</tr>
+<tr id="
+                binding
+            " class="altColor">
+<td class="colFirst"><a href="#%0A                binding%0A            "><code>
+                binding
+            </code></a></td><td class="colOne"><code>
+                false
+            </code></td><td class="colOne"><code>javax.el.ValueExpression</code>
+<br>(<i>must evaluate to </i><code>
+                javax.faces.component.UIComponent
+            </code>)
+					</td><td class="colLast">
+                The ValueExpression linking this component to a property in a
+                backing bean
+            </td>
+</tr>
+<tr id="role" class="rowColor">
+<td class="colFirst"><a href="#role"><code>role</code></a></td><td class="colOne"><code>false</code></td><td class="colOne"><code>javax.el.ValueExpression</code>
+<br>(<i>must evaluate to </i><code>java.lang.String</code>)
+					</td><td class="colLast">
+                <p class="changed_added_2_2">Per the WAI-ARIA spec and its
+                relationship to HTML5 (Section title ARIA Role Attriubute),
+                every HTML element may have a "role" attribute whose value
+                must be passed through unmodified on the element on which it
+                is declared in the final rendered markup.  The attribute, if
+                specified, must have a value that is a string literal that is,
+                or an EL Expression that evaluates to, a set of
+                space-separated tokens representing the various WAI-ARIA roles
+                that the element belongs to.
+                </p>
+
+                <p class="changed_added_2_2">It is the page author's
+                responsibility to ensure that the user agent is capable of
+                correctly interpreting the value of this attribute.</p>
+            </td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="bottomNav">
+<a name="navbar_bottom"></a><a href="#skip-navbar_bottom" title="Skip navigation links"></a><a name="navbar_bottom_firstrow"></a>
+<ul class="navList" title="Navigation">
+<li>
+<a href="../overview-summary.html">Overview</a>
+</li>
+<li>
+<a href="tld-summary.html">Library</a>
+</li>
+<li class="navBarCell1Rev">Tag</li>
+<li>
+<a href="../help-doc.html">Help</a>
+</li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li>
+<a target="_bottom" href="../index.html?html_basic/%0A            outputScript%0A        .html">
+									Frames
+								</a>
+</li>
+<li>
+<a target="_bottom" href="%0A            outputScript%0A        .html">
+									No Frames
+								</a>
+</li>
+</ul>
+<ul class="navList" id="alltags_navbar_bottom">
+<li>
+<a href="../alltags-noframe.html">All Tags</a>
+</li>
+</ul>
+<script type="text/javascript">
+							document.getElementById("alltags_navbar_bottom").style.display = (window == top) ? "block" : "none";
+						</script><a name="skip-navbar_bottom"></a>
+</div>
+</body>
+</html>

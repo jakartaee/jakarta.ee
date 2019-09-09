@@ -1,0 +1,309 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en" xmlns:javaee="http://xmlns.jcp.org/xml/ns/javaee" xmlns:vdldoc="http://vdldoc.omnifaces.org" xmlns:fo="http://www.w3.org/1999/XSL/Format">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>commandScript (Jakarta Server Faces 2.3.2 VDL Documentation)
+			</title>
+<meta name="keywords" content="$title">
+<link rel="stylesheet" type="text/css" title="Style" href="../jsf-api.css">
+</head>
+<body>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+<div class="topNav">
+<a name="navbar_top"></a><a href="#skip-navbar_top" title="Skip navigation links"></a><a name="navbar_top_firstrow"></a>
+<ul class="navList" title="Navigation">
+<li>
+<a href="../overview-summary.html">Overview</a>
+</li>
+<li>
+<a href="tld-summary.html">Library</a>
+</li>
+<li class="navBarCell1Rev">Tag</li>
+<li>
+<a href="../help-doc.html">Help</a>
+</li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li>
+<a target="_top" href="../index.html?html_basic/commandScript.html">
+									Frames
+								</a>
+</li>
+<li>
+<a target="_top" href="commandScript.html">
+									No Frames
+								</a>
+</li>
+</ul>
+<ul class="navList" id="alltags_navbar_top">
+<li>
+<a href="../alltags-noframe.html">All Tags</a>
+</li>
+</ul>
+<div>
+<script type="text/javascript">
+								document.getElementById("alltags_navbar_top").style.display = (window == top) ? "block" : "none";
+							</script>
+</div>
+<a name="skip-navbar_top"></a>
+</div>
+<div class="header">
+<h1 title="Library" class="title">html_basic</h1>
+<h2 class="title">
+							Tag
+							commandScript</h2>
+</div>
+<div class="contentContainer">
+<div class="description">
+<ul class="blockList">
+<li class="blockList">
+<dl>
+<dt>Description:</dt>
+<dd>
+<div class="block">
+            
+                <p class="changed_added_2_3">
+                    Render a JavaScript function that invokes <code>jsf.ajax.request()</code> function.
+                </p>
+
+                <h3>Encode Behavior</h3>
+                <p>
+                    Render an HTML <code>script</code> element. If the value of the "name" attribute does not contain a
+                    period <code>.</code> indicating a namespaced function name, then render JavaScript <code>var</code>
+                    keyword, followed by a space character. Render the value of the "name" attribute, followed by 
+                    JavaScript assignment operator. Render JavaScript function which invokes <code>jsf.ajax.request()</code>
+                    with data provided by <code>execute</code>, <code>render</code>, <code>onbegin</code>,
+                    <code>oncomplete</code>, <code>onsuccess</code> and <code>onerror</code> arguments, if any. 
+                </p>
+                <p>
+                    If the component being rendered has any <code>UIParameter</code> children, each one of them must be
+                    encoded into <code>params</code> object of the <code>options</code> object of the <code>jsf.ajax.request()</code>
+                    function.
+                </p>
+                <p>
+                    If the rendered JavaScript function is invoked with an object argument, each property must be
+                    encoded into <code>params</code> object of the <code>options</code> object of the <code>jsf.ajax.request()</code>
+                    function. This will override any property with the same key.
+                </p>
+
+                <h3>Decode Behavior</h3>
+                <p>
+                    Obtain the <code>Map</code> from the "requestParameterMap" property of the <code>ExternalContext</code>.
+                    If the value in the <code>Map</code> for the value of the "javax.faces.source" equals to the "clientId" property of the component,
+                    create a <code>javax.faces.event.ActionEvent</code> around the component, and pass it to the <code>queueEvent()</code> method of the component,
+                    which must be an instance of <code>UICommand</code>.
+                </p>
+            
+        </div>
+</dd>
+</dl>
+</li>
+</ul>
+</div>
+<div class="summary">
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Component summary table, listing component information">
+<caption>
+<span>Component Information</span><span class="tabEnd">&nbsp;</span>
+</caption>
+<thead>
+<tr>
+<th class="colFirst" scope="col">Info</th><th class="colLast" scope="col">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="rowColor">
+<td class="colFirst">Component Type</td><td class="colLast"><code>javax.faces.HtmlCommandScript</code></td>
+</tr>
+<tr class="altColor">
+<td class="colFirst">Handler Class</td><td class="colLast"><i>None</i></td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst">Renderer Type</td><td class="colLast"><code>javax.faces.Script</code></td>
+</tr>
+<tr class="altColor">
+<td class="colFirst">Description</td><td class="colLast"><i>None</i></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="summary">
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Attribute summary table, listing attribute information">
+<caption>
+<span>Attributes</span><span class="tabEnd">&nbsp;</span>
+</caption>
+<thead>
+<tr>
+<th class="colFirst">Name</th><th class="colOne">Required</th><th class="colOne">Type</th><th class="colLast">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr id="id" class="rowColor">
+<td class="colFirst"><a href="#id"><code>id</code></a></td><td class="colOne"><code>false</code></td><td class="colOne"><code>javax.el.ValueExpression</code>
+<br>(<i>must evaluate to </i><code>java.lang.String</code>)
+					</td><td class="colLast">
+                The component identifier for this component.
+                This value must be unique within the closest parent component that is a naming container.
+            </td>
+</tr>
+<tr id="name" class="altColor">
+<td class="colFirst"><a href="#name"><code>name</code></a></td><td class="colOne"><code>true</code></td><td class="colOne"><code>javax.el.ValueExpression</code>
+<br>(<i>must evaluate to </i><code>java.lang.String</code>)
+					</td><td class="colLast">
+                Name of JavaScript function to be declared, e.g. <code>name="functionName"</code>.
+                This can be a namespaced function name, e.g. <code>name="ez.functionName"</code>.
+            </td>
+</tr>
+<tr id="autorun" class="rowColor">
+<td class="colFirst"><a href="#autorun"><code>autorun</code></a></td><td class="colOne"><code>false</code></td><td class="colOne"><code>javax.el.ValueExpression</code>
+<br>(<i>must evaluate to </i><code>boolean</code>)
+					</td><td class="colLast">
+                Whether to execute declared JavaScript function during <code>load</code> event of the <code>window</code>.
+                Defaults to <code>false</code>.
+            </td>
+</tr>
+<tr id="action" class="altColor">
+<td class="colFirst"><a href="#action"><code>action</code></a></td><td class="colOne"><code>false</code></td><td class="colOne"><code>javax.el.MethodExpression</code>
+<br>(<i>signature must match </i><code>java.lang.Object action()</code>)
+					</td><td class="colLast">
+                MethodExpression representing the application action to invoke when this component is activated by the user.
+                The expression must evaluate to a public method that takes no parameters,
+                and returns an <code>Object</code>.
+                The <code>toString()</code> of the returned <code>Object</code> is called to derive the logical outcome.
+                This outcome is passed to the <code>NavigationHandler</code> for this application.
+            </td>
+</tr>
+<tr id="actionListener" class="rowColor">
+<td class="colFirst"><a href="#actionListener"><code>actionListener</code></a></td><td class="colOne"><code>false</code></td><td class="colOne"><code>javax.el.MethodExpression</code>
+<br>(<i>signature must match </i><code>void actionListener(javax.faces.event.ActionEvent)
+            </code>)
+					</td><td class="colLast">
+                MethodExpression representing an action listener method that will be notified when this component is activated by the user.
+                The expression must evaluate to a public method that takes an <code>ActionEvent</code> parameter,
+                with a return type of <code>void</code>,
+                or to a public method that takes no arguments with a return type of <code>void</code>.
+                In the latter case,
+                the method has no way of easily knowing where the event came from,
+                but this can be useful in cases where a notification is needed that "some action happened".
+            </td>
+</tr>
+<tr id="execute" class="altColor">
+<td class="colFirst"><a href="#execute"><code>execute</code></a></td><td class="colOne"><code>false</code></td><td class="colOne"><code>javax.el.ValueExpression</code>
+<br>(<i>must evaluate to </i><code>java.lang.String</code>)
+					</td><td class="colLast">
+                This is a space separated list of client identifiers of components
+                that will participate in the "execute" portion of the Request Processing Lifecycle.
+                If a literal is specified the identifiers must be space delimited.
+                Any of the keywords "@this", "@form", "@all", "@none" may be specified in the identifier list.
+                If not specified, the default value of "@this" is assumed. 
+                For example, <code>@this clientIdOne clientIdTwo</code>.
+            </td>
+</tr>
+<tr id="render" class="rowColor">
+<td class="colFirst"><a href="#render"><code>render</code></a></td><td class="colOne"><code>false</code></td><td class="colOne"><code>javax.el.ValueExpression</code>
+<br>(<i>must evaluate to </i><code>java.lang.String</code>)
+					</td><td class="colLast">
+                This is a space separated list of client identifiers of components
+                that will participate in the "render" portion of the Request Processing Lifecycle.
+                If a literal is specified the identifiers must be space delimited.
+                Any of the keywords "@this", "@form", "@all", "@none" may be specified in the identifier list.
+                If not specified, the default value of "@none" is assumed.
+                For example, <code>@this clientIdOne clientIdTwo</code>.
+            </td>
+</tr>
+<tr id="resetValues" class="altColor">
+<td class="colFirst"><a href="#resetValues"><code>resetValues</code></a></td><td class="colOne"><code>false</code></td><td class="colOne"><code>javax.el.ValueExpression</code>
+<br>(<i>must evaluate to </i><code>java.lang.Boolean</code>)
+					</td><td class="colLast">
+                Reset specific input values.
+                Interpret the value of the <code>render</code> attribute as a space separated list of client identifiers
+                suitable for passing directly to <code>UIViewRoot.resetValues()</code>.
+                The implementation must cause an <code>ActionListener</code> to be attached to the <code>ActionSource</code>
+                component in which this tag is nested that calls <code>UIViewRoot.resetValues()</code> passing the value
+                of the <code>render</code> attribute as the argument.
+            </td>
+</tr>
+<tr id="onevent" class="rowColor">
+<td class="colFirst"><a href="#onevent"><code>onevent</code></a></td><td class="colOne"><code>false</code></td><td class="colOne"><code>javax.el.ValueExpression</code>
+<br>(<i>must evaluate to </i><code>java.lang.String</code>)
+					</td><td class="colLast">
+                The name of the JavaScript function that will handle UI events.
+            </td>
+</tr>
+<tr id="onerror" class="altColor">
+<td class="colFirst"><a href="#onerror"><code>onerror</code></a></td><td class="colOne"><code>false</code></td><td class="colOne"><code>javax.el.ValueExpression</code>
+<br>(<i>must evaluate to </i><code>java.lang.String</code>)
+					</td><td class="colLast">
+                The name of the JavaScript function that will handle errors.
+            </td>
+</tr>
+<tr id="immediate" class="rowColor">
+<td class="colFirst"><a href="#immediate"><code>immediate</code></a></td><td class="colOne"><code>false</code></td><td class="colOne"><code>javax.el.ValueExpression</code>
+<br>(<i>must evaluate to </i><code>java.lang.Boolean</code>)
+					</td><td class="colLast">
+                Flag indicating that, if this component is activated by the user, notifications should be delivered to
+                interested listeners and actions immediately (that is, during Apply Request Values phase) rather than
+                waiting until Invoke Application phase.
+            </td>
+</tr>
+<tr id="rendered" class="altColor">
+<td class="colFirst"><a href="#rendered"><code>rendered</code></a></td><td class="colOne"><code>false</code></td><td class="colOne"><code>javax.el.ValueExpression</code>
+<br>(<i>must evaluate to </i><code>java.lang.Boolean</code>)
+					</td><td class="colLast">
+                Flag indicating whether or not this component should be rendered (during Render Response Phase),
+                or processed on any subsequent form submit. Defaults to true.
+            </td>
+</tr>
+<tr id="binding" class="rowColor">
+<td class="colFirst"><a href="#binding"><code>binding</code></a></td><td class="colOne"><code>false</code></td><td class="colOne"><code>javax.el.ValueExpression</code>
+<br>(<i>must evaluate to </i><code>javax.faces.component.UIComponent</code>)
+					</td><td class="colLast">
+                The ValueExpression linking this component to a property in a backing bean.
+            </td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="bottomNav">
+<a name="navbar_bottom"></a><a href="#skip-navbar_bottom" title="Skip navigation links"></a><a name="navbar_bottom_firstrow"></a>
+<ul class="navList" title="Navigation">
+<li>
+<a href="../overview-summary.html">Overview</a>
+</li>
+<li>
+<a href="tld-summary.html">Library</a>
+</li>
+<li class="navBarCell1Rev">Tag</li>
+<li>
+<a href="../help-doc.html">Help</a>
+</li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li>
+<a target="_bottom" href="../index.html?html_basic/commandScript.html">
+									Frames
+								</a>
+</li>
+<li>
+<a target="_bottom" href="commandScript.html">
+									No Frames
+								</a>
+</li>
+</ul>
+<ul class="navList" id="alltags_navbar_bottom">
+<li>
+<a href="../alltags-noframe.html">All Tags</a>
+</li>
+</ul>
+<script type="text/javascript">
+							document.getElementById("alltags_navbar_bottom").style.display = (window == top) ? "block" : "none";
+						</script><a name="skip-navbar_bottom"></a>
+</div>
+</body>
+</html>
