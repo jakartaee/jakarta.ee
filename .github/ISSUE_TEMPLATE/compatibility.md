@@ -6,11 +6,11 @@ about: For Compatible Software Products to be listed on the Jakarta EE official 
 
 To include your Compatible Software Product on the Jakarta EE official list of Compatible Software Products, please provide the following information:
 
-**A corporate email address to confirm that you are an authorized representative of the company whose product information you are submitting**
+**The URL to the Eclipse Foundation profile to confirm that you are an authorized representative of the company whose product information you are submitting**
 
 **A product name and version**
 
-**A product logo (optional)**
+**A product logo with a transparent background in SVG format (optional)**
 
 **The Participant, Enterprise or Strategic Member name supporting the Compatible Software Product**
 
