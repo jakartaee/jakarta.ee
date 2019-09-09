@@ -72,6 +72,16 @@ enableRobotsTXT = true
     url = "/resources/"
     weight = 4
     
+[[menu.main]]
+    name = "Resources"
+    url = "/resources/"
+    weight = 4
+    
+[[menu.main]]
+    name = "Compatible Products"
+    url = "/compatibility/"
+    weight = 5
+    
 # Resource sub-menu
 [[menu.main]]
     name = "Blog"
