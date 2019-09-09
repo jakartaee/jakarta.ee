@@ -17,13 +17,15 @@ defaultRight: |
         </div>
 items:
   -
-    title: Register for EclipseCon Europe 2019 today!
-    content: Register now and save! Early Bird pricing ends October 1.
-    link: <a class="btn btn-primary btn-lg" href="https://www.eclipsecon.org/europe2019/registration">Register</a>
-    bgImgSrc: /images/jakartaone-livestream-banner.jpg
-    startDate: 2019-08-19
-    endDate: 2019-08-30
-    type: story
+    title: Jakarta EE 8 is here!
+    content: Check out all the info and updates about the Jakarta EE 8 release today!
+    link: <a class="btn btn-primary btn-lg" href="https://jakarta.ee/release/">Learn More</a>
+    bgImgSrc: /images/jakarta-ee-banner.jpg
+    startDate: 2019-09-07
+    endDate: 2019-10-07
+    story_classes: featured-story featured-alternate jakarta-ee-banner
+    footer_classes: featured-footer featured-alternate jakarta-ee-banner
+    type: both
 
   -
     title: Join us for JakartaOne Livestream!
