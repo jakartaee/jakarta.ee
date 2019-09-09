@@ -2,40 +2,32 @@
   div.product-list img { max-height: 150px; }
   div.product-list .grid-center { display: flex; align-items: center;}
 </style>
-{{ $has_content:=false }}
+<ul>
 {{ range $.Site.Data.compatible_products.sets }}
-  {{ range .items }}
-    {{ $has_content = true }}
-  {{ end }}
+  <li><a href="#{{ .title | urlize }}">{{ .title }}</a></li>
 {{ end }}
-{{ if eq $has_content true }}
+</ul>
 {{ range $.Site.Data.compatible_products.sets }}
-
-{{ if isset .items 0 }}
-{{ $title:=.title }}
-<div class="product-list">
-  <h2 class="brand-secondary margin-top-30 margin-bottom-30">{{ .title }}</h2>
-  <div class="row">
-    {{ range .items }}
-    <div class="col-xs-24 col-sm-12 col-lg-6 padding-bottom-20">
-      <div class="match-height-item-by-row flex-column">
-        <div class="center-block grid-center" data-mh="{{ $title | urlize }}">
-          <img class="img img-responsive" src="{{ .image }}" alt="{{ .vendor }}'s {{ .name }} logo">
+  {{ $title:=.title }}
+  <div class="product-list">
+    <h2 class="text-center heading-line" id="{{ .title | urlize }}"><span style="background-color:#fff;">{{ .title }}</span></h2>
+    <div class="row">
+      {{ range .items }}
+        <div class="col-xs-24 col-sm-12 col-lg-6 padding-bottom-20">
+          <div class="match-height-item-by-row padding-20 flex-column">
+            <div class="center-block padding-left-30 padding-right-30 padding-bottom-10 padding-top-10 grid-center" data-mh="{{ $title | urlize }}">
+              <img class="img img-responsive" src="{{ .image }}" alt="{{ .vendor }}'s {{ .name }} logo">
+            </div>
+            <div class="flex-grow text-center flex-column">
+              <h3 class="margin-bottom-0">{{ .name }}</h3>
+              <p class="flex-grow">{{ .vendor }}</p>
+              <p class="">Version: {{ .version }}</p>
+              <p><a href="{{ .download }}" class="btn btn-primary">{{ .download_text | default "Download" }}</a></p>
+            </div>
+          </div>
         </div>
-        <div class="flex-grow text-center flex-column">
-          <h3 class="margin-bottom-0">{{ .name }}</h3>
-          <p class="flex-grow">{{ .vendor }}</p>
-          <p class="">Version: {{ .version }}</p>
-          <p><a href="{{ .download }}" class="btn btn-primary">{{ .download_text | default "Download" }}</a></p>
-        </div>
-        </div>
+      {{ end }}
+      <div class="clearfix"/>
     </div>
-    {{ end }}
-  <div class="clearfix"/>
   </div>
-</div>
-{{ end }}
-{{ end }}
-{{ else }}
- <h2 class="text-center fw-700 margin-bottom-30">Stay tuned for more updates!</h2>
 {{ end }}

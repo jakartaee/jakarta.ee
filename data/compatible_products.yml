@@ -11,6 +11,29 @@
 sets:
   - title: Jakarta EE 8 Full Platform Compatible Products
     items:
+    - name: Eclipse Glassfish
+      vendor: Eclipse Foundation
+      version: 5.1.0, Full Profile
+      image: '/images/compatible_products/glassfish_logo.svg'
+      download: 'https://www.eclipse.org/downloads/download.php?file=/glassfish/glassfish-5.1.0.zip'
+
+    - name: Open Liberty
+      vendor: IBM Corporation
+      version: 19.0.0.6
+      image: '/images/compatible_products/ibm_open_liberty.png'
+      download: 'https://openliberty.io/downloads/'
 
   - title: Jakarta EE 8 Web Profile Compatible Products
     items:
+    - name: Eclipse Glassfish
+      vendor: Eclipse Foundation
+      version: 5.1.0, Web Profile
+      image: '/images/compatible_products/glassfish_logo.svg'
+      download: 'https://www.eclipse.org/downloads/download.php?file=/glassfish/web-5.1.0.zip'
+      
+    - name: Open Liberty
+      vendor: IBM Corporation
+      version: 19.0.0.6
+      image: '/images/compatible_products/ibm_open_liberty.png'
+      download: 'https://openliberty.io/downloads/'
+    
