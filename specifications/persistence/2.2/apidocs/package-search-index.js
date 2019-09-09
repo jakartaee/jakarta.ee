@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","url":"allpackages-index.html"},{"l":"javax.persistence"},{"l":"javax.persistence.criteria"},{"l":"javax.persistence.metamodel"},{"l":"javax.persistence.spi"}]

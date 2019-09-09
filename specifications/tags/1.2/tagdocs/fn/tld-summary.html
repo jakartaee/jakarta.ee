@@ -1,0 +1,165 @@
+<html xmlns:javaee="http://java.sun.com/xml/ns/javaee" xmlns:fo="http://www.w3.org/1999/XSL/Format">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>JSTL functions
+          (Jakarta Tags Doc)
+        </title>
+<link rel="stylesheet" type="text/css" href="../stylesheet.css" title="styie">
+</head>
+<script>
+            function asd()
+            {
+            parent.document.title="JSTL functions (Jakarta Tags Doc)";
+            }
+          </script>
+<body bgcolor="white" onload="asd();">
+<a name="navbar_top"></a>
+<table border="0" width="100%" cellpadding="1" cellspacing="0">
+<tr>
+<td COLSPAN="3" BGCOLOR="#EEEEFF" CLASS="NavBarCell1"><a NAME="navbar_top_firstrow"></a>
+<table BORDER="0" CELLPADDING="0" CELLSPACING="3">
+<tr ALIGN="center" VALIGN="top">
+<td BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    &nbsp;<a href="../overview-summary.html"><font CLASS="NavBarFont1"><b>Overview</b></font></a>&nbsp;</td><td BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev">    &nbsp;<font CLASS="NavBarFont1Rev">&nbsp;Library&nbsp;</font>&nbsp;</td><td BGCOLOR="#EEEEFF" CLASS="NavBarCell1"><font CLASS="NavBarFont1">&nbsp;Tag&nbsp;</font></td><td BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    &nbsp;<a HREF="../help-doc.html"><font CLASS="NavBarFont1"><b>Help</b></font></a>&nbsp;</td>
+</tr>
+</table>
+</td><td ALIGN="right" VALIGN="top" ROWSPAN="3"><em></em></td>
+</tr>
+<tr>
+<td BGCOLOR="white" CLASS="NavBarCell2"><font SIZE="-2"></font></td><td BGCOLOR="white" CLASS="NavBarCell2"><font SIZE="-2">
+                &nbsp;<a HREF="../index.html" TARGET="_top"><b>FRAMES</b></a>&nbsp;
+                &nbsp;<a HREF="tld-summary.html" TARGET="_top"><b>NO FRAMES</b></a>&nbsp;
+                <script></script>
+<noscript>
+<a HREF="../alltags-noframe.html" TARGET=""><b>All Tags</b></a>
+</noscript>
+</font></td>
+</tr>
+</table>
+<hr>
+<h2>JSTL functions</h2>
+<hr>
+<b>Standard Syntax:</b>
+<br>
+<code>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                
+                    &lt;%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %&gt;<br>
+</code>
+<br>
+<b>XML Syntax:</b>
+<br>
+<code>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                
+                    &lt;anyxmlelement xmlns:fn="http://java.sun.com/jsp/jstl/functions" /&gt;<br>
+</code>
+<hr>
+<pre>JSTL 1.2 functions library</pre>
+<p></p>
+<table border="1" cellpadding="3" cellspacing="0" width="100%">
+<tr bgcolor="#CCCCFF" class="TableHeadingColor">
+<td colspan="2"><font size="+2"><b>Tag Library Information</b></font></td>
+</tr>
+<tr>
+<td>Display Name</td><td>JSTL functions</td>
+</tr>
+<tr>
+<td>Version</td><td>1.2</td>
+</tr>
+<tr>
+<td>Short Name</td><td>fn</td>
+</tr>
+<tr>
+<td>URI</td><td>http://java.sun.com/jsp/jstl/functions</td>
+</tr>
+</table>
+            &nbsp;
+            <p></p>
+<table border="1" cellpadding="3" cellspacing="0" width="100%">
+<tr bgcolor="#CCCCFF" class="TableHeadingColor">
+<td colspan="3"><font size="+2"><b>Function Summary</b></font></td>
+</tr>
+<tr bgcolor="white" class="TableRowColor">
+<td width="15%" nowrap align="right"><code>boolean</code></td><td width="15%" nowrap><code><b><a href="contains.fn.html">contains</a></b>( java.lang.String, java.lang.String)</code></td><td>Tests if an input string contains the specified substring.</td>
+</tr>
+<tr bgcolor="white" class="TableRowColor">
+<td width="15%" nowrap align="right"><code>boolean</code></td><td width="15%" nowrap><code><b><a href="containsIgnoreCase.fn.html">containsIgnoreCase</a></b>( java.lang.String, java.lang.String)</code></td><td>Tests if an input string contains the specified substring in a case insensitive way.</td>
+</tr>
+<tr bgcolor="white" class="TableRowColor">
+<td width="15%" nowrap align="right"><code>boolean</code></td><td width="15%" nowrap><code><b><a href="endsWith.fn.html">endsWith</a></b>( java.lang.String, java.lang.String)</code></td><td>Tests if an input string ends with the specified suffix.</td>
+</tr>
+<tr bgcolor="white" class="TableRowColor">
+<td width="15%" nowrap align="right"><code>java.lang.String</code></td><td width="15%" nowrap><code><b><a href="escapeXml.fn.html">escapeXml</a></b>( java.lang.String)</code></td><td>Escapes characters that could be interpreted as XML markup.</td>
+</tr>
+<tr bgcolor="white" class="TableRowColor">
+<td width="15%" nowrap align="right"><code>int</code></td><td width="15%" nowrap><code><b><a href="indexOf.fn.html">indexOf</a></b>( java.lang.String, java.lang.String)</code></td><td>Returns the index withing a string of the first occurrence of a specified substring.</td>
+</tr>
+<tr bgcolor="white" class="TableRowColor">
+<td width="15%" nowrap align="right"><code>java.lang.String</code></td><td width="15%" nowrap><code><b><a href="join.fn.html">join</a></b>( java.lang.String[], java.lang.String)</code></td><td>Joins all elements of an array into a string.</td>
+</tr>
+<tr bgcolor="white" class="TableRowColor">
+<td width="15%" nowrap align="right"><code>int</code></td><td width="15%" nowrap><code><b><a href="length.fn.html">length</a></b>( java.lang.Object)</code></td><td>Returns the number of items in a collection, or the number of characters in a string.</td>
+</tr>
+<tr bgcolor="white" class="TableRowColor">
+<td width="15%" nowrap align="right"><code>java.lang.String</code></td><td width="15%" nowrap><code><b><a href="replace.fn.html">replace</a></b>( java.lang.String, java.lang.String, java.lang.String)</code></td><td>Returns a string resulting from replacing in an input string all occurrences of a "before" string into an "after" substring.</td>
+</tr>
+<tr bgcolor="white" class="TableRowColor">
+<td width="15%" nowrap align="right"><code>java.lang.String[]</code></td><td width="15%" nowrap><code><b><a href="split.fn.html">split</a></b>( java.lang.String, java.lang.String)</code></td><td>Splits a string into an array of substrings.</td>
+</tr>
+<tr bgcolor="white" class="TableRowColor">
+<td width="15%" nowrap align="right"><code>boolean</code></td><td width="15%" nowrap><code><b><a href="startsWith.fn.html">startsWith</a></b>( java.lang.String, java.lang.String)</code></td><td>Tests if an input string starts with the specified prefix.</td>
+</tr>
+<tr bgcolor="white" class="TableRowColor">
+<td width="15%" nowrap align="right"><code>java.lang.String</code></td><td width="15%" nowrap><code><b><a href="substring.fn.html">substring</a></b>( java.lang.String, int, int)</code></td><td>Returns a subset of a string.</td>
+</tr>
+<tr bgcolor="white" class="TableRowColor">
+<td width="15%" nowrap align="right"><code>java.lang.String</code></td><td width="15%" nowrap><code><b><a href="substringAfter.fn.html">substringAfter</a></b>( java.lang.String, java.lang.String)</code></td><td>Returns a subset of a string following a specific substring.</td>
+</tr>
+<tr bgcolor="white" class="TableRowColor">
+<td width="15%" nowrap align="right"><code>java.lang.String</code></td><td width="15%" nowrap><code><b><a href="substringBefore.fn.html">substringBefore</a></b>( java.lang.String, java.lang.String)</code></td><td>Returns a subset of a string before a specific substring.</td>
+</tr>
+<tr bgcolor="white" class="TableRowColor">
+<td width="15%" nowrap align="right"><code>java.lang.String</code></td><td width="15%" nowrap><code><b><a href="toLowerCase.fn.html">toLowerCase</a></b>( java.lang.String)</code></td><td>Converts all of the characters of a string to lower case.</td>
+</tr>
+<tr bgcolor="white" class="TableRowColor">
+<td width="15%" nowrap align="right"><code>java.lang.String</code></td><td width="15%" nowrap><code><b><a href="toUpperCase.fn.html">toUpperCase</a></b>( java.lang.String)</code></td><td>Converts all of the characters of a string to upper case.</td>
+</tr>
+<tr bgcolor="white" class="TableRowColor">
+<td width="15%" nowrap align="right"><code>java.lang.String</code></td><td width="15%" nowrap><code><b><a href="trim.fn.html">trim</a></b>( java.lang.String)</code></td><td>Removes white spaces from both ends of a string.</td>
+</tr>
+</table>
+              &nbsp;
+              <p></p>
+<a name="navbar_bottom"></a>
+<table border="0" width="100%" cellpadding="1" cellspacing="0">
+<tr>
+<td COLSPAN="3" BGCOLOR="#EEEEFF" CLASS="NavBarCell1"><a NAME="navbar_bottom_firstrow"></a>
+<table BORDER="0" CELLPADDING="0" CELLSPACING="3">
+<tr ALIGN="center" VALIGN="top">
+<td BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    &nbsp;<a href="../overview-summary.html"><font CLASS="NavBarFont1"><b>Overview</b></font></a>&nbsp;</td><td BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev">    &nbsp;<font CLASS="NavBarFont1Rev">&nbsp;Library&nbsp;</font>&nbsp;</td><td BGCOLOR="#EEEEFF" CLASS="NavBarCell1"><font CLASS="NavBarFont1">&nbsp;Tag&nbsp;</font></td><td BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    &nbsp;<a HREF="../help-doc.html"><font CLASS="NavBarFont1"><b>Help</b></font></a>&nbsp;</td>
+</tr>
+</table>
+</td><td ALIGN="right" VALIGN="top" ROWSPAN="3"><em></em></td>
+</tr>
+<tr>
+<td BGCOLOR="white" CLASS="NavBarCell2"><font SIZE="-2"></font></td><td BGCOLOR="white" CLASS="NavBarCell2"><font SIZE="-2">
+                &nbsp;<a HREF="../index.html" TARGET="_top"><b>FRAMES</b></a>&nbsp;
+                &nbsp;<a HREF="tld-summary.html" TARGET="_top"><b>NO FRAMES</b></a>&nbsp;
+                <script></script>
+<noscript>
+<a HREF="../alltags-noframe.html" TARGET=""><b>All Tags</b></a>
+</noscript>
+</font></td>
+</tr>
+</table>
+<hr>
+<small><i>
+            Java, JSP, and JavaServer Pages are trademarks or registered 
+            trademarks of Sun Microsystems, Inc. in the US and other countries.
+            Copyright 2002-3 Sun Microsystems, Inc.
+            4150 Network Circle
+            Santa Clara, CA 95054, U.S.A.
+            All Rights Reserved. 
+            </i></small>
+</body>
+</html>

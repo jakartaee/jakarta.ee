@@ -607,7 +607,15 @@
   </url>
   
   <url>
+    <loc>https://jakarta.ee/specifications/authorization/</loc>
+  </url>
+  
+  <url>
     <loc>https://jakarta.ee/specifications/batch/</loc>
+  </url>
+  
+  <url>
+    <loc>https://jakarta.ee/specifications/bean-validation/</loc>
   </url>
   
   <url>
@@ -623,6 +631,10 @@
   </url>
   
   <url>
+    <loc>https://jakarta.ee/specifications/debugging/</loc>
+  </url>
+  
+  <url>
     <loc>https://jakarta.ee/specifications/dependency-injection/</loc>
   </url>
   
@@ -631,11 +643,23 @@
   </url>
   
   <url>
+    <loc>https://jakarta.ee/specifications/platform/</loc>
+  </url>
+  
+  <url>
+    <loc>https://jakarta.ee/specifications/webprofile/</loc>
+  </url>
+  
+  <url>
     <loc>https://jakarta.ee/specifications/enterprise-beans/</loc>
   </url>
   
   <url>
     <loc>https://jakarta.ee/specifications/expression-language/</loc>
+  </url>
+  
+  <url>
+    <loc>https://jakarta.ee/specifications/jsonb/</loc>
   </url>
   
   <url>
@@ -659,6 +683,10 @@
   </url>
   
   <url>
+    <loc>https://jakarta.ee/specifications/security/</loc>
+  </url>
+  
+  <url>
     <loc>https://jakarta.ee/specifications/pages/</loc>
   </url>
   
@@ -667,7 +695,15 @@
   </url>
   
   <url>
+    <loc>https://jakarta.ee/specifications/tags/</loc>
+  </url>
+  
+  <url>
     <loc>https://jakarta.ee/specifications/transactions/</loc>
+  </url>
+  
+  <url>
+    <loc>https://jakarta.ee/specifications/websocket/</loc>
   </url>
   
   <url>
