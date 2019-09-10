@@ -80,7 +80,10 @@
   }
   ul.buttons {
     li {
-      width:49%;
+      width:100%;
+      @media (min-width: @screen-md-min) {
+        width:49%;
+      }
     }
   }
   .btn {
