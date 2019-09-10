@@ -52,7 +52,7 @@ Jakarta EE represents the best way to drive cloud-native, mission critical appli
             <li>Kenji Kazumura - Fujitsu, Michael DeNicola - alternate</li>
             <li>Dan Bandera - IBM, Kevin Sutter - alternate</li>
             <li>Bill Shannon - Oracle, Ed Bratt - alternate</li>
-            <li>Steve Millidge - Payara, Arjan Tijms - alternate</li>
+            <li>Steve Millidge - Payara</li>
             <li>Scott Stark - Red Hat, Mark Little - alternate</li>
             <li>David Blevins - Tomitribe, Richard Monson-Haefel - alternate</li>
             <li>Ivar Grimstad - PMC Representative</li>
