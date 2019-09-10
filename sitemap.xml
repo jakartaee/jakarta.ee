@@ -3,11 +3,66 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://jakarta.ee/specifications/platform/</loc>
+  </url>
+  
+  <url>
     <loc>https://jakarta.ee/specifications/webprofile/</loc>
   </url>
   
   <url>
-    <loc>https://jakarta.ee/specifications/platform/</loc>
+    <loc>https://jakarta.ee/news/community-news/2019/09/10/eclipse-foundation-delivers-on-jakarta-ee-promise/</loc>
+    <lastmod>2019-09-10T05:10:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jakarta.ee/news/community-news/2019/09/10/eclipse-jakarta-ee-arrives/</loc>
+    <lastmod>2019-09-10T05:10:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jakarta.ee/news/community-news/2019/09/10/enterprise-java-spec-packs-bags-ready-for-new-life-under-assumed-name-jakarta/</loc>
+    <lastmod>2019-09-10T05:10:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jakarta.ee/news/community-news/2019/09/10/jakarta-ee-8-is-sprinting-towards-an-exciting-future-for-enterprise-java/</loc>
+    <lastmod>2019-09-10T05:10:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jakarta.ee/news/community-news/2019/09/10/jakarta-ee-now-operates-under-open-community-driven-process/</loc>
+    <lastmod>2019-09-10T05:10:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jakarta.ee/news/community-news/2019/09/10/java-ee-move-to-eclipse-foundation-makes-way-for-cloud-native-java/</loc>
+    <lastmod>2019-09-10T05:10:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jakarta.ee/news/community-news/2019/09/10/java-finally-goes-all-in-on-open-source-with-the-jakarta-ee-8-release/</loc>
+    <lastmod>2019-09-10T05:10:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jakarta.ee/news/community-news/2019/09/10/open-source-enterprise-java-specification-jakarta-ee-8-launches/</loc>
+    <lastmod>2019-09-10T05:10:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jakarta.ee/news/community-news/2019/09/10/the-eclipse-foundation-releases-jakarta-ee-8-specifications/</loc>
+    <lastmod>2019-09-10T05:10:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jakarta.ee/news/community-news/2019/09/10/the-future-is-now/</loc>
+    <lastmod>2019-09-10T05:10:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jakarta.ee/news/announcements/2019/09/10/welcome-to-the-future-of-cloud-native-java/</loc>
+    <lastmod>2019-09-10T05:10:00+00:00</lastmod>
   </url>
   
   <url>
@@ -173,6 +228,11 @@
   <url>
     <loc>https://jakarta.ee/specifications/xml-registries/1.0/</loc>
     <lastmod>2019-09-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jakarta.ee/news/announcements/2019/09/09/update-for-jakarta-ee-community-september-2019/</loc>
+    <lastmod>2019-09-09T05:10:00+00:00</lastmod>
   </url>
   
   <url>

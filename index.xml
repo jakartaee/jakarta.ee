@@ -13,6 +13,114 @@
     
     
     <item>
+      <title>Eclipse Foundation Delivers on Jakarta EE Promise</title>
+      <link>https://jakarta.ee/news/community-news/2019/09/10/eclipse-foundation-delivers-on-jakarta-ee-promise/</link>
+      <pubDate>Tue, 10 Sep 2019 05:10:00 +0000</pubDate>
+      <author>webdev@eclipse-foundation.org (Christopher Guindon)</author>
+      <guid>https://jakarta.ee/news/community-news/2019/09/10/eclipse-foundation-delivers-on-jakarta-ee-promise/</guid>
+      <description>The Eclipse Foundation today announced the general availability of Jakarta Enterprise Edition (EE) 8 Full Platform and Web Profile specifications and associated technology compatibility kits (TCKs).</description>
+    </item>
+    
+    <item>
+      <title>Eclipse Jakarta EE Arrives</title>
+      <link>https://jakarta.ee/news/community-news/2019/09/10/eclipse-jakarta-ee-arrives/</link>
+      <pubDate>Tue, 10 Sep 2019 05:10:00 +0000</pubDate>
+      <author>webdev@eclipse-foundation.org (Christopher Guindon)</author>
+      <guid>https://jakarta.ee/news/community-news/2019/09/10/eclipse-jakarta-ee-arrives/</guid>
+      <description>Two years after taking over Java EE from Oracle, the Eclipse Foundation has shipped its implementation of Java EE 8</description>
+    </item>
+    
+    <item>
+      <title>Enterprise Java spec packs bags, ready for new life under assumed name – Jakarta</title>
+      <link>https://jakarta.ee/news/community-news/2019/09/10/enterprise-java-spec-packs-bags-ready-for-new-life-under-assumed-name-jakarta/</link>
+      <pubDate>Tue, 10 Sep 2019 05:10:00 +0000</pubDate>
+      <author>webdev@eclipse-foundation.org (Christopher Guindon)</author>
+      <guid>https://jakarta.ee/news/community-news/2019/09/10/enterprise-java-spec-packs-bags-ready-for-new-life-under-assumed-name-jakarta/</guid>
+      <description>Enterprise Java, known as Java Enterprise Edition 8 (Java EE 8) under Oracle&amp;rsquo;s implementation of the platform specification, has finally packed up and moved out of Big Red&amp;rsquo;s basement under a new name, so it won&amp;rsquo;t bear the burden of its heritage.</description>
+    </item>
+    
+    <item>
+      <title>Jakarta EE 8 is sprinting towards an exciting future for enterprise Java</title>
+      <link>https://jakarta.ee/news/community-news/2019/09/10/jakarta-ee-8-is-sprinting-towards-an-exciting-future-for-enterprise-java/</link>
+      <pubDate>Tue, 10 Sep 2019 05:10:00 +0000</pubDate>
+      <author>webdev@eclipse-foundation.org (Christopher Guindon)</author>
+      <guid>https://jakarta.ee/news/community-news/2019/09/10/jakarta-ee-8-is-sprinting-towards-an-exciting-future-for-enterprise-java/</guid>
+      <description>After what seemed like eternity, the time has finally come – the long awaited first release of Jakarta EE is now officially in the hands of the public.</description>
+    </item>
+    
+    <item>
+      <title>Jakarta EE now operates under open community driven process</title>
+      <link>https://jakarta.ee/news/community-news/2019/09/10/jakarta-ee-now-operates-under-open-community-driven-process/</link>
+      <pubDate>Tue, 10 Sep 2019 05:10:00 +0000</pubDate>
+      <author>webdev@eclipse-foundation.org (Christopher Guindon)</author>
+      <guid>https://jakarta.ee/news/community-news/2019/09/10/jakarta-ee-now-operates-under-open-community-driven-process/</guid>
+      <description>After transitioning from Oracle to the Eclipse Foundation in 2017, Jakarta EE (previously known as Java EE), has reached another major milestone.</description>
+    </item>
+    
+    <item>
+      <title>Java EE Move to Eclipse foundation Makes Way for Cloud Native Java</title>
+      <link>https://jakarta.ee/news/community-news/2019/09/10/java-ee-move-to-eclipse-foundation-makes-way-for-cloud-native-java/</link>
+      <pubDate>Tue, 10 Sep 2019 05:10:00 +0000</pubDate>
+      <author>webdev@eclipse-foundation.org (Christopher Guindon)</author>
+      <guid>https://jakarta.ee/news/community-news/2019/09/10/java-ee-move-to-eclipse-foundation-makes-way-for-cloud-native-java/</guid>
+      <description>The Eclipse Foundation has finally completed the transition of Java Enterprise Edition (EE) over to Jakarta with the release of the Jakarta EE 8 specification.</description>
+    </item>
+    
+    <item>
+      <title>Java finally goes all in on open source with the Jakarta EE 8 release</title>
+      <link>https://jakarta.ee/news/community-news/2019/09/10/java-finally-goes-all-in-on-open-source-with-the-jakarta-ee-8-release/</link>
+      <pubDate>Tue, 10 Sep 2019 05:10:00 +0000</pubDate>
+      <author>webdev@eclipse-foundation.org (Christopher Guindon)</author>
+      <guid>https://jakarta.ee/news/community-news/2019/09/10/java-finally-goes-all-in-on-open-source-with-the-jakarta-ee-8-release/</guid>
+      <description>The Eclipse Foundation has announced the release of the Jakarta EE 8, the first truly open-source, vendor-neutral version of Java Enterprise Edition.</description>
+    </item>
+    
+    <item>
+      <title>Open Source Enterprise Java Specification Jakarta EE 8 launches</title>
+      <link>https://jakarta.ee/news/community-news/2019/09/10/open-source-enterprise-java-specification-jakarta-ee-8-launches/</link>
+      <pubDate>Tue, 10 Sep 2019 05:10:00 +0000</pubDate>
+      <author>webdev@eclipse-foundation.org (Christopher Guindon)</author>
+      <guid>https://jakarta.ee/news/community-news/2019/09/10/open-source-enterprise-java-specification-jakarta-ee-8-launches/</guid>
+      <description>Java Community and Eclipse Foundation introduce the designated Java EE successor, including Web Profiles, TCKs and Certified Eclipse GlassFish 5.1.</description>
+    </item>
+    
+    <item>
+      <title>The Eclipse Foundation Releases Jakarta EE 8 Specifications</title>
+      <link>https://jakarta.ee/news/community-news/2019/09/10/the-eclipse-foundation-releases-jakarta-ee-8-specifications/</link>
+      <pubDate>Tue, 10 Sep 2019 05:10:00 +0000</pubDate>
+      <author>webdev@eclipse-foundation.org (Christopher Guindon)</author>
+      <guid>https://jakarta.ee/news/community-news/2019/09/10/the-eclipse-foundation-releases-jakarta-ee-8-specifications/</guid>
+      <description>The Eclipse Foundation today announced during the JakartaOne Livestream virtual conference the release of the Jakarta EE 8 Full Platform and Web Profile specifications and related Technology Compatibility Kits (TCKs).</description>
+    </item>
+    
+    <item>
+      <title>The Future is Now</title>
+      <link>https://jakarta.ee/news/community-news/2019/09/10/the-future-is-now/</link>
+      <pubDate>Tue, 10 Sep 2019 05:10:00 +0000</pubDate>
+      <author>webdev@eclipse-foundation.org (Christopher Guindon)</author>
+      <guid>https://jakarta.ee/news/community-news/2019/09/10/the-future-is-now/</guid>
+      <description>Jakarta EE 8 is finally here! It heralds a new era for Enterprise Java, as finally the community can look forward to the platform’s faster development.</description>
+    </item>
+    
+    <item>
+      <title>Welcome to the Future of Cloud Native Java</title>
+      <link>https://jakarta.ee/news/announcements/2019/09/10/welcome-to-the-future-of-cloud-native-java/</link>
+      <pubDate>Tue, 10 Sep 2019 05:10:00 +0000</pubDate>
+      <author>webdev@eclipse-foundation.org (Christopher Guindon)</author>
+      <guid>https://jakarta.ee/news/announcements/2019/09/10/welcome-to-the-future-of-cloud-native-java/</guid>
+      <description>Today, with the release of Jakarta EE 8, we’ve entered a new era in Java innovation.</description>
+    </item>
+    
+    <item>
+      <title>Update for Jakarta EE community: September 2019</title>
+      <link>https://jakarta.ee/news/announcements/2019/09/09/update-for-jakarta-ee-community-september-2019/</link>
+      <pubDate>Mon, 09 Sep 2019 05:10:00 +0000</pubDate>
+      <author>webdev@eclipse-foundation.org (Christopher Guindon)</author>
+      <guid>https://jakarta.ee/news/announcements/2019/09/09/update-for-jakarta-ee-community-september-2019/</guid>
+      <description>We hope you’re enjoying the Jakarta EE monthly email update, which seeks to highlight news from various committee meetings related to this platform.</description>
+    </item>
+    
+    <item>
       <title>Jakarta Newsletter August 2019: Jakarta EE 8 Preview</title>
       <link>https://jakarta.ee/news/announcements/2019/08/22/jakarta-newsletter-august-2019-jakarta-ee-8-preview/</link>
       <pubDate>Thu, 22 Aug 2019 05:10:00 +0000</pubDate>

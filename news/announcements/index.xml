@@ -13,6 +13,24 @@
     
     
     <item>
+      <title>Welcome to the Future of Cloud Native Java</title>
+      <link>https://jakarta.ee/news/announcements/2019/09/10/welcome-to-the-future-of-cloud-native-java/</link>
+      <pubDate>Tue, 10 Sep 2019 05:10:00 +0000</pubDate>
+      <author>webdev@eclipse-foundation.org (Christopher Guindon)</author>
+      <guid>https://jakarta.ee/news/announcements/2019/09/10/welcome-to-the-future-of-cloud-native-java/</guid>
+      <description>Today, with the release of Jakarta EE 8, we’ve entered a new era in Java innovation.</description>
+    </item>
+    
+    <item>
+      <title>Update for Jakarta EE community: September 2019</title>
+      <link>https://jakarta.ee/news/announcements/2019/09/09/update-for-jakarta-ee-community-september-2019/</link>
+      <pubDate>Mon, 09 Sep 2019 05:10:00 +0000</pubDate>
+      <author>webdev@eclipse-foundation.org (Christopher Guindon)</author>
+      <guid>https://jakarta.ee/news/announcements/2019/09/09/update-for-jakarta-ee-community-september-2019/</guid>
+      <description>We hope you’re enjoying the Jakarta EE monthly email update, which seeks to highlight news from various committee meetings related to this platform.</description>
+    </item>
+    
+    <item>
       <title>Jakarta Newsletter August 2019: Jakarta EE 8 Preview</title>
       <link>https://jakarta.ee/news/announcements/2019/08/22/jakarta-newsletter-august-2019-jakarta-ee-8-preview/</link>
       <pubDate>Thu, 22 Aug 2019 05:10:00 +0000</pubDate>
