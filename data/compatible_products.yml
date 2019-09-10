@@ -22,6 +22,13 @@ sets:
       version: 19.0.0.6
       image: '/images/compatible_products/ibm_open_liberty.png'
       download: 'https://openliberty.io/downloads/'
+      
+
+    - name: WildFly
+      vendor: Red Hat
+      version: 17.0.1.Final
+      image: '/images/compatible_products/red-hat-wildfly-logo.png'
+      download: 'https://wildfly.org/downloads'
 
   - title: Jakarta EE 8 Web Profile Compatible Products
     items:
