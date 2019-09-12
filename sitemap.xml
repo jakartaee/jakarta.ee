@@ -136,6 +136,11 @@
   </url>
   
   <url>
+    <loc>https://jakarta.ee/specifications/enterprise-ws/1.4/</loc>
+    <lastmod>2019-09-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://jakarta.ee/specifications/expression-language/3.0/</loc>
     <lastmod>2019-09-10T00:00:00+00:00</lastmod>
   </url>
@@ -238,11 +243,6 @@
   <url>
     <loc>https://jakarta.ee/news/announcements/2019/08/22/jakarta-newsletter-august-2019-jakarta-ee-8-preview/</loc>
     <lastmod>2019-08-22T05:10:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jakarta.ee/specifications/enterprise-ws/1.4/</loc>
-    <lastmod>2019-08-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
