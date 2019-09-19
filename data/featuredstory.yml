@@ -18,7 +18,7 @@ defaultRight: |
 items:
   -
     title: Jakarta EE 8 is here!
-    content: Check out all the info and updates about the Jakarta EE 8 release today!
+    content: Check out all the info and updates about the Jakarta EE 8 release!
     link: <a class="btn btn-primary btn-lg" href="https://jakarta.ee/release/">Learn More</a>
     bgImgSrc: /images/jakarta-ee-banner.jpg
     startDate: 2019-09-07
@@ -27,23 +27,6 @@ items:
     footer_classes: featured-footer featured-alternate jakarta-ee-banner
     type: both
 
-  -
-    title: Join us for JakartaOne Livestream!
-    content: You won't want to miss out on this free, one-day virtual conference focused on all things cloud native Java.
-    link: <a class="btn btn-primary btn-lg" href="https://jakartaone.org/">Register</a>
-    bgImgSrc: /images/jakartaone-livestream-banner.jpg
-    startDate: 2019-07-18
-    endDate: 2019-10-10
-    type: both
-    
-  -
-    title: Get IBM's new O'Reilly eBook
-    content: "Developing Open Cloud Native Microservices: Your Java Code in Action is up and available to download!"
-    link: <a class="btn btn-primary btn-lg" href="https://www.ibm.com/account/reg/signup?formid=urx-40233">Download</a>
-    bgImgSrc: /images/jakartaone-livestream-banner.jpg
-    startDate: 2019-07-18
-    endDate: 2019-10-10
-    type: footer
   -
     preamble: |
       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail">
