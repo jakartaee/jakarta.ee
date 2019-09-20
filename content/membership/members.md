@@ -31,7 +31,6 @@ layout: "single"
           <li><a href="https://www.liferay.com" target="_blank"><img src="/images/members/jakarta-member_liferay.svg" width="100" class="img-responsive"></a></li>
           <li><a href="https://www.lightbend.com/" target="_blank"><img src="/images/members/jakarta-member_lightbend.svg" width="100" class="img-responsive"></a></li>
           <li><a href="https://londonjavacommunity.wordpress.com" target="_blank"><img src="/images/members/jakarta-member_ljc.svg" width="100" class="img-responsive"></a></li>
-          <li><a href="https://www.microsoft.com/" target="_blank"><img src="/images/members/jakarta-member_microsoft.svg" width="100" class="img-responsive"></a></li>
           <li><a href="https://www.mizuhobank.com/index.html" target="_blank"><img src="/images/members/jakarta-member_mizuho.svg" width="100" class="img-responsive"></a></li>
           <li><a href="https://pivotal.io/" target="_blank"><img src="/images/members/jakarta-member_pivotal.svg" width="100" class="img-responsive"></a></li>
           <li><a href="https://www.k-teq.com/" target="_blank"><img src="/images/members/jakarta-member_k-teq.svg" width="100" class="img-responsive"></a></li>

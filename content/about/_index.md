@@ -69,7 +69,6 @@ Jakarta EE represents the best way to drive cloud-native, mission critical appli
 			<li>Dominika Tasarz - Payara, Jadon Orglepp - alternate</li>
 			<li>Cesar Saavedra - Red Hat, Paul Hinz - alternate</li>
 			<li>David Blevins - Tomitribe, Jonathan Gallimore - alternate</li>
-			<li>Theresa Nguyen - Microsoft Elected Participant Representative</li>
 			<li>VACANT - Elected Committer Representative</li>
 			<li>Thabang Mashologu - Eclipse Foundation (serves as interim chair, but is not a voting committee member)</li>
         </ul>
