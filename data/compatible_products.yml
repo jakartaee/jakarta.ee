@@ -16,19 +16,21 @@ sets:
       version: 5.1.0, Full Profile
       image: '/images/compatible_products/glassfish_logo.svg'
       download: 'https://www.eclipse.org/downloads/download.php?file=/glassfish/glassfish-5.1.0.zip'
+      compatibility: 'https://github.com/jakartaee/jakarta.ee/issues/440'
 
     - name: Open Liberty
       vendor: IBM Corporation
       version: 19.0.0.6
       image: '/images/compatible_products/ibm_open_liberty.png'
       download: 'https://openliberty.io/downloads/'
-      
+      compatibility: 'https://github.com/jakartaee/jakarta.ee/issues/439'
 
     - name: WildFly
       vendor: Red Hat
       version: 17.0.1.Final
       image: '/images/compatible_products/red-hat-wildfly-logo.png'
       download: 'https://wildfly.org/downloads'
+      compatibility: 'https://github.com/jakartaee/jakarta.ee/issues/452'
 
   - title: Jakarta EE 8 Web Profile Compatible Products
     items:
@@ -37,10 +39,11 @@ sets:
       version: 5.1.0, Web Profile
       image: '/images/compatible_products/glassfish_logo.svg'
       download: 'https://www.eclipse.org/downloads/download.php?file=/glassfish/web-5.1.0.zip'
-      
+      compatibility: 'https://github.com/jakartaee/jakarta.ee/issues/441'
+
     - name: Open Liberty
       vendor: IBM Corporation
       version: 19.0.0.6
       image: '/images/compatible_products/ibm_open_liberty.png'
       download: 'https://openliberty.io/downloads/'
-    
+      compatibility: 'https://github.com/jakartaee/jakarta.ee/issues/439'
