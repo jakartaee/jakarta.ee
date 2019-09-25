@@ -25,7 +25,6 @@ layout: "single"
           <span>Participating Members</span>
         </h3>
         <ul class="list-inline text-center">
-          <li><a href="https://www.cloudbees.com/" target="_blank"><img src="/images/members/jakarta-member_cloudbees.png" width="100" class="img-responsive"></a></li>
           <li><a href="https://www.docdoku.com/" target="_blank"><img src="/images/members/jakarta-member_docdoku.png" width="100" class="img-responsive"></a></li>
           <li><a href="https://incquerylabs.com/" target="_blank"><img src="/images/members/jakarta-member_incquerylabs.png" width="100" class="img-responsive"></a></li>
           <li><a href="https://www.liferay.com" target="_blank"><img src="/images/members/jakarta-member_liferay.svg" width="100" class="img-responsive"></a></li>
