@@ -32,6 +32,7 @@ enableRobotsTXT = true
   facebook_url="https://www.facebook.com/JakartaEE"
   header_left_classes = "col-sm-4"
   main_menu_wrapper_classes = "col-sm-20 margin-top-10"
+  hide_cfa_same_page = true
 [taxonomies]
   category = "categories"
   tag = "tags"
