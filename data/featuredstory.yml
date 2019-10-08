@@ -22,7 +22,7 @@ items:
     link: <a class="btn btn-primary btn-lg" href="https://jakarta.ee/release/">Learn More</a>
     bgImgSrc: /images/jakarta-ee-banner.jpg
     startDate: 2019-09-07
-    endDate: 2019-10-07
+    endDate: 2019-10-21
     story_classes: featured-story featured-alternate jakarta-ee-banner
     footer_classes: featured-footer featured-alternate jakarta-ee-banner
     type: both
