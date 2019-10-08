@@ -12,7 +12,7 @@ To include your Compatible Software Product on the Jakarta EE official list of C
 
 **The Profile (Full Platform, Web Profile, Both) that the Compatible Product is submitted to be listed under**
 
-**A product logo with a transparent background in SVG format (optional)**
+**A ZIP file with a product logo with a transparent background in SVG format (optional)**
 
 **The Participant, Enterprise or Strategic Member name supporting the Compatible Software Product**
 

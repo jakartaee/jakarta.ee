@@ -11,6 +11,13 @@
 sets:
   - title: Jakarta EE 8 Full Platform Compatible Products
     items:
+    - name: Payara Server 
+      vendor: Payara Services Limited
+      version: 5.193.1
+      image: '/images/compatible_products/payara_server.png'
+      download: 'https://www.payara.fish/software/downloads/'
+      compatibility: 'https://github.com/eclipse-ee4j/jakartaee-platform/issues/119'
+
     - name: Eclipse Glassfish
       vendor: Eclipse Foundation
       version: 5.1.0, Full Profile
