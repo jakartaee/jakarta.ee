@@ -8,6 +8,20 @@ submit_button_link: https://goo.gl/forms/xIlhGdX1qfKCyCZn1
 
 items:
   -
+    name: JVM-Con
+    location: Köln, Germany
+    date: November 25, 2019
+    expire_date: 2019-11-25T23:59:00-00:00
+    button_url: https://www.jvm-con.de/
+    button_text: Register Now
+  -
+    name: Jakarta EE / MicroProfile Microservices
+    location: Munich Airport
+    date: December 10, 2019
+    expire_date: 2019-12-10T23:59:00-00:00
+    button_url: http://workshops.adam-bien.com/microservices.htm
+    button_text: Register Now
+  -
     name: OpenInfra Days UK 2019
     location: London, UK
     date: April 1-2, 2019
@@ -31,7 +45,7 @@ items:
     button_text: Register Now
     
   -
-    name: Jakarta EE, Eclipse Microprofile and Clouds
+    name: Building cloud applications with Jakarta EE and MicroProfile
     location: Munich Airport
     date: December 11, 2019
     expire_date: 2019-12-11T23:59:00-00:00
