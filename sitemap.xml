@@ -11,6 +11,11 @@
   </url>
   
   <url>
+    <loc>https://jakarta.ee/news/announcements/2019/10/09/payara-server-is-jakarta-ee-8-compatible/</loc>
+    <lastmod>2019-10-09T05:10:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://jakarta.ee/news/community-news/2019/09/10/eclipse-foundation-delivers-on-jakarta-ee-promise/</loc>
     <lastmod>2019-09-10T05:10:00+00:00</lastmod>
   </url>
@@ -593,11 +598,6 @@
   <url>
     <loc>https://jakarta.ee/news/announcements/2018/10/16/introducing-the-jakarta-ee-specification-process/</loc>
     <lastmod>2018-10-16T05:10:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jakarta.ee/news/announcements/2018/10/09/payara-server-is-jakarta-ee-8-compatible/</loc>
-    <lastmod>2018-10-09T05:10:00+00:00</lastmod>
   </url>
   
   <url>
