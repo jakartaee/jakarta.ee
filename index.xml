@@ -739,6 +739,15 @@ The list of Oracle/JCP acronyms appears at the bottom of this document.</descrip
     </item>
     
     <item>
+      <title>Payara Server is Jakarta EE 8 Compatible</title>
+      <link>https://jakarta.ee/news/announcements/2018/10/09/payara-server-is-jakarta-ee-8-compatible/</link>
+      <pubDate>Tue, 09 Oct 2018 05:10:00 +0000</pubDate>
+      <author>webdev@eclipse-foundation.org (Christopher Guindon)</author>
+      <guid>https://jakarta.ee/news/announcements/2018/10/09/payara-server-is-jakarta-ee-8-compatible/</guid>
+      <description>&lt;p&gt;Payara Services and the Eclipse Foundation, Inc. today announced the application server, Payara Server, a Jakarta EE 8 compatible implementation.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>How Java EE development has kept up with microservices</title>
       <link>https://jakarta.ee/news/community-news/2018/09/27/how-java-ee-development-has-kept-up-with-microservices/</link>
       <pubDate>Thu, 27 Sep 2018 11:15:00 +0000</pubDate>
