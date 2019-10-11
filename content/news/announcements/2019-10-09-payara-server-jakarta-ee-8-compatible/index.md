@@ -1,6 +1,6 @@
 ---
 title: "Payara Server is Jakarta EE 8 Compatible"
-date: 2018-10-09T05:10:00-00:00
+date: 2019-10-09T05:10:00-00:00
 link: "https://blog.payara.fish/payara-server-is-jakarta-ee-compatible"
 categories: ["announcements"]
 ---
