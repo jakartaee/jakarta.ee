@@ -1,19 +1,8 @@
 defaultRight: |
         <div class="featured-ad-content-jakarta">
-          <p>
-            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail">
-              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-              <polyline points="22,6 12,13 2,6"></polyline>
-            </svg>
-          </p>
-          <p>Sign up to our <br>Newsletter</p>
-          <form action="https://eclipsecon.us6.list-manage.com/subscribe/post" method="post" target="_blank">
-            <div class="form-group">
-              <input type="hidden" name="u" value="eaf9e1f06f194eadc66788a85">
-              <input type="hidden" name="id" value="98ae69e304">
-            </div>
-            <input type="submit" value="Subscribe" name="subscribe" class="button btn btn-primary">
-          </form>
+          <div><a style="float:none;"href="https://www.globenewswire.com/news-release/2019/09/17/1916531/0/en/The-Eclipse-Foundation-Wins-Duke-s-Choice-Award-for-Open-Source-Contributions-to-the-Java-Ecosystem.html"><img style="float:none;" src="/images/dukes_award_2019.png" width="100"></a></div>
+          <p style="margin-bottom:10px;">Duke's Choice Award Winner</p>
+          <p><a style="float:none;" class="btn btn-primary btn-sm" href="https://www.globenewswire.com/news-release/2019/09/17/1916531/0/en/The-Eclipse-Foundation-Wins-Duke-s-Choice-Award-for-Open-Source-Contributions-to-the-Java-Ecosystem.html">Learn More</a></p>
         </div>
 items:
   -
