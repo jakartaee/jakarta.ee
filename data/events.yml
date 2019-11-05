@@ -242,3 +242,17 @@ items:
     location: Ludwigsburg, Germany
     button_url: https://www.eclipsecon.org/europe2019
     button_text: Register Now
+  -
+    name: Devoxx Belgium
+    date: Nov 4 - Nov 8
+    expire_date: 2019-11-08T23:59:00-00:00
+    location: Antwerp, Belgium
+    button_url: https://devoxx.be/
+    button_text: Register Now
+  -
+    name: KubeCon North America
+    date: Nov 18 - Nov 21
+    expire_date: 2019-11-21T23:59:00-00:00
+    location: San Diego, CA
+    button_url: https://events19.linuxfoundation.org/events/kubecon-cloudnativecon-north-america-2019/
+    button_text: Register Now
