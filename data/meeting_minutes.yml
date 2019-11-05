@@ -1,6 +1,9 @@
 items:
    marketing_committee:
        -
+          url: marketing_committee/minutes-marketing-october-10-2019.pdf
+          title: October 10, 2019 (pdf)
+       -
           url: marketing_committee/minutes-marketing-september-26-2019.pdf
           title: September 26, 2019 (pdf)
        -
@@ -153,6 +156,30 @@ items:
        
        
    specification_committee:
+       -
+          url: specification_committee/minutes-specification-october-2-2019.pdf
+          title: October 2, 2019 (pdf)
+   
+       -
+          url: specification_committee/minutes-specification-september-25-2019.pdf
+          title: September 25, 2019 (pdf)
+   
+       -
+          url: specification_committee/minutes-specification-september-18-2019.pdf
+          title: September 18, 2019 (pdf)
+   
+       -
+          url: specification_committee/minutes-specification-september-11-2019.pdf
+          title: September 11, 2019 (pdf)
+   
+       -
+          url: specification_committee/minutes-specification-september-4-2019.pdf
+          title: September 4, 2019 (pdf)
+   
+       -
+          url: specification_committee/minutes-specification-august-28-2019.pdf
+          title: August 28, 2019 (pdf)
+
        -
           url: specification_committee/minutes-specification-august-21-2019.pdf
           title: August 21, 2019 (pdf)
@@ -357,6 +384,15 @@ items:
           title: June 28, 2018 (pdf)
 
    steering_committee:
+       -
+          title: October 8, 2019 (pdf)
+          url: steering_committee/minutes-october-8-2019.pdf
+       -
+          title: October 1, 2019 (pdf)
+          url: steering_committee/minutes-october-1-2019.pdf
+       -
+          title: September 11, 2019 (pdf)
+          url: steering_committee/minutes-september-11-2019.pdf
        -
           title: September 3, 2019 (pdf)
           url: steering_committee/minutes-september-3-2019.pdf
