@@ -86,43 +86,49 @@ enableRobotsTXT = true
     
 # Resource sub-menu
 [[menu.main]]
-    name = "Blog"
-    url = "https://Jakartablogs.ee"
-    parent = "Resources"
-    weight = 0
+    name = "Documentation"
+    url = "/resources#documentation"
+    parent = "Documentation"
+    weight = 1
 
 [[menu.main]]
     name = "Surveys"
     url = "/resources#surveys"
     parent = "Resources"
-    weight = 1
+    weight = 2
     
 [[menu.main]]
     name = "Infographics"
     url = "/resources#infographics"
     parent = "Resources"
-    weight = 2
+    weight = 3
     
 [[menu.main]]
     name = "Videos"
     url = "/resources#videos"
     parent = "Resources"
-    weight = 3
+    weight = 4
     
 [[menu.main]]
     name = "Specification Process"
     url = "/resources#specification_process"
     parent = "Resources"
-    weight = 4
+    weight = 5
     
 [[menu.main]]
     name = "Newsletter Archives"
     url = "/newsletter/"
     parent = "Resources"
-    weight = 5
+    weight = 6
     
 [[menu.main]]
     name = "Meeting Minutes"
     url = "/meeting_minutes/"
     parent = "Resources"
-    weight = 6
+    weight = 7
+
+[[menu.main]]
+    name = "Blog"
+    url = "https://Jakartablogs.ee"
+    parent = "Resources"
+    weight = 8
