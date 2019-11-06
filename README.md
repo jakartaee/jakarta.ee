@@ -8,6 +8,8 @@ Jakarta EE is the future of cloud native Java. Jakarta EE open source software d
 
 ## Getting started
 
+The site is being generated with Hugo 0.54.0. We are investigating how to solve rendering [issues](https://github.com/jakartaee/jakarta.ee/issues/411) with newer releases of Hugo. 
+
 Install dependencies, build assets and start a webserver:
 
 ```bash
