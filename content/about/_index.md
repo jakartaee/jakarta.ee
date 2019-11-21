@@ -42,7 +42,7 @@ Jakarta EE represents the best way to drive cloud-native, mission critical appli
             <li>Dan Bandera - IBM, Ian Robinson - alternate</li>
             <li>Steve Millidge - Payara, Mike Croft - alternate</li>
             <li>Mark Little - Red Hat, Scott Stark - alternate</li>
-            <li>David Blevins - Tomitribe, Richard Monson-Haefel alternate</li>
+            <li>David Blevins - Tomitribe, Cesar Hernandez - alternate</li>
             <li>Martijn Verburg - London Java Community - Elected Participant Representative</li>
             <li>Ivar Grimstad - Elected Committer Representative</li>
         </ul>
@@ -54,7 +54,7 @@ Jakarta EE represents the best way to drive cloud-native, mission critical appli
             <li>Bill Shannon - Oracle, Ed Bratt - alternate</li>
             <li>Mark Wareham - Payara, Steve Millidge - alternate</li>
             <li>Scott Stark - Red Hat, Mark Little - alternate</li>
-            <li>David Blevins - Tomitribe, Richard Monson-Haefel - alternate</li>
+            <li>David Blevins - Tomitribe, Cesar Hernandez - alternate</li>
             <li>Ivar Grimstad - PMC Representative</li>
             <li>Alex Theedom - London Java Community Elected Participant Representative</li>
             <li>Werner Keil - Elected Committer Representative</li>
