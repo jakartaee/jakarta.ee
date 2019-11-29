@@ -27,7 +27,13 @@ layout: "single"
 
 <hr>
 
-## Videos{#videos}
+## Presentations{#presentations}  
+
+* [Jakarta EE presentations](https://www.slideshare.net/Jakarta_EE)
+
+<hr>
+
+## Videos{#videos}  
 
 <div class="row">
   <div class="col-sm-12">{{< youtube "rZ3zx2UAG9c" >}}</div>
