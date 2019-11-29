@@ -20,6 +20,38 @@ description: "Keep up to date with Jakarta EE working group updates, community n
             <div class="col-md-8 col-sm-6">
               <span class="newsletter-archive-icons">
               <i class="fa fa-calendar-o" aria-hidden="true"></i>
+              <span class="newsletter-archive-month">November</span>
+              </span>
+            </div>
+            <div class="col-md-16 col-sm-18">
+              <p><a href="https://www.eclipse.org/community/eclipse_newsletter/2019/november/" target="_blank">Jakarta EE Takes Off
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div class="row margin-bottom-15">
+          <div class="col-sm-12">
+            <div class="col-md-8 col-sm-6">
+              <span class="newsletter-archive-icons">
+              <i class="fa fa-calendar-o" aria-hidden="true"></i>
+              <span class="newsletter-archive-month">August</span>
+              </span>
+            </div>
+            <div class="col-md-16 col-sm-18">
+              <p><a href="https://www.eclipse.org/community/eclipse_newsletter/2019/august/" target="_blank">Jakarta EE 8 Preview
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div class="row margin-bottom-15">
+          <div class="col-sm-12">
+            <div class="col-md-8 col-sm-6">
+              <span class="newsletter-archive-icons">
+              <i class="fa fa-calendar-o" aria-hidden="true"></i>
               <span class="newsletter-archive-month">May</span>
               </span>
             </div>
