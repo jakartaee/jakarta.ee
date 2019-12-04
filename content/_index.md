@@ -1,7 +1,7 @@
 ---
 title: "Home"
 seo_title: "Jakarta™ EE Software | Cloud Native"
-headline: "Jakarta™ EE"
+headline: "Jakarta<span class='tm-span'>™</span> EE"
 subtitle: "Open Source Cloud Native Java"
 description: "Jakarta™ Enterprise Edition (EE) is the future of cloud native Java. Jakarta™ EE open source software drives cloud native innovation, modernizes enterprise applications and protects investments in Java EE."
 tagline: "Powered by participation, Jakarta™ EE is focused on enabling community-driven collaboration and open innovation for the cloud."
