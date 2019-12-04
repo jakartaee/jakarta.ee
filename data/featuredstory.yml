@@ -6,7 +6,7 @@ defaultRight: |
         </div>
 items:
   -
-    title: Jakarta EE 8 is here!
+    title: Jakarta™ EE 8 is here!
     content: Check out all the info and updates about the Jakarta EE 8 release!
     link: <a class="btn btn-primary btn-lg" href="https://jakarta.ee/release/">Learn More</a>
     bgImgSrc: /images/jakarta-ee-banner.jpg

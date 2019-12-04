@@ -2,14 +2,14 @@
 title: "Resources"
 headline: "Resources" 
 date: 2019-02-27T16:10:38-04:00
-description: "Jakarta EE Resources"
+description: "Jakarta™ EE Resources"
 layout: "single"
 ---
 
 ## Documentation{#documentation}
 
-* [Jakarta EE Tutorial](https://eclipse-ee4j.github.io/jakartaee-tutorial/)
-* [Jakarta EE First Cup](https://eclipse-ee4j.github.io/jakartaee-firstcup/)
+* [Jakarta™ EE Tutorial](https://eclipse-ee4j.github.io/jakartaee-tutorial/)
+* [Jakarta™ EE First Cup](https://eclipse-ee4j.github.io/jakartaee-firstcup/)
 * [CargoTracker Example Application](https://github.com/eclipse-ee4j/cargotracker)
 
 ## Surveys{#surveys}
@@ -23,13 +23,13 @@ layout: "single"
 
 ## Infographics{#infographics}
 
-* [2018 Jakarta EE survey infographic](https://jakarta.ee/documents/insights/2018-jakarta-ee-survey-infographic.pdf)
+* [2018 Jakarta™ EE survey infographic](https://jakarta.ee/documents/insights/2018-jakarta-ee-survey-infographic.pdf)
 
 <hr>
 
 ## Presentations{#presentations}  
 
-* [Jakarta EE presentations](https://www.slideshare.net/Jakarta_EE)
+* [Jakarta™ EE presentations](https://www.slideshare.net/Jakarta_EE)
 
 <hr>
 
