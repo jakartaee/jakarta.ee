@@ -1,5 +1,5 @@
 ---
-title: "Jakarta EE Specification Process"
+title: "Jakarta™ EE Specification Process"
 date: 2019-07-16T13:00:00-04:00
 ---
 
