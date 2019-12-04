@@ -44,13 +44,13 @@
     }
     @media (min-width: @screen-sm-min) {
       text-align:left;
-      font-size: 70px;
+      font-size: 61px;
     }
     @media (min-width: @screen-md-min) {
       font-size: 90px;
     }
     @media (min-width: @screen-lg-min) {
-      font-size: 110px;
+      font-size: 80px;
     }
     font-weight: 200;
     text-transform: uppercase;
@@ -166,4 +166,22 @@
   & {
     background-position: 50%;
   }
+}
+
+.compatible-logo {
+  padding: 0 20px;
+  margin: 0 auto;
+  max-width: 350px;
+  width: 60%;
+  
+  @media (min-width: @screen-md-min) {
+    max-width: 100%;
+    width: 100%;
+    padding: 0;
+  }
+}
+.tm-span {
+  font-size: 0.75em;
+  position: relative;
+  top: -0.25em;
 }

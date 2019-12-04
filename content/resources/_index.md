@@ -44,6 +44,6 @@ layout: "single"
 
 ## Specification Process{#specification_process}
 
-Talks & presentations:
+Talks &amp; presentations:
 
 * [Introducing the EFSP](introducing-the-efsp-ece-2018.pdf)
