@@ -9,7 +9,7 @@ layout: "single"
 
 ## The Future of Cloud Native Java
 
-For many years, Java EE has been a major platform for mission-critical enterprise applications. In order to accelerate business application development for a cloud-native world, leading software vendors collaborated to move Java EE technologies to the Eclipse Foundation where they will evolve under the Jakarta EE brand. 
+For many years, Java EE has been a major platform for mission-critical enterprise applications. In order to accelerate business application development for a cloud-native world, leading software vendors collaborated to move Java EE technologies to the Eclipse Foundation where they will evolve under the Jakarta EE brand.
 
 ## Guiding Principles
 The Jakarta EE Working Group seeks to:
@@ -21,7 +21,7 @@ The Jakarta EE Working Group seeks to:
 
 Key to this approach is a community-based specification process, with everyone encouraged to participate in an open process that more accurately reflect the needs of the wider community.
 
-We expect the Jakarta EE platform to evolve rapidly, incorporating Java innovations from open source communities like Eclipse MicroProfile into new versions of the platform to help developers create portable cloud-native applications. 
+We expect the Jakarta EE platform to evolve rapidly, incorporating Java innovations from open source communities like Eclipse MicroProfile into new versions of the platform to help developers create portable cloud-native applications.
 
 Jakarta EE represents the best way to drive cloud-native, mission critical applications and build upon the decades of experience of real world deployments and developers.
 
@@ -54,7 +54,7 @@ Jakarta EE represents the best way to drive cloud-native, mission critical appli
             <li>Bill Shannon - Oracle, Ed Bratt - alternate</li>
             <li>Mark Wareham - Payara, Steve Millidge - alternate</li>
             <li>Scott Stark - Red Hat, Mark Little - alternate</li>
-            <li>David Blevins - Tomitribe, Cesar Hernandez - alternate</li>
+            <li>David Blevins - Tomitribe, Cesar Hernandez - alternate, Jean-Louis Monteiro - alternate</li>
             <li>Ivar Grimstad - PMC Representative</li>
             <li>Alex Theedom - London Java Community Elected Participant Representative</li>
             <li>Werner Keil - Elected Committer Representative</li>
