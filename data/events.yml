@@ -256,3 +256,24 @@ items:
     location: San Diego, CA
     button_url: https://events19.linuxfoundation.org/events/kubecon-cloudnativecon-north-america-2019/
     button_text: Register Now
+  -
+    name: Devnexus
+    date: February 19 - 21 2020
+    expire_date: 2020-02-21T23:59:00-00:00
+    location: Atlanta, GA
+    button_url: https://devnexus.com/
+    button_text: Register Now
+  -
+    name: Javaland
+    date: March 17 - 19 2020
+    expire_date: 2020-03-19T23:59:00-00:00
+    location: Phantasialand, Brühl
+    button_url: https://www.javaland.eu/en/home/
+    button_text: Register Now
+  -
+    name: KubeCon + CloudNativeCon Europe
+    date: March 30 - April 2 2020
+    expire_date: 2020-04-02T23:59:00-00:00
+    location: Amsterdam, The Netherlands
+    button_url: https://events19.linuxfoundation.org/events/kubecon-cloudnativecon-europe-2020/
+    button_text: Register Now
