@@ -1,5 +1,5 @@
 ---
-title: "Jakarta<span class='tm-span'>™</span> EE Specification Process"
+title: "Jakarta<span class='tm-span'>®</span> EE Specification Process"
 date: 2019-07-16T13:00:00-04:00
 ---
 
