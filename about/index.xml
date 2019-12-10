@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>About on Jakarta™ EE: The New Home of Cloud Native Java</title>
+    <title>About on Jakarta® EE: The New Home of Cloud Native Java</title>
     <link>https://jakarta.ee/about/</link>
-    <description>Recent content in About on Jakarta™ EE: The New Home of Cloud Native Java</description>
+    <description>Recent content in About on Jakarta® EE: The New Home of Cloud Native Java</description>
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>webdev@eclipse-foundation.org (Christopher Guindon)</managingEditor>
     <webMaster>webdev@eclipse-foundation.org (Christopher Guindon)</webMaster>
@@ -13,7 +13,7 @@
     
     
     <item>
-      <title>Jakarta&lt;span class=&#39;tm-span&#39;&gt;™&lt;/span&gt; EE Specification Process</title>
+      <title>Jakarta&lt;span class=&#39;tm-span&#39;&gt;®&lt;/span&gt; EE Specification Process</title>
       <link>https://jakarta.ee/about/jesp/</link>
       <pubDate>Tue, 16 Jul 2019 13:00:00 -0400</pubDate>
       <author>webdev@eclipse-foundation.org (Christopher Guindon)</author>
