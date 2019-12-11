@@ -403,6 +403,12 @@ items:
 
    steering_committee:
        -
+          url: steering_committee/minutes-november-19-2019.pdf
+          title: November 19, 2019 (pdf)
+       -
+          url: steering_committee/minutes-november-12-2019.pdf
+          title: November 12, 2019 (pdf)
+       -
           title: November 5, 2019 (pdf)
           url: steering_committee/minutes-november-5-2019.pdf
        -
