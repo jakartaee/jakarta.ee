@@ -7,7 +7,7 @@ defaultRight: |
 items:
   -
     title: Jakarta<span class='tm-span'>®</span> EE 8 is here!
-    content: Check out all the info and updates about the Jakarta EE 8 release!
+    content: Download compatible products, get involved, and stay in the know!
     link: <a class="btn btn-primary btn-lg" href="https://jakarta.ee/release/">Learn More</a>
     bgImgSrc: /images/jakarta-ee-banner.jpg
     startDate: 2019-09-07
