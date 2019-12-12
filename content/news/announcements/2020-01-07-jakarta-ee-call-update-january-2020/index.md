@@ -1,6 +1,6 @@
 ---
 title: "Jakarta EE Update Call - January 2020"
-date: 2020-01-07T22:00:00-05:00
+date: 2020-01-06T22:00:00-05:00
 link: "http://bit.ly/2B6oSPH"
 categories: ["announcements"]
 ---
