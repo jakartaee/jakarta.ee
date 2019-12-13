@@ -2,7 +2,7 @@
 title: "Get Listed"
 headline: "Get Listed"
 date: 2019-06-5T11:10:38-04:00
-description: "Compatible Implementations of Jakarta® EE"
+description: "Compatible Implementations of Jakarta EE"
 hide_sidebar: true
 hide_page_title: true
 draft: false
