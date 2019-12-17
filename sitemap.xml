@@ -912,6 +912,10 @@
   </url>
   
   <url>
+    <loc>https://jakarta.ee/compatibility/</loc>
+  </url>
+  
+  <url>
     <loc>https://jakarta.ee/specifications/enterprise-beans/</loc>
   </url>
   
@@ -993,10 +997,6 @@
   
   <url>
     <loc>https://jakarta.ee/specifications/xml-registries/</loc>
-  </url>
-  
-  <url>
-    <loc>https://jakarta.ee/compatibility/</loc>
   </url>
   
   <url>
