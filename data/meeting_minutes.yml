@@ -163,6 +163,14 @@ items:
        
    specification_committee:
        -
+          url: specification_committee/minutes-specification-december-4-2019.pdf
+          title: December 4, 2019 (pdf)
+          
+       -
+          url: specification_committee/minutes-specification-november-20-2019.pdf
+          title: November 20, 2019 (pdf)
+          
+       -
           url: specification_committee/minutes-specification-november-6-2019.pdf
           title: November 6, 2019 (pdf)
           
