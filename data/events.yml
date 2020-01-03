@@ -8,6 +8,13 @@ submit_button_link: https://goo.gl/forms/xIlhGdX1qfKCyCZn1
 
 items:
   -
+    name: Cloud Native for Java Day @ KubeCon EU
+    location: Amsterdam, The Netherlands
+    date: March 30, 2020
+    expire_date: 2020-03-20T23:59:00-00:00
+    button_url: http://eclipse-5413615.hs-sites.com/cn4j-day
+    button_text: Register Now
+  -
     name: JVM-Con
     location: Köln, Germany
     date: November 25, 2019
