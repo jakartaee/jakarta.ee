@@ -19,28 +19,29 @@ layout: "single"
 
 <p class="small">Note: Access to the 2019 survey is being provided through an external vendor, HubSpot.</p>
 
-<hr>
+---
 
 ## Infographics{#infographics}
 
 * [2018 Jakarta EE survey infographic](https://jakarta.ee/documents/insights/2018-jakarta-ee-survey-infographic.pdf)
 
-<hr>
+---
 
 ## Presentations{#presentations}  
 
 * [Jakarta EE presentations](https://www.slideshare.net/Jakarta_EE)
 
-<hr>
+---
 
 ## Videos{#videos}  
+  
+{{< youtube rZ3zx2UAG9c >}} 
 
-<div class="row">
-  <div class="col-sm-12">{{< youtube "rZ3zx2UAG9c" >}}</div>
-  <div class="col-sm-12">{{< youtube "videoseries?list=PLy7t4z5SYNaT-6PRtijB8XZQJ7jq020CO" >}}</div>
-</div>
+---
 
-<hr>
+{{< youtube "videoseries?list=PLy7t4z5SYNaT-6PRtijB8XZQJ7jq020CO" >}}
+
+---
 
 ## Specification Process{#specification_process}
 

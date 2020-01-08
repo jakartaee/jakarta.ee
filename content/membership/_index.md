@@ -6,3 +6,5 @@ description: "Participate in an open process to shape Jakarta EE, the future of 
 hide_page_title: "true"
 links: [[href: "/membership/members", text: "Explore Members"], [href: "#benefits", text: "Membership Benefits"], [href: "https://accounts.eclipse.org/contact/membership/jakarta-ee", text: "Join Jakarta EE"]]
 ---
+
+{{< pages/membership/index >}}
