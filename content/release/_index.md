@@ -8,4 +8,7 @@ headline: "Jakarta&nbsp;EE"
 links: [[href: "/compatibility/", text: "Download Compatible Products"], [href: "/specifications/", text: "Specifications"]]
 hide_page_title: true
 header_wrapper_class: "header-download"
+container: "container-fluid"
 ---
+
+{{< pages/release >}}
