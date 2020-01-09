@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>About on Jakarta® EE: The New Home of Cloud Native Java</title>
@@ -31,11 +31,10 @@ The Jakarta EE Specification Committee hereby adopts the Eclipse Foundation Spec
       <author>webdev@eclipse-foundation.org (Christopher Guindon)</author>
       <guid>https://jakarta.ee/about/faq/</guid>
       <description>Last Updated: October 19, 2018
-
 Q: What is Jakarta EE? A: Jakarta EE is the future for cloud-native, light-weight, and traditional enterprise Java applications
- Java EE technologies contributed by Oracle are being used to create the new Jakarta EE platform
- The Eclipse Foundation is the home of Cloud Native Java open innovation
- The Jakarta EE Working Group is focused on modernizing Java EE technologies and governance processes to be more open and community-based</description>
+  Java EE technologies contributed by Oracle are being used to create the new Jakarta EE platform
+  The Eclipse Foundation is the home of Cloud Native Java open innovation
+  The Jakarta EE Working Group is focused on modernizing Java EE technologies and governance processes to be more open and community-based</description>
     </item>
     
   </channel>

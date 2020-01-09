@@ -11,11 +11,9 @@
 <meta property="og:title" content="Jakarta Batch 1.0 | The Eclipse Foundation" />
 <meta name="twitter:title" content="Jakarta Batch 1.0 | The Eclipse Foundation" />
 
-<meta name="description" content="Jakarta Batch specifies a Java API plus an XML-based job specification language (JSL), which lets you compose batch jobs in XML from reusable Java application artifacts and conveniently parameterize different executions of a single job.
- Jakarta Batch 1.0 Specification Document (PDF) Jakarta Batch 1.0 Specification Document (HTML) Jakarta Batch 1.0 Javadoc Jakarta Batch 1.0 TCK (sig,sha,pub) Maven coordinates  jakarta.batch:jakarta.batch-api:jar:1.0.2   Ballots Release Review The Specification Committee Ballot concluded successfully on 2019-09-02 with the following results.">
-<meta property="og:description" content="Jakarta Batch specifies a Java API plus an XML-based job specification language (JSL), which lets you compose batch jobs in XML from reusable Java application artifacts and conveniently parameterize different executions of a single job.
- Jakarta Batch 1.0 Specification Document (PDF) Jakarta Batch 1.0 Specification Document (HTML) Jakarta Batch 1.0 Javadoc Jakarta Batch 1.0 TCK (sig,sha,pub) Maven coordinates  jakarta.batch:jakarta.batch-api:jar:1.0.2   Ballots Release Review The Specification Committee Ballot concluded successfully on 2019-09-02 with the following results.">
-<meta name="twitter:description" content="Jakarta Batch specifies a Java API plus an XML-based job specification language (JSL), which lets you compose batch jobs in XML from reusable Java application artifacts and conveniently parameterize …">
+<meta name="description" content="First release for Jakarta EE 8">
+<meta property="og:description" content="First release for Jakarta EE 8">
+<meta name="twitter:description" content="First release for Jakarta EE 8">
 <meta name="author" content="Christopher Guindon"/>
 <link href='https://jakarta.ee/images/jakarta/favicon.ico' rel='icon' type='image/x-icon'/>
 <meta property="og:image" content="https://jakarta.ee/images/jakarta/jakarta_ee_400x400.png" />
@@ -29,7 +27,7 @@
 <meta name="keywords" content="Jakarta EE software, Java EE, cloud, microservices, enterprise, open source, innovation">
 
 
-<meta name="generator" content="Hugo 0.54.0" />
+<meta name="generator" content="Hugo 0.62.2" />
 <link rel="canonical" href="https://jakarta.ee/specifications/batch/1.0/" />
 
 <link rel="alternate" href="/specifications/batch/1.0/index.xml" type="application/rss+xml" title="">
@@ -223,7 +221,6 @@
     </button>
   
   <div class="wrapper-logo-mobile">
-    
       <a class="navbar-brand visible-xs" title="Jakarta® EE: The New Home of Cloud Native Java" href="https://jakarta.ee/">
         <img width="140" class="logo-eclipse-default-mobile img-responsive" src="https://jakarta.ee/images/jakarta/jakarta-ee-logo.svg" alt="Jakarta® EE: The New Home of Cloud Native Java" />
       </a>
@@ -243,7 +240,7 @@
   
 <section class="default-breadcrumbs hidden-print" id="breadcrumb">
   <div class="container">
-    <h3 class="sr-only">Breadcrumbs</h3>
+    <h3 class="sr-only">Breadcrumb</h3>
     <div class="row">
       <div class="col-sm-24">
         <ol class="breadcrumb">
@@ -297,28 +294,21 @@
       
     </h1>
   
-  
-
-<p>Jakarta Batch specifies a Java API plus an XML-based job specification language (JSL), which lets you compose batch jobs in XML from reusable Java application artifacts and conveniently parameterize different executions of a single job.</p>
-
+  <p>Jakarta Batch specifies a Java API plus an XML-based job specification language (JSL), which lets you compose batch jobs in XML from reusable Java application artifacts and conveniently parameterize different executions of a single job.</p>
 <ul>
 <li><a href="./batch-spec-1.0.pdf">Jakarta Batch 1.0 Specification Document</a> (PDF)</li>
 <li><a href="./batch-spec-1.0.html">Jakarta Batch 1.0 Specification Document</a> (HTML)</li>
 <li><a href="./apidocs">Jakarta Batch 1.0 Javadoc</a></li>
-<li><a href="https://download.eclipse.org/jakartaee/batch/1.0/jakarta.batch.official.tck-1.0.2.zip" target="_blank">Jakarta Batch 1.0 TCK</a> (<a href="https://download.eclipse.org/jakartaee/batch/1.0/jakarta.batch.official.tck-1.0.2.zip.sig" target="_blank">sig</a>,<a href="https://download.eclipse.org/jakartaee/batch/1.0/jakarta.batch.official.tck-1.0.2.zip.sha256" target="_blank">sha</a>,<a href="https://raw.githubusercontent.com/jakartaee/specification-committee/master/jakartaee-spec-committee.pub" target="_blank">pub</a>)</li>
+<li><a href="https://download.eclipse.org/jakartaee/batch/1.0/jakarta.batch.official.tck-1.0.2.zip">Jakarta Batch 1.0 TCK</a> (<a href="https://download.eclipse.org/jakartaee/batch/1.0/jakarta.batch.official.tck-1.0.2.zip.sig">sig</a>,<a href="https://download.eclipse.org/jakartaee/batch/1.0/jakarta.batch.official.tck-1.0.2.zip.sha256">sha</a>,<a href="https://raw.githubusercontent.com/jakartaee/specification-committee/master/jakartaee-spec-committee.pub">pub</a>)</li>
 <li>Maven coordinates
-
 <ul>
-<li><a href="https://search.maven.org/artifact/jakarta.batch/jakarta.batch-api/1.0.2/jar" target="_blank">jakarta.batch:jakarta.batch-api:jar:1.0.2</a></li>
-</ul></li>
+<li><a href="https://search.maven.org/artifact/jakarta.batch/jakarta.batch-api/1.0.2/jar">jakarta.batch:jakarta.batch-api:jar:1.0.2</a></li>
 </ul>
-
+</li>
+</ul>
 <h1 id="ballots">Ballots</h1>
-
 <h2 id="release-review">Release Review</h2>
-
 <p>The Specification Committee Ballot concluded successfully on 2019-09-02 with the following results.</p>
-
 <table>
 <thead>
 <tr>
@@ -328,7 +318,6 @@
 <th>Abstain</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td>Fujitsu</td>
@@ -336,56 +325,48 @@
 <td></td>
 <td></td>
 </tr>
-
 <tr>
 <td>IBM</td>
 <td>+1</td>
 <td></td>
 <td></td>
 </tr>
-
 <tr>
 <td>Oracle</td>
 <td>+1</td>
 <td></td>
 <td></td>
 </tr>
-
 <tr>
 <td>Payara</td>
 <td>+1</td>
 <td></td>
 <td></td>
 </tr>
-
 <tr>
 <td>Red Hat</td>
 <td>+1</td>
 <td></td>
 <td></td>
 </tr>
-
 <tr>
 <td>Tomitribe</td>
 <td>+1</td>
 <td></td>
 <td></td>
 </tr>
-
 <tr>
 <td>EE4J PMC</td>
 <td>+1</td>
 <td></td>
 <td></td>
 </tr>
-
 <tr>
 <td>Participant Members</td>
 <td>+1</td>
 <td></td>
 <td></td>
 </tr>
-
 <tr>
 <td>Committer Members</td>
 <td>+1</td>
@@ -394,13 +375,10 @@
 </tr>
 </tbody>
 </table>
-
-<p>The ballot was run in the <a href="https://www.eclipse.org/lists/jakarta.ee-spec/msg00503.html" target="_blank">jakarta.ee-spec mailing list</a></p>
-
+<p>The ballot was run in the <a href="https://www.eclipse.org/lists/jakarta.ee-spec/msg00503.html">jakarta.ee-spec mailing list</a></p>
 <h1 id="compatible-implementations">Compatible Implementations</h1>
-
 <ul>
-<li><strong>&ldquo;jbatch&rdquo;</strong> v1.0.3 =&gt;  The former Reference Implementation using <em>com.ibm.jbatch.*</em> packages.  See the <a href="https://github.com/eclipse-ee4j/batch-api/issues/5" target="_blank">compatibility request issue</a> for more details.</li>
+<li><strong>&ldquo;jbatch&rdquo;</strong> v1.0.3 =&gt;  The former Reference Implementation using <em>com.ibm.jbatch.*</em> packages.  See the <a href="https://github.com/eclipse-ee4j/batch-api/issues/5">compatibility request issue</a> for more details.</li>
 </ul>
 
   <div class="news-list"> 

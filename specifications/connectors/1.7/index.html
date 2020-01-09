@@ -11,14 +11,9 @@
 <meta property="og:title" content="Jakarta Connectors 1.7 | The Eclipse Foundation" />
 <meta name="twitter:title" content="Jakarta Connectors 1.7 | The Eclipse Foundation" />
 
-<meta name="description" content="The Jakarta Connectors specification defines a standard architecture for Jakarta EE application components to connect to Enterprise Information Systems.
- Jakarta Connectors 1.7 Specification Document (PDF) Jakarta Connectors 1.7 Specification Document (HTML) Jakarta Connectors 1.7 Javadoc Jakarta Connectors 1.7 TCK (sig,sha,pub) Maven coordinates  jakarta.resource:jakarta.resource-api:jar:1.7.4   Ballots Release Review The Specification Committee Ballot concluded successfully on 2019-09-04 with the following results.
-    Yes No Abstain     Fujitsu &#43;1     IBM &#43;1     Oracle &#43;1     Payara &#43;1     Red Hat &#43;1     Tomitribe &#43;1     EE4J PMC &#43;1     Participant Members      Committer Members &#43;1      The ballot was run in the jakarta.">
-<meta property="og:description" content="The Jakarta Connectors specification defines a standard architecture for Jakarta EE application components to connect to Enterprise Information Systems.
- Jakarta Connectors 1.7 Specification Document (PDF) Jakarta Connectors 1.7 Specification Document (HTML) Jakarta Connectors 1.7 Javadoc Jakarta Connectors 1.7 TCK (sig,sha,pub) Maven coordinates  jakarta.resource:jakarta.resource-api:jar:1.7.4   Ballots Release Review The Specification Committee Ballot concluded successfully on 2019-09-04 with the following results.
-    Yes No Abstain     Fujitsu &#43;1     IBM &#43;1     Oracle &#43;1     Payara &#43;1     Red Hat &#43;1     Tomitribe &#43;1     EE4J PMC &#43;1     Participant Members      Committer Members &#43;1      The ballot was run in the jakarta.">
-<meta name="twitter:description" content="The Jakarta Connectors specification defines a standard architecture for Jakarta EE application components to connect to Enterprise Information Systems.
- Jakarta Connectors 1.7 Specification Document …">
+<meta name="description" content="Jakarta EE 8 Connectors Specification.">
+<meta property="og:description" content="Jakarta EE 8 Connectors Specification.">
+<meta name="twitter:description" content="Jakarta EE 8 Connectors Specification.">
 <meta name="author" content="Christopher Guindon"/>
 <link href='https://jakarta.ee/images/jakarta/favicon.ico' rel='icon' type='image/x-icon'/>
 <meta property="og:image" content="https://jakarta.ee/images/jakarta/jakarta_ee_400x400.png" />
@@ -32,7 +27,7 @@
 <meta name="keywords" content="Jakarta EE software, Java EE, cloud, microservices, enterprise, open source, innovation">
 
 
-<meta name="generator" content="Hugo 0.54.0" />
+<meta name="generator" content="Hugo 0.62.2" />
 <link rel="canonical" href="https://jakarta.ee/specifications/connectors/1.7/" />
 
 <link rel="alternate" href="/specifications/connectors/1.7/index.xml" type="application/rss+xml" title="">
@@ -226,7 +221,6 @@
     </button>
   
   <div class="wrapper-logo-mobile">
-    
       <a class="navbar-brand visible-xs" title="Jakarta® EE: The New Home of Cloud Native Java" href="https://jakarta.ee/">
         <img width="140" class="logo-eclipse-default-mobile img-responsive" src="https://jakarta.ee/images/jakarta/jakarta-ee-logo.svg" alt="Jakarta® EE: The New Home of Cloud Native Java" />
       </a>
@@ -246,7 +240,7 @@
   
 <section class="default-breadcrumbs hidden-print" id="breadcrumb">
   <div class="container">
-    <h3 class="sr-only">Breadcrumbs</h3>
+    <h3 class="sr-only">Breadcrumb</h3>
     <div class="row">
       <div class="col-sm-24">
         <ol class="breadcrumb">
@@ -300,28 +294,21 @@
       
     </h1>
   
-  
-
-<p>The Jakarta Connectors specification defines a standard architecture for Jakarta EE application components to connect to Enterprise Information Systems.</p>
-
+  <p>The Jakarta Connectors specification defines a standard architecture for Jakarta EE application components to connect to Enterprise Information Systems.</p>
 <ul>
 <li><a href="./connectors-spec-1.7.pdf">Jakarta Connectors 1.7 Specification Document</a> (PDF)</li>
 <li><a href="./connectors-spec-1.7.html">Jakarta Connectors 1.7 Specification Document</a> (HTML)</li>
 <li><a href="./apidocs">Jakarta Connectors 1.7 Javadoc</a></li>
-<li><a href="http://download.eclipse.org/jakartaee/connectors/1.7/jakarta-connectors-tck-1.7.0.zip" target="_blank">Jakarta Connectors 1.7 TCK</a> (<a href="http://download.eclipse.org/jakartaee/connectors/1.7/jakarta-connectors-tck-1.7.0.zip.sig" target="_blank">sig</a>,<a href="http://download.eclipse.org/jakartaee/connectors/1.7/jakarta-connectors-tck-1.7.0.zip.sha256" target="_blank">sha</a>,<a href="https://raw.githubusercontent.com/jakartaee/specification-committee/master/jakartaee-spec-committee.pub" target="_blank">pub</a>)</li>
+<li><a href="http://download.eclipse.org/jakartaee/connectors/1.7/jakarta-connectors-tck-1.7.0.zip">Jakarta Connectors 1.7 TCK</a> (<a href="http://download.eclipse.org/jakartaee/connectors/1.7/jakarta-connectors-tck-1.7.0.zip.sig">sig</a>,<a href="http://download.eclipse.org/jakartaee/connectors/1.7/jakarta-connectors-tck-1.7.0.zip.sha256">sha</a>,<a href="https://raw.githubusercontent.com/jakartaee/specification-committee/master/jakartaee-spec-committee.pub">pub</a>)</li>
 <li>Maven coordinates
-
 <ul>
-<li><a href="https://search.maven.org/artifact/jakarta.resource/jakarta.resource-api/1.7.4/jar" target="_blank">jakarta.resource:jakarta.resource-api:jar:1.7.4</a></li>
-</ul></li>
+<li><a href="https://search.maven.org/artifact/jakarta.resource/jakarta.resource-api/1.7.4/jar">jakarta.resource:jakarta.resource-api:jar:1.7.4</a></li>
 </ul>
-
+</li>
+</ul>
 <h1 id="ballots">Ballots</h1>
-
 <h2 id="release-review">Release Review</h2>
-
 <p>The Specification Committee Ballot concluded successfully on 2019-09-04 with the following results.</p>
-
 <table>
 <thead>
 <tr>
@@ -331,7 +318,6 @@
 <th>Abstain</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td>Fujitsu</td>
@@ -339,56 +325,48 @@
 <td></td>
 <td></td>
 </tr>
-
 <tr>
 <td>IBM</td>
 <td>+1</td>
 <td></td>
 <td></td>
 </tr>
-
 <tr>
 <td>Oracle</td>
 <td>+1</td>
 <td></td>
 <td></td>
 </tr>
-
 <tr>
 <td>Payara</td>
 <td>+1</td>
 <td></td>
 <td></td>
 </tr>
-
 <tr>
 <td>Red Hat</td>
 <td>+1</td>
 <td></td>
 <td></td>
 </tr>
-
 <tr>
 <td>Tomitribe</td>
 <td>+1</td>
 <td></td>
 <td></td>
 </tr>
-
 <tr>
 <td>EE4J PMC</td>
 <td>+1</td>
 <td></td>
 <td></td>
 </tr>
-
 <tr>
 <td>Participant Members</td>
 <td></td>
 <td></td>
 <td></td>
 </tr>
-
 <tr>
 <td>Committer Members</td>
 <td>+1</td>
@@ -397,13 +375,10 @@
 </tr>
 </tbody>
 </table>
-
-<p>The ballot was run in the <a href="https://www.eclipse.org/lists/jakarta.ee-spec/msg00510.html" target="_blank">jakarta.ee-spec mailing list</a></p>
-
+<p>The ballot was run in the <a href="https://www.eclipse.org/lists/jakarta.ee-spec/msg00510.html">jakarta.ee-spec mailing list</a></p>
 <h1 id="compatible-implementations">Compatible Implementations</h1>
-
 <ul>
-<li><a href="https://www.eclipse.org/downloads/download.php?file=/glassfish/glassfish-5.1.0.zip" target="_blank">Eclipse GlassFish 5.1</a></li>
+<li><a href="https://www.eclipse.org/downloads/download.php?file=/glassfish/glassfish-5.1.0.zip">Eclipse GlassFish 5.1</a></li>
 </ul>
 
   <div class="news-list"> 

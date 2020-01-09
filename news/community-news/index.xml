@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Community News on Jakarta® EE: The New Home of Cloud Native Java</title>
@@ -45,7 +45,7 @@
       <pubDate>Tue, 10 Sep 2019 05:10:00 +0000</pubDate>
       <author>webdev@eclipse-foundation.org (Christopher Guindon)</author>
       <guid>https://jakarta.ee/news/community-news/2019/09/10/enterprise-java-spec-packs-bags-ready-for-new-life-under-assumed-name-jakarta/</guid>
-      <description>Enterprise Java, known as Java Enterprise Edition 8 (Java EE 8) under Oracle&amp;rsquo;s implementation of the platform specification, has finally packed up and moved out of Big Red&amp;rsquo;s basement under a new name, so it won&amp;rsquo;t bear the burden of its heritage.</description>
+      <description>Enterprise Java, known as Java Enterprise Edition 8 (Java EE 8) under Oracle&#39;s implementation of the platform specification, has finally packed up and moved out of Big Red&#39;s basement under a new name, so it won&#39;t bear the burden of its heritage.</description>
     </item>
     
     <item>
@@ -144,7 +144,7 @@
       <pubDate>Wed, 07 Aug 2019 13:53:00 +0000</pubDate>
       <author>webdev@eclipse-foundation.org (Christopher Guindon)</author>
       <guid>https://jakarta.ee/news/community-news/2019/08/07/why-you-should-attend-jakartaone-livestream/</guid>
-      <description>If you are a server-side Java developer, you should be attending JakartaOne Livestream. As the name implies, it is a virtual conference to cover all things Jakarta EE (in case you weren&amp;rsquo;t paying attention, Jakarta EE is Java EE transferred to the Eclipse Foundation from Oracle).</description>
+      <description>If you are a server-side Java developer, you should be attending JakartaOne Livestream. As the name implies, it is a virtual conference to cover all things Jakarta EE (in case you weren&#39;t paying attention, Jakarta EE is Java EE transferred to the Eclipse Foundation from Oracle).</description>
     </item>
     
     <item>
@@ -288,7 +288,7 @@
       <pubDate>Thu, 18 Apr 2019 05:10:00 +0000</pubDate>
       <author>webdev@eclipse-foundation.org (Christopher Guindon)</author>
       <guid>https://jakarta.ee/news/community-news/2019/04/18/red-hat-replaces-oracle-as-openjdk-8-openjdk-11-steward/</guid>
-      <description>Red Hat has taken control of two popular versions of the open source Java implementation, so developers can continue to build apps after Oracle&amp;rsquo;s support ends.</description>
+      <description>Red Hat has taken control of two popular versions of the open source Java implementation, so developers can continue to build apps after Oracle&#39;s support ends.</description>
     </item>
     
     <item>
@@ -396,7 +396,7 @@
       <pubDate>Sat, 26 Jan 2019 11:15:00 +0000</pubDate>
       <author>webdev@eclipse-foundation.org (Christopher Guindon)</author>
       <guid>https://jakarta.ee/news/community-news/2019/01/26/eclipse-glassfish-5.1.0.rc2-has-been-released/</guid>
-      <description>That&amp;rsquo;s right, Eclipse Glassfish 5.1.0.RC2, the Jakarta EE implementation, has been published in maven central. Eclipse Glassfish 5.1.0 release is terribly close.</description>
+      <description>That&#39;s right, Eclipse Glassfish 5.1.0.RC2, the Jakarta EE implementation, has been published in maven central. Eclipse Glassfish 5.1.0 release is terribly close.</description>
     </item>
     
     <item>
@@ -441,7 +441,7 @@
       <pubDate>Thu, 13 Dec 2018 10:00:00 +0000</pubDate>
       <author>webdev@eclipse-foundation.org (Christopher Guindon)</author>
       <guid>https://jakarta.ee/news/community-news/2018/12/13/eclipse-ee4j-and-glassfish-now-being-fully-built-and-tested-as-open-source/</guid>
-      <description>The Eclipse EE4J project has reached a milestone of having all of it&amp;rsquo;s sub-projects available in Eclipse EE4J github organization with nightly and release builds run under the Eclipse CI environment.</description>
+      <description>The Eclipse EE4J project has reached a milestone of having all of it&#39;s sub-projects available in Eclipse EE4J github organization with nightly and release builds run under the Eclipse CI environment.</description>
     </item>
     
     <item>
@@ -459,7 +459,7 @@
       <pubDate>Thu, 08 Nov 2018 10:00:00 +0000</pubDate>
       <author>webdev@eclipse-foundation.org (Christopher Guindon)</author>
       <guid>https://jakarta.ee/news/community-news/2018/11/08/jakarta-ee-what-is-it-and-what-does-it-mean-for-enterprise-java/</guid>
-      <description>Watch the recorded panel discussion from Oracle CodeOne&amp;rsquo;s 2018 technical session.</description>
+      <description>Watch the recorded panel discussion from Oracle CodeOne&#39;s 2018 technical session.</description>
     </item>
     
     <item>
@@ -567,7 +567,7 @@
       <pubDate>Mon, 18 Jun 2018 11:15:00 +0000</pubDate>
       <author>webdev@eclipse-foundation.org (Christopher Guindon)</author>
       <guid>https://jakarta.ee/news/community-news/2018/06/18/2018-java-ecosystem-executive-insights/</guid>
-      <description>Take a look at what more than a dozen executives have to say about the Java ecosystem and what&amp;rsquo;s on the horizon.</description>
+      <description>Take a look at what more than a dozen executives have to say about the Java ecosystem and what&#39;s on the horizon.</description>
     </item>
     
     <item>
@@ -576,7 +576,7 @@
       <pubDate>Mon, 18 Jun 2018 11:15:00 +0000</pubDate>
       <author>webdev@eclipse-foundation.org (Christopher Guindon)</author>
       <guid>https://jakarta.ee/news/community-news/2018/06/18/proposed-jakarta-ee-design-principles/</guid>
-      <description>Let&amp;rsquo;s take a look at some suggested design principles that some feel Jakarta EE should follow. What suggestions do you have?</description>
+      <description>Let&#39;s take a look at some suggested design principles that some feel Jakarta EE should follow. What suggestions do you have?</description>
     </item>
     
     <item>
@@ -612,7 +612,7 @@
       <pubDate>Fri, 08 Jun 2018 15:30:00 +0000</pubDate>
       <author>webdev@eclipse-foundation.org (Christopher Guindon)</author>
       <guid>https://jakarta.ee/news/community-news/2018/06/08/where-does-java-in-the-enterprise-go-from-here/</guid>
-      <description>Oracle recently freed J2EE, aka Java EE. Now known as Jakarta EE, enterprise Java&amp;rsquo;s new manager the Eclipse Foundation is revealing its plans for the popular middleware platform.</description>
+      <description>Oracle recently freed J2EE, aka Java EE. Now known as Jakarta EE, enterprise Java&#39;s new manager the Eclipse Foundation is revealing its plans for the popular middleware platform.</description>
     </item>
     
     <item>
@@ -711,7 +711,7 @@
       <pubDate>Tue, 24 Apr 2018 05:03:58 -0400</pubDate>
       <author>webdev@eclipse-foundation.org (Christopher Guindon)</author>
       <guid>https://jakarta.ee/news/community-news/2018/04/24/the-future-of-cloud-native-open-source-java-with-jakarta-ee/</guid>
-      <description>It&amp;rsquo;s here! The Eclipse Foundation has announced the future of Java EE with the release of Jakarta EE: a cloud-native Java and an open source governance model.</description>
+      <description>It&#39;s here! The Eclipse Foundation has announced the future of Java EE with the release of Jakarta EE: a cloud-native Java and an open source governance model.</description>
     </item>
     
   </channel>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
@@ -13,6 +13,11 @@
   <url>
     <loc>https://jakarta.ee/news/announcements/2020/01/06/jakarta-ee-update-call-january-2020/</loc>
     <lastmod>2020-01-06T22:00:00-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jakarta.ee/projects/</loc>
+    <lastmod>2020-01-01T16:10:38-04:00</lastmod>
   </url>
   
   <url>
@@ -266,12 +271,12 @@
   </url>
   
   <url>
-    <loc>https://jakarta.ee/specifications/xml-rpc/1.1/</loc>
+    <loc>https://jakarta.ee/specifications/xml-registries/1.0/</loc>
     <lastmod>2019-09-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://jakarta.ee/specifications/xml-registries/1.0/</loc>
+    <loc>https://jakarta.ee/specifications/xml-rpc/1.1/</loc>
     <lastmod>2019-09-10T00:00:00+00:00</lastmod>
   </url>
   
@@ -333,6 +338,11 @@
   <url>
     <loc>https://jakarta.ee/news/community-news/2019/07/03/j4k-conference-one-kubernetes-one-java-all-clouds/</loc>
     <lastmod>2019-07-03T05:10:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jakarta.ee/legal/</loc>
+    <lastmod>2019-06-26T16:10:38-04:00</lastmod>
   </url>
   
   <url>
@@ -751,6 +761,11 @@
   </url>
   
   <url>
+    <loc>https://jakarta.ee/news/</loc>
+    <lastmod>2018-06-04T10:00:58-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://jakarta.ee/news/announcements/2018/05/28/jakarta-ee-progress-to-date/</loc>
     <lastmod>2018-05-28T08:10:24+00:00</lastmod>
   </url>
@@ -861,11 +876,13 @@
   </url>
   
   <url>
-    <loc>https://jakarta.ee/specifications/readme/</loc>
+    <loc>https://jakarta.ee/specifications/pull_request_template/</loc>
+    <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://jakarta.ee/specifications/pull_request_template/</loc>
+    <loc>https://jakarta.ee/specifications/readme/</loc>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -1069,10 +1086,6 @@
   </url>
   
   <url>
-    <loc>https://jakarta.ee/specifications/soap-attachments/</loc>
-  </url>
-  
-  <url>
     <loc>https://jakarta.ee/specifications/security/</loc>
   </url>
   
@@ -1102,6 +1115,10 @@
   
   <url>
     <loc>https://jakarta.ee/specifications/servlet/5.0/</loc>
+  </url>
+  
+  <url>
+    <loc>https://jakarta.ee/specifications/soap-attachments/</loc>
   </url>
   
   <url>
@@ -1137,11 +1154,11 @@
   </url>
   
   <url>
-    <loc>https://jakarta.ee/specifications/xml-rpc/</loc>
+    <loc>https://jakarta.ee/specifications/xml-registries/</loc>
   </url>
   
   <url>
-    <loc>https://jakarta.ee/specifications/xml-registries/</loc>
+    <loc>https://jakarta.ee/specifications/xml-rpc/</loc>
   </url>
   
   <url>
@@ -1149,19 +1166,7 @@
   </url>
   
   <url>
-    <loc>https://jakarta.ee/legal/</loc>
-    <lastmod>2019-06-26T16:10:38-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://jakarta.ee/news/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://jakarta.ee/specifications/</loc>
-    <priority>0</priority>
   </url>
   
 </urlset>

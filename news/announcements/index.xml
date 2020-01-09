@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Announcements on Jakarta® EE: The New Home of Cloud Native Java</title>
@@ -27,7 +27,7 @@
       <pubDate>Wed, 04 Dec 2019 05:10:00 +0000</pubDate>
       <author>webdev@eclipse-foundation.org (Christopher Guindon)</author>
       <guid>https://jakarta.ee/news/announcements/2019/12/04/best-practices-for-modern-enterprise-java-projects-jakarta-tech-talk/</guid>
-      <description>Join us for Sebastian Daschner&amp;rsquo;s Jakarta Tech Talk on Dec 10!</description>
+      <description>Join us for Sebastian Daschner&#39;s Jakarta Tech Talk on Dec 10!</description>
     </item>
     
     <item>
@@ -135,7 +135,7 @@
       <pubDate>Fri, 21 Jun 2019 05:10:00 +0000</pubDate>
       <author>webdev@eclipse-foundation.org (Christopher Guindon)</author>
       <guid>https://jakarta.ee/news/announcements/2019/06/21/become-a-sponsor-at-eclipsecon-europe-2019/</guid>
-      <description>We&amp;rsquo;re gearing up for EclipseCon Europe 2019, our biggest event of the year which brings together developers, architects, and open source business leaders.</description>
+      <description>We&#39;re gearing up for EclipseCon Europe 2019, our biggest event of the year which brings together developers, architects, and open source business leaders.</description>
     </item>
     
     <item>
@@ -333,7 +333,7 @@
       <pubDate>Tue, 18 Sep 2018 08:45:00 +0000</pubDate>
       <author>webdev@eclipse-foundation.org (Christopher Guindon)</author>
       <guid>https://jakarta.ee/news/announcements/2018/09/18/welcoming-glassfish-to-the-eclipse-foundation/</guid>
-      <description>A major milestone was achieved yesterday! The GlassFish code from Oracle made its home in the Eclipse Foundation&amp;rsquo;s Git repositories, starting a new era of Eclipse GlassFish. This is another step in making Jakarta EE a vehicle for innovation in cloud-native application development.</description>
+      <description>A major milestone was achieved yesterday! The GlassFish code from Oracle made its home in the Eclipse Foundation&#39;s Git repositories, starting a new era of Eclipse GlassFish. This is another step in making Jakarta EE a vehicle for innovation in cloud-native application development.</description>
     </item>
     
     <item>
@@ -342,7 +342,7 @@
       <pubDate>Tue, 31 Jul 2018 05:10:00 +0000</pubDate>
       <author>webdev@eclipse-foundation.org (Christopher Guindon)</author>
       <guid>https://jakarta.ee/news/announcements/2018/07/31/eclipse-foundation-announces-jakarta-ee-committee-election-results/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Ottawa, Canada - July 31, 2018&lt;/strong&gt; - Today we are pleased to announce the results of the Participant and Committer Member elections for representatives to the Jakarta EE Working Group Steering Committee, Specification Committee, and Marketing &amp;amp; Brand Committee. These committees provide governance for the evolution and adoption of Jakarta EE, the community-led platform created from the contribution of Java EE technologies and hosted by the Eclipse Foundation.&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;!-- raw HTML omitted --&gt;Ottawa, Canada - July 31, 2018&lt;!-- raw HTML omitted --&gt; - Today we are pleased to announce the results of the Participant and Committer Member elections for representatives to the Jakarta EE Working Group Steering Committee, Specification Committee, and Marketing &amp;amp; Brand Committee. These committees provide governance for the evolution and adoption of Jakarta EE, the community-led platform created from the contribution of Java EE technologies and hosted by the Eclipse Foundation.&lt;/p&gt;</description>
     </item>
     
     <item>

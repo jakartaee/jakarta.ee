@@ -11,13 +11,9 @@
 <meta property="og:title" content="Jakarta Authentication 1.1 | The Eclipse Foundation" />
 <meta name="twitter:title" content="Jakarta Authentication 1.1 | The Eclipse Foundation" />
 
-<meta name="description" content="Jakarta Authentication defines a general low-level SPI for authentication mechanisms, which are controllers that interact with a caller and a container&rsquo;s environment to obtain the caller&rsquo;s credentials, validate these, and pass an authenticated identity (such as name and groups) to the container.
-Jakarta Authentication consists of several profiles, with each profile telling how a specific container (such as Jakarta Servlet) can integrate with- and adapt to this SPI.
- Jakarta Authentication 1.">
-<meta property="og:description" content="Jakarta Authentication defines a general low-level SPI for authentication mechanisms, which are controllers that interact with a caller and a container&rsquo;s environment to obtain the caller&rsquo;s credentials, validate these, and pass an authenticated identity (such as name and groups) to the container.
-Jakarta Authentication consists of several profiles, with each profile telling how a specific container (such as Jakarta Servlet) can integrate with- and adapt to this SPI.
- Jakarta Authentication 1.">
-<meta name="twitter:description" content="Jakarta Authentication defines a general low-level SPI for authentication mechanisms, which are controllers that interact with a caller and a container&rsquo;s environment to obtain the caller&rsquo;s …">
+<meta name="description" content="First release for Jakarta EE 8">
+<meta property="og:description" content="First release for Jakarta EE 8">
+<meta name="twitter:description" content="First release for Jakarta EE 8">
 <meta name="author" content="Christopher Guindon"/>
 <link href='https://jakarta.ee/images/jakarta/favicon.ico' rel='icon' type='image/x-icon'/>
 <meta property="og:image" content="https://jakarta.ee/images/jakarta/jakarta_ee_400x400.png" />
@@ -31,7 +27,7 @@ Jakarta Authentication consists of several profiles, with each profile telling h
 <meta name="keywords" content="Jakarta EE software, Java EE, cloud, microservices, enterprise, open source, innovation">
 
 
-<meta name="generator" content="Hugo 0.54.0" />
+<meta name="generator" content="Hugo 0.62.2" />
 <link rel="canonical" href="https://jakarta.ee/specifications/authentication/1.1/" />
 
 <link rel="alternate" href="/specifications/authentication/1.1/index.xml" type="application/rss+xml" title="">
@@ -225,7 +221,6 @@ Jakarta Authentication consists of several profiles, with each profile telling h
     </button>
   
   <div class="wrapper-logo-mobile">
-    
       <a class="navbar-brand visible-xs" title="Jakarta® EE: The New Home of Cloud Native Java" href="https://jakarta.ee/">
         <img width="140" class="logo-eclipse-default-mobile img-responsive" src="https://jakarta.ee/images/jakarta/jakarta-ee-logo.svg" alt="Jakarta® EE: The New Home of Cloud Native Java" />
       </a>
@@ -245,7 +240,7 @@ Jakarta Authentication consists of several profiles, with each profile telling h
   
 <section class="default-breadcrumbs hidden-print" id="breadcrumb">
   <div class="container">
-    <h3 class="sr-only">Breadcrumbs</h3>
+    <h3 class="sr-only">Breadcrumb</h3>
     <div class="row">
       <div class="col-sm-24">
         <ol class="breadcrumb">
@@ -299,33 +294,25 @@ Jakarta Authentication consists of several profiles, with each profile telling h
       
     </h1>
   
-  
-
-<p>Jakarta Authentication defines a general low-level SPI for authentication mechanisms, which are controllers
-that interact with a caller and a container&rsquo;s environment to obtain the caller&rsquo;s credentials, validate these,
+  <p>Jakarta Authentication defines a general low-level SPI for authentication mechanisms, which are controllers
+that interact with a caller and a container's environment to obtain the caller's credentials, validate these,
 and pass an authenticated identity (such as name and groups) to the container.</p>
-
 <p>Jakarta Authentication consists of several profiles, with each profile telling how a specific container
 (such as Jakarta Servlet) can integrate with- and adapt to this SPI.</p>
-
 <ul>
 <li><a href="./authentication-spec-1.1.pdf">Jakarta Authentication 1.1 Specification Document</a> (PDF)</li>
 <li><a href="./authentication-spec-1.1.html">Jakarta Authentication 1.1 Specification Document</a> (HTML)</li>
 <li><a href="./apidocs">Jakarta Authentication 1.1 Javadoc</a></li>
-<li><a href="https://download.eclipse.org/jakartaee/authentication/1.1/jakarta-authentication-tck-1.1.0.zip" target="_blank">Jakarta Authentication 1.1 TCK</a> (<a href="https://download.eclipse.org/jakartaee/authentication/1.1/jakarta-authentication-tck-1.1.0.zip.sig" target="_blank">sig</a>,<a href="https://download.eclipse.org/jakartaee/authentication/1.1/jakarta-authentication-tck-1.1.0.zip.sha256" target="_blank">sha</a>,<a href="https://raw.githubusercontent.com/jakartaee/specification-committee/master/jakartaee-spec-committee.pub" target="_blank">pub</a>)</li>
+<li><a href="https://download.eclipse.org/jakartaee/authentication/1.1/jakarta-authentication-tck-1.1.0.zip">Jakarta Authentication 1.1 TCK</a> (<a href="https://download.eclipse.org/jakartaee/authentication/1.1/jakarta-authentication-tck-1.1.0.zip.sig">sig</a>,<a href="https://download.eclipse.org/jakartaee/authentication/1.1/jakarta-authentication-tck-1.1.0.zip.sha256">sha</a>,<a href="https://raw.githubusercontent.com/jakartaee/specification-committee/master/jakartaee-spec-committee.pub">pub</a>)</li>
 <li>Maven coordinates
-
 <ul>
-<li><a href="https://search.maven.org/artifact/jakarta.security.auth.message/jakarta.security.auth.message-api/1.1.3/jar" target="_blank">jakarta.security.auth.message:jakarta.security.auth.message-api:jar:1.1.3</a></li>
-</ul></li>
+<li><a href="https://search.maven.org/artifact/jakarta.security.auth.message/jakarta.security.auth.message-api/1.1.3/jar">jakarta.security.auth.message:jakarta.security.auth.message-api:jar:1.1.3</a></li>
 </ul>
-
+</li>
+</ul>
 <h1 id="ballots">Ballots</h1>
-
 <h2 id="release-review">Release Review</h2>
-
 <p>The Specification Committee Ballot concluded successfully on 2019-09-02 with the following results.</p>
-
 <table>
 <thead>
 <tr>
@@ -335,7 +322,6 @@ and pass an authenticated identity (such as name and groups) to the container.</
 <th>Abstain</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td>Fujitsu</td>
@@ -343,56 +329,48 @@ and pass an authenticated identity (such as name and groups) to the container.</
 <td></td>
 <td></td>
 </tr>
-
 <tr>
 <td>IBM</td>
 <td>+1</td>
 <td></td>
 <td></td>
 </tr>
-
 <tr>
 <td>Oracle</td>
 <td>+1</td>
 <td></td>
 <td></td>
 </tr>
-
 <tr>
 <td>Payara</td>
 <td>+1</td>
 <td></td>
 <td></td>
 </tr>
-
 <tr>
 <td>Red Hat</td>
 <td>+1</td>
 <td></td>
 <td></td>
 </tr>
-
 <tr>
 <td>Tomitribe</td>
 <td>+1</td>
 <td></td>
 <td></td>
 </tr>
-
 <tr>
 <td>EE4J PMC</td>
 <td>+1</td>
 <td></td>
 <td></td>
 </tr>
-
 <tr>
 <td>Participant Members</td>
 <td>+1</td>
 <td></td>
 <td></td>
 </tr>
-
 <tr>
 <td>Committer Members</td>
 <td>+1</td>
@@ -401,13 +379,10 @@ and pass an authenticated identity (such as name and groups) to the container.</
 </tr>
 </tbody>
 </table>
-
-<p>The ballot was run in the <a href="https://www.eclipse.org/lists/jakarta.ee-spec/msg00504.html" target="_blank">jakarta.ee-spec mailing list</a></p>
-
+<p>The ballot was run in the <a href="https://www.eclipse.org/lists/jakarta.ee-spec/msg00504.html">jakarta.ee-spec mailing list</a></p>
 <h1 id="compatible-implementations">Compatible Implementations</h1>
-
 <ul>
-<li><a href="https://eclipse-ee4j.github.io/glassfish" target="_blank">Eclipse GlassFish 5.1</a></li>
+<li><a href="https://eclipse-ee4j.github.io/glassfish">Eclipse GlassFish 5.1</a></li>
 </ul>
 
   <div class="news-list"> 

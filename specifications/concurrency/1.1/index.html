@@ -11,13 +11,9 @@
 <meta property="og:title" content="Jakarta Concurrency 1.1 | The Eclipse Foundation" />
 <meta name="twitter:title" content="Jakarta Concurrency 1.1 | The Eclipse Foundation" />
 
-<meta name="description" content="Jakarta Concurrency provides a specification for using concurrency from application components without compromising container integrity while still preserving the Jakarta EE platform&rsquo;s fundamental benefits.
- Jakarta Concurrency 1.1 Specification Document (PDF) Jakarta Concurrency 1.1 Specification Document (HTML) Jakarta Concurrency 1.1 Javadoc Jakarta Concurrency 1.1 TCK (sig,sha,pub) Maven coordinates  jakarta.enterprise.concurrent:jakarta.enterprise.concurrent-api:jar:1.1.2   Ballots Release Review The Specification Committee Ballot concluded successfully on 2019-09-04 with the following results.
-    Yes No Abstain     Fujitsu &#43;1     IBM &#43;1     Oracle &#43;1     Payara &#43;1     Red Hat &#43;1     Tomitribe &#43;1     EE4J PMC &#43;1     Participant Members &#43;1     Committer Members &#43;1      The ballot was run in the jakarta.">
-<meta property="og:description" content="Jakarta Concurrency provides a specification for using concurrency from application components without compromising container integrity while still preserving the Jakarta EE platform&rsquo;s fundamental benefits.
- Jakarta Concurrency 1.1 Specification Document (PDF) Jakarta Concurrency 1.1 Specification Document (HTML) Jakarta Concurrency 1.1 Javadoc Jakarta Concurrency 1.1 TCK (sig,sha,pub) Maven coordinates  jakarta.enterprise.concurrent:jakarta.enterprise.concurrent-api:jar:1.1.2   Ballots Release Review The Specification Committee Ballot concluded successfully on 2019-09-04 with the following results.
-    Yes No Abstain     Fujitsu &#43;1     IBM &#43;1     Oracle &#43;1     Payara &#43;1     Red Hat &#43;1     Tomitribe &#43;1     EE4J PMC &#43;1     Participant Members &#43;1     Committer Members &#43;1      The ballot was run in the jakarta.">
-<meta name="twitter:description" content="Jakarta Concurrency provides a specification for using concurrency from application components without compromising container integrity while still preserving the Jakarta EE platform&rsquo;s …">
+<meta name="description" content="Jakarta EE 8 Release.">
+<meta property="og:description" content="Jakarta EE 8 Release.">
+<meta name="twitter:description" content="Jakarta EE 8 Release.">
 <meta name="author" content="Christopher Guindon"/>
 <link href='https://jakarta.ee/images/jakarta/favicon.ico' rel='icon' type='image/x-icon'/>
 <meta property="og:image" content="https://jakarta.ee/images/jakarta/jakarta_ee_400x400.png" />
@@ -31,7 +27,7 @@
 <meta name="keywords" content="Jakarta EE software, Java EE, cloud, microservices, enterprise, open source, innovation">
 
 
-<meta name="generator" content="Hugo 0.54.0" />
+<meta name="generator" content="Hugo 0.62.2" />
 <link rel="canonical" href="https://jakarta.ee/specifications/concurrency/1.1/" />
 
 <link rel="alternate" href="/specifications/concurrency/1.1/index.xml" type="application/rss+xml" title="">
@@ -225,7 +221,6 @@
     </button>
   
   <div class="wrapper-logo-mobile">
-    
       <a class="navbar-brand visible-xs" title="Jakarta® EE: The New Home of Cloud Native Java" href="https://jakarta.ee/">
         <img width="140" class="logo-eclipse-default-mobile img-responsive" src="https://jakarta.ee/images/jakarta/jakarta-ee-logo.svg" alt="Jakarta® EE: The New Home of Cloud Native Java" />
       </a>
@@ -245,7 +240,7 @@
   
 <section class="default-breadcrumbs hidden-print" id="breadcrumb">
   <div class="container">
-    <h3 class="sr-only">Breadcrumbs</h3>
+    <h3 class="sr-only">Breadcrumb</h3>
     <div class="row">
       <div class="col-sm-24">
         <ol class="breadcrumb">
@@ -299,28 +294,21 @@
       
     </h1>
   
-  
-
-<p>Jakarta Concurrency provides a specification for using concurrency from application components without compromising container integrity while still preserving the Jakarta EE platform&rsquo;s fundamental benefits.</p>
-
+  <p>Jakarta Concurrency provides a specification for using concurrency from application components without compromising container integrity while still preserving the Jakarta EE platform's fundamental benefits.</p>
 <ul>
 <li><a href="./concurrency-spec-1.1.pdf">Jakarta Concurrency 1.1 Specification Document</a> (PDF)</li>
 <li><a href="./concurrency-spec-1.1.html">Jakarta Concurrency 1.1 Specification Document</a> (HTML)</li>
 <li><a href="./apidocs">Jakarta Concurrency 1.1 Javadoc</a></li>
-<li><a href="https://download.eclipse.org/jakartaee/concurrency/1.1/jakarta-concurrency-tck-1.1.0.zip" target="_blank">Jakarta Concurrency 1.1 TCK</a> (<a href="https://download.eclipse.org/jakartaee/concurrency/1.1/jakarta-concurrency-tck-1.1.0.zip.sig" target="_blank">sig</a>,<a href="https://download.eclipse.org/jakartaee/concurrency/1.1/jakarta-concurrency-tck-1.1.0.zip.sha256" target="_blank">sha</a>,<a href="https://raw.githubusercontent.com/jakartaee/specification-committee/master/jakartaee-spec-committee.pub" target="_blank">pub</a>)</li>
+<li><a href="https://download.eclipse.org/jakartaee/concurrency/1.1/jakarta-concurrency-tck-1.1.0.zip">Jakarta Concurrency 1.1 TCK</a> (<a href="https://download.eclipse.org/jakartaee/concurrency/1.1/jakarta-concurrency-tck-1.1.0.zip.sig">sig</a>,<a href="https://download.eclipse.org/jakartaee/concurrency/1.1/jakarta-concurrency-tck-1.1.0.zip.sha256">sha</a>,<a href="https://raw.githubusercontent.com/jakartaee/specification-committee/master/jakartaee-spec-committee.pub">pub</a>)</li>
 <li>Maven coordinates
-
 <ul>
-<li><a href="https://search.maven.org/artifact/jakarta.enterprise.concurrent/jakarta.enterprise.concurrent-api/1.1.2/jar" target="_blank">jakarta.enterprise.concurrent:jakarta.enterprise.concurrent-api:jar:1.1.2</a></li>
-</ul></li>
+<li><a href="https://search.maven.org/artifact/jakarta.enterprise.concurrent/jakarta.enterprise.concurrent-api/1.1.2/jar">jakarta.enterprise.concurrent:jakarta.enterprise.concurrent-api:jar:1.1.2</a></li>
 </ul>
-
+</li>
+</ul>
 <h1 id="ballots">Ballots</h1>
-
 <h2 id="release-review">Release Review</h2>
-
 <p>The Specification Committee Ballot concluded successfully on 2019-09-04 with the following results.</p>
-
 <table>
 <thead>
 <tr>
@@ -330,7 +318,6 @@
 <th>Abstain</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td>Fujitsu</td>
@@ -338,56 +325,48 @@
 <td></td>
 <td></td>
 </tr>
-
 <tr>
 <td>IBM</td>
 <td>+1</td>
 <td></td>
 <td></td>
 </tr>
-
 <tr>
 <td>Oracle</td>
 <td>+1</td>
 <td></td>
 <td></td>
 </tr>
-
 <tr>
 <td>Payara</td>
 <td>+1</td>
 <td></td>
 <td></td>
 </tr>
-
 <tr>
 <td>Red Hat</td>
 <td>+1</td>
 <td></td>
 <td></td>
 </tr>
-
 <tr>
 <td>Tomitribe</td>
 <td>+1</td>
 <td></td>
 <td></td>
 </tr>
-
 <tr>
 <td>EE4J PMC</td>
 <td>+1</td>
 <td></td>
 <td></td>
 </tr>
-
 <tr>
 <td>Participant Members</td>
 <td>+1</td>
 <td></td>
 <td></td>
 </tr>
-
 <tr>
 <td>Committer Members</td>
 <td>+1</td>
@@ -396,13 +375,10 @@
 </tr>
 </tbody>
 </table>
-
-<p>The ballot was run in the <a href="https://www.eclipse.org/lists/jakarta.ee-spec/msg00453.html" target="_blank">jakarta.ee-spec mailing list</a></p>
-
+<p>The ballot was run in the <a href="https://www.eclipse.org/lists/jakarta.ee-spec/msg00453.html">jakarta.ee-spec mailing list</a></p>
 <h1 id="compatible-implementations">Compatible Implementations</h1>
-
 <ul>
-<li><a href="https://www.eclipse.org/downloads/download.php?file=/glassfish/glassfish-5.1.0.zip" target="_blank">Eclipse GlassFish 5.1</a></li>
+<li><a href="https://www.eclipse.org/downloads/download.php?file=/glassfish/glassfish-5.1.0.zip">Eclipse GlassFish 5.1</a></li>
 </ul>
 
   <div class="news-list"> 
