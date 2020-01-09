@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Jakarta Context Dependency Injection 3.0 (under development) on Jakarta® EE: The New Home of Cloud Native Java</title>
+    <link>https://jakarta.ee/specifications/cdi/3.0/</link>
+    <description>Recent content in Jakarta Context Dependency Injection 3.0 (under development) on Jakarta® EE: The New Home of Cloud Native Java</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>webdev@eclipse-foundation.org (Christopher Guindon)</managingEditor>
+    <webMaster>webdev@eclipse-foundation.org (Christopher Guindon)</webMaster>
+    
+	<atom:link href="https://jakarta.ee/specifications/cdi/3.0/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+  </channel>
+</rss>
