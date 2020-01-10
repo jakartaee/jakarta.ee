@@ -1,41 +1,8 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>About on Jakarta® EE: The New Home of Cloud Native Java</title>
-    <link>https://jakarta.ee/about/</link>
-    <description>Recent content in About on Jakarta® EE: The New Home of Cloud Native Java</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <managingEditor>webdev@eclipse-foundation.org (Christopher Guindon)</managingEditor>
-    <webMaster>webdev@eclipse-foundation.org (Christopher Guindon)</webMaster>
-    <lastBuildDate>Thu, 05 Apr 2018 16:09:45 -0400</lastBuildDate>
-    
-	<atom:link href="https://jakarta.ee/about/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>Jakarta EE Specification Process</title>
-      <link>https://jakarta.ee/about/jesp/</link>
-      <pubDate>Tue, 16 Jul 2019 13:00:00 -0400</pubDate>
-      <author>webdev@eclipse-foundation.org (Christopher Guindon)</author>
-      <guid>https://jakarta.ee/about/jesp/</guid>
-      <description>Version 1.2. Effective July 16, 2019
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>About on Jakarta® EE: The New Home of Cloud Native Java</title><link>https://jakarta.ee/about/</link><description>Recent content in About on Jakarta® EE: The New Home of Cloud Native Java</description><generator>Hugo -- gohugo.io</generator><managingEditor>webdev@eclipse-foundation.org (Christopher Guindon)</managingEditor><webMaster>webdev@eclipse-foundation.org (Christopher Guindon)</webMaster><lastBuildDate>Thu, 05 Apr 2018 16:09:45 -0400</lastBuildDate><atom:link href="https://jakarta.ee/about/index.xml" rel="self" type="application/rss+xml"/><item><title>Jakarta EE Specification Process</title><link>https://jakarta.ee/about/jesp/</link><pubDate>Tue, 16 Jul 2019 13:00:00 -0400</pubDate><author>webdev@eclipse-foundation.org (Christopher Guindon)</author><guid>https://jakarta.ee/about/jesp/</guid><description>Version 1.2. Effective July 16, 2019
 The Jakarta EE Specification Process (JESP) is concerned with the Specification Process as it applies to Specification Projects operating under the purview of the Jakarta EE Working Group.
 The Jakarta EE Specification Committee hereby adopts the Eclipse Foundation Specification Process v1.2 (EFSP) as the Jakarta EE Specification Process with the following modifications:
- Any modification to or revision of this Jakarta EE Specification Process, including the adoption of a new version of the EFSP, must be approved by a Super-majority of the Specification Committee, including a Super-majority of the Strategic Members of the Jakarta EE Working Group, in addition to any other ballot requirements set forth in the EFSP.</description>
-    </item>
-    
-    <item>
-      <title>Frequently Asked Questions</title>
-      <link>https://jakarta.ee/about/faq/</link>
-      <pubDate>Sat, 07 Apr 2018 16:09:45 -0400</pubDate>
-      <author>webdev@eclipse-foundation.org (Christopher Guindon)</author>
-      <guid>https://jakarta.ee/about/faq/</guid>
-      <description>Last Updated: October 19, 2018
+Any modification to or revision of this Jakarta EE Specification Process, including the adoption of a new version of the EFSP, must be approved by a Super-majority of the Specification Committee, including a Super-majority of the Strategic Members of the Jakarta EE Working Group, in addition to any other ballot requirements set forth in the EFSP.</description></item><item><title>Frequently Asked Questions</title><link>https://jakarta.ee/about/faq/</link><pubDate>Sat, 07 Apr 2018 16:09:45 -0400</pubDate><author>webdev@eclipse-foundation.org (Christopher Guindon)</author><guid>https://jakarta.ee/about/faq/</guid><description>Last Updated: October 19, 2018
 Q: What is Jakarta EE? A: Jakarta EE is the future for cloud-native, light-weight, and traditional enterprise Java applications
-  Java EE technologies contributed by Oracle are being used to create the new Jakarta EE platform
-  The Eclipse Foundation is the home of Cloud Native Java open innovation
-  The Jakarta EE Working Group is focused on modernizing Java EE technologies and governance processes to be more open and community-based</description>
-    </item>
-    
-  </channel>
-</rss>
+Java EE technologies contributed by Oracle are being used to create the new Jakarta EE platform
+The Eclipse Foundation is the home of Cloud Native Java open innovation
+The Jakarta EE Working Group is focused on modernizing Java EE technologies and governance processes to be more open and community-based</description></item></channel></rss>

@@ -1,16 +1,1 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Jakarta Interceptors 1.2 on Jakarta® EE: The New Home of Cloud Native Java</title>
-    <link>https://jakarta.ee/specifications/interceptors/1.2/</link>
-    <description>Recent content in Jakarta Interceptors 1.2 on Jakarta® EE: The New Home of Cloud Native Java</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <managingEditor>webdev@eclipse-foundation.org (Christopher Guindon)</managingEditor>
-    <webMaster>webdev@eclipse-foundation.org (Christopher Guindon)</webMaster>
-    <lastBuildDate>Tue, 10 Sep 2019 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://jakarta.ee/specifications/interceptors/1.2/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Jakarta Interceptors 1.2 on Jakarta® EE: The New Home of Cloud Native Java</title><link>https://jakarta.ee/specifications/interceptors/1.2/</link><description>Recent content in Jakarta Interceptors 1.2 on Jakarta® EE: The New Home of Cloud Native Java</description><generator>Hugo -- gohugo.io</generator><managingEditor>webdev@eclipse-foundation.org (Christopher Guindon)</managingEditor><webMaster>webdev@eclipse-foundation.org (Christopher Guindon)</webMaster><lastBuildDate>Tue, 10 Sep 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://jakarta.ee/specifications/interceptors/1.2/index.xml" rel="self" type="application/rss+xml"/></channel></rss>
