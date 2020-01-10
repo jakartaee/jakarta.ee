@@ -11,7 +11,7 @@ install:
 - sudo dpkg -i hugo*.deb
 script:
  - if [ "$HUGO_ENV" = "dev" ]; then hugo --buildFuture; fi;
- - if [ "$HUGO_ENV" = "production" ]; then hugo; fi;
+ - if [ "$HUGO_ENV" = "production" ]; then hugo --gc --minify; fi;
 deploy:
   local-dir: public
   repo: jakartaee/jakarta.ee
