@@ -462,12 +462,9 @@ following issue labels, which should be defined in the issue tracker:
 | accepted                          | Accepted certification request    |
 | challenge-appeal                  | Appeal a rejected TCK challenge   |
 | appealed-challenge                | TCK challenge was appealed        |
-| certification                     | Compatibility certification       |
-|                                   | request                           |
-| invalid                           | This doesn't seem right (label    |
-|                                   | already exists)                   |
-| enhancement                       | New feature or request (label     |
-|                                   | already exists)                   |
+| certification                     | Compatibility certification request s|
+| invalid                           | This doesn't seem right (label already exists) |
+| enhancement                       | New feature or request (label already exists)                   |
 
 Finally, follow [How to Prepare API Projects to Jakarta EE 8
 Release](https://wiki.eclipse.org/How_to_Prepare_API_Projects_to_Jakarta_EE_8_Release)
