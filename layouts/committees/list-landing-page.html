@@ -1,0 +1,15 @@
+{{ define "main" }}
+  {{ .Content }} 
+  <ul>
+    {{ range .Data.Pages }}
+      <li><a href="{{.Permalink}}">{{.Title}} </a> <br>{{.Content}}</li>
+    {{ end }}
+  </ul>
+  <h3>Documents</h3>
+  <ul>
+    <li><a href="/documents/committees/primer-on-committee-responsibilities.pdf">Roles of Jakarta EE Committees during a Release Cycle</a><br>
+    This document provides a short summary of the roles and responsibilities of Jakarta EE Working Group Committees 
+    during Jakarta EE releases.
+    </li>
+  </ul>
+{{ end }}
