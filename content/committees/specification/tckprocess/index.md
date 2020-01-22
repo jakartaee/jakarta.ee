@@ -1,6 +1,8 @@
 ---
 title: "Jakarta EE TCK Process 1.0"
-date: "date: '2020-01-20T00:00:00+00:00"
+date: "2020-01-20T00:00:00+00:00"
+aliases:
+    - committees/specification/TCKProcess/
 ---
 
 Specification Projects under the Eclipse Foundation Specification
