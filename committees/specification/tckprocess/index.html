@@ -1,0 +1,175 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><title>Jakarta EE TCK Process 1.0 | The Eclipse Foundation</title><meta property="og:title" content="Jakarta EE TCK Process 1.0 | The Eclipse Foundation"><meta name=twitter:title content="Jakarta EE TCK Process 1.0 | The Eclipse Foundation"><meta name=description content="Specification Projects under the Eclipse Foundation Specification Process MUST produce a Technology Compatibility Kit (TCK) that delivers on the promise of enabling multiple compatible implementations.
+This document defines:
+  Materials a TCK MUST possess to be considered suitable for delivering portability
+  Process for challenging tests and how these challenges are resolved
+  Means of excluding released TCK tests from certification requirements
+  Policy on improving TCK tests for released specifications"><meta property="og:description" content="Specification Projects under the Eclipse Foundation Specification Process MUST produce a Technology Compatibility Kit (TCK) that delivers on the promise of enabling multiple compatible implementations.
+This document defines:
+  Materials a TCK MUST possess to be considered suitable for delivering portability
+  Process for challenging tests and how these challenges are resolved
+  Means of excluding released TCK tests from certification requirements
+  Policy on improving TCK tests for released specifications"><meta name=twitter:description content="Specification Projects under the Eclipse Foundation Specification Process MUST produce a Technology Compatibility Kit (TCK) that delivers on the promise of enabling multiple compatible …"><meta name=author content="Christopher Guindon"><link href=https://jakarta.ee/images/jakarta/favicon.ico rel=icon type=image/x-icon><meta property="og:image" content="https://jakarta.ee/images/jakarta/jakarta_ee_400x400.png"><meta name=twitter:image content="https://jakarta.ee/images/jakarta/jakarta_ee_400x400.png"><meta name=twitter:card content="summary"><meta name=twitter:site content="@EclipseFdn"><meta name=twitter:creator content="@EclipseFdn"><meta property="og:url" content="https://jakarta.ee/committees/specification/tckprocess/"><meta property="og:type" content="website"><meta property="og:site_name" content="Jakarta® EE: The New Home of Cloud Native Java"><meta name=keywords content="Jakarta EE software,Java EE,cloud,microservices,enterprise,open source,innovation"><meta name=generator content="Hugo 0.62.2"><link rel=canonical href=https://jakarta.ee/committees/specification/tckprocess/><link rel=stylesheet href=https://jakarta.ee/css/styles.css><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-5WLCZXC');</script><script>var tableClasses="table";</script><link href="//fonts.googleapis.com/css?family=Libre+Franklin:400,700,300,600,100" rel=stylesheet type=text/css></head><body><a class=sr-only href=#content>Skip to main content</a><header class="header-wrapper header-default-bg-img" id=header-wrapper><div class="clearfix toolbar-container-wrapper"><div class=container><div class="text-right toolbar-row row hidden-print"><div class="col-md-24 row-toolbar-col"><ul class=list-inline><li><a href=https://accounts.eclipse.org/user/edit data-tab-destination=tab-profile><i class="fa fa-edit fa-fw"></i>Edit my account</a></li><li><a class="toolbar-link toolbar-manage-cookies dropdown-toggle"><i class="fa fa-wrench"></i>Manage Cookies</a></li></ul></div></div></div></div><div class=navbar-wrapper><div class=container><div class=row id=header-row><div class=col-sm-4 id=header-left><div class=wrapper-logo-default><a title="Jakarta® EE: The New Home of Cloud Native Java" href=https://jakarta.ee/><img width=140 class="logo-eclipse-default img-responsive hidden-xs" src=https://jakarta.ee/images/jakarta/jakarta-ee-logo.svg alt="Jakarta® EE: The New Home of Cloud Native Java"></a></div></div><div class="col-sm-20 margin-top-10" id=main-menu-wrapper><div class="float-right hidden-xs" id=btn-call-for-action><div id=btn-call-for-action><a href=/release/ class="btn btn-huge btn-warning"><i class="fa fa-download"></i>Download</a></div></div><div class="navbar float-sm-right yamm" id=main-menu><div class="navbar-collapse collapse reset float-right" id=navbar-main-menu><ul class="nav navbar-nav"><li><a href=/about/>About</a></li><li><a href=/membership/>Membership</a></li><li><a href=/connect/>Connect</a></li><li class=dropdown><a href=# data-toggle=dropdown class=dropdown-toggle><span>Resources</span>
+<b class=caret></b></a><ul class=dropdown-menu><li><a href=/resources#surveys>Surveys</a></li><li><a href=/resources#infographics>Infographics</a></li><li><a href=/resources#videos>Videos</a></li><li><a href=/resources#specification_process>Specification Process</a></li><li><a href=/newsletter/>Newsletter Archives</a></li><li><a href=/meeting_minutes/>Meeting Minutes</a></li><li><a href=https://Jakartablogs.ee>Blog</a></li></ul></li><li><a href=/compatibility/>Compatible Products</a></li><li class=visible-xs><a href=/release/>Releases</a></li><li class="dropdown eclipse-more hidden-xs"><a data-toggle=dropdown class=dropdown-toggle role=button><i class="fa fa-search"></i><b class=caret></b></a><ul class=dropdown-menu><li><div class=yamm-content><div class=row><div class=col-sm-24><p><strong>Search</strong></p><div class=row><div class=col-md-24><div id=custom-search-form class=reset-box-sizing><script>(function(){var cx='011805775785170369411:p3ec0igo0qq';var gcse=document.createElement('script');gcse.type='text/javascript';gcse.async=true;gcse.src=(document.location.protocol=='https:'?'https:':'http:')+
+'//cse.google.com/cse.js?cx='+cx;var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(gcse,s);})();</script><gcse:searchbox-only gname=main resultsurl=https://www.eclipse.org/home/search.php></gcse:searchbox-only></div></div></div></div></div></div></li></ul></li></ul></div><div class=navbar-header><button type=button class=navbar-toggle data-toggle=collapse data-target=#navbar-main-menu>
+<span class=sr-only>Toggle navigation</span>
+<span class=icon-bar></span><span class=icon-bar></span><span class=icon-bar></span><span class=icon-bar></span></button><div class=wrapper-logo-mobile><a class="navbar-brand visible-xs" title="Jakarta® EE: The New Home of Cloud Native Java" href=https://jakarta.ee/><img width=140 class="logo-eclipse-default-mobile img-responsive" src=https://jakarta.ee/images/jakarta/jakarta-ee-logo.svg alt="Jakarta® EE: The New Home of Cloud Native Java"></a></div></div></div></div></div></div></div></header><section class="default-breadcrumbs hidden-print" id=breadcrumb><div class=container><h3 class=sr-only>Breadcrumb</h3><div class=row><div class=col-sm-24><ol class=breadcrumb><li><a href=https://jakarta.ee/>Home</a></li><li><a href=https://jakarta.ee/committees/>Committees</a></li><li class=active><a href=https://jakarta.ee/committees/specification/tckprocess/>Jakarta EE TCK Process 1.0</a></li></ol></div></div></div></section><main><div class=container><div class=row><div class="col-md-18 padding-bottom-30"><h1>Jakarta EE TCK Process 1.0</h1><p>Specification Projects under the Eclipse Foundation Specification
+Process MUST produce a Technology Compatibility Kit (TCK) that delivers
+on the promise of enabling multiple compatible implementations.</p><p>This document defines:</p><ul><li><p>Materials a TCK MUST possess to be considered suitable for
+delivering portability</p></li><li><p>Process for challenging tests and how these challenges are resolved</p></li><li><p>Means of excluding released TCK tests from certification
+requirements</p></li><li><p>Policy on improving TCK tests for released specifications</p></li><li><p>Process for self-certification</p></li></ul><h2 id=_materials_for_a_tck_release>Materials for a TCK Release</h2><p>Artifacts:</p><ul><li><p>Projects MUST produce the project licensed (EPL, Apache, etc.)
+version for distribution to Maven Central or other open source
+channels, usable for automated, non-official testing, and
+implementation. No compatibility claims can be made on the basis of
+this TCK.</p></li><li><p>Projects MUST produce a final candidate binary that includes the
+<a href=https://www.eclipse.org/legal/tck.php>EFTL</a> license. The Jakarta
+EE Specification Committee will sign and promote project TCK binary
+for distribution via Eclipse infrastructure on final approval. This
+is the TCK binary usable for self-certification when one desires to
+make a claim of compatibility, allowing for the use of the Jakarta
+brands.</p></li><li><p>Both TCK binaries MUST contain the following</p><ul><li><p>User guide outlining</p><ul><li><p>Software requirements</p></li><li><p>Installation and configuration</p></li><li><p>How to run the tests</p></li><li><p>Where to file challenges</p></li><li><p>TCK specific rules not covered in this process guide</p></li></ul></li><li><p>Instructions describing how to run the compatible
+implementation(s) that are being used to validate the TCK</p></li><li><p>A top-level README document pointing to each of the preceding
+documents</p></li></ul></li><li><p>We recommend that the TCK documentation include</p><ul><li><p>URLs for the issue trackers to file certification requests, bug
+reports, etc.</p></li><li><p>A statement that the <a href=#_certification_of_compatibility>Certification of
+Compatibility</a> process must be
+followed before a claim of compatibility can be made.</p></li></ul></li><li><p>TCK binaries MAY contain</p><ul><li><p>Test coverage document</p></li><li><p>Test assertion document</p></li></ul></li><li><p>Release available via a release on project GitHub releases page(or
+equivalent)</p><ul><li>Final releases under the EFTL MUST be hosted on
+<a href=http://download.eclipse.org>download.eclipse.org</a></li></ul></li></ul><h3 id=_ratifying_a_final_tck>Ratifying a Final TCK</h3><ul><li><p>Projects will submit the EFTL proposed final binary of the TCK for
+approval to the Specification Committee.</p></li><li><p>The Specification Committee will vote to approve or reject the TCK
+binary.</p></li><li><p>Approved binaries will be signed with the GPG key of the Jakarta
+Specification Committee, and then published on download.eclipse.org
+along with the digital signature of the SHA-256 hash of the final
+binary, and the SHA-256 hash of the binary as the fingerprint of the
+TCK.</p></li><li><p>Consumers can use the GPG key of the Jakarta Specification Committee
+to verify the authenticity of that or any TCK binary.</p></li></ul><h2 id=_challenges>Challenges</h2><p>Specifications are the sole source of truth and considered overruling to
+the TCK in all senses. In the course of implementing a specification and
+attempting to pass the TCK, implementations may come to the conclusion
+that one or more tests or assertions do not conform to the
+specification, and therefore MUST be excluded from the certification
+requirements.</p><p>Requests for tests to be excluded are referred to as Challenges. This
+section identifies who can make challenges to the TCK, what challenges
+to the TCK may be submitted, how these challenges are submitted, how and
+to whom challenges are addressed.</p><h3 id=_who_can_file_a_challenge>Who can file a challenge?</h3><p>Any implementor may submit a challenge to one or more tests in the TCK
+as it relates to their implementation. Implementor means the entity as a
+whole in charge of producing the final certified release. <strong>Challenges
+filed MUST represent the consensus of that entity.</strong></p><h3 id=_valid_challenges>Valid Challenges</h3><p>Any test case (e.g., test class, @Test method), test case configuration
+(e.g., deployment descriptor), test beans, annotations, and other
+resources considered part of the TCK may be challenged.</p><p>The following scenarios are considered in scope for test challenges:</p><ul><li><p>Claims that a test assertion conflicts with the specification.</p></li><li><p>Claims that a test asserts requirements over and above that of the
+specification.</p></li><li><p>Claims that an assertion of the specification is not sufficiently
+implementable.</p></li><li><p>Claims that a test is not portable or depends on a particular
+implementation.</p></li></ul><h3 id=_invalid_challenges>Invalid Challenges</h3><p>The following scenarios are considered out of scope for test challenges
+and will be immediately closed if filed:</p><ul><li><p>Challenging an implementation's claim of passing a test.
+Certification is an honor system and these issues MUST be raised
+directly with the implementation.</p></li><li><p>Challenging the usefulness of a specification requirement. The
+challenge process cannot be used to bypass the specification process
+and raise in question the need or relevance of a specification
+requirement.</p></li><li><p>Claims the TCK is inadequate or missing assertions required by the
+specification. See the Improvement section, which is outside the
+scope of test challenges.</p></li><li><p>Challenges that do not represent a consensus of the implementing
+community will be closed. If agreement is later reached by the
+implementing community, the issue can be reopened. The test
+challenge process is not the place for implementations to initiate
+their own internal discussions.</p></li><li><p>Challenges to tests that are already excluded for any reason.</p></li><li><p>Challenges that an excluded test should not have been excluded and
+SHOULD be re-added MUST be opened as a new enhancement request</p></li></ul><h3 id=_filing_a_challenge>Filing a Challenge</h3><p>Challenges MUST be filed via the specification project's issue tracker
+using the label <code>challenge</code> and include the following information:</p><ul><li><p>The relevant specification version and section number(s)</p></li><li><p>The coordinates of the challenged test(s)</p></li><li><p>The exact TCK version</p></li><li><p>The implementation being tested, including name and company</p></li><li><p>A full description of why the test is invalid and what the correct
+behavior is believed to be</p></li><li><p>Any supporting material; debug logs, test output, test logs, run
+scripts, etc.</p></li></ul><h3 id=_challenge_resolution>Challenge Resolution</h3><p>Challenges can be resolved by a specification project lead, or a project
+challenge triage team, after a consensus of the specification project
+committers is reached or attempts to gain consensus fails. Specification
+projects may exercise lazy consensus, voting or any practice that
+follows the principles of <a href=https://www.eclipse.org/projects/dev_process/>Eclipse Foundation Development
+Process</a>.</p><h4 id=_active_resolution>Active Resolution</h4><p>The failure to resolve a Challenge might prevent an implementation from
+going to market; Challenges SHOULD be given a high priority by the
+specification project and resolved in a timely manner. Two weeks or less
+SHOULD be considered the ideal period of time to resolve a challenge.
+Challenges may go longer as needed, but as a rule SHOULD avoid months.</p><p>If consensus cannot be reached by the specification project for a
+prolonged period of time, the default recommendation is to exclude the
+tests and address the dispute in a future revision of the specification.</p><h4 id=_accepted_challenges>Accepted Challenges</h4><p>A consensus that a test produces invalid results will result in the
+exclusion of that test from certification requirements, and an immediate
+update and release of an official distribution of the TCK including the
+new exclude list. The associated <code>challenge</code> issue MUST be closed with
+an <code>accepted</code> label to indicate it has been resolved.</p><h4 id=_rejected_challenges_and_remedy>Rejected Challenges and Remedy</h4><p>When a <code>challenge</code> issue is rejected, it MUST be closed with a label of
+<code>invalid</code> to indicate it has been rejected. The appeal process for
+challenges rejected on technical terms is outlined in Escalation Appeal.
+If, however, an implementer feels the TCK challenge process was not
+followed, an appeal issue MUST be filed with the specification project's
+issue tracker using the label <code>challenge-appeal</code>. A project lead MUST
+escalate the issue with the Jakarta EE Specification Committee via email
+(<a href=mailto:jakarta.ee-spec@eclipse.org>jakarta.ee-spec@eclipse.org</a>). The committee will evaluate the matter
+purely in terms of due process. If the appeal is accepted, the original
+TCK challenge issue will be reopened and a label of <code>appealed-challenge</code>
+added, along with a discussion of the appeal decision, and the
+<code>challenge-appeal</code> issue with be closed. If the appeal is rejected, the
+<code>challenge-appeal</code> issue MUST be closed with a label of <code>invalid</code>.</p><p><img src=TCKProcess.png alt=TCKProcess></p><h2 id=_excludes>Excludes</h2><p>Excludes MUST be included in the TCK project release in a format that is
+compatible with the testing framework in use so that as the excludes are
+updated, the affected tests are automatically removed from the test
+suite.</p><h2 id=_improvement>Improvement</h2><p>Requests for improvement to tests MUST simply be created as issues with
+a label of <code>enhancement</code> in the specification project's TCK issue
+tracker.</p><h2 id=_certification_of_compatibility>Certification of Compatibility</h2><p>Jakarta EE is a self-certification ecosystem. If you wish to have your
+implementation listed on the official <a href=https://jakarta.ee>jarkarta.ee</a>
+implementations page for the given specification, a certification
+request as defined in this section is required.</p><p>There are additional requirements that MUST be met by any organization
+wishing to use the Jakarta EE logo or <a href=https://jakarta.ee>jarkarta.ee</a>
+website for promotion. Any request for certification from an
+organization not meeting the requirements will be held until such time
+as the requirements are met. See the <a href=https://jakarta.ee/legal/trademark_guidelines/>Jakarta EE Trademark
+Guidelines</a> for more
+information on the complete steps to obtain Jakarta EE branding usage.</p><p>An approved certification request is a statement from the Specification
+Project you have met the intended TCK requirements and is just one of
+the requirements for logo usage. Logos only apply to platform and
+profile specifications, but a request to be listed as a compatible
+implementation can be made for any specification.</p><h3 id=_filing_a_certification_request>Filing a Certification Request</h3><p>Requests to be acknowledged as a certified implementation MUST be filed
+via the specification project's issue tracker using the label
+<code>certification</code> and include the following information:</p><ul><li><p>Statement of Acceptance of the terms of the EFTL</p></li><li><p>Product Name, Version and download URL (if applicable)</p></li><li><p>Specification Name, Version and download URL</p></li><li><p>TCK Version, digital SHA-256 fingerprint and download URL</p></li><li><p>Implementation runtime Version(s) tested</p></li><li><p>Public URL of TCK Results Summary</p></li><li><p>Any Additional Specification Certification Requirements</p></li><li><p>Java runtime used to run the implementation</p></li><li><p>Summary of the information for the certification environment,
+operating system, cloud, &mldr;​</p></li><li><p>A statement attesting that all TCK requirements have been met,
+including any compatibility rules</p></li></ul><h3 id=_additional_specification_certification_requirements>Additional Specification Certification Requirements</h3><p>Specification projects may require additional items for a Certification
+Request as defined in their corresponding TCK Documentation under the
+section labeled "Additional Certification Requirements".</p><p>Examples of such additional requirements may include:</p><ul><li><p>Name and version of Compatible Implementation used for
+interoperability tests</p></li><li><p>Name and version of Databases used for persistence tests</p></li><li><p>Name and version of NoSQL implementations used in persistence tests</p></li></ul><h3 id=_public_tck_results_summary>Public TCK Results Summary</h3><p>While certification is on your honor, the community MUST be able to see
+your test results summary. At a minimum a results summary MUST:</p><ul><li><p>Be publicly visible with no password protection or sign-up</p></li><li><p>Include a Summary Page containing:</p><ul><li><p>All information in the above Certification Request</p></li><li><p>The Total number of tests run and passed. If you are running a
+platform TCK, this means reporting the tests run for each
+required TCK, which includes the platform TCK and some of the
+individual TCKs that are not integrated with the platform TCK.</p></li></ul></li></ul><p>An optional &ldquo;Test List Page&rdquo; showing all tests run may be linked from
+the Summary Page. The Summary Page URL is the URL that MUST be included
+in any Certification Requests.</p><p>The following are explicitly not requirements:</p><ul><li><p>The Ability for the public to run the tests themselves</p></li><li><p>Full log output of the TCK</p></li></ul><p>Implementors may supply this information and provide support for how to
+run a TCK against their implementation, but it is not required.</p><h3 id=_certification_resolution>Certification Resolution</h3><p>As noted, certification requests do not in themselves grant rights to
+use the Jakarta EE logo. Approval that the TCK requirements have been
+met is a prerequisite for obtaining Jakarta EE logo usage for profile
+certification. The required approval processes is:</p><ul><li><p>Approval by lazy consensus after a period of two weeks (14 days)</p></li><li><p>Approval by a majority vote of the specification project as soon as
+it happens.</p><ul><li>The sum of the +1/-1 votes must be greater than 50% of the
+specification project committers.</li></ul></li><li><p>Approval by any top-level specification project lead at any time</p></li></ul><p>All specification project members are encouraged to review the request
+and associated supporting materials. Reviewers of a certification
+request MUST carefully check the validity of all required data, in
+particular:</p><ul><li><p>the data is complete</p></li><li><p>the number of tests passed is consistent with the first
+implementation used to validate the TCK</p></li><li><p>TCK version and digital fingerprint match.</p></li><li><p>test results are public and do not require special signup or viewing
+steps</p></li></ul><p>Any committer on the specification project may vote against the
+certification request on the basis that the clearly defined requirements
+of the TCK process have not been met. This means that if there is a (-1)
+vote, lazy consensus is no longer an option and a majority vote MUST
+take place.</p><h4 id=_accepted_certification_requests>Accepted Certification Requests</h4><p>Certification requests that are reviewed and found to meet the
+requirements will be marked accepted by closing an issue with an
+<code>accepted</code> label. A pointer/link to the issue MUST then be emailed to
+[<a href=mailto:tck@eclipse.org>tck@eclipse.org</a>](mailto:tck@eclipse.org), as required by the
+[Eclipse Foundation Technology Compatibility Kit
+License](<a href=https://www.eclipse.org/legal/tck.php>https://www.eclipse.org/legal/tck.php</a>). If use of the
+Jakarta EE logo or trademark is being requested (currently only
+applicable to platform or profile products), see the [Jakarta EE
+Trademark
+Guidelines](<a href=https://jakarta.ee/legal/trademark_guidelines/>https://jakarta.ee/legal/trademark_guidelines/</a>).</p><h4 id=_rejected_certification_requests>Rejected Certification Requests</h4><p>Certification requests that are reviewed and found to NOT meet the
+requirements will be marked as such by closing an issue with an
+<code>invalid</code> label along with the requirements that were not met. A new
+certification issue MUST be created with the updated requirements to
+attempt the certification request again.</p><h3 id=_escalation_appeal>Escalation Appeal</h3><p>If there is a concern that a TCK process issue has not been resolved
+satisfactorily, the Eclipse Development Process <a href=https://www.eclipse.org/projects/dev_process/#6_5_Grievance_Handling>Grievance
+Handling</a>
+procedure SHOULD be followed to escalate the resolution. Note that this
+is not a mechanism to attempt to handle implementation specific issues.</p><h3 id=_how_tests_may_be_added_to_a_tck>How Tests May be Added to a TCK</h3><p>The only time tests may be added to a TCK are in a major or minor
+release. A service release which updates the exclude list MUST not have
+test additions or changes.</p></div><div class="col-md-6 padding-bottom-30"><aside id=main-sidebar><ul id=leftnav class="ul-left-nav fa-ul hidden-print"><li class=separator><a class=separator href=/>Innovate with Us</a></li><li><i class="fa fa-caret-right fa-fw"></i><a href=/about/ target=_self>About Jakarta EE</a></li><li><i class="fa fa-caret-right fa-fw"></i><a href=/about/faq/ target=_self>Frequently Asked Questions</a></li><li><i class="fa fa-caret-right fa-fw"></i><a href=/membership/ target=_self>Become a Member</a></li><li><i class="fa fa-caret-right fa-fw"></i><a href=/connect/ target=_self>Stay Connected</a></li><li><i class="fa fa-caret-right fa-fw"></i><a href=https://eclipse.org/org/workinggroups/jakarta_ee_charter.php target=_self>Working Group Charter</a></li><li><i class="fa fa-caret-right fa-fw"></i><a href=https://www.eclipse.org/ee4j/direction.php target=_self>Technical Direction</a></li><li><i class="fa fa-caret-right fa-fw"></i><a href=/newsletter target=_self>Newsletter Archives</a></li><li><i class="fa fa-caret-right fa-fw"></i><a href=/meeting_minutes target=_self>Meeting Minutes</a></li><li><i class="fa fa-caret-right fa-fw"></i><a href=/legal/trademark_guidelines/ target=_self>Trademark Guidelines</a></li><li><i class="fa fa-caret-right fa-fw"></i><a href=/about/jesp/ target=_self>Specification Process</a></li></ul></aside></div></div></div></main><div class="featured-footer featured-alternate" id=featured-footer><div class=container><div class=row><div class=col-sm-24></div></div></div></div><script>var rawStoryJSON="[{\"bgImgSrc\":\"/images/jakarta-ee-banner.jpg\",\"content\":\"Download compatible products, get involved, and stay in the know!\",\"endDate\":\"2020-10-21\",\"footer_classes\":\"featured-footer featured-alternate jakarta-ee-banner\",\"link\":\"\\u003ca class=\\\"btn btn-primary btn-lg\\\" href=\\\"https://jakarta.ee/release/\\\"\\u003eLearn More\\u003c/a\\u003e\",\"startDate\":\"2019-09-07\",\"story_classes\":\"featured-story featured-alternate jakarta-ee-banner\",\"title\":\"Jakarta EE 8 is here!\",\"type\":\"both\"},{\"bgImgSrc\":\"/images/jakarta-ee-banner.jpg\",\"content\":\"A co-located event with KubeCon + CloudNativeCon EU on March 30, 2020\",\"endDate\":\"2020-03-30\",\"link\":\"\\u003ca class=\\\"btn btn-primary btn-lg\\\" href=\\\"http://eclipse-5413615.hs-sites.com/cn4j-day\\\"\\u003eRegister Today\\u003c/a\\u003e\",\"preamble\":\"\\u003cspan class=\\\"h3 fw-700\\\"\\u003eCloud Native for Java Day\\u003c/span\\u003e\",\"startDate\":\"2020-01-05\",\"story_classes\":\"featured-story featured-alternate jakarta-ee-banner\",\"title\":\"Build Enterprise Java on Kubernetes!\",\"type\":\"story\"},{\"endDate\":\"2099-10-10\",\"footer_classes\":\"background-secondary featured-footer featured-alternate\",\"link\":\"\\u003cform action=\\\"https://eclipsecon.us6.list-manage.com/subscribe/post\\\" method=\\\"post\\\" target=\\\"_blank\\\"\\u003e\\n \\u003cdiv class=\\\"form-group\\\"\\u003e\\n    \\u003cinput type=\\\"hidden\\\" name=\\\"u\\\" value=\\\"eaf9e1f06f194eadc66788a85\\\"\\u003e\\n    \\u003cinput type=\\\"hidden\\\" name=\\\"id\\\" value=\\\"98ae69e304\\\"\\u003e\\n  \\u003c/div\\u003e\\n  \\u003cinput type=\\\"submit\\\" value=\\\"Subscribe\\\" name=\\\"subscribe\\\" class=\\\"button btn btn-primary\\\"\\u003e\\n\\u003c/form\\u003e\\n\",\"preamble\":\"\\u003csvg xmlns=\\\"http://www.w3.org/2000/svg\\\" width=\\\"24\\\" height=\\\"24\\\" viewBox=\\\"0 0 24 24\\\" fill=\\\"none\\\" stroke=\\\"currentColor\\\" stroke-width=\\\"1\\\" stroke-linecap=\\\"round\\\" stroke-linejoin=\\\"round\\\" class=\\\"feather feather-mail\\\"\\u003e\\n  \\u003cpath d=\\\"M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z\\\"\\u003e\\u003c/path\\u003e\\n  \\u003cpolyline points=\\\"22,6 12,13 2,6\\\"\\u003e\\u003c/polyline\\u003e \\n\\u003c/svg\\u003e\\n\",\"startDate\":\"2019-07-18\",\"title\":\"Sign up to our Newsletter\",\"type\":\"footer\"}]";var sort=null;var json=JSON.parse(rawStoryJSON);json=json.filter(a=>new Date(a['endDate'])>new Date()).filter(a=>a['type']==="both"||a['type']==="footer");if(json.length>1){shuffleArray(json);}
+if(json.length>0){var item=json[0];var storyEl=document.querySelector("#featured-footer");if(item['bgImgSrc']!==undefined&&item['bgImgSrc']!==""){storyEl.style.backgroundImage='url(\''+item['bgImgSrc']+'\')';storyEl.style.backgroundSize='cover';}
+if(item['footer_classes']!==undefined&&item['footer_classes']!==""){storyEl.className=item['footer_classes'];}
+var headingEl=document.createElement('h2');headingEl.innerHTML=item['title'];var linkEl=document.createElement('span');linkEl.innerHTML=item['link'];var preambleEl,contentEl=null;if(item['preamble']!=undefined&&item['premble']!=""){preambleEl=document.createElement('p');preambleEl.innerHTML=item['preamble'];}
+if(item['content']!=undefined&&item['content']!=""){contentEl=document.createElement('p');contentEl.innerHTML=item['content'];}
+var divEl=storyEl.querySelector(".row > div");if(preambleEl!=undefined){divEl.appendChild(preambleEl);}
+divEl.appendChild(headingEl);if(contentEl!=undefined){divEl.appendChild(contentEl);}
+divEl.appendChild(linkEl);}
+function shuffleArray(array){for(var i=array.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1));var temp=array[i];array[i]=array[j];array[j]=temp;}}</script><p id=back-to-top><a class=visible-xs href=#top>Back to the top</a></p><footer id=solstice-footer><div class=container><div class=row><section class="col-sm-6 hidden-print" id=footer-eclipse-foundation><h2 class=section-title>Eclipse Foundation</h2><ul class=nav><li><a href=https://www.eclipse.org/org/>About Us</a></li><li><a href=https://www.eclipse.org/org/foundation/contact.php>Contact Us</a></li><li><a href=https://www.eclipse.org/donate>Donate</a></li><li><a href=https://www.eclipse.org/org/documents/>Governance</a></li><li><a href=https://www.eclipse.org/artwork/>Logo and Artwork</a></li><li><a href=https://www.eclipse.org/org/foundation/directors.php>Board of Directors</a></li></ul></section><section class="col-sm-6 hidden-print" id=footer-legal><h2 class=section-title>Legal</h2><ul class=nav><li><a href=https://www.eclipse.org/legal/privacy.php>Privacy Policy</a></li><li><a href=https://www.eclipse.org/legal/termsofuse.php>Terms of Use</a></li><li><a href=https://www.eclipse.org/legal/copyright.php>Copyright Agent</a></li><li><a href=https://www.eclipse.org/legal/epl-2.0/>Eclipse Public License</a></li><li><a href=https://www.eclipse.org/legal/>Legal Resources</a></li></ul></section><section class="col-sm-6 hidden-print" id=footer-useful-links><h2 class=section-title>Useful Links</h2><ul class=nav><li><a href=https://bugs.eclipse.org/bugs/>Report a Bug</a></li><li><a href=//help.eclipse.org/>Documentation</a></li><li><a href=https://www.eclipse.org/contribute/>How to Contribute</a></li><li><a href=https://www.eclipse.org/mail/>Mailing Lists</a></li><li><a href=https://www.eclipse.org/forums/>Forums</a></li><li><a href=//marketplace.eclipse.org>Marketplace</a></li></ul></section><section class="col-sm-6 hidden-print" id=footer-other><h2 class=section-title>Other</h2><ul class=nav><li><a href=https://www.eclipse.org/ide/>IDE and Tools</a></li><li><a href=https://www.eclipse.org/projects>Community of Projects</a></li><li><a href=https://www.eclipse.org/org/workinggroups/>Working Groups</a></li><li><a href=https://www.eclipse.org/org/research/>Research@Eclipse</a></li><li><a href=https://www.eclipse.org/security/>Report a Vulnerability</a></li><li><a href=https://status.eclipse.org>Service Status</a></li></ul></section><div class="col-sm-24 margin-top-20"><div class=row><div id=copyright class=col-md-16><p id=copyright-text>Copyright &copy; Eclipse Foundation, Inc. All Rights Reserved.</p></div><div class="col-md-8 social-media"><ul class=list-inline><li><a class="social-media-link fa-stack fa-lg" href=https://twitter.com/JakartaEE><i class="fa fa-circle-thin fa-stack-2x"></i><i class="fa fa-twitter fa-stack-1x"></i><span class=sr-only>Twitter account</span></a></li><li><a class="social-media-link fa-stack fa-lg" href=https://www.facebook.com/JakartaEE><i class="fa fa-circle-thin fa-stack-2x"></i><i class="fa fa-facebook fa-stack-1x"></i><span class=sr-only>Facebook account</span></a></li><li><a class="social-media-link fa-stack fa-lg" href=https://www.youtube.com/user/EclipseFdn><i class="fa fa-circle-thin fa-stack-2x"></i><i class="fa fa-youtube fa-stack-1x"></i><span class=sr-only>Youtube account</span></a></li><li><a class="social-media-link fa-stack fa-lg" href=https://www.linkedin.com/groups/13597511/><i class="fa fa-circle-thin fa-stack-2x"></i><i class="fa fa-linkedin fa-stack-1x"></i><span class=sr-only>Linkedin account</span></a></li></ul></div></div></div><a href=# class=scrollup>Back to the top</a></div></div></footer><script src=https://jakarta.ee/js/solstice.js></script><script src=https://jakarta.ee/js/solstice.hugo.js></script></body></html>
