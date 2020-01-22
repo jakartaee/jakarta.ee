@@ -1,5 +1,6 @@
 ---
 title: "Jakarta EE Specification Committee Operation"
+date: "2020-01-20T00:00:00+00:00"
 ---
 
 This document describes the practices of the Jakarta EE Specification
