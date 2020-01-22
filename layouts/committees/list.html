@@ -1,0 +1,12 @@
+{{ define "main" }}
+  {{ .Content }} 
+  {{ $paginator := .Paginate .Data.Pages }}
+  {{ if ne $paginator.NumberOfElements 0 }}
+    <ul>
+      {{ range $paginator.Pages }}
+        <li><a href="{{.Permalink}}">{{.Title}} </a></li>
+      {{ end }}
+    </ul>
+    {{ template "_internal/pagination.html" . }}
+  {{ end }}
+{{ end }}

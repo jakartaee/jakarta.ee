@@ -68,22 +68,22 @@ enableRobotsTXT = true
     name = "Connect"
     url = "/connect/"
     weight = 3
-    
+
 [[menu.main]]
     name = "Resources"
     url = "/resources/"
     weight = 4
-    
+
 [[menu.main]]
     name = "Resources"
     url = "/resources/"
     weight = 4
-    
+
 [[menu.main]]
     name = "Compatible Products"
     url = "/compatibility/"
     weight = 5
-    
+
 # Resource sub-menu
 [[menu.main]]
     name = "Documentation"
@@ -96,39 +96,45 @@ enableRobotsTXT = true
     url = "/resources#surveys"
     parent = "Resources"
     weight = 2
-    
+
 [[menu.main]]
     name = "Infographics"
     url = "/resources#infographics"
     parent = "Resources"
     weight = 3
-    
+
 [[menu.main]]
     name = "Videos"
     url = "/resources#videos"
     parent = "Resources"
     weight = 4
-    
+
 [[menu.main]]
     name = "Specification Process"
     url = "/resources#specification_process"
     parent = "Resources"
     weight = 5
-    
+
+[[menu.main]]
+    name = "Committees"
+    url = "/committees"
+    parent = "Resources"
+    weight = 6
+
 [[menu.main]]
     name = "Newsletter Archives"
     url = "/newsletter/"
     parent = "Resources"
-    weight = 6
-    
+    weight = 7
+
 [[menu.main]]
     name = "Meeting Minutes"
     url = "/meeting_minutes/"
     parent = "Resources"
-    weight = 7
+    weight = 8
 
 [[menu.main]]
     name = "Blog"
     url = "https://Jakartablogs.ee"
     parent = "Resources"
-    weight = 8
+    weight = 9
