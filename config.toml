@@ -104,18 +104,6 @@ enableRobotsTXT = true
     weight = 3
 
 [[menu.main]]
-    name = "Videos"
-    url = "/resources#videos"
-    parent = "Resources"
-    weight = 4
-
-[[menu.main]]
-    name = "Specification Process"
-    url = "/resources#specification_process"
-    parent = "Resources"
-    weight = 5
-
-[[menu.main]]
     name = "Committees"
     url = "/committees"
     parent = "Resources"

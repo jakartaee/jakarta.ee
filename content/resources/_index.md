@@ -30,23 +30,6 @@ layout: "single"
 ## Presentations{#presentations}  
 
 * [Jakarta EE presentations](https://www.slideshare.net/Jakarta_EE)
-
----
-
-## Videos{#videos}  
-  
-{{< youtube rZ3zx2UAG9c >}} 
-
----
-
-{{< youtube "videoseries?list=PLy7t4z5SYNaT-6PRtijB8XZQJ7jq020CO" >}}
-
----
-
-## Specification Process{#specification_process}
-
-Talks &amp; presentations:
-
 * [Introducing the EFSP](introducing-the-efsp-ece-2018.pdf)
 
 ---
