@@ -48,3 +48,9 @@ layout: "single"
 Talks &amp; presentations:
 
 * [Introducing the EFSP](introducing-the-efsp-ece-2018.pdf)
+
+---
+
+## Tech Talks Meet-ups{#meetups}
+
+- [Jakarta Tech Talks](https://www.meetup.com/jakartatechtalks_/)
