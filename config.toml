@@ -138,3 +138,9 @@ enableRobotsTXT = true
     url = "https://Jakartablogs.ee"
     parent = "Resources"
     weight = 9
+
+[[menu.main]]
+    name = "Tech Talk Meet-ups"
+    url = "/resources#meetups"
+    parent = "Resources"
+    weight = 10
