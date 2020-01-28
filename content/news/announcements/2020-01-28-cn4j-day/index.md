@@ -5,13 +5,9 @@ date: 2020-01-28T7:50:00-05:00
 categories: ["announcements"]
 ---
 
-Today the Eclipse Foundation announced the launch of the Cloud Native for Java (CN4J) Day event, a full-day of expert talks, demos, and thought-provoking sessions focused on enterprise applications implemented using open source vendor-neutral Jakarta EE (successor of Java EE) and Eclipse MicroProfile specifications on Kubernetes.
-
-<!--more-->
-
 *– Co-Located with Kubecon+CloudNativeCon Europe 2020, the March 30 event features speakers from IBM, Red Hat, Oracle and other enterprise Java leaders –*
 
-OTTAWA – JANUARY 28, 2020 – Today the [Eclipse Foundation](https://www.eclipse.org/) announced the launch of the , a full-day of expert talks, demos, and thought-provoking sessions focused on enterprise applications implemented using open source vendor-neutCloud Native for [Java (CN4J) Day event](https://eclipse-5413615.hs-sites.com/cn4j-day) Jakarta EE (successor of Java EE) and Eclipse MicroProfile specifications on Kubernetes. Taking place on March 30, 2020 in Amsterdam, the event is co-located with [Kubecon+CloudNativeCon Europe](https://events.linuxfoundation.org/kubecon-cloudnativecon-europe) and is sponsored by the Cloud Native Computing Foundation (CNCF), IBM, Oracle, and RedHat. Interested parties can view the event’s agenda and register to attend here: http://eclipse.org/cn4j-day.
+**OTTAWA – JANUARY 28, 2020** – Today the [Eclipse Foundation](https://www.eclipse.org/) announced the launch of the [Cloud Native for Java (CN4J) Day event](https://eclipse-5413615.hs-sites.com/cn4j-day), a full-day of expert talks, demos, and thought-provoking sessions focused on enterprise applications implemented using open source vendor-neutral Jakarta EE (successor of Java EE) and Eclipse MicroProfile specifications on Kubernetes. Taking place on March 30, 2020 in Amsterdam, the event is co-located with [Kubecon+CloudNativeCon Europe](https://events.linuxfoundation.org/kubecon-cloudnativecon-europe) and is sponsored by the Cloud Native Computing Foundation (CNCF), IBM, Oracle, and RedHat. Interested parties can view the event’s agenda and register to attend here: http://eclipse.org/cn4j-day.
 
 “This groundbreaking event is about the intersection of the world’s most prolific open source enterprise programming language with the world’s fastest growing open source platform for the cloud native era,” said Mike Milinkovich, executive director of the Eclipse Foundation. “Tens of thousands of organizations are running mission-critical applications on enterprise Java and looking for the means to transition these applications to cloud-ready infrastructure. As a result, helping the millions of enterprise Java developers understand how to build cloud native apps on top of Kubernetes is a critical lesson for the entire industry.”
 
