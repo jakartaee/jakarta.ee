@@ -104,6 +104,12 @@ enableRobotsTXT = true
     weight = 3
 
 [[menu.main]]
+    name = "Presentations"
+    url = "/resources#presentations"
+    parent = "Resources"
+    weight = 4
+
+[[menu.main]]
     name = "Committees"
     url = "/committees"
     parent = "Resources"
