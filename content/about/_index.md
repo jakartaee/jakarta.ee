@@ -25,6 +25,3 @@ We expect the Jakarta EE platform to evolve rapidly, incorporating Java innovati
 
 Jakarta EE represents the best way to drive cloud-native, mission critical applications and build upon the decades of experience of real world deployments and developers.
 
-## Committee Members
-
-{{< about-committee-members >}}
