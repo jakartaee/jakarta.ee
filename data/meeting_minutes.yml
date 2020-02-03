@@ -420,6 +420,9 @@ items:
 
    steering_committee:
        -
+          url: steering_committee/minutes-january-7-2020.pdf
+          title: January 7, 2020 (pdf)
+       -
           url: steering_committee/minutes-december-17-2019.pdf
           title: December 17, 2019 (pdf)
        -
