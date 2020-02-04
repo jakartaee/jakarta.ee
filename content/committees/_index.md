@@ -4,8 +4,11 @@ date: 2020-01-05T15:50:25-04:00
 layout: "list-landing-page"
 ---
 
-Jakarta EE Committees are governance bodies ​responsible​ for ensuring the progress of all aspects of the Jakarta EE program. Here is the list of committees based on the ​​[​Jakarta EE Working Group Charter​](https://www.eclipse.org/org/workinggroups/jakarta_ee_charter.php):
+### Documents
 
-## Committee Members
+* [Roles of Jakarta EE Committees during a Release Cycle](/documents/committees/primer-on-committee-responsibilities.pdf) \
+This document provides a short summary of the roles and responsibilities of Jakarta EE Working Group Committees 
+during Jakarta EE releases.
 
+### Committee Members
 {{< about-committee-members >}}
