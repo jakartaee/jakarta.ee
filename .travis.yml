@@ -7,6 +7,7 @@ matrix:
       env: HUGO_ENV=production
 install:
 - npm install
+- npm run specifications
 - wget https://github.com/gohugoio/hugo/releases/download/v0.62.2/hugo_0.62.2_Linux-64bit.deb
 - sudo dpkg -i hugo*.deb
 script:
