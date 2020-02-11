@@ -2,6 +2,7 @@
   {{ .Content }} 
   {{ $paginator := .Paginate .Data.Pages }}
   {{ if ne $paginator.NumberOfElements 0 }}
+  	<h3>Documents</h3>
     <ul>
       {{ range $paginator.Pages }}
         <li><a href="{{.Permalink}}">{{.Title}} </a></li>
