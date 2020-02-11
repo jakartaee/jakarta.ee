@@ -1,0 +1,12 @@
+---
+adopters:
+  projects:
+  
+# Template: Example for creating new specification entry
+#  - name: Jakarta Bean Validation
+#    directory: specifications/bean-validation/ # Trailing slash is required.
+#    adopters:
+#    - name: Eclipse Foundation
+#      homepage_url: https://www.eclipse.org/
+#      logo: eclipse-foundation-grey-orange.svg
+#      logo_white: eclipse-foundation-white-orange.svg
