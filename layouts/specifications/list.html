@@ -26,5 +26,23 @@
         <p class="media-text">{{ .Params.summary }}</p>
       </a>
     {{ end }}
+
+    {{ $section := .CurrentSection }}
+    {{ with .Site.Data.spec_adopters.adopters.projects }}
+      {{ range sort . "name" "asc"}}
+        {{ $project := . }}
+        {{ with $section.File.Dir }}
+          {{ if eq . $project.directory }}
+           <h3>JUG Spec Adopters</h3>
+            <p>To learn how your JUG can sign-up, check out the <a href="/community/adopt-a-spec">Adopt a Specification</a> program.</p>
+              <ul class="list-inline">
+              {{ range sort $project.adopters  "name" "asc"}}
+                <li><a href="{{ .homepage_url }}" target="_blank"><img src="/images/spec_adopters/{{ .logo }}" alt="{{ .name }}" style="padding:15px; width:250px;"/></a></li>
+              {{end}}
+            </ul>
+          {{ end }}
+        {{ end }}
+      {{ end }}
+    {{ end }}
   </div>
 {{ end }}
