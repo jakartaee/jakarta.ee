@@ -1,4 +1,3 @@
-module:java.xml.ws
 javax.xml.ws
 javax.xml.ws.handler
 javax.xml.ws.handler.soap
