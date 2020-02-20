@@ -249,10 +249,10 @@ project has:
     compatibility-certification-request template, you can use this one:
     [compatibility-certification-request.md](https://github.com/jakartaee/specification-committee/blob/master/compatibility-certification-request.md)
 
-5.  After that TCK is passing, submit a ballot request by creating two
+5.  After that TCK is passing, initiate a ballot request by creating two
     [draft
     PRs](https://help.github.com/en/articles/about-pull-requests#draft-pull-requests)
-    requests against the [Jakarta EE Specification Committee
+    requests (also assign the `draft` label) against the [Jakarta EE Specification Committee
     specifications](https://github.com/jakartaee/specifications)
     repository. The first PR provides everything requested in the [PR
     template](https://github.com/jakartaee/specification-committee/blob/master/spec_review_checklist.md)
@@ -286,11 +286,11 @@ project has:
             -   An apidocs directory containing the final JavaDocs from
                 the api build in the second PR.
 
-6.  Update the Jakarta EE API jar by submitting a PR to the
+6.  If this updated Specification Version is targeted for the Platform, update the Jakarta EE API jar by submitting a PR to the
     [jakartaee-api](https://github.com/eclipse-ee4j/jakartaee-api)
     project that updates the version number of your API jar file.
 
-7.  Update Eclipse GlassFish to use the new version of your API (and
+7.  If this updated Specification Version is targeted for the Platform, update Eclipse GlassFish to use the new version of your API (and
     implementation, if applicable) by submitting a PR to
     [GlassFish](https://github.com/eclipse-ee4j/glassfish).
 
@@ -307,19 +307,23 @@ project has:
         in the [Eclipse Project
         Handbook](https://www.eclipse.org/projects/handbook/#pmi-commands-iplog).
 
-    -   After the PRs are reviewed and approved, contact the EMO to
-        initiate the official release review by sending an email to
-        <emo@eclipse.org>.
+    -   After the PRs are sufficiently reviewed and approved, contact the EMO to
+        initiate the official release review ballot by sending an email to
+        <emo@eclipse.org>.  The `final` and `ballot` labels should be added to the PRs (removing the `draft` label, if it exists).
 
-9.  When the ballot request PRs are approved, release staged artifacts
-    to Maven Central. Advice on this can be found
+9.  When the ballot request PRs are approved, the Specification Project releases the staged artifacts
+    to Maven Central. Advice on this can be found in this
     [MavenReleaseScript](https://wiki.eclipse.org/MavenReleaseScript).
+    
+1. A specification committee member adds a comment on the main PR with the "ballot completion" section of [this checklist](https://github.com/jakartaee/specification-committee/blob/master/spec_finalization_checklist.md).
+Also, the `approved` label is added to both PRs (leaving the `final` and `ballot` labels).
 
-After the release review has completed successfully, the final release
-needs to be promoted to maven central. The specification committee will
-promote the specification project to jakarta.ee by merging the
-associated PR into the Jakarta EE Specification Committee project
-repository.
+1. The Specification Version TCK needs to be promoted by a member of the specification committee.  Advice on this process can be found in this [TCK promotion README](https://github.com/jakartaee/specification-tools/tree/master/promotion).
+
+After the release review has completed successfully, the Specification Version PR needs to be updated with the official ballot results by either the EMO or the specification committee.
+The ballot update can be performed either on the original PR or a subsequent PR, whichever is most efficient.
+The specification committee will promote the specification project to jakarta.ee by merging the associated PRs into the [Jakarta EE Specifications project repository](https://github.com/jakartaee/specifications).
+
 
 Links: <https://github.com/jakartaee/jakarta.ee>,
 <https://gohugo.io/documentation/>
