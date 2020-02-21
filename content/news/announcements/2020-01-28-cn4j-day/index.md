@@ -5,7 +5,9 @@ date: 2020-01-28T7:50:00-05:00
 categories: ["announcements"]
 ---
 
-*– Co-Located with Kubecon+CloudNativeCon Europe 2020, the March 30 event features speakers from IBM, Red Hat, Oracle and other enterprise Java leaders –*
+*– Co-Located with Kubecon+CloudNativeCon Europe 2020, the March 30 event features speakers from IBM, Red Hat, Oracle and other enterprise Java leaders –*  
+
+<!--more-->  
 
 **OTTAWA – JANUARY 28, 2020** – Today the [Eclipse Foundation](https://www.eclipse.org/) announced the launch of the [Cloud Native for Java (CN4J) Day event](https://eclipse-5413615.hs-sites.com/cn4j-day), a full-day of expert talks, demos, and thought-provoking sessions focused on enterprise applications implemented using open source vendor-neutral Jakarta EE (successor of Java EE) and Eclipse MicroProfile specifications on Kubernetes. Taking place on March 30, 2020 in Amsterdam, the event is co-located with [Kubecon+CloudNativeCon Europe](https://events.linuxfoundation.org/kubecon-cloudnativecon-europe) and is sponsored by the Cloud Native Computing Foundation (CNCF), IBM, Oracle, and RedHat. Interested parties can view the event’s agenda and register to attend here: http://eclipse.org/cn4j-day.
 
