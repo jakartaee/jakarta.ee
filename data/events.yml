@@ -8,6 +8,27 @@ submit_button_link: https://goo.gl/forms/xIlhGdX1qfKCyCZn1
 
 items:
   -
+    name: Devoxx UK
+    location: London, United Kingdom
+    date: May 13-15, 2020
+    expire_date: 2020-05-15T23:59:00-00:00
+    button_url: https://www.devoxx.co.uk
+    button_text: Register Now
+  -
+    name: Devoxx France
+    location: Porte Maillot, Paris
+    date: April 15-17, 2020
+    expire_date: 2020-04-17T23:59:00-00:00
+    button_url: https://www.devoxx.fr/
+    button_text: Register Now
+  -
+    name: Dev.next
+    location: Broomfield, Colorado
+    date: March 24-27, 2020
+    expire_date: 2020-03-27T23:59:00-00:00
+    button_url: https://www.devdotnext.com
+    button_text: Register Now
+  -
     name: Cloud Native for Java Day @ KubeCon EU
     location: Amsterdam, The Netherlands
     date: March 30, 2020
