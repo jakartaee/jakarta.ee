@@ -1,10 +1,10 @@
 ---
 adopters:
+  projects:
   - name: Madras JUG
     homepage_url: https://www.meetup.com/MadrasJUG/
     logo: mjug.svg
     logo_white: mjug.svg
-  projects:
   
 # Template: Example for creating new specification entry
 #  - name: Jakarta Bean Validation
