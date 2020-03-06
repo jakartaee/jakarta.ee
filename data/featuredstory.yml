@@ -17,17 +17,6 @@ items:
     type: both
 
   -
-    preamble: <span class="h3 fw-700">Cloud Native for Java Day</span>
-    title: Build Enterprise Java on Kubernetes!
-    content: A co-located event with KubeCon + CloudNativeCon EU on March 30, 2020
-    link: <a class="btn btn-primary btn-lg" href="http://eclipse-5413615.hs-sites.com/cn4j-day">Register Today</a>
-    bgImgSrc: /images/jakarta-ee-banner.jpg
-    startDate: 2020-01-05
-    endDate: 2020-03-30
-    story_classes: featured-story featured-alternate jakarta-ee-banner
-    type: story
-
-  -
     preamble: |
       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail">
         <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
