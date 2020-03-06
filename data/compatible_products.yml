@@ -46,6 +46,13 @@ sets:
       download: 'http://www.redhat.com/en/technologies/jboss-middleware/application-platform'
       compatibility: 'https://github.com/jakartaee/jakarta.ee/issues/659'
 
+    - name: JEUS
+      vendor: TmaxSoft Co., Ltd
+      version: 8.5
+      image: '/images/compatible_products/jeus_logo.svg'
+      download: 'https://kr.tmaxsoft.com/jakee/jeus8-b266.zip'
+      compatibility: 'https://github.com/jakartaee/jakarta.ee/issues/657'
+
   - title: Jakarta EE 8 Web Profile Compatible Products
     items:
     - name: Eclipse Glassfish
