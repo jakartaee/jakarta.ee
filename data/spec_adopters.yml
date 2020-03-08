@@ -2,6 +2,39 @@
 adopters:
   projects:
   
+  - name: Jakarta JSON Processing
+    directory: specifications/jsonp/ 
+    adopters:
+    - name: SouJava
+      homepage_url: https://soujava.org.br/
+      logo: soujava.png
+      logo_white: soujava.png
+
+  - name: Jakarta JSON Binding
+    directory: specifications/jsonb/ 
+    adopters:
+    - name: SouJava
+      homepage_url: https://soujava.org.br/
+      logo: soujava.png
+      logo_white: soujava.png
+
+  - name: Jakarta Contexts and Dependency Injection
+    directory: specifications/cdi/ 
+    adopters:
+    - name: SouJava
+      homepage_url: https://soujava.org.br/
+      logo: soujava.png
+      logo_white: soujava.png
+
+  - name: Jakarta Bean Validation
+    directory: specifications/bean-validation/
+    adopters:
+    - name: SouJava
+      homepage_url: https://soujava.org.br/
+      logo: soujava.png
+      logo_white: soujava.png
+
+
 # Template: Example for creating new specification entry
 #  - name: Jakarta Bean Validation
 #    directory: specifications/bean-validation/ # Trailing slash is required.
