@@ -9,6 +9,10 @@ adopters:
       homepage_url: https://soujava.org.br/
       logo: soujava.png
       logo_white: soujava.png
+    - name: Madras JUG
+      homepage_url: https://www.meetup.com/MadrasJUG/
+      logo: mjug.svg
+      logo_white: mjug.svg
 
   - name: Jakarta JSON Binding
     directory: specifications/jsonb/ 
