@@ -43,4 +43,6 @@ To sign up please be ready to provide the following information: name of the Spe
 
 To be in the loop with conversations related to the "Adopt a Spec" program:
 
-* Join the [Adopt-a-Spec Slack channel](https://jakarta.ee/connect/)
+* Join the [Adopt-a-Spec Slack channel](https://jakarta.ee/connect/) 
+
+{{< jug-adopters-list >}}  
