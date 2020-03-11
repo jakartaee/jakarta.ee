@@ -8,32 +8,25 @@ submit_button_link: https://goo.gl/forms/xIlhGdX1qfKCyCZn1
 
 items:
   -
+    name: IBM Think 2020
+    location: Virtual
+    date: May 5-7, 2020
+    expire_date: 2020-05-07T23:59:00-00:00
+    button_url: https://www.ibm.com/events/think/
+    button_text: Register Now
+  -
+    name: Red Hat Summit 2020
+    location: Virtual
+    date: April 28-29, 2020
+    expire_date: 2020-04-29T23:59:00-00:00
+    button_url: https://www.redhat.com/en/summit
+    button_text: Register Now
+  -
     name: Devoxx UK
     location: London, United Kingdom
     date: May 13-15, 2020
     expire_date: 2020-05-15T23:59:00-00:00
     button_url: https://www.devoxx.co.uk
-    button_text: Register Now
-  -
-    name: Devoxx France
-    location: Porte Maillot, Paris
-    date: April 15-17, 2020
-    expire_date: 2020-04-17T23:59:00-00:00
-    button_url: https://www.devoxx.fr/
-    button_text: Register Now
-  -
-    name: Dev.next
-    location: Broomfield, Colorado
-    date: March 24-27, 2020
-    expire_date: 2020-03-27T23:59:00-00:00
-    button_url: https://www.devdotnext.com
-    button_text: Register Now
-  -
-    name: Cloud Native for Java Day @ KubeCon EU
-    location: Amsterdam, The Netherlands
-    date: March 30, 2020
-    expire_date: 2020-03-20T23:59:00-00:00
-    button_url: http://eclipse-5413615.hs-sites.com/cn4j-day
     button_text: Register Now
   -
     name: JVM-Con
@@ -290,18 +283,4 @@ items:
     expire_date: 2020-02-21T23:59:00-00:00
     location: Atlanta, GA
     button_url: https://devnexus.com/
-    button_text: Register Now
-  -
-    name: Javaland
-    date: March 17 - 19 2020
-    expire_date: 2020-03-19T23:59:00-00:00
-    location: Phantasialand, Brühl
-    button_url: https://www.javaland.eu/en/home/
-    button_text: Register Now
-  -
-    name: KubeCon + CloudNativeCon Europe
-    date: March 30 - April 2 2020
-    expire_date: 2020-04-02T23:59:00-00:00
-    location: Amsterdam, The Netherlands
-    button_url: https://events19.linuxfoundation.org/events/kubecon-cloudnativecon-europe-2020/
     button_text: Register Now
