@@ -181,6 +181,12 @@ items:
        
    specification_committee:
        -
+          url: specification_committee/minutes-specification-february-19-2020.pdf
+          title: February 19, 2020 (pdf)
+       -
+          url: specification_committee/minutes-specification-february-5-2020.pdf
+          title: February 5, 2020 (pdf)
+       -
           url: specification_committee/minutes-specification-january-22-2020.pdf
           title: January 22, 2020 (pdf)
        -
