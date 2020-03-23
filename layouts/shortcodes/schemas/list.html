@@ -1,0 +1,13 @@
+{{- $pathURL := .Get "pathURL" -}}
+{{- $path := .Get "." -}}
+{{- $files := readDir "content/xml/ns/jakartaee" -}}
+
+<h3>Schemas</h3>
+
+{{- range $files }}
+   {{ if ne .Name "_index.md" }}
+<ul>
+  <td><a href="{{ $pathURL }}/xml/ns/jakartaee{{ .Name | relURL }}" target="_blank"> {{ .Name }}</a></td>
+</ul>
+   {{ end }}
+{{- end }}

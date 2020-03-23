@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns="https://www.w3.org/2001/XMLSchema"
+            targetNamespace="https://jakarta.ee/xml/ns/jakartaee"
+            xmlns:javaee="https://jakarta.ee/xml/ns/jakartaee"
+            xmlns:xsd="https://www.w3.org/2001/XMLSchema"
+            elementFormDefault="qualified"
+            attributeFormDefault="unqualified"
+            version="9">
+</xsd:schema>
