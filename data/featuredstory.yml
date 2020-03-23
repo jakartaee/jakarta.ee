@@ -15,6 +15,16 @@ items:
     story_classes: featured-story featured-alternate jakarta-ee-banner
     footer_classes: featured-footer featured-alternate jakarta-ee-banner
     type: both
+  -
+    title: Work on Jakarta EE 9 is now underway!
+    content: Follow the process and check out the Jakarta EE Platform Specification and GitHub pages.
+    link: <a class="btn btn-primary btn-lg" href="https://jakarta.ee/specifications/platform/9/">Learn More</a>
+    bgImgSrc: /images/jakarta-ee-banner.jpg
+    startDate: 2019-09-07
+    endDate: 2020-10-21
+    story_classes: featured-story featured-alternate jakarta-ee-banner
+    footer_classes: featured-footer featured-alternate jakarta-ee-banner
+    type: both
 
   -
     preamble: |
