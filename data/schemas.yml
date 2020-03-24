@@ -1,0 +1,17 @@
+---
+releases:
+
+- name: Jakarta EE 9
+  schemas: 
+  - name: An Example
+    schema: just_an_example.xsd
+    description: A description
+  - name: Another Example
+    schema: just_another_example.xsd
+
+- name: Jakarta EE 10
+  schemas:
+    - name: A Third Example
+      schema: a_third_example.xsd
+      description: Some text
+    

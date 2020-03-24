@@ -1,13 +1,18 @@
-{{- $pathURL := .Get "pathURL" -}}
-{{- $path := .Get "." -}}
-{{- $files := readDir "content/xml/ns/jakartaee" -}}
 
-<h3>Schemas</h3>
+{{- range .Site.Data.schemas.releases }}
+  
+<h2>{{ .name }}</h2>
+  <table>
+    <th>Schema</th>
+    <th>Description</th>
+  
+    {{- range .schemas }}
+      <tr>
+        <td><a href="/xml/ns/jakartaee/{{ .schema }}" target="_blank"> {{ .name }}</a></td>
+        <td>{{ .description }}</td>
+      </tr>
+   {{- end }}
+  </table>
 
-{{- range $files }}
-   {{ if ne .Name "_index.md" }}
-<ul>
-  <td><a href="{{ $pathURL }}/xml/ns/jakartaee{{ .Name | relURL }}" target="_blank"> {{ .Name }}</a></td>
-</ul>
-   {{ end }}
 {{- end }}
+
