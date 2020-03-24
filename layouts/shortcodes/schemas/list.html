@@ -4,11 +4,13 @@
 <h2>{{ .name }}</h2>
   <table>
     <th>Schema</th>
+    <th>File Name</th>
     <th>Description</th>
   
     {{- range .schemas }}
       <tr>
         <td><a href="/xml/ns/jakartaee/{{ .schema }}" target="_blank"> {{ .name }}</a></td>
+        <td><a href="/xml/ns/jakartaee/{{ .schema }}" target="_blank"> {{ .schema }}</a></td>
         <td>{{ .description }}</td>
       </tr>
    {{- end }}
