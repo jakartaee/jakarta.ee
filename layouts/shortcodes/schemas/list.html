@@ -1,7 +1,16 @@
 
+<ul>
+{{- range sort .Site.Data.schemas.releases "version" "desc" }}
+   <li><a href="#{{ .version }}">{{ .name }}</a></li>
+{{- end }}
+   <li><a href="#8">Jakarta EE 8</a></li>
+</ul>
+
 {{- range sort .Site.Data.schemas.releases "version" "desc" }}
   
+<a name ="{{ .version }}">
 <h2>{{ .name }}</h2>
+</a>
   <table>
     <th>File Name</th>
     <th>Description</th>
@@ -17,4 +26,10 @@
   </table>
 
 {{- end }}
+
+<a name = "8">
+<h2>Jakarta EE 8</h2>
+</a>
+See <a href="http://xmlns.jcp.org/xml/ns/javaee#8">http://xmlns.jcp.org/xml/ns/javaee#8</a> for all Jakarta EE 8 Schemas.
+  
 

@@ -18,3 +18,12 @@ releases:
       description: Some text
       status: Final
     
+# Template: Example for creating new schema entry
+#   - schema: a_simple_example.xsd
+#     description: Some text descring the schema
+#     status: Final Release
+
+# Template: Example for creating a new Jakarta EE release
+# - name: Jakarta EE 10
+#   version: 10
+#   schemas:
