@@ -4,24 +4,12 @@ releases:
 - name: Jakarta EE 9
   version: 9
   schemas: 
-  - schema: just_an_example.xsd
-    description: A description
-    status: Final Release
-  - schema: just_another_example.xsd
-    description: Another description
-    status: Draft
 
-- name: Jakarta EE 10
-  version: 10
-  schemas:
-    - schema: a_third_example.xsd
-      description: Some text
-      status: Final
     
 # Template: Example for creating new schema entry
 #   - schema: a_simple_example.xsd
 #     description: Some text descring the schema
-#     status: Final Release
+#     status: Final Release | Draft
 
 # Template: Example for creating a new Jakarta EE release
 # - name: Jakarta EE 10
