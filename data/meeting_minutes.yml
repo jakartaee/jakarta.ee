@@ -1,6 +1,9 @@
 items:
    marketing_committee:
        -
+          url: marketing_committee/minutes-marketing-march-5-2020.pdf
+          title: March 5, 2020 (pdf)
+       -
           url: marketing_committee/minutes-marketing-february-27-2020.pdf
           title: February 27, 2020 (pdf)
        -
@@ -180,6 +183,12 @@ items:
        
        
    specification_committee:
+       -
+          url: specification_committee/minutes-specification-february-19-2020.pdf
+          title: February 19, 2020 (pdf)
+       -
+          url: specification_committee/minutes-specification-february-5-2020.pdf
+          title: February 5, 2020 (pdf)
        -
           url: specification_committee/minutes-specification-january-22-2020.pdf
           title: January 22, 2020 (pdf)

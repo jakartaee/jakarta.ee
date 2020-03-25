@@ -15,6 +15,13 @@
         <span class="badge">
           <a href="https://projects.eclipse.org/projects/{{ .Params.project_id }}"><i class="fa fa-archive" aria-hidden="true"></i> Project</a>
         </span>
+        {{ range first 1 (where $.Site.Data.eclipsefdn_projects "project_id" .Params.project_id) }}
+        	{{- with .website_url }}
+	        <span class="badge">
+	          <a href="{{ . }}" target="_blank"><i class="fa fa-globe" aria-hidden="true"></i> Website</a>
+	        </span>
+	        {{ end }}
+        {{ end }}
       {{ end }}
     </h1>
   {{ end }}
