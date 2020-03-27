@@ -5,7 +5,26 @@ releases:
   version: 9
   schemas: 
 
-    
+    - schema: ../jaxb/bindingschema_3_0.xsd
+      description: XML Schema for the Jakarta XML Binding binding customization descriptor
+      status: Draft
+
+    - schema: jakartaee_web_services_metadata_handler_3_0.xsd
+      description: XML Schema for the Handler chain configuration descriptor
+      status: Draft
+
+    - schema: ../persistence/orm/orm_3_0.xsd
+      description: XML Schema for for the persistence object/relational mapping file
+      status: Draft
+
+    - schema: ../persistence/persistence_3_0.xsd
+      description: XML Schema for the persistence configuration file
+      status: Draft
+
+    - schema: ../jaxws/wsdl_customizationschema_3_0.xsd
+      description: XML Schema for the Jakarta XML Web Services WSDL customization descriptor
+      status: Draft
+
 # Template: Example for creating new schema entry
 #   - schema: a_simple_example.xsd
 #     description: Some text descring the schema
