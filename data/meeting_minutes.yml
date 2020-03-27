@@ -450,6 +450,9 @@ items:
 
    steering_committee:
        -
+          url: steering_committee/minutes-february-11-2020.pdf
+          title: February 11, 2020 (pdf) 
+       -
           url: steering_committee/minutes-january-28-2020.pdf
           title: January 28, 2020 (pdf) 
        -
