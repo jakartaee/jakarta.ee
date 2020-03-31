@@ -16,9 +16,9 @@
     <th>Description</th>
     <th>Status</th>
   
-    {{- range .schemas }}
+    {{- range sort .schemas "namespace" "asc" }}
       <tr>
-        <td><a href="/xml/ns/jakartaee/{{ .schema }}" target="_blank"> {{ .schema }}</a></td>
+        <td><a href="/xml/ns/{{ .namespace }}/{{ .schema }}" target="_blank"> {{ .schema }}</a></td>
         <td>{{ .description }}</td>
         <td>{{ .status }}</td>
       </tr>
