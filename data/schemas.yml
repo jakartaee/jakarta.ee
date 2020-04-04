@@ -25,6 +25,14 @@ releases:
       description: XML Schema for the Jakarta XML Web Services WSDL customization descriptor
       status: Draft
 
+    - schema: batchXML_2_0.xsd
+      description: XML Schema for the Jakarta Batch artifacts XML file (batch.xml)
+      status: Draft
+
+    - schema: jobXML_2_0.xsd
+      description: XML Schema for the Jakarta Batch Job Specification Language (JSL)
+      status: Draft
+
 # Template: Example for creating new schema entry
 #   - schema: a_simple_example.xsd
 #     description: Some text descring the schema
