@@ -2,9 +2,18 @@
 title: "Jakarta EE XML Schemas"
 date: 2020-03-23T00:00:00-00:00
 layout: "single"
-aliases: ["/xml/ns/jakartee", "/xml/ns/persistence", "xml/ns/jaxws","xml/ns/jaxb"]
 ---
 
-All Jakarta EE XML Schemas.
+## Content
 
-{{< schemas/list >}}
+- [Introduction]({{< ref "#intro" >}})
+- [Namespaces]({{< ref "#namespaces" >}})
+
+## Introduction {#intro}
+
+## Namespaces {#namespaces}
+
+- [jakarta.ee/xml/ns/jakartaee](../xml/ns/jakartaee/)
+- [jakarta.ee/xml/ns/jaxb](../xml/ns/jaxb/)
+- [jakarta.ee/xml/ns/jaxws](../xml/ns/jaxws/)
+- [jakarta.ee/xml/ns/persistence](../xml/ns/persistence/)
