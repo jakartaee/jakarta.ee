@@ -6,26 +6,24 @@ defaultRight: |
         </div>
 items:
   -
-    title: Jakarta EE 8 is here!
-    content: Download compatible products, get involved, and stay in the know!
-    link: <a class="btn btn-primary btn-lg" href="https://jakarta.ee/release/">Learn More</a>
-    bgImgSrc: /images/jakarta-ee-banner.jpg
+    preamble: <small>Jakarta EE 2020 Developer Survey</small>
+    title: <strong class="divider uppercase">Take the survey today!</strong>
+    content: <small>April 6 to April 30.</small>
+    link: <a class="btn btn-primary btn-lg" href="https://www.surveymonkey.com/r/YS75R27">Take the survey</a>
+    bgImgSrc: /images/dev-survey-promo-banner.jpg
     startDate: 2019-09-07
-    endDate: 2020-10-21
-    story_classes: featured-story featured-alternate jakarta-ee-banner
+    endDate: 2020-05-01
     footer_classes: featured-footer featured-alternate jakarta-ee-banner
-    type: both
+    type: footer
   -
-    title: Work on Jakarta EE 9 is now underway!
-    content: Follow the process and check out the Jakarta EE Platform Specification and GitHub pages.
-    link: <a class="btn btn-primary btn-lg" href="https://jakarta.ee/specifications/platform/9/">Learn More</a>
+    title: <strong class="uppercase" style="font-size:32px">Jakarta EE 2020 developer survey</strong>
+    content: <div class='divider divider-left'>Take the Enterprise Java Ecosystem's Leading Survey Today!</div><small>April 6 to April 30.</small>
+    link: <a class="btn btn-primary btn-lg" href="https://www.surveymonkey.com/r/YS75R27">Take the survey</a>
     bgImgSrc: /images/jakarta-ee-banner.jpg
-    startDate: 2019-09-07
+    startDate: 2020-05-01
     endDate: 2020-10-21
-    story_classes: featured-story featured-alternate jakarta-ee-banner
-    footer_classes: featured-footer featured-alternate jakarta-ee-banner
-    type: both
-
+    story_classes: featured-story jakarta-ee-banner
+    type: story
   -
     preamble: |
       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail">
@@ -33,7 +31,7 @@ items:
         <polyline points="22,6 12,13 2,6"></polyline> 
       </svg>
     title: Sign up to our Newsletter
-    footer_classes: background-secondary featured-footer featured-alternate
+    footer_classes: background-secondary featured-footer
     link: |
       <form action="https://eclipsecon.us6.list-manage.com/subscribe/post" method="post" target="_blank">
        <div class="form-group">
