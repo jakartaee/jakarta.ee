@@ -1,0 +1,26 @@
+---
+releases:
+
+- name: Jakarta EE 9
+  version: "9"
+  schemas: 
+
+    - schema: orm_3_0.xsd
+      namespace: persistence/orm
+      description: XML Schema for for the persistence object/relational mapping file
+      status: Draft
+
+    - schema: persistence_3_0.xsd
+      namespace: persistence
+      description: XML Schema for the persistence configuration file
+      status: Draft
+
+# Template: Example for creating new schema entry
+#   - schema: a_simple_example.xsd
+#     description: Some text descring the schema
+#     status: Final Release | Draft
+
+# Template: Example for creating a new Jakarta Persistencde release
+# - name: Jakarta Persistence 4.0
+#   version: 4
+#   schemas:

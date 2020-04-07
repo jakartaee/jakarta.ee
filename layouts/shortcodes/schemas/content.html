@@ -1,0 +1,9 @@
+
+<ul>
+  <li><a href="#intro">Introduction</a></li>
+  <li><a href="#using">Using Jakarta EE Schemas</a></li>
+  {{- range sort .Site.Data.jakartaee_schemas.releases "version" "desc" }}
+   <li><a href="#{{ .version }}">{{ .name }}</a></li>
+{{- end }}
+   <li><a href="#8">Jakarta EE 8</a></li>
+</ul>

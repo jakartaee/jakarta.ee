@@ -1,0 +1,32 @@
+---
+releases:
+
+- name: Jakarta EE 9
+  version: 9
+  schemas: 
+
+    - schema: jakartaee_web_services_metadata_handler_3_0.xsd
+      namespace: jakartaee
+      description: XML Schema for the Handler chain configuration descriptor
+      status: Draft
+
+    - schema: batchXML_2_0.xsd
+      namespace: jakartaee
+      description: XML Schema for the Jakarta Batch artifacts XML file (batch.xml)
+      status: Draft
+
+    - schema: jobXML_2_0.xsd
+      namespace: jakartaee
+      description: XML Schema for the Jakarta Batch Job Specification Language (JSL)
+      status: Draft
+
+
+# Template: Example for creating new schema entry
+#   - schema: a_simple_example.xsd
+#     description: Some text descring the schema
+#     status: Final Release | Draft
+
+# Template: Example for creating a new Jakarta EE release
+# - name: Jakarta EE 10
+#   version: 10
+#   schemas:
