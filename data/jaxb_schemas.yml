@@ -1,0 +1,21 @@
+---
+releases:
+
+- name: Jakarta XML Binding 3.0
+  version: 3
+  schemas: 
+
+    - schema: bindingschema_3_0.xsd
+      namespace: jaxb
+      description: XML Schema for the Jakarta XML Binding binding customization descriptor
+      status: Draft
+
+# Template: Example for creating new schema entry
+#   - schema: a_simple_example.xsd
+#     description: Some text descring the schema
+#     status: Final Release | Draft
+
+# Template: Example for creating a new release
+# - name: Jakarta XML Binding 4.0
+#   version: 4
+#   schemas:
