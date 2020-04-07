@@ -1,0 +1,23 @@
+<h3>Meeting Minutes</h3>
+{{ $index_type := .Get 0 }}
+{{ $meeting_minute_types := index $.Site.Data.meeting_minutes "items" $index_type }}
+{{ $num_items := len $meeting_minute_types }}
+{{ $items_per_col := math.Ceil (div $num_items 3.0) }}
+{{ $.Scratch.Set "items_counter" 1 }}
+{{ $.Scratch.Set "items_counter_per_row" 1 }}
+<div class="row">
+  {{ range $meeting_minute_types }}
+    {{ $items_counter := $.Scratch.Get "items_counter" }}
+    {{ $items_counter_per_row := $.Scratch.Get "items_counter_per_row" }}
+    {{ if eq $items_counter_per_row 1}}
+      <div class="col-sm-8"><ul>
+    {{ end }}
+    <li><a href="{{.url}}">{{.title}}</a></li>
+    {{ if or (eq (float $items_counter_per_row) $items_per_col) (eq $items_counter $num_items) }}
+      {{ $.Scratch.Set "items_counter_per_row" 0}}
+      </ul></div>
+    {{ end }}
+    {{ $.Scratch.Add "items_counter" 1}}
+    {{ $.Scratch.Add "items_counter_per_row" 1}}
+  {{ end }}
+</div>
