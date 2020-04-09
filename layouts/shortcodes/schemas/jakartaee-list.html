@@ -18,4 +18,10 @@
    {{- end }}
   </table>
 
+  <h3>Dependent Namespaces</h3>
+  <ul>
+  {{- range  .dependencies }}
+    <li><a href="{{ .location }}">{{ .location }}</a></li>
+  {{- end }}
+  </ul>
 {{- end }}  
