@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 
-    Copyright (c) 2009, 2018 Oracle and/or its affiliates. All rights reserved.
+    Copyright (c) 2009, 2020 Oracle and/or its affiliates. All rights reserved.
 
     This program and the accompanying materials are made available under the
     terms of the Eclipse Public License v. 2.0, which is available at
@@ -23,7 +23,7 @@
 	    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
 	    elementFormDefault="qualified"
 	    attributeFormDefault="unqualified"
-	    version="2.3">
+	    version="3.0">
 
   <xsd:annotation>
     <xsd:documentation>
@@ -34,8 +34,8 @@
   <xsd:annotation>
     <xsd:documentation>
 
-      This is the XML Schema for the JSP 2.3 deployment descriptor
-      types.  The JSP 2.3 schema contains all the special
+      This is the XML Schema for the JSP 3.0 deployment descriptor
+      types.  The JSP 3.0 schema contains all the special
       structures and datatypes that are necessary to use JSP files
       from a web application. 
 
