@@ -12,6 +12,3 @@ during Jakarta EE releases.
 
 * [Guidelines for jakarta.ee website maintainer](/documents/website-guidelines) \
 This document provides a short summary for a selected jakarta.ee website maintainers who are also Jakarta EE Working Group Committees members.
-
-### Committee Members
-{{< about-committee-members >}}
