@@ -29,4 +29,4 @@ A specific version of the Jakarta EE specification contains a set of deployment 
 
 ## Jakarta EE 8 {#8}
 
-See <a href="http://xmlns.jcp.org/xml/ns/javaee#8">http://xmlns.jcp.org/xml/ns/javaee#8</a> for all Jakarta EE 8 Schemas.
+See http://xmlns.jcp.org/xml/ns/javaee#8 for all Jakarta EE 8 Schemas.
