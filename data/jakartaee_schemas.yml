@@ -25,6 +25,11 @@ releases:
       description: XML Schema for the Jakarta Batch Job Specification Language (JSL)
       status: Draft
 
+    - schema: jsp_3_0.xsd
+      namespace: jakartaee
+      description: XML Schema for the JavaServer Pages deployment descriptor
+      status: Draft
+
 
 # Template: Example for creating new schema entry
 #   - schema: a_simple_example.xsd
