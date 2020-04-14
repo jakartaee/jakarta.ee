@@ -8,6 +8,20 @@ submit_button_link: https://goo.gl/forms/xIlhGdX1qfKCyCZn1
 
 items:
   -
+    name: JakartaOne Livestream CN4J
+    location: Virtual
+    date: May 12, 2020
+    expire_date: 2020-05-12T23:59:00-00:00
+    button_url: https://jakartaone.org/cn4j2020/
+    button_text: Register Now
+  -
+    name: EclipseCon 2020
+    location: Virtual
+    date: October 20-22, 2020
+    expire_date: 2020-10-22T23:59:00-00:00
+    button_url: https://www.eclipsecon.org/2020
+    button_text: Register Now
+  -
     name: IBM Think 2020
     location: Virtual
     date: May 5-7, 2020
