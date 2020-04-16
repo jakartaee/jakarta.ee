@@ -15,7 +15,8 @@ The focus of this committee is on marketing, branding and community awareness an
 * Dominika Tasarz - Payara, Jadon Ortlepp - alternate
 * Cesar Saavedra - Red Hat, Paul Hinz - alternate
 * David Blevins - Tomitribe, Jonathan Gallimore - alternate
-* VACANT - Elected Committer Representative
-* Scott (Congquan) Wang - Primenton - Elected Enterprise Representative, Qingyu Meng - alternate
+* Scott (Congquan) Wang - Primenton - Elected Enterprise Representative
+* VACANT - Elected Committer Member Representative
+* VACANT - Elected Participant Member Representative
 
 {{< meeting-minutes-single "marketing_committee" >}}

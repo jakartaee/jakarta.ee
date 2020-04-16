@@ -15,8 +15,8 @@ This committee owns the overall strategy and the high level, long term roadmap s
 * Steve Millidge - Payara, Eliot Martin - alternate
 * Mark Little - Red Hat, Scott Stark - alternate
 * David Blevins - Tomitribe, Cesar Hernandez - alternate
-* Martijn Verburg - London Java Community - Elected Participant Representative
-* Arjan Tijms - Elected Committer Representative
-* Scott (Congquan) Wang - Primenton - Elected Enterprise Representative, Xiang Liu - alternate
+* Martijn Verburg - London Java Community - Elected Participant Member Representative
+* Arjan Tijms - Elected Committer Member Representative
+* Scott (Congquan) Wang - Primenton - Elected Enterprise Representative
 
 {{< meeting-minutes-single "steering_committee" >}}
