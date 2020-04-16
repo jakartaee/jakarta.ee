@@ -12,7 +12,7 @@
     {{ if eq $items_counter_per_row 1}}
       <div class="col-sm-8"><ul>
     {{ end }}
-    <li><a href="{{.url}}">{{.title}}</a></li>
+    <li><a href="{{absURL (printf "/meeting_minutes/%s" .url) }}">{{.title}}</a></li>
     {{ if or (eq (float $items_counter_per_row) $items_per_col) (eq $items_counter $num_items) }}
       {{ $.Scratch.Set "items_counter_per_row" 0}}
       </ul></div>
