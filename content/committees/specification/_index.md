@@ -18,7 +18,7 @@ The Specification Committee is responsible for implementing the ​[Jakarta EE S
 * Ivar Grimstad - PMC Representative
 * Martijn Verburg - London Java Community - Elected Participant Member Representative
 * Werner Keil - Elected Committer Member Representative
-* Scott (Congquan) Wang - Primenton - Elected Enterprise Representative
+* Scott (Congquan) Wang - Primeton - Elected Enterprise Representative
 * Paul Buck - Eclipse Foundation (serves as chair, but is not a voting committee member)
 
 {{< meeting-minutes-single "specification_committee" >}}
