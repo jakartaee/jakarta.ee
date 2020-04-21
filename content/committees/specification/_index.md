@@ -9,7 +9,7 @@ The Specification Committee is responsible for implementing the ​[Jakarta EE S
 
 ### Committee Members
 
-* Kenji Kazumura - Fujitsu, Michael DeNicola - alternate
+* Kenji Kazumura - Fujitsu
 * Dan Bandera - IBM, Kevin Sutter - alternate
 * Bill Shannon - Oracle, Ed Bratt - alternate
 * Mark Wareham - Payara, Matt Gill - alternate
