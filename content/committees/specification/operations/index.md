@@ -88,7 +88,7 @@ reviews run for a minimum of 14 days; other votes run for a minimum of 7
 days.
 
 The requirements for each are described in [Review
-Requirements/Guidelines](#_review_requirementsguidelines).
+Requirements/Guidelines](#review_requirementsguidelines).
 
 The [standard release
 process](https://www.eclipse.org/projects/handbook/#release) defined in
@@ -96,9 +96,9 @@ the Eclipse Foundation Project Handbook is followed and augmented with a
 specification committee ballot. Additional detail for the various
 reviews can be found in these sections:
 
--   [Creating a Release Plan](#_creating_a_release_plan)
+-   [Creating a Release Plan](#creating_a_release_plan)
 
--   [Creating a Final Specification](#_creating_a_final_specification)
+-   [Creating a Final Specification](#creating_a_final_specification)
 
 The EMO initiates a specification committee ballot by sending an email
 on the public Jakarta EE Specification Committee
