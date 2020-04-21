@@ -1,5 +1,4 @@
 {{ define "main" }}
-  {{ .Content }}
   {{ with .Pages }}
     <h3>Documents</h3>
     <ul>
@@ -8,4 +7,5 @@
       {{ end }}
     </ul>
   {{ end }}
+  {{ .Content }}
 {{ end }}
