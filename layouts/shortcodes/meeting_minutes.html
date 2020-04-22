@@ -1,0 +1,48 @@
+<!-- 
+  Copyright (c) 2019 Eclipse Foundation, Inc.
+
+  This program and the accompanying materials are made available under the
+  terms of the Eclipse Public License v. 2.0 which is available at
+  http://www.eclipse.org/legal/epl-2.0.
+
+  Contributors:
+    Eric Poirier <eric.poirier@eclipse-foundation.org>
+
+  SPDX-License-Identifier: EPL-2.0
+-->
+
+{{ $.Scratch.Set "counter" 0}}
+<ul class="nav nav-tabs" role="tablist">
+{{ range $index, $meeting_minute_types := .Site.Data.meeting_minutes.items }}
+  {{ $counter := $.Scratch.Get "counter" }}
+  {{ if eq $counter 0 }}
+    <li role="presentation" class="active"><a href="#{{ $index }}" aria-controls="{{ $index }}" role="tab" data-toggle="tab">{{ humanize $index }}</a></li>
+    {{ $.Scratch.Add "counter" 1}}
+  {{ else }}
+    <li role="presentation"><a href="#{{ $index }}" aria-controls="{{ $index }}" role="tab" data-toggle="tab">{{ humanize $index }}</a></li>
+  {{ end }}
+{{ end }}
+</ul>
+
+
+{{ $.Scratch.Set "types_counter" 0}}
+<div class="tab-content">
+  {{ range $index_type, $meeting_minute_types := .Site.Data.meeting_minutes.items}}
+    {{ $types_counter := $.Scratch.Get "types_counter" }}
+    {{ if eq $types_counter 0 }}
+      <div role="tabpanel" class="tab-pane active" id="{{$index_type}}">
+    {{ else }}
+      <div role="tabpanel" class="tab-pane" id="{{$index_type}}">
+    {{ end }}
+      {{ range $index, $year := $.Site.Data.meeting_minutes.years }}
+      <h4>{{ $year }}</h4>
+      <ul class="tri-col">
+      {{ range $index, $el := (where $meeting_minute_types "year" $year) }}
+        <li><a href="{{absURL (printf "/meeting_minutes/%s" $el.url) }}">{{$el.title}}</a></li>
+      {{ end }}
+      </ul>
+    {{ end }}
+    </div>
+    {{ $.Scratch.Add "types_counter" 1}}
+  {{ end }}
+</div>
