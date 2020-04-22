@@ -456,6 +456,9 @@ items:
 
    steering_committee:
        -
+          url: steering_committee/minutes-april-7-2020.pdf
+          title: April 7, 2020 (pdf) 
+       -
           url: steering_committee/minutes-march-31-2020.pdf
           title: March 31, 2020 (pdf) 
        -
