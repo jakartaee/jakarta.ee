@@ -8,11 +8,11 @@ items:
   -
     preamble: <small>Jakarta EE 2020 Developer Survey</small>
     title: <strong class="divider uppercase">Take the survey today!</strong>
-    content: <small>April 6 to April 30.</small>
+    content: <small>April 6 to May 5th.</small>
     link: <a class="btn btn-primary btn-lg" href="https://www.surveymonkey.com/r/YS75R27">Take the survey</a>
     bgImgSrc: /images/dev-survey-promo-banner.jpg
     startDate: 2019-09-07
-    endDate: 2020-05-01
+    endDate: 2020-05-06
     footer_classes: featured-footer featured-alternate jakarta-ee-banner
     type: footer
   -
