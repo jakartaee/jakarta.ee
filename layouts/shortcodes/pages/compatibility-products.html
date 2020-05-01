@@ -23,7 +23,14 @@
         <div class="col-xs-24 col-sm-12 col-lg-6 padding-bottom-20">
           <div class="match-height-item-by-row padding-20 flex-column">
             <div class="center-block padding-left-30 padding-right-30 padding-bottom-10 padding-top-10 grid-center" data-mh="{{ $title | urlize }}">
+              {{ if .image }}
               <img class="img img-responsive" src="{{ .image }}" alt="{{ .vendor }}'s {{ .name }} logo">
+              {{ else }}
+	            <div class="icon-backdrop">
+	              <div class="ratio"></div>
+	              <div class="icon-container"><i class="fa fa-download"></i></div>
+	            </div>
+              {{ end }}
             </div>
             <div class="flex-grow text-center flex-column">
               <h3 class="margin-bottom-0">{{ .name }}</h3>

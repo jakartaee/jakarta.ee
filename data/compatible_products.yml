@@ -60,6 +60,13 @@ sets:
       download: 'http://primeton.com/products/pas/'
       compatibility: 'https://github.com/jakartaee/jakarta.ee/issues/702'
 
+    - name: Apusic AAS
+      vendor: Kingdee Apusic cloud computing Co., Ltd.
+      version: 10.1
+      image: '/images/compatible_products/aas.jpg'
+      download: 'http://www.apusic.com/wp-content/uploads/AAS-V10.zip'
+      compatibility: 'https://github.com/jakartaee/jakarta.ee/issues/744'
+
   - title: Jakarta EE 8 Web Profile Compatible Products
     items:
     - name: Eclipse Glassfish
