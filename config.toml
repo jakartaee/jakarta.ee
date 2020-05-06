@@ -144,3 +144,10 @@ enableRobotsTXT = true
     url = "/resources#meetups"
     parent = "Resources"
     weight = 11
+
+[[menu.main]]
+    name = "Jakarta EE Specification Projects"
+    url = "https://projects.eclipse.org/list-of-projects?combine=jakarta&field_project_techology_types_tid=1102&field_state_value_2=All"
+    parent = "Resources"
+    weight = 12
+    
