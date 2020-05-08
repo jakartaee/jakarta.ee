@@ -44,7 +44,7 @@
             <p>To learn how your JUG can sign-up, check out the <a href="/community/adopt-a-spec">Adopt a Specification</a> program.</p>
               <ul class="list-inline">
               {{ range sort $project.adopters  "name" "asc"}}
-                <li><a href="{{ .homepage_url }}" target="_blank"><img src="/images/spec_adopters/{{ .logo }}" alt="{{ .name }}" style="padding:15px; width:250px;"/></a></li>
+                <li><a href="{{ .homepage_url }}" target="_blank"><img src="/images/spec_adopters/{{ .logo }}" alt="{{ .name }}" class="adopter-logo"/></a></li>
               {{end}}
             </ul>
           {{ end }}

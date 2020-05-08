@@ -6,14 +6,14 @@
 {{ end }}
 
 {{ if gt (len ($scratch.Get "adopters")) 0 }}
-<h2 id="adopters">Adopters</h2>
+<h2 id="adopters" class="margin-bottom-20">Adopters</h2>
 <ul class="list-inline">
-	{{ range $scratch.GetSortedMapValues "adopters" }}
-		<li>
-			<a href="{{ .homepage_url }}" title="{{ .name }} homepage" target="_blank" >
-				<img class="responsive-img img" src="/images/spec_adopters/{{ .logo }}" alt="{{ .name }} logo" width="100" />
-			</a>
-		</li>
-	{{ end }}
+  {{ range $scratch.GetSortedMapValues "adopters" }}
+    <li>
+      <a href="{{ .homepage_url }}" title="{{ .name }} homepage" target="_blank" >
+        <img class="adopter-logo" src="/images/spec_adopters/{{ .logo }}" alt="{{ .name }} logo" />
+      </a>
+    </li>
+  {{ end }}
 </ul>
 {{ end }}
