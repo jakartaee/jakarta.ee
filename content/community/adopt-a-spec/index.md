@@ -5,6 +5,8 @@ date: 2020-02-01T16:09:45-04:00
 
 This program is intended to encourage JUG leaders and members to get involved by adopting a Jakarta EE Specification. The objective is to increase developer level participation in the evolution of the Jakarta EE Specification.
 
+{{< jug-adopters-list >}}  
+
 ## How JUG leaders can help:
 
 Ensure that the topic of the adopted Jakarta EE Specification is consistently discussed, e.g. dedicate a portion of the existing JUG meetups to the discussions related to the adopted Specification, arrange monthly calls with all representatives of JUGs that are running the program in their groups. 
@@ -44,5 +46,3 @@ To sign up please be ready to provide the following information: name of the Spe
 To be in the loop with conversations related to the "Adopt a Spec" program:
 
 * Join the [Adopt-a-Spec Slack channel](https://jakarta.ee/connect/) 
-
-{{< jug-adopters-list >}}  
