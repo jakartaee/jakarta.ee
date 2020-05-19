@@ -7,8 +7,8 @@ defaultRight: |
 items:
   -
     title: <strong style="font-size:32px">JakartaOne Livestream Cloud Native for Java</strong>
-    content: <div class='divider divider-left'>Build Enterprise Java on Kubernetes!</div><small>May 12, 2020</small>
-    link: <a class="btn btn-primary btn-lg" href="https://jakartaone.org/cn4j2020/">Register today</a>
+    content: Build Enterprise Java on Kubernetes!
+    link: <a class="btn btn-primary btn-lg" href="https://www.youtube.com/playlist?list=PLutlXcN4EAwDbPyz-X-ucOSUQgYgUkff7">Watch The Recordings</a>
     bgImgSrc: /images/jakarta-ee-banner.jpg
     startDate: 2020-05-01
     endDate: 2020-10-21
