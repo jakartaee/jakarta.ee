@@ -462,6 +462,18 @@ items:
 
    steering_committee:
        -
+          url: steering_committee/minutes-May-5-2020.pdf
+          title: May 5, 2020 (pdf) 
+       -
+          url: steering_committee/minutes-april-28-2020.pdf
+          title: April 28, 2020 (pdf) 
+       -
+          url: steering_committee/minutes-april-21-2020.pdf
+          title: April 21, 2020 (pdf) 
+       -
+          url: steering_committee/minutes-april-14-2020.pdf
+          title: April 14, 2020 (pdf)
+       -
           url: steering_committee/minutes-april-7-2020.pdf
           title: April 7, 2020 (pdf) 
        -
