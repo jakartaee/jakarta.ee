@@ -8,6 +8,13 @@ submit_button_link: https://goo.gl/forms/xIlhGdX1qfKCyCZn1
 
 items:
   -
+    name: JNation 2020
+    location: Virtual
+    date: June 2, 2020
+    expire_date: 2020-06-02T23:59:00-00:00
+    button_url: https://2020.jnation.pt/
+    button_text: Register Now
+  -
     name: JakartaOne Livestream CN4J
     location: Virtual
     date: May 12, 2020
