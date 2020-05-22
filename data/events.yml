@@ -8,6 +8,13 @@ submit_button_link: https://goo.gl/forms/xIlhGdX1qfKCyCZn1
 
 items:
   -
+    name: JakartaOne Livestream Brazil
+    location: Virtual
+    date: August 29, 2020
+    expire_date: 2020-08-29T23:59:00-00:00
+    button_url: https://jakartaone.org/brazil2020/
+    button_text: Register Now
+  -
     name: JNation 2020
     location: Virtual
     date: June 2, 2020
