@@ -36,13 +36,6 @@ items:
     button_url: https://www.redhat.com/en/summit
     button_text: Register Now
   -
-    name: Devoxx UK
-    location: London, United Kingdom
-    date: August 24-26, 2020
-    expire_date: 2020-08-26T23:59:00-00:00
-    button_url: https://www.devoxx.co.uk
-    button_text: Register Now
-  -
     name: JVM-Con
     location: Köln, Germany
     date: November 25, 2019
