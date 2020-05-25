@@ -16,15 +16,15 @@ items:
     footer_classes: featured-footer jakarta-ee-banner
     type: story
   -
-    title: <strong>JakartaOne Livestream Cloud Native for Java</strong>
-    content: <div class='divider'>Build Enterprise Java on Kubernetes!</div><small>May 12, 2020</small>
-    link: <a class="btn btn-primary btn-lg" href="https://jakartaone.org/cn4j2020/">Register today</a>
+    title: Work on Jakarta EE 9 is now underway!
+    content: Follow the process and check out the Jakarta EE Platform Specification and GitHub pages.
+    link: <a class="btn btn-primary btn-lg" href="https://jakarta.ee/specifications/platform/9/">Learn More</a>
     bgImgSrc: /images/jakarta-ee-banner.jpg
-    startDate: 2020-05-01
-    endDate: 2020-10-21
+    startDate: 2019-09-07
+    endDate: 2020-06-22
     story_classes: featured-story jakarta-ee-banner
     footer_classes: featured-footer jakarta-ee-banner
-    type: footer
+    type: both
   -
     preamble: |
       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail">
