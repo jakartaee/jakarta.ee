@@ -6,6 +6,15 @@ defaultRight: |
         </div>
 items:
   -
+    title: <strong class="uppercase" style="font-size:32px">Jakarta EE YouTube channel</strong>
+    content: Watch the Jakarta EE Community Calls, Tech Talks, event replays and other exciting community videos on the new Jakarta EE YouTube channel!
+    link: <a class="btn btn-primary btn-lg" href="https://www.youtube.com/channel/UC4M7h5b6elu9VlzjLfzuXyg">Subscribe today</a>
+    bgImgSrc: /images/jakarta-ee-banner.jpg
+    startDate: 2020-05-26
+    endDate: 2021-05-27
+    story_classes: featured-story jakarta-ee-banner
+    type: story
+  -
     title: <strong style="font-size:32px">JakartaOne Livestream Cloud Native for Java</strong>
     content: Build Enterprise Java on Kubernetes!
     link: <a class="btn btn-primary btn-lg" href="https://www.youtube.com/playlist?list=PLutlXcN4EAwDbPyz-X-ucOSUQgYgUkff7">Watch The Recordings</a>
