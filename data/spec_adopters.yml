@@ -42,6 +42,14 @@ adopters:
       logo: soujava.png
       logo_white: soujava.png
 
+  - name: Jakarta MVC
+    directory: specifications/mvc/
+    adopters:
+    - name: SouJava
+      homepage_url: https://soujava.org.br/
+      logo: soujava.png
+      logo_white: soujava.png
+
 
 # Template: Example for creating new specification entry
 #  - name: Jakarta Bean Validation
