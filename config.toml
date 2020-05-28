@@ -152,8 +152,14 @@ enableRobotsTXT = true
     weight = 12
 
 [[menu.main]]
+    name = "Jakarta EE Community Folder"
+    url = "https://drive.google.com/open?id=1kJFh6EIpOyAWP3JkymYZXOK311WM2HXm"
+    parent = "Resources"
+    weight = 13
+    
+[[menu.main]]
     name = "Starter for Jakarta EE"
     url = "https://start.jakarta.ee/"
     parent = "Resources"
-    weight = 13
+    weight = 14
     
