@@ -27,6 +27,12 @@ layout: "single"
 
 ---
 
+## Public Calendar{#calendar}  
+
+* [Jakarta Community Calendar](https://calendar.google.com/calendar/embed?src=eclipse-foundation.org_3281qms6riu4kdf354jn5idon0%40group.calendar.google.com)
+
+---
+
 ## Presentations{#presentations}  
 
 * [Jakarta EE presentations](https://www.slideshare.net/Jakarta_EE)
