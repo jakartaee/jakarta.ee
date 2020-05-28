@@ -146,20 +146,26 @@ enableRobotsTXT = true
     weight = 11
 
 [[menu.main]]
+    name = "Jakarta EE YouTube Channel"
+    url = "https://www.youtube.com/channel/UC4M7h5b6elu9VlzjLfzuXyg"
+    parent = "Resources"
+    weight = 12
+
+[[menu.main]]
     name = "Jakarta EE Specification Projects"
     url = "https://projects.eclipse.org/list-of-projects?combine=jakarta&field_project_techology_types_tid=1102&field_state_value_2=All"
     parent = "Resources"
-    weight = 12
+    weight = 13
 
 [[menu.main]]
     name = "Jakarta EE Community Folder"
     url = "https://drive.google.com/open?id=1kJFh6EIpOyAWP3JkymYZXOK311WM2HXm"
     parent = "Resources"
-    weight = 13
+    weight = 14
     
 [[menu.main]]
     name = "Starter for Jakarta EE"
     url = "https://start.jakarta.ee/"
     parent = "Resources"
-    weight = 14
+    weight = 15
     
