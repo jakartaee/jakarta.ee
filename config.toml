@@ -164,8 +164,14 @@ enableRobotsTXT = true
     weight = 14
     
 [[menu.main]]
+    name = "Jakarta EE Community Calendar"
+    url = "/resources#calendar"
+    parent = "Resources"
+    weight = 15
+
+[[menu.main]]
     name = "Starter for Jakarta EE"
     url = "https://start.jakarta.ee/"
     parent = "Resources"
-    weight = 15
+    weight = 16
     
