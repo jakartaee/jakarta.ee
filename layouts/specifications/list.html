@@ -26,30 +26,46 @@
     </h1>
   {{ end }}
   {{ .Content }}
-  <div class="news-list"> 
-    {{ range .Page.Sections.ByWeight}}
-      <a href="{{- with .Params.redirect_url | default .RelPermalink }} {{.}} {{- end }}" class="media media-link{{ if eq .Section "news" }} match-height-item{{ end }}">
-        <h4 class="media-heading">{{ .Title }}</h4>
-        <p class="media-text">{{ .Params.summary }}</p>
-      </a>
-    {{ end }}
-
-    {{ $section := .CurrentSection }}
-    {{ with .Site.Data.spec_adopters.adopters.projects }}
-      {{ range sort . "name" "asc"}}
-        {{ $project := . }}
-        {{ with $section.File.Dir }}
-          {{ if eq . $project.directory }}
-           <h3>JUG Spec Adopters</h3>
-            <p>To learn how your JUG can sign-up, check out the <a href="/community/adopt-a-spec">Adopt a Specification</a> program.</p>
-              <ul class="list-inline">
-              {{ range sort $project.adopters  "name" "asc"}}
-                <li><a href="{{ .homepage_url }}" target="_blank"><img src="/images/spec_adopters/{{ .logo }}" alt="{{ .name }}" class="adopter-logo"/></a></li>
-              {{end}}
-            </ul>
+  {{ if eq .Page.Parent.Title "Specifications" }}
+    <ul>
+      {{ range .Page.Sections.ByWeight}}
+        <li>
+          <h3><a href="{{- with .Params.redirect_url | default .RelPermalink }} {{.}} {{- end }}">{{ .Title }}</a></h3>
+          <p>{{ .Params.summary | truncate 57 }}</p>
+        </li>
+      {{ end }}
+    </ul>
+  {{ else }}
+    <div class="news-list specifications-news-list"> 
+      <div class="row">
+        {{ range .Page.Sections.ByWeight}}
+        <div class="col-sm-8">
+          <a style="margin-bottom:30px;" href="{{- with .Params.redirect_url | default .RelPermalink }} {{.}} {{- end }}" class="match-height-item media media-link{{ if eq .Section "news" }} match-height-item{{ end }}">
+            <h4 class="media-heading">{{ .Title }}</h4>
+            <p class="media-text">{{ .Params.summary | truncate 57 }}</p>
+          </a>
+        </div>
+        {{ end }}
+      </div>
+  
+      {{ $section := .CurrentSection }}
+      {{ with .Site.Data.spec_adopters.adopters.projects }}
+        {{ range sort . "name" "asc"}}
+          {{ $project := . }}
+          {{ with $section.File.Dir }}
+            {{ if eq . $project.directory }}
+             <h3>JUG Spec Adopters</h3>
+              <p>To learn how your JUG can sign-up, check out the <a href="/community/adopt-a-spec">Adopt a Specification</a> program.</p>
+                <ul class="list-inline">
+                {{ range sort $project.adopters  "name" "asc"}}
+                  <li><a href="{{ .homepage_url }}" target="_blank"><img src="/images/spec_adopters/{{ .logo }}" alt="{{ .name }}" class="adopter-logo"/></a></li>
+                {{end}}
+              </ul>
+            {{ end }}
           {{ end }}
         {{ end }}
       {{ end }}
-    {{ end }}
-  </div>
+    </div>
+  {{ end }}
+  
 {{ end }}
