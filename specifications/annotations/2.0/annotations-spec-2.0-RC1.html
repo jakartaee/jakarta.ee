@@ -1,0 +1,2418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Asciidoctor 1.5.8">
+<meta name="author" content="Jakarta Annotations Team, https://projects.eclipse.org/projects/ee4j.ca">
+<title>Jakarta Annotations</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
+<style>
+/* Asciidoctor default stylesheet | MIT License | http://asciidoctor.org */
+/* Uncomment @import statement below to use as custom stylesheet */
+/*@import "https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700";*/
+article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display:block}
+audio,canvas,video{display:inline-block}
+audio:not([controls]){display:none;height:0}
+script{display:none!important}
+html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}
+a{background:transparent}
+a:focus{outline:thin dotted}
+a:active,a:hover{outline:0}
+h1{font-size:2em;margin:.67em 0}
+abbr[title]{border-bottom:1px dotted}
+b,strong{font-weight:bold}
+dfn{font-style:italic}
+hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0}
+mark{background:#ff0;color:#000}
+code,kbd,pre,samp{font-family:monospace;font-size:1em}
+pre{white-space:pre-wrap}
+q{quotes:"\201C" "\201D" "\2018" "\2019"}
+small{font-size:80%}
+sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}
+sup{top:-.5em}
+sub{bottom:-.25em}
+img{border:0}
+svg:not(:root){overflow:hidden}
+figure{margin:0}
+fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}
+legend{border:0;padding:0}
+button,input,select,textarea{font-family:inherit;font-size:100%;margin:0}
+button,input{line-height:normal}
+button,select{text-transform:none}
+button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer}
+button[disabled],html input[disabled]{cursor:default}
+input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0}
+button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}
+textarea{overflow:auto;vertical-align:top}
+table{border-collapse:collapse;border-spacing:0}
+*,*::before,*::after{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box}
+html,body{font-size:100%}
+body{background:#fff;color:rgba(0,0,0,.8);padding:0;margin:0;font-family:"Noto Serif","DejaVu Serif",serif;font-weight:400;font-style:normal;line-height:1;position:relative;cursor:auto;tab-size:4;-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased}
+a:hover{cursor:pointer}
+img,object,embed{max-width:100%;height:auto}
+object,embed{height:100%}
+img{-ms-interpolation-mode:bicubic}
+.left{float:left!important}
+.right{float:right!important}
+.text-left{text-align:left!important}
+.text-right{text-align:right!important}
+.text-center{text-align:center!important}
+.text-justify{text-align:justify!important}
+.hide{display:none}
+img,object,svg{display:inline-block;vertical-align:middle}
+textarea{height:auto;min-height:50px}
+select{width:100%}
+.center{margin-left:auto;margin-right:auto}
+.stretch{width:100%}
+.subheader,.admonitionblock td.content>.title,.audioblock>.title,.exampleblock>.title,.imageblock>.title,.listingblock>.title,.literalblock>.title,.stemblock>.title,.openblock>.title,.paragraph>.title,.quoteblock>.title,table.tableblock>.title,.verseblock>.title,.videoblock>.title,.dlist>.title,.olist>.title,.ulist>.title,.qlist>.title,.hdlist>.title{line-height:1.45;color:#7a2518;font-weight:400;margin-top:0;margin-bottom:.25em}
+div,dl,dt,dd,ul,ol,li,h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6,pre,form,p,blockquote,th,td{margin:0;padding:0;direction:ltr}
+a{color:#2156a5;text-decoration:underline;line-height:inherit}
+a:hover,a:focus{color:#1d4b8f}
+a img{border:none}
+p{font-family:inherit;font-weight:400;font-size:1em;line-height:1.6;margin-bottom:1.25em;text-rendering:optimizeLegibility}
+p aside{font-size:.875em;line-height:1.35;font-style:italic}
+h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6{font-family:"Open Sans","DejaVu Sans",sans-serif;font-weight:300;font-style:normal;color:#ba3925;text-rendering:optimizeLegibility;margin-top:1em;margin-bottom:.5em;line-height:1.0125em}
+h1 small,h2 small,h3 small,#toctitle small,.sidebarblock>.content>.title small,h4 small,h5 small,h6 small{font-size:60%;color:#e99b8f;line-height:0}
+h1{font-size:2.125em}
+h2{font-size:1.6875em}
+h3,#toctitle,.sidebarblock>.content>.title{font-size:1.375em}
+h4,h5{font-size:1.125em}
+h6{font-size:1em}
+hr{border:solid #dddddf;border-width:1px 0 0;clear:both;margin:1.25em 0 1.1875em;height:0}
+em,i{font-style:italic;line-height:inherit}
+strong,b{font-weight:bold;line-height:inherit}
+small{font-size:60%;line-height:inherit}
+code{font-family:"Droid Sans Mono","DejaVu Sans Mono",monospace;font-weight:400;color:rgba(0,0,0,.9)}
+ul,ol,dl{font-size:1em;line-height:1.6;margin-bottom:1.25em;list-style-position:outside;font-family:inherit}
+ul,ol{margin-left:1.5em}
+ul li ul,ul li ol{margin-left:1.25em;margin-bottom:0;font-size:1em}
+ul.square li ul,ul.circle li ul,ul.disc li ul{list-style:inherit}
+ul.square{list-style-type:square}
+ul.circle{list-style-type:circle}
+ul.disc{list-style-type:disc}
+ol li ul,ol li ol{margin-left:1.25em;margin-bottom:0}
+dl dt{margin-bottom:.3125em;font-weight:bold}
+dl dd{margin-bottom:1.25em}
+abbr,acronym{text-transform:uppercase;font-size:90%;color:rgba(0,0,0,.8);border-bottom:1px dotted #ddd;cursor:help}
+abbr{text-transform:none}
+blockquote{margin:0 0 1.25em;padding:.5625em 1.25em 0 1.1875em;border-left:1px solid #ddd}
+blockquote cite{display:block;font-size:.9375em;color:rgba(0,0,0,.6)}
+blockquote cite::before{content:"\2014 \0020"}
+blockquote cite a,blockquote cite a:visited{color:rgba(0,0,0,.6)}
+blockquote,blockquote p{line-height:1.6;color:rgba(0,0,0,.85)}
+@media screen and (min-width:768px){h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6{line-height:1.2}
+h1{font-size:2.75em}
+h2{font-size:2.3125em}
+h3,#toctitle,.sidebarblock>.content>.title{font-size:1.6875em}
+h4{font-size:1.4375em}}
+table{background:#fff;margin-bottom:1.25em;border:solid 1px #dedede}
+table thead,table tfoot{background:#f7f8f7}
+table thead tr th,table thead tr td,table tfoot tr th,table tfoot tr td{padding:.5em .625em .625em;font-size:inherit;color:rgba(0,0,0,.8);text-align:left}
+table tr th,table tr td{padding:.5625em .625em;font-size:inherit;color:rgba(0,0,0,.8)}
+table tr.even,table tr.alt,table tr:nth-of-type(even){background:#f8f8f7}
+table thead tr th,table tfoot tr th,table tbody tr td,table tr td,table tfoot tr td{display:table-cell;line-height:1.6}
+h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6{line-height:1.2;word-spacing:-.05em}
+h1 strong,h2 strong,h3 strong,#toctitle strong,.sidebarblock>.content>.title strong,h4 strong,h5 strong,h6 strong{font-weight:400}
+.clearfix::before,.clearfix::after,.float-group::before,.float-group::after{content:" ";display:table}
+.clearfix::after,.float-group::after{clear:both}
+*:not(pre)>code{font-size:.9375em;font-style:normal!important;letter-spacing:0;padding:.1em .5ex;word-spacing:-.15em;background-color:#f7f7f8;-webkit-border-radius:4px;border-radius:4px;line-height:1.45;text-rendering:optimizeSpeed;word-wrap:break-word}
+*:not(pre)>code.nobreak{word-wrap:normal}
+*:not(pre)>code.nowrap{white-space:nowrap}
+pre,pre>code{line-height:1.45;color:rgba(0,0,0,.9);font-family:"Droid Sans Mono","DejaVu Sans Mono",monospace;font-weight:400;text-rendering:optimizeSpeed}
+em em{font-style:normal}
+strong strong{font-weight:400}
+.keyseq{color:rgba(51,51,51,.8)}
+kbd{font-family:"Droid Sans Mono","DejaVu Sans Mono",monospace;display:inline-block;color:rgba(0,0,0,.8);font-size:.65em;line-height:1.45;background-color:#f7f7f7;border:1px solid #ccc;-webkit-border-radius:3px;border-radius:3px;-webkit-box-shadow:0 1px 0 rgba(0,0,0,.2),0 0 0 .1em white inset;box-shadow:0 1px 0 rgba(0,0,0,.2),0 0 0 .1em #fff inset;margin:0 .15em;padding:.2em .5em;vertical-align:middle;position:relative;top:-.1em;white-space:nowrap}
+.keyseq kbd:first-child{margin-left:0}
+.keyseq kbd:last-child{margin-right:0}
+.menuseq,.menuref{color:#000}
+.menuseq b:not(.caret),.menuref{font-weight:inherit}
+.menuseq{word-spacing:-.02em}
+.menuseq b.caret{font-size:1.25em;line-height:.8}
+.menuseq i.caret{font-weight:bold;text-align:center;width:.45em}
+b.button::before,b.button::after{position:relative;top:-1px;font-weight:400}
+b.button::before{content:"[";padding:0 3px 0 2px}
+b.button::after{content:"]";padding:0 2px 0 3px}
+p a>code:hover{color:rgba(0,0,0,.9)}
+#header,#content,#footnotes,#footer{width:100%;margin-left:auto;margin-right:auto;margin-top:0;margin-bottom:0;max-width:62.5em;*zoom:1;position:relative;padding-left:.9375em;padding-right:.9375em}
+#header::before,#header::after,#content::before,#content::after,#footnotes::before,#footnotes::after,#footer::before,#footer::after{content:" ";display:table}
+#header::after,#content::after,#footnotes::after,#footer::after{clear:both}
+#content{margin-top:1.25em}
+#content::before{content:none}
+#header>h1:first-child{color:rgba(0,0,0,.85);margin-top:2.25rem;margin-bottom:0}
+#header>h1:first-child+#toc{margin-top:8px;border-top:1px solid #dddddf}
+#header>h1:only-child,body.toc2 #header>h1:nth-last-child(2){border-bottom:1px solid #dddddf;padding-bottom:8px}
+#header .details{border-bottom:1px solid #dddddf;line-height:1.45;padding-top:.25em;padding-bottom:.25em;padding-left:.25em;color:rgba(0,0,0,.6);display:-ms-flexbox;display:-webkit-flex;display:flex;-ms-flex-flow:row wrap;-webkit-flex-flow:row wrap;flex-flow:row wrap}
+#header .details span:first-child{margin-left:-.125em}
+#header .details span.email a{color:rgba(0,0,0,.85)}
+#header .details br{display:none}
+#header .details br+span::before{content:"\00a0\2013\00a0"}
+#header .details br+span.author::before{content:"\00a0\22c5\00a0";color:rgba(0,0,0,.85)}
+#header .details br+span#revremark::before{content:"\00a0|\00a0"}
+#header #revnumber{text-transform:capitalize}
+#header #revnumber::after{content:"\00a0"}
+#content>h1:first-child:not([class]){color:rgba(0,0,0,.85);border-bottom:1px solid #dddddf;padding-bottom:8px;margin-top:0;padding-top:1rem;margin-bottom:1.25rem}
+#toc{border-bottom:1px solid #e7e7e9;padding-bottom:.5em}
+#toc>ul{margin-left:.125em}
+#toc ul.sectlevel0>li>a{font-style:italic}
+#toc ul.sectlevel0 ul.sectlevel1{margin:.5em 0}
+#toc ul{font-family:"Open Sans","DejaVu Sans",sans-serif;list-style-type:none}
+#toc li{line-height:1.3334;margin-top:.3334em}
+#toc a{text-decoration:none}
+#toc a:active{text-decoration:underline}
+#toctitle{color:#7a2518;font-size:1.2em}
+@media screen and (min-width:768px){#toctitle{font-size:1.375em}
+body.toc2{padding-left:15em;padding-right:0}
+#toc.toc2{margin-top:0!important;background-color:#f8f8f7;position:fixed;width:15em;left:0;top:0;border-right:1px solid #e7e7e9;border-top-width:0!important;border-bottom-width:0!important;z-index:1000;padding:1.25em 1em;height:100%;overflow:auto}
+#toc.toc2 #toctitle{margin-top:0;margin-bottom:.8rem;font-size:1.2em}
+#toc.toc2>ul{font-size:.9em;margin-bottom:0}
+#toc.toc2 ul ul{margin-left:0;padding-left:1em}
+#toc.toc2 ul.sectlevel0 ul.sectlevel1{padding-left:0;margin-top:.5em;margin-bottom:.5em}
+body.toc2.toc-right{padding-left:0;padding-right:15em}
+body.toc2.toc-right #toc.toc2{border-right-width:0;border-left:1px solid #e7e7e9;left:auto;right:0}}
+@media screen and (min-width:1280px){body.toc2{padding-left:20em;padding-right:0}
+#toc.toc2{width:20em}
+#toc.toc2 #toctitle{font-size:1.375em}
+#toc.toc2>ul{font-size:.95em}
+#toc.toc2 ul ul{padding-left:1.25em}
+body.toc2.toc-right{padding-left:0;padding-right:20em}}
+#content #toc{border-style:solid;border-width:1px;border-color:#e0e0dc;margin-bottom:1.25em;padding:1.25em;background:#f8f8f7;-webkit-border-radius:4px;border-radius:4px}
+#content #toc>:first-child{margin-top:0}
+#content #toc>:last-child{margin-bottom:0}
+#footer{max-width:100%;background-color:rgba(0,0,0,.8);padding:1.25em}
+#footer-text{color:rgba(255,255,255,.8);line-height:1.44}
+#content{margin-bottom:.625em}
+.sect1{padding-bottom:.625em}
+@media screen and (min-width:768px){#content{margin-bottom:1.25em}
+.sect1{padding-bottom:1.25em}}
+.sect1:last-child{padding-bottom:0}
+.sect1+.sect1{border-top:1px solid #e7e7e9}
+#content h1>a.anchor,h2>a.anchor,h3>a.anchor,#toctitle>a.anchor,.sidebarblock>.content>.title>a.anchor,h4>a.anchor,h5>a.anchor,h6>a.anchor{position:absolute;z-index:1001;width:1.5ex;margin-left:-1.5ex;display:block;text-decoration:none!important;visibility:hidden;text-align:center;font-weight:400}
+#content h1>a.anchor::before,h2>a.anchor::before,h3>a.anchor::before,#toctitle>a.anchor::before,.sidebarblock>.content>.title>a.anchor::before,h4>a.anchor::before,h5>a.anchor::before,h6>a.anchor::before{content:"\00A7";font-size:.85em;display:block;padding-top:.1em}
+#content h1:hover>a.anchor,#content h1>a.anchor:hover,h2:hover>a.anchor,h2>a.anchor:hover,h3:hover>a.anchor,#toctitle:hover>a.anchor,.sidebarblock>.content>.title:hover>a.anchor,h3>a.anchor:hover,#toctitle>a.anchor:hover,.sidebarblock>.content>.title>a.anchor:hover,h4:hover>a.anchor,h4>a.anchor:hover,h5:hover>a.anchor,h5>a.anchor:hover,h6:hover>a.anchor,h6>a.anchor:hover{visibility:visible}
+#content h1>a.link,h2>a.link,h3>a.link,#toctitle>a.link,.sidebarblock>.content>.title>a.link,h4>a.link,h5>a.link,h6>a.link{color:#ba3925;text-decoration:none}
+#content h1>a.link:hover,h2>a.link:hover,h3>a.link:hover,#toctitle>a.link:hover,.sidebarblock>.content>.title>a.link:hover,h4>a.link:hover,h5>a.link:hover,h6>a.link:hover{color:#a53221}
+.audioblock,.imageblock,.literalblock,.listingblock,.stemblock,.videoblock{margin-bottom:1.25em}
+.admonitionblock td.content>.title,.audioblock>.title,.exampleblock>.title,.imageblock>.title,.listingblock>.title,.literalblock>.title,.stemblock>.title,.openblock>.title,.paragraph>.title,.quoteblock>.title,table.tableblock>.title,.verseblock>.title,.videoblock>.title,.dlist>.title,.olist>.title,.ulist>.title,.qlist>.title,.hdlist>.title{text-rendering:optimizeLegibility;text-align:left;font-family:"Noto Serif","DejaVu Serif",serif;font-size:1rem;font-style:italic}
+table.tableblock.fit-content>caption.title{white-space:nowrap;width:0}
+.paragraph.lead>p,#preamble>.sectionbody>[class="paragraph"]:first-of-type p{font-size:1.21875em;line-height:1.6;color:rgba(0,0,0,.85)}
+table.tableblock #preamble>.sectionbody>[class="paragraph"]:first-of-type p{font-size:inherit}
+.admonitionblock>table{border-collapse:separate;border:0;background:none;width:100%}
+.admonitionblock>table td.icon{text-align:center;width:80px}
+.admonitionblock>table td.icon img{max-width:none}
+.admonitionblock>table td.icon .title{font-weight:bold;font-family:"Open Sans","DejaVu Sans",sans-serif;text-transform:uppercase}
+.admonitionblock>table td.content{padding-left:1.125em;padding-right:1.25em;border-left:1px solid #dddddf;color:rgba(0,0,0,.6)}
+.admonitionblock>table td.content>:last-child>:last-child{margin-bottom:0}
+.exampleblock>.content{border-style:solid;border-width:1px;border-color:#e6e6e6;margin-bottom:1.25em;padding:1.25em;background:#fff;-webkit-border-radius:4px;border-radius:4px}
+.exampleblock>.content>:first-child{margin-top:0}
+.exampleblock>.content>:last-child{margin-bottom:0}
+.sidebarblock{border-style:solid;border-width:1px;border-color:#e0e0dc;margin-bottom:1.25em;padding:1.25em;background:#f8f8f7;-webkit-border-radius:4px;border-radius:4px}
+.sidebarblock>:first-child{margin-top:0}
+.sidebarblock>:last-child{margin-bottom:0}
+.sidebarblock>.content>.title{color:#7a2518;margin-top:0;text-align:center}
+.exampleblock>.content>:last-child>:last-child,.exampleblock>.content .olist>ol>li:last-child>:last-child,.exampleblock>.content .ulist>ul>li:last-child>:last-child,.exampleblock>.content .qlist>ol>li:last-child>:last-child,.sidebarblock>.content>:last-child>:last-child,.sidebarblock>.content .olist>ol>li:last-child>:last-child,.sidebarblock>.content .ulist>ul>li:last-child>:last-child,.sidebarblock>.content .qlist>ol>li:last-child>:last-child{margin-bottom:0}
+.literalblock pre,.listingblock pre:not(.highlight),.listingblock pre[class="highlight"],.listingblock pre[class^="highlight "],.listingblock pre.CodeRay,.listingblock pre.prettyprint{background:#f7f7f8}
+.sidebarblock .literalblock pre,.sidebarblock .listingblock pre:not(.highlight),.sidebarblock .listingblock pre[class="highlight"],.sidebarblock .listingblock pre[class^="highlight "],.sidebarblock .listingblock pre.CodeRay,.sidebarblock .listingblock pre.prettyprint{background:#f2f1f1}
+.literalblock pre,.literalblock pre[class],.listingblock pre,.listingblock pre[class]{-webkit-border-radius:4px;border-radius:4px;word-wrap:break-word;overflow-x:auto;padding:1em;font-size:.8125em}
+@media screen and (min-width:768px){.literalblock pre,.literalblock pre[class],.listingblock pre,.listingblock pre[class]{font-size:.90625em}}
+@media screen and (min-width:1280px){.literalblock pre,.literalblock pre[class],.listingblock pre,.listingblock pre[class]{font-size:1em}}
+.literalblock pre.nowrap,.literalblock pre.nowrap pre,.listingblock pre.nowrap,.listingblock pre.nowrap pre{white-space:pre;word-wrap:normal}
+.literalblock.output pre{color:#f7f7f8;background-color:rgba(0,0,0,.9)}
+.listingblock pre.highlightjs{padding:0}
+.listingblock pre.highlightjs>code{padding:1em;-webkit-border-radius:4px;border-radius:4px}
+.listingblock pre.prettyprint{border-width:0}
+.listingblock>.content{position:relative}
+.listingblock code[data-lang]::before{display:none;content:attr(data-lang);position:absolute;font-size:.75em;top:.425rem;right:.5rem;line-height:1;text-transform:uppercase;color:#999}
+.listingblock:hover code[data-lang]::before{display:block}
+.listingblock.terminal pre .command::before{content:attr(data-prompt);padding-right:.5em;color:#999}
+.listingblock.terminal pre .command:not([data-prompt])::before{content:"$"}
+table.pyhltable{border-collapse:separate;border:0;margin-bottom:0;background:none}
+table.pyhltable td{vertical-align:top;padding-top:0;padding-bottom:0;line-height:1.45}
+table.pyhltable td.code{padding-left:.75em;padding-right:0}
+pre.pygments .lineno,table.pyhltable td:not(.code){color:#999;padding-left:0;padding-right:.5em;border-right:1px solid #dddddf}
+pre.pygments .lineno{display:inline-block;margin-right:.25em}
+table.pyhltable .linenodiv{background:none!important;padding-right:0!important}
+.quoteblock{margin:0 1em 1.25em 1.5em;display:table}
+.quoteblock>.title{margin-left:-1.5em;margin-bottom:.75em}
+.quoteblock blockquote,.quoteblock p{color:rgba(0,0,0,.85);font-size:1.15rem;line-height:1.75;word-spacing:.1em;letter-spacing:0;font-style:italic;text-align:justify}
+.quoteblock blockquote{margin:0;padding:0;border:0}
+.quoteblock blockquote::before{content:"\201c";float:left;font-size:2.75em;font-weight:bold;line-height:.6em;margin-left:-.6em;color:#7a2518;text-shadow:0 1px 2px rgba(0,0,0,.1)}
+.quoteblock blockquote>.paragraph:last-child p{margin-bottom:0}
+.quoteblock .attribution{margin-top:.75em;margin-right:.5ex;text-align:right}
+.verseblock{margin:0 1em 1.25em}
+.verseblock pre{font-family:"Open Sans","DejaVu Sans",sans;font-size:1.15rem;color:rgba(0,0,0,.85);font-weight:300;text-rendering:optimizeLegibility}
+.verseblock pre strong{font-weight:400}
+.verseblock .attribution{margin-top:1.25rem;margin-left:.5ex}
+.quoteblock .attribution,.verseblock .attribution{font-size:.9375em;line-height:1.45;font-style:italic}
+.quoteblock .attribution br,.verseblock .attribution br{display:none}
+.quoteblock .attribution cite,.verseblock .attribution cite{display:block;letter-spacing:-.025em;color:rgba(0,0,0,.6)}
+.quoteblock.abstract blockquote::before,.quoteblock.excerpt blockquote::before,.quoteblock .quoteblock blockquote::before{display:none}
+.quoteblock.abstract blockquote,.quoteblock.abstract p,.quoteblock.excerpt blockquote,.quoteblock.excerpt p,.quoteblock .quoteblock blockquote,.quoteblock .quoteblock p{line-height:1.6;word-spacing:0}
+.quoteblock.abstract{margin:0 1em 1.25em;display:block}
+.quoteblock.abstract>.title{margin:0 0 .375em;font-size:1.15em;text-align:center}
+.quoteblock.excerpt,.quoteblock .quoteblock{margin:0 0 1.25em;padding:0 0 .25em 1em;border-left:.25em solid #dddddf}
+.quoteblock.excerpt blockquote,.quoteblock.excerpt p,.quoteblock .quoteblock blockquote,.quoteblock .quoteblock p{color:inherit;font-size:1.0625rem}
+.quoteblock.excerpt .attribution,.quoteblock .quoteblock .attribution{color:inherit;text-align:left;margin-right:0}
+table.tableblock{max-width:100%;border-collapse:separate}
+p.tableblock:last-child{margin-bottom:0}
+td.tableblock>.content{margin-bottom:-1.25em}
+table.tableblock,th.tableblock,td.tableblock{border:0 solid #dedede}
+table.grid-all>thead>tr>.tableblock,table.grid-all>tbody>tr>.tableblock{border-width:0 1px 1px 0}
+table.grid-all>tfoot>tr>.tableblock{border-width:1px 1px 0 0}
+table.grid-cols>*>tr>.tableblock{border-width:0 1px 0 0}
+table.grid-rows>thead>tr>.tableblock,table.grid-rows>tbody>tr>.tableblock{border-width:0 0 1px}
+table.grid-rows>tfoot>tr>.tableblock{border-width:1px 0 0}
+table.grid-all>*>tr>.tableblock:last-child,table.grid-cols>*>tr>.tableblock:last-child{border-right-width:0}
+table.grid-all>tbody>tr:last-child>.tableblock,table.grid-all>thead:last-child>tr>.tableblock,table.grid-rows>tbody>tr:last-child>.tableblock,table.grid-rows>thead:last-child>tr>.tableblock{border-bottom-width:0}
+table.frame-all{border-width:1px}
+table.frame-sides{border-width:0 1px}
+table.frame-topbot,table.frame-ends{border-width:1px 0}
+table.stripes-all tr,table.stripes-odd tr:nth-of-type(odd){background:#f8f8f7}
+table.stripes-none tr,table.stripes-odd tr:nth-of-type(even){background:none}
+th.halign-left,td.halign-left{text-align:left}
+th.halign-right,td.halign-right{text-align:right}
+th.halign-center,td.halign-center{text-align:center}
+th.valign-top,td.valign-top{vertical-align:top}
+th.valign-bottom,td.valign-bottom{vertical-align:bottom}
+th.valign-middle,td.valign-middle{vertical-align:middle}
+table thead th,table tfoot th{font-weight:bold}
+tbody tr th{display:table-cell;line-height:1.6;background:#f7f8f7}
+tbody tr th,tbody tr th p,tfoot tr th,tfoot tr th p{color:rgba(0,0,0,.8);font-weight:bold}
+p.tableblock>code:only-child{background:none;padding:0}
+p.tableblock{font-size:1em}
+td>div.verse{white-space:pre}
+ol{margin-left:1.75em}
+ul li ol{margin-left:1.5em}
+dl dd{margin-left:1.125em}
+dl dd:last-child,dl dd:last-child>:last-child{margin-bottom:0}
+ol>li p,ul>li p,ul dd,ol dd,.olist .olist,.ulist .ulist,.ulist .olist,.olist .ulist{margin-bottom:.625em}
+ul.checklist,ul.none,ol.none,ul.no-bullet,ol.no-bullet,ol.unnumbered,ul.unstyled,ol.unstyled{list-style-type:none}
+ul.no-bullet,ol.no-bullet,ol.unnumbered{margin-left:.625em}
+ul.unstyled,ol.unstyled{margin-left:0}
+ul.checklist{margin-left:.625em}
+ul.checklist li>p:first-child>.fa-square-o:first-child,ul.checklist li>p:first-child>.fa-check-square-o:first-child{width:1.25em;font-size:.8em;position:relative;bottom:.125em}
+ul.checklist li>p:first-child>input[type="checkbox"]:first-child{margin-right:.25em}
+ul.inline{display:-ms-flexbox;display:-webkit-box;display:flex;-ms-flex-flow:row wrap;-webkit-flex-flow:row wrap;flex-flow:row wrap;list-style:none;margin:0 0 .625em -1.25em}
+ul.inline>li{margin-left:1.25em}
+.unstyled dl dt{font-weight:400;font-style:normal}
+ol.arabic{list-style-type:decimal}
+ol.decimal{list-style-type:decimal-leading-zero}
+ol.loweralpha{list-style-type:lower-alpha}
+ol.upperalpha{list-style-type:upper-alpha}
+ol.lowerroman{list-style-type:lower-roman}
+ol.upperroman{list-style-type:upper-roman}
+ol.lowergreek{list-style-type:lower-greek}
+.hdlist>table,.colist>table{border:0;background:none}
+.hdlist>table>tbody>tr,.colist>table>tbody>tr{background:none}
+td.hdlist1,td.hdlist2{vertical-align:top;padding:0 .625em}
+td.hdlist1{font-weight:bold;padding-bottom:1.25em}
+.literalblock+.colist,.listingblock+.colist{margin-top:-.5em}
+.colist td:not([class]):first-child{padding:.4em .75em 0;line-height:1;vertical-align:top}
+.colist td:not([class]):first-child img{max-width:none}
+.colist td:not([class]):last-child{padding:.25em 0}
+.thumb,.th{line-height:0;display:inline-block;border:solid 4px #fff;-webkit-box-shadow:0 0 0 1px #ddd;box-shadow:0 0 0 1px #ddd}
+.imageblock.left{margin:.25em .625em 1.25em 0}
+.imageblock.right{margin:.25em 0 1.25em .625em}
+.imageblock>.title{margin-bottom:0}
+.imageblock.thumb,.imageblock.th{border-width:6px}
+.imageblock.thumb>.title,.imageblock.th>.title{padding:0 .125em}
+.image.left,.image.right{margin-top:.25em;margin-bottom:.25em;display:inline-block;line-height:0}
+.image.left{margin-right:.625em}
+.image.right{margin-left:.625em}
+a.image{text-decoration:none;display:inline-block}
+a.image object{pointer-events:none}
+sup.footnote,sup.footnoteref{font-size:.875em;position:static;vertical-align:super}
+sup.footnote a,sup.footnoteref a{text-decoration:none}
+sup.footnote a:active,sup.footnoteref a:active{text-decoration:underline}
+#footnotes{padding-top:.75em;padding-bottom:.75em;margin-bottom:.625em}
+#footnotes hr{width:20%;min-width:6.25em;margin:-.25em 0 .75em;border-width:1px 0 0}
+#footnotes .footnote{padding:0 .375em 0 .225em;line-height:1.3334;font-size:.875em;margin-left:1.2em;margin-bottom:.2em}
+#footnotes .footnote a:first-of-type{font-weight:bold;text-decoration:none;margin-left:-1.05em}
+#footnotes .footnote:last-of-type{margin-bottom:0}
+#content #footnotes{margin-top:-.625em;margin-bottom:0;padding:.75em 0}
+.gist .file-data>table{border:0;background:#fff;width:100%;margin-bottom:0}
+.gist .file-data>table td.line-data{width:99%}
+div.unbreakable{page-break-inside:avoid}
+.big{font-size:larger}
+.small{font-size:smaller}
+.underline{text-decoration:underline}
+.overline{text-decoration:overline}
+.line-through{text-decoration:line-through}
+.aqua{color:#00bfbf}
+.aqua-background{background-color:#00fafa}
+.black{color:#000}
+.black-background{background-color:#000}
+.blue{color:#0000bf}
+.blue-background{background-color:#0000fa}
+.fuchsia{color:#bf00bf}
+.fuchsia-background{background-color:#fa00fa}
+.gray{color:#606060}
+.gray-background{background-color:#7d7d7d}
+.green{color:#006000}
+.green-background{background-color:#007d00}
+.lime{color:#00bf00}
+.lime-background{background-color:#00fa00}
+.maroon{color:#600000}
+.maroon-background{background-color:#7d0000}
+.navy{color:#000060}
+.navy-background{background-color:#00007d}
+.olive{color:#606000}
+.olive-background{background-color:#7d7d00}
+.purple{color:#600060}
+.purple-background{background-color:#7d007d}
+.red{color:#bf0000}
+.red-background{background-color:#fa0000}
+.silver{color:#909090}
+.silver-background{background-color:#bcbcbc}
+.teal{color:#006060}
+.teal-background{background-color:#007d7d}
+.white{color:#bfbfbf}
+.white-background{background-color:#fafafa}
+.yellow{color:#bfbf00}
+.yellow-background{background-color:#fafa00}
+span.icon>.fa{cursor:default}
+a span.icon>.fa{cursor:inherit}
+.admonitionblock td.icon [class^="fa icon-"]{font-size:2.5em;text-shadow:1px 1px 2px rgba(0,0,0,.5);cursor:default}
+.admonitionblock td.icon .icon-note::before{content:"\f05a";color:#19407c}
+.admonitionblock td.icon .icon-tip::before{content:"\f0eb";text-shadow:1px 1px 2px rgba(155,155,0,.8);color:#111}
+.admonitionblock td.icon .icon-warning::before{content:"\f071";color:#bf6900}
+.admonitionblock td.icon .icon-caution::before{content:"\f06d";color:#bf3400}
+.admonitionblock td.icon .icon-important::before{content:"\f06a";color:#bf0000}
+.conum[data-value]{display:inline-block;color:#fff!important;background-color:rgba(0,0,0,.8);-webkit-border-radius:100px;border-radius:100px;text-align:center;font-size:.75em;width:1.67em;height:1.67em;line-height:1.67em;font-family:"Open Sans","DejaVu Sans",sans-serif;font-style:normal;font-weight:bold}
+.conum[data-value] *{color:#fff!important}
+.conum[data-value]+b{display:none}
+.conum[data-value]::after{content:attr(data-value)}
+pre .conum[data-value]{position:relative;top:-.125em}
+b.conum *{color:inherit!important}
+.conum:not([data-value]):empty{display:none}
+dt,th.tableblock,td.content,div.footnote{text-rendering:optimizeLegibility}
+h1,h2,p,td.content,span.alt{letter-spacing:-.01em}
+p strong,td.content strong,div.footnote strong{letter-spacing:-.005em}
+p,blockquote,dt,td.content,span.alt{font-size:1.0625rem}
+p{margin-bottom:1.25rem}
+.sidebarblock p,.sidebarblock dt,.sidebarblock td.content,p.tableblock{font-size:1em}
+.exampleblock>.content{background-color:#fffef7;border-color:#e0e0dc;-webkit-box-shadow:0 1px 4px #e0e0dc;box-shadow:0 1px 4px #e0e0dc}
+.print-only{display:none!important}
+@page{margin:1.25cm .75cm}
+@media print{*{-webkit-box-shadow:none!important;box-shadow:none!important;text-shadow:none!important}
+html{font-size:80%}
+a{color:inherit!important;text-decoration:underline!important}
+a.bare,a[href^="#"],a[href^="mailto:"]{text-decoration:none!important}
+a[href^="http:"]:not(.bare)::after,a[href^="https:"]:not(.bare)::after{content:"(" attr(href) ")";display:inline-block;font-size:.875em;padding-left:.25em}
+abbr[title]::after{content:" (" attr(title) ")"}
+pre,blockquote,tr,img,object,svg{page-break-inside:avoid}
+thead{display:table-header-group}
+svg{max-width:100%}
+p,blockquote,dt,td.content{font-size:1em;orphans:3;widows:3}
+h2,h3,#toctitle,.sidebarblock>.content>.title{page-break-after:avoid}
+#toc,.sidebarblock,.exampleblock>.content{background:none!important}
+#toc{border-bottom:1px solid #dddddf!important;padding-bottom:0!important}
+body.book #header{text-align:center}
+body.book #header>h1:first-child{border:0!important;margin:2.5em 0 1em}
+body.book #header .details{border:0!important;display:block;padding:0!important}
+body.book #header .details span:first-child{margin-left:0!important}
+body.book #header .details br{display:block}
+body.book #header .details br+span::before{content:none!important}
+body.book #toc{border:0!important;text-align:left!important;padding:0!important;margin:0!important}
+body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-break-before:always}
+.listingblock code[data-lang]::before{display:block}
+#footer{padding:0 .9375em}
+.hide-on-print{display:none!important}
+.print-only{display:block!important}
+.hide-for-print{display:none!important}
+.show-for-print{display:inherit!important}}
+@media print,amzn-kf8{#header>h1:first-child{margin-top:1.25rem}
+.sect1{padding:0!important}
+.sect1+.sect1{border:0}
+#footer{background:none}
+#footer-text{color:rgba(0,0,0,.6);font-size:.9em}}
+@media amzn-kf8{#header,#content,#footnotes,#footer{padding:0}}
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+/* Stylesheet for CodeRay to match GitHub theme | MIT License | http://foundation.zurb.com */
+/*pre.CodeRay {background-color:#f7f7f8;}*/
+.CodeRay .line-numbers{border-right:1px solid #d8d8d8;padding:0 0.5em 0 .25em}
+.CodeRay span.line-numbers{display:inline-block;margin-right:.5em;color:rgba(0,0,0,.3)}
+.CodeRay .line-numbers strong{color:rgba(0,0,0,.4)}
+table.CodeRay{border-collapse:separate;border-spacing:0;margin-bottom:0;border:0;background:none}
+table.CodeRay td{vertical-align: top;line-height:1.45}
+table.CodeRay td.line-numbers{text-align:right}
+table.CodeRay td.line-numbers>pre{padding:0;color:rgba(0,0,0,.3)}
+table.CodeRay td.code{padding:0 0 0 .5em}
+table.CodeRay td.code>pre{padding:0}
+.CodeRay .debug{color:#fff !important;background:#000080 !important}
+.CodeRay .annotation{color:#007}
+.CodeRay .attribute-name{color:#000080}
+.CodeRay .attribute-value{color:#700}
+.CodeRay .binary{color:#509}
+.CodeRay .comment{color:#998;font-style:italic}
+.CodeRay .char{color:#04d}
+.CodeRay .char .content{color:#04d}
+.CodeRay .char .delimiter{color:#039}
+.CodeRay .class{color:#458;font-weight:bold}
+.CodeRay .complex{color:#a08}
+.CodeRay .constant,.CodeRay .predefined-constant{color:#008080}
+.CodeRay .color{color:#099}
+.CodeRay .class-variable{color:#369}
+.CodeRay .decorator{color:#b0b}
+.CodeRay .definition{color:#099}
+.CodeRay .delimiter{color:#000}
+.CodeRay .doc{color:#970}
+.CodeRay .doctype{color:#34b}
+.CodeRay .doc-string{color:#d42}
+.CodeRay .escape{color:#666}
+.CodeRay .entity{color:#800}
+.CodeRay .error{color:#808}
+.CodeRay .exception{color:inherit}
+.CodeRay .filename{color:#099}
+.CodeRay .function{color:#900;font-weight:bold}
+.CodeRay .global-variable{color:#008080}
+.CodeRay .hex{color:#058}
+.CodeRay .integer,.CodeRay .float{color:#099}
+.CodeRay .include{color:#555}
+.CodeRay .inline{color:#000}
+.CodeRay .inline .inline{background:#ccc}
+.CodeRay .inline .inline .inline{background:#bbb}
+.CodeRay .inline .inline-delimiter{color:#d14}
+.CodeRay .inline-delimiter{color:#d14}
+.CodeRay .important{color:#555;font-weight:bold}
+.CodeRay .interpreted{color:#b2b}
+.CodeRay .instance-variable{color:#008080}
+.CodeRay .label{color:#970}
+.CodeRay .local-variable{color:#963}
+.CodeRay .octal{color:#40e}
+.CodeRay .predefined{color:#369}
+.CodeRay .preprocessor{color:#579}
+.CodeRay .pseudo-class{color:#555}
+.CodeRay .directive{font-weight:bold}
+.CodeRay .type{font-weight:bold}
+.CodeRay .predefined-type{color:inherit}
+.CodeRay .reserved,.CodeRay .keyword {color:#000;font-weight:bold}
+.CodeRay .key{color:#808}
+.CodeRay .key .delimiter{color:#606}
+.CodeRay .key .char{color:#80f}
+.CodeRay .value{color:#088}
+.CodeRay .regexp .delimiter{color:#808}
+.CodeRay .regexp .content{color:#808}
+.CodeRay .regexp .modifier{color:#808}
+.CodeRay .regexp .char{color:#d14}
+.CodeRay .regexp .function{color:#404;font-weight:bold}
+.CodeRay .string{color:#d20}
+.CodeRay .string .string .string{background:#ffd0d0}
+.CodeRay .string .content{color:#d14}
+.CodeRay .string .char{color:#d14}
+.CodeRay .string .delimiter{color:#d14}
+.CodeRay .shell{color:#d14}
+.CodeRay .shell .delimiter{color:#d14}
+.CodeRay .symbol{color:#990073}
+.CodeRay .symbol .content{color:#a60}
+.CodeRay .symbol .delimiter{color:#630}
+.CodeRay .tag{color:#008080}
+.CodeRay .tag-special{color:#d70}
+.CodeRay .variable{color:#036}
+.CodeRay .insert{background:#afa}
+.CodeRay .delete{background:#faa}
+.CodeRay .change{color:#aaf;background:#007}
+.CodeRay .head{color:#f8f;background:#505}
+.CodeRay .insert .insert{color:#080}
+.CodeRay .delete .delete{color:#800}
+.CodeRay .change .change{color:#66f}
+.CodeRay .head .head{color:#f4f}
+</style>
+</head>
+<body class="book toc2 toc-left">
+<div id="header">
+<h1>Jakarta Annotations</h1>
+<div class="details">
+<span id="author" class="author">Jakarta Annotations Team, https://projects.eclipse.org/projects/ee4j.ca</span><br>
+<span id="email" class="email"><a href="https://dev.eclipse.org/mailman/listinfo/ca-dev" class="bare">https://dev.eclipse.org/mailman/listinfo/ca-dev</a></span><br>
+<span id="revnumber"> 2.0-RC1,</span>
+<span id="revdate">мая 31, 2020</span>
+<br><span id="revremark">Release Candidate</span>
+</div>
+<div id="toc" class="toc2">
+<div id="toctitle">Table of Contents</div>
+<ul class="sectlevel2">
+<li><a href="#eclipse-foundation-specification-license">Eclipse Foundation Specification License</a>
+<ul class="sectlevel3">
+<li><a href="#disclaimers">Disclaimers</a></li>
+</ul>
+</li>
+<li><a href="#specification-scope">1. Specification Scope</a></li>
+<li><a href="#introduction">2. Introduction</a>
+<ul class="sectlevel2">
+<li><a href="#goals">2.1. Goals</a></li>
+<li><a href="#non-goals">2.2. Non-Goals</a></li>
+<li><a href="#compatibility">2.3. Compatibility</a></li>
+<li><a href="#conventions">2.4. Conventions</a></li>
+<li><a href="#expert-group-members">2.5. Expert Group Members</a></li>
+<li><a href="#acknowledgements">2.6. Acknowledgements</a></li>
+</ul>
+</li>
+<li><a href="#annotations">3. Annotations</a>
+<ul class="sectlevel2">
+<li><a href="#general-guidelines-for-inheritance-of-annotations">3.1. General Guidelines for Inheritance of Annotations</a></li>
+<li><a href="#jakarta-annotation-generated">3.2. jakarta.annotation.Generated</a></li>
+<li><a href="#jakarta-annotation-resource">3.3. jakarta.annotation.Resource</a>
+<ul class="sectlevel3">
+<li><a href="#field-based-injection">3.3.1. Field based injection</a></li>
+<li><a href="#setter-based-injection">3.3.2. Setter based injection</a></li>
+</ul>
+</li>
+<li><a href="#jakarta-annotation-resources">3.4. jakarta.annotation.Resources</a></li>
+<li><a href="#jakarta-annotation-postconstruct">3.5. jakarta.annotation.PostConstruct</a></li>
+<li><a href="#jakarta-annotation-predestroy">3.6. jakarta.annotation.PreDestroy</a></li>
+<li><a href="#jakarta-annotation-priority">3.7. jakarta.annotation.Priority</a></li>
+<li><a href="#jakarta-annotation-security-runas">3.8. jakarta.annotation.security.RunAs</a></li>
+<li><a href="#jakarta-annotation-security-rolesallowed">3.9. jakarta.annotation.security.RolesAllowed</a></li>
+<li><a href="#jakarta-annotation-security-permitall">3.10. jakarta.annotation.security.PermitAll</a></li>
+<li><a href="#jakarta-annotation-security-denyall">3.11. jakarta.annotation.security.DenyAll</a></li>
+<li><a href="#permitall-denyall-and-rolesallowed-interactions">3.12. PermitAll, DenyAll and RolesAllowed interactions</a></li>
+<li><a href="#jakarta-annotation-security-declareroles">3.13. jakarta.annotation.security.DeclareRoles</a></li>
+<li><a href="#jakarta-annotation-sql-datasourcedefinition">3.14. jakarta.annotation.sql.DataSourceDefinition</a></li>
+<li><a href="#jakarta-annotation-sql-datasourcedefinitions">3.15. jakarta.annotation.sql.DataSourceDefinitions</a></li>
+<li><a href="#jakarta-annotation-managedbean">3.16. jakarta.annotation.ManagedBean</a></li>
+</ul>
+</li>
+<li><a href="#references">4. References</a></li>
+</ul>
+</div>
+</div>
+<div id="content">
+<div id="preamble">
+<div class="sectionbody">
+<div class="literalblock">
+<div class="content">
+<pre>Specification: Jakarta Annotations
+
+Version: 2.0-RC1
+
+Status: Release Candidate
+
+Release: мая 31, 2020</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Copyright (c) 2020 Eclipse Foundation.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="eclipse-foundation-specification-license"><a class="anchor" href="#eclipse-foundation-specification-license"></a>Eclipse Foundation Specification License</h3>
+<div class="paragraph">
+<p>By using and/or copying this document, or the Eclipse Foundation
+document from which this statement is linked, you (the licensee) agree
+that you have read, understood, and will comply with the following
+terms and conditions:</p>
+</div>
+<div class="paragraph">
+<p>Permission to copy, and distribute the contents of this document, or
+the Eclipse Foundation document from which this statement is linked, in
+any medium for any purpose and without fee or royalty is hereby
+granted, provided that you include the following on ALL copies of the
+document, or portions thereof, that you use:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>link or URL to the original Eclipse Foundation document.</p>
+</li>
+<li>
+<p>All existing copyright notices, or if one does not exist, a notice
+(hypertext is preferred, but a textual representation is permitted)
+of the form: "Copyright (c) [$date-of-document]
+Eclipse Foundation, Inc. <a href="#url to this license">[url to this license]</a>"</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Inclusion of the full text of this NOTICE must be provided. We
+request that authorship attribution be provided in any software,
+documents, or other items or products that you create pursuant to the
+implementation of the contents of this document, or any portion
+thereof.</p>
+</div>
+<div class="paragraph">
+<p>No right to create modifications or derivatives of Eclipse Foundation
+documents is granted pursuant to this license, except anyone may
+prepare and distribute derivative works and portions of this document
+in software that implements the specification, in supporting materials
+accompanying such software, and in documentation of such software,
+PROVIDED that all such works include the notice below. HOWEVER, the
+publication of derivative works of this document for use as a technical
+specification is expressly prohibited.</p>
+</div>
+<div class="paragraph">
+<p>The notice is:</p>
+</div>
+<div class="paragraph">
+<p>"Copyright (c) 2018 Eclipse Foundation. This software or
+document includes material copied from or derived from [title and URI
+of the Eclipse Foundation specification document]."</p>
+</div>
+<div class="sect3">
+<h4 id="disclaimers"><a class="anchor" href="#disclaimers"></a>Disclaimers</h4>
+<div class="paragraph">
+<p>THIS DOCUMENT IS PROVIDED &quot;AS IS,&quot; AND THE COPYRIGHT
+HOLDERS AND THE ECLIPSE FOUNDATION MAKE NO REPRESENTATIONS OR
+WARRANTIES, EXPRESS OR IMPLIED, INCLUDING, BUT NOT LIMITED TO,
+WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE,
+NON-INFRINGEMENT, OR TITLE; THAT THE CONTENTS OF THE DOCUMENT ARE
+SUITABLE FOR ANY PURPOSE; NOR THAT THE IMPLEMENTATION OF SUCH CONTENTS
+WILL NOT INFRINGE ANY THIRD PARTY PATENTS, COPYRIGHTS, TRADEMARKS OR
+OTHER RIGHTS.</p>
+</div>
+<div class="paragraph">
+<p>THE COPYRIGHT HOLDERS AND THE ECLIPSE FOUNDATION WILL NOT BE LIABLE
+FOR ANY DIRECT, INDIRECT, SPECIAL OR CONSEQUENTIAL DAMAGES ARISING OUT
+OF ANY USE OF THE DOCUMENT OR THE PERFORMANCE OR IMPLEMENTATION OF THE
+CONTENTS THEREOF.</p>
+</div>
+<div class="paragraph">
+<p>The name and trademarks of the copyright holders or the Eclipse
+Foundation may NOT be used in advertising or publicity pertaining to
+this document or its contents without specific, written prior
+permission. Title to copyright in this document will at all times
+remain with copyright holders.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="specification-scope"><a class="anchor" href="#specification-scope"></a>1. Specification Scope</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Jakarta Annotations defines a collection of annotations representing common semantic concepts that enable a declarative style of programming that applies across a variety of Java technologies.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="introduction"><a class="anchor" href="#introduction"></a>2. Introduction</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>With the addition of JSR 175 (A Metadata
+Facility for the JavaTM Programming Language) in the Java platform we
+envision that various technologies will use annotations to enable a
+declarative style of programming. It would be unfortunate if these
+technologies each independently defined their own annotations for common
+concepts. It would be valuable to have consistency within the Jakarta EE
+and Java SE component technologies, but it will also be valuable to
+allow consistency between Jakarta EE and Java SE.</p>
+</div>
+<div class="paragraph">
+<p>It is the intention of this specification to
+define a small set of common annotations that will be available for use
+within other specifications. It is hoped that this will help to avoid
+unnecessary redundancy or duplication between annotations defined in
+different Jakarta EE specifications. This would allow us to have
+the common annotations all in one place and let the technologies refer
+to this specification rather than have them specified in multiple
+specifications. This way all technologies can use the same version of
+the annotations and there will be consistency in the annotations used
+across the platforms.</p>
+</div>
+<div class="sect2">
+<h3 id="goals"><a class="anchor" href="#goals"></a>2.1. Goals</h3>
+<div class="paragraph">
+<p>Define annotations for use in Jakarta EE: This
+spec will define annotations for use within component technologies in
+Jakarta EE as well as the platform as a whole.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="non-goals"><a class="anchor" href="#non-goals"></a>2.2. Non-Goals</h3>
+<div class="paragraph">
+<p>Support for Java versions prior to J2SE 5.0</p>
+</div>
+<div class="paragraph">
+<p>Annotations were introduced in J2SE 5.0. It
+is not possible to do annotation processing in versions prior to J2SE
+5.0. It is not a goal of this specification to define a way of doing
+annotation processing of any kind for versions prior to J2SE 5.0.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="compatibility"><a class="anchor" href="#compatibility"></a>2.3. Compatibility</h3>
+<div class="paragraph">
+<p>The annotations defined in this specification
+may be included individually as needed in products that make use of
+them. Other Java specifications will require support for subsets of
+these annotations. Products that support these Java specifications must
+include the required annotations.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="conventions"><a class="anchor" href="#conventions"></a>2.4. Conventions</h3>
+<div class="paragraph">
+<p>The keywords ‘MUST’, ‘MUST NOT’, ‘REQUIRED’,
+‘SHALL’, ‘SHALL NOT’, ‘SHOULD’, ‘SHOULD NOT’, ‘RECOMMENDED’, ‘MAY’ AND
+‘OPTIONAL’ in this document are to be interpreted as described in RFC
+2119.</p>
+</div>
+<div class="paragraph">
+<p>Java code is formatted as shown below:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="java"><span class="keyword">package</span> <span class="namespace">com.wombat.hello</span>;
+
+<span class="directive">public</span> <span class="type">class</span> <span class="class">Hello</span> {
+    <span class="directive">public</span> <span class="directive">static</span> <span class="type">void</span> main(<span class="predefined-type">String</span><span class="type">[]</span> args) {
+        <span class="predefined-type">System</span>.out.println(<span class="string"><span class="delimiter">&quot;</span><span class="content">Hello world</span><span class="delimiter">&quot;</span></span>);
+    }
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="expert-group-members"><a class="anchor" href="#expert-group-members"></a>2.5. Expert Group Members</h3>
+<div class="paragraph">
+<p>The following expert group members
+participated in JSR 250:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Cedric Beust (individual)</p>
+</li>
+<li>
+<p>Bill Burke (JBoss)</p>
+</li>
+<li>
+<p>Wayne Carr (Intel)</p>
+</li>
+<li>
+<p>Robert Clevenger (Oracle)</p>
+</li>
+<li>
+<p>Evan Ireland (Sybase)</p>
+</li>
+<li>
+<p>Woo Jin Kim (Tmax Soft)</p>
+</li>
+<li>
+<p>Gavin King (JBoss)</p>
+</li>
+<li>
+<p>Rajiv Mordani (Oracle Corporation, Specification lead)</p>
+</li>
+<li>
+<p>Ted Neward (individual)</p>
+</li>
+<li>
+<p>Anurag Parashar (Pramati technologies)</p>
+</li>
+<li>
+<p>Michael Santos (individual)</p>
+</li>
+<li>
+<p>Hani Suleiman (Ironflare AB)</p>
+</li>
+<li>
+<p>Seth White (BEA)</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="acknowledgements"><a class="anchor" href="#acknowledgements"></a>2.6. Acknowledgements</h3>
+<div class="paragraph">
+<p>In addition to the expert group listed above,
+Linda DeMichiel, Ron Monzillo, Lance Andersen and Bill Shannon all of
+whom work at Oracle Corporation have provided input to this
+specification.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="annotations"><a class="anchor" href="#annotations"></a>3. Annotations</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>This chapter describes the standard
+annotations, some guidelines for annotation inheritance and the usage of
+these annotations where possible.</p>
+</div>
+<div class="sect2">
+<h3 id="general-guidelines-for-inheritance-of-annotations"><a class="anchor" href="#general-guidelines-for-inheritance-of-annotations"></a>3.1. General Guidelines for Inheritance of Annotations</h3>
+<div class="paragraph">
+<p>The interplay of annotations and inheritance
+in the Java language is potentially a source of complexity for
+developers. Developers will rely on some implicit assumptions when
+figuring out how annotations compose with other language features. At
+the same time, annotation semantics are defined by individual
+specifications, hence the potential for inconsistencies to arise. For
+instance, consider the following example:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="java"><span class="directive">public</span> <span class="type">class</span> <span class="class">Base</span> {
+    <span class="annotation">@TransactionAttribute</span>(REQUIRES_NEW)
+    <span class="directive">public</span> <span class="type">void</span> foo {...}
+}
+
+<span class="annotation">@Stateless</span>
+<span class="directive">public</span> <span class="type">class</span> <span class="class">Derived</span> <span class="directive">extends</span> Base {
+    <span class="annotation">@TransactionAttribute</span>(NEVER)
+    <span class="directive">public</span> <span class="type">void</span> foo {...}
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>In keeping with the concept of method
+overriding, most developers will assume that in the <em>Derived</em> class, the
+effective <em>TransactionAttribute</em> annotation for method <em>foo</em> is
+<em>TransactionAttribute(NEVER)</em> . On the other hand, it might have been
+possible for the specification governing the semantics of the
+<em>TransactionAttribute</em> annotations type to require that the effective
+<em>TransactionAttribute</em> to be the most restrictive one in the whole
+inheritance tree, that is, in the example above
+<em>TransactionAttribute(REQUIRES_NEW)</em> . A motivation for these semantics
+might have been that the <em>foo</em> method in the <em>Derived</em> class may call
+<em>super.foo()</em> , resulting in the execution of some code that needs a
+transaction to be in place. Such a choice on the part of the
+specification for <em>TransactionAttribute</em> would have contradicted a
+developer’s intuition on how method overriding works.</p>
+</div>
+<div class="paragraph">
+<p>In order to keep the resulting complexity in
+control, below are some guidelines recommended for how annotations
+defined in the different specifications should interact with
+inheritance:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Class-level annotations only affect the
+class they annotate and its members, that is, its methods and fields.
+They never affect a member declared by a superclass, even if it is not
+hidden or overridden by the class in question.</p>
+</li>
+<li>
+<p>In addition to affecting the annotated class,
+class-level annotations may act as a shorthand for member-level
+annotations. If a member carries a specific member-level annotation, any
+annotations of the same type implied by a class-level annotation are
+ignored. In other words, explicit member-level annotations have priority
+over member-level annotations implied by a class-level annotation. For
+example, a <em>TransactionAttribute(REQUIRED)</em> annotation on a class
+implies that all the public methods in the class that it is applied on
+are annotated with <em>TransactionAttribute(REQUIRED)</em> . However if there
+is a <em>TransactionAttribute(NEVER)</em> annotation on a particular method,
+then the <em>TransactionAttribute(NEVER)</em> applies for that particular
+method and not <em>TransactionAttribute(REQUIRED)</em> .</p>
+</li>
+<li>
+<p>The interfaces implemented by a class never
+contribute annotations to the class itself or any of its members.</p>
+</li>
+<li>
+<p>Members inherited from a superclass and which
+are not hidden or overridden maintain the annotations they had in the
+class that declared them, including member-level annotations implied by
+class-level ones.</p>
+</li>
+<li>
+<p>Member-level annotations on a hidden or overridden member are always ignored.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>This set of guidelines guarantees that the
+effects of an annotation are local to the class on, or inside, which it
+appears. In order to find the effective annotation for a class member, a
+developer has to track down its last non-hidden and non-overridden
+declaration and examine it. If the sought-for annotation is not found
+there, then (s)he will have to examine the enclosing class declaration.
+If even this step fails to provide an annotation, no other source file
+will be consulted.</p>
+</div>
+<div class="paragraph">
+<p>Below are some examples that explain how the
+guidelines defined above will be applied to the <em>TransactionAttribute</em>
+annotation.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="java"><span class="annotation">@TransactionAttribute</span>(REQUIRED)
+<span class="type">class</span> <span class="class">Base</span> {
+    <span class="annotation">@TransactionAttribute</span>(NEVER)
+    <span class="directive">public</span> <span class="type">void</span> foo() {...}
+
+    <span class="directive">public</span> <span class="type">void</span> bar() {...}
+}
+
+<span class="annotation">@Stateless</span>
+<span class="type">class</span> <span class="class">ABean</span> <span class="directive">extends</span> Base {
+    <span class="directive">public</span> <span class="type">void</span> foo() {...}
+}
+
+<span class="annotation">@Stateless</span>
+<span class="directive">public</span> <span class="type">class</span> <span class="class">BBean</span> <span class="directive">extends</span> Base {
+    <span class="annotation">@TransactionAttribute</span>(REQUIRES_NEW)
+    <span class="directive">public</span> <span class="type">void</span> foo() {...}
+}
+
+<span class="annotation">@Stateless</span>
+<span class="annotation">@TransactionAttribute</span>(REQUIRES_NEW)
+<span class="directive">public</span> <span class="type">class</span> <span class="class">CBean</span> <span class="directive">extends</span> Base {
+    <span class="directive">public</span> <span class="type">void</span> foo() {...}
+    <span class="directive">public</span> <span class="type">void</span> bar() {...}
+}
+
+<span class="annotation">@Stateless</span>
+<span class="annotation">@TransactionAttribute</span>(REQUIRES_NEW)
+<span class="directive">public</span> <span class="type">class</span> <span class="class">DBean</span> <span class="directive">extends</span> Base {
+    <span class="directive">public</span> <span class="type">void</span> bar() {...}
+}
+
+<span class="annotation">@Stateless</span>
+<span class="annotation">@TransactionAttribute</span>(REQUIRES_NEW)
+<span class="directive">public</span> <span class="type">class</span> <span class="class">EBean</span> <span class="directive">extends</span> Base {
+    <span class="comment">// ...</span>
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The table below shows the effective
+<em>TransactionAttribute</em> annotation in each of the cases above by applying
+the guidelines specified for annotations and inheritance:</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Methods in derived classes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Effective TransactionAttribute value</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">foo() in ABean</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">TransactionAttribute(REQUIRED). (Default TransactionAttribute as defined by the EJB specification).</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">bar() in ABean</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">TransactionAttribute(REQUIRED)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">foo() in BBean</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">TransactionAttribute(REQUIRES_NEW)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">bar() in BBean</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">TransactionAttribute(REQUIRED)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">foo() in CBean</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">TransactionAttribute(REQUIRES_NEW)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">bar() in CBean</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">TransactionAttribute(REQUIRES_NEW)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">foo() in DBean</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">TransactionAttribute(NEVER) (from Base class)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">bar() in DBean</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">TransactionAttribute(REQUIRES_NEW)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">foo() in EBean</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">TransactionAttribute(NEVER) (from Base class)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">bar() in EBean</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">TransactionAttribute(REQUIRED) (from Base class)</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>For more details about the <em>TransactionAttribute</em> annotation, see the <em>EJB 3 Core Contracts</em>
+specification.</p>
+</div>
+<div class="paragraph">
+<p>All annotations defined in this specification
+follow the guidelines defined above unless explicitly stated otherwise.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="jakarta-annotation-generated"><a class="anchor" href="#jakarta-annotation-generated"></a>3.2. jakarta.annotation.Generated</h3>
+<div class="paragraph">
+<p>The <em>Generated</em> annotation is used to mark
+source code that has been generated. It can be specified on a class,
+method, or field. It can also be used to differentiate user-written code
+from generated code in a single file.</p>
+</div>
+<div class="paragraph">
+<p>The <em>value</em> element MUST have the name of the
+code generator. The recommended convention is to use the fully qualified
+name of the code generator. For example: <em>com.company.package.classname</em>
+.</p>
+</div>
+<div class="paragraph">
+<p>The <em>date</em> element is used to indicate the
+date the source was generated. The <em>date</em> element MUST follow the ISO
+8601 standard. For example the <em>date</em> element could have the following
+value:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>2001-07-04T12:08:56.235-0700</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>which represents 2001-07-04 12:08:56 local
+time in the U.S. Pacific time zone.</p>
+</div>
+<div class="paragraph">
+<p>The <em>comments</em> element is a place holder for
+any comments that the code generator may want to include in the
+generated code.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="java"><span class="keyword">package</span> <span class="namespace">jakarta.annotation</span>;
+
+<span class="keyword">import</span> <span class="include">static</span> <span class="include">java.lang.annotation.ElementType</span>.*;
+<span class="keyword">import</span> <span class="include">static</span> <span class="include">java.lang.annotation.RetentionPolicy</span>.*;
+
+<span class="annotation">@Target</span>({ANNOTATION_TYPE, CONSTRUCTOR, FIELD, LOCAL_VARIABLE, METHOD, PACKAGE, PARAMETER, TYPE})
+<span class="annotation">@Retention</span>(SOURCE)
+<span class="directive">public</span> <span class="annotation">@interface</span> Generated {
+    <span class="predefined-type">String</span><span class="type">[]</span> value();
+    <span class="predefined-type">String</span> date() <span class="keyword">default</span> <span class="string"><span class="delimiter">&quot;</span><span class="delimiter">&quot;</span></span>;
+    <span class="predefined-type">String</span> comments() <span class="keyword">default</span> <span class="string"><span class="delimiter">&quot;</span><span class="delimiter">&quot;</span></span>;
+}</code></pre>
+</div>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Element</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Description</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Default</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">value</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Name of the code generator</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">date</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Date source was generated. MUST follow ISO 8601 standard</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">""</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">comments</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">placeholder for comments that the generator may want to include in the generated code</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">""</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>The following example shows the usage of the annotation defined above:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="java"><span class="annotation">@Generated</span>(<span class="string"><span class="delimiter">&quot;</span><span class="content">com.sun.xml.rpc.AProcessor</span><span class="delimiter">&quot;</span></span>)
+<span class="directive">public</span> <span class="type">interface</span> <span class="class">StockQuoteService</span> <span class="directive">extends</span> java.rmi.Remote {
+    <span class="local-variable">this</span>.context = context;
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="jakarta-annotation-resource"><a class="anchor" href="#jakarta-annotation-resource"></a>3.3. jakarta.annotation.Resource</h3>
+<div class="paragraph">
+<p>The <em>Resource</em> annotation is used to declare
+a reference to a resource. It can be specified on a class, method, or
+field. When the annotation is applied on a field or method, the
+container will inject an instance of the requested resource into the
+application when the application is initialized. If the annotation is
+applied to a class, the annotation declares a resource that the
+application will look up at runtime. Even though this annotation is not
+marked <em>Inherited</em> , all superclasses MUST be examined to discover all
+uses of this annotation. All such annotation instances specify resources
+that are needed by the application. Note that this annotation may appear
+on private fields and methods of superclasses. Injection of the declared
+resources needs to happen in these cases as well, even if a method with
+such an annotation is overridden by a subclass.</p>
+</div>
+<div class="paragraph">
+<p>The <em>name</em> element is the JNDI name of the
+resource. When the <em>Resource</em> annotation is applied on a field, the
+default value of the <em>name</em> element is the field name qualified by the
+class name. When applied on a method, the default is the JavaBeans
+property name corresponding to the method qualified by the class name.
+When applied on a class, there is no default and the name MUST be
+specified.</p>
+</div>
+<div class="paragraph">
+<p>The <em>type</em> element defines the Java type of
+the resource. When the <em>Resource</em> annotation is applied on a field, the
+default value of the <em>type</em> element is the type of the field. When
+applied on a method, the default is the type of the JavaBeans property.
+When applied on a class, there is no default and the type MUST be
+specified. When used, the type MUST be assignment compatible.</p>
+</div>
+<div class="paragraph">
+<p>The <em>authenticationType</em> element is used to
+indicate the authentication type to use for the resource. It can take
+one of two values defined as an <em>Enum</em> : <em>CONTAINER</em> or <em>APPLICATION</em> .
+This element may be specified for resources representing a connection
+factory of any supported type and MUST NOT be specified for resources of
+other types.</p>
+</div>
+<div class="paragraph">
+<p>The <em>shareable</em> element is used to indicate
+whether a resource can be shared between this component and other
+components. This element may be specified for resources representing a
+connection factory of any supported type or ORB object instances and
+MUST NOT be specified for resources of other types.</p>
+</div>
+<div class="paragraph">
+<p>The <em>mappedName</em> element is a
+product-specific name that this resource should be mapped to. The
+<em>mappedName</em> element provides for mapping the resource reference
+specified by the <em>Resource</em> annotation to the name of a resource known
+to the application server. The mapped name could be of any form.
+Application servers are not required to support any particular form or
+type of mapped name, nor the ability to use mapped names. The mapped
+name is product dependent and often installation dependent. No use of
+mapped name is portable.</p>
+</div>
+<div class="paragraph">
+<p>The <em>description</em> element is the description
+of the resource. The description is expected to be in the default
+language of the system on which the application is deployed. The
+description can be presented to help in choosing the correct resource.</p>
+</div>
+<div class="paragraph">
+<p>The <em>lookup</em> element specifies the JNDI name
+of a resource that the resource being defined will be bound to. The type
+of the referenced resource must be compatible with that of the resource
+being defined.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="java"><span class="keyword">package</span> <span class="namespace">jakarta.annotation</span>;
+
+<span class="keyword">import</span> <span class="include">static</span> <span class="include">java.lang.annotation.ElementType</span>.*;
+<span class="keyword">import</span> <span class="include">static</span> <span class="include">java.lang.annotation.RetentionPolicy</span>.*;
+
+<span class="annotation">@Target</span>({TYPE, METHOD, FIELD})
+<span class="annotation">@Retention</span>(RUNTIME)
+<span class="annotation">@Repeatable</span>(Resources.class)
+<span class="directive">public</span> <span class="annotation">@interface</span> Resource {
+    <span class="directive">public</span> <span class="type">enum</span> AuthenticationType {
+        CONTAINER,
+        APPLICATION
+    }
+
+    <span class="predefined-type">String</span> name() <span class="keyword">default</span> <span class="string"><span class="delimiter">&quot;</span><span class="delimiter">&quot;</span></span>;
+
+    <span class="predefined-type">Class</span>&lt;?&gt; type() <span class="keyword">default</span> <span class="predefined-type">Object</span>.class;
+
+    AuthenticationType authenticationType() <span class="keyword">default</span> AuthenticationType.CONTAINER;
+
+    <span class="type">boolean</span> shareable() <span class="keyword">default</span> <span class="predefined-constant">true</span>;
+
+    <span class="predefined-type">String</span> mappedName() <span class="keyword">default</span> <span class="string"><span class="delimiter">&quot;</span><span class="delimiter">&quot;</span></span>;
+
+    <span class="predefined-type">String</span> description() <span class="keyword">default</span> <span class="string"><span class="delimiter">&quot;</span><span class="delimiter">&quot;</span></span>;
+
+    <span class="predefined-type">String</span> lookup() <span class="keyword">default</span> <span class="string"><span class="delimiter">&quot;</span><span class="delimiter">&quot;</span></span>;
+}</code></pre>
+</div>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Element</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Description</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Default</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">name</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The JNDI name of the resource</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">""</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">type</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The Java type of the resource</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Object.class</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">authenticationType</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The authentication type to use for the resource</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">CONTAINER</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">shareable</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Indicates whether the resource can be shared.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">true</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">mappedName</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A product-specific name that the resource should map to.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">""</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">description</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Description of the resource.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">""</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">lookup</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">the JNDI name of a resource that the resource being defined will be bound to</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">""</p></td>
+</tr>
+</tbody>
+</table>
+<div class="sect3">
+<h4 id="field-based-injection"><a class="anchor" href="#field-based-injection"></a>3.3.1. Field based injection</h4>
+<div class="paragraph">
+<p>To access a resource a developer declares a
+field and annotates it as being a resource reference. If the name and
+type elements are missing from the annotation they will be inferred by
+looking at the field declaration itself. It is an error if the type
+specified by the <em>Resource</em> annotation and the type of the field are
+incompatible.</p>
+</div>
+<div class="paragraph">
+<p>For example:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="java"><span class="annotation">@Resource</span>
+<span class="directive">private</span> <span class="predefined-type">DataSource</span> myDB;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>In the example above the effective name is
+<em>com.example.class/myDB</em> and the effective type is
+<em>javax.sql.DataSource.class</em> .</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="java"><span class="annotation">@Resource</span>(name=<span class="string"><span class="delimiter">&quot;</span><span class="content">customerDB</span><span class="delimiter">&quot;</span></span>)
+<span class="directive">private</span> <span class="predefined-type">DataSource</span> myDB;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>In the example above the name is <em>customerDB</em>
+and the effective type is <em>javax.sql.DataSource.class</em> .</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="setter-based-injection"><a class="anchor" href="#setter-based-injection"></a>3.3.2. Setter based injection</h4>
+<div class="paragraph">
+<p>To access a resource a developer declares a
+setter method and annotates it as being a resource reference. The name
+and type of resource may be inferred by inspecting the method
+declaration if necessary. The name of the resource, if not declared, is
+the name of the JavaBeans property as determined from the name of the
+setter method. The setter method MUST follow the standard JavaBeans
+convention—the name starts with “ <em>set</em> ”; the return type is <em>void</em> ;
+and there is only one parameter. Additionally, the type of the parameter
+MUST be compatible with the <em>type</em> element of the <em>Resource</em> annotation,
+if specified.</p>
+</div>
+<div class="paragraph">
+<p>For example:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="java"><span class="annotation">@Resource</span>
+<span class="directive">private</span> <span class="type">void</span> setMyDB(<span class="predefined-type">DataSource</span> ds) {
+    myDB = ds;
+}
+
+<span class="directive">private</span> <span class="predefined-type">DataSource</span> myDB;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>In the example above the effective name is
+<em>com.example.class/myDB</em> and the type is <em>javax.sql.DataSource.class</em> .</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="java"><span class="annotation">@Resource</span>(name=<span class="string"><span class="delimiter">&quot;</span><span class="content">customerDB</span><span class="delimiter">&quot;</span></span>)
+<span class="directive">private</span> <span class="type">void</span> setMyDB(<span class="predefined-type">DataSource</span> ds) {
+    myDB = ds;
+}
+
+<span class="directive">private</span> <span class="predefined-type">DataSource</span> myDB;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>In the example above the name is <em>customerDB</em>
+and the type is <em>javax.sql.DataSource.class</em> .</p>
+</div>
+<div class="paragraph">
+<p>The table below shows the mapping from Java
+type to the equivalent resource type in the Java EE 5 (and later)
+deployment descriptors:</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Java Type</th>
+<th class="tableblock halign-left valign-top">Equivalent Resource type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">java.lang.String</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">env-entry</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">java.lang.Character</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">env-entry</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">java.lang.Integer</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">env-entry</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">java.lang.Boolean</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">env-entry</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">java.lang.Double</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">env-entry</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">java.lang.Byte</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">env-entry</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">java.lang.Short</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">env-entry</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">java.lang.Long</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">env-entry</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">java.lang.Float</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">env-entry</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">jakarta.xml.rpc.Service</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">service-ref</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">jakarta.xml.ws.Service</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">service-ref</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">jakarta.jws.WebService</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">service-ref</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">javax.sql.DataSource</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">resource-ref</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">jakarta.jms.ConnectionFactory</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">resource-ref</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">jakarta.jms.QueueConnectionFactory</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">resource-ref</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">jakarta.jms.TopicConnectionFactory</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">resource-ref</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">jakarta.mail.Session</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">resource-ref</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">java.net.URL</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">resource-ref</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">jakarta.resource.cci.ConnectionFactory</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">resource-ref</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">org.omg.CORBA_2_3.ORB</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">resource-ref</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">any other connection factory defined by a resource adapter</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">resource-ref</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">jakarta.jms.Queue</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">message-destination-ref</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">jakarta.jms.Topic</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">message-destination-ref</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">jakarta.resource.cci.InteractionSpec</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">resource-env-ref</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">jakarta.transaction.UserTransaction</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">resource-env-ref</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Everything else</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">resource-env-ref</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="jakarta-annotation-resources"><a class="anchor" href="#jakarta-annotation-resources"></a>3.4. jakarta.annotation.Resources</h3>
+<div class="paragraph">
+<p>The <em>Resource</em> annotation is used to declare
+a reference to a resource. The <em>Resources</em> annotation acts as a
+container for multiple resource declarations.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="java"><span class="keyword">package</span> <span class="namespace">jakarta.annotation</span>;
+
+<span class="keyword">import</span> <span class="include">static</span> <span class="include">java.lang.annotation.ElementType</span>.*;
+<span class="keyword">import</span> <span class="include">static</span> <span class="include">java.lang.annotation.RetentionPolicy</span>.*;
+
+<span class="annotation">@Target</span>({TYPE})
+<span class="annotation">@Retention</span>(RUNTIME)
+<span class="directive">public</span> <span class="annotation">@interface</span> Resources {
+    Resource<span class="type">[]</span> value;
+}</code></pre>
+</div>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Element</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Description</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Default</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">value</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Container for defining multiple resources.</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>The following example shows the usage of the annotation defined above:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="java"><span class="annotation">@Resources</span> ({
+    <span class="annotation">@Resource</span>(name=<span class="string"><span class="delimiter">&quot;</span><span class="content">myDB</span><span class="delimiter">&quot;</span></span>, type=javax.sql.DataSource),
+    <span class="annotation">@Resource</span>(name=<span class="string"><span class="delimiter">&quot;</span><span class="content">myMQ</span><span class="delimiter">&quot;</span></span>, type=jakarta.jms.ConnectionFactory)
+})
+
+<span class="directive">public</span> <span class="type">class</span> <span class="class">CalculatorBean</span> {
+    <span class="comment">// ...</span>
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="jakarta-annotation-postconstruct"><a class="anchor" href="#jakarta-annotation-postconstruct"></a>3.5. jakarta.annotation.PostConstruct</h3>
+<div class="paragraph">
+<p>The <em>PostConstruct</em> annotation is used on a
+method that needs to be executed after dependency injection is done to
+perform any initialization. This method MUST be invoked before the class
+is put into service. This annotation MUST be supported on all classes
+that support dependency injection. The method annotated with
+<em>PostConstruct</em> MUST be invoked even if the class does not request any
+resources to be injected. Only one method in a given class can be
+annotated with this annotation. The method on which the <em>PostConstruct</em>
+annotation is applied MUST fulfill all of the following requirements,
+except in cases where these requirements have been relaxed by another
+specification. See in particular the <em>Interceptors</em> specification.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>The method MUST NOT have any para meters.</p>
+</li>
+<li>
+<p>The return type of the method MUST be <em>void</em> .</p>
+</li>
+<li>
+<p>The method MUST NOT throw a checked exception.</p>
+</li>
+<li>
+<p>The method on which <em>PostConstruct</em> is
+applied MAY be <em>public</em> , <em>protected</em> , package private or <em>private</em> .</p>
+</li>
+<li>
+<p>The method MUST NOT be static except for the application client.</p>
+</li>
+<li>
+<p>In general, the method MUST NOT be final.
+However, other specifications are permitted to relax this requirement on
+a per-component basis.</p>
+</li>
+<li>
+<p>If the method throws an unchecked exception the class MUST NOT be put into service.</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="java"><span class="keyword">package</span> <span class="namespace">jakarta.annotation</span>;
+
+<span class="keyword">import</span> <span class="include">static</span> <span class="include">java.lang.annotation.ElementType</span>.*;
+<span class="keyword">import</span> <span class="include">static</span> <span class="include">java.lang.annotation.RetentionPolicy</span>.*;
+
+<span class="annotation">@Target</span>(METHOD)
+<span class="annotation">@Retention</span>(RUNTIME)
+<span class="directive">public</span> <span class="annotation">@interface</span> PostConstruct {
+
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The following example shows the usage of the annotation defined above:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="java"><span class="annotation">@Resource</span>
+<span class="directive">private</span> <span class="type">void</span> setMyDB(<span class="predefined-type">DataSource</span> ds) {
+    myDB = ds;
+}
+
+<span class="annotation">@PostConstruct</span>
+<span class="directive">private</span> <span class="type">void</span> initialize() {
+    <span class="comment">// Initialize the connection object from the DataSource</span>
+    connection = myDB.getConnection();
+}
+
+<span class="directive">private</span> <span class="predefined-type">DataSource</span> myDB;
+<span class="directive">private</span> <span class="predefined-type">Connection</span> connection;</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="jakarta-annotation-predestroy"><a class="anchor" href="#jakarta-annotation-predestroy"></a>3.6. jakarta.annotation.PreDestroy</h3>
+<div class="paragraph">
+<p>The <em>PreDestroy</em> annotation is used on a
+method as a callback notification to signal that the instance is in the
+process of being removed by the container. The method annotated with
+<em>PreDestroy</em> is typically used to release resources that the instance
+has been holding. This annotation MUST be supported by all container
+managed objects that support <em>PostConstruct</em> except the application
+client. The method on which the <em>PreDestroy</em> annotation is applied MUST
+fulfill all of the following requirements, except in cases where these
+requirements have been relaxed by another specification. See in
+particular the <em>Interceptors</em> specification.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>The method MUST NOT have any para meters.</p>
+</li>
+<li>
+<p>The return type of the method MUST be <em>void</em> .</p>
+</li>
+<li>
+<p>The method MUST NOT throw a checked exception.</p>
+</li>
+<li>
+<p>The method on which <em>PreDestroy</em> is applied
+MAY be <em>public</em> , <em>protected</em> , package private or <em>private</em> .</p>
+</li>
+<li>
+<p>The method MUST NOT be static.</p>
+</li>
+<li>
+<p>In general, the method MUST NOT be final.
+However, other specifications are permitted to relax this requirement on
+a per-component basis.</p>
+</li>
+<li>
+<p>If the method throws an unchecked exception it is ignored.</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="java"><span class="keyword">package</span> <span class="namespace">jakarta.annotation</span>;
+
+<span class="keyword">import</span> <span class="include">static</span> <span class="include">java.lang.annotation.ElementType</span>.*;
+<span class="keyword">import</span> <span class="include">static</span> <span class="include">java.lang.annotation.RetentionPolicy</span>.*;
+
+<span class="annotation">@Target</span>(METHOD)
+<span class="annotation">@Retention</span>(RUNTIME)
+<span class="directive">public</span> <span class="annotation">@interface</span> PreDestroy {
+
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The following example shows the usage of the annotation defined above:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="java"><span class="annotation">@Resource</span>
+<span class="directive">private</span> <span class="type">void</span> setMyDB(<span class="predefined-type">DataSource</span> ds) {
+    myDB = ds;
+}
+
+<span class="annotation">@PostConstruct</span>
+<span class="directive">private</span> <span class="type">void</span> initialize() {
+    <span class="comment">// Initialize the connection object from the DataSource</span>
+    connection = myDB.getConnection();
+}
+
+<span class="annotation">@PreDestroy</span>
+<span class="directive">private</span> <span class="type">void</span> cleanup() {
+    <span class="comment">// Close the connection to the DataSource.</span>
+    connection.close();
+}
+
+<span class="directive">private</span> <span class="predefined-type">DataSource</span> myDB;
+<span class="directive">private</span> <span class="predefined-type">Connection</span> connection;</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="jakarta-annotation-priority"><a class="anchor" href="#jakarta-annotation-priority"></a>3.7. jakarta.annotation.Priority</h3>
+<div class="paragraph">
+<p>The <em>Priority</em> annotation can be applied to
+classes or parameters to indicate in what order they should be used. The
+effect of using the <em>Priority</em> annotation in any particular instance is
+defined by other specifications that define the use of a specific class.</p>
+</div>
+<div class="paragraph">
+<p>For example, the <em>Interceptors</em> specification
+defines the use of priorities on interceptors to control the order in
+which interceptors are called.</p>
+</div>
+<div class="paragraph">
+<p>Priority values should generally be
+non-negative, with negative values reserved for special meanings such as
+“undefined” or “not specified”. A specification that defines use of the
+<em>Priority</em> annotation may define the range of allowed priorities and any
+priority values with special meaning.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="java"><span class="keyword">package</span> <span class="namespace">jakarta.annotation</span>;
+
+<span class="keyword">import</span> <span class="include">java.lang.annotation</span>.*;
+<span class="keyword">import</span> <span class="include">static</span> <span class="include">java.lang.annotation.ElementType</span>.*;
+<span class="keyword">import</span> <span class="include">static</span> <span class="include">java.lang.annotation.RetentionPolicy</span>.*;
+
+<span class="annotation">@Target</span>({TYPE, PARAMETER})
+<span class="annotation">@Retention</span>(RUNTIME)
+<span class="annotation">@Documented</span>
+<span class="directive">public</span> <span class="annotation">@interface</span> Priority {
+     <span class="comment">// The priority value.</span>
+     <span class="type">int</span> value();
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="jakarta-annotation-security-runas"><a class="anchor" href="#jakarta-annotation-security-runas"></a>3.8. jakarta.annotation.security.RunAs</h3>
+<div class="paragraph">
+<p>The <em>RunAs</em> annotation defines the security
+role of the application during execution in a Jakarta EE container. It can
+be specified on a class. This allows developers to execute an
+application under a particular role. The role MUST map to the user /
+group information in the container’s security realm. The <em>value</em> element
+in the annotation is the name of a security role.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="java"><span class="keyword">package</span> <span class="namespace">jakarta.annotation.security</span>;
+
+<span class="keyword">import</span> <span class="include">static</span> <span class="include">java.lang.annotation.ElementType</span>.*;
+<span class="keyword">import</span> <span class="include">static</span> <span class="include">java.lang.annotation.RetentionPolicy</span>.*;
+
+<span class="annotation">@Target</span>(TYPE)
+<span class="annotation">@Retention</span>(RUNTIME)
+<span class="directive">public</span> <span class="annotation">@interface</span> RunAs {
+    <span class="predefined-type">String</span> value();
+}</code></pre>
+</div>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Element</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Description</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Default</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">value</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Security role of the application during execution in a Jakarta EE container</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>The following example shows the usage of the annotation defined above:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="java"><span class="annotation">@RunAs</span>(<span class="string"><span class="delimiter">&quot;</span><span class="content">Admin</span><span class="delimiter">&quot;</span></span>)
+<span class="directive">public</span> <span class="type">class</span> <span class="class">Calculator</span> {
+    <span class="comment">// ...</span>
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="jakarta-annotation-security-rolesallowed"><a class="anchor" href="#jakarta-annotation-security-rolesallowed"></a>3.9. jakarta.annotation.security.RolesAllowed</h3>
+<div class="paragraph">
+<p>The <em>RolesAllowed</em> annotation specifies the
+security roles permitted to access method(s) in an application. The
+value element of the <em>RolesAllowed</em> annotation is a list of security
+role names.</p>
+</div>
+<div class="paragraph">
+<p>The <em>RolesAllowed</em> annotation can be
+specified on a class or on method(s). Specifying it at a class level
+means that it applies to all the methods in the class. Specifying it on
+a method means that it is applicable to that method only. If applied at
+both the class and method level, the method value overrides the class
+value.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="java"><span class="keyword">package</span> <span class="namespace">jakarta.annotation.security</span>;
+
+<span class="keyword">import</span> <span class="include">static</span> <span class="include">java.lang.annotation.ElementType</span>.*;
+<span class="keyword">import</span> <span class="include">static</span> <span class="include">java.lang.annotation.RetentionPolicy</span>.*;
+
+<span class="annotation">@Target</span>({TYPE,METHOD})
+<span class="annotation">@Retention</span>(RUNTIME)
+<span class="directive">public</span> <span class="annotation">@interface</span> RolesAllowed {
+    <span class="predefined-type">String</span><span class="type">[]</span> value();
+}</code></pre>
+</div>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Element</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Description</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Default</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">value</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">List of roles permitted to access methods in the application</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>The following example shows the usage of the annotation defined above:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="java"><span class="annotation">@RolesAllowed</span>(<span class="string"><span class="delimiter">&quot;</span><span class="content">Users</span><span class="delimiter">&quot;</span></span>)
+<span class="directive">public</span> <span class="type">class</span> <span class="class">Calculator</span> {
+    <span class="annotation">@RolesAllowed</span>(<span class="string"><span class="delimiter">&quot;</span><span class="content">Administrator</span><span class="delimiter">&quot;</span></span>)
+    <span class="directive">public</span> <span class="type">void</span> setNewRate(<span class="type">int</span> rate) {
+        <span class="comment">// ...</span>
+    }
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="jakarta-annotation-security-permitall"><a class="anchor" href="#jakarta-annotation-security-permitall"></a>3.10. jakarta.annotation.security.PermitAll</h3>
+<div class="paragraph">
+<p>The <em>PermitAll</em> annotation specifies that all
+security roles are allowed to invoke the specified method(s), that is,
+that the specified method(s) are “unchecked”. It can be specified on a
+class or on methods. Specifying it on the class means that it applies to
+all methods of the class. If specified at the method level, it only
+affects that method.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="java"><span class="keyword">package</span> <span class="namespace">jakarta.annotation.security</span>;
+
+<span class="keyword">import</span> <span class="include">static</span> <span class="include">java.lang.annotation.ElementType</span>.*;
+<span class="keyword">import</span> <span class="include">static</span> <span class="include">java.lang.annotation.RetentionPolicy</span>.*;
+
+<span class="annotation">@Target</span>({TYPE,METHOD})
+<span class="annotation">@Retention</span>(RUNTIME)
+<span class="directive">public</span> <span class="annotation">@interface</span> PermitAll {
+
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The following example shows the usage of the annotation defined above:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="java"><span class="keyword">import</span> <span class="include">jakarta.annotation.security</span>.*;
+
+<span class="annotation">@RolesAllowed</span>(<span class="string"><span class="delimiter">&quot;</span><span class="content">Users</span><span class="delimiter">&quot;</span></span>)
+<span class="directive">public</span> <span class="type">class</span> <span class="class">Calculator</span> {
+    <span class="annotation">@RolesAllowed</span>(<span class="string"><span class="delimiter">&quot;</span><span class="content">Administrator</span><span class="delimiter">&quot;</span></span>)
+    <span class="directive">public</span> <span class="type">void</span> setNewRate(<span class="type">int</span> rate) {
+        <span class="comment">// ...</span>
+    }
+
+    <span class="annotation">@PermitAll</span>
+    <span class="directive">public</span> <span class="type">long</span> convertCurrency(<span class="type">long</span> amount) {
+        <span class="comment">// ...</span>
+    }
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="jakarta-annotation-security-denyall"><a class="anchor" href="#jakarta-annotation-security-denyall"></a>3.11. jakarta.annotation.security.DenyAll</h3>
+<div class="paragraph">
+<p>The <em>DenyAll</em> annotation specifies that no
+security roles are allowed to invoke the specified method(s), that is,
+that the method(s) are to be excluded from execution in the Jakarta EE
+container.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="java"><span class="keyword">package</span> <span class="namespace">jakarta.annotation.security</span>;
+
+<span class="keyword">import</span> <span class="include">static</span> <span class="include">java.lang.annotation.ElementType</span>.*;
+<span class="keyword">import</span> <span class="include">static</span> <span class="include">java.lang.annotation.RetentionPolicy</span>.*;
+
+<span class="annotation">@Target</span>({TYPE, METHOD})
+<span class="annotation">@Retention</span>(RUNTIME)
+<span class="directive">public</span> <span class="annotation">@interface</span> DenyAll {
+
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The following example shows the usage of the annotation defined above:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="java"><span class="keyword">import</span> <span class="include">jakarta.annotation.security</span>.*;
+
+<span class="annotation">@RolesAllowed</span>(<span class="string"><span class="delimiter">&quot;</span><span class="content">Users</span><span class="delimiter">&quot;</span></span>)
+<span class="directive">public</span> <span class="type">class</span> <span class="class">Calculator</span> {
+    <span class="annotation">@RolesAllowed</span>(<span class="string"><span class="delimiter">&quot;</span><span class="content">Administrator</span><span class="delimiter">&quot;</span></span>)
+    <span class="directive">public</span> <span class="type">void</span> setNewRate(<span class="type">int</span> rate) {
+        <span class="comment">// ...</span>
+    }
+
+    <span class="annotation">@DenyAll</span>
+    <span class="directive">public</span> <span class="type">long</span> convertCurrency(<span class="type">long</span> amount) {
+        <span class="comment">// ...</span>
+    }
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="permitall-denyall-and-rolesallowed-interactions"><a class="anchor" href="#permitall-denyall-and-rolesallowed-interactions"></a>3.12. PermitAll, DenyAll and RolesAllowed interactions</h3>
+<div class="paragraph">
+<p>The <em>PermitAll</em> , <em>DenyAll</em> and
+<em>RolesAllowed</em> annotations all define which security roles are allowed
+to access the methods on which they are applied. This section describes
+how these annotations interact and which usages of these annotations are
+valid.</p>
+</div>
+<div class="paragraph">
+<p>If the <em>PermitAll</em> , <em>DenyAll</em> and
+<em>RolesAllowed</em> annotations are applied on methods of a class, then the
+method level annotations take precedence (at the corresponding methods)
+over any class level annotations of type <em>PermitAll</em> , <em>DenyAll</em> and
+<em>RolesAllowed</em> .</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="jakarta-annotation-security-declareroles"><a class="anchor" href="#jakarta-annotation-security-declareroles"></a>3.13. jakarta.annotation.security.DeclareRoles</h3>
+<div class="paragraph">
+<p>The <em>DeclareRoles</em> annotation is used to
+specify security roles used by the application. It can be specified on a
+class. It typically would be used to define roles that could be tested
+(i.e., by calling <em>isUserInRole</em> ) from within the methods of the
+annotated class. It could also be used to declare roles that are not
+implicitly declared as the result of their use in a <em>RolesAllowed</em>
+annotation on the class or a method of the class.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="java"><span class="keyword">package</span> <span class="namespace">jakarta.annotation.security</span>;
+
+<span class="keyword">import</span> <span class="include">static</span> <span class="include">java.lang.annotation.ElementType</span>.*;
+<span class="keyword">import</span> <span class="include">static</span> <span class="include">java.lang.annotation.RetentionPolicy</span>.*;
+
+<span class="annotation">@Target</span>(TYPE)
+<span class="annotation">@Retention</span>(RUNTIME)
+<span class="directive">public</span> <span class="annotation">@interface</span> DeclareRoles {
+    <span class="predefined-type">String</span><span class="type">[]</span> value();
+}</code></pre>
+</div>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Element</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Description</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Default</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">value</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">List of security roles specified by the application</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>The following example shows the usage of the annotation defined above:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="java"><span class="annotation">@DeclareRoles</span>(<span class="string"><span class="delimiter">&quot;</span><span class="content">BusinessAdmin</span><span class="delimiter">&quot;</span></span>)
+<span class="directive">public</span> <span class="type">class</span> <span class="class">Calculator</span> {
+    <span class="directive">public</span> <span class="type">void</span> convertCurrency() {
+        <span class="keyword">if</span> (x.isUserInRole(<span class="string"><span class="delimiter">&quot;</span><span class="content">BusinessAdmin</span><span class="delimiter">&quot;</span></span>)) {
+            <span class="comment">// ...</span>
+        }
+    }
+
+    <span class="comment">// ...</span>
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="jakarta-annotation-sql-datasourcedefinition"><a class="anchor" href="#jakarta-annotation-sql-datasourcedefinition"></a>3.14. jakarta.annotation.sql.DataSourceDefinition</h3>
+<div class="paragraph">
+<p>The <em>DataSourceDefinition</em> annotation is used
+to define a container <em>DataSource</em> to be registered with JNDI. The
+<em>DataSource</em> may be configured by setting the annotation elements for
+commonly-used <em>DataSource</em> properties. Additional standard and
+vendor-specific properties may be specified using the <em>properties</em>
+element. The data source will be registered under the name specified in
+the <em>name</em> element. It may be defined to be in any valid Jakarta EE
+namespace, which will determine the accessibility of the data source
+from other components. A JDBC driver implementation class of the
+appropriate type, either <em>DataSource</em> , <em>ConnectionPoolDataSource</em> , or
+<em>XADataSource</em> , must be indicated by the <em>className</em> element. The
+driver class is not required to be available at deployment but must be
+available at runtime prior to any attempt to access the <em>DataSource</em> .</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre> _DataSource_ properties should not be
+specified more than once. If the _url_ annotation element contains a
+_DataSource_ property that was also specified using the corresponding
+annotation element or was specified in the _properties_ annotation
+element, the precedence order is undefined and implementation specific.</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Vendors are not required to support
+<em>properties</em> that do not normally apply to a specific data source type.
+For example, specifying the <em>transactional</em> property to be <em>true</em> but
+supplying a value for <em>className</em> that implements a data source class
+other than <em>XADataSource</em> may not be supported.</p>
+</div>
+<div class="paragraph">
+<p>Vendor-specific properties may be combined
+with or used to override standard data source properties defined using
+this annotation.</p>
+</div>
+<div class="paragraph">
+<p><em>DataSource</em> properties that are specified
+and are not supported in a given configuration or cannot be mapped to a
+vendor-specific configuration property may be ignored.</p>
+</div>
+<div class="paragraph">
+<p>Although the annotation allows you to specify
+a password, it is recommended not to embed passwords in production code.
+The <em>password</em> element in the annotation is provided as a convenience
+for ease of development.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="java"><span class="keyword">package</span> <span class="namespace">jakarta.annotation.sql</span>;
+
+<span class="keyword">import</span> <span class="include">java.lang.annotation.Target</span>;
+<span class="keyword">import</span> <span class="include">java.lang.annotation.Retention</span>;
+<span class="keyword">import</span> <span class="include">java.lang.annotation.ElementType</span>;
+<span class="keyword">import</span> <span class="include">java.lang.annotation.RetentionPolicy</span>;
+
+<span class="annotation">@Target</span>({<span class="predefined-type">ElementType</span>.TYPE})
+<span class="annotation">@Retention</span>(<span class="predefined-type">RetentionPolicy</span>.RUNTIME)
+<span class="annotation">@Repeatable</span>(DataSourceDefinitions.class)
+<span class="directive">public</span> <span class="annotation">@interface</span> DataSourceDefinition {
+    <span class="predefined-type">String</span> name();
+    <span class="predefined-type">String</span> className();
+    <span class="predefined-type">String</span> description() <span class="keyword">default</span> <span class="string"><span class="delimiter">&quot;</span><span class="delimiter">&quot;</span></span>;
+    <span class="predefined-type">String</span> url() <span class="keyword">default</span> <span class="string"><span class="delimiter">&quot;</span><span class="delimiter">&quot;</span></span>;
+    <span class="predefined-type">String</span> user() <span class="keyword">default</span> <span class="string"><span class="delimiter">&quot;</span><span class="delimiter">&quot;</span></span>;
+    <span class="predefined-type">String</span> password() <span class="keyword">default</span> <span class="string"><span class="delimiter">&quot;</span><span class="delimiter">&quot;</span></span>;
+    <span class="predefined-type">String</span> databaseName() <span class="keyword">default</span> <span class="string"><span class="delimiter">&quot;</span><span class="delimiter">&quot;</span></span>;
+    <span class="type">int</span> portNumber() <span class="keyword">default</span> -<span class="integer">1</span>;
+    <span class="predefined-type">String</span> serverName() <span class="keyword">default</span> <span class="string"><span class="delimiter">&quot;</span><span class="content">localhost</span><span class="delimiter">&quot;</span></span>;
+    <span class="type">int</span> isolationLevel() <span class="keyword">default</span> -<span class="integer">1</span>;
+    <span class="type">boolean</span> transactional() <span class="keyword">default</span> <span class="predefined-constant">true</span>;
+    <span class="type">int</span> initialPoolSize() <span class="keyword">default</span> -<span class="integer">1</span>;
+    <span class="type">int</span> maxPoolSize() <span class="keyword">default</span> -<span class="integer">1</span>;
+    <span class="type">int</span> minPoolSize() <span class="keyword">default</span> -<span class="integer">1</span>;
+    <span class="type">int</span> maxIdleTime() <span class="keyword">default</span> -<span class="integer">1</span>;
+    <span class="type">int</span> maxStatements() <span class="keyword">default</span> -<span class="integer">1</span>;
+    <span class="predefined-type">String</span><span class="type">[]</span> properties() <span class="keyword">default</span> <span class="error">\</span>{};
+    <span class="type">int</span> loginTimeout() <span class="keyword">default</span> <span class="integer">0</span>;
+}</code></pre>
+</div>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 34%;">
+<col style="width: 33%;">
+<col style="width: 33%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Element</th>
+<th class="tableblock halign-left valign-top">Description</th>
+<th class="tableblock halign-left valign-top">Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>name</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">JNDI name by which the data source will be registered</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>className</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DataSource implementation class name</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>description</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Description of the data source</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">""</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>url</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A JDBC URL. If the url annotation element contains a DataSource property that was also specified using the corresponding annotation element, the precedence order is undefined and implementation specific.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">""</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>user</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">User name for connection authentications</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">""</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>password</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Password for connection authentications</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">""</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>databaseName</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Name of a database on a server</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">""</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>portNumber</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Port number where a server is listening for requests</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">""</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>serverName</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Database server name</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">"localhost"</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>isolationLevel</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Isolation level for connections.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-1 (vendor specific)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>transactional</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Indicates whether a connection is transactional or not</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">true</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>initialPoolSize</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Number of connections that should be created when a connection pool is initialized</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-1 (vendor specific)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>maxPoolSize</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Maximum number of connections that should be concurrently allocated for a connection pool</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-1 (vendor specific)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>minPoolSize</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Minimum number of connections that should be allocated for a connection pool</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-1 (vendor specific)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>maxIdleTime</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The number of seconds that a physical connection should remain unused in the pool before the connection is closed for a connection pool</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-1 (vendor specific)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>maxStatements</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The total number of statements that a connection pool should keep open. A value of 0 indicates that the caching of statements is disabled for a connection pool</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-1 (vendor specific)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>properties</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Used to specify vendor-specific properties and less commonly used <em>DataSource</em> properties. If a <em>DataSource</em> property is specified in the properties element and the annotation element for the property is also specified, the annotation element value takes precedence.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">\{}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>loginTimeout</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The maximum time in seconds that this data source will wait while attempting to connect to a database. A value of 0 specifies that the timeout is the default system timeout if there is one, otherwise it specifies that there is no timeout</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Examples:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="java"><span class="annotation">@DataSourceDefinition</span>(
+    name=<span class="string"><span class="delimiter">&quot;</span><span class="content">java:global/MyApp/MyDataSource</span><span class="delimiter">&quot;</span></span>,
+    className=<span class="string"><span class="delimiter">&quot;</span><span class="content">com.foobar.MyDataSource</span><span class="delimiter">&quot;</span></span>,
+    portNumber=<span class="integer">6689</span>,
+    serverName=<span class="string"><span class="delimiter">&quot;</span><span class="content">myserver.com</span><span class="delimiter">&quot;</span></span>,
+    user=<span class="string"><span class="delimiter">&quot;</span><span class="content">lance</span><span class="delimiter">&quot;</span></span>,
+    password=<span class="string"><span class="delimiter">&quot;</span><span class="content">secret</span><span class="delimiter">&quot;</span></span>)</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Using a URL:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="java"><span class="annotation">@DataSourceDefinition</span>(
+    name=<span class="string"><span class="delimiter">&quot;</span><span class="content">java:global/MyApp/MyDataSource</span><span class="delimiter">&quot;</span></span>,
+    className=<span class="string"><span class="delimiter">&quot;</span><span class="content">org.apache.derby.jdbc.ClientDataSource</span><span class="delimiter">&quot;</span></span>,
+    url=<span class="string"><span class="delimiter">&quot;</span><span class="content">jdbc:derby://localhost:1527/myDB</span><span class="delimiter">&quot;</span></span>,
+    user=<span class="string"><span class="delimiter">&quot;</span><span class="content">lance</span><span class="delimiter">&quot;</span></span>,
+    password=<span class="string"><span class="delimiter">&quot;</span><span class="content">secret</span><span class="delimiter">&quot;</span></span>)</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="jakarta-annotation-sql-datasourcedefinitions"><a class="anchor" href="#jakarta-annotation-sql-datasourcedefinitions"></a>3.15. jakarta.annotation.sql.DataSourceDefinitions</h3>
+<div class="paragraph">
+<p>The <em>DataSourceDefinition</em> annotation is used
+to declare a container <em>DataSource</em> . The <em>DataSourceDefinitions</em>
+annotation acts as a container for multiple data source declarations.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="java"><span class="keyword">package</span> <span class="namespace">jakarta.annotation.sql</span>;
+
+<span class="keyword">import</span> <span class="include">java.lang.annotation.Target</span>;
+<span class="keyword">import</span> <span class="include">java.lang.annotation.Retention</span>;
+<span class="keyword">import</span> <span class="include">java.lang.annotation.ElementType</span>;
+<span class="keyword">import</span> <span class="include">java.lang.annotation.RetentionPolicy</span>;
+
+<span class="annotation">@Target</span>({<span class="predefined-type">ElementType</span>.TYPE})
+<span class="annotation">@Retention</span>(<span class="predefined-type">RetentionPolicy</span>.RUNTIME)
+<span class="directive">public</span> <span class="annotation">@interface</span> DataSourceDefinitions {
+    DataSourceDefinition<span class="type">[]</span> value ();
+}</code></pre>
+</div>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Element</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Description</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Default</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">value</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Container for defining multiple data sources.</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>The following example shows the usage of the annotation defined above:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="java"><span class="annotation">@DataSourceDefinitions</span> ({
+    <span class="annotation">@DataSourceDefinition</span>(name=<span class="string"><span class="delimiter">&quot;</span><span class="content">java:global/MyApp/MyDataSource</span><span class="delimiter">&quot;</span></span>,
+        className=<span class="string"><span class="delimiter">&quot;</span><span class="content">com.foobar.MyDataSource</span><span class="delimiter">&quot;</span></span>,
+        portNumber=<span class="integer">6689</span>,
+        serverName=<span class="string"><span class="delimiter">&quot;</span><span class="content">myserver.com</span><span class="delimiter">&quot;</span></span>,
+        user=<span class="string"><span class="delimiter">&quot;</span><span class="content">lance</span><span class="delimiter">&quot;</span></span>,
+        password=<span class="string"><span class="delimiter">&quot;</span><span class="content">secret</span><span class="delimiter">&quot;</span></span>),
+
+    <span class="annotation">@DataSourceDefinition</span>(name=<span class="string"><span class="delimiter">&quot;</span><span class="content">java:global/MyApp/MyDataSource</span><span class="delimiter">&quot;</span></span>,
+        className=<span class="string"><span class="delimiter">&quot;</span><span class="content">org.apache.derby.jdbc.ClientDataSource</span><span class="delimiter">&quot;</span></span>,
+        url=<span class="string"><span class="delimiter">&quot;</span><span class="content">jdbc:derby://localhost:1527/myDB</span><span class="delimiter">&quot;</span></span>,
+        user=<span class="string"><span class="delimiter">&quot;</span><span class="content">lance</span><span class="delimiter">&quot;</span></span>,
+        password=<span class="string"><span class="delimiter">&quot;</span><span class="content">secret</span><span class="delimiter">&quot;</span></span>)
+})
+<span class="directive">public</span> <span class="type">class</span> <span class="class">CalculatorBean</span> {
+    <span class="comment">// ...</span>
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="jakarta-annotation-managedbean"><a class="anchor" href="#jakarta-annotation-managedbean"></a>3.16. jakarta.annotation.ManagedBean</h3>
+<div class="paragraph">
+<p>The <em>ManagedBean</em> annotation is used to
+declare a Managed Bean as specified in the <em>Managed Beans</em>
+specification. Managed Beans are container-managed objects that support
+a small set of basic services such as resource injection, lifecycle
+callbacks and interceptors. A Managed Bean may optionally have a name, a
+<em>String</em> specified via the <em>value</em> element.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="java"><span class="keyword">package</span> <span class="namespace">jakarta.annotation</span>;
+
+<span class="keyword">import</span> <span class="include">static</span> <span class="include">java.lang.annotation.ElementType</span>.*;
+<span class="keyword">import</span> <span class="include">static</span> <span class="include">java.lang.annotation.RetentionPolicy</span>.*;
+
+<span class="annotation">@Target</span>(TYPE)
+<span class="annotation">@Retention</span>(RUNTIME)
+<span class="directive">public</span> <span class="annotation">@interface</span> ManagedBean {
+    <span class="type">boolean</span> value() <span class="keyword">default</span> <span class="string"><span class="delimiter">&quot;</span><span class="delimiter">&quot;</span></span>;
+}</code></pre>
+</div>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Element</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Description</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Default</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">value</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Name of the Managed Bean</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">""</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Examples:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="java"><span class="annotation">@ManagedBean</span>(<span class="string"><span class="delimiter">&quot;</span><span class="content">cart</span><span class="delimiter">&quot;</span></span>)
+<span class="directive">public</span> <span class="type">class</span> <span class="class">ShoppingCart</span> {
+    <span class="comment">// ...</span>
+}</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="references"><a class="anchor" href="#references"></a>4. References</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>JSR 175: A Metadata Facility for the Java
+Programming Language. <a href="http://jcp.org/en/jsr/detail?id=175" class="bare">http://jcp.org/en/jsr/detail?id=175</a></p>
+</div>
+<div class="paragraph">
+<p>Java Platform, Enterprise Edition, v7 (Java
+EE). <a href="http://jcp.org/en/jsr/detail?id=342" class="bare">http://jcp.org/en/jsr/detail?id=342</a></p>
+</div>
+<div class="paragraph">
+<p>Java 2 Platform, Standard Edition, v5.0
+(J2SE). <a href="http://java.sun.com/j2se" class="bare">http://java.sun.com/j2se</a></p>
+</div>
+<div class="paragraph">
+<p>Enterprise JavaBeans, v3.2 (EJB).
+<a href="http://jcp.org/en/jsr/detail?id=345" class="bare">http://jcp.org/en/jsr/detail?id=345</a></p>
+</div>
+<div class="paragraph">
+<p>Interceptors, 1.2.
+<a href="http://jcp.org/en/jsr/detail?id=318" class="bare">http://jcp.org/en/jsr/detail?id=318</a></p>
+</div>
+<div class="paragraph">
+<p>Managed Beans.
+<a href="http://jcp.org/en/jsr/detail?id=316" class="bare">http://jcp.org/en/jsr/detail?id=316</a></p>
+</div>
+<div class="paragraph">
+<p>RFC 2119.
+<a href="http://www.faqs.org/rfcs/rfc2119.html" class="bare">http://www.faqs.org/rfcs/rfc2119.html</a></p>
+</div>
+</div>
+</div>
+</div>
+<div id="footer">
+<div id="footer-text">
+ 2.0-RC1<br>
+Last updated 2020-04-17 19:47:36 +0200
+</div>
+</div>
+</body>
+</html>
