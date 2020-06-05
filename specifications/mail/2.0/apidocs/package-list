@@ -1,0 +1,5 @@
+jakarta.mail
+jakarta.mail.event
+jakarta.mail.internet
+jakarta.mail.search
+jakarta.mail.util
