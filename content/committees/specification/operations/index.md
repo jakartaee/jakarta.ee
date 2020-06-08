@@ -156,6 +156,30 @@ specification project's PMI \"Who's Involved\" page in a section titled
 \"Who's
 Involved\"](https://projects.eclipse.org/projects/ee4j.servlet/who)).
 
+## New Specifications # {#new_specifications}
+
+A Jakarta Specification is developed by a Specification Project. 
+The Eclipse Development Process is followed with a few additions.
+The following steps are required in order to start a new specification project:
+
+1. Create a [Project Proposal](https://projects.eclipse.org/node/add/project-proposal) (*)
+2. Inform the Specification Committee with a mail on the public [mailing list](https://accounts.eclipse.org/mailing-list/jakarta.ee-spec) (*)
+3. When the specification project has been approved by the Specification Committee by vote on the mailing list and creation review completed successfully by the EMO, create a Pull Request to be listed as a [Jakarta EE Specification](https://jakarta.ee/specifications/). The PR must contain an `_index.md` file located in a folder named after the short name of the specification. Here is an example of Jakarta MVC. The [_index.md](https://github.com/jakartaee/specifications/blob/master/mvc/_index.md) is located in the [mvc](https://github.com/jakartaee/specifications/blob/master/mvc/) folder in the Jakarta EE Specifications GitHub [repository](https://github.com/jakartaee/specifications).
+``` 
+---
+title: "Jakarta MVC"
+summary: "Jakarta MVC defines a standard for creating web applications following the action-based model-view-controller pattern."
+60CharSummary: "Jakarta MVC standardizes the action-based MVC pattern."
+project_id: "ee4j.mvc"
+---
+
+Model-View-Controller, or MVC for short, is a common pattern in Web frameworks where it is used predominantly to build HTML applications. The model refers to the application’s data, the view to the application’s data presentation and the controller to the part of the system responsible for managing input, updating models and producing output.
+
+Web UI frameworks can be categorized as action-based or component-based. In an action-based framework, HTTP requests are routed to controllers where they are turned into actions by application code; in a component-based framework, HTTP requests are grouped and typically handled by framework components with little or no interaction from application code. In other words, in a component-based framework, the majority of the controller logic is provided by the framework instead of the application.
+```
+
+(*) 1 and 2 may be done in any order. In fact, it may be a good idea to socialize the idea with the Specification Committee before proceeding with the project creation.
+
 ## Developing Specifications # {#developing_specifications}
 
 Specification projects in active development must engage in a progress
