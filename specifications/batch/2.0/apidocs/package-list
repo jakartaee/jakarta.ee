@@ -1,0 +1,8 @@
+jakarta.batch.api
+jakarta.batch.api.chunk
+jakarta.batch.api.chunk.listener
+jakarta.batch.api.listener
+jakarta.batch.api.partition
+jakarta.batch.operations
+jakarta.batch.runtime
+jakarta.batch.runtime.context
