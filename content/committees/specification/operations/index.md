@@ -169,7 +169,7 @@ The following steps are required in order to start a new specification project:
 ---
 title: "Jakarta MVC"
 summary: "Jakarta MVC defines a standard for creating web applications following the action-based model-view-controller pattern."
-60CharSummary: "Jakarta MVC standardizes the action-based MVC pattern."
+summary60Char: "Jakarta MVC standardizes the action-based MVC pattern."
 project_id: "ee4j.mvc"
 ---
 
