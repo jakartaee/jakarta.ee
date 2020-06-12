@@ -1923,7 +1923,7 @@
             <p class="changed_added_2_2">Declare the id of the starting node in the
             flow graph.  The start node may be any of the node types mentioned in
             the class javadocs for <code><a target="_"
-            href="javax/faces/flow/FlowHandler.html">FlowHandler</a></code>.</p>
+            href="jakarta/faces/flow/FlowHandler.html">FlowHandler</a></code>.</p>
             
             ]]>
           </xsd:documentation>
