@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsd:schema xmlns="http://www.w3.org/2001/XMLSchema"
-            targetNamespace="http://xmlns.eclipse.org/xml/ns/jakartaee"
-            xmlns:jakartaee="http://xmlns.eclipse.org/xml/ns/jakartaee"
+            targetNamespace="https://jakarta.ee/xml/ns/jakartaee"
+            xmlns:jakartaee="https://jakarta.ee/xml/ns/jakartaee"
             xmlns:xsd="http://www.w3.org/2001/XMLSchema"
             elementFormDefault="qualified"
             attributeFormDefault="unqualified"
@@ -43,7 +43,7 @@
   <xsd:annotation>
     <xsd:documentation>
 
-      The following conventions apply to all Java EE
+      The following conventions apply to all Jakarta EE
       deployment descriptor elements unless indicated otherwise.
       
       - In elements that specify a pathname to a file within the
