@@ -1,0 +1,5097 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Asciidoctor 1.5.8">
+<meta name="author" content="Jakarta Expression Language Team, https://projects.eclipse.org/projects/ee4j.el">
+<title>Jakarta Expression Language</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
+<style>
+/* Asciidoctor default stylesheet | MIT License | http://asciidoctor.org */
+/* Uncomment @import statement below to use as custom stylesheet */
+/*@import "https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700";*/
+article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display:block}
+audio,canvas,video{display:inline-block}
+audio:not([controls]){display:none;height:0}
+script{display:none!important}
+html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}
+a{background:transparent}
+a:focus{outline:thin dotted}
+a:active,a:hover{outline:0}
+h1{font-size:2em;margin:.67em 0}
+abbr[title]{border-bottom:1px dotted}
+b,strong{font-weight:bold}
+dfn{font-style:italic}
+hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0}
+mark{background:#ff0;color:#000}
+code,kbd,pre,samp{font-family:monospace;font-size:1em}
+pre{white-space:pre-wrap}
+q{quotes:"\201C" "\201D" "\2018" "\2019"}
+small{font-size:80%}
+sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}
+sup{top:-.5em}
+sub{bottom:-.25em}
+img{border:0}
+svg:not(:root){overflow:hidden}
+figure{margin:0}
+fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}
+legend{border:0;padding:0}
+button,input,select,textarea{font-family:inherit;font-size:100%;margin:0}
+button,input{line-height:normal}
+button,select{text-transform:none}
+button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer}
+button[disabled],html input[disabled]{cursor:default}
+input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0}
+button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}
+textarea{overflow:auto;vertical-align:top}
+table{border-collapse:collapse;border-spacing:0}
+*,*::before,*::after{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box}
+html,body{font-size:100%}
+body{background:#fff;color:rgba(0,0,0,.8);padding:0;margin:0;font-family:"Noto Serif","DejaVu Serif",serif;font-weight:400;font-style:normal;line-height:1;position:relative;cursor:auto;tab-size:4;-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased}
+a:hover{cursor:pointer}
+img,object,embed{max-width:100%;height:auto}
+object,embed{height:100%}
+img{-ms-interpolation-mode:bicubic}
+.left{float:left!important}
+.right{float:right!important}
+.text-left{text-align:left!important}
+.text-right{text-align:right!important}
+.text-center{text-align:center!important}
+.text-justify{text-align:justify!important}
+.hide{display:none}
+img,object,svg{display:inline-block;vertical-align:middle}
+textarea{height:auto;min-height:50px}
+select{width:100%}
+.center{margin-left:auto;margin-right:auto}
+.stretch{width:100%}
+.subheader,.admonitionblock td.content>.title,.audioblock>.title,.exampleblock>.title,.imageblock>.title,.listingblock>.title,.literalblock>.title,.stemblock>.title,.openblock>.title,.paragraph>.title,.quoteblock>.title,table.tableblock>.title,.verseblock>.title,.videoblock>.title,.dlist>.title,.olist>.title,.ulist>.title,.qlist>.title,.hdlist>.title{line-height:1.45;color:#7a2518;font-weight:400;margin-top:0;margin-bottom:.25em}
+div,dl,dt,dd,ul,ol,li,h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6,pre,form,p,blockquote,th,td{margin:0;padding:0;direction:ltr}
+a{color:#2156a5;text-decoration:underline;line-height:inherit}
+a:hover,a:focus{color:#1d4b8f}
+a img{border:none}
+p{font-family:inherit;font-weight:400;font-size:1em;line-height:1.6;margin-bottom:1.25em;text-rendering:optimizeLegibility}
+p aside{font-size:.875em;line-height:1.35;font-style:italic}
+h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6{font-family:"Open Sans","DejaVu Sans",sans-serif;font-weight:300;font-style:normal;color:#ba3925;text-rendering:optimizeLegibility;margin-top:1em;margin-bottom:.5em;line-height:1.0125em}
+h1 small,h2 small,h3 small,#toctitle small,.sidebarblock>.content>.title small,h4 small,h5 small,h6 small{font-size:60%;color:#e99b8f;line-height:0}
+h1{font-size:2.125em}
+h2{font-size:1.6875em}
+h3,#toctitle,.sidebarblock>.content>.title{font-size:1.375em}
+h4,h5{font-size:1.125em}
+h6{font-size:1em}
+hr{border:solid #dddddf;border-width:1px 0 0;clear:both;margin:1.25em 0 1.1875em;height:0}
+em,i{font-style:italic;line-height:inherit}
+strong,b{font-weight:bold;line-height:inherit}
+small{font-size:60%;line-height:inherit}
+code{font-family:"Droid Sans Mono","DejaVu Sans Mono",monospace;font-weight:400;color:rgba(0,0,0,.9)}
+ul,ol,dl{font-size:1em;line-height:1.6;margin-bottom:1.25em;list-style-position:outside;font-family:inherit}
+ul,ol{margin-left:1.5em}
+ul li ul,ul li ol{margin-left:1.25em;margin-bottom:0;font-size:1em}
+ul.square li ul,ul.circle li ul,ul.disc li ul{list-style:inherit}
+ul.square{list-style-type:square}
+ul.circle{list-style-type:circle}
+ul.disc{list-style-type:disc}
+ol li ul,ol li ol{margin-left:1.25em;margin-bottom:0}
+dl dt{margin-bottom:.3125em;font-weight:bold}
+dl dd{margin-bottom:1.25em}
+abbr,acronym{text-transform:uppercase;font-size:90%;color:rgba(0,0,0,.8);border-bottom:1px dotted #ddd;cursor:help}
+abbr{text-transform:none}
+blockquote{margin:0 0 1.25em;padding:.5625em 1.25em 0 1.1875em;border-left:1px solid #ddd}
+blockquote cite{display:block;font-size:.9375em;color:rgba(0,0,0,.6)}
+blockquote cite::before{content:"\2014 \0020"}
+blockquote cite a,blockquote cite a:visited{color:rgba(0,0,0,.6)}
+blockquote,blockquote p{line-height:1.6;color:rgba(0,0,0,.85)}
+@media screen and (min-width:768px){h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6{line-height:1.2}
+h1{font-size:2.75em}
+h2{font-size:2.3125em}
+h3,#toctitle,.sidebarblock>.content>.title{font-size:1.6875em}
+h4{font-size:1.4375em}}
+table{background:#fff;margin-bottom:1.25em;border:solid 1px #dedede}
+table thead,table tfoot{background:#f7f8f7}
+table thead tr th,table thead tr td,table tfoot tr th,table tfoot tr td{padding:.5em .625em .625em;font-size:inherit;color:rgba(0,0,0,.8);text-align:left}
+table tr th,table tr td{padding:.5625em .625em;font-size:inherit;color:rgba(0,0,0,.8)}
+table tr.even,table tr.alt,table tr:nth-of-type(even){background:#f8f8f7}
+table thead tr th,table tfoot tr th,table tbody tr td,table tr td,table tfoot tr td{display:table-cell;line-height:1.6}
+h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6{line-height:1.2;word-spacing:-.05em}
+h1 strong,h2 strong,h3 strong,#toctitle strong,.sidebarblock>.content>.title strong,h4 strong,h5 strong,h6 strong{font-weight:400}
+.clearfix::before,.clearfix::after,.float-group::before,.float-group::after{content:" ";display:table}
+.clearfix::after,.float-group::after{clear:both}
+*:not(pre)>code{font-size:.9375em;font-style:normal!important;letter-spacing:0;padding:.1em .5ex;word-spacing:-.15em;background-color:#f7f7f8;-webkit-border-radius:4px;border-radius:4px;line-height:1.45;text-rendering:optimizeSpeed;word-wrap:break-word}
+*:not(pre)>code.nobreak{word-wrap:normal}
+*:not(pre)>code.nowrap{white-space:nowrap}
+pre,pre>code{line-height:1.45;color:rgba(0,0,0,.9);font-family:"Droid Sans Mono","DejaVu Sans Mono",monospace;font-weight:400;text-rendering:optimizeSpeed}
+em em{font-style:normal}
+strong strong{font-weight:400}
+.keyseq{color:rgba(51,51,51,.8)}
+kbd{font-family:"Droid Sans Mono","DejaVu Sans Mono",monospace;display:inline-block;color:rgba(0,0,0,.8);font-size:.65em;line-height:1.45;background-color:#f7f7f7;border:1px solid #ccc;-webkit-border-radius:3px;border-radius:3px;-webkit-box-shadow:0 1px 0 rgba(0,0,0,.2),0 0 0 .1em white inset;box-shadow:0 1px 0 rgba(0,0,0,.2),0 0 0 .1em #fff inset;margin:0 .15em;padding:.2em .5em;vertical-align:middle;position:relative;top:-.1em;white-space:nowrap}
+.keyseq kbd:first-child{margin-left:0}
+.keyseq kbd:last-child{margin-right:0}
+.menuseq,.menuref{color:#000}
+.menuseq b:not(.caret),.menuref{font-weight:inherit}
+.menuseq{word-spacing:-.02em}
+.menuseq b.caret{font-size:1.25em;line-height:.8}
+.menuseq i.caret{font-weight:bold;text-align:center;width:.45em}
+b.button::before,b.button::after{position:relative;top:-1px;font-weight:400}
+b.button::before{content:"[";padding:0 3px 0 2px}
+b.button::after{content:"]";padding:0 2px 0 3px}
+p a>code:hover{color:rgba(0,0,0,.9)}
+#header,#content,#footnotes,#footer{width:100%;margin-left:auto;margin-right:auto;margin-top:0;margin-bottom:0;max-width:62.5em;*zoom:1;position:relative;padding-left:.9375em;padding-right:.9375em}
+#header::before,#header::after,#content::before,#content::after,#footnotes::before,#footnotes::after,#footer::before,#footer::after{content:" ";display:table}
+#header::after,#content::after,#footnotes::after,#footer::after{clear:both}
+#content{margin-top:1.25em}
+#content::before{content:none}
+#header>h1:first-child{color:rgba(0,0,0,.85);margin-top:2.25rem;margin-bottom:0}
+#header>h1:first-child+#toc{margin-top:8px;border-top:1px solid #dddddf}
+#header>h1:only-child,body.toc2 #header>h1:nth-last-child(2){border-bottom:1px solid #dddddf;padding-bottom:8px}
+#header .details{border-bottom:1px solid #dddddf;line-height:1.45;padding-top:.25em;padding-bottom:.25em;padding-left:.25em;color:rgba(0,0,0,.6);display:-ms-flexbox;display:-webkit-flex;display:flex;-ms-flex-flow:row wrap;-webkit-flex-flow:row wrap;flex-flow:row wrap}
+#header .details span:first-child{margin-left:-.125em}
+#header .details span.email a{color:rgba(0,0,0,.85)}
+#header .details br{display:none}
+#header .details br+span::before{content:"\00a0\2013\00a0"}
+#header .details br+span.author::before{content:"\00a0\22c5\00a0";color:rgba(0,0,0,.85)}
+#header .details br+span#revremark::before{content:"\00a0|\00a0"}
+#header #revnumber{text-transform:capitalize}
+#header #revnumber::after{content:"\00a0"}
+#content>h1:first-child:not([class]){color:rgba(0,0,0,.85);border-bottom:1px solid #dddddf;padding-bottom:8px;margin-top:0;padding-top:1rem;margin-bottom:1.25rem}
+#toc{border-bottom:1px solid #e7e7e9;padding-bottom:.5em}
+#toc>ul{margin-left:.125em}
+#toc ul.sectlevel0>li>a{font-style:italic}
+#toc ul.sectlevel0 ul.sectlevel1{margin:.5em 0}
+#toc ul{font-family:"Open Sans","DejaVu Sans",sans-serif;list-style-type:none}
+#toc li{line-height:1.3334;margin-top:.3334em}
+#toc a{text-decoration:none}
+#toc a:active{text-decoration:underline}
+#toctitle{color:#7a2518;font-size:1.2em}
+@media screen and (min-width:768px){#toctitle{font-size:1.375em}
+body.toc2{padding-left:15em;padding-right:0}
+#toc.toc2{margin-top:0!important;background-color:#f8f8f7;position:fixed;width:15em;left:0;top:0;border-right:1px solid #e7e7e9;border-top-width:0!important;border-bottom-width:0!important;z-index:1000;padding:1.25em 1em;height:100%;overflow:auto}
+#toc.toc2 #toctitle{margin-top:0;margin-bottom:.8rem;font-size:1.2em}
+#toc.toc2>ul{font-size:.9em;margin-bottom:0}
+#toc.toc2 ul ul{margin-left:0;padding-left:1em}
+#toc.toc2 ul.sectlevel0 ul.sectlevel1{padding-left:0;margin-top:.5em;margin-bottom:.5em}
+body.toc2.toc-right{padding-left:0;padding-right:15em}
+body.toc2.toc-right #toc.toc2{border-right-width:0;border-left:1px solid #e7e7e9;left:auto;right:0}}
+@media screen and (min-width:1280px){body.toc2{padding-left:20em;padding-right:0}
+#toc.toc2{width:20em}
+#toc.toc2 #toctitle{font-size:1.375em}
+#toc.toc2>ul{font-size:.95em}
+#toc.toc2 ul ul{padding-left:1.25em}
+body.toc2.toc-right{padding-left:0;padding-right:20em}}
+#content #toc{border-style:solid;border-width:1px;border-color:#e0e0dc;margin-bottom:1.25em;padding:1.25em;background:#f8f8f7;-webkit-border-radius:4px;border-radius:4px}
+#content #toc>:first-child{margin-top:0}
+#content #toc>:last-child{margin-bottom:0}
+#footer{max-width:100%;background-color:rgba(0,0,0,.8);padding:1.25em}
+#footer-text{color:rgba(255,255,255,.8);line-height:1.44}
+#content{margin-bottom:.625em}
+.sect1{padding-bottom:.625em}
+@media screen and (min-width:768px){#content{margin-bottom:1.25em}
+.sect1{padding-bottom:1.25em}}
+.sect1:last-child{padding-bottom:0}
+.sect1+.sect1{border-top:1px solid #e7e7e9}
+#content h1>a.anchor,h2>a.anchor,h3>a.anchor,#toctitle>a.anchor,.sidebarblock>.content>.title>a.anchor,h4>a.anchor,h5>a.anchor,h6>a.anchor{position:absolute;z-index:1001;width:1.5ex;margin-left:-1.5ex;display:block;text-decoration:none!important;visibility:hidden;text-align:center;font-weight:400}
+#content h1>a.anchor::before,h2>a.anchor::before,h3>a.anchor::before,#toctitle>a.anchor::before,.sidebarblock>.content>.title>a.anchor::before,h4>a.anchor::before,h5>a.anchor::before,h6>a.anchor::before{content:"\00A7";font-size:.85em;display:block;padding-top:.1em}
+#content h1:hover>a.anchor,#content h1>a.anchor:hover,h2:hover>a.anchor,h2>a.anchor:hover,h3:hover>a.anchor,#toctitle:hover>a.anchor,.sidebarblock>.content>.title:hover>a.anchor,h3>a.anchor:hover,#toctitle>a.anchor:hover,.sidebarblock>.content>.title>a.anchor:hover,h4:hover>a.anchor,h4>a.anchor:hover,h5:hover>a.anchor,h5>a.anchor:hover,h6:hover>a.anchor,h6>a.anchor:hover{visibility:visible}
+#content h1>a.link,h2>a.link,h3>a.link,#toctitle>a.link,.sidebarblock>.content>.title>a.link,h4>a.link,h5>a.link,h6>a.link{color:#ba3925;text-decoration:none}
+#content h1>a.link:hover,h2>a.link:hover,h3>a.link:hover,#toctitle>a.link:hover,.sidebarblock>.content>.title>a.link:hover,h4>a.link:hover,h5>a.link:hover,h6>a.link:hover{color:#a53221}
+.audioblock,.imageblock,.literalblock,.listingblock,.stemblock,.videoblock{margin-bottom:1.25em}
+.admonitionblock td.content>.title,.audioblock>.title,.exampleblock>.title,.imageblock>.title,.listingblock>.title,.literalblock>.title,.stemblock>.title,.openblock>.title,.paragraph>.title,.quoteblock>.title,table.tableblock>.title,.verseblock>.title,.videoblock>.title,.dlist>.title,.olist>.title,.ulist>.title,.qlist>.title,.hdlist>.title{text-rendering:optimizeLegibility;text-align:left;font-family:"Noto Serif","DejaVu Serif",serif;font-size:1rem;font-style:italic}
+table.tableblock.fit-content>caption.title{white-space:nowrap;width:0}
+.paragraph.lead>p,#preamble>.sectionbody>[class="paragraph"]:first-of-type p{font-size:1.21875em;line-height:1.6;color:rgba(0,0,0,.85)}
+table.tableblock #preamble>.sectionbody>[class="paragraph"]:first-of-type p{font-size:inherit}
+.admonitionblock>table{border-collapse:separate;border:0;background:none;width:100%}
+.admonitionblock>table td.icon{text-align:center;width:80px}
+.admonitionblock>table td.icon img{max-width:none}
+.admonitionblock>table td.icon .title{font-weight:bold;font-family:"Open Sans","DejaVu Sans",sans-serif;text-transform:uppercase}
+.admonitionblock>table td.content{padding-left:1.125em;padding-right:1.25em;border-left:1px solid #dddddf;color:rgba(0,0,0,.6)}
+.admonitionblock>table td.content>:last-child>:last-child{margin-bottom:0}
+.exampleblock>.content{border-style:solid;border-width:1px;border-color:#e6e6e6;margin-bottom:1.25em;padding:1.25em;background:#fff;-webkit-border-radius:4px;border-radius:4px}
+.exampleblock>.content>:first-child{margin-top:0}
+.exampleblock>.content>:last-child{margin-bottom:0}
+.sidebarblock{border-style:solid;border-width:1px;border-color:#e0e0dc;margin-bottom:1.25em;padding:1.25em;background:#f8f8f7;-webkit-border-radius:4px;border-radius:4px}
+.sidebarblock>:first-child{margin-top:0}
+.sidebarblock>:last-child{margin-bottom:0}
+.sidebarblock>.content>.title{color:#7a2518;margin-top:0;text-align:center}
+.exampleblock>.content>:last-child>:last-child,.exampleblock>.content .olist>ol>li:last-child>:last-child,.exampleblock>.content .ulist>ul>li:last-child>:last-child,.exampleblock>.content .qlist>ol>li:last-child>:last-child,.sidebarblock>.content>:last-child>:last-child,.sidebarblock>.content .olist>ol>li:last-child>:last-child,.sidebarblock>.content .ulist>ul>li:last-child>:last-child,.sidebarblock>.content .qlist>ol>li:last-child>:last-child{margin-bottom:0}
+.literalblock pre,.listingblock pre:not(.highlight),.listingblock pre[class="highlight"],.listingblock pre[class^="highlight "],.listingblock pre.CodeRay,.listingblock pre.prettyprint{background:#f7f7f8}
+.sidebarblock .literalblock pre,.sidebarblock .listingblock pre:not(.highlight),.sidebarblock .listingblock pre[class="highlight"],.sidebarblock .listingblock pre[class^="highlight "],.sidebarblock .listingblock pre.CodeRay,.sidebarblock .listingblock pre.prettyprint{background:#f2f1f1}
+.literalblock pre,.literalblock pre[class],.listingblock pre,.listingblock pre[class]{-webkit-border-radius:4px;border-radius:4px;word-wrap:break-word;overflow-x:auto;padding:1em;font-size:.8125em}
+@media screen and (min-width:768px){.literalblock pre,.literalblock pre[class],.listingblock pre,.listingblock pre[class]{font-size:.90625em}}
+@media screen and (min-width:1280px){.literalblock pre,.literalblock pre[class],.listingblock pre,.listingblock pre[class]{font-size:1em}}
+.literalblock pre.nowrap,.literalblock pre.nowrap pre,.listingblock pre.nowrap,.listingblock pre.nowrap pre{white-space:pre;word-wrap:normal}
+.literalblock.output pre{color:#f7f7f8;background-color:rgba(0,0,0,.9)}
+.listingblock pre.highlightjs{padding:0}
+.listingblock pre.highlightjs>code{padding:1em;-webkit-border-radius:4px;border-radius:4px}
+.listingblock pre.prettyprint{border-width:0}
+.listingblock>.content{position:relative}
+.listingblock code[data-lang]::before{display:none;content:attr(data-lang);position:absolute;font-size:.75em;top:.425rem;right:.5rem;line-height:1;text-transform:uppercase;color:#999}
+.listingblock:hover code[data-lang]::before{display:block}
+.listingblock.terminal pre .command::before{content:attr(data-prompt);padding-right:.5em;color:#999}
+.listingblock.terminal pre .command:not([data-prompt])::before{content:"$"}
+table.pyhltable{border-collapse:separate;border:0;margin-bottom:0;background:none}
+table.pyhltable td{vertical-align:top;padding-top:0;padding-bottom:0;line-height:1.45}
+table.pyhltable td.code{padding-left:.75em;padding-right:0}
+pre.pygments .lineno,table.pyhltable td:not(.code){color:#999;padding-left:0;padding-right:.5em;border-right:1px solid #dddddf}
+pre.pygments .lineno{display:inline-block;margin-right:.25em}
+table.pyhltable .linenodiv{background:none!important;padding-right:0!important}
+.quoteblock{margin:0 1em 1.25em 1.5em;display:table}
+.quoteblock>.title{margin-left:-1.5em;margin-bottom:.75em}
+.quoteblock blockquote,.quoteblock p{color:rgba(0,0,0,.85);font-size:1.15rem;line-height:1.75;word-spacing:.1em;letter-spacing:0;font-style:italic;text-align:justify}
+.quoteblock blockquote{margin:0;padding:0;border:0}
+.quoteblock blockquote::before{content:"\201c";float:left;font-size:2.75em;font-weight:bold;line-height:.6em;margin-left:-.6em;color:#7a2518;text-shadow:0 1px 2px rgba(0,0,0,.1)}
+.quoteblock blockquote>.paragraph:last-child p{margin-bottom:0}
+.quoteblock .attribution{margin-top:.75em;margin-right:.5ex;text-align:right}
+.verseblock{margin:0 1em 1.25em}
+.verseblock pre{font-family:"Open Sans","DejaVu Sans",sans;font-size:1.15rem;color:rgba(0,0,0,.85);font-weight:300;text-rendering:optimizeLegibility}
+.verseblock pre strong{font-weight:400}
+.verseblock .attribution{margin-top:1.25rem;margin-left:.5ex}
+.quoteblock .attribution,.verseblock .attribution{font-size:.9375em;line-height:1.45;font-style:italic}
+.quoteblock .attribution br,.verseblock .attribution br{display:none}
+.quoteblock .attribution cite,.verseblock .attribution cite{display:block;letter-spacing:-.025em;color:rgba(0,0,0,.6)}
+.quoteblock.abstract blockquote::before,.quoteblock.excerpt blockquote::before,.quoteblock .quoteblock blockquote::before{display:none}
+.quoteblock.abstract blockquote,.quoteblock.abstract p,.quoteblock.excerpt blockquote,.quoteblock.excerpt p,.quoteblock .quoteblock blockquote,.quoteblock .quoteblock p{line-height:1.6;word-spacing:0}
+.quoteblock.abstract{margin:0 1em 1.25em;display:block}
+.quoteblock.abstract>.title{margin:0 0 .375em;font-size:1.15em;text-align:center}
+.quoteblock.excerpt,.quoteblock .quoteblock{margin:0 0 1.25em;padding:0 0 .25em 1em;border-left:.25em solid #dddddf}
+.quoteblock.excerpt blockquote,.quoteblock.excerpt p,.quoteblock .quoteblock blockquote,.quoteblock .quoteblock p{color:inherit;font-size:1.0625rem}
+.quoteblock.excerpt .attribution,.quoteblock .quoteblock .attribution{color:inherit;text-align:left;margin-right:0}
+table.tableblock{max-width:100%;border-collapse:separate}
+p.tableblock:last-child{margin-bottom:0}
+td.tableblock>.content{margin-bottom:-1.25em}
+table.tableblock,th.tableblock,td.tableblock{border:0 solid #dedede}
+table.grid-all>thead>tr>.tableblock,table.grid-all>tbody>tr>.tableblock{border-width:0 1px 1px 0}
+table.grid-all>tfoot>tr>.tableblock{border-width:1px 1px 0 0}
+table.grid-cols>*>tr>.tableblock{border-width:0 1px 0 0}
+table.grid-rows>thead>tr>.tableblock,table.grid-rows>tbody>tr>.tableblock{border-width:0 0 1px}
+table.grid-rows>tfoot>tr>.tableblock{border-width:1px 0 0}
+table.grid-all>*>tr>.tableblock:last-child,table.grid-cols>*>tr>.tableblock:last-child{border-right-width:0}
+table.grid-all>tbody>tr:last-child>.tableblock,table.grid-all>thead:last-child>tr>.tableblock,table.grid-rows>tbody>tr:last-child>.tableblock,table.grid-rows>thead:last-child>tr>.tableblock{border-bottom-width:0}
+table.frame-all{border-width:1px}
+table.frame-sides{border-width:0 1px}
+table.frame-topbot,table.frame-ends{border-width:1px 0}
+table.stripes-all tr,table.stripes-odd tr:nth-of-type(odd){background:#f8f8f7}
+table.stripes-none tr,table.stripes-odd tr:nth-of-type(even){background:none}
+th.halign-left,td.halign-left{text-align:left}
+th.halign-right,td.halign-right{text-align:right}
+th.halign-center,td.halign-center{text-align:center}
+th.valign-top,td.valign-top{vertical-align:top}
+th.valign-bottom,td.valign-bottom{vertical-align:bottom}
+th.valign-middle,td.valign-middle{vertical-align:middle}
+table thead th,table tfoot th{font-weight:bold}
+tbody tr th{display:table-cell;line-height:1.6;background:#f7f8f7}
+tbody tr th,tbody tr th p,tfoot tr th,tfoot tr th p{color:rgba(0,0,0,.8);font-weight:bold}
+p.tableblock>code:only-child{background:none;padding:0}
+p.tableblock{font-size:1em}
+td>div.verse{white-space:pre}
+ol{margin-left:1.75em}
+ul li ol{margin-left:1.5em}
+dl dd{margin-left:1.125em}
+dl dd:last-child,dl dd:last-child>:last-child{margin-bottom:0}
+ol>li p,ul>li p,ul dd,ol dd,.olist .olist,.ulist .ulist,.ulist .olist,.olist .ulist{margin-bottom:.625em}
+ul.checklist,ul.none,ol.none,ul.no-bullet,ol.no-bullet,ol.unnumbered,ul.unstyled,ol.unstyled{list-style-type:none}
+ul.no-bullet,ol.no-bullet,ol.unnumbered{margin-left:.625em}
+ul.unstyled,ol.unstyled{margin-left:0}
+ul.checklist{margin-left:.625em}
+ul.checklist li>p:first-child>.fa-square-o:first-child,ul.checklist li>p:first-child>.fa-check-square-o:first-child{width:1.25em;font-size:.8em;position:relative;bottom:.125em}
+ul.checklist li>p:first-child>input[type="checkbox"]:first-child{margin-right:.25em}
+ul.inline{display:-ms-flexbox;display:-webkit-box;display:flex;-ms-flex-flow:row wrap;-webkit-flex-flow:row wrap;flex-flow:row wrap;list-style:none;margin:0 0 .625em -1.25em}
+ul.inline>li{margin-left:1.25em}
+.unstyled dl dt{font-weight:400;font-style:normal}
+ol.arabic{list-style-type:decimal}
+ol.decimal{list-style-type:decimal-leading-zero}
+ol.loweralpha{list-style-type:lower-alpha}
+ol.upperalpha{list-style-type:upper-alpha}
+ol.lowerroman{list-style-type:lower-roman}
+ol.upperroman{list-style-type:upper-roman}
+ol.lowergreek{list-style-type:lower-greek}
+.hdlist>table,.colist>table{border:0;background:none}
+.hdlist>table>tbody>tr,.colist>table>tbody>tr{background:none}
+td.hdlist1,td.hdlist2{vertical-align:top;padding:0 .625em}
+td.hdlist1{font-weight:bold;padding-bottom:1.25em}
+.literalblock+.colist,.listingblock+.colist{margin-top:-.5em}
+.colist td:not([class]):first-child{padding:.4em .75em 0;line-height:1;vertical-align:top}
+.colist td:not([class]):first-child img{max-width:none}
+.colist td:not([class]):last-child{padding:.25em 0}
+.thumb,.th{line-height:0;display:inline-block;border:solid 4px #fff;-webkit-box-shadow:0 0 0 1px #ddd;box-shadow:0 0 0 1px #ddd}
+.imageblock.left{margin:.25em .625em 1.25em 0}
+.imageblock.right{margin:.25em 0 1.25em .625em}
+.imageblock>.title{margin-bottom:0}
+.imageblock.thumb,.imageblock.th{border-width:6px}
+.imageblock.thumb>.title,.imageblock.th>.title{padding:0 .125em}
+.image.left,.image.right{margin-top:.25em;margin-bottom:.25em;display:inline-block;line-height:0}
+.image.left{margin-right:.625em}
+.image.right{margin-left:.625em}
+a.image{text-decoration:none;display:inline-block}
+a.image object{pointer-events:none}
+sup.footnote,sup.footnoteref{font-size:.875em;position:static;vertical-align:super}
+sup.footnote a,sup.footnoteref a{text-decoration:none}
+sup.footnote a:active,sup.footnoteref a:active{text-decoration:underline}
+#footnotes{padding-top:.75em;padding-bottom:.75em;margin-bottom:.625em}
+#footnotes hr{width:20%;min-width:6.25em;margin:-.25em 0 .75em;border-width:1px 0 0}
+#footnotes .footnote{padding:0 .375em 0 .225em;line-height:1.3334;font-size:.875em;margin-left:1.2em;margin-bottom:.2em}
+#footnotes .footnote a:first-of-type{font-weight:bold;text-decoration:none;margin-left:-1.05em}
+#footnotes .footnote:last-of-type{margin-bottom:0}
+#content #footnotes{margin-top:-.625em;margin-bottom:0;padding:.75em 0}
+.gist .file-data>table{border:0;background:#fff;width:100%;margin-bottom:0}
+.gist .file-data>table td.line-data{width:99%}
+div.unbreakable{page-break-inside:avoid}
+.big{font-size:larger}
+.small{font-size:smaller}
+.underline{text-decoration:underline}
+.overline{text-decoration:overline}
+.line-through{text-decoration:line-through}
+.aqua{color:#00bfbf}
+.aqua-background{background-color:#00fafa}
+.black{color:#000}
+.black-background{background-color:#000}
+.blue{color:#0000bf}
+.blue-background{background-color:#0000fa}
+.fuchsia{color:#bf00bf}
+.fuchsia-background{background-color:#fa00fa}
+.gray{color:#606060}
+.gray-background{background-color:#7d7d7d}
+.green{color:#006000}
+.green-background{background-color:#007d00}
+.lime{color:#00bf00}
+.lime-background{background-color:#00fa00}
+.maroon{color:#600000}
+.maroon-background{background-color:#7d0000}
+.navy{color:#000060}
+.navy-background{background-color:#00007d}
+.olive{color:#606000}
+.olive-background{background-color:#7d7d00}
+.purple{color:#600060}
+.purple-background{background-color:#7d007d}
+.red{color:#bf0000}
+.red-background{background-color:#fa0000}
+.silver{color:#909090}
+.silver-background{background-color:#bcbcbc}
+.teal{color:#006060}
+.teal-background{background-color:#007d7d}
+.white{color:#bfbfbf}
+.white-background{background-color:#fafafa}
+.yellow{color:#bfbf00}
+.yellow-background{background-color:#fafa00}
+span.icon>.fa{cursor:default}
+a span.icon>.fa{cursor:inherit}
+.admonitionblock td.icon [class^="fa icon-"]{font-size:2.5em;text-shadow:1px 1px 2px rgba(0,0,0,.5);cursor:default}
+.admonitionblock td.icon .icon-note::before{content:"\f05a";color:#19407c}
+.admonitionblock td.icon .icon-tip::before{content:"\f0eb";text-shadow:1px 1px 2px rgba(155,155,0,.8);color:#111}
+.admonitionblock td.icon .icon-warning::before{content:"\f071";color:#bf6900}
+.admonitionblock td.icon .icon-caution::before{content:"\f06d";color:#bf3400}
+.admonitionblock td.icon .icon-important::before{content:"\f06a";color:#bf0000}
+.conum[data-value]{display:inline-block;color:#fff!important;background-color:rgba(0,0,0,.8);-webkit-border-radius:100px;border-radius:100px;text-align:center;font-size:.75em;width:1.67em;height:1.67em;line-height:1.67em;font-family:"Open Sans","DejaVu Sans",sans-serif;font-style:normal;font-weight:bold}
+.conum[data-value] *{color:#fff!important}
+.conum[data-value]+b{display:none}
+.conum[data-value]::after{content:attr(data-value)}
+pre .conum[data-value]{position:relative;top:-.125em}
+b.conum *{color:inherit!important}
+.conum:not([data-value]):empty{display:none}
+dt,th.tableblock,td.content,div.footnote{text-rendering:optimizeLegibility}
+h1,h2,p,td.content,span.alt{letter-spacing:-.01em}
+p strong,td.content strong,div.footnote strong{letter-spacing:-.005em}
+p,blockquote,dt,td.content,span.alt{font-size:1.0625rem}
+p{margin-bottom:1.25rem}
+.sidebarblock p,.sidebarblock dt,.sidebarblock td.content,p.tableblock{font-size:1em}
+.exampleblock>.content{background-color:#fffef7;border-color:#e0e0dc;-webkit-box-shadow:0 1px 4px #e0e0dc;box-shadow:0 1px 4px #e0e0dc}
+.print-only{display:none!important}
+@page{margin:1.25cm .75cm}
+@media print{*{-webkit-box-shadow:none!important;box-shadow:none!important;text-shadow:none!important}
+html{font-size:80%}
+a{color:inherit!important;text-decoration:underline!important}
+a.bare,a[href^="#"],a[href^="mailto:"]{text-decoration:none!important}
+a[href^="http:"]:not(.bare)::after,a[href^="https:"]:not(.bare)::after{content:"(" attr(href) ")";display:inline-block;font-size:.875em;padding-left:.25em}
+abbr[title]::after{content:" (" attr(title) ")"}
+pre,blockquote,tr,img,object,svg{page-break-inside:avoid}
+thead{display:table-header-group}
+svg{max-width:100%}
+p,blockquote,dt,td.content{font-size:1em;orphans:3;widows:3}
+h2,h3,#toctitle,.sidebarblock>.content>.title{page-break-after:avoid}
+#toc,.sidebarblock,.exampleblock>.content{background:none!important}
+#toc{border-bottom:1px solid #dddddf!important;padding-bottom:0!important}
+body.book #header{text-align:center}
+body.book #header>h1:first-child{border:0!important;margin:2.5em 0 1em}
+body.book #header .details{border:0!important;display:block;padding:0!important}
+body.book #header .details span:first-child{margin-left:0!important}
+body.book #header .details br{display:block}
+body.book #header .details br+span::before{content:none!important}
+body.book #toc{border:0!important;text-align:left!important;padding:0!important;margin:0!important}
+body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-break-before:always}
+.listingblock code[data-lang]::before{display:block}
+#footer{padding:0 .9375em}
+.hide-on-print{display:none!important}
+.print-only{display:block!important}
+.hide-for-print{display:none!important}
+.show-for-print{display:inherit!important}}
+@media print,amzn-kf8{#header>h1:first-child{margin-top:1.25rem}
+.sect1{padding:0!important}
+.sect1+.sect1{border:0}
+#footer{background:none}
+#footer-text{color:rgba(0,0,0,.6);font-size:.9em}}
+@media amzn-kf8{#header,#content,#footnotes,#footer{padding:0}}
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+/* Stylesheet for CodeRay to match GitHub theme | MIT License | http://foundation.zurb.com */
+/*pre.CodeRay {background-color:#f7f7f8;}*/
+.CodeRay .line-numbers{border-right:1px solid #d8d8d8;padding:0 0.5em 0 .25em}
+.CodeRay span.line-numbers{display:inline-block;margin-right:.5em;color:rgba(0,0,0,.3)}
+.CodeRay .line-numbers strong{color:rgba(0,0,0,.4)}
+table.CodeRay{border-collapse:separate;border-spacing:0;margin-bottom:0;border:0;background:none}
+table.CodeRay td{vertical-align: top;line-height:1.45}
+table.CodeRay td.line-numbers{text-align:right}
+table.CodeRay td.line-numbers>pre{padding:0;color:rgba(0,0,0,.3)}
+table.CodeRay td.code{padding:0 0 0 .5em}
+table.CodeRay td.code>pre{padding:0}
+.CodeRay .debug{color:#fff !important;background:#000080 !important}
+.CodeRay .annotation{color:#007}
+.CodeRay .attribute-name{color:#000080}
+.CodeRay .attribute-value{color:#700}
+.CodeRay .binary{color:#509}
+.CodeRay .comment{color:#998;font-style:italic}
+.CodeRay .char{color:#04d}
+.CodeRay .char .content{color:#04d}
+.CodeRay .char .delimiter{color:#039}
+.CodeRay .class{color:#458;font-weight:bold}
+.CodeRay .complex{color:#a08}
+.CodeRay .constant,.CodeRay .predefined-constant{color:#008080}
+.CodeRay .color{color:#099}
+.CodeRay .class-variable{color:#369}
+.CodeRay .decorator{color:#b0b}
+.CodeRay .definition{color:#099}
+.CodeRay .delimiter{color:#000}
+.CodeRay .doc{color:#970}
+.CodeRay .doctype{color:#34b}
+.CodeRay .doc-string{color:#d42}
+.CodeRay .escape{color:#666}
+.CodeRay .entity{color:#800}
+.CodeRay .error{color:#808}
+.CodeRay .exception{color:inherit}
+.CodeRay .filename{color:#099}
+.CodeRay .function{color:#900;font-weight:bold}
+.CodeRay .global-variable{color:#008080}
+.CodeRay .hex{color:#058}
+.CodeRay .integer,.CodeRay .float{color:#099}
+.CodeRay .include{color:#555}
+.CodeRay .inline{color:#000}
+.CodeRay .inline .inline{background:#ccc}
+.CodeRay .inline .inline .inline{background:#bbb}
+.CodeRay .inline .inline-delimiter{color:#d14}
+.CodeRay .inline-delimiter{color:#d14}
+.CodeRay .important{color:#555;font-weight:bold}
+.CodeRay .interpreted{color:#b2b}
+.CodeRay .instance-variable{color:#008080}
+.CodeRay .label{color:#970}
+.CodeRay .local-variable{color:#963}
+.CodeRay .octal{color:#40e}
+.CodeRay .predefined{color:#369}
+.CodeRay .preprocessor{color:#579}
+.CodeRay .pseudo-class{color:#555}
+.CodeRay .directive{font-weight:bold}
+.CodeRay .type{font-weight:bold}
+.CodeRay .predefined-type{color:inherit}
+.CodeRay .reserved,.CodeRay .keyword {color:#000;font-weight:bold}
+.CodeRay .key{color:#808}
+.CodeRay .key .delimiter{color:#606}
+.CodeRay .key .char{color:#80f}
+.CodeRay .value{color:#088}
+.CodeRay .regexp .delimiter{color:#808}
+.CodeRay .regexp .content{color:#808}
+.CodeRay .regexp .modifier{color:#808}
+.CodeRay .regexp .char{color:#d14}
+.CodeRay .regexp .function{color:#404;font-weight:bold}
+.CodeRay .string{color:#d20}
+.CodeRay .string .string .string{background:#ffd0d0}
+.CodeRay .string .content{color:#d14}
+.CodeRay .string .char{color:#d14}
+.CodeRay .string .delimiter{color:#d14}
+.CodeRay .shell{color:#d14}
+.CodeRay .shell .delimiter{color:#d14}
+.CodeRay .symbol{color:#990073}
+.CodeRay .symbol .content{color:#a60}
+.CodeRay .symbol .delimiter{color:#630}
+.CodeRay .tag{color:#008080}
+.CodeRay .tag-special{color:#d70}
+.CodeRay .variable{color:#036}
+.CodeRay .insert{background:#afa}
+.CodeRay .delete{background:#faa}
+.CodeRay .change{color:#aaf;background:#007}
+.CodeRay .head{color:#f8f;background:#505}
+.CodeRay .insert .insert{color:#080}
+.CodeRay .delete .delete{color:#800}
+.CodeRay .change .change{color:#66f}
+.CodeRay .head .head{color:#f4f}
+</style>
+</head>
+<body class="book toc2 toc-left">
+<div id="header">
+<h1>Jakarta Expression Language</h1>
+<div class="details">
+<span id="author" class="author">Jakarta Expression Language Team, https://projects.eclipse.org/projects/ee4j.el</span><br>
+<span id="email" class="email"><a href="https://dev.eclipse.org/mailman/listinfo/el-dev" class="bare">https://dev.eclipse.org/mailman/listinfo/el-dev</a></span><br>
+<span id="revnumber"> 4.0-RC2,</span>
+<span id="revdate">June 12, 2020</span>
+<br><span id="revremark">DRAFT</span>
+</div>
+<div id="toc" class="toc2">
+<div id="toctitle">Table of Contents</div>
+<ul class="sectlevel2">
+<li><a href="#eclipse-foundation-specification-license">Eclipse Foundation Specification License</a>
+<ul class="sectlevel3">
+<li><a href="#disclaimers">Disclaimers</a></li>
+</ul>
+</li>
+<li><a href="#jakarta-expression-language-version-4-0">Jakarta Expression Language, Version 4.0</a></li>
+<li><a href="#preface">Preface</a>
+<ul class="sectlevel2">
+<li><a href="#historical-note">Historical Note</a></li>
+<li><a href="#typographical-conventions">Typographical Conventions</a></li>
+<li><a href="#comments">Comments</a></li>
+</ul>
+</li>
+<li><a href="#language-syntax-and-semantics">1. Language Syntax and Semantics</a>
+<ul class="sectlevel2">
+<li><a href="#overview">1.1. Overview</a>
+<ul class="sectlevel3">
+<li><a href="#el-in-a-nutshell">1.1.1. EL in a nutshell</a></li>
+</ul>
+</li>
+<li><a href="#el-expressions">1.2. EL Expressions</a>
+<ul class="sectlevel3">
+<li><a href="#eval-expression">1.2.1. Eval-expression</a>
+<ul class="sectlevel4">
+<li><a href="#eval-expressions-as-value-expressions">1.2.1.1. Eval-expressions as value expressions</a></li>
+<li><a href="#eval-expressions-as-method-expressions">1.2.1.2. Eval-expressions as method expressions</a></li>
+</ul>
+</li>
+<li><a href="#literal-expression">1.2.2. Literal-expression</a></li>
+<li><a href="#composite-expressions">1.2.3. Composite expressions</a></li>
+<li><a href="#syntax-restrictions">1.2.4. Syntax restrictions</a></li>
+</ul>
+</li>
+<li><a href="#literals">1.3. Literals</a></li>
+<li><a href="#errors-warnings-default-values">1.4. Errors, Warnings, Default Values</a></li>
+<li><a href="#resolution-of-model-objects-and-their-properties-or-methods">1.5. Resolution of Model Objects and their Properties or Methods</a>
+<ul class="sectlevel3">
+<li><a href="#evaluating-identifiers">1.5.1. Evaluating Identifiers</a></li>
+<li><a href="#evaluating-functions">1.5.2. Evaluating functions</a></li>
+<li><a href="#evaluating-objects-with-properties">1.5.3. Evaluating objects with properties</a></li>
+<li><a href="#invoking-method-expressions">1.5.4. Invoking method expressions</a></li>
+</ul>
+</li>
+<li><a href="#operators-and">1.6. Operators <code>[]</code> and <code>.</code></a></li>
+<li><a href="#arithmetic-operators">1.7. Arithmetic Operators</a>
+<ul class="sectlevel3">
+<li><a href="#binary-operators-a-b">1.7.1. Binary operators - <code>A {+,-,*} B</code></a></li>
+<li><a href="#binary-operator-a-div-b">1.7.2. Binary operator - <code>A {/,div} B</code></a></li>
+<li><a href="#binary-operator-a-mod-b">1.7.3. Binary operator - <code>A {%,mod} B</code></a></li>
+<li><a href="#unary-minus-operator-a">1.7.4. Unary minus operator - <code>-A</code></a></li>
+</ul>
+</li>
+<li><a href="#string-concatenation-operator-a-b">1.8. String Concatenation Operator - <code>A += B</code></a></li>
+<li><a href="#relational-operators">1.9. Relational Operators</a>
+<ul class="sectlevel3">
+<li><a href="#a-ltgtlege-b">1.9.1. <code>A {&lt;,&gt;,&lt;=,&gt;=,lt,gt,le,ge} B</code></a></li>
+<li><a href="#a-eqne-b">1.9.2. <code>A {==,!=,eq,ne} B</code></a></li>
+</ul>
+</li>
+<li><a href="#logical-operators">1.10. Logical Operators</a>
+<ul class="sectlevel3">
+<li><a href="#binary-operator-a-andor-b">1.10.1. Binary operator - <code>A {&amp;&amp;,||,and,or} B</code></a></li>
+<li><a href="#unary-not-operator-not-a">1.10.2. Unary not operator - <code>{!,not} A</code></a></li>
+</ul>
+</li>
+<li><a href="#empty-operator-empty-a">1.11. Empty Operator - <code>empty A</code></a></li>
+<li><a href="#conditional-operator-a-b-c">1.12. Conditional Operator - <code>A ? B : C</code></a></li>
+<li><a href="#assignment-operator-a-b">1.13. Assignment Operator - <code>A = B</code></a></li>
+<li><a href="#semicolon-operator-a-b">1.14. Semicolon Operator - <code>A ; B</code></a></li>
+<li><a href="#parentheses">1.15. Parentheses</a></li>
+<li><a href="#operator-precedence">1.16. Operator Precedence</a></li>
+<li><a href="#reserved-words">1.17. Reserved Words</a></li>
+<li><a href="#functions">1.18. Functions</a></li>
+<li><a href="#variables">1.19. Variables</a></li>
+<li><a href="#lambda-expressions">1.20. Lambda Expressions</a></li>
+<li><a href="#enums">1.21. Enums</a></li>
+<li><a href="#static-field-and-method-reference">1.22. Static Field and Method Reference</a>
+<ul class="sectlevel3">
+<li><a href="#access-restrictions-and-imports">1.22.1. Access Restrictions and Imports</a></li>
+<li><a href="#imports-of-packages-classes-and-static-fields">1.22.2. Imports of Packages, Classes, and Static Fields</a></li>
+<li><a href="#constructor-reference">1.22.3. Constructor Reference</a></li>
+</ul>
+</li>
+<li><a href="#type-conversion">1.23. Type Conversion</a>
+<ul class="sectlevel3">
+<li><a href="#to-coerce-a-value-x-to-type-y">1.23.1. To Coerce a Value <code>X</code> to Type <code>Y</code></a></li>
+<li><a href="#coerce-a-to-string">1.23.2. Coerce <code>A</code> to <code>String</code></a></li>
+<li><a href="#coerce-a-to-number-type-n">1.23.3. Coerce <code>A</code> to <code>Number</code> type <code>N</code></a></li>
+<li><a href="#coerce-a-to-character-or-char">1.23.4. Coerce <code>A</code> to <code>Character</code> or <code>char</code></a></li>
+<li><a href="#coerce-a-to-boolean-or-boolean">1.23.5. Coerce <code>A</code> to <code>Boolean</code> or <code>boolean</code></a></li>
+<li><a href="#coerce-a-to-an-enum-type-t">1.23.6. Coerce <code>A</code> to an <code>Enum</code> Type <code>T</code></a></li>
+<li><a href="#coerce-a-to-any-other-type-t">1.23.7. Coerce <code>A</code> to Any Other Type <code>T</code></a></li>
+</ul>
+</li>
+<li><a href="#collected-syntax">1.24. Collected Syntax</a></li>
+</ul>
+</li>
+<li><a href="#operations-on-collection-objects">2. Operations on Collection Objects</a>
+<ul class="sectlevel2">
+<li><a href="#overview-2">2.1. Overview</a></li>
+<li><a href="#construction-of-collection-objects">2.2. Construction of Collection Objects</a>
+<ul class="sectlevel3">
+<li><a href="#set-construction">2.2.1. Set Construction</a>
+<ul class="sectlevel4">
+<li><a href="#syntax">2.2.1.1. Syntax</a></li>
+<li><a href="#example">2.2.1.2. Example</a></li>
+</ul>
+</li>
+<li><a href="#list-construction">2.2.2. List Construction</a>
+<ul class="sectlevel4">
+<li><a href="#syntax-2">2.2.2.1. Syntax</a></li>
+<li><a href="#example-2">2.2.2.2. Example</a></li>
+</ul>
+</li>
+<li><a href="#map-construction">2.2.3. Map Construction</a>
+<ul class="sectlevel4">
+<li><a href="#syntax-3">2.2.3.1. Syntax</a></li>
+<li><a href="#example-3">2.2.3.2. Example</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#collection-operations">2.3. Collection Operations</a>
+<ul class="sectlevel3">
+<li><a href="#stream-and-pipeline">2.3.1. Stream and Pipeline</a></li>
+<li><a href="#operation-syntax-description">2.3.2. Operation Syntax Description</a></li>
+<li><a href="#implementation-classes">2.3.3. Implementation Classes</a>
+<ul class="sectlevel4">
+<li><a href="#stream">2.3.3.1. Stream</a></li>
+<li><a href="#optional">2.3.3.2. Optional</a></li>
+</ul>
+</li>
+<li><a href="#functions-2">2.3.4. Functions</a>
+<ul class="sectlevel4">
+<li><a href="#predicate">2.3.4.1. predicate</a></li>
+<li><a href="#mapper">2.3.4.2. mapper</a></li>
+<li><a href="#comparator">2.3.4.3. comparator</a></li>
+<li><a href="#consumer">2.3.4.4. consumer</a></li>
+<li><a href="#binaryoperator">2.3.4.5. binaryOperator</a></li>
+</ul>
+</li>
+<li><a href="#filter">2.3.5. filter</a>
+<ul class="sectlevel4">
+<li><a href="#syntax-4">2.3.5.1. Syntax</a></li>
+<li><a href="#description">2.3.5.2. Description</a></li>
+<li><a href="#see">2.3.5.3. See</a></li>
+<li><a href="#example-4">2.3.5.4. Example</a></li>
+</ul>
+</li>
+<li><a href="#map">2.3.6. map</a>
+<ul class="sectlevel4">
+<li><a href="#syntax-5">2.3.6.1. Syntax</a></li>
+<li><a href="#description-2">2.3.6.2. Description</a></li>
+<li><a href="#see-2">2.3.6.3. See</a></li>
+<li><a href="#examples">2.3.6.4. Examples</a></li>
+</ul>
+</li>
+<li><a href="#flatmap">2.3.7. flatMap</a>
+<ul class="sectlevel4">
+<li><a href="#syntax-6">2.3.7.1. Syntax</a></li>
+<li><a href="#description-3">2.3.7.2. Description</a></li>
+<li><a href="#see-3">2.3.7.3. See</a></li>
+<li><a href="#examples-2">2.3.7.4. Examples</a></li>
+</ul>
+</li>
+<li><a href="#distinct">2.3.8. distinct</a>
+<ul class="sectlevel4">
+<li><a href="#syntax-7">2.3.8.1. Syntax</a></li>
+<li><a href="#description-4">2.3.8.2. Description</a></li>
+<li><a href="#example-5">2.3.8.3. Example</a></li>
+</ul>
+</li>
+<li><a href="#sorted">2.3.9. sorted</a>
+<ul class="sectlevel4">
+<li><a href="#syntax-8">2.3.9.1. Syntax</a></li>
+<li><a href="#description-5">2.3.9.2. Description</a></li>
+<li><a href="#see-4">2.3.9.3. See</a></li>
+<li><a href="#examples-3">2.3.9.4. Examples</a></li>
+</ul>
+</li>
+<li><a href="#foreach">2.3.10. forEach</a>
+<ul class="sectlevel4">
+<li><a href="#syntax-9">2.3.10.1. Syntax</a></li>
+<li><a href="#description-6">2.3.10.2. Description</a></li>
+<li><a href="#see-5">2.3.10.3. See</a></li>
+<li><a href="#example-6">2.3.10.4. Example</a></li>
+</ul>
+</li>
+<li><a href="#peek">2.3.11. peek</a>
+<ul class="sectlevel4">
+<li><a href="#syntax-10">2.3.11.1. Syntax</a></li>
+<li><a href="#description-7">2.3.11.2. Description</a></li>
+<li><a href="#see-6">2.3.11.3. See</a></li>
+<li><a href="#example-7">2.3.11.4. Example</a></li>
+</ul>
+</li>
+<li><a href="#iterator">2.3.12. iterator</a>
+<ul class="sectlevel4">
+<li><a href="#syntax-11">2.3.12.1. Syntax</a></li>
+<li><a href="#description-8">2.3.12.2. Description</a></li>
+</ul>
+</li>
+<li><a href="#limit">2.3.13. limit</a>
+<ul class="sectlevel4">
+<li><a href="#syntax-12">2.3.13.1. Syntax</a></li>
+<li><a href="#description-9">2.3.13.2. Description</a></li>
+<li><a href="#example-8">2.3.13.3. Example</a></li>
+</ul>
+</li>
+<li><a href="#substream">2.3.14. substream</a>
+<ul class="sectlevel4">
+<li><a href="#syntax-13">2.3.14.1. Syntax</a></li>
+<li><a href="#description-10">2.3.14.2. Description</a></li>
+<li><a href="#example-9">2.3.14.3. Example</a></li>
+</ul>
+</li>
+<li><a href="#toarray">2.3.15. toArray</a>
+<ul class="sectlevel4">
+<li><a href="#syntax-14">2.3.15.1. Syntax</a></li>
+<li><a href="#description-11">2.3.15.2. Description</a></li>
+</ul>
+</li>
+<li><a href="#tolist">2.3.16. toList</a>
+<ul class="sectlevel4">
+<li><a href="#syntax-15">2.3.16.1. Syntax</a></li>
+<li><a href="#description-12">2.3.16.2. Description</a></li>
+</ul>
+</li>
+<li><a href="#reduce">2.3.17. reduce</a>
+<ul class="sectlevel4">
+<li><a href="#syntax-16">2.3.17.1. Syntax</a></li>
+<li><a href="#description-13">2.3.17.2. Description</a></li>
+<li><a href="#see-7">2.3.17.3. See</a></li>
+<li><a href="#example-10">2.3.17.4. Example</a></li>
+</ul>
+</li>
+<li><a href="#max">2.3.18. max</a>
+<ul class="sectlevel4">
+<li><a href="#syntax-17">2.3.18.1. Syntax</a></li>
+<li><a href="#description-14">2.3.18.2. Description</a></li>
+<li><a href="#see-8">2.3.18.3. See</a></li>
+<li><a href="#examples-4">2.3.18.4. Examples</a></li>
+</ul>
+</li>
+<li><a href="#min">2.3.19. min</a>
+<ul class="sectlevel4">
+<li><a href="#syntax-18">2.3.19.1. Syntax</a></li>
+<li><a href="#description-15">2.3.19.2. Description</a></li>
+<li><a href="#see-9">2.3.19.3. See</a></li>
+</ul>
+</li>
+<li><a href="#average">2.3.20. average</a>
+<ul class="sectlevel4">
+<li><a href="#syntax-19">2.3.20.1. Syntax</a></li>
+<li><a href="#description-16">2.3.20.2. Description</a></li>
+</ul>
+</li>
+<li><a href="#sum">2.3.21. sum</a>
+<ul class="sectlevel4">
+<li><a href="#syntax-20">2.3.21.1. Syntax</a></li>
+<li><a href="#description-17">2.3.21.2. Description</a></li>
+</ul>
+</li>
+<li><a href="#count">2.3.22. count</a>
+<ul class="sectlevel4">
+<li><a href="#syntax-21">2.3.22.1. Syntax</a></li>
+<li><a href="#description-18">2.3.22.2. Description</a></li>
+</ul>
+</li>
+<li><a href="#anymatch">2.3.23. anyMatch</a>
+<ul class="sectlevel4">
+<li><a href="#syntax-22">2.3.23.1. Syntax</a></li>
+<li><a href="#description-19">2.3.23.2. Description</a></li>
+<li><a href="#see-10">2.3.23.3. See</a></li>
+<li><a href="#example-11">2.3.23.4. Example</a></li>
+</ul>
+</li>
+<li><a href="#allmatch">2.3.24. allMatch</a>
+<ul class="sectlevel4">
+<li><a href="#syntax-23">2.3.24.1. Syntax</a></li>
+<li><a href="#description-20">2.3.24.2. Description</a></li>
+<li><a href="#see-11">2.3.24.3. See</a></li>
+</ul>
+</li>
+<li><a href="#nonematch">2.3.25. noneMatch</a>
+<ul class="sectlevel4">
+<li><a href="#syntax-24">2.3.25.1. Syntax</a></li>
+<li><a href="#description-21">2.3.25.2. Description</a></li>
+<li><a href="#see-12">2.3.25.3. See</a></li>
+</ul>
+</li>
+<li><a href="#findfirst">2.3.26. findFirst</a>
+<ul class="sectlevel4">
+<li><a href="#syntax-25">2.3.26.1. Syntax</a></li>
+<li><a href="#description-22">2.3.26.2. Description</a></li>
+<li><a href="#see-13">2.3.26.3. See</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#changes">Appendix A: Changes</a>
+<ul class="sectlevel2">
+<li><a href="#changes-between-4-0-and-jsr-341">A.1. Changes between 4.0 and JSR 341</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="content">
+<div id="preamble">
+<div class="sectionbody">
+<div class="literalblock">
+<div class="content">
+<pre>Specification: Jakarta Expression Language
+
+Version: 4.0-RC2
+
+Status: DRAFT
+
+Release: June 12, 2020</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Copyright (c) 2018, 2020 Eclipse Foundation.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="eclipse-foundation-specification-license"><a class="anchor" href="#eclipse-foundation-specification-license"></a>Eclipse Foundation Specification License</h3>
+<div class="paragraph">
+<p>By using and/or copying this document, or the Eclipse Foundation
+document from which this statement is linked, you (the licensee) agree
+that you have read, understood, and will comply with the following
+terms and conditions:</p>
+</div>
+<div class="paragraph">
+<p>Permission to copy, and distribute the contents of this document, or
+the Eclipse Foundation document from which this statement is linked, in
+any medium for any purpose and without fee or royalty is hereby
+granted, provided that you include the following on ALL copies of the
+document, or portions thereof, that you use:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>link or URL to the original Eclipse Foundation document.</p>
+</li>
+<li>
+<p>All existing copyright notices, or if one does not exist, a notice
+(hypertext is preferred, but a textual representation is permitted)
+of the form: "Copyright © [$date-of-document] Eclipse Foundation, Inc.
+&lt;&lt;url to this license&gt;&gt;"</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Inclusion of the full text of this NOTICE must be provided. We
+request that authorship attribution be provided in any software,
+documents, or other items or products that you create pursuant to the
+implementation of the contents of this document, or any portion
+thereof.</p>
+</div>
+<div class="paragraph">
+<p>No right to create modifications or derivatives of Eclipse Foundation
+documents is granted pursuant to this license, except anyone may
+prepare and distribute derivative works and portions of this document
+in software that implements the specification, in supporting materials
+accompanying such software, and in documentation of such software,
+PROVIDED that all such works include the notice below. HOWEVER, the
+publication of derivative works of this document for use as a technical
+specification is expressly prohibited.</p>
+</div>
+<div class="paragraph">
+<p>The notice is:</p>
+</div>
+<div class="paragraph">
+<p>"Copyright © 2018, 2020 Eclipse Foundation. This software or document
+includes material copied from or derived from
+Jakarta ® Expression Language
+<a href="https://jakarta.ee/specifications/expression-language/4.0/">https://jakarta.ee/specifications/expression-language/4.0/</a>"</p>
+</div>
+<div class="sect3">
+<h4 id="disclaimers"><a class="anchor" href="#disclaimers"></a>Disclaimers</h4>
+<div class="paragraph">
+<p>THIS DOCUMENT IS PROVIDED &quot;AS IS,&quot; AND THE COPYRIGHT
+HOLDERS AND THE ECLIPSE FOUNDATION MAKE NO REPRESENTATIONS OR
+WARRANTIES, EXPRESS OR IMPLIED, INCLUDING, BUT NOT LIMITED TO,
+WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE,
+NON-INFRINGEMENT, OR TITLE; THAT THE CONTENTS OF THE DOCUMENT ARE
+SUITABLE FOR ANY PURPOSE; NOR THAT THE IMPLEMENTATION OF SUCH CONTENTS
+WILL NOT INFRINGE ANY THIRD PARTY PATENTS, COPYRIGHTS, TRADEMARKS OR
+OTHER RIGHTS.</p>
+</div>
+<div class="paragraph">
+<p>THE COPYRIGHT HOLDERS AND THE ECLIPSE FOUNDATION WILL NOT BE LIABLE
+FOR ANY DIRECT, INDIRECT, SPECIAL OR CONSEQUENTIAL DAMAGES ARISING OUT
+OF ANY USE OF THE DOCUMENT OR THE PERFORMANCE OR IMPLEMENTATION OF THE
+CONTENTS THEREOF.</p>
+</div>
+<div class="paragraph">
+<p>The name and trademarks of the copyright holders or the Eclipse
+Foundation may NOT be used in advertising or publicity pertaining to
+this document or its contents without specific, written prior
+permission. Title to copyright in this document will at all times
+remain with copyright holders.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="jakarta-expression-language-version-4-0"><a class="anchor" href="#jakarta-expression-language-version-4-0"></a>Jakarta Expression Language, Version 4.0</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Copyright (c) 2013, 2020 Oracle and/or its affiliates and others.
+All rights reserved.</p>
+</div>
+<div class="paragraph">
+<p>Eclipse is a registered trademark of the Eclipse Foundation. Jakarta
+is a trademark of the Eclipse Foundation. Oracle and Java are
+registered trademarks of Oracle and/or its affiliates. Other names
+may be trademarks of their respective owners.</p>
+</div>
+<div class="paragraph">
+<p>The Jakarta Expression Language Team - June 12, 2020</p>
+</div>
+<div class="paragraph">
+<p>Comments to: <a href="mailto:el-dev@eclipse.org">el-dev@eclipse.org</a></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="preface"><a class="anchor" href="#preface"></a>Preface</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>This is the Expression Language specification
+version 4.0, developed by the Jakarta Expression Language Team under the Eclipse
+Foundation Specification Process.</p>
+</div>
+<div class="sect2">
+<h3 id="historical-note"><a class="anchor" href="#historical-note"></a>Historical Note</h3>
+<div class="paragraph">
+<p>The Expression Language (EL) was originally inspired by both
+ECMAScript and the XPath expression languages. During its inception, the
+experts involved were very reluctant to design yet another expression
+language and tried to use each of these languages, but they fell short
+in different areas.</p>
+</div>
+<div class="paragraph">
+<p>The JSP Standard Tag Library (JSTL) version 1.0
+(based on JSP 1.2) was therefore first to introduce an Expression
+Language to make it easy for page authors to access and manipulate
+application data without having to master the complexity associated with
+programming languages such as Java and JavaScript.</p>
+</div>
+<div class="paragraph">
+<p>Given its success, the EL was subsequently moved
+into the JSP specification (JSP 2.0/JSTL 1.1), making it generally
+available within JSP pages (not just for attributes of JSTL tag
+libraries).</p>
+</div>
+<div class="paragraph">
+<p>JavaServer Faces 1.0 defined a standard
+framework for building User Interface components, and was built on top
+of JSP 1.2 technology. Because JSP 1.2 technology did not have an
+integrated expression language and because the JSP 2.0 EL did not meet
+all of the needs of Faces, an EL variant was developed for Faces 1.0.
+The Faces expert group (EG) attempted to make the language as compatible
+with JSP 2.0 as possible but some differences were necessary.</p>
+</div>
+<div class="paragraph">
+<p>It was obviously desirable to have a single,
+unified expression language that meets the needs of the various web-tier
+technologies. The Faces and JSP EGs therefore worked together on the
+specification of a unified expression language, defined in JSR 245, and
+which took effect for the JSP 2.1 and Faces 1.2 releases.</p>
+</div>
+<div class="paragraph">
+<p>The JSP/JSTL/Faces expert groups also
+acknowledged that the EL is useful beyond their own
+specifications. The 3.0 specification was the first JSR that defined the
+Expression Language as an independent specification, with no
+dependencies on other technologies.</p>
+</div>
+<div class="paragraph">
+<p>This specification is now developed under the Eclipse
+Foundation Specification Process. Together with the Test Compatibility
+Kit (TCK) which tests that a given implementation meets the requirements
+of the specification, and Compatible Implementations (CIs) that
+implement this specification and which pass the TCK, this specification
+defines the Jakarta standard for Expression Language.</p>
+</div>
+<div style="page-break-after: always;"></div>
+</div>
+<div class="sect2">
+<h3 id="typographical-conventions"><a class="anchor" href="#typographical-conventions"></a>Typographical Conventions</h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Font Style</th>
+<th class="tableblock halign-left valign-top">Uses</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>Italic</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>Emphasis, definition of term.</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Monospace</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Syntax, code examples, attribute names, Java language
+types, API, enumerated attribute values.</code></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="comments"><a class="anchor" href="#comments"></a>Comments</h3>
+<div class="paragraph">
+<p>We are interested in improving this
+specification and welcome your comments and suggestions. We have a
+GitHub project with an issue tracker and a mailing list for comments
+and discussions about this specification.</p>
+</div>
+<div class="paragraph">
+<p>Project: <a href="https://github.com/eclipse-ee4j/el-ri" class="bare">https://github.com/eclipse-ee4j/el-ri</a></p>
+</div>
+<div class="paragraph">
+<p>Mail alias for comments: <a href="mailto:el-dev@eclipse.org">el-dev@eclipse.org</a></p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="language-syntax-and-semantics"><a class="anchor" href="#language-syntax-and-semantics"></a>1. Language Syntax and Semantics</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The syntax and semantics of the Expression
+Language are described in this chapter.</p>
+</div>
+<div class="sect2">
+<h3 id="overview"><a class="anchor" href="#overview"></a>1.1. Overview</h3>
+<div class="paragraph">
+<p>The EL was originally designed as a simple
+language to meet the needs of the presentation layer in web
+applications. It features:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>A simple syntax restricted to the evaluation of expressions</p>
+</li>
+<li>
+<p>Variables and nested properties</p>
+</li>
+<li>
+<p>Relational, logical, arithmetic, conditional, and empty operators</p>
+</li>
+<li>
+<p>Functions implemented as static methods on Java classes</p>
+</li>
+<li>
+<p>Lenient semantics where appropriate default values and type
+conversions are provided to minimize exposing errors to end users</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>as well as</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>A pluggable API for resolving variable references into Java objects
+and for resolving the properties applied to these Java objects</p>
+</li>
+<li>
+<p>An API for deferred evaluation of expressions that refer to either
+values or methods on an object</p>
+</li>
+<li>
+<p>Support for lvalue expressions (expressions a value can be assigned
+to)</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>These last three features are key additions
+to the JSP 2.0 EL resulting from the EL alignment work done in the JSP
+2.1 and Faces 1.2 specifications.</p>
+</div>
+<div class="paragraph">
+<p>EL 3.0 added features to enable EL to be used
+as a stand-alone tool. It introduced APIs for direct evaluation of EL
+expressions and manipulation of EL environments. It also added some
+powerful features to the language, such as the support of operations for
+collection objects.</p>
+</div>
+<div class="paragraph">
+<p>EL 4.0 implements the transition from the <code>javax</code> namespace to the
+<code>jakarta</code> namespace.</p>
+</div>
+<div class="sect3">
+<h4 id="el-in-a-nutshell"><a class="anchor" href="#el-in-a-nutshell"></a>1.1.1. EL in a nutshell</h4>
+<div class="paragraph">
+<p>The syntax is quite simple. Model objects are
+accessed by name. A generalized <code>[]</code> operator can be used to access
+maps, lists, arrays of objects and properties of a JavaBeans object, and
+to invoke methods in a JavaBeans object; the operator can be nested
+arbitrarily. The <code>.</code> operator can be used as a convenient shorthand for
+property access when the property name follows the conventions of Java
+identifiers, but the <code>[]</code> operator allows for more generalized access.
+Similarly, the <code>.</code> operator can also be used to invoke methods, when the
+method name is known, but the <code>[]</code> operator can be used to invoke methods
+dynamically.</p>
+</div>
+<div class="paragraph">
+<p>Relational comparisons are allowed using the
+standard Java relational operators. Comparisons may be made against
+other values, or against boolean (for equality comparisons only),
+string, integer, or floating point literals. Arithmetic operators can be
+used to compute integer and floating point values. Logical operators are
+available.</p>
+</div>
+<div class="paragraph">
+<p>The EL features a flexible architecture where
+the resolution of model objects (and their associated properties and
+methods), functions, and variables are all performed through a pluggable
+API, making the EL easily adaptable to various environments.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="el-expressions"><a class="anchor" href="#el-expressions"></a>1.2. EL Expressions</h3>
+<div class="paragraph">
+<p>An EL expression is specified either as an
+<em>eval-expression</em>, or as a <em>literal-expression</em>. The EL also supports
+<em>composite expressions</em>, where multiple EL expressions
+(eval-expressions and literal-expressions) are grouped together.</p>
+</div>
+<div class="paragraph">
+<p>An EL expression is parsed as either a <em>value
+expression</em> or a <em>method expression</em>. A value expression refers to a value,
+whereas a method expression refers to a method on an object. Once
+parsed, the expression can optionally be evaluated one or more times.</p>
+</div>
+<div class="paragraph">
+<p>Each type of expression (eval-expression,
+literal-expression, and composite expression) is described in its own
+section below.</p>
+</div>
+<div class="sect3">
+<h4 id="eval-expression"><a class="anchor" href="#eval-expression"></a>1.2.1. Eval-expression</h4>
+<div class="paragraph">
+<p>An eval-expression is formed by using the
+constructs <code>${expr}</code> or <code>#{expr}</code>. Both constructs are parsed and
+evaluated in exactly the same way by the EL, even though they might
+carry different meanings in the technology that is using the EL.</p>
+</div>
+<div class="paragraph">
+<p>For instance, by convention the Jakarta EE web
+tier specifications use the <code>${expr}</code> construct for immediate
+evaluation and the <code>#{expr}</code> construct for deferred evaluation. This
+difference in delimiters points out the semantic differences between the
+two expression types in the Jakarta EE web tier. Expressions delimited by
+<code>#{}</code> are said to use “deferred evaluation” because the expression is
+not evaluated until its value is needed by the system. Expressions
+delimited by <code>${}</code> are said to use “immediate evaluation” because the
+expression is compiled when the JSP page is compiled and it is executed
+when the JSP page is executed. More on this in
+<a href="#syntax-restrictions">Section 1.2.4, &#8220;Syntax restrictions&#8221;</a>.</p>
+</div>
+<div class="paragraph">
+<p>Other technologies may choose to use the same
+convention. It is up to each technology to enforce its own restrictions
+on where each construct can be used.</p>
+</div>
+<div class="paragraph">
+<p>In some EL APIs, especially those introduced
+in EL 3.0 to support stand-alone use, the EL expressions are specified
+without <code>${}</code> or <code>#{}</code> delimiters.</p>
+</div>
+<div class="paragraph">
+<p><strong>Nested eval-expressions, such as <code>${item[${i}]}</code>, are illegal.</strong></p>
+</div>
+<div class="sect4">
+<h5 id="eval-expressions-as-value-expressions"><a class="anchor" href="#eval-expressions-as-value-expressions"></a>1.2.1.1. Eval-expressions as value expressions</h5>
+<div class="paragraph">
+<p>When parsed as a value expression, an
+eval-expression can be evaluated as either an <em>rvalue</em> or an <em>lvalue</em>. An
+<em>rvalue</em> is an expression that would typically appear on the right side of
+the assignment operator. An <em>lvalue</em> would typically appear on the left
+side.</p>
+</div>
+<div class="paragraph">
+<p>For instance, all EL expressions in JSP 2.0
+are evaluated by the JSP engine immediately when the page response is
+rendered. They all yield rvalues.</p>
+</div>
+<div class="paragraph">
+<p>In the following JSTL action:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>&lt;c:out value="${customer.name}"/&gt;</code></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>the expression <code>${customer.name}</code> is
+evaluated by the JSP engine and the returned value is fed to the tag
+handler and converted to the type associated with the attribute
+(<code>String</code> in this case).</p>
+</div>
+<div class="paragraph">
+<p>Faces, on the other hand, supports a full UI
+component model that requires expressions to represent more than just
+rvalues. It needs expressions to represent references to data structures
+whose value could be assigned, as well as to represent methods that
+could be invoked.</p>
+</div>
+<div class="paragraph">
+<p>For example, in the following Faces code sample:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="html"><span class="tag">&lt;h:form&gt;</span>
+  <span class="tag">&lt;h:inputText</span>
+    <span class="attribute-name">id</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">email</span><span class="delimiter">&quot;</span></span>
+    <span class="attribute-name">value</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">#{checkOutFormBean.email}</span><span class="delimiter">&quot;</span></span>
+    <span class="attribute-name">size</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">25</span><span class="delimiter">&quot;</span></span> <span class="attribute-name">maxlength</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">125</span><span class="delimiter">&quot;</span></span>
+    <span class="attribute-name">validator</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">#{checkOutFormBean.validateEmail}</span><span class="delimiter">&quot;</span></span><span class="tag">/&gt;</span>
+<span class="tag">&lt;/h:form&gt;</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>when the form is submitted, the “apply
+request values” phase of Faces evaluates the EL expression
+<code>#{checkOutFormBean.email}</code> as a reference to a data structure whose
+value is set with the input parameter it is associated with in the form.
+The result of the expression therefore represents a reference to a data
+structure, or an lvalue, the left hand side of an assignment
+operation.</p>
+</div>
+<div class="paragraph">
+<p>When that same expression is evaluated during
+the rendering phase, it yields the specific value associated with the
+object (rvalue), just as would be the case with JSP.</p>
+</div>
+<div class="paragraph">
+<p>The valid syntax for an lvalue is a subset of
+the valid syntax for an rvalue. In particular, an lvalue can only
+consist of either a single variable (e.g. <code>${name}</code>) or a property
+resolution on some object, via the <code>.</code> or <code>[]</code> operator (e.g.
+<code>${employee.name}</code>). Of course, an EL function or method that returns
+either an object or a name can be part of an lvalue.</p>
+</div>
+<div class="paragraph">
+<p>When parsing a value expression, an expected
+type is provided. In the case of an rvalue, the expected type is what
+the result of the expression evaluation is coerced to. In the case of
+lvalues, the expected type is ignored and the provided value is coerced
+to the actual type of the property the expression points to, before that
+property is set. The EL type conversion rules are defined in
+<a href="#type-conversion">Section 1.23, &#8220;Type Conversion&#8221;</a>. A few sample
+eval-expressions are shown in the following table.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 1. Sample eval-expressions</caption>
+<colgroup>
+<col style="width: 34%;">
+<col style="width: 33%;">
+<col style="width: 33%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Expression</th>
+<th class="tableblock halign-left valign-top">Expected Type</th>
+<th class="tableblock halign-left valign-top">Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>${customer.name}</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>String</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Guy Lafleur</code></p>
+<p class="tableblock"><em>Expression evaluates to a String. No
+conversion necessary.</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>${book}</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>String</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Wonders of the World</code></p>
+<p class="tableblock"><em>Expression evaluates to a <code>Book</code> object (e.g.
+<code>com.example.Book</code>). Conversion rules result in the evaluation of
+<code>book.toString()</code>, which could for example yield the book title.</em></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect4">
+<h5 id="eval-expressions-as-method-expressions"><a class="anchor" href="#eval-expressions-as-method-expressions"></a>1.2.1.2. Eval-expressions as method expressions</h5>
+<div class="paragraph">
+<p>In some cases, it is desirable for an EL
+expression to refer to a method instead of a model object.</p>
+</div>
+<div class="paragraph">
+<p>For instance, in JSF, a component tag also
+has a set of attributes for referencing methods that can perform certain
+functions for the component associated with the tag. To support these
+types of expressions, the EL defines method expressions (EL class
+<code>MethodExpression</code>).</p>
+</div>
+<div class="paragraph">
+<p>In the above example, the validator attribute
+uses an expression that is associated with type <code>MethodExpression</code>.
+Just as with <code>ValueExpression</code>s, the evaluation of the expression
+(calling the method) is deferred and can be processed by the underlying
+technology at the appropriate moment within its life cycle.</p>
+</div>
+<div class="paragraph">
+<p>A method expression shares the same syntax as
+an lvalue. That is, it can only consist of either a single variable
+(e.g. <code>${name}</code>) or a property resolution on some object, via the <code>.</code>
+or <code>[]</code> operator (e.g. <code>${employee.name}</code>). Information about the
+expected return type and parameter types is provided at the time the
+method is parsed.</p>
+</div>
+<div class="paragraph">
+<p>A method expression is evaluated by invoking
+its referenced method or by retrieving information about the referenced
+method. Upon evaluation, if the expected signature is provided at parse
+time, the EL API verifies that the method conforms to the expected
+signature, and there is therefore no coercion performed. If the expected
+signature is not provided at parse time, then at evaluation, the method
+is identified with the information of the parameters in the expression,
+and the parameters are coerced to the respective formal types.</p>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="literal-expression"><a class="anchor" href="#literal-expression"></a>1.2.2. Literal-expression</h4>
+<div class="paragraph">
+<p>A literal-expression does not use the
+<code>${expr}</code> or <code>#{expr}</code> constructs, and simply evaluates to the text of
+the expression, of type <code>String</code>. Upon evaluation, an expected type of
+something other than <code>String</code> can be provided. Sample
+literal-expressions are shown in the following table.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 2. Sample literal-expressions</caption>
+<colgroup>
+<col style="width: 34%;">
+<col style="width: 33%;">
+<col style="width: 33%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Expression</th>
+<th class="tableblock halign-left valign-top">Expected Type</th>
+<th class="tableblock halign-left valign-top">Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Aloha!</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>String</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Aloha!</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>true</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Boolean</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Boolean.TRUE</code></p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>To generate literal values that include the
+character sequence "<code>${</code>" or "<code>#{</code>", the developer can choose to
+use a composite expression as shown here:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>${'${'}exprA}</code></p>
+</li>
+<li>
+<p><code>#{'#{'}exprB}</code></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The resulting values would
+then be the strings <code>${exprA}</code> and <code>#{exprB}</code>.</p>
+</div>
+<div class="paragraph">
+<p>Alternatively, the escape characters <code>\$</code> and
+<code>\#</code> can be used to escape what would otherwise be treated as an
+eval-expression. Given the literal-expressions:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>\${exprA}</code></p>
+</li>
+<li>
+<p><code>\#{exprB}</code></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The resulting values would again be the
+strings <code>${exprA}</code> and <code>#{exprB}</code>.</p>
+</div>
+<div class="paragraph">
+<p>A literal-expression can be used anywhere a
+value expression can be used. A literal-expression can also be used as a
+method expression that returns a non-void return value. The standard EL
+coercion rules (see <a href="#type-conversion">Section 1.23, &#8220;Type Conversion&#8221;</a>)
+then apply if the return type of the method expression is not
+<code>java.lang.String</code>.</p>
+</div>
+<div class="paragraph">
+<p>Note that when EL is integrated into other technologies, such as JSP,
+that integration may not include Literal Expressions. Where integrations
+do not include Literal Expressions, those integrating technologies will
+define their own specification, including escaping rules, for handling
+text outside of EL and the escaping rules described above will not apply.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="composite-expressions"><a class="anchor" href="#composite-expressions"></a>1.2.3. Composite expressions</h4>
+<div class="paragraph">
+<p>The EL also supports <em>composite expressions</em>,
+where multiple EL expressions are grouped together. With composite
+expressions, eval-expressions are evaluated from left to right, coerced
+to <code>String</code>s (according to the EL type conversion rules), and
+concatenated with any intervening literal-expressions.</p>
+</div>
+<div class="paragraph">
+<p>For example, the composite expression
+<code>"${firstName} ${lastName}"</code> is composed of three EL expressions:
+eval-expression <code>"${firstName}"</code>, literal-expression <code>" "</code>, and
+eval-expression <code>"${lastName}"</code>.</p>
+</div>
+<div class="paragraph">
+<p>Once evaluated, the resulting <code>String</code> is
+then coerced to the expected type, according to the EL type conversion
+rules. A sample composite expression is shown in the following table.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 3. Sample composite expression</caption>
+<colgroup>
+<col style="width: 34%;">
+<col style="width: 33%;">
+<col style="width: 33%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Expression</th>
+<th class="tableblock halign-left valign-top">Expected Type</th>
+<th class="tableblock halign-left valign-top">Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Welcome ${customer.name} to our site</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>String</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Welcome Guy Lafleur to our site</code></p>
+<p class="tableblock"><em><code>${customer.name}</code> evaluates to a <code>String</code> which
+is then concatenated with the literal-expressions. No conversion
+necessary.</em></p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p><strong>It is illegal to mix <code>${}</code> and <code>#{}</code>
+constructs in a composite expression</strong>. This restriction is imposed to
+avoid ambiguities should a user think that using <code>${expr}</code> or
+<code>#{expr}</code> dictates how an expression is evaluated. For instance, as was
+mentioned previously, the convention in the Jakarta EE web tier specifications
+is for <code>${}</code> to mean immediate evaluation and for <code>#{}</code> to mean
+deferred evaluation. This means that in EL expressions in the Jakarta EE web
+tier, a developer cannot force immediate evaluation of some parts of a
+composite expression and deferred evaluation of other parts. This
+restriction may be lifted in future versions to allow for more advanced
+EL usage patterns.</p>
+</div>
+<div class="paragraph">
+<p>For APIs prior to EL 3.0, a composite
+expression can be used anywhere an EL expression can be used except for
+when parsing a method expression. Only a single eval-expression can be
+used to parse a method expression.</p>
+</div>
+<div class="paragraph">
+<p>Some APIs in EL 3.0 onwards use only single
+eval-expressions, and not the composite expressions. However, there is
+no loss in functionality, since a composite expression can be specified
+with a single eval-expressions, by using the string concatenation
+operators, introduced in EL 3.0. For instance, the composite expression:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>Welcome ${customer.name} to our site</code></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>can be written as:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>${'Welcome ' += customer.name += ' to our site'}</code>.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="syntax-restrictions"><a class="anchor" href="#syntax-restrictions"></a>1.2.4. Syntax restrictions</h4>
+<div class="paragraph">
+<p>While <code>${}</code> and <code>#{}</code> eval-expressions are
+parsed and evaluated in exactly the same way by the EL, the underlying
+technology is free to impose restrictions on which syntax can be used
+according to where the expression appears.</p>
+</div>
+<div class="paragraph">
+<p>For instance, in JSP, <code>#{}</code> expressions
+are only allowed for tag attributes that accept deferred expressions.
+<code>#{expr}</code> will generate an error if used anywhere else.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="literals"><a class="anchor" href="#literals"></a>1.3. Literals</h3>
+<div class="paragraph">
+<p>There are literals for boolean, integer,
+floating point, string, and null in an eval-expression.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Boolean - <code>true</code> and <code>false</code></p>
+</li>
+<li>
+<p>Integer - As defined by the
+<code>IntegerLiteral</code> construct in <a href="#collected-syntax">Section 1.24, &#8220;Collected Syntax&#8221;</a></p>
+</li>
+<li>
+<p>Floating point - As defined by the
+<code>FloatingPointLiteral</code> construct in <a href="#collected-syntax">Section 1.24, &#8220;Collected Syntax&#8221;</a></p>
+</li>
+<li>
+<p>String - Enclosed with single or double quotes with the following rules
+for escaping the enclosed string:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><code>\</code> must be escaped as <code>\\</code></p>
+</li>
+<li>
+<p><code>"</code> must be escaped as <code>\"</code> when the string is enclosed with <code>"</code></p>
+</li>
+<li>
+<p><code>"</code> may be escaped as <code>\"</code> when the string is enclosed with <code>'</code></p>
+</li>
+<li>
+<p><code>'</code> must be escaped as <code>\'</code> when the string is enclosed with <code>'</code></p>
+</li>
+<li>
+<p><code>'</code> may be escaped as <code>\'</code> when the string is enclosed with <code>"</code></p>
+</li>
+<li>
+<p>no other escaping is permitted</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Null - <code>null</code></p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="errors-warnings-default-values"><a class="anchor" href="#errors-warnings-default-values"></a>1.4. Errors, Warnings, Default Values</h3>
+<div class="paragraph">
+<p>The Expression Language has been designed with
+the presentation layer of web applications in mind. In that usage,
+experience suggests that it is most important to be able to provide as
+good a presentation as possible, even when there are simple errors in
+the page. To meet this requirement, the EL does not provide warnings,
+just default values and errors. Default values are type-correct values
+that are assigned to a subexpression when there is some problem. An
+error is an exception thrown (to be handled by the environment where the
+EL is used).</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="resolution-of-model-objects-and-their-properties-or-methods"><a class="anchor" href="#resolution-of-model-objects-and-their-properties-or-methods"></a>1.5. Resolution of Model Objects and their Properties or Methods</h3>
+<div class="paragraph">
+<p>A core concept in the EL is the evaluation of
+a model object name into an object, and the resolution of properties or
+methods applied to objects in an expression (operators <code>.</code> and <code>[]</code>).</p>
+</div>
+<div class="paragraph">
+<p>The EL API provides a generalized mechanism,
+an <code>ELResolver</code>, implemented by the underlying technology and which
+defines the rules that govern the resolution of model object names and
+their associated properties.</p>
+</div>
+<div class="paragraph">
+<p>The resolution of names and properties is
+further affected by the presence of:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Functions. See <a href="#functions">Section 1.18, &#8220;Functions&#8221;</a>.</p>
+</li>
+<li>
+<p>Variables. See <a href="#variables">Section 1.19, &#8220;Variables&#8221;</a>.</p>
+</li>
+<li>
+<p>Imported names (classes, fields, and
+methods). See <a href="#static-field-and-method-reference">Section 1.22, &#8220;Static Field and Method Reference&#8221;</a>.</p>
+</li>
+<li>
+<p>Lambda expressions and arguments. See <a href="#lambda-expressions">Section 1.20, &#8220;Lambda Expressions&#8221;</a>.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The rules described below are used in
+resolving names and properties when evaluating identifiers, function
+calls, and object properties and method calls.</p>
+</div>
+<div class="sect3">
+<h4 id="evaluating-identifiers"><a class="anchor" href="#evaluating-identifiers"></a>1.5.1. Evaluating Identifiers</h4>
+<div class="paragraph">
+<p>These steps are used for evaluating an identifier:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>If the identifier is a lambda argument passed
+to a lambda expression invocation, its value is returned.</p>
+</li>
+<li>
+<p>Else if the identifier is a variable, the
+associated expression is evaluated and returned.</p>
+</li>
+<li>
+<p>Else if the identifier is resolved by the
+<code>ELResolver</code>s, the value returned from the <code>ELResolver</code>s is returned.</p>
+</li>
+<li>
+<p>Else if the identifier is an imported static
+field, its value is returned.</p>
+</li>
+<li>
+<p>Else return not resolved.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>One implication of the explicit search order
+of the identifiers is that an identifier hides other identifiers (of the
+same name) that come after it in the list.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="evaluating-functions"><a class="anchor" href="#evaluating-functions"></a>1.5.2. Evaluating functions</h4>
+<div class="paragraph">
+<p>The expression with the syntax
+<em>func(args&#8230;&#8203;)(args&#8230;&#8203;)&#8230;&#8203;</em> can mean any of the following:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>A call to an EL fucntion with empty namespace.</p>
+</li>
+<li>
+<p>A call to a lambda expression.</p>
+</li>
+<li>
+<p>A call to the constructor of an imported class.</p>
+</li>
+<li>
+<p>A call to a static method that has been imported statically.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Note the above syntax allows the invocation
+of a lambda expression that returns another lambda expression, which is
+then invoked.</p>
+</div>
+<div class="paragraph">
+<p>The following steps are used to evaluate the
+above expression:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Evaluate the name of the function as an identifier:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>If the identifier is a lambda argument passed
+to a lambda expression invocation, its value is returned.</p>
+</li>
+<li>
+<p>Else if the identifier is a variable, the
+associated expression is evaluated and returned.</p>
+</li>
+<li>
+<p>Else if the identifier is resolved by the <code>ELResolver</code>s,
+the value returned from the <code>ELResolver</code>s is returned.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>If the result of evaluating the function name is a <code>LambdaExpression</code>,
+the <code>LambdaExpression</code> is invoked with the supplied
+arguments. If the result of evaluating the <code>LambdaExpression</code> is another
+<code>LambdaExpression</code>, and the syntax contains repeated function invocations,
+such as <em>func()()&#8230;&#8203;</em>, then the resultant <code>LambdaExpression</code> is in turn
+evaluated, and so on.</p>
+</li>
+<li>
+<p>Else if the function has been mapped
+previously in a <code>FunctionMapper</code>, the mapped method is invoked with the
+supplied arguments.</p>
+</li>
+<li>
+<p>Else if the function name is the name of an
+imported class, the constructor for this class is invoked with the
+supplied arguments.</p>
+</li>
+<li>
+<p>Else if the function name is the name of an
+imported static method, the method is invoked with the supplied
+arguments.</p>
+</li>
+<li>
+<p>Else error.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="evaluating-objects-with-properties"><a class="anchor" href="#evaluating-objects-with-properties"></a>1.5.3. Evaluating objects with properties</h4>
+<div class="paragraph">
+<p>The steps for evaluating an expression with
+<code>[]</code> or <code>.</code> operators (property reference and method call) are described in
+<a href="#operators-and">Section 1.6, &#8220;Operators <code>[]</code> and <code>.</code>&#8221;</a>. However, the
+syntax for <code>.</code> operator is also used to reference a static field, or to
+invoke a static method. Therefore if the expression with a <code>.</code> operator is
+not resolved by the <code>ELResolver</code>s, and if the identifier for the base
+object is the name of an imported class, the expression becomes a
+reference to a static field, or an invocation of a static method, of the
+imported class.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="invoking-method-expressions"><a class="anchor" href="#invoking-method-expressions"></a>1.5.4. Invoking method expressions</h4>
+<div class="paragraph">
+<p>A method expression can consist of either a
+single variable (e.g. <code>${name}</code>) or a property resolution on some
+object, via the <code>.</code> or <code>[]</code> operator (e.g. <code>${employee.getName}</code>).
+<a href="#operators-and">Section 1.6, &#8220;Operators <code>[]</code> and <code>.</code>&#8221;</a> describes how to
+invoke a method of an object. This form of method expressions allows
+arguments to the method to be specified in the EL expression (e.g.
+<code>${employee.getName()}</code>).</p>
+</div>
+<div class="paragraph">
+<p>To invoke a method expression of a single
+variable, the identifier is first evaluated, as described in
+<a href="#evaluating-identifiers">Section 1.5.1, &#8220;Evaluating Identifiers&#8221;</a>. If the
+identifier evaluates to a <code>jakarta.el.MethodExpression</code>, the method
+expression is invoked and the result returned, otherwise an error is
+raised. This form of method expression does not allow arguments to be
+specified in the EL expression.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="operators-and"><a class="anchor" href="#operators-and"></a>1.6. Operators <code>[]</code> and <code>.</code></h3>
+<div class="paragraph">
+<p>The EL follows ECMAScript in unifying the
+treatment of the <code>.</code> and <code>[]</code> operators.</p>
+</div>
+<div class="paragraph">
+<p><code>expr-a.identifier-b</code> is equivalent to
+<code>expr-a["identifier-b"]</code>; that is, the identifier <code>identifier-b</code> is
+used to construct a literal whose value is the identifier, and then the
+<code>[]</code> operator is used with that value.</p>
+</div>
+<div class="paragraph">
+<p>Similarly, <code>expr-a.identifier-b(params)</code> is
+equivalent to <code>expr-a["identifier-b"](params).</code></p>
+</div>
+<div class="paragraph">
+<p>The expression
+<code>expr-a["identifier-b"](params)</code> denotes a method invocation
+with parameters, where <code>params</code> is a comma-separated list of expressions
+denoting the parameters for the method call.</p>
+</div>
+<div class="paragraph">
+<p>To evaluate <code>expr-a[expr-b] or expr-a[expr-b](params)</code>:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Evaluate <code>expr-a</code> into <code>value-a</code>.</p>
+</li>
+<li>
+<p>If <code>value-a</code> is <code>null</code>:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>If <code>expr-a[expr-b]</code> is the last property being resolved:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>If the expression is a value expression and
+<code>ValueExpression.getValue(context)</code> was called to initiate this
+expression evaluation, return <code>null</code>.</p>
+</li>
+<li>
+<p>Otherwise, throw <code>PropertyNotFoundException</code>.<br>
+<em>[trying to de-reference null for an lvalue]</em></p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Otherwise, return <code>null</code>.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Evaluate <code>expr-b</code> into <code>value-b</code>.</p>
+</li>
+<li>
+<p>If <code>value-b</code> is <code>null</code>:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>If <code>expr-a[expr-b]</code> is the last property being resolved:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>If the expression is a value expression and
+<code>ValueExpression.getValue(context)</code> was called to initiate this
+expression evaluation, return <code>null</code>.</p>
+</li>
+<li>
+<p>Otherwise, throw <code>PropertyNotFoundException</code>.<br>
+<em>[trying to de-reference null for an lvalue]</em></p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Otherwise, return <code>null</code>.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>If the expression is a value expression:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>If <code>expr-a[expr-b]</code> is the last property being resolved:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>If <code>ValueExpression.getValue(context)</code> was
+called to initiate this expression evaluation:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>If the expression is a parametered method
+call, evaluate <code>params</code> into <code>param-values</code>, and invoke
+<code>elResolver.invoke(context, value-a, value-b, null, param-values)</code>.</p>
+</li>
+<li>
+<p>Otherwise, invoke <code>elResolver.getValue(value-a, value-b)</code>.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>If <code>ValueExpression.getType(context)</code> was
+called, invoke <code>elResolver.getType(context, value-a, value-b)</code>.</p>
+</li>
+<li>
+<p>If <code>ValueExpression.isReadOnly(context)</code> was
+called, invoke <code>elResolver.isReadOnly(context, value-a, value-b)</code>.</p>
+</li>
+<li>
+<p>If <code>ValueExpression.setValue(context, val)</code> was called,
+invoke <code>elResolver.setValue(context, value-a, value-b, val)</code>.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Otherwise:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>If the expression is a parametered method
+call, evaluate <code>params</code> into <code>param-values</code>, and invoke
+<code>elResolver.invoke(context, value-a, value-b, null, params)</code>.</p>
+</li>
+<li>
+<p>Otherwise, invoke <code>elResolver.getValue(value-a, value-b)</code>.</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Otherwise, the expression is a method expression:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>If <code>expr-a[expr-b]</code> is the last property being resolved:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Coerce <code>value-b</code> to <code>String</code>.</p>
+</li>
+<li>
+<p>If the expression is not a parametered method
+call, find the method on object <code>value-a</code> with name <code>value-b</code> and with
+the set of expected parameter types provided at parse time. If the
+method does not exist, or the return type does not match the expected
+return type provided at parse time, throw <code>MethodNotFoundException</code>.</p>
+</li>
+<li>
+<p>If <code>MethodExpression.invoke(context, params)</code> was called:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>If the expression is a parametered method
+call, evaluate <code>params</code> into <code>param-values</code>, and invoke
+<code>elResolver.invoke(context, value-a, value-b, paramTypes, param-values)</code>
+where <code>paramTypes</code> is the parameter types, if provided at parse time, and
+is <code>null</code> otherwise.</p>
+</li>
+<li>
+<p>Otherwise, invoke the found method with the parameters passed to
+the invoke method.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>If <code>MethodExpression.getMethodInfo(context)</code>
+was called, construct and return a new <code>MethodInfo</code> object.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Otherwise:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>If the expression is a parametered method call, evaluate <code>params</code>
+into <code>param-values</code>, and invoke
+<code>elResolver.invoke(context, value-a, value-b, null, params)</code>.</p>
+</li>
+<li>
+<p>Otherwise, invoke <code>elResolver.getValue(value-a, value-b)</code>.</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="arithmetic-operators"><a class="anchor" href="#arithmetic-operators"></a>1.7. Arithmetic Operators</h3>
+<div class="paragraph">
+<p>Arithmetic is provided to act on integer (<code>BigInteger</code> and <code>Long</code>) and
+floating point (<code>BigDecimal</code> and <code>Double</code>) values. There are 5 operators:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Addition: <code>+</code></p>
+</li>
+<li>
+<p>Substraction: <code>-</code></p>
+</li>
+<li>
+<p>Multiplication: <code>*</code></p>
+</li>
+<li>
+<p>Division: <code>/</code> and <code>div</code></p>
+</li>
+<li>
+<p>Remainder (modulo): <code>%</code> and <code>mod</code></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The last two operators are available in both
+syntaxes to be consistent with XPath and ECMAScript.</p>
+</div>
+<div class="paragraph">
+<p>The evaluation of arithmetic operators is
+described in the following sections. <code>A</code> and <code>B</code> are the evaluation of
+subexpressions.</p>
+</div>
+<div class="sect3">
+<h4 id="binary-operators-a-b"><a class="anchor" href="#binary-operators-a-b"></a>1.7.1. Binary operators - <code>A {+,-,*} B</code></h4>
+<div class="ulist">
+<ul>
+<li>
+<p>If <code>A</code> and <code>B</code> are <code>null</code>, return <code>(Long) 0</code></p>
+</li>
+<li>
+<p>If <code>A</code> or <code>B</code> is a <code>BigDecimal</code>, coerce both to <code>BigDecimal</code> and
+then:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>If operator is <code>+</code>, return <code>A.add(B)</code></p>
+</li>
+<li>
+<p>If operator is <code>-</code>, return <code>A.subtract(B)</code></p>
+</li>
+<li>
+<p>If operator is <code>*</code>, return <code>A.multiply(B)</code></p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>If <code>A</code> or <code>B</code> is a <code>Float</code>, <code>Double</code>, or <code>String</code> containing <code>.</code>,
+<code>e</code>, or <code>E</code>:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>If <code>A</code> or <code>B</code> is <code>BigInteger</code>, coerce both <code>A</code> and <code>B</code> to <code>BigDecimal</code>
+and apply operator</p>
+</li>
+<li>
+<p>Otherwise, coerce both <code>A</code> and <code>B</code> to <code>Double</code> and apply operator</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>If <code>A</code> or <code>B</code> is <code>BigInteger</code>, coerce both to <code>BigInteger</code> and then:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>If operator is <code>+</code>, return <code>A.add(B)</code></p>
+</li>
+<li>
+<p>If operator is <code>-</code>, return <code>A.subtract(B)</code></p>
+</li>
+<li>
+<p>If operator is <code>*</code>, return <code>A.multiply(B)</code></p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Otherwise coerce both <code>A</code> and <code>B</code> to <code>Long</code> and apply operator</p>
+</li>
+<li>
+<p>If operator results in exception, error</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="binary-operator-a-div-b"><a class="anchor" href="#binary-operator-a-div-b"></a>1.7.2. Binary operator - <code>A {/,div} B</code></h4>
+<div class="ulist">
+<ul>
+<li>
+<p>If <code>A</code> and <code>B</code> are <code>null</code>, return <code>(Long) 0</code></p>
+</li>
+<li>
+<p>If <code>A</code> or <code>B</code> is a <code>BigDecimal</code> or a <code>BigInteger</code>, coerce both to
+<code>BigDecimal</code> and return <code>A.divide(B, BigDecimal.ROUND_HALF_UP)</code></p>
+</li>
+<li>
+<p>Otherwise, coerce both <code>A</code> and <code>B</code> to <code>Double</code> and apply operator</p>
+</li>
+<li>
+<p>If operator results in exception, error</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="binary-operator-a-mod-b"><a class="anchor" href="#binary-operator-a-mod-b"></a>1.7.3. Binary operator - <code>A {%,mod} B</code></h4>
+<div class="ulist">
+<ul>
+<li>
+<p>If <code>A</code> and <code>B</code> are <code>null</code>, return <code>(Long) 0</code></p>
+</li>
+<li>
+<p>If <code>A</code> or <code>B</code> is a <code>BigDecimal</code>, <code>Float</code>, <code>Double</code>, or <code>String</code>
+containing <code>.</code>, <code>e</code>, or <code>E</code>, coerce both <code>A</code> and <code>B</code> to <code>Double</code>
+and apply operator</p>
+</li>
+<li>
+<p>If <code>A</code> or <code>B</code> is a <code>BigInteger</code>, coerce both to <code>BigInteger</code> and
+return <code>A.remainder(B)</code></p>
+</li>
+<li>
+<p>Otherwise coerce both <code>A</code> and <code>B</code> to <code>Long</code> and apply operator</p>
+</li>
+<li>
+<p>If operator results in exception, error</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="unary-minus-operator-a"><a class="anchor" href="#unary-minus-operator-a"></a>1.7.4. Unary minus operator - <code>-A</code></h4>
+<div class="ulist">
+<ul>
+<li>
+<p>If <code>A</code> is <code>null</code>, return <code>(Long) 0</code></p>
+</li>
+<li>
+<p>If <code>A</code> is a <code>BigDecimal</code> or <code>BigInteger</code>, return <code>A.negate()</code></p>
+</li>
+<li>
+<p>If <code>A</code> is a <code>String</code>:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>If <code>A</code> contains <code>.</code>, <code>e</code>, or <code>E</code>, coerce to a <code>Double</code> and apply
+operator</p>
+</li>
+<li>
+<p>Otherwise, coerce to a <code>Long</code> and apply operator</p>
+</li>
+<li>
+<p>If operator results in exception, error</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>If <code>A</code> is <code>Byte</code>, <code>Short</code>, <code>Integer</code>, <code>Long</code>, <code>Float</code>, <code>Double</code></p>
+<div class="ulist">
+<ul>
+<li>
+<p>Retain type, apply operator</p>
+</li>
+<li>
+<p>If operator results in exception, error</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Otherwise, error</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="string-concatenation-operator-a-b"><a class="anchor" href="#string-concatenation-operator-a-b"></a>1.8. String Concatenation Operator - <code>A += B</code></h3>
+<div class="paragraph">
+<p>To evaluate <code>A += B</code>:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Coerce <code>A</code> and <code>B</code> to String</p>
+</li>
+<li>
+<p>Return the concatenated string of <code>A</code> and <code>B</code></p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="relational-operators"><a class="anchor" href="#relational-operators"></a>1.9. Relational Operators</h3>
+<div class="paragraph">
+<p>The relational operators are:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>==</code> and <code>eq</code></p>
+</li>
+<li>
+<p><code>!=</code> and <code>ne</code></p>
+</li>
+<li>
+<p><code>&lt;</code> and <code>lt</code></p>
+</li>
+<li>
+<p><code>&gt;</code> and <code>gt</code></p>
+</li>
+<li>
+<p><code>&lt;=</code> and <code>le</code></p>
+</li>
+<li>
+<p><code>&gt;=</code> and <code>ge</code></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The second versions of the last 4 operators
+are made available to avoid having to use entity references in XML
+syntax and have the exact same behavior, i.e. <code>&lt;</code> behaves the same as
+<code>lt</code> and so on.</p>
+</div>
+<div class="paragraph">
+<p>The evaluation of relational operators is
+described in the following sections.</p>
+</div>
+<div class="sect3">
+<h4 id="a-ltgtlege-b"><a class="anchor" href="#a-ltgtlege-b"></a>1.9.1. <code>A {&lt;,&gt;,&lt;=,&gt;=,lt,gt,le,ge} B</code></h4>
+<div class="ulist">
+<ul>
+<li>
+<p>If <code>A==B</code>, if operator is <code>&lt;=</code>, <code>le</code>, <code>&gt;=</code>, or <code>ge</code> return <code>true</code></p>
+</li>
+<li>
+<p>If <code>A</code> is <code>null</code> or <code>B</code> is <code>null</code>, return <code>false</code></p>
+</li>
+<li>
+<p>If <code>A</code> or <code>B</code> is <code>BigDecimal</code>, coerce both <code>A</code> and <code>B</code> to <code>BigDecimal</code>
+and use the return value of <code>A.compareTo(B)</code></p>
+</li>
+<li>
+<p>If <code>A</code> or <code>B</code> is <code>Float</code> or <code>Double</code> coerce both <code>A</code> and <code>B</code> to
+<code>Double</code> apply operator</p>
+</li>
+<li>
+<p>If <code>A</code> or <code>B</code> is <code>BigInteger</code>, coerce both <code>A</code> and <code>B</code> to <code>BigInteger</code>
+and use the return value of <code>A.compareTo(B)</code></p>
+</li>
+<li>
+<p>If <code>A</code> or <code>B</code> is <code>Byte</code>, <code>Short</code>, <code>Character</code>, <code>Integer</code>, or <code>Long</code>
+coerce both <code>A</code> and <code>B</code> to <code>Long</code> and apply operator</p>
+</li>
+<li>
+<p>If <code>A</code> or <code>B</code> is <code>String</code> coerce both <code>A</code> and <code>B</code> to <code>String</code>, compare
+lexically</p>
+</li>
+<li>
+<p>If <code>A</code> is <code>Comparable</code>, then:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>If <code>A.compareTo(B)</code> throws exception, error</p>
+</li>
+<li>
+<p>Otherwise use result of <code>A.compareTo(B)</code></p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>If <code>B</code> is <code>Comparable</code>, then:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>If <code>B.compareTo(A)</code> throws exception, error</p>
+</li>
+<li>
+<p>Otherwise use result of <code>B.compareTo(A)</code></p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Otherwise, error</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="a-eqne-b"><a class="anchor" href="#a-eqne-b"></a>1.9.2. <code>A {==,!=,eq,ne} B</code></h4>
+<div class="ulist">
+<ul>
+<li>
+<p>If <code>A==B</code>, apply operator</p>
+</li>
+<li>
+<p>If <code>A</code> is <code>null</code> or <code>B</code> is <code>null</code> return <code>false</code> for <code>==</code> or <code>eq</code>, <code>true</code>
+for <code>!=</code> or <code>ne</code></p>
+</li>
+<li>
+<p>If <code>A</code> or <code>B</code> is <code>BigDecimal</code>, coerce both <code>A</code> and <code>B</code> to
+<code>BigDecimal</code> and then:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>If operator is <code>==</code> or <code>eq</code>, return <code>A.equals(B)</code></p>
+</li>
+<li>
+<p>If operator is <code>!=</code> or <code>ne</code>, retur <code>!A.equals(B)</code></p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>If <code>A</code> or <code>B</code> is <code>Float</code> or <code>Double</code> coerce both <code>A</code> and <code>B</code> to
+<code>Double</code>, apply operator</p>
+</li>
+<li>
+<p>If <code>A</code> or <code>B</code> is <code>BigInteger</code>, coerce both <code>A</code> and <code>B</code> to
+<code>BigInteger</code> and then:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>If operator is <code>==</code> or <code>eq</code>, return <code>A.equals(B)</code></p>
+</li>
+<li>
+<p>If operator is <code>!=</code> or <code>ne</code>, return <code>!A.equals(B)</code></p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>If <code>A</code> or <code>B</code> is <code>Byte</code>, <code>Short</code>, <code>Character</code>, <code>Integer</code>, or <code>Long</code>
+coerce both <code>A</code> and <code>B</code> to <code>Long</code>, apply operator</p>
+</li>
+<li>
+<p>If <code>A</code> or <code>B</code> is <code>Boolean</code> coerce both <code>A</code> and <code>B</code> to <code>Boolean</code>,
+apply operator</p>
+</li>
+<li>
+<p>If <code>A</code> or <code>B</code> is an enum, coerce both <code>A</code> and <code>B</code> to enum, apply
+operator</p>
+</li>
+<li>
+<p>If <code>A</code> or <code>B</code> is <code>String</code> coerce both <code>A</code> and <code>B</code> to <code>String</code>, compare
+lexically</p>
+</li>
+<li>
+<p>Otherwise if an error occurs while calling <code>A.equals(B)</code>, error</p>
+</li>
+<li>
+<p>Otherwise, apply operator to result of <code>A.equals(B)</code></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="logical-operators"><a class="anchor" href="#logical-operators"></a>1.10. Logical Operators</h3>
+<div class="paragraph">
+<p>The logical operators are:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>&amp;&amp;</code> and <code>and</code></p>
+</li>
+<li>
+<p><code>||</code> and <code>or</code></p>
+</li>
+<li>
+<p><code>!</code> and <code>not</code></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The evaluation of logical operators is described in the following
+sections.</p>
+</div>
+<div class="sect3">
+<h4 id="binary-operator-a-andor-b"><a class="anchor" href="#binary-operator-a-andor-b"></a>1.10.1. Binary operator - <code>A {&amp;&amp;,||,and,or} B</code></h4>
+<div class="ulist">
+<ul>
+<li>
+<p>Coerce both <code>A</code> and <code>B</code> to <code>Boolean</code>, apply operator</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The operator stops as soon as the expression can be determined, i.e.,
+<code>A and B and C and D</code> – if <code>B</code> is false, then only <code>A and B</code> is
+evaluated.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="unary-not-operator-not-a"><a class="anchor" href="#unary-not-operator-not-a"></a>1.10.2. Unary not operator - <code>{!,not} A</code></h4>
+<div class="ulist">
+<ul>
+<li>
+<p>Coerce <code>A</code> to <code>Boolean</code>, apply operator</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="empty-operator-empty-a"><a class="anchor" href="#empty-operator-empty-a"></a>1.11. Empty Operator - <code>empty A</code></h3>
+<div class="paragraph">
+<p>The <code>empty</code> operator is a prefix operator that can be used to determine
+if a value is <code>null</code> or empty.</p>
+</div>
+<div class="paragraph">
+<p>To evaluate <code>empty A</code>:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>If <code>A</code> is <code>null</code>, return <code>true</code></p>
+</li>
+<li>
+<p>Otherwise, if <code>A</code> is the empty string, then return <code>true</code></p>
+</li>
+<li>
+<p>Otherwise, if <code>A</code> is an empty array, then return <code>true</code></p>
+</li>
+<li>
+<p>Otherwise, if <code>A</code> is an empty <code>Map</code>, return <code>true</code></p>
+</li>
+<li>
+<p>Otherwise, if <code>A</code> is an empty <code>Collection</code>, return <code>true</code></p>
+</li>
+<li>
+<p>Otherwise return <code>false</code></p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="conditional-operator-a-b-c"><a class="anchor" href="#conditional-operator-a-b-c"></a>1.12. Conditional Operator - <code>A ? B : C</code></h3>
+<div class="paragraph">
+<p>Evaluate <code>B</code> or <code>C</code>, depending on the result of the evaluation of <code>A</code>.</p>
+</div>
+<div class="paragraph">
+<p>Coerce <code>A</code> to <code>Boolean</code>:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>If <code>A</code> is <code>true</code>, evaluate and return <code>B</code></p>
+</li>
+<li>
+<p>If <code>A</code> is <code>false</code>, evaluate and return <code>C</code></p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="assignment-operator-a-b"><a class="anchor" href="#assignment-operator-a-b"></a>1.13. Assignment Operator - <code>A = B</code></h3>
+<div class="paragraph">
+<p>Assign the value of <code>B</code> to <code>A</code>. <code>A</code> must be an <em>lvalue</em>, otherwise, a
+<code>PropertyNotWritableException</code> will be thrown.</p>
+</div>
+<div class="paragraph">
+<p>The assignment operator is right-associative. For instance, <code>A=B=C</code> is
+the same as <code>A=(B=C)</code>.</p>
+</div>
+<div class="paragraph">
+<p>To evaluate <code>expr-a</code> = <code>expr-b</code>:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Evaluate <code>expr-a</code>, up to the last property resolution, to (<code>base-a</code>,
+<code>prop-a</code>)</p>
+</li>
+<li>
+<p>If <code>base-a</code> is <code>null</code>, and <code>prop-a</code> is a <code>String</code>:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>If <code>prop-a</code> is a Lambda parameter, throw a
+<code>PropertyNotWritableException</code></p>
+</li>
+<li>
+<p>If prop-a is an EL variable (see <a href="#variables">Section 1.19, &#8220;Variables&#8221;</a>),
+evaluate the <code>ValueExpression</code> the variable was set to, to obtain the
+new (<code>base-a</code>, <code>prop-a</code>)</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Evaluate <code>expr-b</code>, to <code>value-b</code></p>
+</li>
+<li>
+<p>Invoke <code>ELResolver.setValue(base-a, prop-a, value-b)</code></p>
+</li>
+<li>
+<p>Return <code>value-b</code></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The behavior of the assignment operator is determined by the
+<code>ELResolver</code>. For instance, in a stand-alone environment, the class
+<code>StandardELContext</code> contains a default <code>ELResolver</code> that allows the
+assignment of an expression to a non-existing name, resulting in the
+creation of a bean with the given name in the local bean repository. A
+JSP container may use the <code>ScopeAttributeELResolver</code> to assign values
+to scope attributes, or to create attributes in the page scope.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="semicolon-operator-a-b"><a class="anchor" href="#semicolon-operator-a-b"></a>1.14. Semicolon Operator - <code>A ; B</code></h3>
+<div class="paragraph">
+<p>The semicolon operator behaves like the comma operator in C.</p>
+</div>
+<div class="paragraph">
+<p>To evaluate <code>A;B, A</code> is first evaluated, and its value is discarded.
+<code>B</code> is then evaluated and its value is returned.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="parentheses"><a class="anchor" href="#parentheses"></a>1.15. Parentheses</h3>
+<div class="paragraph">
+<p>Parentheses can be used to change precedence,
+as in: <code>${(a*(b+c))}</code></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="operator-precedence"><a class="anchor" href="#operator-precedence"></a>1.16. Operator Precedence</h3>
+<div class="paragraph">
+<p>Highest to lowest, left-to-right.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>[] .</code></p>
+</li>
+<li>
+<p><code>()</code></p>
+</li>
+<li>
+<p><code>-</code> (unary) <code>not ! empty</code></p>
+</li>
+<li>
+<p><code>* / div % mod</code></p>
+</li>
+<li>
+<p><code>+ -</code> (binary)</p>
+</li>
+<li>
+<p><code>+=</code></p>
+</li>
+<li>
+<p><code>&lt; &gt; &lt;= &gt;= lt gt le ge</code></p>
+</li>
+<li>
+<p><code>== != eq ne</code></p>
+</li>
+<li>
+<p><code>&amp;&amp; and</code></p>
+</li>
+<li>
+<p><code>|| or</code></p>
+</li>
+<li>
+<p><code>? :</code></p>
+</li>
+<li>
+<p><code>-&gt;</code> (Lambda Expression)</p>
+</li>
+<li>
+<p><code>=</code></p>
+</li>
+<li>
+<p><code>;</code></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Qualified functions with a namespace prefix have precedence over the
+operators. Thus the expression <code>${c?b:f()}</code> is illegal because <code>b:f()</code>
+is being parsed as a qualified function instead of part of a
+conditional expression. As usual, <code>()</code> can be used to make
+the precedence explicit, e.g <code>${c?b:(f())}</code>.</p>
+</div>
+<div class="paragraph">
+<p>The symbol <code>-&gt;</code> in a Lambda Expression behaves like an operator for
+the purpose of ordering the operator precedence, and it has a higher
+precedence than the assignment and semicolon operators. The following
+examples illustrates when <code>()</code> is and is not needed.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>v = x-&gt;x+1</code></p>
+</li>
+<li>
+<p><code>x-&gt; (a=x)</code></p>
+</li>
+<li>
+<p><code>x-&gt; c?x+1:x+2</code></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>All operators are left associative except for the <code>?:</code>, <code>=</code>, and <code>-&gt;</code>
+operators, which are right associative. For instance, <code>a=b=c</code> is the
+parsed as <code>a=(b=c)</code>, and <code>x-&gt;y-&gt;x+y</code> is parsed as <code>x-&gt;(y-&gt;x+y)</code>.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="reserved-words"><a class="anchor" href="#reserved-words"></a>1.17. Reserved Words</h3>
+<div class="paragraph">
+<p>The following words are reserved for the
+language and must not be used as identifiers.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 20%;">
+<col style="width: 20%;">
+<col style="width: 20%;">
+<col style="width: 20%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">and</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">eq</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">gt</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">true</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">instanceof</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">or</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ne</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">le</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">empty</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">not</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">lt</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ge</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">null</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">div</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">mod</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Note that many of these words are not in the
+language now, but they may be in the future, so developers must avoid
+using these words.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="functions"><a class="anchor" href="#functions"></a>1.18. Functions</h3>
+<div class="paragraph">
+<p>The EL has qualified functions, reusing the
+notion of qualification from XML namespaces (and attributes), XSL
+functions, and JSP custom actions. Functions are mapped to public static
+methods in Java classes.</p>
+</div>
+<div class="paragraph">
+<p>The full syntax is that of qualified n-ary
+functions:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre> [ns:]f([a<sub>1</sub>[,a<sub>2</sub>[,&#8230;&#8203;[,a<sub>n</sub>]]]])</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Where <code>ns</code> is the namespace prefix, <code>f</code> is
+the name of the function, and <code>a</code> is an argument.</p>
+</div>
+<div class="paragraph">
+<p>EL functions are mapped, resolved and bound
+at parse time. It is the responsibility of the <code>FunctionMapper</code> class to
+provide the mapping of namespace-qualified functions to static methods
+of specific classes when expressions are created. If no <code>FunctionMapper</code>
+is provided (by passing in <code>null</code>), functions are disabled.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="variables"><a class="anchor" href="#variables"></a>1.19. Variables</h3>
+<div class="paragraph">
+<p>Just like <code>FunctionMapper</code> provides a
+flexible mechanism to add functions to the EL, <code>VariableMapper</code> provides
+a flexible mechanism to support the notion of EL variables. An EL
+variable does not directly refer to a model object that can then be
+resolved by an <code>ELResolver</code>. Instead, an EL variable refers to an EL
+expression. The evaluation of that EL expression yields the value
+associated with the EL variable.</p>
+</div>
+<div class="paragraph">
+<p>EL variables are mapped, resolved and bound
+at parse time. It is the responsibility of the <code>VariableMapper</code> class to
+provide the mapping of EL variables to <code>ValueExpression</code>s when
+expressions are created. If no <code>VariableMapper</code> is provided (by passing
+in <code>null</code>), variable mapping is disabled.</p>
+</div>
+<div class="paragraph">
+<p>See the <code>jakarta.el</code> package description for more details.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="lambda-expressions"><a class="anchor" href="#lambda-expressions"></a>1.20. Lambda Expressions</h3>
+<div class="paragraph">
+<p>A lambda expression is a <code>ValueExpression</code> with
+parameters. The syntax is similar to the lambda expression in the Java
+Language, except that in EL, the body of the lambda expression is an EL
+expression. These are some examples:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>x-&gt;x+1</code></p>
+</li>
+<li>
+<p><code>(x,y)-&gt;x+y</code></p>
+</li>
+<li>
+<p><code>()-&gt;64</code></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The identifiers to the left of <code>-&gt;</code> are lambda
+parameters. The parenthesis is optional if and only if there is one
+parameter.</p>
+</div>
+<div class="paragraph">
+<p>A lambda expression behaves like a function.
+It can be invoked immediately:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>((x,y)-&gt;x+y)(3,4)</code> evaluates to <code>7</code></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>When a lambda expression is assigned, it can
+be referenced and invoked indirectly:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>v = (x,y)-&gt;x+y; v(3,4)</code> evaluates to <code>7</code></p>
+</li>
+<li>
+<p><code>fact = n -&gt; n==0? 1: n*fact(n-1); fact(5)</code> evaluates to <code>120</code></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>It can also be passed as an argument to a
+method, and be invoked in the method, by invoking
+<code>jakarta.el.LambdaExpression.invoke()</code>, such as:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>employees.where(e-&gt;e.firstName == 'Bob')</code></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>When a lambda expression is invoked, the
+expression in the body is evaluated, with its formal parameters replaced
+by the arguments supplied at the invocation. The number of arguments
+must be equal to or more than the number the formal parameters. Any
+extra arguments are ignored.</p>
+</div>
+<div class="paragraph">
+<p>A lambda expression can be nested within another lambda expression, like:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>customers.select(c-&gt;[c.name, c.orders.sum(o-&gt;o.total)])</code></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The scope of a lambda argument is the body of
+the lambda expression. A lambda argument hides other EL variables,
+identifiers or arguments of the nesting lambda expressions, of the same
+name.</p>
+</div>
+<div class="paragraph">
+<p>Note that in the case of nested lambda
+expressions where the body of the inner lambda expression contains
+references to parameters of outer lambda expressions, such as:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>x-&gt;y-&gt;x+y</code></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>the scope of the outer lambda parameters
+extends to cover the inner body. For instance, with the above example,
+the argument <code>x</code> must be in scope when <code>x+y</code> is evaluated, even though the
+body of the outer lambda expression has already been executed.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="enums"><a class="anchor" href="#enums"></a>1.21. Enums</h3>
+<div class="paragraph">
+<p>The Unified EL supports Java enumerated
+types. Coercion rules for dealing with enumerated types are included in
+the following section. Also, when referring to values that are instances
+of an enumerated type from within an EL expression, use the literal
+string value to cause coercion to happen via the below rules. For
+example, let’s say we have an enum called <code>Suit</code> that has members <code>Heart</code>,
+<code>Diamond</code>, <code>Club</code>, and <code>Spade</code>. Furthermore, let’s say we have a reference in
+the EL, <code>mySuit</code>, that is a <code>Spade</code>. If you want to test for equality with
+the <code>Spade</code> enum, you would say <code>${mySuit == 'Spade'}</code>. The type of the
+<code>mySuit</code> will trigger the invocation of <code>Enum.valueOf(Suit.class, 'Spade')</code>.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="static-field-and-method-reference"><a class="anchor" href="#static-field-and-method-reference"></a>1.22. Static Field and Method Reference</h3>
+<div class="paragraph">
+<p>A static field or static method of a Java
+class can be referenced with the syntax <em>classname.field</em>, such as:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>Boolean.TRUE</code></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>the classname is the name of a class, without
+the package name.</p>
+</div>
+<div class="paragraph">
+<p>An enum constant is a public static field, so
+the same syntax can be used to refer to an enum constant, like the
+following:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>RoundingMode.FLOOR</code></p>
+</li>
+</ul>
+</div>
+<div class="sect3">
+<h4 id="access-restrictions-and-imports"><a class="anchor" href="#access-restrictions-and-imports"></a>1.22.1. Access Restrictions and Imports</h4>
+<div class="paragraph">
+<p>For security, the following restrictions are
+enforced.</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Only the public static fields and methods can be referenced.</p>
+</li>
+<li>
+<p>Static fields cannot be modified.</p>
+</li>
+<li>
+<p>Except for classes with <code>java.lang.*</code> package
+names, a class has to be explicitly imported before its static fields or
+methods can be referenced.</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect3">
+<h4 id="imports-of-packages-classes-and-static-fields"><a class="anchor" href="#imports-of-packages-classes-and-static-fields"></a>1.22.2. Imports of Packages, Classes, and Static Fields</h4>
+<div class="paragraph">
+<p>Either a class or a package can be explicitly
+imported into the EL evaluation environment. Importing a package imports
+all the public, concrete classes in the package. The classes that can be
+imported are restricted to the classes that can be loaded by the current
+class loader.</p>
+</div>
+<div class="paragraph">
+<p>By default, the following packages are
+imported by the EL environment:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>java.lang.*</code></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>A static field can also be imported
+statically. A statically imported static field can be referenced by the
+field name, without the class name.</p>
+</div>
+<div class="paragraph">
+<p>The imports of packages, classes, and static
+fields are handled by the <code>ImportHandler</code> in the <code>ELContext</code>.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="constructor-reference"><a class="anchor" href="#constructor-reference"></a>1.22.3. Constructor Reference</h4>
+<div class="paragraph">
+<p>A class name reference, followed by arguments in parenthesis, such as:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>Boolean(true)</code></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>denotes the invocation of the constructor of
+the class with the supplied arguments. The same restrictions (the class
+must be public and has already been imported) for static methods apply
+to the constructor calls.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="type-conversion"><a class="anchor" href="#type-conversion"></a>1.23. Type Conversion</h3>
+<div class="paragraph">
+<p>Every expression is evaluated in the context
+of an expected type. The result of the expression evaluation may not
+match the expected type exactly, so the rules described in the following
+sections are applied.</p>
+</div>
+<div class="paragraph">
+<p>Custom type conversions can be specified in
+an <code>ELResolver</code> by implementing the method <code>convertToType</code>. More than one
+<code>ELResolver</code> can be specified for performing custom conversions, and they
+are selected and applied in the order of their positions in the
+<code>ELResolver</code> chain, as usual.</p>
+</div>
+<div class="paragraph">
+<p>During expression evaluations, the custom
+type converters are first selected and applied. If there is no custom
+type converter for the conversion, the default conversions specified in
+the following sections are used.</p>
+</div>
+<div class="sect3">
+<h4 id="to-coerce-a-value-x-to-type-y"><a class="anchor" href="#to-coerce-a-value-x-to-type-y"></a>1.23.1. To Coerce a Value <code>X</code> to Type <code>Y</code></h4>
+<div class="ulist">
+<ul>
+<li>
+<p>If <code>X</code> is <code>null</code> and <code>Y</code> is not a primitive type and also not a <code>String</code>,
+return <code>null</code></p>
+</li>
+<li>
+<p>If <code>X</code> is of a primitive type, Let <code>X’</code> be the equivalent "boxed form"
+of <code>X</code><br>
+Otherwise, Let <code>X’</code> be the same as <code>X</code></p>
+</li>
+<li>
+<p>If <code>Y</code> is of a primitive type, Let <code>Y’</code> be the equivalent "boxed form"
+of <code>Y</code><br>
+Otherwise, Let <code>Y’</code> be the same as <code>Y</code></p>
+</li>
+<li>
+<p>Apply the rules in Sections
+<a href="#Coerce A to String">1.23.2</a> to <a href="#Coerce A to Any Other Type T">1.23.7</a>
+for coercing <code>X’</code> to <code>Y’</code></p>
+</li>
+<li>
+<p>If <code>Y</code> is a primitive type, then the result
+is found by "unboxing" the result of the coercion. If the result of the
+coercion is <code>null</code>, then error</p>
+</li>
+<li>
+<p>If <code>Y</code> is not a primitive type, then the
+result is the result of the coercion</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>For example, if coercing an <code>int</code> to a <code>String</code>, "box" the <code>int</code> into an
+<code>Integer</code> and apply the rule for coercing an <code>Integer</code> to a <code>String</code>. Or
+if coercing a <code>String</code> to a <code>double</code>, apply the rule for coercing a
+<code>String</code> to a <code>Double</code>, then "unbox" the resulting <code>Double</code>, making sure
+the resulting <code>Double</code> isn’t actually <code>null</code>.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="coerce-a-to-string"><a class="anchor" href="#coerce-a-to-string"></a>1.23.2. Coerce <code>A</code> to <code>String</code></h4>
+<div class="ulist">
+<ul>
+<li>
+<p>If <code>A</code> is <code>null</code> , return <code>""</code></p>
+</li>
+<li>
+<p>Otherwise, if <code>A</code> is <code>String</code>, return <code>A</code></p>
+</li>
+<li>
+<p>Otherwise, if <code>A</code> is <code>Enum</code>, return <code>A.name()</code></p>
+</li>
+<li>
+<p>Otherwise, if <code>A.toString()</code> throws an exception, error</p>
+</li>
+<li>
+<p>Otherwise, return <code>A.toString()</code></p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="coerce-a-to-number-type-n"><a class="anchor" href="#coerce-a-to-number-type-n"></a>1.23.3. Coerce <code>A</code> to <code>Number</code> type <code>N</code></h4>
+<div class="ulist">
+<ul>
+<li>
+<p>If <code>A</code> is <code>null</code> and <code>N</code> is not a primitive type, return <code>null</code></p>
+</li>
+<li>
+<p>If <code>A</code> is <code>null</code> or <code>""</code>, return <code>0</code></p>
+</li>
+<li>
+<p>If <code>A</code> is <code>Character</code>, convert <code>A</code> to
+<code>new Short((short)a.charValue())</code>, and apply the following rules</p>
+</li>
+<li>
+<p>If <code>A</code> is <code>Boolean</code>, then error</p>
+</li>
+<li>
+<p>If <code>A</code> is <code>Number</code> type <code>N</code>, return <code>A</code></p>
+</li>
+<li>
+<p>If <code>A</code> is <code>Number</code>, coerce quietly to type
+<code>N</code> using the following algorithm:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>If <code>N</code> is <code>BigInteger</code>:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>If <code>A</code> is a <code>BigDecimal</code>, return <code>A.toBigInteger()</code></p>
+</li>
+<li>
+<p>Otherwise, return <code>BigInteger.valueOf(A.longValue())</code></p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>If <code>N</code> is <code>BigDecimal</code>:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>If <code>A</code> is a <code>BigInteger</code>, return <code>new BigDecimal(A)</code></p>
+</li>
+<li>
+<p>Otherwise, return <code>new BigDecimal(A.doubleValue())</code></p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>If <code>N</code> is <code>Byte</code>, return <code>new Byte(A.byteValue())</code></p>
+</li>
+<li>
+<p>If <code>N</code> is <code>Short</code>, return <code>new Short(A.shortValue())</code></p>
+</li>
+<li>
+<p>If <code>N</code> is <code>Integer</code>, return <code>new Integer(A.intValue())</code></p>
+</li>
+<li>
+<p>If <code>N</code> is <code>Long</code>, return <code>new Long(A.longValue())</code></p>
+</li>
+<li>
+<p>If <code>N</code> is <code>Float</code>, return <code>new Float(A.floatValue())</code></p>
+</li>
+<li>
+<p>If <code>N</code> is <code>Double</code>, return <code>new Double(A.doubleValue())</code></p>
+</li>
+<li>
+<p>Otherwise, error</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>If <code>A</code> is <code>String</code>, then:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>If <code>N</code> is <code>BigDecimal</code> then:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>If <code>new BigDecimal(A)</code> throws an exception then error</p>
+</li>
+<li>
+<p>Otherwise, return <code>new BigDecimal(A)</code></p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>If <code>N</code> is <code>BigInteger</code> then:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>If <code>new BigInteger(A)</code> throws an exception then error</p>
+</li>
+<li>
+<p>Otherwise, return <code>new BigInteger(A)</code></p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>If <code>N.valueOf(A)</code> throws an exception, then error</p>
+</li>
+<li>
+<p>Otherwise, return <code>N.valueOf(A)</code></p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Otherwise, error</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="coerce-a-to-character-or-char"><a class="anchor" href="#coerce-a-to-character-or-char"></a>1.23.4. Coerce <code>A</code> to <code>Character</code> or <code>char</code></h4>
+<div class="ulist">
+<ul>
+<li>
+<p>If <code>A</code> is <code>null</code> and the target type is not the primitive type <code>char</code>,
+return <code>null</code></p>
+</li>
+<li>
+<p>If <code>A</code> is <code>null</code> or <code>""</code>, return <code>(char)0</code></p>
+</li>
+<li>
+<p>If <code>A</code> is <code>Character</code>, return <code>A</code></p>
+</li>
+<li>
+<p>If <code>A</code> is <code>Boolean</code>, error</p>
+</li>
+<li>
+<p>If <code>A</code> is <code>Number</code>, coerce quietly to type
+<code>Short</code>, then return a <code>Character</code> whose numeric value is equivalent to
+that of a <code>Short</code></p>
+</li>
+<li>
+<p>If <code>A</code> is <code>String</code>, return <code>A.charAt(0)</code></p>
+</li>
+<li>
+<p>Otherwise, error</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="coerce-a-to-boolean-or-boolean"><a class="anchor" href="#coerce-a-to-boolean-or-boolean"></a>1.23.5. Coerce <code>A</code> to <code>Boolean</code> or <code>boolean</code></h4>
+<div class="ulist">
+<ul>
+<li>
+<p>If <code>A</code> is <code>null</code> and the target type is not the
+primitive type <code>boolean</code>, return <code>null</code></p>
+</li>
+<li>
+<p>If <code>A</code> is <code>null</code> or <code>""</code>, return <code>false</code></p>
+</li>
+<li>
+<p>Otherwise, if <code>A</code> is a <code>Boolean</code>, return <code>A</code></p>
+</li>
+<li>
+<p>Otherwise, if <code>A</code> is a <code>String</code>, and
+<code>Boolean.valueOf(A)</code> does not throw an exception, return it</p>
+</li>
+<li>
+<p>Otherwise, error</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="coerce-a-to-an-enum-type-t"><a class="anchor" href="#coerce-a-to-an-enum-type-t"></a>1.23.6. Coerce <code>A</code> to an <code>Enum</code> Type <code>T</code></h4>
+<div class="ulist">
+<ul>
+<li>
+<p>If <code>A</code> is <code>null</code>, return <code>null</code></p>
+</li>
+<li>
+<p>If <code>A</code> is assignable to <code>T</code>, coerce quietly</p>
+</li>
+<li>
+<p>If <code>A</code> is <code>""</code>, return <code>null</code></p>
+</li>
+<li>
+<p>If <code>A</code> is a <code>String</code> call <code>Enum.valueOf(T.getClass(), A)</code> and return
+the result</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="coerce-a-to-any-other-type-t"><a class="anchor" href="#coerce-a-to-any-other-type-t"></a>1.23.7. Coerce <code>A</code> to Any Other Type <code>T</code></h4>
+<div class="ulist">
+<ul>
+<li>
+<p>If <code>A</code> is <code>null</code>, return <code>null</code></p>
+</li>
+<li>
+<p>If <code>A</code> is assignable to <code>T</code>, coerce quietly</p>
+</li>
+<li>
+<p>If <code>A</code> is a <code>String</code>, and <code>T</code> has no <code>PropertyEditor:</code></p>
+<div class="ulist">
+<ul>
+<li>
+<p>If <code>A</code> is <code>""</code>, return <code>null</code></p>
+</li>
+<li>
+<p>Otherwise error</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>If <code>A</code> is a <code>String</code> and <code>T</code>'s <code>PropertyEditor</code> throws an exception:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>If <code>A</code> is <code>""</code>, return <code>null</code></p>
+</li>
+<li>
+<p>Otherwise, error</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Otherwise, apply <code>T</code>'s <code>PropertyEditor</code></p>
+</li>
+<li>
+<p>Otherwise, error</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="collected-syntax"><a class="anchor" href="#collected-syntax"></a>1.24. Collected Syntax</h3>
+<div class="paragraph">
+<p>The following is a javaCC grammar with syntax
+tree generation. It is meant to be used as a guide and reference only.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code>/* == Option Declaration == */
+options
+{
+    STATIC=false;
+    NODE_PREFIX="Ast";
+    VISITOR_EXCEPTION="ELException";
+    VISITOR=false;
+    MULTI=true;
+    NODE_DEFAULT_VOID=true;
+    JAVA_UNICODE_ESCAPE=false;
+    UNICODE_INPUT=true;
+    BUILD_NODE_FILES=true;
+}
+
+/* == Parser Declaration == */
+PARSER_BEGIN( ELParser )
+package com.sun.el.parser;
+import java.io.StringReader;
+import ELException;
+public class ELParser
+{
+    public static Node parse(String ref) throws ELException
+    {
+        try {
+            return (new ELParser(new StringReader(ref))).CompositeExpression();
+        } catch (ParseException pe) {
+            throw new ELException(pe.getMessage());
+        }
+    }
+}
+PARSER_END( ELParser )
+
+/*
+ * CompositeExpression
+ * Allow most flexible parsing, restrict by examining
+ * type of returned node
+ */
+AstCompositeExpression CompositeExpression() #CompositeExpression : {}
+{
+    (DeferredExpression() | DynamicExpression() | LiteralExpression())* &lt;EOF&gt;
+    {
+        return jjtThis;
+    }
+}
+
+/*
+ * LiteralExpression
+ * Non-EL Expression blocks
+ */
+void LiteralExpression() #LiteralExpression : { Token t = null; }
+{
+    t=&lt;LITERAL_EXPRESSION&gt; { jjtThis.setImage(t.image); }
+}
+
+/*
+ * DeferredExpression
+ * #{...} Expressions
+ */
+void DeferredExpression() #DeferredExpression : {}
+{
+    &lt;START_DEFERRED_EXPRESSION&gt; Expression() &lt;RCURL&gt;
+}
+
+/*
+ * DynamicExpression
+ * ${...} Expressions
+ */
+void DynamicExpression() #DynamicExpression : {}
+{
+    &lt;START_DYNAMIC_EXPRESSION&gt; Expression() &lt;RCURL&gt;
+}
+
+/*
+ * Expression
+ * EL Expression Language Root
+ */
+void Expression() : {}
+{
+        SemiColon()
+}
+
+/*
+ * SemiColon
+ */
+void SemiColon() : {}
+{
+        Assignment() (&lt;SEMICOLON&gt; Assignment() #SemiColon(2) )*
+}
+
+/*
+ * Assignment
+ * For '=', right associatve, then LambdaExpression or Choice or Assignment
+ */
+void Assignment() : {}
+{
+        LOOKAHEAD(4) LambdaExpression() |
+        Choice() ( LOOKAHEAD(2) &lt;ASSIGN&gt; Assignment() #Assign(2) )*
+}
+
+/*
+ * LambdaExpression
+ */
+void LambdaExpression() #LambdaExpression : {}
+{
+       LambdaParameters() &lt;ARROW&gt;
+       (LOOKAHEAD(3) LambdaExpression() | Choice() )
+}
+
+void LambdaParameters() #LambdaParameters: {}
+{
+       Identifier()
+       | &lt;LPAREN&gt;
+            (Identifier() (&lt;COMMA&gt; Identifier())*)?
+         &lt;RPAREN&gt;
+}
+
+/*
+ * Choice
+ * For Choice markup a ? b : c, right associative
+ */
+void Choice() : {}
+{
+    Or() (&lt;QUESTIONMARK&gt; Choice() &lt;COLON&gt; Choice() #Choice(3))?
+}
+
+/*
+ * Or
+ * For 'or' '||', then And
+ */
+void Or() : {}
+{
+    And() ((&lt;OR0&gt;|&lt;OR1&gt;) And() #Or(2))*
+}
+
+/*
+ * And
+ * For 'and' '&amp;&amp;', then Equality
+ */
+void And() : {}
+{
+    Equality() ((&lt;AND0&gt;|&lt;AND1&gt;) Equality() #And(2))*
+}
+
+/*
+ * Equality
+ * For '==' 'eq' '!=' 'ne', then Compare
+ */
+void Equality() : {}
+{
+    Compare()
+    (
+        ((&lt;EQ0&gt;|&lt;EQ1&gt;) Compare() #Equal(2))
+    |
+        ((&lt;NE0&gt;|&lt;NE1&gt;) Compare() #NotEqual(2))
+    )*
+}
+
+/*
+ * Compare
+ * For a bunch of them, then Math
+ */
+void Compare() : {}
+{
+    Concatenation()
+    (
+        ((&lt;LT0&gt;|&lt;LT1&gt;) Concatenation() #LessThan(2))
+    |
+        ((&lt;GT0&gt;|&lt;GT1&gt;) Concatenation() #GreaterThan(2))
+    |
+        ((&lt;LE0&gt;|&lt;LE1&gt;) Concatenation() #LessThanEqual(2))
+    |
+        ((&lt;GE0&gt;|&lt;GE1&gt;) Concatenation() #GreaterThanEqual(2))
+    )*
+}
+
+/*
+ * Concatenation
+ * For '&amp;', then Math()
+ */
+void Concatenation() : {}
+{
+        Math() ( &lt;CONCAT&gt; Math() #Concat(2) )*
+}
+
+/*
+ * Math
+ * For '+' '-', then Multiplication
+ */
+void Math() : {}
+{
+    Multiplication()
+    (
+        (&lt;PLUS&gt; Multiplication() #Plus(2))
+    |
+        (&lt;MINUS&gt; Multiplication() #Minus(2))
+    )*
+}
+
+/*
+ * Multiplication
+ * For a bunch of them, then Unary
+ */
+void Multiplication() : {}
+{
+    Unary()
+    (
+        (&lt;MULT&gt; Unary() #Mult(2))
+    |
+        ((&lt;DIV0&gt;|&lt;DIV1&gt;) Unary() #Div(2))
+    |
+        ((&lt;MOD0&gt;|&lt;MOD1&gt;) Unary() #Mod(2))
+    )*
+}
+
+/*
+ * Unary
+ * For '-' '!' 'not' 'empty', then Value
+ */
+void Unary() : {}
+{
+        &lt;MINUS&gt; Unary() #Negative
+    |
+        (&lt;NOT0&gt;|&lt;NOT1&gt;) Unary() #Not
+    |
+        &lt;EMPTY&gt; Unary() #Empty
+    |
+        Value()
+}
+
+/*
+ * Value
+ * Defines Prefix plus zero or more Suffixes
+ */
+void Value() : {}
+{
+    (ValuePrefix() (ValueSuffix())*) #Value(&gt;1)
+}
+
+/*
+ * ValuePrefix
+ * For Literals, Variables, and Functions
+ */
+void ValuePrefix() : {}
+{
+    Literal() | NonLiteral()
+}
+
+/*
+ * ValueSuffix
+ * Either dot or bracket notation
+ */
+void ValueSuffix() : {}
+{
+    DotSuffix() | BracketSuffix()
+}
+
+/*
+ * DotSuffix
+ * Dot Property and Dot Method
+ */
+void DotSuffix() #DotSuffix : {  Token t = null; }
+{
+        &lt;DOT&gt; t=&lt;IDENTIFIER&gt; { jjtThis.setImage(t.image); }
+        (MethodArguments())?
+}
+
+/*
+ * BracketSuffix
+ * Sub Expression Suffix
+ */
+void BracketSuffix() #BracketSuffix : {}
+{
+    &lt;LBRACK&gt; Expression() &lt;RBRACK&gt;
+        (MethodArguments())?
+}
+
+
+/*
+ * MethodArguments
+ */
+void MethodArguments() #MethodArguments : {}
+{
+        &lt;LPAREN&gt; (Expression() (&lt;COMMA&gt; Expression())*)? &lt;RPAREN&gt;
+}
+
+/*
+ * Parenthesized Lambda Expression, with optional invokation
+ */
+void LambdaExpressionOrCall() #LambdaExpression : {}
+
+{
+    &lt;LPAREN&gt;
+        LambdaParameters() &lt;ARROW&gt;
+        (LOOKAHEAD(3) LambdaExpression() | Choice() )
+    &lt;RPAREN&gt;
+    (MethodArguments())*
+}
+
+/*
+ * NonLiteral
+ * For Grouped Operations, Identifiers, and Functions
+ */
+void NonLiteral() : {}
+{
+        LOOKAHEAD(5) LambdaExpressionOrCall() // check beyond the arrow
+        | &lt;LPAREN&gt; Expression() &lt;RPAREN&gt;
+        | LOOKAHEAD(4) Function()
+        | Identifier()
+        | MapData()
+        | ListData()
+}
+
+void MapData() #MapData: {}
+{
+    &lt;START_MAP&gt;
+        ( MapEntry() ( &lt;COMMA&gt; MapEntry() )* )?
+    &lt;RCURL&gt;
+}
+
+void MapEntry() #MapEntry: {}
+{
+    Expression() (&lt;COLON&gt; Expression())?
+}
+
+void ListData() #ListData: {}
+{
+    &lt;LBRACK&gt;
+        ( Expression() ( &lt;COMMA&gt; Expression() )* )?
+    &lt;RBRACK&gt;
+}
+
+/*
+ * Identifier
+ * Java Language Identifier
+ */
+void Identifier() #Identifier : { Token t = null; }
+{
+    t=&lt;IDENTIFIER&gt; { jjtThis.setImage(t.image); }
+}
+
+/*
+ * Function
+ * Namespace:Name(a,b,c)
+ */
+void Function() #Function :
+{
+    Token t0 = null;
+    Token t1 = null;
+}
+{
+    t0=&lt;IDENTIFIER&gt; (&lt;COLON&gt; t1=&lt;IDENTIFIER&gt;)?
+    {
+        if (t1 != null) {
+            jjtThis.setPrefix(t0.image);
+            jjtThis.setLocalName(t1.image);
+        } else {
+            jjtThis.setLocalName(t0.image);
+        }
+    }
+        (MethodArguments())+
+}
+
+
+/*
+ * Literal
+ * Reserved Keywords
+ */
+void Literal() : {}
+{
+    Boolean()
+    | FloatingPoint()
+    | Integer()
+    | String()
+    | Null()
+}
+
+/*
+ * Boolean
+ * For 'true' 'false'
+ */
+void Boolean() : {}
+{
+    &lt;TRUE&gt; #True
+    | &lt;FALSE&gt; #False
+}
+
+/*
+ * FloatingPoint
+ * For Decimal and Floating Point Literals
+ */
+void FloatingPoint() #FloatingPoint : { Token t = null; }
+{
+    t=&lt;FLOATING_POINT_LITERAL&gt; { jjtThis.setImage(t.image); }
+}
+
+/*
+ * Integer
+ * For Simple Numeric Literals
+ */
+void Integer() #Integer : { Token t = null; }
+{
+    t=&lt;INTEGER_LITERAL&gt; { jjtThis.setImage(t.image); }
+}
+
+/*
+ * String
+ * For Quoted Literals
+ */
+void String() #String : { Token t = null; }
+{
+    t=&lt;STRING_LITERAL&gt; { jjtThis.setImage(t.image); }
+}
+
+/*
+ * Null
+ * For 'null'
+ */
+void Null() #Null : {}
+{
+    &lt;NULL&gt;
+}
+
+
+/* ========================================================================== */
+TOKEN_MGR_DECLS:
+{
+    java.util.Stack&lt;Integer&gt; stack = new java.util.Stack&lt;Integer&gt;();
+}
+
+&lt;DEFAULT&gt; TOKEN :
+{
+  &lt; LITERAL_EXPRESSION:
+    ((~["\\", "$", "#"])
+      | ("\\" ("\\" | "$" | "#"))
+      | ("$" ~["{", "$", "#"])
+      | ("#" ~["{", "$", "#"])
+    )+
+    | "$"
+    | "#"
+  &gt;
+|
+  &lt; START_DYNAMIC_EXPRESSION: "${" &gt; {stack.push(DEFAULT);}: IN_EXPRESSION
+|
+  &lt; START_DEFERRED_EXPRESSION: "#{" &gt; {stack.push(DEFAULT);}: IN_EXPRESSION
+}
+
+&lt;DEFAULT&gt; SKIP : { "\\" }
+
+&lt;IN_EXPRESSION, IN_MAP&gt; SKIP:
+{ " " | "\t" | "\n" | "\r" }
+
+&lt;IN_EXPRESSION, IN_MAP&gt; TOKEN :
+{
+    &lt; START_MAP : "{" &gt; {stack.push(curLexState);}: IN_MAP
+|   &lt; RCURL: "}" &gt; {SwitchTo(stack.pop());}
+|   &lt; INTEGER_LITERAL: ["0"-"9"] (["0"-"9"])* &gt;
+|   &lt; FLOATING_POINT_LITERAL: (["0"-"9"])+ "." (["0"-"9"])* (&lt;EXPONENT&gt;)?
+        | "." (["0"-"9"])+ (&lt;EXPONENT&gt;)?
+        | (["0"-"9"])+ &lt;EXPONENT&gt;
+    &gt;
+|   &lt; #EXPONENT: ["e","E"] (["+","-"])? (["0"-"9"])+ &gt;
+|   &lt; STRING_LITERAL: ("\"" ((~["\"","\\"])
+        | ("\\" ( ["\\","\""] )))* "\"")
+        | ("\'" ((~["\'","\\"])
+        | ("\\" ( ["\\","\'"] )))* "\'")
+    &gt;
+|   &lt; BADLY_ESCAPED_STRING_LITERAL: ("\"" (~["\"","\\"])* ("\\" ( ~["\\","\""] )))
+        | ("\'" (~["\'","\\"])* ("\\" ( ~["\\","\'"] )))
+    &gt;
+|   &lt; TRUE : "true" &gt;
+|   &lt; FALSE : "false" &gt;
+|   &lt; NULL : "null" &gt;
+|   &lt; DOT : "." &gt;
+|   &lt; LPAREN : "(" &gt;
+|   &lt; RPAREN : ")" &gt;
+|   &lt; LBRACK : "[" &gt;
+|   &lt; RBRACK : "]" &gt;
+|   &lt; COLON : ":" &gt;
+|   &lt; COMMA : "," &gt;
+|   &lt; SEMICOLON : ";" &gt;
+|   &lt; GT0 : "&gt;" &gt;
+|   &lt; GT1 : "gt" &gt;
+|   &lt; LT0 : "&lt;" &gt;
+|   &lt; LT1 : "lt" &gt;
+|   &lt; GE0 : "&gt;=" &gt;
+|   &lt; GE1 : "ge" &gt;
+|   &lt; LE0 : "\&lt;=" &gt;
+|   &lt; LE1 : "le" &gt;
+|   &lt; EQ0 : "==" &gt;
+|   &lt; EQ1 : "eq" &gt;
+|   &lt; NE0 : "!=" &gt;
+|   &lt; NE1 : "ne" &gt;
+|   &lt; NOT0 : "!" &gt;
+|   &lt; NOT1 : "not" &gt;
+|   &lt; AND0 : "&amp;&amp;" &gt;
+|   &lt; AND1 : "and" &gt;
+|   &lt; OR0 : "||" &gt;
+|   &lt; OR1 : "or" &gt;
+|   &lt; EMPTY : "empty" &gt;
+|   &lt; INSTANCEOF : "instanceof" &gt;
+|   &lt; MULT : "*" &gt;
+|   &lt; PLUS : "+" &gt;
+|   &lt; MINUS : "-" &gt;
+|   &lt; QUESTIONMARK : "?" &gt;
+|   &lt; DIV0 : "/" &gt;
+|   &lt; DIV1 : "div" &gt;
+|   &lt; MOD0 : "%" &gt;
+|   &lt; MOD1 : "mod" &gt;
+|   &lt; CONCAT : "+=" &gt;
+|   &lt; ASSIGN : "=" &gt;
+|   &lt; ARROW : "-&gt;" &gt;
+|   &lt; IDENTIFIER : (&lt;LETTER&gt;|&lt;IMPL_OBJ_START&gt;) (&lt;LETTER&gt;|&lt;DIGIT&gt;)* &gt;
+|   &lt; #IMPL_OBJ_START: "#" &gt;
+|   &lt; #LETTER:
+        [
+        "\u0024",
+        "\u0041"-"\u005a",
+        "\u005f",
+        "\u0061"-"\u007a",
+        "\u00c0"-"\u00d6",
+        "\u00d8"-"\u00f6",
+        "\u00f8"-"\u00ff",
+        "\u0100"-"\u1fff",
+        "\u3040"-"\u318f",
+        "\u3300"-"\u337f",
+        "\u3400"-"\u3d2d",
+        "\u4e00"-"\u9fff",
+        "\uf900"-"\ufaff"
+        ]
+    &gt;
+|   &lt; #DIGIT:
+        [
+        "\u0030"-"\u0039",
+        "\u0660"-"\u0669",
+        "\u06f0"-"\u06f9",
+        "\u0966"-"\u096f",
+        "\u09e6"-"\u09ef",
+        "\u0a66"-"\u0a6f",
+        "\u0ae6"-"\u0aef",
+        "\u0b66"-"\u0b6f",
+        "\u0be7"-"\u0bef",
+        "\u0c66"-"\u0c6f",
+        "\u0ce6"-"\u0cef",
+        "\u0d66"-"\u0d6f",
+        "\u0e50"-"\u0e59",
+        "\u0ed0"-"\u0ed9",
+        "\u1040"-"\u1049"
+        ]
+    &gt;
+|   &lt; ILLEGAL_CHARACTER: (~[]) &gt;
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Notes</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>*</code> = 0 or more, <code>+</code> = 1 or more, <code>?</code> = 0 or 1</p>
+</li>
+<li>
+<p>An identifier is constrained to be a Java identifier - e.g., no <code>-</code>,
+no <code>/</code>, etc.</p>
+</li>
+<li>
+<p>A <code>String</code> only recognizes a limited set of escape sequences, and <code>\</code>
+may not appear unescaped</p>
+</li>
+<li>
+<p>The relational operator for equality is <code>==</code> (double equals)</p>
+</li>
+<li>
+<p>The value of an <code>IntegerLiteral</code> ranges from <code>Long.MIN_VALUE</code> to
+<code>Long.MAX_VALUE</code></p>
+</li>
+<li>
+<p>The value of a <code>FloatingPointLiteral</code> ranges from
+<code>Double.MIN_VALUE</code> to <code>Double.MAX_VALUE</code></p>
+</li>
+<li>
+<p>It is illegal to nest <code>${</code> or <code>#{</code> inside
+an outer <code>${</code> or <code>#{</code></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="operations-on-collection-objects"><a class="anchor" href="#operations-on-collection-objects"></a>2. Operations on Collection Objects</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>This chapter describes how collection objects
+and literals can be constructed in the EL expression, and how collection
+objects can be manipulated and processed by applying operations in a
+pipeline.</p>
+</div>
+<div class="sect2">
+<h3 id="overview-2"><a class="anchor" href="#overview-2"></a>2.1. Overview</h3>
+<div class="paragraph">
+<p>To provide support for collection objects, EL
+includes syntaxes for constructing sets, lists, and maps dynamically.
+Any EL expressions, not just literals, can be used in the construction.</p>
+</div>
+<div class="paragraph">
+<p>EL also includes a set of operations that can
+be applied on collections. By design, the methods supporting these
+operations have names and semantics very similar to those in Java SE 8
+libraries. Since EL and Java have different syntaxes and capabilities,
+they are not identical, but they are similar enough that users should
+have no problem switching from one to the other.</p>
+</div>
+<div class="paragraph">
+<p>Since the methods supporting the collection
+operations do not exist in Java SE 7, they are implemented in the
+Expression Language with <code>ELResolver</code>s. In an EL expression, collection
+operations are carried out by invoking methods, and no special syntaxes
+are introduced for them. Strictly speaking, these operations are not
+part of the expression language, and can be taken as examples of what
+can be achieved with the expression language. The specification
+specifies the syntaxes and behaviors of a standard set of collection
+operations. However, an user can easily add, extend and modify the
+behavior of the operations by providing customized <code>ELResolver</code>s.</p>
+</div>
+<div class="paragraph">
+<p>Compared to Java SE 8, the collection support
+in EL has a much smaller and simpler scope. Although EL does not
+disallow collections of infinite size, it works best when the collection
+objects are created in memory, with known sizes. It also does not
+address the performance issue in a multi-threaded environment, and does
+not provide explicit controls for evaluating collection operations in
+parallel. A future version of EL will likely include functionalities
+from Java SE 8.</p>
+</div>
+<div class="paragraph">
+<p>Central to the implementation is the use of
+lambda expressions, now supported in EL. A lambda expression in the Java
+language is used to specify a method in an anonymous implementation of a
+functional interface. The concept of a lambda expression in EL is much
+simpler: it is just an anonymous function that can be passed as an
+argument to a method, to be evaluated in the method when needed. In the
+collection operations, lambda expressions are specified as arguments to
+the methods supporting the operations. Usually when the lambda
+expressions are invoked, an element from stream of the collection is
+passed as an argument to the lambda expression. For instance, the
+argument to the <code>filter</code> method is a lambda expression which acts as a
+predicate function to determine if an element should be included in the
+resulting stream.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="construction-of-collection-objects"><a class="anchor" href="#construction-of-collection-objects"></a>2.2. Construction of Collection Objects</h3>
+<div class="paragraph">
+<p>EL allows the construction of sets, lists,
+and maps dynamically. Any EL expressions, including nested collection
+constructions, can be used in the construction. These expressions are
+evaluated at the time of the construction.</p>
+</div>
+<div class="sect3">
+<h4 id="set-construction"><a class="anchor" href="#set-construction"></a>2.2.1. Set Construction</h4>
+<div class="paragraph">
+<p>Construct an instance of <code>java.util.Set&lt;Object&gt;</code>.</p>
+</div>
+<div class="sect4">
+<h5 id="syntax"><a class="anchor" href="#syntax"></a>2.2.1.1. Syntax</h5>
+<div class="paragraph">
+<p><code>SetData := '{' DataList '}'</code></p>
+</div>
+<div class="paragraph">
+<p><code>DataList := (expression (',' expression)* )?</code></p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="example"><a class="anchor" href="#example"></a>2.2.1.2. Example</h5>
+<div class="paragraph">
+<p><code>{1, 2, 3}</code></p>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="list-construction"><a class="anchor" href="#list-construction"></a>2.2.2. List Construction</h4>
+<div class="paragraph">
+<p>Construct an instance of <code>java.util.List&lt;Object&gt;</code>.</p>
+</div>
+<div class="sect4">
+<h5 id="syntax-2"><a class="anchor" href="#syntax-2"></a>2.2.2.1. Syntax</h5>
+<div class="paragraph">
+<p><code>ListData := '[' DataList ']'</code></p>
+</div>
+<div class="paragraph">
+<p><code>DataList := (expression (',' expression)* )?</code></p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="example-2"><a class="anchor" href="#example-2"></a>2.2.2.2. Example</h5>
+<div class="paragraph">
+<p><code>[1, "two", [foo, bar]]</code></p>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="map-construction"><a class="anchor" href="#map-construction"></a>2.2.3. Map Construction</h4>
+<div class="paragraph">
+<p>Construct an instance of <code>java.util.Map&lt;Object,Object&gt;</code>.</p>
+</div>
+<div class="sect4">
+<h5 id="syntax-3"><a class="anchor" href="#syntax-3"></a>2.2.3.1. Syntax</h5>
+<div class="paragraph">
+<p><code>Map := '{' MapEntries '}'</code></p>
+</div>
+<div class="paragraph">
+<p><code>MapEntries := (MapEntry (',' MapEntry)* )?</code></p>
+</div>
+<div class="paragraph">
+<p><code>MapEntry := expression ':' expression</code></p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="example-3"><a class="anchor" href="#example-3"></a>2.2.3.2. Example</h5>
+<div class="paragraph">
+<p><code>{"one":1, "two":2, "three":3}</code></p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="collection-operations"><a class="anchor" href="#collection-operations"></a>2.3. Collection Operations</h3>
+<div class="sect3">
+<h4 id="stream-and-pipeline"><a class="anchor" href="#stream-and-pipeline"></a>2.3.1. Stream and Pipeline</h4>
+<div class="paragraph">
+<p>The operations on a collection object are
+realized as method calls to the stream of elements derived from the
+collection. The method <code>stream</code> can be used to obtain a <code>Stream</code> from a
+<code>java.util.Collection</code> or a Java array.</p>
+</div>
+<div class="paragraph">
+<p>To obtain a <code>Stream</code> from a <code>Map</code>, the collection view of a <code>Map</code>,
+such as <code>MapEntry</code> can be used as the source of <code>Stream</code>.</p>
+</div>
+<div class="paragraph">
+<p>Some operations return another <code>Stream</code>, which
+allows other operations. Therefore the operations can be chained
+together to form a pipeline. For example, to get a list of titles of
+history books, one can write in EL:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>books.stream().filter(b-&gt;b.category == 'history’)
+              .map(b-&gt;b.title)
+              .toList()</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>A stream pipeline consists of:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>the source;</p>
+</li>
+<li>
+<p>intermediate operations; and</p>
+</li>
+<li>
+<p>a terminal operation.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The source of a pipeline is the <code>Stream</code> object.</p>
+</div>
+<div class="paragraph">
+<p>An intermediate operation is a method in
+<code>Stream</code> that returns a <code>Stream</code>. A pipeline may contain zero or more
+intermediate operations.</p>
+</div>
+<div class="paragraph">
+<p>A pipeline ends in a terminal operation. A terminal operation is a
+method in <code>Stream</code> that does not return a <code>Stream</code>.</p>
+</div>
+<div class="paragraph">
+<p>The execution of a pipeline only begins when
+the terminal operation starts its execution. Most of the intermediate
+operations are evaluated lazily: they only yield as many elements in the
+stream as are required by the downstream operations. Because of this,
+they need not keep intermediate results of the operations. For instance,
+the filter operation does not keep a collection of the filtered
+elements.</p>
+</div>
+<div class="paragraph">
+<p>A notable exception is the sorted operation,
+since all elements are needed for sorting.</p>
+</div>
+<div class="paragraph">
+<p>The specification specifies the behavior of
+the operations in a pipeline, and does not specify the implementation of
+a pipeline. The operations must not modify the source collection. The
+user must also make sure that the source collection is not modified
+externally during the execution of the pipeline, otherwise the behavior
+of the collection operations will be undefined.</p>
+</div>
+<div class="paragraph">
+<p>The behavior of the operations are undefined
+if the collection contains null elements. Null elements in a collection
+should be removed by a filter to obtain consistent results.</p>
+</div>
+<div class="paragraph">
+<p>The source stream in a pipeline that has
+already started its execution cannot be used in another pipeline,
+otherwise the behavior is undefined.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="operation-syntax-description"><a class="anchor" href="#operation-syntax-description"></a>2.3.2. Operation Syntax Description</h4>
+<div class="paragraph">
+<p>The implementation of <code>Stream</code> that contains
+the methods supporting the operations are not part of the API. The
+syntax and the behavior of the operations are described in this chapter.</p>
+</div>
+<div class="paragraph">
+<p>For documentation purposes, pseudo method
+declarations are used in this chapter for the operations. A method
+includes:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>The return type</p>
+</li>
+<li>
+<p>The type of the source stream</p>
+</li>
+<li>
+<p>The method name</p>
+</li>
+<li>
+<p>The method parameters</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>A typical method declaration would looks like:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>returnT Stream&lt;T&gt;.method(T1 arg1, T2 arg2)</code></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Some methods have optional parameters. The
+declarations of the methods with all possible combinations of the
+parameters are listed in the syntax sections, as if they are overloaded.
+Any <code>null</code> parameter will result in a <code>NullPointerException</code> at run-time.</p>
+</div>
+<div class="paragraph">
+<p>Some of the parameters are lambda
+expressions, also known as functions. A lambda expression can have its
+own parameters and can return a value. To describe the parameter types
+and the return type of a lambda expression, the following is an example
+of the notation that is used:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>(p1,p2)-&gt;returnT</code></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>For instance, the declaration for the operation filter is:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>Stream&lt;S&gt; Stream&lt;S&gt;.filter((S-&gt;boolean) predicate)</code></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>From this we know that the source object is a <code>Stream</code> of <code>S</code>, and the
+return object is also a <code>Stream</code>, of the same type.
+The operator takes a predicate function (lambda expression) as an
+argument. The argument of the function is an element of the source, and
+the function returns a boolean.</p>
+</div>
+<div class="paragraph">
+<p>The generic types in the declaration are used
+only to help the readers to identify the type relationships among
+various parts of the declaration, and do not have the same meaning as
+used in the Java language. At runtime, EL deals with Objects, and does
+not track generic types.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="implementation-classes"><a class="anchor" href="#implementation-classes"></a>2.3.3. Implementation Classes</h4>
+<div class="paragraph">
+<p>The specification makes references to some
+implementation classes that are not in the API. They contains methods
+whose behaviors are specified in this section.</p>
+</div>
+<div class="sect4">
+<h5 id="stream"><a class="anchor" href="#stream"></a>2.3.3.1. Stream</h5>
+<div class="paragraph">
+<p>An instance of <code>Stream</code> is obtained by calling the method <code>stream()</code> of
+a <code>java.util.Collection</code> object or a Java array.
+The methods in this class support the stream operations and are
+described in <a href="#filter">2.3.5</a> to <a href="#findfirst">2.3.26</a>.</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="optional"><a class="anchor" href="#optional"></a>2.3.3.2. Optional</h5>
+<div class="paragraph">
+<p>An <code>Optional</code> is used to represent a value that
+may not exist. Instead of using <code>null</code> as a default value, the use of
+<code>Optional</code> allows the user to specify a default.</p>
+</div>
+<div class="paragraph">
+<p>A non-existing or empty value is represented
+by an empty <code>Optional</code>.</p>
+</div>
+<div class="paragraph">
+<p>An <code>Optional</code> is usually the result of a computation over the elements
+of a <code>Stream</code>, where an empty <code>Stream</code> results
+in an empty <code>Optional</code>. See for example, <a href="#max">Section 2.3.18, &#8220;max&#8221;</a>.</p>
+</div>
+<div class="paragraph">
+<p>The following are methods in <code>Optional&lt;T&gt;</code>.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>T get()</code><br>
+Returns the value held by the <code>Optional</code>, or
+throws an <code>ELException</code> if the <code>Optional</code> is empty.</p>
+</li>
+<li>
+<p><code>void ifPresent((x)-&gt;void) consumer)</code><br>
+The value held by the <code>Optional</code> is processed
+by the function consumer if it is not empty. See also
+<a href="#consumer">Section 2.3.4.4, &#8220;consumer&#8221;</a>.</p>
+</li>
+<li>
+<p><code>T orElse(T other)</code><br>
+Returns the value held by the <code>Optional</code>, or
+the value other if the <code>Optional</code> is empty.</p>
+</li>
+<li>
+<p><code>T orElseGet((()-&gt;T) other)</code><br>
+Returns the value held by the <code>Optional</code>, or the value returned by the
+lambda expression <code>other</code> if the <code>Optional</code> is empty.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="functions-2"><a class="anchor" href="#functions-2"></a>2.3.4. Functions</h4>
+<div class="paragraph">
+<p>Some operations takes functions (lambda
+expressions) as parameters. Again, we use the notation:</p>
+</div>
+<div class="paragraph">
+<p><code>(arg1Type, &#8230;&#8203;)-&gt;returnType</code></p>
+</div>
+<div class="paragraph">
+<p>to describe the argument types and the return type of a function.</p>
+</div>
+<div class="sect4">
+<h5 id="predicate"><a class="anchor" href="#predicate"></a>2.3.4.1. predicate</h5>
+<div class="paragraph">
+<p><code>S -&gt; boolean</code></p>
+</div>
+<div class="paragraph">
+<p>This function takes the input argument, usually the element of the
+source stream, and determines if it satisfies some criteria.</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="mapper"><a class="anchor" href="#mapper"></a>2.3.4.2. mapper</h5>
+<div class="paragraph">
+<p><code>S -&gt; R</code></p>
+</div>
+<div class="paragraph">
+<p>This function maps, or transforms the input
+argument, usually the element of the source stream, to the result.</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="comparator"><a class="anchor" href="#comparator"></a>2.3.4.3. comparator</h5>
+<div class="paragraph">
+<p><code>(S, S) -&gt; int</code></p>
+</div>
+<div class="paragraph">
+<p>This function compares two arguments, usually
+the elements of the source stream, and returns a negative integer, zero,
+or a positive integer, if the first argument is respectively less than,
+equal to, or greater than the second argument.</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="consumer"><a class="anchor" href="#consumer"></a>2.3.4.4. consumer</h5>
+<div class="paragraph">
+<p><code>S -&gt; void</code></p>
+</div>
+<div class="paragraph">
+<p>This function processes the input argument,
+usually the element of the source stream, and returns nothing.</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="binaryoperator"><a class="anchor" href="#binaryoperator"></a>2.3.4.5. binaryOperator</h5>
+<div class="paragraph">
+<p><code>(S, S) -&gt; S</code></p>
+</div>
+<div class="paragraph">
+<p>This function applies a binary operation to
+the input arguments, and returns the result. The first argument is
+usually an internal accumulator value, and the second argument is
+usually the element of the source stream.</p>
+</div>
+<div class="paragraph">
+<p>The arguments and the result are of the same
+type.</p>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="filter"><a class="anchor" href="#filter"></a>2.3.5. filter</h4>
+<div class="sect4">
+<h5 id="syntax-4"><a class="anchor" href="#syntax-4"></a>2.3.5.1. Syntax</h5>
+<div class="paragraph">
+<p><code>Stream&lt;S&gt; Stream&lt;S&gt;.filter((S-&gt;boolean) predicate)</code></p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="description"><a class="anchor" href="#description"></a>2.3.5.2. Description</h5>
+<div class="paragraph">
+<p>This method produces a stream containing the
+source stream elements for which the <code>predicate</code> function returns <code>true</code>.
+The argument of <code>predicate</code> function represents the element to test.</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="see"><a class="anchor" href="#see"></a>2.3.5.3. See</h5>
+<div class="paragraph">
+<p><a href="#predicate">Section 2.3.4.1, &#8220;predicate&#8221;</a></p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="example-4"><a class="anchor" href="#example-4"></a>2.3.5.4. Example</h5>
+<div class="paragraph">
+<p>To find the products whose price is greater than or equal to 10:</p>
+</div>
+<div class="paragraph">
+<p><code>products.stream().filter(p-&gt;p.unitPrice &gt;= 10).toList()</code></p>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="map"><a class="anchor" href="#map"></a>2.3.6. map</h4>
+<div class="sect4">
+<h5 id="syntax-5"><a class="anchor" href="#syntax-5"></a>2.3.6.1. Syntax</h5>
+<div class="paragraph">
+<p><code>Stream&lt;R&gt; Stream&lt;S&gt;.map((S-&gt;R) mapper)</code></p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="description-2"><a class="anchor" href="#description-2"></a>2.3.6.2. Description</h5>
+<div class="paragraph">
+<p>This method produces a stream by applying the
+<code>mapper</code> function to the elements of the source stream. The argument of
+<code>mapper</code> function represents the element to process, and the result of the
+<code>mapper</code> function represents the element of the resulting <code>Stream</code>.</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="see-2"><a class="anchor" href="#see-2"></a>2.3.6.3. See</h5>
+<div class="paragraph">
+<p><a href="#mapper">Section 2.3.4.2, &#8220;mapper&#8221;</a></p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="examples"><a class="anchor" href="#examples"></a>2.3.6.4. Examples</h5>
+<div class="paragraph">
+<p>To get the list of the names of all products:</p>
+</div>
+<div class="paragraph">
+<p><code>products.stream().map(p-&gt;p.name).toList()</code></p>
+</div>
+<div class="paragraph">
+<p>To create a list of product names and prices
+for products with a price greater than or equal to 10:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>products.stream().filter(p-&gt;p.unitPrice &gt;= 10)
+                 .map(p-&gt;[p.name, p.unitPrice])
+                 .toList()</pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="flatmap"><a class="anchor" href="#flatmap"></a>2.3.7. flatMap</h4>
+<div class="sect4">
+<h5 id="syntax-6"><a class="anchor" href="#syntax-6"></a>2.3.7.1. Syntax</h5>
+<div class="paragraph">
+<p><code>Stream&lt;R&gt; Stream&lt;S&gt;.flatMap((S-&gt;Stream&lt;R&gt;) mapper)</code></p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="description-3"><a class="anchor" href="#description-3"></a>2.3.7.2. Description</h5>
+<div class="paragraph">
+<p>This method produces a stream by mapping each
+of the source elements to another stream and then concatenating the
+mapped streams. If the mapper function does not return a <code>Stream</code>, the
+behavior is undefined.</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="see-3"><a class="anchor" href="#see-3"></a>2.3.7.3. See</h5>
+<div class="paragraph">
+<p><a href="#mapper">Section 2.3.4.2, &#8220;mapper&#8221;</a></p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="examples-2"><a class="anchor" href="#examples-2"></a>2.3.7.4. Examples</h5>
+<div class="paragraph">
+<p>To list all orders of US customers:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>customers.stream().filter(c-&gt;c.country == 'USA')
+                  .flatMap(c-&gt;c.orders.stream())
+                  .toList()</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>To obtain an alphabetical list of characters used in a list
+of words:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>words.stream().flatMap(w-&gt;w.toCharArray().stream())
+              .sorted()
+              .distinct()
+              .toList()</pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="distinct"><a class="anchor" href="#distinct"></a>2.3.8. distinct</h4>
+<div class="sect4">
+<h5 id="syntax-7"><a class="anchor" href="#syntax-7"></a>2.3.8.1. Syntax</h5>
+<div class="paragraph">
+<p><code>Stream&lt;S&gt; Stream&lt;S&gt;.distinct()</code></p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="description-4"><a class="anchor" href="#description-4"></a>2.3.8.2. Description</h5>
+<div class="paragraph">
+<p>This method produces a stream containing the
+elements of the source stream that are distinct, according to
+<code>Object.equals</code>.</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="example-5"><a class="anchor" href="#example-5"></a>2.3.8.3. Example</h5>
+<div class="paragraph">
+<p>To remove the duplicate element b:</p>
+</div>
+<div class="paragraph">
+<p><code>['a', 'b', 'b', 'c'].stream().distinct().toArray()</code></p>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="sorted"><a class="anchor" href="#sorted"></a>2.3.9. sorted</h4>
+<div class="sect4">
+<h5 id="syntax-8"><a class="anchor" href="#syntax-8"></a>2.3.9.1. Syntax</h5>
+<div class="paragraph">
+<p><code>Stream&lt;S&gt; Stream&lt;S&gt;.sorted()</code></p>
+</div>
+<div class="paragraph">
+<p><code>Stream&lt;S&gt; Stream&lt;S&gt;.sorted(((p,q)-&gt;int) comparator)</code></p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="description-5"><a class="anchor" href="#description-5"></a>2.3.9.2. Description</h5>
+<div class="paragraph">
+<p>This method produces a stream containing the
+elements of the source stream in sorted order. If no <code>comparator</code> is
+specified, the elements are sorted in natural order. The behavior is
+undefined if no <code>comparator</code> is specified, and the elements do not
+implement <code>java.lang.Comparable</code>. If a <code>comparator</code> is specified, the
+elements are sorted with the provided comparator.</p>
+</div>
+<div class="paragraph">
+<p>The source collection is unaffected by this
+operation.</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="see-4"><a class="anchor" href="#see-4"></a>2.3.9.3. See</h5>
+<div class="paragraph">
+<p><a href="#comparator">Section 2.3.4.3, &#8220;comparator&#8221;</a></p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="examples-3"><a class="anchor" href="#examples-3"></a>2.3.9.4. Examples</h5>
+<div class="paragraph">
+<p>To sort a list of integers</p>
+</div>
+<div class="paragraph">
+<p><code>[1,3,2,4].stream().sorted().toList()</code></p>
+</div>
+<div class="paragraph">
+<p>To sort a list of integers in reversed order</p>
+</div>
+<div class="paragraph">
+<p><code>[1,3,2,4].stream().sorted((i,j)-&gt;j-i).List()</code></p>
+</div>
+<div class="paragraph">
+<p>To sort a list of words in the order of word
+length; and then for words of the same length, in alphabetical order:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>words.stream().sorted(
+        (s,t)-&gt;(s.length()==t.length() ? s.compareTo(t)
+                                       : s.length() - t.length()))
+                .toList()</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>To sort the products by name:</p>
+</div>
+<div class="paragraph">
+<p><code>products.stream().sorted((p,q)-&gt;p.name.compareTo(p.name)).toList()</code></p>
+</div>
+<div class="paragraph">
+<p>Or by defining a comparing function, this can
+be rewritten as:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>comparing = map-&gt;(x,y)-&gt;map(x).compareTo(map(y));
+products.stream().sorted(comparing(p-&gt;p.name)).toList()</pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="foreach"><a class="anchor" href="#foreach"></a>2.3.10. forEach</h4>
+<div class="sect4">
+<h5 id="syntax-9"><a class="anchor" href="#syntax-9"></a>2.3.10.1. Syntax</h5>
+<div class="paragraph">
+<p><code>Object stream&lt;S&gt;.forEach(((S)-&gt;void)consumer)</code></p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="description-6"><a class="anchor" href="#description-6"></a>2.3.10.2. Description</h5>
+<div class="paragraph">
+<p>This method invokes the <code>consumer</code> function for
+each element in the source stream.</p>
+</div>
+<div class="paragraph">
+<p>This method always returns <code>null</code>.</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="see-5"><a class="anchor" href="#see-5"></a>2.3.10.3. See</h5>
+<div class="paragraph">
+<p><a href="#consumer">Section 2.3.4.4, &#8220;consumer&#8221;</a></p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="example-6"><a class="anchor" href="#example-6"></a>2.3.10.4. Example</h5>
+<div class="paragraph">
+<p>To print a list of customer names:</p>
+</div>
+<div class="paragraph">
+<p><code>customers.stream().forEach(c-&gt;printer.print(c.name))</code></p>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="peek"><a class="anchor" href="#peek"></a>2.3.11. peek</h4>
+<div class="sect4">
+<h5 id="syntax-10"><a class="anchor" href="#syntax-10"></a>2.3.11.1. Syntax</h5>
+<div class="paragraph">
+<p><code>Stream&lt;S&gt; Stream&lt;S&gt;.peek(((S)-&gt;void)consumer)</code></p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="description-7"><a class="anchor" href="#description-7"></a>2.3.11.2. Description</h5>
+<div class="paragraph">
+<p>This method produces a stream containing the
+elements of the source stream, and invokes the <code>consumer</code> function for
+each element in the stream. The primary purpose of this method is for
+debugging, where one can take a peek at the elements in the stream at
+the place where this method is inserted.</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="see-6"><a class="anchor" href="#see-6"></a>2.3.11.3. See</h5>
+<div class="paragraph">
+<p><a href="#consumer">Section 2.3.4.4, &#8220;consumer&#8221;</a></p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="example-7"><a class="anchor" href="#example-7"></a>2.3.11.4. Example</h5>
+<div class="paragraph">
+<p>To print a list of integers before and after a filter:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>[1,2,3,4,5].stream().peek(i-&gt;print(i))
+                    .filter(i-&gt; i%2 == 0)
+                    .peek(i-&gt;print(i))
+                    .toList()</pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="iterator"><a class="anchor" href="#iterator"></a>2.3.12. iterator</h4>
+<div class="sect4">
+<h5 id="syntax-11"><a class="anchor" href="#syntax-11"></a>2.3.12.1. Syntax</h5>
+<div class="paragraph">
+<p><code>Iterator&lt;S&gt; Stream&lt;S&gt;.iterator()</code></p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="description-8"><a class="anchor" href="#description-8"></a>2.3.12.2. Description</h5>
+<div class="paragraph">
+<p>This method returns an iterator for the
+source stream, suitable for use in Java codes.</p>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="limit"><a class="anchor" href="#limit"></a>2.3.13. limit</h4>
+<div class="sect4">
+<h5 id="syntax-12"><a class="anchor" href="#syntax-12"></a>2.3.13.1. Syntax</h5>
+<div class="paragraph">
+<p><code>Stream&lt;S&gt; Stream&lt;S&gt;.limit(Number count)</code></p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="description-9"><a class="anchor" href="#description-9"></a>2.3.13.2. Description</h5>
+<div class="paragraph">
+<p>This method produces a stream containing the
+first <code>count</code> number of elements of the source stream.</p>
+</div>
+<div class="paragraph">
+<p>If <code>count</code> is greater than the number of source
+elements, all the elements are included in the returned stream. If the
+<code>count</code> is less than or equal to zero, an empty stream is returned.</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="example-8"><a class="anchor" href="#example-8"></a>2.3.13.3. Example</h5>
+<div class="paragraph">
+<p>To list the 3 least expensive products:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>products.stream().sorted(p-&gt;p.unitPrice)
+                 .limit(3)
+                 .toList()</pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="substream"><a class="anchor" href="#substream"></a>2.3.14. substream</h4>
+<div class="sect4">
+<h5 id="syntax-13"><a class="anchor" href="#syntax-13"></a>2.3.14.1. Syntax</h5>
+<div class="paragraph">
+<p><code>Stream&lt;S&gt; Stream&lt;S&gt;.substream(Number start)</code></p>
+</div>
+<div class="paragraph">
+<p><code>Stream&lt;S&gt; Stream&lt;S&gt;.substream(Number start, Number end)</code></p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="description-10"><a class="anchor" href="#description-10"></a>2.3.14.2. Description</h5>
+<div class="paragraph">
+<p>This method produces a stream containing the
+source elements, skipping the first <code>start</code> elements, and including the
+rest of the elements in the stream if <code>end</code> is not specified, or the next
+<code>(end - start)</code> elements in the stream if end is specified.</p>
+</div>
+<div class="paragraph">
+<p>If the elements in the source stream has
+fewer than <code>start</code> elements, nothing is included. If <code>start</code> is less than or
+equal to zero, no elements are skipped.</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="example-9"><a class="anchor" href="#example-9"></a>2.3.14.3. Example</h5>
+<div class="paragraph">
+<p>The example</p>
+</div>
+<div class="paragraph">
+<p><code>[1,2,3,4,5].stream().substream(2,4).toArray()</code></p>
+</div>
+<div class="paragraph">
+<p>produces the array <code>[3,4]</code>.</p>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="toarray"><a class="anchor" href="#toarray"></a>2.3.15. toArray</h4>
+<div class="sect4">
+<h5 id="syntax-14"><a class="anchor" href="#syntax-14"></a>2.3.15.1. Syntax</h5>
+<div class="paragraph">
+<p><code>S[] Stream&lt;S&gt;.toArray()</code></p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="description-11"><a class="anchor" href="#description-11"></a>2.3.15.2. Description</h5>
+<div class="paragraph">
+<p>This method returns an array containing the
+elements of the source stream.</p>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="tolist"><a class="anchor" href="#tolist"></a>2.3.16. toList</h4>
+<div class="sect4">
+<h5 id="syntax-15"><a class="anchor" href="#syntax-15"></a>2.3.16.1. Syntax</h5>
+<div class="paragraph">
+<p><code>List Stream&lt;S&gt;.toList()</code></p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="description-12"><a class="anchor" href="#description-12"></a>2.3.16.2. Description</h5>
+<div class="paragraph">
+<p>This method returns a List containing the
+elements of the source stream.</p>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="reduce"><a class="anchor" href="#reduce"></a>2.3.17. reduce</h4>
+<div class="sect4">
+<h5 id="syntax-16"><a class="anchor" href="#syntax-16"></a>2.3.17.1. Syntax</h5>
+<div class="paragraph">
+<p><code>Optional&lt;S&gt; Stream&lt;S&gt;.reduce(((S,S)-&gt;S) binaryOperator)</code></p>
+</div>
+<div class="paragraph">
+<p><code>S Stream&lt;S&gt;.reduce(S seed, S,S)-&gt;S) binaryOperator</code></p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="description-13"><a class="anchor" href="#description-13"></a>2.3.17.2. Description</h5>
+<div class="paragraph">
+<p>The method with a <code>seed</code> value starts by
+assigning the <code>seed</code> value to an internal accumulator. Then for each of
+the elements in the source stream, the next accumulator value is
+computed, by invoking the <code>binaryOperator</code> function, with the current
+accumulator value as the first argument and the current element as the
+second argument. The final accumulator value is returned.</p>
+</div>
+<div class="paragraph">
+<p>The method without a <code>seed</code> value uses the
+first element of the source elements as the <code>seed</code> value. If the source
+stream is empty, an empty <code>Optional</code> is returned, otherwise an <code>Optional</code>
+with the final accumulator value is returned.</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="see-7"><a class="anchor" href="#see-7"></a>2.3.17.3. See</h5>
+<div class="paragraph">
+<p><a href="#optional">Section 2.3.3.2, &#8220;Optional&#8221;</a></p>
+</div>
+<div class="paragraph">
+<p><a href="#binaryoperator">Section 2.3.4.5, &#8220;binaryOperator&#8221;</a></p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="example-10"><a class="anchor" href="#example-10"></a>2.3.17.4. Example</h5>
+<div class="paragraph">
+<p>To find tallest student in a class:</p>
+</div>
+<div class="paragraph">
+<p><code>students.stream().reduce((p,q)-&gt;(p.height&gt;q.height? p: q).get()</code></p>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="max"><a class="anchor" href="#max"></a>2.3.18. max</h4>
+<div class="sect4">
+<h5 id="syntax-17"><a class="anchor" href="#syntax-17"></a>2.3.18.1. Syntax</h5>
+<div class="paragraph">
+<p><code>Optional&lt;S&gt; Stream&lt;S&gt;.max()</code></p>
+</div>
+<div class="paragraph">
+<p><code>Optional&lt;S&gt; Stream&lt;S&gt;.max(((p,q)-&gt;int) comparator)</code></p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="description-14"><a class="anchor" href="#description-14"></a>2.3.18.2. Description</h5>
+<div class="paragraph">
+<p>This method computes the maximum of the
+elements in the source stream. If the <code>comparator</code> function is specified,
+it is used for comparisons. If no <code>comparator</code> function is specified, the
+elements themselves are compared, and must implement <code>Comparable</code>,
+otherwise an <code>ELException</code> is thrown.</p>
+</div>
+<div class="paragraph">
+<p>This method returns an empty <code>Optional</code> for an
+empty stream.</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="see-8"><a class="anchor" href="#see-8"></a>2.3.18.3. See</h5>
+<div class="paragraph">
+<p><a href="#comparator">Section 2.3.4.3, &#8220;comparator&#8221;</a></p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="examples-4"><a class="anchor" href="#examples-4"></a>2.3.18.4. Examples</h5>
+<div class="paragraph">
+<p>To find tallest student in a class:</p>
+</div>
+<div class="paragraph">
+<p><code>students.stream().max((p,q)-&gt;p.height-q.height)</code></p>
+</div>
+<div class="paragraph">
+<p>To find the maximum height of the students in a class:</p>
+</div>
+<div class="paragraph">
+<p><code>students.stream().map(s-&gt;s.height).max()</code></p>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="min"><a class="anchor" href="#min"></a>2.3.19. min</h4>
+<div class="sect4">
+<h5 id="syntax-18"><a class="anchor" href="#syntax-18"></a>2.3.19.1. Syntax</h5>
+<div class="paragraph">
+<p><code>Optional&lt;S&gt; Stream&lt;S&gt;.min()</code></p>
+</div>
+<div class="paragraph">
+<p><code>Optional&lt;S&gt; Stream&lt;S&gt;.min(((p,q)-&gt;int) comparator)</code></p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="description-15"><a class="anchor" href="#description-15"></a>2.3.19.2. Description</h5>
+<div class="paragraph">
+<p>This method computes the minimum of the
+elements in the source stream. If the <code>comparator</code> function is specified,
+it is used for comparisons. If no <code>comparator</code> function is specified, the
+elements themselves are compared, and must implement <code>Comparable</code>,
+otherwise an <code>ELException</code> is thrown.</p>
+</div>
+<div class="paragraph">
+<p>This method returns an empty <code>Optional</code> for an
+empty stream.</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="see-9"><a class="anchor" href="#see-9"></a>2.3.19.3. See</h5>
+<div class="paragraph">
+<p><a href="#comparator">Section 2.3.4.3, &#8220;comparator&#8221;</a></p>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="average"><a class="anchor" href="#average"></a>2.3.20. average</h4>
+<div class="sect4">
+<h5 id="syntax-19"><a class="anchor" href="#syntax-19"></a>2.3.20.1. Syntax</h5>
+<div class="paragraph">
+<p><code>Optional&lt;S&gt; Stream&lt;S&gt;.average()</code></p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="description-16"><a class="anchor" href="#description-16"></a>2.3.20.2. Description</h5>
+<div class="paragraph">
+<p>This method computes the average of all
+elements in the source stream by first computes the sum of the elements
+and then divides the sum by the number of elements. The elements are
+coerced to Number types according to <a href="#Coerce A to Number type N">[Coerce A to Number type N]</a>
+during the computation.</p>
+</div>
+<div class="paragraph">
+<p>This method returns an empty <code>Optional</code> for an
+empty stream.</p>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="sum"><a class="anchor" href="#sum"></a>2.3.21. sum</h4>
+<div class="sect4">
+<h5 id="syntax-20"><a class="anchor" href="#syntax-20"></a>2.3.21.1. Syntax</h5>
+<div class="paragraph">
+<p><code>Number Stream&lt;S&gt;.sum()</code></p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="description-17"><a class="anchor" href="#description-17"></a>2.3.21.2. Description</h5>
+<div class="paragraph">
+<p>This method computes the sum of all elements
+in the source stream. The elements are coerced to Number types according
+to <a href="#Coerce A to Number type N">[Coerce A to Number type N]</a> during
+the computation.</p>
+</div>
+<div class="paragraph">
+<p>This method returns zero for an empty stream.</p>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="count"><a class="anchor" href="#count"></a>2.3.22. count</h4>
+<div class="sect4">
+<h5 id="syntax-21"><a class="anchor" href="#syntax-21"></a>2.3.22.1. Syntax</h5>
+<div class="paragraph">
+<p><code>Long Stream&lt;S&gt;.count()</code></p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="description-18"><a class="anchor" href="#description-18"></a>2.3.22.2. Description</h5>
+<div class="paragraph">
+<p>This method returns the count of elements in
+the source stream.</p>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="anymatch"><a class="anchor" href="#anymatch"></a>2.3.23. anyMatch</h4>
+<div class="sect4">
+<h5 id="syntax-22"><a class="anchor" href="#syntax-22"></a>2.3.23.1. Syntax</h5>
+<div class="paragraph">
+<p><code>Optional&lt;boolean&gt; Stream&lt;S&gt;.anyMatch((S-&gt;boolean) predicate)</code></p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="description-19"><a class="anchor" href="#description-19"></a>2.3.23.2. Description</h5>
+<div class="paragraph">
+<p>This method returns an <code>Optional</code> of <code>true</code> if
+any element in the source stream satisfies the test given by the
+<code>predicate</code>. It returns an empty <code>Optional</code> if the stream is empty.</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="see-10"><a class="anchor" href="#see-10"></a>2.3.23.3. See</h5>
+<div class="paragraph">
+<p><a href="#predicate">Section 2.3.4.1, &#8220;predicate&#8221;</a></p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="example-11"><a class="anchor" href="#example-11"></a>2.3.23.4. Example</h5>
+<div class="paragraph">
+<p>To determine if the list of integers contains
+any negative numbers:</p>
+</div>
+<div class="paragraph">
+<p><code>integers.stream().anyMatch(i-&gt;i&lt;0).orElse(false)</code></p>
+</div>
+<div class="paragraph">
+<p>Note the use of <code>orElse</code> to set a default value
+for the empty list.</p>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="allmatch"><a class="anchor" href="#allmatch"></a>2.3.24. allMatch</h4>
+<div class="sect4">
+<h5 id="syntax-23"><a class="anchor" href="#syntax-23"></a>2.3.24.1. Syntax</h5>
+<div class="paragraph">
+<p><code>Optional&lt;boolean&gt; Stream&lt;S&gt;.allMatch((S-&gt;boolean) predicate)</code></p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="description-20"><a class="anchor" href="#description-20"></a>2.3.24.2. Description</h5>
+<div class="paragraph">
+<p>This method returns an <code>Optional</code> of <code>true</code> if
+all elements in the source stream satisfy the test given by the
+<code>predicate</code>. It returns an empty <code>Optional</code> if the stream is empty.</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="see-11"><a class="anchor" href="#see-11"></a>2.3.24.3. See</h5>
+<div class="paragraph">
+<p><a href="#predicate">Section 2.3.4.1, &#8220;predicate&#8221;</a></p>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="nonematch"><a class="anchor" href="#nonematch"></a>2.3.25. noneMatch</h4>
+<div class="sect4">
+<h5 id="syntax-24"><a class="anchor" href="#syntax-24"></a>2.3.25.1. Syntax</h5>
+<div class="paragraph">
+<p><code>Optional&lt;boolean&gt; Stream&lt;S&gt;.noneMatch((S-&gt;boolean) predicate)</code></p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="description-21"><a class="anchor" href="#description-21"></a>2.3.25.2. Description</h5>
+<div class="paragraph">
+<p>This method returns an <code>Optional</code> of <code>true</code> if
+none of the elements in the source stream satisfies the test given by
+the <code>predicate</code>. It returns an empty <code>Optional</code> if the stream is empty.</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="see-12"><a class="anchor" href="#see-12"></a>2.3.25.3. See</h5>
+<div class="paragraph">
+<p><a href="#predicate">Section 2.3.4.1, &#8220;predicate&#8221;</a></p>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="findfirst"><a class="anchor" href="#findfirst"></a>2.3.26. findFirst</h4>
+<div class="sect4">
+<h5 id="syntax-25"><a class="anchor" href="#syntax-25"></a>2.3.26.1. Syntax</h5>
+<div class="paragraph">
+<p><code>Optional&lt;S&gt; Stream&lt;S&gt;.findFirst()</code></p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="description-22"><a class="anchor" href="#description-22"></a>2.3.26.2. Description</h5>
+<div class="paragraph">
+<p>This method returns an <code>Optional</code> containing
+the first element in the stream, or an empty <code>Optional</code> if the stream is
+empty.</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="see-13"><a class="anchor" href="#see-13"></a>2.3.26.3. See</h5>
+<div class="paragraph">
+<p><a href="#optional">Section 2.3.3.2, &#8220;Optional&#8221;</a></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="changes"><a class="anchor" href="#changes"></a>Appendix A: Changes</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>This appendix lists the changes in the EL specification.
+This appendix is non-normative.</p>
+</div>
+<div class="sect2">
+<h3 id="changes-between-4-0-and-jsr-341"><a class="anchor" href="#changes-between-4-0-and-jsr-341"></a>A.1. Changes between 4.0 and JSR 341</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>The API has moved from the <code>javax.el</code> package to the <code>jakarta.el</code>
+package.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="footer">
+<div id="footer-text">
+ 4.0-RC2<br>
+Last updated 2019-12-12 14:58:58 UTC
+</div>
+</div>
+</body>
+</html>

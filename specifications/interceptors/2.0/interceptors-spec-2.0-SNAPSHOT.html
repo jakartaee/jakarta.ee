@@ -1,0 +1,2590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Asciidoctor 2.0.10">
+<meta name="author" content="Jakarta Interceptors Team, https://projects.eclipse.org/projects/ee4j.interceptors">
+<title>Jakarta Interceptors</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
+<style>
+/* Asciidoctor default stylesheet | MIT License | https://asciidoctor.org */
+/* Uncomment @import statement to use as custom stylesheet */
+/*@import "https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700";*/
+article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section{display:block}
+audio,video{display:inline-block}
+audio:not([controls]){display:none;height:0}
+html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}
+a{background:none}
+a:focus{outline:thin dotted}
+a:active,a:hover{outline:0}
+h1{font-size:2em;margin:.67em 0}
+abbr[title]{border-bottom:1px dotted}
+b,strong{font-weight:bold}
+dfn{font-style:italic}
+hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0}
+mark{background:#ff0;color:#000}
+code,kbd,pre,samp{font-family:monospace;font-size:1em}
+pre{white-space:pre-wrap}
+q{quotes:"\201C" "\201D" "\2018" "\2019"}
+small{font-size:80%}
+sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}
+sup{top:-.5em}
+sub{bottom:-.25em}
+img{border:0}
+svg:not(:root){overflow:hidden}
+figure{margin:0}
+fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}
+legend{border:0;padding:0}
+button,input,select,textarea{font-family:inherit;font-size:100%;margin:0}
+button,input{line-height:normal}
+button,select{text-transform:none}
+button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer}
+button[disabled],html input[disabled]{cursor:default}
+input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0}
+button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}
+textarea{overflow:auto;vertical-align:top}
+table{border-collapse:collapse;border-spacing:0}
+*,*::before,*::after{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box}
+html,body{font-size:100%}
+body{background:#fff;color:rgba(0,0,0,.8);padding:0;margin:0;font-family:"Noto Serif","DejaVu Serif",serif;font-weight:400;font-style:normal;line-height:1;position:relative;cursor:auto;tab-size:4;-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased}
+a:hover{cursor:pointer}
+img,object,embed{max-width:100%;height:auto}
+object,embed{height:100%}
+img{-ms-interpolation-mode:bicubic}
+.left{float:left!important}
+.right{float:right!important}
+.text-left{text-align:left!important}
+.text-right{text-align:right!important}
+.text-center{text-align:center!important}
+.text-justify{text-align:justify!important}
+.hide{display:none}
+img,object,svg{display:inline-block;vertical-align:middle}
+textarea{height:auto;min-height:50px}
+select{width:100%}
+.center{margin-left:auto;margin-right:auto}
+.stretch{width:100%}
+.subheader,.admonitionblock td.content>.title,.audioblock>.title,.exampleblock>.title,.imageblock>.title,.listingblock>.title,.literalblock>.title,.stemblock>.title,.openblock>.title,.paragraph>.title,.quoteblock>.title,table.tableblock>.title,.verseblock>.title,.videoblock>.title,.dlist>.title,.olist>.title,.ulist>.title,.qlist>.title,.hdlist>.title{line-height:1.45;color:#7a2518;font-weight:400;margin-top:0;margin-bottom:.25em}
+div,dl,dt,dd,ul,ol,li,h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6,pre,form,p,blockquote,th,td{margin:0;padding:0;direction:ltr}
+a{color:#2156a5;text-decoration:underline;line-height:inherit}
+a:hover,a:focus{color:#1d4b8f}
+a img{border:0}
+p{font-family:inherit;font-weight:400;font-size:1em;line-height:1.6;margin-bottom:1.25em;text-rendering:optimizeLegibility}
+p aside{font-size:.875em;line-height:1.35;font-style:italic}
+h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6{font-family:"Open Sans","DejaVu Sans",sans-serif;font-weight:300;font-style:normal;color:#ba3925;text-rendering:optimizeLegibility;margin-top:1em;margin-bottom:.5em;line-height:1.0125em}
+h1 small,h2 small,h3 small,#toctitle small,.sidebarblock>.content>.title small,h4 small,h5 small,h6 small{font-size:60%;color:#e99b8f;line-height:0}
+h1{font-size:2.125em}
+h2{font-size:1.6875em}
+h3,#toctitle,.sidebarblock>.content>.title{font-size:1.375em}
+h4,h5{font-size:1.125em}
+h6{font-size:1em}
+hr{border:solid #dddddf;border-width:1px 0 0;clear:both;margin:1.25em 0 1.1875em;height:0}
+em,i{font-style:italic;line-height:inherit}
+strong,b{font-weight:bold;line-height:inherit}
+small{font-size:60%;line-height:inherit}
+code{font-family:"Droid Sans Mono","DejaVu Sans Mono",monospace;font-weight:400;color:rgba(0,0,0,.9)}
+ul,ol,dl{font-size:1em;line-height:1.6;margin-bottom:1.25em;list-style-position:outside;font-family:inherit}
+ul,ol{margin-left:1.5em}
+ul li ul,ul li ol{margin-left:1.25em;margin-bottom:0;font-size:1em}
+ul.square li ul,ul.circle li ul,ul.disc li ul{list-style:inherit}
+ul.square{list-style-type:square}
+ul.circle{list-style-type:circle}
+ul.disc{list-style-type:disc}
+ol li ul,ol li ol{margin-left:1.25em;margin-bottom:0}
+dl dt{margin-bottom:.3125em;font-weight:bold}
+dl dd{margin-bottom:1.25em}
+abbr,acronym{text-transform:uppercase;font-size:90%;color:rgba(0,0,0,.8);border-bottom:1px dotted #ddd;cursor:help}
+abbr{text-transform:none}
+blockquote{margin:0 0 1.25em;padding:.5625em 1.25em 0 1.1875em;border-left:1px solid #ddd}
+blockquote cite{display:block;font-size:.9375em;color:rgba(0,0,0,.6)}
+blockquote cite::before{content:"\2014 \0020"}
+blockquote cite a,blockquote cite a:visited{color:rgba(0,0,0,.6)}
+blockquote,blockquote p{line-height:1.6;color:rgba(0,0,0,.85)}
+@media screen and (min-width:768px){h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6{line-height:1.2}
+h1{font-size:2.75em}
+h2{font-size:2.3125em}
+h3,#toctitle,.sidebarblock>.content>.title{font-size:1.6875em}
+h4{font-size:1.4375em}}
+table{background:#fff;margin-bottom:1.25em;border:solid 1px #dedede}
+table thead,table tfoot{background:#f7f8f7}
+table thead tr th,table thead tr td,table tfoot tr th,table tfoot tr td{padding:.5em .625em .625em;font-size:inherit;color:rgba(0,0,0,.8);text-align:left}
+table tr th,table tr td{padding:.5625em .625em;font-size:inherit;color:rgba(0,0,0,.8)}
+table tr.even,table tr.alt{background:#f8f8f7}
+table thead tr th,table tfoot tr th,table tbody tr td,table tr td,table tfoot tr td{display:table-cell;line-height:1.6}
+h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6{line-height:1.2;word-spacing:-.05em}
+h1 strong,h2 strong,h3 strong,#toctitle strong,.sidebarblock>.content>.title strong,h4 strong,h5 strong,h6 strong{font-weight:400}
+.clearfix::before,.clearfix::after,.float-group::before,.float-group::after{content:" ";display:table}
+.clearfix::after,.float-group::after{clear:both}
+:not(pre):not([class^=L])>code{font-size:.9375em;font-style:normal!important;letter-spacing:0;padding:.1em .5ex;word-spacing:-.15em;background:#f7f7f8;-webkit-border-radius:4px;border-radius:4px;line-height:1.45;text-rendering:optimizeSpeed;word-wrap:break-word}
+:not(pre)>code.nobreak{word-wrap:normal}
+:not(pre)>code.nowrap{white-space:nowrap}
+pre{color:rgba(0,0,0,.9);font-family:"Droid Sans Mono","DejaVu Sans Mono",monospace;line-height:1.45;text-rendering:optimizeSpeed}
+pre code,pre pre{color:inherit;font-size:inherit;line-height:inherit}
+pre>code{display:block}
+pre.nowrap,pre.nowrap pre{white-space:pre;word-wrap:normal}
+em em{font-style:normal}
+strong strong{font-weight:400}
+.keyseq{color:rgba(51,51,51,.8)}
+kbd{font-family:"Droid Sans Mono","DejaVu Sans Mono",monospace;display:inline-block;color:rgba(0,0,0,.8);font-size:.65em;line-height:1.45;background:#f7f7f7;border:1px solid #ccc;-webkit-border-radius:3px;border-radius:3px;-webkit-box-shadow:0 1px 0 rgba(0,0,0,.2),0 0 0 .1em white inset;box-shadow:0 1px 0 rgba(0,0,0,.2),0 0 0 .1em #fff inset;margin:0 .15em;padding:.2em .5em;vertical-align:middle;position:relative;top:-.1em;white-space:nowrap}
+.keyseq kbd:first-child{margin-left:0}
+.keyseq kbd:last-child{margin-right:0}
+.menuseq,.menuref{color:#000}
+.menuseq b:not(.caret),.menuref{font-weight:inherit}
+.menuseq{word-spacing:-.02em}
+.menuseq b.caret{font-size:1.25em;line-height:.8}
+.menuseq i.caret{font-weight:bold;text-align:center;width:.45em}
+b.button::before,b.button::after{position:relative;top:-1px;font-weight:400}
+b.button::before{content:"[";padding:0 3px 0 2px}
+b.button::after{content:"]";padding:0 2px 0 3px}
+p a>code:hover{color:rgba(0,0,0,.9)}
+#header,#content,#footnotes,#footer{width:100%;margin-left:auto;margin-right:auto;margin-top:0;margin-bottom:0;max-width:62.5em;*zoom:1;position:relative;padding-left:.9375em;padding-right:.9375em}
+#header::before,#header::after,#content::before,#content::after,#footnotes::before,#footnotes::after,#footer::before,#footer::after{content:" ";display:table}
+#header::after,#content::after,#footnotes::after,#footer::after{clear:both}
+#content{margin-top:1.25em}
+#content::before{content:none}
+#header>h1:first-child{color:rgba(0,0,0,.85);margin-top:2.25rem;margin-bottom:0}
+#header>h1:first-child+#toc{margin-top:8px;border-top:1px solid #dddddf}
+#header>h1:only-child,body.toc2 #header>h1:nth-last-child(2){border-bottom:1px solid #dddddf;padding-bottom:8px}
+#header .details{border-bottom:1px solid #dddddf;line-height:1.45;padding-top:.25em;padding-bottom:.25em;padding-left:.25em;color:rgba(0,0,0,.6);display:-ms-flexbox;display:-webkit-flex;display:flex;-ms-flex-flow:row wrap;-webkit-flex-flow:row wrap;flex-flow:row wrap}
+#header .details span:first-child{margin-left:-.125em}
+#header .details span.email a{color:rgba(0,0,0,.85)}
+#header .details br{display:none}
+#header .details br+span::before{content:"\00a0\2013\00a0"}
+#header .details br+span.author::before{content:"\00a0\22c5\00a0";color:rgba(0,0,0,.85)}
+#header .details br+span#revremark::before{content:"\00a0|\00a0"}
+#header #revnumber{text-transform:capitalize}
+#header #revnumber::after{content:"\00a0"}
+#content>h1:first-child:not([class]){color:rgba(0,0,0,.85);border-bottom:1px solid #dddddf;padding-bottom:8px;margin-top:0;padding-top:1rem;margin-bottom:1.25rem}
+#toc{border-bottom:1px solid #e7e7e9;padding-bottom:.5em}
+#toc>ul{margin-left:.125em}
+#toc ul.sectlevel0>li>a{font-style:italic}
+#toc ul.sectlevel0 ul.sectlevel1{margin:.5em 0}
+#toc ul{font-family:"Open Sans","DejaVu Sans",sans-serif;list-style-type:none}
+#toc li{line-height:1.3334;margin-top:.3334em}
+#toc a{text-decoration:none}
+#toc a:active{text-decoration:underline}
+#toctitle{color:#7a2518;font-size:1.2em}
+@media screen and (min-width:768px){#toctitle{font-size:1.375em}
+body.toc2{padding-left:15em;padding-right:0}
+#toc.toc2{margin-top:0!important;background:#f8f8f7;position:fixed;width:15em;left:0;top:0;border-right:1px solid #e7e7e9;border-top-width:0!important;border-bottom-width:0!important;z-index:1000;padding:1.25em 1em;height:100%;overflow:auto}
+#toc.toc2 #toctitle{margin-top:0;margin-bottom:.8rem;font-size:1.2em}
+#toc.toc2>ul{font-size:.9em;margin-bottom:0}
+#toc.toc2 ul ul{margin-left:0;padding-left:1em}
+#toc.toc2 ul.sectlevel0 ul.sectlevel1{padding-left:0;margin-top:.5em;margin-bottom:.5em}
+body.toc2.toc-right{padding-left:0;padding-right:15em}
+body.toc2.toc-right #toc.toc2{border-right-width:0;border-left:1px solid #e7e7e9;left:auto;right:0}}
+@media screen and (min-width:1280px){body.toc2{padding-left:20em;padding-right:0}
+#toc.toc2{width:20em}
+#toc.toc2 #toctitle{font-size:1.375em}
+#toc.toc2>ul{font-size:.95em}
+#toc.toc2 ul ul{padding-left:1.25em}
+body.toc2.toc-right{padding-left:0;padding-right:20em}}
+#content #toc{border-style:solid;border-width:1px;border-color:#e0e0dc;margin-bottom:1.25em;padding:1.25em;background:#f8f8f7;-webkit-border-radius:4px;border-radius:4px}
+#content #toc>:first-child{margin-top:0}
+#content #toc>:last-child{margin-bottom:0}
+#footer{max-width:100%;background:rgba(0,0,0,.8);padding:1.25em}
+#footer-text{color:rgba(255,255,255,.8);line-height:1.44}
+#content{margin-bottom:.625em}
+.sect1{padding-bottom:.625em}
+@media screen and (min-width:768px){#content{margin-bottom:1.25em}
+.sect1{padding-bottom:1.25em}}
+.sect1:last-child{padding-bottom:0}
+.sect1+.sect1{border-top:1px solid #e7e7e9}
+#content h1>a.anchor,h2>a.anchor,h3>a.anchor,#toctitle>a.anchor,.sidebarblock>.content>.title>a.anchor,h4>a.anchor,h5>a.anchor,h6>a.anchor{position:absolute;z-index:1001;width:1.5ex;margin-left:-1.5ex;display:block;text-decoration:none!important;visibility:hidden;text-align:center;font-weight:400}
+#content h1>a.anchor::before,h2>a.anchor::before,h3>a.anchor::before,#toctitle>a.anchor::before,.sidebarblock>.content>.title>a.anchor::before,h4>a.anchor::before,h5>a.anchor::before,h6>a.anchor::before{content:"\00A7";font-size:.85em;display:block;padding-top:.1em}
+#content h1:hover>a.anchor,#content h1>a.anchor:hover,h2:hover>a.anchor,h2>a.anchor:hover,h3:hover>a.anchor,#toctitle:hover>a.anchor,.sidebarblock>.content>.title:hover>a.anchor,h3>a.anchor:hover,#toctitle>a.anchor:hover,.sidebarblock>.content>.title>a.anchor:hover,h4:hover>a.anchor,h4>a.anchor:hover,h5:hover>a.anchor,h5>a.anchor:hover,h6:hover>a.anchor,h6>a.anchor:hover{visibility:visible}
+#content h1>a.link,h2>a.link,h3>a.link,#toctitle>a.link,.sidebarblock>.content>.title>a.link,h4>a.link,h5>a.link,h6>a.link{color:#ba3925;text-decoration:none}
+#content h1>a.link:hover,h2>a.link:hover,h3>a.link:hover,#toctitle>a.link:hover,.sidebarblock>.content>.title>a.link:hover,h4>a.link:hover,h5>a.link:hover,h6>a.link:hover{color:#a53221}
+details,.audioblock,.imageblock,.literalblock,.listingblock,.stemblock,.videoblock{margin-bottom:1.25em}
+details>summary:first-of-type{cursor:pointer;display:list-item;outline:none;margin-bottom:.75em}
+.admonitionblock td.content>.title,.audioblock>.title,.exampleblock>.title,.imageblock>.title,.listingblock>.title,.literalblock>.title,.stemblock>.title,.openblock>.title,.paragraph>.title,.quoteblock>.title,table.tableblock>.title,.verseblock>.title,.videoblock>.title,.dlist>.title,.olist>.title,.ulist>.title,.qlist>.title,.hdlist>.title{text-rendering:optimizeLegibility;text-align:left;font-family:"Noto Serif","DejaVu Serif",serif;font-size:1rem;font-style:italic}
+table.tableblock.fit-content>caption.title{white-space:nowrap;width:0}
+.paragraph.lead>p,#preamble>.sectionbody>[class="paragraph"]:first-of-type p{font-size:1.21875em;line-height:1.6;color:rgba(0,0,0,.85)}
+table.tableblock #preamble>.sectionbody>[class="paragraph"]:first-of-type p{font-size:inherit}
+.admonitionblock>table{border-collapse:separate;border:0;background:none;width:100%}
+.admonitionblock>table td.icon{text-align:center;width:80px}
+.admonitionblock>table td.icon img{max-width:none}
+.admonitionblock>table td.icon .title{font-weight:bold;font-family:"Open Sans","DejaVu Sans",sans-serif;text-transform:uppercase}
+.admonitionblock>table td.content{padding-left:1.125em;padding-right:1.25em;border-left:1px solid #dddddf;color:rgba(0,0,0,.6)}
+.admonitionblock>table td.content>:last-child>:last-child{margin-bottom:0}
+.exampleblock>.content{border-style:solid;border-width:1px;border-color:#e6e6e6;margin-bottom:1.25em;padding:1.25em;background:#fff;-webkit-border-radius:4px;border-radius:4px}
+.exampleblock>.content>:first-child{margin-top:0}
+.exampleblock>.content>:last-child{margin-bottom:0}
+.sidebarblock{border-style:solid;border-width:1px;border-color:#dbdbd6;margin-bottom:1.25em;padding:1.25em;background:#f3f3f2;-webkit-border-radius:4px;border-radius:4px}
+.sidebarblock>:first-child{margin-top:0}
+.sidebarblock>:last-child{margin-bottom:0}
+.sidebarblock>.content>.title{color:#7a2518;margin-top:0;text-align:center}
+.exampleblock>.content>:last-child>:last-child,.exampleblock>.content .olist>ol>li:last-child>:last-child,.exampleblock>.content .ulist>ul>li:last-child>:last-child,.exampleblock>.content .qlist>ol>li:last-child>:last-child,.sidebarblock>.content>:last-child>:last-child,.sidebarblock>.content .olist>ol>li:last-child>:last-child,.sidebarblock>.content .ulist>ul>li:last-child>:last-child,.sidebarblock>.content .qlist>ol>li:last-child>:last-child{margin-bottom:0}
+.literalblock pre,.listingblock>.content>pre{-webkit-border-radius:4px;border-radius:4px;word-wrap:break-word;overflow-x:auto;padding:1em;font-size:.8125em}
+@media screen and (min-width:768px){.literalblock pre,.listingblock>.content>pre{font-size:.90625em}}
+@media screen and (min-width:1280px){.literalblock pre,.listingblock>.content>pre{font-size:1em}}
+.literalblock pre,.listingblock>.content>pre:not(.highlight),.listingblock>.content>pre[class="highlight"],.listingblock>.content>pre[class^="highlight "]{background:#f7f7f8}
+.literalblock.output pre{color:#f7f7f8;background:rgba(0,0,0,.9)}
+.listingblock>.content{position:relative}
+.listingblock code[data-lang]::before{display:none;content:attr(data-lang);position:absolute;font-size:.75em;top:.425rem;right:.5rem;line-height:1;text-transform:uppercase;color:inherit;opacity:.5}
+.listingblock:hover code[data-lang]::before{display:block}
+.listingblock.terminal pre .command::before{content:attr(data-prompt);padding-right:.5em;color:inherit;opacity:.5}
+.listingblock.terminal pre .command:not([data-prompt])::before{content:"$"}
+.listingblock pre.highlightjs{padding:0}
+.listingblock pre.highlightjs>code{padding:1em;-webkit-border-radius:4px;border-radius:4px}
+.listingblock pre.prettyprint{border-width:0}
+.prettyprint{background:#f7f7f8}
+pre.prettyprint .linenums{line-height:1.45;margin-left:2em}
+pre.prettyprint li{background:none;list-style-type:inherit;padding-left:0}
+pre.prettyprint li code[data-lang]::before{opacity:1}
+pre.prettyprint li:not(:first-child) code[data-lang]::before{display:none}
+table.linenotable{border-collapse:separate;border:0;margin-bottom:0;background:none}
+table.linenotable td[class]{color:inherit;vertical-align:top;padding:0;line-height:inherit;white-space:normal}
+table.linenotable td.code{padding-left:.75em}
+table.linenotable td.linenos{border-right:1px solid currentColor;opacity:.35;padding-right:.5em}
+pre.pygments .lineno{border-right:1px solid currentColor;opacity:.35;display:inline-block;margin-right:.75em}
+pre.pygments .lineno::before{content:"";margin-right:-.125em}
+.quoteblock{margin:0 1em 1.25em 1.5em;display:table}
+.quoteblock:not(.excerpt)>.title{margin-left:-1.5em;margin-bottom:.75em}
+.quoteblock blockquote,.quoteblock p{color:rgba(0,0,0,.85);font-size:1.15rem;line-height:1.75;word-spacing:.1em;letter-spacing:0;font-style:italic;text-align:justify}
+.quoteblock blockquote{margin:0;padding:0;border:0}
+.quoteblock blockquote::before{content:"\201c";float:left;font-size:2.75em;font-weight:bold;line-height:.6em;margin-left:-.6em;color:#7a2518;text-shadow:0 1px 2px rgba(0,0,0,.1)}
+.quoteblock blockquote>.paragraph:last-child p{margin-bottom:0}
+.quoteblock .attribution{margin-top:.75em;margin-right:.5ex;text-align:right}
+.verseblock{margin:0 1em 1.25em}
+.verseblock pre{font-family:"Open Sans","DejaVu Sans",sans;font-size:1.15rem;color:rgba(0,0,0,.85);font-weight:300;text-rendering:optimizeLegibility}
+.verseblock pre strong{font-weight:400}
+.verseblock .attribution{margin-top:1.25rem;margin-left:.5ex}
+.quoteblock .attribution,.verseblock .attribution{font-size:.9375em;line-height:1.45;font-style:italic}
+.quoteblock .attribution br,.verseblock .attribution br{display:none}
+.quoteblock .attribution cite,.verseblock .attribution cite{display:block;letter-spacing:-.025em;color:rgba(0,0,0,.6)}
+.quoteblock.abstract blockquote::before,.quoteblock.excerpt blockquote::before,.quoteblock .quoteblock blockquote::before{display:none}
+.quoteblock.abstract blockquote,.quoteblock.abstract p,.quoteblock.excerpt blockquote,.quoteblock.excerpt p,.quoteblock .quoteblock blockquote,.quoteblock .quoteblock p{line-height:1.6;word-spacing:0}
+.quoteblock.abstract{margin:0 1em 1.25em;display:block}
+.quoteblock.abstract>.title{margin:0 0 .375em;font-size:1.15em;text-align:center}
+.quoteblock.excerpt>blockquote,.quoteblock .quoteblock{padding:0 0 .25em 1em;border-left:.25em solid #dddddf}
+.quoteblock.excerpt,.quoteblock .quoteblock{margin-left:0}
+.quoteblock.excerpt blockquote,.quoteblock.excerpt p,.quoteblock .quoteblock blockquote,.quoteblock .quoteblock p{color:inherit;font-size:1.0625rem}
+.quoteblock.excerpt .attribution,.quoteblock .quoteblock .attribution{color:inherit;text-align:left;margin-right:0}
+table.tableblock{max-width:100%;border-collapse:separate}
+p.tableblock:last-child{margin-bottom:0}
+td.tableblock>.content>:last-child{margin-bottom:-1.25em}
+td.tableblock>.content>:last-child.sidebarblock{margin-bottom:0}
+table.tableblock,th.tableblock,td.tableblock{border:0 solid #dedede}
+table.grid-all>thead>tr>.tableblock,table.grid-all>tbody>tr>.tableblock{border-width:0 1px 1px 0}
+table.grid-all>tfoot>tr>.tableblock{border-width:1px 1px 0 0}
+table.grid-cols>*>tr>.tableblock{border-width:0 1px 0 0}
+table.grid-rows>thead>tr>.tableblock,table.grid-rows>tbody>tr>.tableblock{border-width:0 0 1px}
+table.grid-rows>tfoot>tr>.tableblock{border-width:1px 0 0}
+table.grid-all>*>tr>.tableblock:last-child,table.grid-cols>*>tr>.tableblock:last-child{border-right-width:0}
+table.grid-all>tbody>tr:last-child>.tableblock,table.grid-all>thead:last-child>tr>.tableblock,table.grid-rows>tbody>tr:last-child>.tableblock,table.grid-rows>thead:last-child>tr>.tableblock{border-bottom-width:0}
+table.frame-all{border-width:1px}
+table.frame-sides{border-width:0 1px}
+table.frame-topbot,table.frame-ends{border-width:1px 0}
+table.stripes-all tr,table.stripes-odd tr:nth-of-type(odd),table.stripes-even tr:nth-of-type(even),table.stripes-hover tr:hover{background:#f8f8f7}
+th.halign-left,td.halign-left{text-align:left}
+th.halign-right,td.halign-right{text-align:right}
+th.halign-center,td.halign-center{text-align:center}
+th.valign-top,td.valign-top{vertical-align:top}
+th.valign-bottom,td.valign-bottom{vertical-align:bottom}
+th.valign-middle,td.valign-middle{vertical-align:middle}
+table thead th,table tfoot th{font-weight:bold}
+tbody tr th{display:table-cell;line-height:1.6;background:#f7f8f7}
+tbody tr th,tbody tr th p,tfoot tr th,tfoot tr th p{color:rgba(0,0,0,.8);font-weight:bold}
+p.tableblock>code:only-child{background:none;padding:0}
+p.tableblock{font-size:1em}
+ol{margin-left:1.75em}
+ul li ol{margin-left:1.5em}
+dl dd{margin-left:1.125em}
+dl dd:last-child,dl dd:last-child>:last-child{margin-bottom:0}
+ol>li p,ul>li p,ul dd,ol dd,.olist .olist,.ulist .ulist,.ulist .olist,.olist .ulist{margin-bottom:.625em}
+ul.checklist,ul.none,ol.none,ul.no-bullet,ol.no-bullet,ol.unnumbered,ul.unstyled,ol.unstyled{list-style-type:none}
+ul.no-bullet,ol.no-bullet,ol.unnumbered{margin-left:.625em}
+ul.unstyled,ol.unstyled{margin-left:0}
+ul.checklist{margin-left:.625em}
+ul.checklist li>p:first-child>.fa-square-o:first-child,ul.checklist li>p:first-child>.fa-check-square-o:first-child{width:1.25em;font-size:.8em;position:relative;bottom:.125em}
+ul.checklist li>p:first-child>input[type="checkbox"]:first-child{margin-right:.25em}
+ul.inline{display:-ms-flexbox;display:-webkit-box;display:flex;-ms-flex-flow:row wrap;-webkit-flex-flow:row wrap;flex-flow:row wrap;list-style:none;margin:0 0 .625em -1.25em}
+ul.inline>li{margin-left:1.25em}
+.unstyled dl dt{font-weight:400;font-style:normal}
+ol.arabic{list-style-type:decimal}
+ol.decimal{list-style-type:decimal-leading-zero}
+ol.loweralpha{list-style-type:lower-alpha}
+ol.upperalpha{list-style-type:upper-alpha}
+ol.lowerroman{list-style-type:lower-roman}
+ol.upperroman{list-style-type:upper-roman}
+ol.lowergreek{list-style-type:lower-greek}
+.hdlist>table,.colist>table{border:0;background:none}
+.hdlist>table>tbody>tr,.colist>table>tbody>tr{background:none}
+td.hdlist1,td.hdlist2{vertical-align:top;padding:0 .625em}
+td.hdlist1{font-weight:bold;padding-bottom:1.25em}
+.literalblock+.colist,.listingblock+.colist{margin-top:-.5em}
+.colist td:not([class]):first-child{padding:.4em .75em 0;line-height:1;vertical-align:top}
+.colist td:not([class]):first-child img{max-width:none}
+.colist td:not([class]):last-child{padding:.25em 0}
+.thumb,.th{line-height:0;display:inline-block;border:solid 4px #fff;-webkit-box-shadow:0 0 0 1px #ddd;box-shadow:0 0 0 1px #ddd}
+.imageblock.left{margin:.25em .625em 1.25em 0}
+.imageblock.right{margin:.25em 0 1.25em .625em}
+.imageblock>.title{margin-bottom:0}
+.imageblock.thumb,.imageblock.th{border-width:6px}
+.imageblock.thumb>.title,.imageblock.th>.title{padding:0 .125em}
+.image.left,.image.right{margin-top:.25em;margin-bottom:.25em;display:inline-block;line-height:0}
+.image.left{margin-right:.625em}
+.image.right{margin-left:.625em}
+a.image{text-decoration:none;display:inline-block}
+a.image object{pointer-events:none}
+sup.footnote,sup.footnoteref{font-size:.875em;position:static;vertical-align:super}
+sup.footnote a,sup.footnoteref a{text-decoration:none}
+sup.footnote a:active,sup.footnoteref a:active{text-decoration:underline}
+#footnotes{padding-top:.75em;padding-bottom:.75em;margin-bottom:.625em}
+#footnotes hr{width:20%;min-width:6.25em;margin:-.25em 0 .75em;border-width:1px 0 0}
+#footnotes .footnote{padding:0 .375em 0 .225em;line-height:1.3334;font-size:.875em;margin-left:1.2em;margin-bottom:.2em}
+#footnotes .footnote a:first-of-type{font-weight:bold;text-decoration:none;margin-left:-1.05em}
+#footnotes .footnote:last-of-type{margin-bottom:0}
+#content #footnotes{margin-top:-.625em;margin-bottom:0;padding:.75em 0}
+.gist .file-data>table{border:0;background:#fff;width:100%;margin-bottom:0}
+.gist .file-data>table td.line-data{width:99%}
+div.unbreakable{page-break-inside:avoid}
+.big{font-size:larger}
+.small{font-size:smaller}
+.underline{text-decoration:underline}
+.overline{text-decoration:overline}
+.line-through{text-decoration:line-through}
+.aqua{color:#00bfbf}
+.aqua-background{background:#00fafa}
+.black{color:#000}
+.black-background{background:#000}
+.blue{color:#0000bf}
+.blue-background{background:#0000fa}
+.fuchsia{color:#bf00bf}
+.fuchsia-background{background:#fa00fa}
+.gray{color:#606060}
+.gray-background{background:#7d7d7d}
+.green{color:#006000}
+.green-background{background:#007d00}
+.lime{color:#00bf00}
+.lime-background{background:#00fa00}
+.maroon{color:#600000}
+.maroon-background{background:#7d0000}
+.navy{color:#000060}
+.navy-background{background:#00007d}
+.olive{color:#606000}
+.olive-background{background:#7d7d00}
+.purple{color:#600060}
+.purple-background{background:#7d007d}
+.red{color:#bf0000}
+.red-background{background:#fa0000}
+.silver{color:#909090}
+.silver-background{background:#bcbcbc}
+.teal{color:#006060}
+.teal-background{background:#007d7d}
+.white{color:#bfbfbf}
+.white-background{background:#fafafa}
+.yellow{color:#bfbf00}
+.yellow-background{background:#fafa00}
+span.icon>.fa{cursor:default}
+a span.icon>.fa{cursor:inherit}
+.admonitionblock td.icon [class^="fa icon-"]{font-size:2.5em;text-shadow:1px 1px 2px rgba(0,0,0,.5);cursor:default}
+.admonitionblock td.icon .icon-note::before{content:"\f05a";color:#19407c}
+.admonitionblock td.icon .icon-tip::before{content:"\f0eb";text-shadow:1px 1px 2px rgba(155,155,0,.8);color:#111}
+.admonitionblock td.icon .icon-warning::before{content:"\f071";color:#bf6900}
+.admonitionblock td.icon .icon-caution::before{content:"\f06d";color:#bf3400}
+.admonitionblock td.icon .icon-important::before{content:"\f06a";color:#bf0000}
+.conum[data-value]{display:inline-block;color:#fff!important;background:rgba(0,0,0,.8);-webkit-border-radius:100px;border-radius:100px;text-align:center;font-size:.75em;width:1.67em;height:1.67em;line-height:1.67em;font-family:"Open Sans","DejaVu Sans",sans-serif;font-style:normal;font-weight:bold}
+.conum[data-value] *{color:#fff!important}
+.conum[data-value]+b{display:none}
+.conum[data-value]::after{content:attr(data-value)}
+pre .conum[data-value]{position:relative;top:-.125em}
+b.conum *{color:inherit!important}
+.conum:not([data-value]):empty{display:none}
+dt,th.tableblock,td.content,div.footnote{text-rendering:optimizeLegibility}
+h1,h2,p,td.content,span.alt{letter-spacing:-.01em}
+p strong,td.content strong,div.footnote strong{letter-spacing:-.005em}
+p,blockquote,dt,td.content,span.alt{font-size:1.0625rem}
+p{margin-bottom:1.25rem}
+.sidebarblock p,.sidebarblock dt,.sidebarblock td.content,p.tableblock{font-size:1em}
+.exampleblock>.content{background:#fffef7;border-color:#e0e0dc;-webkit-box-shadow:0 1px 4px #e0e0dc;box-shadow:0 1px 4px #e0e0dc}
+.print-only{display:none!important}
+@page{margin:1.25cm .75cm}
+@media print{*{-webkit-box-shadow:none!important;box-shadow:none!important;text-shadow:none!important}
+html{font-size:80%}
+a{color:inherit!important;text-decoration:underline!important}
+a.bare,a[href^="#"],a[href^="mailto:"]{text-decoration:none!important}
+a[href^="http:"]:not(.bare)::after,a[href^="https:"]:not(.bare)::after{content:"(" attr(href) ")";display:inline-block;font-size:.875em;padding-left:.25em}
+abbr[title]::after{content:" (" attr(title) ")"}
+pre,blockquote,tr,img,object,svg{page-break-inside:avoid}
+thead{display:table-header-group}
+svg{max-width:100%}
+p,blockquote,dt,td.content{font-size:1em;orphans:3;widows:3}
+h2,h3,#toctitle,.sidebarblock>.content>.title{page-break-after:avoid}
+#toc,.sidebarblock,.exampleblock>.content{background:none!important}
+#toc{border-bottom:1px solid #dddddf!important;padding-bottom:0!important}
+body.book #header{text-align:center}
+body.book #header>h1:first-child{border:0!important;margin:2.5em 0 1em}
+body.book #header .details{border:0!important;display:block;padding:0!important}
+body.book #header .details span:first-child{margin-left:0!important}
+body.book #header .details br{display:block}
+body.book #header .details br+span::before{content:none!important}
+body.book #toc{border:0!important;text-align:left!important;padding:0!important;margin:0!important}
+body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-break-before:always}
+.listingblock code[data-lang]::before{display:block}
+#footer{padding:0 .9375em}
+.hide-on-print{display:none!important}
+.print-only{display:block!important}
+.hide-for-print{display:none!important}
+.show-for-print{display:inherit!important}}
+@media print,amzn-kf8{#header>h1:first-child{margin-top:1.25rem}
+.sect1{padding:0!important}
+.sect1+.sect1{border:0}
+#footer{background:none}
+#footer-text{color:rgba(0,0,0,.6);font-size:.9em}}
+@media amzn-kf8{#header,#content,#footnotes,#footer{padding:0}}
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body class="book toc2 toc-left">
+<div id="header">
+<h1>Jakarta Interceptors</h1>
+<div class="details">
+<span id="author" class="author">Jakarta Interceptors Team, https://projects.eclipse.org/projects/ee4j.interceptors</span><br>
+<span id="email" class="email"><a href="https://dev.eclipse.org/mailman/listinfo/interceptor-api-dev" class="bare">https://dev.eclipse.org/mailman/listinfo/interceptor-api-dev</a></span><br>
+<span id="revnumber"> 2.0-SNAPSHOT,</span>
+<span id="revdate">June 12, 2020</span>
+<br><span id="revremark">DRAFT</span>
+</div>
+<div id="toc" class="toc2">
+<div id="toctitle">Table of Contents</div>
+<ul class="sectlevel2">
+<li><a href="#eclipse-foundation-specification-license">Eclipse Foundation Specification License</a>
+<ul class="sectlevel3">
+<li><a href="#disclaimers">Disclaimers</a></li>
+</ul>
+</li>
+<li><a href="#overview">1. Overview</a>
+<ul class="sectlevel2">
+<li><a href="#specification-scope">1.1. Specification Scope</a></li>
+<li><a href="#revision_history">1.2. Revision History</a></li>
+<li><a href="#relationship_to_other_specifications">1.3. Relationship to Other Specifications</a></li>
+<li><a href="#document_conventions">1.4. Document Conventions</a></li>
+</ul>
+</li>
+<li><a href="#interceptor_programming_contract">2. Interceptor Programming Contract</a>
+<ul class="sectlevel2">
+<li><a href="#terminology">2.1. Terminology</a></li>
+<li><a href="#definition_of_interceptor_classes_and_interceptor_methods">2.2. Definition of Interceptor Classes and Interceptor Methods</a></li>
+<li><a href="#interceptor_life_cycle">2.3. Interceptor Life Cycle</a>
+<ul class="sectlevel3">
+<li><a href="#interceptor_environment">2.3.1. Interceptor Environment</a></li>
+</ul>
+</li>
+<li><a href="#invocation_context">2.4. Invocation Context</a></li>
+<li><a href="#exceptions">2.5. Exceptions</a></li>
+<li><a href="#business_method_interceptor_methods">2.6. Business Method Interceptor Methods</a></li>
+<li><a href="#interceptor-methods-for-lifecycle-event-callbacks">2.7. Interceptor Methods for Lifecycle Event Callbacks</a>
+<ul class="sectlevel3">
+<li><a href="#exceptions_life_cicle_event_callbacks">2.7.1. Exceptions</a></li>
+</ul>
+</li>
+<li><a href="#timeout_method_interceptor_methods">2.8. Timeout Method Interceptor Methods</a></li>
+<li><a href="#constructor_and_method_level_interceptors">2.9. Constructor- and Method-level Interceptors</a></li>
+<li><a href="#default_interceptors">2.10. Default Interceptors</a></li>
+</ul>
+</li>
+<li><a href="#associating_interceptors_with_classes_and_methods_using_interceptor_bindings">3. Associating Interceptors with Classes and Methods using Interceptor Bindings</a>
+<ul class="sectlevel2">
+<li><a href="#interceptor_binding_types">3.1. Interceptor Binding Types</a>
+<ul class="sectlevel3">
+<li><a href="#interceptor_binding_types_with_additional_interceptor_bindings">3.1.1. Interceptor binding types with additional interceptor bindings</a></li>
+<li><a href="#other_sources_of_interceptor_bindings">3.1.2. Other sources of interceptor bindings</a></li>
+</ul>
+</li>
+<li><a href="#declaring_the_interceptor_bindings_of_an_interceptor">3.2. Declaring the Interceptor Bindings of an Interceptor</a></li>
+<li><a href="#binding_an_interceptor_to_a_component">3.3. Binding an Interceptor to a Component</a></li>
+<li><a href="#interceptor_resolution">3.4. Interceptor Resolution</a>
+<ul class="sectlevel3">
+<li><a href="#interceptors_with_multiple_bindings">3.4.1. Interceptors with multiple bindings</a></li>
+<li><a href="#interceptor_binding_types_with_members">3.4.2. Interceptor binding types with members</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#associating_interceptors_with_classes_and_methods_using_the_interceptors_annotation">4. Associating Interceptors with Classes and Methods using the Interceptors Annotation</a></li>
+<li><a href="#interceptor_ordering">5. Interceptor Ordering</a>
+<ul class="sectlevel2">
+<li><a href="#enabling_interceptors">5.1. Enabling Interceptors</a></li>
+<li><a href="#interceptor_ordering_rules">5.2. Interceptor Ordering Rules</a>
+<ul class="sectlevel3">
+<li><a href="#use_of_the_priority_annotation_in_ordering_interceptors">5.2.1. Use of the Priority Annotation in Ordering Interceptors</a></li>
+</ul>
+</li>
+<li><a href="#excluding_interceptors">5.3. Excluding Interceptors</a></li>
+</ul>
+</li>
+<li><a href="#bibliography">Appendix A: Bibliography</a></li>
+<li><a href="#change_log">Appendix B: Change Log</a></li>
+</ul>
+</div>
+</div>
+<div id="content">
+<div id="preamble">
+<div class="sectionbody">
+<div class="literalblock">
+<div class="content">
+<pre>Specification: Jakarta Interceptors
+
+Version: 2.0-SNAPSHOT
+
+Status: DRAFT
+
+Release: June 12, 2020</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Copyright (c) 2019 Eclipse Foundation.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="eclipse-foundation-specification-license"><a class="anchor" href="#eclipse-foundation-specification-license"></a>Eclipse Foundation Specification License</h3>
+<div class="paragraph">
+<p>By using and/or copying this document, or the Eclipse Foundation
+document from which this statement is linked, you (the licensee) agree
+that you have read, understood, and will comply with the following
+terms and conditions:</p>
+</div>
+<div class="paragraph">
+<p>Permission to copy, and distribute the contents of this document, or
+the Eclipse Foundation document from which this statement is linked, in
+any medium for any purpose and without fee or royalty is hereby
+granted, provided that you include the following on ALL copies of the
+document, or portions thereof, that you use:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>link or URL to the original Eclipse Foundation document.</p>
+</li>
+<li>
+<p>All existing copyright notices, or if one does not exist, a notice
+(hypertext is preferred, but a textual representation is permitted)
+of the form: "Copyright (c) [$date-of-document]
+Eclipse Foundation, Inc. <a href="#url to this license">[url to this license]</a>"</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Inclusion of the full text of this NOTICE must be provided. We
+request that authorship attribution be provided in any software,
+documents, or other items or products that you create pursuant to the
+implementation of the contents of this document, or any portion
+thereof.</p>
+</div>
+<div class="paragraph">
+<p>No right to create modifications or derivatives of Eclipse Foundation
+documents is granted pursuant to this license, except anyone may
+prepare and distribute derivative works and portions of this document
+in software that implements the specification, in supporting materials
+accompanying such software, and in documentation of such software,
+PROVIDED that all such works include the notice below. HOWEVER, the
+publication of derivative works of this document for use as a technical
+specification is expressly prohibited.</p>
+</div>
+<div class="paragraph">
+<p>The notice is:</p>
+</div>
+<div class="paragraph">
+<p>"Copyright (c) 2018 Eclipse Foundation. This software or
+document includes material copied from or derived from [title and URI
+of the Eclipse Foundation specification document]."</p>
+</div>
+<div class="sect3">
+<h4 id="disclaimers"><a class="anchor" href="#disclaimers"></a>Disclaimers</h4>
+<div class="paragraph">
+<p>THIS DOCUMENT IS PROVIDED &quot;AS IS,&quot; AND THE COPYRIGHT
+HOLDERS AND THE ECLIPSE FOUNDATION MAKE NO REPRESENTATIONS OR
+WARRANTIES, EXPRESS OR IMPLIED, INCLUDING, BUT NOT LIMITED TO,
+WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE,
+NON-INFRINGEMENT, OR TITLE; THAT THE CONTENTS OF THE DOCUMENT ARE
+SUITABLE FOR ANY PURPOSE; NOR THAT THE IMPLEMENTATION OF SUCH CONTENTS
+WILL NOT INFRINGE ANY THIRD PARTY PATENTS, COPYRIGHTS, TRADEMARKS OR
+OTHER RIGHTS.</p>
+</div>
+<div class="paragraph">
+<p>THE COPYRIGHT HOLDERS AND THE ECLIPSE FOUNDATION WILL NOT BE LIABLE
+FOR ANY DIRECT, INDIRECT, SPECIAL OR CONSEQUENTIAL DAMAGES ARISING OUT
+OF ANY USE OF THE DOCUMENT OR THE PERFORMANCE OR IMPLEMENTATION OF THE
+CONTENTS THEREOF.</p>
+</div>
+<div class="paragraph">
+<p>The name and trademarks of the copyright holders or the Eclipse
+Foundation may NOT be used in advertising or publicity pertaining to
+this document or its contents without specific, written prior
+permission. Title to copyright in this document will at all times
+remain with copyright holders.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="overview"><a class="anchor" href="#overview"></a>1. Overview</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="specification-scope"><a class="anchor" href="#specification-scope"></a>1.1. Specification Scope</h3>
+<div class="paragraph">
+<p>Jakarta Interceptors defines a means of interposing on business
+method invocations and specific events—such as lifecycle
+events and timeout events—that occur on instances of Jakarta EE
+components and other managed classes.</p>
+</div>
+<div class="paragraph">
+<p>An interceptor method is either a method of the component class
+(called the target class) or a method of a separate class
+(called the interceptor class) that is associated with the target
+class.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="revision_history"><a class="anchor" href="#revision_history"></a>1.2. Revision History</h3>
+<div class="paragraph">
+<p>This document is an update to the
+Jakarta Interceptors specification 1.2. Version 1.1 was based on the
+Interceptors chapter of the Enterprise JavaBeansTM 3.0 (EJB)
+specification [<a href="#bib1">1</a>]. Version
+1.2 included interceptor binding definitions that were originally
+defined in the Contexts and Dependency Injection for the Jakarta EE
+Platform (CDI) specification [<a href="#bib3">3</a>].</p>
+</div>
+<div class="paragraph">
+<p>The change log for the current version is found in <a href="#change_log">Change Log</a>.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="relationship_to_other_specifications"><a class="anchor" href="#relationship_to_other_specifications"></a>1.3. Relationship to Other Specifications</h3>
+<div class="paragraph">
+<p>The Jakarta EE Platform specification requires
+support for interceptors. The use of interceptors defined by means of
+the <code>Interceptors</code> annotation is required to be supported for EJB and
+Managed Bean components, including in the absence of CDI. When CDI is
+enabled, the use of interceptors defined both by means of interceptor
+binding annotations and by means of the <code>Interceptors</code> annotation is
+required to be supported for component classes that support injection,
+as described in the section “Annotations and Injection” of the Jakarta EE
+Platform specification [<a href="#bib6">6</a>].</p>
+</div>
+<div class="paragraph">
+<p>Both the EJB and the CDI specifications
+provide extensions to this specification. Other specifications may
+choose to do so in the future. Such specifications are referred to in
+this document as extension specifications. This document outlines
+permissible extensions to this specification and defines requirements
+for extension specifications.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="document_conventions"><a class="anchor" href="#document_conventions"></a>1.4. Document Conventions</h3>
+<div class="paragraph">
+<p>The regular Times font is used for
+information that is prescriptive by the Interceptors specification.</p>
+</div>
+<div class="paragraph">
+<p>The italic Times font is used for paragraphs
+that contain descriptive information, such as notes describing typical
+use, or notes clarifying the text with prescriptive specification.</p>
+</div>
+<div class="paragraph">
+<p>Java code and sample data fragments are formatted as shown in figure
+<a href="#1.1">[1.1]</a>:</p>
+</div>
+<div id="1.1" class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="java"><span class="keyword">package</span> <span class="namespace">com.example.hello</span>;
+
+<span class="directive">public</span> <span class="type">class</span> <span class="class">Hello</span> {
+    <span class="directive">public</span> <span class="directive">static</span> <span class="type">void</span> main(<span class="predefined-type">String</span> args<span class="type">[]</span>) {
+    <span class="predefined-type">System</span>.out.println(<span class="string"><span class="delimiter">&quot;</span><span class="content">Hello World</span><span class="delimiter">&quot;</span></span>);
+    }
+}</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="interceptor_programming_contract"><a class="anchor" href="#interceptor_programming_contract"></a>2. Interceptor Programming Contract</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="terminology"><a class="anchor" href="#terminology"></a>2.1. Terminology</h3>
+<div class="paragraph">
+<p>The following terminology is used in this
+document:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>Interceptor class</code> : a class containing
+interceptor methods that is designed to be associated with a target
+class, method, or constructor.</p>
+</li>
+<li>
+<p><code>Interceptor</code>: instance of an interceptor
+class.</p>
+</li>
+<li>
+<p><code>Interceptor method</code> : a method of an
+interceptor class or of a target class that is invoked to interpose on
+the invocation of a method of the target class, a constructor of the
+target class, a lifecycle event of the target class, or a timeout method
+of the target class.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="definition_of_interceptor_classes_and_interceptor_methods"><a class="anchor" href="#definition_of_interceptor_classes_and_interceptor_methods"></a>2.2. Definition of Interceptor Classes and Interceptor Methods</h3>
+<div class="paragraph">
+<p>An interceptor method for a target class may
+be declared in the target class, in an interceptor class associated with
+the target class, or in a superclass of the target class or interceptor
+class.</p>
+</div>
+<div class="paragraph">
+<p>Any number of interceptor classes may be
+associated with a target class. See Chapter
+<a href="#interceptor_ordering">Interceptor Ordering</a> for rules on
+interceptor ordering.</p>
+</div>
+<div class="paragraph">
+<p>An interceptor class must not be <code>abstract</code> and
+must have a <code>public</code> no-arg constructor.</p>
+</div>
+<div class="paragraph">
+<p>This specification defines the interceptor
+method types listed below. Extension specifications may define
+additional interceptor method types.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Around-invoke interceptor methods (annotated
+with the <code>jakarta.interceptor.AroundInvoke</code> annotation). Around-invoke
+interceptor methods interpose on the invocation of business methods.</p>
+</li>
+<li>
+<p>Around-timeout interceptor methods (annotated
+with the <code>jakarta.interceptor.AroundTimeout</code> annotation). Around-timeout
+interceptor methods interpose on the invocation of timeout methods, in
+response to timer events.</p>
+</li>
+<li>
+<p>Post-construct interceptor methods (annotated
+with the <code>jakarta.annotation.PostConstruct</code> annotation). Post-construct
+interceptor methods are invoked after dependency injection has been
+completed on the target instance.</p>
+</li>
+<li>
+<p>Pre-destroy interceptor methods (annotated
+with the <code>jakarta.annotation.PreDestroy</code> annotation). Pre-destroy
+interceptor methods are invoked before the target instance and all
+interceptor instances associated with it are destroyed by the container.</p>
+</li>
+<li>
+<p>Around-construct interceptor methods
+(annotated with the <code>jakarta.interceptor.AroundConstruct</code> annotation).
+Around-construct interceptor methods interpose on the invocation of the
+constructor of the target instance.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Post-construct, pre-destroy, and
+around-construct interceptor methods are collectively referred to as
+<em>lifecycle callback interceptor methods</em> . Extension specifications may
+define additional lifecycle callback events and lifecycle callback
+interceptor method types.</p>
+</div>
+<div class="paragraph">
+<p>Up to one interceptor method of each
+interceptor method type may be defined in the same class. More
+specifically, up to one around-invoke interceptor method, one
+around-timeout interceptor method, and one lifecycle callback
+interceptor method for each of the different lifecycle events may be
+defined in the same class. Only the interceptor methods of the
+interceptor class that are relevant for the given invocation context are
+invoked. For example, when a business method is invoked, around-invoke
+interceptor methods are invoked, but any around-construct,
+around-timeout, post-construct, or pre-destroy methods are ignored.</p>
+</div>
+<div class="paragraph">
+<p>A single interceptor method may be defined to
+interpose on any combination of business methods, timeout methods, and
+lifecycle callback events.</p>
+</div>
+<div class="paragraph">
+<p>Interceptor methods and interceptor classes
+may be defined for a class by means of metadata annotations or,
+optionally, by means of a deployment descriptor.</p>
+</div>
+<div class="paragraph">
+<p>Interceptor classes may be associated with
+the target class using either interceptor binding annotations (see
+<a href="#associating_interceptors_with_classes_and_methods_using_interceptor_bindings">Associating Interceptors with Classes and Methods using Interceptor Bindings</a>) or the
+<em>jakarta.interceptor.Interceptors</em> annotation (see
+<a href="#associating_interceptors_with_classes_and_methods_using_the_interceptors_annotation">Associating Interceptors with Classes and Methods using the Interceptors Annotation</a>). Typically only
+one interceptor association type is used for any target class.</p>
+</div>
+<div class="paragraph">
+<p>An extension specification may use a
+deployment descriptor to specify the invocation order of interceptors or
+to override the order specified in metadata annotations. A deployment
+descriptor can optionally be used to define interceptors, to define
+default interceptors, or to associate interceptors with a target class.
+For example, the EJB specification [<a href="#bib2">2</a>] requires support for the
+<code>ejb-jar.xml</code> deployment descriptor and the CDI specification
+[<a href="#bib3">3</a>] requires support for the <code>beans.xml</code>
+deployment descriptor.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="interceptor_life_cycle"><a class="anchor" href="#interceptor_life_cycle"></a>2.3. Interceptor Life Cycle</h3>
+<div class="paragraph">
+<p>The lifecycle of an interceptor instance is
+the same as that of the target instance with which it is associated.</p>
+</div>
+<div class="paragraph">
+<p>Except as noted below, when the target
+instance is created, a corresponding instance is created for each
+associated interceptor class. These interceptor instances are destroyed
+if the target instance fails to be created or when the target instance
+is destroyed by the container.</p>
+</div>
+<div class="paragraph">
+<p>An interceptor instance may be the target of
+dependency injection. Dependency injection is performed when the
+interceptor instance is created, using the naming context of the
+associated target class.</p>
+</div>
+<div class="paragraph">
+<p>With the exception of aroundConstruct
+lifecycle callback interceptor methods, no interceptor methods are
+invoked until after dependency injection has been completed on both the
+interceptor instances and the target <sup class="footnote">[<a id="_footnoteref_1" class="footnote" href="#_footnotedef_1" title="View footnote.">1</a>]</sup>.</p>
+</div>
+<div class="paragraph">
+<p>Post-construct interceptor methods for the
+target instance are invoked after dependency injection has been
+completed on the target instance.</p>
+</div>
+<div class="paragraph">
+<p>Pre-destroy interceptor methods are
+invoked before the target instance and all interceptor instances
+associated with it are destroyed.<sup class="footnote">[<a id="_footnoteref_2" class="footnote" href="#_footnotedef_2" title="View footnote.">2</a>]</sup></p>
+</div>
+<div class="paragraph">
+<p>The following rules apply specifically to
+around-construct lifecycle callback interceptor methods:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Around-construct lifecycle callback
+interceptor methods are invoked after dependency injection has been
+completed on the instances of all interceptor classes associated with
+the target class. Injection of the target component into interceptor
+instances that are invoked during the around-construct lifecycle
+callback is not supported.</p>
+</li>
+<li>
+<p>The target instance is created <code>after</code> the
+last interceptor method in the around-construct interceptor chain
+invokes the <code>InvocationContext.proceed</code> method. If the constructor for the
+target instance supports injection, such constructor injection is
+performed. If the <code>InvocationContext.proceed</code> method is not invoked by an
+interceptor method, the target instance will not be created.</p>
+</li>
+<li>
+<p>An around-construct interceptor method can
+access the constructed instance using the <code>InvocationContext.getTarget</code>
+method after the <code>InvocationContext.proceed</code> method completes.</p>
+</li>
+<li>
+<p>Dependency injection on the target instance
+other than constructor injection is not completed until after the
+invocations of all interceptor methods in the around-construct
+interceptor chain complete successfully. Around-construct lifecycle
+callback interceptor methods should therefore exercise caution when
+invoking methods of the target instance since dependency injection on
+the target instance will not have been completed.</p>
+</li>
+</ul>
+</div>
+<div class="sect3">
+<h4 id="interceptor_environment"><a class="anchor" href="#interceptor_environment"></a>2.3.1. Interceptor Environment</h4>
+<div class="paragraph">
+<p>An interceptor class shares the enterprise
+naming context of its associated target class. Annotations and/or XML
+deployment descriptor elements for dependency injection or for direct
+JNDI lookup refer to this shared naming context.</p>
+</div>
+<div class="paragraph">
+<p>Around-invoke and around-timeout interceptor
+methods run in the same Java thread as the associated target method.
+Around-construct interceptor methods run in the same Java thread as the
+target constructor.</p>
+</div>
+<div class="paragraph">
+<p>It is possible to carry state across multiple
+interceptor method invocations for a single method invocation or
+lifecycle callback event in the context data of the <code>InvocationContext</code>
+object. The <code>InvocationContext</code> object also provides information that
+enables interceptor methods to control the behavior of the interceptor
+invocation chain, including whether the next method in the chain is
+invoked and the values of its parameters and result.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="invocation_context"><a class="anchor" href="#invocation_context"></a>2.4. Invocation Context</h3>
+<div class="paragraph">
+<p>The <code>InvocationContext</code> object provides
+information that enables interceptor methods to control the behavior of
+the invocation chain.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="java"><span class="directive">public</span> <span class="type">interface</span> <span class="class">InvocationContext</span> {
+ <span class="directive">public</span> <span class="predefined-type">Object</span> getTarget();
+ <span class="directive">public</span> <span class="predefined-type">Object</span> getTimer();
+ <span class="directive">public</span> <span class="predefined-type">Method</span> getMethod();
+ <span class="directive">public</span> <span class="predefined-type">Constructor</span>&lt;?&gt; getConstructor();
+ <span class="directive">public</span> <span class="predefined-type">Object</span><span class="type">[]</span> getParameters();
+ <span class="directive">public</span> <span class="type">void</span> setParameters(<span class="predefined-type">Object</span><span class="type">[]</span> params);
+ <span class="directive">public</span> java.util.Map&lt;<span class="predefined-type">String</span>, <span class="predefined-type">Object</span>&gt; getContextData();
+ <span class="directive">public</span> <span class="predefined-type">Object</span> proceed() <span class="directive">throws</span> <span class="exception">Exception</span>;
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The same <code>InvocationContext</code> instance is
+passed to each interceptor method for a given target class method or
+lifecycle event interception.</p>
+</div>
+<div class="paragraph">
+<p>The <code>InvocationContext</code> instance allows an
+interceptor method to save information in the <code>Map</code> obtained via the
+<code>getContextData</code> method. This information can subsequently be retrieved
+and/or updated by other interceptor methods in the invocation chain, and
+thus serves as a means to pass contextual data between interceptors. The
+contextual data is not sharable across separate target class method or
+or lifecycle callback event invocations. The lifecycle of the
+<code>InvocationContext</code> instance is otherwise unspecified.</p>
+</div>
+<div class="paragraph">
+<p>If interceptor methods are invoked as a
+result of the invocation on a web service endpoint, the map returned by
+<code>getContextData</code> will be the JAX-WS <code>MessageContext</code> [<a href="#bib4">4</a>].</p>
+</div>
+<div class="paragraph">
+<p>The <code>getTarget</code> method returns the associated
+target instance. For around-construct lifecycle callback interceptor
+methods, getTarget returns null if called before the proceed method
+returns.</p>
+</div>
+<div class="paragraph">
+<p>The <code>getTimer</code> method returns the timer
+object associated with a timeout method invocation. The <em>getTimer</em>
+method returns null for interceptor method types other than
+around-timeout interceptor methods.</p>
+</div>
+<div class="paragraph">
+<p>The <code>getMethod</code> method returns the method of
+the target class for which the current interceptor method was invoked.
+The <code>getMethod</code> returns null in a lifecycle callback interceptor method
+for which there is no corresponding lifecycle callback method declared
+in the target class (or inherited from a superclass) or in an
+around-construct lifecycle callback interceptor method.</p>
+</div>
+<div class="paragraph">
+<p>The <code>getConstructor</code> method returns the
+constructor of the target class for which the current around-construct
+interceptor method was invoked. The <code>getConstructor</code> method returns null
+for interceptor method types other than around-construct interceptor
+methods.</p>
+</div>
+<div class="paragraph">
+<p>The <code>getParameters</code> method returns the
+parameters of the method or constructor invocation. If the
+<code>setParameters</code> method has been called, <code>getParameters</code> returns the
+values to which the parameters have been set.</p>
+</div>
+<div class="paragraph">
+<p>The <code>setParameters</code> method modifies the
+parameters used for the invocation of the target class method or
+constructor. Modifying the parameter values does not affect the
+determination of the method or the constructor that is invoked on the
+target class. The parameter types must match the types for the target
+class method or constructor, and the number of parameters supplied must
+equal the number of parameters on the target class method or constructor <sup class="footnote">[<a id="_footnoteref_3" class="footnote" href="#_footnotedef_3" title="View footnote.">3</a>]</sup>,
+or the <code>IllegalArgumentException</code> is
+thrown to the <code>setParameters</code> call.</p>
+</div>
+<div class="paragraph">
+<p>The <code>proceed</code> method causes the invocation of
+the next interceptor method in the chain or, when called from the last
+around-invoke or around-timeout interceptor method, the target class
+method. For around-construct lifecycle callback interceptor methods, the
+invocation of the <code>proceed</code> method in the last interceptor method in the
+chain causes the target instance to be created. Interceptor methods must
+always call the <code>InvocationContext.proceed</code> method or no subsequent
+interceptor methods, target class method, or lifecycle callback methods
+will be invoked, or—in the case of around-construct interceptor
+methods—the target instance will not be created. The <code>proceed</code> method
+returns the result of the next method invoked. If a method is of type
+<code>void</code> , the invocation of the <code>proceed</code> method returns <code>null</code> . For
+around-construct lifecycle callback interceptor methods, the invocation
+of proceed in the last interceptor method in the chain causes the target
+instance to be created. For all other lifecycle callback interceptor
+methods, if there is no lifecycle callback interceptor method defined on
+the target class, the invocation of <code>proceed</code> in the last interceptor
+method in the chain is a no-op <sup class="footnote">[<a id="_footnoteref_4" class="footnote" href="#_footnotedef_4" title="View footnote.">4</a>]</sup>,
+and <code>null</code> is returned.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="exceptions"><a class="anchor" href="#exceptions"></a>2.5. Exceptions</h3>
+<div class="paragraph">
+<p>Interceptor methods are allowed to throw
+runtime exceptions or any checked exceptions that the associated target
+method or constructor allows within its <code>throws</code> clause.</p>
+</div>
+<div class="paragraph">
+<p>Interceptor methods are allowed to catch and
+suppress exceptions and to recover by calling the
+<code>InvocationContext.proceed</code> method.</p>
+</div>
+<div class="paragraph">
+<p>The invocation of the
+<code>InvocationContext.proceed</code> method throws the same exception as any
+thrown by the associated target method unless an interceptor method
+further down the Java call stack has caught it and thrown a different
+exception or suppressed the exception. Exceptions and initialization
+and/or cleanup operations should typically be handled in
+<code>try/catch/finally</code> blocks around the <code>proceed</code> method.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="business_method_interceptor_methods"><a class="anchor" href="#business_method_interceptor_methods"></a>2.6. Business Method Interceptor Methods</h3>
+<div class="paragraph">
+<p>Interceptor methods that interpose on
+business method invocations are denoted by the <code>AroundInvoke</code>
+annotation.</p>
+</div>
+<div class="paragraph">
+<p>Around-invoke methods may be declared in
+interceptor classes, in the superclasses of interceptor classes, in the
+target class, and/or in superclasses of the target class. However, only
+one around-invoke method may be declared in a given class.</p>
+</div>
+<div class="paragraph">
+<p>Around-invoke methods can have <code>public</code> ,
+<code>private</code> , <code>protected</code> , or <code>package</code> level access. An around-invoke
+method must not be declared as <code>abstract, final or static</code> .</p>
+</div>
+<div class="paragraph">
+<p>Around-invoke methods have the following
+signature:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>Object &lt;METHOD&gt;(InvocationContext)</pre>
+</div>
+</div>
+<div class="paragraph">
+<p><em>Note: An around-invoke interceptor method may
+be declared to throw any checked exceptions that the associated target
+method allows within its throws clause. It may be declared to throw the
+java.lang.Exception, for example, if it interposes on several methods
+that can throw unrelated checked exceptions.</em></p>
+</div>
+<div class="paragraph">
+<p>An around-invoke method can invoke any
+component or resource that the method it is intercepting can invoke.</p>
+</div>
+<div class="paragraph">
+<p>In general, an around-invoke method
+invocation occurs within the same transaction and security context as
+the method on which it is interposing. However, note that the
+transaction context may be changed by transactional interceptor methods
+in the invocation chain, such as those defined by the <code>Jakarta Transaction
+API</code> specification [<a href="#bib7">7</a>].</p>
+</div>
+<div class="paragraph">
+<p>The following example defines
+<code>MonitoringInterceptor</code>, which is used to interpose on <code>ShoppingCart</code>
+business methods:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="java"><span class="annotation">@Inherited</span>
+<span class="annotation">@InterceptorBinding</span>
+<span class="annotation">@Target</span>({TYPE, METHOD})
+<span class="annotation">@Retention</span>(RUNTIME)
+<span class="directive">public</span> <span class="annotation">@interface</span> Monitored {}
+
+<span class="annotation">@Monitored</span> <span class="annotation">@Interceptor</span>
+<span class="directive">public</span> <span class="type">class</span> <span class="class">MonitoringInterceptor</span> {
+    <span class="annotation">@AroundInvoke</span>
+    <span class="directive">public</span> <span class="predefined-type">Object</span> monitorInvocation(InvocationContext ctx) {
+        <span class="comment">//... log invocation data ...</span>
+        <span class="keyword">return</span> ctx.proceed();
+    }
+}
+
+<span class="annotation">@Monitored</span>
+<span class="directive">public</span> <span class="type">class</span> <span class="class">ShoppingCart</span> {
+    <span class="directive">public</span> <span class="type">void</span> placeOrder(Order o) {
+        ...
+    }
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="interceptor-methods-for-lifecycle-event-callbacks"><a class="anchor" href="#interceptor-methods-for-lifecycle-event-callbacks"></a>2.7. Interceptor Methods for Lifecycle Event Callbacks</h3>
+<div class="paragraph">
+<p>The <code>AroundConstruct</code> annotation specifies a
+lifecycle callback interceptor method that interposes on the invocation
+of the target instance’s constructor.</p>
+</div>
+<div class="paragraph">
+<p>The <code>PostConstruct</code> annotation specifies a
+lifecycle callback interceptor method that is invoked after the target
+instance has been constructed and dependency injection on that instance
+has been completed, but before any business method or other event, such
+as a timer event, is invoked on the target instance.</p>
+</div>
+<div class="paragraph">
+<p>The <code>PreDestroy</code> annotation specifies a
+lifecycle callback interceptor method that interposes on the target
+instance’s removal by the container.</p>
+</div>
+<div class="paragraph">
+<p>Extension specifications are permitted to
+define additional lifecycle events and lifecycle callback interceptor
+methods types.</p>
+</div>
+<div class="paragraph">
+<p>Around-construct interceptor methods may be
+only declared in interceptor classes and/or superclasses of interceptor
+classes. Around-construct interceptor methods must not be declared in
+the target class or in its superclasses.</p>
+</div>
+<div class="paragraph">
+<p>All other lifecycle callback interceptor
+methods can be declared in an interceptor class, superclass of an
+interceptor class, in the target class, and/or in a superclass of the
+target class.</p>
+</div>
+<div class="paragraph">
+<p>A single lifecycle callback interceptor
+method may be used to interpose on multiple lifecycle callback events.</p>
+</div>
+<div class="paragraph">
+<p>A given class may not have more than one
+lifecycle callback interceptor method for the same lifecycle event. Any
+subset or combination of lifecycle callback annotations may otherwise be
+specified on methods declared in a given class.</p>
+</div>
+<div class="paragraph">
+<p>Lifecycle callback interceptor methods are
+invoked in an unspecified security context. Lifecycle callback
+interceptor methods are invoked in a transaction context determined by
+their target class and/or method <sup class="footnote">[<a id="_footnoteref_5" class="footnote" href="#_footnotedef_5" title="View footnote.">5</a>]</sup>.</p>
+</div>
+<div class="paragraph">
+<p>Lifecycle callback interceptor methods can
+have <code>public</code> , <code>private</code> , <code>protected</code> , or <code>package</code> level access. A
+lifecycle callback interceptor method must not be declared as abstract
+or <code>final</code> . A lifecycle callback interceptor method must not be
+declared as <code>static</code> except in an application client.</p>
+</div>
+<div class="paragraph">
+<p>Lifecycle callback interceptor methods
+declared in an interceptor class or superclass of an interceptor class
+must have one of the following signatures:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>void &lt;METHOD&gt;(InvocationContext)
+Object &lt;METHOD&gt;(InvocationContext)</pre>
+</div>
+</div>
+<div class="paragraph">
+<p><em>Note: A lifecycle callback interceptor method
+may be declared to throw checked exceptions including the
+java.lang.Exception if the same interceptor method interposes on
+business or timeout methods in addition to lifecycle events. If such an
+interceptor method returns a value, the value is ignored by the
+container when the method is invoked to interpose on a lifecycle event.</em></p>
+</div>
+<div class="paragraph">
+<p>Lifecycle callback interceptor methods
+declared in a target class or in a superclass of a target class must
+have the following signature:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>void &lt;METHOD&gt;()</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The following example declares lifecycle
+callback interceptor methods in both the interceptor class and the
+target class. Rules for interceptor ordering are described in chapter 5
+<a href="#interceptor_ordering">Interceptor Ordering</a>.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="java"><span class="directive">public</span> <span class="type">class</span> <span class="class">MyInterceptor</span> {
+    ...
+    <span class="annotation">@PostConstruct</span>
+    <span class="directive">public</span> <span class="type">void</span> someMethod(InvocationContext ctx) {
+        ...
+        ctx.proceed();
+        ...
+    }
+     <span class="annotation">@PreDestroy</span>
+     <span class="directive">public</span> <span class="type">void</span> someOtherMethod(InvocationContext ctx) {
+        ...
+        ctx.proceed();
+        ...
+     }
+}
+
+
+<span class="annotation">@Interceptors</span>(MyInterceptor.class)
+<span class="annotation">@Stateful</span>
+<span class="directive">public</span> <span class="type">class</span> <span class="class">ShoppingCartBean</span> <span class="directive">implements</span> ShoppingCart {
+    <span class="directive">private</span> <span class="type">float</span> total;
+    <span class="directive">private</span> <span class="predefined-type">Vector</span> productCodes;
+    ...
+    public <span class="type">int</span> someShoppingMethod() {
+        ...
+    }
+    <span class="annotation">@PreDestroy</span> <span class="type">void</span> endShoppingCart() {
+        ...
+    }
+}</code></pre>
+</div>
+</div>
+<div class="sect3">
+<h4 id="exceptions_life_cicle_event_callbacks"><a class="anchor" href="#exceptions_life_cicle_event_callbacks"></a>2.7.1. Exceptions</h4>
+<div class="paragraph">
+<p>When invoked to interpose on lifecycle
+events, lifecycle callback interceptor methods may throw runtime
+exceptions, but—except for around-construct methods—may not throw
+checked exceptions.</p>
+</div>
+<div class="paragraph">
+<p>In addition to the rules specified in section 2.5
+<a href="#exceptions">Exceptions</a>, the following rules
+apply to the lifecycle callback interceptor methods:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>A lifecycle callback interceptor method
+declared in an interceptor class or in a superclass of an interceptor
+class may catch an exception thrown by another lifecycle callback
+interceptor method in the invocation chain, and clean up before
+returning.</p>
+</li>
+<li>
+<p>Pre-destroy interceptor methods are not
+invoked when the target instance and the interceptors are discarded as a
+result of such exceptions: the lifecycle callback interceptor methods in
+the chain should perform any necessary clean-up operations as the
+interceptor chain unwinds.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="timeout_method_interceptor_methods"><a class="anchor" href="#timeout_method_interceptor_methods"></a>2.8. Timeout Method Interceptor Methods</h3>
+<div class="paragraph">
+<p>Interceptor methods that interpose on timeout
+methods are denoted by the <code>AroundTimeout</code> annotation.</p>
+</div>
+<div class="paragraph">
+<p><em>Note: Timeout methods are currently specific
+to Jakarta Enterprise Beans, although Timer Service functionality may be
+extended to other specifications in the future, and extension
+specifications may define events that may be interposed on by
+around-timeout methods. The EJB Timer Service, defined by the Jakarta Enterprise
+Beans specification [<a href="#bib2">2</a>], is a container-provided service
+that allows the Bean Provider to register enterprise beans for timer
+callbacks according to a calendar-based schedule, at a specified time,
+after a specified elapsed time, or at specified intervals. The timer
+callbacks registered with the Timer Service are called timeout methods.</em></p>
+</div>
+<div class="paragraph">
+<p>Around-timeout methods may be declared in
+interceptor classes, in superclasses of interceptor classes, in the
+target class, and/or in superclasses of the target class. However, only
+one around-timeout method may be declared in a given class.</p>
+</div>
+<div class="paragraph">
+<p>Around-timeout methods can have <code>public</code> ,
+<code>private</code> , <code>protected</code> , or <code>package</code> level access. An around-timeout
+method must not be declared as abstract, <code>final</code> or <code>static</code> .</p>
+</div>
+<div class="paragraph">
+<p>Around-timeout methods have the following
+signature:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>Object &lt;METHOD&gt;(InvocationContext)</pre>
+</div>
+</div>
+<div class="paragraph">
+<p><em>Note: An around-timeout interceptor method
+should not throw application exceptions, but it may be declared to throw
+checked exceptions or the java.lang.Exception if the same interceptor
+method interposes on business methods in addition to the timeout
+methods.</em></p>
+</div>
+<div class="paragraph">
+<p>An around-timeout method can invoke any
+component or resource that its corresponding timeout method can invoke.</p>
+</div>
+<div class="paragraph">
+<p>An around-timeout method invocation occurs
+within the same transaction <sup class="footnote">[<a id="_footnoteref_6" class="footnote" href="#_footnotedef_6" title="View footnote.">6</a>]</sup> and security context
+as the timeout method on which it is interposing.</p>
+</div>
+<div class="paragraph">
+<p>The <code>InvocationContext.getTimer</code> method
+allows an around-timeout method to retrieve the timer object associated
+with the timeout.</p>
+</div>
+<div class="paragraph">
+<p>In the following example around-timeout
+interceptor is associated with two timeout methods:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="java"><span class="directive">public</span> <span class="type">class</span> <span class="class">MyInterceptor</span> {
+    <span class="directive">private</span> <span class="predefined-type">Logger</span> logger = ...;
+
+    <span class="annotation">@AroundTimeout</span>
+    <span class="directive">private</span> <span class="predefined-type">Object</span> aroundTimeout(InvocationContext ctx)
+            <span class="directive">throws</span> <span class="exception">Exception</span> {
+        logger.info(<span class="string"><span class="delimiter">&quot;</span><span class="content">processing: </span><span class="delimiter">&quot;</span></span> + ctx.getTimer().getInfo());
+        <span class="keyword">return</span> ctx.proceed();
+        ...
+    }
+}
+
+
+<span class="annotation">@Interceptors</span>(MyInterceptor.class)
+<span class="annotation">@Singleton</span>
+<span class="directive">public</span> <span class="type">class</span> <span class="class">CacheBean</span> {
+    <span class="directive">private</span> Data data;
+
+    <span class="annotation">@Schedule</span>(minute=<span class="string"><span class="delimiter">&quot;</span><span class="content">*/30</span><span class="delimiter">&quot;</span></span>,hour=<span class="string"><span class="delimiter">&quot;</span><span class="content">*</span><span class="delimiter">&quot;</span></span>,info=<span class="string"><span class="delimiter">&quot;</span><span class="content">update-cache</span><span class="delimiter">&quot;</span></span>)
+    <span class="directive">public</span> <span class="type">void</span> refresh(<span class="predefined-type">Timer</span> t) {
+        data.refresh();
+    }
+
+    <span class="annotation">@Schedule</span>(dayOfMonth=<span class="string"><span class="delimiter">&quot;</span><span class="content">1</span><span class="delimiter">&quot;</span></span>,info=<span class="string"><span class="delimiter">&quot;</span><span class="content">validate-cache</span><span class="delimiter">&quot;</span></span>)
+    <span class="directive">public</span> <span class="type">void</span> validate(<span class="predefined-type">Timer</span> t) {
+        data.validate();
+    }
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="constructor_and_method_level_interceptors"><a class="anchor" href="#constructor_and_method_level_interceptors"></a>2.9. Constructor- and Method-level Interceptors</h3>
+<div class="paragraph">
+<p>Method-level interceptors are interceptor
+classes directly associated with a specific business or timeout method
+of the target class. Constructor-level interceptors are interceptor
+classes directly associated with a constructor of the target class.</p>
+</div>
+<div class="paragraph">
+<p>For example, an around-invoke interceptor
+method may be applied only to a specific business method of the target
+class— independent of the other methods of the target class—by using a
+method-level interceptor. Likewise, an around-timeout interceptor method
+may be applied only to a specific timeout method on the target class,
+independent of the other timeout methods of the target class.</p>
+</div>
+<div class="paragraph">
+<p>Method-level interceptors may not be
+associated with a lifecycle callback method of the target class.</p>
+</div>
+<div class="paragraph">
+<p>The same interceptor may be applied to more
+than one business or timeout method of the target class.</p>
+</div>
+<div class="paragraph">
+<p>If a method-level interceptor is applied to
+more than one method of a associated target class this does not affect
+the relationship between the interceptor instance and the target
+class—only a single instance of the interceptor class is created per
+target class instance.</p>
+</div>
+<div class="paragraph">
+<p>In the following example only the placeOrder
+method will be monitored:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="java"><span class="directive">public</span> <span class="type">class</span> <span class="class">ShoppingCart</span> {
+    <span class="annotation">@Monitored</span>
+    <span class="directive">public</span> <span class="type">void</span> placeOrder() {
+         ...
+    }
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>In the following example, the MyInterceptor
+interceptor is applied to a subset of the business methods of the
+session bean. <em>Note</em> that the created and removed methods of the
+MyInterceptor interceptor will not be invoked:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="java"><span class="directive">public</span> <span class="type">class</span> <span class="class">MyInterceptor</span> {
+    ...
+    <span class="annotation">@AroundInvoke</span>
+    <span class="directive">public</span> <span class="predefined-type">Object</span> around_invoke(InvocationContext ctx) { ... }
+
+     <span class="annotation">@PostConstruct</span>
+     <span class="directive">public</span> <span class="type">void</span> created(InvocationContext ctx) { ... }
+
+     <span class="annotation">@PreDestroy</span>
+     <span class="directive">public</span> <span class="type">void</span> removed(InvocationContext ctx) { ... }
+}
+
+<span class="annotation">@Stateless</span>
+<span class="directive">public</span> <span class="type">class</span> <span class="class">MyBean</span> {
+     <span class="annotation">@PostConstruct</span>
+     <span class="type">void</span> init() { ... }
+
+     <span class="directive">public</span> <span class="type">void</span> notIntercepted() { ... }
+
+     <span class="annotation">@Interceptors</span>(org.acme.MyInterceptor.class)
+     <span class="directive">public</span> <span class="type">void</span> someMethod() { ... }
+
+     <span class="annotation">@Interceptors</span>(org.acme.MyInterceptor.class)
+     <span class="directive">public</span> <span class="type">void</span> anotherMethod() { ... }
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>In the following example, the
+<code>ValidationInterceptor</code> interceptor interposes on the bean constructor
+only, and the <code>validateMethod</code> interceptor method will not be invoked:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="java"><span class="annotation">@Inherited</span>
+<span class="annotation">@InterceptorBinding</span>
+<span class="annotation">@Target</span>({CONSTRUCTOR, METHOD})
+<span class="annotation">@Retention</span>(RUNTIME)
+<span class="directive">public</span> <span class="annotation">@interface</span> ValidateSpecial {}
+
+<span class="annotation">@ValidateSpecial</span>
+<span class="directive">public</span> <span class="type">class</span> <span class="class">ValidationInterceptor</span> {
+     <span class="annotation">@AroundConstruct</span>
+     <span class="directive">public</span> <span class="type">void</span> validateConstructor(InvocationContext ctx) { ... }
+
+     <span class="annotation">@AroundInvoke</span>
+    <span class="directive">public</span> <span class="predefined-type">Object</span> validateMethod(InvocationContext ctx) { ... }
+}
+
+<span class="directive">public</span> <span class="type">class</span> <span class="class">SomeBean</span> {
+    <span class="annotation">@ValidateSpecial</span>
+    SomeBean(...) {
+        ...
+    }
+
+    <span class="directive">public</span> <span class="type">void</span> someMethod() {
+        ...
+    }
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>In the following example, the
+<code>validateConstructor</code> method of the <code>ValidationInterceptor</code> interceptor
+interposes on the bean constructor, and the <code>validateMethod</code> method of
+the interceptor interposes on the <code>anotherMethod</code> business method of the
+bean.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="java"><span class="directive">public</span> <span class="type">class</span> <span class="class">SomeBean</span> {
+    <span class="annotation">@ValidateSpecial</span>
+    SomeBean(...) {
+        ...
+    }
+
+    <span class="directive">public</span> <span class="type">void</span> someMethod() {
+        ...
+    }
+
+    <span class="annotation">@ValidateSpecial</span>
+    <span class="directive">public</span> <span class="type">void</span> anotherMethod() {
+        ...
+    }
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="default_interceptors"><a class="anchor" href="#default_interceptors"></a>2.10. Default Interceptors</h3>
+<div class="paragraph">
+<p>Default interceptors are interceptors that
+apply to a set of target classes. An extension specification may support
+the use of a deployment descriptor or annotations to define default
+interceptors and their relative ordering.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="associating_interceptors_with_classes_and_methods_using_interceptor_bindings"><a class="anchor" href="#associating_interceptors_with_classes_and_methods_using_interceptor_bindings"></a>3. Associating Interceptors with Classes and Methods using Interceptor Bindings</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Interceptor bindings are intermediate
+annotations that may be used to associate interceptors with any
+component that is not itself an interceptor or decorator
+see [<a href="#bib6">6</a>].</p>
+</div>
+<div class="sect2">
+<h3 id="interceptor_binding_types"><a class="anchor" href="#interceptor_binding_types"></a>3.1. Interceptor Binding Types</h3>
+<div class="paragraph">
+<p>An interceptor binding type is a Java
+annotation defined as <code>Retention(RUNTIME)</code>. Typically an interceptor
+binding is defined as <code>Target({TYPE, METHOD, CONSTRUCTOR})</code> or any subset
+of valid target types.</p>
+</div>
+<div class="paragraph">
+<p>An interceptor binding type may be declared
+by specifying the InterceptorBinding meta-annotation.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="java"><span class="annotation">@Inherited</span>
+<span class="annotation">@InterceptorBinding</span>
+<span class="annotation">@Target</span>({TYPE, METHOD})
+<span class="annotation">@Retention</span>(RUNTIME)
+<span class="directive">public</span> <span class="annotation">@interface</span> Monitored {}</code></pre>
+</div>
+</div>
+<div class="sect3">
+<h4 id="interceptor_binding_types_with_additional_interceptor_bindings"><a class="anchor" href="#interceptor_binding_types_with_additional_interceptor_bindings"></a>3.1.1. Interceptor binding types with additional interceptor bindings</h4>
+<div class="paragraph">
+<p>An interceptor binding type may declare other
+interceptor bindings.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="java"><span class="annotation">@Inherited</span>
+<span class="annotation">@InterceptorBinding</span>
+<span class="annotation">@Target</span>({TYPE, METHOD})
+<span class="annotation">@Retention</span>(RUNTIME)
+<span class="annotation">@Monitored</span>
+<span class="directive">public</span> <span class="annotation">@interface</span> DataAccess {}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Interceptor bindings are transitive—an
+interceptor binding declared by an interceptor binding type is inherited
+by all components and other interceptor binding types that declare that
+interceptor binding type.</p>
+</div>
+<div class="paragraph">
+<p>An interceptor binding type can only be
+applied to an interceptor binding type defining a subset of its target
+types. For example, interceptor binding types declared <code>Target(TYPE)</code> may
+not be applied to interceptor binding types declared <code>Target({TYPE, METHOD})</code>.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="other_sources_of_interceptor_bindings"><a class="anchor" href="#other_sources_of_interceptor_bindings"></a>3.1.2. Other sources of interceptor bindings</h4>
+<div class="paragraph">
+<p>An extension specification may define other
+sources of interceptor bindings, such as by CDI stereotypes.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="declaring_the_interceptor_bindings_of_an_interceptor"><a class="anchor" href="#declaring_the_interceptor_bindings_of_an_interceptor"></a>3.2. Declaring the Interceptor Bindings of an Interceptor</h3>
+<div class="paragraph">
+<p>The interceptor bindings of an interceptor
+are specified by annotating the interceptor class with the interceptor
+binding types and the Interceptor annotation and are called the set of
+interceptor bindings for the interceptor.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="java"><span class="annotation">@Monitored</span> <span class="annotation">@Interceptor</span>
+<span class="directive">public</span> <span class="type">class</span> <span class="class">MonitoringInterceptor</span> {
+    <span class="annotation">@AroundInvoke</span>
+    <span class="directive">public</span> <span class="predefined-type">Object</span> monitorInvocation(InvocationContext ctx)
+        <span class="directive">throws</span> <span class="exception">Exception</span> { ... }
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>An interceptor class may declare multiple
+interceptor bindings.</p>
+</div>
+<div class="paragraph">
+<p>Multiple interceptors may declare the same
+interceptor bindings.</p>
+</div>
+<div class="paragraph">
+<p>If an interceptor does not declare an
+<code>Interceptor</code> annotation, it can be bound to components using the
+<code>Interceptors</code> annotation.</p>
+</div>
+<div class="paragraph">
+<p>An extension specification may define other
+ways of declaring an interceptor and binding an interceptor to a
+component, such as by means of a deployment descriptor.</p>
+</div>
+<div class="paragraph">
+<p>An interceptor declared using the <code>Interceptor</code>
+annotation should specify at least one <code>interceptor</code> binding. If an interceptor
+declared using the <code>Interceptor</code> annotation does not declare any intercep-
+tor binding, non-portable behavior results.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="binding_an_interceptor_to_a_component"><a class="anchor" href="#binding_an_interceptor_to_a_component"></a>3.3. Binding an Interceptor to a Component</h3>
+<div class="paragraph">
+<p>An interceptor may be bound to a component by
+annotating the component class or a method or constructor of the
+component class with the interceptor binding type.</p>
+</div>
+<div class="paragraph">
+<p>In the following example, the
+<code>MonitoringInterceptor</code> is applied to the target class. It will therefore
+apply to all business methods of the class.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="java"><span class="annotation">@Monitored</span>
+<span class="directive">public</span> <span class="type">class</span> <span class="class">ShoppingCart</span> { ... }</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>In this example, the <code>MonitoringInterceptor</code> is
+applied to a single method:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="java"><span class="directive">public</span> <span class="type">class</span> <span class="class">ShoppingCart</span> {
+
+    <span class="annotation">@Monitored</span>
+    <span class="directive">public</span> <span class="type">void</span> placeOrder() {
+        ...
+    }
+
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>A component class or a method or constructor
+of a component class may declare multiple interceptor bindings.</p>
+</div>
+<div class="paragraph">
+<p>The set of interceptor bindings for a method
+or constructor are those applied to the target class combined with those
+applied at method level or constructor level. Note that the interceptor
+bindings applied to the target class may include those inherited from
+its superclasses. The CDI specification rules for the inheritance of
+type-level metadata apply to the inheritance of interceptor bindings
+from superclasses of the target class. See [<a href="#bib3">3</a>].</p>
+</div>
+<div class="paragraph">
+<p>An interceptor binding declared on a method
+or constructor replaces an interceptor binding of the same type declared
+at class level or inherited from a superclass <sup class="footnote">[<a id="_footnoteref_7" class="footnote" href="#_footnotedef_7" title="View footnote.">7</a>]</sup>.</p>
+</div>
+<div class="paragraph">
+<p>An extension specification may define
+additional rules for combining interceptor bindings, such as
+interceptors defined via a CDI stereotype.</p>
+</div>
+<div class="paragraph">
+<p>If a component class declares or inherits a
+class-level interceptor binding, it must not be declared <code>final</code>, or have
+any non-<code>static</code>, non-<code>private</code>, <code>final</code> methods. If a component has a
+class-level interceptor binding and is declared <code>final</code> or has a
+non-<code>static</code>, non-<code>private</code>, <code>final</code> method, the container automatically
+detects the problem and treats it as a definition error, and causes
+deployment to fail.</p>
+</div>
+<div class="paragraph">
+<p>If a non-<code>static</code>, non-<code>private</code> method of a
+component class declares a method-level interceptor binding, neither the
+method nor the component class may be declared final. If a non-<code>static</code>,
+non-<code>private</code>, <code>final</code> method of a component has a method-level interceptor
+binding, the container automatically detects the problem and treats it
+as a definition error, and causes deployment to fail.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="interceptor_resolution"><a class="anchor" href="#interceptor_resolution"></a>3.4. Interceptor Resolution</h3>
+<div class="paragraph">
+<p>The process of matching interceptors to a
+given business method, timeout method, or lifecycle event of a component
+is called <code>interceptor resolution</code>.</p>
+</div>
+<div class="paragraph">
+<p>For a lifecycle event other than instance
+construction, the interceptor bindings include the interceptor bindings
+declared or inherited by the component at the class level, including,
+recursively, interceptor bindings declared as meta-annotations of other
+interceptor bindings.</p>
+</div>
+<div class="paragraph">
+<p>For a business method, timeout method, or
+constructor, the interceptor bindings include the interceptor bindings
+declared or inherited by the component at the class level, including,
+recursively, interceptor bindings declared as meta-annotations of other
+interceptor bindings, together with all interceptor bindings declared on
+the constructor or method, including, recursively, interceptor bindings
+declared as meta-annotations of other interceptor bindings.</p>
+</div>
+<div class="paragraph">
+<p>An interceptor is bound to a method or
+constructor if:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>The method or constructor has all the
+interceptor bindings of the interceptor. A method or constructor has an
+interceptor binding of an interceptor if it has an interceptor binding
+with (a) the same type and (b) the same annotation member value for each
+member. An extension specification may further refine this rule. For
+example, the CDI specification [<a href="#bib3">3</a>] adds the
+<code>jakarta.enterprise.util.Nonbinding</code> annotation, causing member values to be
+ignored by the resolution process.</p>
+</li>
+<li>
+<p>The interceptor intercepts the given kind of
+lifecycle event or method.</p>
+</li>
+<li>
+<p>The interceptor is enabled. An interceptor is
+enabled if the <code>Priority</code> annotation is applied to the interceptor
+class <sup class="footnote">[<a id="_footnoteref_8" class="footnote" href="#_footnotedef_8" title="View footnote.">8</a>]</sup>.
+An extension specification may define other
+means of enabling interceptors. For example, the CDI specification
+enables an interceptor if the interceptor class is listed under the
+<code>&lt;interceptors&gt;</code> element of the <code>beans.xml</code> file for the bean archive.</p>
+</li>
+</ul>
+</div>
+<div class="sect3">
+<h4 id="interceptors_with_multiple_bindings"><a class="anchor" href="#interceptors_with_multiple_bindings"></a>3.4.1. Interceptors with multiple bindings</h4>
+<div class="paragraph">
+<p>An interceptor class may specify multiple
+interceptor bindings.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="java"><span class="annotation">@Monitored</span> <span class="annotation">@Logged</span> <span class="annotation">@Interceptor</span> <span class="annotation">@Priority</span>(<span class="integer">1100</span>)
+<span class="directive">public</span> <span class="type">class</span> <span class="class">MonitoringLoggingInterceptor</span> {
+    <span class="annotation">@AroundInvoke</span>
+    <span class="directive">public</span> <span class="predefined-type">Object</span> aroundInvoke(InvocationContext context)
+        <span class="directive">throws</span> <span class="exception">Exception</span> { ... }
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>This interceptor will be bound to all methods
+of this component:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="java"><span class="annotation">@Monitored</span> <span class="annotation">@Logged</span>
+<span class="directive">public</span> <span class="type">class</span> <span class="class">ShoppingCart</span> { ... }</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The <code>MonitoringLoggingInterceptor</code> will not be
+bound to methods of this component, since the Logged interceptor binding
+does not appear:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="java"><span class="annotation">@Monitored</span>
+<span class="directive">public</span> <span class="type">class</span> <span class="class">ShoppingCart</span> {
+    <span class="directive">public</span> <span class="type">void</span> placeOrder() { ... }
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>However, the <code>MonitoringLoggingInterceptor</code>
+will be bound to the placeOrder method of this component:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="java"><span class="annotation">@Monitored</span>
+<span class="directive">public</span> <span class="type">class</span> <span class="class">ShoppingCart</span> {
+    <span class="annotation">@Logged</span>
+    <span class="directive">public</span> <span class="type">void</span> placeOrder() { ... }
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="interceptor_binding_types_with_members"><a class="anchor" href="#interceptor_binding_types_with_members"></a>3.4.2. Interceptor binding types with members</h4>
+<div class="paragraph">
+<p>Interceptor binding types may have annotation
+members.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="java"><span class="annotation">@Inherited</span>
+<span class="annotation">@InterceptorBinding</span>
+<span class="annotation">@Target</span>({TYPE, METHOD})
+<span class="annotation">@Retention</span>(RUNTIME)
+<span class="directive">public</span> <span class="annotation">@interface</span> Monitored {
+    <span class="type">boolean</span> persistent();
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Any interceptor with that interceptor binding
+type must select a member value:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="java"><span class="annotation">@Monitored</span>(persistent=<span class="predefined-constant">true</span>) <span class="annotation">@Interceptor</span> <span class="annotation">@Priority</span>(<span class="integer">2100</span>)
+<span class="directive">public</span> <span class="type">class</span> <span class="class">PersistentMonitoringInterceptor</span> {
+    <span class="annotation">@AroundInvoke</span>
+    <span class="directive">public</span> <span class="predefined-type">Object</span> monitorInvocation(InvocationContext ctx)
+        <span class="directive">throws</span> <span class="exception">Exception</span> { ... }
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The <code>PersistentMonitoringInterceptor</code> applies
+to this component:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="java"><span class="annotation">@Monitored</span>(persistent=<span class="predefined-constant">true</span>)
+<span class="directive">public</span> <span class="type">class</span> <span class="class">ShoppingCart</span> { ... }</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>But not to this component:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="java"><span class="annotation">@Monitored</span>(persistent=<span class="predefined-constant">false</span>)
+<span class="directive">public</span> <span class="type">class</span> <span class="class">SimpleShoppingCart</span> { ... }</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Annotation member values are compared using
+the <code>equals</code> method.</p>
+</div>
+<div class="paragraph">
+<p>Array-valued or annotation-valued members of
+an interceptor binding type are not supported. An extension
+specification may add support for these member types. For example the
+CDI specification [<a href="#bib3">3</a>] adds the
+<code>jakarta.enterprise.util.Nonbinding</code> annotation, allowing array-valued or
+annotation-valued members to be used on the annotation type, but ignored
+by the resolution process.</p>
+</div>
+<div class="paragraph">
+<p>If the set of interceptor bindings of a
+component class or interceptor, including bindings inherited from CDI
+stereotypes [<a href="#bib3">3</a>] and other interceptor bindings,
+has two instances of a certain interceptor binding type and the
+instances have different values of some annotation member, the container
+automatically detects the problem, treats it as a definition error, and
+causes deployment to fail.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="associating_interceptors_with_classes_and_methods_using_the_interceptors_annotation"><a class="anchor" href="#associating_interceptors_with_classes_and_methods_using_the_interceptors_annotation"></a>4. Associating Interceptors with Classes and Methods using the Interceptors Annotation</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The <code>Interceptors</code> annotation can be used to
+denote interceptor classes and associate one or more interceptor classes
+with a target class, and/or one or more of its methods, and/or a
+constructor of the target class.</p>
+</div>
+<div class="paragraph">
+<p>The <code>Interceptors</code> annotation can be applied
+to the target class or to a method or a constructor declared in the
+target class or in a superclass of the target class:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Method-level around-invoke and around-timeout
+interceptors can be defined by applying the <code>Interceptors</code> annotation to
+the method for which the around-invoke or around-timeout interceptor
+methods are to be invoked.</p>
+</li>
+<li>
+<p>Constructor-level interceptors can be defined
+by applying the <code>Interceptors</code> annotation to the constructor for which
+the around-construct interceptor methods are to be invoked.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Constructor- and method-level interceptors
+are invoked in addition to any interceptors declared in the target
+class, in an interceptor class associated with the target class, or in a
+superclass of the target class or interceptor class, and in addition to
+any default interceptors (if supported).</p>
+</div>
+<div class="paragraph">
+<p>If multiple interceptor classes are specified
+in the <code>Interceptors</code> annotation, the interceptor methods of these
+classes are invoked in the order in which the classes are specified. The
+ordering rules for interceptors are defined in Chapter 5 <a href="#interceptor_ordering">Interceptor Ordering</a>.</p>
+</div>
+<div class="paragraph">
+<p>The <code>Interceptor</code> annotation is ignored
+during the processing of classes bound using the <code>Interceptors</code>
+annotation. It will continue to be observed on such classes when used in
+the context of interceptor binding.</p>
+</div>
+<div class="paragraph">
+<p>An extension specification may support the
+use of a deployment descriptor to associate interceptor classes with a
+target class, and/or method or constructor of a target class, and to
+specify the order of interceptor invocation or override metadata
+specified by annotations.</p>
+</div>
+<div class="paragraph">
+<p>In the following example, the around-invoke
+methods specified by both the <code>MyInterceptor</code> and the
+<code>MyOtherInterceptor</code> classes will be invoked when the <code>otherMethod</code>
+method is called. The rules for ordering these interceptors are defined
+in Chapter 5 <a href="#interceptor_ordering">Interceptor Ordering</a>.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="java"><span class="annotation">@Stateless</span>
+<span class="annotation">@Interceptors</span>(org.acme.MyInterceptor.class)
+<span class="directive">public</span> <span class="type">class</span> <span class="class">MyBean</span> {
+    ...
+    public <span class="type">void</span> someMethod() {
+        ...
+    }
+
+    <span class="annotation">@Interceptors</span>(org.acme.MyOtherInterceptor.class)
+    <span class="directive">public</span> <span class="type">void</span> otherMethod() {
+        ...
+    }
+}</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="interceptor_ordering"><a class="anchor" href="#interceptor_ordering"></a>5. Interceptor Ordering</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="enabling_interceptors"><a class="anchor" href="#enabling_interceptors"></a>5.1. Enabling Interceptors</h3>
+<div class="paragraph">
+<p>Only interceptors that are enabled are
+eligible to be invoked.</p>
+</div>
+<div class="paragraph">
+<p>Interceptors declared using interceptor
+bindings are enabled using the Priority annotation (see Section
+<a href="#use_of_the_priority_annotation_in_ordering_interceptors">Use of the Priority Annotation in Ordering Interceptors</a>).
+The <em>Priority</em> annotation also controls
+interceptor ordering (see Section 5.2 <a href="#interceptor_ordering_rules">Interceptor Ordering Rules</a>).</p>
+</div>
+<div class="paragraph">
+<p>Interceptors declared using the
+<em>Interceptors</em> annotation are enabled by that annotation. Using the
+<em>Interceptors</em> annotation to associate interceptor classes with a target
+class or a method or constructor of a target class enables them for that
+target class, method, or constructor. The order in which the interceptor
+classes are specified in the <em>Interceptors</em> annotation controls
+interceptor ordering (see Section 5.2 <a href="#interceptor_ordering_rules">Interceptor Ordering Rules</a>).
+Interceptor methods declared in the target
+class or in a superclass of the target class are enabled unless
+overridden.</p>
+</div>
+<div class="paragraph">
+<p>An extension specification may define
+alternative mechanisms (e.g., a deployment descriptor such as the CDI
+beans.xml [<a href="#bib3">3</a>] or the EJB <em>ejb-jar.xml</em>
+deployment descriptor [<a href="#bib2">2</a>]) to
+enable and order interceptors, to override the order specified by means
+of annotations, or to disable interceptors.</p>
+</div>
+<div class="paragraph">
+<p><em>Note: The InvocationContext object allows
+interceptor methods to control the behavior of the invocation chain,
+including whether the next method in the chain is invoked and the values
+of its parameters and result. See Section 2.4
+<a href="#invocation_context">Invocation Context</a>.</em></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="interceptor_ordering_rules"><a class="anchor" href="#interceptor_ordering_rules"></a>5.2. Interceptor Ordering Rules</h3>
+<div class="paragraph">
+<p>For each interceptor method type (i.e.,
+around-invoke, around-timeout, post-construct, etc.), the following
+interceptor invocation ordering rules apply, except as specified
+otherwise by an extension specification.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Default interceptors are invoked first.</p>
+</li>
+<li>
+<p>Default interceptors are invoked in the order
+defined by the extension specification (e.g., by their order in the
+deployment descriptor).</p>
+</li>
+<li>
+<p>If a default interceptor class has
+superclasses, interceptor methods declared in the interceptor class’s
+superclasses are invoked before the interceptor method declared in the
+interceptor class itself, most general superclass first.</p>
+</li>
+<li>
+<p>Interceptors declared by applying the
+Interceptors annotation <em>at class-level</em> to the target class are invoked
+next.</p>
+</li>
+<li>
+<p>Interceptor methods declared in the
+interceptor classes listed in the <em>Interceptors</em> annotation are invoked
+in the same order as the specification of the interceptor classes in
+that annotation.</p>
+</li>
+<li>
+<p>If an interceptor class declared by applying
+the Interceptors annotation <em>at class-level</em> has superclasses,
+interceptor methods declared in the interceptor class’s superclasses are
+invoked before the interceptor method declared in the interceptor class
+itself, most general superclass first.</p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+This specification does not define
+the semantics of applying the Interceptors annotation to a superclass of
+the target class, and thus the corresponding interceptor methods may or
+may not be invoked. Applications that specify the Interceptors
+annotation on a superclass of the target class will not be portable.
+</td>
+</tr>
+</table>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Interceptors declared by applying the
+Interceptors annotation <em>at method- or constructor-level</em> are invoked
+next.</p>
+</li>
+<li>
+<p>Interceptor methods declared in the
+interceptor classes listed in the <em>Interceptors</em> annotation are invoked
+in the same order as the specification of the interceptor classes in
+that annotation.</p>
+</li>
+<li>
+<p>If an interceptor class declared by applying
+the Interceptors annotation <em>at method- or constructor-level</em> has
+superclasses, interceptor methods declared in the interceptor class’s
+superclasses are invoked before the interceptor method declared in the
+interceptor class itself, most general superclass first.</p>
+</li>
+<li>
+<p>Interceptors declared using interceptor
+bindings are invoked next.</p>
+</li>
+<li>
+<p>All interceptors specified using interceptor
+binding annotations visible on the target class (e.g., specified on the
+class or visible on the class because they were declared with the
+<code>Inherited</code> annotation) are combined with all binding annotations on the
+target method and sorted by the priorities specified by the <code>Priority</code>
+annotation; and then the interceptor methods are invoked in order of
+priority. The <code>Priority</code> annotation is described in Section
+<a href="#use_of_the_priority_annotation_in_ordering_interceptors">Use of the Priority Annotation in Ordering Interceptors</a>.</p>
+</li>
+<li>
+<p>If an interceptor class declared using
+interceptor bindings has superclasses, interceptor methods declared in
+the interceptor class’s superclasses are invoked before the interceptor
+method declared in the interceptor class itself, most general superclass
+first.</p>
+</li>
+<li>
+<p>Interceptor methods declared in the target
+class or in any superclass of the target class are invoked last.</p>
+</li>
+<li>
+<p>If the target class has superclasses,
+interceptor methods declared in the target class’s superclasses are
+invoked before an interceptor method declared in the target class
+itself, most general superclass first.</p>
+</li>
+<li>
+<p>If an interceptor method is overridden by
+another method (regardless whether that method is itself an interceptor
+method), it will not be invoked.</p>
+</li>
+</ul>
+</div>
+<div class="sect3">
+<h4 id="use_of_the_priority_annotation_in_ordering_interceptors"><a class="anchor" href="#use_of_the_priority_annotation_in_ordering_interceptors"></a>5.2.1. Use of the Priority Annotation in Ordering Interceptors</h4>
+<div class="paragraph">
+<p>The <code>Priority</code> annotation can be used to
+enable and order interceptors associated with components that use
+interceptor bindings. The required <code>value</code> element of the <code>Priority</code>
+annotation determines the ordering. Interceptors with smaller priority
+values are called first. If more than one interceptor has the same
+priority, the relative order of those interceptors is undefined.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="java"><span class="annotation">@Monitored</span> <span class="annotation">@Interceptor</span> <span class="annotation">@Priority</span>(<span class="integer">100</span>)
+<span class="directive">public</span> <span class="type">class</span> <span class="class">MonitoringInterceptor</span> {
+    <span class="annotation">@AroundInvoke</span>
+    <span class="directive">public</span> <span class="predefined-type">Object</span> monitorInvocation(InvocationContext ctx)
+        <span class="directive">throws</span> <span class="exception">Exception</span> { ... }
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The Priority annotation is ignored when
+computing the invocation order of interceptors bound to a component
+using the Interceptors annotation.</p>
+</div>
+<div class="paragraph">
+<p>The following priority values are defined for
+interceptor ordering when used with the Priority annotation.
+Interceptors with lower priority values are invoked earlier in the
+interceptor chain.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>Interceptor.Priority.PLATFORM_BEFORE</code> = 0</p>
+</li>
+<li>
+<p><code>Interceptor.Priority.LIBRARY_BEFORE</code> = 1000</p>
+</li>
+<li>
+<p><code>Interceptor.Priority.APPLICATION</code> = 2000</p>
+</li>
+<li>
+<p><code>Interceptor.Priority.LIBRARY_AFTER</code> = 3000</p>
+</li>
+<li>
+<p><code>Interceptor.Priority.PLATFORM_AFTER</code> = 4000</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>These values define the following interceptor
+ranges to order interceptors for a specific interposed method or event
+in the interceptor chain:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Interceptors defined by the Jakarta EE Platform
+specifications that are to be executed at the beginning of the
+interceptor chain should have priority values in the range
+<code>PLATFORM_BEFORE</code> up until <code>LIBRARY_BEFORE</code>.</p>
+</li>
+<li>
+<p>Interceptors defined by extension libraries
+that are intended to be executed earlier in the interceptor chain, but
+after interceptors in the range up until <code>LIBRARY_BEFORE</code> should have
+priority values in the range <code>LIBRARY_BEFORE</code> up until <code>APPLICATION</code>.</p>
+</li>
+<li>
+<p>Interceptors defined by applications should
+be in the range APPLICATION up until <code>LIBRARY_AFTER</code>.</p>
+</li>
+<li>
+<p>Interceptors defined by extension libraries
+that are intended to be executed later in the interceptor chain should
+have priority values in the range <code>LIBRARY_AFTER</code> up until <code>PLATFORM_AFTER</code>.</p>
+</li>
+<li>
+<p>Interceptors defined by the Jakarta EE Platform
+specifications that are to be executed at the end of the interceptor
+chain should have priority values at <code>PLATFORM_AFTER</code> or higher.</p>
+</li>
+<li>
+<p>An interceptor that must be invoked before or
+after another defined interceptor can choose any appropriate value.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Negative priority values are reserved for
+future use by this specification and should not be used.</p>
+</div>
+<div class="paragraph">
+<p>The following example defines an extension
+library interceptor that is to be executed before any application
+interceptor, but after any early platform interceptor:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="java"><span class="annotation">@Priority</span>(Interceptor.Priority.LIBRARY_BEFORE+<span class="integer">10</span>)
+<span class="annotation">@Interceptor</span>
+<span class="directive">public</span> <span class="type">class</span> <span class="class">ValidationInterceptor</span> { ... }</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="excluding_interceptors"><a class="anchor" href="#excluding_interceptors"></a>5.3. Excluding Interceptors</h3>
+<div class="paragraph">
+<p>Interceptors may be excluded from execution
+by means of the <code>ExcludeClassInterceptors</code> annotation and the
+<code>ExcludeDefaultInterceptors</code> annotation.</p>
+</div>
+<div class="paragraph">
+<p>The <code>ExcludeClassInterceptors</code> annotation can
+be used to exclude the invocation of the class-level interceptors
+defined by means of the <code>Interceptors</code> annotation.</p>
+</div>
+<div class="paragraph">
+<p>The <code>ExcludeDefaultInterceptors</code> annotation
+can be used to exclude the invocation of default interceptors for a
+target class or—when applied to a target class constructor or method—to
+exclude the invocation of default interceptors for a particular
+constructor or method.</p>
+</div>
+<div class="paragraph">
+<p>An extension specification may define other
+means for excluding interceptors from execution, such as by means of a
+deployment descriptor.</p>
+</div>
+<div class="paragraph">
+<p>In the following example interceptors will be
+invoked in the following order when <code>someMethod</code> is called:
+<code>SomeInterceptor</code>, <code>AnotherInterceptor</code>, <code>MyInterceptor</code>.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="java"><span class="annotation">@Stateless</span>
+<span class="annotation">@Interceptors</span>({org.acme.SomeInterceptor.class,
+               org.acme.AnotherInterceptor.class})
+<span class="directive">public</span> <span class="type">class</span> <span class="class">MyBean</span> {
+    ...
+    <span class="annotation">@Interceptors</span>(org.acme.MyInterceptor.class)
+    <span class="directive">public</span> <span class="type">void</span> someMethod() {
+        ...
+    }
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>In the following example only the interceptor
+<code>MyInterceptor</code> will be invoked when <code>someMethod</code> is called. The
+<code>ExcludeClassInterceptors</code> annotation is used to exclude the invocation
+of the class-level interceptors.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="java"><span class="annotation">@Stateless</span>
+<span class="annotation">@Interceptors</span>(org.acme.AnotherInterceptor.class)
+<span class="directive">public</span> <span class="type">class</span> <span class="class">MyBean</span> {
+    ...
+    <span class="annotation">@Interceptors</span>(org.acme.MyInterceptor.class)
+    <span class="annotation">@ExcludeClassInterceptors</span>
+    <span class="directive">public</span> <span class="type">void</span> someMethod() {
+        ...
+    }
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>In the next example, only the interceptor
+<code>MyInterceptor</code> will be invoked when <code>someMethod</code> is called. The
+<code>ExcludeDefaultInterceptors</code> annotation is used to exclude the
+invocation of the default interceptors (if any).</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="java"><span class="annotation">@Stateless</span>
+<span class="directive">public</span> <span class="type">class</span> <span class="class">MyBean</span> {
+    ...
+    <span class="annotation">@ExcludeDefaultInterceptors</span>
+    <span class="annotation">@Interceptors</span>(org.acme.MyInterceptor.class)
+    <span class="directive">public</span> <span class="type">void</span> someMethod() {
+        ...
+    }
+}</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="bibliography"><a class="anchor" href="#bibliography"></a>Appendix A: Bibliography</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p><a id="bib1"></a> Enterprise JavaBeansTM, version 3.0 . <a href="http://jcp.org/en/jsr/detail?id=220" class="bare">http://jcp.org/en/jsr/detail?id=220</a>.</p>
+</li>
+<li>
+<p><a id="bib2"></a> Jakarta™ Enterprise Beans, version 4.0 . <a href="https://jakarta.ee/specifications/enterprise-beans/4.0/" class="bare">https://jakarta.ee/specifications/enterprise-beans/4.0/</a>.</p>
+</li>
+<li>
+<p><a id="bib3"></a> Jakarta™ Contexts and Dependency Injection (CDI specification) version 3.0 . <a href="https://jakarta.ee/specifications/cdi/3.0/" class="bare">https://jakarta.ee/specifications/cdi/3.0/</a> .</p>
+</li>
+<li>
+<p><a id="bib4"></a> Jakarta™ XML Web Services (JAX-WS 3.0) version 3.0 . <a href="https://jakarta.ee/specifications/xml-web-services/3.0/" class="bare">https://jakarta.ee/specifications/xml-web-services/3.0/</a> .</p>
+</li>
+<li>
+<p><a id="bib5"></a> Jakarta™ Annotations version 2.0 . <a href="https://jakarta.ee/specifications/annotations/2.0/" class="bare">https://jakarta.ee/specifications/annotations/2.0/</a>.</p>
+</li>
+<li>
+<p><a id="bib6"></a> Jakarta™ EE Platform 9 . <a href="https://jakarta.ee/specifications/platform/9/" class="bare">https://jakarta.ee/specifications/platform/9/</a> .</p>
+</li>
+<li>
+<p><a id="bib7"></a> Jakarta™ Transaction  (JTA) version 2.0 . <a href="https://jakarta.ee/specifications/transactions/2.0/" class="bare">https://jakarta.ee/specifications/transactions/2.0/</a> .</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="change_log"><a class="anchor" href="#change_log"></a>Appendix B: Change Log</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Clarified <a href="#relationship_to_other_specifications">Relationship to Other Specifications</a> to be consistent with the Jakarta EE Platform specification
+with regard to when interceptors defined by means of the <em>Interceptors</em>
+annotation and interceptors defined by means of interceptor bindings are
+required to be supported.</p>
+</div>
+<div class="paragraph">
+<p>Clarified terminology in sections <a href="#terminology">Terminology</a> and
+<a href="#definition_of_interceptor_classes_and_interceptor_methods">Definition of Interceptor Classes and Interceptor Methods</a>.</p>
+</div>
+<div class="paragraph">
+<p>Noted that around-construct interceptors run
+in the same thread as the target constructor in section
+<a href="#interceptor_environment">Interceptor Environment</a>.</p>
+</div>
+<div class="paragraph">
+<p>Clarified that around-construct interceptor
+methods may throw checked exceptions.</p>
+</div>
+<div class="paragraph">
+<p>Clarified distinction between core
+requirements and the latitude available to extension specifications.</p>
+</div>
+<div class="paragraph">
+<p>Reworded to indicate that deployment
+descriptors are specific to extension specifications.</p>
+</div>
+<div class="paragraph">
+<p>Clarified that interceptor binding may not be
+used to associate interceptors with decorators.</p>
+</div>
+<div class="paragraph">
+<p>Corrected bug in section
+<a href="#interceptor_binding_types_with_additional_interceptor_bindings">Interceptor binding types with additional interceptor bindings</a>:
+An interceptor binding type can only
+be applied to an interceptor binding type defining a subset of its
+target types.</p>
+</div>
+<div class="paragraph">
+<p>Removed inconsistency whereby only
+around-construct lifecycle callback interceptors could declare
+interceptor binding types defined other than as <em>Target(TYPE)</em> .</p>
+</div>
+<div class="paragraph">
+<p>Clarified when <em>Priority</em> annotation is
+ignored.</p>
+</div>
+<div class="paragraph">
+<p>Added section
+<a href="#enabling_interceptors">Enabling Interceptors</a> to
+<a href="#interceptor_ordering">Interceptor Ordering</a> to
+centralize existing requirements on enabling interceptors and separate
+concept of the enabling of interceptors from the ordering of
+interceptors.</p>
+</div>
+<div class="paragraph">
+<p>Combined interceptor ordering rules into a
+single algorithm in section <a href="#interceptor_ordering_rules">Interceptor Ordering Rules</a>.</p>
+</div>
+<div class="paragraph">
+<p>Factored out section
+<a href="#excluding_interceptors">Excluding Interceptors</a> on
+excluding interceptors.</p>
+</div>
+<div class="paragraph">
+<p>Clarified that <em>ExcludeClassInterceptors</em>
+applies only to interceptors defined by means of the <em>Interceptors</em>
+annotation.</p>
+</div>
+<div class="paragraph">
+<p>Made numerous editorial cleanup changes, and
+reorganized document for clarity.</p>
+</div>
+</div>
+</div>
+</div>
+<div id="footnotes">
+<hr>
+<div class="footnote" id="_footnotedef_1">
+<a href="#_footnoteref_1">1</a>. If a PostConstruct interceptor method is declared in the interceptor class or a superclass of the interceptor class, it is not invoked when the interceptor instance itself is created.
+</div>
+<div class="footnote" id="_footnotedef_2">
+<a href="#_footnoteref_2">2</a>. If a PreDestroy interceptor method is declared in the interceptor class or a superclass of the interceptor class, it is not invoked when the interceptor instance itself is destroyed.
+</div>
+<div class="footnote" id="_footnotedef_3">
+<a href="#_footnoteref_3">3</a>. If the last parameter is a vararg parameter of type T, it is considered be equivalent to a parameter of type T{opening-bracket}{closing-bracket}.
+</div>
+<div class="footnote" id="_footnotedef_4">
+<a href="#_footnoteref_4">4</a>. In case of the PostConstruct interceptor, if there is no callback method defined on the target class, the invocation of InvocationContext.proceed method in the last interceptor method in the chain validates the target instance.
+</div>
+<div class="footnote" id="_footnotedef_5">
+<a href="#_footnoteref_5">5</a>. In general, a lifecycle callback interceptor method will be invoked in an unspecified transaction context. Note however that singleton and stateful session beans support the use of a transaction context for the invocation of lifecycle callback interceptor methods (see the Jakarta Enterprise Beans specification &#91;<a href="#bib2">2</a>&#93;). The transaction context may be also changed by transactional interceptors in the invocation chain.
+</div>
+<div class="footnote" id="_footnotedef_6">
+<a href="#_footnoteref_6">6</a>. Note that the transaction context may be changed by transactional interceptors in the invocation chain.
+</div>
+<div class="footnote" id="_footnotedef_7">
+<a href="#_footnoteref_7">7</a>. This requirement follows the rules from the Jakarta Annotations specification, section 2.1 &#91;<a href="#bib5">5</a>&#91;.
+</div>
+<div class="footnote" id="_footnotedef_8">
+<a href="#_footnoteref_8">8</a>. The Priority annotation also orders interceptors. See Chapter 5 <a href="#interceptor_ordering">Interceptor Ordering</a>.
+</div>
+</div>
+<div id="footer">
+<div id="footer-text">
+ 2.0-SNAPSHOT<br>
+Last updated 2020-06-12 20:12:07 +0200
+</div>
+</div>
+<style>
+/* Stylesheet for CodeRay to match GitHub theme | MIT License | http://foundation.zurb.com */
+pre.CodeRay{background:#f7f7f8}
+.CodeRay .line-numbers{border-right:1px solid currentColor;opacity:.35;padding:0 .5em 0 0}
+.CodeRay span.line-numbers{display:inline-block;margin-right:.75em}
+.CodeRay .line-numbers strong{color:#000}
+table.CodeRay{border-collapse:separate;border:0;margin-bottom:0;background:none}
+table.CodeRay td{vertical-align:top;line-height:inherit}
+table.CodeRay td.line-numbers{text-align:right}
+table.CodeRay td.code{padding:0 0 0 .75em}
+.CodeRay .debug{color:#fff !important;background:#000080 !important}
+.CodeRay .annotation{color:#007}
+.CodeRay .attribute-name{color:#000080}
+.CodeRay .attribute-value{color:#700}
+.CodeRay .binary{color:#509}
+.CodeRay .comment{color:#998;font-style:italic}
+.CodeRay .char{color:#04d}
+.CodeRay .char .content{color:#04d}
+.CodeRay .char .delimiter{color:#039}
+.CodeRay .class{color:#458;font-weight:bold}
+.CodeRay .complex{color:#a08}
+.CodeRay .constant,.CodeRay .predefined-constant{color:#008080}
+.CodeRay .color{color:#099}
+.CodeRay .class-variable{color:#369}
+.CodeRay .decorator{color:#b0b}
+.CodeRay .definition{color:#099}
+.CodeRay .delimiter{color:#000}
+.CodeRay .doc{color:#970}
+.CodeRay .doctype{color:#34b}
+.CodeRay .doc-string{color:#d42}
+.CodeRay .escape{color:#666}
+.CodeRay .entity{color:#800}
+.CodeRay .error{color:#808}
+.CodeRay .exception{color:inherit}
+.CodeRay .filename{color:#099}
+.CodeRay .function{color:#900;font-weight:bold}
+.CodeRay .global-variable{color:#008080}
+.CodeRay .hex{color:#058}
+.CodeRay .integer,.CodeRay .float{color:#099}
+.CodeRay .include{color:#555}
+.CodeRay .inline{color:#000}
+.CodeRay .inline .inline{background:#ccc}
+.CodeRay .inline .inline .inline{background:#bbb}
+.CodeRay .inline .inline-delimiter{color:#d14}
+.CodeRay .inline-delimiter{color:#d14}
+.CodeRay .important{color:#555;font-weight:bold}
+.CodeRay .interpreted{color:#b2b}
+.CodeRay .instance-variable{color:#008080}
+.CodeRay .label{color:#970}
+.CodeRay .local-variable{color:#963}
+.CodeRay .octal{color:#40e}
+.CodeRay .predefined{color:#369}
+.CodeRay .preprocessor{color:#579}
+.CodeRay .pseudo-class{color:#555}
+.CodeRay .directive{font-weight:bold}
+.CodeRay .type{font-weight:bold}
+.CodeRay .predefined-type{color:inherit}
+.CodeRay .reserved,.CodeRay .keyword {color:#000;font-weight:bold}
+.CodeRay .key{color:#808}
+.CodeRay .key .delimiter{color:#606}
+.CodeRay .key .char{color:#80f}
+.CodeRay .value{color:#088}
+.CodeRay .regexp .delimiter{color:#808}
+.CodeRay .regexp .content{color:#808}
+.CodeRay .regexp .modifier{color:#808}
+.CodeRay .regexp .char{color:#d14}
+.CodeRay .regexp .function{color:#404;font-weight:bold}
+.CodeRay .string{color:#d20}
+.CodeRay .string .string .string{background:#ffd0d0}
+.CodeRay .string .content{color:#d14}
+.CodeRay .string .char{color:#d14}
+.CodeRay .string .delimiter{color:#d14}
+.CodeRay .shell{color:#d14}
+.CodeRay .shell .delimiter{color:#d14}
+.CodeRay .symbol{color:#990073}
+.CodeRay .symbol .content{color:#a60}
+.CodeRay .symbol .delimiter{color:#630}
+.CodeRay .tag{color:#008080}
+.CodeRay .tag-special{color:#d70}
+.CodeRay .variable{color:#036}
+.CodeRay .insert{background:#afa}
+.CodeRay .delete{background:#faa}
+.CodeRay .change{color:#aaf;background:#007}
+.CodeRay .head{color:#f8f;background:#505}
+.CodeRay .insert .insert{color:#080}
+.CodeRay .delete .delete{color:#800}
+.CodeRay .change .change{color:#66f}
+.CodeRay .head .head{color:#f4f}
+</style>
+</body>
+</html>
