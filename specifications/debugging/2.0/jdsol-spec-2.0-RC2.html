@@ -1,0 +1,2326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Asciidoctor 2.0.10">
+<meta name="author" content="Jakarta Server Pages Team, https://projects.eclipse.org/projects/ee4j.jsp">
+<title>Jakarta Debugging Support for Other Languages</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
+<style>
+/* Asciidoctor default stylesheet | MIT License | https://asciidoctor.org */
+/* Uncomment @import statement to use as custom stylesheet */
+/*@import "https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700";*/
+article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section{display:block}
+audio,video{display:inline-block}
+audio:not([controls]){display:none;height:0}
+html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}
+a{background:none}
+a:focus{outline:thin dotted}
+a:active,a:hover{outline:0}
+h1{font-size:2em;margin:.67em 0}
+abbr[title]{border-bottom:1px dotted}
+b,strong{font-weight:bold}
+dfn{font-style:italic}
+hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0}
+mark{background:#ff0;color:#000}
+code,kbd,pre,samp{font-family:monospace;font-size:1em}
+pre{white-space:pre-wrap}
+q{quotes:"\201C" "\201D" "\2018" "\2019"}
+small{font-size:80%}
+sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}
+sup{top:-.5em}
+sub{bottom:-.25em}
+img{border:0}
+svg:not(:root){overflow:hidden}
+figure{margin:0}
+fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}
+legend{border:0;padding:0}
+button,input,select,textarea{font-family:inherit;font-size:100%;margin:0}
+button,input{line-height:normal}
+button,select{text-transform:none}
+button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer}
+button[disabled],html input[disabled]{cursor:default}
+input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0}
+button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}
+textarea{overflow:auto;vertical-align:top}
+table{border-collapse:collapse;border-spacing:0}
+*,*::before,*::after{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box}
+html,body{font-size:100%}
+body{background:#fff;color:rgba(0,0,0,.8);padding:0;margin:0;font-family:"Noto Serif","DejaVu Serif",serif;font-weight:400;font-style:normal;line-height:1;position:relative;cursor:auto;tab-size:4;-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased}
+a:hover{cursor:pointer}
+img,object,embed{max-width:100%;height:auto}
+object,embed{height:100%}
+img{-ms-interpolation-mode:bicubic}
+.left{float:left!important}
+.right{float:right!important}
+.text-left{text-align:left!important}
+.text-right{text-align:right!important}
+.text-center{text-align:center!important}
+.text-justify{text-align:justify!important}
+.hide{display:none}
+img,object,svg{display:inline-block;vertical-align:middle}
+textarea{height:auto;min-height:50px}
+select{width:100%}
+.center{margin-left:auto;margin-right:auto}
+.stretch{width:100%}
+.subheader,.admonitionblock td.content>.title,.audioblock>.title,.exampleblock>.title,.imageblock>.title,.listingblock>.title,.literalblock>.title,.stemblock>.title,.openblock>.title,.paragraph>.title,.quoteblock>.title,table.tableblock>.title,.verseblock>.title,.videoblock>.title,.dlist>.title,.olist>.title,.ulist>.title,.qlist>.title,.hdlist>.title{line-height:1.45;color:#7a2518;font-weight:400;margin-top:0;margin-bottom:.25em}
+div,dl,dt,dd,ul,ol,li,h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6,pre,form,p,blockquote,th,td{margin:0;padding:0;direction:ltr}
+a{color:#2156a5;text-decoration:underline;line-height:inherit}
+a:hover,a:focus{color:#1d4b8f}
+a img{border:0}
+p{font-family:inherit;font-weight:400;font-size:1em;line-height:1.6;margin-bottom:1.25em;text-rendering:optimizeLegibility}
+p aside{font-size:.875em;line-height:1.35;font-style:italic}
+h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6{font-family:"Open Sans","DejaVu Sans",sans-serif;font-weight:300;font-style:normal;color:#ba3925;text-rendering:optimizeLegibility;margin-top:1em;margin-bottom:.5em;line-height:1.0125em}
+h1 small,h2 small,h3 small,#toctitle small,.sidebarblock>.content>.title small,h4 small,h5 small,h6 small{font-size:60%;color:#e99b8f;line-height:0}
+h1{font-size:2.125em}
+h2{font-size:1.6875em}
+h3,#toctitle,.sidebarblock>.content>.title{font-size:1.375em}
+h4,h5{font-size:1.125em}
+h6{font-size:1em}
+hr{border:solid #dddddf;border-width:1px 0 0;clear:both;margin:1.25em 0 1.1875em;height:0}
+em,i{font-style:italic;line-height:inherit}
+strong,b{font-weight:bold;line-height:inherit}
+small{font-size:60%;line-height:inherit}
+code{font-family:"Droid Sans Mono","DejaVu Sans Mono",monospace;font-weight:400;color:rgba(0,0,0,.9)}
+ul,ol,dl{font-size:1em;line-height:1.6;margin-bottom:1.25em;list-style-position:outside;font-family:inherit}
+ul,ol{margin-left:1.5em}
+ul li ul,ul li ol{margin-left:1.25em;margin-bottom:0;font-size:1em}
+ul.square li ul,ul.circle li ul,ul.disc li ul{list-style:inherit}
+ul.square{list-style-type:square}
+ul.circle{list-style-type:circle}
+ul.disc{list-style-type:disc}
+ol li ul,ol li ol{margin-left:1.25em;margin-bottom:0}
+dl dt{margin-bottom:.3125em;font-weight:bold}
+dl dd{margin-bottom:1.25em}
+abbr,acronym{text-transform:uppercase;font-size:90%;color:rgba(0,0,0,.8);border-bottom:1px dotted #ddd;cursor:help}
+abbr{text-transform:none}
+blockquote{margin:0 0 1.25em;padding:.5625em 1.25em 0 1.1875em;border-left:1px solid #ddd}
+blockquote cite{display:block;font-size:.9375em;color:rgba(0,0,0,.6)}
+blockquote cite::before{content:"\2014 \0020"}
+blockquote cite a,blockquote cite a:visited{color:rgba(0,0,0,.6)}
+blockquote,blockquote p{line-height:1.6;color:rgba(0,0,0,.85)}
+@media screen and (min-width:768px){h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6{line-height:1.2}
+h1{font-size:2.75em}
+h2{font-size:2.3125em}
+h3,#toctitle,.sidebarblock>.content>.title{font-size:1.6875em}
+h4{font-size:1.4375em}}
+table{background:#fff;margin-bottom:1.25em;border:solid 1px #dedede}
+table thead,table tfoot{background:#f7f8f7}
+table thead tr th,table thead tr td,table tfoot tr th,table tfoot tr td{padding:.5em .625em .625em;font-size:inherit;color:rgba(0,0,0,.8);text-align:left}
+table tr th,table tr td{padding:.5625em .625em;font-size:inherit;color:rgba(0,0,0,.8)}
+table tr.even,table tr.alt{background:#f8f8f7}
+table thead tr th,table tfoot tr th,table tbody tr td,table tr td,table tfoot tr td{display:table-cell;line-height:1.6}
+h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6{line-height:1.2;word-spacing:-.05em}
+h1 strong,h2 strong,h3 strong,#toctitle strong,.sidebarblock>.content>.title strong,h4 strong,h5 strong,h6 strong{font-weight:400}
+.clearfix::before,.clearfix::after,.float-group::before,.float-group::after{content:" ";display:table}
+.clearfix::after,.float-group::after{clear:both}
+:not(pre):not([class^=L])>code{font-size:.9375em;font-style:normal!important;letter-spacing:0;padding:.1em .5ex;word-spacing:-.15em;background:#f7f7f8;-webkit-border-radius:4px;border-radius:4px;line-height:1.45;text-rendering:optimizeSpeed;word-wrap:break-word}
+:not(pre)>code.nobreak{word-wrap:normal}
+:not(pre)>code.nowrap{white-space:nowrap}
+pre{color:rgba(0,0,0,.9);font-family:"Droid Sans Mono","DejaVu Sans Mono",monospace;line-height:1.45;text-rendering:optimizeSpeed}
+pre code,pre pre{color:inherit;font-size:inherit;line-height:inherit}
+pre>code{display:block}
+pre.nowrap,pre.nowrap pre{white-space:pre;word-wrap:normal}
+em em{font-style:normal}
+strong strong{font-weight:400}
+.keyseq{color:rgba(51,51,51,.8)}
+kbd{font-family:"Droid Sans Mono","DejaVu Sans Mono",monospace;display:inline-block;color:rgba(0,0,0,.8);font-size:.65em;line-height:1.45;background:#f7f7f7;border:1px solid #ccc;-webkit-border-radius:3px;border-radius:3px;-webkit-box-shadow:0 1px 0 rgba(0,0,0,.2),0 0 0 .1em white inset;box-shadow:0 1px 0 rgba(0,0,0,.2),0 0 0 .1em #fff inset;margin:0 .15em;padding:.2em .5em;vertical-align:middle;position:relative;top:-.1em;white-space:nowrap}
+.keyseq kbd:first-child{margin-left:0}
+.keyseq kbd:last-child{margin-right:0}
+.menuseq,.menuref{color:#000}
+.menuseq b:not(.caret),.menuref{font-weight:inherit}
+.menuseq{word-spacing:-.02em}
+.menuseq b.caret{font-size:1.25em;line-height:.8}
+.menuseq i.caret{font-weight:bold;text-align:center;width:.45em}
+b.button::before,b.button::after{position:relative;top:-1px;font-weight:400}
+b.button::before{content:"[";padding:0 3px 0 2px}
+b.button::after{content:"]";padding:0 2px 0 3px}
+p a>code:hover{color:rgba(0,0,0,.9)}
+#header,#content,#footnotes,#footer{width:100%;margin-left:auto;margin-right:auto;margin-top:0;margin-bottom:0;max-width:62.5em;*zoom:1;position:relative;padding-left:.9375em;padding-right:.9375em}
+#header::before,#header::after,#content::before,#content::after,#footnotes::before,#footnotes::after,#footer::before,#footer::after{content:" ";display:table}
+#header::after,#content::after,#footnotes::after,#footer::after{clear:both}
+#content{margin-top:1.25em}
+#content::before{content:none}
+#header>h1:first-child{color:rgba(0,0,0,.85);margin-top:2.25rem;margin-bottom:0}
+#header>h1:first-child+#toc{margin-top:8px;border-top:1px solid #dddddf}
+#header>h1:only-child,body.toc2 #header>h1:nth-last-child(2){border-bottom:1px solid #dddddf;padding-bottom:8px}
+#header .details{border-bottom:1px solid #dddddf;line-height:1.45;padding-top:.25em;padding-bottom:.25em;padding-left:.25em;color:rgba(0,0,0,.6);display:-ms-flexbox;display:-webkit-flex;display:flex;-ms-flex-flow:row wrap;-webkit-flex-flow:row wrap;flex-flow:row wrap}
+#header .details span:first-child{margin-left:-.125em}
+#header .details span.email a{color:rgba(0,0,0,.85)}
+#header .details br{display:none}
+#header .details br+span::before{content:"\00a0\2013\00a0"}
+#header .details br+span.author::before{content:"\00a0\22c5\00a0";color:rgba(0,0,0,.85)}
+#header .details br+span#revremark::before{content:"\00a0|\00a0"}
+#header #revnumber{text-transform:capitalize}
+#header #revnumber::after{content:"\00a0"}
+#content>h1:first-child:not([class]){color:rgba(0,0,0,.85);border-bottom:1px solid #dddddf;padding-bottom:8px;margin-top:0;padding-top:1rem;margin-bottom:1.25rem}
+#toc{border-bottom:1px solid #e7e7e9;padding-bottom:.5em}
+#toc>ul{margin-left:.125em}
+#toc ul.sectlevel0>li>a{font-style:italic}
+#toc ul.sectlevel0 ul.sectlevel1{margin:.5em 0}
+#toc ul{font-family:"Open Sans","DejaVu Sans",sans-serif;list-style-type:none}
+#toc li{line-height:1.3334;margin-top:.3334em}
+#toc a{text-decoration:none}
+#toc a:active{text-decoration:underline}
+#toctitle{color:#7a2518;font-size:1.2em}
+@media screen and (min-width:768px){#toctitle{font-size:1.375em}
+body.toc2{padding-left:15em;padding-right:0}
+#toc.toc2{margin-top:0!important;background:#f8f8f7;position:fixed;width:15em;left:0;top:0;border-right:1px solid #e7e7e9;border-top-width:0!important;border-bottom-width:0!important;z-index:1000;padding:1.25em 1em;height:100%;overflow:auto}
+#toc.toc2 #toctitle{margin-top:0;margin-bottom:.8rem;font-size:1.2em}
+#toc.toc2>ul{font-size:.9em;margin-bottom:0}
+#toc.toc2 ul ul{margin-left:0;padding-left:1em}
+#toc.toc2 ul.sectlevel0 ul.sectlevel1{padding-left:0;margin-top:.5em;margin-bottom:.5em}
+body.toc2.toc-right{padding-left:0;padding-right:15em}
+body.toc2.toc-right #toc.toc2{border-right-width:0;border-left:1px solid #e7e7e9;left:auto;right:0}}
+@media screen and (min-width:1280px){body.toc2{padding-left:20em;padding-right:0}
+#toc.toc2{width:20em}
+#toc.toc2 #toctitle{font-size:1.375em}
+#toc.toc2>ul{font-size:.95em}
+#toc.toc2 ul ul{padding-left:1.25em}
+body.toc2.toc-right{padding-left:0;padding-right:20em}}
+#content #toc{border-style:solid;border-width:1px;border-color:#e0e0dc;margin-bottom:1.25em;padding:1.25em;background:#f8f8f7;-webkit-border-radius:4px;border-radius:4px}
+#content #toc>:first-child{margin-top:0}
+#content #toc>:last-child{margin-bottom:0}
+#footer{max-width:100%;background:rgba(0,0,0,.8);padding:1.25em}
+#footer-text{color:rgba(255,255,255,.8);line-height:1.44}
+#content{margin-bottom:.625em}
+.sect1{padding-bottom:.625em}
+@media screen and (min-width:768px){#content{margin-bottom:1.25em}
+.sect1{padding-bottom:1.25em}}
+.sect1:last-child{padding-bottom:0}
+.sect1+.sect1{border-top:1px solid #e7e7e9}
+#content h1>a.anchor,h2>a.anchor,h3>a.anchor,#toctitle>a.anchor,.sidebarblock>.content>.title>a.anchor,h4>a.anchor,h5>a.anchor,h6>a.anchor{position:absolute;z-index:1001;width:1.5ex;margin-left:-1.5ex;display:block;text-decoration:none!important;visibility:hidden;text-align:center;font-weight:400}
+#content h1>a.anchor::before,h2>a.anchor::before,h3>a.anchor::before,#toctitle>a.anchor::before,.sidebarblock>.content>.title>a.anchor::before,h4>a.anchor::before,h5>a.anchor::before,h6>a.anchor::before{content:"\00A7";font-size:.85em;display:block;padding-top:.1em}
+#content h1:hover>a.anchor,#content h1>a.anchor:hover,h2:hover>a.anchor,h2>a.anchor:hover,h3:hover>a.anchor,#toctitle:hover>a.anchor,.sidebarblock>.content>.title:hover>a.anchor,h3>a.anchor:hover,#toctitle>a.anchor:hover,.sidebarblock>.content>.title>a.anchor:hover,h4:hover>a.anchor,h4>a.anchor:hover,h5:hover>a.anchor,h5>a.anchor:hover,h6:hover>a.anchor,h6>a.anchor:hover{visibility:visible}
+#content h1>a.link,h2>a.link,h3>a.link,#toctitle>a.link,.sidebarblock>.content>.title>a.link,h4>a.link,h5>a.link,h6>a.link{color:#ba3925;text-decoration:none}
+#content h1>a.link:hover,h2>a.link:hover,h3>a.link:hover,#toctitle>a.link:hover,.sidebarblock>.content>.title>a.link:hover,h4>a.link:hover,h5>a.link:hover,h6>a.link:hover{color:#a53221}
+details,.audioblock,.imageblock,.literalblock,.listingblock,.stemblock,.videoblock{margin-bottom:1.25em}
+details>summary:first-of-type{cursor:pointer;display:list-item;outline:none;margin-bottom:.75em}
+.admonitionblock td.content>.title,.audioblock>.title,.exampleblock>.title,.imageblock>.title,.listingblock>.title,.literalblock>.title,.stemblock>.title,.openblock>.title,.paragraph>.title,.quoteblock>.title,table.tableblock>.title,.verseblock>.title,.videoblock>.title,.dlist>.title,.olist>.title,.ulist>.title,.qlist>.title,.hdlist>.title{text-rendering:optimizeLegibility;text-align:left;font-family:"Noto Serif","DejaVu Serif",serif;font-size:1rem;font-style:italic}
+table.tableblock.fit-content>caption.title{white-space:nowrap;width:0}
+.paragraph.lead>p,#preamble>.sectionbody>[class="paragraph"]:first-of-type p{font-size:1.21875em;line-height:1.6;color:rgba(0,0,0,.85)}
+table.tableblock #preamble>.sectionbody>[class="paragraph"]:first-of-type p{font-size:inherit}
+.admonitionblock>table{border-collapse:separate;border:0;background:none;width:100%}
+.admonitionblock>table td.icon{text-align:center;width:80px}
+.admonitionblock>table td.icon img{max-width:none}
+.admonitionblock>table td.icon .title{font-weight:bold;font-family:"Open Sans","DejaVu Sans",sans-serif;text-transform:uppercase}
+.admonitionblock>table td.content{padding-left:1.125em;padding-right:1.25em;border-left:1px solid #dddddf;color:rgba(0,0,0,.6)}
+.admonitionblock>table td.content>:last-child>:last-child{margin-bottom:0}
+.exampleblock>.content{border-style:solid;border-width:1px;border-color:#e6e6e6;margin-bottom:1.25em;padding:1.25em;background:#fff;-webkit-border-radius:4px;border-radius:4px}
+.exampleblock>.content>:first-child{margin-top:0}
+.exampleblock>.content>:last-child{margin-bottom:0}
+.sidebarblock{border-style:solid;border-width:1px;border-color:#dbdbd6;margin-bottom:1.25em;padding:1.25em;background:#f3f3f2;-webkit-border-radius:4px;border-radius:4px}
+.sidebarblock>:first-child{margin-top:0}
+.sidebarblock>:last-child{margin-bottom:0}
+.sidebarblock>.content>.title{color:#7a2518;margin-top:0;text-align:center}
+.exampleblock>.content>:last-child>:last-child,.exampleblock>.content .olist>ol>li:last-child>:last-child,.exampleblock>.content .ulist>ul>li:last-child>:last-child,.exampleblock>.content .qlist>ol>li:last-child>:last-child,.sidebarblock>.content>:last-child>:last-child,.sidebarblock>.content .olist>ol>li:last-child>:last-child,.sidebarblock>.content .ulist>ul>li:last-child>:last-child,.sidebarblock>.content .qlist>ol>li:last-child>:last-child{margin-bottom:0}
+.literalblock pre,.listingblock>.content>pre{-webkit-border-radius:4px;border-radius:4px;word-wrap:break-word;overflow-x:auto;padding:1em;font-size:.8125em}
+@media screen and (min-width:768px){.literalblock pre,.listingblock>.content>pre{font-size:.90625em}}
+@media screen and (min-width:1280px){.literalblock pre,.listingblock>.content>pre{font-size:1em}}
+.literalblock pre,.listingblock>.content>pre:not(.highlight),.listingblock>.content>pre[class="highlight"],.listingblock>.content>pre[class^="highlight "]{background:#f7f7f8}
+.literalblock.output pre{color:#f7f7f8;background:rgba(0,0,0,.9)}
+.listingblock>.content{position:relative}
+.listingblock code[data-lang]::before{display:none;content:attr(data-lang);position:absolute;font-size:.75em;top:.425rem;right:.5rem;line-height:1;text-transform:uppercase;color:inherit;opacity:.5}
+.listingblock:hover code[data-lang]::before{display:block}
+.listingblock.terminal pre .command::before{content:attr(data-prompt);padding-right:.5em;color:inherit;opacity:.5}
+.listingblock.terminal pre .command:not([data-prompt])::before{content:"$"}
+.listingblock pre.highlightjs{padding:0}
+.listingblock pre.highlightjs>code{padding:1em;-webkit-border-radius:4px;border-radius:4px}
+.listingblock pre.prettyprint{border-width:0}
+.prettyprint{background:#f7f7f8}
+pre.prettyprint .linenums{line-height:1.45;margin-left:2em}
+pre.prettyprint li{background:none;list-style-type:inherit;padding-left:0}
+pre.prettyprint li code[data-lang]::before{opacity:1}
+pre.prettyprint li:not(:first-child) code[data-lang]::before{display:none}
+table.linenotable{border-collapse:separate;border:0;margin-bottom:0;background:none}
+table.linenotable td[class]{color:inherit;vertical-align:top;padding:0;line-height:inherit;white-space:normal}
+table.linenotable td.code{padding-left:.75em}
+table.linenotable td.linenos{border-right:1px solid currentColor;opacity:.35;padding-right:.5em}
+pre.pygments .lineno{border-right:1px solid currentColor;opacity:.35;display:inline-block;margin-right:.75em}
+pre.pygments .lineno::before{content:"";margin-right:-.125em}
+.quoteblock{margin:0 1em 1.25em 1.5em;display:table}
+.quoteblock:not(.excerpt)>.title{margin-left:-1.5em;margin-bottom:.75em}
+.quoteblock blockquote,.quoteblock p{color:rgba(0,0,0,.85);font-size:1.15rem;line-height:1.75;word-spacing:.1em;letter-spacing:0;font-style:italic;text-align:justify}
+.quoteblock blockquote{margin:0;padding:0;border:0}
+.quoteblock blockquote::before{content:"\201c";float:left;font-size:2.75em;font-weight:bold;line-height:.6em;margin-left:-.6em;color:#7a2518;text-shadow:0 1px 2px rgba(0,0,0,.1)}
+.quoteblock blockquote>.paragraph:last-child p{margin-bottom:0}
+.quoteblock .attribution{margin-top:.75em;margin-right:.5ex;text-align:right}
+.verseblock{margin:0 1em 1.25em}
+.verseblock pre{font-family:"Open Sans","DejaVu Sans",sans;font-size:1.15rem;color:rgba(0,0,0,.85);font-weight:300;text-rendering:optimizeLegibility}
+.verseblock pre strong{font-weight:400}
+.verseblock .attribution{margin-top:1.25rem;margin-left:.5ex}
+.quoteblock .attribution,.verseblock .attribution{font-size:.9375em;line-height:1.45;font-style:italic}
+.quoteblock .attribution br,.verseblock .attribution br{display:none}
+.quoteblock .attribution cite,.verseblock .attribution cite{display:block;letter-spacing:-.025em;color:rgba(0,0,0,.6)}
+.quoteblock.abstract blockquote::before,.quoteblock.excerpt blockquote::before,.quoteblock .quoteblock blockquote::before{display:none}
+.quoteblock.abstract blockquote,.quoteblock.abstract p,.quoteblock.excerpt blockquote,.quoteblock.excerpt p,.quoteblock .quoteblock blockquote,.quoteblock .quoteblock p{line-height:1.6;word-spacing:0}
+.quoteblock.abstract{margin:0 1em 1.25em;display:block}
+.quoteblock.abstract>.title{margin:0 0 .375em;font-size:1.15em;text-align:center}
+.quoteblock.excerpt>blockquote,.quoteblock .quoteblock{padding:0 0 .25em 1em;border-left:.25em solid #dddddf}
+.quoteblock.excerpt,.quoteblock .quoteblock{margin-left:0}
+.quoteblock.excerpt blockquote,.quoteblock.excerpt p,.quoteblock .quoteblock blockquote,.quoteblock .quoteblock p{color:inherit;font-size:1.0625rem}
+.quoteblock.excerpt .attribution,.quoteblock .quoteblock .attribution{color:inherit;text-align:left;margin-right:0}
+table.tableblock{max-width:100%;border-collapse:separate}
+p.tableblock:last-child{margin-bottom:0}
+td.tableblock>.content>:last-child{margin-bottom:-1.25em}
+td.tableblock>.content>:last-child.sidebarblock{margin-bottom:0}
+table.tableblock,th.tableblock,td.tableblock{border:0 solid #dedede}
+table.grid-all>thead>tr>.tableblock,table.grid-all>tbody>tr>.tableblock{border-width:0 1px 1px 0}
+table.grid-all>tfoot>tr>.tableblock{border-width:1px 1px 0 0}
+table.grid-cols>*>tr>.tableblock{border-width:0 1px 0 0}
+table.grid-rows>thead>tr>.tableblock,table.grid-rows>tbody>tr>.tableblock{border-width:0 0 1px}
+table.grid-rows>tfoot>tr>.tableblock{border-width:1px 0 0}
+table.grid-all>*>tr>.tableblock:last-child,table.grid-cols>*>tr>.tableblock:last-child{border-right-width:0}
+table.grid-all>tbody>tr:last-child>.tableblock,table.grid-all>thead:last-child>tr>.tableblock,table.grid-rows>tbody>tr:last-child>.tableblock,table.grid-rows>thead:last-child>tr>.tableblock{border-bottom-width:0}
+table.frame-all{border-width:1px}
+table.frame-sides{border-width:0 1px}
+table.frame-topbot,table.frame-ends{border-width:1px 0}
+table.stripes-all tr,table.stripes-odd tr:nth-of-type(odd),table.stripes-even tr:nth-of-type(even),table.stripes-hover tr:hover{background:#f8f8f7}
+th.halign-left,td.halign-left{text-align:left}
+th.halign-right,td.halign-right{text-align:right}
+th.halign-center,td.halign-center{text-align:center}
+th.valign-top,td.valign-top{vertical-align:top}
+th.valign-bottom,td.valign-bottom{vertical-align:bottom}
+th.valign-middle,td.valign-middle{vertical-align:middle}
+table thead th,table tfoot th{font-weight:bold}
+tbody tr th{display:table-cell;line-height:1.6;background:#f7f8f7}
+tbody tr th,tbody tr th p,tfoot tr th,tfoot tr th p{color:rgba(0,0,0,.8);font-weight:bold}
+p.tableblock>code:only-child{background:none;padding:0}
+p.tableblock{font-size:1em}
+ol{margin-left:1.75em}
+ul li ol{margin-left:1.5em}
+dl dd{margin-left:1.125em}
+dl dd:last-child,dl dd:last-child>:last-child{margin-bottom:0}
+ol>li p,ul>li p,ul dd,ol dd,.olist .olist,.ulist .ulist,.ulist .olist,.olist .ulist{margin-bottom:.625em}
+ul.checklist,ul.none,ol.none,ul.no-bullet,ol.no-bullet,ol.unnumbered,ul.unstyled,ol.unstyled{list-style-type:none}
+ul.no-bullet,ol.no-bullet,ol.unnumbered{margin-left:.625em}
+ul.unstyled,ol.unstyled{margin-left:0}
+ul.checklist{margin-left:.625em}
+ul.checklist li>p:first-child>.fa-square-o:first-child,ul.checklist li>p:first-child>.fa-check-square-o:first-child{width:1.25em;font-size:.8em;position:relative;bottom:.125em}
+ul.checklist li>p:first-child>input[type="checkbox"]:first-child{margin-right:.25em}
+ul.inline{display:-ms-flexbox;display:-webkit-box;display:flex;-ms-flex-flow:row wrap;-webkit-flex-flow:row wrap;flex-flow:row wrap;list-style:none;margin:0 0 .625em -1.25em}
+ul.inline>li{margin-left:1.25em}
+.unstyled dl dt{font-weight:400;font-style:normal}
+ol.arabic{list-style-type:decimal}
+ol.decimal{list-style-type:decimal-leading-zero}
+ol.loweralpha{list-style-type:lower-alpha}
+ol.upperalpha{list-style-type:upper-alpha}
+ol.lowerroman{list-style-type:lower-roman}
+ol.upperroman{list-style-type:upper-roman}
+ol.lowergreek{list-style-type:lower-greek}
+.hdlist>table,.colist>table{border:0;background:none}
+.hdlist>table>tbody>tr,.colist>table>tbody>tr{background:none}
+td.hdlist1,td.hdlist2{vertical-align:top;padding:0 .625em}
+td.hdlist1{font-weight:bold;padding-bottom:1.25em}
+.literalblock+.colist,.listingblock+.colist{margin-top:-.5em}
+.colist td:not([class]):first-child{padding:.4em .75em 0;line-height:1;vertical-align:top}
+.colist td:not([class]):first-child img{max-width:none}
+.colist td:not([class]):last-child{padding:.25em 0}
+.thumb,.th{line-height:0;display:inline-block;border:solid 4px #fff;-webkit-box-shadow:0 0 0 1px #ddd;box-shadow:0 0 0 1px #ddd}
+.imageblock.left{margin:.25em .625em 1.25em 0}
+.imageblock.right{margin:.25em 0 1.25em .625em}
+.imageblock>.title{margin-bottom:0}
+.imageblock.thumb,.imageblock.th{border-width:6px}
+.imageblock.thumb>.title,.imageblock.th>.title{padding:0 .125em}
+.image.left,.image.right{margin-top:.25em;margin-bottom:.25em;display:inline-block;line-height:0}
+.image.left{margin-right:.625em}
+.image.right{margin-left:.625em}
+a.image{text-decoration:none;display:inline-block}
+a.image object{pointer-events:none}
+sup.footnote,sup.footnoteref{font-size:.875em;position:static;vertical-align:super}
+sup.footnote a,sup.footnoteref a{text-decoration:none}
+sup.footnote a:active,sup.footnoteref a:active{text-decoration:underline}
+#footnotes{padding-top:.75em;padding-bottom:.75em;margin-bottom:.625em}
+#footnotes hr{width:20%;min-width:6.25em;margin:-.25em 0 .75em;border-width:1px 0 0}
+#footnotes .footnote{padding:0 .375em 0 .225em;line-height:1.3334;font-size:.875em;margin-left:1.2em;margin-bottom:.2em}
+#footnotes .footnote a:first-of-type{font-weight:bold;text-decoration:none;margin-left:-1.05em}
+#footnotes .footnote:last-of-type{margin-bottom:0}
+#content #footnotes{margin-top:-.625em;margin-bottom:0;padding:.75em 0}
+.gist .file-data>table{border:0;background:#fff;width:100%;margin-bottom:0}
+.gist .file-data>table td.line-data{width:99%}
+div.unbreakable{page-break-inside:avoid}
+.big{font-size:larger}
+.small{font-size:smaller}
+.underline{text-decoration:underline}
+.overline{text-decoration:overline}
+.line-through{text-decoration:line-through}
+.aqua{color:#00bfbf}
+.aqua-background{background:#00fafa}
+.black{color:#000}
+.black-background{background:#000}
+.blue{color:#0000bf}
+.blue-background{background:#0000fa}
+.fuchsia{color:#bf00bf}
+.fuchsia-background{background:#fa00fa}
+.gray{color:#606060}
+.gray-background{background:#7d7d7d}
+.green{color:#006000}
+.green-background{background:#007d00}
+.lime{color:#00bf00}
+.lime-background{background:#00fa00}
+.maroon{color:#600000}
+.maroon-background{background:#7d0000}
+.navy{color:#000060}
+.navy-background{background:#00007d}
+.olive{color:#606000}
+.olive-background{background:#7d7d00}
+.purple{color:#600060}
+.purple-background{background:#7d007d}
+.red{color:#bf0000}
+.red-background{background:#fa0000}
+.silver{color:#909090}
+.silver-background{background:#bcbcbc}
+.teal{color:#006060}
+.teal-background{background:#007d7d}
+.white{color:#bfbfbf}
+.white-background{background:#fafafa}
+.yellow{color:#bfbf00}
+.yellow-background{background:#fafa00}
+span.icon>.fa{cursor:default}
+a span.icon>.fa{cursor:inherit}
+.admonitionblock td.icon [class^="fa icon-"]{font-size:2.5em;text-shadow:1px 1px 2px rgba(0,0,0,.5);cursor:default}
+.admonitionblock td.icon .icon-note::before{content:"\f05a";color:#19407c}
+.admonitionblock td.icon .icon-tip::before{content:"\f0eb";text-shadow:1px 1px 2px rgba(155,155,0,.8);color:#111}
+.admonitionblock td.icon .icon-warning::before{content:"\f071";color:#bf6900}
+.admonitionblock td.icon .icon-caution::before{content:"\f06d";color:#bf3400}
+.admonitionblock td.icon .icon-important::before{content:"\f06a";color:#bf0000}
+.conum[data-value]{display:inline-block;color:#fff!important;background:rgba(0,0,0,.8);-webkit-border-radius:100px;border-radius:100px;text-align:center;font-size:.75em;width:1.67em;height:1.67em;line-height:1.67em;font-family:"Open Sans","DejaVu Sans",sans-serif;font-style:normal;font-weight:bold}
+.conum[data-value] *{color:#fff!important}
+.conum[data-value]+b{display:none}
+.conum[data-value]::after{content:attr(data-value)}
+pre .conum[data-value]{position:relative;top:-.125em}
+b.conum *{color:inherit!important}
+.conum:not([data-value]):empty{display:none}
+dt,th.tableblock,td.content,div.footnote{text-rendering:optimizeLegibility}
+h1,h2,p,td.content,span.alt{letter-spacing:-.01em}
+p strong,td.content strong,div.footnote strong{letter-spacing:-.005em}
+p,blockquote,dt,td.content,span.alt{font-size:1.0625rem}
+p{margin-bottom:1.25rem}
+.sidebarblock p,.sidebarblock dt,.sidebarblock td.content,p.tableblock{font-size:1em}
+.exampleblock>.content{background:#fffef7;border-color:#e0e0dc;-webkit-box-shadow:0 1px 4px #e0e0dc;box-shadow:0 1px 4px #e0e0dc}
+.print-only{display:none!important}
+@page{margin:1.25cm .75cm}
+@media print{*{-webkit-box-shadow:none!important;box-shadow:none!important;text-shadow:none!important}
+html{font-size:80%}
+a{color:inherit!important;text-decoration:underline!important}
+a.bare,a[href^="#"],a[href^="mailto:"]{text-decoration:none!important}
+a[href^="http:"]:not(.bare)::after,a[href^="https:"]:not(.bare)::after{content:"(" attr(href) ")";display:inline-block;font-size:.875em;padding-left:.25em}
+abbr[title]::after{content:" (" attr(title) ")"}
+pre,blockquote,tr,img,object,svg{page-break-inside:avoid}
+thead{display:table-header-group}
+svg{max-width:100%}
+p,blockquote,dt,td.content{font-size:1em;orphans:3;widows:3}
+h2,h3,#toctitle,.sidebarblock>.content>.title{page-break-after:avoid}
+#toc,.sidebarblock,.exampleblock>.content{background:none!important}
+#toc{border-bottom:1px solid #dddddf!important;padding-bottom:0!important}
+body.book #header{text-align:center}
+body.book #header>h1:first-child{border:0!important;margin:2.5em 0 1em}
+body.book #header .details{border:0!important;display:block;padding:0!important}
+body.book #header .details span:first-child{margin-left:0!important}
+body.book #header .details br{display:block}
+body.book #header .details br+span::before{content:none!important}
+body.book #toc{border:0!important;text-align:left!important;padding:0!important;margin:0!important}
+body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-break-before:always}
+.listingblock code[data-lang]::before{display:block}
+#footer{padding:0 .9375em}
+.hide-on-print{display:none!important}
+.print-only{display:block!important}
+.hide-for-print{display:none!important}
+.show-for-print{display:inherit!important}}
+@media print,amzn-kf8{#header>h1:first-child{margin-top:1.25rem}
+.sect1{padding:0!important}
+.sect1+.sect1{border:0}
+#footer{background:none}
+#footer-text{color:rgba(0,0,0,.6);font-size:.9em}}
+@media amzn-kf8{#header,#content,#footnotes,#footer{padding:0}}
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body class="book toc2 toc-left">
+<div id="header">
+<h1>Jakarta Debugging Support for Other Languages</h1>
+<div class="details">
+<span id="author" class="author">Jakarta Server Pages Team, https://projects.eclipse.org/projects/ee4j.jsp</span><br>
+<span id="email" class="email"><a href="https://dev.eclipse.org/mailman/listinfo/jsp-dev" class="bare">https://dev.eclipse.org/mailman/listinfo/jsp-dev</a></span><br>
+<span id="revnumber"> 2.0-RC2,</span>
+<span id="revdate">June 13, 2020</span>
+<br><span id="revremark">DRAFT</span>
+</div>
+<div id="toc" class="toc2">
+<div id="toctitle">Table of Contents</div>
+<ul class="sectlevel2">
+<li><a href="#eclipse-foundation-specification-license">Eclipse Foundation Specification License</a>
+<ul class="sectlevel3">
+<li><a href="#disclaimers">Disclaimers</a></li>
+</ul>
+</li>
+<li><a href="#goal">1. Goal</a></li>
+<li><a href="#terminology">2. Terminology</a></li>
+<li><a href="#approach">3. Approach</a>
+<ul class="sectlevel2">
+<li><a href="#single-translation">3.1. Single Translation</a></li>
+<li><a href="#multiple-translations">3.2. Multiple Translations</a></li>
+<li><a href="#diagram">3.3. Diagram</a></li>
+</ul>
+</li>
+<li><a href="#scope">4. Scope</a>
+<ul class="sectlevel2">
+<li><a href="#variables">4.1. Variables</a></li>
+<li><a href="#multi-level-source-view">4.2. Multi-Level Source View</a></li>
+<li><a href="#finding-source-files">4.3. Finding Source Files</a></li>
+<li><a href="#multiple-source-files-per-class-file">4.4. Multiple Source Files per Class File</a></li>
+</ul>
+</li>
+<li><a href="#source-map-format">5. Source Map Format</a>
+<ul class="sectlevel2">
+<li><a href="#general-format">5.1. General Format</a></li>
+<li><a href="#smap-header">5.2. Header</a></li>
+<li><a href="#stratumsection">5.3. StratumSection</a></li>
+<li><a href="#filesection">5.4. FileSection</a></li>
+<li><a href="#linesection">5.5. LineSection</a></li>
+<li><a href="#vendorsection">5.6. VendorSection</a></li>
+<li><a href="#endsection">5.7. EndSection</a></li>
+<li><a href="#embedded-source-maps">5.8. Embedded Source Maps</a></li>
+<li><a href="#smap-syntax">5.9. SMAP Syntax</a></li>
+</ul>
+</li>
+<li><a href="#smap-resolution">6. SMAP Resolution</a>
+<ul class="sectlevel2">
+<li><a href="#lineinfo-composition-algorithm">6.1. LineInfo Composition Algorithm</a></li>
+<li><a href="#resolution-example">6.2. Resolution Example</a></li>
+</ul>
+</li>
+<li><a href="#jpda-support">7. JPDA Support</a></li>
+<li><a href="#sourcedebugextension-support">8. SourceDebugExtension Support</a>
+<ul class="sectlevel2">
+<li><a href="#sourcedebugextension-access">8.1. SourceDebugExtension Access</a></li>
+<li><a href="#attribute">8.2. SourceDebugExtension Class File Attribute</a></li>
+</ul>
+</li>
+<li><a href="#example">9. Example</a>
+<ul class="sectlevel2">
+<li><a href="#input-source">9.1. Input Source</a></li>
+<li><a href="#language-processor">9.2. Language Processor</a></li>
+<li><a href="#post-processor">9.3. Post Processor</a></li>
+<li><a href="#debugging">9.4. Debugging</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="content">
+<div id="preamble">
+<div class="sectionbody">
+<div class="literalblock">
+<div class="content">
+<pre>Specification: Jakarta Debugging Support for Other Languages
+
+Version: 2.0-RC2
+
+Status: DRAFT
+
+Release: June 13, 2020</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Copyright (c) 2018, 2020 Eclipse Foundation.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="eclipse-foundation-specification-license"><a class="anchor" href="#eclipse-foundation-specification-license"></a>Eclipse Foundation Specification License</h3>
+<div class="paragraph">
+<p>By using and/or copying this document, or the Eclipse Foundation
+document from which this statement is linked, you (the licensee) agree
+that you have read, understood, and will comply with the following
+terms and conditions:</p>
+</div>
+<div class="paragraph">
+<p>Permission to copy, and distribute the contents of this document, or
+the Eclipse Foundation document from which this statement is linked, in
+any medium for any purpose and without fee or royalty is hereby
+granted, provided that you include the following on ALL copies of the
+document, or portions thereof, that you use:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>link or URL to the original Eclipse Foundation document.</p>
+</li>
+<li>
+<p>All existing copyright notices, or if one does not exist, a notice
+(hypertext is preferred, but a textual representation is permitted)
+of the form: "Copyright © [$date-of-document] Eclipse Foundation, Inc.
+&lt;&lt;url to this license&gt;&gt;"</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Inclusion of the full text of this NOTICE must be provided. We
+request that authorship attribution be provided in any software,
+documents, or other items or products that you create pursuant to the
+implementation of the contents of this document, or any portion
+thereof.</p>
+</div>
+<div class="paragraph">
+<p>No right to create modifications or derivatives of Eclipse Foundation
+documents is granted pursuant to this license, except anyone may
+prepare and distribute derivative works and portions of this document
+in software that implements the specification, in supporting materials
+accompanying such software, and in documentation of such software,
+PROVIDED that all such works include the notice below. HOWEVER, the
+publication of derivative works of this document for use as a technical
+specification is expressly prohibited.</p>
+</div>
+<div class="paragraph">
+<p>The notice is:</p>
+</div>
+<div class="paragraph">
+<p>"Copyright © 2018, 2020 Eclipse Foundation. This software or document
+includes material copied from or derived from
+Jakarta ® Debugging Support for Other Languages
+<a href="https://jakarta.ee/specifications/debugging/2.0/">https://jakarta.ee/specifications/debugging/2.0/</a>"</p>
+</div>
+<div class="sect3">
+<h4 id="disclaimers"><a class="anchor" href="#disclaimers"></a>Disclaimers</h4>
+<div class="paragraph">
+<p>THIS DOCUMENT IS PROVIDED &quot;AS IS,&quot; AND THE COPYRIGHT
+HOLDERS AND THE ECLIPSE FOUNDATION MAKE NO REPRESENTATIONS OR
+WARRANTIES, EXPRESS OR IMPLIED, INCLUDING, BUT NOT LIMITED TO,
+WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE,
+NON-INFRINGEMENT, OR TITLE; THAT THE CONTENTS OF THE DOCUMENT ARE
+SUITABLE FOR ANY PURPOSE; NOR THAT THE IMPLEMENTATION OF SUCH CONTENTS
+WILL NOT INFRINGE ANY THIRD PARTY PATENTS, COPYRIGHTS, TRADEMARKS OR
+OTHER RIGHTS.</p>
+</div>
+<div class="paragraph">
+<p>THE COPYRIGHT HOLDERS AND THE ECLIPSE FOUNDATION WILL NOT BE LIABLE
+FOR ANY DIRECT, INDIRECT, SPECIAL OR CONSEQUENTIAL DAMAGES ARISING OUT
+OF ANY USE OF THE DOCUMENT OR THE PERFORMANCE OR IMPLEMENTATION OF THE
+CONTENTS THEREOF.</p>
+</div>
+<div class="paragraph">
+<p>The name and trademarks of the copyright holders or the Eclipse
+Foundation may NOT be used in advertising or publicity pertaining to
+this document or its contents without specific, written prior
+permission. Title to copyright in this document will at all times
+remain with copyright holders.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="goal"><a class="anchor" href="#goal"></a>1. Goal</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>A mechanism is needed by which programs executed under the Java<sup>TM</sup> virtual
+machine but written in languages other than the Java programming language,
+can be debugged with references to the original source (for example, source
+file and line number references).</p>
+</div>
+<div class="paragraph">
+<p>Constraints:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>No change to the Java programming language.</p>
+</li>
+<li>
+<p>Optional change to Java programming language compiler.</p>
+</li>
+<li>
+<p>No change to JPDA clients (debuggers, &#8230;&#8203;) for basic functionality. With the
+exception being, tools that arbitrarily prohibit non-Java programming language
+source.</p>
+</li>
+<li>
+<p>Minimal change to Java virtual machine.</p>
+</li>
+<li>
+<p>No change to the Java platform class libraries.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="terminology"><a class="anchor" href="#terminology"></a>2. Terminology</h2>
+<div class="sectionbody">
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-middle">Term</th>
+<th class="tableblock halign-left valign-top">Definition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock"><strong><span id="TermFinalSource">final-source</span></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The final form of source. This source will be <a href="#TermCompiler">compiled</a> into a
+<a href="#TermClassFile">class file</a>. Typically, final-source is Java programming
+language source.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock"><strong><span id="TermTranslatedSource">translated-source</span></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Source that will be translated by a
+<a href="#TermLanguageProcessor">language-processor</a> into another language or form.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock"><strong><span id="TermLanguageProcessor">language-processor</span></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Converts <a href="#TermTranslatedSource">translated-source</a> to
+<a href="#TermFinalSource">final-source</a> or to different
+<a href="#TermTranslatedSource">translated-source</a>.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock"><strong><span id="TermClassFile">class file</span></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A collection of bytes in Java virtual machine class file format.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock"><strong><span id="TermCompiler">compiler</span></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Compiler which converts <a href="#TermFinalSource">final-source</a> to class files. For
+example, <code>javac</code> is a compiler.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock"><strong><span id="TermPostProcessor">post-processor</span></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Takes a <a href="#TermClassFile">class file</a> and a
+<a href="#TermSourceMapFile">Source Map File</a> as input; generates a class file as
+output. Inserts a <a href="#TermSourceDebugExtension">SourceDebugExtension attribute</a>.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock"><strong><span id="TermSourceMap">Source Map</span><br>
+SMAP</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Specifies the mapping of source between one or more sets of input source and
+the output source. See: <a href="#source-map-format">Source Map Format</a>.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock"><strong><span id="TermSourceMapFile">Source Map File</span><br>
+SMAP-file</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Specifies the mapping created by a
+<a href="#TermLanguageProcessor">language-processor</a> between
+<a href="#TermTranslatedSource">translated-source</a> input and the resultant output
+source. It is a <a href="#TermSourceMap">Source Map</a> stored in a file in
+<a href="#source-map-format">Source Map Format</a>.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock"><strong><span id="TermStratum">stratum</span></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A view of a class from a particular, named, programming language level.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock"><strong><span id="TermJPDA">JPDA</span></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The <a href="https://docs.oracle.com/javase/1.5.0/docs/guide/jpda/index.html">Java
+Platform Debugger Architecture</a>.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock"><strong><span id="TermJDI">JDI</span></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The Java Debug Interface, which is the high-level Java programming language
+interface of the
+<a href="https://docs.oracle.com/javase/1.5.0/docs/guide/jpda/">Java Platform Debugger
+Architecture</a>. See:
+<a href="https://docs.oracle.com/javase/1.5.0/docs/guide/jpda/jdi/">JDI Specification</a>.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock"><strong><span id="TermSourceDebugExtension">SourceDebugExtension<br>
+attribute</span></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A Java virtual machine class file attribute that holds information about the
+source. In this case, the information is a
+<a href="#TermSourceMap">Source Map</a> in <a href="#source-map-format">Source Map Format</a>. The source
+is mapped to <a href="#TermFinalSource">final-source</a> (output source). The Source Map
+has potentially multiple sets of input source (<a href="#TermStratum">strata</a>).
+See: <a href="#attribute">SourceDebugExtension Class File Attribute</a></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="approach"><a class="anchor" href="#approach"></a>3. Approach</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="single-translation"><a class="anchor" href="#single-translation"></a>3.1. Single Translation</h3>
+<div class="paragraph">
+<p>A <a href="#TermLanguageProcessor">language-processor</a> translates
+<a href="#TermTranslatedSource">translated-source</a> to <a href="#TermFinalSource">final-source</a>
+(the case of translation from one <a href="#TermTranslatedSource">translated-source</a> to
+another translated-source, is addressed <a href="#multiple-translations">below</a>). It
+also creates a second output, an <a href="#TermSourceMapFile">SMAP-file</a>, whose format
+is described in <a href="#source-map-format">Source Map Format</a>. This file describes the mapping between
+input source and output source (e.g. line number and source file).</p>
+</div>
+<div class="paragraph">
+<p>The <a href="#TermFinalSource">final-source</a> generated by the
+<a href="#TermLanguageProcessor">language-processor</a> is compiled by the
+<a href="#TermCompiler">compiler</a>.</p>
+</div>
+<div class="paragraph">
+<p>The <a href="#TermPostProcessor">post-processor</a> takes the class file generated by the
+<a href="#TermCompiler">compiler</a> and the <a href="#TermSourceMapFile">SMAP-file</a> as input. A
+<a href="#TermSourceDebugExtension">SourceDebugExtension</a> attribute containing the SMAP
+in the SMAP-file is added to the class file and the new class file is written.</p>
+</div>
+<div class="paragraph">
+<p>Optionally, the <a href="#TermCompiler">compiler</a> may take both
+<a href="#TermFinalSource">final-source</a> and the SMAP-file as input, and perform both
+compilation and installation of the SourceDebugExtension.</p>
+</div>
+<div class="paragraph">
+<p>When the resultant program is debugged using a debugging tool based on the Java
+Debug Interface<br>
+(<a href="#TermJDI">JDI</a>) of <a href="#TermJPDA">JPDA</a>, the final-source line
+number information is converted to the specified language view
+(<a href="#TermStratum">strata</a>).</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="multiple-translations"><a class="anchor" href="#multiple-translations"></a>3.2. Multiple Translations</h3>
+<div class="paragraph">
+<p>A language-processor might translate source into source which will become input
+to another language-processor, and so on. Eventually, after possibly many
+translated-source forms, final-source is produced. Each translation produces
+SMAP information. This information must be preserved and placed in context, so
+that each <a href="#TermStratum">stratum</a> can be mapped to the final-source.</p>
+</div>
+<div class="paragraph">
+<p>A language-processor checks for an <a href="#TermSourceMapFile">SMAP-file</a> in a location
+parallel to that of the input source. For example, if the source repository is a
+file system and the input source is located at <code>path name.extension</code> then
+<code>path name.extension.smap</code> will be checked for an SMAP. The input SMAPs will be
+copied into the generated SMAP. See <a href="#embedded-source-maps">Embedded Source Maps</a> for specifics on
+the embedding of input SMAPs.</p>
+</div>
+<div class="paragraph">
+<p>In the case of multiple translations, the <a href="#TermPostProcessor">post-processor</a>
+must resolve the embedded SMAPs. See <a href="#smap-resolution">SMAP Resolution</a>.</p>
+</div>
+<div class="paragraph">
+<p>Note that final-source need not be Java programming language source, as
+compilers for other languages may directly generate class files, including the
+<code>SourceFile</code> and <code>LineNumberTable</code> class file attributes. SMAPs and the
+mechanism presented here are still useful for handling multiple translations.</p>
+</div>
+<div class="paragraph">
+<p>A programming language implementor, directly generating class files might also
+choose to generate SMAPs (thus functioning as both language-processor and
+compiler) since the SMAP is useful for describing source configurations (such as
+multiple source files per class file) which cannot be represented with the
+<code>SourceFile</code> and <code>LineNumberTable</code> attributes. In this case, the input is
+translated-source and the final-source is represented in the attributes but is
+never generated.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="diagram"><a class="anchor" href="#diagram"></a>3.3. Diagram</h3>
+<div class="paragraph">
+<p>This diagram demonstrates data flow. The particular case shown has two levels of
+translation, with file inclusion on the second level (as is the case in the
+example in <a href="#smap-resolution">SMAP Resolution</a>).</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="data:image/png;base64,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" alt="data flow diagram"></span></p>
+</div>
+<div class="paragraph">
+<p>Where <code>TS</code> is <a href="#TermTranslatedSource">translated-source</a> and <code>FS</code> is
+<a href="#TermFinalSource">final-source</a>.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="scope"><a class="anchor" href="#scope"></a>4. Scope</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="variables"><a class="anchor" href="#variables"></a>4.1. Variables</h3>
+<div class="paragraph">
+<p>The complexity of mapping semantics (like variable and data views) across
+languages is such that this feature has not been included in this version of the
+specification and will be considered for a future version.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="multi-level-source-view"><a class="anchor" href="#multi-level-source-view"></a>4.2. Multi-Level Source View</h3>
+<div class="paragraph">
+<p>The ability to choose the source level to view is addressed in this
+specification. These are referred to as <a href="#TermStratum">strata</a>.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="finding-source-files"><a class="anchor" href="#finding-source-files"></a>4.3. Finding Source Files</h3>
+<div class="paragraph">
+<p>Currently, <a href="#TermFinalSource">final-source</a> is found by combining the follow
+elements:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>A source path</p>
+</li>
+<li>
+<p>The package name converted to a directory path</p>
+</li>
+<li>
+<p>The source file name from a <a href="#TermJDI">JDI</a> call (derived from the <code>SourceFile</code>
+class file attribute)</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Since existing debuggers use this mechanism (the only way for an existing
+debugger to find <a href="#TermTranslatedSource">translated-source</a>) each aspect must be
+addressed:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>The source path must be set-up to include translated-source directories</p>
+</li>
+<li>
+<p>Source must be placed in a directory corresponding to the package</p>
+</li>
+<li>
+<p>The <a href="#TermJDI">JDI</a> call must return the translated-source name.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>For debuggers written against the new APIs, a new method has been added which
+returns the source path - this makes the translated-source directory structure
+flexible.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="multiple-source-files-per-class-file"><a class="anchor" href="#multiple-source-files-per-class-file"></a>4.4. Multiple Source Files per Class File</h3>
+<div class="paragraph">
+<p>When an inclusion mechanism is used, a class file will contain source from
+multiple <a href="#TermTranslatedSource">translated-source</a> files. The SourceFile
+attribute of class files only associates one source file with a class file which
+is one reason the approach of simply rewriting the <code>SourceFile</code> and
+<code>LineNumberTable</code> attributes had to be abandoned. The SMAP allows a virtually
+unlimited number of source files per stratum.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="source-map-format"><a class="anchor" href="#source-map-format"></a>5. Source Map Format</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>A Source Map (SMAP) describes a mapping between source positions in an input
+language (<a href="#TermTranslatedSource">translated-source</a>) and source positions in a
+generated output language. A view of the source through such a mapping is called
+a <a href="#TermStratum">stratum</a>. The <a href="#TermSourceMapFile">SMAP-file</a> contains an
+unresolved SMAP. The <a href="#TermSourceDebugExtension">SourceDebugExtension</a> class
+file attribute, when used as described in this document, contains an SMAP. The
+SMAP stored in a SourceDebugExtension attribute must be
+<a href="#smap-resolution">resolved</a>, and thus will have no
+<a href="#embedded-source-maps">embedded SMAPs</a> and will have the
+<a href="#TermFinalSource">final-source</a> language as the output language.</p>
+</div>
+<div class="paragraph">
+<p>An SMAP consists of a header and one or more sections of mapping information.</p>
+</div>
+<div class="paragraph">
+<p>There are currently seven types of section: stratum sections, file sections,
+line sections, vendor sections, end sections, and open and close embedded
+sections. New section types may be added in the future - to facilitate this, any
+unknown sections must be ignored without error.</p>
+</div>
+<div class="paragraph">
+<p>The semantics of each section is discussed below. For clarity, an informal
+description of the syntax of each section is included in the discussion. See the
+formal <a href="#smap-syntax">SMAP syntax</a> for syntax questions.</p>
+</div>
+<div class="sect2">
+<h3 id="general-format"><a class="anchor" href="#general-format"></a>5.1. General Format</h3>
+<div class="paragraph">
+<p>The SMAP consists of lines of
+<a href="http://www.unicode.org/unicode/standard/standard.html">Unicode</a> text, with a
+concrete representation of <a href="http://ietf.org/rfc/rfc2279.txt">UTF-8</a>. Line
+termination is with line-feed, carriage-return or carriage-return followed by
+line-feed. Because SMAPs are included in class files, size of the SMAP was an
+important constraint on the format chosen for them.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="smap-header"><a class="anchor" href="#smap-header"></a>5.2. Header</h3>
+<div class="paragraph">
+<p>The first line of an SMAP is the four letters <code>SMAP</code> which identifies it as an
+SMAP. The next line is the name of the generated file. This name is without path
+information (and thus if the generated file is final-source, the name should
+match the <code>SourceFile</code> class file attribute). The last line of the header is the
+default stratum for this class. The default stratum is the stratum used when a
+debugger does not explicitly specify interest in another stratum. In an
+unresolved SMAP the default stratum can be unspecified (blank line). In a
+resolved SMAP the default stratum must be specified. A specified stratum must
+either be one represented with a stratum section or <code>Java</code> which indicates the
+standard final-source information should be used by default.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="stratumsection"><a class="anchor" href="#stratumsection"></a>5.3. StratumSection</h3>
+<div class="paragraph">
+<p>An SMAP may map more than one <a href="#TermTranslatedSource">translated-source</a> to the
+output source (the output source is <a href="#TermFinalSource">final-source</a> if the SMAP
+is in a <a href="#TermSourceDebugExtension">SourceDebugExtension</a>). A view of the source
+is a stratum (whether viewed as translated-source or final-source). Each
+translated-source language should have its own stratum section with a unique
+stratum name. The final-source stratum (named &#8220;Java&#8221;) is created automatically
+and should not have a stratum section. The stratum section should be followed by
+a file section and a line section which will be associated with that stratum.</p>
+</div>
+<div class="paragraph">
+<p>The format of the section is simply the stratum section marker <code>*S</code> followed by
+the name of the stratum. The section ends with a line termination. One
+<a href="#filesection">FileSection</a> and one <a href="#linesection">LineSection</a> (in either order) must follow the
+StratumSection (before the next StratumSection or the <a href="#endsection">EndSection</a>). One or
+more <a href="#vendorsection">VendorSection</a>s may follow a StratumSection. There must be at least one
+<a href="#stratumsection">StratumSection</a>.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="filesection"><a class="anchor" href="#filesection"></a>5.4. FileSection</h3>
+<div class="paragraph">
+<p>The file section describes the translated-source file names. Each line maps a
+file ID to a source name and, optionally, to a source path. File IDs are used
+only in the <a href="#linesection">LineSection</a>. The source name is the name of the
+translated-source. The source path is the path to the translated-source, the "/"
+symbol is translated to the local file separator. In the case where the source
+repository is a file system, source name is the file name (without directory
+information) and source path is a path name (often relative to one of the
+compilation source paths). For example: <code>Bar.foo</code> would be a source name, and
+<code>here/there/Bar.foo</code> would be a source path. The first file line denotes the
+primary file.</p>
+</div>
+<div class="paragraph">
+<p>The format of the file section is the file section marker <code>*F</code> on a line by
+itself, followed by file information. File information has two forms, source
+name only and source name / source path. The source name only form is one line:
+the integer file ID followed by the source name. The source name / source path
+form is two lines: a plus sign <code>+</code>, file ID, and source name on the first line
+and the source path on the second. The file ID must be unique within the file
+section. A <a href="#filesection">FileSection</a> may only occur after a <a href="#stratumsection">StratumSection</a>. The
+<code>FileName</code> must have at least one character. The <code>AbsoluteFileName</code>, if
+specified, must have at least one character.</p>
+</div>
+<div class="paragraph">
+<p>For example:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>*F
++ 1 Foo.xyz
+here/there/Foo.xyz
+2 Incl.xyz</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>declares two source files. File ID #1 has source name <code>Foo.xyz</code> and source path
+<code>here/there/Foo.xyz</code>. File ID #2 has source name <code>Incl.xyz</code> and a source path to
+be computed by the debugger.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="linesection"><a class="anchor" href="#linesection"></a>5.5. LineSection</h3>
+<div class="paragraph">
+<p>The <a href="#SyntaxLineSection">line section</a> associates line numbers in the output source
+with line numbers and source names in the input source.</p>
+</div>
+<div class="paragraph">
+<p>The format of the line section is the line section marker <code>*L</code> on a line by
+itself, followed by the lines of <a href="#SyntaxLineInfo">LineInfo</a>. Each
+<a href="#SyntaxLineInfo">LineInfo</a> has the form:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre><a href="#SyntaxInputStartLine">InputStartLine</a> # <a href="#SyntaxLineFileID">LineFileID</a> , <a href="#SyntaxRepeatCount">RepeatCount</a> : <a href="#SyntaxOutputStartLine">OutputStartLine</a> , <a href="#SyntaxOutputLineIncrement">OutputLineIncrement</a></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>where all but</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre><a href="#SyntaxInputStartLine">InputStartLine</a> : <a href="#SyntaxOutputStartLine">OutputStartLine</a></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>are optional.</p>
+</div>
+<div class="paragraph">
+<p>A range of output source lines is mapped to a single input source line. Each
+<a href="#SyntaxLineInfo">LineInfo</a> describes <a href="#SyntaxRepeatCount">RepeatCount</a> of these
+mappings. <a href="#SyntaxOutputLineIncrement">OutputLineIncrement</a> specifies the number
+of lines in the output source range; this line increment is applied to each
+mapping in the <a href="#SyntaxLineInfo">LineInfo</a>. The source file containing the input
+source line is specified by <a href="#SyntaxLineFileID">LineFileID</a> via the
+<a href="#filesection">FileSection</a>.</p>
+</div>
+<div class="paragraph">
+<p>More precisely, for each <code>n</code> between zero and</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre><a href="#SyntaxRepeatCount">RepeatCount</a> - 1</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>the input source line number</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre><a href="#SyntaxInputStartLine">InputStartLine</a> + n</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>maps to the output source line numbers from</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre><a href="#SyntaxOutputStartLine">OutputStartLine</a> + (n * <a href="#SyntaxOutputLineIncrement">OutputLineIncrement</a>)</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>through</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre><a href="#SyntaxOutputStartLine">OutputStartLine</a> + ((n + 1) * <a href="#SyntaxOutputLineIncrement">OutputLineIncrement</a>) - 1</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>If absent, <a href="#SyntaxRepeatCount">RepeatCount</a> and
+<a href="#SyntaxOutputLineIncrement">OutputLineIncrement</a> default to one. If absent,
+<a href="#SyntaxLineFileID">LineFileID</a> defaults to the most recent value (initially
+zero).</p>
+</div>
+<div class="paragraph">
+<p>The first line of a file is line one. <a href="#SyntaxRepeatCount">RepeatCount</a> is
+greater than or equal to one. Each <a href="#SyntaxLineFileID">LineFileID</a> must be a
+file ID present in the <a href="#filesection">FileSection</a>.
+<a href="#SyntaxInputStartLine">InputStartLine</a> is greater than or equal to one.
+<a href="#SyntaxOutputStartLine">OutputStartLine</a> is greater than or equal to one.
+<a href="#SyntaxOutputLineIncrement">OutputLineIncrement</a> is greater than or equal to
+zero. A <a href="#linesection">LineSection</a> may only occur after a
+<a href="#stratumsection">StratumSection</a>.</p>
+</div>
+<div class="paragraph">
+<p>For example:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>*L
+123:207
+130,3:210
+140:250,7
+160,3:300,2</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Creates this mapping:</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Input Source</th>
+<th class="tableblock halign-center valign-top" colspan="2">Output Source</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Line</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Begin Line</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">End Line</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">123</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">207</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">207</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">130</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">210</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">210</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">131</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">211</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">211</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">132</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">212</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">212</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">140</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">250</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">256</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">160</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">300</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">301</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">161</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">302</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">303</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">162</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">304</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">305</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Note that multiple <a href="#SyntaxLineInfo">LineInfo</a> may map multiple input source
+lines to a single output source line, when such a
+<a href="#SyntaxLineSection">LineSection</a> is being used to map output source lines to
+input source lines, a first matching <a href="#SyntaxLineInfo">LineInfo</a> rule applies.</p>
+</div>
+<div class="paragraph">
+<p>Note also that multiple <a href="#SyntaxLineInfo">LineInfo</a> may map a single input
+source line to a multiple, possibly disjoint, output source lines, when such a
+<a href="#SyntaxLineSection">LineSection</a> is being used to map input source lines to
+output source lines, a first matching <a href="#SyntaxLineInfo">LineInfo</a> rule again
+applies.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="vendorsection"><a class="anchor" href="#vendorsection"></a>5.6. VendorSection</h3>
+<div class="paragraph">
+<p>The vendor section is for vendor specific information.</p>
+</div>
+<div class="paragraph">
+<p>The format is <code>*V</code> on the first line to mark the section. The second line is the
+vendor ID which is formed by the same rules by which unique package names are
+formed in the Java language specification, third edition
+<a href="https://docs.oracle.com/javase/specs/jls/se6/html/packages.html#7.7">(§7.7) Unique Package Names</a>.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="endsection"><a class="anchor" href="#endsection"></a>5.7. EndSection</h3>
+<div class="paragraph">
+<p>The end section marks the end of an SMAP, it consists simply of a <code>*E</code> marker.
+The end section must be the last line of an SMAP.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="embedded-source-maps"><a class="anchor" href="#embedded-source-maps"></a>5.8. Embedded Source Maps</h3>
+<div class="paragraph">
+<p>The <a href="#SyntaxOpenEmbeddedSection">OpenEmbeddedSection</a> marks the beginning and
+<a href="#SyntaxCloseEmbeddedSection">CloseEmbeddedSection</a> the end of a set of
+<a href="#SyntaxEmbeddedSourceMaps">EmbeddedSourceMaps</a>. These SMAPs correspond to the
+input source for a language-processor. The stratum of the language-processor is
+indicated on both sections. These sections must not occur in a
+<a href="#smap-resolution">resolved</a> SMAP.</p>
+</div>
+<div class="paragraph">
+<p>The format is the <code>*O</code> marker and the name of the output stratum on the first
+line. This is followed by the set of embedded SMAPs. The embedded SMAPs are
+included "whole" - from the <code>SMAP</code> to the <a href="#endsection"><code>EndSection</code></a> <code>*E</code>
+marker - inclusive. Finally, the <code>*C</code> marker and the name of the output stratum
+on the last line terminates the embedded SMAPs.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="smap-syntax"><a class="anchor" href="#smap-syntax"></a>5.9. SMAP Syntax</h3>
+<div class="listingblock">
+<div class="content">
+<pre>SMAP:
+            Header { Section } EndSection
+
+Header:
+            ID OutputFileName DefaultStratumId
+
+ID:
+            SMAP CR
+
+OutputFileName:
+            NONASTERISKSTRING CR
+
+DefaultStratumId:
+            NONASTERISKSTRING CR
+
+Section:
+            StratumSection
+            FileSection
+            LineSection
+            EmbeddedSourceMaps
+            VendorSection
+            FutureSection
+<a id="SyntaxEmbeddedSourceMaps"></a>
+EmbeddedSourceMaps:
+            OpenEmbeddedSection { SMAP } CloseEmbeddedSection
+<a id="SyntaxOpenEmbeddedSection"></a>
+OpenEmbeddedSection:
+            *O StratumID CR
+<a id="SyntaxCloseEmbeddedSection"></a>
+CloseEmbeddedSection:
+            *C StratumID CR
+
+StratumSection:
+            *S StratumID CR
+
+StratumID:
+            NONASTERISKSTRING
+<a id="SyntaxLineSection"></a>
+LineSection:
+            *L CR { LineInfo }
+<a id="SyntaxLineInfo"></a>
+LineInfo:
+            InputLineInfo : OutputLineInfo CR
+
+InputLineInfo:
+            InputStartLine , RepeatCount
+            InputStartLine
+
+OutputLineInfo:
+            OutputStartLine , OutputLineIncrement
+            OutputStartLine
+<a id="SyntaxInputStartLine"></a>
+InputStartLine:
+            NUMBER
+            NUMBER # LineFileID
+<a id="SyntaxLineFileID"></a>
+LineFileID:
+            FileID
+<a id="SyntaxRepeatCount"></a>
+RepeatCount:
+            NUMBER
+<a id="SyntaxOutputStartLine"></a>
+OutputStartLine:
+            NUMBER
+<a id="SyntaxOutputLineIncrement"></a>
+OutputLineIncrement:
+            NUMBER
+
+FileSection:
+            *F CR { FileInfo }
+<a id="SyntaxFileInfo"></a>
+FileInfo:
+            FileID FileName CR
+            + FileID FileName CR AbsoluteFileName CR
+
+FileID:
+            NUMBER
+
+FileName:
+            NONASTERISKSTRING
+
+AbsoluteFileName:
+            NONASTERISKSTRING
+
+VendorSection:
+            *V CR VENDORID CR { VendorInfo }
+
+VendorInfo:
+            NONASTERISKSTRING CR
+
+FutureSection:
+            * OTHERCHAR CR { FutureInfo }
+
+FutureInfo:
+            NONASTERISKSTRING CR
+
+EndSection:
+            *E CR</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Where <code>{x}</code> denotes zero or more occurrences of <code>x</code>. And where the terminals are
+defined as follows (whitespace is a sequence of zero or more spaces or tabs):</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 75%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-center valign-top" colspan="2">Terminals</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>NONASTERISKSTRING</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Any sequence of characters (excluding the terminal carriage-return or new-line)
+which does not start with "*". Leading whitespace is ignored.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>NUMBER</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Non negative decimal integer. The number is terminated by the first non-digit
+character. Leading and trailing whitespace is ignored.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>CR</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">a line terminator: carriage-return, carriage-return followed by new-line or
+new-line.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>OTHERCHAR</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Any character (other than carriage-return, new-line, space or tab) not already
+used as a section header (not S,F,L,V,O,C or E).</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>VENDORID</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A sequence of characters that identifies a vendor. The name is formed by the
+same rules that unique package names are formed in the Java language
+specification. Leading and trailing whitespace is ignored. The terminal
+carriage-return or new-line is excluded.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="smap-resolution"><a class="anchor" href="#smap-resolution"></a>6. SMAP Resolution</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Before the SMAP in a SMAP-file can be installed into the SourceDebugExtension
+attribute it must be resolved into an SMAP with no embedded SMAPs and with
+final-source as the output source. A set of
+<a href="#SyntaxEmbeddedSourceMaps">embedded SMAPs</a> is specific to a stratum and is
+resolved in the context of the matching StratumSection in the outer SMAP. The
+resolved SMAP includes StratumSections computed from each set of embedded SMAPs
+as well as the unchanged StratumSections of the outer SMAP. If embedded SMAPs
+are nested, the inner-most is resolved first.</p>
+</div>
+<div class="paragraph">
+<p>The structure of an SMAP with embedded SMAPs is as follows:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>SMAP
+...
+*O <em>B</em>
+SMAP
+...
+*S <em>A</em>
+...
+*E
+*C <em>B</em>
+...
+*S <em>B</em>
+...
+*E</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The structure is a set of embedded SMAPs (for a stratum, here named <em>B</em>), an
+outer StratumSection (for <em>B</em>), and an embedded SMAP with a StratumSection (for
+a stratum, here named <em>A</em>). Note that: there may be many sets of embedded SMAPs,
+many embedded SMAPs within the set of embedded SMAPs, and many StratumSections
+within an SMAP. A StratumSection maps source information from its stratum to an
+output stratum. Thus, the embedded StratumSection maps stratum <em>A</em> to stratum
+<em>B</em>. We know it is mapped to stratum <em>B</em> because the set of embedded SMAPs for
+stratum <em>B</em> corresponds to the input for the language-processor for <em>B</em>. The
+outer StratumSection maps stratum <em>B</em> to its output stratum (let&#8217;s call this
+stratum <em>C</em>), if the shown SMAP is the outer-most SMAP then stratum <em>C</em> is the
+final-source stratum. The purpose of resolution is to create a non-embedded
+StratumSection for <em>A</em> which maps to <em>C</em> (all StratumSections within an SMAP
+must map to the same output stratum, in a resolved outer-most SMAP all
+StratumSections will map to the final-source stratum). This is done by
+composing the mapping in the embedded StratumSection (from <em>A</em> to <em>B</em>) with the
+mapping in the outer StratumSection (from <em>B</em> to <em>C</em>). Since there may be many
+embedded StratumSections for <em>A</em>, these sections must be merged.</p>
+</div>
+<div class="paragraph">
+<p>A StratumSection is computed for each stratum present in the embedded SMAPs. The
+computed StratumSection is the merge of each embedded StratumSection, for that
+stratum. Line number information is composed with the line number information of
+the outer StratumSection (note that the embedded StratumSections cannot be for
+the same stratum as the outer StratumSection). Specifically, a computed
+StratumSection consists of a merged <a href="#filesection">FileSection</a>, a composed <a href="#linesection">LineSection</a>,
+and direct copies of any <a href="#vendorsection">VendorSection</a>s or unknown sections. The merged
+FileSection includes each unique <a href="#SyntaxFileInfo">FileInfo</a>, with FileIDs
+reassigned to be unique. The composition the LineSections is described in the
+algorithm below.</p>
+</div>
+<div class="sect2">
+<h3 id="lineinfo-composition-algorithm"><a class="anchor" href="#lineinfo-composition-algorithm"></a>6.1. LineInfo Composition Algorithm</h3>
+<div class="paragraph">
+<p>The following pseudo-code sketches the algorithm for resolving LineInfo in
+embedded SMAPs. LineInfo resolution is by composition - discussed above. An
+embedded LineInfo which maps stratum <em>A</em> to stratum <em>B</em> is composed with an
+outer LineInfo which maps stratum <em>B</em> to stratum <em>C</em> to create a new resolved
+LineInfo which maps stratum <em>A</em> to stratum <em>C</em>.</p>
+</div>
+<div class="paragraph">
+<p>The SMAPs and their components are marked by subscript:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Embedded SMAP - level<sub>E</sub></p>
+</li>
+<li>
+<p>Outer StratumSection - level<sub>O</sub></p>
+</li>
+<li>
+<p>Resolved computed StratumSection - level<sub>R</sub></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The inputs and outputs of the algorithm are LineInfo tuples. Line information is
+represented in this algorithm in its <a href="#SyntaxLineInfo">LineInfo format</a> which is
+discussed in the <a href="#linesection">LineSection</a>. This algorithm is invoked for each LineInfo<sub>E</sub>
+in each embedded SMAP.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>ResolveLineInfo:
+   InputStartLine<sub>E</sub> #LineFileID<sub>E</sub>, RepeatCount<sub>E</sub> : OutputStartLine<sub>E</sub>, OutputLineIncrement<sub>E</sub>
+as follows:
+
+if RepeatCount<sub>E</sub> &gt; 0 then {
+  for each LineInfo<sub>O</sub> in the stratum of the embedded SMAP:
+    InputStartLine<sub>O</sub> #LineFileID<sub>O</sub>, RepeatCount<sub>O</sub>: OutputStartLine<sub>O</sub>, OutputLineIncrement<sub>O</sub>
+  which includes OutputStartLine<sub>E</sub>
+    that is, InputStartLine<sub>O</sub> + N == OutputStartLine<sub>E</sub>
+      for some offset into the outer input range N where 0 &#8656; N &lt; RepeatCount<sub>O</sub>
+  and for which LineFileID<sub>O</sub> has a sourceName matching the embedded SMAP&#8217;s OutputFileName {
+    compute the number of outer mapping repeations which can be applied
+    available := RepeatCount<sub>O</sub> - N ;
+    compute the number of embedded mapping repeations which can be applied
+    completeCount := floor(available / OutputLineIncrement<sub>E</sub>) min RepeatCount<sub>E</sub> ;
+    if completeCount &gt; 0 then {
+      output resolved LineInfo
+        InputStartLine<sub>E</sub> # uniquify(LineFileID<sub>E</sub>), completeCount :
+        (OutputStartLine<sub>O</sub> + (N * OutputLineIncrement<sub>O</sub>)),
+        (OutputLineIncrement<sub>E</sub> * OutputLineIncrement<sub>O</sub>) ;
+      ResolveLineInfo
+        (InputStartLine<sub>E</sub> + completeCount) #LineFileID<sub>E</sub>, (RepeatCount<sub>E</sub> - completeCount) :
+        (OutputStartLine<sub>E</sub> + completeCount * OutputLineIncrement<sub>E</sub>), OutputLineIncrement<sub>E</sub> ;
+    } else {
+      output resolved LineInfo
+        InputStartLine<sub>E</sub> # uniquify(LineFileID<sub>E</sub>), 1 :
+        (OutputStartLine<sub>O</sub> + (N * OutputLineIncrement<sub>O</sub>)), available ;
+      ResolveLineInfo
+        InputStartLine<sub>E</sub> #LineFileID<sub>E</sub>, 1 :
+        (OutputStartLine<sub>E</sub> + available), (OutputLineIncrement<sub>E</sub> - available) ;
+      ResolveLineInfo
+        (InputStartLine<sub>E</sub> + 1) #LineFileID<sub>E</sub>, (RepeatCount<sub>E</sub> - 1):
+        (OutputStartLine<sub>E</sub> + OutputLineIncrement<sub>E</sub>), OutputLineIncrement<sub>E</sub> ;
+    }
+  }
+}</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>where <em>uniquify</em> converts a LineFileID<sub>E</sub> to a corresponding LineFileID<sub>R</sub></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="resolution-example"><a class="anchor" href="#resolution-example"></a>6.2. Resolution Example</h3>
+<div class="paragraph">
+<p>The following example demonstrates resolution with this algorithm. The
+<a href="#example">general example</a> will provide context before walking through this
+example. In this example, <code>Incl.bar</code> is included by <code>Hi.bar</code>, but each is the
+result of a prior translation.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="data:image/png;base64,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" alt="resolution diagram"></span>         </p>
+</div>
+<div class="paragraph">
+<p>If the unresolved SMAP (in <code>Hi.java.smap</code>) is as follows:</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock"><code>SMAP<br>
+Hi.java<br>
+Java</code></p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock"><em>Outer Header</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock"><code>*O Bar</code></p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock"><em><a href="#SyntaxOpenEmbeddedSection">OpenEmbeddedSection</a></em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock"><code>SMAP<br>
+Hi.bar<br>
+Java<br>
+*S Foo<br>
+*F<br>
+1 Hi.foo<br>
+*L<br>
+1#1,5:1,2<br>
+*E</code></p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock"><em>Embedded SMAP (Hi.bar)</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock"><code>SMAP<br>
+Incl.bar<br>
+Java<br>
+*S Foo<br>
+*F<br>
+1 Incl.foo<br>
+*L 1#1,2:1,2<br>
+*E</code></p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock"><em>Embedded SMAP (Incl.bar)</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock"><code>*C Bar</code></p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock"><em><a href="#SyntaxCloseEmbeddedSection">CloseEmbeddedSection</a></em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock"><code>*S Bar<br>
+*F<br>
+1 Hi.bar<br>
+2 Incl.bar<br>
+*L<br>
+1#1:1<br>
+1#2,4:2<br>
+3#1,8:6</code></p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock"><em>Outer StratumSection</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock"><code>*E</code></p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock"><em>Final <a href="#endsection">EndSection</a></em></p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>The merged level<sub>R</sub> FileSection is (in stratum <code>Foo</code>):</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>*F
+1 Hi.foo
+2 Incl.foo</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The computation proceeds as follows:</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 11%;">
+<col style="width: 13%;">
+<col style="width: 13%;">
+<col style="width: 11%;">
+<col style="width: 11%;">
+<col style="width: 41%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">LineInfo<sub>E</sub></th>
+<th class="tableblock halign-left valign-top">LineInfo<sub>E</sub><br>
+recursion 1</th>
+<th class="tableblock halign-left valign-top">LineInfo<sub>E</sub><br>
+recursion 2</th>
+<th class="tableblock halign-left valign-top">matching<br>
+outer<br>
+LineInfo<sub>O</sub></th>
+<th class="tableblock halign-left valign-top">resolved<br>
+LineInfo<sub>R</sub></th>
+<th class="tableblock halign-left valign-top">discussion</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1#1,5:1,2</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1#1:1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1#1,1:1,1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>ResolveLineInfo</code> is called for <code>1#1,5:1,2</code> (from the first embedded SMAP -
+OutputFileName is <code>Hi.bar</code>). <code>1#1:1</code> is found as the outer StratumSection
+LineInfo<sub>O</sub> with <code>InputStartLineO</code> of 1 and <code>LineFileIDO</code> has a sourceName
+matching <code>Hi.bar</code>. <code>N</code> is 0, and <code>completeCount</code> is 0, thus the <em>else</em>
+branch is taken. <code>available</code> is 1 and thus output is <code>1#1,1:1,1</code>.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1#1,1:2,1</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">no match</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The remaining half of the initial LineInfo<sub>E</sub> mapping then must be resolved
+recursively, but there is no match and it is ignored.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2#1,4:3,2</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3#1,8:6</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2#1,4:6,2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The remaining mappings are also handled recursively. There is a matching
+LineInfo<sub>O</sub>. <code>N</code> is 0, and <code>completeCount</code> is 4, thus the <em>if</em> branch is taken.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">6#1,0:11,2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">n/a</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The recursive resolve descends deeper but does nothing since all of
+RepeatCount<sub>E</sub> has been mapped. The first LineInfo<sub>E</sub> is now resolved. Since it
+had only one LineInfo<sub>E</sub> the first SMAP is also resolved.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1#1,2:1,2</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1#2,4:2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1#2,2:2,2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Now for the second SMAP (OutputFileName is <code>Incl.bar</code>). FileID<sub>E</sub> 1 in this
+SMAP is <code>Incl.foo</code> which corresponds to the remapped FileID<sub>R</sub> 2. So the
+matching LineInfo<sub>O</sub> is <code>1#2,4:2</code>. <code>N</code> is 0, and <code>completeCount</code> is 2, so the
+<em>if</em> branch is taken.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3#1,0:5,2</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">n/a</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The recursive resolve does nothing since all the maps have been handled.
+Resolution is complete.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>The resultant resolved SMAP is:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>SMAP
+Hi.java
+Java
+*S Foo
+*F
+1 Hi.foo
+2 Incl.foo
+*L
+1#1,1:1,1
+2#1,4:6,2
+1#2,2:2,2
+*S Bar
+*F
+1 Hi.bar
+2 Incl.bar
+*L
+1#1:1
+1#2,4:2
+3#1,8:6
+*E</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="jpda-support"><a class="anchor" href="#jpda-support"></a>7. JPDA Support</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The <a href="https://docs.oracle.com/javase/1.5.0/docs/guide/jpda/">Java Platform Debugger
+Architecture</a> in the Java 1.4 release was extended in support of debugging other
+languages. The new APIs and APIs with comments changed to include reference to
+<a href="#TermStratum">strata</a> are listed below:</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 60%;">
+<col style="width: 40%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">New APIs</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">APIs with Changed Comments</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top" colspan="2"><p class="tableblock"><a href="https://docs.oracle.com/javase/1.5.0/docs/guide/jpda/jvmdi-spec.html">JVMDI</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://docs.oracle.com/javase/1.5.0/docs/guide/jpda/jvmdi-spec.html#GetSourceDebugExtension"><code>GetSourceDebugExtension</code></a></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top" colspan="2"><p class="tableblock"><a href="https://docs.oracle.com/javase/1.5.0/docs/guide/jpda/jdwp-spec.html">JDWP</a> -
+<code>ReferenceType</code> (2) Command Set</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://docs.oracle.com/javase/1.5.0/docs/guide/jpda/jdwp/jdwp-protocol.html#JDWP_ReferenceType_SourceDebugExtension"><code>SourceDebugExtension</code></a> Command (12)</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top" colspan="2"><p class="tableblock"><a href="https://docs.oracle.com/javase/1.5.0/docs/guide/jpda/jdwp-spec.html">JDWP</a> -
+<code>VirtualMachine</code> (1) Command Set</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://docs.oracle.com/javase/1.5.0/docs/guide/jpda/jdwp/jdwp-protocol.html#JDWP_VirtualMachine_SetDefaultStratum"><code>SetDefaultStratum</code></a> Command (19)</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top" colspan="2"><p class="tableblock"><a href="https://docs.oracle.com/javase/1.5.0/docs/guide/jpda/jdi/index.html">JDI</a> -
+<a href="https://docs.oracle.com/javase/1.5.0/docs/guide/jpda/jdi/com/sun/jdi/VirtualMachine.html"><code>VirtualMachine</code></a>
+interface</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://docs.oracle.com/javase/1.5.0/docs/guide/jpda/jdi/com/sun/jdi/VirtualMachine.html#setDefaultStratum(java.lang.String)"><code>void setDefaultStratum(String stratum)</code></a></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://docs.oracle.com/javase/1.5.0/docs/guide/jpda/jdi/com/sun/jdi/VirtualMachine.html#getDefaultStratum()"><code>String getDefaultStratum()</code></a></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top" colspan="2"><p class="tableblock"><a href="https://docs.oracle.com/javase/1.5.0/docs/guide/jpda/jdi/index.html">JDI</a> -
+<a href="https://docs.oracle.com/javase/1.5.0/docs/guide/jpda/jdi/com/sun/jdi/ReferenceType.html"><code>ReferenceType</code></a> interface</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://docs.oracle.com/javase/1.5.0/docs/guide/jpda/jdi/com/sun/jdi/ReferenceType.html#sourceNames(java.lang.String)"><code>String sourceNames(String stratum)</code></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://docs.oracle.com/javase/1.5.0/docs/guide/jpda/jdi/com/sun/jdi/ReferenceType.html#sourceName()"><code>String sourceName()</code></a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://docs.oracle.com/javase/1.5.0/docs/guide/jpda/jdi/com/sun/jdi/ReferenceType.html#sourcePaths(java.lang.String)"><code>String sourcePaths(String stratum)</code></a></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://docs.oracle.com/javase/1.5.0/docs/guide/jpda/jdi/com/sun/jdi/ReferenceType.html#allLineLocations(java.lang.String,%20java.lang.String)"><code>List allLineLocations(String stratum, String sourceName)</code></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://docs.oracle.com/javase/1.5.0/docs/guide/jpda/jdi/com/sun/jdi/ReferenceType.html#allLineLocations()"><code>List allLineLocations()</code></a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://docs.oracle.com/javase/1.5.0/docs/guide/jpda/jdi/com/sun/jdi/ReferenceType.html#locationsOfLine(java.lang.String,%20java.lang.String,%20int)"><code>List locationsOfLine(String stratum, String sourceName, int lineNumber)</code></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://docs.oracle.com/javase/1.5.0/docs/guide/jpda/jdi/com/sun/jdi/ReferenceType.html#locationsOfLine(int)"><code>List locationsOfLine(int lineNumber)</code></a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://docs.oracle.com/javase/1.5.0/docs/guide/jpda/jdi/com/sun/jdi/ReferenceType.html#availableStrata()"><code>List availableStrata()</code></a></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://docs.oracle.com/javase/1.5.0/docs/guide/jpda/jdi/com/sun/jdi/ReferenceType.html#defaultStratum()"><code>String defaultStratum()</code></a></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://docs.oracle.com/javase/1.5.0/docs/guide/jpda/jdi/com/sun/jdi/ReferenceType.html#sourceDebugExtension()"><code>String sourceDebugExtension()</code></a></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top" colspan="2"><p class="tableblock"><a href="https://docs.oracle.com/javase/1.5.0/docs/guide/jpda/jdi/index.html">JDI</a> -
+<a href="https://docs.oracle.com/javase/1.5.0/docs/guide/jpda/jdi/com/sun/jdi/Method.html"><code>Method</code></a> interface</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://docs.oracle.com/javase/1.5.0/docs/guide/jpda/jdi/com/sun/jdi/Method.html#allLineLocations(java.lang.String,%20java.lang.String)"><code>List allLineLocations(String stratum, String sourceName)</code></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://docs.oracle.com/javase/1.5.0/docs/guide/jpda/jdi/com/sun/jdi/Method.html#allLineLocations()"><code>List allLineLocations()</code></a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://docs.oracle.com/javase/1.5.0/docs/guide/jpda/jdi/com/sun/jdi/Method.html#locationsOfLine(java.lang.String,%20java.lang.String,%20int)"><code>List locationsOfLine(String stratum, String sourceName, int lineNumber)</code></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://docs.oracle.com/javase/1.5.0/docs/guide/jpda/jdi/com/sun/jdi/Method.html#locationsOfLine(int)"><code>List locationsOfLine(int lineNumber)</code></a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top" colspan="2"><p class="tableblock"><a href="https://docs.oracle.com/javase/1.5.0/docs/guide/jpda/jdi/index.html">JDI</a> -
+<a href="https://docs.oracle.com/javase/1.5.0/docs/guide/jpda/jdi/com/sun/jdi/Location.html"><code>Location</code></a> interface</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://docs.oracle.com/javase/1.5.0/docs/guide/jpda/jdi/com/sun/jdi/Location.html">class comment</a> (strata defined)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://docs.oracle.com/javase/1.5.0/docs/guide/jpda/jdi/com/sun/jdi/Location.html#lineNumber(java.lang.String)"><code>int lineNumber(String stratum)</code></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://docs.oracle.com/javase/1.5.0/docs/guide/jpda/jdi/com/sun/jdi/Location.html#lineNumber()"><code>int lineNumber()</code></a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://docs.oracle.com/javase/1.5.0/docs/guide/jpda/jdi/com/sun/jdi/Location.html#sourceName(java.lang.String)"><code>String sourceName(String stratum)</code></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://docs.oracle.com/javase/1.5.0/docs/guide/jpda/jdi/com/sun/jdi/Location.html#sourceName()"><code>String sourceName()</code></a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://docs.oracle.com/javase/1.5.0/docs/guide/jpda/jdi/com/sun/jdi/Location.html#sourcePath(java.lang.String)"><code>String sourcePath(String stratum)</code></a></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://docs.oracle.com/javase/1.5.0/docs/guide/jpda/jdi/com/sun/jdi/Location.html#sourcePath()"><code>String sourcePath()</code></a></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="sourcedebugextension-support"><a class="anchor" href="#sourcedebugextension-support"></a>8. SourceDebugExtension Support</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Debugger applications frequently need debugging information about the source
+that exceeds what is delivered by the existing Java<sup>TM</sup> Virtual Machine class
+file attributes (SourceFile, LineNumber, and LocalVariable). This is
+particularly true for debugging the source of other languages. In a distributed
+environment side files may not be accessible, the information must be directly
+associated with the class.</p>
+</div>
+<div class="paragraph">
+<p>The solution is the addition of a class file attribute which holds a string.
+The string contains debugging information in a standardized format which allows
+for evolution and vendor extension.</p>
+</div>
+<div class="sect2">
+<h3 id="sourcedebugextension-access"><a class="anchor" href="#sourcedebugextension-access"></a>8.1. SourceDebugExtension Access</h3>
+<div class="paragraph">
+<p>This string is made opaquely accessible at the three layers of the
+<a href="https://docs.oracle.com/javase/1.5.0/docs/guide/jpda/">Java Platform Debugger Architecture</a> (JPDA):</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 10%;">
+<col style="width: 90%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">JVMDI</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://docs.oracle.com/javase/1.5.0/docs/guide/jpda/jvmdi-spec.html#GetSourceDebugExtension"><code>GetSourceDebugExtension(jclass clazz, char **sourceDebugExtensionPtr)</code></a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">JDWP</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://docs.oracle.com/javase/1.5.0/docs/guide/jpda/jdwp/jdwp-protocol.html#JDWP_ReferenceType_SourceDebugExtension"><code>SourceDebugExtension</code></a> Command (12) in the <code>ReferenceType</code> (2) Command Set</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">JDI</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://docs.oracle.com/javase/1.5.0/docs/guide/jpda/jdi/com/sun/jdi/ReferenceType.html#sourceDebugExtension()"><code>String sourceDebugExtension()</code></a> in the <code>ReferenceType</code> interface</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="attribute"><a class="anchor" href="#attribute"></a>8.2. SourceDebugExtension Class File Attribute</h3>
+<div class="paragraph">
+<p>Java virtual machine class file attributes are described in
+<a href="https://docs.oracle.com/javase/specs/jvms/se6/html/ClassFile.doc.html#43817">section 4.7</a>
+of the <a href="https://docs.oracle.com/javase/specs/jvms/se6/html/VMSpecTOC.doc.html">The Java Virtual Machine Specification</a>.
+The definition of the added attribute is in the context of The Java Virtual
+Machine Specification:</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 100%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>The <code>SourceDebugExtension</code> attribute is an optional attribute in the
+<code>attributes</code> table of the <code>ClassFile</code> structure. There can be no more than one
+<code>SourceDebugExtension</code> attribute in the <code>attributes</code> table of a given <code>ClassFile</code>
+structure.</p>
+</div>
+<div class="paragraph">
+<p>The <code>SourceDebugExtension</code> attribute has the following format:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre> SourceDebugExtension_attribute {
+    u2 attribute_name_index;
+    u4 attribute_length;
+    u1 debug_extension[attribute_length];
+ }</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The items of the <code>SourceDebugExtension_attribute</code> structure are as follows:</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1"><code>attribute_name_index</code></dt>
+<dd>
+<p>The value of the <code>attribute_name_index</code> item must be a valid index into the
+<code>constant_pool</code> table. The <code>constant_pool</code> entry at that index must be a
+<code>CONSTANT_Utf8_info</code> structure representing the string
+<code>"SourceDebugExtension"</code>.</p>
+</dd>
+<dt class="hdlist1"><code>attribute_length</code></dt>
+<dd>
+<p>The value of the <code>attribute_length</code> item indicates the length of the
+attribute, excluding the initial six bytes. The value of the
+<code>attribute_length</code> item is thus the number of bytes in the <code>debug_extension[]</code>
+item.</p>
+</dd>
+<dt class="hdlist1"><code>debug_extension[]</code></dt>
+<dd>
+<p>The <code>debug_extension</code> array holds a string, which must be in UTF-8 format.
+There is no terminating zero byte.<br>
+The string in the <code>debug_extension</code> item will be interpreted as extended
+debugging information. The content of this string has no semantic effect on
+the Java Virtual Machine.</p>
+</dd>
+</dl>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="example"><a class="anchor" href="#example"></a>9. Example</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The example below shows how the process described above would apply to a tiny
+JSP program.</p>
+</div>
+<div class="sect2">
+<h3 id="input-source"><a class="anchor" href="#input-source"></a>9.1. Input Source</h3>
+<div class="paragraph">
+<p>The input consists of two JSP files, the first is <code>Hello.jsp</code>:</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 10%;">
+<col style="width: 90%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">  1  </p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code> &lt;HTML&gt;</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">  2  </p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code> &lt;HEAD&gt;</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">  3  </p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code> &lt;TITLE&gt;Hello Example&lt;/TITLE&gt;</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">  4  </p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code> &lt;/HEAD&gt;</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">  5  </p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code> &lt;BODY&gt;</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">  6  </p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code> &lt;%@ include file="greeting.jsp" %&gt;</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">  7  </p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code> &lt;/BODY&gt;</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">  8  </p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code> &lt;/HTML&gt;</code></p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>The second JSP file is the included file <code>greeting.jsp</code>:</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 10%;">
+<col style="width: 90%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">  1  </p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code> Hello There!&lt;P&gt;</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">  2  </p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code> Goodbye on &lt;%= new Date() %&gt;</code></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="language-processor"><a class="anchor" href="#language-processor"></a>9.2. Language Processor</h3>
+<div class="paragraph">
+<p>When a JSP compiler (the <a href="#TermLanguageProcessor">language-processor</a>) compiles
+these files it will produce two outputs - a Java programming language source
+file and a <a href="#TermSourceMapFile">SMAP-file</a>. The generated Java programming
+language source file is <code>HelloServlet.java</code>:</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 10%;">
+<col style="width: 90%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-right valign-top"><p class="tableblock">1 </p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>import javax.servlet.*;</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-top"><p class="tableblock">2 </p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>import javax.servlet.http.*;</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-top"><p class="tableblock">3 </p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-top"><p class="tableblock">4 </p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>public class HelloServlet extends HttpServlet {</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-top"><p class="tableblock">5 </p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>  public void doGet(HttpServletRequest request,</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-top"><p class="tableblock">6 </p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>      HttpServletResponse response)</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-top"><p class="tableblock">7 </p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>      throws ServletException, IOException {</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-top"><p class="tableblock">8 </p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>    response.setContentType("text/html");</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-top"><p class="tableblock">9 </p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>    PrintWriter out = response.getWriter();</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-top"><p class="tableblock">10</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>    // Hello.jsp:1</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-top"><p class="tableblock">11</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>    out.println("&lt;HTML&gt;");</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-top"><p class="tableblock">12</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>    // Hello.jsp:2</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-top"><p class="tableblock">13</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>    out.println("&lt;HEAD&gt;");</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-top"><p class="tableblock">14</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>    // Hello.jsp:3</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-top"><p class="tableblock">15</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>    out.println("&lt;TITLE&gt;Hello Example&lt;/TITLE&gt;");</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-top"><p class="tableblock">16</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>    // Hello.jsp:4</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-top"><p class="tableblock">17</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>    out.println("&lt;/HEAD&gt;");</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-top"><p class="tableblock">18</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>    // Hello.jsp:5</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-top"><p class="tableblock">19</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>    out.println("&lt;BODY&gt;");</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-top"><p class="tableblock">20</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>    // greeting.jsp:1</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-top"><p class="tableblock">21</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>    out.println("Hello There!&lt;P&gt;");</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-top"><p class="tableblock">22</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>    // greeting.jsp:2</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-top"><p class="tableblock">23</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>    out.println("Goodbye on " + new Date() );</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-top"><p class="tableblock">24</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>    // Hello.jsp:7</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-top"><p class="tableblock">25</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>    out.println("&lt;/BODY&gt;");</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-top"><p class="tableblock">26</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>    // Hello.jsp:8</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-top"><p class="tableblock">27</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>    out.println("&lt;/HTML&gt;");</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-top"><p class="tableblock">28</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>  }</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-top"><p class="tableblock">29</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>}</code></p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>The generated <a href="#TermSourceMapFile">SMAP-file</a> is <code>HelloServlet.java.smap</code>:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>SMAP
+HelloServlet.java
+JSP
+*S JSP
+*F
+1 Hello.jsp
+2 greeting.jsp
+*L
+1#1,5:10,2
+1#2,2:20,2
+7#1,2:24,2
+*E</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>A couple things are interesting to note about this SMAP&#8201;&#8212;&#8201;the user has chosen
+to make JSP the default stratum (perhaps by a command line option) and even
+though there are ten lines of input source and 29 lines of generated source,
+only three LineInfo lines describe the transformation: the first and last are
+for the lines before and after the include (respectively) and the middle is for
+the included file <code>greeting.jsp</code>.</p>
+</div>
+<div class="paragraph">
+<p>The three LineInfo lines describe these mappings:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>1#1,5:10,2
+     Hello.jsp:    line 1 -&gt;  HelloServlet.java: lines 10, 11
+                   line 2 -&gt;                     lines 12, 13
+                   line 3 -&gt;                     lines 14, 15
+                   line 4 -&gt;                     lines 16, 17
+                   line 5 -&gt;                     lines 18, 19
+
+1#2,2:20,2
+     greeting.jsp: line 1 -&gt;  HelloServlet.java: lines 20, 21
+                   line 2 -&gt;                     lines 22, 23
+
+7#1,2:24,2
+      Hello.jsp:   line 7 -&gt;  HelloServlet.java: lines 24, 25
+                   line 8 -&gt;                     lines 26, 27</pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="post-processor"><a class="anchor" href="#post-processor"></a>9.3. Post Processor</h3>
+<div class="paragraph">
+<p>Next <code>HelloServlet.java</code> is compiled by a Java programming language compiler
+(for example <code>javac</code>) producing the class file <code>HelloServlet.class</code>. Then the
+<a href="#TermPostProcessor">post-processor</a> is run. It takes <code>HelloServlet.class</code> and
+<code>HelloServlet.java.smap</code> as input. It creates a
+<a href="#TermSourceDebugExtension">SourceDebugExtension</a> attribute whose content is the
+SMAP in <code>HelloServlet.java.smap</code> and rewrites <code>HelloServlet.class</code> with this
+attribute.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="debugging"><a class="anchor" href="#debugging"></a>9.4. Debugging</h3>
+<div class="paragraph">
+<p>Now the program is run under the control of a debugger (which is a client of
+<a href="#TermJDI">JDI</a>). Let&#8217;s say we are stepping through this code and the debugger
+has just received a <a href="#TermJDI">JDI</a> <code>StepEvent</code> for the line that is just about
+to output <code>&lt;BODY&gt;</code>. The debugger&#8217;s code might look like this (the <code>StepEvent</code>
+is in the variable <code>stepEvent</code>):</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>Location location = stepEvent.location();
+String sourceName = location.sourceName("Java");
+int lineNumber = location.lineNumber("Java");
+displaySource(sourceName, lineNumber);</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>where <code>displaySource</code> is a debugger routine that displays a source location.
+Because the <code>Java</code> stratum has been specified <code>sourceName</code> would be
+<code>HelloServlet.java</code>, the <code>lineNumber</code> would be <code>19</code> and the displayed line would
+be:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>out.println("&lt;BODY&gt;");</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>However, if <code>sourceName</code> and <code>lineNumber</code> were derived as follows:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>String sourceName = location.sourceName("JSP");
+int lineNumber = location.lineNumber("JSP");</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Since the <code>JSP</code> stratum has been specified, <code>sourceName</code> would be <code>Hello.jsp</code>,
+the <code>lineNumber</code> would be <code>5</code> and the displayed line would be:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>&lt;BODY&gt;</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>This occurs because the <a href="#TermSourceDebugExtension">SourceDebugExtension</a>
+attribute was stored when the VM read <code>HelloServlet.class</code> and it was retrieved
+with the SourceDebugExtension JDWP command which in turn caused the JVMDI
+function call GetSourceDebugExtension. The SMAP in the SourceDebugExtension was
+parsed which provided the above transformation of source location. Specifically,
+the line:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>1#1,5:10,2</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>is the basis of this transformation - which refers to FileId #1</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>1 Hello.jsp</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>and whence the sourceName information. Since the default stratum specified in
+the SMAP is <code>JSP</code>, the code:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>String sourceName = location.sourceName();
+int lineNumber = location.lineNumber();</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>would have the same effect. Since this is the form code would have taken before
+these extensions were introduced, existing debuggers can be utilized if they are
+run under the new implementation of <a href="#TermJDI">JDI</a>.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="footer">
+<div id="footer-text">
+ 2.0-RC2<br>
+Last updated 2020-05-17 11:22:15 +0100
+</div>
+</div>
+</body>
+</html>

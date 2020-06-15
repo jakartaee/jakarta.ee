@@ -951,7 +951,7 @@
             <xsd:documentation>
 
               "true" if this attribute is of type
-              jakarta.jsp.tagext.JspFragment, representing dynamic
+              jakarta.servlet.jsp.tagext.JspFragment, representing dynamic
               content that can be re-evaluated as many times 
               as needed by the tag handler.  If omitted or "false",
               the default is still type="java.lang.String"
