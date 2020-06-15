@@ -13,7 +13,7 @@ The focus of this committee is on marketing, branding and community awareness an
 * Dan Bandera - IBM, Neil Patterson (<strong>chair</strong>)- alternate
 * Ed Bratt - Oracle, Melissa Jacobus - alternate
 * Dominika Tasarz - Payara, Jadon Ortlepp - alternate
-* Cesar Saavedra - Red Hat, Paul Hinz - alternate
+* John Clingan - Red Hat
 * Jonathan Gallimore - Tomitribe, Cesar Hernandez - alternate
 * Eric (QingYu) Meng - Primeton - Elected Enterprise Representative
 * VACANT - Elected Committer Member Representative
