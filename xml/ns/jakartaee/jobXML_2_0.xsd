@@ -20,7 +20,7 @@
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
     elementFormDefault="qualified"
     targetNamespace="https://jakarta.ee/xml/ns/jakartaee"
-    xmlns:jsl="https://jakarta.ee/xml/ns/jakartaee" version="1.0">
+    xmlns:jsl="https://jakarta.ee/xml/ns/jakartaee" version="2.0">
     <xs:annotation>
         <xs:documentation>
             Job Specification Language (JSL) specifies a job,
@@ -28,6 +28,26 @@
             JSL also can be referred to as "Job XML".
         </xs:documentation>
     </xs:annotation>
+
+    <xs:simpleType name="batchVersionType">
+      <xs:annotation>
+        <xs:documentation>
+
+            Defines a decimal type used for versioning documents
+            defined via this scheam.  Intended to be identical
+            to the "dewey-versionType" dewey decimal restriction
+            type defined in
+            https://jakarta.ee/xml/ns/jakartaee/jakartaee_9.xsd
+            but without the need to include that schema definition
+            file.
+
+        </xs:documentation>
+      </xs:annotation>
+
+      <xs:restriction base="xsd:token">
+        <xs:pattern value="\.?[0-9]+(\.[0-9]+)*"/>
+      </xs:restriction>
+    </xs:simpleType>
 
     <xs:simpleType name="artifactRef">
         <xs:annotation>
@@ -78,7 +98,7 @@
                 <xs:element name="step" type="jsl:Step" />
             </xs:choice>
         </xs:sequence>
-        <xs:attribute name="version" use="required" type="xs:string" fixed="1.0" />
+        <xs:attribute name="version" use="required" type="jsl:batchVersionType" fixed="2.0" />
         <xs:attribute name="id" use="required" type="xs:ID" />
         <xs:attribute name="restartable" use="optional" type="xs:string" />
     </xs:complexType>
