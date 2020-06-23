@@ -16,6 +16,7 @@ layout: "single"
 
 * [2018 Developer Survey](/documents/insights/2018-jakarta-ee-developer-survey.pdf)
 * [2019 Developer Survey](https://outreach.jakartaee.org/jakarta-ee-2019-developer-survey)
+* [2020 Developer Survey](https://outreach.jakartaee.org/2020-developer-survey-report)
 
 <p class="small">Note: Access to the 2019 survey is being provided through an external vendor, HubSpot.</p>
 
