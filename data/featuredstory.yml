@@ -15,14 +15,24 @@ items:
     story_classes: featured-story jakarta-ee-banner
     type: both
   -
-    title: <strong class="uppercase black" style="font-size:32px">Join us at the Jakarta EE 9 milestone release party</strong>
-    content: <span class="black">Download the Jakarta EE flags, make a cupcake and let's celebrate the milestone release on June 23!</span>
-    link: <a class="btn btn-primary btn-lg uppercase margin-right-10" href="https://www.crowdcast.io/e/jakartaee9_milestonereleaseparty">Register today</a><a class="btn btn-primary btn-lg uppercase" href="/documents/jakarta-ee-9-milestone-printable-CMYK-print.pdf">Download now</a>
+    title: <strong class="uppercase black" style="font-size:32px">The 2020 Jakarta EE developer survey results are now available</strong>
+    content: <span class="black">Download the results of the enterprise Java ecosystem's leading survey today!</span>
+    link: <a class="btn btn-primary btn-lg uppercase margin-right-10" href="https://outreach.jakartaee.org/?hs_preview=DewSWAsB-30141864474">Get the results</a>
     bgImgSrc: /images/featured-cloud-banner-inverted.jpg
-    startDate: 2020-06-15
-    endDate: 2020-06-23
+    startDate: 2020-06-23
+    endDate: 2099-06-23
     story_classes: featured-story jakarta-ee-banner
-    type: both
+    type: story
+  -
+    title: <strong class="uppercase black" style="font-size:32px">The 2020 Jakarta EE developer survey results are now available</strong>
+    content: <span class="black">Download the results of the enterprise Java ecosystem's leading survey today!</span>
+    content_class: divider
+    link: <a class="btn btn-primary btn-lg uppercase margin-right-10" href="https://outreach.jakartaee.org/?hs_preview=DewSWAsB-30141864474">Get the results</a>
+    bgImgSrc: /images/featured-cloud-banner-inverted.jpg
+    startDate: 2020-06-23
+    endDate: 2099-06-23
+    story_classes: featured-story jakarta-ee-banner
+    type: footer
   -
     title: <strong class="uppercase" style="font-size:32px">Jakarta EE YouTube channel</strong>
     content: Watch the Jakarta EE Community Calls, Tech Talks, event replays and other exciting community videos on the new Jakarta EE YouTube channel!
