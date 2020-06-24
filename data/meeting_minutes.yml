@@ -280,12 +280,12 @@ items:
        
    specification_committee:
        -
-          url: specification_committee/minutes-specification-may-13-2020.pdf
-          title: May 13, 2020 (pdf)
-          year: 2020
-       -
           url: specification_committee/minutes-specification-may-27-2020.pdf
           title: May 27, 2020 (pdf)
+          year: 2020
+       -
+          url: specification_committee/minutes-specification-may-13-2020.pdf
+          title: May 13, 2020 (pdf)
           year: 2020
        -
           url: specification_committee/minutes-specification-april-29-2020.pdf
