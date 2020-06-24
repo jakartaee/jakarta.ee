@@ -1,5 +1,5 @@
 ---
-title: "Jakarta EE Update Call - April 2020"
+title: "Jakarta EE Update Call - June 2020"
 date: 2020-06-01T22:00:00-05:00
 link: "http://bit.ly/2B6oSPH"
 categories: ["announcements"]
