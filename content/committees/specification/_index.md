@@ -12,7 +12,7 @@ The Specification Committee is responsible for implementing the ​[Jakarta EE S
 * Kenji Kazumura - Fujitsu
 * Dan Bandera - IBM, Kevin Sutter - alternate
 * Bill Shannon - Oracle, Ed Bratt - alternate
-* Mark Wareham - Payara, Matt Gill - alternate
+* Andrew Pielage - Payara, Matt Gill - alternate
 * Scott Stark - Red Hat, Mark Little - alternate
 * David Blevins - Tomitribe, Jean-Louis Monterio - alternate
 * Ivar Grimstad - PMC Representative
