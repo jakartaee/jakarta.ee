@@ -280,6 +280,14 @@ items:
        
    specification_committee:
        -
+          url: specification_committee/minutes-specification-may-27-2020.pdf
+          title: May 27, 2020 (pdf)
+          year: 2020
+       -
+          url: specification_committee/minutes-specification-may-13-2020.pdf
+          title: May 13, 2020 (pdf)
+          year: 2020
+       -
           url: specification_committee/minutes-specification-april-29-2020.pdf
           title: April 29, 2020 (pdf)
           year: 2020
@@ -633,6 +641,30 @@ items:
           year: 2018
 
    steering_committee:
+       -
+          url: steering_committee/minutes-june-16-2020.pdf
+          title: June 16, 2020 (pdf) 
+          year: 2020
+       -
+          url: steering_committee/minutes-june-9-2020.pdf
+          title: June 9, 2020 (pdf) 
+          year: 2020
+       -
+          url: steering_committee/minutes-june-2-2020.pdf
+          title: June 2, 2020 (pdf) 
+          year: 2020
+       -
+          url: steering_committee/minutes-may-26-2020.pdf
+          title: May 26, 2020 (pdf) 
+          year: 2020
+       -
+          url: steering_committee/minutes-may-19-2020.pdf
+          title: May 19, 2020 (pdf) 
+          year: 2020
+       -
+          url: steering_committee/minutes-may-12-2020.pdf
+          title: May 12, 2020 (pdf) 
+          year: 2020
        -
           url: steering_committee/minutes-may-5-2020.pdf
           title: May 5, 2020 (pdf) 
