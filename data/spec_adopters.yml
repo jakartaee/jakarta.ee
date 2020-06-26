@@ -21,6 +21,10 @@ adopters:
       homepage_url: http://www.TurkeyJUG.com/
       logo: turkeyjug.png
       logo_white: turkeyjug.png
+    - name: Turkey JBoss User Group
+      homepage_url: https://twitter.com/TurkeyJBUG/
+      logo: turkeyjboss.png
+      logo_white: turkeyjboss.png
 
   - name: Jakarta JSON Binding
     directory: specifications/jsonb/ 
@@ -33,6 +37,10 @@ adopters:
       homepage_url: http://www.TurkeyJUG.com/
       logo: turkeyjug.png
       logo_white: turkeyjug.png
+    - name: Turkey JBoss User Group
+      homepage_url: https://twitter.com/TurkeyJBUG/
+      logo: turkeyjboss.png
+      logo_white: turkeyjboss.png
 
   - name: Jakarta Contexts and Dependency Injection
     directory: specifications/cdi/ 
@@ -45,6 +53,10 @@ adopters:
       homepage_url: http://www.TurkeyJUG.com/
       logo: turkeyjug.png
       logo_white: turkeyjug.png
+    - name: Turkey JBoss User Group
+      homepage_url: https://twitter.com/TurkeyJBUG/
+      logo: turkeyjboss.png
+      logo_white: turkeyjboss.png
 
   - name: Jakarta Bean Validation
     directory: specifications/bean-validation/
@@ -57,6 +69,10 @@ adopters:
       homepage_url: http://www.TurkeyJUG.com/
       logo: turkeyjug.png
       logo_white: turkeyjug.png
+    - name: Turkey JBoss User Group
+      homepage_url: https://twitter.com/TurkeyJBUG/
+      logo: turkeyjboss.png
+      logo_white: turkeyjboss.png
 
   - name: Jakarta MVC
     directory: specifications/mvc/
@@ -69,7 +85,11 @@ adopters:
       homepage_url: http://www.TurkeyJUG.com/
       logo: turkeyjug.png
       logo_white: turkeyjug.png
-
+    - name: Turkey JBoss User Group
+      homepage_url: https://twitter.com/TurkeyJBUG/
+      logo: turkeyjboss.png
+      logo_white: turkeyjboss.png
+      
 # Template: Example for creating new specification entry
 #  - name: Jakarta Bean Validation
 #    directory: specifications/bean-validation/ # Trailing slash is required.
