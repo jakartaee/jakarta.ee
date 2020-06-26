@@ -17,6 +17,10 @@ adopters:
       homepage_url: https://jugpe.com.br/
       logo: jugpe.png
       logo_white: jugpe.png
+    - name: Turkey JUG
+      homepage_url: http://www.TurkeyJUG.com/
+      logo: turkeyjug.png
+      logo_white: turkeyjug.png
 
   - name: Jakarta JSON Binding
     directory: specifications/jsonb/ 
@@ -25,6 +29,10 @@ adopters:
       homepage_url: https://soujava.org.br/
       logo: soujava.png
       logo_white: soujava.png
+    - name: Turkey JUG
+      homepage_url: http://www.TurkeyJUG.com/
+      logo: turkeyjug.png
+      logo_white: turkeyjug.png
 
   - name: Jakarta Contexts and Dependency Injection
     directory: specifications/cdi/ 
@@ -33,6 +41,10 @@ adopters:
       homepage_url: https://soujava.org.br/
       logo: soujava.png
       logo_white: soujava.png
+    - name: Turkey JUG
+      homepage_url: http://www.TurkeyJUG.com/
+      logo: turkeyjug.png
+      logo_white: turkeyjug.png
 
   - name: Jakarta Bean Validation
     directory: specifications/bean-validation/
@@ -41,6 +53,10 @@ adopters:
       homepage_url: https://soujava.org.br/
       logo: soujava.png
       logo_white: soujava.png
+    - name: Turkey JUG
+      homepage_url: http://www.TurkeyJUG.com/
+      logo: turkeyjug.png
+      logo_white: turkeyjug.png
 
   - name: Jakarta MVC
     directory: specifications/mvc/
@@ -49,7 +65,10 @@ adopters:
       homepage_url: https://soujava.org.br/
       logo: soujava.png
       logo_white: soujava.png
-
+    - name: Turkey JUG
+      homepage_url: http://www.TurkeyJUG.com/
+      logo: turkeyjug.png
+      logo_white: turkeyjug.png
 
 # Template: Example for creating new specification entry
 #  - name: Jakarta Bean Validation
