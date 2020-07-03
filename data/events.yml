@@ -8,6 +8,20 @@ submit_button_link: https://goo.gl/forms/xIlhGdX1qfKCyCZn1
 
 items:
   -
+    name: Jakarta One 2020
+    location: Virtual
+    date: September 16, 2020
+    expire_date: 2020-09-16T23:59:00-00:00
+    button_url: https://jakartaone.org/2020
+    button_text: Register Now
+  -
+    name: Jakarta EE 9 Milestone Party
+    location: Virtual
+    date: Tuesday, June 23, 2020
+    expire_date: 2020-06-23T23:59:00-00:00
+    button_url: https://www.crowdcast.io/e/jakartaee9_milestonereleaseparty
+    button_text: Register Now
+  -
     name: JakartaOne Livestream Brazil
     location: Virtual
     date: August 29, 2020
