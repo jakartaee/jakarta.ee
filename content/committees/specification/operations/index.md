@@ -159,7 +159,7 @@ Involved\"](https://projects.eclipse.org/projects/ee4j.servlet/who)).
 ## New Specifications # {#new_specifications}
 
 A Jakarta Specification is developed by a Specification Project. 
-The Eclipse Development Process is followed with a few additions.
+The Eclipse Development Process is followed, with a few additions.
 The following steps are required in order to start a new specification project:
 
 1. Create a [Project Proposal](https://projects.eclipse.org/node/add/project-proposal) (*)
