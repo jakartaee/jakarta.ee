@@ -17,3 +17,4 @@ layout: "single"
 - [jakarta.ee/xml/ns/jaxb](../xml/ns/jaxb/)
 - [jakarta.ee/xml/ns/jaxws](../xml/ns/jaxws/)
 - [jakarta.ee/xml/ns/persistence](../xml/ns/persistence/)
+- [jakarta.ee/xml/ns/validation](../xml/ns/validation/)

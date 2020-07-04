@@ -11,7 +11,7 @@ layout: "single"
 
 This document lists the document formats that will be used by Jakarta EE
 
-The Jakarta EE platform specification also requires support for Jakarta Persistence and Jakarta Bean Validation. The Jakarta Persistence Schemas are available at http://jakarta.ee/xml/ns/persistence/. The Jakarta Bean Validation Schemas are available at http://www.jboss.org/xml/ns/javax/validation/configuration/.
+The Jakarta EE platform specification also requires support for Jakarta Persistence and Jakarta Bean Validation. The Jakarta Persistence Schemas are available at http://jakarta.ee/xml/ns/persistence/. The Jakarta Bean Validation Schemas are available at https://jakarta.ee/xml/ns/validation/.
 
 This document describes how to use the Jakarta EE schemas and provides a list of XML Schemas for each deployment descriptor.
 
