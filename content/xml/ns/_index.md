@@ -10,3 +10,5 @@ layout: "single"
 [jaxws](jaxws/)
 
 [persistence](persistence/)
+
+[validation](validation/)
