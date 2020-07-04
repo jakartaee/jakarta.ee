@@ -7,9 +7,9 @@
   -->
 <xs:schema attributeFormDefault="unqualified"
            elementFormDefault="qualified"
-           targetNamespace="https://jakarta.ee/xml/ns/jakartaee/validation/configuration"
+           targetNamespace="https://jakarta.ee/xml/ns/validation/configuration"
            xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           xmlns:config="https://jakarta.ee/xml/ns/jakartaee/validation/configuration"
+           xmlns:config="https://jakarta.ee/xml/ns/validation/configuration"
            version="3.0">
 
   <xs:annotation>
