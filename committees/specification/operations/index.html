@@ -96,7 +96,19 @@ any specification project associated with the Jakarta EE Working Group.</p><p>Th
 specification project's PMI "Who's Involved" page in a section titled
 "Participant Representatives" (e.g. <a href=https://projects.eclipse.org/projects/ee4j.servlet/who>Eclipse Project for Servlets
 "Who's
-Involved"</a>).</p><h2 id=developing_specifications>Developing Specifications</h2><p>Specification projects in active development must engage in a progress
+Involved"</a>).</p><h2 id=new_specifications>New Specifications</h2><p>A Jakarta Specification is developed by a Specification Project.
+The Eclipse Development Process is followed, with a few additions.
+The following steps are required in order to start a new specification project:</p><ol><li>Create a <a href=https://projects.eclipse.org/node/add/project-proposal>Project Proposal</a> (*)</li><li>Inform the Specification Committee with a mail on the public <a href=https://accounts.eclipse.org/mailing-list/jakarta.ee-spec>mailing list</a> (*)</li><li>When the specification project has been approved by the Specification Committee by vote on the mailing list and creation review completed successfully by the EMO, create a Pull Request to be listed as a <a href=https://jakarta.ee/specifications/>Jakarta EE Specification</a>. The PR must contain an <code>_index.md</code> file located in a folder named after the short name of the specification. Here is an example of Jakarta MVC. The <a href=https://github.com/jakartaee/specifications/blob/master/mvc/_index.md>_index.md</a> is located in the <a href=https://github.com/jakartaee/specifications/blob/master/mvc/>mvc</a> folder in the Jakarta EE Specifications GitHub <a href=https://github.com/jakartaee/specifications>repository</a>.</li></ol><pre><code>---
+title: &quot;Jakarta MVC&quot;
+summary: &quot;Jakarta MVC defines a standard for creating web applications following the action-based model-view-controller pattern.&quot;
+summary60Char: &quot;Jakarta MVC standardizes the action-based MVC pattern.&quot;
+project_id: &quot;ee4j.mvc&quot;
+---
+
+Model-View-Controller, or MVC for short, is a common pattern in Web frameworks where it is used predominantly to build HTML applications. The model refers to the application’s data, the view to the application’s data presentation and the controller to the part of the system responsible for managing input, updating models and producing output.
+
+Web UI frameworks can be categorized as action-based or component-based. In an action-based framework, HTTP requests are routed to controllers where they are turned into actions by application code; in a component-based framework, HTTP requests are grouped and typically handled by framework components with little or no interaction from application code. In other words, in a component-based framework, the majority of the controller logic is provided by the framework instead of the application.
+</code></pre><p>(*) 1 and 2 may be done in any order. In fact, it may be a good idea to socialize the idea with the Specification Committee before proceeding with the project creation.</p><h2 id=developing_specifications>Developing Specifications</h2><p>Specification projects in active development must engage in a progress
 or release review at least once per year as required by the JESP. In
 practical terms, this means that the clock starts ticking when the plan
 review that occurs at the beginning of the development cycle concludes
