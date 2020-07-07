@@ -23,57 +23,5 @@
 {{ end }}
 
 {{ define "main" }}
-
-
-  {{ partial "events.html" . }}
-
-  <div class="container">
-    <!-- Announcements -->
-    <div class="row margin-bottom-50 margin-top-20">
-      <div class="col-sm-12 news-list">
-        <div class="news-list-col margin-bottom-40">
-          <h2 class="heading-line text-center">
-            <span>Announcements</span>
-          </h2>
-          {{ range first 5 (where (index .Site.Taxonomies.categories "announcements").Pages "Section" "news") }}
-          <ul class="news-list-media list-unstyled">
-            <li>
-              <a href="{{- with .Params.link | default .RelPermalink }} {{.}} {{- end }}" class="media media-link match-height-item">
-                <p class="media-date">{{ .Date.Format "Monday, Jan 2, 2006" }}</p>
-                <h4 class="media-heading">{{ .Title }}</h4>
-                <p class="media-text">{{ .Summary }}</p>
-              </a>
-            </li>
-          </ul>
-          {{ end }}
-          <ul class="list-inline news-list-links">
-            <li class="news-list-links-view-all"><a href="news/announcements">View all</a></li>
-            <li class="news-list-links-rss"><a href="news/index.xml" title="Subscribe to our RSS-feed">Subscribe to our RSS-feed <i class="fa fa-rss"></i></a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="col-sm-12 news-list">
-        <div class="news-list-col margin-bottom-40">
-          <h2 class="heading-line text-center">
-            <span>Community News</span>
-          </h2>
-          {{ range first 5 (where (index .Site.Taxonomies.categories "community").Pages "Section" "news") }}
-          <ul class="news-list-media list-unstyled">
-            <li>
-              <a href="{{- with .Params.link | default .RelPermalink }} {{.}} {{- end }}" class="media media-link match-height-item">
-                <p class="media-date">{{ .Date.Format "Monday, Jan 2, 2006" }}</p>
-                <h4 class="media-heading">{{ .Title }}</h4>
-                <p class="media-text">{{ .Summary }}</p>
-              </a>
-            </li>
-          </ul>
-          {{ end }}
-          <ul class="list-inline news-list-links">
-            <li class="news-list-links-view-all"><a href="news/community-news">View all</a></li>
-            <li class="news-list-links-rss"><a href="news/index.xml" title="Subscribe to our RSS-feed">Subscribe to our RSS-feed <i class="fa fa-rss"></i></a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
+ {{ .Content }}
 {{ end }}

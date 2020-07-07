@@ -12,3 +12,38 @@ hide_sidebar: true
 hide_breadcrumb: true
 show_featured_story: true
 ---
+
+
+{{< grid/section-container >}}
+  {{< grid/div class="col-xs-24" isMarkdown="false" >}}
+    {{< events >}}    
+      {{< newsroom/events
+          id="events_lists" 
+          containerClass="news-items clearfix"
+          publishTarget="jakarta_ee"
+          upcoming_only="1"
+          count="4" >}}
+    {{</ events >}}
+  {{</ grid/div >}}
+
+  {{< grid/div class="col-sm-12" isMarkdown="false" >}}
+    {{< newsroom/news
+          title="Announcements"
+          titleClass="heading-line text-center"
+          id="announcements_news_lists" 
+          publishTarget="jakarta_ee"
+          type="announcements"
+          count="5"
+          includeList="true" >}}
+  {{</ grid/div >}}
+  {{< grid/div class="col-sm-12" isMarkdown="false" >}} 
+    {{< newsroom/news
+          title="Community News"
+          titleClass="heading-line text-center"
+          id="community_news_lists" 
+          publishTarget="jakarta_ee"
+          type="community_news"
+          count="5"
+          includeList="true" >}}
+  {{</ grid/div >}}
+{{</ grid/section-container >}}
