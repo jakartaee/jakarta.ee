@@ -19,9 +19,9 @@ show_featured_story: true
     {{< events >}}    
       {{< newsroom/events
           id="events_lists" 
-          containerClass="news-items clearfix"
+          containerClass="news-items text-center clearfix"
           publishTarget="jakarta_ee"
-          upcoming_only="1"
+          upcoming="1"
           count="4" >}}
     {{</ events >}}
   {{</ grid/div >}}
