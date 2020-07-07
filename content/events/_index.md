@@ -1,12 +1,12 @@
 ---
-title: Announcements
+title: Events
 date: 2019-02-21
 publishdate: 2019-02-21
 ---
 
-{{< newsroom/news
-      id="announcements_archive" 
+{{< newsroom/events
+      id="events_archive" 
+      archive="true"
       publishTarget="jakarta_ee"
-      type="announcements"
       count="10"
       paginate="true" >}}

@@ -1,0 +1,14 @@
+{{ if and (isset .Site.Params "show_events") (eq .Site.Params.show_events true) }}
+  <div class="events padding-bottom-50 padding-top-30">
+    <h2 class="text-center heading-line"><span style="background-color:#fff;">Events</span></h2>
+    <h3 class="h4 text-center">Come meet the Jakarta EE Community at these upcoming events!</h3>
+    <div class="row">
+    {{ .Inner }}
+    </div>
+    <hr>
+    <ul class="text-center margin-top-25 list-inline">
+      <li><a style="width:220px;" href="/events" aria-controls="featured-more-items" class="btn btn-primary">View More Events</a></li>
+      <li><a style="width:220px;" class="btn btn-primary" href="https://newsroom.eclipse.org/node/add/events" target="_blank">Submit Event</a></li>
+    </ul>
+  </div>
+{{ end }}
