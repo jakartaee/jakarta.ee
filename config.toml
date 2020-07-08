@@ -175,3 +175,8 @@ enableRobotsTXT = true
     parent = "Resources"
     weight = 16
     
+[[menu.main]]
+    name = "JakartaOne Livestream"
+    url = "https://jakartaone.org/"
+    parent = "Resources"
+    weight = 17
