@@ -165,6 +165,7 @@ The following steps are required in order to start a new specification project:
 1. Create a [Project Proposal](https://projects.eclipse.org/node/add/project-proposal) (*)
 2. Inform the Specification Committee with a mail on the public [mailing list](https://accounts.eclipse.org/mailing-list/jakarta.ee-spec) (*)
 3. When the specification project has been approved by the Specification Committee by vote on the mailing list and creation review completed successfully by the EMO, create a Pull Request to be listed as a [Jakarta EE Specification](https://jakarta.ee/specifications/). The PR must contain an `_index.md` file located in a folder named after the short name of the specification. Here is an example of Jakarta MVC. The [_index.md](https://github.com/jakartaee/specifications/blob/master/mvc/_index.md) is located in the [mvc](https://github.com/jakartaee/specifications/blob/master/mvc/) folder in the Jakarta EE Specifications GitHub [repository](https://github.com/jakartaee/specifications).
+
 ``` 
 ---
 title: "Jakarta MVC"
@@ -242,7 +243,7 @@ generally available until after engaging in a successful release review
 committee). A release review will have validated that the specification
 project has:
 
-1.  Produced a staging release via OSSRH staging repository for the api,
+1.  Produced a final staging release via OSSRH staging repository for the api,
     javadoc.
 
     -   Javadocs should include the [Eclipse Foundation Specification
@@ -265,23 +266,25 @@ project has:
 
     -   Information on running TCKs in the Jakarta CI infrastructure can
         be found
-        [Build\_From\_Jakarta\_EE\_TCK\_Repo\_And\_Run](https://wiki.eclipse.org/TCK:Build_From_Jakarta_EE_TCK_Repo_And_Run#Jenkins_Pipelines).
-
+        [Build\_From\_Jakarta\_EE\_TCK\_Repo\_And\_Run](https://wiki.eclipse.org/TCK:Build_From_Jakarta_EE_TCK_Repo_And_Run#Jenkins_Pipelines). 
+        
+        
 4.  Create a compatibility certification request for the compatible
     implementation being used to validate the spec in the specification
     repository issue tracker. If the project does not already have a
     compatibility-certification-request template, you can use this one:
     [compatibility-certification-request.md](https://github.com/jakartaee/specification-committee/blob/master/compatibility-certification-request.md)
 
-5.  After that TCK is passing, initiate a ballot request by creating two
-    [draft
-    PRs](https://help.github.com/en/articles/about-pull-requests#draft-pull-requests)
-    requests (also assign the `draft` label) against the [Jakarta EE Specification Committee
+5.  Initiate a Specification review request by creating
+    [draft PRs](https://help.github.com/en/articles/about-pull-requests#draft-pull-requests)
+    (also assign the `draft` label) against the [Jakarta EE Specification Committee
     specifications](https://github.com/jakartaee/specifications)
     repository. The first PR provides everything requested in the [PR
-    template](https://github.com/jakartaee/specification-committee/blob/master/spec_review_checklist.md)
-    except the javadoc contents. The second PR includes only the apidocs
+    template](https://github.com/jakartaee/specifications/blob/master/pull_request_template.md). 
+    An optional second PR can be created which would include **only** the apidocs
     directory with the javadoc contents.
+    
+    As an aid in the final review process, the [Specification Review Checklist](https://github.com/jakartaee/specification-committee/blob/master/spec_review_checklist.md) should be added to the Specification PR.
 
     -   These PRs are intended to provide the items that are required to
         validate the release, and provide the jakarta.ee website content
@@ -308,7 +311,7 @@ project has:
                 javadoc artifacts
 
             -   An apidocs directory containing the final JavaDocs from
-                the api build in the second PR.
+                the api build in an optional second PR.
 
 6.  If this updated Specification Version is targeted for the Platform, update the Jakarta EE API jar by submitting a PR to the
     [jakartaee-api](https://github.com/eclipse-ee4j/jakartaee-api)
