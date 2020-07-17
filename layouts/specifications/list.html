@@ -40,9 +40,11 @@
       <div class="row">
         {{ range .Page.Sections.ByWeight}}
         <div class="col-sm-8">
-          <a style="margin-bottom:30px;" href="{{- with .Params.redirect_url | default .RelPermalink }} {{.}} {{- end }}" class="match-height-item media media-link{{ if eq .Section "news" }} match-height-item{{ end }}">
-            <h4 class="media-heading">{{ .Title }}</h4>
-            <p class="media-text">{{ .Params.summary | truncate 57 }}</p>
+          <a href="{{- with .Params.redirect_url | default .RelPermalink }} {{.}} {{- end }}" class="match-height-item media media-link margin-bottom-30">
+            <span class="flex-column" style="height: 100%;">
+              <h4 class="media-heading vertical-align" data-mh="spec-title" >{{ .Title }}</h4>
+              <p class="media-text vertical-align flex-grow">{{ .Params.summary | truncate 57 }}</p>
+            </span>
           </a>
         </div>
         {{ end }}
