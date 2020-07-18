@@ -11,7 +11,7 @@ layout: "single"
 
 For many years, Java EE has been a major platform for mission-critical enterprise applications. In order to accelerate business application development for a cloud-native world, leading software vendors collaborated to move Java EE technologies to the Eclipse Foundation where they will evolve under the Jakarta EE brand.
 
-## What is Jakata EE?
+## What is Jakarta EE?
 
 Jakarta EE is a set of specifications that enables the world wide community of java developers  to work on java enterprise applications. The specifications are developed by well known industry leaders that instills confidence in technology developers and consumers.
 
