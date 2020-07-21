@@ -20,7 +20,7 @@
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
     elementFormDefault="qualified"
     targetNamespace="https://jakarta.ee/xml/ns/jakartaee"
-    xmlns:jbatch="https://jakarta.ee/xml/ns/jakartaee" version="1.0">
+    xmlns:jbatch="https://jakarta.ee/xml/ns/jakartaee" version="2.0">
     
     <xs:element name="batch-artifacts"
         type="jbatch:BatchArtifacts" />
