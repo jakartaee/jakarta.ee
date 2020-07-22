@@ -44,3 +44,9 @@ layout: "single"
 ## Tech Talks Meet-ups{#meetups}
 
 - [Jakarta Tech Talks](https://www.meetup.com/jakartatechtalks_/)
+
+---
+
+## Datasheets{#datasheets}
+
+- [Jakarta EE 9 Tools Vendor Datasheet](JakartaEE-Datasheet-July172020_final.pdf)
