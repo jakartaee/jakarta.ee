@@ -50,3 +50,9 @@ layout: "single"
 ## Datasheets{#datasheets}
 
 - [Jakarta EE 9 Tools Vendor Datasheet](JakartaEE-Datasheet-July172020_final.pdf)
+
+---
+
+## Friends of Jakarta EE{#friends}
+
+- [Minutes](https://docs.google.com/document/d/1qojkqFrHfHlkBs6sFZdJujY2_ZQvxbkFvmDc6SQ-6bo/edit#)
