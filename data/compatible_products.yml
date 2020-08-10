@@ -27,10 +27,10 @@ sets:
 
     - name: Open Liberty
       vendor: IBM Corporation
-      version: 19.0.0.6
+      version: 20.0.0.3
       image: '/images/compatible_products/ibm_open_liberty.png'
       download: 'https://openliberty.io/downloads/'
-      compatibility: 'https://github.com/jakartaee/jakarta.ee/issues/439'
+      compatibility: 'https://github.com/jakartaee/jakarta.ee/issues/855'
 
     - name: WildFly
       vendor: Red Hat
@@ -78,10 +78,10 @@ sets:
 
     - name: Open Liberty
       vendor: IBM Corporation
-      version: 19.0.0.6
+      version: 20.0.0.3
       image: '/images/compatible_products/ibm_open_liberty.png'
       download: 'https://openliberty.io/downloads/'
-      compatibility: 'https://github.com/jakartaee/jakarta.ee/issues/439'
+      compatibility: 'https://github.com/jakartaee/jakarta.ee/issues/855'
 
     - name: WildFly
       vendor: Red Hat
