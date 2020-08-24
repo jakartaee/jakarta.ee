@@ -1,5 +1,5 @@
 baseurl = "https://jakarta.ee/"
-DefaultContentLanguage = "cn"
+DefaultContentLanguage = "en"
 title = "Jakarta® EE: The New Home of Cloud Native Java"
 theme = "eclipsefdn-hugo-solstice-theme"
 metaDataFormat = "yaml"
@@ -10,9 +10,9 @@ enableRobotsTXT = true
 
 [languages]
   [languages.en]
-  [languages.cn]
+  [languages.zh]
 
-[languages.cn.Params]
+[languages.zh.Params]
   google_tag_manager = "GTM-5WLCZXC"
   description = "Jakarta® Enterprise Edition (EE) 是云原生的未来. Jakarta® EE 开源软件驱动云原生创新, 让企业应用更加现代化，并同时保护Java EE的现有投资."  
   subtitle = "云原生Java的新家园"
@@ -38,11 +38,11 @@ enableRobotsTXT = true
   main_menu_wrapper_classes = "col-sm-20 margin-top-10"
   hide_cfa_same_page = true
   
-[languages.cn.taxonomies]
+[languages.zh.taxonomies]
   category = "categories"
   tag = "tags"
 
-[languages.cn.Author]
+[languages.zh.Author]
   name = "Christopher Guindon"
   website = "https://www.eclipse.org"
   email = "webdev@eclipse-foundation.org"
@@ -52,140 +52,140 @@ enableRobotsTXT = true
   googleplus = "+Eclipse"
   linkedin = "company/eclipse-foundation/"
 
-[languages.cn.permalinks]
+[languages.zh.permalinks]
   news = "/:sections/:year/:month/:day/:slug/"
 
-[languages.cn.blackfriday]
+[languages.zh.blackfriday]
   plainIDAnchors = true
   hrefTargetBlank = true
 
-[[languages.cn.menu.main]]
+[[languages.zh.menu.main]]
     name = "关于"
     url = "/about/"
     weight = 1
 
-[[languages.cn.menu.main]]
+[[languages.zh.menu.main]]
     name = "会员"
     url = "/Membership/"
     weight = 2
 
-[[languages.cn.menu.main]]
+[[languages.zh.menu.main]]
     name = "连接"
     url = "/connect/"
     weight = 3
 
-[[languages.cn.menu.main]]
+[[languages.zh.menu.main]]
     name = "资源"
     url = "/resources/"
     weight = 4
 
-[[languages.cn.menu.main]]
+[[languages.zh.menu.main]]
     name = "资源"
     url = "/resources/"
     weight = 4
 
 # Resource sub-menu
 
-[[languages.cn.menu.main]]
+[[languages.zh.menu.main]]
     name = "文档"
     url = "/resources#documentation"
     parent = "Documentation"
     weight = 1
 
-[[languages.cn.menu.main]]
+[[languages.zh.menu.main]]
     name = "调研"
     url = "/resources#surveys"
     parent = "Resources"
     weight = 2
 
-[[languages.cn.menu.main]]
+[[languages.zh.menu.main]]
     name = "信息图表"
     url = "/resources#infographics"
     parent = "Resources"
     weight = 3
-[[languages.cn.menu.main]]
+[[languages.zh.menu.main]]
     name = "数据表"
     url = "/resources#datasheets"
     parent = "Resources"
     weight = 4
-[[languages.cn.menu.main]]
+[[languages.zh.menu.main]]
     name = "演讲"
     url = "/resources#presentations"
     parent = "Resources"
     weight = 5
 
-[[languages.cn.menu.main]]
+[[languages.zh.menu.main]]
     name = "兼容产品"
     url = "/compatibility/"
     weight = 6
 
-[[languages.cn.menu.main]]
+[[languages.zh.menu.main]]
     name = "规范采纳"
     parent = "Resources"
     url = "/community/adopt-a-spec/"
     weight = 7
 
-[[languages.cn.menu.main]]
+[[languages.zh.menu.main]]
     name = "委员会"
     url = "/committees"
     parent = "Resources"
     weight = 8
 
-[[languages.cn.menu.main]]
+[[languages.zh.menu.main]]
     name = "通讯刊物存档"
     url = "/newsletter/"
     parent = "Resources"
     weight = 9
 
-[[languages.cn.menu.main]]
+[[languages.zh.menu.main]]
     name = "会议纪要"
     url = "/meeting_minutes/"
     parent = "Resources"
     weight = 10
 
-[[languages.cn.menu.main]]
+[[languages.zh.menu.main]]
     name = "博客"
     url = "https://Jakartablogs.ee"
     parent = "Resources"
     weight = 11
 
-[[languages.cn.menu.main]]
+[[languages.zh.menu.main]]
     name = "技术沙龙"
     url = "/resources#meetups"
     parent = "Resources"
     weight = 12
 
-[[languages.cn.menu.main]]
+[[languages.zh.menu.main]]
     name = "Jakarta EE YouTube 频道"
     url = "https://www.youtube.com/channel/UC4M7h5b6elu9VlzjLfzuXyg"
     parent = "Resources"
     weight = 13
 
-[[languages.cn.menu.main]]
+[[languages.zh.menu.main]]
     name = "Jakarta EE 规范项目"
     url = "https://projects.eclipse.org/list-of-projects?combine=jakarta&field_project_techology_types_tid=1102&field_state_value_2=All"
     parent = "Resources"
     weight = 14
 
-[[languages.cn.menu.main]]
+[[languages.zh.menu.main]]
     name = "Jakarta EE 社区文件夹"
     url = "https://drive.google.com/open?id=1kJFh6EIpOyAWP3JkymYZXOK311WM2HXm"
     parent = "Resources"
     weight = 15
     
-[[languages.cn.menu.main]]
+[[languages.zh.menu.main]]
     name = "Jakarta EE 社区日历"
     url = "/resources#calendar"
     parent = "Resources"
     weight = 16
 
-[[languages.cn.menu.main]]
+[[languages.zh.menu.main]]
     name = "Jakarta EE 起步"
     url = "https://start.jakarta.ee/"
     parent = "Resources"
     weight = 17
     
-[[languages.cn.menu.main]]
+[[languages.zh.menu.main]]
     name = "JakartaOne Livestream 大会"
     url = "https://jakartaone.org/"
     parent = "Resources"
