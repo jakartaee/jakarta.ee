@@ -16,7 +16,7 @@ The Specification Committee is responsible for implementing the ​[Jakarta EE S
 * Scott Stark - Red Hat, Mark Little - alternate
 * David Blevins - Tomitribe, Jean-Louis Monterio - alternate
 * Ivar Grimstad - PMC Representative
-* Martijn Verburg - London Java Community - Elected Participant Member Representative
+* Marcelo Ancelmo - London Java Community - Elected Participant Member Representative
 * Werner Keil - Elected Committer Member Representative
 * Scott (Congquan) Wang - Primeton - Elected Enterprise Representative
 * Paul Buck - Eclipse Foundation (serves as chair, but is not a voting committee member)
