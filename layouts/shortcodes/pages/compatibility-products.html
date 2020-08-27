@@ -35,9 +35,10 @@
             <div class="flex-grow text-center flex-column">
               <h3 class="margin-bottom-0">{{ .name }}</h3>
               <p class="flex-grow">{{ .vendor }}</p>
-              <p class="">Version: {{ .version }}</p>
+              {{ range .versions }} 
+                <p><a href="{{ .compatibility }}">{{ .version }}</a></p>
+              {{ end }}           
               <p><a href="{{ .download }}" class="btn btn-primary">{{ .download_text | default "Download" }}</a></p>
-              <p><a href="{{ .compatibility }}">Proof of compatibility</a></p>
             </div>
           </div>
         </div>
