@@ -4,12 +4,14 @@
 #    items:
 #    - name: Eclipse Glassfish
 #      vendor: Eclipse Foundation
-#      version: 5.1.0
 #      image: '/images/glassfish.png'
 #      download: 'https://www.eclipse.org/downloads/download.php?file=/glassfish/glassfish-5.1.0.zip'
+#      versions:
+#      - version: 5.1.0
+#        compatibility: 'https://eclipse-ee4j.github.io/glassfish/certifications/jakarta-full-profile/8.0/TCK-Results'
 
 sets:
-  - title: Jakarta EE 8 Full Platform Compatible Products
+  - title: Jakarta EE 8 Platform Compatible Products
     items:
     - name: Payara Server 
       vendor: Payara Services Limited
@@ -24,7 +26,7 @@ sets:
       image: '/images/compatible_products/glassfish_logo.svg'
       download: 'https://www.eclipse.org/downloads/download.php?file=/glassfish/glassfish-5.1.0.zip'
       versions:
-      - version: 5.1.0, Full Profile
+      - version: 5.1.0 Platform
         compatibility: 'https://eclipse-ee4j.github.io/glassfish/certifications/jakarta-full-profile/8.0/TCK-Results'
 
     - name: Open Liberty
@@ -105,7 +107,6 @@ sets:
       vendor: Red Hat
       image: '/images/compatible_products/red-hat-jboss-logo.png'
       download: 'http://www.redhat.com/en/technologies/jboss-middleware/application-platform'
-      compatibility: 'https://github.com/RedHatOfficial/jbosseap-certifications/blob/EE8/EAP-7.3.0/jakarta-full-platform.adoc#tck-results'
       versions:
       - version: 7.3.0.GA  
         compatibility: 'https://github.com/RedHatOfficial/jbosseap-certifications/blob/EE8/EAP-7.3.0/jakarta-full-platform.adoc#tck-results'
