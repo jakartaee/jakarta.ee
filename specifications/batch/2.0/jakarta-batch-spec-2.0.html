@@ -530,8 +530,8 @@ table.CodeRay td.code>pre{padding:0}
 <span id="author" class="author">Jakarta Batch Team, https://projects.eclipse.org/projects/ee4j.batch</span><br>
 <span id="email" class="email"><a href="https://dev.eclipse.org/mailman/listinfo/jakartabatch-dev" class="bare">https://dev.eclipse.org/mailman/listinfo/jakartabatch-dev</a></span><br>
 <span id="revnumber">version 2.0,</span>
-<span id="revdate">2020-06-11</span>
-<br><span id="revremark">DRAFT</span>
+<span id="revdate">2020-08-12</span>
+<br><span id="revremark"></span>
 </div>
 <div id="toc" class="toc2">
 <div id="toctitle">Table of Contents</div>
@@ -785,7 +785,7 @@ table.CodeRay td.code>pre{padding:0}
 <ul class="sectlevel3">
 <li><a href="#job-parameters-on-restart">10.8.1. Job Parameters on Restart</a></li>
 <li><a href="#job-xml-substitution-during-restart">10.8.2. Job XML Substitution during Restart</a></li>
-<li><a href="#execution-sequence-on-restart-overview">10.8.3. Execution Sequence on Restart – Overview</a></li>
+<li><a href="#execution-sequence-on-restart-overview">10.8.3. Execution Sequence on Restart - Overview</a></li>
 <li><a href="#execution-sequence-on-restart-detailed-rules">10.8.4. Execution Sequence on Restart – Detailed Rules</a></li>
 <li><a href="#partitionmapper-on-restart">10.8.5. PartitionMapper on Restart</a>
 <ul class="sectlevel4">
@@ -847,7 +847,8 @@ table.CodeRay td.code>pre{padding:0}
 <ul class="sectlevel2">
 <li><a href="#version-1-0-revision-a-maintenance-release">15.1. Version 1.0 Revision A - Maintenance Release</a>
 <ul class="sectlevel3">
-<li><a href="#issues-list">15.1.1. Issues List</a></li>
+<li><a href="#note-on-archived-issues-jakarta-batch-2-0-update">15.1.1. Note on archived issues - Jakarta Batch 2.0 Update</a></li>
+<li><a href="#version-1-0-revision-a-change-history">15.1.2. Version 1.0 Revision A - Change History</a></li>
 </ul>
 </li>
 </ul>
@@ -865,9 +866,9 @@ table.CodeRay td.code>pre{padding:0}
 
 Version: 2.0
 
-Status: DRAFT
+Status: Final Release
 
-Release: 2020-06-11</pre>
+Release: 2020-08-12</pre>
 </div>
 </div>
 <div class="paragraph">
@@ -999,7 +1000,7 @@ remain with copyright holders.</p>
 <h2 id="foreword"><a class="anchor" href="#foreword"></a>3. Foreword</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>This specification describes the job specification language, Java programming model, and runtime environment for batch applications for the Java platform. It is designed for use on both the Java SE and Jakarta EE platforms. Additionally, it is designed to work with dependency injection (DI) containers without prescribing a particular DI implementation.</p>
+<p>This specification describes the job specification language, Java programming model, and runtime environment for Jakarta Batch. It is designed for use on Jakarta EE platforms, and also in other Java SE environments. Additionally, it is designed to work with dependency injection (DI) containers without prescribing a particular DI implementation.</p>
 </div>
 </div>
 </div>
@@ -1150,7 +1151,7 @@ from where you left off'.</p>
 <p>Job parameters can be specified each time a job is started or restarted.
 Job parameters are keyword/value string pairs. The JobOperator start and
 restart operations support the specification of job parameters. See
-section <a href="#_joboperator_2">10.4</a> for further details on JobOperator.</p>
+section <a href="#joboperator-2">10.4</a> for further details on JobOperator.</p>
 </div>
 </div>
 <div class="sect3">
@@ -1200,7 +1201,7 @@ StepExecution will only be created when its Step is actually started.</p>
 <p>JobOperator provides an interface to manage all aspects of job
 processing, including operational commands, such as start, restart, and
 stop, as well as job repository related commands, such as retrieval of
-job and step executions. See section <a href="#_joboperator_2">10.4</a> for more details about
+job and step executions. See section <a href="#joboperator-2">10.4</a> for more details about
 JobOperator.</p>
 </div>
 </div>
@@ -1211,7 +1212,7 @@ JobOperator.</p>
 jobs that have run in the past. The JobOperator interface provides
 access to this repository. The repository contains job instances, job
 executions, and step executions. For further information on this
-content, see sections 10.9.8, 10.9.9, 10.9.10, respectively.</p>
+content, see sections <a href="#jobinstance-2">10.9.8</a>, <a href="#jobexecution-2">10.9.9</a>, <a href="#stepexecution-2">10.9.10</a>, respectively.</p>
 </div>
 <div class="paragraph">
 <p>Note the implementation of the job repository is outside the scope of
@@ -1223,8 +1224,7 @@ this specification.</p>
 <div class="paragraph">
 <p>ItemReader is an abstraction that represents the retrieval of input for
 a Step, one item at a time. An ItemReader provides an indicator when it
-has exhausted the items it can supply. See section 9.1.1.1 for more
-details about ItemReaders.</p>
+has exhausted the items it can supply. See section <a href="#itemreader-interface">9.1.1.1</a> for more details about ItemReaders.</p>
 </div>
 </div>
 <div class="sect2">
@@ -1233,8 +1233,7 @@ details about ItemReaders.</p>
 <p>ItemWriter is an abstraction that represents the output of a Step, one
 batch or chunk of items at a time. Generally, an item writer has no
 knowledge of the input it will receive next, only the item that was
-passed in its current invocation. See section 9.1.1.3 for more details
-about ItemWriters.</p>
+passed in its current invocation. See section <a href="#itemwriter-interface">9.1.1.3</a> for more details about ItemWriters.</p>
 </div>
 </div>
 <div class="sect2">
@@ -1243,7 +1242,7 @@ about ItemWriters.</p>
 <p>ItemProcessor is an abstraction that represents the business processing
 of an item. While the ItemReader reads one item, and the ItemWriter
 writes them, the ItemProcessor provides access to transform or apply
-other business processing. See section 9.1.1.2 for more details about
+other business processing. See section <a href="#itemprocessor-interface">9.1.1.2</a> for more details about
 ItemProcessors.</p>
 </div>
 </div>
@@ -1399,7 +1398,7 @@ implementation.</p>
 element. It is used to expose properties to any batch artifact belonging
 to the job and also to the batch runtime. Any number of properties may
 be specified. Job level properties are available through the JobContext
-runtime object. See section <a href="#_batch_contexts">9.4</a> for further information about Job
+runtime object. See section <a href="#batch-contexts">9.4</a> for further information about Job
 Context.</p>
 </div>
 <div class="paragraph">
@@ -1441,7 +1440,7 @@ be a valid XML string value. This is a required attribute.</p></td>
 <p>The 'step' element identifies a job step and its characteristics. Step
 is a child element of job. A job may contain any number of steps. Each
 step may be either a chunk type step or batchlet type step. See section
-<a href="#_chunk">8.2.1</a> for information on chunk type steps and section <a href="#_batchlet">8.2.2</a> for
+<a href="#chunk">8.2.1</a> for information on chunk type steps and section <a href="#batchlet">8.2.2</a> for
 information on batchlet type steps.</p>
 </div>
 <div class="paragraph">
@@ -1503,7 +1502,7 @@ of the step element. A chunk type step is periodically checkpointed by
 the batch runtime according to a configured checkpoint policy. Items
 processed between checkpoints are referred to as a "chunk". A single
 call is made to the ItemWriter per chunk. Each chunk is processed in a
-separate transaction. See section <a href="#_transactionality">9.7</a> for more details on
+separate transaction. See section <a href="#transactionality">9.7</a> for more details on
 transactionality. A chunk that is not complete is restartable from its
 last checkpoint. A chunk that is complete and belongs to a step
 configured with allow-start-if-complete=true runs from the beginning
@@ -1538,8 +1537,7 @@ behavior for this chunk. Valid values are: "item" or "custom". The
 of items are processed. The "custom" policy means the chunk is
 checkpointed according to a checkpoint algorithm implementation.
 Specifying "custom" requires that the checkpoint-algorithm element is
-also specified. See section 8.2.1.5 for checkpoint-algorithm. It is an
-optional attribute. The default policy is "item".</p></td>
+also specified. See section <a href="#checkpoint-algorithm">8.2.1.5</a> for checkpoint-algorithm. It is an optional attribute. The default policy is "item".</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">item-count</p></td>
@@ -1812,7 +1810,7 @@ processor, and writer batch artifacts of a chunk type step. It also applies
 to exceptions thrown during checkpoint commit processing. A failed
 commit will be treated the same as a failed write. The total number of
 skips is set by the skip-limit attribute on the chunk element. See
-section <a href="#_chunk">8.2.1</a> for details on the chunk element.</p>
+section <a href="#chunk">8.2.1</a> for details on the chunk element.</p>
 </div>
 <div class="paragraph">
 <p>A given exception will be skipped if it "matches" an include child
@@ -1843,7 +1841,7 @@ exception.</p>
 <div class="paragraph">
 <p>Optional Skip Listener batch artifacts can be configured to the step. A
 Skip Listener receives control after a skippable exception is thrown by
-the reader, processor, or writer. See section <a href="#_skip_listener_interfaces">9.2.7</a> for details on the
+the reader, processor, or writer. See section <a href="#skip-listener-interfaces">9.2.7</a> for details on the
 Skip Listener batch interfaces.</p>
 </div>
 <div class="paragraph">
@@ -1911,7 +1909,7 @@ chunk element. It applies to exceptions thrown from the reader,
 processor, or writer batch artifacts of a chunk type step. It also
 applies to exceptions thrown by checkpoint commit processing. The total
 number of retry attempts is set by the retry-limit attribute on the
-chunk element. See section <a href="#_chunk">8.2.1</a> for details on the chunk element.</p>
+chunk element. See section <a href="#chunk">8.2.1</a> for details on the chunk element.</p>
 </div>
 <div class="paragraph">
 <p>The list of exceptions that will be retried (or not retried) is
@@ -1920,12 +1918,12 @@ include element. This list, however, may be modified using one or more
 child exclude elements. The rules for deciding whether to retry or not
 retry a given exception when a combination of include and exclude
 elements are used are analogous to the rules described in the discussion
-in section 8.2.1.4.1 for skipping exceptions.</p>
+in section <a href="#skipping-exceptions">8.2.1.4.1</a> for skipping exceptions.</p>
 </div>
 <div class="paragraph">
 <p>Optional Retry Listener batch artifacts can be configured on the step. A
 Retry Listener receives control after a retryable exception is thrown by
-the reader, processor, or writer. See section <a href="#_retrylistener_interface">9.2.8</a> for details on the
+the reader, processor, or writer. See section <a href="#retrylistener-interface">9.2.8</a> for details on the
 Retry Listener batch artifact.</p>
 </div>
 <div class="paragraph">
@@ -1994,7 +1992,7 @@ retryable since the exception is already being retried.</p>
 <div class="paragraph">
 <p>This allows an exception to initially be retried for the entire chunk
 and then skipped if it recurs. When retrying with default retry behavior
-(see section 8.2.1.4.4) the skips can occur for individual items, since
+(see section <a href="#default-retry-behavior-rollback">8.2.1.4.4</a>) the skips can occur for individual items, since
 the retry is done with an item-count of 1.</p>
 </div>
 </div>
@@ -2007,7 +2005,7 @@ item-count of 1 and a checkpoint policy of item. If the optional
 ChunkListener is configured on the step, the onError method is called
 before rollback. The default retry behavior can be overridden by
 configuring the no-rollback-exception-classes element. See section
-8.2.1.4.5 for more information on specifying no-rollback exceptions.</p>
+<a href="#preventing-rollback-during-retry">8.2.1.4.5</a> for more information on specifying no-rollback exceptions.</p>
 </div>
 </div>
 <div class="sect5">
@@ -2019,14 +2017,14 @@ This element is a child element of the chunk element. If a retryable
 exception is thrown the default behavior is to rollback before retry. If
 an exception is specified as both a retryable and a no-rollback
 exception, then no rollback occurs and the current operation is retried.
-Retry Listeners, if configured, are invoked. See section <a href="#_retrylistener_interface">9.2.8</a> for
+Retry Listeners, if configured, are invoked. See section <a href="#retrylistener-interface">9.2.8</a> for
 details on the Retry Listener batch artifact.</p>
 </div>
 <div class="paragraph">
 <p>The rules for determining whether a combination of include and exclude
 child elements of no-rollback-exception-classes results in the "no
 rollback" behavior or not are analogous to the rules described in the
-discussion in section 8.2.1.4.1 for skipping exceptions.</p>
+discussion in section <a href="#skipping-exceptions">8.2.1.4.1</a> for skipping exceptions.</p>
 </div>
 <div class="paragraph">
 <p>Syntax:</p>
@@ -2076,7 +2074,7 @@ algorithm. It is a child element of the chunk element. It is valid when
 the chunk element checkpoint-policy attribute specifies the value
 'custom'. A custom checkpoint algorithm may be used to provide a
 checkpoint decision based on factors other than only number of items, or
-amount of time. See section 9.1.1.4 for further information about custom
+amount of time. See section <a href="#checkpointalgorithm-interface">9.1.1.4</a> for further information about custom
 checkpoint algorithms.</p>
 </div>
 <div class="paragraph">
@@ -2150,7 +2148,7 @@ be a valid XML string value. This is a required attribute.</p></td>
 <div class="paragraph">
 <p>The batchlet element specifies a task-oriented batch step. It is
 specified as a child element of the step element. It is mutually
-exclusive with the chunk element. See <a href="#_batchlet_interface">9.1.2</a> for further details about
+exclusive with the chunk element. See xref:-batchlet-interface[9.1.2] for further details about
 batchlets. Steps of this type are useful for performing a variety of
 tasks that are not item-oriented, such as executing a command or doing
 file transfer.</p>
@@ -2181,7 +2179,7 @@ file transfer.</p>
 <div class="sect4">
 <h5 id="batchlet-exception-handling"><a class="anchor" href="#batchlet-exception-handling"></a>8.2.2.1. Batchlet Exception Handling</h5>
 <div class="paragraph">
-<p>This section is superseded by section <a href="#_step_exception_handling">8.2.7</a>.</p>
+<p>This section is superseded by section <a href="#step-exception-handling">8.2.7</a>.</p>
 </div>
 </div>
 <div class="sect4">
@@ -2233,7 +2231,7 @@ be a valid XML string value. This is a required attribute.</p></td>
 element. It is used to expose properties to any step level batch
 artifact and also to the batch runtime. Any number of properties may be
 specified. Step level properties are available through the StepContext
-runtime object. See section <a href="#_batch_contexts">9.4</a> for further information about
+runtime object. See section <a href="#batch-contexts">9.4</a> for further information about
 StepContext.</p>
 </div>
 <div class="paragraph">
@@ -2422,8 +2420,8 @@ a required attribute.</p></td>
 </tbody>
 </table>
 <div class="paragraph">
-<p>See section  <a href="#_transition_elements">8.6</a> for more details about transition
-elements and section <a href="#_transitioning_rules">8.9</a> for details on transitioning rules.</p>
+<p>See section  <a href="#transition-elements">8.6</a> for more details about transition
+elements and section <a href="#transitioning-rules">8.9</a> for details on transitioning rules.</p>
 </div>
 </div>
 <div class="sect3">
@@ -2493,7 +2491,7 @@ XML declaratively or dynamically at runtime with a partition mapper.</p>
 <div class="paragraph">
 <p>The 'plan' element is a child element of the 'partition' element. The
 'plan' element is mutually exclusive with partition mapper element. See
-section <a href="#_partitionmapper_interface">9.5.1</a> for further details on partition mapper.</p>
+section <a href="#partitionmapper-interface">9.5.1</a> for further details on partition mapper.</p>
 </div>
 <div class="paragraph">
 <p>Note the specification does not attempt to guarantee order of partition
@@ -2555,7 +2553,7 @@ into 3 partitions on 2 threads:</p>
 <div class="paragraph">
 <p>When defining a statically partitioned step, it is possible to specify
 unique property values to pass to each partition directly in the Job XML
-using the property element. See section <a href="#_partitionmapper_interface">9.5.1</a> for further information on
+using the property element. See section <a href="#partitionmapper-interface">9.5.1</a> for further information on
 partition mapper.</p>
 </div>
 <div class="paragraph">
@@ -2563,7 +2561,7 @@ partition mapper.</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="xml"> <span class="tag">&lt;properties</span> <span class="attribute-name">partition</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">_partition-number_</span><span class="delimiter">&quot;</span></span><span class="tag">&gt;</span>
+<pre class="CodeRay highlight"><code data-lang="xml"> <span class="tag">&lt;properties</span> <span class="attribute-name">partition</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">{partition-number}</span><span class="delimiter">&quot;</span></span><span class="tag">&gt;</span>
   <span class="tag">&lt;property</span> <span class="attribute-name">name</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">{property-name}</span><span class="delimiter">&quot;</span></span> <span class="attribute-name">value</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">{name-value}</span><span class="delimiter">&quot;</span></span><span class="tag">/&gt;</span>
  <span class="tag">&lt;/properties&gt;</span></code></pre>
 </div>
@@ -2627,7 +2625,7 @@ value for the property named "filename" for each partition:</p>
 number of partitions and threads for a partitioned step. The partition
 mapper also specifies the properties for each partition. The mapper
 element specifies a reference to a PartitionMapper batch artifact; see
-section <a href="#_partitionmapper_interface">9.5.1</a> for further information. Note the mapper element is
+section <a href="#partitionmapper-interface">9.5.1</a> for further information. Note the mapper element is
 mutually exclusive with the plan element.</p>
 </div>
 <div class="paragraph">
@@ -2713,7 +2711,7 @@ partition reducer provides a kind of unit of work demarcation around the
 processing of the partitions. Programmatic interception of the
 partitioned step&#8217;s lifecycle is possible through the partition reducer.
 The reducer element specifies a reference to a PartitionReducer batch
-artifact; see section <a href="#_partitionreducer_interface">9.5.2</a> for further information.</p>
+artifact; see section <a href="#partitionreducer-interface">9.5.2</a> for further information.</p>
 </div>
 <div class="paragraph">
 <p>The 'reducer' element is a child element of the 'partition' element.</p>
@@ -2804,10 +2802,10 @@ partition of the step. The collector is invoked at the conclusion of
 each checkpoint for chunking type steps and again at the end of
 partition; it is invoked once at the end of partition for batchlet type
 steps. A collector returns a Java Serializable object, which is
-delivered to the step&#8217;s Partition Analyzer. See section <a href="#_partitionanalyzer_interface">9.5.4</a> for
+delivered to the step&#8217;s Partition Analyzer. See section <a href="#partitionanalyzer-interface">9.5.4</a> for
 further information about the Partition Analyzer. The collector element
 specifies a reference to a PartitionCollector batch artifact; see
-section <a href="#_partitioncollector_interface">9.5.3</a> for further information.</p>
+section <a href="#partitioncollector-interface">9.5.3</a> for further information.</p>
 </div>
 <div class="paragraph">
 <p>The 'collector' element is a child element of the 'partition' element.</p>
@@ -2898,7 +2896,7 @@ PartitionAnalyzer also receives control with the partition exit status
 for each partition, after that partition ends. An analyzer can be used
 to implement custom exit status handling for the step, based on the
 results of the individual partitions. The analyzer element specifies a
-reference to a PartitionAnalyzer batch artifact; see section <a href="#_partitionanalyzer_interface">9.5.4</a> for
+reference to a PartitionAnalyzer batch artifact; see section <a href="#partitionanalyzer-interface">9.5.4</a> for
 further information.</p>
 </div>
 <div class="paragraph">
@@ -2985,8 +2983,8 @@ be a valid XML string value. This is a required attribute.</p></td>
 processing causes the step to terminate with a batch status of FAILED.
 In this context, "unhandled" means an exception thrown by the execution
 of the artifact back to the runtime implementation which does not result
-in a skip or a retry as described in section 8.2.1.4.
- See section <a href="#_transitioning_precedence_rules">8.9.2</a> for complete details on
+in a skip or a retry as described in section <a href="#chunk-exception-handling">8.2.1.4</a>.
+ See section <a href="#transitioning-precedence-rules">8.9.2</a> for complete details on
 transitioning after an unhandled exception.</p>
 </div>
 </div>
@@ -2998,11 +2996,11 @@ transitioning after an unhandled exception.</p>
 a unit. When the flow is finished, it is the entire flow that
 transitions to the next execution element. A flow may transition to a
 step, split, decision, or another flow. A flow may contain step, flow,
-decision, and split execution elements. See section <a href="#_decision">8.5</a> for more on
-decisions. See section <a href="#_split">8.4</a> for more on splits. The execution elements
+decision, and split execution elements. See section <a href="#decision">8.5</a> for more on
+decisions. See section <a href="#split">8.4</a> for more on splits. The execution elements
 within a flow may only transition among themselves; they may not
 transition to elements outside of the flow. A flow may also contain the
-transition elements next, stop, fail, and end. See section <a href="#_transition_elements">8.6</a> for more
+transition elements next, stop, fail, and end. See section <a href="#transition-elements">8.6</a> for more
 on transition elements.</p>
 </div>
 <div class="paragraph">
@@ -3045,7 +3043,7 @@ a loop occurs among steps.</p></td>
 <h3 id="split"><a class="anchor" href="#split"></a>8.4. Split</h3>
 <div class="paragraph">
 <p>A split defines a set of flows that execute concurrently. A split may
-include only flow elements as children. See section <a href="#_flow">8.3</a> for more on
+include only flow elements as children. See section <a href="#flow">8.3</a> for more on
 flows. Each flow runs on a separate thread. The split is finished after
 all flows complete. When the split is finished, it is the entire split
 that transitions to the next execution element. A split may transition
@@ -3093,7 +3091,7 @@ a loop occurs among steps.</p></td>
 <p>The effort of the initial 1.0 final release specification to define
 split termination processing is recognized as incomplete. This is
 related to the recognition that flow transitioning is incomplete
-(section <a href="#_flow_level_transitions">8.9.5</a>).</p>
+(section <a href="#flow-level-transitions-undefined">8.9.5</a>).</p>
 </div>
 <div class="paragraph">
 <p>As such, there is no well-defined mechanism for "passing back" status
@@ -3136,10 +3134,10 @@ steps, flows, and splits. The decision element may follow a step, flow,
 or split. A job may contain any number of decision elements. A decision
 element is the target of the "next" attribute from a job-level step,
 flow, split, or another decision. A decision must supply a decider batch
-artifact (see section <a href="#_decider_interface">9.6</a>). The decider&#8217;s purpose is to decide the next
+artifact (see section <a href="#decider-interface">9.6</a>). The decider&#8217;s purpose is to decide the next
 transition. The decision uses any of the transition elements, stop,
 fail, end, and next elements to select the next transition. See section
-<a href="#_transition_elements">8.6</a> for further information on transition elements. The decider return
+<a href="#transition-elements">8.6</a> for further information on transition elements. The decider return
 value will also be set as the current value of the job exit status, in
 addition to being matched against the decisions own child transition
 elements to decide the next transition.</p>
@@ -3149,7 +3147,7 @@ elements to decide the next transition.</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="xml"> <span class="tag">&lt;decision</span> <span class="attribute-name">id</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">{name}</span><span class="delimiter">&quot;</span></span> <span class="attribute-name">ref</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">{ref_-_name}</span><span class="delimiter">&quot;</span></span><span class="tag">&gt;</span></code></pre>
+<pre class="CodeRay highlight"><code data-lang="xml"> <span class="tag">&lt;decision</span> <span class="attribute-name">id</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">{name}</span><span class="delimiter">&quot;</span></span> <span class="attribute-name">ref</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">{ref-name}</span><span class="delimiter">&quot;</span></span><span class="tag">&gt;</span></code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -3271,7 +3269,7 @@ Syntax:</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="xml"> <span class="tag">&lt;next</span> <span class="attribute-name">on</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">{exit status}</span><span class="delimiter">&quot;</span></span> <span class="attribute-name">to</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">{step id_|_flow id_|_split id}</span><span class="delimiter">&quot;</span></span><span class="tag">/&gt;</span></code></pre>
+<pre class="CodeRay highlight"><code data-lang="xml"> <span class="tag">&lt;next</span> <span class="attribute-name">on</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">{exit status}</span><span class="delimiter">&quot;</span></span> <span class="attribute-name">to</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">{step id | flow id | split id}</span><span class="delimiter">&quot;</span></span><span class="tag">/&gt;</span></code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -3440,7 +3438,7 @@ decision elements.</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="xml"><span class="tag">&lt;stop</span> <span class="attribute-name">on</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">{exit status}</span><span class="delimiter">&quot;</span></span> <span class="attribute-name">exit-status</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">{exit status}</span><span class="delimiter">&quot;</span></span> <span class="attribute-name">restart</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">{step id_|_flow id_|_split id}</span><span class="delimiter">&quot;</span></span><span class="tag">/&gt;</span></code></pre>
+<pre class="CodeRay highlight"><code data-lang="xml"><span class="tag">&lt;stop</span> <span class="attribute-name">on</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">{exit status}</span><span class="delimiter">&quot;</span></span> <span class="attribute-name">exit-status</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">{exit status}</span><span class="delimiter">&quot;</span></span> <span class="attribute-name">restart</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">{step id | flow id | split id}</span><span class="delimiter">&quot;</span></span><span class="tag">/&gt;</span></code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -3572,7 +3570,7 @@ exists only as a matter of history.</p></td>
 <li>
 <p>A job-level execution element (step, flow, or split) finishes
 execution, without specifying a "next" attribute and without the exit
-status matching any transition elements. (See section <a href="#_transitioning_precedence_rules">8.9.2</a> for
+status matching any transition elements. (See section <a href="#transitioning-precedence-rules">8.9.2</a> for
 details).  In this case, the batch status is set
 to COMPLETED.</p>
 </li>
@@ -3580,7 +3578,7 @@ to COMPLETED.</p>
 <p>A step throws an exception to the batch runtime that does not match
 skip or retry criteria, with the exit status not matching any transition
 elements. In this case, the batch status is set to FAILED. (See section
-<a href="#_transitioning_precedence_rules">8.9.2</a> for details).  In the case of partitioned
+<a href="#transitioning-precedence-rules">8.9.2</a> for details).  In the case of partitioned
 or concurrent (split) step execution, all other still-running parallel
 instances are allowed to complete before the job ends with FAILED batch
 status.</p>
@@ -3611,7 +3609,7 @@ status setter method on the JobContext object.</p>
 </li>
 <li>
 <p>Exit status can be overridden by a terminating transition element on
-a step, flow, or split. See section <a href="#_transition_elements">8.6</a>.</p>
+a step, flow, or split. See section <a href="#transition-elements">8.6</a>.</p>
 </li>
 <li>
 <p>Final batch status is set by the batch runtime depending on the
@@ -3650,11 +3648,11 @@ the step, by the batch runtime. <span class="line-through">Step exit status is
 initially set to the same value as batch
 status.</span>  Step exit status may be set by any
 batch artifact configured to the step by invoking the exit status setter
-method in the StepContext object. See section <a href="#_batch_contexts">9.4</a> for further
+method in the StepContext object. See section <a href="#batch-contexts">9.4</a> for further
 information about the StepContext object. Setting the step exit status
 does not alter the execution of the current step, but rather, is
 available to influence the execution of subsequent steps via transition
-elements (see <a href="#_transition_elements">8.6</a>) and deciders (see <a href="#_decider_interface">9.6</a>). If no batch artifact sets the
+elements (see <a href="#transition-elements">8.6</a>) and deciders (see <a href="#decider-interface">9.6</a>). If no batch artifact sets the
 exit status, the batch runtime will default the value to the string form
 of the batch status value of the step when step execution completes.
 An important point to note is that transition elements do not affect the
@@ -3690,7 +3688,7 @@ this case).</p>
 <p>Note the implications for restart processing. For example, a completed
 step wont re-run just because the step includes a transition element
 failing the job on the original step executions exit status. See section
-<a href="#_supporting_classes">10.8</a> for more on restart processing.</p>
+<a href="#restart-processing">10.8</a> for more on restart processing.</p>
 </div>
 </div>
 <div class="sect3">
@@ -3762,10 +3760,10 @@ following expression language is supported on all attributes:</p>
 <p>Substitution expressions are processed for both initial job start and on
 job restart. All substitution expressions must be resolved before the
 job can be started or restarted, except for the partitionPlan operator,
-which has deferred resolution - see section 8.8.1.4 for more on that.
+which has deferred resolution - see section <a href="#partitionplan-substitution-operator">8.8.1.4</a> for more on that.
 After substitution expression resolution, the resultant XML document
 must be checked for validity, according to the guidelines outlined in
-section <a href="#_job_specification_language_2">13</a>, Job Specification Language XSD.</p>
+section <a href="#job-specification-language-2">13</a>, Job Specification Language XSD.</p>
 </div>
 <div class="paragraph">
 <p>A substitution expression may reference a job parameter or a job
@@ -4009,8 +4007,7 @@ that decision and applies it to that step on the next job execution,
 once the previous job execution is restarted. The decision cannot be
 altered by a substitution expression. The decision can be altered,
 however, through a PartitionMapper artifact by specifying the "override"
-option in the PartitionPlan object. See section 10.9.4 for details on
-the PartitionPlan class.</p>
+option in the PartitionPlan object. See section <a href="#partitionplan">10.9.4</a> for details on the PartitionPlan class.</p>
 </div>
 </div>
 </div>
@@ -4127,7 +4124,7 @@ transitions to the element named by this next attribute value.</p>
 <p>If execution ended normally, and the execution element whose
 execution is completing does not contain a next attribute, then the job
 ends normally (with COMPLETED batch status). For transitioning from a
-step within a flow, this statement doesnt apply. See section <a href="#_transitioning_from_within_flows">8.9.4</a> for
+step within a flow, this statement doesnt apply. See section <a href="#transitioning-from-within-flows">8.9.4</a> for
 details.</p>
 </li>
 </ol>
@@ -4162,7 +4159,7 @@ RecoveryStep.</p>
 <div class="paragraph">
 <p>Note that the second example shows it is possible for a job to executed
 to COMPLETED status, even though a constituent step ends with FAILED
-batch status (See section <a href="#_step_exception_handling">8.2.7</a>).</p>
+batch status (See section <a href="#step-exception-handling">8.2.7</a>).</p>
 </div>
 </div>
 <div class="sect3">
@@ -4184,7 +4181,7 @@ prohibition.</p>
 </div>
 <div class="paragraph">
 <p>The runtime may detect potential loops in an initial validation phase,
-as described in section <a href="#_validation_rules">13.1</a>, or may only detect loops once they occur.</p>
+as described in section <a href="#validation-rules">13.1</a>, or may only detect loops once they occur.</p>
 </div>
 </div>
 <div class="sect3">
@@ -4192,7 +4189,7 @@ as described in section <a href="#_validation_rules">13.1</a>, or may only detec
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>As mentioned in section <a href="#_flow">8.3</a>, an execution element which is a child of a
+<p>As mentioned in section <a href="#flow">8.3</a>, an execution element which is a child of a
 flow may only transition to another execution element within the same
 flow. The flows transition elements, however, would transition execution
 to the next execution element at the level of the execution scope
@@ -4208,7 +4205,7 @@ containing (e.g. job) level.</p>
 <ol class="loweralpha" type="a">
 <li>
 <p>Note: transition via next outside of the flow is not permitted. If
-this is not detected during job validation (see section <a href="#_validation_rules">13.1</a>), then at
+this is not detected during job validation (see section <a href="#validation-rules">13.1</a>), then at
 runtime the job execution will end at this point with batch status of
 FAILED.</p>
 </li>
@@ -4224,13 +4221,13 @@ of this child of a flow, then the flow ends.</p>
 </div>
 <div class="paragraph">
 <p>Another way of stating rules #2 and #3 in this section would be to say
-that all the rules in section <a href="#_transitioning_precedence_rules">8.9.2</a> apply to transitions within flows
+that all the rules in section <a href="#transitioning-precedence-rules">8.9.2</a> apply to transitions within flows
 (i.e. among children of flows) and are effective at the job level,
-except for rule #3 in section <a href="#_transitioning_precedence_rules">8.9.2</a> (this case does not necessarily end
+except for rule #3 in section <a href="#transitioning-precedence-rules">8.9.2</a> (this case does not necessarily end
 the job).</p>
 </div>
 <div class="paragraph">
-<p>See the example at the end of section <a href="#_flow_level_transitions">8.9.5</a> for further clarification.</p>
+<p>See the example at the end of section <a href="#flow-level-transitions-undefined">8.9.5</a> for further clarification.</p>
 </div>
 </div>
 <div class="sect3">
@@ -4238,7 +4235,7 @@ the job).</p>
 <div class="paragraph">
 <p>It is recognized that the specification is incomplete with respect to
 how exactly flow transition elements are evaluated. Though the list in
-section <a href="#_partitionplan">10.8.4</a> has an assertion in rule 3.e. that suggests using the
+section <a href="#execution-sequence-on-restart-detailed-rules">10.8.4</a> has an assertion in rule 3.e. that suggests using the
 exit status of the last contained execution element as a flow-level exit
 status, this does not seem to be a complete definition. For example,
 what if the last execution element within the flow is a split</p>
@@ -4285,15 +4282,15 @@ points:</p>
 <ul>
 <li>
 <p>that a child of a flow can only transition to another child of
-the same flow (Item 1. in section <a href="#_transitioning_from_within_flows">8.9.4</a>)</p>
+the same flow (Item 1. in section <a href="#transitioning-from-within-flows">8.9.4</a>)</p>
 </li>
 <li>
 <p>that a terminating transition terminates the job, not just the
-flow somehow (Item 2. in section <a href="#_transitioning_from_within_flows">8.9.4</a>)</p>
+flow somehow (Item 2. in section <a href="#transitioning-from-within-flows">8.9.4</a>)</p>
 </li>
 <li>
 <p>that a transition element which is a direct child of the flow
-itself is currently UNDEFINED (section <a href="#_flow_level_transitions">8.9.5</a>)</p>
+itself is currently UNDEFINED (section <a href="#flow-level-transitions-undefined">8.9.5</a>)</p>
 </li>
 </ul>
 </div>
@@ -4374,7 +4371,7 @@ artifact:</p>
    * It returns null to in dicate no more items, which
    * also means the current chunk will be committed and
    * the step will end.
-   * *@return* next item or null
+   * @return next item or null
    * @throws Exception is thrown for any errors.
    */</span>
   <span class="directive">public</span> <span class="predefined-type">Object</span> readItem() <span class="directive">throws</span> <span class="exception">Exception</span>;
@@ -4383,7 +4380,7 @@ artifact:</p>
    * The checkpointInfo method returns the current
    * checkpoint data for this reader. It is
    * called before a chunk checkpoint is committed.
-   * *@return* checkpoint data
+   * @return checkpoint data
    * @throws Exception is thrown for any errors.
    */</span>
   <span class="directive">public</span> <span class="predefined-type">Serializable</span> checkpointInfo() <span class="directive">throws</span> <span class="exception">Exception</span>;
@@ -4448,7 +4445,7 @@ batch artifact:</p>
     * to be processed. This effectively enables processItem
     * to filter out unwanted input items.
     * @param item specifies the input item to process.
-    * *@return* output item to write.
+    * @return output item to write.
     * @throws Exception thrown for any errors.
     */</span>
     <span class="directive">public</span> <span class="predefined-type">Object</span> processItem(<span class="predefined-type">Object</span> item) <span class="directive">throws</span> <span class="exception">Exception</span>;
@@ -4517,7 +4514,7 @@ artifact:</p>
     * The checkpointInfo method returns the current
     * checkpoint data for this writer. It is
     * called before a chunk checkpoint is committed.
-    * *@return* checkpoint data
+    * @return checkpoint data
     * @throws Exception is thrown for any errors.
     */</span>
     <span class="directive">public</span> <span class="predefined-type">Serializable</span> checkpointInfo() <span class="directive">throws</span> <span class="exception">Exception</span>;
@@ -4572,7 +4569,7 @@ artifact:</p>
     * checkpoints.
     * The default implementation returns null.
     *
-    * *@return* checkpoint data
+    * @return checkpoint data
     * @throws Exception (or subclass) if an error occurs.
     */</span>
     <span class="annotation">@Override</span>
@@ -4631,7 +4628,7 @@ CheckpointAlgorithm batch artifact:</p>
     * the batch runtime after each item is processed
     * to determine if now is the time to checkpoint
     * the current chunk.
-    * *@return* boolean indicating whether or not
+    * @return boolean indicating whether or not
     * to checkpoint now.
     * @throws Exception thrown for any errors.
     */</span>
@@ -4687,7 +4684,7 @@ CheckpointAlgorithm {
     * Implement logic in this method
     * to decide if a checkpoint should be taken now.
     *
-    * *@return* boolean indicating whether or not
+    * @return boolean indicating whether or not
     * to checkpoint now.
     * @throws Exception (or subclass) if an error occurs.
     */</span>
@@ -4744,7 +4741,7 @@ artifact:</p>
     * throws an exception, the batchlet
     * step ends with a batch status of
     * FAILED.
-    * *@return* exit status string
+    * @return exit status string
     * @throws Exception if an error occurs.
     */</span>
     <span class="directive">public</span> <span class="predefined-type">String</span> process() <span class="directive">throws</span> <span class="exception">Exception</span>;
@@ -4774,7 +4771,7 @@ artifact:</p>
     * Implement process logic for the Batchlet in this
     * method.
     *
-    * *@return* exit status string
+    * @return exit status string
     * @throws Exception (or subclass) if an error occurs.
     */</span>
     <span class="annotation">@Override</span>
@@ -4801,7 +4798,7 @@ artifact:</p>
 </td>
 <td class="content">
 A well designed batchlet stops gracefully when the JobOperator.stop operation is invoked.
-See section <a href="#_stop_processing">11.13</a> for further information about stop processing.
+See section <a href="#stop-processing">11.13</a> for further information about stop processing.
 </td>
 </tr>
 </table>
@@ -5458,9 +5455,9 @@ initiated. Batch properties are string values.</p>
 </div>
 <div class="paragraph">
 <p>Note batch properties are visible only in the scope in which they are
-defined (see Section <a href="#_scope_of_property_definitions_for_batchproperty">9.3.2</a>). However batch properties values can be
+defined (see Section <a href="#scope-of-property-definitions-for-batchproperty-injection">9.3.2</a>). However batch properties values can be
 formed from other properties according to Job XML Substitution Rules.
-See section <a href="#_job_xml_substitution">8.8</a> for further information on substitution.</p>
+See section <a href="#job-xml-substitution">8.8</a> for further information on substitution.</p>
 </div>
 <div class="sect3">
 <h4 id="batchproperty"><a class="anchor" href="#batchproperty"></a>9.3.1. @BatchProperty</h4>
@@ -5552,7 +5549,7 @@ corresponding property element with a matching name is specified in the
 JSL in the scope that applies to the batch artifact in question. If the
 JSL property value resolves to the empty string (either explicitly set
 to the empty string literal or resolving to an empty string via property
-substitution – see section <a href="#_job_xml_substitution">8.8</a>), no assignment is made and the resulting
+substitution, as described in section <a href="#job-xml-substitution">8.8</a>), no assignment is made and the resulting
 value is undefined by the batch specification. The resulting value might
 simply be the Java default value, however using various dependency
 injection technologies may produce different results. The resultant
@@ -5607,7 +5604,7 @@ step properties are themselves injectable into that artifact via
 @BatchProperty. This is the case even though these job and step
 properties are available for resolving the artifact-level property
 definitions via the jobProperties substitution mechanism (see section
-8.8.1.2) .</p>
+ <a href="#jobproperties-substitution-operator">8.8.1.2</a>) .</p>
 </div>
 <div class="paragraph">
 <p>The following example should make this more clear:</p>
@@ -5680,8 +5677,8 @@ StepContext, whether or not the execution environment includes an implementation
 Jakarta Dependency Injection.  The batch contexts must always be
 injected, and depending on the specific dependency injection technology
 used, other injections may or may not also be supported.
- See section 10.9.1 for definition of JobContext class. See section
-10.9.2 for definition of StepContext class.</p>
+ See section <a href="#jobcontext">10.9.1</a> for definition of JobContext class. See section
+<a href="#stepcontext">10.9.2</a> for definition of StepContext class.</p>
 </div>
 <div class="sect4">
 <h5 id="batch-context-lifecycle-and-scope"><a class="anchor" href="#batch-context-lifecycle-and-scope"></a>9.4.1.1. Batch Context Lifecycle and Scope</h5>
@@ -5793,7 +5790,7 @@ to implement a PartitionMapper batch artifact:</p>
     * start of partitioned step processing. The method
     * returns a PartitionPlan, which specifies the batch properties
     * for each partition.
-    * *@return* partition plan for a partitioned step.
+    * @return partition plan for a partitioned step.
     * @throws Exception is thrown if an error occurs.
     */</span>
     <span class="directive">public</span> PartitionPlan mapPartitions( ) <span class="directive">throws</span> <span class="exception">Exception</span>;
@@ -5801,13 +5798,13 @@ to implement a PartitionMapper batch artifact:</p>
 </div>
 </div>
 <div class="paragraph">
-<p>See section 10.9.4 for details on the PartitionPlan result value type.</p>
+<p>See section <a href="#partitionplan">10.9.4</a> for details on the PartitionPlan result value type.</p>
 </div>
 <div class="paragraph">
 <p>The PartitionMapper, when defined, is invoked upon every execution,
 including restarted executions. For a full discussion of the behavior on
 restart, including how to override particular details of the
-PartitionPlan built by the previous execution, see section <a href="#_batchruntime">10.8.5</a>.</p>
+PartitionPlan built by the previous execution, see section <a href="#partitionmapper-on-restart">10.8.5</a>.</p>
 </div>
 </div>
 <div class="sect3">
@@ -5831,7 +5828,7 @@ may be used to implement an PartitionReducer batch artifact:</p>
 *
 */</span>
 <span class="directive">public</span> <span class="type">interface</span> <span class="class">PartitionReducer</span> {
-    <span class="directive">public</span> *<span class="type">enum</span>* PartitionStatus {
+    <span class="directive">public</span> <span class="type">enum</span> PartitionStatus {
         COMMIT_, _ROLLBACK
     }
     <span class="comment">/**
@@ -5948,7 +5945,7 @@ PartitionReducer {
 <p>A partition collector provides a way to send data from individual
 partitions to a single point of control running on the parent thread.
 The PartitionAnalyzer is used to receive and process this data. See
-section <a href="#_partitionanalyzer_interface">9.5.4</a> for further information about the PartitionAnalyzer. The
+section <a href="#partitionanalyzer-interface">9.5.4</a> for further information about the PartitionAnalyzer. The
 PartitionCollector interface may be used to implement an
 PartitionCollector batch artifact:</p>
 </div>
@@ -5983,7 +5980,7 @@ PartitionCollector batch artifact:</p>
     * Note the collector is not called if the partition
     * terminates due to an unhandled exception.
     * &lt;p&gt;
-    * *@return* an Serializable object to pass to the
+    * @return an Serializable object to pass to the
     * PartitionAnalyzer.
     * @throws Exception is thrown if an error occurs.
     */</span>
@@ -6139,7 +6136,7 @@ implement an Decider batch artifact:</p>
     * &lt;/ul&gt;
     * @param executions specifies the StepExecution(s) of the preceding
     * element.
-    * *@return* updated job exit status
+    * @return updated job exit status
     * @throws Exception is thrown if an error occurs.
     */</span>
     <span class="directive">public</span> <span class="predefined-type">String</span> decide(StepExecution<span class="type">[]</span> executions) <span class="directive">throws</span> <span class="exception">Exception</span>;
@@ -6150,15 +6147,28 @@ implement an Decider batch artifact:</p>
 <div class="sect2">
 <h3 id="transactionality"><a class="anchor" href="#transactionality"></a>9.7. Transactionality</h3>
 <div class="paragraph">
-<p>Chunk type check points are transactional. The batch runtime uses global
-transaction mode on the Jakarta EE platform and local transaction mode on
-the Java SE platform. Global transaction timeout is configurable at
-step-level with a step-level property:</p>
+<p>Chunk type check points are transactional.  When running on a
+Jakarta EE platform, the batch runtime uses global transactions.
+In a Java SE or other environment, the batch runtime may use global
+transactions if available, otherwise the transactional behavior
+is undefined.</p>
 </div>
 <div class="paragraph">
-<p>'jakarta.transaction.global.timeout={seconds} - default is 180
-seconds'</p>
+<p>Global transaction timeout is configurable at
+step-level with a step-level property:</p>
 </div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">jakarta.transaction.global.timeout</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">(seconds) - default is 180 (seconds)</p></td>
+</tr>
+</tbody>
+</table>
 <div class="paragraph">
 <p>Example:</p>
 </div>
@@ -6222,7 +6232,7 @@ Applications that do so risk undefined behavior.</p>
 </div>
 <div class="paragraph">
 <p>These metrics are available through the StepExecution runtime object.
-See section 10.9.10 for further information on StepExecution.</p>
+See section <a href="#stepexecution-2">10.9.10</a> for further information on StepExecution.</p>
 </div>
 </div>
 <div class="sect2">
@@ -6261,7 +6271,7 @@ particular step within a job execution.</p></td>
 </table>
 <div class="paragraph">
 <p>Note instanceId, executionId, and stepExecutionId are all globally
-unique values within a job repository. See section <a href="#_job_repository">7.4</a> for explanation
+unique values within a job repository. See section <a href="#job-repository">7.4</a> for explanation
 of job repository.</p>
 </div>
 </div>
@@ -6269,7 +6279,7 @@ of job repository.</p>
 <h3 id="joboperator-2"><a class="anchor" href="#joboperator-2"></a>10.4. JobOperator</h3>
 <div class="paragraph">
 <p>The JobOperator interface provides a set of operations to start, stop,
-restart, and inspect jobs. See 10.9.6 for detailed description of this
+restart, and inspect jobs.  See <a href="#joboperator-3">10.9.7</a> for detailed description of this
 interface. The JobOperator interface is accessible via a factory
 pattern:</p>
 </div>
@@ -6279,7 +6289,7 @@ pattern:</p>
 </div>
 </div>
 <div class="paragraph">
-<p>See section 10.9.5 for details on the BatchRuntime class.</p>
+<p>See section <a href="#batchruntime">10.9.5</a> for details on the BatchRuntime class.</p>
 </div>
 </div>
 <div class="sect2">
@@ -6293,7 +6303,7 @@ following loaders in the order specified:</p>
 <li>
 <p>Implementation-specific loader<br></p>
 <div class="paragraph">
-<p>The batch runtime implementation _may_provide an
+<p>The batch runtime implementation <em>may</em> provide an
 implementation-specific means by which batch artifacts references in a Job XML (i.e. via the 'ref=' attribute) are resolved to an implementation class and instantiated. When the batch runtime resolves a batch artifact reference to an instance the implementation-specific mechanism (if one exists) is attempted first. The loader must return an
 instance or null.<br></p>
 </div>
@@ -6315,7 +6325,7 @@ an instance or null.<br></p>
 <p>The <code>batch.xml</code> file is packaged by the developer with the application under the &#8216;META-INF&#8217; directory (&#8216;WEB-INF/classes/META-INF&#8217; for .war files).<br></p>
 </div>
 <div class="paragraph">
-<p>See <a href="#_job_parameters_on_restart">10.7.1</a> for more about the <code>batch.xml</code> file.</p>
+<p>See <a href="#meta-infbatch-xml">10.7.1</a> for more about the <code>batch.xml</code> file.</p>
 </div>
 </li>
 <li>
@@ -6331,7 +6341,7 @@ an instance or null.<br></p>
 <h3 id="job-xml-loading"><a class="anchor" href="#job-xml-loading"></a>10.6. Job XML Loading</h3>
 <div class="paragraph">
 <p>Job XML is specified by name on the JobOperator.start command (see
-10.9.6) to start a job.</p>
+ <a href="#joboperator-3">10.9.7</a>) to start a job.</p>
 </div>
 <div class="paragraph">
 <p>All Job XML references are loadable by the following loaders in the
@@ -6342,7 +6352,7 @@ order specified:</p>
 <li>
 <p>implementation-specific loader<br></p>
 <div class="paragraph">
-<p>The batch runtime implementation _must_provide an implementation-specific means by which Job XML references are resolved to a Job XML document.<br></p>
+<p>The batch runtime implementation <em>must</em> provide an implementation-specific means by which Job XML references are resolved to a Job XML document.<br></p>
 </div>
 <div class="paragraph">
 <p>The purpose of an implementation-specific loader is to enable Job XMLloading from outside of the application archive, such as from a repository, file system, remote cache, or elsewhere.</p>
@@ -6358,7 +6368,7 @@ from the <code>META-INF/batch-jobs</code> directory.<br></p>
 <p>Job XML documents may be packaged by the developer with the application under the &#8216;META-INF/batch-jobs&#8217; directory ('`WEB-INF/classes/META-INF`/batch-jobs' for .war files).<br></p>
 </div>
 <div class="paragraph">
-<p>See <a href="#_job_xml_substitution_during_restart">10.7.2</a> for more about the <code>META-INF/batch-jobs</code>.</p>
+<p>See <a href="#meta-infbatch-jobs">10.7.2</a> for more about the <code>META-INF/batch-jobs</code>.</p>
 </div>
 </li>
 </ol>
@@ -6378,7 +6388,7 @@ method).</p>
 <div class="sect3">
 <h4 id="meta-infbatch-xml"><a class="anchor" href="#meta-infbatch-xml"></a>10.7.1. <code>META-INF/batch.xml</code></h4>
 <div class="paragraph">
-<p>A batch application may use the archive loader (see section <a href="#_job_xml_loading">10.5</a>) to
+<p>A batch application may use the archive loader (see section <a href="#batch-artifact-loading">10.5</a>) to
 load batch artifacts. The application can direct artifact loading by
 supplying an optional <code>batch.xml</code> file. The <code>batch.xml</code> file must be stored
 under the <code>META-INF</code> directory. For .jar files it is the standard <code>META-INF</code>
@@ -6421,7 +6431,7 @@ batch artifact implementation.</p></td>
 <ol class="arabic">
 <li>
 <p>If an implementation-specific loader is used (see
-<a href="#_job_xml_loading">10.5</a>) any artifact it loads takes precedence over artifacts specified in <code>batch.xml</code>.</p>
+<a href="#batch-artifact-loading">10.5</a>) any artifact it loads takes precedence over artifacts specified in <code>batch.xml</code>.</p>
 </li>
 <li>
 <p>Use of <code>batch.xml</code> to load batch artifacts requires the
@@ -6435,7 +6445,7 @@ constructor ).</p>
 <div class="sect3">
 <h4 id="meta-infbatch-jobs"><a class="anchor" href="#meta-infbatch-jobs"></a>10.7.2. <code>META-INF/batch-jobs</code></h4>
 <div class="paragraph">
-<p>A batch application may use the archive loader (see section <a href="#_application_packaging_model">10.6</a>) to
+<p>A batch application may use the archive loader (see section <a href="#job-xml-loading">10.6</a>) to
 load Job XML documents. The application does this by storing the Job XML
 documents under the <code>META-INF/batch-jobs</code> directory. For .jar files the
 batch-jobs directory goes under the standard <code>META-INF</code> directory. For
@@ -6464,7 +6474,7 @@ specified on the JobOperator.start command.</p></td>
 </tbody>
 </table>
 <div class="paragraph">
-<p>Note if an implementation-specific loader (see <a href="#_application_packaging_model">10.6</a>) loads a Job XML
+<p>Note if an implementation-specific loader (see <a href="#job-xml-loading">10.6</a>) loads a Job XML
 document that document takes precedence over documents stored under
 <code>META-INF/batch-jobs</code>.</p>
 </div>
@@ -6497,11 +6507,11 @@ exclusively on the job parameters specified on that restart.</p>
 <div class="sect3">
 <h4 id="job-xml-substitution-during-restart"><a class="anchor" href="#job-xml-substitution-during-restart"></a>10.8.2. Job XML Substitution during Restart</h4>
 <div class="paragraph">
-<p>See section 8.8.1.8 Job Restart Rule.</p>
+<p>See section <a href="#job-restart-rule">8.8.1.8</a> Job Restart Rule.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="execution-sequence-on-restart-overview"><a class="anchor" href="#execution-sequence-on-restart-overview"></a>10.8.3. Execution Sequence on Restart – Overview</h4>
+<h4 id="execution-sequence-on-restart-overview"><a class="anchor" href="#execution-sequence-on-restart-overview"></a>10.8.3. Execution Sequence on Restart - Overview</h4>
 <div class="paragraph">
 <p>On the initial execution of a JobInstance, the sequence of execution is
 essentially:</p>
@@ -6577,7 +6587,7 @@ provided below.</p>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>Job XML Substitution is performed (see section <a href="#_job_xml_substitution">8.8</a>).</p>
+<p>Job XML Substitution is performed (see section <a href="#job-xml-substitution">8.8</a>).</p>
 </li>
 <li>
 <p>Start by setting the current position to the restart position. The restart position is either:</p>
@@ -6589,7 +6599,7 @@ attribute if that is how the previous execution ended; else</p>
 </li>
 <li>
 <p>the initial execution element determined the same as upon initial
-job start, as described in section <a href="#_step_sequence">8.2.5</a> Step Sequence;</p>
+job start, as described in section <a href="#step-sequence">8.2.5</a> Step Sequence;</p>
 </li>
 </ol>
 </div>
@@ -6617,11 +6627,11 @@ exit status from the new step execution.+</p>
 <div class="paragraph">
 <p>Note if the step is a partitioned step, only the partitions that did not
 complete previously are restarted. This behavior may be overridden via a
-PartitionMapper (see section <a href="#_batchruntime">10.8.5</a>).  Note
+PartitionMapper (see section <a href="#partitionmapper-on-restart">10.8.5</a>).  Note
 for a partitioned step, the checkpoints and persistent user data are
 loaded from the persistent store on a per-partition basis (this is not a
 new rule, but a fact implied by the discussion of checkpoints in section
-<a href="#_step_partitioning">8.2.6</a> and the Step Context in section 9.4.1.1, which is summarized here
+<a href="#step-partitioning">8.2.6</a> and the Step Context in section 9.4.1.1, which is summarized here
 for convenience).</p>
 </div>
 </li>
@@ -6640,7 +6650,7 @@ StepExecution(s) in the same array.</p>
 execution element in the flow and perform step 3 with this as the
 current element. When restart processing of the flow has completed, then
 follow the same rules which apply during the original execution (see
-section <a href="#_transitioning_rules">8.9</a>) to transition at the flow level to the next execution
+section <a href="#transitioning-rules">8.9</a>) to transition at the flow level to the next execution
 element, and repeat step 3 with that element as the current element.<br></p>
 <div class="paragraph">
 <p>Note the same rules regarding transitioning within a flow during an
@@ -6704,7 +6714,7 @@ Properties[] returned by the previous PartitionPlan&#8217;s
 getPartitionProperties() is not. On a new execution of this step, it is
 the current return value of PartitionPlan#getPartitionProperties() which
 is used to populate the pool of potential 'partitionPlan' substitutions
-(see section 8.8.1.4).</p>
+(see section <a href="#partitionplan-substitution-operator">8.8.1.4</a>).</p>
 </div>
 </div>
 <div class="sect5">
@@ -6714,7 +6724,7 @@ is used to populate the pool of potential 'partitionPlan' substitutions
 each element of the Properties[] returned by
 PartitionPlan#getPartitionProperties() with a single partition, in order
 to potentially resolve 'partitionPlan' substitutions (see section
-8.8.1.4) for a single partition. During the course of execution of each
+<a href="#partitionplan-substitution-operator">8.8.1.4</a>) for a single partition. During the course of execution of each
 partition, the batch implementation will capture data such as checkpoint
 values, persistent user data, etc.</p>
 </div>
@@ -6794,13 +6804,13 @@ resolve 'partitionPlan' substitutions.</p>
 {
     <span class="comment">/**
     * Get job name
-    * *@return* value of 'id' attribute from &lt;job&gt;
+    * @return value of 'id' attribute from &lt;job&gt;
     */</span>
     <span class="directive">public</span> <span class="predefined-type">String</span> getJobName();
     <span class="comment">/**
     * The getTransientUserData method returns a transient data object
     * belonging to the current Job XML execution element.
-    * *@return* user-specified type
+    * @return user-specified type
     */</span>
     <span class="directive">public</span> <span class="predefined-type">Object</span> getTransientUserData();
     <span class="comment">/**
@@ -6812,15 +6822,15 @@ resolve 'partitionPlan' substitutions.</p>
     <span class="comment">/**
     * The getInstanceId method returns the current job's instance
     * id.
-    * *@return* job instance id
+    * @return job instance id
     */</span>
-    <span class="directive">public</span> *<span class="type">long</span>* getInstanceId();
+    <span class="directive">public</span> <span class="type">long</span> getInstanceId();
     <span class="comment">/**
     * The getExecutionId method returns the current job's current
     * execution id.
-    * *@return* job execution id
+    * @return job execution id
     */</span>
-    <span class="directive">public</span> *<span class="type">long</span>* getExecutionId();
+    <span class="directive">public</span> <span class="type">long</span> getExecutionId();
     <span class="comment">/**
     * The getProperties method returns the job level properties
     * specified in a job definition.
@@ -6839,19 +6849,19 @@ resolve 'partitionPlan' substitutions.</p>
     * implementation-defined properties.
     * &lt;/ul&gt;
     *
-    * *@return* job level properties
+    * @return job level properties
     */</span>
     <span class="directive">public</span> <span class="predefined-type">Properties</span> getProperties();
     <span class="comment">/**
     * The getBatchStatus method simply returns the batch status value * set
     by the batch runtime into the job context.
-    * *@return* batch status string
+    * @return batch status string
     */</span>
     <span class="directive">public</span> BatchStatus getBatchStatus();
     <span class="comment">/**
     * The getExitStatus method simply returns the exit status value stored
     * into the job context through the setExitStatus method or null.
-    * *@return* exit status string
+    * @return exit status string
     */</span>
     <span class="directive">public</span> <span class="predefined-type">String</span> getExitStatus();
     <span class="comment">/**
@@ -6887,14 +6897,14 @@ resolve 'partitionPlan' substitutions.</p>
 {
     <span class="comment">/**
     * Get step name
-    * *@return* value of 'id' attribute from &lt;step&gt;
+    * @return value of 'id' attribute from &lt;step&gt;
     *
     */</span>
     <span class="directive">public</span> <span class="predefined-type">String</span> getStepName();
     <span class="comment">/**
     * The getTransientUserData method returns a transient data object
     * belonging to the current Job XML execution element.
-    * *@return* user-specified type
+    * @return user-specified type
     */</span>
     <span class="directive">public</span> <span class="predefined-type">Object</span> getTransientUserData();
     <span class="comment">/**
@@ -6906,9 +6916,9 @@ resolve 'partitionPlan' substitutions.</p>
     <span class="comment">/**
     * The getStepExecutionId method returns the current step's
     * execution id.
-    * *@return* step execution id
+    * @return step execution id
     */</span>
-    <span class="directive">public</span> *<span class="type">long</span>* getStepExecutionId();
+    <span class="directive">public</span> <span class="type">long</span> getStepExecutionId();
     <span class="comment">/**
     * The getProperties method returns the step
     level properties
@@ -6927,7 +6937,7 @@ resolve 'partitionPlan' substitutions.</p>
     * runtime implementation may choose to include additional,
     * implementation-defined properties.
     * &lt;/ul&gt;
-    * *@return* step level properties
+    * @return step level properties
     */</span>
     <span class="directive">public</span> <span class="predefined-type">Properties</span> getProperties();
     <span class="comment">/**
@@ -6936,7 +6946,7 @@ resolve 'partitionPlan' substitutions.</p>
     * java.util.Serializable. This data is saved as part of a step's
     * checkpoint. For a step that does not do checkpoints, it is saved
     * after the step ends. It is available upon restart.
-    * *@return* user-specified type
+    * @return user-specified type
     */</span>
     <span class="directive">public</span> <span class="predefined-type">Serializable</span> getPersistentUserData();
     <span class="comment">/**
@@ -6952,13 +6962,13 @@ resolve 'partitionPlan' substitutions.</p>
     * The getBatchStatus method returns the current batch status of the
     * current step. This value is set by the batch runtime and changes as
     * the batch status changes.
-    * *@return* batch status string
+    * @return batch status string
     */</span>
     <span class="directive">public</span> BatchStatus getBatchStatus();
     <span class="comment">/**
     * The getExitStatus method simply returns the exit status value stored
     * into the step context through the setExitStatus method or null.
-    * *@return* exit status string
+    * @return exit status string
     */</span>
     <span class="directive">public</span> <span class="predefined-type">String</span> getExitStatus();
     <span class="comment">/**
@@ -6973,15 +6983,15 @@ resolve 'partitionPlan' substitutions.</p>
     <span class="comment">/**
     * The getException method returns the last exception thrown from a
     * step level batch artifact to the batch runtime.
-    * *@return* the last exception
+    * @return the last exception
     */</span>
     <span class="directive">public</span> <span class="exception">Exception</span> getException();
     <span class="comment">/**
     * The getMetrics method returns an array of step level metrics. These
     * are things like commits, skips, etc.
-    * *@see* jakarta.batch.runtime.metric.Metric for definition of standard
+    * @see jakarta.batch.runtime.metric.Metric for definition of standard
     * metrics.
-    * *@return* metrics array
+    * @return metrics array
     */</span>
     <span class="directive">public</span> Metric<span class="type">[]</span> getMetrics();
 }</code></pre>
@@ -7002,7 +7012,7 @@ resolve 'partitionPlan' substitutions.</p>
 */</span>
 <span class="directive">public</span> <span class="type">interface</span> <span class="class">Metric</span>
 {
-    <span class="directive">public</span> *<span class="type">enum</span>* MetricType
+    <span class="directive">public</span> <span class="type">enum</span> MetricType
     {
         READ_COUNT_, _WRITE_COUNT_,
         _COMMIT_COUNT_,
@@ -7012,14 +7022,14 @@ resolve 'partitionPlan' substitutions.</p>
     }
     <span class="comment">/**
     * The getName method returns the metric type.
-    * *@return* metric type.
+    * @return metric type.
     */</span>
     <span class="directive">public</span> MetricType getType();
     <span class="comment">/**
     * The getValue method returns the metric value.
-    * *@return* metric value.
+    * @return metric value.
     */</span>
-    <span class="directive">public</span> *<span class="type">long</span>* getValue();
+    <span class="directive">public</span> <span class="type">long</span> getValue();
 }</code></pre>
 </div>
 </div>
@@ -7033,7 +7043,7 @@ resolve 'partitionPlan' substitutions.</p>
 <span class="comment">/**
 *
 * PartitionPlan is a helper class that carries partition processing
-* information set by the *@PartitionMapper* method.
+* information set by the @PartitionMapper method.
 *
 * A PartitionPlan contains:
 * &lt;ol&gt;
@@ -7078,7 +7088,7 @@ resolve 'partitionPlan' substitutions.</p>
     <span class="directive">public</span> <span class="type">void</span> setPartitionsOverride(<span class="type">boolean</span> override);
     <span class="comment">/**
     * Return current value of partition override setting.
-    * *@return* override setting.
+    * @return override setting.
     */</span>
     <span class="directive">public</span> <span class="type">boolean</span> getPartitionsOverride();
     <span class="comment">/**
@@ -7102,7 +7112,7 @@ resolve 'partitionPlan' substitutions.</p>
     <span class="directive">public</span> <span class="type">void</span> setPartitionProperties(<span class="predefined-type">Properties</span><span class="type">[]</span> props);
     <span class="comment">/**
     * Gets count of Partitions.
-    * *@return* Partition count
+    * @return Partition count
     */</span>
     <span class="directive">public</span> <span class="type">int</span> getPartitions();
     <span class="comment">/**
@@ -7114,7 +7124,7 @@ resolve 'partitionPlan' substitutions.</p>
     it may not have this many
     * available, and may use less.
     *
-    * *@return* requested thread count
+    * @return requested thread count
     */</span>
     <span class="directive">public</span> <span class="type">int</span> getThreads();
     <span class="comment">/**
@@ -7135,7 +7145,7 @@ resolve 'partitionPlan' substitutions.</p>
     * substitution potentially resolving to the corresponding
     * value for each partition.
     *
-    * *@return* Partition Properties object array
+    * @return Partition Properties object array
     */</span>
     <span class="directive">public</span> <span class="predefined-type">Properties</span><span class="type">[]</span>
     getPartitionProperties();
@@ -7225,12 +7235,9 @@ resolve 'partitionPlan' substitutions.</p>
     <span class="comment">/**
     * The getJobOperator factory method returns
     * an instance of the JobOperator interface.
-    * *@return* JobOperator instance.
+    * @return JobOperator instance.
     */</span>
-    <span class="directive">public</span> *<span class="directive">static</span>* JobOperator getJobOperator()
-    {
-        <span class="keyword">return</span> <span class="predefined-constant">null</span>;
-    }
+    <span class="directive">public</span> <span class="directive">static</span> JobOperator getJobOperator() { ... }
 }</code></pre>
 </div>
 </div>
@@ -7284,7 +7291,7 @@ resolve 'partitionPlan' substitutions.</p>
     <span class="comment">/**
     * Returns a set of all job names known to the batch runtime.
     *
-    * *@return* a set of job names.
+    * @return a set of job names.
     * @throws JobSecurityException
     */</span>
     <span class="directive">public</span> <span class="predefined-type">Set</span>&lt;<span class="predefined-type">String</span>&gt; getJobNames() <span class="directive">throws</span> JobSecurityException;
@@ -7293,7 +7300,7 @@ resolve 'partitionPlan' substitutions.</p>
     *
     * @param jobName
     * specifies the name of the job.
-    * *@return* count of instances of the named job.
+    * @return count of instances of the named job.
     * @throws NoSuchJobException
     * @throws JobSecurityException
     */</span>
@@ -7313,7 +7320,7 @@ resolve 'partitionPlan' substitutions.</p>
     * @param count
     * specifies the number of job instances to return from the
     * starting position of the maximal list of job instances.
-    * *@return* list of JobInstances.
+    * @return list of JobInstances.
     * @throws NoSuchJobException
     * @throws JobSecurityException
     */</span>
@@ -7325,7 +7332,7 @@ resolve 'partitionPlan' substitutions.</p>
     *
     * @param jobName
     * specifies the job name.
-    * *@return* a list of execution ids.
+    * @return a list of execution ids.
     * @throws NoSuchJobException
     * @throws JobSecurityException
     */</span>
@@ -7339,12 +7346,12 @@ resolve 'partitionPlan' substitutions.</p>
     * @param executionId
     * specifies the execution from which to retrieve the
     * parameters.
-    * *@return* a Properties object containing the key/value job parameter
+    * @return a Properties object containing the key/value job parameter
     * pairs.
     * @throws NoSuchJobExecutionException
     * @throws JobSecurityException
     */</span>
-    <span class="directive">public</span> <span class="predefined-type">Properties</span> getParameters(*<span class="type">long</span>* executionId)
+    <span class="directive">public</span> <span class="predefined-type">Properties</span> getParameters(<span class="type">long</span> executionId)
     <span class="directive">throws</span> NoSuchJobExecutionException, JobSecurityException;
     <span class="comment">/**
     * Creates a new job instance and starts the first execution of that
@@ -7364,11 +7371,11 @@ resolve 'partitionPlan' substitutions.</p>
     * @param jobParameters
     * specifies the keyword/value pairs for attribute
     * substitution in the Job XML.
-    * *@return* executionId for the job execution.
+    * @return executionId for the job execution.
     * @throws JobStartException
     * @throws JobSecurityException
     */</span>
-    <span class="directive">public</span> *<span class="type">long</span>* start(<span class="predefined-type">String</span> jobXMLName, <span class="predefined-type">Properties</span> jobParameters)
+    <span class="directive">public</span> <span class="type">long</span> start(<span class="predefined-type">String</span> jobXMLName, <span class="predefined-type">Properties</span> jobParameters)
     <span class="directive">throws</span>
     JobStartException, JobSecurityException;
     <span class="comment">/**
@@ -7381,14 +7388,14 @@ resolve 'partitionPlan' substitutions.</p>
     * @param restartParameters
     * specifies the keyword/value pairs for attribute
     * substitution in the Job XML.
-    * *@return* new executionId
+    * @return new executionId
     * @throws JobExecutionAlreadyCompleteException
     * @throws NoSuchJobExecutionException
     * @throws JobExecutionNotMostRecentException,
     * @throws JobRestartException
     * @throws JobSecurityException
     */</span>
-    <span class="directive">public</span> *<span class="type">long</span>* restart(*<span class="type">long</span>* executionId, <span class="predefined-type">Properties</span>
+    <span class="directive">public</span> <span class="type">long</span> restart(<span class="type">long</span> executionId, <span class="predefined-type">Properties</span>
     restartParameters)
     <span class="directive">throws</span> JobExecutionAlreadyCompleteException,
     NoSuchJobExecutionException,
@@ -7415,7 +7422,7 @@ resolve 'partitionPlan' substitutions.</p>
     * @throws JobExecutionNotRunningException
     * @throws JobSecurityException
     */</span>
-    <span class="directive">public</span> <span class="type">void</span> stop(*<span class="type">long</span>* executionId) <span class="directive">throws</span>
+    <span class="directive">public</span> <span class="type">void</span> stop(<span class="type">long</span> executionId) <span class="directive">throws</span>
     NoSuchJobExecutionException,
     JobExecutionNotRunningException, JobSecurityException;
     <span class="comment">/**
@@ -7430,7 +7437,7 @@ resolve 'partitionPlan' substitutions.</p>
     * @throws JobExecutionIsRunningException
     * @throws JobSecurityException
     */</span>
-    <span class="directive">public</span> <span class="type">void</span> abandon(*<span class="type">long</span>* executionId) <span class="directive">throws</span>
+    <span class="directive">public</span> <span class="type">void</span> abandon(<span class="type">long</span> executionId) <span class="directive">throws</span>
     NoSuchJobExecutionException,
     JobExecutionIsRunningException, JobSecurityException;
     <span class="comment">/**
@@ -7438,18 +7445,18 @@ resolve 'partitionPlan' substitutions.</p>
     *
     * @param executionId
     * specifies the job execution.
-    * *@return* job instance
+    * @return job instance
     * @throws NoSuchJobExecutionException
     * @throws JobSecurityException
     */</span>
-    <span class="directive">public</span> JobInstance getJobInstance(*<span class="type">long</span>* executionId) <span class="directive">throws</span>
+    <span class="directive">public</span> JobInstance getJobInstance(<span class="type">long</span> executionId) <span class="directive">throws</span>
     NoSuchJobExecutionException, JobSecurityException;
     <span class="comment">/**
     * Return all job executions belonging to the specified job instance.
     *
     * @param jobInstance
     * specifies the job instance.
-    * *@return* list of job executions
+    * @return list of job executions
     * @throws NoSuchJobInstanceException
     * @throws JobSecurityException
     */</span>
@@ -7461,22 +7468,22 @@ resolve 'partitionPlan' substitutions.</p>
     *
     * @param executionId
     * specifies the job execution.
-    * *@return* job execution
+    * @return job execution
     * @throws NoSuchJobExecutionException
     * @throws JobSecurityException
     */</span>
-    <span class="directive">public</span> JobExecution getJobExecution(*<span class="type">long</span>* executionId) <span class="directive">throws</span>
+    <span class="directive">public</span> JobExecution getJobExecution(<span class="type">long</span> executionId) <span class="directive">throws</span>
     NoSuchJobExecutionException, JobSecurityException;
     <span class="comment">/**
     * Return StepExecutions for specified execution id.
     *
     * @param executionId
     * specifies the job execution.
-    * *@return* step executions (order not guaranteed)
+    * @return step executions (order not guaranteed)
     * @throws NoSuchJobExecutionException
     * @throws JobSecurityException
     */</span>
-    <span class="directive">public</span> <span class="predefined-type">List</span>&lt;StepExecution&gt; getStepExecutions(*<span class="type">long</span>* jobExecutionId)
+    <span class="directive">public</span> <span class="predefined-type">List</span>&lt;StepExecution&gt; getStepExecutions(<span class="type">long</span> jobExecutionId)
     <span class="directive">throws</span> NoSuchJobExecutionException, JobSecurityException;
 }</code></pre>
 </div>
@@ -7492,12 +7499,12 @@ resolve 'partitionPlan' substitutions.</p>
 {
     <span class="comment">/**
     * Get unique id for this JobInstance.
-    * *@return* instance id
+    * @return instance id
     */</span>
-    <span class="directive">public</span> *<span class="type">long</span>* getInstanceId();
+    <span class="directive">public</span> <span class="type">long</span> getInstanceId();
     <span class="comment">/**
     * Get job name.
-    * *@return* value of 'id' attribute from &lt;job&gt;
+    * @return value of 'id' attribute from &lt;job&gt;
     */</span>
     <span class="directive">public</span> <span class="predefined-type">String</span> getJobName();
 }</code></pre>
@@ -7516,47 +7523,47 @@ resolve 'partitionPlan' substitutions.</p>
 {
     <span class="comment">/**
     * Get unique id for this JobExecution.
-    * *@return* execution id
+    * @return execution id
     */</span>
-    <span class="directive">public</span> *<span class="type">long</span>* getExecutionId();
+    <span class="directive">public</span> <span class="type">long</span> getExecutionId();
     <span class="comment">/**
     * Get job name.
-    * *@return* value of 'id' attribute from &lt;job&gt;
+    * @return value of 'id' attribute from &lt;job&gt;
     */</span>
     <span class="directive">public</span> <span class="predefined-type">String</span> getJobName();
     <span class="comment">/**
     * Get batch status of this execution.
-    * *@return* batch status value.
+    * @return batch status value.
     */</span>
     <span class="directive">public</span> BatchStatus getBatchStatus();
     <span class="comment">/**
     * Get time execution entered STARTED status.
-    * *@return* date (time)
+    * @return date (time)
     */</span>
     <span class="directive">public</span> <span class="predefined-type">Date</span> getStartTime();
     <span class="comment">/**
     * Get time execution entered end status: COMPLETED, STOPPED, FAILED
-    * *@return* date (time)
+    * @return date (time)
     */</span>
     <span class="directive">public</span> <span class="predefined-type">Date</span> getEndTime();
     <span class="comment">/**
     * Get execution exit status.
-    * *@return* exit status.
+    * @return exit status.
     */</span>
     <span class="directive">public</span> <span class="predefined-type">String</span> getExitStatus();
     <span class="comment">/**
     * Get time execution was created.
-    * *@return* date (time)
+    * @return date (time)
     */</span>
     <span class="directive">public</span> <span class="predefined-type">Date</span> getCreateTime();
     <span class="comment">/**
     * Get time execution was last updated.
-    * *@return* date (time)
+    * @return date (time)
     */</span>
     <span class="directive">public</span> <span class="predefined-type">Date</span> getLastUpdatedTime();
     <span class="comment">/**
     * Get job parameters for this execution.
-    * *@return* job parameters
+    * @return job parameters
     */</span>
     <span class="directive">public</span> <span class="predefined-type">Properties</span> getJobParameters();
 }</code></pre>
@@ -7575,32 +7582,32 @@ resolve 'partitionPlan' substitutions.</p>
 {
     <span class="comment">/**
     * Get unique id for this StepExecution.
-    * *@return* StepExecution id
+    * @return StepExecution id
     */</span>
-    <span class="directive">public</span> *<span class="type">long</span>* getStepExecutionId();
+    <span class="directive">public</span> <span class="type">long</span> getStepExecutionId();
     <span class="comment">/**
     * Get step name.
-    * *@return* value of 'id' attribute from &lt;step&gt;
+    * @return value of 'id' attribute from &lt;step&gt;
     */</span>
     <span class="directive">public</span> <span class="predefined-type">String</span> getStepName();
     <span class="comment">/**
     * Get batch status of this step execution.
-    * *@return* batch status.
+    * @return batch status.
     */</span>
     <span class="directive">public</span> BatchStatus getBatchStatus();
     <span class="comment">/**
     * Get time this step started.
-    * *@return* date (time)
+    * @return date (time)
     */</span>
     <span class="directive">public</span> <span class="predefined-type">Date</span> getStartTime();
     <span class="comment">/**
     * Get time this step ended.
-    * *@return* date (time)
+    * @return date (time)
     */</span>
     <span class="directive">public</span> <span class="predefined-type">Date</span> getEndTime();
     <span class="comment">/**
     * Get exit status of step.
-    * *@return* exit status
+    * @return exit status
     */</span>
     <span class="directive">public</span> <span class="predefined-type">String</span> getExitStatus();
     <span class="comment">/**
@@ -7612,13 +7619,13 @@ resolve 'partitionPlan' substitutions.</p>
     * or main thread (the one the &lt;code&gt;PartitionAnalyzer&lt;/code&gt;, etc.
     * execute on). It does not return the persistent user
     * data of the partition threads.
-    * *@return* persistent data
+    * @return persistent data
     */</span>
     <span class="directive">public</span> <span class="predefined-type">Serializable</span>
     getPersistentUserData ();
     <span class="comment">/**
     * Get step metrics
-    * *@return* array of metrics
+    * @return array of metrics
     */</span>
     <span class="directive">public</span> Metric<span class="type">[]</span> getMetrics();
 }</code></pre>
@@ -8813,7 +8820,7 @@ on each thread actively processing a partition.</p>
 <span class="tag">&lt;xs:schema</span> <span class="attribute-name">xmlns:xs</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">http://www.w3.org/2001/XMLSchema</span><span class="delimiter">&quot;</span></span>
     <span class="attribute-name">elementFormDefault</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">qualified</span><span class="delimiter">&quot;</span></span>
     <span class="attribute-name">targetNamespace</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">https://jakarta.ee/xml/ns/jakartaee</span><span class="delimiter">&quot;</span></span>
-    <span class="attribute-name">xmlns:jbatch</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">https://jakarta.ee/xml/ns/jakartaee</span><span class="delimiter">&quot;</span></span> <span class="attribute-name">version</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">1.0</span><span class="delimiter">&quot;</span></span><span class="tag">&gt;</span>
+    <span class="attribute-name">xmlns:jbatch</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">https://jakarta.ee/xml/ns/jakartaee</span><span class="delimiter">&quot;</span></span> <span class="attribute-name">version</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">2.0</span><span class="delimiter">&quot;</span></span><span class="tag">&gt;</span>
     <span class="tag">&lt;xs:element</span> <span class="attribute-name">name</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">batch-artifacts</span><span class="delimiter">&quot;</span></span>
         <span class="attribute-name">type</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">jbatch:BatchArtifacts</span><span class="delimiter">&quot;</span></span> <span class="tag">/&gt;</span>
     <span class="tag">&lt;xs:complexType</span> <span class="attribute-name">name</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">BatchArtifacts</span><span class="delimiter">&quot;</span></span><span class="tag">&gt;</span>
@@ -8889,7 +8896,7 @@ exist)</p>
 <span class="tag">&lt;xs:schema</span> <span class="attribute-name">xmlns:xs</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">http://www.w3.org/2001/XMLSchema</span><span class="delimiter">&quot;</span></span>
     <span class="attribute-name">elementFormDefault</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">qualified</span><span class="delimiter">&quot;</span></span>
     <span class="attribute-name">targetNamespace</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">https://jakarta.ee/xml/ns/jakartaee</span><span class="delimiter">&quot;</span></span>
-    <span class="attribute-name">xmlns:jsl</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">https://jakarta.ee/xml/ns/jakartaee</span><span class="delimiter">&quot;</span></span> <span class="attribute-name">version</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">1.0</span><span class="delimiter">&quot;</span></span><span class="tag">&gt;</span>
+    <span class="attribute-name">xmlns:jsl</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">https://jakarta.ee/xml/ns/jakartaee</span><span class="delimiter">&quot;</span></span> <span class="attribute-name">version</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">2.0</span><span class="delimiter">&quot;</span></span><span class="tag">&gt;</span>
     <span class="tag">&lt;xs:annotation&gt;</span>
         <span class="tag">&lt;xs:documentation&gt;</span>
             Job Specification Language (JSL) specifies a job,
@@ -8897,6 +8904,27 @@ exist)</p>
             JSL also can be referred to as &quot;Job XML&quot;.
         <span class="tag">&lt;/xs:documentation&gt;</span>
     <span class="tag">&lt;/xs:annotation&gt;</span>
+
+    <span class="tag">&lt;xs:simpleType</span> <span class="attribute-name">name</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">batchVersionType</span><span class="delimiter">&quot;</span></span><span class="tag">&gt;</span>
+      <span class="tag">&lt;xs:annotation&gt;</span>
+        <span class="tag">&lt;xs:documentation&gt;</span>
+
+            Defines a decimal type used for versioning documents
+            defined via this scheam.  Intended to be identical
+            to the &quot;dewey-versionType&quot; dewey decimal restriction
+            type defined in
+            https://jakarta.ee/xml/ns/jakartaee/jakartaee_9.xsd
+            but without the need to include that schema definition
+            file.
+
+        <span class="tag">&lt;/xs:documentation&gt;</span>
+      <span class="tag">&lt;/xs:annotation&gt;</span>
+
+      <span class="tag">&lt;xs:restriction</span> <span class="attribute-name">base</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">xs:token</span><span class="delimiter">&quot;</span></span><span class="tag">&gt;</span>
+        <span class="tag">&lt;xs:pattern</span> <span class="attribute-name">value</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">\.?[0-9]+(\.[0-9]+)*</span><span class="delimiter">&quot;</span></span><span class="tag">/&gt;</span>
+      <span class="tag">&lt;/xs:restriction&gt;</span>
+    <span class="tag">&lt;/xs:simpleType&gt;</span>
+
     <span class="tag">&lt;xs:simpleType</span> <span class="attribute-name">name</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">artifactRef</span><span class="delimiter">&quot;</span></span><span class="tag">&gt;</span>
         <span class="tag">&lt;xs:annotation&gt;</span>
             <span class="tag">&lt;xs:documentation&gt;</span>
@@ -8947,7 +8975,7 @@ exist)</p>
             <span class="tag">&lt;/xs:choice&gt;</span>
         <span class="tag">&lt;/xs:sequence&gt;</span>
         <span class="tag">&lt;xs:attribute</span> <span class="attribute-name">name</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">version</span><span class="delimiter">&quot;</span></span> <span class="attribute-name">use</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">required</span><span class="delimiter">&quot;</span></span>
-            <span class="attribute-name">type</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">xs:string</span><span class="delimiter">&quot;</span></span> <span class="attribute-name">fixed</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">1.0</span><span class="delimiter">&quot;</span></span> <span class="tag">/&gt;</span>
+            <span class="attribute-name">type</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">jsl:batchVersionType</span><span class="delimiter">&quot;</span></span> <span class="attribute-name">fixed</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">2.0</span><span class="delimiter">&quot;</span></span> <span class="tag">/&gt;</span>
         <span class="tag">&lt;xs:attribute</span> <span class="attribute-name">name</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">id</span><span class="delimiter">&quot;</span></span> <span class="attribute-name">use</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">required</span><span class="delimiter">&quot;</span></span> <span class="attribute-name">type</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">xs:ID</span><span class="delimiter">&quot;</span></span> <span class="tag">/&gt;</span>
         <span class="tag">&lt;xs:attribute</span> <span class="attribute-name">name</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">restartable</span><span class="delimiter">&quot;</span></span> <span class="attribute-name">use</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">optional</span><span class="delimiter">&quot;</span></span>
             <span class="attribute-name">type</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">xs:string</span><span class="delimiter">&quot;</span></span> <span class="tag">/&gt;</span>
@@ -9342,12 +9370,27 @@ Reference Documentation:</p>
 <div class="sect2">
 <h3 id="version-1-0-revision-a-maintenance-release"><a class="anchor" href="#version-1-0-revision-a-maintenance-release"></a>15.1. Version 1.0 Revision A - Maintenance Release</h3>
 <div class="sect3">
-<h4 id="issues-list"><a class="anchor" href="#issues-list"></a>15.1.1. Issues List</h4>
+<h4 id="note-on-archived-issues-jakarta-batch-2-0-update"><a class="anchor" href="#note-on-archived-issues-jakarta-batch-2-0-update"></a>15.1.1. Note on archived issues - Jakarta Batch 2.0 Update</h4>
 <div class="paragraph">
-<p>Following these links will show each original issue on our official spec
-issues tracking list. In most cases the bug report contains the complete
-text of the spec delta or addition, but not in every single case.</p>
+<p>The intention here was to track the changes made in the 1.0 Revision A
+maintenance release of the JSR 352 Specification, compared to the original
+1.0 Final Release.    The original links here refer to the original JSR 352
+issues tracker, which is no longer hosted at the original site.</p>
 </div>
+<div class="paragraph">
+<p>The issues tracker, along with the archived mailing list, is archived in an
+IBM-maintained, public GitHub repository.  The relevant info can be found in the
+files at path:  <a href="https://github.com/WASdev/standards.jsr352.batch-spec/tree/master/java.net.backup" class="bare">https://github.com/WASdev/standards.jsr352.batch-spec/tree/master/java.net.backup</a> .</p>
+</div>
+<div class="paragraph">
+<p>However, we haven&#8217;t bothered to extract and re-host the issues in an easily-browsable format, though someone could.  But at this point it hasn&#8217;t seemed useful enough to prioritize.   So we mention the ids of the original "bugs" in the JSR 352 specification bugzilla originally hosted at java.net, but without working links.</p>
+</div>
+<div class="paragraph">
+<p>Please contact the Jakarta Batch mailing list with concerns.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="version-1-0-revision-a-change-history"><a class="anchor" href="#version-1-0-revision-a-change-history"></a>15.1.2. Version 1.0 Revision A - Change History</h4>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 50%;">
@@ -9355,131 +9398,100 @@ text of the spec delta or addition, but not in every single case.</p>
 </colgroup>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://java.net/bugzilla/show_bug.cgiid=5389">5389</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">In Sec. <a href="#_job_parameters_on_restart">10.7.1</a>,
-should we have said we require a "no-arg" explicit or implicit
-constructor rather than a "default constructor"</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Bug 5389</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">In Sec. <a href="#meta-infbatch-xml">10.7.1</a>, should we have said we require a "no-arg" explicit or implicit constructor rather than a "default constructor"</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://java.net/bugzilla/show_bug.cgiid=4827">4827</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">SPEC: Misspoke on
-collector role on exit status</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Bug 4827</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">SPEC: Misspoke on collector role on exit status</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://java.net/bugzilla/show_bug.cgiid=5490">5490</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Clarify
-JobContext/StepContext properties; fix TCK to not depend on writable
-Properties</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Bug 5490</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Clarify JobContext/StepContext properties; fix TCK to not depend on writable Properties</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://java.net/bugzilla/show_bug.cgiid=5431">5431</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">ItemProcessListener#onProcessError has javadoc from
-ItemProcessListener#afterProcess</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Bug 5431</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ItemProcessListener#onProcessError has javadoc from ItemProcessListener#afterProcess</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://java.net/bugzilla/show_bug.cgiid=5498">5498</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Add "mark FAILED"
-to BatchStatus state transitions</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Bug 5498</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Add "mark FAILED" to BatchStatus state transitions</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://java.net/bugzilla/show_bug.cgiid=5370">5370</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Spec is unclear
-whether JobOperator methods may/must execute synchronously or not (with
-TCK implications)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Bug 5370</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Spec is unclear whether JobOperator methods may/must execute synchronously or not (with TCK implications)</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://java.net/bugzilla/show_bug.cgiid=5583">5583</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">CheckpointAlgorithm needs to specify timeunit (seconds) and other
-javadoc fixes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Bug 5583</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">CheckpointAlgorithm needs to specify timeunit (seconds) and other javadoc fixes</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://java.net/bugzilla/show_bug.cgiid=5372">5372</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Evaluation order
-of multiple transition elements</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Bug 5372</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Evaluation order of multiple transition elements</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://java.net/bugzilla/show_bug.cgiid=5691">5691</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">"Looping" should
-be clarified</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Bug 5691</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">"Looping" should be clarified</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://java.net/bugzilla/show_bug.cgiid=5690">5690</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Flow/Split
-transitioning &amp; termination not fully defined</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Bug 5690</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Flow/Split transitioning &amp; termination not fully defined</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://java.net/bugzilla/show_bug.cgiid=5374">5374</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Details of
-exception handling (by container)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Bug 5374</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Details of exception handling (by container)</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://java.net/bugzilla/show_bug.cgiid=4830">4830</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_next_element">8.6.1</a> Transition
-Next Element</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Bug 4830</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#next-element">8.6.1</a> Transition Next Element</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://java.net/bugzilla/show_bug.cgiid=4865">4865</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">SPEC Partition
-Plan example confusing</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Bug 4865</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">SPEC Partition Plan example confusing</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://java.net/bugzilla/show_bug.cgiid=5533">5533</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">stop/end/fail
-exit-status should affect job exit status, not step (as claimed in
-spec).</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Bug 5533</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">stop/end/fail exit-status should affect job exit status, not step (as claimed in spec).</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://java.net/bugzilla/show_bug.cgiid=5780">5780</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Spec should
-clarify StepExecution values passed to Decider on a restart</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Bug 5780</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Spec should clarify StepExecution values passed to Decider on a restart</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://java.net/bugzilla/show_bug.cgiid=5373">5373</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Co-existence of
-transition elements with @next attribute PLUS behavior if no transition
-element @on is matched</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Bug 5373</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Co-existence of transition elements with @next attribute PLUS behavior if no transition element @on is matched</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://java.net/bugzilla/show_bug.cgiid=5375">5375</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Spec contradicts
-itself when talking about uninitialized exit status (TCK assumes 'null')</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Bug 5375</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Spec contradicts itself when talking about uninitialized exit status (TCK assumes 'null')</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://java.net/bugzilla/show_bug.cgiid=4866">4866</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">SPEC Partition
-Properties example has a invalid tag</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Bug 4866</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">SPEC Partition Properties example has a invalid tag</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://java.net/bugzilla/show_bug.cgiid=5746">5746</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">@Inject
-@BatchProperty should work for job level properties</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Bug 5746</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">@Inject @BatchProperty should work for job level properties</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://java.net/bugzilla/show_bug.cgiid=5911">5911</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Clarify partition
-restart processing, PartitionPlan properties, and persistent user data
-for partitioned steps.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Bug 5911</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Clarify partition restart processing, PartitionPlan properties, and persistent user data for partitioned steps.</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://java.net/bugzilla/show_bug.cgiid=5873">5873</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Clarify when
-CheckpointAlgorithm#beginCheckpoint is invoked</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Bug 5873</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Clarify when CheckpointAlgorithm#beginCheckpoint is invoked</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://java.net/bugzilla/show_bug.cgiid=5919">5919</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Spec doesn&#8217;t fully
-describe PartitionPlan override and the use of PartitionMapper</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Bug 5919</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Spec doesn&#8217;t fully describe PartitionPlan override and the use of PartitionMapper</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://java.net/bugzilla/show_bug.cgiid=5875">5875</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">When the first
-readItem() in a chunk return 'null', is this a zero-item chunk or is
-this not a new chunk after all</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Bug 5875</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">When the first readItem() in a chunk return 'null', is this a zero-item chunk or is this not a new chunk after all</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://java.net/bugzilla/show_bug.cgiid=5403">5403</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Spec unclear on
-skipping part of an Exception hierarchy</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Bug 5403</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Spec unclear on skipping part of an Exception hierarchy</p></td>
 </tr>
 </tbody>
 </table>
@@ -9491,7 +9503,7 @@ skipping part of an Exception hierarchy</p></td>
 <div id="footer">
 <div id="footer-text">
 Version 2.0<br>
-Last updated 2020-05-01 13:02:26 -0400
+Last updated 2020-08-11 18:43:36 -0400
 </div>
 </div>
 </body>
