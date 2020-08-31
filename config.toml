@@ -184,3 +184,9 @@ enableRobotsTXT = true
     url = "https://jakartaone.org/"
     parent = "Resources"
     weight = 18
+    
+[[menu.main]]
+    name = "Friends of Jakarta EE"
+    url = "/resources#friends"
+    parent = "Resources"
+    weight = 19
