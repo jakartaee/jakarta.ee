@@ -1,5 +1,5 @@
 baseurl = "https://jakarta.ee/"
-DefaultContentLanguage = "zh"
+DefaultContentLanguage = "en"
 title = "Jakarta® EE: The New Home of Cloud Native Java"
 theme = "eclipsefdn-hugo-solstice-theme"
 metaDataFormat = "yaml"
