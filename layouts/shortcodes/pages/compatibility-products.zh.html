@@ -1,0 +1,48 @@
+<div class="row">
+  <div class="col-md-16">
+  Jakarta EE 技术的成功有赖于其兼容性，以确保应用的可移植性、安全性、稳定性和弹性。兼容性的存在使得更多的技术供应商可以在企业级Java社群中利用和加强Jakarta EE 的品牌。如果有兴趣把你的产品列在此处，请遵循如下的步骤 <a href="get_listed">加入列表</a>
+  </div>
+  <div class="col-md-8"><img class="compatible-logo img img-responsive" src="/images/jakarta/jakarta-ee-compatible-logo-color.svg" title="Jakarta EE logo"></div>
+</div>
+
+<style>
+  div.product-list img { max-height: 150px; }
+  div.product-list .grid-center { display: flex; align-items: center;}
+</style>
+<ul>
+{{ range $.Site.Data.compatible_products.sets }}
+  <li><a href="#{{ .title | urlize }}">{{ .title }}</a></li>
+{{ end }}
+</ul>
+{{ range $.Site.Data.compatible_products.sets }}
+  {{ $title:=.title }}
+  <div class="product-list">
+    <h2 class="text-center heading-line" id="{{ .title | urlize }}"><span style="background-color:#fff;">{{ .title }}</span></h2>
+    <div class="row">
+      {{ range sort .items "name" "asc"}}
+        <div class="col-xs-24 col-sm-12 col-lg-6 padding-bottom-20">
+          <div class="match-height-item-by-row padding-20 flex-column">
+            <div class="center-block padding-left-30 padding-right-30 padding-bottom-10 padding-top-10 grid-center" data-mh="{{ $title | urlize }}">
+              {{ if .image }}
+              <img class="img img-responsive" src="{{ .image }}" alt="{{ .vendor }}'s {{ .name }} logo">
+              {{ else }}
+	            <div class="icon-backdrop">
+	              <div class="ratio"></div>
+	              <div class="icon-container"><i class="fa fa-download"></i></div>
+	            </div>
+              {{ end }}
+            </div>
+            <div class="flex-grow text-center flex-column">
+              <h3 class="margin-bottom-0">{{ .name }}</h3>
+              <p class="flex-grow">{{ .vendor }}</p>
+              <p class="">Version: {{ .version }}</p>
+              <p><a href="{{ .download }}" class="btn btn-primary">{{ .download_text | default "Download" }}</a></p>
+              <p><a href="{{ .compatibility }}">Proof of compatibility</a></p>
+            </div>
+          </div>
+        </div>
+      {{ end }}
+      <div class="clearfix"/>
+    </div>
+  </div>
+{{ end }}
