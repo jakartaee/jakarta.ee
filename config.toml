@@ -193,8 +193,12 @@ enableRobotsTXT = true
 	
 [languages]
   [languages.en]
-  
+	languageName = "English"
+	weight =  1   
+
   [languages.zh]
+	languageName = "简体中文"
+	weight =  2
 	title = "Jakarta® EE: 云原生Java的新家园"
 	
 	[languages.zh.params]

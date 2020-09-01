@@ -28,7 +28,7 @@ show_featured_story: true
 
   {{< grid/div class="col-sm-12" isMarkdown="false" >}}
     {{< newsroom/news
-          title="Announcements"
+          title="公告"
           titleClass="heading-line text-center"
           id="announcements_news_lists" 
           publishTarget="jakarta_ee"
@@ -38,7 +38,7 @@ show_featured_story: true
   {{</ grid/div >}}
   {{< grid/div class="col-sm-12" isMarkdown="false" >}} 
     {{< newsroom/news
-          title="Community News"
+          title="社区新闻"
           titleClass="heading-line text-center"
           id="community_news_lists" 
           publishTarget="jakarta_ee"
