@@ -195,6 +195,12 @@ enableInlineShortcodes = true
     parent = "Resources"
     weight = 19
 
+[[menu.main]]
+    name = "Jakarta EE Working Group Announcements"
+    url = "/announcements/"
+    parent = "Resources"
+    weight = 20
+
 [languages]
   [languages.en]
 	languageName = "English"
@@ -347,6 +353,4 @@ enableInlineShortcodes = true
 		name = "Jakarta EE 伙伴"
 		url = "/zh/resources#friends"
 		parent = "资源"
-		weight = 19	  
-	
-	
+		weight = 19
