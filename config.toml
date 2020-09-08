@@ -207,6 +207,12 @@ enableInlineShortcodes = true
     parent = "Resources"
     weight = 21
 
+[[menu.main]]
+    name = "Jakarta EE Working Group Announcements"
+    url = "/announcements/"
+    parent = "Resources"
+    weight = 20
+
 [languages]
   [languages.en]
 	languageName = "English"
