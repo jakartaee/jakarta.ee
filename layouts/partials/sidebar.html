@@ -1,49 +1,9 @@
 <!-- nav -->
-<aside id="main-sidebar">
-  <ul id="leftnav" class="ul-left-nav fa-ul hidden-print">
-    <li class="separator">
-      <a class="separator" href="{{ absLangURL "/" }}">{{ i18n "sidebar-title"}}</a>
-    </li>
-    <li>
-      <i class="fa fa-caret-right fa-fw"></i>
-      <a href="{{ absLangURL "/about/" }}" target="_self">{{ i18n "sidebar-about-jakartaee"}}</a>
-    </li>
-    <li>
-      <i class="fa fa-caret-right fa-fw"></i>
-      <a href="{{ absLangURL "/about/faq/" }}" target="_self">{{ i18n "sidebar-faqs"}}</a>
-    </li>
-    <li>
-      <i class="fa fa-caret-right fa-fw"></i>
-      <a href="{{ absLangURL "/membership/" }}" target="_self">{{ i18n "sidebar-become-a-member"}}</a>
-    </li>
-    <li>
-      <i class="fa fa-caret-right fa-fw"></i>
-      <a href="{{ absLangURL "/connect/" }}" target="_self">{{ i18n "sidebar-connect"}}</a>
-    </li>
-    <li>
-      <i class="fa fa-caret-right fa-fw"></i>
-      <a href="https://eclipse.org/org/workinggroups/jakarta_ee_charter.php" target="_self">{{ i18n "sidebar-working-group-charter"}}</a>
-    </li>
-     <li>
-      <i class="fa fa-caret-right fa-fw"></i>
-      <a href="https://www.eclipse.org/ee4j/direction.php" target="_self">{{ i18n "sidebar-technical-direction"}}</a>
-    </li>
-    <li>
-      <i class="fa fa-caret-right fa-fw"></i>
-      <a href="{{ absLangURL "/newsletter" }}" target="_self">{{ i18n "sidebar-newsletter-archives"}}</a>
-    </li>
-    <li>
-      <i class="fa fa-caret-right fa-fw"></i>
-      <a href="{{ absLangURL "/meeting_minutes" }}" target="_self">{{ i18n "sidebar-meeting-minutes"}}</a>
-    </li>
-    
-    <li>
-      <i class="fa fa-caret-right fa-fw"></i>
-      <a href="{{ absLangURL "/legal/trademark_guidelines/" }}" target="_self">{{ i18n "sidebar-trademark-guidelines"}}</a>
-    </li>
-    <li>
-      <i class="fa fa-caret-right fa-fw"></i>
-      <a href="{{ absLangURL "/about/jesp/" }}" target="_self">{{ i18n "sidebar-specification-process"}}</a>
-    </li>
-  </ul>
-</aside>
+{{ if eq .Section "announcements"}}
+  {{ partial "sidebars/announcements" . }}
+{{ else if eq .Section "announcements/tags" }}
+  {{ partial "sidebars/announcements" . }}
+{{ else }}
+  {{ partial "sidebars/default" . }}
+{{ end }}
+

@@ -4,7 +4,7 @@ title = "Jakarta® EE: The New Home of Cloud Native Java"
 theme = "eclipsefdn-hugo-solstice-theme"
 metaDataFormat = "yaml"
 googleAnalytics = "UA-910670-30"
-disableKinds = ["taxonomy", "taxonomyTerm"]
+#disableKinds = ["taxonomy", "taxonomyTerm"]
 themesDir = "node_modules/"
 enableRobotsTXT = true
 enableInlineShortcodes = true
@@ -39,6 +39,7 @@ enableInlineShortcodes = true
 [taxonomies]
   category = "categories"
   tag = "tags"
+  announcements_tags = "announcements/tags"
 
 [Author]
   name = "Christopher Guindon"
