@@ -26,6 +26,11 @@ releases:
       description: XML Schema for the Jakarta Batch artifacts XML file (batch.xml)
       status: Draft
 
+    - schema: beans_3_0.xsd
+      namespace: jakartaee
+      description: XML Schema for the Jakarta Contexts and Dependency Injection XML file (beans.xml)
+      status: Final
+
     - schema: jobXML_2_0.xsd
       namespace: jakartaee
       description: XML Schema for the Jakarta Batch Job Specification Language (JSL)
