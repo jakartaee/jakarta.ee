@@ -1,0 +1,20 @@
+{{ if isset .Params "authors" }}
+  {{ if ( gt ( len .Params.authors ) 0 ) }}
+    <p class="announcement-authors">
+        <span class="authors-images">
+        {{range .Params.authors}}
+          <img class="author-image" src="//github.com/{{ .gh_handle }}.png?size=90" title="{{ .name }}" />
+        {{end}}
+      </span>
+      <span class="authors-names">
+        {{range .Params.authors}}
+          {{ if isset . "tw_handle"}}
+            <a class="author-name content-link" href="//twitter.com/{{ .tw_handle }}" title="{{ .name }}">{{ .name }}</a>
+          {{ else }}
+            <a class="author-name content-link" href="//github.com/{{ .gh_handle }}" title="{{ .name }}">{{ .name }}</a>
+          {{ end }}
+        {{end}}
+      </span>
+    </p>
+  {{end}}
+{{end}}

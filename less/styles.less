@@ -310,6 +310,156 @@ a.compatibility-link, a:visited.compatibility-link {
   }
 }
 
+.announcements-list{
+  h1 {
+    font-weight: 400;
+  }
+}
+.announcement-content {
+  margin-top: 30px;
+  display: flex;
+  margin-bottom: 15px;
+  flex-direction: row;
+  .content-meta {
+    font-size: 17px;
+    line-height: 10px;
+    margin-right: 25px;
+    color: @brand-quaternary;
+    .month, .day {
+      display: block;
+      text-align: center;
+      text-transform: uppercase;
+      margin-bottom: 4px;
+      padding: 0;
+      font-weight: 600;
+    }
+    .day {
+      font-size: 55px;
+      line-height: 45px;
+    }
+  }
+  .content-inner {
+    a.content-link {
+      text-decoration: none;
+      color: @brand-quaternary;
+      &:hover {
+        color: lighten(@brand-quaternary, 5%);
+      }
+    }
+    a.author-name{
+      color: @brand-tertiary;
+    }
+    .content-title {
+      font-size: 25px;
+      margin-bottom: 20px;
+      &, a {
+        color: @brand-tertiary;
+      }
+    }
+    .content-image {
+      width: 45vw;
+      max-width: 100%;
+      margin-bottom: 20px;
+    }
+    .content-summary {
+      line-height: 1.8em;
+      color: @brand-tertiary;
+      margin-bottom: 20px;
+    }
+    .announcement-authors {
+      .authors-images {
+        .author-image {
+          height: 50px;
+          border-radius: 50%;
+          width: 50px;
+          margin-right: 15px;
+        }
+      }
+      .authors-names{
+        font-weight: bold;
+        .author-name:not(:last-child)::after {
+          content: ',';
+          display: inline-block;
+        }
+      }
+    }
+    .announcement-footer {
+      .summary-icons {
+        padding-left: 5px;
+        .fa {
+          cursor: pointer;
+          width: 15px;
+          text-align: center;
+        }
+        .fa-facebook { color: #4267B2}
+        .fa-linkedin { color: #2867B2}
+        .fa-twitter { color: #1DA1F2}
+      }
+    }
+  padding-bottom: 30px;
+  border-bottom: 1px solid lighten(@brand-tertiary, 50%);
+  }
+  margin-bottom: 15px;
+}
+
+@media (min-width: 992px) {
+.announcements-list h1 {
+  font-size: 30px;
+}
+}
+
+.sidebar-block {
+  padding-top: 40px;
+  h4 {
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-bottom: 20px;
+    position: relative;
+    font-size: 16px;
+    color: @brand-tertiary;
+    &::after {
+      width: 60px;
+      height: 1px;
+      border-bottom: 1px solid @brand-quaternary;
+      content: '';
+      display: block;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+    }
+  }
+  ul {
+    list-style: none;
+    padding-left: 0;
+    li {
+      padding: 10px 0;
+    }
+  }
+  a {
+    text-decoration: none;
+    color: @brand-tertiary;
+    &:hover {
+      color: @brand-quaternary;
+    }
+    .post-title {
+      font-weight: bold;
+    }
+    .post-date{
+      display: block;
+      color: lighten(@brand-tertiary, 20%);
+    }
+  }
+  ul.cat-list {
+    display: flex;
+    flex-wrap: wrap;
+    .cat-item a {
+      padding: 5px 10px;
+      border: 1px solid lighten(@brand-tertiary, 20%);
+      margin-right: 10px;
+    }
+  }
+}
+
 .table.compatibility-download-table {
   td, th {
     border: none;
@@ -348,5 +498,51 @@ a.compatibility-link, a:visited.compatibility-link {
   a {
     color: @brand-primary;
     font-size: large;
+  }
+}
+
+.announcements-pagination {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  .page-item {
+    margin: 0 5px;
+    a.page-link{
+      border-radius: 3px;
+    }
+    &:not(.active):not(.disabled) {
+      a.page-link {
+        color: @brand-tertiary;
+        &:hover {
+          color: lighten(@brand-quaternary, 5%);
+          background-color: @white;
+        }
+      }
+    }
+    &.disabled {
+      a.page-link{
+        background-color: @brand-quinary;
+      }
+    }
+    &.active {
+      a.page-link{
+        pointer-events: none;
+        background-color: @brand-quaternary;
+        border-color: @brand-quaternary;
+      }
+    }
+  }
+}
+
+.announcements-single .announcement-content .content-inner {
+  .announcement-authors {
+    .authors-images {
+      .author-image {
+        height: 70px;
+        width: 70px;
+        margin-right: 8px;
+      }
+    }
   }
 }
