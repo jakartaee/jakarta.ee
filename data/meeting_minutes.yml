@@ -702,6 +702,22 @@ items:
 
    steering_committee:
        -
+          url: steering_committee/minutes-august-25-2020.pdf
+          title: August 25, 2020 (pdf)
+          year: 2020
+       -
+          url: steering_committee/minutes-august-18-2020.pdf
+          title: August 18, 2020 (pdf)
+          year: 2020
+       -
+          url: steering_committee/minutes-august-11-2020.pdf
+          title: August 11, 2020 (pdf)
+          year: 2020
+       -
+          url: steering_committee/minutes-august-4-2020.pdf
+          title: August 4, 2020 (pdf)
+          year: 2020
+       -
           url: steering_committee/minutes-july-28-2020.pdf
           title: July 28, 2020 (pdf)
           year: 2020
