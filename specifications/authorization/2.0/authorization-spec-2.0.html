@@ -444,16 +444,20 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="details">
 <span id="author" class="author">Jakarta Authorization Team, https://projects.eclipse.org/projects/ee4j.jacc</span><br/>
 <span id="email" class="email"><a href="https://dev.eclipse.org/mailman/listinfo/jacc-dev" class="bare">https://dev.eclipse.org/mailman/listinfo/jacc-dev</a></span><br/>
-<span id="revnumber"> 2.0-SNAPSHOT,</span>
-<span id="revdate"></span>
-<br/><span id="revremark">DRAFT</span>
+<span id="revnumber"> 2.0,</span>
+<span id="revdate">July 28, 2020</span>
+<br/><span id="revremark">Final</span>
 </div>
 <div id="toc" class="toc2">
 <div id="toctitle">Table of Contents</div>
 <ul class="sectlevel1">
-<li><a href="#eclipse-foundation-specification-license">Eclipse Foundation Specification License</a>
+<li><a href="#copyright">Copyright</a>
 <ul class="sectlevel2">
+<li><a href="#eclipse-foundation-specification-license">Eclipse Foundation Specification License</a>
+<ul class="sectlevel3">
 <li><a href="#disclaimers">Disclaimers</a></li>
+</ul>
+</li>
 <li><a href="#preface">.1. Preface</a></li>
 <li><a href="#status-of-document">.2. Status of Document</a></li>
 <li><a href="#audience">.3. Audience</a></li>
@@ -779,21 +783,24 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="content">
 <pre>Specification: Jakarta Authorization
 
-Version: 2.0-SNAPSHOT
+Version: 2.0
 
-Status: DRAFT
+Status: Final
 
-Release: </pre>
+Release: July 28, 2020</pre>
 </div>
-</div>
-<div class="paragraph">
-<p>Copyright (c) 2019 Eclipse Foundation.</p>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="eclipse-foundation-specification-license"><a class="anchor" href="#eclipse-foundation-specification-license"></a>Eclipse Foundation Specification License</h2>
+<h2 id="copyright"><a class="anchor" href="#copyright"></a>Copyright</h2>
 <div class="sectionbody">
+<div class="paragraph">
+<p>Copyright &#169; 2018, 2020 Eclipse Foundation.
+<a href="https://www.eclipse.org/legal/efsl.php" class="bare">https://www.eclipse.org/legal/efsl.php</a></p>
+</div>
+<div class="sect2">
+<h3 id="eclipse-foundation-specification-license"><a class="anchor" href="#eclipse-foundation-specification-license"></a>Eclipse Foundation Specification License</h3>
 <div class="paragraph">
 <p>By using and/or copying this document, or the Eclipse Foundation
 document from which this statement is linked, you (the licensee) agree
@@ -815,8 +822,8 @@ document, or portions thereof, that you use:</p>
 <li>
 <p>All existing copyright notices, or if one does not exist, a notice
 (hypertext is preferred, but a textual representation is permitted)
-of the form: "Copyright (c) [$date-of-document]
-Eclipse Foundation, Inc. &lt;&lt;url to this license&gt;&gt;"</p>
+of the form: "Copyright &#169; [$date-of-document]
+Eclipse Foundation, Inc. <a href="https://www.eclipse.org/legal/efsl.php" class="bare">https://www.eclipse.org/legal/efsl.php</a>"</p>
 </li>
 </ul>
 </div>
@@ -841,12 +848,13 @@ specification is expressly prohibited.</p>
 <p>The notice is:</p>
 </div>
 <div class="paragraph">
-<p>"Copyright (c) 2018 Eclipse Foundation. This software or
-document includes material copied from or derived from [title and URI
-of the Eclipse Foundation specification document]."</p>
+<p>"Copyright &#169; 2018, 2020 Eclipse Foundation. This software or
+document includes material copied from or derived from
+Jakarta&#174; Authorization
+<a href="https://jakarta.ee/specifications/authorization/2.0/" class="bare">https://jakarta.ee/specifications/authorization/2.0/</a>"</p>
 </div>
-<div class="sect2">
-<h3 id="disclaimers"><a class="anchor" href="#disclaimers"></a>Disclaimers</h3>
+<div class="sect3">
+<h4 id="disclaimers"><a class="anchor" href="#disclaimers"></a>Disclaimers</h4>
 <div class="paragraph">
 <p>THIS DOCUMENT IS PROVIDED &quot;AS IS,&quot; AND THE COPYRIGHT
 HOLDERS AND THE ECLIPSE FOUNDATION MAKE NO REPRESENTATIONS OR
@@ -869,6 +877,7 @@ Foundation may NOT be used in advertising or publicity pertaining to
 this document or its contents without specific, written prior
 permission. Title to copyright in this document will at all times
 remain with copyright holders.</p>
+</div>
 </div>
 </div>
 <div class="sect2">
@@ -4218,8 +4227,8 @@ authenticated, this handler must return the value null.</p>
 <div class="paragraph">
 <p>All Jakarta Enterprise Beans containers must register a
 <code>PolicyContextHandler</code> whose <code>getContext</code> method returns a
-<code>javax.xml.soap.SOAPMessage</code> object when invoked with the key
-“javax.xml.soap.SOAPMessage”. If the request being processed by the
+<code>jakarta.xml.soap.SOAPMessage</code> object when invoked with the key
+“jakarta.xml.soap.SOAPMessage”. If the request being processed by the
 container arrived as a SOAP request at the <code>ServiceEndpoint</code> method
 interface, the container must return the SOAP message object when this
 handler is activated. Otherwise, this handler must return the value
@@ -4231,8 +4240,8 @@ null.</p>
 <div class="paragraph">
 <p>All Jakarta Servlet containers must register a
 <code>PolicyContextHandler</code> whose <code>getContext</code> method returns a
-<code>javax.servlet.http.HttpServletRequest</code> object when invoked with the key
-“javax.servlet.http.HttpServletRequest”. When this handler is activated,
+<code>jakarta.servlet.http.HttpServletRequest</code> object when invoked with the key
+“jakarta.servlet.http.HttpServletRequest”. When this handler is activated,
 the container must return the <code>HttpServletRequest</code> object corresponding to
 the component request being processed by the container.</p>
 </div>
@@ -4242,8 +4251,8 @@ the component request being processed by the container.</p>
 <div class="paragraph">
 <p>All Jakarta Enterprise Beans containers must register a
 <code>PolicyContextHandler</code> whose <code>getContext</code> method returns a
-<code>javax.ejb.EnterpriseBean</code> object when invoked with the key
-“javax.ejb.EnterpriseBean”. When this handler is activated, the
+<code>jakarta.ejb.EnterpriseBean</code> object when invoked with the key
+“jakarta.ejb.EnterpriseBean”. When this handler is activated, the
 container must return the <code>EnterpriseBean</code> object corresponding to the Jakarta Enterprise Beans
 component request (as restricted below) being processed by the
 container. The <code>EnterpriseBean</code> object must only be returned when this
@@ -4251,7 +4260,7 @@ handler is activated within the scope of a container&#8217;s processing of a
 business method of the Jakarta Enterprise Beans <code>Remote</code>, <code>Local</code>, or <code>ServiceEndpoint</code> interfaces
 of the <code>EnterpriseBean</code> object. The value null must be returned if the
 bean implementation class does not implement the
-<code>javax.ejb.EnterpriseBean</code> interface.</p>
+<code>jakarta.ejb.EnterpriseBean</code> interface.</p>
 </div>
 </div>
 <div class="sect4">
@@ -7272,7 +7281,7 @@ permissions assigned to role "**" to any authenticated user.</p>
 </div>
 <div id="footer">
 <div id="footer-text">
- 2.0-SNAPSHOT<br/>
+ 2.0<br/>
 Last updated 2020-02-13 18:03:22 +0100
 </div>
 </div>
