@@ -20,7 +20,5 @@ The Specification Committee is responsible for implementing the ​[Jakarta EE S
 * Werner Keil - Elected Committer Member Representative
 * Scott (Congquan) Wang - Primeton - Elected Enterprise Representative
 * Paul Buck - Eclipse Foundation (serves as chair, but is not a voting committee member)
-* Dmitry Kornilov - Oracle
-* Martijn Verburg - Participant Member
 
 {{< meeting-minutes-single "specification_committee" >}}
