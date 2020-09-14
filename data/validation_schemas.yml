@@ -1,0 +1,26 @@
+---
+releases:
+
+- name: Jakarta Bean Validation 3.0
+  version: 3
+  schemas: 
+
+    - schema: validation-mapping-3.0.xsd
+      namespace: validation/mapping
+      description: XML Schema for Jakarta Bean Validation constraint mapping files
+      status: Final
+
+    - schema: validation-configuration-3.0.xsd
+      namespace: validation/configuration
+      description: XML Schema for the Jakarta Bean Validation configuration file
+      status: Final
+
+# Template: Example for creating new schema entry
+#   - schema: a_simple_example.xsd
+#     description: Some text descring the schema
+#     status: Final Release | Draft
+
+# Template: Example for creating a new Jakarta Persistencde release
+# - name: Jakarta Persistence 4.0
+#   version: 4
+#   schemas:

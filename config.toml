@@ -1,0 +1,340 @@
+baseurl = "https://jakarta.ee/"
+DefaultContentLanguage = "en"
+title = "Jakarta® EE: The New Home of Cloud Native Java"
+theme = "eclipsefdn-hugo-solstice-theme"
+metaDataFormat = "yaml"
+googleAnalytics = "UA-910670-30"
+disableKinds = ["taxonomy", "taxonomyTerm"]
+themesDir = "node_modules/"
+enableRobotsTXT = true
+
+[Params]
+  google_tag_manager = "GTM-5WLCZXC"
+  description = "Jakarta® Enterprise Edition (EE) is the future of cloud native Java. Jakarta® EE open source software drives cloud native innovation, modernizes enterprise applications and protects investments in Java EE."
+  subtitle = "The New Home of Cloud Native Java"
+  seo_title_suffix = " | The Eclipse Foundation"
+  keywords = ["Jakarta EE software", "Java EE", "cloud", "microservices", "enterprise", "open source", "innovation"]
+  logo = "images/jakarta/jakarta-ee-logo.svg"
+  styles = "css/styles.css"
+  favicon = "images/jakarta/favicon.ico"
+  share_img = "images/jakarta/jakarta_ee_400x400.png"
+  gcse = "011805775785170369411:p3ec0igo0qq"
+  subtheme = "jakarta"
+  header_wrapper_class = "header-default-bg-img"
+  js = "js/solstice.js"
+  show_events = true
+  call_for_action_text = "Download"
+  call_for_action_url = "/release/"
+  call_for_action_icon = "fa-download"
+  linkedin_url="https://www.linkedin.com/groups/13597511/"
+  youtube_url="https://www.youtube.com/channel/UC4M7h5b6elu9VlzjLfzuXyg"
+  twitter_url="https://twitter.com/JakartaEE"
+  facebook_url="https://www.facebook.com/JakartaEE"
+  header_left_classes = "col-sm-4"
+  main_menu_wrapper_classes = "col-sm-20 margin-top-10"
+  hide_cfa_same_page = true
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+
+[Author]
+  name = "Christopher Guindon"
+  website = "https://www.eclipse.org"
+  email = "webdev@eclipse-foundation.org"
+  facebook = "eclipse.org"
+  twitter = "EclipseFdn"
+  youtube = "EclipseFdn"
+  googleplus = "+Eclipse"
+  linkedin = "company/eclipse-foundation/"
+
+[permalinks]
+  news = "/:sections/:year/:month/:day/:slug/"
+
+[blackfriday]
+  plainIDAnchors = true
+  hrefTargetBlank = true
+
+[[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 1
+
+[[menu.main]]
+    name = "Membership"
+    url = "/Membership/"
+    weight = 2
+
+[[menu.main]]
+    name = "Connect"
+    url = "/connect/"
+    weight = 3
+
+[[menu.main]]
+    name = "Resources"
+    url = "/resources/"
+    weight = 4
+
+[[menu.main]]
+    name = "Resources"
+    url = "/resources/"
+    weight = 4
+
+# Resource sub-menu
+[[menu.main]]
+    name = "Documentation"
+    url = "/resources#documentation"
+    parent = "Documentation"
+    weight = 1
+
+[[menu.main]]
+    name = "Surveys"
+    url = "/resources#surveys"
+    parent = "Resources"
+    weight = 2
+
+[[menu.main]]
+    name = "Infographics"
+    url = "/resources#infographics"
+    parent = "Resources"
+    weight = 3
+[[menu.main]]
+    name = "Datasheets"
+    url = "/resources#datasheets"
+    parent = "Resources"
+    weight = 4
+[[menu.main]]
+    name = "Presentations"
+    url = "/resources#presentations"
+    parent = "Resources"
+    weight = 5
+
+[[menu.main]]
+    name = "Compatible Products"
+    url = "/compatibility/"
+    weight = 6
+
+[[menu.main]]
+    name = "Adopt A Spec"
+    parent = "Resources"
+    url = "/community/adopt-a-spec/"
+    weight = 7
+
+[[menu.main]]
+    name = "Committees"
+    url = "/committees"
+    parent = "Resources"
+    weight = 8
+
+[[menu.main]]
+    name = "Newsletter Archives"
+    url = "/newsletter/"
+    parent = "Resources"
+    weight = 9
+
+[[menu.main]]
+    name = "Meeting Minutes"
+    url = "/meeting_minutes/"
+    parent = "Resources"
+    weight = 10
+
+[[menu.main]]
+    name = "Blog"
+    url = "https://Jakartablogs.ee"
+    parent = "Resources"
+    weight = 11
+
+[[menu.main]]
+    name = "Tech Talk Meet-ups"
+    url = "/resources#meetups"
+    parent = "Resources"
+    weight = 12
+
+[[menu.main]]
+    name = "Jakarta EE YouTube Channel"
+    url = "https://www.youtube.com/channel/UC4M7h5b6elu9VlzjLfzuXyg"
+    parent = "Resources"
+    weight = 13
+
+[[menu.main]]
+    name = "Jakarta EE Specification Projects"
+    url = "https://projects.eclipse.org/list-of-projects?combine=jakarta&field_project_techology_types_tid=1102&field_state_value_2=All"
+    parent = "Resources"
+    weight = 14
+
+[[menu.main]]
+    name = "Jakarta EE Community Folder"
+    url = "https://drive.google.com/open?id=1kJFh6EIpOyAWP3JkymYZXOK311WM2HXm"
+    parent = "Resources"
+    weight = 15
+    
+[[menu.main]]
+    name = "Jakarta EE Community Calendar"
+    url = "/resources#calendar"
+    parent = "Resources"
+    weight = 16
+
+[[menu.main]]
+    name = "Starter for Jakarta EE"
+    url = "https://start.jakarta.ee/"
+    parent = "Resources"
+    weight = 17
+    
+[[menu.main]]
+    name = "JakartaOne Livestream"
+    url = "https://jakartaone.org/"
+    parent = "Resources"
+    weight = 18
+    
+[[menu.main]]
+    name = "Friends of Jakarta EE"
+    url = "/resources#friends"
+    parent = "Resources"
+    weight = 19
+	
+[languages]
+  [languages.en]
+	languageName = "English"
+	weight =  1   
+
+  [languages.zh]
+	languageName = "简体中文"
+	weight =  2
+	title = "Jakarta® EE: 云原生Java的新家园"
+	
+	[languages.zh.params]
+	  description = "Jakarta® Enterprise Edition (EE) 是云原生的未来. Jakarta® EE 开源软件驱动云原生创新, 让企业应用更加现代化，并同时保护Java EE的现有投资."
+	  subtitle = "云原生Java的新家园"
+	  keywords = ["Jakarta EE 软件", "Java EE", "cloud", "云", "云原生", "microservices", "微服务", "enterprise", "企业应用", "open source", "开源", "innovation"]
+	
+	[[languages.zh.menu.main]]
+		name = "关于"
+		url = "/about/"
+		weight = 1
+
+	[[languages.zh.menu.main]]
+		name = "成员"
+		url = "/Membership/"
+		weight = 2
+
+	[[languages.zh.menu.main]] 
+		name = "联系我们"
+		url = "/connect/"
+		weight = 3
+
+	[[languages.zh.menu.main]]
+		name = "资源"
+		url = "/resources/"
+		weight = 4
+
+	# Resource sub-menu
+	[[languages.zh.menu.main]]
+		name = "文档"
+		url = "/resources#documentation"
+		parent = "资源"
+		weight = 1
+
+	[[languages.zh.menu.main]]
+		name = "调研"
+		url = "/resources#surveys"
+		parent = "资源"
+		weight = 2
+
+	[[languages.zh.menu.main]]
+		name = "信息图表"
+		url = "/resources#infographics"
+		parent = "资源"
+		weight = 3
+	[[languages.zh.menu.main]]
+		name = "数据表"
+		url = "/resources#datasheets"
+		parent = "资源"
+		weight = 4
+	[[languages.zh.menu.main]]
+		name = "演讲"
+		url = "/resources#presentations"
+		parent = "资源"
+		weight = 5
+
+	[[languages.zh.menu.main]]
+		name = "兼容产品"
+		url = "/compatibility/"
+		weight = 6
+
+	[[languages.zh.menu.main]]
+		name = "规范采纳"
+		parent = "资源"
+		url = "/community/adopt-a-spec/"
+		weight = 7
+
+	[[languages.zh.menu.main]]
+		name = "委员会"
+		url = "/committees"
+		parent = "资源"
+		weight = 8
+
+	[[languages.zh.menu.main]]
+		name = "通讯刊物存档"
+		url = "/newsletter/"
+		parent = "资源"
+		weight = 9
+
+	[[languages.zh.menu.main]]
+		name = "会议纪要"
+		url = "/meeting_minutes/"
+		parent = "资源"
+		weight = 10
+
+	[[languages.zh.menu.main]]
+		name = "博客"
+		url = "https://Jakartablogs.ee"
+		parent = "资源"
+		weight = 11
+
+	[[languages.zh.menu.main]]
+		name = "技术沙龙"
+		url = "/resources#meetups"
+		parent = "资源"
+		weight = 12
+
+	[[languages.zh.menu.main]]
+		name = "Jakarta EE YouTube 频道"
+		url = "https://www.youtube.com/channel/UC4M7h5b6elu9VlzjLfzuXyg"
+		parent = "资源"
+		weight = 13
+
+	[[languages.zh.menu.main]]
+		name = "Jakarta EE 规范项目"
+		url = "https://projects.eclipse.org/list-of-projects?combine=jakarta&field_project_techology_types_tid=1102&field_state_value_2=All"
+		parent = "资源"
+		weight = 14
+
+	[[languages.zh.menu.main]]
+		name = "Jakarta EE 社区文件夹"
+		url = "https://drive.google.com/open?id=1kJFh6EIpOyAWP3JkymYZXOK311WM2HXm"
+		parent = "资源"
+		weight = 15
+		
+	[[languages.zh.menu.main]]
+		name = "Jakarta EE 社区日历"
+		url = "/resources#calendar"
+		parent = "资源"
+		weight = 16
+
+	[[languages.zh.menu.main]]
+		name = "Jakarta EE 起步"
+		url = "https://start.jakarta.ee/"
+		parent = "资源"
+		weight = 17
+		
+	[[languages.zh.menu.main]]
+		name = "JakartaOne Livestream 大会"
+		url = "https://jakartaone.org/"
+		parent = "资源"
+		weight = 18
+		
+	[[languages.zh.menu.main]]
+		name = "Jakarta EE 伙伴"
+		url = "/resources#friends"
+		parent = "资源"
+		weight = 19	  
+	

@@ -1,0 +1,11 @@
+{{ define "main" }}
+  {{ with .Pages }}
+    <h3>Documents</h3>
+    <ul>
+      {{ range .ByTitle }}
+        <li><a href="{{.Permalink}}">{{.Title}} </a></li>
+      {{ end }}
+    </ul>
+  {{ end }}
+  {{ .Content }}
+{{ end }}

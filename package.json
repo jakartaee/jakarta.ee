@@ -1,0 +1,30 @@
+{
+  "name": "eclipsefdn-hugo-jakartaee",
+  "description": "Source code for jakarta.ee",
+  "main": "webpack.min.js",
+  "author": "Christopher Guindon",
+  "license": "EPL-2.0",
+  "version": "0.0.3",
+  "bugs": {
+    "url": "https://github.com/jakartaee/jakarta.ee/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jakartaee/jakarta.ee.git"
+  },
+  "scripts": {
+    "dev": "NODE_ENV=development webpack --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "NODE_ENV=development webpack --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "hot": "NODE_ENV=development webpack-dev-server --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "production": "NODE_ENV=production webpack --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "install": "NODE_ENV=production npm run production",
+    "postinstall": "NODE_ENV=production npm run fetch_project",
+    "specifications": "./build.sh",
+    "disallow_robots_txt": "echo \"User-agent: *\r\nDisallow: /\" > layouts/robots.txt",
+    "build_netlify": "NODE_ENV=production npm run disallow_robots_txt && npm run production && npm run specifications && npm run fetch_project",
+    "fetch_project": "NODE_ENV=production node node_modules/eclipsefdn-hugo-solstice-theme/bin/projects/index.js -l data"
+  },
+  "dependencies": {
+    "eclipsefdn-hugo-solstice-theme": "0.0.89"
+  }
+}

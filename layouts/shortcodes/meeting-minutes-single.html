@@ -1,0 +1,15 @@
+<h3>Meeting Minutes</h3>
+{{ $index_type := .Get 0 }}
+{{ $meeting_minute_types := index $.Site.Data.meeting_minutes "items" $index_type }}
+<div class="row">
+  <div class="padding-10">
+    {{ range $index, $year := $.Site.Data.meeting_minutes.years }}
+    <h4>{{ $year }}</h4>
+    <ul class="tri-col">
+    {{ range $index, $el := (where $meeting_minute_types "year" $year) }}
+      <li><a href="{{absURL (printf "/meeting_minutes/%s" $el.url) }}">{{$el.title}}</a></li>
+    {{ end }}
+    </ul>
+    {{ end }}
+  </div>
+</div>

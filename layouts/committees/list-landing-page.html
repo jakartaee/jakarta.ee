@@ -1,0 +1,13 @@
+{{ define "main" }}
+  <p>Jakarta EE Committees are governance bodies ​responsible​ for ensuring the progress of all aspects of the 
+  Jakarta EE program. Here is the list of committees based on the ​​​
+  <a href="https://www.eclipse.org/org/workinggroups/jakarta_ee_charter.php">Jakarta EE Working Group Charter​:</a></p>
+  {{ with .Pages }}
+    <ul>
+      {{ range .ByTitle }}
+        <li><a href="{{.Permalink}}">{{.Title}} </a> <br>{{.Summary}}</li>
+      {{ end }}
+    </ul>
+  {{ end }}
+  {{ .Content }} 
+{{ end }}

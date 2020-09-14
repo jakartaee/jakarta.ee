@@ -1,0 +1,21 @@
+
+{{- range sort .Site.Data.validation_schemas.releases "version" "desc" }}
+  
+<a name ="{{ .version }}">
+<h2>{{ .name }}</h2>
+</a>
+  <table>
+    <th>File Name</th>
+    <th>Description</th>
+    <th>Status</th>
+  
+    {{- range sort .schemas }}
+      <tr>
+        <td><a href="/xml/ns/validation/{{ .schema }}" target="_blank"> {{ .schema }}</a></td>
+        <td>{{ .description }}</td>
+        <td>{{ .status }}</td>
+      </tr>
+   {{- end }}
+  </table>
+
+{{- end }}  

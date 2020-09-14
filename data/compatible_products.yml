@@ -1,0 +1,98 @@
+# Sample output to create a set with a compatible product
+# sets:
+#  - title: Jakarta EE 8 Full Platform Compatible Products
+#    items:
+#    - name: Eclipse Glassfish
+#      vendor: Eclipse Foundation
+#      version: 5.1.0
+#      image: '/images/glassfish.png'
+#      download: 'https://www.eclipse.org/downloads/download.php?file=/glassfish/glassfish-5.1.0.zip'
+
+sets:
+  - title: Jakarta EE 8 Full Platform Compatible Products
+    items:
+    - name: Payara Server 
+      vendor: Payara Services Limited
+      version: 5.193.1
+      image: '/images/compatible_products/payara_server.png'
+      download: 'https://www.payara.fish/software/downloads/'
+      compatibility: 'https://github.com/eclipse-ee4j/jakartaee-platform/issues/119'
+
+    - name: Eclipse Glassfish
+      vendor: Eclipse Foundation
+      version: 5.1.0, Full Profile
+      image: '/images/compatible_products/glassfish_logo.svg'
+      download: 'https://www.eclipse.org/downloads/download.php?file=/glassfish/glassfish-5.1.0.zip'
+      compatibility: 'https://github.com/jakartaee/jakarta.ee/issues/440'
+
+    - name: Open Liberty
+      vendor: IBM Corporation
+      version: 19.0.0.6
+      image: '/images/compatible_products/ibm_open_liberty.png'
+      download: 'https://openliberty.io/downloads/'
+      compatibility: 'https://github.com/jakartaee/jakarta.ee/issues/439'
+
+    - name: WildFly
+      vendor: Red Hat
+      version: 18.0.0.Final
+      image: '/images/compatible_products/red-hat-wildfly-logo.png'
+      download: 'https://wildfly.org/downloads'
+      compatibility: 'https://github.com/jakartaee/jakarta.ee/issues/508'
+
+    - name: JBoss Enterprise Application Platform 
+      vendor: Red Hat
+      version: 7.3.0.GA
+      image: '/images/compatible_products/red-hat-jboss-logo.png'
+      download: 'http://www.redhat.com/en/technologies/jboss-middleware/application-platform'
+      compatibility: 'https://github.com/jakartaee/jakarta.ee/issues/659'
+
+    - name: JEUS
+      vendor: TmaxSoft Co., Ltd
+      version: 8.5
+      image: '/images/compatible_products/jeus_logo.svg'
+      download: 'https://kr.tmaxsoft.com/jakee/jeus8-b266.zip'
+      compatibility: 'https://github.com/jakartaee/jakarta.ee/issues/657'
+
+    - name: Primeton AppServer
+      vendor: Primeton
+      version: 7
+      image: '/images/compatible_products/primeton_appserver_logo.png'
+      download: 'http://primeton.com/products/pas/'
+      compatibility: 'https://github.com/jakartaee/jakarta.ee/issues/702'
+
+    - name: Apusic AAS
+      vendor: Kingdee Apusic cloud computing Co., Ltd.
+      version: 10.1
+      image: '/images/compatible_products/aas.jpg'
+      download: 'http://www.apusic.com/wp-content/uploads/AAS-V10.zip'
+      compatibility: 'https://github.com/jakartaee/jakarta.ee/issues/744'
+
+  - title: Jakarta EE 8 Web Profile Compatible Products
+    items:
+    - name: Eclipse Glassfish
+      vendor: Eclipse Foundation
+      version: 5.1.0, Web Profile
+      image: '/images/compatible_products/glassfish_logo.svg'
+      download: 'https://www.eclipse.org/downloads/download.php?file=/glassfish/web-5.1.0.zip'
+      compatibility: 'https://github.com/jakartaee/jakarta.ee/issues/441'
+
+    - name: Open Liberty
+      vendor: IBM Corporation
+      version: 19.0.0.6
+      image: '/images/compatible_products/ibm_open_liberty.png'
+      download: 'https://openliberty.io/downloads/'
+      compatibility: 'https://github.com/jakartaee/jakarta.ee/issues/439'
+
+    - name: WildFly
+      vendor: Red Hat
+      version: 18.0.0.Final
+      image: '/images/compatible_products/red-hat-wildfly-logo.png'
+      download: 'https://wildfly.org/downloads'
+      compatibility: 'https://github.com/jakartaee/jakarta.ee/issues/508'
+
+    - name: JBoss Enterprise Application Platform 
+      vendor: Red Hat
+      version: 7.3.0.GA
+      image: '/images/compatible_products/red-hat-jboss-logo.png'
+      download: 'http://www.redhat.com/en/technologies/jboss-middleware/application-platform'
+      compatibility: 'https://github.com/jakartaee/jakarta.ee/issues/659'

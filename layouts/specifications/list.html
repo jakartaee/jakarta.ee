@@ -1,0 +1,55 @@
+{{ define "main_prefix" }}
+<main>
+  <div class="{{ if (and (isset .Page.Params "container") (ne .Page.Params ""))}}{{ .Page.Params.container }}{{else}}container{{end}}">
+    {{ if ne .Page.Params.hide_sidebar true }}
+      <div class="row">
+        <div class="col-md-18 padding-bottom-30">
+    {{ end }}
+{{ end }}
+
+{{ define "main" }}
+  {{ if ne .Page.Params.hide_page_title true }}
+    <h1>
+      {{ .Title }}
+      {{ if .Params.project_id }}
+        <span class="badge">
+          <a href="https://projects.eclipse.org/projects/{{ .Params.project_id }}"><i class="fa fa-archive" aria-hidden="true"></i> Project</a>
+        </span>
+        {{ range first 1 (where $.Site.Data.eclipsefdn_projects "project_id" .Params.project_id) }}
+        	{{- with .website_url }}
+	        <span class="badge">
+	          <a href="{{ . }}" target="_blank"><i class="fa fa-globe" aria-hidden="true"></i> Website</a>
+	        </span>
+	        {{ end }}
+        {{ end }}
+      {{ end }}
+    </h1>
+  {{ end }}
+  {{ .Content }}
+  <div class="news-list"> 
+    {{ range .Page.Sections.ByWeight}}
+      <a href="{{- with .Params.redirect_url | default .RelPermalink }} {{.}} {{- end }}" class="media media-link{{ if eq .Section "news" }} match-height-item{{ end }}">
+        <h4 class="media-heading">{{ .Title }}</h4>
+        <p class="media-text">{{ .Params.summary }}</p>
+      </a>
+    {{ end }}
+
+    {{ $section := .CurrentSection }}
+    {{ with .Site.Data.spec_adopters.adopters.projects }}
+      {{ range sort . "name" "asc"}}
+        {{ $project := . }}
+        {{ with $section.File.Dir }}
+          {{ if eq . $project.directory }}
+           <h3>JUG Spec Adopters</h3>
+            <p>To learn how your JUG can sign-up, check out the <a href="/community/adopt-a-spec">Adopt a Specification</a> program.</p>
+              <ul class="list-inline">
+              {{ range sort $project.adopters  "name" "asc"}}
+                <li><a href="{{ .homepage_url }}" target="_blank"><img src="/images/spec_adopters/{{ .logo }}" alt="{{ .name }}" class="adopter-logo"/></a></li>
+              {{end}}
+            </ul>
+          {{ end }}
+        {{ end }}
+      {{ end }}
+    {{ end }}
+  </div>
+{{ end }}

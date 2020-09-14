@@ -1,0 +1,11 @@
+/node_modules/
+/static/images/vendor/
+/static/fonts/vendor/
+/static/js/
+/static/css/
+/public/
+/content/specifications
+/static/specifications
+/layouts/robots.txt
+/.project
+/data/eclipsefdn_projects.yaml

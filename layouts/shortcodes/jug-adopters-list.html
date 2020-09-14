@@ -1,0 +1,19 @@
+{{ $scratch := newScratch }}
+{{ range .Site.Data.spec_adopters.adopters.projects }}
+  {{ range .adopters }}
+    {{ $scratch.SetInMap "adopters" (lower .name) . }}
+  {{ end }}
+{{ end }}
+
+{{ if gt (len ($scratch.Get "adopters")) 0 }}
+<h2 id="adopters" class="margin-bottom-20">Adopters</h2>
+<ul class="list-inline">
+  {{ range $scratch.GetSortedMapValues "adopters" }}
+    <li>
+      <a href="{{ .homepage_url }}" title="{{ .name }} homepage" target="_blank" >
+        <img class="adopter-logo" src="/images/spec_adopters/{{ .logo }}" alt="{{ .name }} logo" />
+      </a>
+    </li>
+  {{ end }}
+</ul>
+{{ end }}
