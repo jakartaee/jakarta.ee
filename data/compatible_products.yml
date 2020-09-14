@@ -84,7 +84,7 @@ sets:
       image: '/images/compatible_products/glassfish_logo.svg'
       download: 'https://www.eclipse.org/downloads/download.php?file=/glassfish/web-5.1.0.zip'
       versions:
-      - version: 5.1.0, Web Profile
+      - version: 5.1.0
         compatibility: 'https://eclipse-ee4j.github.io/glassfish/certifications/jakarta-web-profile/8.0/TCK-Results'
 
     - name: Open Liberty
