@@ -26,7 +26,7 @@ sets:
       image: '/images/compatible_products/glassfish_logo.svg'
       download: 'https://www.eclipse.org/downloads/download.php?file=/glassfish/glassfish-5.1.0.zip'
       versions:
-      - version: 5.1.0 Platform
+      - version: 5.1.0
         compatibility: 'https://eclipse-ee4j.github.io/glassfish/certifications/jakarta-full-profile/8.0/TCK-Results'
 
     - name: Open Liberty
@@ -42,7 +42,7 @@ sets:
       image: '/images/compatible_products/red-hat-wildfly-logo.png'
       download: 'https://wildfly.org/downloads'
       versions:
-      - version: 18.0.0.Final
+      - version: 18.0.0
         compatibility: 'https://github.com/wildfly/certifications/blob/EE8/WildFly_18.0.0.Final/jakarta-web-profile.adoc'
 
     - name: JBoss Enterprise Application Platform 
@@ -50,7 +50,7 @@ sets:
       image: '/images/compatible_products/red-hat-jboss-logo.png'
       download: 'http://www.redhat.com/en/technologies/jboss-middleware/application-platform'
       versions:
-      - version: 7.3.0.GA
+      - version: 7.3.0
         compatibility: 'https://github.com/RedHatOfficial/jbosseap-certifications/blob/EE8/EAP-7.3.0/jakarta-full-platform.adoc#tck-results'
 
     - name: JEUS
@@ -100,7 +100,7 @@ sets:
       image: '/images/compatible_products/red-hat-wildfly-logo.png'
       download: 'https://wildfly.org/downloads'
       versions:
-      - version: 18.0.0.Final
+      - version: 18.0.0
         compatibility: 'https://github.com/wildfly/certifications/blob/EE8/WildFly_18.0.0.Final/jakarta-web-profile.adoc'
            
     - name: JBoss Enterprise Application Platform 
@@ -108,5 +108,5 @@ sets:
       image: '/images/compatible_products/red-hat-jboss-logo.png'
       download: 'http://www.redhat.com/en/technologies/jboss-middleware/application-platform'
       versions:
-      - version: 7.3.0.GA  
+      - version: 7.3.0  
         compatibility: 'https://github.com/RedHatOfficial/jbosseap-certifications/blob/EE8/EAP-7.3.0/jakarta-full-platform.adoc#tck-results'
