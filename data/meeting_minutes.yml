@@ -5,6 +5,22 @@ years:
 items:
    marketing_committee:
        -
+          url: marketing_committee/minutes-marketing-september-3-2020.pdf
+          title: September 3, 2020 (pdf)
+          year: 2020
+       -
+          url: marketing_committee/minutes-marketing-august-27-2020.pdf
+          title: August 27, 2020 (pdf)
+          year: 2020
+       -
+          url: marketing_committee/minutes-marketing-august-20-2020.pdf
+          title: August 20, 2020 (pdf)
+          year: 2020
+       -
+          url: marketing_committee/minutes-marketing-august-13-2020.pdf
+          title: August 13, 2020 (pdf)
+          year: 2020
+       -
           url: marketing_committee/minutes-marketing-august-13-2020.pdf
           title: August 13, 2020 (pdf)
           year: 2020
@@ -689,6 +705,22 @@ items:
           year: 2018
 
    steering_committee:
+       -
+          url: steering_committee/minutes-august-25-2020.pdf
+          title: August 25, 2020 (pdf)
+          year: 2020
+       -
+          url: steering_committee/minutes-august-18-2020.pdf
+          title: August 18, 2020 (pdf)
+          year: 2020
+       -
+          url: steering_committee/minutes-august-11-2020.pdf
+          title: August 11, 2020 (pdf)
+          year: 2020
+       -
+          url: steering_committee/minutes-august-4-2020.pdf
+          title: August 4, 2020 (pdf)
+          year: 2020
        -
           url: steering_committee/minutes-july-28-2020.pdf
           title: July 28, 2020 (pdf)

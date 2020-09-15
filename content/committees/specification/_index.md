@@ -11,12 +11,12 @@ The Specification Committee is responsible for implementing the ​[Jakarta EE S
 
 * Kenji Kazumura - Fujitsu
 * Dan Bandera - IBM, Kevin Sutter - alternate
-* Ed Bratt - Oracle,
+* Ed Bratt - Oracle, Dmitry Kornilov - alternate
 * Andrew Pielage - Payara, Matt Gill - alternate
 * Scott Stark - Red Hat, Mark Little - alternate
 * David Blevins - Tomitribe, Jean-Louis Monterio - alternate
 * Ivar Grimstad - PMC Representative
-* Marcelo Ancelmo - London Java Community - Elected Participant Member Representative
+* Marcelo Ancelmo - London Java Community - Elected Participant Member Representative, Martijn Verburg - alternate
 * Werner Keil - Elected Committer Member Representative
 * Scott (Congquan) Wang - Primeton - Elected Enterprise Representative
 * Paul Buck - Eclipse Foundation (serves as chair, but is not a voting committee member)
