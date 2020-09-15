@@ -209,79 +209,79 @@ enableInlineShortcodes = true
 	
 	[[languages.zh.menu.main]]
 		name = "关于"
-		url = "/about/"
+		url = "/zh/about/"
 		weight = 1
 
 	[[languages.zh.menu.main]]
 		name = "成员"
-		url = "/Membership/"
+		url = "/zh/Membership/"
 		weight = 2
 
 	[[languages.zh.menu.main]] 
 		name = "联系我们"
-		url = "/connect/"
+		url = "/zh/connect/"
 		weight = 3
 
 	[[languages.zh.menu.main]]
 		name = "资源"
-		url = "/resources/"
+		url = "/zh/resources/"
 		weight = 4
 
 	# Resource sub-menu
 	[[languages.zh.menu.main]]
 		name = "文档"
-		url = "/resources#documentation"
+		url = "/zh/resources#documentation"
 		parent = "资源"
 		weight = 1
 
 	[[languages.zh.menu.main]]
 		name = "调研"
-		url = "/resources#surveys"
+		url = "/zh/resources#surveys"
 		parent = "资源"
 		weight = 2
 
 	[[languages.zh.menu.main]]
 		name = "信息图表"
-		url = "/resources#infographics"
+		url = "/zh/resources#infographics"
 		parent = "资源"
 		weight = 3
 	[[languages.zh.menu.main]]
 		name = "数据表"
-		url = "/resources#datasheets"
+		url = "/zh/resources#datasheets"
 		parent = "资源"
 		weight = 4
 	[[languages.zh.menu.main]]
 		name = "演讲"
-		url = "/resources#presentations"
+		url = "/zh/resources#presentations"
 		parent = "资源"
 		weight = 5
 
 	[[languages.zh.menu.main]]
 		name = "兼容产品"
-		url = "/compatibility/"
+		url = "/zh/compatibility/"
 		weight = 6
 
 	[[languages.zh.menu.main]]
 		name = "规范采纳"
 		parent = "资源"
-		url = "/community/adopt-a-spec/"
+		url = "/zh/community/adopt-a-spec/"
 		weight = 7
 
 	[[languages.zh.menu.main]]
 		name = "委员会"
-		url = "/committees"
+		url = "/zh/committees"
 		parent = "资源"
 		weight = 8
 
 	[[languages.zh.menu.main]]
 		name = "通讯刊物存档"
-		url = "/newsletter/"
+		url = "/zh/newsletter/"
 		parent = "资源"
 		weight = 9
 
 	[[languages.zh.menu.main]]
 		name = "会议纪要"
-		url = "/meeting_minutes/"
+		url = "/zh/meeting_minutes/"
 		parent = "资源"
 		weight = 10
 
@@ -293,7 +293,7 @@ enableInlineShortcodes = true
 
 	[[languages.zh.menu.main]]
 		name = "技术沙龙"
-		url = "/resources#meetups"
+		url = "/zh/resources#meetups"
 		parent = "资源"
 		weight = 12
 
@@ -317,7 +317,7 @@ enableInlineShortcodes = true
 		
 	[[languages.zh.menu.main]]
 		name = "Jakarta EE 社区日历"
-		url = "/resources#calendar"
+		url = "/zh/resources#calendar"
 		parent = "资源"
 		weight = 16
 
@@ -335,7 +335,8 @@ enableInlineShortcodes = true
 		
 	[[languages.zh.menu.main]]
 		name = "Jakarta EE 伙伴"
-		url = "/resources#friends"
+		url = "/zh/resources#friends"
 		parent = "资源"
 		weight = 19	  
+	
 	
