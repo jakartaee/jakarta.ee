@@ -193,3 +193,151 @@ enableInlineShortcodes = true
     url = "/resources#friends"
     parent = "Resources"
     weight = 19
+
+[languages]
+  [languages.en]
+	languageName = "English"
+	weight =  1   
+
+  [languages.zh]
+	languageName = "简体中文"
+	weight =  2
+	title = "Jakarta® EE: 云原生Java的新家园"
+	
+	[languages.zh.params]
+	  description = "Jakarta® Enterprise Edition (EE) 是云原生的未来. Jakarta® EE 开源软件驱动云原生创新, 让企业应用更加现代化，并同时保护Java EE的现有投资."
+	  subtitle = "云原生Java的新家园"
+	  keywords = ["Jakarta EE 软件", "Java EE", "cloud", "云", "云原生", "microservices", "微服务", "enterprise", "企业应用", "open source", "开源", "innovation"]
+	
+	[[languages.zh.menu.main]]
+		name = "关于"
+		url = "/about/"
+		weight = 1
+
+	[[languages.zh.menu.main]]
+		name = "成员"
+		url = "/Membership/"
+		weight = 2
+
+	[[languages.zh.menu.main]] 
+		name = "联系我们"
+		url = "/connect/"
+		weight = 3
+
+	[[languages.zh.menu.main]]
+		name = "资源"
+		url = "/resources/"
+		weight = 4
+
+	# Resource sub-menu
+	[[languages.zh.menu.main]]
+		name = "文档"
+		url = "/resources#documentation"
+		parent = "资源"
+		weight = 1
+
+	[[languages.zh.menu.main]]
+		name = "调研"
+		url = "/resources#surveys"
+		parent = "资源"
+		weight = 2
+
+	[[languages.zh.menu.main]]
+		name = "信息图表"
+		url = "/resources#infographics"
+		parent = "资源"
+		weight = 3
+	[[languages.zh.menu.main]]
+		name = "数据表"
+		url = "/resources#datasheets"
+		parent = "资源"
+		weight = 4
+	[[languages.zh.menu.main]]
+		name = "演讲"
+		url = "/resources#presentations"
+		parent = "资源"
+		weight = 5
+
+	[[languages.zh.menu.main]]
+		name = "兼容产品"
+		url = "/compatibility/"
+		weight = 6
+
+	[[languages.zh.menu.main]]
+		name = "规范采纳"
+		parent = "资源"
+		url = "/community/adopt-a-spec/"
+		weight = 7
+
+	[[languages.zh.menu.main]]
+		name = "委员会"
+		url = "/committees"
+		parent = "资源"
+		weight = 8
+
+	[[languages.zh.menu.main]]
+		name = "通讯刊物存档"
+		url = "/newsletter/"
+		parent = "资源"
+		weight = 9
+
+	[[languages.zh.menu.main]]
+		name = "会议纪要"
+		url = "/meeting_minutes/"
+		parent = "资源"
+		weight = 10
+
+	[[languages.zh.menu.main]]
+		name = "博客"
+		url = "https://Jakartablogs.ee"
+		parent = "资源"
+		weight = 11
+
+	[[languages.zh.menu.main]]
+		name = "技术沙龙"
+		url = "/resources#meetups"
+		parent = "资源"
+		weight = 12
+
+	[[languages.zh.menu.main]]
+		name = "Jakarta EE YouTube 频道"
+		url = "https://www.youtube.com/channel/UC4M7h5b6elu9VlzjLfzuXyg"
+		parent = "资源"
+		weight = 13
+
+	[[languages.zh.menu.main]]
+		name = "Jakarta EE 规范项目"
+		url = "https://projects.eclipse.org/list-of-projects?combine=jakarta&field_project_techology_types_tid=1102&field_state_value_2=All"
+		parent = "资源"
+		weight = 14
+
+	[[languages.zh.menu.main]]
+		name = "Jakarta EE 社区文件夹"
+		url = "https://drive.google.com/open?id=1kJFh6EIpOyAWP3JkymYZXOK311WM2HXm"
+		parent = "资源"
+		weight = 15
+		
+	[[languages.zh.menu.main]]
+		name = "Jakarta EE 社区日历"
+		url = "/resources#calendar"
+		parent = "资源"
+		weight = 16
+
+	[[languages.zh.menu.main]]
+		name = "Jakarta EE 起步"
+		url = "https://start.jakarta.ee/"
+		parent = "资源"
+		weight = 17
+		
+	[[languages.zh.menu.main]]
+		name = "JakartaOne Livestream 大会"
+		url = "https://jakartaone.org/"
+		parent = "资源"
+		weight = 18
+		
+	[[languages.zh.menu.main]]
+		name = "Jakarta EE 伙伴"
+		url = "/resources#friends"
+		parent = "资源"
+		weight = 19	  
+	
