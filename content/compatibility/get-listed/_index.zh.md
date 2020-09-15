@@ -8,4 +8,4 @@ hide_page_title: true
 draft: false
 ---
 
-{{< pages/compatibility/get-listed >}} 
+{{< pages/compatibility/get-listed >}}
