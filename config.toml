@@ -136,7 +136,7 @@ enableInlineShortcodes = true
     weight = 2
 
 [[menu.main]]
-    name = "Releases" 
+    name = "Releases"
     url = "/release/"
     parent = "Jakarta EE"
     weight = 3
@@ -344,20 +344,20 @@ enableInlineShortcodes = true
 [languages]
   [languages.en]
 	languageName = "English"
-	weight =  1   
+	weight =  1
 
   [languages.zh]
 	languageName = "简体中文"
 	weight =  2
 	title = "Jakarta® EE: 云原生Java的新家园"
-	
+
 	[languages.zh.params]
 	  description = "Jakarta® Enterprise Edition (EE) 是云原生的未来. Jakarta® EE 开源软件驱动云原生创新, 让企业应用更加现代化，并同时保护Java EE的现有投资."
 	  subtitle = "云原生Java的新家园"
 	  keywords = ["Jakarta EE 软件", "Java EE", "cloud", "云", "云原生", "microservices", "微服务", "enterprise", "企业应用", "open source", "开源", "innovation"]
 	  call_for_action_text = "下载"
       call_for_action_url = "/zh/compatibility/download/"
-	
+
 	[[languages.zh.menu.main]]
 		name = "中国社区"
 		url = "/zh/community/china"
@@ -432,7 +432,7 @@ enableInlineShortcodes = true
 		weight = 2
 
 	[[languages.zh.menu.main]]
-		name = "发布版本" 
+		name = "发布版本"
 		url = "/zh/release/"
 		parent = "Jakarta EE"
 		weight = 3
