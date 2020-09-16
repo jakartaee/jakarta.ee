@@ -66,7 +66,7 @@
                     </div>
                   </div>
 
-                  
+
                 </div>
                 <div class="col-sm-16 match-height-item-by-row vertical-align-container">
                   <p>"{{ .text }}"</p>
@@ -75,7 +75,25 @@
           </div>
         </div>
       </div>
-      
+
     </div>
   {{ end }}
 </div>
+<<<<<<< HEAD
+=======
+<hr>
+
+<script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function(event) {
+    (function($, document) {
+      $(document).ready(function() {
+        $('.testimonial-container').html(
+          $(".testimonial-item").sort(function(){
+            return .5 - Math.random()
+          }).slice(0,3).slideDown("slow")
+        );
+      });
+    })(jQuery, document);
+  });
+</script>
+>>>>>>> 66ebed528 (Updated shortcodes to use i18n for translated content)

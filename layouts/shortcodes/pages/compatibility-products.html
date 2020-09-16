@@ -1,8 +1,6 @@
 <div class="row">
-  <div class="col-md-16">
-  Jakarta EE 技术的成功有赖于其兼容性，以确保应用的可移植性、安全性、稳定性和弹性。兼容性的存在使得更多的技术供应商可以在企业级Java社群中利用和加强Jakarta EE 的品牌。如果有兴趣把你的产品列在此处，请遵循如下的步骤 <a href="get_listed">加入列表</a>
-  </div>
-  <div class="col-md-8"><img class="compatible-logo img img-responsive" src="/images/jakarta/jakarta-ee-compatible-logo-color.svg" title="Jakarta EE logo"></div>
+  <div class="col-md-16">{{ i18n "compatibility-intro-text" | safeHTML }}</div>
+  <div class="col-md-8"><img class="compatible-logo img img-responsive" src="/images/jakarta/jakarta-ee-compatible-logo-color.svg" title="{{ i18n "jakarta-ee-logo-alt" }}"></div>
 </div>
 
 <style>
@@ -24,7 +22,7 @@
           <div class="match-height-item-by-row padding-20 flex-column">
             <div class="center-block padding-left-30 padding-right-30 padding-bottom-10 padding-top-10 grid-center" data-mh="{{ $title | urlize }}">
               {{ if .image }}
-              <img class="img img-responsive" src="{{ .image }}" alt="{{ .vendor }}'s {{ .name }} logo">
+              <img class="img img-responsive" src="{{ .image }}" alt="{{ i18n "compatibility-logo-alt" .name }}">
               {{ else }}
 	            <div class="icon-backdrop">
 	              <div class="ratio"></div>
@@ -35,9 +33,9 @@
             <div class="flex-grow text-center flex-column">
               <h3 class="margin-bottom-0">{{ .name }}</h3>
               <p class="flex-grow">{{ .vendor }}</p>
-              <p class="">Version: {{ .version }}</p>
-              <p><a href="{{ .download }}" class="btn btn-primary">{{ .download_text | default "Download" }}</a></p>
-              <p><a href="{{ .compatibility }}">Proof of compatibility</a></p>
+              <p class="">{{i18n "compatibility-version-text" }}{{ .version }}</p>
+              <p><a href="{{ .download }}" class="btn btn-primary">{{ .download_text | default (i18n "compatibility-download-button-text") }}</a></p>
+              <p><a href="{{ .compatibility }}">{{ i18n "compatibility-proof-of-compatibility-text" }}</a></p>
             </div>
           </div>
         </div>

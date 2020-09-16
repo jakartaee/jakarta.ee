@@ -92,7 +92,7 @@
   other = "Jakarta EE 社区邮件列表"
 
 [connect-mailing-list-community-body]
-  other = "jakarta.ee-community 邮件列表用于 Jakarta EE 的社区讨论. 订阅了解最全的Jakarta EE 消息."
+  other = "jakarta.ee-community 邮件列表用于 Jakarta EE 的社区讨论. 订阅这个列表来了解最全的Jakarta EE 消息"
 
 [connect-mailing-list-community-link]
   other = "https://accounts.eclipse.org/mailing-list/jakarta.ee-community"
@@ -953,3 +953,4 @@
 
 [pages-committees-website-guidelines-download]
  other = "下载文档"
+
