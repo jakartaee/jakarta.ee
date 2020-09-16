@@ -1,8 +1,6 @@
 <div class="row">
-  <div class="col-md-16">
-  The success of Jakarta EE technology relies on compatibility to ensure application portability, security, stability, and resiliency. Compatibility will allow more technology providers to leverage and strengthen the Jakarta EE brand in the enterprise Java community. If you are interested in featuring your product here, follow the steps on the <a href="get_listed">Get Listed</a> page.
-  </div>
-  <div class="col-md-8"><img class="compatible-logo img img-responsive" src="/images/jakarta/jakarta-ee-compatible-logo-color.svg" title="Jakarta EE logo"></div>
+  <div class="col-md-16">{{ i18n "compatibility-intro-text" | safeHTML }}</div>
+  <div class="col-md-8"><img class="compatible-logo img img-responsive" src="/images/jakarta/jakarta-ee-compatible-logo-color.svg" title="{{ i18n "jakarta-ee-logo-alt" }}"></div>
 </div>
 
 <style>
@@ -24,7 +22,7 @@
           <div class="match-height-item-by-row padding-20 flex-column">
             <div class="center-block padding-left-30 padding-right-30 padding-bottom-10 padding-top-10 grid-center" data-mh="{{ $title | urlize }}">
               {{ if .image }}
-              <img class="img img-responsive" src="{{ .image }}" alt="{{ .vendor }}'s {{ .name }} logo">
+              <img class="img img-responsive" src="{{ .image }}" alt="{{ i18n "compatibility-logo-alt" .name }}">
               {{ else }}
 	            <div class="icon-backdrop">
 	              <div class="ratio"></div>
@@ -35,9 +33,9 @@
             <div class="flex-grow text-center flex-column">
               <h3 class="margin-bottom-0">{{ .name }}</h3>
               <p class="flex-grow">{{ .vendor }}</p>
-              <p class="">Version: {{ .version }}</p>
-              <p><a href="{{ .download }}" class="btn btn-primary">{{ .download_text | default "Download" }}</a></p>
-              <p><a href="{{ .compatibility }}">Proof of compatibility</a></p>
+              <p class="">{{i18n "compatibility-version-text" }}{{ .version }}</p>
+              <p><a href="{{ .download }}" class="btn btn-primary">{{ .download_text | default (i18n "compatibility-download-button-text") }}</a></p>
+              <p><a href="{{ .compatibility }}">{{ i18n "compatibility-proof-of-compatibility-text" }}</a></p>
             </div>
           </div>
         </div>
