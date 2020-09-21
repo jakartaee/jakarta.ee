@@ -62,10 +62,10 @@ sets:
 
     - name: Apusic AAS
       vendor: Kingdee Apusic cloud computing Co., Ltd.
-      version: 10.1
+      version: V10
       image: '/images/compatible_products/aas.jpg'
       download: 'http://www.apusic.com/wp-content/uploads/AAS-V10.zip'
-      compatibility: 'https://github.com/apusic/aas-tck/blob/master/aas_10_1_tck_results.md'
+      compatibility: 'http://www.apusic.com/info_safety/server/aas_v10_tck'
 
   - title: Jakarta EE 8 Web Profile Compatible Products
     items:
