@@ -128,7 +128,7 @@
   other = "Jakarta EE 中国社区"
 
 [jakarta-ee-china-section-index-info]
-  other = "Jakarta EE中国社区，是经Eclipse基金会授权，由普元信息（Primeton）发起创立并推动发展。致力于在大中化地区推动Jakarta EE的认知与技术分享。<br>正如我们所知道的，Java EE改名为Jakarta EE已有很长一段时间了，但是在中国，很少有人意识到Jakarta EE项目以及它的规范性实现的重要性。因此，普元信息现正呼吁您与我们一起努力，扩大Jakarta EE的影响力，为中国的开发者和中国企业做更多有益的事情。"
+  other = "Jakarta EE中国社区，是经Eclipse基金会授权，由普元信息（Primeton）发起创立并推动发展。致力于在大中化地区推动Jakarta EE的认知与技术分享。\n正如我们所知道的，Java EE改名为Jakarta EE已有很长一段时间了，但是在中国，很少有人意识到Jakarta EE项目以及它的规范性实现的重要性。因此，普元信息现正呼吁您与我们一起努力，扩大Jakarta EE的影响力，为中国的开发者和中国企业做更多有益的事情。"
 
 [jakarta-ee-china-section-index-mailinglist-title]
   other = "Jakarta EE 中国社区邮件列表"
@@ -151,9 +151,42 @@
 [jakarta-ee-china-section-index-memberlist]
   other = "成员列表"
 
+[sidebar-title]
+  other = "和我们一起创新"  
 
+[sidebar-about-jakartaee]
+  other = "关于 Jakarta EE"
 
+[sidebar-faqs]
+  other = "常见问题"
 
+[sidebar-become-a-member]
+  other = "加入工作组"
 
+[sidebar-connect]
+  other = "联系我们"
 
+[sidebar-working-group-charter]
+  other = "工作组章程"
 
+[sidebar-technical-direction]
+  other = "技术指引"
+
+[sidebar-newsletter-archives]
+  other = "简讯存档"
+
+[sidebar-meeting-minutes]
+  other = "会议纪要"
+
+[sidebar-trademark-guidelines]
+  other = "商标指引"
+
+[sidebar-specification-process]
+  other = "规范过程"
+
+[pages-newsletter-sign-up-to-our-newsletter]
+  other = "订阅我们的简讯"
+
+[layouts-committees-list-landing-page-info]
+  other = "Jakarta EE 委员会是确保 Jakarta EE 各方面进展的治理机构。以下是基于 <a href=\"https:\/\/www.eclipse.org\/org\/workinggroups\/jakarta_ee_charter.php\">Jakarta EE 工作组章程​</a> 的治理机构:"
+  

@@ -274,7 +274,7 @@ enableInlineShortcodes = true
 		weight = 8
 
 	[[languages.zh.menu.main]]
-		name = "通讯刊物存档"
+		name = "简讯存档"
 		url = "/zh/newsletter/"
 		parent = "资源"
 		weight = 9

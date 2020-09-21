@@ -6,7 +6,7 @@ description: "Jakarta EE 的兼容实现"
 hide_sidebar: true
 hide_page_title: true
 draft: false
-links: [[href: "#how-to-get-listed", text: "如何加入兼容性列表"],[href: "/zh/compatibility", text: "兼容产品"]]
+links: [[href: "#如何加入列表", text: "如何加入兼容性列表"],[href: "/zh/compatibility", text: "兼容产品"]]
 ---
 
 
