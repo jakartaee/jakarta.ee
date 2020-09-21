@@ -84,7 +84,7 @@ enableInlineShortcodes = true
 [[menu.main]]
     name = "Documentation"
     url = "/resources#documentation"
-    parent = "Documentation"
+    parent = "Resources"
     weight = 1
 
 [[menu.main]]
