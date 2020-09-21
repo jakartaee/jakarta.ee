@@ -123,3 +123,37 @@
 
 [membership-testimonials-title]
   other = "成员感言"
+
+[jakarta-ee-china-section-index-title]
+  other = "Jakarta EE 中国社区"
+
+[jakarta-ee-china-section-index-info]
+  other = "Jakarta EE中国社区，是经Eclipse基金会授权，由普元信息（Primeton）发起创立并推动发展。致力于在大中化地区推动Jakarta EE的认知与技术分享。<br>正如我们所知道的，Java EE改名为Jakarta EE已有很长一段时间了，但是在中国，很少有人意识到Jakarta EE项目以及它的规范性实现的重要性。因此，普元信息现正呼吁您与我们一起努力，扩大Jakarta EE的影响力，为中国的开发者和中国企业做更多有益的事情。"
+
+[jakarta-ee-china-section-index-mailinglist-title]
+  other = "Jakarta EE 中国社区邮件列表"
+ 
+[jakarta-ee-china-section-index-mailinglist-info]
+  other = "订阅和了解最新的Jakarta EE 中国社区资讯"
+ 
+[jakarta-ee-china-section-index-mailinglist-subscribe]
+  other = "加入邮件列表"
+
+[jakarta-ee-china-section-index-getlisted-title]
+  other = "想要把你的名字也加入列表么？"
+
+[jakarta-ee-china-section-index-getlisted-info]
+  other = "目前Jakarta EE中国社区已经正式成立，我们欢迎所有对Java EE或Jakarta EE感兴趣的同学加入社区。"
+
+[jakarta-ee-china-section-index-getlisted-signup]
+  other = "加入 Jakarta EE 中国社区"
+
+[jakarta-ee-china-section-index-memberlist]
+  other = "成员列表"
+
+
+
+
+
+
+

@@ -1,0 +1,32 @@
+<h3 id="contact-us">{{ i18n "jakarta-ee-china-section-index-title" }}</h3>
+<p>
+	{{ i18n "jakarta-ee-china-section-index-info" }}
+</p>
+
+<h3 id="out">{{ i18n "jakarta-ee-china-section-index-mailinglist-title" }}</h3>
+<p>{{ i18n "jakarta-ee-china-section-index-mailinglist-info" }}</p> 
+<p class="margin-top-20"><a class="btn btn-lg btn-secondary" href="http://jakarta.eaworld.io/belisted/mailinglist.php">{{ i18n "jakarta-ee-china-section-index-mailinglist-subscribe" }}</a></p>
+
+<h3 id="out">{{ i18n "jakarta-ee-china-section-index-getlisted-title" }}</h3>
+<p>{{ i18n "jakarta-ee-china-section-index-getlisted-info" }}</p> 
+<p class="margin-top-20"><a class="btn btn-lg btn-secondary" href="http://jakarta.eaworld.io/belisted">{{ i18n "jakarta-ee-china-section-index-getlisted-signup" }}</a></p>
+
+<h3 id="out">{{ i18n "jakarta-ee-china-section-index-memberlist" }}</h3>
+<p class="memberlist" style="line-height:2;"></p>
+
+<script>
+(function($, document) {
+	$.ajax({ 
+			type:"get",
+			dataType:"json",
+			url: "https://jakarta.eaworld.io/getlisted/memberlist.php", 
+			success: function(data){
+				$.each(data,function(n,v){
+					$.each(v,function(inn,ivv){
+						$(".memberlist").append("*&nbsp;"+ivv+"<br>");
+					});
+				});
+			}
+	});
+})(jQuery, document);
+</script>
