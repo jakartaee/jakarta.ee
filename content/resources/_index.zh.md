@@ -50,3 +50,9 @@ layout: "single"
 ## 数据表{#datasheets}
 
 - [Jakarta EE 9 工具厂商数据表](JakartaEE-Datasheet-July172020_final.pdf)
+
+---
+
+## Jakarta EE 伙伴{#friends}
+
+- [纪要](https://docs.google.com/document/d/1qojkqFrHfHlkBs6sFZdJujY2_ZQvxbkFvmDc6SQ-6bo/edit#)
