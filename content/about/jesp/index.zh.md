@@ -6,7 +6,7 @@ hide_sidebar: true
 
 Version 1.2. July 16, 2019 生效
 
-**Jakarta EE 规范过程** (JESP) 着眼于由 **Jakarta EE 工作组** 运营的 **规范项目** 的 **规范过程** 。 
+**Jakarta EE 规范过程** (JESP) 着眼于由 **Jakarta EE 工作组** 运营的 **规范项目** 的 **规范过程** 。
 
 **Jakarta EE 规范委员会** 特此采纳 [Eclipse Foundation Specification Process v1.2 (EFSP)](https://www.eclipse.org/projects/efsp?version=1.2) 作为 Jakarta EE **规范过程**，并作出如下修改:
 

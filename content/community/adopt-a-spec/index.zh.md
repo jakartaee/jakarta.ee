@@ -6,7 +6,7 @@ hide_sidebar: true
 
 本程序旨在通过采纳 **Jakarta EE 规范** 来鼓励JUG领导者和成员的参与。其目标是为了增加 **Jakarta EE 规范** 演进过程中开发者群体的参与。
 
-{{< jug-adopters-list >}}  
+{{< jug-adopters-list >}}
 
 ## JUG领导者可以提供的帮助:
 
@@ -42,7 +42,7 @@ hide_sidebar: true
 * 更新 `data/spec_adopters.yml` 中的规范采纳者的信息。如果你的JUG希望采纳多个 **规范** ，需要将贵组织的YAML定义添加到相关的 **规范** 节点的规范采纳者列表中。
 * JUG的网站链接
 
-\* 请注意，我们欢迎JUG成为 **规范** 项目的贡献者和提交者，只是需要处理与此相关的 [参与协议](https://blogs.eclipse.org/post/wayne-beaton/specification-project-committer-agreements) 。 
+\* 请注意，我们欢迎JUG成为 **规范** 项目的贡献者和提交者，只是需要处理与此相关的 [参与协议](https://blogs.eclipse.org/post/wayne-beaton/specification-project-committer-agreements) 。
 
 参与“Adopt a Spec”程序相关的讨论：
-* 加入 [Adopt-a-Spec Slack 频道](https://jakarta.ee/connect/) 
+* 加入 [Adopt-a-Spec Slack 频道](https://jakarta.ee/connect/)
