@@ -954,3 +954,23 @@
 [pages-committees-website-guidelines-download]
  other = "下载文档"
 
+[sidebar-technical-direction]
+  other = "技术指引"
+
+[sidebar-newsletter-archives]
+  other = "简讯存档"
+
+[sidebar-meeting-minutes]
+  other = "会议纪要"
+
+[sidebar-trademark-guidelines]
+  other = "商标指引"
+
+[sidebar-specification-process]
+  other = "规范过程"
+
+[pages-newsletter-sign-up-to-our-newsletter]
+  other = "订阅我们的简讯"
+
+[layouts-committees-list-landing-page-info]
+  other = "Jakarta EE 委员会是确保 Jakarta EE 各方面进展的治理机构。以下是基于 <a href=\"https:\/\/www.eclipse.org\/org\/workinggroups\/jakarta_ee_charter.php\">Jakarta EE 工作组章程​</a> 的治理机构:"
