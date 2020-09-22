@@ -123,4 +123,39 @@
 
 [membership-testimonials-title]
   other = "Member Testimonials"
-  
+
+[sidebar-title]
+  other = "Innovate with Us"  
+
+[sidebar-about-jakartaee]
+  other = "About Jakarta EE"
+
+[sidebar-faqs]
+  other = "Frequently Asked Questions"
+
+[sidebar-become-a-member]
+  other = "Become a Member"
+
+[sidebar-connect]
+  other = "Stay Connected"
+
+[sidebar-working-group-charter]
+  other = "Working Group Charter"
+
+[sidebar-technical-direction]
+  other = "Technical Direction"
+
+[sidebar-newsletter-archives]
+  other = "Newsletter Archives"
+
+[sidebar-meeting-minutes]
+  other = "Meeting Minutes"
+
+[sidebar-trademark-guidelines]
+  other = "Trademark Guidelines"
+
+[sidebar-specification-process]
+  other = "Specification Process"
+
+[sidebar-url-prefix]
+  other = ""  
