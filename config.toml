@@ -210,22 +210,32 @@ enableInlineShortcodes = true
 	[[languages.zh.menu.main]]
 		name = "关于"
 		url = "/zh/about/"
-		weight = 1
+		weight = 10
 
 	[[languages.zh.menu.main]]
 		name = "成员"
 		url = "/zh/Membership/"
-		weight = 2
+		weight = 20
 
 	[[languages.zh.menu.main]] 
 		name = "联系我们"
 		url = "/zh/connect/"
-		weight = 3
+		weight = 30
 
 	[[languages.zh.menu.main]]
 		name = "资源"
 		url = "/zh/resources/"
-		weight = 4
+		weight = 40
+
+	[[languages.zh.menu.main]]
+		name = "兼容产品"
+		url = "/zh/compatibility/"
+		weight = 50
+
+	[[languages.zh.menu.main]]
+		name = "中国社区"
+		url = "/zh/community/china"
+		weight = 5
 
 	# Resource sub-menu
 	[[languages.zh.menu.main]]
@@ -255,11 +265,6 @@ enableInlineShortcodes = true
 		url = "/zh/resources#presentations"
 		parent = "资源"
 		weight = 5
-
-	[[languages.zh.menu.main]]
-		name = "兼容产品"
-		url = "/zh/compatibility/"
-		weight = 6
 
 	[[languages.zh.menu.main]]
 		name = "规范采纳"
