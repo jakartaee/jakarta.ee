@@ -366,7 +366,7 @@ enableInlineShortcodes = true
 	[[languages.zh.menu.main]]
 		name = "关于"
 		url = "/zh/about/"
-		weight = 1
+		weight = 10
 
 	[[languages.zh.menu.main]]
 		name = "规范"
