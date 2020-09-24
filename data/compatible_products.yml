@@ -43,7 +43,7 @@ sets:
       download: 'https://wildfly.org/downloads'
       versions:
       - version: 18.0.0
-        compatibility: 'https://github.com/wildfly/certifications/blob/EE8/WildFly_18.0.0.Final/jakarta-web-profile.adoc'
+        compatibility: 'https://github.com/wildfly/certifications/blob/EE8/WildFly_18.0.0.Final/jakarta-full-platform.adoc'
 
     - name: JBoss Enterprise Application Platform 
       vendor: Red Hat
@@ -93,7 +93,7 @@ sets:
       download: 'https://openliberty.io/downloads/'
       versions:
       - version: 19.0.0.6
-        compatibility: 'https://openliberty.io/certifications/jakartaee/platform/8/TCKResults.html'
+        compatibility: 'https://openliberty.io/certifications/jakartaee/webprofile/8/TCKResults.html'
 
     - name: WildFly
       vendor: Red Hat
@@ -109,4 +109,4 @@ sets:
       download: 'http://www.redhat.com/en/technologies/jboss-middleware/application-platform'
       versions:
       - version: 7.3.0  
-        compatibility: 'https://github.com/RedHatOfficial/jbosseap-certifications/blob/EE8/EAP-7.3.0/jakarta-full-platform.adoc#tck-results'
+        compatibility: 'https://github.com/RedHatOfficial/jbosseap-certifications/blob/EE8/EAP-7.3.0/jakarta-web-profile.adoc'
