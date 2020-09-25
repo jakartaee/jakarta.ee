@@ -6,6 +6,25 @@ defaultRight: |
         </div>
 items:
   -
+    title: <strong class="black" style="font-size:32px">JakartaOne Livestream 2020</strong><p class="divider" style="width:100px;"></p>
+    content: <span class="black">Download the flag, make a cake and celebrate the release of Jakarta EE 9 on December 8, 2020</span>
+    link: <a class="btn btn-primary btn-lg uppercase" href="https://jakartaone.org/2020/">REGISTER TODAY</a> <a class="btn btn-primary btn-lg uppercase" href="/images/jakartaone-livestream.png">DOWNLOAD</a>
+    bgImgSrc: /images/featured-cloud-banner-inverted.jpg
+    startDate: 2020-09-23
+    endDate: 2020-12-09
+    story_classes: featured-story jakarta-ee-banner
+    type: story
+  -
+    title: <strong class="black" style="font-size:32px">JakartaOne Livestream 2020</strong>
+    content: <span class="black">Download the flag, make a cake and celebrate the release of Jakarta EE 9 on December 8, 2020</span>
+    content_class: divider
+    link: <a class="btn btn-primary btn-lg uppercase" href="https://jakartaone.org/2020/">REGISTER TODAY</a> <a class="btn btn-primary btn-lg uppercase" href="/images/jakartaone-livestream.png">DOWNLOAD</a>
+    bgImgSrc: /images/featured-cloud-banner-inverted.jpg
+    startDate: 2020-09-23
+    endDate: 2020-12-09
+    story_classes: featured-story jakarta-ee-banner
+    type: footer
+  -
     title: <strong class="uppercase black" style="font-size:32px">Jakarta EE 9 milestone release is now available!</strong>
     content: <span class="black">Start planning to make the namespace change today!</span>
     link: <a class="btn btn-primary btn-lg uppercase" href="https://eclipse-ee4j.github.io/jakartaee-platform/jakartaee9/JakartaEE9">Learn more</a>
