@@ -2,6 +2,14 @@
 adopters:
   projects:
   
+  - name: Jakarta Web Profile
+    directory: specifications/webprofile/ 
+    adopters:
+    - name: Javaforum Malmø
+      homepage_url: https://www.meetup.com/Javaforum-Malmo/
+      logo: java_forum_malmo.png
+      logo_white: java_forum_malmo.png
+
   - name: Jakarta JSON Processing
     directory: specifications/jsonp/ 
     adopters:
