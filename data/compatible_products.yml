@@ -67,6 +67,13 @@ sets:
       download: 'http://www.apusic.com/wp-content/uploads/AAS-V10.zip'
       compatibility: 'http://www.apusic.com/info_safety/server/aas_v10_tck'
 
+    - name: FUJITSU Software Enterprise Application Platform
+      vendor: Fujitsu Limited
+      version: v1.0
+      image: '/images/compatible_products/fujitsu.svg'
+      download: 'https://www.fujitsu.com/jp/software/applatform/'
+      compatibility: 'https://www.fujitsu.com/jp/products/software/middleware/business-middleware/middleware/applatform/jakartaee-report/eap100-ee8full-tck-results/'
+
   - title: Jakarta EE 8 Web Profile Compatible Products
     items:
     - name: Eclipse Glassfish
