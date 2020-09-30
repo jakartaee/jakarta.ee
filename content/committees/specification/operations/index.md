@@ -100,8 +100,10 @@ reviews can be found in these sections:
 
 -   [Creating a Final Specification](#creating_a_final_specification)
 
-The EMO initiates a specification committee ballot by sending an email
-on the public Jakarta EE Specification Committee
+When a review Pull Request is received, the Specification Committee appoints 
+a _mentor_ to help the project team ensure the quality of the request.
+The _Specification committee Mentor_ initiates a specification committee 
+ballot by sending an email on the public Jakarta EE Specification Committee
 (<jakarta.ee-spec@eclipse.org>) mailing list that describes the nature
 of the vote (creation/progress/release) and includes pointers to the PR
 request containing the proposed release content (e.g. release review
@@ -334,9 +336,8 @@ project has:
         in the [Eclipse Project
         Handbook](https://www.eclipse.org/projects/handbook/#pmi-commands-iplog).
 
-    -   After the PRs are sufficiently reviewed and approved, contact the EMO to
-        initiate the official release review ballot by sending an email to
-        <emo@eclipse.org>.  The `final` and `ballot` labels should be added to the PRs (removing the `draft` label, if it exists).
+    -   After the PRs are sufficiently reviewed and approved, the Specification Committee Mentor 
+        initiates the official release review ballot. The `final` and `ballot` labels should be added to the PRs (removing the `draft` label, if it exists).
 
 9.  When the ballot request PRs are approved, the Specification Project releases the staged artifacts
     to Maven Central. Advice on this can be found in this
