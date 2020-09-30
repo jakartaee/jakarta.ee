@@ -13,9 +13,9 @@ sets:
     items:
     - name: Payara Server 
       vendor: Payara Services Limited
-      version: 5.193.1
+      version: 5.21.2
       image: '/images/compatible_products/payara_server.png'
-      download: 'https://www.payara.fish/software/downloads/'
+      download: 'https://www.payara.fish/downloads/'
       compatibility: 'https://docs.payara.fish/community/docs/5.2020.2/jakartaee-certification/5.193/tck-results-full-5.193.1.html'
 
     - name: Eclipse Glassfish
