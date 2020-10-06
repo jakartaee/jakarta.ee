@@ -746,6 +746,22 @@ items:
 
    steering_committee:
        -
+          url: steering_committee/minutes-september-22-2020.pdf
+          title: September 22, 2020 (pdf)
+          year: 2020
+       -
+          url: steering_committee/minutes-september-15-2020.pdf
+          title: September 15, 2020 (pdf)
+          year: 2020
+       -
+          url: steering_committee/minutes-september-8-2020.pdf
+          title: September 8, 2020 (pdf)
+          year: 2020
+       -
+          url: steering_committee/minutes-september-1-2020.pdf
+          title: September 1, 2020 (pdf)
+          year: 2020
+       -
           url: steering_committee/minutes-august-25-2020.pdf
           title: August 25, 2020 (pdf)
           year: 2020
