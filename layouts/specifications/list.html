@@ -49,7 +49,9 @@
         </div>
         {{ end }}
       </div>
-  
+    </div>
+    {{ end }}
+    <div>
       {{ $section := .CurrentSection }}
       {{ with .Site.Data.spec_adopters.adopters.projects }}
         {{ range sort . "name" "asc"}}
@@ -68,6 +70,4 @@
         {{ end }}
       {{ end }}
     </div>
-  {{ end }}
-  
 {{ end }}

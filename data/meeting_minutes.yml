@@ -5,6 +5,14 @@ years:
 items:
    marketing_committee:
        -
+          url: marketing_committee/minutes-marketing-september-24-2020.pdf
+          title: September 24, 2020 (pdf)
+          year: 2020
+       -
+          url: marketing_committee/minutes-marketing-september-17-2020.pdf
+          title: September 17, 2020 (pdf)
+          year: 2020
+       -
           url: marketing_committee/minutes-marketing-september-10-2020.pdf
           title: September 10, 2020 (pdf)
           year: 2020
@@ -327,6 +335,34 @@ items:
 
 
    specification_committee:
+       -
+          url: specification_committee/minutes-specification-september-23-2020.pdf
+          title: September 23, 2020 (pdf)
+          year: 2020
+       -
+          url: specification_committee/minutes-specification-september-16-2020.pdf
+          title: September 16, 2020 (pdf)
+          year: 2020
+       -
+          url: specification_committee/minutes-specification-september-9-2020.pdf
+          title: September 9, 2020 (pdf)
+          year: 2020
+       -
+          url: specification_committee/minutes-specification-september-2-2020.pdf
+          title: September 2, 2020 (pdf)
+          year: 2020
+       -
+          url: specification_committee/minutes-specification-august-26-2020.pdf
+          title: August 26, 2020 (pdf)
+          year: 2020
+       -
+          url: specification_committee/minutes-specification-august-19-2020.pdf
+          title: August 19, 2020 (pdf)
+          year: 2020
+       -
+          url: specification_committee/minutes-specification-august-12-2020.pdf
+          title: August 12, 2020 (pdf)
+          year: 2020
        -
           url: specification_committee/minutes-specification-august-5-2020.pdf
           title: August 5, 2020 (pdf)
@@ -709,6 +745,22 @@ items:
           year: 2018
 
    steering_committee:
+       -
+          url: steering_committee/minutes-september-22-2020.pdf
+          title: September 22, 2020 (pdf)
+          year: 2020
+       -
+          url: steering_committee/minutes-september-15-2020.pdf
+          title: September 15, 2020 (pdf)
+          year: 2020
+       -
+          url: steering_committee/minutes-september-8-2020.pdf
+          title: September 8, 2020 (pdf)
+          year: 2020
+       -
+          url: steering_committee/minutes-september-1-2020.pdf
+          title: September 1, 2020 (pdf)
+          year: 2020
        -
           url: steering_committee/minutes-august-25-2020.pdf
           title: August 25, 2020 (pdf)
