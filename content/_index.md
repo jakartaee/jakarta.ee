@@ -11,6 +11,7 @@ hide_page_title: true
 hide_sidebar: true
 hide_breadcrumb: true
 show_featured_story: true
+container: "container-fluid"
 ---
 
 
@@ -47,3 +48,6 @@ show_featured_story: true
           includeList="true" >}}
   {{</ grid/div >}}
 {{</ grid/section-container >}}
+
+{{< home-newsletter >}}
+
