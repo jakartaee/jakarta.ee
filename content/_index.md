@@ -48,6 +48,3 @@ container: "container-fluid"
           includeList="true" >}}
   {{</ grid/div >}}
 {{</ grid/section-container >}}
-
-{{< home-newsletter >}}
-
