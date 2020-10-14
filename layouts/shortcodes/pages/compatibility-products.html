@@ -6,14 +6,20 @@
 </div>
 
 <style>
-  div.product-list img { max-height: 150px; }
   div.product-list .grid-center { display: flex; align-items: center;}
 </style>
-<ul>
-{{ range $.Site.Data.compatible_products.sets }}
-  <li><a href="#{{ .title | urlize }}">{{ .title }}</a></li>
-{{ end }}
-</ul>
+
+<div class="row">
+  <div class="col-md-16">
+    <ul>
+      {{ range $.Site.Data.compatible_products.sets }}
+        <li><a href="#{{ .title | urlize }}">{{ .title }}</a></li>
+      {{ end }}
+      </ul>
+  </div>
+  <div class="col-md-8" style="text-align: center;"><a class="btn btn-lg btn-secondary" href="https://github.com/eclipse-ee4j/jakartaee-platform/issues?q=is%3Aissue+is%3Aclosed+label%3Acertification">Compatibility Requests</a></div>
+</div>
+
 {{ range $.Site.Data.compatible_products.sets }}
   {{ $title:=.title }}
   <div class="product-list">
@@ -24,7 +30,7 @@
           <div class="match-height-item-by-row padding-20 flex-column">
             <div class="center-block padding-left-30 padding-right-30 padding-bottom-10 padding-top-10 grid-center" data-mh="{{ $title | urlize }}">
               {{ if .image }}
-              <img class="img img-responsive" src="{{ .image }}" alt="{{ .vendor }}'s {{ .name }} logo">
+              <a href="{{ .download }}"><img class="img img-responsive" src="{{ .image }}" alt="{{ .vendor }}'s {{ .name }} logo"></a>
               {{ else }}
 	            <div class="icon-backdrop">
 	              <div class="ratio"></div>
@@ -33,11 +39,13 @@
               {{ end }}
             </div>
             <div class="flex-grow text-center flex-column">
-              <h3 class="margin-bottom-0">{{ .name }}</h3>
-              <p class="flex-grow">{{ .vendor }}</p>
-              <p class="">Version: {{ .version }}</p>
-              <p><a href="{{ .download }}" class="btn btn-primary">{{ .download_text | default "Download" }}</a></p>
-              <p><a href="{{ .compatibility }}">Proof of compatibility</a></p>
+              <p class="margin-bottom-0"><strong>{{ .name }}</strong></p>
+              <p class="flex-grow margin-bottom-10">{{ .vendor }}</p>
+              <p>
+              {{ range .versions }} 
+                <a class="compatibility-link" href="{{ .compatibility }}">{{ .version }}</a> 
+              {{ end }}           
+              </p>
             </div>
           </div>
         </div>

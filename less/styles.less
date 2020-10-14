@@ -10,6 +10,8 @@
  * 
  * SPDX-License-Identifier: EPL-2.0
 */
+
+
 @import '~eclipsefdn-solstice-assets/less/quicksilver/jakarta/styles.less';
 @import 'transient.less';
 
@@ -193,6 +195,9 @@
     max-width: 100%;
     width: 100%;
     padding: 0;
+    height: 100px;
+    object-fit: cover;
+    object-position: 0 -45px;
   }
 }
 .jumbotron {
@@ -232,4 +237,17 @@ ul.tri-col {
     border-radius: 25px;
     margin-bottom: 30px;
   }
+}
+
+@media (min-width: @screen-md-min) {
+  .product-list .center-block {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+a.compatibility-link, a:visited.compatibility-link {
+  text-decoration-color: #000;
+  text-decoration: underline;
+  color: #000;
 }
