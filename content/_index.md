@@ -11,6 +11,7 @@ hide_page_title: true
 hide_sidebar: true
 hide_breadcrumb: true
 show_featured_story: true
+container: "container-fluid"
 ---
 
 
