@@ -75,7 +75,7 @@ sets:
       download: 'http://www.apusic.com/wp-content/uploads/AAS-V10.zip'
       versions: 
       - version: 10.1
-        compatibility: 'https://github.com/apusic/aas-tck/blob/master/aas_10_1_tck_results.md'
+        compatibility: 'http://www.apusic.com/info_safety/server/aas_v10_tck'
         
     - name: FUJITSU Software Enterprise Application Platform
       vendor: Fujitsu Limited
