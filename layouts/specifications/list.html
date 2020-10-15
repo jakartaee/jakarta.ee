@@ -31,7 +31,11 @@
       {{ range .Page.Sections.ByWeight}}
         <li>
           <h3><a href="{{- with .Params.redirect_url | default .RelPermalink }} {{.}} {{- end }}">{{ .Title }}</a></h3>
-          <p>{{ .Params.summary | truncate 57 }}</p>
+          {{ if eq .Params.summary60Char nil  }}
+            <p>{{ .Params.summary | truncate 57 }}</p>
+          {{ else }}
+            <p>{{ .Params.summary60Char }}</p>
+          {{ end }}
         </li>
       {{ end }}
     </ul>
@@ -43,7 +47,11 @@
           <a href="{{- with .Params.redirect_url | default .RelPermalink }} {{.}} {{- end }}" class="match-height-item media media-link margin-bottom-30">
             <span class="flex-column" style="height: 100%;">
               <h4 class="media-heading vertical-align" data-mh="spec-title" >{{ .Title }}</h4>
-              <p class="media-text vertical-align flex-grow">{{ .Params.summary | truncate 57 }}</p>
+              {{ if eq .Params.summary60Char nil  }}
+                <p class="media-text vertical-align flex-grow">{{ .Params.summary | truncate 57 }}</p>
+              {{ else }}
+                <p class="media-text vertical-align flex-grow">{{ .Params.summary60Char }}</p>
+              {{ end }}
             </span>
           </a>
         </div>
