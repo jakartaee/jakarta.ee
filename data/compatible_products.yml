@@ -74,7 +74,7 @@ sets:
       image: '/images/compatible_products/aas.jpg'
       download: 'http://www.apusic.com/wp-content/uploads/AAS-V10.zip'
       versions: 
-      - version: 10.1
+      - version: 10
         compatibility: 'http://www.apusic.com/info_safety/server/aas_v10_tck'
         
     - name: FUJITSU Software Enterprise Application Platform
