@@ -25,6 +25,10 @@
     "fetch_project": "NODE_ENV=production node node_modules/eclipsefdn-hugo-solstice-theme/bin/projects/index.js -l data"
   },
   "dependencies": {
-    "eclipsefdn-hugo-solstice-theme": "0.0.99"
+    "eclipsefdn-hugo-solstice-theme": "0.0.99",
+    "lodash-es": "4.17.15"
+  },
+  "devDependencies": {
+    "vue-template-compiler": "2.6.12"
   }
 }

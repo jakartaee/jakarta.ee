@@ -1,4 +1,6 @@
 {
+    "/js/_committer-cards.js": "/js/_committer-cards.js",
     "/css/styles.css": "/css/styles.css",
-    "/js/solstice.js": "/js/solstice.js"
+    "/js/_solstice.js": "/js/_solstice.js",
+    "/js/app.js": "/js/app.js"
 }
