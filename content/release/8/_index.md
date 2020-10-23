@@ -7,8 +7,8 @@ seo_title: "Jakarta EE Software | Cloud Native"
 headline: "Jakarta&nbsp;EE"
 links: [[href: "/compatibility/", text: "Download Compatible Products"], [href: "/specifications/", text: "Specifications"]]
 hide_page_title: true
-header_wrapper_class: "header-download"
+header_wrapper_class: "header-release-8"
 container: "container-fluid"
 ---
 
-{{< pages/release >}}
+{{< pages/release/8 >}}

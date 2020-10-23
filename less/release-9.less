@@ -1,3 +1,113 @@
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.white-space-normal {
+  white-space: normal;
+}
+
+.vertical-align-space-evenly {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.header-release-9 {
+    .row-toolbar-col {
+      a {
+        color: #F98200;
+      }
+    }
+  
+    #main-menu {
+      a {
+        color: #171c77;
+      }
+    } 
+  
+    background-color: @white;
+  
+    h1 {
+      font-size: 40px;
+      font-weight: 400;
+      font-stretch: condensed;
+      text-align:center;
+      @media (min-width: 570px) {
+        font-size: 50px;
+      }
+      @media (min-width: 650px) {
+        font-size: 55px;
+      }
+      @media (min-width: @screen-sm-min) {
+        text-align:left;
+        font-size: 70px;
+      }
+      @media (min-width: @screen-md-min) {
+        font-size: 90px;
+      }
+      @media (min-width: @screen-lg-min) {
+        font-size: 110px;
+      }
+      text-transform: uppercase;
+      line-height: 1;
+      margin-bottom: 0;
+      &:after {
+        border-bottom:none;
+      }
+    }
+  
+    p, p span {
+      font-weight: 400;
+      text-transform: uppercase;
+      font-stretch: condensed;
+    }
+  
+    .jumbotron.featured-jumbotron-download {
+      min-height: 650px;
+      background-image:url("images/release/header.jpg");
+      background-repeat:no-repeat;
+      background-size:cover;
+  
+      .btn-primary {
+        color: #F98200;
+        background-color: transparent;
+        border-color: white;
+        min-height: 70px;
+        text-transform: uppercase;
+      }
+    }
+  
+    .jumbotron-right-content {
+      font-size: 150px;
+      @media (min-width: @screen-sm-min) {
+        font-size: 300px;
+      }
+      @media (min-width: @screen-md-min) {
+        font-size: 300px;
+      }
+      @media (min-width: @screen-lg-min) {
+        font-size: 300px;
+      }
+      line-height: 1;
+      font-weight: 400;
+    }
+    ul.buttons {
+      li {
+        width:100%;
+        @media (min-width: @screen-md-min) {
+          width:49%;
+        }
+      }
+    }
+    .btn {
+      width:100%;
+      @media (max-width: @screen-sm-max) {
+        margin-bottom:15px;
+      }
+    }
+}
+  
+
 .features-and-benefits {
     padding:30px 0 60px 0;
 
@@ -64,5 +174,65 @@
 }
 
 .font-numbers {
-    font-size: 100px;
+
+    @media (min-width: @screen-sm-min) {
+      font-size: 100px;
+    }
+  
+    @media (max-width: @screen-xs-max) {
+      font-size: 65px;
+    }
+}
+
+.white-paper {
+  margin-top: 150px;
+}
+
+.white-paper-bg {
+  background-image: url("images/release/release-download-9-bg.jpg");
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position: center;
+  padding-right: 0; 
+  padding-left: 0;
+    
+  .btn-blue {
+    background-color: #171c77;
+    color: #fff;
+  }
+  overflow-x: hidden;
+  overflow-y: visible;
+  @media (min-width: @screen-sm-min) {  // 768px
+    min-height: 700px;
+  }
+}
+
+.jakarta-ee {
+
+  margin-left: -300px;
+
+  img {
+    opacity: 0.9;
+  }
+
+  @media (min-width: @screen-sm-min) {  // 768px
+    margin-top: -900px;
+  }
+
+  @media (max-width: @screen-xs-max) {  // 767px
+    margin-top: -750px;
+  }
+}
+
+.text-white {
+  color: #fff;
+}
+
+.d-inline {
+  display: inline-block;
+}
+
+.white-paper-download {
+  z-index: 1;
+  margin: 200px 0;
 }
