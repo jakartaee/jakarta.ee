@@ -5,11 +5,9 @@ description: "Keep up to date with Jakarta EE working group updates, community n
 hide_sidebar: true
 seo_title: "Jakarta EE Software | Cloud Native"
 headline: "Jakarta&nbsp;EE"
-logo: "images/jakarta/jakarta_ee_logo_schooner_color_horizontal_default.png"
 links: [[href: "/compatibility/", text: "Download Compatible Products"], [href: "/specifications/", text: "Specifications"]]
 hide_page_title: true
 header_wrapper_class: "header-download"
-show_call_for_action_button: "true"
 container: "container-fluid"
 ---
 

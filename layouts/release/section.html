@@ -1,30 +1,106 @@
 {{ define "header"}}
   <a class="sr-only" href="#content">Skip to main content</a>
   <header class="header-wrapper{{- with .Params.header_wrapper_class | default .Site.Params.header_wrapper_class }} {{ . }}{{end}}" id="header-wrapper">
-    {{ partial "navbar.html" . }}
-    
-    {{ if isset .Page.Params "headline" }}
-    <div class="jumbotron featured-jumbotron featured-jumbotron-download margin-bottom-0">
+    <!---Navbar--->
+    <div class="clearfix toolbar-container-wrapper">
       <div class="container">
-        <div class="row">
-          <div class="col-sm-14 col-sm-offset-3 text-left">
-            <h1>Jakarta&nbsp;EE <span class="hidden-sm hidden-md hidden-lg hidden-xl">8</span></h1>
-            {{ if isset .Page.Params "subtitle" }}
-            <h2>{{ htmlUnescape .Page.Params.subtitle }}</h2>
-            {{ end }} 
-             
-            <p class="text-center">An open, community-driven baseline for<br> the evolution of enterprise Java technologies</p>
-            {{ if isset .Page.Params "links" }}
-            <ul class="list-inline buttons">
-              {{range $key,$val := index .Page.Params.links}}
-                <li><a class="btn btn-primary" href="{{ (index $val 0).href}}">{{ (index $val 1).text}}</a></li>
-              {{end}}
+        <div class="text-right toolbar-row row hidden-print">
+          <div class="col-md-24 row-toolbar-col">
+            <ul class="list-inline">
+              <li><a href="https://accounts.eclipse.org/user/edit" class="" data-tab-destination="tab-profile"><i class="fa fa-edit fa-fw"></i> {{ i18n "navbar-edit-acccount-label" }}</a></li>
+              <li><a class="toolbar-link toolbar-manage-cookies dropdown-toggle"><i class="fa fa-wrench"></i> {{ i18n "navbar-manage-cookies-label" }}</a></li>
+              {{ if gt (len .AllTranslations) 1 }}
+              <li class="language-selector dropdown">
+                <a href="#" data-toggle="dropdown" class="dropdown-toggle">
+                  <i class="fa fa-globe"></i>
+                  <span> {{ .Language.LanguageName }}</span>
+                  <b class="caret"></b>
+                </a>
+                <ul class="dropdown-menu">
+                  {{ range .AllTranslations }}
+                  <li><a href="{{ .Permalink }}">{{ .Language.LanguageName }}</a></li>
+                  {{ end }}
+                </ul>
+              </li>
+              {{ end }}
             </ul>
-             {{end}} 
           </div>
-          <div class="col-xs-4 hidden-xs">
-            <span class="jumbotron-right-content">8</span>
+        </div>
+      </div>
+    </div>
+    <div class="{{ $.Site.Params.navbar_wrapper_classes | default "navbar-wrapper" }}">
+      <div class="container">
+        <div class="row" id="header-row">
+          <div class="{{ $.Site.Params.header_left_classes | default "col-sm-5 col-md-4" }}" id="header-left">
+            <div class="wrapper-logo-default">
+              {{- with .Page.Params.logo }}
+                <a title="{{ $.Site.Title}}" href="{{ "" | absLangURL }}">
+                  <img width="{{ $.Site.Params.logo_width | default "140"}}" class="logo-eclipse-default img-responsive hidden-xs" src="{{ . | absURL }}" alt="{{ $.Site.Title}}" />
+                </a>
+              {{ end }}
+            </div>
           </div>
+          {{ $has_cfa := 0 }}
+          {{ if (and (isset .Site.Params "call_for_action_text") (isset .Site.Params "call_for_action_url") (isset .Site.Params "call_for_action_icon")) }}
+            {{ $has_cfa = 1 }}
+          {{ end }}
+          <div class="{{ $.Site.Params.main_menu_wrapper_classes | default "col-sm-19 col-md-20 margin-top-10" }}{{ if eq $has_cfa 0}} reset{{ end }}" id="main-menu-wrapper">
+            {{ $normalized_cta_url := .Site.Params.call_for_action_url }}
+            {{ if (eq (len (findRE `(\.[^\/]{3,4}|\/)$` $normalized_cta_url)) 0) }}
+              {{ $normalized_cta_url = printf "%s/" $normalized_cta_url }}
+            {{ end }}
+            
+            {{ $abs_cfa := printf "%s" ($normalized_cta_url | absURL) }}
+            {{ $is_cfa_page := 0 }}
+            {{ if or (eq $normalized_cta_url .Permalink) (eq $abs_cfa .Permalink) }}
+              {{ $is_cfa_page = 1 }}
+            {{ end }}
+            {{ if and (eq $has_cfa 1) (eq .Page.Params.show_call_for_action_button "true") }}
+              <div class="{{ $.Site.Params.call_for_action_wrapper_classes | default "float-right hidden-xs" }}" id="btn-call-for-action">
+                <div id="btn-call-for-action"><a href="{{ .Site.Params.call_for_action_url }}" class="{{ .Site.Params.call_for_action_classes | default "btn btn-huge btn-warning" }}"><i class="fa {{ .Site.Params.call_for_action_icon }}"></i> {{ .Site.Params.call_for_action_text }}</a></div>
+              </div>
+            {{ end }}
+            <div class="{{ $.Site.Params.main_menu_classes | default "navbar float-sm-right yamm" }}" id="main-menu">
+              <div class="navbar-collapse collapse reset float-right" id="navbar-main-menu">
+                <ul class="nav navbar-nav">
+                  {{ partial "nav.html" . }}
+                </ul>
+              </div>
+              {{ partial "nav_toggle.html" . }}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!---Navbar end --->
+
+    {{ if isset .Page.Params "headline" }}
+    <div class="jumbotron featured-jumbotron featured-jumbotron-download vertical-align flex-column margin-bottom-0">
+      <div class="container-fluid flex-grow vertical-align">
+        <div class="row container-fluid vertical-align">
+          <div class="col-md-10 flex-column">
+            <p style="align-self: flex-start;"><span class="p text-orange">version 9</span> new release</p>
+            <h1>Jakarta&nbsp;EE</h1>
+            
+          </div>
+          <div class="col-md-2 col-md-offset-2 vertical-align">
+            <span class="jumbotron-right-content"><i>9</i></span>
+          </div>
+
+          <div class="col-md-9 vertical-align">
+            <p><span class="p text-orange">An open, community-driven platform</span> <br> for future innovation of <br> enterprise Java technologies</p>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">  
+          {{ if isset .Page.Params "links" }}
+          <ul class="list-inline buttons">
+            {{range $key,$val := index .Page.Params.links}}
+              <li><a class="btn btn-primary vertical-align" href="{{ (index $val 0).href}}">{{ (index $val 1).text}}</a></li>
+            {{end}}
+          </ul>
+           {{end}} 
         </div>
       </div>
     </div>

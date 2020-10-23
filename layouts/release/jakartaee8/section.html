@@ -1,0 +1,33 @@
+{{ define "header"}}
+  <a class="sr-only" href="#content">Skip to main content</a>
+  <header class="header-wrapper{{- with .Params.header_wrapper_class | default .Site.Params.header_wrapper_class }} {{ . }}{{end}}" id="header-wrapper">
+    {{ partial "navbar.html" . }}
+    
+    {{ if isset .Page.Params "headline" }}
+    <div class="jumbotron featured-jumbotron featured-jumbotron-download margin-bottom-0">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-14 col-sm-offset-3 text-left">
+            <h1>Jakarta&nbsp;EE <span class="hidden-sm hidden-md hidden-lg hidden-xl">8</span></h1>
+            {{ if isset .Page.Params "subtitle" }}
+            <h2>{{ htmlUnescape .Page.Params.subtitle }}</h2>
+            {{ end }} 
+             
+            <p class="text-center">An open, community-driven baseline for<br> the evolution of enterprise Java technologies</p>
+            {{ if isset .Page.Params "links" }}
+            <ul class="list-inline buttons">
+              {{range $key,$val := index .Page.Params.links}}
+                <li><a class="btn btn-primary" href="{{ (index $val 0).href}}">{{ (index $val 1).text}}</a></li>
+              {{end}}
+            </ul>
+             {{end}} 
+          </div>
+          <div class="col-xs-4 hidden-xs">
+            <span class="jumbotron-right-content">8</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    {{ end }}
+  </header>
+{{ end }}
