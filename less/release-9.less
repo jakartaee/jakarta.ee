@@ -64,7 +64,7 @@
   
     .jumbotron.featured-jumbotron-download {
       min-height: 650px;
-      background-image:url("images/release/header.jpg");
+      background-image:url("images/release/jakarta9-header.jpg");
       background-repeat:no-repeat;
       background-size:cover;
   
@@ -173,6 +173,7 @@
     margin-left: 0;
 }
 
+
 .font-numbers {
 
     @media (min-width: @screen-sm-min) {
@@ -186,41 +187,42 @@
 
 .white-paper {
   margin-top: 150px;
+  // background-image: url("images/release/jakarta9-image.png");
+  // background-repeat: no-repeat;
+  // background-position: center;
+  // background-size: cover;
 }
 
 .white-paper-bg {
-  background-image: url("images/release/release-download-9-bg.jpg");
-  background-repeat:no-repeat;
-  background-size:cover;
-  background-position: center;
   padding-right: 0; 
   padding-left: 0;
-    
+  
+  background-image: url("images/release/release-download-9-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  overflow-x: hidden;
+  overflow-y: visible;
   .btn-blue {
     background-color: #171c77;
     color: #fff;
   }
-  overflow-x: hidden;
-  overflow-y: visible;
-  @media (min-width: @screen-sm-min) {  // 768px
-    min-height: 700px;
-  }
 }
 
+// if decide to use image instead of combined background
 .jakarta-ee {
-
   margin-left: -300px;
-
   img {
     opacity: 0.9;
   }
-
+  
   @media (min-width: @screen-sm-min) {  // 768px
-    margin-top: -900px;
+    margin-top: -800px;
   }
 
   @media (max-width: @screen-xs-max) {  // 767px
-    margin-top: -750px;
+    margin-top: -700px;
+    margin-bottom: 100px;
   }
 }
 
@@ -234,5 +236,46 @@
 
 .white-paper-download {
   z-index: 1;
-  margin: 200px 0;
+  margin-top: 200px;
+  margin-bottom: 200px;
+}
+
+
+#footer-release-9 {
+  background: url("images/release/jakarta9-footer.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  padding-top: 60px;
+  color: #fff;
+  padding-bottom: 26px;
+  font-size: 14px;
+  border-top: none;
+  h2 {
+    color: #fff;
+    margin-top: 0;
+    font-weight: 400;
+    font-size: 18px;
+  }
+
+  ul {
+    margin-left: -15px;
+  }
+
+  a {
+    color: #fff;
+  }
+
+  a:hover {
+    background-color: transparent;
+  }
+
+  @media (max-width: 767px) {
+    text-align: center;
+    ul {
+      margin-left: 0;
+      margin-bottom: 25px;
+    }
+  }
 }

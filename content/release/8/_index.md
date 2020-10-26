@@ -9,6 +9,7 @@ links: [[href: "/compatibility/", text: "Download Compatible Products"], [href: 
 hide_page_title: true
 header_wrapper_class: "header-release-8"
 container: "container-fluid"
+type: "release/8"
 ---
 
 {{< pages/release/8 >}}
