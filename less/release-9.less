@@ -15,13 +15,13 @@
 .header-release-9 {
     .row-toolbar-col {
       a {
-        color: #F98200;
+        color: @brand-primary;
       }
     }
   
     #main-menu {
       a {
-        color: #171c77;
+        color: @brand-secondary;
       }
     } 
   
@@ -69,9 +69,9 @@
       background-size:cover;
   
       .btn-primary {
-        color: #F98200;
+        color: @brand-primary;
         background-color: transparent;
-        border-color: white;
+        border-color: @white;
         min-height: 70px;
         text-transform: uppercase;
       }
@@ -133,15 +133,14 @@
 
         hr {
             max-width: 150px;
-            border-top: 5px solid #F98200;
+            border-top: 5px solid @brand-primary;
             margin-left: 0;
         }
 
     }
 
     .polygons {
-        background: #171c77;
-        // display: inline-block;
+        background: @brand-secondary;
         height: 75px;
         position: relative;
         width: 70px;
@@ -149,7 +148,7 @@
     }
 
     .polygons:after {
-        border-top: 10px solid #171c77;
+        border-top: 10px solid @brand-secondary;
         border-left: 35px solid transparent;
         border-right: 35px solid transparent;
         content: "";
@@ -169,7 +168,7 @@
 
 .jakartaee-hr {
     max-width: 150px;
-    border-top: 5px solid #F98200;
+    border-top: 5px solid @brand-primary;
     margin-left: 0;
 }
 
@@ -204,8 +203,8 @@
   overflow-x: hidden;
   overflow-y: visible;
   .btn-blue {
-    background-color: #171c77;
-    color: #fff;
+    background-color: @brand-secondary;
+    color: @white;
   }
 }
 
@@ -227,7 +226,7 @@
 }
 
 .text-white {
-  color: #fff;
+  color: @white;
 }
 
 .d-inline {
@@ -248,12 +247,12 @@
   background-repeat: no-repeat;
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   padding-top: 60px;
-  color: #fff;
+  color: @white;
   padding-bottom: 26px;
   font-size: 14px;
   border-top: none;
   h2 {
-    color: #fff;
+    color: @white;
     margin-top: 0;
     font-weight: 400;
     font-size: 18px;
@@ -264,7 +263,7 @@
   }
 
   a {
-    color: #fff;
+    color: @white;
   }
 
   a:hover {
