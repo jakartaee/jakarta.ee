@@ -2,26 +2,45 @@
   flex-wrap: wrap;
 }
 
-.white-space-normal {
-  white-space: normal;
-}
-
 .vertical-align-space-evenly {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
 }
 
+.jumbotron-button-container {
+  @media (min-width: @screen-sm-min) {  // 768px
+    width: 700px;
+  }
+}
+
+.font-exo {
+  font-family: 'Exo', sans-serif;
+}
+
 .header-release-9 {
     .row-toolbar-col {
       a {
-        color: #F98200;
+        color: @brand-primary;
       }
     }
   
     #main-menu {
       a {
-        color: #171c77;
+        color: @brand-secondary;
+      }
+
+      a:hover {
+        color: @brand-secondary;
+        text-decoration: none;
+        border-bottom: solid @brand-primary;
+      }
+
+      .dropdown-menu {
+        a:hover {
+          border-bottom: none;
+          text-decoration: underline;
+        }
       }
     } 
   
@@ -69,15 +88,20 @@
       background-size:cover;
   
       .btn-primary {
-        color: #F98200;
+        color: @white;
         background-color: transparent;
-        border-color: white;
+        border-color: @white;
         min-height: 70px;
         text-transform: uppercase;
+      }
+
+      .btn-primary:hover {
+        color: @brand-primary;
       }
     }
   
     .jumbotron-right-content {
+      font-family: 'Exo', sans-serif;
       font-size: 150px;
       @media (min-width: @screen-sm-min) {
         font-size: 300px;
@@ -133,15 +157,14 @@
 
         hr {
             max-width: 150px;
-            border-top: 5px solid #F98200;
+            border-top: 5px solid @brand-primary;
             margin-left: 0;
         }
 
     }
 
     .polygons {
-        background: #171c77;
-        // display: inline-block;
+        background: @brand-secondary;
         height: 75px;
         position: relative;
         width: 70px;
@@ -149,7 +172,7 @@
     }
 
     .polygons:after {
-        border-top: 10px solid #171c77;
+        border-top: 10px solid @brand-secondary;
         border-left: 35px solid transparent;
         border-right: 35px solid transparent;
         content: "";
@@ -169,7 +192,7 @@
 
 .jakartaee-hr {
     max-width: 150px;
-    border-top: 5px solid #F98200;
+    border-top: 5px solid @brand-primary;
     margin-left: 0;
 }
 
@@ -185,6 +208,13 @@
     }
 }
 
+.btn-watch-video {
+  &:hover {
+    background-color: @brand-primary;
+    border-color: @brand-primary;
+  }
+}
+
 .white-paper {
   background-image: url("images/release/jakarta9-image.png");
   background-repeat: no-repeat;
@@ -197,35 +227,18 @@
 .white-paper-bg {
   padding-left: 0;
   padding-right: 0;
-  // background-image: url("images/release/release-download-9-bg.jpg");
-  // background-repeat: no-repeat;
-  // background-size: cover;
-  // background-position: center;
   .btn-blue {
-    background-color: #171c77;
-    color: #fff;
+    background-color: @white;
+    color: @brand-secondary;
+  }
+  .btn-blue:hover {
+    background-color: @brand-secondary;
+    color: @white;
   }
 }
 
-// if decide to use image instead of combined background
-// .jakarta-ee {
-//   margin-left: -300px;
-//   img {
-//     opacity: 0.9;
-//   }
-  
-//   @media (min-width: @screen-sm-min) {  // 768px
-//     margin-top: -800px;
-//   }
-
-//   @media (max-width: @screen-xs-max) {  // 767px
-//     margin-top: -700px;
-//     margin-bottom: 100px;
-//   }
-// }
-
 .text-white {
-  color: #fff;
+  color: @white;
 }
 
 .d-inline {
@@ -233,9 +246,7 @@
 }
 
 .white-paper-download {
-  // z-index: 1;
-  
-  
+
   @media (min-width: @screen-sm-min) {  // 768px
       margin-top: 400px;
       margin-bottom: 400px;
@@ -247,6 +258,16 @@
   }
 }
 
+.jakarta-download-social {
+  text-align:center;
+  padding:30px 0 50px;
+  .fa-stack {
+    color:@brand-primary;
+    &:hover {
+      color:@brand-secondary;
+    }
+  }
+}
 
 #footer-release-9 {
   background: url("images/release/jakarta9-footer.jpg");
@@ -255,12 +276,12 @@
   background-repeat: no-repeat;
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   padding-top: 60px;
-  color: #fff;
+  color: @white;
   padding-bottom: 26px;
   font-size: 14px;
   border-top: none;
   h2 {
-    color: #fff;
+    color: @white;
     margin-top: 0;
     font-weight: 400;
     font-size: 18px;
@@ -271,14 +292,14 @@
   }
 
   a {
-    color: #fff;
+    color: @white;
   }
 
   a:hover {
     background-color: transparent;
   }
 
-  @media (max-width: 767px) {
+  @media (max-width: @screen-xs-max) {
     text-align: center;
     ul {
       margin-left: 0;

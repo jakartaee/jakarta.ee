@@ -1,3 +1,7 @@
+{{ define "head_suffix" }}
+<link href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+{{ end }}
+
 {{ define "header"}}
   <a class="sr-only" href="#content">Skip to main content</a>
   <header class="header-wrapper{{- with .Params.header_wrapper_class | default .Site.Params.header_wrapper_class }} {{ . }}{{end}}" id="header-wrapper">
@@ -85,19 +89,16 @@
         <div class="col-md-2 col-md-offset-2 vertical-align">
           <span class="jumbotron-right-content"><i>9</i></span>
         </div>
-        <div class="col-md-9 vertical-align">
+        <div class="col-md-9 col-md-offset-1 vertical-align" style="text-align: left;">
           <p><span class="p text-orange">An open, community-driven platform</span> <br> for future innovation of <br> enterprise Java technologies</p>
         </div>
       </div>
 
-      <div class="container">
-          {{ if isset .Page.Params "links" }}
-          <ul class="list-inline buttons">
-            {{range $key,$val := index .Page.Params.links}}
-              <li class="vcenter"><a class="btn btn-primary white-space-normal vertical-align" href="{{ (index $val 0).href}}">{{ (index $val 1).text}}</a></li>
-            {{end}}
-          </ul>
-           {{end}} 
+      <div class="container jumbotron-button-container">
+        <ul class="list-inline buttons">
+          <li class="vcenter"><a class="btn btn-primary vertical-align" href="#">DOWNLOAD <br/> COMPATIBLE PRODUCTS</a></li>
+          <li class="vcenter"><a class="btn btn-primary vertical-align" href="#">SPECIFICATIONS</a></li>
+        </ul>
       </div>
     </div>
     {{ end }}
@@ -111,12 +112,7 @@
 <footer id="footer-release-9" class="footer-release-9">
   <div class="container">
     <div class="row">
-      <section class="col-sm-4 hidden-print" id="footer-other">
-        {{- with .Site.Params.Logo }}
-          <img width="{{ $.Site.Params.logo_width | default "140"}}" class="logo-eclipse-default img-responsive hidden-xs" src="{{ . | absURL }}" alt="{{ $.Site.Title}}" />
-        {{ end }}
-      </section>
-      <section class="col-sm-5 hidden-print" id="footer-eclipse-foundation">
+      <section class="col-sm-6 hidden-print" id="footer-eclipse-foundation">
         <h2 class="section-title">{{ i18n "eclipse-foundation-text" }}</h2>
         <ul class="nav">
           <li><a href="https://www.eclipse.org/org/">{{ i18n "footer-foundation-about-us-text" }}</a></li>
@@ -129,7 +125,7 @@
           <li><a href="https://www.eclipse.org/org/foundation/directors.php">{{ i18n "footer-foundation-board-of-directors-text" }}</a></li>
         </ul>
       </section>
-      <section class="col-sm-5 hidden-print" id="footer-legal">
+      <section class="col-sm-6 hidden-print" id="footer-legal">
         <h2 class="section-title">{{ i18n "footer-legal-section-text" }}</h2>
         <ul class="nav">
           <li><a href="https://www.eclipse.org/legal/privacy.php">{{ i18n "footer-legal-privacy-policy-text" }}</a></li>
@@ -139,7 +135,7 @@
           <li><a href="https://www.eclipse.org/legal/">{{ i18n "footer-legal-resources-text" }} </a></li>
         </ul>
       </section>
-      <section class="col-sm-5 hidden-print" id="footer-useful-links">
+      <section class="col-sm-6 hidden-print" id="footer-useful-links">
         <h2 class="section-title">{{ i18n "footer-useful-links-section-text" }}</h2>
         <ul class="nav">
           <li><a href="https://bugs.eclipse.org/bugs/">{{ i18n "footer-useful-links-report-bug-text" }}</a></li>
@@ -150,7 +146,7 @@
           <li><a href="//marketplace.eclipse.org">{{ i18n "footer-useful-links-marketplace-text" }}</a></li>
         </ul>
       </section>
-      <section class="col-sm-5 hidden-print" id="footer-other">
+      <section class="col-sm-6 hidden-print" id="footer-other">
         <h2 class="section-title">{{ i18n "footer-other-section-text" }}</h2>
         <ul class="nav">
           <li><a href="https://www.eclipse.org/ide/">{{ i18n "footer-other-tools-text" }}</a></li>
