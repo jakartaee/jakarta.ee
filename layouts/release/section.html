@@ -1,3 +1,7 @@
+{{ define "head_suffix" }}
+<link href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+{{ end }}
+
 {{ define "header"}}
   <a class="sr-only" href="#content">Skip to main content</a>
   <header class="header-wrapper{{- with .Params.header_wrapper_class | default .Site.Params.header_wrapper_class }} {{ . }}{{end}}" id="header-wrapper">
@@ -85,19 +89,16 @@
         <div class="col-md-2 col-md-offset-2 vertical-align">
           <span class="jumbotron-right-content"><i>9</i></span>
         </div>
-        <div class="col-md-9 vertical-align">
+        <div class="col-md-9 col-md-offset-1 vertical-align" style="text-align: left;">
           <p><span class="p text-orange">An open, community-driven platform</span> <br> for future innovation of <br> enterprise Java technologies</p>
         </div>
       </div>
 
-      <div class="container">
-          {{ if isset .Page.Params "links" }}
-          <ul class="list-inline buttons">
-            {{range $key,$val := index .Page.Params.links}}
-              <li class="vcenter"><a class="btn btn-primary white-space-normal vertical-align" href="{{ (index $val 0).href}}">{{ (index $val 1).text}}</a></li>
-            {{end}}
-          </ul>
-           {{end}} 
+      <div class="container jumbotron-button-container">
+        <ul class="list-inline buttons">
+          <li class="vcenter"><a class="btn btn-primary vertical-align" href="#">DOWNLOAD <br/> COMPATIBLE PRODUCTS</a></li>
+          <li class="vcenter"><a class="btn btn-primary vertical-align" href="#">SPECIFICATIONS</a></li>
+        </ul>
       </div>
     </div>
     {{ end }}

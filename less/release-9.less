@@ -2,14 +2,20 @@
   flex-wrap: wrap;
 }
 
-.white-space-normal {
-  white-space: normal;
-}
-
 .vertical-align-space-evenly {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+}
+
+.jumbotron-button-container {
+  @media (min-width: @screen-sm-min) {  // 768px
+    width: 700px;
+  }
+}
+
+.font-exo {
+  font-family: 'Exo', sans-serif;
 }
 
 .header-release-9 {
@@ -22,6 +28,19 @@
     #main-menu {
       a {
         color: @brand-secondary;
+      }
+
+      a:hover {
+        color: @brand-secondary;
+        text-decoration: none;
+        border-bottom: solid @brand-primary;
+      }
+
+      .dropdown-menu {
+        a:hover {
+          border-bottom: none;
+          text-decoration: underline;
+        }
       }
     } 
   
@@ -69,15 +88,20 @@
       background-size:cover;
   
       .btn-primary {
-        color: @brand-primary;
+        color: @white;
         background-color: transparent;
         border-color: @white;
         min-height: 70px;
         text-transform: uppercase;
       }
+
+      .btn-primary:hover {
+        color: @brand-primary;
+      }
     }
   
     .jumbotron-right-content {
+      font-family: 'Exo', sans-serif;
       font-size: 150px;
       @media (min-width: @screen-sm-min) {
         font-size: 300px;
@@ -203,6 +227,10 @@
   overflow-x: hidden;
   overflow-y: visible;
   .btn-blue {
+    background-color: @white;
+    color: @brand-secondary;
+  }
+  .btn-blue:hover {
     background-color: @brand-secondary;
     color: @white;
   }
@@ -239,6 +267,20 @@
   margin-bottom: 200px;
 }
 
+.get-social-section {
+  margin-top: -50px;
+}
+
+.jakarta-download-social {
+  text-align:center;
+  padding:30px 0 50px;
+  .fa-stack {
+    color:@brand-primary;
+    &:hover {
+      color:@brand-secondary;
+    }
+  }
+}
 
 #footer-release-9 {
   background: url("images/release/jakarta9-footer.jpg");
