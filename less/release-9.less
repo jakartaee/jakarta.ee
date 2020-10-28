@@ -206,18 +206,46 @@
   }
 }
 
-.white-paper {
-  background-image: url("images/release/jakarta9-image.png");
+// .white-paper {
+//   // background-image: url("images/release/release-9-download-mobile-bg.jpg");
+//   // background-repeat: no-repeat;
+//   // background-size: cover;
+//   // overflow-x: hidden;
+//   // overflow-y: visible;
+
+//   // @media (min-width: @screen-lg-min) { // 1200px
+//   //   background-position: top;
+//   // }
+
+//   // @media (min-width: @screen-sm-min) {  // 768px
+//   //   background-image: url("images/release/jakarta9-image.png");
+//   //   background-position: left;
+//   // }
+// }
+
+.white-paper-bg {
+
+  ////////////////
+  padding-top: 200px;
+  padding-bottom: 200px;
+  background-image: url("images/release/release-9-download-mobile-bg.jpg");
   background-repeat: no-repeat;
-  background-position: top;
   background-size: cover;
   overflow-x: hidden;
   overflow-y: visible;
-}
 
-.white-paper-bg {
-  padding-left: 0;
-  padding-right: 0;
+  @media (min-width: @screen-lg-min) { // 1200px
+    background-position: top;
+  }
+
+  @media (min-width: @screen-sm-min) {  // 768px
+    background-image: url("images/release/jakarta9-image.png");
+    background-position: left;
+  }
+  ////////////////
+
+  // padding-left: 0;
+  // padding-right: 0;
   .btn-blue {
     background-color: @white;
     color: @brand-secondary;
@@ -237,15 +265,16 @@
 }
 
 .white-paper-download {
-
-  margin-top: 200px;
-  margin-bottom: 200px;
-
+  background-color: rgba(255, 165, 0, 0.8);
+  margin-top: 100px;
+  margin-bottom: 100px;
+  padding-top:100px;
+  padding-bottom: 100px;
+  text-align: center;
+  
   @media (min-width: @screen-sm-min) {  // 768px
-    margin-top: 400px;
-    margin-bottom: 400px;
+    background: none;
   }
-
 }
 
 .jakarta-download-social {
@@ -259,41 +288,18 @@
   }
 }
 
-#footer-release-9 {
+footer#solstice-footer.footer-release-9 {
   background: url("images/release/jakarta9-footer.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  padding-top: 60px;
   color: @white;
-  padding-bottom: 26px;
-  font-size: 14px;
-  border-top: none;
-  h2 {
-    color: @white;
-    margin-top: 0;
-    font-weight: 400;
-    font-size: 18px;
-  }
 
-  ul {
-    margin-left: -15px;
-  }
-
-  a {
+  h2, a, a.social-media-link {
     color: @white;
   }
 
-  a:hover {
-    background-color: transparent;
-  }
-
-  @media (max-width: @screen-xs-max) {
-    text-align: center;
-    ul {
-      margin-left: 0;
-      margin-bottom: 25px;
-    }
+  a:hover, a.social-media-link:hover {
+    color: #bfbebe;
   }
 }
