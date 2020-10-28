@@ -9,7 +9,7 @@ logo: "images/jakarta/jakarta_ee_logo_schooner_color_horizontal_default.png"
 links: [[href: "/compatibility/", text: "Download Compatible Products"], [href: "/specifications/", text: "Specifications"]]
 hide_page_title: true
 header_wrapper_class: "header-release-9"
-show_call_for_action_button: "true"
+show_call_for_action_button: "false"
 container: "container-fluid"
 ---
 
