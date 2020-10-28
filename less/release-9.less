@@ -2,12 +2,6 @@
   flex-wrap: wrap;
 }
 
-.vertical-align-space-evenly {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-}
-
 .jumbotron-button-container {
   @media (min-width: @screen-sm-min) {  // 768px
     width: 700px;
@@ -190,7 +184,7 @@
 
 }
 
-.jakartaee-hr {
+.jakarta-ee-hr {
     max-width: 150px;
     border-top: 5px solid @brand-primary;
     margin-left: 0;
@@ -198,14 +192,11 @@
 
 
 .font-numbers {
+  font-size: 65px;
 
-    @media (min-width: @screen-sm-min) {
-      font-size: 100px;
-    }
-  
-    @media (max-width: @screen-xs-max) {
-      font-size: 65px;
-    }
+  @media (min-width: @screen-sm-min) { // 768px
+    font-size: 100px;
+  }
 }
 
 .btn-watch-video {
@@ -247,15 +238,14 @@
 
 .white-paper-download {
 
+  margin-top: 200px;
+  margin-bottom: 200px;
+
   @media (min-width: @screen-sm-min) {  // 768px
-      margin-top: 400px;
-      margin-bottom: 400px;
+    margin-top: 400px;
+    margin-bottom: 400px;
   }
 
-  @media (max-width: @screen-xs-max) {  // 767px
-    margin-top: 200px;
-    margin-bottom: 200px;
-  }
 }
 
 .jakarta-download-social {
