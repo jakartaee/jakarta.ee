@@ -2,9 +2,30 @@
   flex-wrap: wrap;
 }
 
+.jumbotron-wrapper {
+  overflow: hidden;
+  position: relative;
+}
+
+#video-background {
+  position: absolute;
+  min-width: 100%;
+  min-height: 100%;
+  // min-height: 650px;
+  // width: auto;
+  // height: auto;
+  // z-index: 0;
+
+  @media (min-width: @screen-sm-min) {  // 768px
+
+  }
+}
+
 .jumbotron-button-container {
+  position: relative;
   @media (min-width: @screen-sm-min) {  // 768px
     width: 700px;
+
   }
 }
 

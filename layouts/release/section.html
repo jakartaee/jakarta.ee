@@ -79,26 +79,33 @@
     <!---Navbar end --->
 
     {{ if isset .Page.Params "headline" }}
-    <div class="jumbotron featured-jumbotron featured-jumbotron-download vertical-align flex-column margin-bottom-0">
-
-      <div class="flex-grow-container vertical-align flex-wrap">
-        <div class="col-md-10 flex-column">
-          <p style="align-self: flex-start;"><span class="p text-primary">version 9</span> new release</p>
-          <h1>Jakarta&nbsp;EE</h1>
+    <div class="jumbotron-wrapper">
+      <video autoplay muted loop id="video-background">
+        <source src="videos/header-video.mp4" type="video/mp4">
+      </video>
+      <div class="jumbotron featured-jumbotron featured-jumbotron-download vertical-align flex-column margin-bottom-0">
+        {{/*  <video autoplay muted loop id="myVideo">
+          <source src="videos/header-video.mp4" type="video/mp4">
+        </video>  */}}
+        <div class="flex-grow-container vertical-align flex-wrap">
+          <div class="col-md-10 flex-column">
+            <p style="align-self: flex-start;"><span class="p text-primary">version 9</span> new release</p>
+            <h1>Jakarta&nbsp;EE</h1>
+          </div>
+          <div class="col-md-2 col-md-offset-2 vertical-align">
+            <span class="jumbotron-right-content"><i>9</i></span>
+          </div>
+          <div class="col-md-9 col-md-offset-1 vertical-align" style="text-align: left;">
+            <p><span class="p text-primary">An open, community-driven platform</span> <br> for future innovation of <br> enterprise Java technologies</p>
+          </div>
         </div>
-        <div class="col-md-2 col-md-offset-2 vertical-align">
-          <span class="jumbotron-right-content"><i>9</i></span>
+  
+        <div class="container jumbotron-button-container">
+          <ul class="list-inline buttons">
+            <li class="vcenter"><a class="btn btn-primary vertical-align" href="#">DOWNLOAD <br/> COMPATIBLE PRODUCTS</a></li>
+            <li class="vcenter"><a class="btn btn-primary vertical-align" href="#">SPECIFICATIONS</a></li>
+          </ul>
         </div>
-        <div class="col-md-9 col-md-offset-1 vertical-align" style="text-align: left;">
-          <p><span class="p text-primary">An open, community-driven platform</span> <br> for future innovation of <br> enterprise Java technologies</p>
-        </div>
-      </div>
-
-      <div class="container jumbotron-button-container">
-        <ul class="list-inline buttons">
-          <li class="vcenter"><a class="btn btn-primary vertical-align" href="#">DOWNLOAD <br/> COMPATIBLE PRODUCTS</a></li>
-          <li class="vcenter"><a class="btn btn-primary vertical-align" href="#">SPECIFICATIONS</a></li>
-        </ul>
       </div>
     </div>
     {{ end }}
