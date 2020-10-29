@@ -28,20 +28,23 @@
     }
   
     #main-menu {
-      a {
-        color: @brand-secondary;
-      }
 
-      a:hover {
-        color: @brand-secondary;
-        text-decoration: none;
-        border-bottom: solid @brand-primary;
-      }
-
-      .dropdown-menu {
+      @media (min-width: @screen-sm-min) {  // 768px
+        a {
+          color: @brand-secondary;
+        }
+  
         a:hover {
-          border-bottom: none;
-          text-decoration: underline;
+          color: @brand-secondary;
+          text-decoration: none;
+          border-bottom: solid @brand-primary;
+        }
+  
+        .dropdown-menu {
+          a:hover {
+            border-bottom: none;
+            text-decoration: underline;
+          }
         }
       }
     } 
