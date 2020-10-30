@@ -11,6 +11,7 @@ hide_page_title: true
 header_wrapper_class: "header-release-9"
 show_call_for_action_button: "false"
 container: "container-fluid"
+footer_class: "footer-release-9"
 ---
 
 {{< pages/release >}}
