@@ -7,24 +7,32 @@
   position: relative;
 }
 
+.hide {
+  display: none;
+}
+
 /** Animations **/
 @keyframes video-slidein {
   from {
     margin-top: 100%;
+    margin-left: 100%;
   }
 
   to {
     margin-top: 0%;
+    margin-left: 0%;
   }
 }
 
 @keyframes background-image-slidein {
   from {
     background-position-y:-1000%;
+    background-position-x:-1000%;
   }
 
   to {
     background-position-y:0;
+    background-position-x: 0;
   }
 }
 
@@ -44,16 +52,16 @@
   min-width: 100%;
   min-height: 100%;
   animation-name: video-slidein;
-  animation-duration: .5s;
+  animation-duration: 1s;
   animation-timing-function: linear;
-
-  @media (min-width: @screen-sm-min) {  // 768px
-  }
 }
 
 
 .jumbotron-button-container {
   position: relative;
+  animation-name: jumbotron-zoomin;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
   @media (min-width: @screen-sm-min) {  // 768px
     width: 700px;
 
@@ -146,7 +154,7 @@
     background-repeat:no-repeat;
     background-size:cover;
     animation-name: background-image-slidein;
-    animation-duration: .5s;
+    animation-duration: 1s;
     animation-timing-function: linear;
 
     .btn-primary {
