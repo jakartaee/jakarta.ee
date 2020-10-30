@@ -7,19 +7,50 @@
   position: relative;
 }
 
+/** Animations **/
+@keyframes video-slidein {
+  from {
+    margin-top: 100%;
+  }
+
+  to {
+    margin-top: 0%;
+  }
+}
+
+@keyframes background-image-slidein {
+  from {
+    background-position-y:-1000%;
+  }
+
+  to {
+    background-position-y:0;
+  }
+}
+
+@keyframes jumbotron-zoomin {
+  from {
+    transform: scale(0);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
+/** Animations ends **/
+
 #video-background {
   position: absolute;
   min-width: 100%;
   min-height: 100%;
-  // min-height: 650px;
-  // width: auto;
-  // height: auto;
-  // z-index: 0;
+  animation-name: video-slidein;
+  animation-duration: .5s;
+  animation-timing-function: linear;
 
   @media (min-width: @screen-sm-min) {  // 768px
-
   }
 }
+
 
 .jumbotron-button-container {
   position: relative;
@@ -31,6 +62,9 @@
 
 .jumbotron {
   .flex-grow-container {
+    animation-name: jumbotron-zoomin;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
     @media (min-width: @screen-sm-min) {  // 768px
       flex-grow: 1;
     }
@@ -42,119 +76,120 @@
 }
 
 .header-release-9 {
-    .row-toolbar-col {
+  .row-toolbar-col {
+    a {
+      color: @brand-primary;
+    }
+  }
+
+  #main-menu {
+    @media (min-width: @screen-sm-min) {  // 768px
       a {
-        color: @brand-primary;
+        color: @brand-secondary;
       }
-    }
-  
-    #main-menu {
 
-      @media (min-width: @screen-sm-min) {  // 768px
-        a {
-          color: @brand-secondary;
-        }
-  
+      a:hover {
+        color: @brand-secondary;
+        text-decoration: none;
+        border-bottom: solid @brand-primary;
+      }
+
+      .dropdown-menu {
         a:hover {
-          color: @brand-secondary;
-          text-decoration: none;
-          border-bottom: solid @brand-primary;
-        }
-  
-        .dropdown-menu {
-          a:hover {
-            border-bottom: none;
-            text-decoration: underline;
-          }
+          border-bottom: none;
+          text-decoration: underline;
         }
       }
-    } 
-  
-    background-color: @white;
-  
-    h1 {
-      font-size: 40px;
-      font-weight: 400;
-      font-stretch: condensed;
-      text-align:center;
-      @media (min-width: 570px) {
-        font-size: 50px;
-      }
-      @media (min-width: 650px) {
-        font-size: 55px;
-      }
-      @media (min-width: @screen-sm-min) {
-        text-align:left;
-        font-size: 70px;
-      }
-      @media (min-width: @screen-md-min) {
-        font-size: 90px;
-      }
-      @media (min-width: @screen-lg-min) {
-        font-size: 110px;
-      }
-      text-transform: uppercase;
-      line-height: 1;
-      margin-bottom: 0;
-      &:after {
-        border-bottom:none;
-      }
     }
-  
-    p, p span {
-      font-weight: 400;
-      text-transform: uppercase;
-      font-stretch: condensed;
-    }
-  
-    .jumbotron.featured-jumbotron-download {
-      min-height: 650px;
-      background-image:url("images/release/jakarta9-header.jpg");
-      background-repeat:no-repeat;
-      background-size:cover;
-  
-      .btn-primary {
-        color: @white;
-        background-color: transparent;
-        border-color: @white;
-        min-height: 70px;
-        text-transform: uppercase;
-      }
+  } 
 
-      .btn-primary:hover {
-        color: @brand-primary;
-      }
+  background-color: @white;
+
+  h1 {
+    font-size: 40px;
+    font-weight: 400;
+    font-stretch: condensed;
+    text-align:center;
+    @media (min-width: 570px) {
+      font-size: 50px;
     }
-  
-    .jumbotron-right-content {
-      font-family: 'Exo', sans-serif;
-      font-size: 150px;
-      @media (min-width: @screen-sm-min) {
-        font-size: 300px;
-      }
-      @media (min-width: @screen-md-min) {
-        font-size: 300px;
-      }
-      @media (min-width: @screen-lg-min) {
-        font-size: 300px;
-      }
-      line-height: 1;
-      font-weight: 400;
+    @media (min-width: 650px) {
+      font-size: 55px;
     }
-    ul.buttons {
-      li {
-        width:100%;
-        @media (min-width: @screen-md-min) {
-          width:49%;
-        }
-      }
+    @media (min-width: @screen-sm-min) {
+      text-align:left;
+      font-size: 70px;
     }
-    .btn {
+    @media (min-width: @screen-md-min) {
+      font-size: 90px;
+    }
+    @media (min-width: @screen-lg-min) {
+      font-size: 110px;
+    }
+    text-transform: uppercase;
+    line-height: 1;
+    margin-bottom: 0;
+    &:after {
+      border-bottom:none;
+    }
+  }
+
+  p, p span {
+    font-weight: 400;
+    text-transform: uppercase;
+    font-stretch: condensed;
+  }
+
+  .jumbotron.featured-jumbotron-download {
+    min-height: 650px;
+    background-image:url("images/release/jakarta9-header.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+    animation-name: background-image-slidein;
+    animation-duration: .5s;
+    animation-timing-function: linear;
+
+    .btn-primary {
+      color: @white;
+      background-color: transparent;
+      border-color: @white;
+      min-height: 70px;
+      text-transform: uppercase;
+    }
+    .btn-primary:hover {
+      color: @brand-primary;
+    }
+  }
+
+  .jumbotron-right-content {
+    font-family: 'Exo', sans-serif;
+    font-size: 150px;
+    @media (min-width: @screen-sm-min) {
+      font-size: 300px;
+    }
+    @media (min-width: @screen-md-min) {
+      font-size: 300px;
+    }
+    @media (min-width: @screen-lg-min) {
+      font-size: 300px;
+    }
+    line-height: 1;
+    font-weight: 400;
+  }
+  ul.buttons {
+    li {
       width:100%;
-      @media (max-width: @screen-sm-max) {
-        margin-bottom:15px;
+      @media (min-width: @screen-md-min) {
+        width:49%;
       }
     }
+  }
+  .btn {
+    width:100%;
+    @media (max-width: @screen-sm-max) {
+      margin-bottom:15px;
+    }
+  }
 }
   
 
