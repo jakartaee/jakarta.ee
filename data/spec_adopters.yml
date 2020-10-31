@@ -97,7 +97,16 @@ adopters:
       homepage_url: https://twitter.com/TurkeyJBUG/
       logo: turkeyjboss.png
       logo_white: turkeyjboss.png
-      
+
+ - name: Jakarta NoSQL
+   directory: specifications/nosql/
+   adopters:
+     - name: Garden State Java User Group
+       homepage_url: http://gsjug.org/
+       logo: duke-gsjug.png
+       logo_white: duke-gsjug.png
+
+
 # Template: Example for creating new specification entry
 #  - name: Jakarta Bean Validation
 #    directory: specifications/bean-validation/ # Trailing slash is required.
