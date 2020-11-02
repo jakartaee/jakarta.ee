@@ -44,6 +44,7 @@ layout: "single"
 ## Tech Talks Meet-ups{#meetups}
 
 - [Jakarta Tech Talks](https://www.meetup.com/jakartatechtalks_/)
+- [Sign Up to Host](https://docs.google.com/forms/d/e/1FAIpQLSdbG1FTITUCtzk36N0mc_981rMnuThqFLQMHJg2IFxOTkPoRQ/viewform)
 
 ---
 
