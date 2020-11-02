@@ -12,27 +12,37 @@
 }
 
 /** Animations **/
-@keyframes video-slidein {
+// @keyframes video-slidein {
+//   from {
+//     margin-top: 100%;
+//     margin-left: 100%;
+//   }
+
+//   to {
+//     margin-top: 0%;
+//     margin-left: 0%;
+//   }
+// }
+
+// @keyframes background-image-slidein {
+//   from {
+//     background-position-y: 1000%;
+//     background-position-x: -2000px;
+//   }
+
+//   to {
+//     background-position-y:0;
+//     background-position-x: 0;
+//   }
+// }
+
+@keyframes jumbotron-slidein-down {
   from {
-    margin-top: 100%;
-    margin-left: 100%;
+    margin-top: -100%;
   }
 
   to {
-    margin-top: 0%;
-    margin-left: 0%;
-  }
-}
-
-@keyframes background-image-slidein {
-  from {
-    background-position-y: 1000%;
-    background-position-x: -2000px;
-  }
-
-  to {
-    background-position-y:0;
-    background-position-x: 0;
+    margin-bottom: 0%;
   }
 }
 
@@ -51,9 +61,9 @@
   position: absolute;
   min-width: 100%;
   min-height: 100%;
-  animation-name: video-slidein;
-  animation-duration: 1s;
-  animation-timing-function: linear;
+  // animation-name: video-slidein;
+  // animation-duration: 1s;
+  // animation-timing-function: linear;
 }
 
 
@@ -69,8 +79,9 @@
 }
 
 .jumbotron {
+
   .flex-grow-container {
-    animation-name: jumbotron-zoomin;
+    animation-name: jumbotron-slidein-down;
     animation-duration: 1s;
     animation-timing-function: ease-in-out;
     @media (min-width: @screen-sm-min) {  // 768px
@@ -153,9 +164,9 @@
     background-image:url("images/release/jakarta9-header.jpg");
     background-repeat:no-repeat;
     background-size:cover;
-    animation-name: background-image-slidein;
-    animation-duration: 1s;
-    animation-timing-function: linear;
+    // animation-name: background-image-slidein;
+    // animation-duration: 1s;
+    // animation-timing-function: linear;
 
     .btn-primary {
       color: @white;
