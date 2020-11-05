@@ -91,7 +91,7 @@ sets:
       image_width: 120
       download: 'https://www.ibm.com/support/fixcentral/swg/selectFixes?parent=ibm%7EWebSphere&product=ibm/WebSphere/WebSphere+Liberty&release=20.0.0.3&platform=All&function=fixId&fixids=wlp-javaee8-20.0.0.3&includeSupersedes=0'
       versions:
-      - version: v20.0.0.3
+      - version: 20.0.0.3
         compatibility: 'https://www.ibm.com/cloud/websphere-liberty/platform-tckresults'
 
   - title: Jakarta EE 8 Web Profile Compatible Products
@@ -134,5 +134,5 @@ sets:
       image_width: 120
       download: 'https://www.ibm.com/support/fixcentral/swg/selectFixes?parent=ibm%7EWebSphere&product=ibm/WebSphere/WebSphere+Liberty&release=20.0.0.3&platform=All&function=fixId&fixids=wlp-javaee8-20.0.0.3&includeSupersedes=0'
       versions:
-      - version: v20.0.0.3
+      - version: 20.0.0.3
         compatibility: 'https://www.ibm.com/cloud/websphere-liberty/profile-tckresults'
