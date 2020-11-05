@@ -29,14 +29,6 @@ sets:
       - version: 5.1.0
         compatibility: 'https://eclipse-ee4j.github.io/glassfish/certifications/jakarta-full-profile/8.0/TCK-Results'
 
-    - name: Open Liberty
-      vendor: IBM Corporation
-      image: '/images/compatible_products/ibm_open_liberty.png'
-      download: 'https://openliberty.io/downloads/'
-      versions:
-      - version: 19.0.0.6
-        compatibility: 'https://openliberty.io/certifications/jakartaee/platform/8/TCKResults.html'
-
     - name: WildFly
       vendor: Red Hat
       image: '/images/compatible_products/red-hat-wildfly-logo.png'
@@ -82,8 +74,17 @@ sets:
       image: '/images/compatible_products/fujitsu.svg'
       download: 'https://www.fujitsu.com/jp/software/applatform/'
       versions:
-      - version: v1.0
+      - version: 1.0
         compatibility: 'https://www.fujitsu.com/jp/products/software/middleware/business-middleware/middleware/applatform/jakartaee-report/eap100-ee8full-tck-results/'
+
+    - name: Open Liberty
+      vendor: IBM Corporation
+      image: '/images/compatible_products/openliberty_logo_navy.svg'
+      image_width: 150
+      download: 'https://openliberty.io/downloads/'
+      versions:
+      - version: 20.0.0.3
+        compatibility: 'https://openliberty.io/certifications/jakartaee/platform/8/20.0.0.3-TCKResults.html'
 
   - title: Jakarta EE 8 Web Profile Compatible Products
     items:
@@ -94,14 +95,6 @@ sets:
       versions:
       - version: 5.1.0
         compatibility: 'https://eclipse-ee4j.github.io/glassfish/certifications/jakarta-web-profile/8.0/TCK-Results'
-
-    - name: Open Liberty
-      vendor: IBM Corporation
-      image: '/images/compatible_products/ibm_open_liberty.png'
-      download: 'https://openliberty.io/downloads/'
-      versions:
-      - version: 19.0.0.6
-        compatibility: 'https://openliberty.io/certifications/jakartaee/webprofile/8/TCKResults.html'
 
     - name: WildFly
       vendor: Red Hat
@@ -118,3 +111,12 @@ sets:
       versions:
       - version: 7.3.0  
         compatibility: 'https://github.com/RedHatOfficial/jbosseap-certifications/blob/EE8/EAP-7.3.0/jakarta-web-profile.adoc'
+
+    - name: Open Liberty
+      vendor: IBM Corporation
+      image: '/images/compatible_products/openliberty_logo_navy.svg'
+      image_width: 150
+      download: 'https://openliberty.io/downloads/'
+      versions:
+      - version: 20.0.0.3
+        compatibility: 'https://openliberty.io/certifications/jakartaee/webprofile/8/20.0.0.3-TCKResults.html'
