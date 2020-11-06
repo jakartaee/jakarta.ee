@@ -44,6 +44,7 @@ layout: "single"
 ## 技术沙龙{#meetups}
 
 - [Jakarta 技术沙龙](https://www.meetup.com/jakartatechtalks_/)
+- [注册或建议演讲主题](https://docs.google.com/forms/d/e/1FAIpQLSdbG1FTITUCtzk36N0mc_981rMnuThqFLQMHJg2IFxOTkPoRQ/viewform)
 
 ---
 
