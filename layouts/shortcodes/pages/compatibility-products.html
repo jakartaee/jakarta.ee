@@ -28,7 +28,7 @@
           <div class="match-height-item-by-row padding-20 flex-column">
             <div class="center-block padding-left-30 padding-right-30 padding-bottom-10 padding-top-10 grid-center" data-mh="{{ $title | urlize }}">
               {{ if .image }}
-              <a href="{{ .download }}"><img class="img img-responsive" src="{{ .image }}" alt="{{ .vendor }}'s {{ .name }} logo"></a>
+              <a href="{{ .download }}"><img width="{{ .image_width }}" class="img img-responsive" src="{{ .image }}" alt="{{ .vendor }}'s {{ .name }} logo"></a>
               {{ else }}
 	            <div class="icon-backdrop">
 	              <div class="ratio"></div>
@@ -41,7 +41,7 @@
               <p class="flex-grow margin-bottom-10">{{ .vendor }}</p>
               <p>
               {{ range .versions }} 
-                <a class="compatibility-link" href="{{ .compatibility }}">{{ .version }}</a> 
+                <a class="compatibility-link" href="{{ .compatibility }}">{{ .version }}</a> <br>
               {{ end }}           
               </p>
             </div>
