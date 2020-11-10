@@ -36,6 +36,8 @@ sets:
       versions:
       - version: 19.0.0.6
         compatibility: 'https://openliberty.io/certifications/jakartaee/platform/8/TCKResults.html'
+      - version: 20.0.0.3
+        compatibility: 'https://openliberty.io/certifications/jakartaee/platform/8/20.0.0.3-TCKResults.html'
 
     - name: WildFly
       vendor: Red Hat
@@ -102,6 +104,8 @@ sets:
       versions:
       - version: 19.0.0.6
         compatibility: 'https://openliberty.io/certifications/jakartaee/webprofile/8/TCKResults.html'
+      - version: 20.0.0.3
+        compatibility: 'https://openliberty.io/certifications/jakartaee/webprofile/8/20.0.0.3-TCKResults.html'
 
     - name: WildFly
       vendor: Red Hat
