@@ -18,37 +18,102 @@
   <div class="col-md-8" style="text-align: center;"><a class="btn btn-lg btn-secondary" href="https://github.com/eclipse-ee4j/jakartaee-platform/issues?q=is%3Aissue+is%3Aclosed+label%3Acertification">Compatibility Requests</a></div>
 </div>
 
-{{ range $.Site.Data.compatible_products.sets }}
-  {{ $title:=.title }}
-  <div class="product-list">
-    <h2 class="text-center heading-line" id="{{ .title | urlize }}"><span style="background-color:#fff;">{{ .title }}</span></h2>
-    <div class="row">
-      {{ range sort .items "name" "asc"}}
-        <div class="col-xs-24 col-sm-12 col-lg-6 padding-bottom-20">
-          <div class="match-height-item-by-row padding-20 flex-column">
-            <div class="center-block padding-left-30 padding-right-30 padding-bottom-10 padding-top-10 grid-center" data-mh="{{ $title | urlize }}">
-              {{ if .image }}
-              <a href="{{ .download }}"><img width="{{ .image_width }}" class="img img-responsive" src="{{ .image }}" alt="{{ .vendor }}'s {{ .name }} logo"></a>
-              {{ else }}
-	            <div class="icon-backdrop">
-	              <div class="ratio"></div>
-	              <div class="icon-container"><i class="fa fa-download"></i></div>
-	            </div>
-              {{ end }}
-            </div>
-            <div class="flex-grow text-center flex-column">
-              <p class="margin-bottom-0"><strong>{{ .name }}</strong></p>
-              <p class="flex-grow margin-bottom-10">{{ .vendor }}</p>
-              <p>
-              {{ range .versions }} 
-                <a class="compatibility-link" href="{{ .compatibility }}">{{ .version }}</a>
-              {{ end }}           
-              </p>
-            </div>
+<!---------------------------------------------------------->
+
+<div class="row content-nav-tab-toggle">
+  <div class="visible-xs">
+    <div class="vertical-align">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-member-levels">
+        <p class="nav-label"><strong>Explore Members</strong></p>
+        <div class="hamburger-wrapper">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </div>
+      </button>
+    </div>
+  </div>
+ </div>
+ 
+ <div class="row">
+   <div class="navbar-collapse collapse" id="navbar-member-levels">
+     <ul class="nav nav-tabs solstice-tabs content-nav-tab" role="tablist">
+       <li role="presentation" class="active">
+         <a class="background-grey" href="#tab-one" data-toggle="tab" aria-controls="tab-one" role="tab">
+          Jakarta EE Compatible Products
+         </a>
+       </li>
+       <li role="presentation" class="">
+         <a class="background-grey" href="#tab-two" data-toggle="tab" aria-controls="tab-two" role="tab">
+          Jakarta EE 8
+         </a>
+       </li>
+       <li role="presentation" class="">
+         <a class="background-grey" href="#tab-three" data-toggle="tab" aria-controls="tab-three" role="tab">
+          Jakarta EE 9
+         </a>
+       </li>
+     </ul>
+   </div>
+ </div>
+ <div class="content-nav-tab-body tab-content" id="tabs-content">
+   <div role="tabpanel" class="tab-pane tab-pane active" id="tab-one">
+     <h2 class="h3 margin-top-0">Jakarta EE Compatible Products</h2>
+     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+   </div>
+   <div role="tabpanel" class="tab-pane tab-pane" id="tab-two">
+     {{ range $.Site.Data.compatible_products.sets }}
+        {{ $title:=.title }}
+        <div class="product-list">
+          <h2 class="text-center heading-line" id="{{ .title | urlize }}"><span style="background-color:#fff;">{{ .title }}</span></h2>
+          <div class="row">
+           {{ range sort .items "name" "asc"}}
+              <div class="col-xs-24 col-sm-12 col-lg-6 padding-bottom-20">
+                <div class="match-height-item-by-row padding-20 flex-column">
+                  <div class="center-block padding-left-30 padding-right-30 padding-bottom-10 padding-top-10 grid-center" data-mh="{{ $title | urlize }}">
+                    {{ if .image }}
+                    <a href="{{ .download }}"><img width="{{ .image_width }}" class="img img-responsive" src="{{ .image }}" alt="{{ .vendor }}'s {{ .name }} logo"></a>
+                    {{ else }}
+                    <div class="icon-backdrop">
+                      <div class="ratio"></div>
+                      <div class="icon-container"><i class="fa fa-download"></i></div>
+                    </div>
+                    {{ end }}
+                  </div>
+                  <div class="flex-grow text-center flex-column">
+                    <p class="margin-bottom-0"><strong>{{ .name }}</strong></p>
+                    <p class="flex-grow margin-bottom-10">{{ .vendor }}</p>
+                    <p>
+                    {{ range .versions }} 
+                      <a class="compatibility-link" href="{{ .compatibility }}">{{ .version }}</a>
+                    {{ end }}           
+                    </p>
+                  </div>
+                </div>
+              </div>
+           {{ end }}
+           <div class="clearfix"></div>
           </div>
         </div>
       {{ end }}
-      <div class="clearfix"/>
-    </div>
-  </div>
-{{ end }}
+   </div>
+   <div role="tabpanel" class="tab-pane tab-pane" id="tab-three">
+     <h2 class="h3 margin-top-0">Jakarta EE 9</h2>
+     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+   </div>
+ </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
