@@ -36,6 +36,8 @@ sets:
       versions:
       - version: 19.0.0.6
         compatibility: 'https://openliberty.io/certifications/jakartaee/platform/8/TCKResults.html'
+      - version: 20.0.0.3
+        compatibility: 'https://openliberty.io/certifications/jakartaee/platform/8/20.0.0.3-TCKResults.html'
 
     - name: WildFly
       vendor: Red Hat
@@ -85,6 +87,15 @@ sets:
       - version: v1.0
         compatibility: 'https://www.fujitsu.com/jp/products/software/middleware/business-middleware/middleware/applatform/jakartaee-report/eap100-ee8full-tck-results/'
 
+    - name: IBM WebSphere Liberty 
+      vendor: IBM Corporation
+      image: '/images/compatible_products/websphereliberty.svg'
+      image_width: 120
+      download: 'https://www.ibm.com/support/fixcentral/swg/selectFixes?parent=ibm%7EWebSphere&product=ibm/WebSphere/WebSphere+Liberty&release=20.0.0.3&platform=All&function=fixId&fixids=wlp-javaee8-20.0.0.3&includeSupersedes=0'
+      versions:
+      - version: 20.0.0.3
+        compatibility: 'https://www.ibm.com/cloud/websphere-liberty/platform-tckresults'
+
   - title: Jakarta EE 8 Web Profile Compatible Products
     items:
     - name: Eclipse Glassfish
@@ -102,6 +113,8 @@ sets:
       versions:
       - version: 19.0.0.6
         compatibility: 'https://openliberty.io/certifications/jakartaee/webprofile/8/TCKResults.html'
+      - version: 20.0.0.3
+        compatibility: 'https://openliberty.io/certifications/jakartaee/webprofile/8/20.0.0.3-TCKResults.html'
 
     - name: WildFly
       vendor: Red Hat
@@ -118,3 +131,12 @@ sets:
       versions:
       - version: 7.3.0  
         compatibility: 'https://github.com/RedHatOfficial/jbosseap-certifications/blob/EE8/EAP-7.3.0/jakarta-web-profile.adoc'
+
+    - name: IBM WebSphere Liberty 
+      vendor: IBM Corporation
+      image: '/images/compatible_products/websphereliberty.svg'
+      image_width: 120
+      download: 'https://www.ibm.com/support/fixcentral/swg/selectFixes?parent=ibm%7EWebSphere&product=ibm/WebSphere/WebSphere+Liberty&release=20.0.0.3&platform=All&function=fixId&fixids=wlp-javaee8-20.0.0.3&includeSupersedes=0'
+      versions:
+      - version: 20.0.0.3
+        compatibility: 'https://www.ibm.com/cloud/websphere-liberty/profile-tckresults'
