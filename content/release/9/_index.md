@@ -12,6 +12,7 @@ header_wrapper_class: "header-release-9"
 container: "container-fluid"
 footer_class: "footer-release-9"
 type: "release/9"
+hide_call_for_action: true
 ---
 
 {{< pages/release/9 >}}
