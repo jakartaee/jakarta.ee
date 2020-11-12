@@ -11,6 +11,18 @@
 #        compatibility: 'https://eclipse-ee4j.github.io/glassfish/certifications/jakarta-full-profile/8.0/TCK-Results'
 
 sets:
+  - jakartaee_version: 9
+    items: 
+    - title: Jakarta EE 9 Platform Compatible Products
+      # items:
+      # - name: Payara Server test 9
+      #   vendor: Test 9 Limited
+      #   image: '/images/compatible_products/payara_server.png'
+      #   download: 'https://www.payara.fish/software/downloads/'
+      #   versions:
+      #   - version: 5.21.2
+      #     compatibility: 'https://docs.payara.fish/enterprise/docs/5.21.0/jakartaee-certification/5.21.2/tck-results-full-5.21.2.html'
+
   - jakartaee_version: 8
     items:
     - title: Jakarta EE 8 Platform Compatible Products
@@ -142,15 +154,3 @@ sets:
         versions:
         - version: 20.0.0.3
           compatibility: 'https://www.ibm.com/cloud/websphere-liberty/profile-tckresults'
-
-  - jakartaee_version: 9
-    items: 
-    - title: Jakarta EE 9 Platform Compatible Products
-      # items:
-      # - name: Payara Server test 9
-      #   vendor: Test 9 Limited
-      #   image: '/images/compatible_products/payara_server.png'
-      #   download: 'https://www.payara.fish/software/downloads/'
-      #   versions:
-      #   - version: 5.21.2
-      #     compatibility: 'https://docs.payara.fish/enterprise/docs/5.21.0/jakartaee-certification/5.21.2/tck-results-full-5.21.2.html'
