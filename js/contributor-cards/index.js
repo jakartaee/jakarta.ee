@@ -3,35 +3,35 @@ import sampleSize from 'lodash-es/sampleSize';
 import contributorCard from './contributor-card.js';
 import contributorList from './contributor-list.json';
 
-const cardList = document.querySelector('.card-list.commiter-list');
+const cardList = document.querySelector('.card-list.contributor-list');
 
 if (!!cardList) {
-  // at least handle should exist
-  const filteredList = contributorList.filter(({ handle }) => !!handle);
+  // at least login should exist
+  const filteredList = contributorList.filter(({ login }) => !!login);
   // length of sample array
   const sampleLength = 6;
   // escape name for html
-  const cleanName = ({ handle, name }) => ({
-    handle,
-    name: escape(name || handle),
+  const cleanName = ({ login, name }) => ({
+    login,
+    name: escape(name || login),
   });
 
   // remember lastRandom (no dupcates on two neighbouring runs)
   let lastRandom = [];
   const getRandomSample = () => {
     const randomSample = sampleSize(
-      filteredList.filter(({ handle }) => lastRandom.indexOf(handle) < 0),
+      filteredList.filter(({ login }) => lastRandom.indexOf(login) < 0),
       sampleLength
     );
 
-    lastRandom = randomSample.map(({ handle }) => handle);
+    lastRandom = randomSample.map(({ login }) => login);
 
     return randomSample.map(cleanName).map(contributorCard);
   };
 
   // toggle active cart to not-active and vice versa
   const toggleActiveCard = () =>
-    cardList.querySelectorAll('.commiter-wrapper').forEach((el) =>
+    cardList.querySelectorAll('.contributor-wrapper').forEach((el) =>
       el.querySelectorAll('.contributor-card').forEach((card) => {
         card.classList.contains('active')
           ? card.classList.remove('active')
@@ -43,7 +43,7 @@ if (!!cardList) {
     cardList.innerHTML = getRandomSample()
       .map(
         (card) =>
-          `<div class="commiter-wrapper"><a class="contributor-card active"></a>${card}</div>`
+          `<div class="contributor-wrapper"><a class="contributor-card active"></a>${card}</div>`
       )
       .join('');
     setTimeout(() => toggleActiveCard(), 300);

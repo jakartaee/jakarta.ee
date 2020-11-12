@@ -1,6 +1,6 @@
-export default ({ name, handle }) =>
-  `<a class="committer-card" href="//github.com/${handle}" title="${name}">
-		<div class="committer-name">
+export default ({ name, login }) =>
+  `<a class="contributor-card" href="//github.com/${login}" title="${name}">
+		<div class="contributor-name">
 			<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
 				xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 279 283"
 				style="enable-background:new 0 0 279 283;" xml:space="preserve">
@@ -15,7 +15,7 @@ export default ({ name, handle }) =>
 				</g>
 			</svg>
 			<h4>${name}</h4></div>
-		<div class="committer-image">
-			<img src="//github.com/${handle}.png?size=160" />
+		<div class="contributor-image">
+			<img src="//github.com/${login}.png?size=160" />
     </div>
 </a>`;
