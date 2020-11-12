@@ -1,0 +1,192 @@
+[jakarta-ee-logo-alt]
+  other = "Jakarta EE logo"
+
+[compatibility-intro-text]
+  other = "Jakarta EE 技术的成功有赖于其兼容性，以确保应用的可移植性、安全性、稳定性和弹性。兼容性的存在使得更多的技术供应商可以在企业级Java社群中利用和加强Jakarta EE 的品牌。如果有兴趣把你的产品列在此处，请遵循如下的步骤 <a href=\"get_listed\">加入列表</a>"
+
+[compatibility-logo-alt]
+  other = "{{ .Name }} logo"
+
+[compatibility-download-button-text]
+  other = "Download"
+
+[compatibility-proof-of-compatibility-text]
+  other = "Proof of compatibility"
+
+[compatibility-version-text]
+  other = "Version: "
+
+[connect-mailing-lists-subscribe]
+  other = "订阅"
+
+[connect-mailing-list-community-title]
+  other = "Jakarta EE 社区邮件列表"
+
+[connect-mailing-list-community-body]
+  other = "jakarta.ee-community 邮件列表用于 Jakarta EE 的社区讨论. 订阅这个列表来了解最全的Jakarta EE 消息"
+
+[connect-mailing-list-community-link]
+  other = "https://accounts.eclipse.org/mailing-list/jakarta.ee-community"
+
+[connect-mailing-list-working-group-title]
+  other = "Jakarta EE 工作组邮件列表"
+
+[connect-mailing-list-working-group-body]
+  other = "jakarta.ee-wg 邮件列表用于 Jakarta EE 工作组. 订阅这个列表来了解Jakarta EE的一般信息"
+
+[connect-mailing-list-working-group-link]
+  other = "https://accounts.eclipse.org/mailing-list/jakarta.ee-wg"
+
+[connect-mailing-list-projects-title]
+  other = "项目邮件列表"
+
+[connect-mailing-list-projects-body]
+  other = "想加入么? 注册Jakarta EE 项目邮件列表."
+
+[connect-mailing-list-projects-link-text]
+  other = "邮件列表"
+
+[connect-slack-title]
+  other = "Slack"
+
+[connect-slack-subtitle]
+  other = "加入我们的 Slack 空间"
+
+[connect-slack-link]
+  other = "https://join.slack.com/t/eclipsefoundationhq/shared_invite/zt-crh7mheq-3on2tophEuvQTUGidEAWlg"
+
+[connect-newsletter-title]
+  other = "新闻稿"
+
+[connect-newsletter-subtitle]
+  other = "订阅我们的新闻稿"
+
+[connect-newsletter-link]
+  other = "https://eclipsecon.us6.list-manage.com/subscribe/post"
+
+[connect-updates-title]
+  other = "最新消息"
+
+[connect-updates-body]
+  other = "从 Eclipse Foundation 获取 Jakarta EE 以及其他 Eclipse 项目的新闻、事件和社区公告"
+
+[connect-updates-edit-link]
+  other = "https://accounts.eclipse.org/user/edit#open_tab_privacy"
+
+[connect-updates-edit-text]
+  other = "修改设置"
+
+[connect-updates-link-divider-text]
+  other = "- 或者 -"
+
+[connect-updates-create-link]
+  other = "https://accounts.eclipse.org/user/register"
+
+[connect-updates-create-text]
+  other = "新建账号"
+
+[connect-monthly-calls-title]
+  other = "Jakarta EE 月度会议"
+
+[connect-monthly-calls-body]
+  other = "加入 Jakarta EE 月度会议以了解 Jakarta EE 的相关计划"
+
+[connect-monthly-calls-link]
+  other = "https://calendar.google.com/calendar/embed?src=eclipse-foundation.org_3281qms6riu4kdf354jn5idon0%40group.calendar.google.com&ctz=America%2FToronto"
+
+[connect-blogs-title]
+  other = "Jakarta 博客"
+
+[connect-blogs-body]
+  other = "访问 Jakartablogs.ee 阅读来自全球社区的文章，内容包括Jakarta EE 新闻、技术、最佳实践和兼容产品"
+
+[connect-blogs-link]
+  other = "https://jakartablogs.ee"
+
+[connect-blogs-link-text]
+  other = "查看"
+
+[connect-social-title]
+  other = "社交账号"
+
+[connect-social-body]
+  other = "关注我们的社交账号，了解 Jakarta EE 的最新消息"
+  
+[members-strategic-members-title]
+  other = "战略会员"
+  
+[members-enterprise-members-title]
+  other = "企业会员"
+  
+[members-participant-members-title]
+  other = "参与会员"
+
+[membership-testimonials-title]
+  other = "成员感言"
+
+[jakarta-ee-china-section-index-title]
+  other = "Jakarta EE 中国社区"
+
+[jakarta-ee-china-section-index-info]
+  other = "Jakarta EE中国社区，是经Eclipse基金会授权，由普元信息（Primeton）发起创立并推动发展。致力于在大中化地区推动Jakarta EE的认知与技术分享。\n正如我们所知道的，Java EE改名为Jakarta EE已有很长一段时间了，但是在中国，很少有人意识到Jakarta EE项目以及它的规范性实现的重要性。因此，普元信息现正呼吁您与我们一起努力，扩大Jakarta EE的影响力，为中国的开发者和中国企业做更多有益的事情。"
+
+[jakarta-ee-china-section-index-mailinglist-title]
+  other = "Jakarta EE 中国社区邮件列表"
+ 
+[jakarta-ee-china-section-index-mailinglist-info]
+  other = "订阅和了解最新的Jakarta EE 中国社区资讯"
+ 
+[jakarta-ee-china-section-index-mailinglist-subscribe]
+  other = "加入邮件列表"
+
+[jakarta-ee-china-section-index-getlisted-title]
+  other = "想要把你的名字也加入列表么？"
+
+[jakarta-ee-china-section-index-getlisted-info]
+  other = "目前Jakarta EE中国社区已经正式成立，我们欢迎所有对Java EE或Jakarta EE感兴趣的同学加入社区。"
+
+[jakarta-ee-china-section-index-getlisted-signup]
+  other = "加入 Jakarta EE 中国社区"
+
+[jakarta-ee-china-section-index-memberlist]
+  other = "成员列表"
+
+[sidebar-title]
+  other = "和我们一起创新"  
+
+[sidebar-about-jakartaee]
+  other = "关于 Jakarta EE"
+
+[sidebar-faqs]
+  other = "常见问题解答"
+
+[sidebar-become-a-member]
+  other = "加入工作组"
+
+[sidebar-connect]
+  other = "联系我们"
+
+[sidebar-working-group-charter]
+  other = "工作组章程"
+
+[sidebar-technical-direction]
+  other = "技术指引"
+
+[sidebar-newsletter-archives]
+  other = "简讯存档"
+
+[sidebar-meeting-minutes]
+  other = "会议纪要"
+
+[sidebar-trademark-guidelines]
+  other = "商标指引"
+
+[sidebar-specification-process]
+  other = "规范过程"
+
+[pages-newsletter-sign-up-to-our-newsletter]
+  other = "订阅我们的简讯"
+
+[layouts-committees-list-landing-page-info]
+  other = "Jakarta EE 委员会是确保 Jakarta EE 各方面进展的治理机构。以下是基于 <a href=\"https:\/\/www.eclipse.org\/org\/workinggroups\/jakarta_ee_charter.php\">Jakarta EE 工作组章程​</a> 的治理机构:"
+  

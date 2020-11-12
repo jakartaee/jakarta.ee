@@ -26,7 +26,7 @@
     "generate_contributor_list": "./js/contributor-cards/generate-contributor-lists.sh"
   },
   "dependencies": {
-    "eclipsefdn-hugo-solstice-theme": "0.0.99",
+    "eclipsefdn-hugo-solstice-theme": "0.0.103",
     "lodash-es": "4.17.15"
   },
   "devDependencies": {
