@@ -14,87 +14,30 @@
 
 @import '~eclipsefdn-solstice-assets/less/quicksilver/jakarta/styles.less';
 @import 'transient.less';
+@import 'release-8.less';
+@import 'release-9.less';
+
+.d-inline {
+  display: inline-block;
+}
+
+.jakarta-ee-hr {
+  width: 150px;
+  border-top: 5px solid @brand-primary;
+  margin-left: 0;
+}
+
+.font-100 {
+  font-size: 100px;
+}
 
 .jakarta-download-delivers {
   text-align:center;
   padding:30px 0 60px 0;
 }
 
-.jakarta-download-community {
-  background-image:url("images/release/community.jpg");
-  background-repeat:no-repeat;
-  background-size:cover;
-  text-align:center;
-  color:@white;
-  padding:30px 0;
-  h2 {
-    color:@white;
-  }
-}
-
-.header-download {
-  background-image:url("images/release/header.jpg");
-  background-repeat:no-repeat;
-  background-size:cover;
-  h1 {
-    font-size: 40px;
-    text-align:center;
-    @media (min-width: 570px) {
-      font-size: 50px;
-    }
-    @media (min-width: 650px) {
-      font-size: 55px;
-    }
-    @media (min-width: @screen-sm-min) {
-      text-align:left;
-      font-size: 70px;
-    }
-    @media (min-width: @screen-md-min) {
-      font-size: 90px;
-    }
-    @media (min-width: @screen-lg-min) {
-      font-size: 110px;
-    }
-    font-weight: 200;
-    text-transform: uppercase;
-    line-height: 1;
-    margin-bottom: 0;
-    &:after {
-      border-bottom:none;
-    }
-  }
-  .jumbotron-right-content {
-    font-size: 150px;
-    @media (min-width: @screen-sm-min) {
-      font-size: 300px;
-    }
-    @media (min-width: @screen-md-min) {
-      font-size: 300px;
-    }
-    @media (min-width: @screen-lg-min) {
-      font-size: 300px;
-    }
-    line-height: 1;
-    text-align: left;
-    position: absolute;
-    left: 0;
-    margin-top: -20px;
-    font-weight: 200;
-  }
-  ul.buttons {
-    li {
-      width:100%;
-      @media (min-width: @screen-md-min) {
-        width:49%;
-      }
-    }
-  }
-  .btn {
-    width:100%;
-    @media (max-width: @screen-sm-max) {
-      margin-bottom:15px;
-    }
-  }
+.text-blue {
+  color: @brand-secondary;
 }
 
 .heading-underline {
@@ -111,7 +54,7 @@
     margin:15px auto 0;
   }
   .featured-donate-icon {
-    background-color: #fff;
+    background-color: @white;
     border-radius: 200px;
     height: 300px;
     width: 300px;
@@ -129,28 +72,6 @@
       margin:15px 0 0;
     }
   }
-}
-
-.jakarta-download-social {
-  text-align:center;
-  padding:30px 0 50px;
-  .fa-stack {
-    color:#171c77;
-    &:hover {
-      color:darken(#171c77, 10%);
-    }
-  }
-}
-
-.download-highlights-item {
-  padding:30px;
-  @media (min-width: @screen-sm-min) {
-    padding:0 30px;
-  }
-}
-
-.jakarta-download-next-release {
-  padding:30px 0 50px;
 }
 
 .featured-story.jakarta-ee-banner .featured-story-block-content {
