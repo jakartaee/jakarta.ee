@@ -1,13 +1,13 @@
 import escape from 'lodash-es/escape';
 import sampleSize from 'lodash-es/sampleSize';
-import committerCard from './committer-card.js';
-import committerList from './committer-list.json';
+import contributorCard from './contributor-card.js';
+import contributorList from './contributor-list.json';
 
 const cardList = document.querySelector('.card-list.commiter-list');
 
 if (!!cardList) {
   // at least handle should exist
-  const filteredList = committerList.filter(({ handle }) => !!handle);
+  const filteredList = contributorList.filter(({ handle }) => !!handle);
   // length of sample array
   const sampleLength = 6;
   // escape name for html
@@ -26,13 +26,13 @@ if (!!cardList) {
 
     lastRandom = randomSample.map(({ handle }) => handle);
 
-    return randomSample.map(cleanName).map(committerCard);
+    return randomSample.map(cleanName).map(contributorCard);
   };
 
   // toggle active cart to not-active and vice versa
   const toggleActiveCard = () =>
     cardList.querySelectorAll('.commiter-wrapper').forEach((el) =>
-      el.querySelectorAll('.committer-card').forEach((card) => {
+      el.querySelectorAll('.contributor-card').forEach((card) => {
         card.classList.contains('active')
           ? card.classList.remove('active')
           : card.classList.add('active');
@@ -43,7 +43,7 @@ if (!!cardList) {
     cardList.innerHTML = getRandomSample()
       .map(
         (card) =>
-          `<div class="commiter-wrapper"><a class="committer-card active"></a>${card}</div>`
+          `<div class="commiter-wrapper"><a class="contributor-card active"></a>${card}</div>`
       )
       .join('');
     setTimeout(() => toggleActiveCard(), 300);
@@ -52,7 +52,7 @@ if (!!cardList) {
   const toggleCardContent = () => {
     const randomSample = getRandomSample();
     cardList
-      .querySelectorAll('.committer-card:not(.active)')
+      .querySelectorAll('.contributor-card:not(.active)')
       .forEach((card, i) => {
         card.outerHTML = randomSample[i];
       });

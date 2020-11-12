@@ -33,11 +33,11 @@ mix.scripts([
 ], './static/js/_solstice.js');
 
 mix.js(
-    './js/committer-cards/index.js',
-    './static/js/_committer-cards.js'
+    './js/contributor-cards/index.js',
+    './static/js/_contributor-cards.js'
 )
 
 mix.scripts([
     './static/js/_solstice.js',
-    './static/js/_committer-cards.js'
+    './static/js/_contributor-cards.js'
 ], './static/js/app.js');
