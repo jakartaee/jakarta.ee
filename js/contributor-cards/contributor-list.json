@@ -8,12 +8,32 @@
     "name": "Jonathan C"
   },
   {
+    "login": "Daniel-Dos",
+    "name": "Daniel Dias"
+  },
+  {
     "login": "Degubi",
     "name": "Degubi"
   },
   {
+    "login": "JLLeitschuh",
+    "name": "Jonathan Leitschuh"
+  },
+  {
     "login": "Katie-Richter",
     "name": null
+  },
+  {
+    "login": "MattGill98",
+    "name": "Matt Gill"
+  },
+  {
+    "login": "NicoNes",
+    "name": null
+  },
+  {
+    "login": "OndroMih",
+    "name": "Ondro Mihályi"
   },
   {
     "login": "Pandrex247",
@@ -24,8 +44,16 @@
     "name": "Rohit Jain"
   },
   {
+    "login": "SplotyCode",
+    "name": "SplotyCode"
+  },
+  {
     "login": "Thihup",
     "name": "Thiago Henrique Hüpner"
+  },
+  {
+    "login": "ThomasVitale",
+    "name": "Thomas Vitale"
   },
   {
     "login": "Tomas-Kraus",
@@ -36,24 +64,84 @@
     "name": "David Král"
   },
   {
+    "login": "aguibert",
+    "name": "Andrew Guibert"
+  },
+  {
+    "login": "alei121",
+    "name": null
+  },
+  {
     "login": "alexmario74",
     "name": "Mario Santini"
+  },
+  {
+    "login": "alexsm82",
+    "name": "Alex Motley"
   },
   {
     "login": "alwin-joseph",
     "name": "Alwin Joseph"
   },
   {
+    "login": "am-houtkooper",
+    "name": "Attila Houtkooper"
+  },
+  {
+    "login": "anajosep",
+    "name": "Anand Francis J"
+  },
+  {
     "login": "andymc12",
     "name": "Andy McCright"
+  },
+  {
+    "login": "antoinesd",
+    "name": "Antoine Sabot-Durand"
   },
   {
     "login": "arjantijms",
     "name": "Arjan Tijms"
   },
   {
+    "login": "asanitckii",
+    "name": "Aleksandr Sanitckii"
+  },
+  {
+    "login": "authentication-bot",
+    "name": null
+  },
+  {
+    "login": "bbulk",
+    "name": "Benjamin Bulk"
+  },
+  {
+    "login": "bjetal",
+    "name": null
+  },
+  {
+    "login": "brianmdelaney",
+    "name": "Brian Delaney"
+  },
+  {
     "login": "brodziakm",
     "name": "Mark Brodziak"
+  },
+  {
+    "login": "bshannon",
+    "name": "Bill Shannon"
+  },
+  {
+    "login": "bsungur",
+    "name": "Brandon Sungur"
+  },
+  {
+    "login": "ca-bot",
+    "name": null
+  },
+  {
+    "login": "carryel",
+    "name": "Bongjae Chang"
   },
   {
     "login": "cesarhernandezgt",
@@ -72,6 +160,18 @@
     "name": "Christian Kaltepoth"
   },
   {
+    "login": "cpusam",
+    "name": "Samuel Leonardo"
+  },
+  {
+    "login": "danielkec",
+    "name": "Daniel Kec"
+  },
+  {
+    "login": "dansiviter",
+    "name": null
+  },
+  {
     "login": "darranl",
     "name": "Darran Lofthouse"
   },
@@ -84,20 +184,96 @@
     "name": "David Blevins"
   },
   {
+    "login": "dependabot[bot]",
+    "name": null
+  },
+  {
+    "login": "diorcety",
+    "name": "Diorcet Yann"
+  },
+  {
+    "login": "dmarina-esa",
+    "name": null
+  },
+  {
+    "login": "dmlloyd",
+    "name": "David M. Lloyd"
+  },
+  {
     "login": "doychin",
     "name": "Doychin Denkov Bondzhev"
+  },
+  {
+    "login": "dschulten",
+    "name": "Dietrich Schulten"
   },
   {
     "login": "dslztx",
     "name": "dslztx"
   },
   {
+    "login": "dylanBehetre",
+    "name": null
+  },
+  {
+    "login": "eclipse-cdi-bot",
+    "name": null
+  },
+  {
+    "login": "eclipse-jaxb-impl-bot",
+    "name": null
+  },
+  {
+    "login": "eclipse-jsonb-bot",
+    "name": null
+  },
+  {
+    "login": "eclipse-metro-bot",
+    "name": null
+  },
+  {
+    "login": "eclipsewebmaster",
+    "name": "Eclipse Webmaster team"
+  },
+  {
     "login": "edbratt",
     "name": "Ed Bratt"
   },
   {
+    "login": "ederks85",
+    "name": "Edwin Derks"
+  },
+  {
+    "login": "edwin-amoakwa",
+    "name": "Edwin Kwame Amoakwa"
+  },
+  {
+    "login": "ee4j-bot",
+    "name": null
+  },
+  {
+    "login": "ejb-bot",
+    "name": null
+  },
+  {
+    "login": "el-bot",
+    "name": null
+  },
+  {
+    "login": "endtak",
+    "name": null
+  },
+  {
     "login": "erdlet",
     "name": "Tobias Erdle"
+  },
+  {
+    "login": "felipe-alves-moraes",
+    "name": "Felipe Moraes"
+  },
+  {
+    "login": "follis",
+    "name": "David Follis"
   },
   {
     "login": "fredg02",
@@ -116,12 +292,32 @@
     "name": "Gurkan Erdogdu"
   },
   {
+    "login": "ggam",
+    "name": "Guillermo González de Agüero"
+  },
+  {
+    "login": "gilbode",
+    "name": "Mike Gilbode"
+  },
+  {
+    "login": "glassfish-bot",
+    "name": null
+  },
+  {
     "login": "gregw",
     "name": "Greg Wilkins"
   },
   {
+    "login": "gsmet",
+    "name": "Guillaume Smet"
+  },
+  {
     "login": "gtudan",
     "name": "Gregor Tudan"
+  },
+  {
+    "login": "gunnarmorling",
+    "name": "Gunnar Morling"
   },
   {
     "login": "gurunrao",
@@ -130,6 +326,10 @@
   {
     "login": "hantsy",
     "name": "Hantsy Bai"
+  },
+  {
+    "login": "hebo6",
+    "name": "HeBo"
   },
   {
     "login": "hendrikebbers",
@@ -144,6 +344,10 @@
     "name": null
   },
   {
+    "login": "ivannov",
+    "name": "Ivan St. Ivanov"
+  },
+  {
     "login": "ivargrimstad",
     "name": "Ivar Grimstad"
   },
@@ -153,6 +357,14 @@
   },
   {
     "login": "jansupol",
+    "name": null
+  },
+  {
+    "login": "jarkos",
+    "name": null
+  },
+  {
+    "login": "jaxb-bot",
     "name": null
   },
   {
@@ -176,6 +388,10 @@
     "name": null
   },
   {
+    "login": "jeyvison",
+    "name": "Jeyvison Nascimento"
+  },
+  {
     "login": "jgallimore",
     "name": "Jonathan Gallimore"
   },
@@ -184,12 +400,36 @@
     "name": "Jody Grassel"
   },
   {
+    "login": "jim-krueger",
+    "name": "Jim Krueger"
+  },
+  {
+    "login": "jmehrens",
+    "name": null
+  },
+  {
     "login": "joakime",
     "name": "Joakim Erdfelt"
   },
   {
     "login": "joao0212",
     "name": "João Victor Martins"
+  },
+  {
+    "login": "jpa-bot",
+    "name": null
+  },
+  {
+    "login": "jpollard-github",
+    "name": "Jason Pollard"
+  },
+  {
+    "login": "jsonp-bot",
+    "name": null
+  },
+  {
+    "login": "jta-bot",
+    "name": null
   },
   {
     "login": "kasabuta4",
@@ -204,16 +444,56 @@
     "name": "Werner Keil"
   },
   {
+    "login": "kemitix",
+    "name": "Paul Campbell"
+  },
+  {
     "login": "kwsutter",
     "name": "Kevin Sutter"
+  },
+  {
+    "login": "lachlan-roberts",
+    "name": "Lachlan"
+  },
+  {
+    "login": "lananda",
+    "name": null
+  },
+  {
+    "login": "lefloh",
+    "name": "Florian Hirsch"
+  },
+  {
+    "login": "leomrlima",
+    "name": "Leonardo de Moura Rocha Lima"
+  },
+  {
+    "login": "lilian-benoit",
+    "name": "Lilian BENOIT"
+  },
+  {
+    "login": "lmsurpre",
+    "name": "Lee Surprenant"
+  },
+  {
+    "login": "lounagen",
+    "name": "Julien Blondeau"
   },
   {
     "login": "lukasj",
     "name": "Lukas Jungmann"
   },
   {
+    "login": "m-reza-rahman",
+    "name": "Reza Rahman"
+  },
+  {
     "login": "m0mus",
     "name": "Dmitry Kornilov"
+  },
+  {
+    "login": "manouti",
+    "name": null
   },
   {
     "login": "manovotn",
@@ -224,20 +504,80 @@
     "name": "Mark Thomas"
   },
   {
+    "login": "markus183",
+    "name": "Markus Stauffer"
+  },
+  {
     "login": "marschall",
     "name": "Philippe Marschall"
+  },
+  {
+    "login": "mcserra",
+    "name": "Miguel Serra"
+  },
+  {
+    "login": "michaelhixson",
+    "name": "Michael Hixson"
   },
   {
     "login": "mkarg",
     "name": "Markus KARG"
   },
   {
+    "login": "moghaddam",
+    "name": "Ehsan Zaery Moghaddam"
+  },
+  {
+    "login": "monicadragomir",
+    "name": "Monica Dragomir"
+  },
+  {
+    "login": "moulalis",
+    "name": "Moulali"
+  },
+  {
     "login": "nbosecker",
     "name": "Nancy Bosecker"
   },
   {
+    "login": "nishantraut",
+    "name": "Nishant Raut"
+  },
+  {
+    "login": "njr-11",
+    "name": "Nathan Rauh"
+  },
+  {
+    "login": "nmittles",
+    "name": "Nathan Mittlestat"
+  },
+  {
+    "login": "nuessgens",
+    "name": null
+  },
+  {
+    "login": "okummer",
+    "name": "Olaf Kummer"
+  },
+  {
+    "login": "olivierayache",
+    "name": null
+  },
+  {
+    "login": "omniprof",
+    "name": "Ken Fogel"
+  },
+  {
     "login": "otaviojava",
     "name": "Otávio Santana"
+  },
+  {
+    "login": "ovstetun",
+    "name": "Trond Marius Øvstetun"
+  },
+  {
+    "login": "pieterjanpintens",
+    "name": "Pieter-Jan Pintens"
   },
   {
     "login": "pnicolucci",
@@ -248,16 +588,60 @@
     "name": "Piotrek Żygieło"
   },
   {
+    "login": "rcosne",
+    "name": "Rémy Cosne"
+  },
+  {
+    "login": "rdebusscher",
+    "name": "Rudy De Busscher"
+  },
+  {
     "login": "rfelcman",
     "name": "Radek Felcman"
+  },
+  {
+    "login": "rhuan080",
+    "name": "Rhuan Rocha"
   },
   {
     "login": "rivercartwright",
     "name": "Warwick Hunter"
   },
   {
+    "login": "rmartinc",
+    "name": null
+  },
+  {
+    "login": "roanbrasil",
+    "name": "Roan Brasil Monteiro"
+  },
+  {
+    "login": "ronsigal",
+    "name": "Ron Sigal"
+  },
+  {
     "login": "rtummuru",
     "name": "Ravi Babu Tummuru"
+  },
+  {
+    "login": "russgold",
+    "name": "Russell Gold"
+  },
+  {
+    "login": "rxue",
+    "name": "rxe"
+  },
+  {
+    "login": "sabgit",
+    "name": "S. Ahmet Bolac"
+  },
+  {
+    "login": "santiagorr",
+    "name": "Santiago"
+  },
+  {
+    "login": "sawadood",
+    "name": "Syed A. Wadood"
   },
   {
     "login": "scottkurz",
@@ -272,8 +656,20 @@
     "name": "Maxim Nesen"
   },
   {
+    "login": "servlet-bot",
+    "name": null
+  },
+  {
     "login": "smillidge",
     "name": "Steve Millidge"
+  },
+  {
+    "login": "sniew",
+    "name": null
+  },
+  {
+    "login": "soul2zimate",
+    "name": "Chao Wang"
   },
   {
     "login": "spericas",
@@ -288,6 +684,14 @@
     "name": "Stuart Douglas"
   },
   {
+    "login": "sullis",
+    "name": null
+  },
+  {
+    "login": "svendiedrichsen",
+    "name": "Sven Diedrichsen"
+  },
+  {
     "login": "thadumi",
     "name": "Theodor A. Dumitrescu"
   },
@@ -296,8 +700,36 @@
     "name": "Thodoris Bais"
   },
   {
+    "login": "thomaswoehlke",
+    "name": "Thomas Wöhlke"
+  },
+  {
+    "login": "tirz",
+    "name": null
+  },
+  {
+    "login": "tivrfoa",
+    "name": null
+  },
+  {
+    "login": "tjwatson",
+    "name": "Thomas Watson"
+  },
+  {
+    "login": "tkburroughs",
+    "name": "Tracy Burroughs"
+  },
+  {
+    "login": "tomas-langer",
+    "name": "Tomas Langer"
+  },
+  {
     "login": "tomjenkinson",
     "name": "Tom Jenkinson"
+  },
+  {
+    "login": "triceo",
+    "name": "Lukáš Petrovický"
   },
   {
     "login": "tsyamamoto",
@@ -306,6 +738,22 @@
   {
     "login": "tvallin",
     "name": "Thibault Vallin"
+  },
+  {
+    "login": "tyrus-bot",
+    "name": null
+  },
+  {
+    "login": "vanuatoo",
+    "name": "Vano Beridze"
+  },
+  {
+    "login": "vavishal",
+    "name": "Vaibhav Vishal"
+  },
+  {
+    "login": "vsmid",
+    "name": null
   },
   {
     "login": "waynebeaton",

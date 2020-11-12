@@ -66,6 +66,26 @@ function getCommitAuthors() {
    echo $(getGrraphQL "$QUERY")
 }
 
+function getOrgRepos() {
+  QUERY=$(jq -aRs . <<< "{
+  search(after: "$2", first: 100, query: \"$1 pushed:2019-10-01..2020-12-08 sort:created\", type: REPOSITORY) {
+    pageInfo {
+      hasNextPage
+      endCursor
+    }
+    edges {
+      node {
+        ... on Repository {
+          name
+        }
+      }
+    }
+  }
+}")
+   echo $(getGrraphQL "$QUERY")
+}
+
+
 function pageTraverse() {
     output=""
     while true; do
@@ -87,9 +107,18 @@ function pageTraverse() {
     echo $output
 }
 
+function getRepoData() {
+  echo $(pageTraverse getCommitAuthors 'owner: "'$1'", name: "'$2'"' ".data.repository.ref.target.history.pageInfo") | jq -s '.[].data.repository.ref.target.history.edges'| jq '[ .[].node.author.user | select(.login != null) ] | unique_by(.login)'
+}
+
 prList=$(echo $(pageTraverse getPrAuthors "repo:jakartaee/specifications" ".data.search") $(pageTraverse getPrAuthors "org:eclipse-ee4j" ".data.search") | jq -s '[ .[].data.search.nodes[].author | select(.login != null) ] | unique_by(.login)')
-commitList=$(pageTraverse getCommitAuthors 'owner: "jakartaee", name: "specifications"' ".data.repository.ref.target.history.pageInfo") | jq '[ .[].data.repository.ref.target.history.edges ]' | jq '[ .[].node.author.user | select(.login != null) ] | unique_by(.login)'
-finalList=$(echo $prList $commitList | jq '[ .[] ] | unique_by(.login)')
+commitList=$(echo $(getRepoData "jakartaee" "specifications"))
+
+for repoName in $(echo $(pageTraverse getOrgRepos "org:eclipse-ee4j" ".data.search") | jq -s -r '.[].data.search.edges[].node.name' ); do
+  commitList=$(echo $commitList $(getRepoData "eclipse-ee4j" $repoName))
+done
+
+finalList=$(echo $prList $commitList | jq -s '.[] | .[]' | jq -s '. | unique_by(.login)')
 
 if [ ! -z "$finalList" ]; then
   rm -rf $LIST_FILE
