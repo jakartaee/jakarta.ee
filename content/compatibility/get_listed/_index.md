@@ -1,8 +1,9 @@
 ---
 title: "Get Listed"
+seo_title: "Jakarta EE Compatible Certification | Get Listed as a Jakarta EE Compatible Product"
 headline: "Get Listed"
 date: 2019-06-5T11:10:38-04:00
-description: "Compatible Implementations of Jakarta EE"
+description: "Get listed as a Jakarta EE compatible product to showcase that your enterprise java product meets quality, portability, and scalability requirements."
 hide_sidebar: true
 hide_page_title: true
 draft: false
@@ -10,13 +11,13 @@ links: [[href: "#how-to-get-listed", text: "How to Get Listed"],[href: "/compati
 ---
 
 
-## Benefits of Getting Listed
+## Benefits of Getting Listed as a Compatible Product
 
 There are several benefits associated with completing the process to get listed on the Compatible Products page, including:  
 
 {{< compatibility-get-listed-benefits >}}
 
-## How to Get Listed
+## How to Get Listed as a Compatible Product
 
 To get your product listed on the Compatible Products page, please follow these steps:
 
