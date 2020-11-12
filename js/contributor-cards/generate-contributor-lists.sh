@@ -88,12 +88,13 @@ function pageTraverse() {
 }
 
 prList=$(echo $(pageTraverse getPrAuthors "repo:jakartaee/specifications" ".data.search") $(pageTraverse getPrAuthors "org:eclipse-ee4j" ".data.search") | jq -s '[ .[].data.search.nodes[].author | select(.login != null) ] | unique_by(.login)')
-#commitList=$(pageTraverse getCommitAuthors 'owner: "jakartaee", name: "specifications"' ".data.repository.ref.target.history.pageInfo")
+commitList=$(pageTraverse getCommitAuthors 'owner: "jakartaee", name: "specifications"' ".data.repository.ref.target.history.pageInfo") | jq '[ .[].data.repository.ref.target.history.edges ]' | jq '[ .[].node.author.user | select(.login != null) ] | unique_by(.login)'
+finalList=$(echo $prList $commitList | jq '[ .[] ] | unique_by(.login)')
 
-if [ ! -z "$prList" ]; then
+if [ ! -z "$finalList" ]; then
   rm -rf $LIST_FILE
-  echo $prList > $LIST_FILE
-  echo "Updated $LIST_FILE, total amount: $(echo $prList | jq '. | length') users."
+  echo $finalList | jq . > $LIST_FILE
+  echo "Updated $LIST_FILE, total amount: $(echo $finalList | jq '. | length') users."
 else
   echo "Something went wrong file not updated"
 fi
