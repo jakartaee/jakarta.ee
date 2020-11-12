@@ -1,9 +1,10 @@
 ---
 title: "About"
+seo_title: "Jakarta EE Working Group | The Future of Cloud Native Java Applications"
 headline: "Jakarta EE Working Group"
 date: 2018-04-05T16:09:45-04:00
-description: "Explore and learn about us and the future direction of Jakarta EE."
-hide_page_title: "true"
+description: "The Jakarta EE Working Group is evolving enterprise java as Jakarta EE, the future of open source, cloud native application development using java technologies."
+hide_page_title: true
 layout: "single"
 ---
 
@@ -13,7 +14,7 @@ For many years, Java EE has been a major platform for mission-critical enterpris
 
 ## What is Jakarta EE?
 
-Jakarta EE is a set of specifications that enables the world wide community of java developers  to work on java enterprise applications. The specifications are developed by well known industry leaders that instills confidence in technology developers and consumers.
+Jakarta EE is a set of specifications that enables the world wide community of java developers to work on cloud native java enterprise applications. The specifications are developed by well known industry leaders that instills confidence in technology developers and consumers.
 
 Jakarta EE specifications are either grouped into a platform specification (Full or Web Platform) or can be an individual specification.
 
