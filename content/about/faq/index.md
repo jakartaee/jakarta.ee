@@ -6,10 +6,9 @@ date: 2018-04-07T16:09:45-04:00
 type: "about/faq"
 layout: "section"
 ---
-  
+
 Last Updated: October 19, 2018
 
 <br/>
 
 {{< faq >}}
-
