@@ -174,11 +174,12 @@ a.compatibility-link, a:visited.compatibility-link {
 }
 
 .card-list.contributor-list {
-  margin: 50px auto;
+  margin: 0 auto 10px;
   text-align: center;
 
   .contributor-wrapper {
-    width: 370px;
+    width: 350px;
+    max-width: 90%;
     height: 160px;
     margin: 15px;
     position: relative;
@@ -187,7 +188,7 @@ a.compatibility-link, a:visited.compatibility-link {
   }
 
   .contributor-card {
-    display: block;
+    left: 0;
     border-radius: 10px;
     box-shadow: 0 0px 20px -8px black;
     overflow: hidden;
@@ -195,12 +196,14 @@ a.compatibility-link, a:visited.compatibility-link {
     text-decoration: none;
     text-transform: uppercase;
     color: #1b2086;
-    width: 370px;
     position: absolute;
     top: 0;
     opacity: 0;
     transition: opacity 0.5s ease;
+    display: flex;
     z-index: -1;
+    bottom: 0;
+    right: 0;
     
     &.active {
       display: inline-flex;
@@ -258,6 +261,7 @@ a.compatibility-link, a:visited.compatibility-link {
     height: 160px;
     background-color: #aaa;
     transition: filter 0.5s ease;
+    flex-shrink: 0;
     img {
       height: 100%;
       width: 100%;
