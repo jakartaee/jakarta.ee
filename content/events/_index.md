@@ -1,6 +1,6 @@
 ---
 title: Events
-seo_title: "Events | Meet with the Jakarta EE Community | Eclipse Foundation"
+seo_title: "Events | Meet with the Jakarta EE Community"
 description: "Meet with the Jakarta EE community at an upcoming event."
 date: 2019-02-21
 publishdate: 2019-02-21
