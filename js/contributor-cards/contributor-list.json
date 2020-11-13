@@ -108,10 +108,6 @@
     "name": "Aleksandr Sanitckii"
   },
   {
-    "login": "authentication-bot",
-    "name": null
-  },
-  {
     "login": "bbulk",
     "name": "Benjamin Bulk"
   },
@@ -134,10 +130,6 @@
   {
     "login": "bsungur",
     "name": "Brandon Sungur"
-  },
-  {
-    "login": "ca-bot",
-    "name": null
   },
   {
     "login": "carryel",
@@ -184,10 +176,6 @@
     "name": "David Blevins"
   },
   {
-    "login": "dependabot[bot]",
-    "name": null
-  },
-  {
     "login": "diorcety",
     "name": "Diorcet Yann"
   },
@@ -216,26 +204,6 @@
     "name": null
   },
   {
-    "login": "eclipse-cdi-bot",
-    "name": null
-  },
-  {
-    "login": "eclipse-jaxb-impl-bot",
-    "name": null
-  },
-  {
-    "login": "eclipse-jsonb-bot",
-    "name": null
-  },
-  {
-    "login": "eclipse-metro-bot",
-    "name": null
-  },
-  {
-    "login": "eclipsewebmaster",
-    "name": "Eclipse Webmaster team"
-  },
-  {
     "login": "edbratt",
     "name": "Ed Bratt"
   },
@@ -246,18 +214,6 @@
   {
     "login": "edwin-amoakwa",
     "name": "Edwin Kwame Amoakwa"
-  },
-  {
-    "login": "ee4j-bot",
-    "name": null
-  },
-  {
-    "login": "ejb-bot",
-    "name": null
-  },
-  {
-    "login": "el-bot",
-    "name": null
   },
   {
     "login": "endtak",
@@ -298,10 +254,6 @@
   {
     "login": "gilbode",
     "name": "Mike Gilbode"
-  },
-  {
-    "login": "glassfish-bot",
-    "name": null
   },
   {
     "login": "gregw",
@@ -364,14 +316,6 @@
     "name": null
   },
   {
-    "login": "jaxb-bot",
-    "name": null
-  },
-  {
-    "login": "jaxws-bot",
-    "name": null
-  },
-  {
     "login": "jbescos",
     "name": "jbescos"
   },
@@ -382,10 +326,6 @@
   {
     "login": "jeanouii",
     "name": "Jean-Louis Monteiro"
-  },
-  {
-    "login": "jersey-bot",
-    "name": null
   },
   {
     "login": "jeyvison",
@@ -416,20 +356,8 @@
     "name": "João Victor Martins"
   },
   {
-    "login": "jpa-bot",
-    "name": null
-  },
-  {
     "login": "jpollard-github",
     "name": "Jason Pollard"
-  },
-  {
-    "login": "jsonp-bot",
-    "name": null
-  },
-  {
-    "login": "jta-bot",
-    "name": null
   },
   {
     "login": "kasabuta4",
@@ -656,10 +584,6 @@
     "name": "Maxim Nesen"
   },
   {
-    "login": "servlet-bot",
-    "name": null
-  },
-  {
     "login": "smillidge",
     "name": "Steve Millidge"
   },
@@ -738,10 +662,6 @@
   {
     "login": "tvallin",
     "name": "Thibault Vallin"
-  },
-  {
-    "login": "tyrus-bot",
-    "name": null
   },
   {
     "login": "vanuatoo",

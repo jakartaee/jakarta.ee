@@ -9,6 +9,7 @@
 CREDENTIALS=$GH_TOKEN:x-oauth-basic
 CURSOR=null
 LIST_FILE=contributor-list.json
+EXCLUDED_LIST=excluded-list.json
 
 function getGrraphQL() {
     curl -s -X POST -u $CREDENTIALS -H "Content-Type: application/json" -d "{\"query\": $1}" https://api.github.com/graphql
@@ -118,12 +119,24 @@ for repoName in $(echo $(pageTraverse getOrgRepos "org:eclipse-ee4j" ".data.sear
   commitList=$(echo $commitList $(getRepoData "eclipse-ee4j" $repoName))
 done
 
-finalList=$(echo $prList $commitList | jq -s '.[] | .[]' | jq -s '. | unique_by(.login)')
+totalList=$(echo $prList $commitList | jq -s '.[] | .[]' | jq -s '. | unique_by(.login)')
+totalAmount=$(echo $totalList | jq '. | length')
 
-if [ ! -z "$finalList" ]; then
+if [ ! -z "$totalList" ]; then
   rm -rf $LIST_FILE
-  echo $finalList | jq . > $LIST_FILE
-  echo "Updated $LIST_FILE, total amount: $(echo $finalList | jq '. | length') users."
+  echo $totalList | jq . > $LIST_FILE
+  echo "[totalList] Updated $LIST_FILE, total amount: $totalAmount users."
 else
-  echo "Something went wrong file not updated"
+  echo "[totalList] Something went wrong, file not updated."
+  exit 64;
+fi
+
+filteredList=$(jq -n '[ $listFile[] | select(any(.login; contains($excludedList[]))==false) ]' --argfile listFile $LIST_FILE --argfile excludedList $EXCLUDED_LIST)
+filteredAmount=$(echo $filteredList | jq '. | length')
+if [[ $totalAmount != $filteredAmount ]]; then
+  rm -rf $LIST_FILE
+  echo $filteredList | jq . > $LIST_FILE
+  echo "[filteredList] Updated $LIST_FILE, total filtered amount: $filteredAmount users."
+else
+  echo "[filteredList] File does not need filtering..."
 fi
