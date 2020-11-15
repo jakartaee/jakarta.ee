@@ -348,6 +348,31 @@ items:
 
    specification_committee:
        -
+          url: specification_committee/minutes-specification-november-4-2020.pdf
+          title: November 4, 2020 (pdf)
+          year: 2020
+       -
+          url: specification_committee/minutes-specification-october-28-2020.pdf
+          title: October 28, 2020 (pdf)
+          year: 2020
+       -
+          url: specification_committee/minutes-specification-october-21-2020.pdf
+          title: October 21, 2020 (pdf)
+          year: 2020
+       -
+          url: specification_committee/minutes-specification-october-14-2020.pdf
+          title: October 17, 2020 (pdf)
+          year: 2020
+       -
+          url: specification_committee/minutes-specification-october-7-2020.pdf
+          title: October 7, 2020 (pdf)
+          year: 2020
+       -
+          url: specification_committee/minutes-specification-september-30-2020.pdf
+          title: September 30, 2020 (pdf)
+          year: 2020
+   
+       -
           url: specification_committee/minutes-specification-september-23-2020.pdf
           title: September 23, 2020 (pdf)
           year: 2020
