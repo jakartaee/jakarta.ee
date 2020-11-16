@@ -1,7 +1,7 @@
 import escape from 'lodash-es/escape';
 import sampleSize from 'lodash-es/sampleSize';
 import contributorCard from './contributor-card.js';
-import contributorList from './contributor-list.json';
+import contributorList from '../../data/contributors/jakarta-ee-9.json';
 
 const cardList = document.querySelector('.card-list.contributor-list');
 
@@ -16,7 +16,7 @@ if (!!cardList) {
     name: escape(name || login),
   });
 
-  // remember lastRandom (no dupcates on two neighbouring runs)
+  // remember lastRandom (no duplicates on two neighboring runs)
   let lastRandom = [];
   const getRandomSample = () => {
     const randomSample = sampleSize(

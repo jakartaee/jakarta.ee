@@ -30,14 +30,9 @@ mix.scripts([
     './node_modules/eclipsefdn-solstice-assets/js/eclipsefdn.videos.js',
     './node_modules/eclipsefdn-solstice-assets/js/solstice.cookies.js',
     './node_modules/eclipsefdn-solstice-assets/js/solstice.js'
-], './static/js/_solstice.js');
+], './static/js/solstice.js');
 
 mix.js(
     './js/contributor-cards/index.js',
-    './static/js/_contributor-cards.js'
+    './static/js/release-page-cards.js'
 )
-
-mix.scripts([
-    './static/js/_solstice.js',
-    './static/js/_contributor-cards.js'
-], './static/js/app.js');

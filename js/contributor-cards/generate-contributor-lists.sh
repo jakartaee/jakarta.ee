@@ -1,15 +1,26 @@
 #!/bin/bash
-# requires `bash, `jq` and `curl`
-# set your credentials and org name below
+# ===========================================================================
+# Copyright (c) 2019 Eclipse Foundation and others.
+# 
+# This program and the accompanying materials are made
+# available under the terms of the Eclipse Public License 2.0
+# which is available at https://www.eclipse.org/legal/epl-2.0/
+# 
+# Contributors:
+# Andrii Malytksyi (TomiTribe)
+# 
+# SPDX-License-Identifier: EPL-2.0
+# ===========================================================================
 #
 # This script paginates the GraphQL API to get all authors.
 #
-
+# requires `bash, `jq` and `curl`
+# set your credentials and org name below
 # you need GH_TOKEN env variable for https://api.github.com/graphql
 CREDENTIALS=$GH_TOKEN:x-oauth-basic
 CURSOR=null
-LIST_FILE=contributor-list.json
-EXCLUDED_LIST=excluded-list.json
+LIST_FILE=data/contributors/jakarta-ee-9.json
+EXCLUDED_LIST=data/contributors/excluded-list.json
 
 function getGrraphQL() {
     curl -s -X POST -u $CREDENTIALS -H "Content-Type: application/json" -d "{\"query\": $1}" https://api.github.com/graphql
@@ -112,7 +123,11 @@ function getRepoData() {
   echo $(pageTraverse getCommitAuthors 'owner: "'$1'", name: "'$2'"' ".data.repository.ref.target.history.pageInfo") | jq -s '.[].data.repository.ref.target.history.edges'| jq '[ .[].node.author.user | select(.login != null) ] | unique_by(.login)'
 }
 
+echo "Started contributor list generation..."
+
 prList=$(echo $(pageTraverse getPrAuthors "repo:jakartaee/specifications" ".data.search") $(pageTraverse getPrAuthors "org:eclipse-ee4j" ".data.search") | jq -s '[ .[].data.search.nodes[].author | select(.login != null) ] | unique_by(.login)')
+echo "[prList] Fetched PRs Authors list, total amount: $(echo $prList | jq '. | length') users."
+
 commitList=$(echo $(getRepoData "jakartaee" "specifications"))
 
 for repoName in $(echo $(pageTraverse getOrgRepos "org:eclipse-ee4j" ".data.search") | jq -s -r '.[].data.search.edges[].node.name' ); do
@@ -140,3 +155,5 @@ if [[ $totalAmount != $filteredAmount ]]; then
 else
   echo "[filteredList] File does not need filtering..."
 fi
+
+echo "Finished contributor list generation..."
