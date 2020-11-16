@@ -31,3 +31,8 @@ mix.scripts([
     './node_modules/eclipsefdn-solstice-assets/js/solstice.cookies.js',
     './node_modules/eclipsefdn-solstice-assets/js/solstice.js'
 ], './static/js/solstice.js');
+
+mix.js(
+    './js/contributor-cards/index.js',
+    './static/js/release-page-cards.js'
+)

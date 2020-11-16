@@ -1,0 +1,22 @@
+[
+    "authentication-bot",
+    "ca-bot",
+    "dependabot[bot]",
+    "eclipse-cdi-bot",
+    "eclipse-jaxb-impl-bot",
+    "eclipse-jsonb-bot",
+    "eclipse-metro-bot",
+    "ee4j-bot",
+    "ejb-bot",
+    "el-bot",
+    "glassfish-bot",
+    "jaxb-bot",
+    "jaxws-bot",
+    "jersey-bot",
+    "jpa-bot",
+    "jsonp-bot",
+    "jta-bot",
+    "servlet-bot",
+    "tyrus-bot",
+    "eclipsewebmaster"
+]
