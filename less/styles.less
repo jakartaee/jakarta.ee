@@ -21,10 +21,29 @@
   display: inline-block;
 }
 
+.d-flex {
+  display: flex;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-grow-1 {
+  flex-grow: 1;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.margin-y-30 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
 .jakarta-ee-hr {
-  width: 150px;
   border-top: 5px solid @brand-primary;
-  margin-left: 0;
 }
 
 .font-100 {
@@ -174,13 +193,13 @@ a.compatibility-link, a:visited.compatibility-link {
 }
 
 .card-list.contributor-list {
-  margin: 0 auto 10px;
+  margin: 0 auto 20px;
   text-align: center;
 
   .contributor-wrapper {
     width: 350px;
     max-width: 90%;
-    height: 160px;
+    height: 162px;
     margin: 15px;
     position: relative;
     display: inline-flex;
@@ -189,13 +208,15 @@ a.compatibility-link, a:visited.compatibility-link {
 
   .contributor-card {
     left: 0;
-    border-radius: 10px;
-    box-shadow: 0 0px 20px -8px black;
+    -webkit-box-shadow: 0 8px 15px 0px rgba(156,156,156,1);
+    -moz-box-shadow: 0 8px 15px 0px  rgba(156,156,156,1);
+    box-shadow: 0 8px 15px 0px rgba(156,156,156,1);
+    border: 1px solid lighten(@brand-info-light, 25%);
     overflow: hidden;
-    height: 160px;
+    height: 162px;
     text-decoration: none;
     text-transform: uppercase;
-    color: #1b2086;
+    color: @brand-secondary;
     position: absolute;
     top: 0;
     opacity: 0;
@@ -216,7 +237,7 @@ a.compatibility-link, a:visited.compatibility-link {
     &:hover {
       transform: matrix(1, 0, 0, 1, 0, -4);
       transition: transform 0.2s ease, box-shadow 0.2s ease;
-      box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+      box-shadow: 0 10px 20px rgba(156,156,156,0.7);;
       .contributor-image {
         filter: none;
       }
