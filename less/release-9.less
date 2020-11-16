@@ -182,32 +182,42 @@
 }
 
 .jakartaee-9-features-and-benefits {
-    padding:30px 0 60px 0;
+    padding:30px 0 50px 0;
 
     .feature-box {
         background-color: #eeeded;
         margin: 10px;
-        padding: 0 40px;
-        border-top-left-radius: 30px;
-        border-top-right-radius: 30px;
-        border-bottom-left-radius: 5px;
-        border-bottom-right-radius: 5px;
-        -webkit-box-shadow: -20px 25px 23px 0px rgba(156,156,156,1);
-        -moz-box-shadow: -20px 25px 23px 0px rgba(156,156,156,1);
-        box-shadow: -20px 25px 23px 0px rgba(156,156,156,1);
+        padding: 0 25px;
+        -webkit-box-shadow: 0 8px 15px 0px rgba(156,156,156,1);
+        -moz-box-shadow: 0 8px 15px 0px  rgba(156,156,156,1);
+        box-shadow: 0 8px 15px 0px rgba(156,156,156,1);
+        border: 1px solid lighten(@brand-info-light, 25%);
+        width: 100%;
 
         h3 {
-            padding-top: 70px;
+            padding-right: 70px;
+            word-break: break-all;
+            word-break: break-word;
+            br {
+              @media (max-width: @screen-sm-max) {
+                display: none;
+              }
+            }
+            hr {
+              margin-left: 0;
+            }
         }
 
         p {
-            padding-bottom: 30px;
+            padding-bottom: 15px;
         }
 
         hr {
             max-width: 150px;
             border-top: 5px solid @brand-primary;
-            margin-left: 0;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 10px;
         }
 
     }
