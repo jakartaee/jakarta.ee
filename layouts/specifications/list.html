@@ -28,7 +28,8 @@
   {{ .Content }}
   {{ if eq .Page.Parent.Title "Specifications" }}
     <ul>
-      {{ range .Page.Sections.ByWeight}}
+      {{/*  {{ range .Page.Sections.ByWeight }}  */}}
+      {{ range (.Page.Sections.ByParam "title").ByParam "weight" }}
         <li>
           <h3><a href="{{- with .Params.redirect_url | default .RelPermalink }} {{.}} {{- end }}">{{ .Title }}</a></h3>
           {{ if eq .Params.summary_sixty_char nil  }}
@@ -42,7 +43,7 @@
   {{ else }}
     <div class="news-list specifications-news-list"> 
       <div class="row">
-        {{ range .Page.Sections.ByWeight}}
+        {{ range (.Page.Sections.ByParam "title").ByParam "weight" }}
         <div class="col-sm-8">
           <a href="{{- with .Params.redirect_url | default .RelPermalink }} {{.}} {{- end }}" class="match-height-item media media-link margin-bottom-30">
             <span class="flex-column" style="height: 100%;">
