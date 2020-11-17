@@ -51,7 +51,6 @@
 <div class="content-nav-tab-body tab-content margin-bottom-20" id="tabs-content">
 
   <div role="tabpanel" class="tab-pane tab-pane active" id="tab-one">
-    {{/*  <h2 class="h3 margin-top-0">Jakarta EE Compatible Products</h2>  */}}
     {{ $new_product_list := slice }}
     {{ range $elem_index, $elem_val := $.Site.Data.compatible_products.sets }}
       {{ range $elem_val.items }}
@@ -86,11 +85,9 @@
       {{ $title:=.title }}
       <div class="product-list">
         <h2 class="h3 margin-top-0">{{ .title }}</h2>
-        {{/*  <h2 class="text-center heading-line" id="{{ .title | urlize }}"><span style="background-color:#fff;">{{ .title }}</span></h2>  */}}
         <div class="row">
          {{ if isset . "items" }}
          {{ range sort .items "name" "asc"}}
-           {{/*  {{ range .items }}  */}}
             <div class="col-xs-24 col-sm-12 col-lg-6 padding-bottom-20">
               <div class="match-height-item-by-row padding-20 flex-column">
                 <div class="center-block padding-left-30 padding-right-30 padding-bottom-10 padding-top-10 grid-center" data-mh="{{ $title | urlize }}">
