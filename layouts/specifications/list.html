@@ -28,7 +28,6 @@
   {{ .Content }}
   {{ if eq .Page.Parent.Title "Specifications" }}
     <ul>
-      {{/*  {{ range .Page.Sections.ByWeight }}  */}}
       {{ range (.Page.Sections.ByParam "title").ByParam "weight" }}
         <li>
           <h3><a href="{{- with .Params.redirect_url | default .RelPermalink }} {{.}} {{- end }}">{{ .Title }}</a></h3>
