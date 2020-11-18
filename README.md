@@ -23,6 +23,20 @@ Fetch and copy pages for the Specification section:
 npm run specifications
 ```
 
+### Contributors list (Optional)
+
+Contributors list json file (_used on release page_) can be generate via:
+
+```bash
+npm run generate_contributor_list
+```
+
+P.S. Script also needs GH_TOKEN env variable to work, to run with env variable inline:
+
+```bash
+GH_TOKEN=<gh token here> npm run generate_contributor_list
+```
+
 ## Contributing
 
 :warning: **Warning:**  We need to commit the Hugo output on the `master` branch because this used to be an [organization website](https://help.github.com/en/github/working-with-github-pages/about-github-pages#publishing-sources-for-github-pages-sites). Please make sure to target the `src` branch when submitting a new pull request. A [travis-ci](https://github.com/jakartaee/jakarta.ee/blob/src/.travis.yml) job will take care of updating the master branch for us.
