@@ -61,7 +61,7 @@
       {{ end }}
     {{ end }}
 
-    <div class="row">
+    <div class="row d-flex flex-wrap">
       {{ range sort ($new_product_list | uniq) "name" "asc" }}  <!-- Remove duplicates and re-order by name -->
       <div class="col-xs-24 col-sm-12 col-lg-6 padding-bottom-20">
         <div class="match-height-item-by-row padding-20 flex-column vertical-align">
@@ -74,6 +74,7 @@
             </div>
           {{ end }}
         </div>
+        <p class="text-center margin-bottom-0"><strong>{{ .name }}</strong></p>
       </div>
       {{ end }}
     </div>
