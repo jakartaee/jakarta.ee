@@ -35,7 +35,7 @@
       <div role="tabpanel" class="tab-pane" id="{{$index_type}}">
     {{ end }}
       {{ range $index, $year := $.Site.Data.meeting_minutes.years }}
-      <h2>{{ $year }}</h2>
+      <h2 class="h4">{{ $year }}</h2>
       <ul class="tri-col">
       {{ range $index, $el := (where $meeting_minute_types "year" $year) }}
         <li><a href="{{absURL (printf "/meeting_minutes/%s" $el.url) }}">{{$el.title}}</a></li>
