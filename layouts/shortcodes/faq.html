@@ -1,6 +1,6 @@
 {{ range .Site.Data.faq.mainEntity }}
 
-<h2>Q: {{ .name }}</h2>
+<h2 class="h4">Q: {{ .name }}</h2>
 
 {{ .acceptedAnswer.text  | safeHTML }}
 
