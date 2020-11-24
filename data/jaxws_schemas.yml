@@ -8,7 +8,7 @@ releases:
     - schema: wsdl_customizationschema_3_0.xsd
       namespace: jaxws
       description: XML Schema for the Jakarta XML Web Services WSDL customization descriptor
-      status: Draft
+      status: Final
 
 # Template: Example for creating new schema entry
 #   - schema: a_simple_example.xsd

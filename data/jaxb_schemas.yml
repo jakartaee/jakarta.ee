@@ -8,7 +8,7 @@ releases:
     - schema: bindingschema_3_0.xsd
       namespace: jaxb
       description: XML Schema for the Jakarta XML Binding binding customization descriptor
-      status: Draft
+      status: Final
 
 # Template: Example for creating new schema entry
 #   - schema: a_simple_example.xsd
