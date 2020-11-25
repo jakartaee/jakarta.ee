@@ -30,6 +30,6 @@
     "lodash-es": "4.17.15"
   },
   "devDependencies": {
-    "vue-template-compiler": "^2.6.12"
+    "vue-template-compiler": "2.6.12"
   }
 }
