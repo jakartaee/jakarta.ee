@@ -1,0 +1,9 @@
+{{ range .Site.Data.faq.mainEntity }}
+
+<h2 class="h4">{{ .name }}</h2>
+
+{{ .acceptedAnswer.text  | safeHTML }}
+
+<hr>
+
+{{ end }}
