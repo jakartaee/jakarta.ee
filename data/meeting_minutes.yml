@@ -798,6 +798,14 @@ items:
 
    steering_committee:
        -
+          url: steering_committee/minutes-november-17-2020.pdf
+          title: November 17, 2020 (pdf)
+          year: 2020
+       -
+          url: steering_committee/minutes-november-10-2020.pdf
+          title: November 10, 2020 (pdf)
+          year: 2020
+       -
           url: steering_committee/minutes-november-3-2020.pdf
           title: November 3, 2020 (pdf)
           year: 2020
