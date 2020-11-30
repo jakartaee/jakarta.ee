@@ -30,10 +30,10 @@ sets:
       - name: Payara Server 
         vendor: Payara Services Limited
         image: '/images/compatible_products/payara_server.png'
-        download: 'https://www.payara.fish/software/downloads/'
+        download: 'https://www.payara.fish/downloads/'
         versions:
-        - version: 5.21.2
-          compatibility: 'https://docs.payara.fish/enterprise/docs/5.21.0/jakartaee-certification/5.21.2/tck-results-full-5.21.2.html'
+        - version: 5.23.0
+          compatibility: 'https://docs.payara.fish/enterprise/docs/5.23.0/jakartaee-certification/5.23.0/tck-results-full-5.23.0.html'
   
       - name: Eclipse Glassfish
         vendor: Eclipse Foundation
@@ -154,3 +154,11 @@ sets:
         versions:
         - version: 20.0.0.3
           compatibility: 'https://www.ibm.com/cloud/websphere-liberty/profile-tckresults'
+
+      - name: Payara Server 
+        vendor: Payara Services Limited
+        image: '/images/compatible_products/payara_server.png'
+        download: 'https://www.payara.fish/downloads/'
+        versions:
+        - version: 5.23.0
+          compatibility: 'https://docs.payara.fish/enterprise/docs/5.23.0/jakartaee-certification/5.23.0/tck-results-web-5.23.0.html'
