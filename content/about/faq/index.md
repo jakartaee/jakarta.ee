@@ -7,8 +7,6 @@ type: "about/faq"
 layout: "section"
 ---
   
-Last Updated: October 19, 2018
-
-<br/>
+Last Updated: November, 2020
 
 {{< faq >}}
