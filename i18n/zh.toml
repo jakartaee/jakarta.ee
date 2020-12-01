@@ -85,13 +85,13 @@
 [connect-updates-create-text]
   other = "新建账号"
 
-[connect-monthly-calls-title]
+[connect-community-calendar-title]
   other = "Jakarta EE 月度会议"
 
-[connect-monthly-calls-body]
+[connect-community-calendar-body]
   other = "加入 Jakarta EE 月度会议以了解 Jakarta EE 的相关计划"
 
-[connect-monthly-calls-link]
+[connect-community-calendar-link]
   other = "https://calendar.google.com/calendar/embed?src=eclipse-foundation.org_3281qms6riu4kdf354jn5idon0%40group.calendar.google.com&ctz=America%2FToronto"
 
 [connect-blogs-title]
