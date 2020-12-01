@@ -85,13 +85,13 @@
 [connect-updates-create-text]
   other = "Create Account"
 
-[connect-monthly-calls-title]
-  other = "Jakarta EE Monthly Update Calls"
+[connect-community-calendar-title]
+  other = "Jakarta EE Community Calendar"
 
-[connect-monthly-calls-body]
-  other = "Join the Jakarta EE Monthly Update calls to learn more about Jakarta EE-related plans"
+[connect-community-calendar-body]
+  other = "Join the Jakarta EE Community Calendar to learn more about Jakarta EE-related plans"
 
-[connect-monthly-calls-link]
+[connect-community-calendar-link]
   other = "https://calendar.google.com/calendar/embed?src=eclipse-foundation.org_3281qms6riu4kdf354jn5idon0%40group.calendar.google.com&ctz=America%2FToronto"
 
 [connect-blogs-title]

@@ -4,6 +4,7 @@ headline: "资源"
 date: 2019-02-27T16:10:38-04:00
 description: "Jakarta EE 资源"
 layout: "single"
+hide_page_title: true
 ---
 
 ## 文档{#documentation}
