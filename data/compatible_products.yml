@@ -32,6 +32,8 @@ sets:
         image: '/images/compatible_products/payara_server.png'
         download: 'https://www.payara.fish/downloads/'
         versions:
+        - version: 5.22.0
+          compatibility: 'https://docs.payara.fish/enterprise/docs/5.22.0/jakartaee-certification/5.22.0/tck-results-full-5.22.0.html'
         - version: 5.23.0
           compatibility: 'https://docs.payara.fish/enterprise/docs/5.23.0/jakartaee-certification/5.23.0/tck-results-full-5.23.0.html'
   
