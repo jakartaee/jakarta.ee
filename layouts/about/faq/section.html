@@ -1,0 +1,7 @@
+{{ define "head-suffix" }}
+  {{ with .Site.Data.faq }}
+    <script type="application/ld+json">
+      {{ . }}
+    </script>
+  {{ end }}
+{{ end }}

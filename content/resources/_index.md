@@ -1,9 +1,11 @@
 ---
 title: "Resources"
-headline: "Resources" 
+seo_title: "Resources | Jakarta EE"
+headline: "Resources"
 date: 2019-02-27T16:10:38-04:00
-description: "Jakarta EE Resources"
+description: "Jakarta EE resources including developer survey results, presentations, datasheets and more."
 layout: "single"
+hide_page_title: true
 ---
 
 ## Documentation{#documentation}
@@ -44,6 +46,7 @@ layout: "single"
 ## Tech Talks Meet-ups{#meetups}
 
 - [Jakarta Tech Talks](https://www.meetup.com/jakartatechtalks_/)
+- [Sign Up to Host](https://docs.google.com/forms/d/e/1FAIpQLSdbG1FTITUCtzk36N0mc_981rMnuThqFLQMHJg2IFxOTkPoRQ/viewform)
 
 ---
 

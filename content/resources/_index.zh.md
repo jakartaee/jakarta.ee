@@ -4,6 +4,7 @@ headline: "资源"
 date: 2019-02-27T16:10:38-04:00
 description: "Jakarta EE 资源"
 layout: "single"
+hide_page_title: true
 ---
 
 ## 文档{#documentation}
@@ -44,6 +45,7 @@ layout: "single"
 ## 技术沙龙{#meetups}
 
 - [Jakarta 技术沙龙](https://www.meetup.com/jakartatechtalks_/)
+- [注册或建议演讲主题](https://docs.google.com/forms/d/e/1FAIpQLSdbG1FTITUCtzk36N0mc_981rMnuThqFLQMHJg2IFxOTkPoRQ/viewform)
 
 ---
 

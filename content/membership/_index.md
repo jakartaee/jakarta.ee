@@ -1,12 +1,13 @@
 ---
 title: "Membership"
-headline: "Shape the Future of Jakarta EE"
+seo_title: "Join the Jakarta EE Working Group | Shape the future of Open Source Java"
+headline: "Join the Jakarta EE Working Group"
 date: 2018-04-05T16:09:45-04:00
-description: "Participate in an open process to shape Jakarta EE, the future of Cloud Native Java."
-hide_page_title: "true"
+description: "Help shape Jakarta EE, the future of enterprise Java. Ensure the growth and development of a well-governed, vendor-neutral and open source Java ecosystem."
+hide_page_title: true
 links: [[href: "/membership/members", text: "Explore Members"], [href: "#benefits", text: "Membership Benefits"], [href: "https://accounts.eclipse.org/contact/membership/jakarta-ee", text: "Join Jakarta EE"]]
 ---
-## Contact us about membership{#contact-us}
+## Shape the future of Cloud Native, Open Source Java{#contact-us}
 Contact us about your organization joining the Jakarta EE Working Group.
 {{< bootstrap/button href="https://accounts.eclipse.org/contact/membership/jakarta-ee" linkClass="btn-lg btn-secondary" pClass="margin-top-20" >}}Contact Us About Membership{{</ bootstrap/button >}}
 
@@ -32,7 +33,7 @@ Members of the Jakarta EE Working Group take advantage of the following opportun
 
 {{< grid/div isMarkdown="false">}}
 <p class="margin-top-20">
-  <a class="btn btn-lg btn-secondary" href="/documents/membership/jakarta-ee-membership-prospectus.pdf">Download Membership Prospectus</a>
-  <a class="btn btn-lg btn-secondary" href="/documents/membership/jakarta-ee-membership-flyer.pdf">Download Membership Flyer</a>
+  <a class="btn btn-lg btn-secondary margin-bottom-5" href="/documents/membership/jakarta-ee-membership-prospectus.pdf">Download Membership Prospectus</a>
+  <a class="btn btn-lg btn-secondary margin-bottom-5" href="/documents/membership/jakarta-ee-membership-flyer.pdf">Download Membership Flyer</a>
 </p>
 {{</ grid/div >}}

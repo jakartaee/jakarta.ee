@@ -5,6 +5,22 @@ years:
 items:
    marketing_committee:
        -
+          url: marketing_committee/minutes-marketing-november-12-2020.pdf
+          title: November 12, 2020 (pdf)
+          year: 2020
+       -
+          url: marketing_committee/minutes-marketing-november-05-2020.pdf
+          title: November 05, 2020 (pdf)
+          year: 2020
+       -
+          url: marketing_committee/minutes-marketing-october-29-2020.pdf
+          title: October 29, 2020 (pdf)
+          year: 2020
+       -
+          url: marketing_committee/minutes-marketing-october-22-2020.pdf
+          title: October 22, 2020 (pdf)
+          year: 2020
+       -
           url: marketing_committee/minutes-marketing-october-15-2020.pdf
           title: October 15, 2020 (pdf)
           year: 2020
@@ -345,8 +361,32 @@ items:
           title: April 19, 2018 (pdf)
           year: 2018
 
-
    specification_committee:
+       -
+          url: specification_committee/minutes-specification-november-4-2020.pdf
+          title: November 4, 2020 (pdf)
+          year: 2020
+       -
+          url: specification_committee/minutes-specification-october-28-2020.pdf
+          title: October 28, 2020 (pdf)
+          year: 2020
+       -
+          url: specification_committee/minutes-specification-october-21-2020.pdf
+          title: October 21, 2020 (pdf)
+          year: 2020
+       -
+          url: specification_committee/minutes-specification-october-14-2020.pdf
+          title: October 14, 2020 (pdf)
+          year: 2020
+       -
+          url: specification_committee/minutes-specification-october-7-2020.pdf
+          title: October 7, 2020 (pdf)
+          year: 2020
+       -
+          url: specification_committee/minutes-specification-september-30-2020.pdf
+          title: September 30, 2020 (pdf)
+          year: 2020
+   
        -
           url: specification_committee/minutes-specification-september-23-2020.pdf
           title: September 23, 2020 (pdf)
@@ -757,6 +797,38 @@ items:
           year: 2018
 
    steering_committee:
+       -
+          url: steering_committee/minutes-november-17-2020.pdf
+          title: November 17, 2020 (pdf)
+          year: 2020
+       -
+          url: steering_committee/minutes-november-10-2020.pdf
+          title: November 10, 2020 (pdf)
+          year: 2020
+       -
+          url: steering_committee/minutes-november-3-2020.pdf
+          title: November 3, 2020 (pdf)
+          year: 2020
+       -
+          url: steering_committee/minutes-october-27-2020.pdf
+          title: October 27, 2020 (pdf)
+          year: 2020
+       -
+          url: steering_committee/minutes-october-20-2020.pdf
+          title: October 20, 2020 (pdf)
+          year: 2020
+       -
+          url: steering_committee/minutes-october-13-2020.pdf
+          title: October 13, 2020 (pdf)
+          year: 2020
+       -
+          url: steering_committee/minutes-october-6-2020.pdf
+          title: October 6, 2020 (pdf)
+          year: 2020
+       -
+          url: steering_committee/minutes-september-29-2020.pdf
+          title: September 29, 2020 (pdf)
+          year: 2020
        -
           url: steering_committee/minutes-september-22-2020.pdf
           title: September 22, 2020 (pdf)

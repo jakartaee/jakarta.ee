@@ -5,6 +5,7 @@ date: 2018-04-05T16:10:38-04:00
 description: "Jakarta EE 工作组最新进展、社群新闻和公告."
 hide_sidebar: "true"
 layout: "single"
+hide_page_title: true
 ---
 
 {{< pages/connect >}}

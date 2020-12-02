@@ -8,47 +8,118 @@
 </style>
 
 <div class="row">
-  <div class="col-md-16">
-    <ul>
-      {{ range $.Site.Data.compatible_products.sets }}
-        <li><a href="#{{ .title | urlize }}">{{ .title }}</a></li>
-      {{ end }}
-      </ul>
-  </div>
-  <div class="col-md-8" style="text-align: center;"><a class="btn btn-lg btn-secondary" href="https://github.com/eclipse-ee4j/jakartaee-platform/issues?q=is%3Aissue+is%3Aclosed+label%3Acertification">Compatibility Requests</a></div>
+  <div class="col-md-8 col-md-offset-16" style="text-align: center;"><a class="btn btn-lg btn-secondary" href="https://github.com/eclipse-ee4j/jakartaee-platform/issues?q=is%3Aissue+is%3Aclosed+label%3Acertification">Compatibility Requests</a></div>
 </div>
 
-{{ range $.Site.Data.compatible_products.sets }}
-  {{ $title:=.title }}
-  <div class="product-list">
-    <h2 class="text-center heading-line" id="{{ .title | urlize }}"><span style="background-color:#fff;">{{ .title }}</span></h2>
-    <div class="row">
-      {{ range sort .items "name" "asc"}}
-        <div class="col-xs-24 col-sm-12 col-lg-6 padding-bottom-20">
-          <div class="match-height-item-by-row padding-20 flex-column">
-            <div class="center-block padding-left-30 padding-right-30 padding-bottom-10 padding-top-10 grid-center" data-mh="{{ $title | urlize }}">
-              {{ if .image }}
-              <a href="{{ .download }}"><img class="img img-responsive" src="{{ .image }}" alt="{{ .vendor }}'s {{ .name }} logo"></a>
-              {{ else }}
-	            <div class="icon-backdrop">
-	              <div class="ratio"></div>
-	              <div class="icon-container"><i class="fa fa-download"></i></div>
-	            </div>
-              {{ end }}
-            </div>
-            <div class="flex-grow text-center flex-column">
-              <p class="margin-bottom-0"><strong>{{ .name }}</strong></p>
-              <p class="flex-grow margin-bottom-10">{{ .vendor }}</p>
-              <p>
-              {{ range .versions }} 
-                <a class="compatibility-link" href="{{ .compatibility }}">{{ .version }}</a> 
-              {{ end }}           
-              </p>
-            </div>
-          </div>
+<!-------------------- Compatible Products Tabs start ----------------------------------->
+
+<div class="row margin-top-20 content-nav-tab-toggle">
+  <div class="visible-xs">
+    <div class="vertical-align">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-member-levels">
+        <p class="nav-label"><strong>Compatible Products</strong></p>
+        <div class="hamburger-wrapper">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
         </div>
-      {{ end }}
-      <div class="clearfix"/>
+      </button>
     </div>
   </div>
+</div>
+ 
+<div class="row">
+ <div class="navbar-collapse collapse" id="navbar-member-levels">
+   <ul class="nav nav-tabs solstice-tabs content-nav-tab" role="tablist">
+     <li role="presentation" class="active">
+       <a class="background-grey" href="#tab-one" data-toggle="tab" aria-controls="tab-one" role="tab">
+        Jakarta EE Compatible Products
+       </a>
+     </li>
+     {{ range $.Site.Data.compatible_products.sets }}
+     <li role="presentation" class="">
+       <a class="background-grey" href="#tab-{{ .jakartaee_version }}" data-toggle="tab" aria-controls="tab-{{ .jakartaee_version }}" role="tab">
+        Jakarta EE {{ .jakartaee_version }}
+       </a>
+     </li>
+     {{ end }}
+   </ul>
+ </div>
+</div>
+
+<div class="content-nav-tab-body tab-content margin-bottom-20" id="tabs-content">
+
+  <div role="tabpanel" class="tab-pane tab-pane active" id="tab-one">
+    {{ $new_product_list := slice }}
+    {{ range $elem_index, $elem_val := $.Site.Data.compatible_products.sets }}
+      {{ range $elem_val.items }}
+        {{ range .items }}  <!-- Loop all items and add name, image, image_width properties to form a new object and put in the new_product_list array -->
+          {{ $new_element := (dict "name" .name "image" .image "image_width" .image_width) }}
+          {{ $new_product_list = $new_product_list | append $new_element }}
+        {{ end }}
+      {{ end }}
+    {{ end }}
+
+    <div class="row d-flex flex-wrap">
+      {{ range sort ($new_product_list | uniq) "name" "asc" }}  <!-- Remove duplicates and re-order by name -->
+      <div class="col-xs-24 col-sm-12 col-lg-6 padding-bottom-20">
+        <div class="match-height-item-by-row padding-20 flex-column vertical-align">
+          {{ if .image }}
+            <img width="{{ .image_width }}" class="img img-responsive" src="{{ .image }}" alt="{{ .name }} logo">
+          {{ else }}
+            <div class="icon-backdrop">
+              <div class="ratio"></div>
+              <div class="icon-container"><i class="fa fa-download"></i></div>
+            </div>
+          {{ end }}
+        </div>
+        <p class="text-center margin-bottom-0"><strong>{{ .name }}</strong></p>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+
+{{ range $.Site.Data.compatible_products.sets }}
+  <div role="tabpanel" class="tab-pane tab-pane" id="tab-{{ .jakartaee_version }}">
+    {{ range .items }}
+      {{ $title:=.title }}
+      <div class="product-list">
+        <h2 class="h3 margin-top-0">{{ .title }}</h2>
+        <div class="row">
+         {{ if isset . "items" }}
+         {{ range sort .items "name" "asc"}}
+            <div class="col-xs-24 col-sm-12 col-lg-6 padding-bottom-20">
+              <div class="match-height-item-by-row padding-20 flex-column">
+                <div class="center-block padding-left-30 padding-right-30 padding-bottom-10 padding-top-10 grid-center" data-mh="{{ $title | urlize }}">
+                  {{ if .image }}
+                  <a href="{{ .download }}"><img width="{{ .image_width }}" class="img img-responsive" src="{{ .image }}" alt="{{ .vendor }}'s {{ .name }} logo"></a>
+                  {{ else }}
+                  <div class="icon-backdrop">
+                    <div class="ratio"></div>
+                    <div class="icon-container"><i class="fa fa-download"></i></div>
+                  </div>
+                  {{ end }}
+                </div>
+                <div class="flex-grow text-center flex-column">
+                  <p class="margin-bottom-0"><strong>{{ .name }}</strong></p>
+                  <p class="flex-grow margin-bottom-10">{{ .vendor }}</p>
+                  <p>
+                  {{ range .versions }} 
+                    <a class="compatibility-link" href="{{ .compatibility }}">{{ .version }}</a>
+                  {{ end }}           
+                  </p>
+                </div>
+              </div>
+            </div>
+         {{ end }}
+         {{ else }}
+           <div class="container"><p>{{ i18n "coming-soon" }}</p></div>
+         {{ end }}
+         <div class="clearfix"></div>
+        </div>
+      </div>  
+    {{ end }}  
+  </div>
 {{ end }}
+</div>
