@@ -7,6 +7,8 @@ hide_sidebar: true
 draft: false
 links: [[href: "get_listed", text: "加入列表"]]
 layout: "single"
+hide_page_title: true
+container: "container margin-top-20"
 ---
 
 {{< pages/compatibility-products >}}
