@@ -22,7 +22,6 @@
     "specifications": "./build.sh",
     "build_netlify": "NODE_ENV=production npm run production && npm run specifications && npm run fetch_project",
     "specifications_windows": "bash build.sh",
-    "disallow_robots_txt": "echo \"User-agent: *\r\nDisallow: /\" > layouts/robots.txt",
     "fetch_project": "NODE_ENV=production node node_modules/eclipsefdn-hugo-solstice-theme/bin/projects/index.js -l data",
     "generate_contributor_list": "./js/contributor-cards/generate-contributor-lists.sh"
   },
