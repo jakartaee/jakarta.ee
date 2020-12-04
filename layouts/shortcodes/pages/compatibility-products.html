@@ -1,17 +1,8 @@
 <div class="row">
-  <div class="col-md-16">{{ i18n "compatibility-intro-text" | safeHTML }}</div>
-  <div class="col-md-8"><img class="compatible-logo img img-responsive" src="/images/jakarta/jakarta-ee-compatible-logo-color.svg" title="{{ i18n "jakarta-ee-logo-alt" }}"></div>
+  <div class="col-md-10 col-md-offset-14" style="text-align: center;">
+    <a class="btn btn-lg btn-primary margin-bottom-5" href="/compatibility/download">Download</a>
+    <a class="btn btn-lg btn-secondary margin-bottom-5" href="https://githubcom/eclipse-ee4j/jakartaee-platform/issues?q=is%3Aissue+is%3Aclosed+label%3Acertification">Compatibility Requests</a></div>
 </div>
-
-<style>
-  div.product-list .grid-center { display: flex; align-items: center;}
-</style>
-
-<div class="row">
-  <div class="col-md-8 col-md-offset-16" style="text-align: center;"><a class="btn btn-lg btn-secondary" href="https://github.com/eclipse-ee4j/jakartaee-platform/issues?q=is%3Aissue+is%3Aclosed+label%3Acertification">Compatibility Requests</a></div>
-</div>
-
-<!-------------------- Compatible Products Tabs start ----------------------------------->
 
 <div class="row margin-top-20 content-nav-tab-toggle">
   <div class="visible-xs">
@@ -85,7 +76,7 @@
     {{ range .items }}
       {{ $title:=.title }}
       <div class="product-list">
-        <h2 class="h3 margin-top-0">{{ .title }}</h2>
+        <h2 class="h3 margin-top-0">{{ .title }} Compatible Products</h2>
         <div class="row">
          {{ if isset . "items" }}
          {{ range sort .items "name" "asc"}}

@@ -12,8 +12,8 @@
 
 sets:
   - jakartaee_version: 9
-    items: 
-    - title: Jakarta EE 9 Platform Compatible Products
+    items:
+    - title: Jakarta EE 9 Platform
       items:
       - name: Eclipse GlassFish
         vendor: Eclipse Foundation
@@ -22,7 +22,7 @@ sets:
         versions:
         - version: 6.0
           compatibility: 'https://glassfish.org/certifications/jakarta-full-profile/9.0/TCK-Results'
-    - title: Jakarta EE 9 Web Profile Compatible Products
+    - title: Jakarta EE 9 Web Profile
       items:
       - name: Eclipse GlassFish
         vendor: Eclipse Foundation
@@ -34,7 +34,7 @@ sets:
 
   - jakartaee_version: 8
     items:
-    - title: Jakarta EE 8 Platform Compatible Products
+    - title: Jakarta EE 8 Platform
       items:
       - name: Payara Server 
         vendor: Payara Services Limited
@@ -43,8 +43,10 @@ sets:
         versions:
         - version: 5.22.0
           compatibility: 'https://docs.payara.fish/enterprise/docs/5.22.0/jakartaee-certification/5.22.0/tck-results-full-5.22.0.html'
+          version_download: 'https://docs.payara.fish/enterprise/docs/5.22.0/jakartaee-certification/5.22.0/tck-results-full-5.22.0.html'
         - version: 5.23.0
           compatibility: 'https://docs.payara.fish/enterprise/docs/5.23.0/jakartaee-certification/5.23.0/tck-results-full-5.23.0.html'
+          version_download: 'https://docs.payara.fish/enterprise/docs/5.23.0/jakartaee-certification/5.23.0/tck-results-full-5.23.0.html'
   
       - name: Eclipse GlassFish
         vendor: Eclipse Foundation
@@ -53,6 +55,7 @@ sets:
         versions:
         - version: 5.1.0
           compatibility: 'https://eclipse-ee4j.github.io/glassfish/certifications/jakarta-full-profile/8.0/TCK-Results'
+          version_download: 'https://eclipse-ee4j.github.io/glassfish/certifications/jakarta-full-profile/8.0/TCK-Results'
   
       - name: Open Liberty
         vendor: IBM Corporation
@@ -61,8 +64,10 @@ sets:
         versions:
         - version: 19.0.0.6
           compatibility: 'https://openliberty.io/certifications/jakartaee/platform/8/TCKResults.html'
+          version_download: 'https://openliberty.io/certifications/jakartaee/platform/8/TCKResults.html'
         - version: 20.0.0.3
           compatibility: 'https://openliberty.io/certifications/jakartaee/platform/8/20.0.0.3-TCKResults.html'
+          version_download: 'https://openliberty.io/certifications/jakartaee/platform/8/20.0.0.3-TCKResults.html'
   
       - name: WildFly
         vendor: Red Hat
@@ -71,6 +76,7 @@ sets:
         versions:
         - version: 18.0.0
           compatibility: 'https://github.com/wildfly/certifications/blob/EE8/WildFly_18.0.0.Final/jakarta-full-platform.adoc'
+          version_download: 'https://github.com/wildfly/certifications/blob/EE8/WildFly_18.0.0.Final/jakarta-full-platform.adoc'
   
       - name: JBoss Enterprise Application Platform 
         vendor: Red Hat
@@ -79,6 +85,7 @@ sets:
         versions:
         - version: 7.3.0
           compatibility: 'https://github.com/RedHatOfficial/jbosseap-certifications/blob/EE8/EAP-7.3.0/jakarta-full-platform.adoc#tck-results'
+          version_download: 'https://github.com/RedHatOfficial/jbosseap-certifications/blob/EE8/EAP-7.3.0/jakarta-full-platform.adoc#tck-results'
   
       - name: JEUS
         vendor: TmaxSoft Co., Ltd
@@ -87,6 +94,7 @@ sets:
         versions:
         - version: 8.5
           compatibility: 'https://kr.tmaxsoft.com/jakee/JEUS8.5_Full_Profile_Certification_Summary.html'
+          version_download: 'https://kr.tmaxsoft.com/jakee/JEUS8.5_Full_Profile_Certification_Summary.html'
   
       - name: Primeton AppServer
         vendor: Primeton
@@ -95,6 +103,7 @@ sets:
         versions:
         - version: 7
           compatibility: 'http://primeton.com/products/pas/tck_results/EE8-jakarta-full-platform-V7.html'
+          version_download: 'http://primeton.com/products/pas/tck_results/EE8-jakarta-full-platform-V7.html'
          
       - name: Apusic AAS
         vendor: Kingdee Apusic cloud computing Co., Ltd.
@@ -103,14 +112,16 @@ sets:
         versions: 
         - version: 10
           compatibility: 'http://www.apusic.com/info_safety/server/aas_v10_tck'
+          version_download: 'http://www.apusic.com/info_safety/server/aas_v10_tck'
           
       - name: FUJITSU Software Enterprise Application Platform
         vendor: Fujitsu Limited
         image: '/images/compatible_products/fujitsu.svg'
         download: 'https://www.fujitsu.com/jp/software/applatform/'
         versions:
-        - version: v1.0
+        - version: 1.0
           compatibility: 'https://www.fujitsu.com/jp/products/software/middleware/business-middleware/middleware/applatform/jakartaee-report/eap100-ee8full-tck-results/'
+          version_download: 'https://www.fujitsu.com/jp/products/software/middleware/business-middleware/middleware/applatform/jakartaee-report/eap100-ee8full-tck-results/'
   
       - name: IBM WebSphere Liberty 
         vendor: IBM Corporation
@@ -120,8 +131,9 @@ sets:
         versions:
         - version: 20.0.0.3
           compatibility: 'https://www.ibm.com/cloud/websphere-liberty/platform-tckresults'
+          version_download: 'https://www.ibm.com/cloud/websphere-liberty/platform-tckresults'
   
-    - title: Jakarta EE 8 Web Profile Compatible Products
+    - title: Jakarta EE 8 Web Profile
       items:
       - name: Eclipse GlassFish
         vendor: Eclipse Foundation
@@ -130,6 +142,7 @@ sets:
         versions:
         - version: 5.1.0
           compatibility: 'https://eclipse-ee4j.github.io/glassfish/certifications/jakarta-web-profile/8.0/TCK-Results'
+          version_download: 'https://eclipse-ee4j.github.io/glassfish/certifications/jakarta-web-profile/8.0/TCK-Results'
   
       - name: Open Liberty
         vendor: IBM Corporation
@@ -138,8 +151,10 @@ sets:
         versions:
         - version: 19.0.0.6
           compatibility: 'https://openliberty.io/certifications/jakartaee/webprofile/8/TCKResults.html'
+          version_download: 'https://openliberty.io/certifications/jakartaee/webprofile/8/TCKResults.html'
         - version: 20.0.0.3
           compatibility: 'https://openliberty.io/certifications/jakartaee/webprofile/8/20.0.0.3-TCKResults.html'
+          version_download: 'https://openliberty.io/certifications/jakartaee/webprofile/8/20.0.0.3-TCKResults.html'
   
       - name: WildFly
         vendor: Red Hat
@@ -148,6 +163,7 @@ sets:
         versions:
         - version: 18.0.0
           compatibility: 'https://github.com/wildfly/certifications/blob/EE8/WildFly_18.0.0.Final/jakarta-web-profile.adoc'
+          version_download: 'https://github.com/wildfly/certifications/blob/EE8/WildFly_18.0.0.Final/jakarta-web-profile.adoc'
              
       - name: JBoss Enterprise Application Platform 
         vendor: Red Hat
@@ -156,6 +172,7 @@ sets:
         versions:
         - version: 7.3.0  
           compatibility: 'https://github.com/RedHatOfficial/jbosseap-certifications/blob/EE8/EAP-7.3.0/jakarta-web-profile.adoc'
+          version_download: 'https://github.com/RedHatOfficial/jbosseap-certifications/blob/EE8/EAP-7.3.0/jakarta-web-profile.adoc'
   
       - name: IBM WebSphere Liberty 
         vendor: IBM Corporation
@@ -165,6 +182,7 @@ sets:
         versions:
         - version: 20.0.0.3
           compatibility: 'https://www.ibm.com/cloud/websphere-liberty/profile-tckresults'
+          version_download: 'https://www.ibm.com/cloud/websphere-liberty/profile-tckresults'
 
       - name: Payara Server 
         vendor: Payara Services Limited
@@ -173,3 +191,4 @@ sets:
         versions:
         - version: 5.23.0
           compatibility: 'https://docs.payara.fish/enterprise/docs/5.23.0/jakartaee-certification/5.23.0/tck-results-web-5.23.0.html'
+          version_download: 'https://docs.payara.fish/enterprise/docs/5.23.0/jakartaee-certification/5.23.0/tck-results-web-5.23.0.html'

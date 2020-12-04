@@ -8,10 +8,11 @@ hide_sidebar: true
 hide_page_title: true
 draft: false
 links: [[href: "get_listed", text: "Get Listed"]]
-layout: "single"
+type: "compatibility/download"
+layout: "section"
 container: "container margin-top-20"
 ---
 
 {{< pages/compatibility-products-header >}}
 
-{{< pages/compatibility-products >}}
+{{< pages/compatibility-products-download >}}
