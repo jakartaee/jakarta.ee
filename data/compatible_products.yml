@@ -14,14 +14,23 @@ sets:
   - jakartaee_version: 9
     items: 
     - title: Jakarta EE 9 Platform Compatible Products
-      # items:
-      # - name: Payara Server test 9
-      #   vendor: Test 9 Limited
-      #   image: '/images/compatible_products/payara_server.png'
-      #   download: 'https://www.payara.fish/software/downloads/'
-      #   versions:
-      #   - version: 5.21.2
-      #     compatibility: 'https://docs.payara.fish/enterprise/docs/5.21.0/jakartaee-certification/5.21.2/tck-results-full-5.21.2.html'
+      items:
+      - name: Eclipse GlassFish
+        vendor: Eclipse Foundation
+        image: '/images/compatible_products/glassfish_logo.svg'
+        download: 'https://glassfish.org/download'
+        versions:
+        - version: 6.0
+          compatibility: 'https://glassfish.org/certifications/jakarta-full-profile/9.0/TCK-Results'
+    - title: Jakarta EE 9 Web Profile Compatible Products
+      items:
+      - name: Eclipse GlassFish
+        vendor: Eclipse Foundation
+        image: '/images/compatible_products/glassfish_logo.svg'
+        download: 'https://glassfish.org/download'
+        versions:
+        - version: 6.0
+          compatibility: 'https://glassfish.org/certifications/jakarta-full-profile/9.0/TCK-Results'
 
   - jakartaee_version: 8
     items:
@@ -37,7 +46,7 @@ sets:
         - version: 5.23.0
           compatibility: 'https://docs.payara.fish/enterprise/docs/5.23.0/jakartaee-certification/5.23.0/tck-results-full-5.23.0.html'
   
-      - name: Eclipse Glassfish
+      - name: Eclipse GlassFish
         vendor: Eclipse Foundation
         image: '/images/compatible_products/glassfish_logo.svg'
         download: 'https://www.eclipse.org/downloads/download.php?file=/glassfish/glassfish-5.1.0.zip'
@@ -114,7 +123,7 @@ sets:
   
     - title: Jakarta EE 8 Web Profile Compatible Products
       items:
-      - name: Eclipse Glassfish
+      - name: Eclipse GlassFish
         vendor: Eclipse Foundation
         image: '/images/compatible_products/glassfish_logo.svg'
         download: 'https://www.eclipse.org/downloads/download.php?file=/glassfish/web-5.1.0.zip'
