@@ -24,7 +24,7 @@
                                 <td>{{ .name }}</td>
                                 <td>
                                 {{ range .versions }}
-                                    <p><a class="compatibility-link" href="{{ .version_download }}">{{ .version }}</a></p>
+                                    <a class="compatibility-link" href="{{ .version_download }}">{{ .version }}</a><br />
                                 {{ end }}
                                 </td>
                             </tr>

@@ -2,7 +2,7 @@
   other = "Jakarta EE logo"
 
 [compatibility-intro-text]
-  other = "Jakarta EE 技术的成功有赖于其兼容性，以确保应用的可移植性、安全性、稳定性和弹性。兼容性的存在使得更多的技术供应商可以在企业级Java社群中利用和加强Jakarta EE 的品牌。如果有兴趣把你的产品列在此处，请遵循如下的步骤 <a href=\"get_listed\">加入列表</a>"
+  other = "Jakarta EE 技术的成功有赖于其兼容性，以确保应用的可移植性、安全性、稳定性和弹性。兼容性的存在使得更多的技术供应商可以在企业级Java社群中利用和加强Jakarta EE 的品牌。如果有兴趣把你的产品列在此处，请遵循如下的步骤 <a href=\"/zh/compatibility/get_listed/\">加入列表</a>"
 
 [compatibility-logo-alt]
   other = "{{ .Name }} logo"
