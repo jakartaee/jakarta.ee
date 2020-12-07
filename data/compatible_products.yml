@@ -30,7 +30,7 @@ sets:
         download: 'https://glassfish.org/download'
         versions:
         - version: 6.0
-          compatibility: 'https://glassfish.org/certifications/jakarta-full-profile/9.0/TCK-Results'
+          compatibility: 'https://glassfish.org/certifications/jakarta-web-profile/9.0/TCK-Results'
 
   - jakartaee_version: 8
     items:
