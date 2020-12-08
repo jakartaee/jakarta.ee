@@ -7,8 +7,6 @@ hide_sidebar: true
 draft: false
 links: [[href: "/zh/compatibility/get_listed/", text: "加入列表"]]
 hide_page_title: true
-type: "compatibility/download"
-layout: "section"
 container: "container margin-top-20"
 ---
 
