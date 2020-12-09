@@ -162,3 +162,6 @@
 
 [coming-soon]
   other = "Coming soon"
+
+[compatibility-download-button]
+  other = "<a class=\"btn btn-lg btn-primary margin-bottom-5\" href=\"/compatibility/download\">Download Compatible Products</a>"
