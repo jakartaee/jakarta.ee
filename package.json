@@ -22,7 +22,8 @@
     "specifications": "bash build.sh",
     "build_netlify": "NODE_ENV=production npm run production && npm run specifications && npm run fetch_project",
     "fetch_project": "NODE_ENV=production node node_modules/eclipsefdn-hugo-solstice-theme/bin/projects/index.js -l data",
-    "generate_contributor_list": "./js/contributor-cards/generate-contributor-lists.sh"
+    "generate_contributor_list": "./js/contributor-cards/generate-contributor-lists.sh",
+    "disallow_robots_txt": "echo \"User-agent: *\r\nDisallow: /\" > layouts/robots.txt"
   },
   "dependencies": {
     "eclipsefdn-hugo-solstice-theme": "0.0.109",
