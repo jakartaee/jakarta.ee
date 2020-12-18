@@ -46,4 +46,27 @@ for f in specifications/*/*/*/; do
   fi
 done
 
+echo -e "Step 7: Create missing language copies..."
+LANGS=(zh)
+FILES=`find ./specifications -type f -name "*.md"`
+for F in $FILES; do
+  if [ -f "$F" ]; then
+    FILE_NAME=`basename $F`
+    EXTENSION=${FILE_NAME#**.}
+    for LANG in ${LANGS[@]}; do
+      ## Skip non base-lang copies
+      if [[ "$EXTENSION" =~ .*"$LANG".* ]];then
+        continue 2
+      fi
+    done
+    REL_DIR=`dirname $F`
+    for LANG in ${LANGS[@]}; do
+      LANG_FILE="$REL_DIR/`basename $F .md`.$LANG.md"
+      if [ ! -f $LANG_FILE ]; then
+        echo "Creating langauge copy of $F in $LANG_FILE"
+        cp $F $LANG_FILE
+      fi
+    done
+  fi
+done
 echo "Done!"

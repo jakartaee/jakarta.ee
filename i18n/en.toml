@@ -1,0 +1,167 @@
+[jakarta-ee-logo-alt]
+  other = "Jakarta EE logo"
+
+[compatibility-intro-text]
+  other = "The success of Jakarta EE technology relies on compatibility to ensure application portability, security, stability, and resiliency. Compatibility will allow more technology providers to leverage and strengthen the Jakarta EE brand in the enterprise Java community. If you are interested in featuring your product here, follow the steps on the <a href=\"/compatibility/get_listed\">Get Listed</a> page."
+
+[compatibility-logo-alt]
+  other = "{{ .Name }} logo"
+
+[compatibility-download-button-text]
+  other = "Download"
+
+[compatibility-proof-of-compatibility-text]
+  other = "Proof of compatibility"
+
+[compatibility-version-text]
+  other = "Version: "
+
+[connect-mailing-lists-subscribe]
+  other = "Subscribe"
+
+[connect-mailing-list-community-title]
+  other = "Jakarta EE Community Mailing List"
+
+[connect-mailing-list-community-body]
+  other = "jakarta.ee-community is the mailing list for Jakarta EE community discussions. Subscribe to this list for all things Jakarta EE"
+
+[connect-mailing-list-community-link]
+  other = "https://accounts.eclipse.org/mailing-list/jakarta.ee-community"
+
+[connect-mailing-list-working-group-title]
+  other = "Jakarta EE Working Group Mailing List"
+
+[connect-mailing-list-working-group-body]
+  other = "jakarta.ee-wg is the mailing list for the Jakarta EE Working Group. Subscribe to this list to share general information regarding Jakarta EE"
+
+[connect-mailing-list-working-group-link]
+  other = "https://accounts.eclipse.org/mailing-list/jakarta.ee-wg"
+
+[connect-mailing-list-projects-title]
+  other = "Project Mailing Lists"
+
+[connect-mailing-list-projects-body]
+  other = "Want to get involved? Sign up to the Jakarta EE project mailing lists here."
+
+[connect-mailing-list-projects-link-text]
+  other = "Mailing Lists"
+
+[connect-slack-title]
+  other = "Slack"
+
+[connect-slack-subtitle]
+  other = "Join our Slack Workspace"
+
+[connect-slack-link]
+  other = "https://join.slack.com/t/eclipsefoundationhq/shared_invite/zt-crh7mheq-3on2tophEuvQTUGidEAWlg"
+
+[connect-newsletter-title]
+  other = "Newsletter"
+
+[connect-newsletter-subtitle]
+  other = "Sign up to our Newsletter"
+
+[connect-newsletter-link]
+  other = "https://eclipsecon.us6.list-manage.com/subscribe/post"
+
+[connect-updates-title]
+  other = "Updates"
+
+[connect-updates-body]
+  other = "Receive updates from the Eclipse Foundation on Jakarta EE and other Eclipse projects, events and community announcements"
+
+[connect-updates-edit-link]
+  other = "https://accounts.eclipse.org/user/edit#open_tab_privacy"
+
+[connect-updates-edit-text]
+  other = "Edit Preferences"
+
+[connect-updates-link-divider-text]
+  other = "- Or -"
+
+[connect-updates-create-link]
+  other = "https://accounts.eclipse.org/user/register"
+
+[connect-updates-create-text]
+  other = "Create Account"
+
+[connect-community-calendar-title]
+  other = "Jakarta EE Community Calendar"
+
+[connect-community-calendar-body]
+  other = "Join the Jakarta EE Community Calendar to learn more about Jakarta EE-related plans"
+
+[connect-community-calendar-link]
+  other = "https://calendar.google.com/calendar/embed?src=eclipse-foundation.org_3281qms6riu4kdf354jn5idon0%40group.calendar.google.com&ctz=America%2FToronto"
+
+[connect-blogs-title]
+  other = "Jakarta Blogs"
+
+[connect-blogs-body]
+  other = "Visit Jakartablogs.ee to stay updated with posts from our global community on Jakarta EE news, technologies, best practices, and compatible products."
+
+[connect-blogs-link]
+  other = "https://jakartablogs.ee"
+
+[connect-blogs-link-text]
+  other = "View"
+
+[connect-social-title]
+  other = "Get Social"
+
+[connect-social-body]
+  other = "Stay up-to-date with all things Jakarta EE by following us on social media!"
+  
+[members-strategic-members-title]
+  other = "Strategic Members"
+  
+[members-enterprise-members-title]
+  other = "Enterprise Members"
+  
+[members-participant-members-title]
+  other = "Participant Members"
+
+[membership-testimonials-title]
+  other = "Member Testimonials"
+
+[sidebar-title]
+  other = "Innovate with Us"  
+
+[sidebar-about-jakartaee]
+  other = "About Jakarta EE"
+
+[sidebar-faqs]
+  other = "Frequently Asked Questions"
+
+[sidebar-become-a-member]
+  other = "Become a Member"
+
+[sidebar-connect]
+  other = "Stay Connected"
+
+[sidebar-working-group-charter]
+  other = "Working Group Charter"
+
+[sidebar-technical-direction]
+  other = "Technical Direction"
+
+[sidebar-newsletter-archives]
+  other = "Newsletter Archives"
+
+[sidebar-meeting-minutes]
+  other = "Meeting Minutes"
+
+[sidebar-trademark-guidelines]
+  other = "Trademark Guidelines"
+
+[sidebar-specification-process]
+  other = "Specification Process"
+
+[pages-newsletter-sign-up-to-our-newsletter]
+  other = "Subscribe to our Newsletter"
+
+[coming-soon]
+  other = "Coming soon"
+
+[compatibility-download-button]
+  other = "<a class=\"btn btn-lg btn-primary margin-bottom-5\" href=\"/compatibility/download\">Download Compatible Products</a>"

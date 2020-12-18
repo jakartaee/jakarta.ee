@@ -29,7 +29,7 @@ Ensure that the topic of the adopted Jakarta EE Specification is consistently di
 * Enable JUGs to have priority for organizing JakartaOne Livestream - local edition (providing framework and tools)
 * Enable JUGs to have Jakarta EE release parties (e.g. provide Jakarta EE presentation material and giveaways for one Jakarta EE release party per year)
 * Facilitate Adopt-a-Spec activities in the “hackerspace” at EclipseCon
-* Arrange “Meet the experts” informal gatherings/tech talks at EclipseCon and other main Java events
+* Arrange “Meet the experts” informal gatherings/tech talks at EclipseCon and other main events
 * Opportunity to participate in live code-along sessions on Jakarta EE Livestream events
 * Opportunity to participate in meetings with Jakarta EE committees or experts to discuss Jakarta EE related topics
 

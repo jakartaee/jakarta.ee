@@ -1,16 +1,17 @@
 ---
 title: "Home"
-seo_title: "Jakarta® EE Software | Cloud Native"
+seo_title: "Jakarta® EE | Cloud Native Java for Enterprise"
 headline: "Jakarta<sup>®</sup> EE"
 subtitle: "Open Source Cloud Native Java"
-description: "Jakarta Enterprise Edition (EE) is the future of cloud native Java. Jakarta EE open source software drives cloud native innovation, modernizes enterprise applications and protects investments in Java EE."
-tagline: "Powered by participation, Jakarta EE is focused on enabling community-driven collaboration and open innovation for the cloud."
+description: "Jakarta Enterprise Edition (EE) is the open source future of cloud native Java. Protect your investments in Java EE and modernize your enterprise applications."
+tagline: "Powered by participation, Jakarta EE is focused on enabling community-driven collaboration and open innovation for the cloud. Build modern and portable enterprise applications and protect your investments in Java EE."
 links: [[href: "about/", text: "About Jakarta EE"], [href: "specifications/", text: "Specifications"], [href: "membership/", text: "Join Us"]]
 date: 2018-04-05T15:50:25-04:00
 hide_page_title: true
 hide_sidebar: true
 hide_breadcrumb: true
 show_featured_story: true
+container: "container-fluid"
 ---
 
 

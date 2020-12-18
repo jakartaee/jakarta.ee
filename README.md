@@ -1,6 +1,6 @@
 # jakarta.ee
 
-The [jakarta.ee](https://jakarta.ee) website is generated with [Hugo](https://gohugo.io/documentation/).
+The [jakarta.ee](https://jakarta.ee) website is generated with [Hugo](https://gohugo.io/documentation/) 0.76.5.
 
 Jakarta EE is the future of cloud native Java. Jakarta EE open source software drives cloud native innovation, modernizes enterprise applications and protects investments in Java EE.
 
@@ -21,6 +21,20 @@ Fetch and copy pages for the Specification section:
 
 ```bash
 npm run specifications
+```
+
+### Contributors list (Optional)
+
+Contributors list json file (_used on release page_) can be generate via:
+
+```bash
+npm run generate_contributor_list
+```
+
+P.S. Script also needs GH_TOKEN env variable to work, to run with env variable inline:
+
+```bash
+GH_TOKEN=<gh token here> npm run generate_contributor_list
 ```
 
 ## Contributing
