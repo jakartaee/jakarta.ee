@@ -453,12 +453,12 @@ outlined in these documents:
 -   [Oracle/JCP Acronym
     Guidelines](https://jakarta.ee/legal/acronym_guidelines/)
 
--   [Project Names and Codes](names.xml)
+-   [Project Names and Codes](https://github.com/jakartaee/specification-committee/blob/master/names.adoc)
 
 Using these conventions, projects need to:
 
 -   Change the specification name to that given in [Project Names and
-    Codes](names.xml)
+    Codes](https://github.com/jakartaee/specification-committee/blob/master/names.adoc)
 
 -   JavaDocs and text documents such as README files need to be updated
     to use these naming conventions.
@@ -467,11 +467,11 @@ Using these conventions, projects need to:
     JESP](https://jakarta.ee/about/jesp/)
 
 -   Update references to other specifications to use name in [Project
-    Names and Codes](names.xml)
+    Names and Codes](https://github.com/jakartaee/specification-committee/blob/master/names.adoc)
 
 -   Links to JCP JSR pages need to be replaced with a links of the form
     jakarta.ee/specifications/\<code\>/\<version\> where \<code\> is the
-    specification code from [Project Names and Codes](names.xml), and
+    specification code from [Project Names and Codes](https://github.com/jakartaee/specification-committee/blob/master/names.adoc), and
     \<version\> is the particular specification version.
 
 -   Leave existing \"\@since XYZ 1.x\" uses alone. These refer to the
