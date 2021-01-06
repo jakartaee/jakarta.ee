@@ -57,7 +57,7 @@ sets:
         versions:
         - version: 5.1.0
           compatibility: 'https://eclipse-ee4j.github.io/glassfish/certifications/jakarta-full-profile/8.0/TCK-Results'
-          download_url: 'https://eclipse-ee4j.github.io/glassfish/certifications/jakarta-full-profile/8.0/TCK-Results'
+          download_url: 'https://www.eclipse.org/downloads/download.php?file=/glassfish/glassfish-5.1.0.zip'
   
       - name: Open Liberty
         vendor: IBM Corporation
@@ -144,7 +144,7 @@ sets:
         versions:
         - version: 5.1.0
           compatibility: 'https://eclipse-ee4j.github.io/glassfish/certifications/jakarta-web-profile/8.0/TCK-Results'
-          download_url: 'https://eclipse-ee4j.github.io/glassfish/certifications/jakarta-web-profile/8.0/TCK-Results'
+          download_url: 'https://www.eclipse.org/downloads/download.php?file=/glassfish/web-5.1.0.zip'
   
       - name: Open Liberty
         vendor: IBM Corporation
