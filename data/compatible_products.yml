@@ -22,7 +22,7 @@ sets:
         versions:
         - version: 6.0
           compatibility: 'https://glassfish.org/certifications/jakarta-full-profile/9.0/TCK-Results'
-          download_url: 'https://glassfish.org/certifications/jakarta-full-profile/9.0/TCK-Results'
+          download_url: 'https://download.eclipse.org/ee4j/glassfish/glassfish-6.0.0.zip'
     - title: Jakarta EE 9 Web Profile
       items:
       - name: Eclipse GlassFish
@@ -32,7 +32,7 @@ sets:
         versions:
         - version: 6.0
           compatibility: 'https://glassfish.org/certifications/jakarta-web-profile/9.0/TCK-Results'
-          download_url: 'https://glassfish.org/certifications/jakarta-web-profile/9.0/TCK-Results'
+          download_url: 'https://download.eclipse.org/ee4j/glassfish/web-6.0.0.zip'
 
   - jakartaee_version: 8
     items:
@@ -57,7 +57,7 @@ sets:
         versions:
         - version: 5.1.0
           compatibility: 'https://eclipse-ee4j.github.io/glassfish/certifications/jakarta-full-profile/8.0/TCK-Results'
-          download_url: 'https://eclipse-ee4j.github.io/glassfish/certifications/jakarta-full-profile/8.0/TCK-Results'
+          download_url: 'https://www.eclipse.org/downloads/download.php?file=/glassfish/glassfish-5.1.0.zip'
   
       - name: Open Liberty
         vendor: IBM Corporation
@@ -144,7 +144,7 @@ sets:
         versions:
         - version: 5.1.0
           compatibility: 'https://eclipse-ee4j.github.io/glassfish/certifications/jakarta-web-profile/8.0/TCK-Results'
-          download_url: 'https://eclipse-ee4j.github.io/glassfish/certifications/jakarta-web-profile/8.0/TCK-Results'
+          download_url: 'https://www.eclipse.org/downloads/download.php?file=/glassfish/web-5.1.0.zip'
   
       - name: Open Liberty
         vendor: IBM Corporation
