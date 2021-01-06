@@ -135,7 +135,7 @@ sets:
           compatibility: 'https://www.ibm.com/cloud/websphere-liberty/platform-tckresults'
           download_url: 'https://www.ibm.com/cloud/websphere-liberty/platform-tckresults'
 
-      - name: Thunisoft Application Servrer
+      - name: Thunisoft Application Server
         vendor: Beijing Thunisoft Information Technology Co.,Ltd
         image: '/images/compatible_products/tas-logo.png'
         image_width: 200
