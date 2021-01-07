@@ -1,0 +1,37 @@
+<div class="row">
+    <div class="col-md-8 col-md-offset-16" style="text-align: center;"><a class="btn btn-lg btn-secondary" href="https://github.com/eclipse-ee4j/jakartaee-platform/issues?q=is%3Aissue+is%3Aclosed+label%3Acertification">Compatibility Requests</a></div>
+</div>
+
+{{ range $.Site.Data.compatible_products.sets }}
+    {{ range .items }}
+        <div class="row margin-top-50 margin-bottom-20 padding-bottom-40 compatibility-download">
+            <div class="col-md-16">
+                <h2 class="h4 margin-top-20 margin-bottom-20"><strong>{{ .title }}</strong></h2>
+                <table class='table borderless compatibility-download-table'>
+                    <thead>
+                        <tr>
+                            <th class="uppercase">
+                                Product Name
+                            </th>
+                            <th>
+                                <span class="uppercase">Product Version(s)</span> <span>(click to download)</span>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {{ range .items }}
+                            <tr>
+                                <td>{{ .name }}</td>
+                                <td>
+                                {{ range .versions }}
+                                    <a class="compatibility-link" href="{{ .download_url }}">{{ .version }}</a><br />
+                                {{ end }}
+                                </td>
+                            </tr>
+                        {{ end }}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    {{ end }}
+{{ end }}

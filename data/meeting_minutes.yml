@@ -5,6 +5,14 @@ years:
 items:
    marketing_committee:
        -
+          url: marketing_committee/minutes-marketing-december-03-2020.pdf
+          title: December 3, 2020 (pdf)
+          year: 2020
+       -
+          url: marketing_committee/minutes-marketing-november-19-2020.pdf
+          title: November 19, 2020 (pdf)
+          year: 2020
+       -
           url: marketing_committee/minutes-marketing-november-12-2020.pdf
           title: November 12, 2020 (pdf)
           year: 2020
@@ -460,8 +468,8 @@ items:
           title: March 19, 2020 (pdf)
           year: 2020
        -
-          url: specification_committee/minutes-specification-march-04-2020.pdf
-          title: March 19, 2020 (pdf)
+          url: specification_committee/minutes-specification-march-4-2020.pdf
+          title: March 4, 2020 (pdf)
           year: 2020
        -
           url: specification_committee/minutes-specification-february-19-2020.pdf

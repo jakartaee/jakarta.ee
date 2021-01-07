@@ -1,0 +1,124 @@
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [{
+    "@type": "Question",
+    "name": "What is Jakarta EE?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "<p>Jakarta EE is the future for cloud-native, light-weight, and traditional enterprise Java applications</p><ul><li><p>Java EE technologies contributed by Oracle are being used to create the new Jakarta EE platform</p></li><li><p>The Eclipse Foundation is the home of Cloud Native Java open innovation</p></li><li><p>The Jakarta EE Working Group is focused on modernizing Java EE technologies and governance processes to be more open and community-based</p></li></ul>"
+    }
+  },{
+    "@type": "Question",
+    "name": "What is the significance of the name “Jakarta EE”? How did you come up with the name?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "<p>In the early days of Java, the Apache Jakarta project was the home of many exciting innovations in the Java ecosystem. It was particularly instrumental in establishing a strong open source community in and around the Java platform. <a href='https://en.wikipedia.org/wiki/Jakarta_Project#Project_name'>According to Wikipedia</a> the name was originally selected because it was the meeting room used at Sun Microsystems for the meetings that led to the project creation.</p><p>In February 2018, the Community was welcomed to vote on the new name for Java EE. Almost 7,000 community members voted in our community poll, and <a href='https://eclipse-foundation.blog/2018/02/26/and-the-name-is/'>over 64% voted in favour of Jakarta EE</a>. Read <a href='https://www.tomitribe.com/blog/java-ee-to-jakarta-ee/'>Java EE to Jakarta EE</a> which explains the history behind the name selection. The Apache Software Foundation kindly allowed the Eclipse Foundation to resume using that name, after it was retired at Apache in 2011.</p>"
+    }
+  },{
+    "@type": "Question",
+    "name": "What is included in the Jakarta EE platform?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "<p>Initially Jakarta EE was the exact equivalent to the Java EE 8 platform. All of the specifications, reference implementations (RIs), and technology compatibility kits (TCKs) that comprised <a href='https://www.oracle.com/java/technologies/java-ee-glance.html'>Java EE 8</a> have been transferred to the Eclipse Foundation. Later releases of Jakarta EE build on this foundation.</p>"
+    }
+  },{
+    "@type": "Question",
+    "name": "What happened with javax.* namespace?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "<p>Jakarta EE 9 release introduced the jakarta.* namespace as a replacement for javax.* for Jakarta EE specifications.</p>"
+    }
+  },{
+    "@type": "Question",
+    "name": "What is the status of the Java EE TCKs?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "<p>The Java EE 8 Technology Compatibility Kits (TCKs) have been contributed by Oracle and open sourced at the Eclipse Foundation under the <a href='https://www.eclipse.org/legal/epl-2.0/'>Eclipse Public License (EPL-2.0)</a>. The TCKs are hosted in the Foundation’s <a href='https://github.com/eclipse-ee4j'>Git repositories</a>. These are the basis for Jakarta EE compatibility tests for compatible implementations of the Jakarta EE specifications.</p>"
+    }
+  },{
+    "@type": "Question",
+    "name": "How does the Jakarta EE governance model differ from Java EE governance model?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "<p>The Eclipse Foundation has a 14 year track record of providing a pragmatic, well understood governance model for all interested parties to collaborate on technology. The main difference is that the governance model is open, vendor-neutral, and provides a level playing field for all participants.</p>"
+    }
+  },{
+    "@type": "Question",
+    "name": "What is the process used for creating new specifications?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "<p>The Foundation has created new specifications development processes - Eclipse Foundation Specification Process, largely based on the well established and respected Eclipse Development Process.The process is further tailored by the Jakarta EE Specification Committee for Jakarta EE. The Jakarta EE Specification Process is created and used for delivery of Jakarta EE specifications.</p>"
+    }
+  },{
+    "@type": "Question",
+    "name": "How often will new releases of Jakarta EE be delivered?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "<p>This is still being defined, so we cannot commit to any particular schedule or cadence at this time. However, there is a strong commitment by all involved to significantly increase the pace of innovation. We intend to listen to both the developer community and the enterprise consumers of Jakarta EE technologies to understand what their desires are. Obviously there are trade-offs to be made between stability versus pace of new innovation, but these trade-offs are being addressed in an open and inclusive manner that will help drive the success of Jakarta EE.</p>"
+    }
+  },{
+    "@type": "Question",
+    "name": "What’s going to be in the next release of Eclipse GlassFish, and when will it be launched?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "<p><a href='https://projects.eclipse.org/proposals/eclipse-glassfish'>Eclipse GlassFish</a> project is being managed by the Eclipse GlassFish project team. All the information and latest releases can be found on the <a href='https://projects.eclipse.org/projects/ee4j.glassfish'>Eclipse GlassFish project pages</a>.</p>"
+    }
+  },{
+    "@type": "Question",
+    "name": "Beyond the immediate roadmap, what is the overall vision for the technical future of Jakarta EE? What are the most important areas to evolve?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "<p>The key areas that developers and other stakeholders want us to focus on include:</p><ul><li><p>Enhanced support for microservices architecture</p></li><li><p>Move to Cloud Native Java, which includes better integrations with technologies such as Docker and Kubernetes</p></li><li><p>Increased pace of innovation</p></li<li><p>Build a vibrant developer community</p></li><li><p>Provide production quality reference implementations</p></li></ul>"
+    }
+  },{
+    "@type": "Question",
+    "name": "What is the relationship between EE4J and Jakarta EE?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "<p>Here are two good articles that explain the relationships between the two and the use case for each:</p><ul><li><p><a href='http://www.agilejava.eu/2018/03/22/the-relationship-between-jakarta-ee-ee4j-and-java-ee/'>The Relationship Between Jakarta EE, EE4J and Java EE</a></p></li><li><p><a href='https://www.eclipse.org//lists/ee4j-community/msg01403.html'>When to use Jakarta EE, and when to use EE4J </a></p></li></ul>"
+    }
+  },{
+    "@type": "Question",
+    "name": "Will Jakarta EE support the creation and management of microservices as a top priority for most enterprise modernization efforts?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "<p>Yes. We expect that the existing Eclipse MicroProfile community and other open source communities will continue to lead the way. Incorporating Java innovations from these projects and communities into new versions of the platform will be key to our success.</p>"
+    }
+  },{
+    "@type": "Question",
+    "name": "How will Jakarta EE support cloud-enablement of legacy Java systems?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "<p>We expect to see the community to work towards better integrations with cloud native technologies such as Kubernetes and Docker. Some of these integrations need to happen at the Java virtual machine (JVM) level. We expect the Jakarta EE community to work closely with the OpenJDK and Eclipse OpenJ9 team to provide support at the framework level as these JVM enhancements are made available.</p>"
+    }
+  },{
+    "@type": "Question",
+    "name": "What are the key intersections making sure the language and the EE platform are in lock-step?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "<p>The Jakarta EE release cadence and schedule have not yet been determined. Once the community decides what the correct cadence is, we can start discussions to ensure alignment with other communities such as OpenJDK.</p>"
+    }
+  },{
+    "@type": "Question",
+    "name": "What are the guidelines for use of the Jakarta EE Compatibility Logo?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "<p>The logo is not available for any specifications other than the Profiles (Full, Web). So, for example, implementing only Servlet does not permit the use of the Jakarta EE Compatibility logo by any organization or project.</p><p>If an open source implementation of the Jakarta EE Web or Full Profile follows the TCK process and is in compliance with the Eclipse Foundation TCK license, the open source project can certainly declare that it is a Compatible Implementation.</p><p>In order to use the Jakarta EE Compatibility logo, an organization sponsoring the open source project must meet the membership eligibility requirements specified in the Jakarta EE Trademark Guidelines.</p>At a high level, the use of the Compatibility logo is limited to only members of the Jakarta EE Working Group who are licensees under the Jakarta EE Trademark License Agreement or approved guest members of the Working Group (who are also licensees under the Eclipse Foundation Trademark License).</p><p>We require membership in the Working Group because the Jakarta EE Compatibility logo and brand have value to our community and the industry. We rely on membership funding to financially support the management of the Jakarta EE specification process, compatibility rules, and developer outreach activities to drive awareness and adoption. Also, Working Group membership fees fund the promotion of the Jakarta EE Compatible brand and its value in the marketplace.</p><p>Refer to <a href='https://jakarta.ee/legal/trademark_guidelines/'>Jakarta EE Trademark Guidelines</a> for more details.</p>"
+    }
+  },{
+    "@type": "Question",
+    "name": "How can I become a Jakarta EE contributor or a committer?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "<p>To become a contributor, you begin with finding a Jakarta EE project you are interested in, then create an Eclipse Foundation account and sign the <a href='https://www.eclipse.org/legal/ECA.php'>Eclipse Contributors Agreement</a>.</p><p>After your work is noticed and recognized by the project team, a process will be initiated to promote you to a committer status.</p><p>If you are employed by one of the Jakarta EE Working Group member companies, most of the paperwork is covered by agreements signed by your employer.</p>"
+    }
+  },{
+    "@type": "Question",
+    "name": "How can I get involved in Jakarta EE?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "<p>Here are the various ways that you can get involved with Jakarta EE:</p><ul><li><p>As a <strong>contributor</strong> you can simply contribute to the <a href='https://github.com/eclipse-ee4j'>EE4J projects</a> on GitHub via pull requests. You will have to sign our <a href='https://www.eclipse.org/legal/ECA.php'>Eclipse Contributor Agreement</a> to do that.</p></li><li><p>As a <strong>committer</strong> you are already involved! Thank you for your efforts on the projects you participate in. If you would like to get involved in our governance, there are numerous opportunities to do so. For example you can run in the Eclipse Foundation Board elections, or the Jakarta EE working group elections. These elected positions are very important, and provide the committer community with an opportunity to influence our governance. The first step for committers to participate in the governance is to become a Committer Member of the Eclipse Foundation.  Details about this can be found on the <a href='https://www.eclipse.org/membership/#tab-membership'>Eclipse Foundation membership page</a>.</p></li><li><p>As a <strong>software vendor</strong> you can join the Eclipse Foundation as a Solutions Member, and the Jakarta EE Working Group as a Participant Member. This allows you to support the sustainability of the community, participate in marketing programs, and engage directly with the community.</p></li><li><p>As an <strong>enterprise</strong> you can join the Jakarta EE Working Group as an Enterprise Member. Details of the various Membership levels are provided in the <a href='https://www.eclipse.org/org/workinggroups/jakarta_ee_charter.php'>Jakarta EE Working Group Charter</a>. This allows you to support the sustainability of the community, participate in marketing programs, and engage directly with the community. In addition, Influencer Members participate in the Enterprise Requirements Committee to provide your specific requirements into the annual roadmap process for Jakarta EE.</p></li><li><p>As a <strong>Java EE and/or cloud platform vendor</strong> you can join the Eclipse Foundation and the Jakarta EE Working Group as a Strategic Member. This allows you to support the sustainability of the community, participate in marketing programs, and engage directly with the community. It also provides direct access to the governance of both the Eclipse Foundation and the Jakarta EE Working Group.</p></li></ul>"
+    }
+  }]
+}
