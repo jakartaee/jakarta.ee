@@ -144,6 +144,16 @@ sets:
         - version: 2.8
           compatibility: 'http://www.thunisoft.com/tastckresults/index.jhtml'
           download_url: 'http://tas.thunisoft.com/download'
+
+      - name: Oracle WebLogic Server 14c
+        vendor: Oracle Corporation
+        image: '/images/compatible_products/oracle_weblogic_server.svg'
+        image_width: 150
+        download: 'https://www.oracle.com/middleware/technologies/weblogic-server-downloads.html'
+        versions:
+        - version: 14.1.1.0
+          compatibility: 'https://www.oracle.com/middleware/technologies/jakartaee_report.html'
+          download_url: 'https://www.oracle.com/middleware/technologies/weblogic-server-downloads.html'
   
     - title: Jakarta EE 8 Web Profile
       items:
