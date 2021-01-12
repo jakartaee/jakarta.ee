@@ -209,6 +209,7 @@ enableInlineShortcodes = true
 	  subtitle = "云原生Java的新家园"
 	  keywords = ["Jakarta EE 软件", "Java EE", "cloud", "云", "云原生", "microservices", "微服务", "enterprise", "企业应用", "open source", "开源", "innovation"]
 	  call_for_action_text = "下载"
+      call_for_action_url = "/zh/compatibility/download/"
 	
 	[[languages.zh.menu.main]]
 		name = "关于"
