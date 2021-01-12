@@ -8,6 +8,7 @@ draft: false
 links: [[href: "/zh/compatibility/get_listed/", text: "加入列表"]]
 hide_page_title: true
 container: "container margin-top-20"
+hide_call_for_action: true
 ---
 
 {{< pages/compatibility-products-header >}}
