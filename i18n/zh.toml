@@ -192,6 +192,3 @@
 
 [coming-soon]
   other = "敬请期待"
-  
-[compatibility-download-button]
-  other = "<a class=\"btn btn-lg btn-primary margin-bottom-5\" href=\"download\">下载兼容产品</a>"

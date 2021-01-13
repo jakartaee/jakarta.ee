@@ -9,8 +9,6 @@ links: [[href: "get_listed", text: "加入列表"]]
 layout: "single"
 hide_page_title: true
 container: "container margin-top-20"
-hide_call_for_action: true
-compatibility_download_wrapper: "col-md-10 col-md-offset-14"
 ---
 
 {{< pages/compatibility-products-header >}}
