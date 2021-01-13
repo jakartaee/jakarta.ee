@@ -14,6 +14,8 @@ This document defines:
 -   Materials a TCK MUST possess to be considered suitable for
     delivering portability
 
+-   Ratifying a Final TCK
+
 -   Process for challenging tests and how these challenges are resolved
 
 -   Means of excluding released TCK tests from certification
@@ -22,6 +24,8 @@ This document defines:
 -   Policy on improving TCK tests for released specifications
 
 -   Process for self-certification
+
+-   Process for releasing a point revision of a TCK
 
 ## Materials for a TCK Release {#_materials_for_a_tck_release}
 
@@ -216,6 +220,10 @@ update and release of an official distribution of the TCK including the
 new exclude list. The associated `challenge` issue MUST be closed with
 an `accepted` label to indicate it has been resolved.
 
+If the TCK challenge recommends a workaround of adding a specific Jakarta deployment 
+descriptor with exact contents and the specification project accepts that 
+workaround, the tests do not need to be excluded.
+
 #### Rejected Challenges and Remedy {#_rejected_challenges_and_remedy}
 
 When a `challenge` issue is rejected, it MUST be closed with a label of
@@ -240,6 +248,9 @@ Excludes MUST be included in the TCK project release in a format that is
 compatible with the testing framework in use so that as the excludes are
 updated, the affected tests are automatically removed from the test
 suite.
+
+###  Adding excluded tests
+Excluded tests should be added back in for every major Jakarta EE release by emptying the test exclude list for every Specification developed in the respective major EE release.   
 
 ## Improvement {#_improvement}
 
@@ -412,3 +423,11 @@ is not a mechanism to attempt to handle implementation specific issues.
 The only time tests may be added to a TCK are in a major or minor
 release. A service release which updates the exclude list MUST not have
 test additions or changes.
+
+## Process for releasing a point revision of a TCK
+
+The process for releasing a point revision of a TCK entails filing an issue in the [jakartaee/specifications repository with the following details](https://github.com/jakartaee/specifications):
+
+-   Link to the TCK release to be published.
+-   Updated TCK links in the specification's _index.md file.
+-   A high-level description of what tests were excluded from the TCK and why.
