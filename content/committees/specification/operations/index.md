@@ -248,7 +248,7 @@ Although a release review is not required, several of the following requirements
 A release review will have validated that the specification
 project has:
 
-1.  <a name="staging_artifacts"/> Produced a final staging release via OSSRH staging repository for the api,
+1.  <a name="staging_artifacts"></a> Produced a final staging release via OSSRH staging repository for the api,
     javadoc. 
 
     -   Javadocs should include the [Eclipse Foundation Specification
@@ -280,7 +280,7 @@ project has:
     compatibility-certification-request template, you can use this one:
     [compatibility-certification-request.md](https://github.com/jakartaee/specification-committee/blob/master/compatibility-certification-request.md)
 
-5.  <a name="create_specification_pr"/> Initiate a Specification review request by creating
+5.  <a name="create_specification_pr"></a> Initiate a Specification review request by creating
     [draft PRs](https://help.github.com/en/articles/about-pull-requests#draft-pull-requests)
     (also assign the `draft` label) against the [Jakarta EE Specification Committee
     specifications](https://github.com/jakartaee/specifications)
