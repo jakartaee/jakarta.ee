@@ -2,7 +2,7 @@
   other = "Jakarta EE logo"
 
 [compatibility-intro-text]
-  other = "The success of Jakarta EE technology relies on compatibility to ensure application portability, security, stability, and resiliency. Compatibility will allow more technology providers to leverage and strengthen the Jakarta EE brand in the enterprise Java community. If you are interested in featuring your product here, follow the steps on the <a href=\"get_listed\">Get Listed</a> page."
+  other = "The success of Jakarta EE technology relies on compatibility to ensure application portability, security, stability, and resiliency. Compatibility will allow more technology providers to leverage and strengthen the Jakarta EE brand in the enterprise Java community. If you are interested in featuring your product here, follow the steps on the <a href=\"/compatibility/get_listed\">Get Listed</a> page."
 
 [compatibility-logo-alt]
   other = "{{ .Name }} logo"
@@ -85,13 +85,13 @@
 [connect-updates-create-text]
   other = "Create Account"
 
-[connect-monthly-calls-title]
-  other = "Jakarta EE Monthly Update Calls"
+[connect-community-calendar-title]
+  other = "Jakarta EE Community Calendar"
 
-[connect-monthly-calls-body]
-  other = "Join the Jakarta EE Monthly Update calls to learn more about Jakarta EE-related plans"
+[connect-community-calendar-body]
+  other = "Join the Jakarta EE Community Calendar to learn more about Jakarta EE-related plans"
 
-[connect-monthly-calls-link]
+[connect-community-calendar-link]
   other = "https://calendar.google.com/calendar/embed?src=eclipse-foundation.org_3281qms6riu4kdf354jn5idon0%40group.calendar.google.com&ctz=America%2FToronto"
 
 [connect-blogs-title]
@@ -156,3 +156,9 @@
 
 [sidebar-specification-process]
   other = "Specification Process"
+
+[pages-newsletter-sign-up-to-our-newsletter]
+  other = "Subscribe to our Newsletter"
+
+[coming-soon]
+  other = "Coming soon"

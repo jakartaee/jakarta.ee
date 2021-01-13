@@ -179,6 +179,12 @@ ul.tri-col {
   }
 }
 
+.news-list {
+  .header-underline {
+    margin-top: 20px;
+  }
+}
+
 @media (min-width: @screen-md-min) {
   .product-list .center-block {
     padding-left: 30px;
@@ -302,4 +308,38 @@ a.compatibility-link, a:visited.compatibility-link {
       right: 0;
     }
   }
+}
+
+.table.compatibility-download-table {
+  td, th {
+    border: none;
+    border-bottom: none;
+    vertical-align: middle;
+    width: 50%;
+    padding: 15px;
+  }
+
+  thead {
+    background-color: @brand-primary;
+    color: @white;
+
+    tr {
+      height: 60px;
+
+      th {
+        font-weight: initial;
+      }
+    }
+  }
+
+  tbody {
+    tr {
+      height: 80px;
+      border-bottom: solid 1px #BEBEBE;
+    }
+  }
+}
+
+.compatibility-download:nth-child(even) {
+  background-color: #f1f1f1;
 }

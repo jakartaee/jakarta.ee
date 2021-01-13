@@ -1,9 +1,9 @@
 ---
 title: "Jakarta EE 9 Delivers"
 date: 2018-04-05T16:10:38-04:00
-description: "Keep up to date with Jakarta EE working group updates, community news and announcement."
+description: "The latest Jakarta EE 9 downloads including Java EE 9 compatible products & open source specifications to modernize your enterprise applications."
 hide_sidebar: true
-seo_title: "Jakarta EE Software | Cloud Native"
+seo_title: "Jakarta EE 9 Downloads | Java EE 9 Compatible Products & Specifications"
 headline: "Jakarta&nbsp;EE"
 logo: "images/jakarta/jakarta_ee_logo_schooner_color_horizontal_default.png"
 links: [[href: "/compatibility/", text: "Download Compatible Products"], [href: "/specifications/", text: "Specifications"]]

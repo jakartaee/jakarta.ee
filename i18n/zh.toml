@@ -2,7 +2,7 @@
   other = "Jakarta EE logo"
 
 [compatibility-intro-text]
-  other = "Jakarta EE 技术的成功有赖于其兼容性，以确保应用的可移植性、安全性、稳定性和弹性。兼容性的存在使得更多的技术供应商可以在企业级Java社群中利用和加强Jakarta EE 的品牌。如果有兴趣把你的产品列在此处，请遵循如下的步骤 <a href=\"get_listed\">加入列表</a>"
+  other = "Jakarta EE 技术的成功有赖于其兼容性，以确保应用的可移植性、安全性、稳定性和弹性。兼容性的存在使得更多的技术供应商可以在企业级Java社群中利用和加强Jakarta EE 的品牌。如果有兴趣把你的产品列在此处，请遵循如下的步骤 <a href=\"/zh/compatibility/get_listed/\">加入列表</a>"
 
 [compatibility-logo-alt]
   other = "{{ .Name }} logo"
@@ -85,13 +85,13 @@
 [connect-updates-create-text]
   other = "新建账号"
 
-[connect-monthly-calls-title]
+[connect-community-calendar-title]
   other = "Jakarta EE 月度会议"
 
-[connect-monthly-calls-body]
+[connect-community-calendar-body]
   other = "加入 Jakarta EE 月度会议以了解 Jakarta EE 的相关计划"
 
-[connect-monthly-calls-link]
+[connect-community-calendar-link]
   other = "https://calendar.google.com/calendar/embed?src=eclipse-foundation.org_3281qms6riu4kdf354jn5idon0%40group.calendar.google.com&ctz=America%2FToronto"
 
 [connect-blogs-title]
@@ -189,4 +189,6 @@
 
 [layouts-committees-list-landing-page-info]
   other = "Jakarta EE 委员会是确保 Jakarta EE 各方面进展的治理机构。以下是基于 <a href=\"https:\/\/www.eclipse.org\/org\/workinggroups\/jakarta_ee_charter.php\">Jakarta EE 工作组章程​</a> 的治理机构:"
-  
+
+[coming-soon]
+  other = "敬请期待"
