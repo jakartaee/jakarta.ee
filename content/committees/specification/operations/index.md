@@ -248,8 +248,8 @@ Although a release review is not required, several of the following requirements
 A release review will have validated that the specification
 project has:
 
-1.  {#staging_artifacts} Produced a final staging release via OSSRH staging repository for the api,
-    javadoc.
+1.  <a name="staging_artifacts"/> Produced a final staging release via OSSRH staging repository for the api,
+    javadoc. 
 
     -   Javadocs should include the [Eclipse Foundation Specification
         License](https://raw.githubusercontent.com/eclipse-ee4j/jakartaee-api/master/licenses/EFSL.html).
@@ -280,7 +280,7 @@ project has:
     compatibility-certification-request template, you can use this one:
     [compatibility-certification-request.md](https://github.com/jakartaee/specification-committee/blob/master/compatibility-certification-request.md)
 
-5.  {#create_specification_pr} Initiate a Specification review request by creating
+5.  <a name="create_specification_pr"/> Initiate a Specification review request by creating
     [draft PRs](https://help.github.com/en/articles/about-pull-requests#draft-pull-requests)
     (also assign the `draft` label) against the [Jakarta EE Specification Committee
     specifications](https://github.com/jakartaee/specifications)
@@ -364,7 +364,7 @@ There is no formal release review required for a Specification service release (
 That is, no functionality changes are permitted in a service release.
 Although much of the content of the [Final Specification](#creating_a_final_specification) still applies, the approval process is simplified for a service release.
 
-1. The creation and staging of the various artifacts (Specification, API, and/or TCK) are still performed via the [steps outlined above](#staging_artifacts).
+1. The creation and staging of the various artifacts (Specification, API, and/or TCK) are still performed via the [initial steps outlined above](#staging_artifacts).
 
 2. The [creation of Specification PRs](#create_specification_pr) is also required.
 
