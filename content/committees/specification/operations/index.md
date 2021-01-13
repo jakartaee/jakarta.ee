@@ -1,6 +1,6 @@
 ---
 title: "Jakarta EE Specification Committee Operation"
-date: "2020-01-20T00:00:00+00:00"
+date: "2021-01-13T00:00:00+00:00"
 ---
 
 This document describes the practices of the Jakarta EE Specification
@@ -240,10 +240,15 @@ For each final specification:
 A specification document that is marked \"Final\" cannot be made
 generally available until after engaging in a successful release review
 (with corresponding super-majority approval from the specification
-committee). A release review will have validated that the specification
+committee). 
+
+**Note:** A \"Final\" service release (x.y.z) specification has an [abbreviated approval process](#creating_a_final_service_release_specification).
+Although a release review is not required, several of the following requirements will still apply for a service release. 
+
+A release review will have validated that the specification
 project has:
 
-1.  Produced a final staging release via OSSRH staging repository for the api,
+1.  {#staging_artifacts} Produced a final staging release via OSSRH staging repository for the api,
     javadoc.
 
     -   Javadocs should include the [Eclipse Foundation Specification
@@ -271,19 +276,17 @@ project has:
         
 4.  Create a compatibility certification request for the compatible
     implementation being used to validate the spec in the specification
-    repository issue tracker. If the project does not already have a
+    repository issue tracker (as appropriate). If the project does not already have a
     compatibility-certification-request template, you can use this one:
     [compatibility-certification-request.md](https://github.com/jakartaee/specification-committee/blob/master/compatibility-certification-request.md)
 
-5.  Initiate a Specification review request by creating
+5.  {#create_specification_pr} Initiate a Specification review request by creating
     [draft PRs](https://help.github.com/en/articles/about-pull-requests#draft-pull-requests)
     (also assign the `draft` label) against the [Jakarta EE Specification Committee
     specifications](https://github.com/jakartaee/specifications)
-    repository. The first PR provides everything requested in the [PR
+    repository. These draft PRs provide everything as requested in the [PR
     template](https://github.com/jakartaee/specifications/blob/master/pull_request_template.md). 
-    An optional second PR can be created which would include **only** the apidocs
-    directory with the javadoc contents.
-    
+        
     As an aid in the final review process, the [Specification Review Checklist](https://github.com/jakartaee/specification-committee/blob/master/spec_review_checklist.md) should be added to the Specification PR.
 
     -   These PRs are intended to provide the items that are required to
@@ -321,7 +324,7 @@ project has:
     implementation, if applicable) by submitting a PR to
     [GlassFish](https://github.com/eclipse-ee4j/glassfish).
 
-8.  For any release other than a service release, create a release
+8.  Create a release 
     record (if one doesn't already exist) as described in the [Eclipse
     Project
     Handbook](https://www.eclipse.org/projects/handbook/#pmi-commands-release)
@@ -354,6 +357,21 @@ The specification committee will promote the specification project to jakarta.ee
 
 Links: <https://github.com/jakartaee/jakarta.ee>,
 <https://gohugo.io/documentation/>
+
+### Creating a Final Service Release Specification # {#creating_a_final_service_release_specification}
+    
+There is no formal release review required for a Specification service release (x.y.z) as long as the JESP definition of a "service release" is adhered to.
+That is, no functionality changes are permitted in a service release.
+Although much of the content of the [Final Specification](#creating_a_final_specification) still applies, the approval process is simplified for a service release.
+
+1. The creation and staging of the various artifacts (Specification, API, and/or TCK) are still performed via the [steps outlined above](#staging_artifacts).
+
+2. The [creation of Specification PRs](#create_specification_pr) is also required.
+
+3. The Specification Project team should then send a note to the [public Specification Committee mailing list](https://accounts.eclipse.org/mailing-list/jakarta.ee-spec) announcing that the PRs are ready for review.
+
+4. After the Specification PRs are reviewed and approved by independent specification committee members, the PR can be merged.
+The Specification Project can then release the staged artifacts to Maven Central.
 
 ## Review Requirements/Guidelines # {#review_requirementsguidelines}
 
@@ -418,7 +436,7 @@ rules described in the
 ### Java Package # {#java_package}
 
 All new classes, as well as modifications to `javax.` classes, are
-created in the `jakarta.{abbreviation}.</emphasis>` package.
+created in the `jakarta.` package.
 
 This also applies to OSGi bundles produced by the project.
 
