@@ -38,7 +38,7 @@ producing a Final Specification. It also includes operational guidance
 for running a specifications TCK for the purpose of testing for
 compatibility.
 
-The Specification Chair (or their delegate) is responsible for
+The Specification Committee Chair (or their delegate) is responsible for
 initiating ballots, tallying their results, disseminating them to the
 community, and (when appropriate; e.g., in the case a release review
 ballot) reporting them to the EMO.
@@ -100,7 +100,7 @@ reviews can be found in these sections:
 
 -   [Creating a Final Specification](#creating_a_final_specification)
 
-The EMO initiates a specification committee ballot by sending an email
+The Specification Committee Chair (or their delegate) initiates a specification committee ballot by sending an email
 on the public Jakarta EE Specification Committee
 (<jakarta.ee-spec@eclipse.org>) mailing list that describes the nature
 of the vote (creation/progress/release) and includes pointers to the PR
@@ -115,10 +115,10 @@ If a specification committee member votes against a motion, they must
 provide a comment that explains the reason for the negative vote and
 suggest steps to mitigate the issue.
 
-The specification committee chair (or their designate) tallies the
+The specification committee chair (or their delegate) tallies the
 results of the vote, and aggregates the comments and presents them to
 the community via the specification project page on jakarta.ee, a
-summary email to <jakarta.ee-community@eclipse.org>, and a copies to
+summary email to 
 <jakarta.ee-spec@eclipse.org> and <emo@eclipse.org>, within one week of
 the completion of the vote.
 
@@ -126,7 +126,7 @@ The specification committee may choose to extend the deadline for a vote
 by simple majority vote on the public specification committee mailing
 list (<jakarta.ee-spec@eclipse.org>).
 
-In the event that a vote fails, the EMO will fail the corresponding
+In the event that a vote fails, the Specification Committee Chair (or their delegate) will fail the corresponding
 review, forward the comments from the vote to the specification team,
 and invite them to resolve the issues and re-engage at a later date.
 
@@ -248,7 +248,8 @@ Although a release review is not required, several of the following requirements
 A release review will have validated that the specification
 project has:
 
-1.  <a name="staging_artifacts"></a> Produced a final staging release via OSSRH staging repository for the api,
+<a name="staging_artifacts"></a> 
+1.  Produced a final staging release via OSSRH staging repository for the api,
     javadoc. 
 
     -   Javadocs should include the [Eclipse Foundation Specification
@@ -279,8 +280,9 @@ project has:
     repository issue tracker (as appropriate). If the project does not already have a
     compatibility-certification-request template, you can use this one:
     [compatibility-certification-request.md](https://github.com/jakartaee/specification-committee/blob/master/compatibility-certification-request.md)
-
-5.  <a name="create_specification_pr"></a> Initiate a Specification review request by creating
+    
+<a name="create_specification_pr"></a>
+5.  Initiate a Specification review request by creating
     [draft PRs](https://help.github.com/en/articles/about-pull-requests#draft-pull-requests)
     (also assign the `draft` label) against the [Jakarta EE Specification Committee
     specifications](https://github.com/jakartaee/specifications)
