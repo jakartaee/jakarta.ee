@@ -366,14 +366,14 @@ There is no formal release review required for a Specification service release (
 That is, no functionality changes are permitted in a service release.
 Although much of the content of the [Final Specification](#creating_a_final_specification) still applies, the approval process is simplified for a service release.
 
-1. The creation and staging of the various artifacts (Specification, API, and/or TCK) are still performed via the [initial steps outlined above](#staging_artifacts).
+1. The creation and staging of the various artifacts (Specification, API, and/or TCK) are still performed via the [initial steps 1 and 2 outlined above](#staging_artifacts).
 
-2. The [creation of Specification PRs](#create_specification_pr) is also required.
+2. The [creation of Specification PRs in step 5](#create_specification_pr) is also required.
 
 3. The Specification Project team should then send a note to the [public Specification Committee mailing list](https://accounts.eclipse.org/mailing-list/jakarta.ee-spec) announcing that the PRs are ready for review.
 
-4. After the Specification PRs are reviewed and approved by independent specification committee members, the PR can be merged.
-The Specification Project can then release the staged artifacts to Maven Central.
+4. After the Specification PRs are reviewed and approved by independent specification committee members, the PRs can be merged.
+The Specification Project team can then release the staged artifacts to Maven Central.
 
 ## Review Requirements/Guidelines # {#review_requirementsguidelines}
 
