@@ -1,0 +1,66 @@
+# Sample output to create a set with a compatible product
+# sets:
+#  - title: Jakarta EE 8 Full Platform Compatible Products
+#    items:
+#    - name: Eclipse Glassfish
+#      vendor: Eclipse Foundation
+#      image: '/images/glassfish.png'
+#      download: 'https://www.eclipse.org/downloads/download.php?file=/glassfish/glassfish-5.1.0.zip'
+#      versions:
+#      - version: 5.1.0
+#        compatibility: 'https://eclipse-ee4j.github.io/glassfish/certifications/jakarta-full-profile/8.0/TCK-Results'
+
+sets:
+    items:
+    - title: 【COMPANY】普元信息（Jakarta EE 中国社区发起人）
+    - title: 【COMPANY】青岛北斗聚星网络科技有限公司
+    - title: 【COMPANY】烟台海颐软件股份有限公司
+    - title: 【PERSON】Ondrej Mihalyi
+    - title: 【PERSON】Jon Zhang（A solid technology enthusias）
+    - title: 【PERSON】米帅
+    - title: 【PERSON】刘冬
+    - title: 【PERSON】李博（龙湖地产数字科技部副总经理）
+    - title: 【PERSON】liuhaoping(Developer， Blogger)
+    - title: 【PERSON】zhangchunsheng
+    - title: 【PERSON】魏宏宇
+    - title: 【PERSON】李磊
+    - title: 【PERSON】GaoXin(Java Developer， Blogger)
+    - title: 【PERSON】xieguangxuan（researcher，engeneer，shareer）
+    - title: 【PERSON】黄晨曦（开发者）
+    - title: 【PERSON】全威龙（Java 工程师）
+    - title: 【PERSON】wilson(Java Web开发人员)
+    - title: 【PERSON】冯征
+    - title: 【PERSON】高琳 （Java 程序员）
+    - title: 【PERSON】冯嘉
+    - title: 【PERSON】Xiaofeng Yang
+    - title: 【PERSON】ZhengZhiGuo（Blogger）
+    - title: 【PERSON】李帅
+    - title: 【PERSON】冷同学
+    - title: 【PERSON】肖晓锋
+    - title: 【PERSON】叶子凡
+    - title: 【PERSON】刘怿
+    - title: 【PERSON】谭智
+    - title: 【PERSON】闫启
+    - title: 【PERSON】xiao lian
+    - title: 【PERSON】詹启军
+    - title: 【PERSON】huang yang
+    - title: 【PERSON】谭煌
+    - title: 【PERSON】漫漫
+    - title: 【PERSON】王先生
+    - title: 【PERSON】宁泓霖
+    - title: 【PERSON】xibocun
+    - title: 【PERSON】冀烨 网络开源软件开发者、布道者
+    - title: 【PERSON】张辉（华为云云享专家）
+    - title: 【PERSON】wu yina
+    - title: 【PERSON】l李志强
+    - title: 【PERSON】马晓伟
+    - title: 【PERSON】袁明（学生）
+    - title: 【PERSON】吴诗琛（学生）
+    - title: 【PERSON】linton
+    - title: 【PERSON】he sai ma
+    - title: 【PERSON】 xie dd
+    - title: 【PERSON】snoohy
+    - title: 【PERSON】Ed Bratt
+    - title: 【USERGROUP】JackieXie
+    - title: 【USERGROUP】潘琪
+    - title: 【USERGROUP】Nipingy
