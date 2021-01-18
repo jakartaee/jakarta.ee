@@ -32,7 +32,7 @@ mix.babel([
     './node_modules/eclipsefdn-solstice-assets/js/solstice.js'
 ], './static/js/solstice.js');
 
-mix.babel(
+mix.js(
     './js/contributor-cards/index.js',
     './static/js/release-page-cards.js'
 )
