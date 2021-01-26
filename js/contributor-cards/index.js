@@ -5,6 +5,10 @@ import contributorList from '../../data/contributors/jakarta-ee-9.json';
 
 const cardList = document.querySelector('.card-list.contributor-list');
 
+if (window.NodeList && !NodeList.prototype.forEach) {
+  NodeList.prototype.forEach = Array.prototype.forEach;
+}
+
 if (!!cardList) {
   // at least login should exist
   const filteredList = contributorList.filter(({ login }) => !!login);
