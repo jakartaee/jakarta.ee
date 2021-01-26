@@ -18,6 +18,7 @@ sets:
       - name: Eclipse GlassFish
         vendor: Eclipse Foundation
         image: '/images/compatible_products/glassfish_logo.svg'
+        image_width: 195
         download: 'https://glassfish.org/download'
         versions:
         - version: 6.0
@@ -28,6 +29,7 @@ sets:
       - name: Eclipse GlassFish
         vendor: Eclipse Foundation
         image: '/images/compatible_products/glassfish_logo.svg'
+        image_width: 195
         download: 'https://glassfish.org/download'
         versions:
         - version: 6.0
@@ -50,6 +52,7 @@ sets:
       - name: Payara Server 
         vendor: Payara Services Limited
         image: '/images/compatible_products/payara_server.png'
+        image_width: 195
         download: 'https://www.payara.fish/downloads/'
         versions:
         - version: 5.22.0
@@ -62,6 +65,7 @@ sets:
       - name: Eclipse GlassFish
         vendor: Eclipse Foundation
         image: '/images/compatible_products/glassfish_logo.svg'
+        image_width: 195
         download: 'https://www.eclipse.org/downloads/download.php?file=/glassfish/glassfish-5.1.0.zip'
         versions:
         - version: 5.1.0
@@ -84,6 +88,7 @@ sets:
       - name: WildFly
         vendor: Red Hat
         image: '/images/compatible_products/red-hat-wildfly-logo.png'
+        image_width: 100
         download: 'https://wildfly.org/downloads'
         versions:
         - version: 18.0.0
@@ -93,6 +98,7 @@ sets:
       - name: JBoss Enterprise Application Platform 
         vendor: Red Hat
         image: '/images/compatible_products/red-hat-jboss-logo.png'
+        image_width: 195
         download: 'http://www.redhat.com/en/technologies/jboss-middleware/application-platform'
         versions:
         - version: 7.3.0
@@ -102,6 +108,7 @@ sets:
       - name: JEUS
         vendor: TmaxSoft Co., Ltd
         image: '/images/compatible_products/jeus_logo.svg'
+        image_width: 110
         download: 'https://kr.tmaxsoft.com/jakee/jeus8-b266.zip'
         versions:
         - version: 8.5
@@ -111,6 +118,7 @@ sets:
       - name: Primeton AppServer
         vendor: Primeton
         image: '/images/compatible_products/primeton_appserver_logo.png'
+        image_width: 195
         download: 'http://primeton.com/products/pas/'
         versions:
         - version: 7
@@ -120,6 +128,7 @@ sets:
       - name: Apusic AAS
         vendor: Kingdee Apusic cloud computing Co., Ltd.
         image: '/images/compatible_products/aas.jpg'
+        image_width: 195
         download: 'http://www.apusic.com/wp-content/uploads/AAS-V10.zip'
         versions: 
         - version: 10
@@ -129,6 +138,7 @@ sets:
       - name: FUJITSU Software Enterprise Application Platform
         vendor: Fujitsu Limited
         image: '/images/compatible_products/fujitsu.svg'
+        image_width: 195
         download: 'https://www.fujitsu.com/jp/software/applatform/'
         versions:
         - version: 1.0
@@ -170,6 +180,7 @@ sets:
       - name: Eclipse GlassFish
         vendor: Eclipse Foundation
         image: '/images/compatible_products/glassfish_logo.svg'
+        image_width: 195
         download: 'https://www.eclipse.org/downloads/download.php?file=/glassfish/web-5.1.0.zip'
         versions:
         - version: 5.1.0
@@ -192,6 +203,7 @@ sets:
       - name: WildFly
         vendor: Red Hat
         image: '/images/compatible_products/red-hat-wildfly-logo.png'
+        image_width: 100
         download: 'https://wildfly.org/downloads'
         versions:
         - version: 18.0.0
@@ -201,6 +213,7 @@ sets:
       - name: JBoss Enterprise Application Platform 
         vendor: Red Hat
         image: '/images/compatible_products/red-hat-jboss-logo.png'
+        image_width: 195
         download: 'http://www.redhat.com/en/technologies/jboss-middleware/application-platform'
         versions:
         - version: 7.3.0  
@@ -220,6 +233,7 @@ sets:
       - name: Payara Server 
         vendor: Payara Services Limited
         image: '/images/compatible_products/payara_server.png'
+        image_width: 195
         download: 'https://www.payara.fish/downloads/'
         versions:
         - version: 5.23.0
