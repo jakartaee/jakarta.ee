@@ -33,6 +33,15 @@ sets:
         - version: 6.0
           compatibility: 'https://glassfish.org/certifications/jakarta-web-profile/9.0/TCK-Results'
           download_url: 'https://download.eclipse.org/ee4j/glassfish/web-6.0.0.zip'
+      - name: Open Liberty
+        vendor: IBM Corporation
+        image: '/images/compatible_products/ibm_open_liberty.svg'
+        image_width: 195
+        download: 'https://glassfish.org/download'
+        versions:
+        - version: 21.0.0.2-beta
+          compatibility: 'https://openliberty.io/certifications/jakartaee/webprofile/9/21.0.0.2-beta-TCKResults.html'
+          download_url: 'https://openliberty.io/downloads/#runtime_betas'
 
   - jakartaee_version: 8
     items:
@@ -61,7 +70,8 @@ sets:
   
       - name: Open Liberty
         vendor: IBM Corporation
-        image: '/images/compatible_products/ibm_open_liberty.png'
+        image: '/images/compatible_products/ibm_open_liberty.svg'
+        image_width: 195
         download: 'https://openliberty.io/downloads/'
         versions:
         - version: 19.0.0.6
@@ -168,7 +178,8 @@ sets:
   
       - name: Open Liberty
         vendor: IBM Corporation
-        image: '/images/compatible_products/ibm_open_liberty.png'
+        image: '/images/compatible_products/ibm_open_liberty.svg'
+        image_width: 195
         download: 'https://openliberty.io/downloads/'
         versions:
         - version: 19.0.0.6
