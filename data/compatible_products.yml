@@ -37,7 +37,7 @@ sets:
         vendor: IBM Corporation
         image: '/images/compatible_products/ibm_open_liberty.svg'
         image_width: 195
-        download: 'https://glassfish.org/download'
+        download: 'https://openliberty.io/downloads/#runtime_betas'
         versions:
         - version: 21.0.0.2-beta
           compatibility: 'https://openliberty.io/certifications/jakartaee/webprofile/9/21.0.0.2-beta-TCKResults.html'
