@@ -14,6 +14,7 @@ sets:
   - jakartaee_version: 9
     items:
     - title: Jakarta EE 9 Platform
+      release: "/release/9"
       items:
       - name: Eclipse GlassFish
         vendor: Eclipse Foundation
@@ -24,6 +25,7 @@ sets:
         - version: 6.0
           compatibility: 'https://glassfish.org/certifications/jakarta-full-profile/9.0/TCK-Results'
           download_url: 'https://download.eclipse.org/ee4j/glassfish/glassfish-6.0.0.zip'
+
     - title: Jakarta EE 9 Web Profile
       items:
       - name: Eclipse GlassFish
@@ -48,6 +50,7 @@ sets:
   - jakartaee_version: 8
     items:
     - title: Jakarta EE 8 Platform
+      release: "/release/8"
       items:
       - name: Payara Server 
         vendor: Payara Services Limited
@@ -174,7 +177,6 @@ sets:
         - version: 14.1.1.0
           compatibility: 'https://www.oracle.com/middleware/technologies/jakartaee_report.html'
           download_url: 'https://www.oracle.com/middleware/technologies/weblogic-server-downloads.html'
-  
     - title: Jakarta EE 8 Web Profile
       items:
       - name: Eclipse GlassFish
