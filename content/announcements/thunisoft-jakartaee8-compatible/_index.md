@@ -4,6 +4,8 @@ date: "2021-01-19"
 type: "announcement"
 announcements/tags:
   - "Specification Committee"
+  - "Compatible Implementation"
+  - "Jakarta EE 8"
 authors: [{gh_handle: "ivargrimstad", name: "Ivar Grimstad"}, {gh_handle: "zcwslnh", name: "Zhang"}]
 image: "./banner.png"
 summary: "Thunisoft Application Server 2.8 now Jakarta EE 8 Full Platform Compatible. Lorem ipsum dolor sit amet, consectetur adipiscing elit."

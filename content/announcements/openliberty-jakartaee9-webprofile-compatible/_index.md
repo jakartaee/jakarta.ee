@@ -4,6 +4,8 @@ date: "2021-01-30"
 type: "announcement"
 announcements/tags:
   - "Specification Committee"
+  - "Compatible Implementation"
+  - "Jakarta EE 9"
 authors: [{gh_handle: "ivargrimstad", name: "Ivar Grimstad"}, {gh_handle: "kwsutter", name: "Kevin Sutter"}]
 image: "./banner.png"
 summary: "OpenLiberty 21.0.0.2-beta is now Jakarta EE 9 Web Profile Compatible. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
