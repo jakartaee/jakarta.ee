@@ -1,6 +1,6 @@
 ---
 title: "Warm welcome to Jelastic - a new Jakarta EE Working Group member"
-date: "2020-12-18"
+date: "2020-09-03"
 type: "announcement"
 announcements/tags:
   - "New Member"
