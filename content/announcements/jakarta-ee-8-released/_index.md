@@ -1,5 +1,5 @@
 ---
-title: "Jakarta EE 9 Released!"
+title: "Jakarta EE 8 Released!"
 date: "2019-09-10"
 type: "announcement"
 announcements/tags:
