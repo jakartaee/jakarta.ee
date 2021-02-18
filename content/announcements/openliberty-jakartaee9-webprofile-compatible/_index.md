@@ -1,6 +1,6 @@
 ---
 title: "OpenLiberty 21.0.0.2-beta now Jakarta EE 9 Web Profile Compatible"
-date: "2021-01-10"
+date: "2021-01-30"
 type: "announcement"
 announcements/tags:
   - "Specification Committee"
