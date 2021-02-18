@@ -1,5 +1,5 @@
 ---
-title: "Beijing Thunisoft Information Technology Co., Ltd"
+title: "Welcome Beijing Thunisoft Information Technology Co., Ltd to the Jakarta EE Working Group!"
 date: "2020-12-18"
 type: "announcement"
 announcements/tags:
