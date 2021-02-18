@@ -361,7 +361,7 @@ Links: <https://github.com/jakartaee/jakarta.ee>,
 ### Creating a Final Service Release Specification # {#creating_a_final_service_release_specification}
     
 There is no formal release review required for a Specification service release (x.y.z) as long as the JESP definition of a "service release" is adhered to.
-That is, no functionality changes are permitted in a service release.
+That is, no functionality changes or increase in IP scope are permitted in a service release.
 Although much of the content of the [Final Specification](#creating_a_final_specification) still applies, the approval process is simplified for a service release.
 
 1. The creation and staging of the various artifacts (Specification, API, and/or TCK) are still performed via the [initial steps 1 and 2 outlined above](#staging_artifacts).
