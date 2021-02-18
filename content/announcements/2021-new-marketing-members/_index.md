@@ -32,7 +32,7 @@ Tetiana collaborates with leaders in the Java community and cloud customers on a
 Tetiana says, “I’m thrilled to be part of the Jakarta EE Marketing Committee and leverage my network and marketing communications to help this exciting initiative. The main purpose is to accelerate and sustain the growth of the Jakarta EE community by making a valuable practical contribution such as spreading the word, creating content, participating in the events and collaborating on the future plans.”
 
 
-![](tetiana.png)
+<img src="tetiana.png" width="720px">
  
 
 Please stay up-to-date on the latest news and developments from the dynamic Jakarta EE community on Twitter, Facebook and our LinkedIn Group. 
