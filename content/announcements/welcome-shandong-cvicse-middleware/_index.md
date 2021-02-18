@@ -1,6 +1,6 @@
 ---
 title: "Welcome Shandong Cvicse Middleware Co., Ltd to the Jakarta EE Working Group!"
-date: "2020-01-25"
+date: "2021-01-25"
 type: "announcement"
 announcements/tags:
   - "New Member"
