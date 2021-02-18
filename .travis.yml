@@ -1,8 +1,6 @@
 language: node_js
 matrix:
   include:
-    - node_js: 10
-      env: HUGO_ENV=dev
     - node_js: 12
       env: HUGO_ENV=production
 install:
@@ -11,22 +9,4 @@ install:
 - wget https://github.com/gohugoio/hugo/releases/download/v0.76.5/hugo_0.76.5_Linux-64bit.deb
 - sudo dpkg -i hugo*.deb
 script:
- - if [ "$HUGO_ENV" = "dev" ]; then hugo --buildFuture; fi;
- - if [ "$HUGO_ENV" = "production" ]; then hugo --gc --minify; fi;
-deploy:
-  local-dir: public
-  repo: jakartaee/jakarta.ee
-  target-branch: master
-  provider: pages
-  keep-history: true
-  skip-cleanup: true
-  github_token: "$GITHUB_TOKEN"
-  email: chris.guindon@eclipse-foundation.org
-  name: Christopher Guindon
-  fqdn: jakarta.ee
-  on:
-    branch: src
-    node_js: "12"
-env:
-  global:
-    secure: Rpt6V1O+/m11zkSHF5T/6HXi26HYeL6FFb02iJjepdRsOWn1AalrANGFCAbN95B3kCDo6EgHK4H+9ExZaqHPVhirhHucakCtpuckLW1ahoGVPhthvkyyJRi8A6cowSWo2HsiJO55GyZG3zNzSVID3dsnvImPZCye7eM/rGitkAXDwk4A0j/AuatRTh5zJl3tsXkzt8+QIUw7qbWaXx68mYCBtFiTi93pGgswTnEt4wWe5oSOKvDEMKTnJLdHFYGXcG9RimZSYRxAOIinABmac0O6jp0Yw6Ko+VKxjCiEFeNHHyXJOHssQBZgqWNEJzNhrUTCwKt0KWxUdnOEA+dwczJz7wu7e2F+V9EMj9XjeS++Su192EerzQgOzUchymdof7mcCIDZeviiwrjWiVXrLnGgl2gs8qPYZhAo6Uiz6IuVuGs1xxJBzxyMGM/rbNWUMWmkbu6s2aBhflD1E+4p8Qg5iC7MLlsCzrrfxqi20d2JwXAJRu+BMAguLQMKZYv0sx3yZgvH0yopg7Cwisq2Y5oawaylsFcYLsIT2WoOgDcplMz/3NGfRMnlexPDhyQK9oikM2PvhuPeYv3Haju0joTfhIb1Cz/S1OFazH0J72LgilPRCqiJPnm0OdVk29CLIMq3f2x5pKYKxbxBHBDw5rfQQQq5pp76sxna/mfQyuY=
+ - hugo --gc --minify
