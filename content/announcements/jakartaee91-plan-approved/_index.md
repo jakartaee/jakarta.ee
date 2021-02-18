@@ -4,7 +4,7 @@ date: "2021-02-10"
 type: "announcement"
 announcements/tags:
   - "Specification Committee"
-authors: [{gh_handle: "kwsutter", name: "Kevin Sutter"}]
+authors: [{gh_handle: "kwsutter", name: "Kevin Sutter"}, {gh_handle: "scottmarlow", name: "Scott Marlow"}]
 image: "./banner.png"
 summary: "The goal of the Jakarta EE 9.1 release is to deliver a set of specifications functionally equivalent to Jakarta EE 9 and adding the support for the Java SE 11 runtime. The Platform team sees Jakarta EE 9.1 as an extension to the foundational Jakarta EE 9 release."
 ---
