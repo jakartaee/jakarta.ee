@@ -1,6 +1,16 @@
 {{ range $.Site.Data.compatible_products.sets }}
+    {{ $release_version := .jakartaee_version }}
     {{ range .items }}
-        <div class="row margin-top-50 margin-bottom-20 padding-bottom-40 compatibility-download">
+
+    <div class="margin-top-50">
+
+        {{ with .release }}
+        <p class="compatibility-release-download">
+            <a class="fw-600" href="{{ . }}">Visit Jakarta {{ $release_version }} Release Page</a>
+        </p>
+        {{ end }}
+
+        <div class="row margin-bottom-20 padding-bottom-40 compatibility-download">
             <div class="col-md-16">
                 <h2 class="h4 margin-top-20 margin-bottom-20"><strong>{{ .title }}</strong></h2>
                 <table class='table borderless compatibility-download-table'>
@@ -29,5 +39,6 @@
                 </table>
             </div>
         </div>
+    </div>
     {{ end }}
 {{ end }}
