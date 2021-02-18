@@ -20,7 +20,7 @@ The Jakarta EE Specification Committee hereby adopts the [Eclipse Foundation Spe
 * A ballot will be declared invalid and concluded immediately in the event that the Specification Team withdraws from the corresponding review.
 * Specification Projects must engage in at least one Progress or Release Review per year while in active development.
 * Service Releases (x.y.z)
-  * A Service Release includes only minor changes and/or clarifications over a Major or Minor Release. Specifically, a Service Release must not include any functionality changes. A Specification Team may consult with their PMC and Specification Committee to determine precisely what constitutes a minor change and/or clarification.
+  * A Service Release includes only minor changes and/or clarifications over a Major or Minor Release. Specifically, a Service Release must not include any functionality changes or increase in IP scope. A Specification Team may consult with their PMC and Specification Committee to determine precisely what constitutes a minor change and/or clarification.
   * A Specification Team must have engaged in a successful Release Review for a Major or Minor Release prior to engaging in a Service Release. No Progress or Release Review is required for a Service Release.
 
 All development that modifies content in the `javax` namespace must be moved to a `jakarta` namespace. All `jakarta` namespace development must occur within the scope of a Specification Project operating under the purview of the Jakarta EE Working Group’s Specification Committee and must implement the process as defined by the most recently adopted revision of the JESP.
