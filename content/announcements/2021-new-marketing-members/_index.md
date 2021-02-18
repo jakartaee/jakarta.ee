@@ -5,7 +5,6 @@ type: "announcement"
 announcements/tags:
   - "Marketing Committee"
 authors: [{gh_handle: "TanjaObradovic", name: "Tanja Obradovic"}]
-image: "./banner.png"
 summary: "The Jakarta EE Working Group today announced during the JakartaOne Livestream virtual conference the release of the Jakarta EE 8 Full Platform and Web Profile specifications and related Technology Compatibility Kits (TCKs). This release provides a new baseline for the evolution and innovation of enterprise Java technologies under an open, vendor-neutral, community-driven process."
 ---
 
