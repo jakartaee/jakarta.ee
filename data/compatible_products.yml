@@ -177,6 +177,17 @@ sets:
         - version: 14.1.1.0
           compatibility: 'https://www.oracle.com/middleware/technologies/jakartaee_report.html'
           download_url: 'https://www.oracle.com/middleware/technologies/weblogic-server-downloads.html'
+
+      - name: InforSuite Application Server
+        vendor: Shandong Cvicse Middleware Co.,Ltd.
+        image: '/images/compatible_products/inforsuite_logo.svg'
+        image_width: 195
+        download: 'http://www.inforbus.com/as.html'
+        versions:
+        - version: 10
+          compatibility: 'http://www.inforbus.com/InforsuiteAS/platform-tckresults/'
+          download_url: 'http://www.inforbus.com/as.html'
+
     - title: Jakarta EE 8 Web Profile
       items:
       - name: Eclipse GlassFish
