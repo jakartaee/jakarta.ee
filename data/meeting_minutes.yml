@@ -388,6 +388,30 @@ items:
 
    specification_committee:
        -
+          url: specification_committee/minutes-specification-january-27-2021.pdf
+          title: January 27, 2021 (pdf)
+          year: 2021
+       -
+          url: specification_committee/minutes-specification-january-13-2021.pdf
+          title: January 13, 2021 (pdf)
+          year: 2021
+       -
+          url: specification_committee/minutes-specification-december-16-2020.pdf
+          title: December 16, 2020 (pdf)
+          year: 2020
+       -
+          url: specification_committee/minutes-specification-december-2-2020.pdf
+          title: December 2, 2020 (pdf)
+          year: 2020
+       -
+          url: specification_committee/minutes-specification-november-18-2020.pdf
+          title: November 18, 2020 (pdf)
+          year: 2020
+       -
+          url: specification_committee/minutes-specification-november-11-2020.pdf
+          title: November 11, 2020 (pdf)
+          year: 2020
+       -
           url: specification_committee/minutes-specification-november-4-2020.pdf
           title: November 4, 2020 (pdf)
           year: 2020
