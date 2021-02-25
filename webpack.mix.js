@@ -19,7 +19,7 @@ mix.setResourceRoot('../');
 
 mix.less('./less/styles.less', 'static/css/styles.css');
 
-mix.scripts([
+mix.babel([
     './node_modules/jquery/dist/jquery.min.js',
     './node_modules/bootstrap/dist/js/bootstrap.min.js',
     './node_modules/jquery-match-height/dist/jquery.matchHeight-min.js',

@@ -17,6 +17,6 @@ This committee owns the overall strategy and the high level, long term roadmap s
 * David Blevins - Tomitribe, Cesar Hernandez - alternate
 * Martijn Verburg - London Java Community - Elected Participant Member Representative
 * Arjan Tijms - Elected Committer Member Representative
-* Scott (Congquan) Wang - Primeton - Elected Enterprise Representative
+* Dr. Jun Qian - Primeton - Elected Enterprise Representative
 
 {{< meeting-minutes-single "steering_committee" >}}

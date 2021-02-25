@@ -13,10 +13,10 @@
     "url": "git://github.com/jakartaee/jakarta.ee.git"
   },
   "scripts": {
-    "dev": "NODE_ENV=development webpack --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
-    "watch": "NODE_ENV=development webpack --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "dev": "NODE_ENV=development webpack --progress --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "NODE_ENV=development webpack --watch --progress --config=node_modules/laravel-mix/setup/webpack.config.js",
     "hot": "NODE_ENV=development webpack-dev-server --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
-    "production": "NODE_ENV=production webpack --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "production": "NODE_ENV=production webpack --progress --config=node_modules/laravel-mix/setup/webpack.config.js",
     "install": "NODE_ENV=production npm run production",
     "postinstall": "NODE_ENV=production npm run fetch_project",
     "specifications": "bash build.sh",
@@ -26,10 +26,11 @@
     "disallow_robots_txt": "echo \"User-agent: *\r\nDisallow: /\" > layouts/robots.txt"
   },
   "dependencies": {
-    "eclipsefdn-hugo-solstice-theme": "0.0.109",
+    "eclipsefdn-hugo-solstice-theme": "0.0.111",
     "lodash-es": "4.17.15"
   },
   "devDependencies": {
     "vue-template-compiler": "2.6.12"
-  }
+  },
+  "browserslist": "last 5 version, > 0.2%, not dead, IE 11"
 }
