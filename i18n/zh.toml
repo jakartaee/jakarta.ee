@@ -132,18 +132,27 @@
 
 [jakarta-ee-china-section-index-mailinglist-title]
   other = "Jakarta EE 中国社区邮件列表"
- 
+
 [jakarta-ee-china-section-index-mailinglist-info]
   other = "订阅和了解最新的Jakarta EE 中国社区资讯"
  
 [jakarta-ee-china-section-index-mailinglist-subscribe]
   other = "加入邮件列表"
 
+[jakarta-ee-china-section-index-wechat-group-title]
+  other = "加入微信群"
+  
+[jakarta-ee-china-section-index-wechat-group-join]
+  other = "加入微信群"
+
+[jakarta-ee-china-section-index-wechat-group-info]
+  other = "如果您想参与社区讨论，协作推进中国社区的活动，请长按或扫描添加下方二维码，注明“加入Jakarta”"
+
 [jakarta-ee-china-section-index-getlisted-title]
   other = "想要把你的名字也加入列表么？"
 
 [jakarta-ee-china-section-index-getlisted-info]
-  other = "目前Jakarta EE中国社区已经正式成立，我们欢迎所有对Java EE或Jakarta EE感兴趣的同学加入社区。"
+  other = "目前Jakarta EE中国社区已经正式成立，我们欢迎所有对Java EE或Jakarta EE感兴趣的同道，将自己的名字列在这里，以示对社区的声援。"
 
 [jakarta-ee-china-section-index-getlisted-signup]
   other = "加入 Jakarta EE 中国社区"
