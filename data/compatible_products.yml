@@ -185,7 +185,7 @@ sets:
         download: 'http://www.inforbus.com/as.html'
         versions:
         - version: 10
-          compatibility: 'http://www.inforbus.com/InforsuiteAS/platform-tckresults/'
+          compatibility: 'http://www.inforbus.com/InforsuiteAS/platform-tckresults/index1.html'
           download_url: 'http://www.inforbus.com/as.html'
 
     - title: Jakarta EE 8 Web Profile
