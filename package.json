@@ -26,7 +26,7 @@
     "disallow_robots_txt": "echo \"User-agent: *\r\nDisallow: /\" > layouts/robots.txt"
   },
   "dependencies": {
-    "eclipsefdn-hugo-solstice-theme": "0.0.111",
+    "eclipsefdn-hugo-solstice-theme": "0.0.115",
     "lodash-es": "4.17.15"
   },
   "devDependencies": {
