@@ -11,19 +11,20 @@ aliases:
 - [Introduction]({{< ref "#intro" >}})
 - [Creation Review]({{< ref "#creation" >}})
 - [Plan Review]({{< ref "#plan" >}})
-- [Progress Review]({{< ref "#progress" >}})
+- [Progress Review]({{< ref "#progress" >}}) *(optional)*
 - [Release Review]({{< ref "#release" >}})
 
 ## Introduction {#intro}
 
-This guide is a step-by-step practical guide to help Jakarta EE Specification projects navigate the steps of the Jakarta EE Specification Process ([JESP](http://localhost:1313/about/jesp/)). 
-It is meant as a helpful tool, so if in doubt, alway refer to the [JESP](http://localhost:1313/about/jesp/) for completeness. Please do not hesitate to contact the [Specification Committee](mailto:jakarta.ee-spec@eclipse.org) if you have any questions or comments about anything related to the development of Jakarta EE Specifications.
+This guide is a step-by-step practical guide to help Jakarta EE Specification projects navigate the steps of the Jakarta EE Specification Process ([JESP](https://jakarta.ee/about/jesp/)). 
+It is meant as a helpful tool, so if in doubt, alway refer to the [JESP](https://jakarta.ee/about/jesp/) for completeness. Please do not hesitate to contact the [Specification Committee](mailto:jakarta.ee-spec@eclipse.org) if you have any questions or comments about anything related to the development of Jakarta EE Specifications.
 
 ## Creation Review {#creation}
 
 ![Creation Review](JESP_creation-review.png)
 
-* A Jakarta Specification is developed by a Specification Project. The Eclipse Development Process is followed, with a few additions.
+* A Jakarta Specification project is created as any other project under the Eclipse Development Process ([EDP](https://www.eclipse.org/projects/dev_process/)).
+* A Jakarta Specification must be approved by the Specification Committee.
 
 ### Steps Involved
 
