@@ -59,3 +59,10 @@ hide_page_title: true
 ## Friends of Jakarta EE{#friends}
 
 - [Minutes](https://docs.google.com/document/d/1qojkqFrHfHlkBs6sFZdJujY2_ZQvxbkFvmDc6SQ-6bo/edit#)
+
+---
+
+## Case Studies{#cases-studies}
+
+- [Payara Services Gains an Equal Footing With Industry Leaders at the Eclipse Foundation](https://outreach.eclipse.foundation/payara-services-open-source-case-study)
+

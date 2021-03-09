@@ -194,6 +194,12 @@ enableInlineShortcodes = true
     parent = "Resources"
     weight = 19
 
+[[menu.main]]
+    name = "Case Studies"
+    url = "/resources#cases-studies"
+    parent = "Resources"
+    weight = 20
+
 [languages]
   [languages.en]
 	languageName = "English"
@@ -346,6 +352,10 @@ enableInlineShortcodes = true
 		name = "Jakarta EE 伙伴"
 		url = "/zh/resources#friends"
 		parent = "资源"
-		weight = 19	  
-	
-	
+		weight = 19
+
+	[[languages.zh.menu.main]]
+		name = "Case Studies"
+		url = "/zh/resources#cases-studies"
+		parent = "资源"
+		weight = 20
