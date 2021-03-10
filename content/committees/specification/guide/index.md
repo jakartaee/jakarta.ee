@@ -13,6 +13,7 @@ aliases:
 - [Plan Review]({{< ref "#plan" >}})
 - [Progress Review]({{< ref "#progress" >}}) *(optional)*
 - [Release Review]({{< ref "#release" >}})
+- [Service Release]({{< ref "#service" >}})
 
 ## Introduction {#intro}
 
@@ -67,3 +68,13 @@ It is meant as a helpful tool, so if in doubt, alway refer to the [JESP](https:/
 
 1. Submit a Pull Request to the [Jakarta EE Specifications repository](https://github.com/jakartaee/specifications) using the **[release review template](https://github.com/jakartaee/specifications/blob/master/pull_request_template.md)**.
 2. Send an email to the [Specification Committee](mailto:jakarta.ee-spec@eclipse.org) to request a release review.
+
+## Service Release {#service}
+
+* There is no formal release review required for a Specification service release (x.y.z) as long as the JESP definition of a “service release” is adhered to.
+* That means that no functionality changes or increase in IP scope are permitted in a service release. 
+
+### Steps Involved
+
+1. Submit a Pull Request to the [Jakarta EE Specifications repository](https://github.com/jakartaee/specifications) using the **[service release template](https://github.com/jakartaee/specifications/blob/master/service_release_pr_template.md)**.
+2. Send an email to the [Specification Committee](mailto:jakarta.ee-spec@eclipse.org) to announce that the PR is ready for review.
