@@ -61,6 +61,6 @@ hide_page_title: true
 
 ---
 
-## Case Studies{#cases-studies}
+## 案例{#cases-studies}
 
-- [Payara Services Gains an Equal Footing With Industry Leaders at the Eclipse Foundation](https://outreach.eclipse.foundation/payara-services-open-source-case-study)
+- [了解Payara Services如何在Eclipse Foundation获得了与行业领导者同等的地位](https://outreach.eclipse.foundation/payara-services-open-source-case-study)

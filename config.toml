@@ -355,7 +355,7 @@ enableInlineShortcodes = true
 		weight = 19
 
 	[[languages.zh.menu.main]]
-		name = "Case Studies"
+		name = "案例"
 		url = "/zh/resources#cases-studies"
 		parent = "资源"
 		weight = 20
