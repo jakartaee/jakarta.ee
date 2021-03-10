@@ -18,7 +18,7 @@ aliases:
 ## Introduction {#intro}
 
 This guide is a step-by-step practical guide to help Jakarta EE Specification projects navigate the steps of the Jakarta EE Specification Process ([JESP](https://jakarta.ee/about/jesp/)). 
-It is meant as a helpful tool, so if in doubt, alway refer to the [JESP](https://jakarta.ee/about/jesp/) for completeness. Please do not hesitate to contact the [Specification Committee](mailto:jakarta.ee-spec@eclipse.org) if you have any questions or comments about anything related to the development of Jakarta EE Specifications.
+It is meant as a helpful tool, so **if in doubt, alway refer to the [JESP](https://jakarta.ee/about/jesp/) for completeness**. Please do not hesitate to contact the [Specification Committee](mailto:jakarta.ee-spec@eclipse.org) if you have any questions or comments about anything related to the development of Jakarta EE Specifications.
 
 ## Creation Review {#creation}
 
