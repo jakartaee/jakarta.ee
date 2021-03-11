@@ -1,5 +1,5 @@
 ---
-title: "Jakarta EE Compatible Impementations and Compatible Products"
+title: "Jakarta EE Compatible Implementations and Compatible Products"
 date: "2021-03-11T00:00:00+00:00"
 ---
 
