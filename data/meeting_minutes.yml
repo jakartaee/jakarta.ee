@@ -847,6 +847,14 @@ items:
 
    steering_committee:
        -
+          url: steering_committee/minutes-february-23-2021.pdf
+          title: February 23, 2021 (pdf)
+          year: 2021
+       -
+          url: steering_committee/minutes-february-9-2021.pdf
+          title: February 9, 2021 (pdf)
+          year: 2021
+       -
           url: steering_committee/minutes-january-26-2021.pdf
           title: January 26, 2021 (pdf)
           year: 2021
