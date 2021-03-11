@@ -8,6 +8,12 @@ layout: "single"
 hide_page_title: true
 ---
 
+## Case Studies{#cases-studies}
+
+- [Payara Services Gains an Equal Footing With Industry Leaders at the Eclipse Foundation](https://outreach.eclipse.foundation/payara-services-open-source-case-study)
+
+---
+
 ## Documentation{#documentation}
 
 * [Jakarta EE Tutorial](https://eclipse-ee4j.github.io/jakartaee-tutorial/)
