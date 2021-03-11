@@ -11,8 +11,8 @@ The Jakarta EE Working Group enables highlighting all *compatible implementation
 The first step in having an implementation be designated as Jakarta EE compatible is ensuring it passes the specifications respective TCK in order to demonstrate compatibility with their corresponding specifications and is compliant with the [Eclipse Foundation Technology Compatibility Kit License](https://www.eclipse.org/legal/tck.php) for the terms of use. This assumes the implementer has reviewed all compatibility requirements in the respective specification, including those in the TCK documentation, notably those in the TCK User Guide.
 
 The second step, once the TCK is successfully passed, is letting the world know about it. That is,  
--   Let the specification project team know by filing a GitHub issue in order to get their acknowledgement and approval, and 
--   Help the Jakarta EE Working Group get your *compatible implementation* of a specification listed on the specifications page by creating a PR. In the case of *compatible products*, implementations of either the Jakarta EE Platform specification and/or the Jakarta EE Web Profile specification will be listed on the Compatible Products [page](https://jakarta.ee/compatibility/). 
+1.   Let the specification project team know by filing a GitHub issue in order to get their acknowledgement and approval, and 
+2.   Help the Jakarta EE Working Group get your *compatible implementation* of a specification listed on the appropriate specification page by creating a PR. In the case of *compatible products*, implementations of either the Jakarta EE Platform specification and/or the Jakarta EE Web Profile specification will be listed on the Compatible Products [page](https://jakarta.ee/compatibility/). 
 
 There are additional steps required, including membership in the Jakarta EE working group. Products listed on the Compatible Products pages are welcome to use Jakarta EE Compatible logo per [Jakarta EE Trademark Guidelines](https://jakarta.ee/legal/trademark_guidelines/).
 
