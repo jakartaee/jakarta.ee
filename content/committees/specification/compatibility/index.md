@@ -17,7 +17,7 @@ The second step, once the TCK is successfully passed, is letting the world know 
 There are additional steps required, including membership in the Jakarta EE working group. Products listed on the Compatible Products pages are welcome to use Jakarta EE Compatible logo per [Jakarta EE Trademark Guidelines](https://jakarta.ee/legal/trademark_guidelines/).
 
 
-### How to Get Listed as a **Compatible Implementation** of an Individual Jakarta EE Specification
+### How to Get Listed as a *Compatible Implementation* of an Individual Jakarta EE Specification
  
 To get your implementation listed as Compatible Implementation page on an individual Jakarta EE component specification page here is what need to be done:
 1.   Follow the [Jakarta EE TCK process](https://jakarta.ee/committees/specification/tckprocess/) to completely run and satisfy all of the requirements of the applicable TCK test and be in compliance with [Eclipse Foundation TCK License](https://www.eclipse.org/legal/tck.php)
@@ -27,7 +27,7 @@ To get your implementation listed as Compatible Implementation page on an indivi
 3.	Open a [GitHub Pull Request (PR)](https://github.com/jakartaee/specifications/pulls) against the Jakarta EE Specifications repository and fill in the required information
 
 
-### How to Get Listed as a **Compatible Product** of a Jakarta EE Platform or Jakarta EE Web Profile 
+### How to Get Listed as a *Compatible Product* of a Jakarta EE Platform or Jakarta EE Web Profile 
 
 To get your product listed on the Compatible Products page and in order to be able to use Jakarta EE Compatible logo, please follow these steps:
   1. Branding and compatible logo requirements
