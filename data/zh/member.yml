@@ -12,23 +12,31 @@
 
 sets:
     items:
-    - title: 【COMPANY】普元信息（Jakarta EE 中国社区发起人）
+    - title: 【COMPANY】普元信息技术股份有限公司（Jakarta EE 中国社区发起人）
     - title: 【COMPANY】青岛北斗聚星网络科技有限公司
     - title: 【COMPANY】烟台海颐软件股份有限公司
+    - title: 【COMPANY】Shandong Cvicse Middleware Co.,Ltd.（山东中创软件商用中间件股份有限公司）
     - title: 【PERSON】Ondrej Mihalyi
     - title: 【PERSON】Jon Zhang（A solid technology enthusias）
     - title: 【PERSON】米帅
     - title: 【PERSON】刘冬
+    - title: 【PERSON】Blogger
     - title: 【PERSON】李博（龙湖地产数字科技部副总经理）
+    - title: 【PERSON】JackieXie
     - title: 【PERSON】liuhaoping(Developer， Blogger)
     - title: 【PERSON】zhangchunsheng
+    - title: 【PERSON】潘琪
     - title: 【PERSON】魏宏宇
     - title: 【PERSON】李磊
+    - title: 【PERSON】J2ee architects for banking systems
     - title: 【PERSON】GaoXin(Java Developer， Blogger)
     - title: 【PERSON】xieguangxuan（researcher，engeneer，shareer）
+    - title: 【PERSON】A Java Developer
+    - title: 【PERSON】software engineer， java developer
     - title: 【PERSON】黄晨曦（开发者）
     - title: 【PERSON】全威龙（Java 工程师）
     - title: 【PERSON】wilson(Java Web开发人员)
+    - title: 【PERSON】开发者
     - title: 【PERSON】冯征
     - title: 【PERSON】高琳 （Java 程序员）
     - title: 【PERSON】冯嘉
@@ -39,11 +47,15 @@ sets:
     - title: 【PERSON】肖晓锋
     - title: 【PERSON】叶子凡
     - title: 【PERSON】刘怿
+    - title: 【PERSON】技术专家
     - title: 【PERSON】谭智
+    - title: 【PERSON】wang
+    - title: 【PERSON】刘
     - title: 【PERSON】闫启
     - title: 【PERSON】xiao lian
     - title: 【PERSON】詹启军
     - title: 【PERSON】huang yang
+    - title: 【PERSON】df
     - title: 【PERSON】谭煌
     - title: 【PERSON】漫漫
     - title: 【PERSON】王先生
@@ -51,16 +63,20 @@ sets:
     - title: 【PERSON】xibocun
     - title: 【PERSON】冀烨 网络开源软件开发者、布道者
     - title: 【PERSON】张辉（华为云云享专家）
-    - title: 【PERSON】wu yina
+    - title: 【PERSON】wuyina
     - title: 【PERSON】l李志强
     - title: 【PERSON】马晓伟
     - title: 【PERSON】袁明（学生）
     - title: 【PERSON】吴诗琛（学生）
+    - title: 【PERSON】zwj
     - title: 【PERSON】linton
     - title: 【PERSON】he sai ma
+    - title: 【PERSON】w j
+    - title: 【PERSON】无
     - title: 【PERSON】 xie dd
     - title: 【PERSON】snoohy
     - title: 【PERSON】Ed Bratt
-    - title: 【USERGROUP】JackieXie
-    - title: 【USERGROUP】潘琪
+    - title: 【PERSON】zeral
+    - title: 【PERSON】张子强
+    - title: 【PERSON】戴毅
     - title: 【USERGROUP】Nipingy
