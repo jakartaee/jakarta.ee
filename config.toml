@@ -200,6 +200,12 @@ enableInlineShortcodes = true
     parent = "Resources"
     weight = 20
 
+[[menu.main]]
+    name = "JESP Guide"
+    url = "/committees/specification/guide"
+    parent = "Resources"
+    weight = 21
+
 [languages]
   [languages.en]
 	languageName = "English"
