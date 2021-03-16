@@ -7,6 +7,12 @@ layout: "single"
 hide_page_title: true
 ---
 
+## 案例{#cases-studies}
+
+- [了解Payara Services如何在Eclipse Foundation获得了与行业领导者同等的地位](https://outreach.eclipse.foundation/payara-services-open-source-case-study)
+
+---
+
 ## 文档{#documentation}
 
 * [Jakarta EE 教程](https://eclipse-ee4j.github.io/jakartaee-tutorial/)
