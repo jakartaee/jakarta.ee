@@ -19,11 +19,15 @@ There are several benefits associated with completing the process to get listed 
 
 ## How to Get Listed as a Compatible Product
 
-To get your product listed on the Compatible Products page, please follow these steps:
+To get your product listed on the Compatible Products page and in order to be able to use Jakarta EE Compatible logo, please follow these steps:
 
-1. [Join](https://jakarta.ee/membership/) the Jakarta EE Working Group  
-2. Complete the steps outlined in the [Jakarta EE Trademark Guidelines](https://jakarta.ee/legal/trademark_guidelines/), including:  
-  a. Follow the Jakarta EE TCK process to completely run and satisfy all of the requirements of the applicable TCK test  
-  b. Email the TCK results to [tck@eclipse.org](mailto:tck@eclipse.org)  
-  c. Execute (digitally sign) the [Jakarta EE Compatibility Trademark License Agreement](https://app.hellosign.com/s/DQ9uVw4b) (or print the [License Agreement PDF](/legal/trademark_guidelines/jakarta-ee-trademark-license.pdf) and return the signed agreement to [emo-records@eclipse.org](mailto:emo-records@eclipse.org))  
-3. Open a [GitHub issue](https://github.com/jakartaee/jakarta.ee/issues/new?template=compatibility.md) and fill in the required information
+  1. Branding and compatible logo requirements
+     - [Join](https://jakarta.ee/membership/) the Jakarta EE Working Group
+     - Get familiar with [Jakarta EE Trademark Guidelines](https://jakarta.ee/legal/trademark_guidelines/).
+     - Execute (digitally sign) the [Jakarta EE Compatibility Trademark License Agreement](https://app.hellosign.com/s/DQ9uVw4b) (or print the [License Agreement PDF](https://jakarta.ee/legal/trademark_guidelines/jakarta-ee-trademark-license.pdf) and return the signed agreement to [emo-records@eclipse.org](mailto:emo-records@eclipse.org))
+2.	Certification and listing on jakarta.ee Compatible Product pages requirements 
+    - Follow the [Jakarta EE TCK process](https://jakarta.ee/committees/specification/tckprocess/) to completely run and satisfy all of the requirements of the applicable TCK test
+      - Publish the TCK results and maintain the public listing of your TCK results for as long as you continue to claim compatibility.
+      - Email the TCK results to [tck@eclipse.org](mailto:tck@eclipse.org)
+    - File a [Certification Request](https://raw.githubusercontent.com/jakartaee/specification-committee/master/compatibility-certification-request.md) with a specification project in the [GitHub repository](https://github.com/eclipse-ee4j/jakartaee-platform)
+    - Open a [GitHub issue](https://github.com/jakartaee/jakarta.ee/issues/new?template=compatibility.md) against the Jakarta EE Compatible Products repository and fill in the required information
