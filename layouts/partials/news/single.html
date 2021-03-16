@@ -1,0 +1,25 @@
+<div class="row">
+<div class="col-md-24">
+    <div class="news-content">
+      {{ partial "news/date" . }}
+      <div class="content-inner">
+          <span class="flex-column" style="height: 100%;">
+            {{ partial "news/title" . }}
+            {{ if isset .Params "image"}}
+              <img src="{{ .RelPermalink }}{{.Params.image}}" class="content-image" />
+            {{ end }}
+            <p class="content-text">{{ .Content }}</p>
+            {{ partial "news/authors" . }}
+            <p class="news-footer">
+              <a href="/{{ .Section | urlize }}" class="content-link read-more">
+                See all news
+              </a>
+              {{ if (ne ($.Param "summary_icons") false) }}
+                {{ partial "news/summary_icons" . }}
+              {{ end }}
+            </p>
+          </span>
+      </div>
+    </div>
+  </div>
+</div>

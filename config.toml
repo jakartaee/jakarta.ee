@@ -39,7 +39,7 @@ enableInlineShortcodes = true
 [taxonomies]
   category = "categories"
   tag = "tags"
-  announcements_tags = "announcements/tags"
+  news_tags = "news/tags"
 
 [Author]
   name = "Christopher Guindon"
@@ -208,8 +208,8 @@ enableInlineShortcodes = true
     weight = 21
 
 [[menu.main]]
-    name = "Jakarta EE Working Group Announcements"
-    url = "/announcements/"
+    name = "Jakarta EE Working Group news"
+    url = "/news/"
     parent = "Resources"
     weight = 20
 

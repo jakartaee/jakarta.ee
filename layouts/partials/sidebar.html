@@ -1,8 +1,8 @@
 <!-- nav -->
-{{ if eq .Section "announcements"}}
-  {{ partial "sidebars/announcements" . }}
-{{ else if eq .Section "announcements/tags" }}
-  {{ partial "sidebars/announcements" . }}
+{{ if eq .Section "news"}}
+  {{ partial "sidebars/news" . }}
+{{ else if eq .Section "news/tags" }}
+  {{ partial "sidebars/news" . }}
 {{ else }}
   {{ partial "sidebars/default" . }}
 {{ end }}
