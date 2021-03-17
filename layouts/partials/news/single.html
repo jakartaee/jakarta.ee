@@ -12,7 +12,7 @@
             {{ partial "news/authors" . }}
             <p class="news-footer">
               <a href="/{{ .Section | urlize }}" class="content-link read-more">
-                See all news
+                {{ i18n "news-single-see-all-news" }}
               </a>
               {{ if (ne ($.Param "summary_icons") false) }}
                 {{ partial "news/summary_icons" . }}

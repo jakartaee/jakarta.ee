@@ -201,3 +201,33 @@
 
 [coming-soon]
   other = "敬请期待"
+
+[news-list-nav-next]
+  other = "Next"
+
+[news-list-nav-prev]
+  other = "Previous"
+
+[news-sidebar-news-title]
+ other = "News"
+
+[news-sidebar-tags-title]
+ other = "Tags"
+
+[news-sidebar-archive-title]
+ other = "Archive"
+
+[news-summary-continue-reading]
+  other = "Continue reading"
+
+[news-summary-icons-facebook]
+ other = "Share on Facebook"
+
+[news-summary-icons-linkedin]
+ other = "Share on LinkedIn"
+
+[news-summary-icons-twitter]
+ other = "Tweet this"
+
+[news-single-see-all-news]
+ other = "See all news"

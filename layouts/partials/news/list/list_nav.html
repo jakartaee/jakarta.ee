@@ -4,7 +4,7 @@
   <div class="col-12">
     <ul class="news-pagination pagination">
       <li class="page-item{{ if not $pag.HasPrev }} disabled{{ end }}">
-        <a {{ if $pag.HasPrev }}href="{{ $pag.Prev.URL }}"{{ end }} class="page-link" aria-label="Previous"><span aria-hidden="true">Previous</span></a>
+        <a {{ if $pag.HasPrev }}href="{{ $pag.Prev.URL }}"{{ end }} class="page-link" aria-label="{{ i18n "news-list-nav-prev"}}"><span aria-hidden="true">{{ i18n "news-list-nav-prev"}}</span></a>
       </li>
       {{- $ellipsed := false -}}
       {{- $shouldEllipse := false -}}
@@ -30,7 +30,7 @@
       {{- end -}}
       {{- end }}
       <li class="page-item{{ if not $pag.HasNext }} disabled{{ end }}">
-        <a {{ if $pag.HasNext }}href="{{ $pag.Next.URL }}"{{ end }} class="page-link" aria-label="Next"><span aria-hidden="true">Next</span></a>
+        <a {{ if $pag.HasNext }}href="{{ $pag.Next.URL }}"{{ end }} class="page-link" aria-label="{{ i18n "news-list-nav-next"}}"><span aria-hidden="true">{{ i18n "news-list-nav-next"}}</span></a>
       </li>
     </ul>
   </div>

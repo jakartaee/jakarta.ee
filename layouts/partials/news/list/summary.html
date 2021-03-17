@@ -15,7 +15,7 @@
             {{ partial "news/authors" . }}
             <p class="news-footer">
               <a href="{{ $href }}" class="content-link read-more">
-                Continue reading
+                {{ i18n "news-summary-continue-reading" }}
               </a>
               {{ if (ne ($.Param "summary_icons") false) }}
                 {{ partial "news/summary_icons" . }}
