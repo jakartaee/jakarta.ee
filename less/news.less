@@ -1,5 +1,3 @@
-@import '~eclipsefdn-solstice-assets/less/quicksilver/jakarta/styles.less';
-
 .announcements-news-list {
   h1 {
     font-weight: 400;
@@ -31,6 +29,7 @@
     }
   }
   .content-inner {
+    overflow: hidden;
     a.content-link {
       text-decoration: none;
       color: @brand-quaternary;
@@ -51,9 +50,13 @@
     }
     .content-image {
       width: 45vw;
+    }
+
+    .content-image, img {
       max-width: 100%;
       margin-bottom: 20px;
     }
+    
     .content-summary {
       line-height: 1.8em;
       color: @brand-tertiary;
@@ -107,8 +110,9 @@
   }
 }
 
-.sidebar-block {
+#news-sidebar .sidebar-block {
   padding-top: 40px;
+  margin-top: 0;
   h4 {
     text-transform: uppercase;
     font-weight: bold;
