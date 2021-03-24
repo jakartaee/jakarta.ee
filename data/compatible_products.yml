@@ -197,6 +197,16 @@ sets:
           compatibility: 'http://www.inforbus.com/InforsuiteAS/platform-tckresults/index1.html'
           download_url: 'http://www.inforbus.com/as.html'
 
+      - name: TongWeb Application Server
+        vendor: Beijing TongTech Co., Ltd.
+        image: '/images/compatible_products/tongweb_logo.svg'
+        image_width: 195
+        download: 'http://www.tongtech.com/Services/Services-104.html'
+        versions:
+        - version: 7
+          compatibility: 'http://www.tongtech.com/tw7.jakarta-full-platform-8.html'
+          download_url: 'http://www.tongtech.com/Services/Services-104.html'
+
     - title: Jakarta EE 8 Web Profile
       items:
       - name: Eclipse GlassFish
