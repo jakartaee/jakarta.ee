@@ -212,6 +212,9 @@ sets:
         image_width: 195
         download: 'http://www.tongtech.com/Services/Services-104.html'
         versions:
+        - version: 8
+          compatibility: 'http://www.tongtech.com/tw8.jakarta-full-platform-8.html'
+          download_url: 'http://www.tongtech.com/Services/Services-104.html'
         - version: 7
           compatibility: 'http://www.tongtech.com/tw7.jakarta-full-platform-8.html'
           download_url: 'http://www.tongtech.com/Services/Services-104.html'
