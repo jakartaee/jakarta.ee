@@ -32,6 +32,7 @@ hide_page_title: true
 ## 信息图表{#infographics}
 
 * [2018 Jakarta EE 调研图表](https://jakarta.ee/documents/insights/2018-jakarta-ee-survey-infographic.pdf)
+* [Jakarta EE Developer Survey Findings 2020](https://f.hubspotusercontent30.net/hubfs/4753786/JakartaEE-Infographic.pdf?utm_campaign=2021%20Jakarta%20EE%20Developer%20Survey&utm_source=resources)
 
 ---
 
