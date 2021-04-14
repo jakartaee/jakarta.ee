@@ -172,7 +172,7 @@ enableInlineShortcodes = true
 
 [[menu.main]]
     name = "Jakarta EE Community Folder"
-    url = "https://drive.google.com/open?id=1kJFh6EIpOyAWP3JkymYZXOK311WM2HXm"
+    url = "https://drive.google.com/drive/folders/11nvqdVqFlCxm5AfPh2NdnanTBrCPW8Xv"
     parent = "Resources"
     weight = 16
     
@@ -338,7 +338,7 @@ enableInlineShortcodes = true
 
 	[[languages.zh.menu.main]]
 		name = "Jakarta EE 社区文件夹"
-		url = "https://drive.google.com/open?id=1kJFh6EIpOyAWP3JkymYZXOK311WM2HXm"
+		url = "https://drive.google.com/drive/folders/11nvqdVqFlCxm5AfPh2NdnanTBrCPW8Xv"
 		parent = "资源"
 		weight = 15
 		
