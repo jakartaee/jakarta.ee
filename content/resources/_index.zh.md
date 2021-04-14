@@ -65,3 +65,9 @@ hide_page_title: true
 ## Jakarta EE 伙伴{#friends}
 
 - [纪要](https://docs.google.com/document/d/1qojkqFrHfHlkBs6sFZdJujY2_ZQvxbkFvmDc6SQ-6bo/edit#)
+
+---
+
+## White Papers{#white-papers}
+
+- [Why Jakarta EE Is the Right Choice for Today’s Java Applications](https://outreach.jakartaee.org/white-paper-java-applications)
