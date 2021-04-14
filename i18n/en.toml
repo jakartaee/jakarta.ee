@@ -126,13 +126,13 @@
 
 [connect-social-body]
   other = "Stay up-to-date with all things Jakarta EE by following us on social media!"
-  
+
 [members-strategic-members-title]
   other = "Strategic Members"
-  
+
 [members-enterprise-members-title]
   other = "Enterprise Members"
-  
+
 [members-participant-members-title]
   other = "Participant Members"
 
@@ -143,7 +143,7 @@
   other = "Member Testimonials"
 
 [sidebar-title]
-  other = "Innovate with Us"  
+  other = "Innovate with Us"
 
 [sidebar-about-jakartaee]
   other = "About Jakarta EE"
