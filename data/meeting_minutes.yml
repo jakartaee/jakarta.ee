@@ -6,6 +6,22 @@ years:
 items:
    marketing_committee:
        -
+          url: marketing_committee/minutes-marketing-march-25-2021.pdf
+          title: March 25, 2021 (pdf)
+          year: 2021
+       -
+          url: marketing_committee/minutes-marketing-march-11-2021.pdf
+          title: March 11, 2021 (pdf)
+          year: 2021
+       -
+          url: marketing_committee/minutes-marketing-february-25-2021.pdf
+          title: February 25, 2021 (pdf)
+          year: 2021
+       -
+          url: marketing_committee/minutes-marketing-february-11-2021.pdf
+          title: February 11, 2021 (pdf)
+          year: 2021
+       -
           url: marketing_committee/minutes-marketing-january-28-2021.pdf
           title: January 28, 2021 (pdf)
           year: 2021
@@ -387,6 +403,22 @@ items:
           year: 2018
 
    specification_committee:
+       -
+          url: specification_committee/minutes-specification-march-24-2021.pdf
+          title: March 24, 2021 (pdf)
+          year: 2021
+       -
+          url: specification_committee/minutes-specification-march-10-2021.pdf
+          title: March 10, 2021 (pdf)
+          year: 2021
+       -
+          url: specification_committee/minutes-specification-february-24-2021.pdf
+          title: February 27, 2021 (pdf)
+          year: 2021
+       -
+          url: specification_committee/minutes-specification-fabruary-10-2021.pdf
+          title: February 13, 2021 (pdf)
+          year: 2021
        -
           url: specification_committee/minutes-specification-january-27-2021.pdf
           title: January 27, 2021 (pdf)
@@ -846,6 +878,18 @@ items:
           year: 2018
 
    steering_committee:
+       -
+          url: steering_committee/minutes-march-30-2021.pdf
+          title: March 30, 2021 (pdf)
+          year: 2021
+       -
+          url: steering_committee/minutes-march-16-2021.pdf
+          title: March 16, 2021 (pdf)
+          year: 2021
+       -
+          url: steering_committee/minutes-march-2-2021.pdf
+          title: March 2, 2021 (pdf)
+          year: 2021
        -
           url: steering_committee/minutes-february-23-2021.pdf
           title: February 23, 2021 (pdf)
