@@ -37,6 +37,15 @@ sets:
 
     - title: Jakarta EE 9 Web Profile
       items:
+      - name: AAS
+        vendor: Kingdee Apusic Cloud Computing
+        image: '/images/compatible_products/aas.jpg'
+        image_width: 195
+        download: ''
+        versions:
+        - version: 10-EE9
+          compatibility: 'http://www.apusic.com/aas_v10_ee9_webtck'
+          download_url: ''
       - name: Eclipse GlassFish
         vendor: Eclipse Foundation
         image: '/images/compatible_products/glassfish_logo.svg'
