@@ -72,3 +72,9 @@ hide_page_title: true
 ## White Papers{#white-papers}
 
 - [Why Jakarta EE Is the Right Choice for Today’s Java Applications](https://outreach.jakartaee.org/white-paper-java-applications)
+
+---
+
+## Social Cards{#cards}
+
+- [Jakarta EE Community Cards](/resources/community-cards)
