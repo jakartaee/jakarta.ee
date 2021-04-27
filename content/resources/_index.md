@@ -78,3 +78,4 @@ hide_page_title: true
 ## Social Cards{#cards}
 
 - [Jakarta EE Community Cards](/resources/community-cards)
+- [Jakarta EE 2021 Developer Survey Cards](https://f.hubspotusercontent30.net/hubfs/4753786/Completed-Jakarta-Developer-Survey.gif)
