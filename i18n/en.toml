@@ -107,10 +107,10 @@
   other = "View"
 
 [connect-spec-calendar-title]
-  other = "Jakarta EE Specifications Meetings Calendar"
+  other = "Jakarta EE Specifications Calendar"
 
 [connect-spec-calendar-body]
-  other = "LOREM IPSUM."
+  other = "Public calendar for all Jakarta EE specification projects"
 
 [connect-spec-calendar-link]
   other = "https://calendar.google.com/calendar/embed?src=eclipse-foundation.org_e9ki8t2gc75sh07qdh95c8ofvc%40group.calendar.google.com&ctz=America%2FToronto"
