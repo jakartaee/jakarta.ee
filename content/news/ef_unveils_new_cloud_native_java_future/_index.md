@@ -2,7 +2,12 @@
 title: "Eclipse Foundation Unveils New Cloud Native Java Future with Jakarta EE"
 date: 2018-04-24T05:03:58-04:00
 slug: "eclipse-foundation-unveils-new-cloud-native-java-future-with-jakarta-ee"
-categories: ["announcements"]
+type: "announcement"
+#news/tags: []
+#authors: []
+summary: "Future evolution of Java EE, Jakarta EE stack moves to the Eclipse Foundation."
+#seo_title: ""
+aliases: ["/news/announcements/eclipse-foundation-unveils-new-cloud-native-java-future-with-jakarta-ee/"]
 ---
 
 Future evolution of Java EE, Jakarta EE stack moves to the Eclipse Foundation.
