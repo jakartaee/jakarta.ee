@@ -121,6 +121,9 @@
 [members-participant-members-title]
   other = "参与会员"
 
+[members-guest-members-title]
+  other = "访客会员"
+
 [membership-testimonials-title]
   other = "成员感言"
 
