@@ -121,6 +121,9 @@
 [members-participant-members-title]
   other = "Participant Members"
 
+[members-guest-members-title]
+  other = "Guest Members"
+
 [membership-testimonials-title]
   other = "Member Testimonials"
 
