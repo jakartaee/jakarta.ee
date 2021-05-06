@@ -34,7 +34,16 @@ sets:
         - version: 21.0.0.3-beta
           compatibility: 'https://openliberty.io/certifications/jakartaee/platform/9/21.0.0.3-beta-TCKResults.html'
           download_url: 'https://openliberty.io/downloads/#runtime_betas'
-
+      - name: WildFly
+        vendor: Red Hat
+        image: '/images/compatible_products/red-hat-wildfly-logo.png'
+        image_width: 100
+        download: 'https://wildfly.org/downloads'
+        versions:
+        - version: Preview 23.0.1.Final
+          compatibility: 'https://github.com/wildfly/certifications/blob/EE9/WildFly_23.0.1.Final/jakarta-full-platform.adoc'
+          download_url: 'https://wildfly.org/downloads'
+          
     - title: Jakarta EE 9 Web Profile
       items:
       - name: Apusic AAS
@@ -70,8 +79,8 @@ sets:
         image_width: 100
         download: 'https://wildfly.org/downloads'
         versions:
-        - version: 23.0.0
-          compatibility: 'https://github.com/wildfly/certifications/blob/EE9/WildFly_23.0.0.Final/jakarta-web-profile.adoc'
+        - version: Preview 23.0.1.Final
+          compatibility: 'https://github.com/wildfly/certifications/blob/EE9/WildFly_23.0.1.Final/jakarta-web-profile.adoc'
           download_url: 'https://wildfly.org/downloads'
 
   - jakartaee_version: 8
