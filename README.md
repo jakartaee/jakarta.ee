@@ -50,6 +50,8 @@ GH_TOKEN=<gh token here> npm run generate_contributor_list
 
 Please refer to the [CONTRIBUTING.md](https://github.com/jakartaee/jakarta.ee/blob/src/CONTRIBUTING.md) file for additional information on how to contribute to this project!
 
+[HOWTOS.md](https://github.com/jakartaee/jakarta.ee/blob/src/HOWTOS.md) provides a series of guides to update particular website sections.
+
 ### Declared Project Licenses
 
 This program and the accompanying materials are made available under the terms
