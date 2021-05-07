@@ -78,3 +78,4 @@ hide_page_title: true
 ## Social Cards{#cards}
 
 - [Jakarta EE Community Cards](/resources/community-cards)
+- [Completed the Jakarta EE Survey](/resources/images/completed-jakarta-developer-survey.gif)
