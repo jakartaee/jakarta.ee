@@ -1,8 +1,13 @@
 ---
 title: "The Eclipse Foundation Announces the CN4J Day 2020 Event for Building Enterprise Java on Kubernetes"
 date: 2020-01-28T7:50:00-05:00
+type: "announcement"
+#news/tags: []
+#authors: []
+summary: "Co-Located with Kubecon+CloudNativeCon Europe 2020, the March 30 event features speakers from IBM, Red Hat, Oracle and other enterprise Java leaders"
+#seo_title: ""
 # link: "http://bit.ly/2B6oSPH"
-categories: ["announcements"]
+aliases: ["/news/announcements/2020-01-28-cn4j-day/"]
 ---
 
 *– Co-Located with Kubecon+CloudNativeCon Europe 2020, the March 30 event features speakers from IBM, Red Hat, Oracle and other enterprise Java leaders –*  

@@ -1,6 +1,8 @@
 ---
 title: "News"
 seo_title: "News | Jakarta EE | The Future of Cloud Native Java"
-description: "Get the latest news and announcements about Jakarta EE and enterprise Java technologies."
-date: 2020-03-23T00:00:00-00:00
+headline: "Jakarta EE Working Group News"
+date: 2018-04-05T16:09:45-04:00
+hide_page_title: true
+header_wrapper_class: "announcements-news-list header-default-bg-img"
 ---

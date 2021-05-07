@@ -2,7 +2,12 @@
 title: "Jakarta EE Community Survey of 1,800+ Java Developers Reveals “Cloud Native” Top Requirement in Platform’s Evolution"
 date: 2018-04-24T05:03:58-04:00
 slug: "jakarta-ee-community-survey"
-categories: ["announcements"]
+type: "announcement"
+#news/tags: []
+#authors: []
+summary: "The Eclipse Foundation conducts largest survey to date of Java community on key priorities for future releases of Jakarta EE."
+#seo_title: ""
+aliases: ["/news/announcements/jakarta-ee-community-survey/"]
 ---
 
 The Eclipse Foundation conducts largest survey to date of Java community on key priorities for future releases of Jakarta EE.

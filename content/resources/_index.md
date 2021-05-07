@@ -33,6 +33,7 @@ hide_page_title: true
 ## Infographics{#infographics}
 
 * [2018 Jakarta EE survey infographic](https://jakarta.ee/documents/insights/2018-jakarta-ee-survey-infographic.pdf)
+* [Jakarta EE Developer Survey Findings 2020](https://f.hubspotusercontent30.net/hubfs/4753786/JakartaEE-Infographic.pdf?utm_campaign=2021%20Jakarta%20EE%20Developer%20Survey&utm_source=resources)
 
 ---
 
@@ -65,3 +66,16 @@ hide_page_title: true
 ## Friends of Jakarta EE{#friends}
 
 - [Minutes](https://docs.google.com/document/d/1qojkqFrHfHlkBs6sFZdJujY2_ZQvxbkFvmDc6SQ-6bo/edit#)
+
+---
+
+## White Papers{#white-papers}
+
+- [Why Jakarta EE Is the Right Choice for Today’s Java Applications](https://outreach.jakartaee.org/white-paper-java-applications)
+
+---
+
+## Social Cards{#cards}
+
+- [Jakarta EE Community Cards](/resources/community-cards)
+- [Completed the Jakarta EE Survey](/resources/images/completed-jakarta-developer-survey.gif)

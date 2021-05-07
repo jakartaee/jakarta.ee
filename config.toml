@@ -4,7 +4,7 @@ title = "Jakarta® EE: The New Home of Cloud Native Java"
 theme = "eclipsefdn-hugo-solstice-theme"
 metaDataFormat = "yaml"
 googleAnalytics = "UA-910670-30"
-disableKinds = ["taxonomy", "taxonomyTerm"]
+#disableKinds = ["taxonomy", "taxonomyTerm"]
 themesDir = "node_modules/"
 enableRobotsTXT = true
 enableInlineShortcodes = true
@@ -39,6 +39,7 @@ enableInlineShortcodes = true
 [taxonomies]
   category = "categories"
   tag = "tags"
+  news_tags = "news/tags"
 
 [Author]
   name = "Christopher Guindon"
@@ -172,7 +173,7 @@ enableInlineShortcodes = true
 
 [[menu.main]]
     name = "Jakarta EE Community Folder"
-    url = "https://drive.google.com/open?id=1kJFh6EIpOyAWP3JkymYZXOK311WM2HXm"
+    url = "https://drive.google.com/drive/folders/11nvqdVqFlCxm5AfPh2NdnanTBrCPW8Xv"
     parent = "Resources"
     weight = 16
     
@@ -205,6 +206,12 @@ enableInlineShortcodes = true
     url = "/committees/specification/guide"
     parent = "Resources"
     weight = 21
+
+[[menu.main]]
+    name = "Jakarta EE Working Group news"
+    url = "/news/"
+    parent = "Resources"
+    weight = 20
 
 [languages]
   [languages.en]
@@ -338,7 +345,7 @@ enableInlineShortcodes = true
 
 	[[languages.zh.menu.main]]
 		name = "Jakarta EE 社区文件夹"
-		url = "https://drive.google.com/open?id=1kJFh6EIpOyAWP3JkymYZXOK311WM2HXm"
+		url = "https://drive.google.com/drive/folders/11nvqdVqFlCxm5AfPh2NdnanTBrCPW8Xv"
 		parent = "资源"
 		weight = 15
 		
