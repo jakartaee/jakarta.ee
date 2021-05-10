@@ -11,7 +11,7 @@ Jakarta EE is the future of cloud native Java. Jakarta EE open source software d
 Install dependencies, build assets and start a web server:
 
 ```bash
-npm install 
+npm install
 hugo server
 ```
 
@@ -58,6 +58,17 @@ http://www.eclipse.org/legal/epl-2.0.
 
 SPDX-License-Identifier: EPL-2.0
 
+### How to include a new membership testimonials
+* Website https://jakarta.ee/membership/ rotates a series of membership testimonials.
+* Each testimonial is around 400 characters long.
+* To add a new quote, a Github issue and Pull-Request can be sent to https://github.com/jakartaee/jakarta.ee repository.
+* Pull-request should contains a new `.yml` file in the folder `data/membership/testimonials/` with the folling format:
+    ```
+    testimonial: "testimonial text no longer than 450 characters"
+    title: "<Author of the testimonial> , <Organization>"
+    ```
+* Example of [PR](https://github.com/jakartaee/jakarta.ee/pull/1097/files )  
+
 ## Related Projects
 
 ### [EclipseFdn/solstice-assets](https://github.com/EclipseFdn/solstice-assets)
@@ -66,7 +77,7 @@ Images, less and JavaScript files for the Eclipse Foundation look and feel.
 
 ### [EclipseFdn/hugo-solstice-theme](https://github.com/EclipseFdn/hugo-solstice-theme)
 
-Hugo theme of the Eclipse Foundation look and feel. 
+Hugo theme of the Eclipse Foundation look and feel.
 
 ## Bugs and Feature Requests
 
