@@ -52,7 +52,15 @@ sets:
         - version: Preview 23.0.2.Final, Java 8
           compatibility: 'https://github.com/wildfly/certifications/blob/EE9.1/WildFly_23.0.2.Final/jakarta-full-platform-jdk8.adoc'
           download_url: 'https://download.jboss.org/wildfly/23.0.2.Final/wildfly-preview-23.0.2.Final.zip'
-
+      - name: ManageFish Server
+        vendor: ManageCat
+        image: '/images/compatible_products/managefish-logo.png'
+        image_width: 135
+        download: 'https://managecat.com/products/managed-glassfish'
+        versions:
+        - version: 6.1.0
+          compatibility: 'https://www.managecat.com/products/managed-glassfish'
+          download_url: 'https://managefish.s3.amazonaws.com/managefish-6.1.0.tar.gz?AWSAccessKeyId=AKIAJNYMDLCT3Q3TBS4A&Expires=1625205438&Signature=7FaIdsXsBhXHlRVR91RxQmNC2j4%3D'
     - title: Jakarta EE 9.1 Web Profile
       items:
       - name: Eclipse GlassFish
@@ -91,6 +99,15 @@ sets:
         - version: Preview 23.0.2.Final, Java 8
           compatibility: 'https://github.com/wildfly/certifications/blob/EE9.1/WildFly_23.0.2.Final/jakarta-web-profile-jdk8.adoc'
           download_url: 'https://download.jboss.org/wildfly/23.0.2.Final/wildfly-preview-23.0.2.Final.zip'
+      - name: Apache TomEE
+        vendor: Apache Software Foundation
+        image: '/images/compatible_products/apache_tomee-logo.png'
+        image_width: 195
+        download: 'https://repository.apache.org/content/repositories/orgapachetomee-1184/org/apache/tomee/apache-tomee/9.0.0-M7/apache-tomee-9.0.0-M7-plume.zip'
+        versions:
+        - version: 6.1.0
+          compatibility: 'https://tomee.apache.org/9.0.0-M7/plume/webprofile-9.1.html'
+          download_url: 'https://repository.apache.org/content/repositories/orgapachetomee-1184/org/apache/tomee/apache-tomee/9.0.0-M7/apache-tomee-9.0.0-M7-plume.zip'
 
   - jakartaee_version: 9
     items:
