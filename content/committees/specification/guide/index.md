@@ -33,7 +33,7 @@ Please do not hesitate to contact the [Specification Committee](mailto:jakarta.e
 ### Steps Involved
 
 1. Create a Project Proposal (*).
-2. Submit a Pull Request to the [Jakarta EE Specifications repository](https://github.com/jakartaee/specifications) using the **[creation review template](https://github.com/jakartaee/specifications/blob/master/creation_review_pr_template.md)**.
+2. Submit a Pull Request to the [Jakarta EE Specifications repository](https://github.com/jakartaee/specifications) using the **[creation review template](https://github.com/jakartaee/specifications/blob/master/.github/PULL_REQUEST_TEMPLATE/creation_review_pr_template.md)**.
 3. Send an email to the [Specification Committee](mailto:jakarta.ee-spec@eclipse.org) to request a creation review.
 4. Wait for a successful creation review before proceeding.
 
@@ -49,7 +49,7 @@ Please do not hesitate to contact the [Specification Committee](mailto:jakarta.e
 
 ### Steps Involved
 
-1. Submit a Pull Request to the [Jakarta EE Specifications repository](https://github.com/jakartaee/specifications) using the **[plan review template](https://github.com/jakartaee/specifications/blob/master/plan_review_pr_template.md)**.
+1. Submit a Pull Request to the [Jakarta EE Specifications repository](https://github.com/jakartaee/specifications) using the **[plan review template](https://github.com/jakartaee/specifications/blob/master/.github/PULL_REQUEST_TEMPLATE/plan_review_pr_template.md)**.
 2. Send an email to the [Specification Committee](mailto:jakarta.ee-spec@eclipse.org) to request a plan review.
 3. Wait for a successful plan review before proceeding.
 
@@ -62,7 +62,7 @@ Please do not hesitate to contact the [Specification Committee](mailto:jakarta.e
 
 ### Steps Involved
 
-1. Submit a Pull Request to the [Jakarta EE Specifications repository](https://github.com/jakartaee/specifications) using the **[release review template](https://github.com/jakartaee/specifications/blob/master/pull_request_template.md)**.
+1. Submit a Pull Request to the [Jakarta EE Specifications repository](https://github.com/jakartaee/specifications) using the **[release review template](https://github.com/jakartaee/specifications/blob/master/.github/PULL_REQUEST_TEMPLATE/pull_request_template.md)**.
 2. Send an email to the [Specification Committee](mailto:jakarta.ee-spec@eclipse.org) to request a release review.
 3. Wait for a successful release review before proceeding with the release.
 
@@ -74,7 +74,7 @@ Please do not hesitate to contact the [Specification Committee](mailto:jakarta.e
 
 ### Steps Involved
 
-1. Submit a Pull Request to the [Jakarta EE Specifications repository](https://github.com/jakartaee/specifications) using the **[service release template](https://github.com/jakartaee/specifications/blob/master/service_release_pr_template.md)**.
+1. Submit a Pull Request to the [Jakarta EE Specifications repository](https://github.com/jakartaee/specifications) using the **[service release template](https://github.com/jakartaee/specifications/blob/master/.github/PULL_REQUEST_TEMPLATE/service_release_pr_template.md)**.
 2. Send an email to the [Specification Committee](mailto:jakarta.ee-spec@eclipse.org) to announce that the PR is ready for review.
 3. Wait for the PR approval and merge before proceeding.
 
@@ -89,6 +89,6 @@ Please do not hesitate to contact the [Specification Committee](mailto:jakarta.e
 
 ### Steps Involved
 
-1. Submit a Pull Request to the [Jakarta EE Specifications repository](https://github.com/jakartaee/specifications) using the **[progress review template](https://github.com/jakartaee/specifications/blob/master/progress_review_pr_template.md)**.
+1. Submit a Pull Request to the [Jakarta EE Specifications repository](https://github.com/jakartaee/specifications) using the **[progress review template](https://github.com/jakartaee/specifications/blob/master/.github/PULL_REQUEST_TEMPLATE/progress_review_pr_template.md)**.
 2. Send an email to the [Specification Committee](mailto:jakarta.ee-spec@eclipse.org) to request a plan review.
 3. Wait for a successful progress review before proceeding.
