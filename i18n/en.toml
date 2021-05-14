@@ -106,6 +106,9 @@
 [connect-blogs-link-text]
   other = "View"
 
+[connect-jakarta-calendars-heading]
+  other = "Jakarta EE Calendars"
+
 [connect-spec-calendar-title]
   other = "Jakarta EE Specifications Calendar"
 
