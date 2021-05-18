@@ -1,22 +1,46 @@
-<div class="background-secondary featured-footer featured-newsletter text-center">
+<!-- 
+  Copyright (c) 2021 Eclipse Foundation, Inc.
+
+  This program and the accompanying materials are made available under the
+  terms of the Eclipse Public License v. 2.0 which is available at
+  http://www.eclipse.org/legal/epl-2.0.
+
+  Contributors:
+    Martin Lowe <martin.lowe@eclipse-foundation.org>
+
+  SPDX-License-Identifier: EPL-2.0
+-->
+<section class="alt" id="mailing-list-socials">
+  <div class="backdrop padding-bottom-100 padding-top-100">
     <div class="container">
-      <div class="row">
-        <div class="col-sm-24">
-          <p>
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"  stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail">
-                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                  <polyline points="22,6 12,13 2,6"></polyline> 
-              </svg>
-          </p>
-          <h2>Sign up to our Newsletter</h2>
-          <form action="https://eclipsecon.us6.list-manage.com/subscribe/post" method="post" target="_blank">
-            <div class="form-group">
-               <input type="hidden" name="u" value="eaf9e1f06f194eadc66788a85">
-               <input type="hidden" name="id" value="98ae69e304">
-             </div>
-             <input type="submit" value="Subscribe" name="subscribe" class="button btn btn-primary">
-           </form>
-        </div>
+      <div class="col-md-12 vertical-align brand-secondary match-height-item-by-row">
+        <span>{{ i18n "footer-join-mailing-list" }}</span>
+        <a href="https://accounts.eclipse.org/mailing-list/jakarta.ee-community" class="btn btn-secondary padded-sm margin-left-30">{{ i18n "footer-join-mailing-list-button-text" }}</a>
+      </div>
+      <div class="col-md-12 match-height-item-by-row vertical-align">
+        <ul class="list-inline">
+          <li>
+            <a class="brand-primary" href="{{ $.Site.Params.facebook_url | default "https://www.facebook.com/eclipse.org" }}">
+              <i class="fa fa-facebook"></i><span class="sr-only">{{ i18n "footer-sr-facebook-text" }}</span>
+            </a>
+          </li>
+          <li>
+            <a class="brand-primary" href="{{ $.Site.Params.linkedin_url | default " https://www.linkedin.com/company/eclipse-foundation" }}" title="{{ i18n "footer-sr-linkedin-account" }}">
+              <i class="fa fa-linkedin"></i> <span class="sr-only">{{ i18n "footer-sr-linkedin-text" }}</span>
+          </a>
+          </li>
+          <li>
+            <a class="brand-primary" href="{{ $.Site.Params.twitter_url | default "https://twitter.com/EclipseFdn" }}">
+              <i class="fa fa-twitter"></i><span class="sr-only">{{ i18n "footer-sr-twitter-text" }}</span>
+            </a>
+          </li>
+          <li>
+            <a class="brand-primary" href="{{ $.Site.Params.youtube_url | default "https://www.youtube.com/user/EclipseFdn" }}">
+              <i class="fa fa-youtube"></i><span class="sr-only">{{ i18n "footer-sr-youtube-text" }}</span>
+            </a>
+          </li>
+        </ul>
       </div>
     </div>
-</div>
+  </div>
+</section>
