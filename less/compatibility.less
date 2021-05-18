@@ -1,146 +1,40 @@
 /*!
- * Copyright (c) 2019 Eclipse Foundation, Inc.
+ * Copyright (c) 2020 Eclipse Foundation, Inc.
  * 
  * This program and the accompanying materials are made available under the
  * terms of the Eclipse Public License v. 2.0 which is available at
  * http://www.eclipse.org/legal/epl-2.0.
  * 
  * Contributors:
- *   Eric Poirier <chris.guindon@eclipse-foundation.org>
+ *   Andrii Malytskyi <amalytskyi@tomitribe.com>
+ *   Jonathan Gallimore <jgallimore@tomitribe.com>
  * 
  * SPDX-License-Identifier: EPL-2.0
 */
 
-
-@import '_variables.less';
-@import '~eclipsefdn-solstice-assets/less/quicksilver/jakarta/styles.less';
-@import 'release-8.less';
-@import 'release-9.less';
-
-@import 'news.less';
-@import 'compatibility.less';
-@import 'redesign.less';
-
-.jakarta-ee-hr {
-  border-top: 5px solid @brand-primary;
+.d-flex {
+  display: flex;
 }
 
-.font-100 {
-  font-size: 100px;
+.flex-wrap {
+  flex-wrap: wrap;
 }
 
-.jakarta-download-delivers {
-  text-align:center;
-  padding:30px 0 60px 0;
+.flex-grow-1 {
+  flex-grow: 1;
 }
 
-.text-blue {
-  color: @brand-secondary;
+.justify-content-center {
+  justify-content: center;
 }
 
-.heading-underline {
-  text-transform:none;
+.margin-y-30 {
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
-.jakarta-download-participation {
-  background-image:url("images/release/donate.jpg");
-  background-repeat:no-repeat;
-  background-size:cover;
-  padding:40px 0;
-  text-align:center;
-  .heading-underline:after {
-    margin:15px auto 0;
-  }
-  .featured-donate-icon {
-    background-color: @white;
-    border-radius: 200px;
-    height: 300px;
-    width: 300px;
-    display: block;
-    padding: 40px;
-    padding-left: 58px;
-    margin:30px auto 0;
-    @media (min-width: @screen-sm-min) {
-      margin:0;
-    }
-  }
-  @media (min-width: @screen-sm-min) {
-    text-align:left;
-    .heading-underline:after {
-      margin:15px 0 0;
-    }
-  }
-}
-
-.compatible-logo {
-  padding: 0 20px;
-  margin: 0 auto;
-  max-width: 350px;
-  width: 60%;
-  
-  @media (min-width: @screen-md-min) {
-    max-width: 100%;
-    width: 100%;
-    padding: 0;
-    height: 100px;
-    object-fit: cover;
-    object-position: 0 -45px;
-  }
-}
-.jumbotron {
-	h1, h2, h3, h4, h5, h6 {
-		& > sup {
-		  font-size: 0.66em;
-		  position: relative;
-		  top: -0.34em;
-		}
-	}
-}
-
-.product-list .icon-container {
-  font-size: 6em;
-}
-
-.adopter-logo{
-  padding:10px; 
-  max-width:100px;
-}
-ul.tri-col {
-  -webkit-column-count: 3;
-  -moz-column-count: 3;
-  column-count: 3;
-}
-
-.specifications-news-list {
-  .media {
-    background-color: #F2F3F7;
-  }
-  .flex-column {
-    height: 100%;
-  }
-  .media-link {
-    padding: 20px;
-    text-align: center;
-    border-radius: 25px;
-    margin-bottom: 30px;
-  }
-}
-
-.news-list {
-  .header-underline {
-    margin-top: 20px;
-  }
-}
-
-@media (min-width: @screen-md-min) {
-  .product-list .center-block {
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-}
-<<<<<<< HEAD
-
-a.compatibility-link, a:visited.compatibility-link {
+a.compatibility-link,
+a:visited.compatibility-link {
   text-decoration-color: #000;
   text-decoration: underline;
   color: #000;
@@ -162,9 +56,9 @@ a.compatibility-link, a:visited.compatibility-link {
 
   .contributor-card {
     left: 0;
-    -webkit-box-shadow: 0 8px 15px 0px rgba(156,156,156,1);
-    -moz-box-shadow: 0 8px 15px 0px  rgba(156,156,156,1);
-    box-shadow: 0 8px 15px 0px rgba(156,156,156,1);
+    -webkit-box-shadow: 0 8px 15px 0px rgba(156, 156, 156, 1);
+    -moz-box-shadow: 0 8px 15px 0px rgba(156, 156, 156, 1);
+    box-shadow: 0 8px 15px 0px rgba(156, 156, 156, 1);
     border: 1px solid lighten(@brand-info-light, 25%);
     overflow: hidden;
     height: 162px;
@@ -179,7 +73,7 @@ a.compatibility-link, a:visited.compatibility-link {
     z-index: -1;
     bottom: 0;
     right: 0;
-    
+
     &.active {
       display: inline-flex;
       background-color: white;
@@ -191,7 +85,7 @@ a.compatibility-link, a:visited.compatibility-link {
     &:hover {
       transform: matrix(1, 0, 0, 1, 0, -4);
       transition: transform 0.2s ease, box-shadow 0.2s ease;
-      box-shadow: 0 10px 20px rgba(156,156,156,0.7);;
+      box-shadow: 0 10px 20px rgba(156, 156, 156, 0.7);
       .contributor-image {
         filter: none;
       }
@@ -259,7 +153,8 @@ a.compatibility-link, a:visited.compatibility-link {
 }
 
 .table.compatibility-download-table {
-  td, th {
+  td,
+  th {
     border: none;
     border-bottom: none;
     vertical-align: middle;
@@ -283,7 +178,7 @@ a.compatibility-link, a:visited.compatibility-link {
   tbody {
     tr {
       height: 80px;
-      border-bottom: solid 1px #BEBEBE;
+      border-bottom: solid 1px #bebebe;
     }
   }
 }
@@ -299,8 +194,9 @@ a.compatibility-link, a:visited.compatibility-link {
   }
 }
 
-.max-content {
-	width: max-content;
-}
-=======
->>>>>>> Restructure LESS to split out special page Less
+@media (min-width: @screen-md-min) {
+    .product-list .center-block {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+  }
