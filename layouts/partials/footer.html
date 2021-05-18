@@ -109,14 +109,16 @@
             <li><a href="https://status.eclipse.org">{{ i18n "footer-other-status-text" }}</a></li>
           </ul>
         </section>
-        <div class="col-sm-24 margin-top-20">
-          <div class="row">
-            <div id="copyright" class="col-md-16">
-              <p id="copyright-text">{{ i18n "footer-copyright-text" | safeHTML}}</p>
-            </div>
-          </div>
-        </div>
         <a href="#" class="scrollup">{{ i18n "navigation-back-to-top" }}</a>
+      </div>
+    </div>
+    <div class="background-primary">
+      <div class="container">
+          <div class="row">
+        <div id="copyright" class="col-md-16">
+          <p id="copyright-text" class="padding-10">{{ i18n "footer-copyright-text" | safeHTML}}</p>
+        </div>
+      </div>
       </div>
     </div>
   </footer>
@@ -154,11 +156,6 @@
     {{ if ne .Page.Params.show_featured_story false }}
       $("{{ .Site.Params.featured_footer_selector | default "#featured-story" }}").eclipseFdnApi({
         type: "featuredStory"
-      });
-    {{ end }}
-    {{ if ne .Page.Params.show_featured_footer false }}
-      $("{{ .Site.Params.featured_footer_selector | default "#featured-footer" }}").eclipseFdnApi({
-        type: "featuredFooter"
       });
     {{ end }}
   })(jQuery, document);
