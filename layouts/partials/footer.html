@@ -1,0 +1,166 @@
+<!-- 
+  Copyright (c) 2018 Eclipse Foundation, Inc.
+
+  This program and the accompanying materials are made available under the
+  terms of the Eclipse Public License v. 2.0 which is available at
+  http://www.eclipse.org/legal/epl-2.0.
+
+  Contributors:
+    Christopher Guindon <chris.guindon@eclipse-foundation.org>
+
+  SPDX-License-Identifier: EPL-2.0
+-->
+<p id="back-to-top">
+    <a class="visible-xs" href="#top">{{ i18n "navigation-back-to-top" }}</a>
+  </p>
+  <footer id="{{- .Params.footer_id | default .Site.Params.footer_id | default "solstice-footer"}}" class="{{- .Params.footer_class | default .Site.Params.footer_class | default ""}}">
+    <div class="container">
+      <div class="row">
+        <section class="col-md-6">
+          <div class="wrapper-logo-default">
+            {{ with .Page.Params.logo | default .Site.Params.logo | default "https://www.eclipse.org/eclipse.org-common/themes/solstice/public/images/logo/eclipse-foundation-white-orange.svg" }}
+  
+            {{ $currentPageLogo := . }}
+            {{ $currentPageLogoTitle := $.Site.Title }}
+            {{ $currentPageLogoLink := "" }}
+  
+            {{ range $.Site.Data.subsites_custom_logo.items }}
+              {{ $section := $.Site.GetPage (.page_url) }}
+              {{ if or (eq ($.Section) ($section)) ( $.Page.IsDescendant $section ) }}
+                {{ $currentPageLogo = .logo }}
+                {{ $currentPageLogoTitle = .logo_title }}
+                {{ $currentPageLogoLink = .logo_url }}
+              {{ end }}
+            {{ end }}
+        
+            <a title="{{ $currentPageLogoTitle }}" href="{{ $currentPageLogoLink | absLangURL }}">
+              <img width="{{ $.Page.Params.logo_width | default $.Site.Params.logo_width | default "140"}}" class="logo-eclipse-default img-responsive margin-auto" src="{{ "/images/jakarta/jakarta-ee-logo.svg" | absURL }}" alt="{{ $currentPageLogoTitle }}" />
+            </a>
+            {{ end }}
+          </div>
+          
+          <div class="vertical-align padding-top-30 white">
+            <ul class="list-inline">
+              <li>
+                <a href="{{ $.Site.Params.facebook_url | default "https://www.facebook.com/eclipse.org" }}">
+                  <i class="fa fa-facebook"></i><span class="sr-only">{{ i18n "footer-sr-facebook-text" }}</span>
+                </a>
+              </li>
+              <li>
+                <a href="{{ $.Site.Params.linkedin_url | default " https://www.linkedin.com/company/eclipse-foundation" }}" title="{{ i18n "footer-sr-linkedin-account" }}">
+                  <i class="fa fa-linkedin"></i> <span class="sr-only">{{ i18n "footer-sr-linkedin-text" }}</span>
+              </a>
+              </li>
+              <li>
+                <a href="{{ $.Site.Params.twitter_url | default "https://twitter.com/EclipseFdn" }}">
+                  <i class="fa fa-twitter"></i><span class="sr-only">{{ i18n "footer-sr-twitter-text" }}</span>
+                </a>
+              </li>
+              <li>
+                <a href="{{ $.Site.Params.youtube_url | default "https://www.youtube.com/user/EclipseFdn" }}">
+                  <i class="fa fa-youtube"></i><span class="sr-only">{{ i18n "footer-sr-youtube-text" }}</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="col-md-4 col-sm-12 hidden-print match-height-item-by-row" id="footer-eclipse-foundation">
+          <h2 class="section-title">{{ i18n "eclipse-foundation-text" }}</h2>
+          <ul class="nav">
+            <li><a href="https://www.eclipse.org/org/">{{ i18n "footer-foundation-about-us-text" }}</a></li>
+            <li><a href="https://www.eclipse.org/org/foundation/contact.php">{{ i18n "footer-foundation-contact-us-text" }}</a></li>
+            <li><a href="https://www.eclipse.org/donate">{{ i18n "footer-foundation-donate-text" }}</a></li>
+            <li><a href="https://www.eclipse.org/membership">{{ i18n "footer-foundation-members-text" }}</a></li>
+            <li><a href="https://www.eclipse.org/org/documents/">{{ i18n "footer-foundation-governance-text" }}</a></li>
+            <li><a href="https://www.eclipse.org/org/documents/Community_Code_of_Conduct.php">{{ i18n "footer-foundation-code-of-conduct-text" }}</a></li>
+            <li><a href="https://www.eclipse.org/artwork/">{{ i18n "footer-foundation-logo-artwork-text" }}</a></li>
+            <li><a href="https://www.eclipse.org/org/foundation/directors.php">{{ i18n "footer-foundation-board-of-directors-text" }}</a></li>
+          </ul>
+        </section>
+        <section class="col-md-4 col-sm-12 hidden-print match-height-item-by-row" id="footer-legal">
+          <h2 class="section-title">{{ i18n "footer-legal-section-text" }}</h2>
+          <ul class="nav">
+            <li><a href="https://www.eclipse.org/legal/privacy.php">{{ i18n "footer-legal-privacy-policy-text" }}</a></li>
+            <li><a href="https://www.eclipse.org/legal/termsofuse.php">{{ i18n "footer-legal-terms-use-text" }}</a></li>
+            <li><a href="https://www.eclipse.org/legal/copyright.php">{{ i18n "footer-legal-copyright-agent-text" }}</a></li>
+            <li><a href="https://www.eclipse.org/legal/epl-2.0/">{{ i18n "footer-legal-epl-text" }}</a></li>
+            <li><a href="https://www.eclipse.org/legal/">{{ i18n "footer-legal-resources-text" }} </a></li>
+          </ul>
+        </section>
+        <section class="col-md-4 col-sm-12 hidden-print match-height-item-by-row" id="footer-useful-links">
+          <h2 class="section-title">{{ i18n "footer-useful-links-section-text" }}</h2>
+          <ul class="nav">
+            <li><a href="https://bugs.eclipse.org/bugs/">{{ i18n "footer-useful-links-report-bug-text" }}</a></li>
+            <li><a href="//help.eclipse.org/">{{ i18n "footer-useful-links-documentation-text" }}</a></li>
+            <li><a href="https://www.eclipse.org/contribute/">{{ i18n "footer-useful-links-contribute-text" }}</a></li>
+            <li><a href="https://www.eclipse.org/mail/">{{ i18n "footer-useful-links-mailing-list-text" }}</a></li>
+            <li><a href="https://www.eclipse.org/forums/">{{ i18n "footer-useful-links-forums-text" }}</a></li>
+            <li><a href="//marketplace.eclipse.org">{{ i18n "footer-useful-links-marketplace-text" }}</a></li>
+          </ul>
+        </section>
+        <section class="col-md-4 col-sm-12 hidden-print match-height-item-by-row" id="footer-other">
+          <h2 class="section-title">{{ i18n "footer-other-section-text" }}</h2>
+          <ul class="nav">
+            <li><a href="https://www.eclipse.org/ide/">{{ i18n "footer-other-tools-text" }}</a></li>
+            <li><a href="https://www.eclipse.org/projects">{{ i18n "footer-other-community-projects-text" }}</a></li>
+            <li><a href="https://www.eclipse.org/org/workinggroups/">{{ i18n "footer-other-working-groups-text" }}</a></li>
+            <li><a href="https://www.eclipse.org/org/research/">{{ i18n "footer-other-research-text" }}</a></li>
+            <li><a href="https://www.eclipse.org/security/">{{ i18n "footer-other-report-vulnerability-text" }}</a></li>
+            <li><a href="https://status.eclipse.org">{{ i18n "footer-other-status-text" }}</a></li>
+          </ul>
+        </section>
+        <div class="col-sm-24 margin-top-20">
+          <div class="row">
+            <div id="copyright" class="col-md-16">
+              <p id="copyright-text">{{ i18n "footer-copyright-text" | safeHTML}}</p>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="scrollup">{{ i18n "navigation-back-to-top" }}</a>
+      </div>
+    </div>
+  </footer>
+  <!-- Placed at the end of the document so the pages load faster -->
+  {{- with .Site.Params.js | default "https://www.eclipse.org/eclipse.org-common/themes/solstice/public/javascript/main.min.js"}}
+  <script src="{{ . | absURL }}"></script>
+  {{ end }}
+  {{ if isset .Site.Params "hugo_js" }}
+    {{- with .Site.Params.hugo_js }}
+      <script src="{{ . | absURL }}"></script>
+    {{ end }}
+  {{ else }}
+      <script src="{{ "/js/solstice.hugo.js" | absURL }}"></script>
+  {{ end }}
+  
+  <!-- Read in mustache templates registered in page scratch -->
+  {{ range $key, $value := (.Page.Scratch.Get "mustache-templates") }}
+  <script id="{{ $key }}" type="text/html">
+  {{ readFile $value | safeHTML}}
+  </script>
+  {{ end }}
+  <!-- Initialize any newsroom components on the page -->
+  <script>
+  (function($, document) {
+    {{ range (.Page.Scratch.Get "events-container-ids") }}
+      $("#{{ . }}").eclipseFdnApi({
+        type: "filteredEvents"
+      });
+    {{ end }}
+    {{ range (.Page.Scratch.Get "news-container-ids") }}
+      $("#{{ . }}").eclipseFdnApi({
+        type: "newsItems"
+      });
+    {{ end }}
+    {{ if ne .Page.Params.show_featured_story false }}
+      $("{{ .Site.Params.featured_footer_selector | default "#featured-story" }}").eclipseFdnApi({
+        type: "featuredStory"
+      });
+    {{ end }}
+    {{ if ne .Page.Params.show_featured_footer false }}
+      $("{{ .Site.Params.featured_footer_selector | default "#featured-footer" }}").eclipseFdnApi({
+        type: "featuredFooter"
+      });
+    {{ end }}
+  })(jQuery, document);
+  </script>
+  
