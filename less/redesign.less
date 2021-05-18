@@ -1,32 +1,67 @@
 // FOOTER
-footer#solstice-footer {
-    & {
-      text-align: center;
-      background: url("images/release/jakarta9-footer.jpg");
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-    }
-
-    i {
-      font-size: 24px;
-    }
-    section {
-      margin-top: 20px;
-    }
-    .nav {
-      margin-left: 0px;
-    }
-
-    @media (min-width:992px) {
-      & {
-        text-align: left;
-      }
-      & section {
-        margin-top: 0px;
-      }
-      & .nav {
-        margin-left: -15px;
-      }
+main {
+    border-bottom: none;
+}
+#mailing-list-socials {
+  & {
+    background-image: url(/images/vendor/eclipsefdn-solstice-components/featured-story/featured-story-default-bg.jpg);
+    background-position: bottom;
+    background-size: cover;
+    padding-top: 65px;
+    padding-bottom: 65px;
+  }
+  ul {
+    font-size: 36px;
+    margin-top: 20px;
+  }
+  li {
+    padding-right: 20px;
+  }
+  .btn.padded-sm {
+    padding: 10px 40px;
+  }
+  .container > div:first-of-type {
+    font-weight: 600;
+    font-size: 20px;
+    padding-bottom: 30px;
+  }
+  @media (min-width: 992px) {
+    & .container > div:first-of-type {
+      padding-bottom: 0;
     }
   }
+}
+footer#solstice-footer {
+  & {
+    text-align: center;
+    background: url('images/release/jakarta9-footer.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-bottom: 0px;
+  }
+  i {
+    font-size: 24px;
+  }
+  section {
+    margin-top: 20px;
+  }
+  .nav {
+    margin-left: 0px;
+  }
+  #copyright p {
+    color: @brand-secondary;
+    font-weight: 500;
+  }
+  @media (min-width: 992px) {
+    & {
+      text-align: left;
+    }
+    & section {
+      margin-top: 0px;
+    }
+    & .nav {
+      margin-left: -15px;
+    }
+  }
+}

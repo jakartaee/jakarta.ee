@@ -210,3 +210,11 @@
 
 [news-single-see-all-news]
  other = "See all news"
+
+
+
+[footer-join-mailing-list]
+other = "Join our Mailing List"
+
+[footer-join-mailing-list-button-text]
+other = "Sign up now"
