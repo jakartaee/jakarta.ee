@@ -11,7 +11,7 @@ Jakarta EE is the future of cloud native Java. Jakarta EE open source software d
 Install dependencies, build assets and start a web server:
 
 ```bash
-npm install
+npm install && npm run production
 hugo server
 ```
 
