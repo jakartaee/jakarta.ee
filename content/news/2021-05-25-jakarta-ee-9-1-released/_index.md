@@ -1,11 +1,12 @@
 ---
 title: "The Jakarta EE Working Group Releases Jakarta EE 9.1 as Industry Continues to Embrace Open Source Enterprise Java"
 date: "2021-05-25"
+publishDate: "2021-05-21"
 type: "announcement"
 news/tags:
   - "Jakarta EE"
   - "Release"
-authors: [{gh_handle: "ivargrimstad ", name: "Ivar Grimstad"}, {gh_handle: "TanjaObradovic", name: "Tanja Obradovic"}]
+authors: [{gh_handle: "ivargrimstad", name: "Ivar Grimstad"}, {gh_handle: "TanjaObradovic", name: "Tanja Obradovic"}]
 image: "./banner.png"
 summary: "Jakarta EE 9.1 enables developers to build applications on Java SE 11; Five compatible implementations are already available"
 ---
