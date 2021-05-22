@@ -9,6 +9,10 @@ adopters:
       homepage_url: https://www.meetup.com/Javaforum-Malmo/
       logo: java_forum_malmo.png
       logo_white: java_forum_malmo.png
+    - name: SouJava
+      homepage_url: https://soujava.org.br/
+      logo: soujava.png
+      logo_white: soujava.png
 
   - name: Jakarta JSON Processing
     directory: specifications/jsonp/ 
@@ -105,6 +109,10 @@ adopters:
       homepage_url: http://gsjug.org/
       logo: duke-gsjug-twitter.png
       logo_white: duke-gsjug-twitter.png
+    - name: SouJava
+      homepage_url: https://soujava.org.br/
+      logo: soujava.png
+      logo_white: soujava.png
       
 # Template: Example for creating new specification entry
 #  - name: Jakarta Bean Validation
