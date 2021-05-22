@@ -122,6 +122,14 @@ adopters:
       logo: soujava.png
       logo_white: soujava.png
       
+  - name: Jakarta Persistence
+    directory: specifications/persistence/
+    adopters:
+    - name: SouJava
+      homepage_url: https://soujava.org.br/
+      logo: soujava.png
+      logo_white: soujava.png
+      
 # Template: Example for creating new specification entry
 #  - name: Jakarta Bean Validation
 #    directory: specifications/bean-validation/ # Trailing slash is required.
