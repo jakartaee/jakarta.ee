@@ -6,14 +6,14 @@ type: "announcement"
 news/tags:
   - "Jakarta EE"
   - "Release"
-authors: [{gh_handle: "ivargrimstad", name: "Ivar Grimstad"}, {gh_handle: "TanjaObradovic", name: "Tanja Obradovic"}]
+authors: [{gh_handle: "TanjaObradovic", name: "Tanja Obradovic"}, {gh_handle: "ivargrimstad", name: "Ivar Grimstad"}]
 image: "./banner.png"
 summary: "Jakarta EE 9.1 enables developers to build applications on Java SE 11; Five compatible implementations are already available"
 ---
 
 BRUSSELS – May 25, 2021 – The [Jakarta EE Working Group](https://jakarta.ee), hosted by the Eclipse Foundation, one of the world’s largest open source software foundations, today announced the release of the [Jakarta EE 9.1 Platform](https://jakarta.ee/release/9.1/) and Web Profile specifications and related TCKs. This release, the first incremental release for Jakarta EE, marks an acceleration in innovation for open source enterprise Java, as it makes Jakarta EE compatible with Java SE 11 and already has five compatible implementations from the global leaders in the Java ecosystem.
 
-The Jakarta EE 9.1 release provides users with new multiple new updates and options, enabling enterprises building cloud native Java applications to:
+The Jakarta EE 9.1 release provides users with new multiple updates and options, enabling enterprises building cloud native Java applications to:
 
 - Develop and deploy Jakarta EE 9.1 applications on Java SE 11, the most current LTS release of Java SE, as well as Java SE 8
 - Take advantage of new Java SE 11 features, added since Java SE 8, in their Jakarta EE 9.1 applications  
