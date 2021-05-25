@@ -110,7 +110,7 @@ summary: "Summary text to be presented in the news index page"
 
 The rest of the `_index.md` needs general markdown format to populate the new entry content. 
 
-
+Eclipse Foundation Marketing Manager is responsible for approving the new entry (via pull request) for the `https://jakarta.ee/news/` section.
 
 
 
