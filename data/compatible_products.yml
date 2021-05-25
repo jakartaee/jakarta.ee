@@ -14,7 +14,7 @@ sets:
   - jakartaee_version: 9.1
     items:
     - title: Jakarta EE 9.1 Platform
-      release: "/release/9"
+      release: "/release/9.1"
       items:
       - name: Eclipse GlassFish
         vendor: Eclipse Foundation
