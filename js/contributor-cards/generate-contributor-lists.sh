@@ -63,10 +63,14 @@ function getCommitAuthors() {
             }
             edges {
               node {
-                author {
-                  user {
-                    login,
-                    name
+                authors(first:10) {
+                  nodes {
+                    ... on GitActor {
+                      user {
+                        login,
+                        name
+                      }
+                    }
                   }
                 }
               }
@@ -122,7 +126,7 @@ function pageTraverse() {
 }
 
 function getRepoData() {
-  echo $(pageTraverse getCommitAuthors 'owner: "'$1'", name: "'$2'"' ".data.repository.ref.target.history.pageInfo") | jq -s '.[].data.repository.ref.target.history.edges'| jq '[ .[].node.author.user | select(.login != null) ] | unique_by(.login)'
+  echo $(pageTraverse getCommitAuthors 'owner: "'$1'", name: "'$2'"' ".data.repository.ref.target.history") | jq -s '.[].data.repository.ref.target.history.edges[].node.authors.nodes[].user'| jq '[ . | select(.login != null) ] | unique_by(.login)'
 }
 
 echo "Started contributor list generation..."
