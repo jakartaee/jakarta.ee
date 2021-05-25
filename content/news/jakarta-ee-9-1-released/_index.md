@@ -11,7 +11,7 @@ image: "./banner.png"
 summary: "Jakarta EE 9.1 enables developers to build applications on Java SE 11; Five compatible implementations are already available"
 ---
 
-BRUSSELS – May 25, 2021 – The [Jakarta EE Working Group](https://jakarta.ee), hosted by the Eclipse Foundation, one of the world’s largest open source software foundations, today announced the release of the [Jakarta EE 9.1 Platform](https://jakarta.ee/release/9.1/) and Web Profile specifications and related TCKs. This release, the first incremental release for Jakarta EE, marks an acceleration in innovation for open source enterprise Java, as it makes Jakarta EE compatible with Java SE 11 and already has five compatible implementations from the global leaders in the Java ecosystem.
+The [Jakarta EE Working Group](https://jakarta.ee), hosted by the Eclipse Foundation, one of the world’s largest open source software foundations, today announced the release of the [Jakarta EE 9.1 Platform](https://jakarta.ee/release/9.1/) and Web Profile specifications and related TCKs. This release, the first incremental release for Jakarta EE, marks an acceleration in innovation for open source enterprise Java, as it makes Jakarta EE compatible with Java SE 11 and already has five compatible implementations from the global leaders in the Java ecosystem.
 
 The Jakarta EE 9.1 release provides users with new multiple updates and options, enabling enterprises building cloud native Java applications to:
 
@@ -61,6 +61,9 @@ For those organizations interested in learning more about how Jakarta EE can ben
 
 ### VMware
 "Spring Framework 6 will move to Jakarta EE 9+, adopting the jakarta namespace in all applicable packages. A first milestone is scheduled for Q3 2021, with a 6.0 GA release (and a corresponding Spring Boot 3.0 GA release) to follow in 2022," said Juergen Hoeller, VMWare’s senior staff engineer and Springboot Framework project lead. "Our primary interest is in individual infrastructure specifications such as Servlet, WebSocket, Persistence and Validation, evolving our long-standing integration arrangements within the Spring programming and configuration model. We expect common open source libraries (as included in Spring Boot's dependency management) to move to the jakarta namespace in the same timeframe."
+
+### ManageCat
+"ManageCat would like to thank all Jakarta EE working group members who contributed to this amazing work," said Gurkan Erdogdu, Director of ManageCat. "We are delighted and proud to provide a Jakarta EE 9.1 Full Platform compliant and certified application server, ManageFish. I believe that with the version of Jakarta EE 10, the innovations that the platform will offer will increase exponentially."
 
 ## About Jakarta EE and the Eclipse Foundation
 
