@@ -103,11 +103,11 @@ sets:
         vendor: Apache Software Foundation
         image: '/images/compatible_products/apache_tomee-logo.png'
         image_width: 195
-        download: 'https://repository.apache.org/content/repositories/orgapachetomee-1184/org/apache/tomee/apache-tomee/9.0.0-M7/apache-tomee-9.0.0-M7-plume.zip'
+        download: 'https://www.apache.org/dyn/closer.cgi/tomee/tomee-9.0.0-M7/apache-tomee-9.0.0-M7-plume.zip'
         versions:
         - version: 9.0.0-M7
           compatibility: 'https://tomee.apache.org/9.0.0-M7/plume/webprofile-9.1.html'
-          download_url: 'https://repository.apache.org/content/repositories/orgapachetomee-1184/org/apache/tomee/apache-tomee/9.0.0-M7/apache-tomee-9.0.0-M7-plume.zip'
+          download_url: 'https://www.apache.org/dyn/closer.cgi/tomee/tomee-9.0.0-M7/apache-tomee-9.0.0-M7-plume.zip'
 
   - jakartaee_version: 9
     items:
