@@ -69,6 +69,11 @@ adopters:
       homepage_url: https://twitter.com/TurkeyJBUG/
       logo: turkeyjboss.png
       logo_white: turkeyjboss.png
+       name: Istanbul Java User Group
+      homepage_url: https://www.jugistanbul.org/
+      logo: Duke-Maskot.png
+      logo_white: Duke-Maskot.png
+      
 
   - name: Jakarta Bean Validation
     directory: specifications/bean-validation/
@@ -129,6 +134,15 @@ adopters:
       homepage_url: https://soujava.org.br/
       logo: soujava.png
       logo_white: soujava.png
+      
+      
+      name: Jakarta Concurrency
+    directory: specifications/concurrency/
+    adopters :
+       name: Istanbul Java User Group
+      homepage_url: https://www.jugistanbul.org/
+      logo: Duke-Maskot.png
+      logo_white: Duke-Maskot.png
       
 # Template: Example for creating new specification entry
 #  - name: Jakarta Bean Validation
