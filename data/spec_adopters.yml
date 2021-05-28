@@ -135,11 +135,10 @@ adopters:
       logo: soujava.png
       logo_white: soujava.png
       
-      
-      name: Jakarta Concurrency
-    directory: specifications/concurrency/
-    adopters :
-       name: Istanbul Java User Group
+  - name: Jakarta Concorrency
+    directory: specifications/concorrency/ 
+    adopters:
+    - name: JugIstanbul
       homepage_url: https://www.jugistanbul.org/
       logo: Duke-Maskot.png
       logo_white: Duke-Maskot.png
