@@ -135,8 +135,8 @@ adopters:
       logo: soujava.png
       logo_white: soujava.png
       
-  - name: Jakarta Concorrency
-    directory: specifications/concorrency/ 
+  - name: Jakarta Concurrency
+    directory: specifications/concurrency/ 
     adopters:
     - name: JugIstanbul
       homepage_url: https://www.jugistanbul.org/
