@@ -198,6 +198,9 @@ sets:
         - version: 5.23.0
           compatibility: 'https://docs.payara.fish/enterprise/docs/5.23.0/jakartaee-certification/5.23.0/tck-results-full-5.23.0.html'
           download_url: 'https://docs.payara.fish/enterprise/docs/5.23.0/jakartaee-certification/5.23.0/tck-results-full-5.23.0.html'
+        - version: 5.26.0
+          compatibility: 'https://docs.payara.fish/enterprise/docs/5.26.0/jakartaee-certification/5.26.0/tck-results-full-5.26.0.html'
+          download_url: 'https://docs.payara.fish/enterprise/docs/5.26.0/jakartaee-certification/5.26.0/tck-results-full-5.26.0.html'
   
       - name: Eclipse GlassFish
         vendor: Eclipse Foundation
@@ -399,3 +402,6 @@ sets:
         - version: 5.23.0
           compatibility: 'https://docs.payara.fish/enterprise/docs/5.23.0/jakartaee-certification/5.23.0/tck-results-web-5.23.0.html'
           download_url: 'https://docs.payara.fish/enterprise/docs/5.23.0/jakartaee-certification/5.23.0/tck-results-web-5.23.0.html'
+        - version: 5.26.0
+          compatibility: 'https://docs.payara.fish/enterprise/docs/5.26.0/jakartaee-certification/5.26.0/tck-results-web-5.26.0.html'
+          download_url: 'https://docs.payara.fish/enterprise/docs/5.26.0/jakartaee-certification/5.26.0/tck-results-web-5.26.0.html'
