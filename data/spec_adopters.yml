@@ -139,7 +139,7 @@ adopters:
   - name: Jakarta Concurrency
     directory: specifications/concurrency/ 
     adopters:
-    - name: JugIstanbul
+    - name: Istanbul Java User Group
       homepage_url: https://www.jugistanbul.org/
       logo: jugistanbul.png
       logo_white: jugistanbul.png
