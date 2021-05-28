@@ -69,6 +69,10 @@ adopters:
       homepage_url: https://twitter.com/TurkeyJBUG/
       logo: turkeyjboss.png
       logo_white: turkeyjboss.png
+	- name: Istanbul Java User Group
+      homepage_url: https://www.jugistanbul.org/
+      logo: jugistanbul.png
+      logo_white: jugistanbul.png
 
   - name: Jakarta Bean Validation
     directory: specifications/bean-validation/
