@@ -16,7 +16,8 @@
     color: @brand-quaternary;
     min-width: 5em;
     .month,
-    .day {
+    .day,
+    .year {
       display: block;
       text-align: center;
       text-transform: uppercase;
@@ -53,11 +54,12 @@
       width: 45vw;
     }
 
-    .content-image, img {
+    .content-image,
+    img {
       max-width: 100%;
       margin-bottom: 20px;
     }
-    
+
     .content-summary {
       line-height: 1.8em;
       color: @brand-tertiary;
@@ -205,6 +207,26 @@
         height: 70px;
         width: 70px;
         margin-right: 8px;
+      }
+    }
+  }
+}
+
+@media (max-width: @screen-md-min) {
+  .news-content {
+    flex-direction: column;
+    .content-inner .content-image {
+        width: 100%;
+    }
+    .content-meta {
+      .day {
+        font-size: inherit;
+        line-height: inherit;
+      }
+      .month,
+      .day,
+      .year {
+        display: inline-block;
       }
     }
   }
