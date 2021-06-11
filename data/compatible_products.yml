@@ -186,18 +186,24 @@ sets:
     - title: Jakarta EE 8 Platform
       release: "/release/8"
       items:
-      - name: Payara Server 
+      - name: Payara Server Enterprise
         vendor: Payara Services Limited
         image: '/images/compatible_products/payara_server.png'
         image_width: 195
         download: 'https://www.payara.fish/downloads/'
         versions:
-        - version: 5.22.0
-          compatibility: 'https://docs.payara.fish/enterprise/docs/5.22.0/jakartaee-certification/5.22.0/tck-results-full-5.22.0.html'
-          download_url: 'https://docs.payara.fish/enterprise/docs/5.22.0/jakartaee-certification/5.22.0/tck-results-full-5.22.0.html'
-        - version: 5.23.0
-          compatibility: 'https://docs.payara.fish/enterprise/docs/5.23.0/jakartaee-certification/5.23.0/tck-results-full-5.23.0.html'
-          download_url: 'https://docs.payara.fish/enterprise/docs/5.23.0/jakartaee-certification/5.23.0/tck-results-full-5.23.0.html'
+        - version: 5.28.1
+          compatibility: 'https://docs.payara.fish/enterprise/docs/jakartaee-certification/5.28.1/tck-results-full-5.28.1.html'
+          download_url: 'https://docs.payara.fish/enterprise/docs/jakartaee-certification/5.28.1/tck-results-full-5.28.1.html'
+      - name: Payara Server Community
+        vendor: Payara Services Limited
+        image: '/images/compatible_products/payara_server.png'
+        image_width: 195
+        download: 'https://www.payara.fish/downloads/'
+        versions:
+        - version: 5.2021.4
+          compatibility: 'https://docs.payara.fish/community/docs/jakartaee-certification/5.2021.4/tck-results-full-5.2021.4.html'
+          download_url: 'https://docs.payara.fish/community/docs/jakartaee-certification/5.2021.4/tck-results-full-5.2021.4.html'
   
       - name: Eclipse GlassFish
         vendor: Eclipse Foundation
@@ -390,12 +396,12 @@ sets:
           compatibility: 'https://www.ibm.com/cloud/websphere-liberty/profile-tckresults'
           download_url: 'https://www.ibm.com/cloud/websphere-liberty/profile-tckresults'
 
-      - name: Payara Server 
+      - name: Payara Server Enterprise
         vendor: Payara Services Limited
         image: '/images/compatible_products/payara_server.png'
         image_width: 195
         download: 'https://www.payara.fish/downloads/'
         versions:
-        - version: 5.23.0
-          compatibility: 'https://docs.payara.fish/enterprise/docs/5.23.0/jakartaee-certification/5.23.0/tck-results-web-5.23.0.html'
-          download_url: 'https://docs.payara.fish/enterprise/docs/5.23.0/jakartaee-certification/5.23.0/tck-results-web-5.23.0.html'
+        - version: 5.28.1 
+          compatibility: 'https://docs.payara.fish/enterprise/docs/jakartaee-certification/5.28.1/tck-results-web-5.28.1.html'
+          download_url: 'https://docs.payara.fish/enterprise/docs/jakartaee-certification/5.28.1/tck-results-web-5.28.1.html'
