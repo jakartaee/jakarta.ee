@@ -69,6 +69,23 @@ SPDX-License-Identifier: EPL-2.0
     ```
 * Example of [PR](https://github.com/jakartaee/jakarta.ee/pull/1097/files )  
 
+
+### How to add a reference in Jakarta EE Announcements section from one Jakarta EE Working Group post
+
+Let's say we created a new post on jakarta.ee/news/ with the title "Jakarta EE 9.1 Released" and the url of https://jakarta.ee/news/jakartaee-91-released/
+
+- Copy the https://jakarta.ee/news/jakartaee-91-released/ link to your clipboard
+- On the front page of jakarta.ee under announcements, there's a "`Submit News`" link
+- Click "Submit News"
+- Once at https://newsroom.eclipse.org/node/add/news
+    - paste the https://jakarta.ee/news/jakartaee-91-released/ url into the "URL" text box
+    - type "Jakarta EE 9.1 Released" into the "Title" text box
+    - leave "Announcements" selected
+    - leave the body empty
+    - check the "Jakarta EE" option under "Publishing Information"
+    - click "Save"
+
+
 ## Related Projects
 
 ### [EclipseFdn/solstice-assets](https://github.com/EclipseFdn/solstice-assets)
