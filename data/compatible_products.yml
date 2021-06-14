@@ -141,6 +141,15 @@ sets:
         - version: Preview 23.0.1.Final
           compatibility: 'https://github.com/wildfly/certifications/blob/EE9/WildFly_23.0.1.Final/jakarta-full-platform.adoc'
           download_url: 'https://wildfly.org/downloads'
+      - name: BES Application Server
+        vendor: Beijing Baolande Software Corporation
+        image: '/images/compatible_products/bes_application_server_for_eclipse.svg'
+        image_width: 100
+        download: 'https://www.bessystem.com/product/0ad9b8c4d6af462b8d15723a5f25a87d/info?p=101#page-2'
+        versions:
+        - version: v10.0.0
+          compatibility: 'https://www.bessystem.com/certifications/jakartaee/platform9/10.0.0-TCKResults.html'
+          download_url: 'https://www.bessystem.com/product/0ad9b8c4d6af462b8d15723a5f25a87d/info?p=101#page-2'
           
     - title: Jakarta EE 9 Web Profile
       items:
