@@ -891,6 +891,22 @@ items:
 
    steering_committee:
        -
+          url: steering_committee/minutes-may-25-2021.pdf
+          title: May 25, 2021 (pdf)
+          year: 2021
+       -
+          url: steering_committee/minutes-may-11-2021.pdf
+          title: May 11, 2021 (pdf)
+          year: 2021
+       -
+          url: steering_committee/minutes-april-27-2021.pdf
+          title: April 27, 2021 (pdf)
+          year: 2021
+       -
+          url: steering_committee/minutes-april-13-2021.pdf
+          title: April 13, 2021 (pdf)
+          year: 2021
+       -
           url: steering_committee/minutes-march-30-2021.pdf
           title: March 30, 2021 (pdf)
           year: 2021
