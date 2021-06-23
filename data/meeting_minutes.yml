@@ -6,6 +6,18 @@ years:
 items:
    marketing_committee:
        -
+          url: marketing_committee/minutes-marketing-may-06-2021.pdf
+          title: May 06, 2021 (pdf)
+          year: 2021
+       -
+          url: marketing_committee/minutes-marketing-april-22-2021.pdf
+          title: April 22, 2021 (pdf)
+          year: 2021
+       -
+          url: marketing_committee/minutes-marketing-april-18-2021.pdf
+          title: April 18, 2021 (pdf)
+          year: 2021
+       -
           url: marketing_committee/minutes-marketing-march-25-2021.pdf
           title: March 25, 2021 (pdf)
           year: 2021
@@ -403,6 +415,26 @@ items:
           year: 2018
 
    specification_committee:
+       -
+          url: specification_committee/minutes-specification-june-2-2021.pdf
+          title: June 2, 2021 (pdf)
+          year: 2021
+       -
+          url: specification_committee/minutes-specification-may-19-2021.pdf
+          title: May 19, 2021 (pdf)
+          year: 2021
+       -
+          url: specification_committee/minutes-specification-may-5-2021.pdf
+          title: May 5, 2021 (pdf)
+          year: 2021
+       -
+          url: specification_committee/minutes-specification-april-21-2021.pdf
+          title: April 21, 2021 (pdf)
+          year: 2021
+       -
+          url: specification_committee/minutes-specification-april-7-2021.pdf
+          title: April 7, 2021 (pdf)
+          year: 2021
        -
           url: specification_committee/minutes-specification-march-24-2021.pdf
           title: March 24, 2021 (pdf)

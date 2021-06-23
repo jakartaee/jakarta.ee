@@ -108,9 +108,22 @@ summary: "Summary text to be presented in the news index page"
 - For the correct list of `type` and `news/tags`, review previous entries before creating a new one.
 - `authors` section recive a list of Github Handles and names, this is used to populate images and authors names automatically in the entry.
 
-The rest of the `_index.md` needs general markdown format to populate the new entry content. 
+The rest of the `_index.md` needs general markdown format to populate the new entry content.
 
+### How to add a reference in Jakarta EE Announcements section from one Jakarta EE Working Group post
 
+Let's say we created a new post on jakarta.ee/news/ with the title "Jakarta EE 9.1 Released" and the url of https://jakarta.ee/news/jakartaee-91-released/
+
+- Copy the https://jakarta.ee/news/jakartaee-91-released/ link to your clipboard
+- On the front page of jakarta.ee under announcements, there's a "`Submit News`" link
+- Click "Submit News"
+- Once at https://newsroom.eclipse.org/node/add/news
+    - paste the https://jakarta.ee/news/jakartaee-91-released/ url into the "URL" text box
+    - type "Jakarta EE 9.1 Released" into the "Title" text box
+    - leave "Announcements" selected
+    - leave the body empty
+    - check the "Jakarta EE" option under "Publishing Information"
+    - click "Save"
 
 
 
