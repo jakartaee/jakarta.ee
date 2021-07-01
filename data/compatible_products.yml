@@ -141,11 +141,29 @@ sets:
         - version: Preview 23.0.1.Final
           compatibility: 'https://github.com/wildfly/certifications/blob/EE9/WildFly_23.0.1.Final/jakarta-full-platform.adoc'
           download_url: 'https://wildfly.org/downloads'
-          
+      - name: BES Application Server
+        vendor: Beijing Baolande Software Corporation
+        image: '/images/compatible_products/bes_application_server_for_eclipse.svg'
+        image_width: 100
+        download: 'https://www.bessystem.com/product/0ad9b8c4d6af462b8d15723a5f25a87d/info?p=101#page-2'
+        versions:
+        - version: v10.0.0
+          compatibility: 'https://www.bessystem.com/certifications/jakartaee/platform9/10.0.0-TCKResults.html'
+          download_url: 'https://www.bessystem.com/product/0ad9b8c4d6af462b8d15723a5f25a87d/info?p=101#page-2'
+      - name: Apusic AAS
+        vendor: Kingdee Apusic Cloud Computing Co., Ltd.
+        image: '/images/compatible_products/aas.jpg'
+        image_width: 195
+        download: 'http://www.apusic.com/info_safety/server'
+        versions:
+        - version: 10-EE9
+          compatibility: 'http://www.apusic.com/aas_v10_ee9_full'
+          download_url: 'http://www.apusic.com/info_safety/server'
+
     - title: Jakarta EE 9 Web Profile
       items:
       - name: Apusic AAS
-        vendor: Kingdee Apusic Cloud Computing
+        vendor: Kingdee Apusic Cloud Computing Co., Ltd.
         image: '/images/compatible_products/aas.jpg'
         image_width: 195
         download: ''
@@ -186,18 +204,24 @@ sets:
     - title: Jakarta EE 8 Platform
       release: "/release/8"
       items:
-      - name: Payara Server 
+      - name: Payara Server Enterprise
         vendor: Payara Services Limited
         image: '/images/compatible_products/payara_server.png'
         image_width: 195
         download: 'https://www.payara.fish/downloads/'
         versions:
-        - version: 5.22.0
-          compatibility: 'https://docs.payara.fish/enterprise/docs/5.22.0/jakartaee-certification/5.22.0/tck-results-full-5.22.0.html'
-          download_url: 'https://docs.payara.fish/enterprise/docs/5.22.0/jakartaee-certification/5.22.0/tck-results-full-5.22.0.html'
-        - version: 5.23.0
-          compatibility: 'https://docs.payara.fish/enterprise/docs/5.23.0/jakartaee-certification/5.23.0/tck-results-full-5.23.0.html'
-          download_url: 'https://docs.payara.fish/enterprise/docs/5.23.0/jakartaee-certification/5.23.0/tck-results-full-5.23.0.html'
+        - version: 5.28.1
+          compatibility: 'https://docs.payara.fish/enterprise/docs/jakartaee-certification/5.28.1/tck-results-full-5.28.1.html'
+          download_url: 'https://docs.payara.fish/enterprise/docs/jakartaee-certification/5.28.1/tck-results-full-5.28.1.html'
+      - name: Payara Server Community
+        vendor: Payara Services Limited
+        image: '/images/compatible_products/payara_server.png'
+        image_width: 195
+        download: 'https://www.payara.fish/downloads/'
+        versions:
+        - version: 5.2021.4
+          compatibility: 'https://docs.payara.fish/community/docs/jakartaee-certification/5.2021.4/tck-results-full-5.2021.4.html'
+          download_url: 'https://docs.payara.fish/community/docs/jakartaee-certification/5.2021.4/tck-results-full-5.2021.4.html'
   
       - name: Eclipse GlassFish
         vendor: Eclipse Foundation
@@ -390,12 +414,12 @@ sets:
           compatibility: 'https://www.ibm.com/cloud/websphere-liberty/profile-tckresults'
           download_url: 'https://www.ibm.com/cloud/websphere-liberty/profile-tckresults'
 
-      - name: Payara Server 
+      - name: Payara Server Enterprise
         vendor: Payara Services Limited
         image: '/images/compatible_products/payara_server.png'
         image_width: 195
         download: 'https://www.payara.fish/downloads/'
         versions:
-        - version: 5.23.0
-          compatibility: 'https://docs.payara.fish/enterprise/docs/5.23.0/jakartaee-certification/5.23.0/tck-results-web-5.23.0.html'
-          download_url: 'https://docs.payara.fish/enterprise/docs/5.23.0/jakartaee-certification/5.23.0/tck-results-web-5.23.0.html'
+        - version: 5.28.1 
+          compatibility: 'https://docs.payara.fish/enterprise/docs/jakartaee-certification/5.28.1/tck-results-web-5.28.1.html'
+          download_url: 'https://docs.payara.fish/enterprise/docs/jakartaee-certification/5.28.1/tck-results-web-5.28.1.html'
