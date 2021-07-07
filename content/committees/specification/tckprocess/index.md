@@ -1,6 +1,6 @@
 ---
-title: "Jakarta EE TCK Process 1.0"
-date: "2020-01-20T00:00:00+00:00"
+title: "Jakarta EE TCK Process 1.1"
+date: "2021-07-7T00:00:00+00:00"
 aliases:
     - committees/specification/TCKProcess/
 ---
@@ -25,7 +25,7 @@ This document defines:
 
 -   Process for self-certification
 
--   Process for releasing a point revision of a TCK
+-   Process for (TCK) service release (x.y.z) to resolve a TCK challenge
 
 ## Materials for a TCK Release {#_materials_for_a_tck_release}
 
@@ -220,9 +220,8 @@ update and release of an official distribution of the TCK including the
 new exclude list. The associated `challenge` issue MUST be closed with
 an `accepted` label to indicate it has been resolved.
 
-If the TCK challenge recommends a workaround of adding a specific Jakarta deployment 
-descriptor with exact contents and the specification project accepts that 
-workaround, the tests do not need to be excluded.
+The specification project may approve (user) workarounds for an `accepted` TCK challenge (as alternative to excluding TCK tests).
+
 
 #### Rejected Challenges and Remedy {#_rejected_challenges_and_remedy}
 
