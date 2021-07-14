@@ -4,8 +4,8 @@ matrix:
     - node_js: 12
       env: HUGO_ENV=production
 install:
-- npm install
-- npm run specifications
+- yarn
+- yarn run specifications
 - wget https://github.com/gohugoio/hugo/releases/download/v0.76.5/hugo_0.76.5_Linux-64bit.deb
 - sudo dpkg -i hugo*.deb
 - sudo apt-get install -y asciidoctor

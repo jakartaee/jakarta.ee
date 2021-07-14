@@ -11,7 +11,7 @@ Jakarta EE is the future of cloud native Java. Jakarta EE open source software d
 Install dependencies, build assets and start a web server:
 
 ```bash
-npm install && npm run production
+yarn && yarn run production
 hugo server
 ```
 
@@ -20,7 +20,7 @@ hugo server
 Fetch and copy pages for the Specification section:
 
 ```bash
-npm run specifications
+yarn run specifications
 ```
 
 ### Contributors list (Optional)
@@ -28,13 +28,13 @@ npm run specifications
 Contributors list json file (_used on release page_) can be generate via:
 
 ```bash
-npm run generate_contributor_list
+yarn run generate_contributor_list
 ```
 
 P.S. Script also needs GH_TOKEN env variable to work, to run with env variable inline:
 
 ```bash
-GH_TOKEN=<gh token here> npm run generate_contributor_list
+GH_TOKEN=<gh token here> yarn run generate_contributor_list
 ```
 
 ## Contributing
@@ -67,7 +67,7 @@ SPDX-License-Identifier: EPL-2.0
     testimonial: "testimonial text no longer than 450 characters"
     title: "<Author of the testimonial> , <Organization>"
     ```
-* Example of [PR](https://github.com/jakartaee/jakarta.ee/pull/1097/files )  
+* Example of [PR](https://github.com/jakartaee/jakarta.ee/pull/1097/files )
 
 
 ### How to add a reference in Jakarta EE Announcements section from one Jakarta EE Working Group post
@@ -114,4 +114,4 @@ Have a bug or a feature request? Please search for existing and closed issues. I
 
 ## Copyright and License
 
-Copyright 2019 the [Eclipse Foundation, Inc.](https://www.eclipse.org) and the [jakarta.ee authors](https://github.com/jakartaee/jakarta.ee/graphs/contributors). Code released under the [Eclipse Public License Version 2.0 (EPL-2.0)](https://github.com/jakartaee/jakarta.ee/blob/src/LICENSE).
+Copyright 2019-2021 the [Eclipse Foundation, Inc.](https://www.eclipse.org) and the [jakarta.ee authors](https://github.com/jakartaee/jakarta.ee/graphs/contributors). Code released under the [Eclipse Public License Version 2.0 (EPL-2.0)](https://github.com/jakartaee/jakarta.ee/blob/src/LICENSE).
