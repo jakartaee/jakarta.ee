@@ -16,6 +16,15 @@ sets:
     - title: Jakarta EE 9.1 Platform
       release: "/release/9.1"
       items:
+      - name: Apusic AAS
+        vendor: Kingdee Apusic Cloud Computing Co., Ltd.
+        image: '/images/compatible_products/aas.jpg'
+        image_width: 195
+        download: 'http://www.apusic.com/info_safety/server'
+        versions:
+        - version: 10-EE9
+          compatibility: 'http://www.apusic.com/aas_v10_ee9-1_full'
+          download_url: 'https://download.eclipse.org/ee4j/jakartaee-tck/jakartaee9/promoted/jakartaeetck-9.1.0.zip'
       - name: Eclipse GlassFish
         vendor: Eclipse Foundation
         image: '/images/compatible_products/glassfish_logo.svg'
