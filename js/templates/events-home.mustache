@@ -1,0 +1,26 @@
+<div class="eclipsefdn-event-list-teaser row">
+{{#events}}
+  <div class="col-sm-12">
+    <div class="eclipsefdn-event-list-teaser-content block-summary-item match-height-item">
+      {{#infoLink}}
+        <h4><a href="{{infoLink}}">{{ title }}</a></h4>
+      {{/infoLink}}
+
+      {{^infoLink}}
+        <h4>{{ title }}</h4>
+      {{/infoLink}}
+
+      {{#locationName}}
+        <p class="eclipsefdn-event-list-teaser-location"><span class="fw-700">Location:</span> {{ locationName }}</p>
+      {{/locationName}}
+
+      {{#date}}
+        <p class="eclipsefdn-event-list-teaser-date">{{ date }}{{#end-date}} - {{ end-date }}{{/end-date}}</p>
+      {{/date}}
+      {{#registration}}
+        <p class="eclipsefdn-event-list-teaser-registation"><a href="{{registration}}" class="btn btn-primary btn-sm">Register</a></p>
+      {{/registration}}   
+    </div>
+  </div>
+{{/events}}
+</div>

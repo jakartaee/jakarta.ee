@@ -1,0 +1,16 @@
+items:
+   - company: Company
+     name:  Matthew R.
+     logo: /images/members/jakarta-member_ibm.png
+     text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam convallis odio in posuere porttitor. Proin egestas odio tortor, eget faucibus.
+     picture: /images/silhouette.jpg
+   - company: Company
+     name: Megan W.
+     logo: /images/members/jakarta-member_ibm.png
+     text: Vivamus eget vulputate neque. Phasellus auctor rhoncus odio eget egestas. Vivamus dictum et elit nec dictum.
+     picture: /images/silhouette.jpg
+   - company: Company
+     name: Pavel. R
+     logo: /images/members/jakarta-member_ibm.png
+     picture: /images/silhouette.jpg
+     text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam convallis odio in posuere porttitor. Proin egestas odio tortor, eget faucibus.
