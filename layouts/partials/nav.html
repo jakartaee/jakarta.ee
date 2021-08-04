@@ -1,0 +1,66 @@
+<!-- 
+  Copyright (c) 2018 Eclipse Foundation, Inc.
+
+  This program and the accompanying materials are made available under the
+  terms of the Eclipse Public License v. 2.0 which is available at
+  http://www.eclipse.org/legal/epl-2.0.
+
+  Contributors:
+    Christopher Guindon <chris.guindon@eclipse-foundation.org>
+
+  SPDX-License-Identifier: EPL-2.0
+-->
+{{ $currentNode := . }}
+{{ range .Site.Menus.main }}
+{{ if .HasChildren }}
+  {{ $multicol := false }}
+  {{ range .Children }}
+    {{ if .HasChildren }}
+      {{ $multicol = true }}
+    {{ end }}
+  {{ end }}
+<li class="dropdown{{ if $multicol }} eclipse-more{{ end }}">
+  <a href="#" data-toggle="dropdown" class="dropdown-toggle">
+    {{ .Pre }}
+    <!--<i class="icon_desktop"></i>-->
+    <span>{{ .Name }}</span>
+    <b class="caret"></b>
+  </a>
+  <ul class="dropdown-menu">
+    {{ if eq $multicol true }}
+    {{ $colClass := "col-sm-12" }}
+    {{ if gt (len .Children) 2 }}
+      {{ $colClass = "col-sm-8" }}
+    {{ end }}
+    <li>
+      <!-- Content container to add padding -->
+      <div class="yamm-content">
+        <div class="row">
+          {{ range .Children }}
+          <ul class="{{ $colClass }} list-unstyled padding-bottom-20">
+            <li><p><a href="{{.URL}}"><strong>{{ .Name }}</strong></a></p>
+            </li>
+            {{ range .Children }}
+            <li{{if $currentNode.IsMenuCurrent "main" . }} class="active"{{end}}><a href="{{.URL}}">{{ .Name }}</a> </li>
+            {{ end }}
+          </ul>
+          {{ end }}
+        </div>
+      </div>
+    </li>
+    {{ else }}
+      {{ range .Children }}
+      <li{{if $currentNode.IsMenuCurrent "main" . }} class="active"{{end}}><a href="{{.URL}}">{{ .Name }}</a> </li>
+      {{ end }}
+    {{ end }}
+  </ul>
+  {{else}}
+<li>
+  <a class="" href="{{.URL}}">
+  {{ .Pre }}
+  {{ .Name }}
+  </a>
+  {{end}}
+</li>
+{{end}}
+{{ partial "nav_more.html" . }}

@@ -1,0 +1,126 @@
+.toolbar-row {
+    padding:0;
+    a, a.toolbar-link {
+        padding:8px 12px;
+        display:block;
+        &:hover {
+            background-color:darken(@brand-primary, 20%);
+            border-bottom:0;
+        }
+    }
+    .gsst_a {
+        padding:0;
+    }
+    .language-selector {
+        a {
+            color:@white;
+        }
+    }
+    .dropdown-menu {
+        background-color:@brand-secondary;
+        padding:0;
+        margin-top:0;
+        a {
+            color:@white;
+            &:active, &:focus, &:visited {
+                color:@white;
+                background-color:darken(@brand-secondary, 20%);
+            }
+            &:hover {
+                color:@white;
+                background-color:darken(@brand-secondary, 20%);
+            }
+        }
+        > li {
+            > a {
+                padding:6px 20px;
+            }
+        }
+        .yamm-content {
+            width:400px;
+            padding: 10px 15px;
+        }
+    }
+}
+
+#header-row {
+    padding-top:30px;
+}
+
+#main-menu {
+    margin-right:10px;
+    .navbar-nav > li > a {
+        &:hover {
+            text-decoration: none;
+            &:after {
+                content:"";
+                display:block;
+                background-color:@brand-secondary;
+                width:80%;
+                height:3px;
+                margin: 0 auto;
+            }
+        }
+    }
+    li > a {
+        text-transform:uppercase;
+        font-weight:600;
+    }
+    li {
+        .dropdown-menu {
+            background-color:@brand-primary;
+            padding: 12px 0;
+            font-size:12px;
+            &:before {
+                display:none;
+            }
+            a {
+                color:@white;
+                padding:8px 20px;
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+        }
+        > .dropdown-menu > li {
+            margin:0;
+        }
+    }
+    .nav .open a:hover, .nav .open a:focus {
+        background-color:darken(@brand-primary, 20%);
+    }
+    .nav .open > a:hover, .nav .open > a:focus {
+        background-color:transparent;
+    }
+} 
+
+.dropdown-menu .gsc-input-box {
+    background-color:@white !important;
+    border-bottom:0;
+    &:hover {
+        border-bottom:0 !important;
+    }
+    .gsc-input {
+        color:@brand-primary !important;
+        font-size:14px !important;
+    }
+}
+
+.gsc-search-button-v2 {
+    border: 1px solid @white !important;
+    border-radius: 0px !important;
+    -moz-border-radius: 0px !important;
+    -webkit-border-radius: 0px !important;
+    background-color: @white !important;
+    background-image: linear-gradient(to bottom, @white, @white) !important;
+    padding: 8px 27px !important;
+    svg {
+        fill:@brand-primary !important;
+    }
+}
+
+.gscb_a {
+    line-height: 14px !important;
+    position: relative;
+    top: 3px;
+}
