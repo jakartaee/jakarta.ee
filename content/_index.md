@@ -21,9 +21,9 @@ container: "container-fluid"
 
 {{< grid/section-container >}}
   
-    {{< grid/div class="tab-content tab-content-home" isMarkdown="false" >}}
+    {{< grid/div class="featured-section-news tab-content tab-content-home" isMarkdown="false" >}}
 
-      {{< grid/div role="tabpanel" class="tab-pane active" id="announcements" isMarkdown="false" >}}
+      {{< grid/div role="tabpanel" class="tab-pane active" id="whats-new-announcements" isMarkdown="false" >}}
         {{< newsroom/news
           id="announcements_news_lists" 
           publishTarget="jakarta_ee"
@@ -35,7 +35,7 @@ container: "container-fluid"
           templatePath="/js/templates/news-home.mustache" >}}
       {{</ grid/div >}}
 
-      {{< grid/div role="tabpanel" class="tab-pane" id="news" isMarkdown="false" >}}
+      {{< grid/div role="tabpanel" class="tab-pane fade" id="whats-new-news" isMarkdown="false" >}}
           {{< newsroom/news
           id="community_news_lists" 
           publishTarget="jakarta_ee"
@@ -47,7 +47,7 @@ container: "container-fluid"
           templatePath="/js/templates/news-home.mustache" >}}
       {{</ grid/div >}}
 
-      {{< grid/div role="tabpanel" class="tab-pane" id="events" isMarkdown="false" >}}
+      {{< grid/div role="tabpanel" class="tab-pane fade" id="whats-new-events" isMarkdown="false" >}}
         {{< events >}}    
           {{< newsroom/events
               id="events_lists" 

@@ -38,6 +38,21 @@ main h2.main-title {
 
 .block-summary-more {
     margin-top:20px;
+    margin-bottom:0;
+}
+
+.eclipsefdn-news-list-content {
+    @media (min-width: @screen-xs-min) {
+        padding:0 0 0 45px;
+    }
+}
+
+.eclipsefdn-news-list-date, .eclipsefdn-news-list-body, .eclipsefdn-news-list-heading {
+    @media (max-width: @screen-xs-max) {
+        padding-left:30px;
+        padding-right:30px;
+    }
+    
 }
 
 .eclipsefdn-news-list-date {
@@ -57,11 +72,20 @@ main h2.main-title {
     background-position: center;
 } 
 
+.tab-content-nav, .tab-content-home {
+    border: none;
+}
 
 .tab-content-home {
-    padding: 40px 0;
-    border: none;
+    padding: 0;
+}
 
+.tab-content-nav {
+    padding: 0 0 20px;
+    border: none;
+    @media (min-width: @screen-xs-min) {
+        padding: 0 0 40px;
+    }
     .tab-pane {
         padding:0;
     }
@@ -79,12 +103,16 @@ main h2.main-title {
                 }
             }
             > a {
-                padding: 20px 15px;
-                font-size:16px;
+                padding: 20px 0px;
+                font-size:12px;
                 text-transform: uppercase;
                 border-left:none;
                 border-right:none;
                 border-top:none;
+                @media (min-width: @screen-xs-min) {
+                    padding: 20px 15px;
+                    font-size:16px;
+                }
                 &:hover {
                     border-bottom:3px solid @nav-tabs-active-link-hover-border-color;
                     border-color: @brand-primary;
@@ -176,6 +204,7 @@ main {
 
 footer#solstice-footer {
     padding-bottom:0;
+    background-size: cover;
     h2 {
         text-transform: uppercase;
         margin-bottom:3px;
@@ -188,6 +217,9 @@ footer#solstice-footer {
 .footer-copyright {
     background-color:@brand-secondary;
     color:@text-color;
+    @media (max-width: @screen-xs-max) {
+        text-align: center;
+    }
 }
 
 #copyright {
