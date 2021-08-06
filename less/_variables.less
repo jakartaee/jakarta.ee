@@ -33,6 +33,17 @@
 @main-menu-dropdown-link-hover-color:@white;
 @main-menu-dropdown-link-active-color:@white;
 
+@mobile-menu-nav-background:@white;
+@mobile-menu-color:@text-color;
+@mobile-main-menu-link-border-bottom:1px solid @light-grey;
+@mobile-menu-open-active-background:darken(@light-grey, 15%);
+@mobile-menu-open-active-color:@text-color;
+@mobile-menu-dropdown-menu-background:@light-grey;
+@mobile-menu-dropdown-menu-color:@mobile-menu-open-active-color;
+
+@dropdown-menu-left-panel-bg:@brand-primary;
+@dropdown-menu-right-panel-bg:darken(@dropdown-menu-left-panel-bg, 10%);
+
 @header-default-bg-img:url('images/jumbotron-home.jpg');
 
 @header-row-padding-bottom:20px;
@@ -65,7 +76,7 @@
 @featured-footer-light-bg:url('images/mailing-list-bg.jpg');
 @featured-footer-padding:50px 0;
 
-@footer-background:url('images/jumbotron-secondary.jpg');
+@footer-background:@brand-primary url('images/jumbotron-secondary.jpg') no-repeat center;
 @footer-h2-color:@white;
 @footer-h2-font-size:14px;
 @footer-h2-font-weight:700;

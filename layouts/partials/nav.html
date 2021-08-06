@@ -12,55 +12,74 @@
 -->
 {{ $currentNode := . }}
 {{ range .Site.Menus.main }}
-{{ if .HasChildren }}
-  {{ $multicol := false }}
-  {{ range .Children }}
-    {{ if .HasChildren }}
-      {{ $multicol = true }}
-    {{ end }}
-  {{ end }}
-<li class="dropdown{{ if $multicol }} eclipse-more{{ end }}">
-  <a href="#" data-toggle="dropdown" class="dropdown-toggle">
-    {{ .Pre }}
-    <!--<i class="icon_desktop"></i>-->
-    <span>{{ .Name }}</span>
-    <b class="caret"></b>
-  </a>
-  <ul class="dropdown-menu">
-    {{ if eq $multicol true }}
-    {{ $colClass := "col-sm-12" }}
-    {{ if gt (len .Children) 2 }}
-      {{ $colClass = "col-sm-8" }}
-    {{ end }}
-    <li>
-      <!-- Content container to add padding -->
-      <div class="yamm-content">
-        <div class="row">
-          {{ range .Children }}
-          <ul class="{{ $colClass }} list-unstyled padding-bottom-20">
-            <li><p><a href="{{.URL}}"><strong>{{ .Name }}</strong></a></p>
-            </li>
-            {{ range .Children }}
-            <li{{if $currentNode.IsMenuCurrent "main" . }} class="active"{{end}}><a href="{{.URL}}">{{ .Name }}</a> </li>
-            {{ end }}
-          </ul>
-          {{ end }}
-        </div>
-      </div>
-    </li>
-    {{ else }}
-      {{ range .Children }}
-      <li{{if $currentNode.IsMenuCurrent "main" . }} class="active"{{end}}><a href="{{.URL}}">{{ .Name }}</a> </li>
+  {{ if .HasChildren }}
+    {{ $multicol := false }}
+    {{ range .Children }}
+      {{ if .HasChildren }}
+        {{ $multicol = true }}
       {{ end }}
     {{ end }}
-  </ul>
+    <li class="dropdown{{ if $multicol }} eclipse-more{{ end }}">
+      <a href="#" data-toggle="dropdown" class="dropdown-toggle">
+        {{ .Pre }}
+        <!--<i class="icon_desktop"></i>-->
+        <span>{{ .Name }}</span>
+        <b class="caret"></b>
+      </a>
+      <ul class="dropdown-menu">
+        {{ if eq $multicol true }}
+        <li>
+          <!-- Content container to add padding -->
+          <div class="yamm-content">
+            <div class="row">
+              <div class="col-sm-12 padding-right-0">
+                <div class="dropdown-menu-left-panel match-height-item">
+                  <ul class="list-unstyled menu-tabs" role="tablist">
+                    {{ range $i, $e := .Children }}
+                      {{ if .HasChildren }}
+                        <li role="presentation" {{ if $i }}{{ else }}class="active"{{ end }}><i class="fa fa-caret-right" aria-hidden="true"></i> <a data-target="#{{ .Name | urlize }}" aria-controls="{{ .Name | urlize }}">{{ .Name }}</a></li>
+                      {{ else }}
+                        <li><a href="{{.URL}}">{{ .Name }}</a></li>
+                      {{ end }}
+                    {{ end }}
+                  </ul>
+                </div>
+              </div>
+              <div class="col-sm-12 padding-left-0">
+                <div class="dropdown-menu-right-panel match-height-item">
+                  <div class="tab-content">
+                    {{ range $i, $e := .Children }}
+                      {{ if .HasChildren }}
+                        <div role="tabpanel" class="tab-pane{{ if $i }} fade{{ else }} active{{ end }}" id="{{ .Name | urlize }}">
+                          <ul class="list-unstyled">
+                          {{ range .Children }}
+                            <li><a href="{{.URL}}"><strong>{{ .Name }}</strong></a></li>
+                          {{ end }}
+                        </ul>
+                        </div>
+                      {{ end }}
+                    {{ end }}
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </li>
+        {{ else }}
+          {{ range .Children }}
+          <li{{if $currentNode.IsMenuCurrent "main" . }} class="active"{{end}}><a href="{{.URL}}">{{ .Name }}</a> </li>
+          {{ end }}
+        {{ end }}
+      </ul>
+    </li>
   {{else}}
-<li>
-  <a class="" href="{{.URL}}">
-  {{ .Pre }}
-  {{ .Name }}
-  </a>
+    <li>
+      <a class="" href="{{.URL}}">
+      {{ .Pre }}
+      {{ .Name }}
+      </a>
+    </li>
   {{end}}
-</li>
-{{end}}
+{{ end }}
 {{ partial "nav_more.html" . }}

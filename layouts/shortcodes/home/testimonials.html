@@ -10,13 +10,13 @@
             <div class="col-sm-8">
                 <div class="featured-section-testimonials-item match-height-item-by-row">
                     <div class="row">
-                        <div class="col-xs-6">
+                        <div class="col-md-6">
                             {{ if .picture }}
                             <div class="featured-section-testimonials-item-picture"><img class="img" src="{{ .picture }}" width="{{ .picture_width | default 60 }}" alt="{{ .name }}'s picture"></div>
                             {{ end }}
                             <p><img class="featured-section-testimonials-item-logo img img-responsive" src="{{ .logo }}" width="{{ .logo_width | default 60 }}" alt="{{ .company }}'s logo"></p>
                         </div>
-                        <div class="col-xs-18">
+                        <div class="col-md-18">
                             <p class="featured-section-testimonials-item-content">{{ .text }}</p>
                             <p class="featured-section-testimonials-item-name"><strong>{{ .name }},</strong> <em>{{ .company }}</em></p>
                         </div>

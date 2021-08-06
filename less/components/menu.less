@@ -16,6 +16,11 @@
             color:@white;
         }
     }
+    ul {
+        @media (max-width: @screen-xs-max) {
+            text-align: center;
+        }
+    }
     .dropdown-menu {
         background-color:@brand-secondary;
         padding:0;
@@ -44,55 +49,105 @@
 }
 
 #header-row {
-    padding-top:30px;
+    @media (min-width: @screen-xs-min) {
+        padding-top:30px;
+    }
+    @media (max-width: @screen-xs-max) {
+        padding-bottom:0;
+    }
 }
-
-#main-menu {
-    margin-right:10px;
-    .navbar-nav > li > a {
-        &:hover {
-            text-decoration: none;
-            &:after {
-                content:"";
-                display:block;
-                background-color:@brand-secondary;
-                width:80%;
-                height:3px;
-                margin: 0 auto;
-            }
-        }
-    }
-    li > a {
-        text-transform:uppercase;
-        font-weight:600;
-    }
-    li {
-        .dropdown-menu {
-            background-color:@brand-primary;
-            padding: 12px 0;
-            font-size:12px;
-            &:before {
-                display:none;
-            }
-            a {
-                color:@white;
-                padding:8px 20px;
-                &:hover {
-                    text-decoration: none;
+@media (min-width: @screen-xs-min) {
+    #main-menu {
+        margin-right:10px;
+        .navbar-nav > li > a {
+            &:hover {
+                text-decoration: none;
+                &:after {
+                    content:"";
+                    display:block;
+                    background-color:@brand-secondary;
+                    width:100%;
+                    height:3px;
+                    margin: 0 auto;
                 }
             }
         }
-        > .dropdown-menu > li {
-            margin:0;
+        li > a {
+            text-transform:uppercase;
+            font-weight:600;
         }
+        li {
+            .dropdown-menu {
+                background-color:@dropdown-menu-left-panel-bg;
+                padding: 12px 0;
+                font-size:12px;
+                &:before {
+                    display:none;
+                }
+                a {
+                    color:@white;
+                    padding:8px 20px;
+                    display:block;
+                    &:hover {
+                        text-decoration: none;
+                    }
+                }
+                .fa {
+                    //margin-left: -10.5px;
+                    //margin-right:3px;
+                    float: left;
+                    padding: 12px 0px 11px 8px;
+                    color: #fff;
+                }
+                .menu-tabs {
+                    padding: 20px 0;
+                    a {
+                        &:hover {
+                            background-color: @dropdown-menu-right-panel-bg;
+                        }
+                    }
+                    .active {
+                        background-color: @dropdown-menu-right-panel-bg;
+                    }
+                }
+                .tab-content {
+                    background: transparent;
+                    border:none;
+                    padding:0;
+                    .tab-pane {
+                        background-color: @dropdown-menu-right-panel-bg;
+                        padding: 20px 0;
+                        a {
+                            &:hover {
+                                background-color:darken(@dropdown-menu-right-panel-bg, 10%);
+                            }
+                        }
+                    }
+                }
+            }
+            > .dropdown-menu > li {
+                margin:0;
+            }
+        }
+    } 
+    #main-menu li > .dropdown-menu .yamm-content {
+        padding:0;
     }
-    .nav .open a:hover, .nav .open a:focus {
-        background-color:darken(@brand-primary, 20%);
+    #main-menu li.dropdown.eclipse-more .dropdown-menu {
+        padding:0;
+        right:auto;
     }
-    .nav .open > a:hover, .nav .open > a:focus {
-        background-color:transparent;
-    }
-} 
+}
+
+.dropdown-menu-left-panel {
+    background-color:@dropdown-menu-left-panel-bg;
+    padding-right:0;
+}
+
+.dropdown-menu-right-panel {
+    background-color:@dropdown-menu-right-panel-bg;
+    padding-left:0;
+}
 
 .dropdown-menu .gsc-input-box {
     background-color:@white !important;

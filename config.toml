@@ -72,154 +72,147 @@ enableInlineShortcodes = true
     weight = 1
 
 [[menu.main]]
-    name = "Membership"
-    url = "/Membership/"
+    name = "Specifications"
+    url = "#"
     weight = 2
 
 [[menu.main]]
-    name = "Connect"
-    url = "/connect/"
+    name = "Compatible Products"
+    url = "/compatibility/"
     weight = 3
 
 [[menu.main]]
-    name = "Resources"
-    url = "/resources/"
+    name = "Community"
+    url = "#"
     weight = 4
+
+[[menu.main]]
+    name = "Membership"
+    url = "/Membership/"
+    weight = 5
+
+[[menu.main]]
+    name = "Blog"
+    url = "https://jakartablogs.ee/"
+    weight = 6
+
+# About sub-menu
+[[menu.main]]
+    name = "Jakarta EE"
+    url = "/"
+    weight = 1
+    parent = "About"
+
+[[menu.main]]
+    name = "Jakarta EE Working Group"
+    url = "https://eclipse.org/org/workinggroups/jakarta_ee_charter.php"
+    weight = 2
+    parent = "About"
+
+[[menu.main]]
+    name = "Specification Process"
+    url = "/about/jesp/"
+    weight = 2
+    parent = "About"
 
 [[menu.main]]
     name = "Resources"
     url = "/resources/"
+    weight = 2
+    parent = "About"
+
+[[menu.main]]
+    name = "Adopt A Spec"
+    parent = "About"
+    url = "/community/adopt-a-spec/"
+    weight = 3
+
+[[menu.main]]
+    name = "Committees"
+    url = "/committees"
+    parent = "About"
     weight = 4
+
+[[menu.main]]
+    name = "Meeting Minutes"
+    url = "/meeting_minutes/"
+    parent = "About"
+    weight = 5
+
+[[menu.main]]
+    name = "News"
+    url = "/news/"
+    parent = "About"
+    weight = 5
+
+# Jakarta EE sub-menu
+[[menu.main]]
+    name = "Youtube Channel"
+    url = "https://www.youtube.com/channel/UC4M7h5b6elu9VlzjLfzuXyg"
+    weight = 1
+    parent = "Jakarta EE"
+
+[[menu.main]]
+    name = "Community Calendar"
+    url = "/resources#calendar"
+    weight = 4
+    parent = "Jakarta EE"
+
+[[menu.main]]
+    name = "Starter"
+    url = "https://start.jakarta.ee/"
+    parent = "Jakarta EE"
+    weight = 6
 
 # Resource sub-menu
 [[menu.main]]
-    name = "Case Studies"
-    url = "/resources#cases-studies"
-    parent = "Resources"
+    name = "Community Folder"
+    url = "https://drive.google.com/drive/folders/11nvqdVqFlCxm5AfPh2NdnanTBrCPW8Xv"
     weight = 1
+    parent = "Resources"
+
+[[menu.main]]
+    name = "Datasheets"
+    url = "/resources#datasheets"
+    parent = "Resources"
+    weight = 2
 
 [[menu.main]]
     name = "Documentation"
     url = "/resources#documentation"
     parent = "Resources"
-    weight = 2
+    weight = 3
+
+[[menu.main]]
+    name = "Friends of Jakarta EE"
+    url = "/resources#friends"
+    parent = "Resources"
+    weight = 4
+
+[[menu.main]]
+    name = "Specification Projects"
+    url = "https://projects.eclipse.org/list-of-projects?combine=jakarta&field_project_techology_types_tid=1102&field_state_value_2=All"
+    weight = 5
+    parent = "Resources"
+
+[[menu.main]]
+    name = "JakartaOne Livestream"
+    url = "https://jakartaone.org/"
+    parent = "Resources"
+    weight = 6
+
+[[menu.main]]
+    name = "Presentations"
+    url = "/resources#presentations"
+    parent = "Resources"
+    weight = 7
 
 [[menu.main]]
     name = "Surveys"
     url = "/resources#surveys"
     parent = "Resources"
-    weight = 3
-
-[[menu.main]]
-    name = "Infographics"
-    url = "/resources#infographics"
-    parent = "Resources"
-    weight = 4
-[[menu.main]]
-    name = "Datasheets"
-    url = "/resources#datasheets"
-    parent = "Resources"
-    weight = 5
-[[menu.main]]
-    name = "Presentations"
-    url = "/resources#presentations"
-    parent = "Resources"
-    weight = 6
-
-[[menu.main]]
-    name = "Compatible Products"
-    url = "/compatibility/"
-    weight = 7
-
-[[menu.main]]
-    name = "Adopt A Spec"
-    parent = "Resources"
-    url = "/community/adopt-a-spec/"
     weight = 8
 
-[[menu.main]]
-    name = "Committees"
-    url = "/committees"
-    parent = "Resources"
-    weight = 9
-
-[[menu.main]]
-    name = "Newsletter Archives"
-    url = "/newsletter/"
-    parent = "Resources"
-    weight = 10
-
-[[menu.main]]
-    name = "Meeting Minutes"
-    url = "/meeting_minutes/"
-    parent = "Resources"
-    weight = 11
-
-[[menu.main]]
-    name = "Blog"
-    url = "https://Jakartablogs.ee"
-    parent = "Resources"
-    weight = 12
-
-[[menu.main]]
-    name = "Tech Talk Meet-ups"
-    url = "/resources#meetups"
-    parent = "Resources"
-    weight = 13
-
-[[menu.main]]
-    name = "Jakarta EE YouTube Channel"
-    url = "https://www.youtube.com/channel/UC4M7h5b6elu9VlzjLfzuXyg"
-    parent = "Resources"
-    weight = 14
-
-[[menu.main]]
-    name = "Jakarta EE Specification Projects"
-    url = "https://projects.eclipse.org/list-of-projects?combine=jakarta&field_project_techology_types_tid=1102&field_state_value_2=All"
-    parent = "Resources"
-    weight = 15
-
-[[menu.main]]
-    name = "Jakarta EE Community Folder"
-    url = "https://drive.google.com/drive/folders/11nvqdVqFlCxm5AfPh2NdnanTBrCPW8Xv"
-    parent = "Resources"
-    weight = 16
-    
-[[menu.main]]
-    name = "Jakarta EE Community Calendar"
-    url = "/resources#calendar"
-    parent = "Resources"
-    weight = 17
-
-[[menu.main]]
-    name = "Starter for Jakarta EE"
-    url = "https://start.jakarta.ee/"
-    parent = "Resources"
-    weight = 18
-    
-[[menu.main]]
-    name = "JakartaOne Livestream"
-    url = "https://jakartaone.org/"
-    parent = "Resources"
-    weight = 19
-    
-[[menu.main]]
-    name = "Friends of Jakarta EE"
-    url = "/resources#friends"
-    parent = "Resources"
-    weight = 20
-
-[[menu.main]]
-    name = "JESP Guide"
-    url = "/committees/specification/guide"
-    parent = "Resources"
-    weight = 21
-
-[[menu.main]]
-    name = "Jakarta EE Working Group news"
-    url = "/news/"
-    parent = "Resources"
-    weight = 20
 
 [languages]
   [languages.en]
