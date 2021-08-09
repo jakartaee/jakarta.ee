@@ -281,7 +281,7 @@ sets:
         image_width: 195
         download: 'http://www.redhat.com/en/technologies/jboss-middleware/application-platform'
         versions:
-        - version: 7.3.0
+        - version: 7.4.0
           compatibility: 'https://github.com/RedHatOfficial/jbosseap-certifications/blob/EE8/EAP-7.3.0/jakarta-full-platform.adoc#tck-results'
           download_url: 'https://github.com/RedHatOfficial/jbosseap-certifications/blob/EE8/EAP-7.3.0/jakarta-full-platform.adoc#tck-results'
   
@@ -419,7 +419,7 @@ sets:
         image_width: 195
         download: 'http://www.redhat.com/en/technologies/jboss-middleware/application-platform'
         versions:
-        - version: 7.3.0  
+        - version: 7.4.0  
           compatibility: 'https://github.com/RedHatOfficial/jbosseap-certifications/blob/EE8/EAP-7.3.0/jakarta-web-profile.adoc'
           download_url: 'https://github.com/RedHatOfficial/jbosseap-certifications/blob/EE8/EAP-7.3.0/jakarta-web-profile.adoc'
   
