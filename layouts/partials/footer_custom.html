@@ -11,6 +11,16 @@
 
   SPDX-License-Identifier: EPL-2.0
 -->
+{{ if ne .Page.Params.show_featured_footer false }}
+  <div class="eclipsefdn-featured-footer featured-footer" id="featured-footer" data-publish-target="{{ .Page.Params.featured_content_publish_target | default .Site.Params.featured_content_publish_target | default "eclipse_org"}}">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-24 featured-container">
+        </div>
+      </div>
+    </div>
+  </div>
+{{ end }}
 <div class="featured-footer featured-mailing-list text-center">
   <div class="container">
     <div class="row">

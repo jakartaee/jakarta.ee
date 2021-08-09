@@ -83,7 +83,7 @@ enableInlineShortcodes = true
 
 [[menu.main]]
     name = "Community"
-    url = "#"
+    url = "/community"
     weight = 4
 
 [[menu.main]]

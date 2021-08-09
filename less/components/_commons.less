@@ -3,6 +3,10 @@
     font-weight:600;
 }
 
+.text-secondary {
+    color:@brand-secondary;
+}
+
 .btn-call-for-action {
     margin-top:2px;
 }
@@ -71,69 +75,6 @@ main h2.main-title {
     background-repeat: no-repeat;
     background-position: center;
 } 
-
-.tab-content-nav, .tab-content-home {
-    border: none;
-}
-
-.tab-content-home {
-    padding: 0;
-}
-
-.tab-content-nav {
-    padding: 0 0 20px;
-    border: none;
-    @media (min-width: @screen-xs-min) {
-        padding: 0 0 40px;
-    }
-    .tab-pane {
-        padding:0;
-    }
-    
-    // Give the tabs something to sit on
-    .nav-tabs {
-        border-bottom: 1px solid @nav-tabs-border-color;
-        > li {
-            width: 33%;
-            text-align: center;
-            &:last-child {
-                width: 34%;
-                > a {
-                    margin-right:0;
-                }
-            }
-            > a {
-                padding: 20px 0px;
-                font-size:12px;
-                text-transform: uppercase;
-                border-left:none;
-                border-right:none;
-                border-top:none;
-                @media (min-width: @screen-xs-min) {
-                    padding: 20px 15px;
-                    font-size:16px;
-                }
-                &:hover {
-                    border-bottom:3px solid @nav-tabs-active-link-hover-border-color;
-                    border-color: @brand-primary;
-                    background: transparent;
-                    color: @brand-primary;
-                }
-            }
-    
-            &.active > a {
-                border:none;
-                border-bottom:3px solid @brand-primary;
-                &:hover,
-                &:focus {
-                    border:none;
-                    border-bottom:3px solid @brand-primary;
-                    border-bottom-color: @brand-primary;
-                }
-            }
-        }
-    }
-}
 
 main {
     border-bottom:none;
@@ -227,4 +168,24 @@ footer#solstice-footer {
     p {
         margin-bottom:0;
     }
+}
+
+#featured-footer {
+    border-bottom:none;
+    color:@white;
+    .btn {
+        background-color:transparent;
+        color:@white;
+        border: 2px solid @white;
+    }
+    h2 {
+        margin-bottom:20px;
+    }
+    p {
+        margin-bottom:30px;
+    }
+}
+
+.product-list .grid-center { 
+    display: flex; align-items: center;
 }

@@ -37,7 +37,7 @@
                   <ul class="list-unstyled menu-tabs" role="tablist">
                     {{ range $i, $e := .Children }}
                       {{ if .HasChildren }}
-                        <li role="presentation" {{ if $i }}{{ else }}class="active"{{ end }}><i class="fa fa-caret-right" aria-hidden="true"></i> <a data-target="#{{ .Name | urlize }}" aria-controls="{{ .Name | urlize }}">{{ .Name }}</a></li>
+                        <li role="presentation" {{ if $i }}{{ else }}class="active"{{ end }}><i class="fa fa-caret-right" aria-hidden="true"></i> <a data-target="#{{ .Name | urlize }}" aria-controls="{{ .Name | urlize }}" role="tab" data-toggle="tab">{{ .Name }}</a></li>
                       {{ else }}
                         <li><a href="{{.URL}}">{{ .Name }}</a></li>
                       {{ end }}
