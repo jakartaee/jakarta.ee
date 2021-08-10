@@ -28,11 +28,7 @@ mix.webpackConfig({
   },
 });
 
-<<<<<<< HEAD
-mix.js('./node_modules/eclipsefdn-solstice-assets/js/main.js', './static/js/solstice.js');
-=======
 mix.js('js/main.js', './static/js/solstice.js');
->>>>>>> Epoirier/redesign 2021/home page (#1246)
 
 mix.js(
     './js/contributor-cards/index.js',
