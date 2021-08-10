@@ -7,40 +7,49 @@
 
   Contributors:
     Martin Lowe <martin.lowe@eclipse-foundation.org>
+    Eric Poirier <eric.poirier@eclipse-foundation.org>
 
   SPDX-License-Identifier: EPL-2.0
 -->
-<section class="alt" id="mailing-list-socials">
-  <div class="backdrop padding-bottom-100 padding-top-100">
+{{ if ne .Page.Params.show_featured_footer false }}
+  <div class="eclipsefdn-featured-footer featured-footer" id="featured-footer" data-publish-target="{{ .Page.Params.featured_content_publish_target | default .Site.Params.featured_content_publish_target | default "eclipse_org"}}">
     <div class="container">
-      <div class="col-md-12 vertical-align brand-secondary match-height-item-by-row">
-        <span>{{ i18n "footer-join-mailing-list" }}</span>
-        <a href="https://accounts.eclipse.org/mailing-list/jakarta.ee-community" class="btn btn-secondary padded-sm margin-left-30">{{ i18n "footer-join-mailing-list-button-text" }}</a>
+      <div class="row">
+        <div class="col-sm-24 featured-container">
+        </div>
       </div>
-      <div class="col-md-12 match-height-item-by-row vertical-align">
+    </div>
+  </div>
+{{ end }}
+<div class="featured-footer featured-mailing-list text-center">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-24">
         <ul class="list-inline">
+          <li><a class="btn btn-primary margin-right-15" href="https://accounts.eclipse.org/mailing-list/jakarta.ee-wg">{{ i18n "footer-join-mailing-list-button-text" }}</a></li>
           <li>
-            <a class="brand-primary" href="{{ $.Site.Params.facebook_url | default "https://www.facebook.com/eclipse.org" }}">
-              <i class="fa fa-facebook"></i><span class="sr-only">{{ i18n "footer-sr-facebook-text" }}</span>
+            <a class="social-icon" href="https://www.facebook.com/JakartaEE/">
+              <i class="fa fa-facebook-official" aria-label="Facebook page for Jakarta EE"></i><span class="sr-only">{{ i18n "footer-sr-facebook-text" }}</span>
             </a>
           </li>
-          <li>
-            <a class="brand-primary" href="{{ $.Site.Params.linkedin_url | default " https://www.linkedin.com/company/eclipse-foundation" }}" title="{{ i18n "footer-sr-linkedin-account" }}">
-              <i class="fa fa-linkedin"></i> <span class="sr-only">{{ i18n "footer-sr-linkedin-text" }}</span>
-          </a>
-          </li>
-          <li>
-            <a class="brand-primary" href="{{ $.Site.Params.twitter_url | default "https://twitter.com/EclipseFdn" }}">
-              <i class="fa fa-twitter"></i><span class="sr-only">{{ i18n "footer-sr-twitter-text" }}</span>
+          <li class="hidden-xs">
+            <a class="social-icon" href="https://ca.linkedin.com/showcase/jakartaee">
+              <i class="fa fa-linkedin-square" aria-label="Linkedin profile for Jakarta EE"></i><span class="sr-only">{{ i18n "footer-sr-linkedin-text" }}</span>
             </a>
           </li>
-          <li>
-            <a class="brand-primary" href="{{ $.Site.Params.youtube_url | default "https://www.youtube.com/user/EclipseFdn" }}">
-              <i class="fa fa-youtube"></i><span class="sr-only">{{ i18n "footer-sr-youtube-text" }}</span>
+          <li class="hidden-xs">
+            <a class="social-icon" href="https://twitter.com/JakartaEE">
+              <i class="fa fa-twitter" aria-label="Twitter profile for Jakarta EE"></i><span class="sr-only">{{ i18n "footer-sr-twitter-text" }}</span>
+            </a>
+          </li>
+          <li class="hidden-xs">
+            <a class="social-icon" href="https://www.youtube.com/c/JakartaEE">
+              <i class="fa fa-youtube-play" aria-label="Youtube channel for Jakarta EE"></i><span class="sr-only">{{ i18n "footer-sr-youtube-text" }}</span>
             </a>
           </li>
         </ul>
       </div>
     </div>
   </div>
-</section>
+</div>
+

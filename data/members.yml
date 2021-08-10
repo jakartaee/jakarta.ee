@@ -1,0 +1,144 @@
+types:
+  - name: strategic
+    items:
+       - title: Fujitsu
+         id: "fujitsu"
+         link: https://www.fujitsu.com/
+         image: /images/members/jakarta-member_fujitsu.svg
+         type: "strategic"
+         img_width: 100
+       - title: IBM
+         id: "ibm"
+         link: https://www.ibm.com/ca-en
+         image: /images/members/jakarta-member_ibm.png
+         type: "strategic"
+         img_width: 75
+       - title: Oracle
+         id: "oracle"
+         link: https://www.oracle.com/
+         image: /images/members/jakarta-member_oracle.svg
+         type: "strategic"
+         img_width: 120
+       - title: Payara
+         id: "payara"
+         link: https://www.payara.fish/
+         image: /images/members/jakarta-member_payara.svg
+         type: "strategic"
+         img_width: 100
+       - title: Red Hat
+         id: "redhat"
+         link: https://www.redhat.com/
+         image: /images/members/jakarta-member_redhat.svg
+         type: "strategic"
+         img_width: 100
+       - title: Tomitribe
+         id: "tomitribe"
+         link: https://www.tomitribe.com/
+         image: /images/members/jakarta-member_tomitribe.svg
+         type: "strategic"
+         img_width: 100
+  - name: enterprise
+    items:
+       - title: Primeton
+         id: "primeton"
+         link: http://primeton.com/
+         image: /images/members/jakarta-member_primeton.png
+         img_width: 155
+         type: "enterprise"
+       - title: shandong_cvicse_middleware
+         id: "shandong_cvicse_middleware"
+         image: /images/members/jakarta-member_shandong_cvicse_middleware.png
+         img_width: 155
+         type: "enterprise"
+  - name: participant
+    items:
+       - title: Apusic
+         id: "apusic"
+         link: http://www.apusic.com/
+         image: /images/members/jakarta-member_apusic.png
+         img_width: 155
+         type: "participant"
+       - title: Bessystem
+         id: "bessystem"
+         link: https://www.bessystem.com
+         image: /images/members/jakarta-member_beijing-baolande.png
+         img_width: 155
+         type: "participant"
+       - title: iJug
+         id: "ijug"
+         link: https://www.ijug.eu/
+         image: /images/members/jakarta-member_ijug.png
+         type: "participant"
+         img_width: 125
+       - title: Jadeva GmbH
+         id: "jadeva"
+         link: https://jadeva.eu/
+         image: /images/members/jakarta-member_jadeva_gmbh.png
+         img_width: 90
+         type: "participant"
+       - title: Jelastic
+         id: "jelastic"
+         link: https://jelastic.com
+         image: /images/members/jakarta-member_jelastic.png
+         img_width: 90
+         type: "participant"
+       - title: Liferay
+         id: "liferay"
+         link: https://www.liferay.com
+         image: /images/members/jakarta-member_liferay.svg
+         img_width: 90
+         type: "participant"
+       - title: London Java Community
+         id: "londonjavacommunity"
+         link: https://londonjavacommunity.wordpress.com
+         image: /images/members/jakarta-member_ljc.svg
+         img_width: 90
+         type: "participant"
+       - title: Managecat
+         id: "managecat"
+         link: https://www.managecat.com/
+         image: /images/members/jakarta-member_managecat.png
+         img_width: 90
+         type: "participant"
+       - title: Pivotal
+         id: "pivotal"
+         link: https://pivotal.io/
+         image: /images/members/jakarta-member_pivotal.svg
+         img_width: 90
+         type: "participant"
+       - title: Tmaxsoft
+         id: "tmaxsoft"
+         link: https://www.tmaxsoft.com/
+         image: /images/members/jakarta-member_tmax.png
+         img_width: 90
+         type: "participant"
+       - title: Tongtech
+         id: "tongtech"
+         link: http://www.tongtech.com/
+         image: /images/members/jakarta-member_tongtech.png
+         img_width: 90
+         type: "participant"
+       - title: Webtide
+         id: "webtide"
+         link: https://webtide.com/
+         image: /images/members/jakarta-member_webtide.svg
+         img_width: 90
+         type: "participant"
+       - title: Thunisoft
+         id: "thunisoft"
+         link: http://www.thunisoft.com/
+         image: /images/members/jakarta-member_thunisoft.png
+         img_width: 90
+         type: "participant"
+  - name: guest
+    items:
+       - title: Apache
+         id: "apache"
+         link: https://www.apache.org/
+         image: /images/members/jakarta_member_apache.png
+         img_width: 75
+       - title: Apache
+         id: "apache"
+         link: https://www.jugistanbul.org/
+         image: /images/members/jakarta-member_istanbul-jug.png
+         img_width: 75

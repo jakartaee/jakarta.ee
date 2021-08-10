@@ -1,0 +1,17 @@
+{{#news}}
+<div class="eclipsefdn-news-list item block-summary-item">
+  <div class="row">
+    {{#image}}
+      <div class="col-sm-6">
+        <div class="eclipsefdn-news-list-img" style="background-image:url({{image}});"></div>
+      </div>
+    {{/image}}
+
+    <div class="col-sm-18 {{^image}}eclipsefdn-news-list-content{{/image}}">
+      <p class="eclipsefdn-news-list-date">{{ date }}</p>
+      <h4 class="eclipsefdn-news-list-heading"><a href="{{ link }}">{{ title }}</a></h4>
+      <p class="eclipsefdn-news-list-body">{{ body }}</p>
+    </div>
+  </div>
+</div>
+{{/news}} 
