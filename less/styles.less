@@ -13,14 +13,25 @@
 
 
 @import '~eclipsefdn-solstice-assets/less/quicksilver/jakarta/styles.less';
+
 @import '_variables.less';
+@import 'components/fonts.less';
+@import 'components/tabs.less';
+@import 'components/_commons.less';
+@import 'components/menu.less';
+@import 'components/jumbotron.less';
+@import 'components/home.less';
+
+@import 'transient.less';
 @import 'release-8.less';
 @import 'release-9.less';
 
 @import 'news.less';
 @import 'compatibility.less';
 @import 'featured_content.less';
-@import 'redesign.less';
+
+// Commenting this out but keeping it in case we need stuff in there
+//@import 'redesign.less';
 
 .jakarta-ee-hr {
   border-top: 5px solid @brand-primary;
@@ -36,7 +47,7 @@
 }
 
 .text-blue {
-  color: @brand-secondary;
+  color: @brand-primary;
 }
 
 .heading-underline {

@@ -67,7 +67,7 @@
   </div>
 
 {{ range $.Site.Data.compatible_products.sets }}
-  <div role="tabpanel" class="tab-pane tab-pane" id="tab-{{ replace .jakartaee_version "." "_" }}">
+  <div role="tabpanel" class="tab-pane tab-pane fade" id="tab-{{ replace .jakartaee_version "." "_" }}">
     {{ range .items }}
       {{ $title:=.title }}
       <div class="product-list">

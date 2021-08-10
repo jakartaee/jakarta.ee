@@ -1,0 +1,85 @@
+<!-- 
+  Copyright (c) 2018 Eclipse Foundation, Inc.
+
+  This program and the accompanying materials are made available under the
+  terms of the Eclipse Public License v. 2.0 which is available at
+  http://www.eclipse.org/legal/epl-2.0.
+
+  Contributors:
+    Christopher Guindon <chris.guindon@eclipse-foundation.org>
+
+  SPDX-License-Identifier: EPL-2.0
+-->
+{{ $currentNode := . }}
+{{ range .Site.Menus.main }}
+  {{ if .HasChildren }}
+    {{ $multicol := false }}
+    {{ range .Children }}
+      {{ if .HasChildren }}
+        {{ $multicol = true }}
+      {{ end }}
+    {{ end }}
+    <li class="dropdown{{ if $multicol }} eclipse-more{{ end }}">
+      <a href="#" data-toggle="dropdown" class="dropdown-toggle">
+        {{ .Pre }}
+        <!--<i class="icon_desktop"></i>-->
+        <span>{{ .Name }}</span>
+        <b class="caret"></b>
+      </a>
+      <ul class="dropdown-menu">
+        {{ if eq $multicol true }}
+        <li>
+          <!-- Content container to add padding -->
+          <div class="yamm-content">
+            <div class="row">
+              <div class="col-sm-12 padding-right-0">
+                <div class="dropdown-menu-left-panel match-height-item">
+                  <ul class="list-unstyled menu-tabs" role="tablist">
+                    {{ range $i, $e := .Children }}
+                      {{ if .HasChildren }}
+                        <li role="presentation" {{ if $i }}{{ else }}class="active"{{ end }}><i class="fa fa-caret-right" aria-hidden="true"></i> <a data-target="#{{ .Name | urlize }}" aria-controls="{{ .Name | urlize }}" role="tab" data-toggle="tab">{{ .Name }}</a></li>
+                      {{ else }}
+                        <li><a href="{{.URL}}">{{ .Name }}</a></li>
+                      {{ end }}
+                    {{ end }}
+                  </ul>
+                </div>
+              </div>
+              <div class="col-sm-12 padding-left-0">
+                <div class="dropdown-menu-right-panel match-height-item">
+                  <div class="tab-content">
+                    {{ range $i, $e := .Children }}
+                      {{ if .HasChildren }}
+                        <div role="tabpanel" class="tab-pane{{ if $i }} fade{{ else }} active{{ end }}" id="{{ .Name | urlize }}">
+                          <ul class="list-unstyled">
+                          {{ range .Children }}
+                            <li><a href="{{.URL}}"><strong>{{ .Name }}</strong></a></li>
+                          {{ end }}
+                        </ul>
+                        </div>
+                      {{ end }}
+                    {{ end }}
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </li>
+        {{ else }}
+          {{ range .Children }}
+          <li{{if $currentNode.IsMenuCurrent "main" . }} class="active"{{end}}><a href="{{.URL}}">{{ .Name }}</a> </li>
+          {{ end }}
+        {{ end }}
+      </ul>
+    </li>
+  {{else}}
+    <li>
+      <a class="" href="{{.URL}}">
+      {{ .Pre }}
+      {{ .Name }}
+      </a>
+    </li>
+  {{end}}
+{{ end }}
+{{ partial "nav_more.html" . }}

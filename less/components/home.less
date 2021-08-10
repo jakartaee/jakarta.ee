@@ -1,0 +1,209 @@
+.featured-section-cta {
+    background: @featured-section-cta-bg;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 80px 0 130px;
+    color:@white;
+    text-align:center;
+    p {
+        font-size:20px;
+    }
+}
+
+.featured-section-cta-item-container {
+    position:relative;
+    margin-top:-100px;
+}
+
+.featured-section-cta-item {
+    text-align:left;
+    background-color:@light-grey;
+    padding: 0px 30px 35px;
+    border-radius: 10px 10px 0 0;
+    box-shadow: @default-box-shadow;
+    h2, p {
+        text-transform: uppercase;
+        font-weight: 600;
+        font-family: @font-family-sans-serif;
+    }
+    h2 {
+        padding-top: 60px;
+        font-size: 18px;
+        color:@brand-primary;
+    }
+    .heading-underline {
+        margin: 30px 0 20px;
+        &:after {
+            margin: 20px 0 0;
+        }
+    }
+    p {
+        font-size: 16px;
+        a {
+            color:@brand-secondary;
+            &:hover {
+                color:darken(@brand-secondary, 15%);
+            }
+        }
+    }
+}
+
+.featured-section-cta-item-img {
+    background-color:darken(@brand-primary, 20%);
+    padding:12px 8px 4px;
+    width:60px;
+    height:60px;
+    float: right;
+    top: -8px;
+    position: relative;
+    right: 0px;
+    margin:0 auto;
+    display: flex;
+    justify-content: center;
+    &:after {
+        content:"";
+        position:absolute;
+        bottom:-10px;
+        left:0;
+        width: 0;
+        height: 0;
+        border-left: 30px solid transparent;
+        border-right: 30px solid transparent;
+        border-top: 10px solid darken(@brand-primary, 20%);
+    }
+    img {
+        width:45px;
+    }
+}
+
+.featured-section-members, 
+.featured-story, 
+.featured-section-videos, 
+.featured-section-testimonials,
+.featured-section-news {
+    margin-bottom:40px;
+    @media (min-width: @screen-xs-min) {
+        margin-bottom:60px;
+    }
+    h2 {
+        margin-bottom:20px;
+    }
+}
+
+.featured-story, .featured-section-videos,.featured-section-testimonials {
+    h2 {
+        @media (min-width: @screen-xs-min) {
+            margin-bottom:40px;
+        }
+    }
+}
+
+.featured-section-members {
+    text-align:center;
+    padding-top:60px;
+    .members-items {
+        li {
+            padding:0 20px;
+            font-size: 12px;
+            margin-bottom:20px;
+            img {
+                margin-bottom:10px;
+            }
+        }
+    }
+}
+
+.featured-story-block, .featured-ad{
+    padding-top:30px;
+    @media (min-width: @screen-sm-min) {
+      padding-top:0px;
+      min-height:inherit;
+    }
+  }
+
+.featured-story {
+    >.container {
+        > h2 {
+            text-align:center;
+        }
+    }
+    
+    .featured-story-block {
+        @media (min-width: @screen-sm-min) {
+            padding-bottom:0px;
+        }
+        h2 {
+            font-family: @font-family-sans-serif;
+            font-size: 24px;
+            margin-top: 0px; 
+            color:@brand-primary;
+            font-weight: 600;
+            margin-bottom:20px;
+            &:after {
+                border-bottom: @heading-underline-border;
+                content:"";
+                display:block;
+                width:100px;
+                margin: 15px auto 0;
+                @media (min-width: @screen-sm-min) {
+                    margin: 15px 0 0;
+                }
+            }
+        }
+        p {
+            font-size: 16px;
+        }
+    }
+    .featured-story-block-content {
+        margin-bottom:0;
+        a {
+            font-weight:600;
+        }
+    }
+}
+
+.featured-section-videos {
+    @media (max-width: @screen-xs-max) {
+        text-align:center;
+    }
+    h2 {
+        text-align:center;
+    }
+    h3 {
+        font-size: 24px;
+        font-weight: 600;
+        color:@brand-primary;
+        margin-bottom:20px;
+        margin-top:30px;
+        @media (max-width: @screen-xs-max) {
+            &:after {
+                margin:15px auto 0;
+            }
+        }
+        @media (min-width: @screen-xs-min) {
+            margin-top:0px;
+        }
+    }
+}
+
+.featured-section-testimonials {
+    h2 {
+        text-align:center;
+    }
+}
+
+.featured-section-testimonials-item {
+    background-color:@light-grey;
+    padding:20px;
+    border-radius: 10px;
+    box-shadow: @default-box-shadow;
+    margin-bottom:30px;
+}
+
+.featured-section-testimonials-item-picture {
+    border-radius:30px;
+    width:60px;
+    height:60px;
+    overflow: hidden;
+    margin-bottom:15px;
+}
