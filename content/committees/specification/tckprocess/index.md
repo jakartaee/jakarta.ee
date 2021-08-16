@@ -1,6 +1,6 @@
 ---
 title: "Jakarta EE TCK Process 1.1"
-date: "2021-07-7T00:00:00+00:00"
+date: "2021-08-7T00:00:00+00:00"
 aliases:
     - committees/specification/TCKProcess/
 ---
@@ -421,7 +421,11 @@ is not a mechanism to attempt to handle implementation specific issues.
 
 The only time tests may be added to a TCK are in a major or minor
 release. A service release which updates the exclude list MUST not have
-test additions or changes.
+test additions or updates (see exception below for signature tests).
+
+### How signature tests may be Updated to address newer Java SE versions.
+
+A service release may update Signature tests to work with newer Java SE versions.
 
 ## Process for releasing a point revision of a TCK
 
