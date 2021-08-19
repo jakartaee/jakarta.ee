@@ -79,6 +79,15 @@ sets:
         - version: 6.2021.1 Alpha 1
           compatibility: 'https://docs.payara.fish/community/docs/jakartaee-certification/6.2021.1.Alpha1/tck-results-full-6.2021.1.Alpha1.html'
           download_url: 'https://search.maven.org/remotecontent?filepath=fish/payara/distributions/payara/6.2021.1.Alpha1/payara-6.2021.1.Alpha1.zip'
+      - name: TongWeb Application Server
+        vendor: Beijing TongTech Co., Ltd.
+        image: '/images/compatible_products/tongweb_logo.svg'
+        image_width: 195
+        download: 'http://www.tongtech.com/Services/Services-104.html'
+        versions:
+        - version: 9
+          compatibility: 'http://www.tongtech.com/tw9.jakarta-full-platform-9.1.html'
+          download_url: 'http://www.tongtech.com/Services/Services-104.html'
   
     - title: Jakarta EE 9.1 Web Profile
       items:
