@@ -70,6 +70,50 @@ SPDX-License-Identifier: EPL-2.0
 * Example of [PR](https://github.com/jakartaee/jakarta.ee/pull/1097/files )
 
 
+### How to include a new entry in https://jakarta.ee/news/ section
+
+* Create a new folder under `jakarta.ee/content/news`, the folder name will become part of the final URL for the new entry.
+* Create a file name `_index.md`. This will be hold the main entry content for the URL defined in the previous step.
+* Add an image `banner.png` to be used as the main card for the new entry defined in the file from previous step.
+
+Final structure for a new entry should look like this:
+```
+├── content
+│   ├── news
+│   │   ├── new-entry-name
+│   │   │   ├── _index.md
+│   │   │   └── banner.png
+```
+
+`_index.md` has two man sections: `Header` and `Content`
+The `header` provide metadata need it for the new entry to be published in the list from https://jakarta.ee/news/
+
+```
+---
+title: "New entry title"
+date: "2021-06-30"
+publishDate: "2021-04-01"
+type: "announcement"
+news/tags:
+  - "Jakarta EE"
+  - "Release"
+authors: [{gh_handle: "shabnammayel", name: "Shabnam Mmayel"}, {gh_handle: "TanjaObradovic", name: "Tanja Obradovic"}]
+image: "./banner.png"
+summary: "Summary text to be presented in the news index page"
+---
+```
+
+**Important**
+
+-  `publishDate` is need it for the new entry to appear in the `https://jakarta.ee/news/` list if the `date` is set in the future.
+- For the correct list of `type` and `news/tags`, review previous entries before creating a new one.
+- `authors` section recive a list of Github Handles and names, this is used to populate images and authors names automatically in the entry.
+
+The rest of the `_index.md` needs general markdown format to populate the new entry content. 
+
+Eclipse Foundation Marketing Manager is responsible for approving the new entry (via pull request) for the `https://jakarta.ee/news/` section.
+
+
 ### How to add a reference in Jakarta EE Announcements section from one Jakarta EE Working Group post
 
 Let's say we created a new post on jakarta.ee/news/ with the title "Jakarta EE 9.1 Released" and the url of https://jakarta.ee/news/jakartaee-91-released/
@@ -84,6 +128,7 @@ Let's say we created a new post on jakarta.ee/news/ with the title "Jakarta EE 9
     - leave the body empty
     - check the "Jakarta EE" option under "Publishing Information"
     - click "Save"
+
 
 
 ## Related Projects
