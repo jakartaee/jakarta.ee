@@ -69,7 +69,6 @@ SPDX-License-Identifier: EPL-2.0
     ```
 * Example of [PR](https://github.com/jakartaee/jakarta.ee/pull/1097/files )
 
-
 ### How to include a new entry in https://jakarta.ee/news/ section
 
 * Create a new folder under `jakarta.ee/content/news`, the folder name will become part of the final URL for the new entry.
