@@ -9,7 +9,7 @@ The focus of this committee is on marketing, branding and community awareness an
 
 ### Committee Members
 
-* Kenji Kazumura - Fujitsu
+* Kenji Kazumura - Fujitsu, Yuichi Kusano - alternate
 * Dan Bandera - IBM, Neil Patterson (<strong>chair</strong>)- alternate
 * Ed Bratt - Oracle, Melissa Jacobus - alternate
 * Dominika Tasarz - Payara, Jadon Ortlepp - alternate
