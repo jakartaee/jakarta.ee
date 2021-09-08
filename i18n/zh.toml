@@ -200,7 +200,7 @@
   other = "订阅我们的简讯"
 
 [layouts-committees-list-landing-page-info]
-  other = "Jakarta EE 委员会是确保 Jakarta EE 各方面进展的治理机构。以下是基于 <a href=\"https:\/\/www.eclipse.org\/org\/workinggroups\/jakarta_ee_charter.php\">Jakarta EE 工作组章程​</a> 的治理机构:"
+  other = ""
 
 [coming-soon]
   other = "敬请期待"

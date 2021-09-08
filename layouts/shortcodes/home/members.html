@@ -18,11 +18,18 @@
 {{ end }}
 
 <div class="featured-section featured-section-members">
-    <h2 class="main-title">Members</h2>
-    <ul class="list-inline members-items">
-        {{ range $items }}
-            <li><a href="{{ .link }}"><img class="members-logo" width="{{ .img_width }}" alt="{{ .title }}" src="{{ .image }}"></a><br> {{ .type | title }} Member</li>
-        {{ end }}
-    </ul>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-18 col-sm-offset-3">
+        <h2 class="main-title">Members</h2>
+        <ul class="list-inline members-items owl-carousel owl-theme solstice-slider" data-slider-lg-count="6" data-slider-md-count="6" data-slider-sm-count="3">
+            {{ range $items }}
+                <li><a style="width:{{ .img_width }}px;" href="{{ .link }}"><img class="members-logo" alt="{{ .title }}" src="{{ .image }}"></a><br> {{ .type | title }} Member</li>
+            {{ end }}
+        </ul>
+      </div>
+    </div>
+    
+  </div>
 </div>
 
