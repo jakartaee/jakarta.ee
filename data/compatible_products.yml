@@ -326,7 +326,7 @@ sets:
           
       - name: FUJITSU Software Enterprise Application Platform
         vendor: Fujitsu Limited
-        image: '/images/compatible_products/fujitsu.svg'
+        image: '/images/compatible_products/fujitsu_eap.svg'
         image_width: 195
         download: 'https://www.fujitsu.com/jp/software/applatform/'
         versions:
@@ -334,6 +334,16 @@ sets:
           compatibility: 'https://www.fujitsu.com/jp/products/software/middleware/business-middleware/middleware/applatform/jakartaee-report/eap100-ee8full-tck-results/'
           download_url: 'https://www.fujitsu.com/jp/products/software/middleware/business-middleware/middleware/applatform/jakartaee-report/eap100-ee8full-tck-results/'
   
+      - name: FUJITSU Software Interstage Application Server
+        vendor: Fujitsu Limited
+        image: '/images/compatible_products/fujitsu_iaps.svg'
+        image_width: 195
+        download: 'https://www.fujitsu.com/jp/software/interstage/apserver'
+        versions:
+        - version: 13.0
+          compatibility: 'https://www.fujitsu.com/jp/products/software/middleware/business-middleware/interstage/products/apserver/jakartaee-report/aps1300-ee8full-tck-results/'
+          download_url: 'https://www.fujitsu.com/jp/products/software/middleware/business-middleware/interstage/products/apserver/jakartaee-report/aps1300-ee8full-tck-results/'
+
       - name: IBM WebSphere Liberty
         vendor: IBM Corporation
         image: '/images/compatible_products/websphereliberty.svg'
