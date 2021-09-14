@@ -25,6 +25,7 @@ hide_page_title: true
 * [2018 Developer Survey](/documents/insights/2018-jakarta-ee-developer-survey.pdf)
 * [2019 Developer Survey](https://outreach.jakartaee.org/jakarta-ee-2019-developer-survey)
 * [2020 Developer Survey](https://outreach.jakartaee.org/2020-developer-survey-report)
+* [2021 Jakarta EE Developer Survey](https://outreach.jakartaee.org/2021-developer-survey-report)
 
 <p class="small">Note: Access to the 2019 survey is being provided through an external vendor, HubSpot.</p>
 
