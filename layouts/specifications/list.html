@@ -44,7 +44,7 @@
       <div class="row">
         {{ range (.Page.Sections.ByParam "title").ByParam "weight" }}
         <div class="col-sm-8">
-          <a href="{{- with .Params.redirect_url | default .RelPermalink }} {{.}} {{- end }}" class="match-height-item media media-link margin-bottom-30">
+          <a href="{{- with .Params.redirect_url | default .RelPermalink }} {{.}} {{- end }}" class="match-height-item-by-row media media-link margin-bottom-30">
             <span class="flex-column" style="height: 100%;">
               <h2 class="media-heading vertical-align" data-mh="spec-title" >{{ .Title }}</h2>
               {{ if eq .Params.summary_sixty_char nil  }}

@@ -31,8 +31,8 @@ enableInlineShortcodes = true
   youtube_url="https://www.youtube.com/channel/UC4M7h5b6elu9VlzjLfzuXyg"
   twitter_url="https://twitter.com/JakartaEE"
   facebook_url="https://www.facebook.com/JakartaEE"
-  header_left_classes = "col-sm-6"
-  main_menu_wrapper_classes = "col-sm-18 margin-top-20"
+  header_left_classes = "col-sm-5"
+  main_menu_wrapper_classes = "col-sm-19 margin-top-20"
 #   hide_cfa_same_page = "true"
   featured_content_publish_target = "jakarta_ee"
   logo_width = "200"
@@ -73,7 +73,7 @@ enableInlineShortcodes = true
 
 [[menu.main]]
     name = "Specifications"
-    url = "#"
+    url = "/specifications/"
     weight = 2
 
 [[menu.main]]
@@ -105,7 +105,7 @@ enableInlineShortcodes = true
 
 [[menu.main]]
     name = "Jakarta EE Working Group"
-    url = "https://eclipse.org/org/workinggroups/jakarta_ee_charter.php"
+    url = "/"
     weight = 2
     parent = "About"
 
@@ -147,24 +147,49 @@ enableInlineShortcodes = true
 
 # Jakarta EE sub-menu
 [[menu.main]]
+    name = "Frequently Asked Questions"
+    url = "/about/faq/"
+    parent = "Jakarta EE"
+    weight = 1
+
+[[menu.main]]
+    name = "Release" 
+    url = "/release/"
+    parent = "Jakarta EE"
+    weight = 2
+
+# Jakarta EE Group sub-menu
+[[menu.main]]
+    name = "About Working Group"
+    url = "/about/"
+    weight = 1
+    parent = "Jakarta EE Working Group"
+
+[[menu.main]]
+    name = "Charter"
+    url = "https://eclipse.org/org/workinggroups/jakarta_ee_charter.php"
+    weight = 2
+    parent = "Jakarta EE Working Group"
+
+[[menu.main]]
+    name = "Trademark Guidelines"
+    url = "/legal/trademark_guidelines/"
+    weight = 3
+    parent = "Jakarta EE Working Group"
+
+[[menu.main]]
+    name = "Technical Direction"
+    url = "https://www.eclipse.org/ee4j/direction.php"
+    weight = 4
+    parent = "Jakarta EE Working Group"
+
+# Resource sub-menu
+[[menu.main]]
     name = "Youtube Channel"
     url = "https://www.youtube.com/channel/UC4M7h5b6elu9VlzjLfzuXyg"
     weight = 1
-    parent = "Jakarta EE"
+    parent = "Resources"
 
-[[menu.main]]
-    name = "Community Calendar"
-    url = "/resources#calendar"
-    weight = 4
-    parent = "Jakarta EE"
-
-[[menu.main]]
-    name = "Starter"
-    url = "https://start.jakarta.ee/"
-    parent = "Jakarta EE"
-    weight = 6
-
-# Resource sub-menu
 [[menu.main]]
     name = "Community Folder"
     url = "https://drive.google.com/drive/folders/11nvqdVqFlCxm5AfPh2NdnanTBrCPW8Xv"
@@ -213,6 +238,18 @@ enableInlineShortcodes = true
     parent = "Resources"
     weight = 8
 
+# Community sub-menu
+[[menu.main]]
+    name = "Community Calendar"
+    url = "https://calendar.google.com/calendar/embed?src=eclipse-foundation.org_3281qms6riu4kdf354jn5idon0%40group.calendar.google.com"
+    parent = "Community"
+    weight = 1
+
+[[menu.main]]
+    name = "Stay Connected"
+    url = "/connect/"
+    parent = "Community"
+    weight = 2
 
 [languages]
   [languages.en]

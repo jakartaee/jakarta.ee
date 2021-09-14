@@ -1,27 +1,15 @@
 <h3>{{ i18n "membership-testimonials-title" }}</h3>
 
+{{ $lang := .Page.Lang }}
+{{$langBase:=index .Site.Data $lang}}
 <div class="row testimonial-container">
-  {{ range .Site.Data.membership.testimonials}}
+  {{ range $langBase.testimonials.items }}
     <div class="col-sm-8 margin-bottom-20 testimonial-item" style="display:none;">
       <div style="background-color:#f1f3f7;" class="padding-20">
-      <p>"{{ .testimonial }}"</p>
-      <p class="text-right"><strong>– {{ .title }}</strong></p>
+      <p>"{{ .text }}"</p>
+      <p class="text-right"><strong>– {{ .name }}, {{ .company }}</strong></p>
       </div>
     </div>
   {{ end }}
 </div>
 <hr>
-
-<script type="text/javascript">
-  document.addEventListener("DOMContentLoaded", function(event) {
-    (function($, document) {
-      $(document).ready(function() {
-        $('.testimonial-container').html(
-          $(".testimonial-item").sort(function(){
-            return .5 - Math.random()
-          }).slice(0,3).slideDown("slow")
-        );
-      });
-    })(jQuery, document);
-  });
-</script>

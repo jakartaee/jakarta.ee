@@ -12,3 +12,15 @@
  */
 
 import 'eclipsefdn-solstice-assets'
+
+document.addEventListener("DOMContentLoaded", function(event) {
+    (function($, document) {
+      $(document).ready(function() {
+        $('.testimonial-container').html(
+          $(".testimonial-item").sort(function(){
+            return .5 - Math.random()
+          }).slice(0,3).slideDown("slow")
+        );
+      });
+    })(jQuery, document);
+});
