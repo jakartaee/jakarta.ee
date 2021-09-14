@@ -24,7 +24,7 @@ hide_page_title: true
 * [2018 开发者调研](/documents/insights/2018-jakarta-ee-developer-survey.pdf)
 * [2019 开发者调研](https://outreach.jakartaee.org/jakarta-ee-2019-developer-survey)
 * [2020 开发者调研](https://outreach.jakartaee.org/2020-developer-survey-report)
-* [2021 Jakarta EE 开发者调研](https://outreach.jakartaee.org/2021-developer-survey-report)
+* [2021 Jakarta EE 开发者调研](https://outreach.jakartaee.org/2021-developer-survey-report?utm_campaign=2021%20Jakarta%20EE%20Developer%20Survey&utm_source=resources%20page)
 
 <p class="small">注: 2019年由外部供应商 HubSpot 提供.</p>
 
