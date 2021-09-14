@@ -9,6 +9,10 @@
 
 .btn-call-for-action {
     margin-top:2px;
+    color:@brand-secondary;
+    &:hover {
+        color:@brand-secondary;
+    }
 }
 
 main h2.main-title {
@@ -198,3 +202,23 @@ footer#solstice-footer {
     flex-direction: column;
     height: 115px;
 } 
+
+#main-sidebar {
+    margin-top: 20px;
+}
+
+#main-sidebar .ul-left-nav {
+    padding: 20px 30px;
+}
+
+#main-sidebar .ul-left-nav > li.separator {
+    border-bottom: @main-sidebar-list-border;
+}
+
+#main-sidebar:after {
+    display:none;
+}
+
+#main-sidebar li:last-child {
+    margin-bottom:0;
+}
