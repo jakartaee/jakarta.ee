@@ -6,7 +6,7 @@ news/tags:
   - "Jakarta EE"
   - "Release"
   - "Developer Survey"
-summary: "This year’s results show interest in open source enterprise Java continues to grow among enterprise developers"
+summary: "This year’s results show interest in open source enterprise Java continues to grow among enterprise developers."
 ---
 
 _This year’s results show interest in open source enterprise Java continues to grow among enterprise developers_
