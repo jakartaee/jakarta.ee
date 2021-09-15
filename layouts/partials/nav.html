@@ -33,8 +33,8 @@
           <div class="yamm-content">
             <div class="row">
               <div class="col-sm-12 padding-right-0">
-                <div class="dropdown-menu-left-panel match-height-item">
-                  <ul class="list-unstyled menu-tabs" role="tablist">
+                <div class="dropdown-menu-left-panel">
+                  <ul class="list-unstyled menu-tabs match-height-item" role="tablist">
                     {{ range $i, $e := .Children }}
                       {{ if .HasChildren }}
                         <li role="presentation" {{ if $i }}{{ else }}class="active"{{ end }}><i class="fa fa-caret-right" aria-hidden="true"></i> <a data-target="#{{ .Name | urlize }}" aria-controls="{{ .Name | urlize }}" role="tab" data-toggle="tab">{{ .Name }}</a></li>
@@ -46,11 +46,11 @@
                 </div>
               </div>
               <div class="col-sm-12 padding-left-0">
-                <div class="dropdown-menu-right-panel match-height-item">
+                <div class="dropdown-menu-right-panel">
                   <div class="tab-content">
                     {{ range $i, $e := .Children }}
                       {{ if .HasChildren }}
-                        <div role="tabpanel" class="tab-pane{{ if $i }} fade{{ else }} active{{ end }}" id="{{ .Name | urlize }}">
+                        <div role="tabpanel" class="match-height-item tab-pane{{ if $i }} fade{{ else }} active{{ end }}" id="{{ .Name | urlize }}">
                           <ul class="list-unstyled">
                           {{ range .Children }}
                             <li><a href="{{.URL}}"><strong>{{ .Name }}</strong></a></li>

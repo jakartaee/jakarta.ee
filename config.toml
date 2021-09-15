@@ -158,6 +158,12 @@ enableInlineShortcodes = true
     parent = "Jakarta EE"
     weight = 2
 
+[[menu.main]]
+    name = "Starter"
+    url = "https://start.jakarta.ee/"
+    parent = "Jakarta EE"
+    weight = 3
+
 # Jakarta EE Group sub-menu
 [[menu.main]]
     name = "About Working Group"
@@ -237,6 +243,24 @@ enableInlineShortcodes = true
     url = "/resources#surveys"
     parent = "Resources"
     weight = 8
+
+[[menu.main]]
+    name = "News"
+    url = "/news/"
+    parent = "Resources"
+    weight = 9
+
+[[menu.main]]
+    name = "JESP guide"
+    url = "/committees/specification/guide/"
+    parent = "Resources"
+    weight = 10
+
+[[menu.main]]
+    name = "Community Folder"
+    url = "https://drive.google.com/drive/folders/11nvqdVqFlCxm5AfPh2NdnanTBrCPW8Xv"
+    parent = "Resources"
+    weight = 11
 
 # Community sub-menu
 [[menu.main]]
