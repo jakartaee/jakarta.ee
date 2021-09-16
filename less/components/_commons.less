@@ -141,6 +141,13 @@ main {
 }
 
 .footer-section-socials {
+    @media (max-width: @screen-xs-max) {
+        img {
+            width: 200px;
+            margin: 0 auto;
+        }
+    }
+    
     .social-icon {
         color:@white;
         margin: 0px 4px 0;
@@ -221,4 +228,19 @@ footer#solstice-footer {
 
 #main-sidebar li:last-child {
     margin-bottom:0;
+}
+
+.vertical-align-container {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
 }

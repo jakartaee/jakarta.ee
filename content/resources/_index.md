@@ -31,6 +31,10 @@ hide_page_title: true
 
 ---
 
+## eBooks{#ebooks}
+
+* [Charting a Course for Cloud Native Java](https://outreach.jakartaee.org/cloud-native-java-ebook)
+
 ## Infographics{#infographics}
 
 * [2018 Jakarta EE survey infographic](https://jakarta.ee/documents/insights/2018-jakarta-ee-survey-infographic.pdf)
