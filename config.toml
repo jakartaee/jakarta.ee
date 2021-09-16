@@ -121,6 +121,12 @@ enableInlineShortcodes = true
     parent = "About"
     weight = 5
 
+[[menu.main]]
+    name = "News"
+    url = "/news/"
+    parent = "About"
+    weight = 6
+
 # Jakarta EE sub-menu
 [[menu.main]]
     name = "Frequently Asked Questions"
@@ -225,12 +231,6 @@ enableInlineShortcodes = true
     url = "https://start.jakarta.ee/"
     parent = "Resources"
     weight = 9
-
-[[menu.main]]
-    name = "News"
-    url = "/news/"
-    parent = "Resources"
-    weight = 10
 
 # specifications
 [[menu.main]]
