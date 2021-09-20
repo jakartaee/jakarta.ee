@@ -151,10 +151,10 @@ releases:
     #   description: XML Schema for the JavaServer Pages deployment descriptor
     #   status: Final
 
-    # - schema: application_9.xsd
-    #   namespace: jakartaee
-    #   description: XML Schema for the Application deployment descriptor
-    #   status: Final
+    - schema: application_10.xsd
+      namespace: jakartaee
+      description: XML Schema for the Application deployment descriptor
+      status: Draft
 
     # - schema: application-client_9.xsd
     #   namespace: jakartaee
