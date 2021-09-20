@@ -114,9 +114,9 @@ releases:
 - name: Jakarta EE 10
   version: 10
   dependencies:
-    # - location: https://jakarta.ee/xml/ns/jaxb#3
-    # - location: https://jakarta.ee/xml/ns/jaxws#3
-    # - location: https://jakarta.ee/xml/ns/persistence#3
+    - location: https://jakarta.ee/xml/ns/jaxb#4
+    - location: https://jakarta.ee/xml/ns/jaxws#4
+    - location: https://jakarta.ee/xml/ns/persistence#3
     - location: https://jakarta.ee/xml/ns/validation
 
   schemas: 
