@@ -12,7 +12,7 @@
 -->
 
 {{ if isset .Page.Params "headline" }}
-<div class="jumbotron featured-jumbotron margin-bottom-0">
+<div class="jumbotron featured-jumbotron featured-jumbotron-default margin-bottom-0">
   <div class="container">
     <div class="row">
       <div class="{{- .Params.jumbotron_class | default .Site.Params.jumbotron_class | default "col-md-20 col-md-offset-2 col-sm-18 col-sm-offset-3"}}">
