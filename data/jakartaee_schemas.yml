@@ -181,10 +181,10 @@ releases:
     #   description: XML Schema for the Web Services Client deployment descriptor
     #   status: Final
 
-    # - schema: permissions_9.xsd
-    #   namespace: jakartaee
-    #   description: XML Schema for the application or module declared permissions
-    #   status: Final
+    - schema: permissions_10.xsd
+      namespace: jakartaee
+      description: XML Schema for the application or module declared permissions
+      status: Draft
 
     # - schema: web-app_5_0.xsd
     #   namespace: jakartaee
