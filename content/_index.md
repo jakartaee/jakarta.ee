@@ -14,6 +14,8 @@ container: "container-fluid"
 
 {{< home/call-to-actions >}}
 
+{{< home/featured-story >}}
+
 {{< home/members >}}
 
 {{< home/whats-new >}}
@@ -62,9 +64,6 @@ container: "container-fluid"
     {{</ grid/div >}}
   
 {{</ grid/section-container >}}
-
-
-{{< home/featured-story >}}
 
 {{< home/videos >}}
 
