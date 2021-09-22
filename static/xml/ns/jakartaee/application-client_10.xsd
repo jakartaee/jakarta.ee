@@ -29,7 +29,7 @@
   <xsd:annotation>
     <xsd:documentation>
       <![CDATA[
-      This is the XML Schema for the application client 9
+      This is the XML Schema for the application client 10
       deployment descriptor.  The deployment descriptor must
       be named "META-INF/application-client.xml" in the
       application client's jar file.  All application client
@@ -53,7 +53,7 @@
       the schema using the xsi:schemaLocation attribute for Jakarta EE
       namespace with the following location:
       
-      https://jakarta.ee/xml/ns/jakartaee/application-client_9.xsd
+      https://jakarta.ee/xml/ns/jakartaee/application-client_10.xsd
       
       ]]>
     </xsd:documentation>
@@ -269,7 +269,7 @@
       <xsd:annotation>
         <xsd:documentation>
 
-          The required value for the version is 9.
+          The required value for the version is 10.
           
         </xsd:documentation>
       </xsd:annotation>
