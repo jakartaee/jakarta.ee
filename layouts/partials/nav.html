@@ -34,10 +34,28 @@
             <div class="row">
               <div class="col-sm-12 padding-right-0">
                 <div class="dropdown-menu-left-panel">
-                  <ul class="list-unstyled menu-tabs match-height-item" role="tablist">
+                  <ul class="list-unstyled menu-tabs match-height-dropdown-menu-item" role="tablist">
                     {{ range $i, $e := .Children }}
                       {{ if .HasChildren }}
-                        <li role="presentation" {{ if $i }}{{ else }}class="active"{{ end }}><i class="fa fa-caret-right" aria-hidden="true"></i> <a data-target="#{{ .Name | urlize }}" aria-controls="{{ .Name | urlize }}" role="tab" data-toggle="tab">{{ .Name }}</a></li>
+                        <li role="presentation" {{ if $i }}{{ else }}class="active"{{ end }}>
+                          <i class="hidden-xs fa fa-caret-right" aria-hidden="true"></i> 
+                          <a class="hidden-xs" data-target="#{{ .Name | urlize }}-tab" aria-controls="{{ .Name | urlize }}-tab" role="tab" data-toggle="tab">
+                            {{ .Name }}
+                          </a>
+
+                          <a class="visible-xs" role="button" data-toggle="collapse" href="#{{ .Name | urlize }}-collapse" aria-expanded="false" aria-controls="{{ .Name | urlize }}-collapse">
+                            {{.Name}}
+                            <b class="caret"></b>
+                          </a>
+                          <div class="dropdown-collapse collapse" id="{{ .Name | urlize }}-collapse">
+                            <ul class="list-unstyled">
+                              {{ range .Children }}
+                                <li><a href="{{.URL}}">{{ .Name }}</a></li>
+                              {{ end }}
+                            </ul>
+                          </div>
+
+                        </li>
                       {{ else }}
                         <li><a href="{{.URL}}">{{ .Name }}</a></li>
                       {{ end }}
@@ -45,12 +63,12 @@
                   </ul>
                 </div>
               </div>
-              <div class="col-sm-12 padding-left-0">
+              <div class="col-sm-12 padding-left-0 hidden-xs">
                 <div class="dropdown-menu-right-panel">
                   <div class="tab-content">
                     {{ range $i, $e := .Children }}
                       {{ if .HasChildren }}
-                        <div role="tabpanel" class="match-height-item tab-pane{{ if $i }} fade{{ else }} active{{ end }}" id="{{ .Name | urlize }}">
+                        <div role="tabpanel" class="match-height-dropdown-menu-item tab-pane{{ if $i }} fade{{ else }} active{{ end }}" id="{{ .Name | urlize }}-tab">
                           <ul class="list-unstyled">
                           {{ range .Children }}
                             <li><a href="{{.URL}}"><strong>{{ .Name }}</strong></a></li>
