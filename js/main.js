@@ -15,6 +15,25 @@ import 'eclipsefdn-solstice-assets'
 
 document.addEventListener("DOMContentLoaded", function(event) {
     (function($, document) {
+
+      const matchHeightDropdownMenuItems = () => {
+        $('.match-height-dropdown-menu-item').matchHeight({
+          byRow: false
+        });
+      }
+    
+      $(window).on("load", function() {
+        if ($(window).width() > 768) {
+          matchHeightDropdownMenuItems();
+        }
+      });
+
+      $(window).on('resize', function () {
+        if ($(window).width() > 768) {
+          matchHeightDropdownMenuItems();
+        }
+      });
+
       $(document).ready(function() {
         $('.testimonial-container').html(
           $(".testimonial-item").sort(function(){
