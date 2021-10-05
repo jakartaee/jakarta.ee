@@ -21,6 +21,12 @@ document.addEventListener("DOMContentLoaded", function(event) {
           byRow: false
         });
       }
+
+      const removeMatchHeightDropdownMenuItems = () => {
+        $('.match-height-dropdown-menu-item').matchHeight({
+          remove: true
+        });
+      }
     
       $(window).on("load", function() {
         if ($(window).width() > 768) {
@@ -31,6 +37,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
       $(window).on('resize', function () {
         if ($(window).width() > 768) {
           matchHeightDropdownMenuItems();
+        }
+        else {
+          removeMatchHeightDropdownMenuItems();
         }
       });
 
