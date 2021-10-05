@@ -62,47 +62,44 @@
 }
 
 @media (max-width: @screen-xs-max) {
-    #main-menu {
-        .dropdown-menu {
-            .dropdown-menu-left-panel {
-                background-color: darken(@white, 10%);
-                a{
-                    color: @text-color;
-                    &:hover{
-                        text-decoration: none;
-                    }
-                }
-            }
-            .dropdown-menu-right-panel {
-                .tab-content {
-                    padding: 0;
-                    background: transparent;
-                }
-                a {
-                    color: @white;
-                }
-            }
-            .dropdown-menu-left-panel, .dropdown-menu-right-panel {
-                > ul > li {
-                    padding: 18px 15px;
-                    padding-bottom: 18px;
-                    border-bottom: 1px solid darken(@white, 15%);
-                    .dropdown-collapse li {
-                        padding: 15px 0px 15px 15px;
-                        &:first-child {
-                            padding-top: 30px;
-                        }
-                    }
-                }
-            }
-            > li {
-                border-bottom: 1px solid darken(@white, 15%); 
-                &:first-child {
-                    border-top: 1px solid darken(@white, 15%);
+    #main-menu .dropdown-menu {
+        .dropdown-menu-left-panel {
+            background-color: darken(@white, 10%);
+            a{
+                color: @text-color;
+                &:hover{
+                    text-decoration: none;
                 }
             }
         }
-
+        .dropdown-menu-right-panel {
+            .tab-content {
+                padding: 0;
+                background: transparent;
+            }
+            a {
+                color: @white;
+            }
+        }
+        .dropdown-menu-left-panel, .dropdown-menu-right-panel {
+            > ul > li {
+                padding: 18px 15px;
+                padding-bottom: 18px;
+                border-bottom: 1px solid darken(@white, 15%);
+                .dropdown-collapse li {
+                    padding: 15px 0px 15px 15px;
+                    &:first-child {
+                        padding-top: 30px;
+                    }
+                }
+            }
+        }
+        > li {
+            border-bottom: 1px solid darken(@white, 15%); 
+            &:first-child {
+                border-top: 1px solid darken(@white, 15%);
+            }
+        }
     }
     .yamm .yamm-content {
         padding: 0;
