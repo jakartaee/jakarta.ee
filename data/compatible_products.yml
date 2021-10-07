@@ -55,6 +55,9 @@ sets:
         image_width: 100
         download: 'https://wildfly.org/downloads'
         versions:
+        - version: Preview 25.0.0.Final, Java SE 17
+          compatibility: 'https://github.com/wildfly/certifications/blob/EE9.1/WildFly_25.0.0.Final/jakarta-full-platform-jdk17.adoc'
+          download_url: 'https://github.com/wildfly/wildfly/releases/download/25.0.0.Final/wildfly-25.0.0.Final.zip'
         - version: Preview 23.0.2.Final, Java 11
           compatibility: 'https://github.com/wildfly/certifications/blob/EE9.1/WildFly_23.0.2.Final/jakarta-full-platform.adoc'
           download_url: 'https://download.jboss.org/wildfly/23.0.2.Final/wildfly-preview-23.0.2.Final.zip'
@@ -121,6 +124,9 @@ sets:
         image_width: 100
         download: 'https://wildfly.org/downloads'
         versions:
+        - version: Preview 25.0.0.Final, Java SE 17
+          compatibility: 'https://github.com/wildfly/certifications/blob/EE9.1/WildFly_25.0.0.Final/jakarta-web-profile-jdk17.adoc'
+          download_url: 'https://github.com/wildfly/wildfly/releases/download/25.0.0.Final/wildfly-25.0.0.Final.zip'
         - version: Preview 23.0.2.Final, Java 11
           compatibility: 'https://github.com/wildfly/certifications/blob/EE9.1/WildFly_23.0.2.Final/jakarta-web-profile.adoc'
           download_url: 'https://download.jboss.org/wildfly/23.0.2.Final/wildfly-preview-23.0.2.Final.zip'
