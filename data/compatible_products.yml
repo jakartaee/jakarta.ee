@@ -79,6 +79,15 @@ sets:
         - version: 6.2021.1 Alpha 1
           compatibility: 'https://docs.payara.fish/community/docs/jakartaee-certification/6.2021.1.Alpha1/tck-results-full-6.2021.1.Alpha1.html'
           download_url: 'https://search.maven.org/remotecontent?filepath=fish/payara/distributions/payara/6.2021.1.Alpha1/payara-6.2021.1.Alpha1.zip'
+      - name: Thunisoft Application Server
+        vendor: Beijing Thunisoft Information Technology Co.,Ltd
+        image: '/images/compatible_products/tas-logo.png'
+        image_width: 200
+        download: 'http://tas.thunisoft.com/download'
+        versions:
+        - version: 3.0
+          compatibility: 'https://www.thunisoft.com/tastckresults91/index.jhtml'
+          download_url: 'http://tas.thunisoft.com/download'
       - name: TongWeb Application Server
         vendor: Beijing TongTech Co., Ltd.
         image: '/images/compatible_products/tongweb_logo.svg'
