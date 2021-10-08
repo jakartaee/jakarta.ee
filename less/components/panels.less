@@ -1,0 +1,55 @@
+.panel-default {
+    border-right: none;
+    border-left: none;
+    > .panel-heading {
+        border-right: none;
+        border-left: none;
+        color: @brand-primary;
+        position: relative;
+        h4 {
+            font-weight: 600;
+            position: relative;
+        }
+        .fa {
+            right: 10px;
+            position: absolute;
+            top: 3px;
+            font-size: 14px;
+            color: #b5b5b5;
+        }
+        .fa-chevron-down {
+            display: none;
+            color: @brand-primary;
+        }
+        a {
+            width: 90%;
+            display: block;
+        }
+        a[aria-expanded="true"] {
+            .fa-chevron-down {
+                display: block;
+            }
+            .fa-chevron-right {
+                display: none;
+            }
+        }
+        a[aria-expanded="false"] {
+            .fa-chevron-right {
+                display: block;
+            }
+        }
+    }
+}
+
+.panel {
+    box-shadow: none;
+    border-bottom: none;
+}
+
+.panel-group .panel + .panel {
+    margin-top: 0;
+}
+
+.panel-body {
+    padding: 20px 0;
+}
