@@ -1,6 +1,9 @@
 ---
-title: '"Adopt a Spec" Program for JUGs'
+title: "Adopt a Spec"
 date: 2020-02-01T16:09:45-04:00
+headline: "Adopt a Spec"
+hide_page_title: true
+hide_sidebar: true
 ---
 
 This program is intended to encourage JUG leaders and members to get involved by adopting a Jakarta EE Specification. The objective is to increase developer level participation in the evolution of the Jakarta EE Specification.
