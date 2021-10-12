@@ -15,10 +15,15 @@
     }
 }
 
-main h2.main-title {
+main h2 {
     font-family: @font-family-heading;
-    text-transform: uppercase;
-    color:@brand-secondary;
+    font-weight: 700;
+    color:@brand-primary;
+    &.main-title {
+        color:@brand-secondary;
+        font-style: italic;
+        text-transform: uppercase;
+    }
 }
 
 .block-summary-item {
@@ -187,6 +192,7 @@ footer#solstice-footer {
 #featured-footer {
     border-bottom:none;
     color:@white;
+    margin-top: 30px;
     .btn {
         background-color:transparent;
         color:@white;
@@ -243,4 +249,8 @@ footer#solstice-footer {
     -webkit-justify-content: center;
     -ms-flex-pack: center;
     justify-content: center;
+}
+
+.default-breadcrumbs {
+    margin-bottom: 60px;
 }
