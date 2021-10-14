@@ -9,11 +9,11 @@ items:
      logo: /images/members/jakarta-member_fujitsu.svg
      text: Through the years, Fujitsu Limited has been not only a user of the Java language, but has also been actively involved in the development of Java, and as a Charter Member of the Java Community Process Executive Committee, it has helped create the development process for the Java language. As the future of Java EE development moves to Eclipse and becomes an Open Source Developed Specification, Fujitsu has joined Eclipse as a Strategic Member in order to continue its participation in the evolution of Java EE as Jakarta EE, providing it in the cloud-native world.
      picture: /images/silhouette.jpg
-   - company: IBM Distinguished Engineer and WebSphere Chief Architect
+   - company: Distinguished Engineer, CTO IBM App Platform
      name: Ian Robinson
      logo: /images/members/jakarta-member_ibm.png
      picture: /images/testimonials/ian-robinson.jpg
-     text: IBM helped create Java EE and guide it through it its teenage years and I’m delighted to have helped it now move to its new home at the Eclipse Foundation and new future as Jakarta EE. I look forward to Jakarta EE quickly adopting cloud native technologies from EE-centric communities like Eclipse MicroProfile and becoming the fast-moving platform we all need for Java in the cloud.
+     text: IBM helped create Java EE and guide it through its teenage years and I’m delighted to see the progress made under Jakarta EE. I look forward to Jakarta EE and MicroProfile becoming the open standard for cloud-native innovation and the technology we need for Java in the cloud.
    - company: CEO and co-founder of Webtide LLC
      name: Jesse McConnell
      logo: /images/members/jakarta-member_webtide.svg
@@ -34,8 +34,8 @@ items:
      logo: /images/members/jakarta-member_payara.svg
      picture: /images/testimonials/stephen-millidge.jpg
      text: The Payara Team is dedicated to the growth and success of Jakarta EE. Our customer support contracts help fund our ongoing development efforts and we continue to lend our expertise and resources to the development of Jakarta EE. We’re committed to helping shape the future of open source cloud-native Java.
-   - company: VP of Oracle Software Development
+   - company: VP of Engineering, Oracle Enterprise Cloud Native Java
      name: Tom Snyder
      logo: /images/members/jakarta-member_oracle.svg
      picture: /images/silhouette.jpg
-     text: Oracle remains committed to the success of Jakarta EE. We are continuing to contribute Oracle Java EE 8 technologies to the Eclipse Foundation, and are pleased by the strong community and vendor support. We look forward to active participation in the Working Group to help Jakarta EE drive the future of cloud-native Java.
+     text: Oracle remains committed to the success of Jakarta EE and is pleased with its progress and community support. We are contributing to the projects and the committees and are leveraging the technologies in Oracle Enterprise Cloud Native Java products.
