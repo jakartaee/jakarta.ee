@@ -1,11 +1,22 @@
 {{ define "main" }}
   <p>{{ i18n "layouts-committees-list-landing-page-info" | safeHTML}}</p>
+
+  <h2 class="heading-bold italic orange uppercase margin-bottom-30">Jakarta EE Committees</h2>
   {{ with .Pages }}
-    <ul>
+    <div class="row">
       {{ range .ByTitle }}
-        <li><a href="{{.Permalink}}">{{.Title}} </a> <br>{{.Summary}}</li>
+        <div class="col-sm-8">
+          <div class="bordered-box">
+            <h3><a href="{{.Permalink}}">{{.Title}}</a></h3>
+            <div class="match-height-item-by-row margin-bottom-20">
+              <p>{{.Summary}}</p>
+            </div>
+            <p><a class="bordered-box-link" href="{{.Permalink}}">View {{.Title}}</a></p>
+          </div>
+          
+        </div>
       {{ end }}
-    </ul>
+    </div>
   {{ end }}
   {{ .Content }} 
 {{ end }}
