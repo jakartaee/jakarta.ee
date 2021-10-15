@@ -20,7 +20,7 @@ sets:
         vendor: Kingdee Apusic Cloud Computing Co., Ltd.
         image: '/images/compatible_products/aas.jpg'
         image_width: 195
-        download: 'http://www.apusic.com/info_safety/server'
+        download: 'https://www.apusic.com/list-117.html'
         versions:
         - version: 10-EE9
           compatibility: 'http://www.apusic.com/aas_v10_ee9-1_full'
@@ -206,7 +206,7 @@ sets:
         vendor: Kingdee Apusic Cloud Computing Co., Ltd.
         image: '/images/compatible_products/aas.jpg'
         image_width: 195
-        download: 'http://www.apusic.com/info_safety/server'
+        download: 'https://www.apusic.com/list-117.html'
         versions:
         - version: 10-EE9
           compatibility: 'http://www.apusic.com/aas_v10_ee9_full'
@@ -218,7 +218,7 @@ sets:
         vendor: Kingdee Apusic Cloud Computing Co., Ltd.
         image: '/images/compatible_products/aas.jpg'
         image_width: 195
-        download: ''
+        download: 'https://www.apusic.com/list-117.html'
         versions:
         - version: 10-EE9
           compatibility: 'http://www.apusic.com/aas_v10_ee9_webtck'
@@ -342,11 +342,14 @@ sets:
         vendor: Kingdee Apusic cloud computing Co., Ltd.
         image: '/images/compatible_products/aas.jpg'
         image_width: 195
-        download: 'http://www.apusic.com/wp-content/uploads/AAS-V10.zip'
+        download: 'https://www.apusic.com/list-117.html'
         versions: 
         - version: 10
-          compatibility: 'http://www.apusic.com/info_safety/server/aas_v10_tck'
-          download_url: 'http://www.apusic.com/info_safety/server/aas_v10_tck'
+          compatibility: 'https://www.apusic.com/about/aas_v10_ee8.html'
+          download_url: 'https://www.apusic.com/list-117.html'
+        - version: 9
+          compatibility: 'https://www.apusic.com/about/aas_v9_ee8.html'
+          download_url: 'https://www.apusic.com/list-117.html'
           
       - name: FUJITSU Software Enterprise Application Platform
         vendor: Fujitsu Limited
