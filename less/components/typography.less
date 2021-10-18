@@ -5,9 +5,15 @@
 
 .text-secondary {
     color: @brand-secondary;
+    a {
+        color: @brand-secondary;
+        &:hover {
+            color: darken(@brand-secondary, 15%);
+        }
+    }
 }
 
-main h2, main h3, .text-bold {
+.big-text, .big-text-secondary {
     font-family: @font-family-heading;
     font-weight: 700;
     color: @brand-primary;
@@ -23,16 +29,17 @@ main h2, main h3, .text-bold {
     &.uppercase {
         text-transform: uppercase;
     }
-    &.main-title {
+}
+
+.big-text-secondary {
+    font-style: italic;
+    text-transform: uppercase;
+    color: @brand-secondary;
+    a {
         color: @brand-secondary;
-        a {
-            color: @brand-secondary;
-            &:hover {
-                color: darken(@brand-secondary, 15%);
-            }
+        &:hover {
+            color: darken(@brand-secondary, 15%);
         }
-        font-style: italic;
-        text-transform: uppercase;
     }
 }
 
@@ -41,6 +48,6 @@ main h3 {
     margin-top: 0;
 }
 
-p.text-bold {
+p.big-text {
     font-size: 12px;
 }
