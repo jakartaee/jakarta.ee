@@ -10,4 +10,4 @@ hide_sidebar: true
 ---
   
 
-{{< faq >}}
+{{< pages/faq >}}

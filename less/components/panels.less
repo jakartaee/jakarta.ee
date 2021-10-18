@@ -1,6 +1,8 @@
 .panel-bordered {
     border-right: none;
     border-left: none;
+    box-shadow: none;
+    border-bottom: none;
     > .panel-heading {
         border-right: none;
         border-left: none;
@@ -41,12 +43,7 @@
     }
 }
 
-.panel {
-    box-shadow: none;
-    border-bottom: none;
-}
-
-.panel-group .panel + .panel {
+.panel-group .panel-bordered + .panel-bordered {
     margin-top: 0;
 }
 
