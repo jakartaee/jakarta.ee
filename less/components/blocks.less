@@ -16,10 +16,13 @@
     }
 }
 
-.bordered-box-link {
+.bordered-box-link a {
     color: @bordered-box-link-color;
     font-family: @bordered-box-link-font-family;
     text-transform: @bordered-box-link-text-transform; 
     font-weight: @bordered-box-link-font-weight;
     font-size: @bordered-box-link-font-size;
+    &:hover {
+        color: darken(@bordered-box-link-color, 15%);
+    }
 }
