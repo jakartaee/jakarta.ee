@@ -23,8 +23,8 @@ sets:
         download: 'https://www.apusic.com/list-117.html'
         versions:
         - version: 10-EE9
-          compatibility: 'http://www.apusic.com/aas_v10_ee9-1_full'
-          download_url: 'https://download.eclipse.org/ee4j/jakartaee-tck/jakartaee9/promoted/jakartaeetck-9.1.0.zip'
+          compatibility: 'https://www.apusic.com/about/aas_v10_ee9-1_full.html'
+          download_url: 'https://www.apusic.com/list-117.html'
       - name: Eclipse GlassFish
         vendor: Eclipse Foundation
         image: '/images/compatible_products/glassfish_logo.svg'
@@ -209,8 +209,8 @@ sets:
         download: 'https://www.apusic.com/list-117.html'
         versions:
         - version: 10-EE9
-          compatibility: 'http://www.apusic.com/aas_v10_ee9_full'
-          download_url: 'http://www.apusic.com/info_safety/server'
+          compatibility: 'https://www.apusic.com/about/aas_v10_ee9_full.html'
+          download_url: 'https://www.apusic.com/list-117.html'
 
     - title: Jakarta EE 9 Web Profile
       items:
@@ -221,8 +221,8 @@ sets:
         download: 'https://www.apusic.com/list-117.html'
         versions:
         - version: 10-EE9
-          compatibility: 'http://www.apusic.com/aas_v10_ee9_webtck'
-          download_url: ''
+          compatibility: 'https://www.apusic.com/about/aas_v10_ee9_webtck.html'
+          download_url: 'https://www.apusic.com/list-117.html'
       - name: Eclipse GlassFish
         vendor: Eclipse Foundation
         image: '/images/compatible_products/glassfish_logo.svg'
