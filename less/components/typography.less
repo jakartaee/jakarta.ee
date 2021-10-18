@@ -1,15 +1,15 @@
 .btn {
     padding: 8px 20px;
-    font-weight:600;
+    font-weight: 600;
 }
 
 .text-secondary {
-    color:@brand-secondary;
+    color: @brand-secondary;
 }
 
-.heading-bold {
+main h2, main h3, .text-bold {
     font-family: @font-family-heading;
-    font-weight: 600;
+    font-weight: 700;
     color: @brand-primary;
     a {
         color: @brand-primary;
@@ -20,7 +20,10 @@
     &.italic {
         font-style: italic;
     }
-    &.orange {
+    &.uppercase {
+        text-transform: uppercase;
+    }
+    &.main-title {
         color: @brand-secondary;
         a {
             color: @brand-secondary;
@@ -28,25 +31,16 @@
                 color: darken(@brand-secondary, 15%);
             }
         }
-        
-    }
-    &.uppercase {
-        text-transform: uppercase;
-    }
-}
-
-h3.heading-bold {
-    font-size:22px;
-    margin-top: 0;
-}
-
-main h2 {
-    font-family: @font-family-heading;
-    font-weight: 700;
-    color:@brand-primary;
-    &.main-title {
-        color:@brand-secondary;
         font-style: italic;
         text-transform: uppercase;
     }
+}
+
+main h3 {
+    font-size: 22px;
+    margin-top: 0;
+}
+
+p.text-bold {
+    font-size: 12px;
 }
