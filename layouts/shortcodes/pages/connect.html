@@ -1,149 +1,182 @@
-<h2 class="text-center heading-line"><span>Mailing Lists</span></h2>
-
 <div class="row">
   <div class="col-sm-12">
-
-    <div class="bordered-box">
+    <div class="bordered-box match-height-item-by-row">
       <div class="row">
         <div class="col-sm-6">
-          
+          <img src="/images/icons/envelope-blue.svg">
         </div>
         <div class="col-sm-18">
-
+          <h3 class="text-secondary">{{ i18n "connect-mailing-list-community-title" }}</h3>
+          <p>{{ i18n "connect-mailing-list-community-body" }}</p>
+          <p>
+            <a class="btn btn-primary btn-lg" href="{{ i18n "connect-mailing-list-community-link" }}">{{ i18n "connect-mailing-lists-subscribe" }}</a>
+          </p>
         </div>
       </div>
     </div>
-
   </div>
 
-</div>
-
-
-
-
-<div class="row text-center">
   <div class="col-sm-12">
-    <h3>{{ i18n "connect-mailing-list-community-title" }}</h3>
-    <p>{{ i18n "connect-mailing-list-community-body" }}</p>
-    <p>
-      <a class="btn btn-primary btn-lg" href="{{ i18n "connect-mailing-list-community-link" }}">{{ i18n "connect-mailing-lists-subscribe" }}</a>
-    </p>
+    <div class="bordered-box match-height-item-by-row">
+      <div class="row">
+        <div class="col-sm-6">
+          <img src="/images/icons/envelope-blue.svg">
+        </div>
+        <div class="col-sm-18">
+          <h3 class="text-secondary">{{ i18n "connect-mailing-list-working-group-title" }}</h3>
+          <p>{{ i18n "connect-mailing-list-working-group-body" }}</p>
+          <p><a class="btn btn-primary btn-lg" href="{{ i18n "connect-mailing-list-working-group-link" }}">{{ i18n "connect-mailing-lists-subscribe" }}</a>
+          </p>
+        </div>
+      </div>
+    </div>
   </div>
+</div>
+
+<div class="row">
   <div class="col-sm-12">
-    <h3>{{ i18n "connect-mailing-list-working-group-title" }}</h3>
-    <p>{{ i18n "connect-mailing-list-working-group-body" }}</p>
-    <p><a class="btn btn-primary btn-lg" href="{{ i18n "connect-mailing-list-working-group-link" }}">{{ i18n "connect-mailing-lists-subscribe" }}</a>
-    </p>
-  </div>
-</div>
-<div class="row text-center margin-top-30">
-  <div class="col-md-18 col-md-offset-3">
-    <h2 class="text-center heading-line">
-      <span>{{ i18n "connect-mailing-list-projects-title" }}</span>
-    </h2>
-    <p>{{ i18n "connect-mailing-list-projects-body" }}</p>
-    <p><a class="btn btn-primary btn-lg" href="mailing-lists/">{{ i18n "connect-mailing-list-projects-link-text" }}</a></p>
-  </div>
-</div>
-<div class="row text-center margin-top-30">
-  <div class="col-md-18 col-md-offset-3">
-    <h2 class="text-center heading-line">
-      <span>{{ i18n "connect-slack-title" }}</span>
-    </h2>     
-    <h3>{{ i18n "connect-slack-subtitle" }}</h3>
-    <form action="{{ i18n "connect-slack-link" }}" method="get" target="_blank">
-      <div class="form-group col-md-12 col-md-offset-6 text-center">
-       <input type="hidden" name="u" value="eaf9e1f06f194eadc66788a85">
-       <input type="hidden" name="id" value="98ae69e304">
+    <div class="bordered-box match-height-item-by-row">
+      <div class="row">
+        <div class="col-sm-6">
+          <img src="/images/icons/envelope-users-blue.svg">
+        </div>
+        <div class="col-sm-18">
+          <h3 class="text-secondary">{{ i18n "connect-mailing-list-projects-title" }}</h3>
+          <p>{{ i18n "connect-mailing-list-projects-body" }}</p>
+          <p><a class="btn btn-primary btn-lg" href="mailing-lists/">{{ i18n "connect-mailing-list-projects-link-text" }}</a></p>
+        </div>
       </div>
-      <div class="col-md-24">
-        <input type="submit" value="Join" name="join" class="button btn btn-primary btn-lg">
-      </div>
-    </form>
-  </div>
-</div>
-<div class="row text-center margin-top-30">
-  <div class="col-md-18 col-md-offset-3">
-    <h2 class="text-center heading-line">
-      <span>{{ i18n "connect-newsletter-title" }}</span>
-    </h2>     
-    <h3>{{ i18n "connect-newsletter-subtitle" }}</h3>
-    <form action="{{ i18n "connect-newsletter-link" }}" method="post" target="_blank">
-      <div class="form-group col-md-12 col-md-offset-6 text-center">
-       <input type="hidden" name="u" value="eaf9e1f06f194eadc66788a85">
-       <input type="hidden" name="id" value="98ae69e304">
-      </div>
-      <div class="col-md-24">
-        <input type="submit" value="Subscribe" name="subscribe" class="button btn btn-primary btn-lg">
-      </div>
-    </form>
-  </div>
-</div>
-<div class="row text-center margin-top-50 margin-bottom-30">
-  <div class="col-md-18 col-md-offset-3">
-    <h2 class="text-center heading-line">
-      <span>{{ i18n "connect-updates-title" }}</span>
-    </h2>
-    <p>{{ i18n "connect-updates-body" }}</p>
-    <p><a class="btn btn-primary btn-lg" href="{{ i18n "connect-updates-edit-link" }}">{{ i18n "connect-updates-edit-text" }}</a></p>
-    <p>{{ i18n "connect-updates-link-divider-text" }}</p>
-    <p> <a class="" href="{{ i18n "connect-updates-create-link" }}">{{ i18n "connect-updates-create-text" }}</a></p>
-  </div>
-</div>
-<div class="row text-center margin-top-50 margin-bottom-30">
-  <h3 class="text-center heading-line"><span>{{ i18n "connect-jakarta-calendars-heading"}}</span></h3>
-  <div class="col-md-12">
-    <h3 class="text-center">{{ i18n "connect-community-calendar-title" }}</h2>
-    <p data-mh="calendar-text-containers">{{ i18n "connect-community-calendar-body" }}</p>
-    <p><a class="btn btn-primary btn-lg" href="{{ i18n "connect-community-calendar-link" }}">{{ i18n "connect-mailing-lists-subscribe" }}</a></p>
+    </div>
   </div>
 
-  <div class="col-md-12">
-    <h3 class="text-center">{{ i18n "connect-spec-calendar-title" }}</h3>
-    <p data-mh="calendar-text-containers">{{ i18n "connect-spec-calendar-body" }}</p>
-    <p><a class="btn btn-primary btn-lg" href="{{ i18n "connect-spec-calendar-link" }}">{{ i18n "connect-mailing-lists-subscribe" }}</a></p>
+  <div class="col-sm-12">
+    <div class="bordered-box match-height-item-by-row">
+      <div class="row">
+        <div class="col-sm-6">
+          <img src="/images/icons/slack-blue.svg">
+        </div>
+        <div class="col-sm-18">
+          <h3 class="text-secondary">{{ i18n "connect-slack-title" }}</h3>     
+          <p>{{ i18n "connect-slack-subtitle" }}</p>
+          <form action="{{ i18n "connect-slack-link" }}" method="get" target="_blank">
+            <input type="hidden" name="u" value="eaf9e1f06f194eadc66788a85">
+            <input type="hidden" name="id" value="98ae69e304">
+            <input type="submit" value="Join" name="join" class="button btn btn-primary btn-lg">
+          </form>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 
-<div class="row text-center margin-bottom-30">
-  <div class="col-md-18 col-md-offset-3">
-    <h2 class="text-center heading-line">
-      <span>{{ i18n "connect-blogs-title" }}</span>
-    </h2>
-    <p>{{ i18n "connect-blogs-body" }}</p>
-    <p><a class="btn btn-primary btn-lg" href="{{ i18n "connect-blogs-link" }}">{{ i18n "connect-blogs-link-text" }}</a></p>
+<div class="row">
+  <div class="col-sm-12">
+    <div class="bordered-box match-height-item-by-row">
+      <div class="row">
+        <div class="col-sm-6">
+          <img src="/images/icons/updates-blue.svg">
+        </div>
+        <div class="col-sm-18">
+          <h3 class="text-secondary">{{ i18n "connect-updates-title" }}</h3>
+          <p>{{ i18n "connect-updates-body" }}</p>
+          <ul class="list-inline">
+            <li><a class="btn btn-primary btn-lg" href="{{ i18n "connect-updates-edit-link" }}">{{ i18n "connect-updates-edit-text" }}</a></li>
+            <li>{{ i18n "connect-updates-link-divider-text" }}</li>
+            <li><a class="" href="{{ i18n "connect-updates-create-link" }}">{{ i18n "connect-updates-create-text" }}</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-sm-12">
+    <div class="bordered-box match-height-item-by-row">
+      <div class="row">
+        <div class="col-sm-6">
+          <img src="/images/icons/envelope-blue.svg">
+        </div>
+        <div class="col-sm-18">
+          <h3 class="text-secondary">{{ i18n "connect-newsletter-title" }}</h3>     
+          <p>{{ i18n "connect-newsletter-subtitle" }}</p>
+          <form action="{{ i18n "connect-newsletter-link" }}" method="post" target="_blank">
+            <div class="form-group col-md-12 col-md-offset-6 text-center">
+             <input type="hidden" name="u" value="eaf9e1f06f194eadc66788a85">
+             <input type="hidden" name="id" value="98ae69e304">
+            </div>
+            <div class="col-md-24">
+              <input type="submit" value="Subscribe" name="subscribe" class="button btn btn-primary btn-lg">
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 
-<div class="row text-center margin-bottom-30">
-  <div class="col-md-18 col-md-offset-3">
-    <h2 class="text-center heading-line"><span>{{ i18n "connect-social-title" }}</span></h2>
-    <p>{{ i18n "connect-social-body" }}</p>
-    <ul class="list-inline big">
-      <li>
-        <a class="social-media-link fa-stack fa-lg" href="https://twitter.com/JakartaEE">
-          <i class="fa fa-circle-thin fa-stack-2x"></i>
-          <i class="fa fa-twitter fa-stack-1x"></i>
-        </a>
-      </li>
-      <li>
-        <a class="social-media-link fa-stack fa-lg" href="https://www.facebook.com/JakartaEE">
-          <i class="fa fa-circle-thin fa-stack-2x"></i>
-          <i class="fa fa-facebook fa-stack-1x"></i>
-        </a>
-      </li>
-      <li>
-        <a class="social-media-link fa-stack fa-lg" href="https://www.youtube.com/channel/UC4M7h5b6elu9VlzjLfzuXyg">
-          <i class="fa fa-circle-thin fa-stack-2x"></i>
-          <i class="fa fa-youtube fa-stack-1x"></i>
-        </a>
-      </li>
-      <li>
-        <a class="social-media-link fa-stack fa-lg" href="https://www.linkedin.com/groups/13597511/">
-        <i class="fa fa-circle-thin fa-stack-2x"></i>
-        <i class="fa fa-linkedin fa-stack-1x"></i>
-        </a>
-      </li>
-    </ul>
+<div class="row">
+  <div class="col-sm-12">
+    <div class="bordered-box match-height-item-by-row">
+      <div class="row">
+        <div class="col-sm-6">
+          <img src="/images/icons/calendar-blue.svg">
+        </div>
+        <div class="col-sm-18">
+          <h3 class="text-secondary">{{ i18n "connect-community-calendar-title" }}</h2>
+          <p data-mh="calendar-text-containers">{{ i18n "connect-community-calendar-body" }}</p>
+          <p><a class="btn btn-primary btn-lg" href="{{ i18n "connect-community-calendar-link" }}">{{ i18n "connect-mailing-lists-subscribe" }}</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-sm-12">
+    <div class="bordered-box match-height-item-by-row">
+      <div class="row">
+        <div class="col-sm-6">
+          <img src="/images/icons/document-blue.svg">
+        </div>
+        <div class="col-sm-18">
+          <h3 class="text-secondary">{{ i18n "connect-community-folder-title" }}</h3>
+          <p data-mh="calendar-text-containers">{{ i18n "connect-community-folder-body" }}</p>
+          <p><a class="btn btn-primary btn-lg" href="{{ i18n "connect-community-folder-link" }}">{{ i18n "connect-community-folder-link-text" }}</a></p>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
+
+<div class="row">
+  <div class="col-sm-12">
+    <div class="bordered-box match-height-item-by-row">
+      <div class="row">
+        <div class="col-sm-6">
+          <img src="/images/icons/bubbles-blue.svg">
+        </div>
+        <div class="col-sm-18">
+          <h3 class="text-secondary">{{ i18n "connect-tech-talk-title" }}</h3>
+          <p>{{ i18n "connect-tech-talk-body" }}</p>
+          <ul class="list-inline">
+            <li><a class="btn btn-primary btn-lg" href="{{ i18n "connect-tech-talk-link-1" }}">{{ i18n "connect-tech-talk-link-1-text" }}</a></li>
+            <li><a class="btn btn-primary btn-sm" href="{{ i18n "connect-tech-talk-link-2" }}">{{ i18n "connect-tech-talk-link-2-text" }}</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-sm-12">
+    <div class="bordered-box match-height-item-by-row">
+      <div class="row">
+        <div class="col-sm-6">
+          <img src="/images/icons/users-blue.svg">
+        </div>
+        <div class="col-sm-18">
+          <h3 class="text-secondary">Friends of Jakarta EE</h3>
+          <p data-mh="calendar-text-containers">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+          <p><a class="btn btn-primary btn-lg" href="#">Minutes</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

@@ -94,23 +94,49 @@
 [connect-community-calendar-link]
   other = "https://calendar.google.com/calendar/embed?src=eclipse-foundation.org_3281qms6riu4kdf354jn5idon0%40group.calendar.google.com&ctz=America%2FToronto"
 
-[connect-blogs-title]
-  other = "Jakarta 博客"
+[connect-community-folder-title]
+  other = "Community Folder"
 
-[connect-blogs-body]
-  other = "访问 Jakartablogs.ee 阅读来自全球社区的文章，内容包括Jakarta EE 新闻、技术、最佳实践和兼容产品"
+[connect-community-folder-body]
+  other = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
 
-[connect-blogs-link]
-  other = "https://jakartablogs.ee"
+[connect-community-folder-link]
+  other = "#"
 
-[connect-blogs-link-text]
-  other = "查看"
+[connect-community-folder-link-text]
+  other = "View"
 
-[connect-social-title]
-  other = "社交账号"
 
-[connect-social-body]
-  other = "关注我们的社交账号，了解 Jakarta EE 的最新消息"
+[connect-tech-talk-title]
+  other = "Tech Talks Meet-Ups"
+
+[connect-tech-talk-body]
+  other = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+
+[connect-tech-talk-link-1]
+  other = "#"
+
+[connect-tech-talk-link-1-text]
+  other = "Tech Talks"
+
+[connect-tech-talk-link-2]
+  other = "#"
+
+[connect-tech-talk-link-2-text]
+  other = "Sign Up to Host"
+
+
+[connect-friends-title]
+  other = "Friends of Jakarta EE"
+
+[connect-friends-body]
+  other = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+
+[connect-friends-link]
+  other = "#"
+
+[connect-friends-link-text]
+  other = "Minutes"
   
 [members-strategic-members-title]
   other = "战略会员"
