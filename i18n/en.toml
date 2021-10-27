@@ -50,7 +50,7 @@
   other = "Slack"
 
 [connect-slack-subtitle]
-  other = "Join our Slack Workspace"
+  other = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
 
 [connect-slack-link]
   other = "https://join.slack.com/t/eclipsefoundationhq/shared_invite/zt-crh7mheq-3on2tophEuvQTUGidEAWlg"
@@ -59,7 +59,7 @@
   other = "Newsletter"
 
 [connect-newsletter-subtitle]
-  other = "Sign up to our Newsletter"
+  other = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
 
 [connect-newsletter-link]
   other = "https://eclipsecon.us6.list-manage.com/subscribe/post"
@@ -94,38 +94,52 @@
 [connect-community-calendar-link]
   other = "https://calendar.google.com/calendar/embed?src=eclipse-foundation.org_3281qms6riu4kdf354jn5idon0%40group.calendar.google.com&ctz=America%2FToronto"
 
-[connect-blogs-title]
-  other = "Jakarta Blogs"
 
-[connect-blogs-body]
-  other = "Visit Jakartablogs.ee to stay updated with posts from our global community on Jakarta EE news, technologies, best practices, and compatible products."
+[connect-community-folder-title]
+  other = "Community Folder"
 
-[connect-blogs-link]
-  other = "https://jakartablogs.ee"
+[connect-community-folder-body]
+  other = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
 
-[connect-blogs-link-text]
+[connect-community-folder-link]
+  other = "#"
+
+[connect-community-folder-link-text]
   other = "View"
 
-[connect-jakarta-calendars-heading]
-  other = "Jakarta EE Calendars"
 
-[connect-spec-calendar-title]
-  other = "Jakarta EE Specifications Calendar"
+[connect-tech-talk-title]
+  other = "Tech Talks Meet-Ups"
 
-[connect-spec-calendar-body]
-  other = "Public calendar for all Jakarta EE specification projects"
+[connect-tech-talk-body]
+  other = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
 
-[connect-spec-calendar-link]
-  other = "https://calendar.google.com/calendar/embed?src=eclipse-foundation.org_e9ki8t2gc75sh07qdh95c8ofvc%40group.calendar.google.com&ctz=America%2FToronto"
+[connect-tech-talk-link-1]
+  other = "#"
 
-[connect-spec-calendar-link-text]
-  other = "View"
+[connect-tech-talk-link-1-text]
+  other = "Tech Talks"
 
-[connect-social-title]
-  other = "Get Social"
+[connect-tech-talk-link-2]
+  other = "#"
 
-[connect-social-body]
-  other = "Stay up-to-date with all things Jakarta EE by following us on social media!"
+[connect-tech-talk-link-2-text]
+  other = "Sign Up to Host"
+
+
+[connect-friends-title]
+  other = "Friends of Jakarta EE"
+
+[connect-friends-body]
+  other = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+
+[connect-friends-link]
+  other = "#"
+
+[connect-friends-link-text]
+  other = "Minutes"
+
+
 
 [members-strategic-members-title]
   other = "Strategic Members"
