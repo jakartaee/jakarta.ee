@@ -16,7 +16,7 @@ The focus of this committee is on marketing, branding and community awareness an
 * John Clingan - Red Hat
 * Jonathan Gallimore - Tomitribe, Cesar Hernandez - alternate
 * Eric (QingYu) Meng - Primeton - Elected Enterprise Representative
-* Zhao Xin Cvicse - Shandong Cvicse Middleware - Enterprise Member
+* Zhao Xin - Shandong Cvicse Middleware Co. - Elected Enterprise Representative
 * Otavio Santana - Elected Committer Member Representative
 * Tetiana Fydorenchyk - Elected Participant Member Representative
 
