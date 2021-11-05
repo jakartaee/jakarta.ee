@@ -6,9 +6,9 @@ hide_sidebar: true
 headline: "Jakarta&nbsp;EE"
 links: [[href: "/compatibility/", text: "Download Compatible Products"], [href: "/specifications/", text: "Specifications"]]
 hide_page_title: true
-header_wrapper_class: "header-release-8"
+header_wrapper_class: "header-release-9"
 container: "container-fluid"
-type: "release/8"
+type: "release/9.1"
 ---
 
-{{< pages/release/8 >}}
+{{< pages/release/9_1 >}}
