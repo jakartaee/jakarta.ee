@@ -18,7 +18,7 @@ items:
      name: Jesse McConnell
      logo: /images/members/jakarta-member_webtide.svg
      picture: /images/testimonials/jesse-mcconnell.jpg
-     text: The Jakarta EE project represents a noble goal of free and open-source development on a body of Java specifications that are fundamentally core to the Java experience. The Eclipse Jetty project and its developers at Webtide have contributed to many of these specifications since their inception and are pleased to continue doing so as a part of Jakarta EE.
+     text: Jakarta EE's specifications are fundamental to the core Java experience. Webtide LLC, through its developers of Eclipse Jetty, has contributed to many specifications since their inception and is pleased to continue doing so as a part of Jakarta EE.
    - company: VP of Red Hat Software Engineering
      name: Mark Little
      logo: /images/members/jakarta-member_redhat.svg
