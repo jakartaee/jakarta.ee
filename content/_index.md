@@ -1,7 +1,7 @@
 ---
 title: "Home"
 seo_title: "Jakarta® EE | Cloud Native Enterprise Java | Java EE | The Eclipse Foundation"
-headline: "<img class='jumbotron-title' src='/images/jakarta/jakarta-ee-text.svg' alt='Jakarta EE'><br>BUILDING AN OPEN SOURCE ECOSYSTEM FOR CLOUD NATIVE JAVA"
+headline: "<img class='jumbotron-title' src='/images/jakarta/jakarta-ee-text.svg' alt='Jakarta EE'><br>BUILDING AN OPEN SOURCE ECOSYSTEM FOR CLOUD NATIVE ENTERPRISE JAVA"
 description: "Jakarta Enterprise Edition (EE) is the open source future of cloud native enterprise Java. Protect your investments in Java EE and modernize your enterprise applications."
 date: 2018-04-05T15:50:25-04:00
 hide_page_title: true
