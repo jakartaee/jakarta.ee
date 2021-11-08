@@ -6,3 +6,5 @@ description: "浏览和了解我们的工作以及Jakarta EE未来的走向"
 hide_page_title: "true"
 layout: "single"
 ---
+
+{{< pages/about-working-group >}}
