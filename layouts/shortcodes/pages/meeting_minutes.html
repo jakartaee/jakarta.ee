@@ -28,7 +28,7 @@
 
 
 {{ $.Scratch.Set "types_counter" 0}}
-<div class="tab-content">
+<div class="tab-content row">
   
   {{ range $index_type, $meeting_minute_types := .Site.Data.meeting_minutes.items}}
     {{ $types_counter := $.Scratch.Get "types_counter" }}
@@ -38,14 +38,19 @@
       <div role="tabpanel" class="tab-pane" id="{{$index_type}}">
     {{ end }}
       {{ range $index, $year := $.Site.Data.meeting_minutes.years }}
-      <div class="bordered-box margin-bottom-60">
-      <h2 class="h4 flag-box">{{ $year }}</h2>
-      <ul class="tri-col">
-      {{ range $index, $el := (where $meeting_minute_types "year" $year) }}
-        <li><a href="{{absURL (printf "/meeting_minutes/%s" $el.url) }}">{{$el.title}}</a></li>
-      {{ end }}
-      </ul>
+      <div class="card-container col-sm-24">
+        <div class="glyph-highlight left-align"><div class="glyph-container text">{{ $year }}</div><div class="glyph-bottom"></div></div>
+        <div class="card-panel bordered panel panel-default with-glyph">
+          <div class="panel-body">
+            <ul class="tri-col">
+              {{ range $index, $el := (where $meeting_minute_types "year" $year) }}
+                <li><a href="{{absURL (printf "/meeting_minutes/%s" $el.url) }}">{{$el.title}}</a></li>
+              {{ end }}
+              </ul>
+          </div>
+        </div>
       </div>
+      
     {{ end }}
     </div>
     {{ $.Scratch.Add "types_counter" 1}}
