@@ -5,3 +5,5 @@ http://start.jakarta.ee/* https://eclipse-ee4j.github.io/starter/:splat 200!
 # default release page
 /release /release/9.1 302!
 
+# redirect meeting minutes old location to new location
+/meeting_minutes/marketing_committee/* /meeting_minutes/marketing_committee/:splat 200!
