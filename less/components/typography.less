@@ -41,10 +41,13 @@
 
 .text-secondary {
     color: @brand-secondary;
+    &:hover {
+        color: @brand-secondary;
+    }
     a {
         color: @brand-secondary;
         &:hover {
-            color: darken(@brand-secondary, 15%);
+            color: @brand-secondary;
         }
     }
 }
