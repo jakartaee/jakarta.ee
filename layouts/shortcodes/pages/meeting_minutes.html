@@ -44,7 +44,7 @@
           <div class="panel-body">
             <ul class="tri-col">
               {{ range $index, $el := (where $meeting_minute_types "year" $year) }}
-                <li><a href="{{absURL (printf "/meeting_minutes/%s" $el.url) }}">{{$el.title}}</a></li>
+                <li><a href="{{absURL (printf "/about/meeting_minutes/%s" $el.url) }}">{{$el.title}}</a></li>
               {{ end }}
               </ul>
           </div>
