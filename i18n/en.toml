@@ -131,7 +131,7 @@
   other = "Jakarta EE Specifications Calendar"
 
 [connect-specification-calendar-body]
-  other = "Jakarta EE Specifications Calendar lists meetings dedicated to different Jakarta EE Specifications. Subscribe to the Jakarta EE Specifications Calendar to learn more about Specification-related plans"
+  other = "Jakarta EE Specifications Calendar lists meetings dedicated to different Jakarta EE Specifications. Subscribe to the Jakarta EE Specifications Calendar to learn more about Specification-related plans."
 
 [connect-specification-calendar-link]
   other = "https://calendar.google.com/calendar/embed?src=eclipse-foundation.org_e9ki8t2gc75sh07qdh95c8ofvc%40group.calendar.google.com&ctz=America%2FToronto"
