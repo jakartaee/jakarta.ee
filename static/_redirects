@@ -13,4 +13,4 @@ http://start.jakarta.ee/* https://eclipse-ee4j.github.io/starter/:splat 200!
 /newsletter /community/newsletter
 
 # redirect about working group page
-/about /about/working-group
+/about /about/working-group 302!
