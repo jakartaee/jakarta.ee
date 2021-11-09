@@ -3,16 +3,6 @@
     font-weight: 600;
 }
 
-.text-secondary {
-    color: @brand-secondary;
-    a {
-        color: @brand-secondary;
-        &:hover {
-            color: darken(@brand-secondary, 15%);
-        }
-    }
-}
-
 .big-text, .big-text-secondary {
     font-family: @font-family-heading;
     font-weight: 700;
@@ -34,6 +24,16 @@
 .big-text-secondary {
     font-style: italic;
     text-transform: uppercase;
+    color: @brand-secondary;
+    a {
+        color: @brand-secondary;
+        &:hover {
+            color: darken(@brand-secondary, 15%);
+        }
+    }
+}
+
+.text-secondary {
     color: @brand-secondary;
     a {
         color: @brand-secondary;
