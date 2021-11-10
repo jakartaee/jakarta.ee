@@ -295,6 +295,12 @@ enableInlineShortcodes = true
     parent = "Community"
     weight = 4
 
+[[menu.main]]
+    name = "Videos"
+    url = "/community/videos"
+    parent = "Community"
+    weight = 5
+
 [languages]
   [languages.en]
 	languageName = "English"
