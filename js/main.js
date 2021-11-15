@@ -43,6 +43,16 @@ document.addEventListener("DOMContentLoaded", function(event) {
         }
       });
 
+      var owl = $('.solstice-slider');
+      owl.owlCarousel({
+          items:1,
+          autoplay:true,
+          autoplayTimeout:6000,
+          autoplayHoverPause:true,
+          autoplaySpeed: 2000,
+          loop:true,
+      });
+
       $(document).ready(function() {
         $('.testimonial-container').html(
           $(".testimonial-item").sort(function(){
