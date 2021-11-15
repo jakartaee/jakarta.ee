@@ -9,5 +9,5 @@ hide_sidebar: true
 layout: "single"
 ---
 
-{{< pages/about-working-group >}}
+{{< pages/about/working-group >}}
 
