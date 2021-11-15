@@ -3,17 +3,16 @@
 
   <h2 class="big-text-secondary margin-bottom-30">Jakarta EE Committees</h2>
   {{ with .Pages }}
-    <div class="row">
+    <div class="row card-container">
       {{ range .ByTitle }}
         <div class="col-sm-8 card-container">
-          <div class="card-panel bordered panel panel-default ">
+          <div class="card-panel bordered panel panel-default">
             <h3 class="word-break big-text"><a href="{{.Permalink}}">{{.Title}}</a></h3>
             <div class="match-height-item-by-row margin-bottom-20">
               <p>{{.Summary}}</p>
             </div>
-            <p class="bordered-box-link big-text text-secondary uppercase"><a href="{{.Permalink}}">View {{.Title}}</a></p>
+            <p class="bordered-box-link big-text uppercase text-secondary"><a href="{{.Permalink}}">View {{.Title}}</a></p>
           </div>
-          
         </div>
       {{ end }}
     </div>

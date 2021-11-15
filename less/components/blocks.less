@@ -64,3 +64,18 @@
 .card-container .glyph-highlight .glyph-bottom.brand-primary {
     border-top-color: @brand-primary;
 }
+
+.top-border-secondary {
+    position: relative;
+    padding-top: 10px;
+    &:before {
+        display: block;
+        content: "";
+        border-top: 3px solid @brand-secondary;
+        width: 70%;
+        position: absolute;
+        top: 0;
+        left: 0px;
+        margin-bottom: 20px;
+    }
+}
