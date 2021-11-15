@@ -10,7 +10,7 @@ http://start.jakarta.ee/* https://eclipse-ee4j.github.io/starter/:splat 200!
 /meeting_minutes/marketing_committee/* /about/meeting_minutes/marketing_committee/:splat 200!
 
 # redirect newsletter from old to new location
-/newsletter /community/newsletter
+/newsletter /community/newsletter 301!
 
 # redirect about working group page
-/about /about/working-group 302!
+/about /about/working-group 301!
