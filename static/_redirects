@@ -14,3 +14,6 @@ http://start.jakarta.ee/* https://eclipse-ee4j.github.io/starter/:splat 200!
 
 # redirect about working group page
 /about /about/working-group 301!
+
+# redirect get listed page
+/compatibility/get_listed/ /compatibility/get-listed/ 301!
