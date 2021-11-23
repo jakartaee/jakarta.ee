@@ -266,7 +266,7 @@ enableInlineShortcodes = true
 
 [[menu.main]]
     name = "Get Listed"
-    url = "/compatibility/get_listed/"
+    url = "/compatibility/get-listed/"
     parent = "Compatible Products"
     weight = 2
 
