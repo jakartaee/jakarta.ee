@@ -278,6 +278,13 @@ enableInlineShortcodes = true
 
 # Community sub-menu
 [[menu.main]]
+    name = "Community"
+    url = "/community/"
+    parent = "Community"
+    weight = 1
+    identifier = "community"
+
+[[menu.main]]
     name = "Stay Connected"
     url = "/connect/"
     parent = "Community"
