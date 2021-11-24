@@ -5,6 +5,8 @@
   {{ partial "sidebars/specifications" . }}
 {{ else if eq .Section "news/tags" }}
   {{ partial "sidebars/news" . }}
+{{ else if eq .Section "community" }}
+  {{ partial "sidebars/community" . }}
 {{ else }}
   {{ partial "sidebars/default" . }}
 {{ end }}

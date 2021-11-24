@@ -1,0 +1,42 @@
+
+<aside id="events-sidebar">
+  <div id="main-sidebar" class="sidebar-block">
+    <ul id="leftnav" class="ul-left-nav fa-ul hidden-print">
+        <li class="separator">
+            <a href="/community">Community</a>
+        </li>
+        <li>
+            <a href="/connect/" target="_self">Connect</a>
+        </li>
+        <li>
+            <a href="/news/" target="_self">News</a>
+        </li>
+        <li>
+            <a href="/community/events/" target="_self">Events</a>
+        </li>
+        <li>
+            <a href="/blog/" target="_self">Blog</a>
+        </li>
+        <li>
+            <a href="/community/newsletter/" target="_self">Newsletter</a>
+        </li>
+    </ul>
+  </div>
+  {{ if eq .Title "Events" }}
+  <div class="sidebar-block row">
+    <div class="card-container">
+      <div class="card-panel panel panel-default with-glyph">
+        <div class="panel-heading" aria-hidden="true">
+          <img class="img-responsive" src="/images/community/events/event-hosting.png" alt="">
+        </div>
+        <div class="panel-body">
+          <h3 class="big-text margin-top-30">Interested in Hosting an Event?</h3>
+            <p><a class="big-text text-secondary uppercase" href="https://newsroom.eclipse.org/node/add/events">Learn more</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  {{ end }}
+</aside>
+  
