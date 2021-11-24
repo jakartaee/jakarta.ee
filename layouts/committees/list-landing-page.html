@@ -5,13 +5,13 @@
   {{ with .Pages }}
     <div class="row">
       {{ range .ByTitle }}
-        <div class="col-sm-8">
-          <div class="bordered-box">
-            <h3 class="word-break"><a href="{{.Permalink}}">{{.Title}}</a></h3>
+        <div class="col-sm-8 card-container">
+          <div class="card-panel bordered panel panel-default ">
+            <h3 class="word-break big-text"><a href="{{.Permalink}}">{{.Title}}</a></h3>
             <div class="match-height-item-by-row margin-bottom-20">
               <p>{{.Summary}}</p>
             </div>
-            <p class="bordered-box-link"><a href="{{.Permalink}}">View {{.Title}}</a></p>
+            <p class="bordered-box-link big-text text-secondary uppercase"><a href="{{.Permalink}}">View {{.Title}}</a></p>
           </div>
           
         </div>
