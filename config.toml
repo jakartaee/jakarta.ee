@@ -93,7 +93,7 @@ enableInlineShortcodes = true
 
 [[menu.main]]
     name = "Blog"
-    url = "https://jakartablogs.ee/"
+    url = "/blogs"
     weight = 6
 
 # About sub-menu
@@ -437,7 +437,7 @@ enableInlineShortcodes = true
 
 	[[languages.zh.menu.main]]
 		name = "博客"
-		url = "https://Jakartablogs.ee"
+		url = "/blogs"
 		parent = "资源"
 		weight = 11
 

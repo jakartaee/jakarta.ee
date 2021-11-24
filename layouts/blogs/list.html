@@ -1,0 +1,13 @@
+{{ define "main_prefix" }}
+  {{ partial "news/main_prefix" . }}
+{{ end }}
+
+{{ define "main" }}
+  {{ if eq .Type "blogs" }}
+    {{ partial "news/list/list" . }}
+  {{ else }}
+    <div class="blogs-single">
+      {{  partial "news/single" . }}
+    </div>
+  {{ end }}
+{{ end }}
