@@ -10,13 +10,29 @@ section: "events"
 ---
 
 {{< newsroom/events
-      id="events_archive"
+      id="events_upcoming"
       title="Come meet the Jawkarta EE community <br>at these upcoming events!"
-      archive="true"
       publishTarget="jakarta_ee"
       class="events-page"
       titleClass="big-text-secondary margin-bottom-50"
       count="10"
+      sortOrder="custom"
+      paginate="true"
+      upcoming="true"
+      templateId="custom-events-template"
+      templatePath="/js/templates/events-page.mustache" >}}
+
+{{< newsroom/events
+      id="events_archive"
+      title="Past Events"
+      publishTarget="jakarta_ee"
+      class="events-page"
+      titleClass="big-text-secondary margin-bottom-50"
+      count="10"
+      sortOrder="custom"
+      archive="true"
+      past_event="true"
+      upcoming="false"
       paginate="true"
       templateId="custom-events-template"
       templatePath="/js/templates/events-page.mustache" >}}
