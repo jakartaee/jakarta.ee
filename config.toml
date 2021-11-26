@@ -278,7 +278,7 @@ enableInlineShortcodes = true
 
 # Community sub-menu
 [[menu.main]]
-    name = "Community"
+    name = "Overview"
     url = "/community/"
     parent = "Community"
     weight = 1
@@ -537,7 +537,7 @@ enableInlineShortcodes = true
 
     # Community sub-menu
     [[languages.zh.menu.main]]
-        name = "Community"
+        name = "Overview"
         url = "/zh/community/"
         parent = "Community"
         weight = 1
