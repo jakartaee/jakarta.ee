@@ -40,6 +40,7 @@
       {{ end }}
     </ul>
   {{ else }}
+    {{ if ne .Page.Title "Specifications" }}
     <div class="news-list specifications-news-list"> 
       <div class="row">
         {{ range (.Page.Sections.ByParam "title").ByParam "weight" }}
@@ -59,6 +60,7 @@
       </div>
     </div>
     {{ end }}
+  {{ end }}
     <div>
       {{ $section := .CurrentSection }}
       {{ with .Site.Data.spec_adopters.adopters.projects }}

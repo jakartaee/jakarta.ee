@@ -234,27 +234,33 @@ enableInlineShortcodes = true
 
 # specifications
 [[menu.main]]
-    name = "Specifications List"
+    name = "Overview"
     url = "/specifications/"
     weight = 1
     parent = "Specifications"
 
 [[menu.main]]
+    name = "Browse Specifications"
+    url = "/specifications/browse"
+    weight = 2
+    parent = "Specifications"
+
+[[menu.main]]
     name = "Specification Process"
     url = "/about/jesp/"
-    weight = 2
+    weight = 3
     parent = "Specifications"
 
 [[menu.main]]
     name = "JESP guide"
     url = "/committees/specification/guide/"
     parent = "Specifications"
-    weight = 3
+    weight = 4
 
 [[menu.main]]
     name = "Specification Projects"
     url = "https://projects.eclipse.org/list-of-projects?combine=jakarta&field_project_techology_types_tid=1102&field_state_value_2=All"
-    weight = 4
+    weight = 5
     parent = "Specifications"
 
 # Compatible Products

@@ -4,7 +4,10 @@
 /static/js/
 /static/css/
 /public/
-/content/specifications
+/content/specifications/*
+!/content/specifications/browse
+!/content/specifications/_index.md
+!/content/specifications/_index.zh.md
 /static/specifications
 /layouts/robots.txt
 /.project
