@@ -1,6 +1,8 @@
 <!-- nav -->
 {{ if eq .Section "news"}}
   {{ partial "sidebars/news" . }}
+{{ else if eq .Section "specifications"}}
+  {{ partial "sidebars/specifications" . }}
 {{ else if eq .Section "news/tags" }}
   {{ partial "sidebars/news" . }}
 {{ else }}

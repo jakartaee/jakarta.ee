@@ -1,0 +1,39 @@
+.specifications-subpage {
+    h1, h2, h3 {
+        font-family: @font-family-heading;
+        font-weight: 700;
+        color: @brand-primary;
+    }
+    h1 {
+        font-size: @font-size-h2;
+        margin-top: 40px;
+    }
+    h2 {
+        font-size: @font-size-h3;
+        margin-top: 40px;
+    }
+    a {
+        color: @brand-secondary;
+        &:hover {
+            color: darken(@brand-secondary, 15%);
+        }
+    }
+
+    table {
+        border-bottom: 1px solid #ddd;
+        thead {
+            background-color: @brand-primary;
+            color: @white;
+             tr th {
+                 border-bottom: none;
+             }
+        }
+        thead tr th, tbody > tr > td {
+            padding: 15px;
+        }
+        > tbody > tr:nth-of-type(odd) {
+            background-color: @table-bg-accent;
+        }
+        
+    }
+}

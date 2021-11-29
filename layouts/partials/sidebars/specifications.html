@@ -1,0 +1,39 @@
+<aside id="news-sidebar">
+    <div class="row">
+      <div class="card-container">
+        <div class="card-panel panel panel-default">
+          <div class="panel-heading" aria-hidden="true">
+            <img class="img-responsive" src="/images/specifications/adopt-a-spec.png" alt="Adopt a spec">
+          </div>
+          <div class="panel-body secondary-bg">
+            <h3 class="big-text margin-top-30">Adopt a Spec</h3>
+            <p><a class="big-text text-secondary uppercase" href="/community/adopt-a-spec/">Learn more</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-24">
+        {{ $section := .Parent }}
+        {{ with .Site.Data.spec_adopters.adopters.projects }}
+          {{ range sort . "name" "asc"}}
+            {{ $project := . }}
+            {{ with $section.File.Dir }}
+              {{ if eq . $project.directory }}
+              <h3>JUG Spec Adopters</h3>
+                <p>To learn how your JUG can sign-up, check out the <a href="/community/adopt-a-spec">Adopt a Specification</a> program.</p>
+                  <ul class="list-unstyled text-center">
+                  {{ range sort $project.adopters  "name" "asc"}}
+                    <li><a href="{{ .homepage_url }}" target="_blank"><img src="/images/spec_adopters/{{ .logo }}" alt="{{ .name }}" class="adopter-logo"/></a></li>
+                  {{end}}
+                </ul>
+              {{ end }}
+            {{ end }}
+          {{ end }}
+        {{ end }}
+      </div>
+    </div>
+
+    
+</aside>
