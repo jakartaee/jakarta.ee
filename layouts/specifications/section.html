@@ -1,0 +1,62 @@
+{{ define "main_prefix" }}
+<main>
+  <div class="{{ if ne .Page.Parent.Title "Specifications" }}specifications-subpage {{ end }}{{ if (and (isset .Page.Params "container") (ne .Page.Params ""))}}{{ .Page.Params.container }}{{else}}container{{end}}">
+    {{ if ne .Page.Params.hide_sidebar true }}
+      <div class="row">
+        <div class="col-md-18 padding-bottom-30">
+    {{ end }}
+{{ end }}
+
+{{ define "main" }}
+  {{ if ne .Page.Params.hide_page_title true }}
+    <h1>
+      {{ .Title }}
+      {{ if .Params.project_id }}
+        <span class="badge">
+          <a href="https://projects.eclipse.org/projects/{{ .Params.project_id }}"><i class="fa fa-archive" aria-hidden="true"></i> Project</a>
+        </span>
+        {{ range first 1 (where $.Site.Data.eclipsefdn_projects "project_id" .Params.project_id) }}
+        	{{- with .website_url }}
+	        <span class="badge">
+	          <a href="{{ . }}" target="_blank"><i class="fa fa-globe" aria-hidden="true"></i> Website</a>
+	        </span>
+	        {{ end }}
+        {{ end }}
+      {{ end }}
+    </h1>
+  {{ end }}
+  {{ .Content }}
+  {{ if eq .Page.Parent.Title "Specifications" }}
+    <ul>
+      {{ range (.Page.Sections.ByParam "title").ByParam "weight" }}
+        <li>
+          <h3><a href="{{- with .Params.redirect_url | default .RelPermalink }} {{.}} {{- end }}">{{ .Title }}</a></h3>
+          {{ if eq .Params.summary_sixty_char nil  }}
+            <p>{{ .Params.summary | truncate 57 }}</p>
+          {{ else }}
+            <p>{{ .Params.summary_sixty_char }}</p>
+          {{ end }}
+        </li>
+      {{ end }}
+    </ul>
+  {{ else }}
+    <div class="news-list specifications-news-list"> 
+      <div class="row">
+        {{ range (.Page.Sections.ByParam "title").ByParam "weight" }}
+        <div class="col-sm-8">
+          <a href="{{- with .Params.redirect_url | default .RelPermalink }} {{.}} {{- end }}" class="match-height-item-by-row media media-link margin-bottom-30">
+            <span class="flex-column" style="height: 100%;">
+              <h2 class="media-heading vertical-align" data-mh="spec-title" >{{ .Title }}</h2>
+              {{ if eq .Params.summary_sixty_char nil  }}
+                <p class="media-text vertical-align flex-grow">{{ .Params.summary | truncate 57 }}</p>
+              {{ else }}
+                <p class="media-text vertical-align flex-grow">{{ .Params.summary_sixty_char }}</p>
+              {{ end }}
+            </span>
+          </a>
+        </div>
+        {{ end }}
+      </div>
+    </div>
+    {{ end }}
+{{ end }}
