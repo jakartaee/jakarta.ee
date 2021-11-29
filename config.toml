@@ -285,12 +285,6 @@ enableInlineShortcodes = true
     identifier = "community"
 
 [[menu.main]]
-    name = "Stay Connected"
-    url = "/connect/"
-    parent = "Community"
-    weight = 1
-
-[[menu.main]]
     name = "Adopt A Spec"
     parent = "Community"
     url = "/community/adopt-a-spec/"
@@ -303,10 +297,16 @@ enableInlineShortcodes = true
     weight = 3
 
 [[menu.main]]
+    name = "Stay Connected"
+    url = "/connect/"
+    parent = "Community"
+    weight = 4
+
+[[menu.main]]
     name = "Tech Talk Meet-ups"
     url = "/community/#meetups"
     parent = "Community"
-    weight = 4
+    weight = 5
 
 [[menu.main]]
     name = "Videos"
