@@ -21,7 +21,7 @@
     "specifications": "bash build.sh",
     "build_netlify": "NODE_ENV=production npm run production && npm run specifications && npm run fetch_project && npm run yaml2json_compatibility",
     "fetch_project": "NODE_ENV=production node node_modules/eclipsefdn-hugo-solstice-theme/bin/projects/index.js -l data",
-    "yaml2json_compatibility": "node node_modules/js-yaml/bin/js-yaml.js -c data/compatible_products.yml | node node_modules/json-minify/index.js > static/js/compatible_products.json",
+    "yaml2json_compatibility": "mkdir -p static/js && node node_modules/js-yaml/bin/js-yaml.js -c data/compatible_products.yml | node node_modules/json-minify/index.js > static/js/compatible_products.json",
     "generate_contributor_list": "./js/contributor-cards/generate-contributor-lists.sh",
     "disallow_robots_txt": "echo \"User-agent: *\r\nDisallow: /\" > layouts/robots.txt",
     "optimize_news_images": "bash ./optimize_images.sh content/news"
