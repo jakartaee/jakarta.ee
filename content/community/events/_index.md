@@ -11,7 +11,7 @@ section: "events"
 
 {{< newsroom/events
       id="events_upcoming"
-      title="Come meet the Jawkarta EE community <br>at these upcoming events!"
+      title="Come meet the Jakarta EE community <br>at these upcoming events!"
       publishTarget="jakarta_ee"
       class="events-page"
       titleClass="big-text-secondary margin-bottom-50"
