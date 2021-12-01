@@ -3,17 +3,17 @@
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 200 200" style="enable-background:new 0 0 200 200;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:none;stroke:#2E3192;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st0{fill:none;stroke:#2E3192;stroke-width:7;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
 </style>
-<path class="st0" d="M60,2h104.4c4.9,0,8.8,3.9,8.8,8.8v177.5c0,4.9-3.9,8.8-8.8,8.8H37c-4.9,0-8.8-3.9-8.8-8.8V33.8
-	c0-2.3,0.9-4.6,2.6-6.2l23-23C55.4,2.9,57.7,2,60,2z"/>
-<path class="st0" d="M30.2,30.2h24.5c2.1,0,3.7-1.7,3.7-3.7V2.2"/>
-<line class="st0" x1="105.3" y1="52" x2="147.6" y2="52"/>
-<line class="st0" x1="53.8" y1="52" x2="81" y2="52"/>
-<line class="st0" x1="134.9" y1="71.4" x2="147.6" y2="71.4"/>
-<line class="st0" x1="53.8" y1="71.4" x2="111.7" y2="71.4"/>
-<line class="st0" x1="53.8" y1="129.5" x2="115" y2="129.5"/>
-<line class="st0" x1="93" y1="110.2" x2="147.6" y2="110.2"/>
-<line class="st0" x1="53.8" y1="110.2" x2="69.8" y2="110.2"/>
-<line class="st0" x1="53.8" y1="90.8" x2="147.6" y2="90.8"/>
+<path class="st0" d="M61.4,5.4h100.7c4.7,0,8.5,3.8,8.5,8.5v171.3c0,4.7-3.8,8.5-8.5,8.5H39.2c-4.7,0-8.5-3.8-8.5-8.5V36.1
+	c0-2.2,0.9-4.4,2.5-6L55.4,7.9C57,6.3,59.2,5.4,61.4,5.4z"/>
+<path class="st0" d="M32.7,32.6h23.6c2,0,3.6-1.6,3.6-3.6V5.6"/>
+<line class="st0" x1="105.1" y1="53.7" x2="146" y2="53.7"/>
+<line class="st0" x1="55.4" y1="53.7" x2="81.7" y2="53.7"/>
+<line class="st0" x1="133.7" y1="72.4" x2="146" y2="72.4"/>
+<line class="st0" x1="55.4" y1="72.4" x2="111.3" y2="72.4"/>
+<line class="st0" x1="55.4" y1="128.4" x2="114.5" y2="128.4"/>
+<line class="st0" x1="93.3" y1="109.8" x2="146" y2="109.8"/>
+<line class="st0" x1="55.4" y1="109.8" x2="70.9" y2="109.8"/>
+<line class="st0" x1="55.4" y1="91.1" x2="146" y2="91.1"/>
 </svg>
