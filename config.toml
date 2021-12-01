@@ -186,12 +186,6 @@ enableInlineShortcodes = true
     identifier = "overview_resources"
 
 [[menu.main]]
-    name = "Youtube Channel"
-    url = "https://www.youtube.com/channel/UC4M7h5b6elu9VlzjLfzuXyg"
-    weight = 1
-    parent = "Resources"
-
-[[menu.main]]
     name = "Datasheets"
     url = "/resources#datasheets"
     parent = "Resources"
