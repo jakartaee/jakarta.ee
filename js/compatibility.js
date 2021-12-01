@@ -12,9 +12,13 @@
  */
 const jakartaEECompatibility = $(document).ready(function() {
 
+    console.log("compatibility.js is loading");
+
     let certification_results = {};
 
-    $('.jakarta-version').click(function(){ 
+    $('.jakarta-version').on("click", function() {
+
+        console.log("Jakarta Version is clicked");
 
         // Reset the value of the certification results array 
         certification_results = {};
@@ -29,7 +33,9 @@ const jakartaEECompatibility = $(document).ready(function() {
         const parent_name = $(this).parent().attr('id');
         const certification_results_select = $(this).parent().find('.certification-results');
 
-        $.getJSON("/js/compatible_products.json", function(json) {
+        $.get("/js/compatible_products.json")
+        .done(function(json) { 
+            console.log(json);
             $(json.sets).each(function(index, version){
                 if (selected_version == version.jakartaee_version) {
                     $(version.items).each(function(index, version_item){
@@ -49,10 +55,14 @@ const jakartaEECompatibility = $(document).ready(function() {
                     });
                 }
             });
+        }).fail(function() {
+            console.log("File does not exist");
         });
-    });
+    }); 
 
-    $('.certification-results').click(function(){
+    $('.certification-results').on("click", function() {
+
+        console.log("Certification Results is clicked");
 
         const certification_link = $(this).parent().find('.certification-link');
         const certification_download = $(this).parent().find('.certification-download');
