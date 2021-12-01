@@ -13,6 +13,8 @@
 
 import 'eclipsefdn-solstice-assets'
 
+import './compatibility.js'
+
 document.addEventListener("DOMContentLoaded", function(event) {
     (function($, document) {
 

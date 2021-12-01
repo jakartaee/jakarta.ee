@@ -17,17 +17,20 @@
     "watch": "NODE_ENV=development webpack --watch --progress --config=node_modules/laravel-mix/setup/webpack.config.js",
     "hot": "NODE_ENV=development webpack-dev-server --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
     "production": "NODE_ENV=production webpack --progress --config=node_modules/laravel-mix/setup/webpack.config.js",
-    "postinstall": "NODE_ENV=production npm run fetch_project",
+    "postinstall": "NODE_ENV=production npm run fetch_project && npm run yaml2json_compatibility",
     "specifications": "bash build.sh",
-    "build_netlify": "NODE_ENV=production npm run production && npm run specifications && npm run fetch_project",
+    "build_netlify": "NODE_ENV=production npm run production && npm run specifications && npm run fetch_project && npm run yaml2json_compatibility",
     "fetch_project": "NODE_ENV=production node node_modules/eclipsefdn-hugo-solstice-theme/bin/projects/index.js -l data",
+    "yaml2json_compatibility": "node node_modules/js-yaml/bin/js-yaml.js -c data/compatible_products.yml | node node_modules/json-minify/index.js > static/js/compatible_products.json",
     "generate_contributor_list": "./js/contributor-cards/generate-contributor-lists.sh",
     "disallow_robots_txt": "echo \"User-agent: *\r\nDisallow: /\" > layouts/robots.txt",
     "optimize_news_images": "bash ./optimize_images.sh content/news"
   },
   "dependencies": {
     "eclipsefdn-hugo-solstice-theme": "^0.0.139",
-    "lodash-es": "4.17.15"
+    "lodash-es": "4.17.15",
+    "json-minify": "^1.0.0",
+    "js-yaml": "^3.13.1"
   },
   "devDependencies": {
     "vue-template-compiler": "2.6.12"

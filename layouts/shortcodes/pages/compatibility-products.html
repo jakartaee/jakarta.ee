@@ -1,3 +1,11 @@
+{{ $page := .Get "page" }}
+
+<div class="row">
+  <div class="col-md-8">
+    <p><img class="compatible-logo img img-responsive" src="/images/jakarta/jakarta-ee-compatible-logo-color.svg" title="{{ i18n "jakarta-ee-logo-alt" }}"></p>
+  </div>  
+  <div class="col-md-16">{{ i18n "compatibility-intro-text" | safeHTML }}</div>
+</div>
 
 <div class="row margin-top-20 content-nav-tab-toggle">
   <div class="visible-xs">
@@ -18,94 +26,149 @@
 <div class="row">
  <div class="navbar-collapse collapse" id="navbar-member-levels">
    <ul class="nav nav-tabs solstice-tabs content-nav-tab" role="tablist">
-     <li role="presentation" class="active">
-       <a class="background-grey" href="#tab-one" data-toggle="tab" aria-controls="tab-one" role="tab">
-        Jakarta EE Compatible Products
+     <li role="presentation" {{ if eq $page "compatibility" }}class="active"{{ end }}>
+       <a class="background-grey" href="/compatibility/">
+        Latest TCK Results
        </a>
      </li>
-     {{ range $.Site.Data.compatible_products.sets }}
-     <li role="presentation" class="">
-       <a class="background-grey" href="#tab-{{ replace .jakartaee_version "." "_" }}" data-toggle="tab" aria-controls="tab-{{ replace .jakartaee_version "." "_" }}" role="tab">
-        Jakarta EE {{ .jakartaee_version }}
-       </a>
-     </li>
-     {{ end }}
+     <li role="presentation" {{ if eq $page "download" }}class="active"{{ end }}>
+      <a class="background-grey" href="/compatibility/download/">
+       View All
+      </a>
+    </li>
    </ul>
  </div>
 </div>
 
 <div class="content-nav-tab-body tab-content margin-bottom-20" id="tabs-content">
 
-  <div role="tabpanel" class="tab-pane tab-pane active" id="tab-one">
+  <div role="tabpanel" class="tab-pane tab-pane {{ if eq $page "compatibility" }}active{{ end }}" id="tab-tck">
     {{ $new_product_list := slice }}
+    {{ $jakartaee_versions := slice }}
+
     {{ range $elem_index, $elem_val := $.Site.Data.compatible_products.sets }}
       {{ range $elem_val.items }}
+        {{ range .items }}
+          {{ $jakartaee_versions = $jakartaee_versions | append (dict .name $elem_val.jakartaee_version) }}
+        {{ end }}
+      {{ end }}
+    {{ end }}
+
+    {{ range $elem_index, $elem_val := $.Site.Data.compatible_products.sets }}
+      {{ range $elem_val.items }}
+
         {{ range .items }}  <!-- Loop all items and add name, image, image_width properties to form a new object and put in the new_product_list array -->
-          {{ $new_element := (dict "name" .name "image" .image "image_width" .image_width) }}
+          {{ $item_jakartaee_versions := slice }}
+          {{ $name := .name }}
+          {{ range $jakartaee_versions }}
+            {{ range $index, $version := . }}
+              {{ if eq $index $name }}
+                {{ $item_jakartaee_versions = $item_jakartaee_versions | append . }}
+              {{ end }}
+            {{ end }}
+          {{ end }}
+
+          {{ $new_element := (dict "name" .name "image" .image "image_width" .image_width "jakartaee_versions" ($item_jakartaee_versions | uniq)) }}
           {{ $new_product_list = $new_product_list | append $new_element }}
         {{ end }}
       {{ end }}
     {{ end }}
 
-    <div class="row d-flex flex-wrap">
+    <div class="row">
       {{ range sort ($new_product_list | uniq) "name" "asc" }}  <!-- Remove duplicates and re-order by name -->
-      <div class="col-xs-24 col-sm-12 col-lg-6 padding-bottom-20">
-        <div class="match-height-item-by-row padding-20 flex-column vertical-align">
-          {{ if .image }}
-            <img width="{{ .image_width }}" class="img img-responsive" src="{{ .image }}" alt="{{ .name }} logo">
-          {{ else }}
-            <div class="icon-backdrop">
-              <div class="ratio"></div>
-              <div class="icon-container"><i class="fa fa-download"></i></div>
+
+        <div class="card-container col-xs-24 col-sm-12 col-lg-6">
+          <div class="card-panel bordered panel panel-default">
+            <div class="panel-heading match-height-item-by-row">
+              {{ if .image }}
+                <img width="{{ .image_width }}" class="img img-responsive margin-bottom-20" src="{{ .image }}" alt="{{ .name }} logo">
+              {{ else }}
+                <div class="icon-container"><i class="fa fa-download"></i></div>
+              {{ end }}
+              
             </div>
-          {{ end }}
+            <div class="panel-body padding-bottom-0">
+              <div class="card-title">
+                <p class="margin-bottom-20"><strong>{{ .name }}</strong></p>
+              </div>
+              
+              <div id="{{ .name | urlize }}" class="compatibility-selection">
+                <select class="jakarta-version card-dropdown form-control">
+                  <option class="selected" value="" disabled selected="selected">Jakarta Version</option>
+                  {{ range .jakartaee_versions }}
+                    <option value="{{ . }}" >{{ . }}</option>
+                  {{ end }}
+                </select>
+  
+                <select class="certification-results card-dropdown form-control" disabled>
+                  <option class="selected" value="" disabled selected="selected">Certification Results</option>
+                </select>
+  
+                <ul class="list-inline btn-inline-group">
+                  <li class="padding-right-0"><a class="btn btn-primary certification-link" href="#" disabled>View Certification</a></li>
+                  <li class="padding-left-0"><a class="btn btn-secondary certification-download" href="#" disabled><i class="fa fa-download"></i></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
-        <p class="text-center margin-bottom-0"><strong>{{ .name }}</strong></p>
-      </div>
       {{ end }}
     </div>
   </div>
 
-{{ range $.Site.Data.compatible_products.sets }}
-  <div role="tabpanel" class="tab-pane tab-pane fade" id="tab-{{ replace .jakartaee_version "." "_" }}">
-    {{ range .items }}
-      {{ $title:=.title }}
-      <div class="product-list">
-        <h2 class="h3 margin-top-0">{{ .title }} Compatible Products</h2>
-        <div class="row">
-         {{ if isset . "items" }}
-         {{ range sort .items "name" "asc"}}
-            <div class="col-xs-24 col-sm-12 col-lg-6 padding-bottom-20">
-              <div class="match-height-item-by-row padding-20 flex-column">
-                <div class="flex-grow center-block padding-left-30 padding-right-30 padding-bottom-10 padding-top-10 grid-center" data-mh="{{ $title | urlize }}">
-                  {{ if .image }}
-                  <a href="{{ .download }}"><img width="{{ .image_width }}" class="img img-responsive" src="{{ .image }}" alt="{{ .vendor }}'s {{ .name }} logo"></a>
-                  {{ else }}
-                  <div class="icon-backdrop">
-                    <div class="ratio"></div>
-                    <div class="icon-container"><i class="fa fa-download"></i></div>
-                  </div>
+  <div role="tabpanel" class="tab-pane tab-pane {{ if eq $page "download" }}active{{ end }}" id="tab-download">
+    {{ range $.Site.Data.compatible_products.sets }}
+      {{ $release_version := .jakartaee_version }}
+      {{ range .items }}
+        <div class="row margin-bottom-50">
+          <div class="col-md-24">
+            <h2 class="margin-bottom-40 big-text text-secondary"><strong>{{ .title }}</strong></h2>
+            <table class='table borderless compatibility-download-table table-striped'>
+              <thead>
+                  <tr>
+                      <th>
+                          <strong>Product</strong>
+                      </th>
+                      <th>
+                          <strong>TCK Results</strong>
+                      </th>
+                  </tr>
+              </thead>
+              <tbody>
+                  
+                  {{ range .items }}
+                      <tr>
+                          <td>{{ .name }}</td>
+                          <td>
+                            {{ $len := (len .versions) }}
+                            {{ range $index, $version := .versions }}
+                                <a class="compatibility-link" href="{{ .download_url }}">{{ .version }}</a> 
+                                {{ if ne (add $index 1) $len }}
+                                 <span class="compatibility-link-separator"> | </span>
+                                {{ end }}
+                            {{ end }}
+                          </td>
+                      </tr>
                   {{ end }}
-                </div>
-                <div class="flex-grow text-center flex-column">
-                  <p class="margin-bottom-0"><strong>{{ .name }}</strong></p>
-                  <p class="flex-grow margin-bottom-10">{{ .vendor }}</p>
-                  <p>
-                  {{ range .versions }} 
-                    <a class="compatibility-link" href="{{ .compatibility }}">{{ .version }}</a>
-                  {{ end }}           
-                  </p>
-                </div>
-              </div>
-            </div>
-         {{ end }}
-         {{ else }}
-           <div class="container"><p>{{ i18n "coming-soon" }}</p></div>
-         {{ end }}
-         <div class="clearfix"></div>
+              </tbody>
+            </table>
+          </div>
         </div>
-      </div>  
-    {{ end }}  
+      {{ end }}
+    {{ end }}
   </div>
-{{ end }}
+</div>
+
+<div class="row text-center margin-bottom-60">
+  <div class="col-sm-10 col-sm-offset-1">
+    <h2 class="big-text text-secondary margin-bottom-30">Get Listed</h2>
+    <p class="margin-bottom-30">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+    <p><a class="btn btn-primary btn-lg" href="/compatibility/get-listed/">Get Listed With Us</a></p>
+  </div>
+
+  <div class="col-sm-10 col-sm-offset-1">
+    <h2 class="big-text text-secondary margin-bottom-30">Compatibility Requests</h2>
+    <p class="margin-bottom-30">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+    <p><a class="btn btn-primary btn-lg" href="https://github.com/eclipse-ee4j/jakartaee-platform/issues?q=is%3Aissue+is%3Aclosed+label%3Acertification" target="_blank">Compatibility Request</a></p>
+  </div>
 </div>
