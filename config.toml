@@ -307,6 +307,19 @@ enableInlineShortcodes = true
     parent = "Community"
     weight = 5
 
+# Membership sub-menu
+[[menu.main]]
+    name = "Join"
+    url = "/membership"
+    parent = "Membership"
+    weight = 1
+
+[[menu.main]]
+    name = "Members"
+    url = "/membership/members/"
+    parent = "Membership"
+    weight = 2
+
 [languages]
   [languages.en]
 	languageName = "English"
