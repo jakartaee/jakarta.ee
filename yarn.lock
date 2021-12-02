@@ -2565,11 +2565,14 @@ duplexer3@^0.1.4:
   integrity sha1-7gHdHKwO08vH/b6jfcCo8c4ALOI=
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 eclipsefdn-hugo-solstice-theme@^0.0.139:
   version "0.0.139"
   resolved "https://registry.yarnpkg.com/eclipsefdn-hugo-solstice-theme/-/eclipsefdn-hugo-solstice-theme-0.0.139.tgz#91449224f4985898a70d0bda9320f6be64c59fe3"
   integrity sha512-6n+SJrSt4qj7I+80D6hMoC6x4uwnp28dU+8CtP1i0C9ACdoDs3RXSCgWIPxcga4fla0RadyDrbKy40k3lbcA5w==
 =======
+=======
+>>>>>>> 1c5ff78 (Update hugo theme version)
 <<<<<<< HEAD
 eclipsefdn-hugo-solstice-theme@^0.0.135:
 =======
@@ -2578,18 +2581,37 @@ eclipsefdn-hugo-solstice-theme@0.0.135:
   version "0.0.135"
   resolved "https://registry.yarnpkg.com/eclipsefdn-hugo-solstice-theme/-/eclipsefdn-hugo-solstice-theme-0.0.135.tgz#df57ded3ee63435e8c058ea802b9f8d2d8578e98"
   integrity sha512-tuYHhUVuFjLgu3inQpdhM7GA0uNNTVtOUBIDF6zvdmMN5PZnZVIHZTMdpxD2XVY1xbwHXCG+unWOggefv9EmFA==
+<<<<<<< HEAD
 >>>>>>> 0ead222 (Update events layout)
   dependencies:
     axios "^0.21.1"
     eclipsefdn-solstice-assets "0.0.179"
+=======
+=======
+eclipsefdn-hugo-solstice-theme@0.0.138:
+  version "0.0.138"
+  resolved "https://registry.yarnpkg.com/eclipsefdn-hugo-solstice-theme/-/eclipsefdn-hugo-solstice-theme-0.0.138.tgz#b18d51b7b07e574b04578c48b9e4a465020ac4d8"
+  integrity sha512-nAsusbXH5qAMLNW6rPVTpkM53GAUWDK2nbHp5jm9Y5dp1incoGBdGLAAKjYLoWpQJON0Jl2burOCSSqOixKJeQ==
+>>>>>>> 5f04544 (Update hugo theme version)
+  dependencies:
+    axios "^0.21.1"
+    eclipsefdn-solstice-assets "0.0.178"
+>>>>>>> 1c5ff78 (Update hugo theme version)
     json2yaml "^1.1.0"
     parse-link-header "^1.0.1"
     toml "^3.0.0"
 
+<<<<<<< HEAD
 eclipsefdn-solstice-assets@0.0.179:
   version "0.0.179"
   resolved "https://registry.yarnpkg.com/eclipsefdn-solstice-assets/-/eclipsefdn-solstice-assets-0.0.179.tgz#3599b9ea96861d00940ef17dd75de05272071d26"
   integrity sha512-WagXKFGTAoVew2Bk5A/YW4HDZkw67vqj7n/HUf6nr+9g/5ihnepSgmd79U01tYimnOW2NUTkMg9GEsAOGgAoWw==
+=======
+eclipsefdn-solstice-assets@0.0.178:
+  version "0.0.178"
+  resolved "https://registry.yarnpkg.com/eclipsefdn-solstice-assets/-/eclipsefdn-solstice-assets-0.0.178.tgz#a44823f8170424472a50aa811ecf8e2db6187346"
+  integrity sha512-/KiGAxX8Z0ni4ZMOYwK+cILPC644+DZ+0Q9zPaEYlqKbw46h9z6gYA7tt1OwfeqFZAXiMaXIZDQElSEYrKjDGw==
+>>>>>>> 1c5ff78 (Update hugo theme version)
   dependencies:
     "@babel/core" "^7.0.0-0"
     "@babel/plugin-proposal-class-properties" "^7.12.1"
@@ -2637,6 +2659,7 @@ ee-first@1.1.1:
 electron-to-chromium@^1.3.896:
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   version "1.4.3"
   resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.3.tgz#82480df3ef607f04bb38cc3f30a628d8b895339f"
   integrity sha512-hfpppjYhqIZB8jrNb0rNceQRkSnBN7QJl3W26O1jUv3F3BkQknqy1YTqVXkFnIcFtBc3Qnv5M7r5Lez2iOLgZA==
@@ -2650,6 +2673,11 @@ electron-to-chromium@^1.3.896:
   resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.7.tgz#58e0b4ec9096ee1422e4d9e83ceeb05b0cf076eb"
   integrity sha512-UPy2MsQw1OdcbxR7fvwWZH/rXcv+V26+uvQVHx0fGa1kqRfydtfOw+NMGAvZJ63hyaH4aEBxbhSEtqbpliSNWA==
 >>>>>>> ba56c56 (Update order of Events)
+=======
+  version "1.4.9"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.9.tgz#4854fa55f94f18f5d0ad4ac49034ff6443fff5b9"
+  integrity sha512-7AyB4SiLtGJbLACXezs8BDjDbZizuoiyHTQxbcvzfi5LYWRXVSFdmPvuDjtlWQmsVSONRicZfSBj3xgft0Wvrg==
+>>>>>>> 5f04544 (Update hugo theme version)
 
 element-closest-polyfill@^1.0.4:
   version "1.0.4"
