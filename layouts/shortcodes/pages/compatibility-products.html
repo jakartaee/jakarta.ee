@@ -94,14 +94,14 @@
               
               <div id="{{ .name | urlize }}" class="compatibility-selection">
                 <select class="jakarta-version card-dropdown form-control">
-                  <option class="selected" value="" disabled selected="selected">Jakarta Version</option>
+                  <option class="selected" value="" disabled selected="selected">Jakarta EE Version</option>
                   {{ range .jakartaee_versions }}
                     <option value="{{ . }}" >{{ . }}</option>
                   {{ end }}
                 </select>
   
                 <select class="certification-results card-dropdown form-control" disabled>
-                  <option class="selected" value="" disabled selected="selected">Certification Results</option>
+                  <option class="selected" value="" disabled selected="selected">Server Version</option>
                 </select>
   
                 <ul class="list-inline btn-inline-group">

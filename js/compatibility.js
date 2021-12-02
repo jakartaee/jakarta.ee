@@ -12,20 +12,16 @@
  */
 const jakartaEECompatibility = $(document).ready(function() {
 
-    console.log("compatibility.js is loading");
-
     let certification_results = {};
 
     $('.jakarta-version').on("click", function() {
-
-        console.log("Jakarta Version is clicked");
 
         // Reset the value of the certification results array 
         certification_results = {};
 
         // Reset the default values for all the other blocks on the page
         $('.certification-results').prop('disabled', true);
-        $('.certification-results').html('<option class="selected" value="" selected="selected">Certification Results</option>');
+        $('.certification-results').html('<option class="selected" value="" selected="selected">Server Version</option>');
         $('.certification-link').attr('disabled', 'disabled');
         $('.certification-download').attr('disabled', 'disabled');
 
@@ -35,7 +31,6 @@ const jakartaEECompatibility = $(document).ready(function() {
 
         $.get("/js/compatible_products.json")
         .done(function(json) { 
-            console.log(json);
             $(json.sets).each(function(index, version){
                 if (selected_version == version.jakartaee_version) {
                     $(version.items).each(function(index, version_item){
@@ -44,7 +39,7 @@ const jakartaEECompatibility = $(document).ready(function() {
                             if (parent_name == name) {
                                 certification_results = item.versions;
                                 certification_results_select.removeAttr('disabled');
-                                certification_results_select.html('<option class="selected" value="" selected="selected">Certification Results</option>');
+                                certification_results_select.html('<option class="selected" value="" selected="selected">Server Version</option>');
                                 $(item.versions).each(function(index, version){
                                     let option = $('<option></option>');
                                     option.text(version.version);
@@ -61,8 +56,6 @@ const jakartaEECompatibility = $(document).ready(function() {
     }); 
 
     $('.certification-results').on("click", function() {
-
-        console.log("Certification Results is clicked");
 
         const certification_link = $(this).parent().find('.certification-link');
         const certification_download = $(this).parent().find('.certification-download');
