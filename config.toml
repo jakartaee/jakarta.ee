@@ -235,7 +235,7 @@ enableInlineShortcodes = true
 
 # specifications
 [[menu.main]]
-    name = "Specifications List"
+    name = "Browse Specifications"
     url = "/specifications/"
     weight = 1
     parent = "Specifications"
