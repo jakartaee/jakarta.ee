@@ -1,0 +1,77 @@
+
+<div class="content-nav-tab-body tab-content margin-bottom-20" id="tabs-content">
+
+  <div role="tabpanel" class="tab-pane tab-pane active" id="tab-tck">
+    {{ $new_product_list := slice }}
+    {{ $jakartaee_versions := slice }}
+
+    {{ range $elem_index, $elem_val := $.Site.Data.compatible_products.sets }}
+      {{ range $elem_val.items }}
+        {{ range .items }}
+          {{ $jakartaee_versions = $jakartaee_versions | append (dict .name $elem_val.jakartaee_version) }}
+        {{ end }}
+      {{ end }}
+    {{ end }}
+
+    {{ range $elem_index, $elem_val := $.Site.Data.compatible_products.sets }}
+      {{ range $elem_val.items }}
+
+        {{ range .items }}  <!-- Loop all items and add name, image, image_width properties to form a new object and put in the new_product_list array -->
+          {{ $item_jakartaee_versions := slice }}
+          {{ $name := .name }}
+          {{ range $jakartaee_versions }}
+            {{ range $index, $version := . }}
+              {{ if eq $index $name }}
+                {{ $item_jakartaee_versions = $item_jakartaee_versions | append . }}
+              {{ end }}
+            {{ end }}
+          {{ end }}
+
+          {{ $new_element := (dict "name" .name "image" .image "image_width" .image_width "jakartaee_versions" ($item_jakartaee_versions | uniq)) }}
+          {{ $new_product_list = $new_product_list | append $new_element }}
+        {{ end }}
+      {{ end }}
+    {{ end }}
+
+    <div class="row">
+      {{ range sort ($new_product_list | uniq) "name" "asc" }}  <!-- Remove duplicates and re-order by name -->
+
+        <div class="card-container col-xs-24 col-sm-12 col-lg-6">
+          <div class="card-panel bordered panel panel-default">
+            <div class="panel-heading match-height-item-by-row">
+              {{ if .image }}
+                <img width="{{ .image_width }}" class="img img-responsive margin-bottom-20" src="{{ .image }}" alt="{{ .name }} logo">
+              {{ else }}
+                <div class="icon-container"><i class="fa fa-download"></i></div>
+              {{ end }}
+              
+            </div>
+            <div class="panel-body padding-bottom-0">
+              <div class="card-title">
+                <p class="margin-bottom-20"><strong>{{ .name }}</strong></p>
+              </div>
+              
+              <div id="{{ .name | urlize }}" class="compatibility-selection">
+                <select class="jakarta-version card-dropdown form-control">
+                  <option class="selected" value="" disabled selected="selected">Jakarta EE Version</option>
+                  {{ range .jakartaee_versions }}
+                    <option value="{{ . }}" >{{ . }}</option>
+                  {{ end }}
+                </select>
+  
+                <select class="certification-results card-dropdown form-control" disabled>
+                  <option class="selected" value="" disabled selected="selected">Server Version</option>
+                </select>
+  
+                <ul class="list-inline btn-inline-group">
+                  <li class="padding-right-0"><a class="btn btn-primary certification-link" href="#" disabled>View Certification</a></li>
+                  <li class="padding-left-0"><a class="btn btn-secondary certification-download" href="#" disabled><i class="fa fa-download"></i></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      {{ end }}
+    </div>
+  </div>
+</div>

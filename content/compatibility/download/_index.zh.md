@@ -9,4 +9,8 @@ hide_page_title: true
 container: "container margin-top-20"
 ---
 
-{{< pages/compatibility-products page="download" >}}
+{{< pages/compatibility/navigation active="download" >}}
+
+{{< pages/compatibility/download >}}
+
+{{< pages/compatibility/footer >}}

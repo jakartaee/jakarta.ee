@@ -1,0 +1,41 @@
+{{ $active := .Get "active" }}
+
+<div class="row">
+  <div class="col-md-8">
+    <p><img class="compatible-logo img img-responsive" src="/images/jakarta/jakarta-ee-compatible-logo-color.svg" title="{{ i18n "jakarta-ee-logo-alt" }}"></p>
+  </div>  
+  <div class="col-md-16">{{ i18n "compatibility-intro-text" | safeHTML }}</div>
+</div>
+
+<div class="row margin-top-20 content-nav-tab-toggle">
+  <div class="visible-xs">
+    <div class="vertical-align">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-member-levels">
+        <p class="nav-label"><strong>Compatible Products</strong></p>
+        <div class="hamburger-wrapper">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </div>
+      </button>
+    </div>
+  </div>
+</div>
+ 
+<div class="row">
+ <div class="navbar-collapse collapse" id="navbar-member-levels">
+   <ul class="nav nav-tabs solstice-tabs content-nav-tab" role="tablist">
+     <li role="presentation" {{ if eq $active "latest" }}class="active"{{ end }}>
+       <a class="background-grey" href="/compatibility/">
+        Latest TCK Results
+       </a>
+     </li>
+     <li role="presentation" {{ if eq $active "download" }}class="active"{{ end }}>
+      <a class="background-grey" href="/compatibility/download/">
+       View All
+      </a>
+    </li>
+   </ul>
+ </div>
+</div>

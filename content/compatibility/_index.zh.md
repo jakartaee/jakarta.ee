@@ -11,4 +11,8 @@ hide_page_title: true
 container: "container margin-top-20"
 ---
 
-{{< pages/compatibility-products page="compatibility" >}}
+{{< pages/compatibility/navigation active="latest" >}}
+
+{{< pages/compatibility/products >}}
+
+{{< pages/compatibility/footer >}}

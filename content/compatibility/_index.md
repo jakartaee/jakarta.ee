@@ -11,4 +11,8 @@ layout: "single"
 container: "container margin-top-60"
 ---
 
-{{< pages/compatibility-products page="compatibility" >}}
+{{< pages/compatibility/navigation active="latest" >}}
+
+{{< pages/compatibility/products >}}
+
+{{< pages/compatibility/footer >}}

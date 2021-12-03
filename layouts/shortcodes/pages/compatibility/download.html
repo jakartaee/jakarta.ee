@@ -1,0 +1,43 @@
+<div class="content-nav-tab-body tab-content margin-bottom-20" id="tabs-content">
+  <div role="tabpanel" class="tab-pane tab-pane active" id="tab-download">
+    {{ range $.Site.Data.compatible_products.sets }}
+      {{ $release_version := .jakartaee_version }}
+      {{ range .items }}
+        <div class="row margin-bottom-50">
+          <div class="col-md-24">
+            <h2 class="margin-bottom-40 big-text text-secondary"><strong>{{ .title }}</strong></h2>
+            <table class='table borderless compatibility-download-table table-striped'>
+              <thead>
+                <tr>
+                  <th>
+                    <strong>Product</strong>
+                  </th>
+                  <th>
+                    <strong>TCK Results</strong>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                {{ range .items }}
+                  <tr>
+                    <td>{{ .name }}</td>
+                    <td>
+                      {{ $len := (len .versions) }}
+                      {{ range $index, $version := .versions }}
+                          <a class="compatibility-link" href="{{ .download_url }}">{{ .version }}</a> 
+                          {{ if ne (add $index 1) $len }}
+                            <span class="compatibility-link-separator"> | </span>
+                          {{ end }}
+                      {{ end }}
+                    </td>
+                  </tr>
+                {{ end }}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      {{ end }}
+    {{ end }}
+  </div>
+</div>
+
