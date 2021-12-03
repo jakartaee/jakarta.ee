@@ -233,36 +233,30 @@ enableInlineShortcodes = true
     parent = "Resources"
     weight = 9
 
+[[menu.main]]
+    name = "Specification Projects"
+    url = "https://projects.eclipse.org/list-of-projects?combine=jakarta&field_project_techology_types_tid=1102&field_state_value_2=All"
+    weight = 10
+    parent = "Resources"
+
 # specifications
 [[menu.main]]
-    name = "Overview"
+    name = "Specifications List"
     url = "/specifications/"
     weight = 1
     parent = "Specifications"
 
 [[menu.main]]
-    name = "Browse Specifications"
-    url = "/specifications/browse"
-    weight = 2
-    parent = "Specifications"
-
-[[menu.main]]
     name = "Specification Process"
     url = "/about/jesp/"
-    weight = 3
+    weight = 2
     parent = "Specifications"
 
 [[menu.main]]
     name = "JESP guide"
     url = "/committees/specification/guide/"
     parent = "Specifications"
-    weight = 4
-
-[[menu.main]]
-    name = "Specification Projects"
-    url = "https://projects.eclipse.org/list-of-projects?combine=jakarta&field_project_techology_types_tid=1102&field_state_value_2=All"
-    weight = 5
-    parent = "Specifications"
+    weight = 3
 
 # Compatible Products
 [[menu.main]]

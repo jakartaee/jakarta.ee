@@ -15,7 +15,6 @@
 echo -e "Processing Jakarta EE Specifications...\n"
 
 echo -e "Step 1: Clean up specifications content\n"
-mkdir /tmp/specifications && cp -rf content/specifications/browse /tmp/specifications && cp content/specifications/_index.md /tmp/specifications/ && cp content/specifications/_index.zh.md /tmp/specifications/
 rm -rf content/specifications && rm -rf static/specifications
 
 echo "Step 2: Clone specifications git repository"
@@ -27,7 +26,6 @@ rm -rf content/specifications/.git
 echo "Step 4: Create static/specifications folder"
 mkdir -p static/specifications
 cd content
-cp -rf /tmp/specifications/* specifications
 echo -e "Current working directory: $PWD\n"
 
 echo -e "Step 5: Preparing to move html files to static folder..."
