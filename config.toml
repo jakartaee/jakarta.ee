@@ -376,7 +376,7 @@ enableInlineShortcodes = true
 		weight = 5
 
 	# Resource sub-menu
-    [[menu.main]]
+    [[languages.zh.menu.main]]
         name = "Overview"
         url = "/zh/resources"
         weight = 1
