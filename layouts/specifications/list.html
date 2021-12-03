@@ -28,7 +28,7 @@
   {{ .Content }}
   {{ if eq .Page.Parent.Title "Specifications" }}
     <ul>
-      {{ range (.Page.Sections.ByParam "title").ByParam "weight" }}
+      {{ range (.Page.Sections.ByParam "title").ByDate.Reverse }}
         <li>
           <h3><a href="{{- with .Params.redirect_url | default .RelPermalink }} {{.}} {{- end }}">{{ .Title }}</a></h3>
           {{ if eq .Params.summary_sixty_char nil  }}
