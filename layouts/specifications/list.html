@@ -41,24 +41,110 @@
     </ul>
   {{ else }}
     
-    <div class="news-list specifications-news-list"> 
-      <div class="row">
-        {{ range (.Page.Sections.ByParam "title").ByParam "weight" }}
-        <div class="col-sm-8">
-          <a href="{{- with .Params.redirect_url | default .RelPermalink }} {{.}} {{- end }}" class="match-height-item-by-row media media-link margin-bottom-30">
-            <span class="flex-column" style="height: 100%;">
-              <h2 class="media-heading vertical-align" data-mh="spec-title" >{{ .Title }}</h2>
-              {{ if eq .Params.summary_sixty_char nil  }}
-                <p class="media-text vertical-align flex-grow">{{ .Params.summary | truncate 57 }}</p>
-              {{ else }}
-                <p class="media-text vertical-align flex-grow">{{ .Params.summary_sixty_char }}</p>
-              {{ end }}
-            </span>
-          </a>
-        </div>
-        {{ end }}
-      </div>
-    </div>
+    
+
+<p>Click on the specifications below to access the specification document, Javadoc, Technology Compatibility 
+  Kit (TCK), and compatible implementation for each release of the specification.</p>
+
+<h2 class="big-text text-secondary">Platform and Profile Specifications</h2>
+<p>The Jakarta EE Platform and Profile specifications are the umbrella specifications for the individual specifications. The 
+  Jakarta EE Platform includes most of the individual specifications, while the Profile specifications include the individual 
+  specifications for developing web platforms and microservices architectures.</p>
+
+<div class="specifications-news-list"> 
+  <div class="row">
+  {{ range (.Page.Sections.ByParam "title").ByParam "weight" }}
+      {{ if or (eq .Title "Jakarta EE Platform") (eq .Title "Jakarta EE Web Profile") }}
+
+          <div class="col-sm-12 card-container">
+              <div class="card-panel bordered panel panel-default">
+                  
+                  <div class="panel-body match-height-item-by-row">
+                    <h2 class="big-text h3">
+                        <a href="{{- with .Params.redirect_url | default .RelPermalink }}{{.}}{{- end }}">{{ .Title }}</a>
+                    </h2>
+                    {{ if .Params.project_id }}
+                        <ul class="list-inline">
+                            <li><a class="btn card-badge btn-xs" href="https://projects.eclipse.org/projects/{{ .Params.project_id }}"><i class="fa fa-archive" aria-hidden="true"></i> Project</a></li>
+                            {{ range first 1 (where $.Site.Data.eclipsefdn_projects "project_id" .Params.project_id) }}
+                                {{- with .website_url }}
+                                    <li><a class="btn card-badge btn-xs" href="{{ . }}" target="_blank"><i class="fa fa-globe" aria-hidden="true"></i> Website</a></li>
+                                {{ end }}
+                            {{ end }}
+                        </ul>
+                    {{ end }}
+                    {{ if eq .Params.summary_sixty_char nil  }}
+                        <p>{{ .Params.summary | truncate 100 }}</p>
+                    {{ else }}
+                        <p>{{ .Params.summary_sixty_char }}</p>
+                    {{ end }}
+
+                    <ul class="card-arrow-list">
+                        {{ range first 2 (.Page.Sections.ByParam "title").ByDate.Reverse }}
+                        <li>
+                          <a class="brand-primary" href="{{- with .Params.redirect_url | default .RelPermalink }}{{.}}{{- end }}"><strong>{{ .Title }}</strong></a>
+                        </li>
+                        {{ end }}
+                    </ul>
+                  </div>
+                  <div class="panel-footer">
+                    <hr>
+                    <p><a href="{{- with .Params.redirect_url | default .RelPermalink }}{{.}}{{- end }}">View More</a></p>
+                  </div>
+              </div>
+          </div>
+      {{ end }}
+  
+  {{ end }}
+  </div>
+</div>
+
+<h2 class="big-text text-secondary">Individual Specifications</h2>
+<p>Each individual specification describes a standardized way of implementing a particular aspect of an enterprise Java application.</p>
+
+<div id="specifications-list" class="specifications-list"> 
+  <div class="row">
+  {{ range (.Page.Sections.ByParam "title").ByParam "weight" }}
+      {{ if and (ne .Title "Jakarta EE Platform") (ne .Title "Jakarta EE Web Profile") }}
+          <div class="col-sm-8 card-container">
+            <div class="card-panel bordered panel panel-default">
+              <div class="panel-body match-height-item-by-row">
+                <h2 class="big-text h3 specification-item">
+                  <a href="{{- with .Params.redirect_url | default .RelPermalink }}{{.}}{{- end }}">{{ .Title }}</a>
+                </h2>
+                {{ if .Params.project_id }}
+                    <ul class="list-inline">
+                        <li><a class="btn card-badge btn-xs" href="https://projects.eclipse.org/projects/{{ .Params.project_id }}"><i class="fa fa-archive" aria-hidden="true"></i> Project</a></li>
+                        {{ range first 1 (where $.Site.Data.eclipsefdn_projects "project_id" .Params.project_id) }}
+                            {{- with .website_url }}
+                                <li><a class="btn card-badge btn-xs" href="{{ . }}" target="_blank"><i class="fa fa-globe" aria-hidden="true"></i> Website</a></li>
+                            {{ end }}
+                        {{ end }}
+                    </ul>
+                {{ end }}
+                {{ if eq .Params.summary_sixty_char nil  }}
+                    <p>{{ .Params.summary | truncate 57 }}</p>
+                {{ else }}
+                    <p>{{ .Params.summary_sixty_char }}</p>
+                {{ end }}
+                <ul class="card-arrow-list">
+                    {{ range first 2 (.Page.Sections.ByParam "title").ByDate.Reverse }}
+                      <li>
+                        <a class="brand-primary" href="{{- with .Params.redirect_url | default .RelPermalink }} {{.}} {{- end }}"><strong>{{ .Title }}</strong></a>
+                      </li>
+                    {{ end }}
+                </ul>
+              </div>
+              <div class="panel-footer">
+                <hr>
+                <p><a href="{{- with .Params.redirect_url | default .RelPermalink }}{{.}}{{- end }}">View More</a></p>
+              </div>
+            </div>
+          </div>
+      {{ end }}
+  {{ end }}
+  </div>
+</div>
     
   {{ end }}
     <div>
