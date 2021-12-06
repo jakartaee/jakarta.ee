@@ -5,5 +5,3 @@ headline: "Specifications"
 layout: "single"
 hide_sidebar: true
 ---
-
-{{< pages/specifications/index >}}

@@ -12,7 +12,6 @@
  */
 
 import 'eclipsefdn-solstice-assets'
-import List from 'list.js';
 
 document.addEventListener("DOMContentLoaded", function(event) {
     (function($, document) {
@@ -61,23 +60,5 @@ document.addEventListener("DOMContentLoaded", function(event) {
           }).slice(0,3).slideDown("slow")
         );
       });
-
-
-
-      var list = new List('specifications-list');
-
-      for (var i in list.visibleItems) {
-          var elem = list.visibleItems[i].elm;
-          var logoElem = $('img.logo', elem);
-
-          if (logoElem.attr('src').includes('fakeimg')) {
-              logoElem.addClass('has-placeholder-logo');
-          }
-      }
-      
-
-
-
-
     })(jQuery, document);
 });
