@@ -28,6 +28,7 @@ echo "Step 4: Create static/specifications folder"
 mkdir -p static/specifications
 cd content
 cp -rf /tmp/specifications/* specifications
+rm -rf /tmp/specifications
 echo -e "Current working directory: $PWD\n"
 
 echo -e "Step 5: Preparing to move html files to static folder..."
