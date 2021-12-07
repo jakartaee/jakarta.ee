@@ -1054,6 +1054,7 @@
 
 "@types/node@*":
 <<<<<<< HEAD
+<<<<<<< HEAD
   version "16.11.12"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-16.11.12.tgz#ac7fb693ac587ee182c3780c26eb65546a1a3c10"
   integrity sha512-+2Iggwg7PxoO5Kyhvsq9VarmPbIelXP070HMImEpbtGCoyWNINQj4wzjbQCXzdHTRXnqufutJb5KAURZANNBAw==
@@ -1062,6 +1063,11 @@
   resolved "https://registry.yarnpkg.com/@types/node/-/node-16.11.11.tgz#6ea7342dfb379ea1210835bada87b3c512120234"
   integrity sha512-KB0sixD67CeecHC33MYn+eYARkqTheIRNuu97y2XMjR7Wu3XibO1vaY6VBV6O/a89SPI81cEUIYT87UqUWlZNw==
 >>>>>>> 2853eda (Update layout of the Specifications page)
+=======
+  version "16.11.12"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-16.11.12.tgz#ac7fb693ac587ee182c3780c26eb65546a1a3c10"
+  integrity sha512-+2Iggwg7PxoO5Kyhvsq9VarmPbIelXP070HMImEpbtGCoyWNINQj4wzjbQCXzdHTRXnqufutJb5KAURZANNBAw==
+>>>>>>> 72a8964 (Update hugo theme version)
 
 "@types/parse-json@^4.0.0":
   version "4.0.0"
@@ -2564,6 +2570,7 @@ duplexer3@^0.1.4:
   resolved "https://registry.yarnpkg.com/duplexer3/-/duplexer3-0.1.4.tgz#ee01dd1cac0ed3cbc7fdbea37dc0a8f1ce002ce2"
   integrity sha1-7gHdHKwO08vH/b6jfcCo8c4ALOI=
 
+<<<<<<< HEAD
 eclipsefdn-hugo-solstice-theme@^0.0.139:
   version "0.0.139"
   resolved "https://registry.yarnpkg.com/eclipsefdn-hugo-solstice-theme/-/eclipsefdn-hugo-solstice-theme-0.0.139.tgz#91449224f4985898a70d0bda9320f6be64c59fe3"
@@ -2571,14 +2578,30 @@ eclipsefdn-hugo-solstice-theme@^0.0.139:
   dependencies:
     axios "^0.21.1"
     eclipsefdn-solstice-assets "0.0.179"
+=======
+eclipsefdn-hugo-solstice-theme@^0.0.138:
+  version "0.0.138"
+  resolved "https://registry.yarnpkg.com/eclipsefdn-hugo-solstice-theme/-/eclipsefdn-hugo-solstice-theme-0.0.138.tgz#b18d51b7b07e574b04578c48b9e4a465020ac4d8"
+  integrity sha512-nAsusbXH5qAMLNW6rPVTpkM53GAUWDK2nbHp5jm9Y5dp1incoGBdGLAAKjYLoWpQJON0Jl2burOCSSqOixKJeQ==
+  dependencies:
+    axios "^0.21.1"
+    eclipsefdn-solstice-assets "0.0.178"
+>>>>>>> 23edc8d (Update hugo theme version)
     json2yaml "^1.1.0"
     parse-link-header "^1.0.1"
     toml "^3.0.0"
 
+<<<<<<< HEAD
 eclipsefdn-solstice-assets@0.0.179:
   version "0.0.179"
   resolved "https://registry.yarnpkg.com/eclipsefdn-solstice-assets/-/eclipsefdn-solstice-assets-0.0.179.tgz#3599b9ea96861d00940ef17dd75de05272071d26"
   integrity sha512-WagXKFGTAoVew2Bk5A/YW4HDZkw67vqj7n/HUf6nr+9g/5ihnepSgmd79U01tYimnOW2NUTkMg9GEsAOGgAoWw==
+=======
+eclipsefdn-solstice-assets@0.0.178:
+  version "0.0.178"
+  resolved "https://registry.yarnpkg.com/eclipsefdn-solstice-assets/-/eclipsefdn-solstice-assets-0.0.178.tgz#a44823f8170424472a50aa811ecf8e2db6187346"
+  integrity sha512-/KiGAxX8Z0ni4ZMOYwK+cILPC644+DZ+0Q9zPaEYlqKbw46h9z6gYA7tt1OwfeqFZAXiMaXIZDQElSEYrKjDGw==
+>>>>>>> 23edc8d (Update hugo theme version)
   dependencies:
     "@babel/core" "^7.0.0-0"
     "@babel/plugin-proposal-class-properties" "^7.12.1"
@@ -2625,6 +2648,7 @@ ee-first@1.1.1:
 
 electron-to-chromium@^1.3.896:
 <<<<<<< HEAD
+<<<<<<< HEAD
   version "1.4.14"
   resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.14.tgz#b0aa41fbfbf2eff8c2c6f7a871c03075250f8956"
   integrity sha512-RsGkAN9JEAYMObS72kzUsPPcPGMqX1rBqGuXi9aa4TBKLzICoLf+DAAtd0fVFzrniJqYzpby47gthCUoObfs0Q==
@@ -2633,6 +2657,11 @@ electron-to-chromium@^1.3.896:
   resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.11.tgz#303c9deebbe90c68bf5c2c81a88a3bf4522c8810"
   integrity sha512-2OhsaYgsWGhWjx2et8kaUcdktPbBGjKM2X0BReUCKcSCPttEY+hz2zie820JLbttU8jwL92+JJysWwkut3wZgA==
 >>>>>>> 2853eda (Update layout of the Specifications page)
+=======
+  version "1.4.12"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.12.tgz#5f73d1278c6205fc41d7a0ebd75563046b77c5d8"
+  integrity sha512-zjfhG9Us/hIy8AlQ5OzfbR/C4aBv1Dg/ak4GX35CELYlJ4tDAtoEcQivXvyBdqdNQ+R6PhlgQqV8UNPJmhkJog==
+>>>>>>> 72a8964 (Update hugo theme version)
 
 element-closest-polyfill@^1.0.4:
   version "1.0.4"
@@ -3110,11 +3139,6 @@ function-bind@^1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/function-bind/-/function-bind-1.1.1.tgz#a56899d3ea3c9bab874bb9773b7c5ede92f4895d"
   integrity sha512-yIovAzMX49sF8Yl58fSCWJ5svSLuaibPxXQJFLmBObTuCr0Mf1KiPopGM9NiFjiYBCbfaa2Fh6breQ6ANVTI0A==
-
-fuse.js@^6.4.6:
-  version "6.4.6"
-  resolved "https://registry.yarnpkg.com/fuse.js/-/fuse.js-6.4.6.tgz#62f216c110e5aa22486aff20be7896d19a059b79"
-  integrity sha512-/gYxR/0VpXmWSfZOIPS3rWwU8SHgsRTwWuXhyb2O6s7aRuVtHtxCkR33bNYu3wyLyNx/Wpv0vU7FZy8Vj53VNw==
 
 gauge@~2.7.3:
   version "2.7.4"
@@ -4155,13 +4179,6 @@ lines-and-columns@^1.1.6:
   version "1.2.4"
   resolved "https://registry.yarnpkg.com/lines-and-columns/-/lines-and-columns-1.2.4.tgz#eca284f75d2965079309dc0ad9255abb2ebc1632"
   integrity sha512-7ylylesZQ/PV29jhEDl3Ufjo6ZX7gCqJr5F7PKrqc93v7fzSymt1BpwEU8nAUXs8qzzvqhbjhK5QZg6Mt/HkBg==
-
-list.js@^1.2.0:
-  version "1.5.0"
-  resolved "https://registry.yarnpkg.com/list.js/-/list.js-1.5.0.tgz#a4cbfc8281ddefc02fdb2d30c8748bfae25fbcda"
-  integrity sha1-pMv8goHd78Av2y0wyHSL+uJfvNo=
-  dependencies:
-    string-natural-compare "^2.0.2"
 
 load-json-file@^2.0.0:
   version "2.0.0"
@@ -5898,11 +5915,6 @@ stream-http@^2.7.2:
     readable-stream "^2.3.6"
     to-arraybuffer "^1.0.0"
     xtend "^4.0.0"
-
-string-natural-compare@^2.0.2:
-  version "2.0.3"
-  resolved "https://registry.yarnpkg.com/string-natural-compare/-/string-natural-compare-2.0.3.tgz#9dbe1dd65490a5fe14f7a5c9bc686fc67cb9c6e4"
-  integrity sha512-4Kcl12rNjc+6EKhY8QyDVuQTAlMWwRiNbsxnVwBUKFr7dYPQuXVrtNU4sEkjF9LHY0AY6uVbB3ktbkIH4LC+BQ==
 
 string-width@^1.0.1:
   version "1.0.2"
