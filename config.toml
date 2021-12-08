@@ -309,6 +309,12 @@ enableInlineShortcodes = true
     parent = "Community"
     weight = 5
 
+[[menu.main]]
+    name = "Events"
+    url = "/community/events/"
+    parent = "Community"
+    weight = 5
+
 # Membership sub-menu
 [[menu.main]]
     name = "Join"
