@@ -298,7 +298,7 @@ enableInlineShortcodes = true
     weight = 4
 
 [[menu.main]]
-    name = "TechTalk Meet-ups"
+    name = "Tech Talk Meet-ups"
     url = "/community/#meetups"
     parent = "Community"
     weight = 5
