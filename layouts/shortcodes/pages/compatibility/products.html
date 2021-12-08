@@ -33,6 +33,7 @@
       {{ end }}
     {{ end }}
 
+    <h2 class="hidden">Latest TCK Results</h2>
     <div class="row">
       {{ range sort ($new_product_list | uniq) "name" "asc" }}  <!-- Remove duplicates and re-order by name -->
 
@@ -48,7 +49,7 @@
             </div>
             <div class="panel-body padding-bottom-0">
               <div class="card-title">
-                <p class="margin-bottom-20"><strong>{{ .name }}</strong></p>
+                <h3 class="h5 margin-bottom-20"><strong>{{ .name }}</strong></h3>
               </div>
               
               <div id="{{ .name | urlize }}" class="compatibility-selection">
