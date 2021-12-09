@@ -1740,9 +1740,9 @@ caniuse-api@^3.0.0:
     lodash.uniq "^4.5.0"
 
 caniuse-lite@^1.0.0, caniuse-lite@^1.0.30001272, caniuse-lite@^1.0.30001280:
-  version "1.0.30001285"
-  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001285.tgz#fe1e52229187e11d6670590790d669b9e03315b7"
-  integrity sha512-KAOkuUtcQ901MtmvxfKD+ODHH9YVDYnBt+TGYSz2KIfnq22CiArbUxXPN9067gNbgMlnNYRSwho8OPXZPALB9Q==
+  version "1.0.30001286"
+  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001286.tgz#3e9debad420419618cfdf52dc9b6572b28a8fff6"
+  integrity sha512-zaEMRH6xg8ESMi2eQ3R4eZ5qw/hJiVsO/HlLwniIwErij0JDr9P+8V4dtx1l+kLq6j3yy8l8W4fst1lBnat5wQ==
 
 caw@^2.0.0:
   version "2.0.1"
@@ -2552,56 +2552,21 @@ duplexer3@^0.1.4:
   resolved "https://registry.yarnpkg.com/duplexer3/-/duplexer3-0.1.4.tgz#ee01dd1cac0ed3cbc7fdbea37dc0a8f1ce002ce2"
   integrity sha1-7gHdHKwO08vH/b6jfcCo8c4ALOI=
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 eclipsefdn-hugo-solstice-theme@^0.0.139:
   version "0.0.139"
   resolved "https://registry.yarnpkg.com/eclipsefdn-hugo-solstice-theme/-/eclipsefdn-hugo-solstice-theme-0.0.139.tgz#91449224f4985898a70d0bda9320f6be64c59fe3"
   integrity sha512-6n+SJrSt4qj7I+80D6hMoC6x4uwnp28dU+8CtP1i0C9ACdoDs3RXSCgWIPxcga4fla0RadyDrbKy40k3lbcA5w==
-=======
-=======
->>>>>>> 1c5ff78 (Update hugo theme version)
-<<<<<<< HEAD
-eclipsefdn-hugo-solstice-theme@^0.0.135:
-=======
-eclipsefdn-hugo-solstice-theme@0.0.135:
->>>>>>> 0d6b637 (Update events layout)
-  version "0.0.135"
-  resolved "https://registry.yarnpkg.com/eclipsefdn-hugo-solstice-theme/-/eclipsefdn-hugo-solstice-theme-0.0.135.tgz#df57ded3ee63435e8c058ea802b9f8d2d8578e98"
-  integrity sha512-tuYHhUVuFjLgu3inQpdhM7GA0uNNTVtOUBIDF6zvdmMN5PZnZVIHZTMdpxD2XVY1xbwHXCG+unWOggefv9EmFA==
-<<<<<<< HEAD
->>>>>>> 0ead222 (Update events layout)
   dependencies:
     axios "^0.21.1"
     eclipsefdn-solstice-assets "0.0.179"
-=======
-=======
-=======
->>>>>>> 5fe09cc (Update Events sidebar)
-eclipsefdn-hugo-solstice-theme@0.0.138:
-  version "0.0.138"
-  resolved "https://registry.yarnpkg.com/eclipsefdn-hugo-solstice-theme/-/eclipsefdn-hugo-solstice-theme-0.0.138.tgz#b18d51b7b07e574b04578c48b9e4a465020ac4d8"
-  integrity sha512-nAsusbXH5qAMLNW6rPVTpkM53GAUWDK2nbHp5jm9Y5dp1incoGBdGLAAKjYLoWpQJON0Jl2burOCSSqOixKJeQ==
-  dependencies:
-    axios "^0.21.1"
-    eclipsefdn-solstice-assets "0.0.178"
->>>>>>> 1c5ff78 (Update hugo theme version)
     json2yaml "^1.1.0"
     parse-link-header "^1.0.1"
     toml "^3.0.0"
 
-<<<<<<< HEAD
 eclipsefdn-solstice-assets@0.0.179:
   version "0.0.179"
   resolved "https://registry.yarnpkg.com/eclipsefdn-solstice-assets/-/eclipsefdn-solstice-assets-0.0.179.tgz#3599b9ea96861d00940ef17dd75de05272071d26"
   integrity sha512-WagXKFGTAoVew2Bk5A/YW4HDZkw67vqj7n/HUf6nr+9g/5ihnepSgmd79U01tYimnOW2NUTkMg9GEsAOGgAoWw==
-=======
-eclipsefdn-solstice-assets@0.0.178:
-  version "0.0.178"
-  resolved "https://registry.yarnpkg.com/eclipsefdn-solstice-assets/-/eclipsefdn-solstice-assets-0.0.178.tgz#a44823f8170424472a50aa811ecf8e2db6187346"
-  integrity sha512-/KiGAxX8Z0ni4ZMOYwK+cILPC644+DZ+0Q9zPaEYlqKbw46h9z6gYA7tt1OwfeqFZAXiMaXIZDQElSEYrKjDGw==
->>>>>>> 1c5ff78 (Update hugo theme version)
   dependencies:
     "@babel/core" "^7.0.0-0"
     "@babel/plugin-proposal-class-properties" "^7.12.1"
@@ -2647,9 +2612,9 @@ ee-first@1.1.1:
   integrity sha1-WQxhFWsK4vTwJVcyoViyZrxWsh0=
 
 electron-to-chromium@^1.3.896:
-  version "1.4.13"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.13.tgz#6b8a21a71c6f30b4a4def54d3afe94e0ddbc58b3"
-  integrity sha512-ih5tIhzEuf78pBY70FXLo+Pw73R5MPPPcXb4CGBMJaCQt/qo/IGIesKXmswpemVCKSE2Bulr5FslUv7gAWJoOw==
+  version "1.4.14"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.14.tgz#b0aa41fbfbf2eff8c2c6f7a871c03075250f8956"
+  integrity sha512-RsGkAN9JEAYMObS72kzUsPPcPGMqX1rBqGuXi9aa4TBKLzICoLf+DAAtd0fVFzrniJqYzpby47gthCUoObfs0Q==
 
 element-closest-polyfill@^1.0.4:
   version "1.0.4"
@@ -3044,9 +3009,9 @@ find-up@^4.0.0:
     path-exists "^4.0.0"
 
 follow-redirects@^1.0.0, follow-redirects@^1.14.0:
-  version "1.14.5"
-  resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.14.5.tgz#f09a5848981d3c772b5392309778523f8d85c381"
-  integrity sha512-wtphSXy7d4/OR+MvIFbCVBDzZ5520qV8XfPklSN5QtxuMUJZ+b0Wnst1e1lCDocfzuCkHqj8k0FpZqO+UIaKNA==
+  version "1.14.6"
+  resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.14.6.tgz#8cfb281bbc035b3c067d6cd975b0f6ade6e855cd"
+  integrity sha512-fhUl5EwSJbbl8AR+uYL2KQDxLkdSjZGR36xy46AO7cOMTrCMON6Sa28FmAnC2tRTDbd/Uuzz3aJBv7EBN7JH8A==
 
 font-awesome@^4.7.0:
   version "4.7.0"
@@ -5216,9 +5181,9 @@ postcss-reduce-transforms@^5.0.1:
     postcss-value-parser "^4.1.0"
 
 postcss-selector-parser@^6.0.2, postcss-selector-parser@^6.0.4, postcss-selector-parser@^6.0.5:
-  version "6.0.6"
-  resolved "https://registry.yarnpkg.com/postcss-selector-parser/-/postcss-selector-parser-6.0.6.tgz#2c5bba8174ac2f6981ab631a42ab0ee54af332ea"
-  integrity sha512-9LXrvaaX3+mcv5xkg5kFwqSzSH1JIObIx51PrndZwlmznwXRfxMddDvo9gve3gVR8ZTKgoFDdWkbRFmEhT4PMg==
+  version "6.0.7"
+  resolved "https://registry.yarnpkg.com/postcss-selector-parser/-/postcss-selector-parser-6.0.7.tgz#48404830a635113a71fd79397de8209ed05a66fc"
+  integrity sha512-U+b/Deoi4I/UmE6KOVPpnhS7I7AYdKbhGcat+qTQ27gycvaACvNEw11ba6RrkwVmDVRW7sigWgLj4/KbbJjeDA==
   dependencies:
     cssesc "^3.0.0"
     util-deprecate "^1.0.2"
