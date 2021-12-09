@@ -1753,6 +1753,7 @@ caniuse-api@^3.0.0:
 
 caniuse-lite@^1.0.0, caniuse-lite@^1.0.30001272, caniuse-lite@^1.0.30001280:
 <<<<<<< HEAD
+<<<<<<< HEAD
   version "1.0.30001286"
   resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001286.tgz#3e9debad420419618cfdf52dc9b6572b28a8fff6"
   integrity sha512-zaEMRH6xg8ESMi2eQ3R4eZ5qw/hJiVsO/HlLwniIwErij0JDr9P+8V4dtx1l+kLq6j3yy8l8W4fst1lBnat5wQ==
@@ -1761,6 +1762,11 @@ caniuse-lite@^1.0.0, caniuse-lite@^1.0.30001272, caniuse-lite@^1.0.30001280:
   resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001285.tgz#fe1e52229187e11d6670590790d669b9e03315b7"
   integrity sha512-KAOkuUtcQ901MtmvxfKD+ODHH9YVDYnBt+TGYSz2KIfnq22CiArbUxXPN9067gNbgMlnNYRSwho8OPXZPALB9Q==
 >>>>>>> 2853eda (Update layout of the Specifications page)
+=======
+  version "1.0.30001286"
+  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001286.tgz#3e9debad420419618cfdf52dc9b6572b28a8fff6"
+  integrity sha512-zaEMRH6xg8ESMi2eQ3R4eZ5qw/hJiVsO/HlLwniIwErij0JDr9P+8V4dtx1l+kLq6j3yy8l8W4fst1lBnat5wQ==
+>>>>>>> 73a97ae (Remove section file for Specifications and update yarn)
 
 caw@^2.0.0:
   version "2.0.1"
@@ -2570,7 +2576,6 @@ duplexer3@^0.1.4:
   resolved "https://registry.yarnpkg.com/duplexer3/-/duplexer3-0.1.4.tgz#ee01dd1cac0ed3cbc7fdbea37dc0a8f1ce002ce2"
   integrity sha1-7gHdHKwO08vH/b6jfcCo8c4ALOI=
 
-<<<<<<< HEAD
 eclipsefdn-hugo-solstice-theme@^0.0.139:
   version "0.0.139"
   resolved "https://registry.yarnpkg.com/eclipsefdn-hugo-solstice-theme/-/eclipsefdn-hugo-solstice-theme-0.0.139.tgz#91449224f4985898a70d0bda9320f6be64c59fe3"
@@ -2578,30 +2583,14 @@ eclipsefdn-hugo-solstice-theme@^0.0.139:
   dependencies:
     axios "^0.21.1"
     eclipsefdn-solstice-assets "0.0.179"
-=======
-eclipsefdn-hugo-solstice-theme@^0.0.138:
-  version "0.0.138"
-  resolved "https://registry.yarnpkg.com/eclipsefdn-hugo-solstice-theme/-/eclipsefdn-hugo-solstice-theme-0.0.138.tgz#b18d51b7b07e574b04578c48b9e4a465020ac4d8"
-  integrity sha512-nAsusbXH5qAMLNW6rPVTpkM53GAUWDK2nbHp5jm9Y5dp1incoGBdGLAAKjYLoWpQJON0Jl2burOCSSqOixKJeQ==
-  dependencies:
-    axios "^0.21.1"
-    eclipsefdn-solstice-assets "0.0.178"
->>>>>>> 23edc8d (Update hugo theme version)
     json2yaml "^1.1.0"
     parse-link-header "^1.0.1"
     toml "^3.0.0"
 
-<<<<<<< HEAD
 eclipsefdn-solstice-assets@0.0.179:
   version "0.0.179"
   resolved "https://registry.yarnpkg.com/eclipsefdn-solstice-assets/-/eclipsefdn-solstice-assets-0.0.179.tgz#3599b9ea96861d00940ef17dd75de05272071d26"
   integrity sha512-WagXKFGTAoVew2Bk5A/YW4HDZkw67vqj7n/HUf6nr+9g/5ihnepSgmd79U01tYimnOW2NUTkMg9GEsAOGgAoWw==
-=======
-eclipsefdn-solstice-assets@0.0.178:
-  version "0.0.178"
-  resolved "https://registry.yarnpkg.com/eclipsefdn-solstice-assets/-/eclipsefdn-solstice-assets-0.0.178.tgz#a44823f8170424472a50aa811ecf8e2db6187346"
-  integrity sha512-/KiGAxX8Z0ni4ZMOYwK+cILPC644+DZ+0Q9zPaEYlqKbw46h9z6gYA7tt1OwfeqFZAXiMaXIZDQElSEYrKjDGw==
->>>>>>> 23edc8d (Update hugo theme version)
   dependencies:
     "@babel/core" "^7.0.0-0"
     "@babel/plugin-proposal-class-properties" "^7.12.1"
@@ -2649,6 +2638,7 @@ ee-first@1.1.1:
 electron-to-chromium@^1.3.896:
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   version "1.4.14"
   resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.14.tgz#b0aa41fbfbf2eff8c2c6f7a871c03075250f8956"
   integrity sha512-RsGkAN9JEAYMObS72kzUsPPcPGMqX1rBqGuXi9aa4TBKLzICoLf+DAAtd0fVFzrniJqYzpby47gthCUoObfs0Q==
@@ -2662,6 +2652,11 @@ electron-to-chromium@^1.3.896:
   resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.12.tgz#5f73d1278c6205fc41d7a0ebd75563046b77c5d8"
   integrity sha512-zjfhG9Us/hIy8AlQ5OzfbR/C4aBv1Dg/ak4GX35CELYlJ4tDAtoEcQivXvyBdqdNQ+R6PhlgQqV8UNPJmhkJog==
 >>>>>>> 72a8964 (Update hugo theme version)
+=======
+  version "1.4.14"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.14.tgz#b0aa41fbfbf2eff8c2c6f7a871c03075250f8956"
+  integrity sha512-RsGkAN9JEAYMObS72kzUsPPcPGMqX1rBqGuXi9aa4TBKLzICoLf+DAAtd0fVFzrniJqYzpby47gthCUoObfs0Q==
+>>>>>>> 73a97ae (Remove section file for Specifications and update yarn)
 
 element-closest-polyfill@^1.0.4:
   version "1.0.4"
