@@ -286,8 +286,8 @@ enableInlineShortcodes = true
     weight = 2
 
 [[menu.main]]
-    name = "JakartaOne Livestream"
-    url = "https://jakartaone.org/"
+    name = "Events"
+    url = "/community/events/"
     parent = "Community"
     weight = 3
 

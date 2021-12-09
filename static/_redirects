@@ -22,3 +22,7 @@ http://start.jakarta.ee/* https://eclipse-ee4j.github.io/starter/:splat 200!
 
 # add proxy for jakartablogs rss feed
 /blogs/jakartablogs.xml https://jakartablogs.ee/rss20.xml 200
+
+# redirect events page from old to new location
+/events /community/events 301!
+
