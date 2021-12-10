@@ -33,7 +33,6 @@
       {{ end }}
     {{ end }}
 
-    <h2 class="hidden">Latest TCK Results</h2>
     <div class="row">
       {{ range sort ($new_product_list | uniq) "name" "asc" }}  <!-- Remove duplicates and re-order by name -->
 

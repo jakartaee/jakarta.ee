@@ -24,18 +24,15 @@
 </div>
  
 <div class="row">
- <div class="navbar-collapse collapse" id="navbar-member-levels">
-   <ul class="nav nav-tabs solstice-tabs content-nav-tab" role="tablist">
-     <li role="presentation" {{ if eq $active "latest" }}class="active"{{ end }}>
-       <a class="background-grey" href="/compatibility/">
+  <div class="col-sm-24">
+
+    <div class="navbar-headings">
+      <h2{{ if eq $active "latest" }} class="active"{{ end }}><a class="background-grey" href="/compatibility/">
         Latest TCK Results
-       </a>
-     </li>
-     <li role="presentation" {{ if eq $active "download" }}class="active"{{ end }}>
-      <a class="background-grey" href="/compatibility/download/">
-       View All
-      </a>
-    </li>
-   </ul>
- </div>
+      </a></h2>
+      <h2{{ if eq $active "download" }} class="active"{{ end }}><a class="background-grey" href="/compatibility/download/">
+        View All
+      </a></h2>
+    </div>
+  </div>
 </div>
