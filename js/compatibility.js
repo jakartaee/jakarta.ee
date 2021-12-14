@@ -10,7 +10,7 @@
  * Contributors:
  *    Christopher Guindon (Eclipse Foundation)- initial API and implementation
  */
-const jakartaEECompatibility = $(document).ready(function() {
+const jakartaEECompatibility = (function ($, document) {
 
     let certification_results = {};
 
@@ -70,6 +70,7 @@ const jakartaEECompatibility = $(document).ready(function() {
             }
         });
     });
-});
+
+})(jQuery, document);
   
 export default jakartaEECompatibility;
