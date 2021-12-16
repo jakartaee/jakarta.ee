@@ -1,0 +1,179 @@
+
+.card-container {
+    .glyph-highlight.left-align {
+        right: calc(94% - 75px);
+        left: inherit;
+        top: -10px
+    }
+
+    .glyph-highlight .glyph-container.text {
+        font-size: @card-panel-bordered-h3-font-size;
+        font-family: @card-panel-bordered-h3-font-family;
+        font-weight: @card-panel-bordered-h3-font-weight;
+        margin-top: 0;
+        a {
+            color: @card-panel-bordered-h3-color;
+        }
+    }
+
+    .card-panel.bordered {
+        border-radius: @card-panel-bordered-border-radius;
+        padding: @card-panel-bordered-padding;
+        border: 1px solid #e1e1e1;
+        box-shadow: none;
+        margin-bottom: 30px;
+        @media (max-width: @screen-sm-max) {
+            margin-bottom: 30px;
+        }
+
+        .panel-footer {
+            padding: 15px 0 0;
+        }
+        
+        .tri-col {
+            padding-left: 20px;
+            column-count: 1;
+            @media (min-width: @screen-sm-min) {
+                column-count: 2;
+                column-rule: 1px solid #e1e1e1;
+                column-gap: 100px;
+            }
+            @media (min-width: @screen-md-min) {
+                column-count: 3;
+                column-rule: 1px solid #e1e1e1;
+                column-gap: 100px;
+            }
+            li {
+                margin-right: 40px;
+                line-height: 1.8;
+                list-style-position: inside;
+            }
+        }
+        ul li {
+            margin-bottom: 10px;
+        }
+        ul li a {
+            &.brand-primary:hover, 
+            &.brand-primary:visited {
+                color: @brand-primary;
+            }
+        }
+        ul.card-arrow-list {
+            list-style: none;
+            margin-left: 0;
+            padding-left: 0;
+            li {
+                padding-left: 18px;
+                position: relative;
+            }
+            li:not(.card-remove-arrow):before {
+                font-family: FontAwesome;
+                content: @fa-var-arrow-right;
+                position: absolute;
+                left: 0;
+                top: 1px;
+                color: @brand-secondary;
+            }
+        }
+        p, li {
+            a:not(.btn):not(.brand-primary) {
+                color: @text-color;
+                font-size: inherit;
+                font-weight: inherit;
+                text-transform: inherit;
+                font-style: inherit;
+                &:hover, &:visited {
+                    color: @text-color;
+                }
+            }
+        }
+        
+        hr {
+            border-top: 1px solid #e1e1e1;
+            margin-top: 0;
+        }
+    }
+    .card-panel > .secondary-bg {
+        background-color: @brand-primary;
+        color: @white;
+        h3, p {
+            color: @white;
+        }
+        a {
+            color: @brand-secondary;
+            &:hover {
+                color: @brand-secondary;
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+.card-container .glyph-highlight .glyph-container.brand-primary {
+    background-color: @brand-primary;
+}
+
+.card-container .glyph-highlight .glyph-bottom.brand-primary {
+    border-top-color: @brand-primary;
+}
+
+.top-border-secondary {
+    position: relative;
+    padding-top: 10px;
+    &:before {
+        display: block;
+        content: "";
+        border-top: 3px solid @brand-secondary;
+        width: 70%;
+        position: absolute;
+        top: 0;
+        left: 0px;
+        margin-bottom: 20px;
+    }
+}
+
+.card-banner {
+    border-radius: 5px;
+}
+
+.card-banner-dark {
+    background-image: url(../images/jumbotron-secondary.jpg);
+    color: @white;
+    h2, .h2 {
+        color: @white;
+    }
+    .icon {
+        color: @brand-secondary;
+        font-size: 20px;
+        margin-right: 6px;
+        top: 7px;
+        position: relative;
+    }
+    li {
+        margin-right: 15px;
+        font-size: 16px;
+    }
+}
+
+.featured-circle-white {
+    display: block;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 100px;
+    width: 100px;
+    height: 100px;
+    padding: 12px;
+
+    .feather {
+      color: @brand-primary;
+    }
+}
+
+.card-container .card-panel ul li .card-badge {
+    background-color: @white;
+    color: lighten(@text-color, 20%);
+    border: 1px solid lighten(@text-color, 20%);
+    border-radius: 3px;
+    text-transform: capitalize;
+    font-size: 10px;
+}

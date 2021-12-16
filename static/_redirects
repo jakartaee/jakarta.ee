@@ -3,5 +3,26 @@ https://start.jakarta.ee/* https://eclipse-ee4j.github.io/starter/:splat 200!
 http://start.jakarta.ee/* https://eclipse-ee4j.github.io/starter/:splat 200!
 
 # default release page
-/release /release/9 302!
+/release /release/9.1 302!
+
+# redirect meeting minutes old location to new location
+/meeting_minutes /about/meeting_minutes 301!
+/meeting_minutes/marketing_committee/* /about/meeting_minutes/marketing_committee/:splat 200!
+/meeting_minutes/steering_committee/* /about/meeting_minutes/steering_committee/:splat 200!
+/meeting_minutes/specification_committee/* /about/meeting_minutes/specification_committee/:splat 200!
+
+# redirect newsletter from old to new location
+/newsletter /community/newsletter 301!
+
+# redirect about working group page
+/about /about/working-group 301!
+
+# redirect get listed page from old to new location
+/compatibility/get_listed/ /compatibility/get-listed/ 301!
+
+# add proxy for jakartablogs rss feed
+/blogs/jakartablogs.xml https://jakartablogs.ee/rss20.xml 200
+
+# redirect events page from old to new location
+/events /community/events 301!
 

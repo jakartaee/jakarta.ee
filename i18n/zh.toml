@@ -23,7 +23,7 @@
   other = "Jakarta EE 社区邮件列表"
 
 [connect-mailing-list-community-body]
-  other = "jakarta.ee-community 邮件列表用于 Jakarta EE 的社区讨论. 订阅这个列表来了解最全的Jakarta EE 消息"
+  other = "jakarta.ee-community 邮件列表用于 Jakarta EE 的社区讨论. 订阅这个列表来了解最全的Jakarta EE 消息."
 
 [connect-mailing-list-community-link]
   other = "https://accounts.eclipse.org/mailing-list/jakarta.ee-community"
@@ -32,7 +32,7 @@
   other = "Jakarta EE 工作组邮件列表"
 
 [connect-mailing-list-working-group-body]
-  other = "jakarta.ee-wg 邮件列表用于 Jakarta EE 工作组. 订阅这个列表来了解Jakarta EE的一般信息"
+  other = "jakarta.ee-wg 邮件列表用于 Jakarta EE 工作组. 订阅这个列表来了解Jakarta EE的一般信息."
 
 [connect-mailing-list-working-group-link]
   other = "https://accounts.eclipse.org/mailing-list/jakarta.ee-wg"
@@ -50,7 +50,7 @@
   other = "Slack"
 
 [connect-slack-subtitle]
-  other = "加入我们的 Slack 空间"
+  other = "Join the conversations on Jakarta EE slack workspace and see what the community members are up to."
 
 [connect-slack-link]
   other = "https://join.slack.com/t/eclipsefoundationhq/shared_invite/zt-crh7mheq-3on2tophEuvQTUGidEAWlg"
@@ -59,7 +59,7 @@
   other = "新闻稿"
 
 [connect-newsletter-subtitle]
-  other = "订阅我们的新闻稿"
+  other = "With a Jakarta EE-themed edition released each quarter, the Eclipse Foundation Community Newsletter is your destination for original articles about projects and key technologies."
 
 [connect-newsletter-link]
   other = "https://eclipsecon.us6.list-manage.com/subscribe/post"
@@ -68,7 +68,7 @@
   other = "最新消息"
 
 [connect-updates-body]
-  other = "从 Eclipse Foundation 获取 Jakarta EE 以及其他 Eclipse 项目的新闻、事件和社区公告"
+  other = "从 Eclipse Foundation 获取 Jakarta EE 以及其他 Eclipse 项目的新闻、事件和社区公告."
 
 [connect-updates-edit-link]
   other = "https://accounts.eclipse.org/user/edit#open_tab_privacy"
@@ -89,28 +89,54 @@
   other = "Jakarta EE 月度会议"
 
 [connect-community-calendar-body]
-  other = "加入 Jakarta EE 月度会议以了解 Jakarta EE 的相关计划"
+  other = "加入 Jakarta EE 月度会议以了解 Jakarta EE 的相关计划."
 
 [connect-community-calendar-link]
   other = "https://calendar.google.com/calendar/embed?src=eclipse-foundation.org_3281qms6riu4kdf354jn5idon0%40group.calendar.google.com&ctz=America%2FToronto"
 
-[connect-blogs-title]
-  other = "Jakarta 博客"
+[connect-community-folder-title]
+  other = "Community Folder"
 
-[connect-blogs-body]
-  other = "访问 Jakartablogs.ee 阅读来自全球社区的文章，内容包括Jakarta EE 新闻、技术、最佳实践和兼容产品"
+[connect-community-folder-body]
+  other = "Our public Community Folder features promotional resources and slides from past update calls and other community meetings."
 
-[connect-blogs-link]
-  other = "https://jakartablogs.ee"
+[connect-community-folder-link]
+  other = "https://drive.google.com/drive/u/0/folders/11nvqdVqFlCxm5AfPh2NdnanTBrCPW8Xv"
 
-[connect-blogs-link-text]
-  other = "查看"
+[connect-community-folder-link-text]
+  other = "View"
 
-[connect-social-title]
-  other = "社交账号"
 
-[connect-social-body]
-  other = "关注我们的社交账号，了解 Jakarta EE 的最新消息"
+[connect-tech-talk-title]
+  other = "Tech Talks Meet-Ups"
+
+[connect-tech-talk-body]
+  other = "Jakarta Tech Talks are both conference based and virtual webinars dedicated to the discussion and discovery of any cloud native java projects, microservices projects, and technologies."
+
+[connect-tech-talk-link-1]
+  other = "https://www.meetup.com/jakartatechtalks_/"
+
+[connect-tech-talk-link-1-text]
+  other = "Tech Talks"
+
+[connect-tech-talk-link-2]
+  other = "https://forms.gle/3wK3oBavYDBWsGkq7"
+
+[connect-tech-talk-link-2-text]
+  other = "Sign Up to Host"
+
+
+[connect-specification-calendar-title]
+  other = "Jakarta EE Specifications Calendar"
+
+[connect-specification-calendar-body]
+  other = "Jakarta EE Specifications Calendar lists meetings dedicated to different Jakarta EE Specifications. Subscribe to the Jakarta EE Specifications Calendar to learn more about Specification-related plans."
+
+[connect-specification-calendar-link]
+  other = "https://calendar.google.com/calendar/embed?src=eclipse-foundation.org_e9ki8t2gc75sh07qdh95c8ofvc%40group.calendar.google.com&ctz=America%2FToronto"
+
+[connect-specification-calendar-link-text]
+  other = "Calendar"
   
 [members-strategic-members-title]
   other = "战略会员"
@@ -120,6 +146,9 @@
   
 [members-participant-members-title]
   other = "参与会员"
+
+[members-guest-members-title]
+  other = "访客会员"
 
 [membership-testimonials-title]
   other = "成员感言"
@@ -201,3 +230,33 @@
 
 [coming-soon]
   other = "敬请期待"
+
+[news-list-nav-next]
+  other = "Next"
+
+[news-list-nav-prev]
+  other = "Previous"
+
+[news-sidebar-news-title]
+ other = "News"
+
+[news-sidebar-tags-title]
+ other = "Tags"
+
+[news-sidebar-archive-title]
+ other = "Archive"
+
+[news-summary-continue-reading]
+  other = "Continue reading"
+
+[news-summary-icons-facebook]
+ other = "Share on Facebook"
+
+[news-summary-icons-linkedin]
+ other = "Share on LinkedIn"
+
+[news-summary-icons-twitter]
+ other = "Tweet this"
+
+[news-single-see-all-news]
+ other = "See all news"

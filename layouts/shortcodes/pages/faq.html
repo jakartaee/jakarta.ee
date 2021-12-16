@@ -1,0 +1,26 @@
+{{ $data := index .Site.Data .Site.Language.Lang }}
+
+<h2 class="big-text-secondary margin-bottom-30">Frequently Asked Questions</h2>
+
+<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+  
+  {{ range $index, $element := $data.faq.mainEntity }}
+    <div class="panel panel-default panel-bordered">
+      <div class="panel-heading" role="tab" id="heading-{{ $index }}">
+        <h3 class="h4 panel-title">
+          <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-{{ $index }}" aria-expanded="false" aria-controls="collapse-{{ $index }}">
+            {{ .name | safeHTML }}
+            <i class="fa fa-chevron-right" aria-hidden="true"></i>
+            <i class="fa fa-chevron-down" aria-hidden="true"></i>
+          </a>
+          
+        </h3>
+      </div>
+      <div id="collapse-{{ $index }}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-{{ $index }}">
+        <div class="panel-body">
+          {{ .acceptedAnswer.text  | safeHTML }}
+        </div>
+      </div>
+    </div>
+  {{ end }}
+</div>

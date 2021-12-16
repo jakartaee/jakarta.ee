@@ -1,0 +1,151 @@
+/*
+ * Copyright (c) 2021 Eclipse Foundation, Inc.
+ * 
+ * This program and the accompanying materials are made available under the
+ * terms of the Eclipse Public License v. 2.0 which is available at
+ * http://www.eclipse.org/legal/epl-2.0.
+ * 
+ * Contributors:
+ *   Eric Poirier <eric.poirier@eclipse-foundation.org>
+ * 
+ * SPDX-License-Identifier: EPL-2.0
+*/
+
+@brand-primary:         #1B208B; // Dark blue
+@brand-secondary:       #F98200; // Gold
+@brand-tertiary:        #58595B; // Dark Gray
+@brand-quaternary:      #FDB940; // Yellow 
+@brand-quinary:         #f1f3f7; // Light Gray (Breadcrumbs)
+@light-grey:#f1f1f1;
+
+//== Typography
+@font-family-sans-serif:  "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+@font-family-heading:"Exo", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+@font-size-h2: 26px;
+
+@header-toolbar-background-color:@brand-primary url('images/jumbotron-secondary.jpg') no-repeat;
+
+@main-menu-link-color:@brand-primary;
+@main-menu-link-active-color: darken(@main-menu-link-color, 10%);
+@main-menu-link-hover-color: darken(@main-menu-link-color, 10%); 
+@main-menu-link-size:12px;
+@main-menu-dropdown-menu-background:@brand-primary;
+@main-menu-dropdown-link-color:@white;
+@main-menu-dropdown-link-hover-color:@white;
+@main-menu-dropdown-link-active-color:@white;
+
+@mobile-menu-nav-background:@white;
+@mobile-menu-color:@text-color;
+@mobile-main-menu-link-border-bottom:1px solid @light-grey;
+@mobile-menu-open-active-background:@white;
+@mobile-menu-open-active-color:@text-color;
+@mobile-menu-dropdown-menu-background:@light-grey;
+@mobile-menu-dropdown-menu-color:@mobile-menu-open-active-color;
+
+@dropdown-menu-left-panel-bg:@brand-primary;
+@dropdown-menu-right-panel-bg:darken(@dropdown-menu-left-panel-bg, 10%);
+
+@header-default-bg-img:url('images/jumbotron-home.jpg');
+@header-secondary-bg-img:url('images/jumbotron-secondary.jpg');
+
+@header-row-padding-bottom:20px;
+
+@header-toolbar-color:@white;
+@header-toolbar-color-hover:@white;
+
+@btn-font-size:12px;
+@btn-text-transform:uppercase;
+@btn-font-weight: 600; 
+
+@padding-base-vertical: 8px;
+@padding-base-horizontal: 20px;
+@padding-large-vertical: 12px;
+@padding-large-horizontal: 40px;
+
+@jumbotron-text-align:left;
+@jumbotron-bg-color:@brand-primary;
+@jumbotron-h1-size:26px;
+@jumbotron-h1-weight:600;
+
+@featured-section-cta-bg:url('images/blue-shape-bg.jpg'); 
+
+@heading-underline-border:2px solid @brand-secondary;
+
+@nav-tabs-active-link-hover-border-color:transparent;
+@nav-tabs-active-link-hover-bg:transparent;
+@nav-tabs-link-hover-border-color: transparent;
+@nav-tabs-active-link-hover-color:@brand-primary;
+@nav-list-link-color:#8e8e8e;
+
+@default-box-shadow:-7px 7px 12px 0px rgba(0,0,0,0.3);
+
+@featured-story-bg-img:none;
+
+@featured-footer-light-bg:url('images/mailing-list-bg.jpg');
+@featured-footer-padding:50px 0;
+
+@footer-background:@brand-primary url('images/jumbotron-secondary.jpg') no-repeat center;
+@footer-h2-color:@white;
+@footer-h2-font-size:14px;
+@footer-h2-font-weight:700;
+@footer-link-color:@white;
+
+@footer-nav-link-padding:3px 15px;
+
+@featured-footer-light-bg-img:url('images/blue-shape-bg.jpg');
+@featured-footer-light-border-top:none;
+@featured-footer-light-border-bottom:none;
+@featured-footer-h2-color:@white;
+
+// Standard tabs variables
+@solstice-tabs-background: transparent;
+@solstice-tabs-color: #8e8e8e;
+@solstice-tabs-font-weight: bold;
+@solstice-tabs-border:1px solid #f1f1f1;
+@solstice-tabs-hover: transparent;
+@solstice-tabs-active-hover: transparent;
+@solstice-tabs-active-color:@brand-primary;
+@solstice-tabs-hover-color: @brand-primary;
+@solstice-tabs-active-font-weight: bold;
+@solstice-tabs-border: 1px solid #ddd;
+@solstice-tabs-pane-background-color:transparent;
+@solstice-tabs-active-nav-border:3px solid @brand-primary;
+@solstice-tabs-text-transform:uppercase;
+@solstice-tabs-font-size:16px;
+@solstice-tabs-font-size-mobile:12px;
+@solstice-tabs-padding:20px;
+@solstice-tabs-padding-mobile:20px 0;
+
+@solstice-tabs-content-border:none;
+@solstice-tabs-content-padding:40px 0 0;
+
+
+@main-sidebar-bg: #f1f3f7;  
+@main-sidebar-color: @text-color;
+@main-sidebar-list-border:1px solid #c7c7c7;
+@main-sidebar-heading-size:inherit;
+@main-sidebar-heading-weight:bold;
+
+@panel-default-heading-bg: @white; 
+@panel-heading-padding: 15px 0px;
+@panel-bg: @white;
+
+@card-panel-bordered-border: 1px solid #e1e1e1;
+@card-panel-bordered-border-radius: 5px; 
+@card-panel-bordered-padding: 20px;
+@card-panel-bordered-h3-font-family: @font-family-heading;
+@card-panel-bordered-h3-font-size: 22px;
+@card-panel-bordered-h3-font-weight: 600;
+@card-panel-bordered-h3-color: @brand-primary;
+
+@card-panel-bordered-link-color: @brand-secondary;
+@card-panel-bordered-link-font-family: @font-family-heading;
+@card-panel-bordered-link-text-transform: uppercase;
+@card-panel-bordered-link-font-weight: 600;
+@card-panel-bordered-link-font-size: 12px;
+@card-image-max-height: 190px;
+
+@glyph-highlight-background-color: @brand-secondary;
+
+@heading-underline-font-size: @font-size-h2;

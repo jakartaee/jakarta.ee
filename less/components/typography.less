@@ -1,0 +1,65 @@
+.btn.btn-lg {
+    font-size: 16px;
+}
+
+.big-text, .big-text-secondary {
+    font-family: @font-family-heading;
+    font-weight: 700;
+    color: @brand-primary;
+    a {
+        color: @brand-primary;
+        &:hover {
+            color: darken(@brand-primary, 15%);
+        }
+        &.white {
+            color:@white;
+            &:hover {
+                color: @white;
+            }
+        }
+    }
+    &.italic {
+        font-style: italic;
+    }
+    &.uppercase {
+        text-transform: uppercase;
+    }
+}
+
+.big-text-secondary {
+    font-style: italic;
+    text-transform: uppercase;
+    color: @brand-secondary;
+    a {
+        color: @brand-secondary;
+        &:hover {
+            color: darken(@brand-secondary, 15%);
+        }
+    }
+}
+
+.text-secondary {
+    color: @brand-secondary;
+    &:hover {
+        color: @brand-secondary;
+    }
+    a {
+        color: @brand-secondary;
+        &:hover {
+            color: @brand-secondary;
+        }
+    }
+}
+
+main h3 {
+    font-size: 22px;
+    margin-top: 0;
+}
+
+p.big-text {
+    font-size: 12px;
+}
+
+.word-break {
+    word-spacing: 100vw;
+}

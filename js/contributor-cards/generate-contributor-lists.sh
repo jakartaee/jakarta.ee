@@ -19,8 +19,10 @@
 # you need GH_TOKEN env variable for https://api.github.com/graphql
 CREDENTIALS=$GH_TOKEN:x-oauth-basic
 CURSOR=null
-LIST_FILE=data/contributors/jakarta-ee-9.json
+LIST_FILE=data/contributors/${1:-jakarta-ee-9.1.json} # first argument ('jakarta-ee-9.1.json' by default)
 EXCLUDED_LIST=data/contributors/excluded-list.json
+FROM_DATE=${2:-2020-11-21} # second argument ('2020-11-21' by default)
+TO_DATE=${3:-2021-05-18} # third argument ('2021-05-18' by default)
 
 function getGrraphQL() {
     curl -s -X POST -u $CREDENTIALS -H "Content-Type: application/json" -d "{\"query\": $1}" https://api.github.com/graphql
@@ -28,7 +30,7 @@ function getGrraphQL() {
 
 function getPrAuthors() {
     QUERY=$(jq -aRs . <<< "{
-  search(after: "$2", first: 100, query: \""$1" is:pr is:merged created:2019-10-01..2020-12-08\", type: ISSUE) {
+  search(after: "$2", first: 100, query: \""$1" is:pr is:merged created:$FROM_DATE..$TO_DATE\", type: ISSUE) {
     pageInfo {
       hasNextPage
       endCursor
@@ -54,17 +56,21 @@ function getCommitAuthors() {
     ref(qualifiedName: \"master\") {
       target {
         ... on Commit {
-          history(after: "$2", first: 100, since: \"2019-10-01T00:00:00+00:00\", until: \"2020-12-08T00:00:00+00:00\") {
+          history(after: "$2", first: 100, since: \"${FROM_DATE}T00:00:00+00:00\", until: \"${TO_DATE}T00:00:00+00:00\") {
             pageInfo {
               hasNextPage
               endCursor
             }
             edges {
               node {
-                author {
-                  user {
-                    login,
-                    name
+                authors(first:10) {
+                  nodes {
+                    ... on GitActor {
+                      user {
+                        login,
+                        name
+                      }
+                    }
                   }
                 }
               }
@@ -80,7 +86,7 @@ function getCommitAuthors() {
 
 function getOrgRepos() {
   QUERY=$(jq -aRs . <<< "{
-  search(after: "$2", first: 100, query: \"$1 pushed:2019-10-01..2020-12-08 sort:created\", type: REPOSITORY) {
+  search(after: "$2", first: 100, query: \"$1 pushed:$FROM_DATE..$TO_DATE sort:created\", type: REPOSITORY) {
     pageInfo {
       hasNextPage
       endCursor
@@ -120,19 +126,15 @@ function pageTraverse() {
 }
 
 function getRepoData() {
-  echo $(pageTraverse getCommitAuthors 'owner: "'$1'", name: "'$2'"' ".data.repository.ref.target.history.pageInfo") | jq -s '.[].data.repository.ref.target.history.edges'| jq '[ .[].node.author.user | select(.login != null) ] | unique_by(.login)'
+  echo $(pageTraverse getCommitAuthors 'owner: "'$1'", name: "'$2'"' ".data.repository.ref.target.history") | jq -s '.[].data.repository.ref.target.history.edges[].node.authors.nodes[].user'| jq '[ . | select(.login != null) ] | unique_by(.login)'
 }
 
 echo "Started contributor list generation..."
 
-prList=$(echo $(pageTraverse getPrAuthors "repo:jakartaee/specifications" ".data.search") $(pageTraverse getPrAuthors "org:eclipse-ee4j" ".data.search") | jq -s '[ .[].data.search.nodes[].author | select(.login != null) ] | unique_by(.login)')
+prList=$(echo $(pageTraverse getPrAuthors "repo:jakartaee/specifications" ".data.search") | jq -s '[ .[].data.search.nodes[].author | select(.login != null) ] | unique_by(.login)')
 echo "[prList] Fetched PRs Authors list, total amount: $(echo $prList | jq '. | length') users."
 
 commitList=$(echo $(getRepoData "jakartaee" "specifications"))
-
-for repoName in $(echo $(pageTraverse getOrgRepos "org:eclipse-ee4j" ".data.search") | jq -s -r '.[].data.search.edges[].node.name' ); do
-  commitList=$(echo $commitList $(getRepoData "eclipse-ee4j" $repoName))
-done
 
 totalList=$(echo $prList $commitList | jq -s '.[] | .[]' | jq -s '. | unique_by(.login)')
 totalAmount=$(echo $totalList | jq '. | length')

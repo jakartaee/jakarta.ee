@@ -7,6 +7,12 @@ layout: "single"
 hide_page_title: true
 ---
 
+## 案例{#cases-studies}
+
+- [了解Payara Services如何在Eclipse Foundation获得了与行业领导者同等的地位](https://outreach.eclipse.foundation/payara-services-open-source-case-study)
+
+---
+
 ## 文档{#documentation}
 
 * [Jakarta EE 教程](https://eclipse-ee4j.github.io/jakartaee-tutorial/)
@@ -18,6 +24,7 @@ hide_page_title: true
 * [2018 开发者调研](/documents/insights/2018-jakarta-ee-developer-survey.pdf)
 * [2019 开发者调研](https://outreach.jakartaee.org/jakarta-ee-2019-developer-survey)
 * [2020 开发者调研](https://outreach.jakartaee.org/2020-developer-survey-report)
+* [2021 Jakarta EE 开发者调研](https://outreach.jakartaee.org/2021-developer-survey-report?utm_campaign=2021%20Jakarta%20EE%20Developer%20Survey&utm_source=resources%20page)
 
 <p class="small">注: 2019年由外部供应商 HubSpot 提供.</p>
 
@@ -25,7 +32,8 @@ hide_page_title: true
 
 ## 信息图表{#infographics}
 
-* [2018 Jakarta EE 调研图表](https://jakarta.ee/documents/insights/2018-jakarta-ee-survey-infographic.pdf)
+* [2018年 Jakarta EE 调研图表](https://jakarta.ee/documents/insights/2018-jakarta-ee-survey-infographic.pdf)
+* [2020年 Jakarta EE 开发者调研结果](https://f.hubspotusercontent30.net/hubfs/4753786/JakartaEE-Infographic.pdf?utm_campaign=2021%20Jakarta%20EE%20Developer%20Survey&utm_source=resources)
 
 ---
 
@@ -58,3 +66,9 @@ hide_page_title: true
 ## Jakarta EE 伙伴{#friends}
 
 - [纪要](https://docs.google.com/document/d/1qojkqFrHfHlkBs6sFZdJujY2_ZQvxbkFvmDc6SQ-6bo/edit#)
+
+---
+
+## White Papers{#white-papers}
+
+- [Why Jakarta EE Is the Right Choice for Today’s Java Applications](https://outreach.jakartaee.org/white-paper-java-applications)

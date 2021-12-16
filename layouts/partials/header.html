@@ -1,0 +1,19 @@
+<!--
+  Copyright (c) 2018 Eclipse Foundation, Inc.
+
+  This program and the accompanying materials are made available under the
+  terms of the Eclipse Public License v. 2.0 which is available at
+  http://www.eclipse.org/legal/epl-2.0.
+
+  Contributors:
+    Christopher Guindon <chris.guindon@eclipse-foundation.org>
+
+  SPDX-License-Identifier: EPL-2.0
+-->
+{{- partial "google_tag_manager_no_script.html" . }}
+<a class="sr-only" href="#content">{{ i18n "navigation-content-skip" }}</a>
+{{ partial "toolbar.html" . }}
+{{ partial "navbar.html" . }}
+<header class="header-wrapper{{ if ne .IsHome true }} header-secondary-bg-img {{ end }}{{- with .Params.header_wrapper_class | default .Site.Params.header_wrapper_class }} {{ . }}{{end}}" id="header-wrapper">
+  {{ partial "jumbotron.html" . }}
+</header>

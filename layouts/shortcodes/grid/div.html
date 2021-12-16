@@ -1,0 +1,8 @@
+{{ $is_markdown := .Get "isMarkdown" | default "true" }}
+<div{{ with .Get "id" }} id="{{ . }}"{{ end }}{{ with .Get "class" }} class="{{ . }}"{{ end }}{{ with .Get "role" }} role="{{ . }}"{{ end }}>
+ {{ if eq $is_markdown "true" }}
+   {{ .Inner | markdownify }}
+ {{ else }}
+   {{ .Inner }}
+ {{ end }}
+</div>

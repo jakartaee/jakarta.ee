@@ -25,7 +25,7 @@
      </li>
      {{ range $.Site.Data.compatible_products.sets }}
      <li role="presentation" class="">
-       <a class="background-grey" href="#tab-{{ .jakartaee_version }}" data-toggle="tab" aria-controls="tab-{{ .jakartaee_version }}" role="tab">
+       <a class="background-grey" href="#tab-{{ replace .jakartaee_version "." "_" }}" data-toggle="tab" aria-controls="tab-{{ replace .jakartaee_version "." "_" }}" role="tab">
         Jakarta EE {{ .jakartaee_version }}
        </a>
      </li>
@@ -67,7 +67,7 @@
   </div>
 
 {{ range $.Site.Data.compatible_products.sets }}
-  <div role="tabpanel" class="tab-pane tab-pane" id="tab-{{ .jakartaee_version }}">
+  <div role="tabpanel" class="tab-pane tab-pane fade" id="tab-{{ replace .jakartaee_version "." "_" }}">
     {{ range .items }}
       {{ $title:=.title }}
       <div class="product-list">

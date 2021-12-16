@@ -1,0 +1,245 @@
+
+
+.btn-call-for-action {
+    margin-top:2px;
+    color:@brand-secondary;
+    &:hover {
+        color:@brand-secondary;
+    }
+}
+
+.block-summary-item {
+    margin-bottom: 30px;
+    padding: 0px;
+    border-radius: 10px;
+    box-shadow: @default-box-shadow;
+    p {
+        font-size:12px;
+    }
+    h4 {
+        font-weight:400;
+        a {
+            color:@brand-primary;
+        }
+    }
+    &.eclipsefdn-event-list-teaser-content {
+        padding:30px;
+        margin-bottom:30px;
+        h3 {
+            margin-top:0;
+        }
+    }
+}
+
+.block-summary-more {
+    margin-top:20px;
+    margin-bottom:0;
+    a {
+        color:@brand-secondary;
+    }
+}
+
+.eclipsefdn-news-list-content {
+    @media (min-width: @screen-xs-min) {
+        padding:0 0 0 45px;
+    }
+}
+
+.eclipsefdn-news-list-date, .eclipsefdn-news-list-body, .eclipsefdn-news-list-heading {
+    @media (max-width: @screen-xs-max) {
+        padding-left:30px;
+        padding-right:30px;
+    }
+    
+}
+
+.eclipsefdn-news-list-date {
+    margin-top: 25px;
+    font-weight: bold;
+    color:@brand-primary;
+}
+.eclipsefdn-news-list-body {
+    margin-bottom: 25px;
+}
+
+.eclipsefdn-news-list-img {
+    width:100%;
+    height:180px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+} 
+
+main {
+    border-bottom:none;
+}
+
+// 5 column grid
+.col-xs-5th,
+.col-sm-5th,
+.col-md-5th,
+.col-lg-5th {
+    position: relative;
+    min-height: 1px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.col-xs-5th {
+    width: 20%;
+    float: left;
+}
+
+
+@media (min-width: 768px) {
+    .col-sm-5th {
+        width: 20%;
+        float: left;
+    }
+}
+
+@media (min-width: 992px) {
+    .col-md-5th {
+        width: 20%;
+        float: left;
+    }
+}
+
+@media (min-width: 1200px) {
+    .col-lg-5th {
+        width: 20%;
+        float: left;
+    }
+}
+
+.featured-mailing-list {
+    ul {
+        margin-bottom:0;
+    }
+    .social-icon {
+        color:@brand-secondary;
+        margin: 0px 8px 0;
+        top: 6px;
+        position: relative;
+        .fa {
+            font-size: 30px;
+        }
+    }
+}
+
+.footer-section-socials {
+    @media (max-width: @screen-xs-max) {
+        img {
+            width: 200px;
+            margin: 0 auto;
+        }
+    }
+    
+    .social-icon {
+        color:@white;
+        margin: 0px 4px 0;
+        .fa {
+            font-size: 20px;
+        }
+    }
+}
+
+footer#solstice-footer {
+    padding-bottom:0;
+    background-size: cover;
+    h2 {
+        text-transform: uppercase;
+        margin-bottom:3px;
+    }
+    > .container {
+        padding-bottom:30px;
+    }
+}
+
+.footer-copyright {
+    background-color:@brand-secondary;
+    color:@text-color;
+    @media (max-width: @screen-xs-max) {
+        text-align: center;
+    }
+}
+
+#copyright {
+    padding: 0px 0 20px;
+    p {
+        margin-bottom:0;
+    }
+}
+
+#featured-footer {
+    border-bottom:none;
+    color:@white;
+    margin-top: 30px;
+    .btn {
+        background-color:transparent;
+        color:@white;
+        border: 2px solid @white;
+    }
+    h2 {
+        margin-bottom:20px;
+    }
+    p {
+        margin-bottom:30px;
+    }
+}
+
+.product-list .grid-center { 
+    display: flex; align-items: center;
+}
+.featured-section-members .owl-item {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    height: 115px;
+} 
+
+#main-sidebar {
+    margin-top: 20px;
+}
+
+#main-sidebar .ul-left-nav {
+    padding: 20px 30px;
+}
+
+#main-sidebar .ul-left-nav > li.separator {
+    border-bottom: @main-sidebar-list-border;
+}
+
+#main-sidebar:after {
+    display:none;
+}
+
+#main-sidebar li:last-child {
+    margin-bottom:0;
+}
+
+.vertical-align-container {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+}
+
+.default-breadcrumbs {
+    margin-bottom: 60px;
+}
+
+.margin-auto {
+    margin: 0 auto;
+}
+
+.secondary-bg {
+    background-color: @brand-secondary;
+    color: @white;
+}

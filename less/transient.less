@@ -15,20 +15,20 @@
  * This file is meant to have transient rules for special needs cases. Please add dates to projected deletion for better management. 
  *
  */
-.featured-footer, .featured-story {
-  .divider {
-    margin-bottom: 15px;
+ .featured-footer, .featured-story {
+    .divider {
+      margin-bottom: 15px;
+    }
+    .divider:after {
+      content: "";
+      position: relative;
+      display: block;
+      width: 150px;
+      height: 15px;
+      border-bottom: 2px solid @brand-primary;
+      margin: 0 auto;
+    }
+    .divider-left:after {
+      margin: 0 auto 0 0;
+    }
   }
-  .divider:after {
-    content: "";
-    position: relative;
-    display: block;
-    width: 150px;
-    height: 15px;
-    border-bottom: 2px solid @brand-primary;
-    margin: 0 auto;
-  }
-  .divider-left:after {
-    margin: 0 auto 0 0;
-  }
-}

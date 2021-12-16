@@ -4,14 +4,14 @@ headline: "塑造Jakarta EE的未来"
 date: 2018-04-05T16:09:45-04:00
 description: "加入一个开放过程来塑造Jakarta EE，打造云原生Java的未来."
 hide_page_title: "true"
-links: [[href: "/zh/membership/members", text: "浏览成员"], [href: "#benefits", text: "成员收益"], [href: "https://accounts.eclipse.org/contact/membership/jakarta-ee", text: "加入Jakarta EE"]]
+links: [[href: "/zh/membership/members", text: "浏览成员"], [href: "#benefits", text: "成员收益"], [href: "/membership/join-us", text: "加入Jakarta EE"]]
 ---
 
 ## 联系我们了解成员事宜{#contact-us}  
 
 联系我们以了解您的组织如何加入 Jakarta EE 工作组.
 
-{{< bootstrap/button href="https://accounts.eclipse.org/contact/membership/jakarta-ee" linkClass="btn-lg btn-secondary" pClass="margin-top-20" >}}联系我们了解成员事宜{{</ bootstrap/button >}}
+{{< bootstrap/button href="/membership/join-us" linkClass="btn-lg btn-secondary" pClass="margin-top-20" >}}联系我们了解成员事宜{{</ bootstrap/button >}}
 
 ## 加入成员{#out}  
 

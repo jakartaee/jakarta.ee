@@ -17,16 +17,16 @@
     "watch": "NODE_ENV=development webpack --watch --progress --config=node_modules/laravel-mix/setup/webpack.config.js",
     "hot": "NODE_ENV=development webpack-dev-server --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
     "production": "NODE_ENV=production webpack --progress --config=node_modules/laravel-mix/setup/webpack.config.js",
-    "install": "NODE_ENV=production npm run production",
     "postinstall": "NODE_ENV=production npm run fetch_project",
     "specifications": "bash build.sh",
     "build_netlify": "NODE_ENV=production npm run production && npm run specifications && npm run fetch_project",
     "fetch_project": "NODE_ENV=production node node_modules/eclipsefdn-hugo-solstice-theme/bin/projects/index.js -l data",
     "generate_contributor_list": "./js/contributor-cards/generate-contributor-lists.sh",
-    "disallow_robots_txt": "echo \"User-agent: *\r\nDisallow: /\" > layouts/robots.txt"
+    "disallow_robots_txt": "echo \"User-agent: *\r\nDisallow: /\" > layouts/robots.txt",
+    "optimize_news_images": "bash ./optimize_images.sh content/news"
   },
   "dependencies": {
-    "eclipsefdn-hugo-solstice-theme": "0.0.111",
+    "eclipsefdn-hugo-solstice-theme": "^0.0.139",
     "lodash-es": "4.17.15"
   },
   "devDependencies": {

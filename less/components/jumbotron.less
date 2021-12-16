@@ -1,0 +1,56 @@
+.header-wrapper {
+    background-position:left;
+    .featured-jumbotron-default {
+        min-height:400px;
+        padding-top: 250px;
+        padding-bottom: 30px;
+    }
+    &.header-secondary-bg-img {
+        .featured-jumbotron {
+            min-height:300px;
+            padding-top: 200px;
+        }
+    }
+}
+
+.featured-jumbotron {
+    h1 {
+        margin-bottom:10px;
+        &:after {
+            display:none;
+        }
+    }
+    h1, h2 {
+        text-transform: uppercase;
+    }
+    h2 {
+        font-family: @font-family-sans-serif;
+        font-weight: 600;
+        font-size: 26px;
+    }
+    .jumbotron-title {
+        width: 350px;
+        margin-bottom: 20px;
+        @media (max-width: @screen-xs-max) {
+            width: 250px;
+        }
+    }
+    .btn {
+        border: 1px solid #fff;
+        background-color: transparent;
+        &:hover {
+            background-color: rgba(0,0,0,0.3);
+            border-color: #e2e2e2;
+        }
+    }
+}
+
+.header-secondary-bg-img {
+    background-image:@header-secondary-bg-img;
+}
+
+.max-content {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+}

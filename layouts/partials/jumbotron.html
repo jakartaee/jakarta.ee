@@ -1,0 +1,52 @@
+<!-- 
+  Copyright (c) 2018 Eclipse Foundation, Inc.
+
+  This program and the accompanying materials are made available under the
+  terms of the Eclipse Public License v. 2.0 which is available at
+  http://www.eclipse.org/legal/epl-2.0.
+
+  Contributors:
+    Christopher Guindon <chris.guindon@eclipse-foundation.org>
+
+  SPDX-License-Identifier: EPL-2.0
+-->
+
+{{ if isset .Page.Params "headline" }}
+<div class="jumbotron featured-jumbotron featured-jumbotron-default margin-bottom-0">
+  <div class="container">
+    <div class="row">
+      <div class="{{- .Params.jumbotron_class | default .Site.Params.jumbotron_class | default "col-md-20 col-md-offset-2 col-sm-18 col-sm-offset-3"}}">
+        <h1>{{ .Page.Params.headline | safeHTML }}</h1>
+         {{ if isset .Page.Params "subtitle" }}
+        <h2>{{ .Page.Params.subtitle  | title }}</h2>
+         {{end}} 
+         
+         {{ if isset .Page.Params "tagline" }}
+        <div class="row">
+          <div class="{{- .Params.jumbotron_tagline_class | default .Site.Params.jumbotron_tagline_class | default "col-sm-18 col-sm-offset-3"}}">
+            <p>{{ .Page.Params.tagline | safeHTML }}</p>
+          </div>
+        </div>
+        {{end}} 
+
+         {{ if isset .Page.Params "custom_jumbotron" }}
+        <div class="row">
+          <div class="{{- .Params.custom_jumbotron_class | default .Site.Params.custom_jumbotron_class | default "col-sm-18 col-sm-offset-3"}}">
+            {{ .Page.Params.custom_jumbotron | safeHTML }}
+          </div>
+        </div>
+        {{end}} 
+
+        {{ if isset .Page.Params "links" }}
+        {{- with .Params.jumbotron_btn_class | default .Site.Params.jumbotron_btn_class | default "btn btn-primary"}}{{ $.Scratch.Set "jumbotron_btn" . }}{{end}}
+        <ul class="list-inline">
+          {{range $key,$val := index .Page.Params.links}}
+            <li><a class="{{ $.Scratch.Get "jumbotron_btn" }}" href="{{ (index $val 0).href}}">{{ (index $val 1).text}}</a></li>
+          {{end}} 
+        </ul>
+         {{end}} 
+      </div>
+    </div>
+  </div>
+</div>
+{{ end }}
