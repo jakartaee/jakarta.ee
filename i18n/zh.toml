@@ -1,6 +1,33 @@
 [jakarta-ee-logo-alt]
   other = "Jakarta EE logo"
 
+[home-calltoaction-title]
+  other = "Jakarta EE 将全球顶尖的开发者、供应商和企业聚合在一起形成一个社区，共同协作推进云端的企业级Java技术。"
+ 
+[home-calltoaction-getinformed]
+  other = "获得通知"
+
+[home-calltoaction-specifications]
+  other = "获取规范文档"
+
+[home-calltoaction-getinvolved]
+  other = "加入我们"
+
+[home-calltoaction-membership]
+  other = "加入工作组"
+
+[home-calltoaction-getstarted]
+  other = "开始使用Jakarta"
+
+[home-calltoaction-jakartaeestarter]
+  other = "JAKARTA EE 初体验"
+
+[home-calltoaction-compatibility]
+  other = "下载兼容产品"
+
+[home-calltoaction-release]
+  other = "版本信息"
+
 [compatibility-intro-text]
   other = "Jakarta EE 技术的成功有赖于其兼容性，以确保应用的可移植性、安全性、稳定性和弹性。兼容性的存在使得更多的技术供应商可以在企业级Java社群中利用和加强Jakarta EE 的品牌。如果有兴趣把你的产品列在此处，请遵循如下的步骤 <a href=\"/zh/compatibility/get_listed/\">加入列表</a>"
 
@@ -219,8 +246,32 @@
 [sidebar-trademark-guidelines]
   other = "商标指引"
 
-[sidebar-specification-process]
+[sidebar-specification]
   other = "规范过程"
+
+[sidebar-community]
+  other = "关于社区"
+
+[sidebar-adopt-a-spec]
+  other = "Adopt a Spec计划"
+
+[sidebar-jakartatechtalks]
+  other = "TechTalk聚会"
+
+[sidebar-videos]
+  other = "视频"
+
+[sidebar-events-hosting]
+  other = "想举办你的活动么"
+
+[sidebar-events-add]
+  other = "发起活动"
+
+[sidebar-events-youtube]
+  other = "了解既往活动"
+
+[sidebar-events-youtube-channel]
+  other = "TouTube频道"
 
 [pages-newsletter-sign-up-to-our-newsletter]
   other = "订阅我们的简讯"
