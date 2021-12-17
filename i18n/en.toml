@@ -1,7 +1,72 @@
 [jakarta-ee-logo-alt]
   other = "Jakarta EE logo"
 
-  
+[home-calltoaction-title]
+  other = "Jakarta EE brings together a global community of leading developers, vendors, and enterprises to collaborate on advancing enterprise Java technologies in the cloud."
+
+[home-calltoaction-getinformed]
+  other = "GET INFORMED"
+
+[home-calltoaction-specifications]
+  other = "GET THE <br>SPECIFICATIONS"
+
+[home-calltoaction-getinvolved]
+  other = "GET INVOLVED"
+
+[home-calltoaction-membership]
+  other = "JOIN THE <br>WORKING GROUP"
+
+[home-calltoaction-getstarted]
+  other = "GET STARTED"
+
+[home-calltoaction-jakartaeestarter]
+  other = "STARTER FOR JAKARTA EE"
+
+[home-calltoaction-compatibility]
+  other = "DOWNLOAD <br>COMPATIBLE PRODUCTS"
+
+[home-calltoaction-release]
+  other = "RELEASES"
+
+[home-featured]
+  other = "Featured"
+
+[home-members]
+  other = "Members"
+
+[home-members-title]
+  other = "Working together, the world’s enterprise Java ecosystem leaders, including Fujitsu, IBM, Oracle, Red Hat, and Tomitribe, are advancing Java EE and Jakarta EE to support moving mission-critical applications and workloads to the cloud."
+
+[home-members-explore]
+  other = "Explore All Members"
+
+[home-testimonials]
+  other = "Testimonials"
+
+[home-videos]
+  other = "Videos"
+
+[jakarta-ee-on-youtube]
+  other = "Jakarta EE on YouTube"
+
+[home-videos-title]
+  other = "The Jakarta EE Youtube channel is a platform that features Jakarta EE related videos aiming to educate the new and existing enterprise java community members about open source, cloud native and microservices technologies."
+
+[home-videos-watch-more]
+  other = "Watch More"
+
+[home-whats-new]
+  other = "What's New"
+
+[home-whats-new-annoucements]
+  other = "Annoucements"
+
+[home-whats-new-news]
+  other = "News"
+
+[home-whats-new-events]
+  other = "Events"
+
 [compatibility-intro-text]
   other = "The success of Jakarta EE technology relies on compatibility to ensure application portability, security, stability, and resiliency. Compatibility will allow more technology providers to leverage and strengthen the Jakarta EE brand in the enterprise Java community. If you are interested in featuring your product here, follow the steps on the <a href=\"/compatibility/get_listed\">Get Listed</a> page."
 

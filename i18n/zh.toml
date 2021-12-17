@@ -28,6 +28,45 @@
 [home-calltoaction-release]
   other = "版本信息"
 
+[home-featured]
+  other = "焦点"
+
+[home-members]
+  other = "成员"
+
+[home-members-title]
+  other = "全球企业级Java生态的领导者，包括 Fujitsu、IBM、Oracle、Red Hat 和 Tomitribe ，正共同努力，推动 Java EE 和 Jakarta EE 对关键应用和负载向云端迁移的支持。"
+  
+[home-members-explore]
+  other = "浏览全部成员"
+
+[home-testimonials]
+  other = "用户评价"
+
+[home-videos]
+  other = "视频"
+
+[jakarta-ee-on-youtube]
+  other = "Jakarta EE 的 YouTube 频道"
+
+[home-videos-title]
+  other = "Jakarta EE Youtube 频道做为一个平台集合了 Jakarta EE 相关的视频，旨在对企业级Java社区的新老成员普及开源、云原生和微服务技术知识。"
+
+[home-videos-watch-more]
+  other = "更多"
+
+[home-whats-new]
+  other = "社区新闻"
+
+[home-whats-new-annoucements]
+  other = "公告"
+
+[home-whats-new-news]
+  other = "新闻"
+
+[home-whats-new-events]
+  other = "活动"
+  
 [compatibility-intro-text]
   other = "Jakarta EE 技术的成功有赖于其兼容性，以确保应用的可移植性、安全性、稳定性和弹性。兼容性的存在使得更多的技术供应商可以在企业级Java社群中利用和加强Jakarta EE 的品牌。如果有兴趣把你的产品列在此处，请遵循如下的步骤 <a href=\"/zh/compatibility/get_listed/\">加入列表</a>"
 
