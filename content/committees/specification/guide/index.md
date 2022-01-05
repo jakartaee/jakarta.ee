@@ -2,6 +2,7 @@
 title: "Guide to the Jakarta EE Specification Process"
 date: "2021-03-04T00:00:00+00:00"
 layout: "single"
+hide_sidebar: true
 aliases:
     - committees/specification/guide/
 ---

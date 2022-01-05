@@ -1,6 +1,7 @@
 ---
 title: "Jakarta EE 规范过程"
 date: 2019-07-16T13:00:00-04:00
+hide_sidebar: true
 ---
 
 Version 1.2. July 16, 2019 生效
