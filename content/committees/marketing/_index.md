@@ -13,7 +13,6 @@ The focus of this committee is on marketing, branding and community awareness an
 * Neil Patterson (**chair**) - IBM
 * Ed Bratt - Oracle, Melissa Jacobus - alternate
 * Dominika Tasarz - Payara, Jadon Ortlepp - alternate
-* John Clingan - Red Hat
 * Jonathan Gallimore - Tomitribe, Cesar Hernandez - alternate
 * Eric (QingYu) Meng - Primeton - Elected Enterprise Representative
 * Zhao Xin - Shandong Cvicse Middleware Co. - Elected Enterprise Representative
