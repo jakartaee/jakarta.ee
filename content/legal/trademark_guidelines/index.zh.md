@@ -2,7 +2,7 @@
 title: "Jakarta EE 商标指引"
 date: 2018-04-05T16:10:38-04:00
 description: "对 Eclipse Foundation Jakarta EE 徽标的 Eclipse 徽标和商标政策指南的补充"
-hide_sidebar: "false"
+hide_sidebar: true
 ---
 
 Version 1.2 - March 12, 2020
