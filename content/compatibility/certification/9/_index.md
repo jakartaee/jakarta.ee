@@ -10,8 +10,8 @@ draft: false
 container: "container margin-top-20"
 ---
 
-{{< pages/compatibility/navigation active="download" >}}
+{{< pages/compatibility/navigation active="certification" >}}
 
-{{< pages/compatibility/download >}}
+{{< pages/compatibility/certification version="9" >}}
 
 {{< pages/compatibility/footer >}}

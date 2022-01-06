@@ -1,5 +1,5 @@
 ---
-title: "Jakarta EE Compatible Products"
+title: "Compatible Products"
 seo_title: "Jakarta EE Compatible Products | Enterprise Java Application and Web Servers"
 headline: "Jakarta EE Compatible Products"
 date: 2019-04-2T11:10:38-04:00
@@ -11,6 +11,8 @@ layout: "single"
 container: "container margin-top-60"
 ---
 
-{{< pages/compatibility-products-header >}}
+{{< pages/compatibility/navigation active="latest" >}}
 
-{{< pages/compatibility-products >}}
+{{< pages/compatibility/products >}}
+
+{{< pages/compatibility/footer >}}

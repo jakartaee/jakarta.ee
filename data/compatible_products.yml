@@ -294,7 +294,7 @@ sets:
         vendor: Eclipse Foundation
         image: '/images/compatible_products/glassfish_logo.svg'
         image_width: 195
-        download: 'https://www.eclipse.org/downloads/download.php?file=/glassfish/glassfish-5.1.0.zip'
+        download: 'https://glassfish.org/download'
         versions:
         - version: 5.1.0
           compatibility: 'https://eclipse-ee4j.github.io/glassfish/certifications/jakarta-full-profile/8.0/TCK-Results'
@@ -445,7 +445,7 @@ sets:
         vendor: Eclipse Foundation
         image: '/images/compatible_products/glassfish_logo.svg'
         image_width: 195
-        download: 'https://www.eclipse.org/downloads/download.php?file=/glassfish/web-5.1.0.zip'
+        download: 'https://glassfish.org/download'
         versions:
         - version: 5.1.0
           compatibility: 'https://eclipse-ee4j.github.io/glassfish/certifications/jakarta-web-profile/8.0/TCK-Results'
