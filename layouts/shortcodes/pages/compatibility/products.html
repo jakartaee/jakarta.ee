@@ -1,0 +1,40 @@
+<div class="content-nav-tab-body tab-content margin-bottom-20" id="tabs-content">
+    <div role="tabpanel" class="tab-pane tab-pane active" id="tab-one">
+      {{ $new_product_list := slice }}
+      {{ range $elem_index, $elem_val := $.Site.Data.compatible_products.sets }}
+        {{ range $elem_val.items }}
+          {{ range .items }}  <!-- Loop all items and add name, image, image_width properties to form a new object and put in the new_product_list array -->
+            {{ $new_element := (dict "name" .name "image" .image "image_width" .image_width "download" .download) }}
+            {{ $new_product_list = $new_product_list | append $new_element }}
+          {{ end }}
+        {{ end }}
+      {{ end }}
+  
+      <div class="row d-flex flex-wrap">
+        {{ range sort ($new_product_list | uniq) "name" "asc" }}  <!-- Remove duplicates and re-order by name -->
+            <div class="col-sm-6 card-container">
+            <div class="card-panel bordered panel panel-default">
+                <div class="panel-body text-center">
+                    <div class="match-height-item-by-row padding-20 flex-column vertical-align">
+                        {{ if .image }}
+                            <a href="{{ .download }}"><img width="{{ .image_width }}" class="img img-responsive" src="{{ .image }}" alt="{{ .name }} logo"></a>
+                        {{ else }}
+                            <div class="icon-backdrop">
+                                <div class="ratio"></div>
+                                <div class="icon-container"><i class="fa fa-download"></i></div>
+                            </div>
+                        {{ end }}
+                    </div>
+                    <h3 class="big-text h4">
+                        <a href="{{ .download }}">{{ .name }}</a>
+                    </h3>
+                </div>
+            </div>
+        </div>
+        {{ end }}
+      </div>
+    </div>
+</div>
+
+
+

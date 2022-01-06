@@ -243,3 +243,55 @@ footer#solstice-footer {
     background-color: @brand-secondary;
     color: @white;
 }
+
+
+.btn-inline-group {
+    margin-left: 0;
+    > li {
+        padding-right: 0;
+        padding-left: 0;
+        &:last-child {
+            padding-left: 3px;
+        }
+        a {
+            padding: 8px 18px;
+        }
+    }
+}
+
+.navbar-headings {
+    border-bottom: 1px solid #ddd;
+    position: relative;
+    h2 {
+        display: inline-block;
+        margin: 15px 0;
+        a {
+            padding: 20px;
+            font-size: 16px;
+            position: relative;
+            margin: 0px;
+            border-radius: 0;
+            font-weight: bold;
+            color: #8e8e8e;
+            background-color: transparent;
+            text-transform: uppercase;
+            cursor: pointer;
+            &:hover, &:focus, &:active {
+                text-decoration: none;
+                color: @brand-primary;
+                border-bottom: 3px solid @brand-primary;
+            }
+        }
+        &.active {
+            a {
+                border: 3px solid @brand-primary;
+                border-right: none;
+                border-top: none;
+                border-left: none;
+                font-weight: bold;
+                color: @brand-primary;
+                background-color: transparent;
+            }
+        }
+    }
+} 

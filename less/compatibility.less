@@ -34,10 +34,13 @@
 }
 
 a.compatibility-link,
-a:visited.compatibility-link {
-  text-decoration-color: #000;
-  text-decoration: underline;
-  color: #000;
+a:visited.compatibility-link { 
+  white-space: nowrap;
+}
+
+.compatibility-link-separator {
+  color: #a7a7a7;
+  padding: 0 10px;
 }
 
 .card-list.contributor-list {
@@ -158,8 +161,16 @@ a:visited.compatibility-link {
     border: none;
     border-bottom: none;
     vertical-align: middle;
-    width: 50%;
+    width: 20%;
     padding: 15px;
+  }
+  .compatibility-download-table-middle {
+    width: 60%;
+  }
+
+  img {
+    max-width: 130px;
+    max-height: 50px;
   }
 
   thead {
