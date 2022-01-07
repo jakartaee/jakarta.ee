@@ -206,8 +206,27 @@ a:visited.compatibility-link {
 }
 
 @media (min-width: @screen-md-min) {
-    .product-list .center-block {
-      padding-left: 30px;
-      padding-right: 30px;
+  .product-list .center-block {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+.compatibility-sidebar {
+  .active {
+    position: relative;
+    font-weight: bold;
+    &:before {
+      float: left;
+      content: "";
+      width: 0;
+      height: 0;
+      border-top: 5px solid transparent;
+      border-left: 5px solid @brand-secondary;
+      border-bottom: 5px solid transparent;
+      margin-right: 10px;
+      top: 6px;
+      position: relative;
     }
   }
+}
