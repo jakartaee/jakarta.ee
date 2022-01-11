@@ -76,12 +76,6 @@ types:
          image: /images/members/jakarta-member_jadeva_gmbh.png
          img_width: 90
          type: "participant"
-       - title: Jelastic
-         id: "jelastic"
-         link: https://jelastic.com
-         image: /images/members/jakarta-member_jelastic.png
-         img_width: 90
-         type: "participant"
        - title: Liferay
          id: "liferay"
          link: https://www.liferay.com

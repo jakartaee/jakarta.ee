@@ -17,6 +17,5 @@ The focus of this committee is on marketing, branding and community awareness an
 * Eric (QingYu) Meng - Primeton - Elected Enterprise Representative
 * Zhao Xin - Shandong Cvicse Middleware Co. - Elected Enterprise Representative
 * Otavio Santana - Elected Committer Member Representative
-* Tetiana Fydorenchyk - Elected Participant Member Representative
 
 {{< meeting-minutes-single "marketing_committee" >}}
