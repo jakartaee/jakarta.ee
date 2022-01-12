@@ -25,12 +25,6 @@ types:
          image: /images/members/jakarta-member_payara.svg
          type: "strategic"
          img_width: 100
-       - title: Red Hat
-         id: "redhat"
-         link: https://www.redhat.com/
-         image: /images/members/jakarta-member_redhat.svg
-         type: "strategic"
-         img_width: 100
        - title: Tomitribe
          id: "tomitribe"
          link: https://www.tomitribe.com/
@@ -45,6 +39,12 @@ types:
          image: /images/members/jakarta-member_primeton.png
          img_width: 155
          type: "enterprise"
+       - title: Red Hat
+         id: "redhat"
+         link: https://www.redhat.com/
+         image: /images/members/jakarta-member_redhat.svg
+         type: "strategic"
+         img_width: 100
        - title: shandong_cvicse_middleware
          id: "shandong_cvicse_middleware"
          image: /images/members/jakarta-member_shandong_cvicse_middleware.png
