@@ -43,7 +43,7 @@ types:
          id: "redhat"
          link: https://www.redhat.com/
          image: /images/members/jakarta-member_redhat.svg
-         type: "strategic"
+         type: "enterprise"
          img_width: 100
        - title: shandong_cvicse_middleware
          id: "shandong_cvicse_middleware"
