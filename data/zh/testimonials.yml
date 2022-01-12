@@ -24,11 +24,6 @@ items:
      logo: /images/members/jakarta-member_redhat.svg
      picture: /images/silhouette.jpg
      text: Red Hat reaffirms its support for the development of Jakarta EE. We look forward to working with the Eclipse Foundation and the broader Java community to align efforts to drive Enterprise Java forward. The breadth of participation in combination with community governance will help accelerate the evolution of Jakarta EE. We believe that Jakarta EE represents one of the most significant events to have happened to the open source enterprise Java ecosystem since OpenJDK was released.
-   - company: CEO and co-founder of Jelastic
-     name: Ruslan Synytsky
-     logo: /images/members/jakarta-member_jelastic.png
-     picture: /images/testimonials/ruslan-synytsky.jpg
-     text: Jelastic team keeps working tightly with Jakarta EE ecosystem to make this technology cloud-friendly, scalable and easily available for developers worldwide. Jakarta EE project is constantly introducing new improvements and we are committed to instantly spread these updates via our PaaS deployed across network of service providers to meet the needs of Java community in tune with the times.
    - company: Founder and Director of Payara® Services, LTD and the Payara Foundation
      name: Stephen Millidge
      logo: /images/members/jakarta-member_payara.svg
