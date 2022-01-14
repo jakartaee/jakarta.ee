@@ -40,15 +40,18 @@ sets:
       - name: Open Liberty
         vendor: IBM Corporation
         image: '/images/compatible_products/ibm_open_liberty.svg'
-        image_width: 195
-        download: 'https://openliberty.io/downloads/#runtime_betas'
+        image_width: 160
+        download: 'https://openliberty.io/start/#runtime_releases'
         versions:
-        - version: 21.0.0.3-beta, Java 11
-          compatibility: 'https://openliberty.io/certifications/jakartaee/platform/9.1/21.0.0.3-beta-Java11-TCKResults.html'
-          download_url: 'https://public.dhe.ibm.com/ibmdl/export/pub/software/openliberty/runtime/tck/2021-02-09_1100/openliberty-jakartaee9-21.0.0.3-beta.zip'
-        - version: 21.0.0.3-beta, Java 8
-          compatibility: 'https://openliberty.io/certifications/jakartaee/platform/9.1/21.0.0.3-beta-Java8-TCKResults.html'
-          download_url: 'https://public.dhe.ibm.com/ibmdl/export/pub/software/openliberty/runtime/tck/2021-02-09_1100/openliberty-jakartaee9-21.0.0.3-beta.zip'
+        - version: 21.0.0.12, Java 17
+          compatibility: 'https://openliberty.io/certifications/jakartaee/9.1/platform/21.0.0.12-Java17-TCKResults.html'
+          download_url: 'https://public.dhe.ibm.com/ibmdl/export/pub/software/openliberty/runtime/release/2021-11-17_1256/openliberty-jakartaee9-21.0.0.12.zip'
+        - version: 21.0.0.12, Java 11
+          compatibility: 'https://openliberty.io/certifications/jakartaee/9.1/platform/21.0.0.12-Java11-TCKResults.html'
+          download_url: 'https://public.dhe.ibm.com/ibmdl/export/pub/software/openliberty/runtime/release/2021-11-17_1256/openliberty-jakartaee9-21.0.0.12.zip'
+        - version: 21.0.0.12, Java 8
+          compatibility: 'https://openliberty.io/certifications/jakartaee/9.1/platform/21.0.0.12-Java8-TCKResults.html'
+          download_url: 'https://public.dhe.ibm.com/ibmdl/export/pub/software/openliberty/runtime/release/2021-11-17_1256/openliberty-jakartaee9-21.0.0.12.zip'
       - name: WildFly
         vendor: Red Hat
         image: '/images/compatible_products/red-hat-wildfly-logo.png'
@@ -127,15 +130,18 @@ sets:
       - name: Open Liberty
         vendor: IBM Corporation
         image: '/images/compatible_products/ibm_open_liberty.svg'
-        image_width: 195
-        download: 'https://openliberty.io/downloads/#runtime_betas'
+        image_width: 160
+        download: 'https://openliberty.io/start/#runtime_releases'
         versions:
-        - version: 21.0.0.3-beta, Java 11
-          compatibility: 'https://openliberty.io/certifications/jakartaee/webprofile/9.1/21.0.0.3-beta-Java11-TCKResults.html'
-          download_url: 'https://public.dhe.ibm.com/ibmdl/export/pub/software/openliberty/runtime/tck/2021-02-09_1100/openliberty-jakartaee9-21.0.0.3-beta.zip'
-        - version: 21.0.0.3-beta, Java 8
-          compatibility: 'https://openliberty.io/certifications/jakartaee/webprofile/9.1/21.0.0.3-beta-Java8-TCKResults.html'
-          download_url: 'https://public.dhe.ibm.com/ibmdl/export/pub/software/openliberty/runtime/tck/2021-02-09_1100/openliberty-jakartaee9-21.0.0.3-beta.zip'
+        - version: 21.0.0.12, Java 17
+          compatibility: 'https://openliberty.io/certifications/jakartaee/9.1/webprofile/21.0.0.12-Java17-TCKResults.html'
+          download_url: 'https://public.dhe.ibm.com/ibmdl/export/pub/software/openliberty/runtime/release/2021-11-17_1256/openliberty-jakartaee9-21.0.0.12.zip'
+        - version: 21.0.0.12, Java 11
+          compatibility: 'https://openliberty.io/certifications/jakartaee/9.1/webprofile/21.0.0.12-Java11-TCKResults.html'
+          download_url: 'https://public.dhe.ibm.com/ibmdl/export/pub/software/openliberty/runtime/release/2021-11-17_1256/openliberty-jakartaee9-21.0.0.12.zip'
+        - version: 21.0.0.12, Java 8
+          compatibility: 'https://openliberty.io/certifications/jakartaee/9.1/webprofile/21.0.0.12-Java8-TCKResults.html'
+          download_url: 'https://public.dhe.ibm.com/ibmdl/export/pub/software/openliberty/runtime/release/2021-11-17_1256/openliberty-jakartaee9-21.0.0.12.zip'
       - name: WildFly
         vendor: Red Hat
         image: '/images/compatible_products/red-hat-wildfly-logo.png'
@@ -187,7 +193,7 @@ sets:
       - name: Open Liberty
         vendor: IBM Corporation
         image: '/images/compatible_products/ibm_open_liberty.svg'
-        image_width: 195
+        image_width: 160
         download: 'https://openliberty.io/downloads/#runtime_betas'
         versions:
         - version: 21.0.0.3-beta
@@ -244,7 +250,7 @@ sets:
       - name: Open Liberty
         vendor: IBM Corporation
         image: '/images/compatible_products/ibm_open_liberty.svg'
-        image_width: 195
+        image_width: 160
         download: 'https://openliberty.io/downloads/#runtime_betas'
         versions:
         - version: 21.0.0.2-beta
@@ -297,7 +303,7 @@ sets:
       - name: Open Liberty
         vendor: IBM Corporation
         image: '/images/compatible_products/ibm_open_liberty.svg'
-        image_width: 195
+        image_width: 160
         download: 'https://openliberty.io/downloads/'
         versions:
         - version: 19.0.0.6
@@ -448,7 +454,7 @@ sets:
       - name: Open Liberty
         vendor: IBM Corporation
         image: '/images/compatible_products/ibm_open_liberty.svg'
-        image_width: 195
+        image_width: 160
         download: 'https://openliberty.io/downloads/'
         versions:
         - version: 19.0.0.6
