@@ -129,16 +129,22 @@ enableInlineShortcodes = true
 
 # Jakarta EE sub-menu
 [[menu.main]]
+    name = "About Jakarta EE"
+    url = "/about/jakarta-ee"
+    parent = "Jakarta EE"
+    weight = 1
+
+[[menu.main]]
     name = "Frequently Asked Questions"
     url = "/about/faq/"
     parent = "Jakarta EE"
-    weight = 1
+    weight = 2
 
 [[menu.main]]
     name = "Releases" 
     url = "/release/"
     parent = "Jakarta EE"
-    weight = 2
+    weight = 3
 
 # Jakarta EE Group sub-menu
 [[menu.main]]
