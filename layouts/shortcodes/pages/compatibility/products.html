@@ -1,15 +1,31 @@
 <div class="content-nav-tab-body tab-content margin-bottom-20" id="tabs-content">
     <div role="tabpanel" class="tab-pane tab-pane active" id="tab-one">
       {{ $new_product_list := slice }}
+      {{ $scratch := newScratch }}
       {{ range $elem_index, $elem_val := $.Site.Data.compatible_products.sets }}
         {{ range $elem_val.items }}
           {{ range .items }}  <!-- Loop all items and add name, image, image_width properties to form a new object and put in the new_product_list array -->
-            {{ $new_element := (dict "name" .name "image" .image "image_width" .image_width "download" .download) }}
-            {{ $new_product_list = $new_product_list | append $new_element }}
+            
+            {{ $item_name := .name}}
+
+            {{ $is_present := "false" }}
+
+            {{ $scratch.Set "is_present" "false" }}
+
+            {{range $new_product_list}}
+              {{ if eq $item_name .name}}
+                {{ $scratch.Set "is_present" "true" }}
+              {{ end }}
+            {{ end }}
+
+            {{$is_present := $scratch.Get "is_present" }}
+            {{ if eq $is_present "false" }}
+              {{ $new_element := (dict "name" .name "image" .image "image_width" .image_width "download" .download) }}
+              {{ $new_product_list = $new_product_list | append $new_element }}
+            {{ end }}
           {{ end }}
         {{ end }}
       {{ end }}
-  
       <div class="row d-flex flex-wrap">
         {{ range sort ($new_product_list | uniq) "name" "asc" }}  <!-- Remove duplicates and re-order by name -->
             <div class="col-sm-6 card-container">
