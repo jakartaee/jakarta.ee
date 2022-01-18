@@ -10,7 +10,7 @@ The Specification Committee is responsible for implementing the ​[Jakarta EE S
 ### Committee Members
 
 * Kenji Kazumura - Fujitsu
-* Kevin Sutter - IBM, Tom Watson - alternate
+* Tom Watson - IBM, Emily Jiang - alternate
 * Ed Bratt - Oracle, Dmitry Kornilov - alternate
 * Andrew Pielage - Payara
 * Scott Stark - Red Hat, Mark Little - alternate
