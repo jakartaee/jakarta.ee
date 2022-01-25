@@ -60,5 +60,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
           }).slice(0,3).slideDown("slow")
         );
       });
+
+      // Update the "View Specification sidebar block"
+      document.getElementById('viewSpecificationSidebar').onchange = function(){
+        document.getElementById('viewSpecificationSidebar').action = $('#viewSpecificationSelect').val();
+      }
     })(jQuery, document);
 });
