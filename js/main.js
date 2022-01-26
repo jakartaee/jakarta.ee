@@ -61,9 +61,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
         );
       });
 
-      // Update the "View Specification sidebar block"
-      document.getElementById('viewSpecificationSidebar').onchange = function(){
-        document.getElementById('viewSpecificationSidebar').action = $('#viewSpecificationSelect').val();
-      }
+
+      $('#viewSpecificationSidebar').on('change', function() {
+        window.location.href = $('#viewSpecificationSelect').val();
+      });
     })(jQuery, document);
 });
