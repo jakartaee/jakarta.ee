@@ -1,9 +1,36 @@
 {{#items}}
-<div class="card-container padding-bottom-0">
-    <div class="card-panel bordered panel panel-default">
-        <p class="small"><strong>{{#formatDate}}{{date}}{{/formatDate}}</strong></p>
-        <h2 class="big-text text-secondary h3"><a href="{{ link }}">{{ title }}</a></h2>
-        <p class="whats-new-description">{{summary}}</p>
+<div class="row">
+  <div class="col-md-24">
+    <div class="news-content">
+        <div class="content-meta">
+            <div class="date">
+                <span class="month">{{ month }}</span>
+                <span class="day">{{ day }}</span>
+                <span class="year">{{ year }}</span>
+            </div>
+        </div>
+      <div class="content-inner">
+          <span class="flex-column" style="height: 100%;">
+            <h4 class="content-title">
+                <a href="{{ link }}" class="content-link">
+                    {{ title }}
+                </a>
+            </h4>
+            <p class="content-text">{{summary}}</p>
+            <p class="news-footer">
+                <a href="{{ link }}" class="content-link read-more">
+                    Continue reading
+                </a>
+                <span class="summary-icons">
+                    | 
+                    <a class="nav-item" href="https://www.facebook.com/sharer/sharer.php?u={{ link }}" title="Share on Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    <a class="nav-item" href="https://www.linkedin.com/shareArticle?mini=true&amp;url={{ link }}" title="Share on LinkedIn"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                    <a class="nav-item" href="https://twitter.com/home?status={{ link }}" title="Tweet this"><i class="fa fa-twitter"></i></a>
+                </span>
+            </p>
+          </span>
+      </div>
     </div>
+  </div>
 </div>
 {{/items}}
