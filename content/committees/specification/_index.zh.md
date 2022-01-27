@@ -13,6 +13,7 @@ The Specification Committee is responsible for implementing the ​[Jakarta EE S
 * Tom Watson - IBM, Emily Jiang - alternate
 * Ed Bratt - Oracle, Dmitry Kornilov - alternate
 * Andrew Pielage - Payara
+* Scott Stark - Red Hat, Mark Little - alternate
 * David Blevins - Tomitribe, Jean-Louis Monterio - alternate
 * Ivar Grimstad - PMC Representative
 * Marcelo Ancelmo - London Java Community - Elected Participant Member Representative, Martijn Verburg - alternate

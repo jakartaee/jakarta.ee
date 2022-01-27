@@ -1,6 +1,7 @@
 ---
 title: "Jakarta EE Specification Process"
 date: 2021-01-14T13:00:00-04:00
+hide_sidebar: true
 ---
 
 Version 1.3. Effective January 14, 2021

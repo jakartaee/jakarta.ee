@@ -987,6 +987,14 @@ items:
 
    steering_committee:
        -
+          url: steering_committee/minutes-november-23-2021.pdf
+          title: November 23, 2021 (pdf)
+          year: 2021
+       -
+          url: steering_committee/minutes-november-9-2021.pdf
+          title: November 9, 2021 (pdf)
+          year: 2021
+       -
           url: steering_committee/minutes-october-26-2021.pdf
           title: October 26, 2021 (pdf)
           year: 2021

@@ -1,6 +1,7 @@
 ---
 title: 'JUG的"Adopt a Spec"程序'
 date: 2020-02-01T16:09:45-04:00
+hide_sidebar: true
 ---
 
 本程序旨在通过采纳 **Jakarta EE 规范** 来鼓励JUG领导者和成员的参与。其目标是为了增加 **Jakarta EE 规范** 演进过程中开发者群体的参与。
