@@ -12,6 +12,8 @@
 
 sets:
     items:
+    - title: 【公司成员 4 家】【个人成员 76 人】【用户组成员 1 家】
+    - title:
     - title: 【COMPANY】普元信息技术股份有限公司（Jakarta EE 中国社区发起人）
     - title: 【COMPANY】青岛北斗聚星网络科技有限公司
     - title: 【COMPANY】烟台海颐软件股份有限公司
@@ -20,23 +22,23 @@ sets:
     - title: 【PERSON】Jon Zhang（A solid technology enthusias）
     - title: 【PERSON】米帅
     - title: 【PERSON】刘冬
-    - title: 【PERSON】Blogger
+    - title: 【PERSON】Wu Zongming（Blogger）
     - title: 【PERSON】李博（龙湖地产数字科技部副总经理）
     - title: 【PERSON】JackieXie
-    - title: 【PERSON】liuhaoping(Developer， Blogger)
-    - title: 【PERSON】zhangchunsheng
+    - title: 【PERSON】Liu Haoping(Developer， Blogger)
+    - title: 【PERSON】Zhang Chunsheng
     - title: 【PERSON】潘琪
     - title: 【PERSON】魏宏宇
     - title: 【PERSON】李磊
-    - title: 【PERSON】J2ee architects for banking systems
+    - title: 【PERSON】Leo Li（J2ee architects for banking systems）
     - title: 【PERSON】GaoXin(Java Developer， Blogger)
-    - title: 【PERSON】xieguangxuan（researcher，engeneer，shareer）
-    - title: 【PERSON】A Java Developer
-    - title: 【PERSON】software engineer， java developer
+    - title: 【PERSON】Xie Guangxuan（researcher，engeneer，shareer）
+    - title: 【PERSON】Nicholas Zhan（A Java Developer）
+    - title: 【PERSON】Chao Wang（software engineer， java developer）
     - title: 【PERSON】黄晨曦（开发者）
     - title: 【PERSON】全威龙（Java 工程师）
-    - title: 【PERSON】wilson(Java Web开发人员)
-    - title: 【PERSON】开发者
+    - title: 【PERSON】Wilson(Java Web开发人员)
+    - title: 【PERSON】Wang Yonghong（开发者）
     - title: 【PERSON】冯征
     - title: 【PERSON】高琳 （Java 程序员）
     - title: 【PERSON】冯嘉
@@ -49,34 +51,46 @@ sets:
     - title: 【PERSON】刘怿
     - title: 【PERSON】技术专家
     - title: 【PERSON】谭智
-    - title: 【PERSON】wang
-    - title: 【PERSON】刘
+    - title: 【PERSON】Wang Jian
+    - title: 【PERSON】Liu Yong
     - title: 【PERSON】闫启
-    - title: 【PERSON】xiao lian
+    - title: 【PERSON】Xiao Lian
     - title: 【PERSON】詹启军
-    - title: 【PERSON】huang yang
-    - title: 【PERSON】df
+    - title: 【PERSON】Huang Yang
+    - title: 【PERSON】Ding FeiFei
     - title: 【PERSON】谭煌
     - title: 【PERSON】漫漫
-    - title: 【PERSON】王先生
+    - title: 【PERSON】Wang Lei
     - title: 【PERSON】宁泓霖
-    - title: 【PERSON】xibocun
+    - title: 【PERSON】Xi Bo Cun
     - title: 【PERSON】冀烨 网络开源软件开发者、布道者
     - title: 【PERSON】张辉（华为云云享专家）
-    - title: 【PERSON】wuyina
-    - title: 【PERSON】l李志强
+    - title: 【PERSON】Wu Yina
+    - title: 【PERSON】李志强
     - title: 【PERSON】马晓伟
     - title: 【PERSON】袁明（学生）
     - title: 【PERSON】吴诗琛（学生）
-    - title: 【PERSON】zwj
-    - title: 【PERSON】linton
-    - title: 【PERSON】he sai ma
-    - title: 【PERSON】w j
-    - title: 【PERSON】无
-    - title: 【PERSON】 xie dd
-    - title: 【PERSON】snoohy
+    - title: 【PERSON】Zhang Wenjie
+    - title: 【PERSON】Linton
+    - title: 【PERSON】He Sai Ma
+    - title: 【PERSON】Wu Jiajun
+    - title: 【PERSON】Huang Hanpeng
+    - title: 【PERSON】Xie Fei
+    - title: 【PERSON】Snoohy
     - title: 【PERSON】Ed Bratt
-    - title: 【PERSON】zeral
+    - title: 【PERSON】Zeral
     - title: 【PERSON】张子强
     - title: 【PERSON】戴毅
+    - title: 【PERSON】Zilong Ya
+    - title: 【PERSON】Nicholas Zha
+    - title: 【PERSON】刘航宇
+    - title: 【PERSON】Wang Shenghua
+    - title: 【PERSON】张磊
+    - title: 【PERSON】Vinc
+    - title: 【PERSON】李高杰
+    - title: 【PERSON】YourBatman
+    - title: 【PERSON】张磊
+    - title: 【PERSON】Leo
+    - title: 【PERSON】刘春明
+    - title: 【PERSON】泠恒谦(学生)
     - title: 【USERGROUP】Nipingy

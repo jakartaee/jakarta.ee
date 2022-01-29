@@ -8,4 +8,4 @@ hide_sidebar: true
 container: "fluid-container"
 links: [[href: "/zh/membership/members", text: "浏览成员"], [href: "#benefits", text: "成员收益"], [href: "/membership/join-us", text: "加入Jakarta EE"]]
 ---
-{{< pages/membership/index_zh >}}
+{{< pages/membership/index >}}

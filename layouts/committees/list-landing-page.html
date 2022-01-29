@@ -1,6 +1,6 @@
 {{ define "main" }}
 
-  <h2 class="big-text-secondary margin-bottom-30">Jakarta EE Committees</h2>
+  <h2 class="big-text-secondary margin-bottom-30">Jakarta EE {{ i18n "layouts-committees-list-landing-page-committees" }}</h2>
   {{ with .Pages }}
     <div class="row card-container">
       {{ range .ByTitle }}
@@ -10,7 +10,7 @@
             <div class="match-height-item-by-row margin-bottom-20">
               <p>{{.Summary}}</p>
             </div>
-            <p class="bordered-box-link big-text uppercase text-secondary"><a href="{{.Permalink}}">View {{.Title}}</a></p>
+            <p class="bordered-box-link big-text uppercase text-secondary"><a href="{{.Permalink}}">{{ i18n "layouts-committees-list-landing-page-view" }} {{.Title}}</a></p>
           </div>
         </div>
       {{ end }}

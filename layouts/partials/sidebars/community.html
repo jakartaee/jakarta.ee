@@ -1,5 +1,27 @@
 
 <aside id="events-sidebar">
+  <div id="main-sidebar" class="sidebar-block">
+    <ul id="leftnav" class="ul-left-nav fa-ul hidden-print">
+        <li class="separator">
+          <a href="/community">{{ i18n "sidebar-title" }}</a>
+        </li>
+        <li>
+          <a href="/community/adopt-a-spec/">{{ i18n "sidebar-adopt-a-spec" }}</a>
+        </li>
+        <li>
+          <a href="/community/events/" target="_self">{{ i18n "sidebar-events" }}</a>
+        </li>
+        <li>
+          <a href="/connect/" target="_self">{{ i18n "sidebar-connect" }}</a>
+        </li>
+        <li>
+          <a href="https://www.meetup.com/jakartatechtalks_/" target="_self">{{ i18n "sidebar-jakartatechtalks" }}</a>
+        </li>
+        <li>
+          <a href="/community/videos/" target="_self">{{ i18n "sidebar-videos" }}</a>
+        </li>
+    </ul>
+  </div>
   {{ if eq .Title "Events" }}
   <div class="sidebar-block row">
     <div class="card-container">
@@ -8,8 +30,8 @@
           <img class="img-responsive" src="/images/community/events/event-hosting.png" alt="Interested in Hosting an Event?">
         </div>
         <div class="panel-body">
-          <h3 class="big-text margin-top-30">Interested in Hosting an Event?</h3>
-          <p><a class="big-text text-secondary uppercase" href="https://newsroom.eclipse.org/node/add/events">Learn more</a></p>
+          <h3 class="big-text margin-top-30">{{ i18n "sidebar-events-hosting" }}</h3>
+          <p><a class="big-text text-secondary uppercase" href="https://newsroom.eclipse.org/node/add/events">{{ i18n "sidebar-events-add" }}</a></p>
         </div>
       </div>
     </div>
@@ -22,8 +44,8 @@
           <img class="img-responsive" src="/images/community/events/event-youtube.png" alt="Watch recordings from the past events">
         </div>
         <div class="panel-body">
-          <h3 class="big-text margin-top-30">Watch recordings from the past events</h3>
-          <p><a class="big-text text-secondary uppercase" href="https://www.youtube.com/jakartaee">on our YouTube channel</a></p>
+          <h3 class="big-text margin-top-30">{{ i18n "sidebar-events-youtube" }}</h3>
+          <p><a class="big-text text-secondary uppercase" href="https://www.youtube.com/jakartaee">{{ i18n "sidebar-events-youtube-channel" }}</a></p>
         </div>
       </div>
     </div>

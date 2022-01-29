@@ -1,6 +1,6 @@
 {{ define "main" }}
   {{ with .Pages }}
-    <h3>Documents</h3>
+    <h3>{{ i18n "layouts-committees-list-landing-page-list-documents" }}</h3>
     <ul>
       {{ range .ByTitle }}
         <li><a href="{{.Permalink}}">{{.Title}} </a></li>

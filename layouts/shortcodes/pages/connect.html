@@ -61,7 +61,7 @@
           <form action="{{ i18n "connect-slack-link" }}" method="get" target="_blank">
             <input type="hidden" name="u" value="eaf9e1f06f194eadc66788a85">
             <input type="hidden" name="id" value="98ae69e304">
-            <input type="submit" value="Join" name="join" class="button btn btn-primary">
+            <input type="submit" value="{{ i18n "connect-slack-link-join" }}" name="join" class="button btn btn-primary">
           </form>
         </div>
       </div>
@@ -78,7 +78,7 @@
         </div>
         <div class="col-sm-18">
           <h2 class="h3 big-text text-secondary">{{ i18n "connect-updates-title" }}</h2>
-          <p>{{ i18n "connect-updates-body" }}</p>
+          <p>{{ i18n "connect-updates-body"}}</p>
           <ul class="list-inline">
             <li><a class="btn btn-primary" href="{{ i18n "connect-updates-edit-link" }}">{{ i18n "connect-updates-edit-text" }}</a></li>
             <li>{{ i18n "connect-updates-link-divider-text" }}</li>
@@ -105,8 +105,8 @@
             </div>
             <div class="col-md-24">
               <ul class="list-inline">
-                <li><input type="submit" value="Subscribe" name="subscribe" class="button btn btn-primary"></li>
-                <li><a class="btn btn-primary" href="/community/newsletter">View Archives</a></li>
+                <li><input type="submit" value="{{ i18n "connect-newsletter-subscribe" }}" name="subscribe" class="button btn btn-primary"></li>
+                <li><a class="btn btn-primary" href="/community/newsletter">{{ i18n "connect-newsletter-view-archives" }}</a></li>
               </ul>
             </div>
           </form>
