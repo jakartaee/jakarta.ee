@@ -1,7 +1,9 @@
 {{ define "header"}}
-  <a class="sr-only" href="#content">Skip to main content</a>
+  <a class="sr-only" href="#content">{{ i18n "jakarta-ee-version-8-section-skip-to-main-content" }}</a>
+  {{ partial "toolbar.html" . }}
+  {{ partial "navbar.html" . }}
   <header class="header-wrapper{{- with .Params.header_wrapper_class | default .Site.Params.header_wrapper_class }} {{ . }}{{end}}" id="header-wrapper">
-    {{ partial "navbar.html" . }}
+    
     
     {{ if isset .Page.Params "headline" }}
     <div class="jumbotron featured-jumbotron featured-jumbotron-download margin-bottom-0">
@@ -13,7 +15,7 @@
             <h2>{{ htmlUnescape .Page.Params.subtitle }}</h2>
             {{ end }} 
              
-            <p class="text-center">An open, community-driven baseline for<br> the evolution of enterprise Java technologies</p>
+            <p class="text-center">{{ i18n "jakarta-ee-version-8-section-release-text" | safeHTML }}</p>
             {{ if isset .Page.Params "links" }}
             <ul class="list-inline buttons">
               {{range $key,$val := index .Page.Params.links}}

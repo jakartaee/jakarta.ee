@@ -1,13 +1,13 @@
 ---
-title: "Steering Committee"
+title: "指导委员会"
 date: 2020-01-05T15:50:25-04:00
 ---
 
-This committee owns the overall strategy and the high level, long term roadmap spanning across multiple releases, produces the Jakarta EE release key messaging and gets periodic updates from other committees and Jakarta EE Platform Project on the status of the release and any related activities.
+该委员会拥有跨越多个版本的总体战略和高阶的长期路线图，发布 Jakarta EE 版本的关键信息，并定期从其他委员会和 Jakarta EE 平台项目获得版本状态和任何相关活动的更新
 
 <!--more-->
 
-### Committee Members
+### 委员会成员
 
 * Will Lyons (**chair**)- Oracle, Ed Bratt - alternate
 * Kenji Kazumura - Fujitsu, Yuichi Kusano - alternate

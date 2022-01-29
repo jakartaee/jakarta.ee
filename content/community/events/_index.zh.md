@@ -1,8 +1,8 @@
 ---
-title: Events
-seo_title: "Events | Meet with the Jakarta EE Community"
-headline: "Events"
-description: "Meet with the Jakarta EE community at an upcoming event."
+title: 活动
+seo_title: "活动 | 与 Jakarta EE 社区相聚"
+headline: "活动"
+description: "在即将到来的活动中与 Jakarta EE 社区相聚。"
 date: 2019-02-21
 publishdate: 2019-02-21
 hide_page_title: true
@@ -11,7 +11,7 @@ section: "events"
 
 {{< newsroom/events
       id="events_upcoming"
-      title="Come meet the Jakarta EE community <br>at these upcoming events!"
+      title="通过这些即将到来的活动<br>与 Jakarta EE 社区相聚!"
       publishTarget="jakarta_ee"
       class="events-page"
       titleClass="big-text-secondary margin-bottom-50"
@@ -24,7 +24,7 @@ section: "events"
 
 {{< newsroom/events
       id="events_archive"
-      title="Past Events"
+      title="既往活动"
       publishTarget="jakarta_ee"
       class="events-page"
       titleClass="big-text-secondary margin-bottom-50"

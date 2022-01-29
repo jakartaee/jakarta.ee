@@ -18,7 +18,7 @@
         {{ range first 1 (where $.Site.Data.eclipsefdn_projects "project_id" .Params.project_id) }}
         	{{- with .website_url }}
 	        <span class="badge">
-	          <a href="{{ . }}" target="_blank"><i class="fa fa-globe" aria-hidden="true"></i> Website</a>
+	          <a href="{{ . }}" target="_blank"><i class="fa fa-globe" aria-hidden="true"></i> {{ i18n "layouts-specifications-list-website" }}</a>
 	        </span>
 	        {{ end }}
         {{ end }}
@@ -40,13 +40,10 @@
       {{ end }}
     </ul>
   {{ else }}
-    <p>Click on the specifications below to access the specification document, Javadoc, Technology Compatibility 
-      Kit (TCK), and compatible implementation for each release of the specification.</p>
+    <p>{{ i18n "layouts-specifications-list-click-to-access-text" }}</p>
 
-    <h2 class="big-text text-secondary">Platform and Profile Specifications</h2>
-    <p>The Jakarta EE Platform and Profile specifications are the umbrella specifications for the individual specifications. The 
-      Jakarta EE Platform includes most of the individual specifications, while the Profile specifications include the individual 
-      specifications for developing web platforms and microservices architectures.</p>
+    <h2 class="big-text text-secondary">{{ i18n "layouts-specifications-list-platform-and-profile-title" }}</h2>
+    <p>{{ i18n "layouts-specifications-list-platform-and-profile-text" }}</p>
 
     <div class="specifications-news-list">
       <div class="row">
@@ -62,10 +59,10 @@
                         </h2>
                         {{ if .Params.project_id }}
                             <ul class="list-inline">
-                                <li><a class="btn card-badge btn-xs" href="https://projects.eclipse.org/projects/{{ .Params.project_id }}"><i class="fa fa-archive" aria-hidden="true"></i> Project</a></li>
+                                <li><a class="btn card-badge btn-xs" href="https://projects.eclipse.org/projects/{{ .Params.project_id }}"><i class="fa fa-archive" aria-hidden="true"></i> {{ i18n "layouts-specifications-list-project" }}</a></li>
                                 {{ range first 1 (where $.Site.Data.eclipsefdn_projects "project_id" .Params.project_id) }}
                                     {{- with .website_url }}
-                                        <li><a class="btn card-badge btn-xs" href="{{ . }}" target="_blank"><i class="fa fa-globe" aria-hidden="true"></i> Website</a></li>
+                                        <li><a class="btn card-badge btn-xs" href="{{ . }}" target="_blank"><i class="fa fa-globe" aria-hidden="true"></i> {{ i18n "layouts-specifications-list-website" }}</a></li>
                                     {{ end }}
                                 {{ end }}
                             </ul>
@@ -86,7 +83,7 @@
                       </div>
                       <div class="panel-footer">
                         <hr>
-                        <p><a href="{{- with .Params.redirect_url | default .RelPermalink }}{{.}}{{- end }}">View More</a></p>
+                        <p><a href="{{- with .Params.redirect_url | default .RelPermalink }}{{.}}{{- end }}">{{ i18n "layouts-specifications-list-view-more" }}</a></p>
                       </div>
                   </div>
               </div>
@@ -96,8 +93,8 @@
       </div>
     </div>
 
-    <h2 class="big-text text-secondary">Individual Specifications</h2>
-    <p>Each individual specification describes a standardized way of implementing a particular aspect of an enterprise Java application.</p>
+    <h2 class="big-text text-secondary">{{ i18n "layouts-specifications-list-individual-specifications-title" }}</h2>
+    <p>{{ i18n "layouts-specifications-list-individual-specifications-text" }}</p>
 
     <div id="specifications-list" class="specifications-list">
       <div class="row">
@@ -114,7 +111,7 @@
                             <li><a class="btn card-badge btn-xs" href="https://projects.eclipse.org/projects/{{ .Params.project_id }}"><i class="fa fa-archive" aria-hidden="true"></i> Project</a></li>
                             {{ range first 1 (where $.Site.Data.eclipsefdn_projects "project_id" .Params.project_id) }}
                                 {{- with .website_url }}
-                                    <li><a class="btn card-badge btn-xs" href="{{ . }}" target="_blank"><i class="fa fa-globe" aria-hidden="true"></i> Website</a></li>
+                                    <li><a class="btn card-badge btn-xs" href="{{ . }}" target="_blank"><i class="fa fa-globe" aria-hidden="true"></i> {{ i18n "layouts-specifications-list-website" }}</a></li>
                                 {{ end }}
                             {{ end }}
                         </ul>
@@ -134,7 +131,7 @@
                   </div>
                   <div class="panel-footer">
                     <hr>
-                    <p><a href="{{- with .Params.redirect_url | default .RelPermalink }}{{.}}{{- end }}">View More</a></p>
+                    <p><a href="{{- with .Params.redirect_url | default .RelPermalink }}{{.}}{{- end }}">{{ i18n "layouts-specifications-list-view-more" }}</a></p>
                   </div>
                 </div>
               </div>
@@ -151,8 +148,8 @@
           {{ $project := . }}
           {{ with $section.File.Dir }}
             {{ if eq . $project.directory }}
-             <h3>JUG Spec Adopters</h3>
-              <p>To learn how your JUG can sign-up, check out the <a href="/community/adopt-a-spec">Adopt a Specification</a> program.</p>
+             <h3>{{ i18n "layouts-specifications-list-jug-spec-adopters-title" }}</h3>
+              <p>{{ i18n "layouts-specifications-list-jug-spec-adopters-text" | safeHTML }}</p>
                 <ul class="list-inline">
                 {{ range sort $project.adopters  "name" "asc"}}
                   <li><a href="{{ .homepage_url }}" target="_blank"><img src="/images/spec_adopters/{{ .logo }}" alt="{{ .name }}" class="adopter-logo"/></a></li>
