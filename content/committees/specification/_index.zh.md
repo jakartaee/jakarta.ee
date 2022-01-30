@@ -1,13 +1,13 @@
 ---
-title: "Specification Committee"
+title: "规范委员会"
 date: 2020-02-19T15:00:25-08:00
 ---
 
-The Specification Committee is responsible for implementing the ​[Jakarta EE Specification Process (JESP)](/about/jesp/) ​for all Specification Projects under the purview of the Jakarta EE Working Group. This committee ensures that JESP is followed as intended, votes to approve creation reviews, progress reviews and release reviews submitted by Specification projects.
+规范委员会负责为 Jakarta EE 工作组职权范围内的所有规范项目实施关于[Jakarta EE 规范流程](/about​/jesp/)​。该委员会确保JESP按预期进行，投票批准规范项目提交的创建评审、进度评审和发布评审.
 
 <!--more-->
 
-### Committee Members
+### 委员会成员
 
 * Kenji Kazumura - Fujitsu
 * Tom Watson - IBM, Emily Jiang - alternate

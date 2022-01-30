@@ -1,13 +1,13 @@
 ---
-title: "Marketing Committee"
+title: "市场委员会"
 date: 2020-01-05T15:50:25-04:00
 ---
 
-The focus of this committee is on marketing, branding and community awareness and produces and executes the marketing plan for the release based on the Jakarta EE Key messaging provided by the Steering Committee.
+该委员会的重点是市场营销、品牌和扩大社区影响力，并根据指导委员会提供的 Jakarta EE 关键信息制定和执行营销计划.
 
 <!--more-->
 
-### Committee Members
+### 委员会成员
 
 * Kenji Kazumura - Fujitsu, Yuichi Kusano - alternate
 * Neil Patterson (**chair**) - IBM

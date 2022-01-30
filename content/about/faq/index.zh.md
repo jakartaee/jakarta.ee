@@ -1,7 +1,7 @@
 ---
 title: "FAQ"
-seo_title: "Frequently Asked Questions | Jakarta EE | The future of Cloud Native Java"
-description: "Learn about Jakarta EE and what it means for the future of open source, cloud native enterprise Java."
+seo_title: "常见问题 | Jakarta EE | 云原生Java的未来"
+description: "了解 Jakarta EE 及其对于开源、云原生企业级Java未来的意义."
 date: 2018-04-07T16:09:45-04:00
 type: "faq"
 layout: "section"

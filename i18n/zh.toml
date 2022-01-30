@@ -89,7 +89,7 @@
   other = "Jakarta EE 社区邮件列表"
 
 [connect-mailing-list-community-body]
-  other = "jakarta.ee-community 邮件列表用于 Jakarta EE 的社区讨论. 订阅这个列表来了解最全的Jakarta EE 消息."
+  other = "jakarta.ee-community 邮件列表用于 Jakarta EE 的社区讨论. 订阅了解最全的Jakarta EE 消息."
 
 [connect-mailing-list-community-link]
   other = "https://accounts.eclipse.org/mailing-list/jakarta.ee-community"
@@ -116,16 +116,25 @@
   other = "Slack"
 
 [connect-slack-subtitle]
-  other = "Join the conversations on Jakarta EE slack workspace and see what the community members are up to."
+  other = "加入 Jakarta EE 的Slack工作区对话，看看社区成员在干什么."
 
 [connect-slack-link]
   other = "https://join.slack.com/t/eclipsefoundationhq/shared_invite/zt-crh7mheq-3on2tophEuvQTUGidEAWlg"
 
+[connect-slack-link-join]
+  other = "加入"
+
 [connect-newsletter-title]
   other = "新闻稿"
 
+[connect-newsletter-subscribe]
+  other = "订阅"
+
+[connect-newsletter-view-archives]
+  other = "查看存档"
+  
 [connect-newsletter-subtitle]
-  other = "With a Jakarta EE-themed edition released each quarter, the Eclipse Foundation Community Newsletter is your destination for original articles about projects and key technologies."
+  other = "Eclipse Foundation社区时事通讯每季度都会发布一个 Jakarta EE 主题版本，是您阅读有关项目和关键技术的原创文章的目的地."
 
 [connect-newsletter-link]
   other = "https://eclipsecon.us6.list-manage.com/subscribe/post"
@@ -161,48 +170,48 @@
   other = "https://calendar.google.com/calendar/embed?src=eclipse-foundation.org_3281qms6riu4kdf354jn5idon0%40group.calendar.google.com&ctz=America%2FToronto"
 
 [connect-community-folder-title]
-  other = "Community Folder"
+  other = "社区文件夹"
 
 [connect-community-folder-body]
-  other = "Our public Community Folder features promotional resources and slides from past update calls and other community meetings."
+  other = "公共的社区文件夹提供了宣传资料、既往电话会议和其他社区会议的幻灯片等."
 
 [connect-community-folder-link]
   other = "https://drive.google.com/drive/u/0/folders/11nvqdVqFlCxm5AfPh2NdnanTBrCPW8Xv"
 
 [connect-community-folder-link-text]
-  other = "View"
+  other = "查看"
 
 
 [connect-tech-talk-title]
-  other = "Tech Talks Meet-Ups"
+  other = "技术沙龙"
 
 [connect-tech-talk-body]
-  other = "Jakarta Tech Talks are both conference based and virtual webinars dedicated to the discussion and discovery of any cloud native java projects, microservices projects, and technologies."
+  other = "Jakarta 技术沙龙是致力于讨论和发现任何云原生Java项目、微服务项目和技术的虚拟网络研讨会。"
 
 [connect-tech-talk-link-1]
   other = "https://www.meetup.com/jakartatechtalks_/"
 
 [connect-tech-talk-link-1-text]
-  other = "Tech Talks"
+  other = "沙龙"
 
 [connect-tech-talk-link-2]
   other = "https://forms.gle/3wK3oBavYDBWsGkq7"
 
 [connect-tech-talk-link-2-text]
-  other = "Sign Up to Host"
+  other = "注册成为主办人"
 
 
 [connect-specification-calendar-title]
-  other = "Jakarta EE Specifications Calendar"
+  other = "Jakarta EE 规范日期"
 
 [connect-specification-calendar-body]
-  other = "Jakarta EE Specifications Calendar lists meetings dedicated to different Jakarta EE Specifications. Subscribe to the Jakarta EE Specifications Calendar to learn more about Specification-related plans."
+  other = "Jakarta EE 规范日历列出了不同规范项目的所有会议. 订阅 Jakarta EE 规范日历，了解更多规范计划."
 
 [connect-specification-calendar-link]
   other = "https://calendar.google.com/calendar/embed?src=eclipse-foundation.org_e9ki8t2gc75sh07qdh95c8ofvc%40group.calendar.google.com&ctz=America%2FToronto"
 
 [connect-specification-calendar-link-text]
-  other = "Calendar"
+  other = "日历"
   
 [members-strategic-members-title]
   other = "战略会员"
@@ -285,7 +294,7 @@
 [sidebar-trademark-guidelines]
   other = "商标指引"
 
-[sidebar-specification]
+[sidebar-specification-process]
   other = "规范过程"
 
 [sidebar-community]
@@ -347,3 +356,565 @@
 
 [news-single-see-all-news]
  other = "See all news"
+ 
+[faq-title]
+ other = "常见问题解答"
+ 
+[meeting-minutes-title]
+ other = "会议纪要" 
+ 
+[jakarta-ee-meeting-minutes-title]
+ other = "Jakarta EE 工作组委员会会议纪要"
+
+[jakarta-ee-version-8-delivers-text]
+ other = "发布"
+
+[jakarta-ee-version-8-feature-compatibility-title]
+ other = "与 Java<sup>TM</sup>&nbsp;EE 8 全兼容" 
+
+[jakarta-ee-version-8-feature-compatibility-text]
+ other = "与 Java EE 8 规范和技术兼容性工具包(TCKs)全兼容"  
+
+[jakarta-ee-version-8-feature-open-title]
+ other = "开放规范" 
+
+[jakarta-ee-version-8-feature-open-text]
+ other = "利用 <a href=\"/about/jesp/\">Jakarta EE 规范过程</a>, 建立支持“代码优先”开发方式的开源规范过程"   
+
+[jakarta-ee-version-8-feature-tck-title]
+ other = "开源 TCK 许可证和过程" 
+
+[jakarta-ee-version-8-feature-tck-text]
+ other = "提供一个开放过程，使用经由Eclipse TCK许可证许可的测试，来将产品认证为Jakarta EE Profiles兼容实现"  
+
+[jakarta-ee-version-8-feature-implementations-title]
+ other = "兼容实现" 
+
+[jakarta-ee-version-8-feature-implementations-text]
+ other = "Jakarta EE 8 Platform (Full and Web profiles)的兼容实现"  
+
+[jakarta-ee-version-8-participation-title]
+ other = "由参与者贡献"  
+
+[jakarta-ee-version-8-participation-projects]
+ other = "43 个项目"   
+
+[jakarta-ee-version-8-participation-committers]
+ other = "174 名提交者"   
+
+[jakarta-ee-version-8-participation-lines-of-code]
+ other = "6150 万行代码"   
+
+[jakarta-ee-version-8-participation-repositories]
+ other = "129 个仓库"    
+
+[jakarta-ee-version-8-ebook-title]
+ other = "<strong>新电子书!</strong> <br>实现开源、云原生Java的愿景"   
+
+[jakarta-ee-version-8-ebook-text]
+ other = "这本电子书探讨了什么是云原生Java，为什么它对这么多人如此重要，并提供了社区对Jakarta EE技术发展方向的看法."     
+
+[jakarta-ee-version-8-ebook-download]
+ other = "下载"   
+
+[jakarta-ee-version-8-social-title]
+ other = "社交媒体平台"   
+
+[jakarta-ee-version-8-social-text]
+ other = "在社交媒体上关注我们，随时了解 Jakarta EE 的最新消息!"   
+
+[jakarta-ee-version-9-features-title]
+ other = "特性和收益"   
+
+[jakarta-ee-version-9-features-barriers-title]
+ other = "<br>更低的进入门槛"   
+ 
+[jakarta-ee-version-9-features-barriers-text]
+ other = "Jakarta EE 9 降低了新厂商和产品实现达成兼容的门槛"   
+ 
+[jakarta-ee-version-9-features-innovation-title]
+ other = "<br>创新的基础"   
+ 
+[jakarta-ee-version-9-features-innovation-text]
+ other = "Jakarta EE 9 版本是云原生Java未来创新的关键一步"   
+ 
+[jakarta-ee-version-9-features-migration-title]
+ other = "<br>更易迁移"   
+ 
+[jakarta-ee-version-9-features-migration-text]
+ other = "为开发者测试迁移到新的命名空间提供开放、稳定的平台"   
+ 
+[jakarta-ee-version-9-features-participation-title]
+ other = "<h2 class=\"text-blue text-center fw-600 uppercase\"><strong>社区掌控的</strong></h2><h2 class=\"text-secondary fw-600 margin-top-0 font-exo uppercase\"><em>创新</em></h2>"   
+ 
+[jakarta-ee-version-9-participation-projects]
+ other = "项目"   
+ 
+[jakarta-ee-version-9-participation-committers]
+ other = "提交者"   
+ 
+[jakarta-ee-version-9-participation-repositories]
+ other = "git仓库"   
+ 
+[jakarta-ee-version-9-powered-by-participation-title]
+ other = "<h2 class=\"text-blue text-center fw-600 uppercase\"><strong>由参与者</strong></h2><h2 class=\"text-secondary text-center fw-600 margin-top-0 font-exo uppercase\"><em>贡献</em></h2>"   
+ 
+[jakarta-ee-version-9-white-paper-title]
+ other = "新的白皮书"   
+ 
+[jakarta-ee-version-9-white-paper-download]
+ other = "下载"   
+ 
+[jakarta-ee-version-9-social-title]
+ other = "点赞关注不迷路"   
+
+[jakarta-ee-version-9_1-features-title]
+ other = "特性和收益"   
+
+[jakarta-ee-version-9_1-features-barriers-title]
+ other = "<br>更低的进入门槛"   
+ 
+[jakarta-ee-version-9_1-features-barriers-text]
+ other = "Jakarta EE 9 降低了新厂商和产品实现达成兼容的门槛"   
+ 
+[jakarta-ee-version-9_1-features-innovation-title]
+ other = "<br>创新的基础"   
+ 
+[jakarta-ee-version-9_1-features-innovation-text]
+ other = "Jakarta EE 9 版本是云原生Java未来创新的关键一步"   
+ 
+[jakarta-ee-version-9_1-features-migration-title]
+ other = "<br>更易迁移"   
+ 
+[jakarta-ee-version-9_1-features-migration-text]
+ other = "为开发者测试迁移到新的命名空间提供开放、稳定的平台"   
+ 
+[jakarta-ee-version-9_1-features-supporting-java-se-11]
+ other = "全新支持 java se 11"   
+ 
+[jakarta-ee-version-9_1-features-participation-title]
+ other = "<h2 class=\"text-blue text-center fw-600 uppercase\"><strong>社区掌控的</strong></h2><h2 class=\"text-secondary fw-600 margin-top-0 font-exo uppercase\"><em>创新</em></h2>"   
+ 
+[jakarta-ee-version-9_1-participation-projects]
+ other = "项目"   
+ 
+[jakarta-ee-version-9_1-participation-specifications]
+ other = "规范"   
+ 
+[jakarta-ee-version-9_1-participation-committers]
+ other = "提交者"   
+ 
+[jakarta-ee-version-9_1-participation-repositories]
+ other = "git仓库"   
+ 
+[jakarta-ee-version-9_1-powered-by-participation-title]
+ other = "<h2 class=\"text-blue text-center fw-600 uppercase\"><strong>由参与者</strong></h2><h2 class=\"text-secondary text-center fw-600 margin-top-0 font-exo uppercase\"><em>贡献</em></h2>"   
+ 
+[jakarta-ee-version-9_1-white-paper-title]
+ other = "新的白皮书"   
+ 
+[jakarta-ee-version-9_1-white-paper-download]
+ other = "下载"   
+ 
+[jakarta-ee-version-9_1-social-title]
+ other = "点赞关注不迷路"   
+ 
+[jakarta-ee-version-9_1-section-skip-to-main-content]
+ other = "返回"   
+ 
+[jakarta-ee-version-9_1-section-new-release]
+ other = "<span class=\"p text-secondary\">version 9.1</span> 新版本"   
+ 
+[jakarta-ee-version-9_1-section-release-text]
+ other = "开源、社区驱动的平台</span> <br> 致力于企业级Java技术的 <br> 未来创新"   
+ 
+[jakarta-ee-version-9_1-section-download-compatible-products]
+ other = "下载 <br/> 兼容产品"   
+ 
+[jakarta-ee-version-9_1-section-specifications]
+ other = "规范"   
+ 
+[jakarta-ee-version-9_1-previous-release-link]
+ other = "<a id=\"text-white\" href=\"/zh/release/9\" class=\"uppercase\">历史版本: jakarta ee 9</a>"   
+ 
+[jakarta-ee-version-9-section-skip-to-main-content]
+ other = "返回"   
+ 
+[jakarta-ee-version-9-section-new-release]
+ other = "<span class=\"p text-secondary\">version 9</span> 新版本"   
+ 
+[jakarta-ee-version-9-section-release-text]
+ other = "开源、社区驱动的平台</span> <br> 致力于企业级Java技术的 <br> 未来创新"   
+ 
+[jakarta-ee-version-9-section-download-compatible-products]
+ other = "下载 <br/> 兼容产品"   
+ 
+[jakarta-ee-version-9-section-specifications]
+ other = "规范"   
+ 
+[jakarta-ee-version-9-previous-release-link]
+ other = "<a id=\"text-white\" href=\"/zh/release/8\" class=\"uppercase\">历史版本: jakarta ee 8</a>"   
+ 
+[jakarta-ee-version-8-section-skip-to-main-content]
+ other = "返回"    
+
+[jakarta-ee-version-8-section-release-text]
+ other = "开放、社区驱动的<br> 企业级Java技术演进的基础"   
+ 
+[pages-membership-title]
+ other = "塑造云原生、开源Java的未来"
+ 
+[pages-membership-text]
+ other = "<p>全球企业级Java生态的领导者，包括 Fujitsu、IBM、Oracle、Red Hat 和 Tomitribe ，正共同努力，推动 Java EE 和 Jakarta EE 对关键应用和负载向云端迁移的支持。 </p><p>加入 Jakarta EE 工作组表明您不仅致力于 Jakarta EE 的发展和可持续性，而且还致力于确保一个治理良好、供应商中立的开源生态系统的增长和发展，这将使所有人受益。</p>" 
+ 
+[pages-membership-benefits-title]
+ other = "收益"
+ 
+[pages-membership-benefits-text]
+ other = "<p>Jakarta EE 工作组的成员享有如下的机会：</p><ul><li>保护您在Java EE 领域的战略投资，并确保您的技术栈和开发人员技能与下一代技术同步</li><li>参与定义Jakarta EE 的战略场景和优先事项，以您及您的客户的需求和用例来发展 Jakarta EE 平台</li><li>深入了解和影响 Jakarta EE 的技术路线图</li><li>影响 Jakarta EE 规范过程的定义、演进和执行</li><li>在规范管理的发展规划框架下参与开放的协作</li><li>确保您的开发团队从分享构建下一代企业Java应用的最佳实践和前瞻洞见中获得收益</li></ul>"
+ 
+[pages-membership-download-prospectus]
+ other = "下载成员说明书"
+ 
+[pages-membership-download-flyer]
+ other = "下载成员彩页"
+ 
+[pages-membership-contact]
+ other = "联系我们了解加入事宜"
+ 
+[pages-membership-testimonials]
+ other = "成员感言"
+ 
+[layouts-committees-list-landing-page-committees]
+ other = "委员会"    
+ 
+[layouts-committees-list-landing-page-view]
+ other = "查看"    
+ 
+[layouts-committees-list-landing-page-list-documents]
+ other = "文档"    
+ 
+[pages-about-jakarta-ee-overview-title]
+ other = "放心地构建云原生Java应用"
+ 
+[pages-about-jakarta-ee-overview-text]
+ other = "<p>Jakarta EE为开发人员提供了一套全面的供应商中立的开放规范，用于从头开始开发现代的云原生Java应用程序。有了Jakarta EE，技术开发人员和消费者可以放心，他们拥有开发云原生关键业务应用的最佳技术。他们还可以基于数十年的Java开发人员专业知识，将现有工作负载迁移到云上。</p><p>Jakarta EE 规范（即原 Java EE 规范）, 由知名的行业领导者遵循<a href=\"/about/jesp/\">Jakarta EE 规范过程 (JESP)</a>开发.&nbsp;</p>"
+ 
+[pages-about-jakarta-ee-specification-includes]
+ other = "<p>每一份 Jakarta EE 规范包括:&nbsp;</p><ul><li>描述如何实现该技术的规范文档和Javadoc (APIs) .</li><li>描述要成为 Jakarta EE 认证的兼容实现所需进行的测试以及一份技术兼容性工具包(TCK)文档.</li><li>一款成功通过TCK测试的兼容实现.</li></ul>"
+ 
+[pages-about-jakarta-ee-benefits-title]
+ other = "Jakarta EE 提供的战略和技术优势"
+ 
+[pages-about-jakarta-ee-benefits-text]
+ other = "<p>Jakarta EE 提供了一系列其他 Java 框架所不具备的优势:</p><ul><li>无与伦比的成熟度、稳定性和向后兼容性</li><li>架构灵活性，可支持基于云的微服务架构以及传统的单体式架构</li><li>一个功能齐全的平台，只需几十行代码即可设置</li><li>能够轻松切换底层技术以满足新需求和利用更快、更轻的产品实现</li></ul><p>总之，这些优势为Java开发人员和企业提供了构建和发展当前和未来的云原生Java应用程序所需的一切.</p>"
+
+[pages-about-jakarta-ee-learn-more]
+ other = "了解更多"  
+
+[pages-about-jakarta-ee-learn-more-explore-specifications]
+ other = "浏览 Jakarta EE 规范"   
+
+[pages-about-jakarta-ee-learn-more-review-specification-process]
+ other = "浏览 Jakarta EE 规范过程"  
+
+[pages-about-jakarta-ee-learn-more-view-compatible-products]
+ other = "浏览 Jakarta EE 兼容产品"  
+
+[pages-about-jakarta-ee-learn-more-discover-working-group]
+ other = "了解 Jakarta EE 工作组"  
+
+[pages-about-jakarta-ee-learn-more-connect-community]
+ other = "与 Jakarta EE 社区联系"  
+
+[pages-about-working-group-overview-title]
+ other = "影响云原生Java的未来"  
+
+[pages-about-working-group-overview-text]
+ other = "<p>Jakarta EE 工作组是由领先的技术组织和个人组成的全球性的社区，致力于通过协作确保 <a href=\"/about/jakarta-ee\">Jakarta EE</a> 的相关性并不断发展为一个真正的、开放的创新平台. </p>"  
+
+[pages-about-working-group-overview-list]
+ other = "<p>为了推动 Jakarta EE 的广泛采用，工作组成员致力于:</p><ul><li>更敏捷的发布 Jakarta EE 版本</li><li>简化 Jakarta EE 兼容性认证的过程</li>            <li>与来自不同行业的各种规模的成员一起发展 Jakarta EE 社区</li>            <li>代表社区管理和提高 Jakarta EE 品牌的知名度&nbsp;</li></ul>"  
+
+[pages-about-working-group-level-playing-field-title]
+ other = "一个公平的竞争环境，向所有人敞开大门"  
+
+[pages-about-working-group-level-playing-field-text]
+ other = "<p><a href=\"https://www.eclipse.org/org/documents/\">Eclipse Foundation 的厂商中立治理模型</a> 确保所有 Jakarta EE 工作组成员有平等表达的机会，无论他们的组织规模有多大，或者他们参与 Eclipse Foundation 的程度如何.</p>"  
+
+[pages-about-working-group-level-playing-field-list]
+ other = "<p>工作组基于<a href=\"https://www.eclipse.org/org/workinggroups/jakarta_ee_charter.php\"> Jakarta EE 工作组章程运作</a> 包括:</p><ul>            <li>确定生态系统的范围、目标和愿景</li>            <li>确定工作组必须遵循的所有政策、流程和指导方针</li>            <li>定义会员级别、类型和费用</li>            <li>解释工作组之下各委员会的权力和职责</li><li>概述工作组会议的规则</li></ul>"  
+
+[pages-about-working-group-flexible-membership-options-title]
+ other = "灵活的会员选项"  
+
+[pages-about-working-group-flexible-membership-options-text]
+ other = "每个工作组成员都可以选择与其规模、预算和业务目标相匹配的成员级别。这种灵活性意味着所有发展阶段的组织都能负担得起成员费用。我们还提供了特别的、免费的会员级别以允许个人参与."  
+
+[pages-about-working-group-testimonials]
+ other = "我们非常惊讶和高兴地得知，我们将与大供应商处于平等的地位，在我们参与的项目上拥有同样的发言权和投票权。作为一家小公司，这个机会对我们的成长和成功极其重要。从品牌知名度的角度来看，仅仅是把我们的标志放在他们的标志旁边，对我们来说就太棒了."  
+
+[pages-about-working-group-learn-more-text]
+ other = "了解更多"  
+
+[pages-about-working-group-learn-more-read-charter]
+ other = "阅读 Jakarta EE 工作组章程"  
+
+[pages-about-working-group-learn-more-discover-membership]
+ other = "发现成员权益"  
+
+[pages-about-working-group-learn-more-explore-members]
+ other = "浏览工作组成员"  
+
+[pages-about-working-group-learn-more-contact-us]
+ other = "联系我们了解加入成员事宜"  
+
+[pages-about-working-group-learn-more-connect-community]
+ other = "与 Jakarta EE 社区联系"  
+
+[pages-about-working-group-links-charter]
+ other = "工作组章程"  
+
+[pages-about-working-group-links-faq]
+ other = "Jakarta EE 常见问题解答"  
+
+[pages-about-working-group-links-membership]
+ other = "了解成员事宜"  
+ 
+[pages-resources-view-our-resources]
+ other = "查看全部资源"
+ 
+[pages-resources-case-studies-title]
+ other = "案例研究"
+ 
+[pages-resources-case-studies-payara]
+ other = "在 Eclipse Foundation，Payara 获得了与行业领导者平等对话的机会。"
+ 
+[pages-resources-datasheets-title]
+ other = "数据表"
+ 
+[pages-resources-datasheets-text]
+ other = "Jakarta EE 9 工具厂商数据表"
+ 
+[pages-resources-documentation-title]
+ other = "文档"
+ 
+[pages-resources-documentation-tutorial]
+ other = "Jakarta EE 指南"
+ 
+[pages-resources-documentation-first-cup]
+ other = "Jakarta EE First Cup"
+ 
+[pages-resources-documentation-cargocracker]
+ other = "CargoTracker 示例应用"
+ 
+[pages-resources-ebooks-title]
+ other = "电子书"
+ 
+[pages-resources-ebooks-cloud-native-java]
+ other = "为云原生Java规划方向"
+ 
+[pages-resources-infographics-title]
+ other = "信息图表"
+ 
+[pages-resources-infographics-developer-survey-findings-2018]
+ other = "2018 Jakarta EE 开发者调研发现"
+ 
+[pages-resources-infographics-developer-survey-findings-2020]
+ other = "2020 Jakarta EE 开发者调研发现"
+ 
+[pages-resources-starter-title]
+ other = "Jakarta EE 起步"
+ 
+[pages-resources-starter-maven-project]
+ other = "用示例生成 Jakarta EE Maven项目"
+ 
+[pages-resources-livestream-title]
+ other = "JakartaOne Livestream"
+ 
+[pages-resources-livestream-events]
+ other = "发现最新的活动"
+ 
+[pages-resources-presentations-title]
+ other = "演讲"
+ 
+[pages-resources-presentations-presentations]
+ other = "Jakarta EE 演讲"
+ 
+[pages-resources-presentations-efsp]
+ other = "介绍EFSP"
+ 
+[pages-resources-social-cards-title]
+ other = "社交卡片"
+ 
+[pages-resources-social-cards-community-cards]
+ other = "Jakarta EE 社区卡片"
+ 
+[pages-resources-social-cards-survey]
+ other = "完成Jakarta EE 调研"
+ 
+[pages-resources-surveys-title]
+ other = "开发者调研"
+ 
+[pages-resources-surveys-2018]
+ other = "2018 Jakarta EE 开发者调研"
+ 
+[pages-resources-surveys-2019]
+ other = "2019 Jakarta EE 开发者调研"
+ 
+[pages-resources-surveys-2020]
+ other = "2020 Jakarta EE 开发者调研"
+ 
+[pages-resources-surveys-2021]
+ other = "2021 Jakarta EE 开发者调研"
+ 
+[pages-resources-white-papers-title]
+ other = "白皮书"
+ 
+[pages-resources-white-papers-why-jakarta-ee]
+ other = "为什么 Jakarta EE 是当今 Java 应用的正确选择"       
+
+[layouts-specifications-list-website]
+ other = "网站"
+
+[layouts-specifications-list-project]
+ other = "项目"
+
+[layouts-specifications-list-click-to-access-text]
+ other = "单击下面的规范以访问规范文档、Javadoc、技术兼容性工具包(TCK)以及每个版本的规范的兼容实现." 
+
+[layouts-specifications-list-platform-and-profile-title]
+ other = "Platform and Profile 规范"
+
+[layouts-specifications-list-platform-and-profile-text]
+ other = " Jakarta EE Platform and Profile 规范是各个规范的总括规范。Jakarta EE Platform  包括大多数单独的规范，而 Profile 规范包括用于开发Web平台和微服务体系结构的单独规范."
+
+[layouts-specifications-list-view-more]
+ other = "了解更多"
+
+[layouts-specifications-list-individual-specifications-title]
+ other = "单独规范"
+
+[layouts-specifications-list-individual-specifications-text]
+ other = "每个单独的规范都描述了实现企业Java应用程序的特定方面的标准化方式."
+
+[layouts-specifications-list-jug-spec-adopters-title]
+ other = "JUG Spec Adopters"
+
+[layouts-specifications-list-jug-spec-adopters-text]
+ other = "点击 <a href=\"/community/adopt-a-spec\">Adopt a Specification</a> 计划，了解如何注册你的JUG."
+
+[pages-compatibility-get-listed-title]
+ other = "加入兼容产品列表的收益"
+
+[pages-compatibility-get-listed-overview]
+ other = "加入兼容产品列表，您可获得若干收益 ，包括： " 
+
+[pages-compatibility-get-listed-customer-confidence-title]
+ other = "用户信心"
+
+[pages-compatibility-get-listed-customer-confidence-text]
+ other = "让您的企业客户和潜在客户相信您的产品满足他们的质量、可移植性和可伸缩性要求"
+
+[pages-compatibility-get-listed-collaboration-title]
+ other = "协作"
+
+[pages-compatibility-get-listed-collaboration-text]
+ other = "证明您的组织正在与行业领先者合作，推动 Jakarta EE 技术的发展" 
+
+[pages-compatibility-get-listed-brand-building-title]
+ other = "<br>建立品牌"
+
+[pages-compatibility-get-listed-brand-building-text]
+ other = "通过与 Jakarta EE 工作组合作，强化您的品牌" 
+
+[pages-compatibility-get-listed-community-support-title]
+ other = "社区支持"
+
+[pages-compatibility-get-listed-community-support-text]
+ other = "展示您对 Jakarta EE 开发者社区的支持" 
+
+[pages-compatibility-get-listed-how-get-listed-title]
+ other = "如何加入兼容产品列表"
+
+[pages-compatibility-get-listed-how-get-listed-text]
+ other = "要将您的产品列在兼容产品页面上，并使用 Jakarta EE 兼容徽标，请执行以下步骤："
+
+[pages-compatibility-get-listed-branding-requirements-title]
+ other = "品牌和兼容徽标要求"
+
+[pages-compatibility-get-listed-branding-requirements-join-working-group]
+ other = "<a href=\"https://jakarta.ee/membership/\">加入</a> Jakarta EE 工作组"
+
+[pages-compatibility-get-listed-branding-requirements-trademark-guidelines]
+ other = "熟悉 <a href=\"https://jakarta.ee/legal/trademark_guidelines/\">Jakarta EE 商标指引</a>."
+
+[pages-compatibility-get-listed-branding-requirements-license-agreement]
+ other = "执行(在线签署) <a href=\"https://app.hellosign.com/s/DQ9uVw4b\">Jakarta EE 兼容性商标许可协议</a> (或者打印 <a href=\"https://jakarta.ee/legal/trademark_guidelines/jakarta-ee-trademark-license.pdf\">许可协议 PDF</a> 并将签署后的协议发送至 <a href=\"mailto:emo-records@eclipse.org\">emo-records@eclipse.org</a>)"
+
+[pages-compatibility-get-listed-certification-requirements-title]
+ other = "认证和加入兼容产品页面的要求："
+
+[pages-compatibility-get-listed-certification-requirements-tck-title]
+ other = "遵循 <a href=\"https://jakarta.ee/committees/specification/tckprocess/\">Jakarta EE TCK 过程</a> 完全运行并满足适用TCK测试的所有要求"
+
+[pages-compatibility-get-listed-certification-requirements-tck-publish]
+ other = "在宣称兼容性的同时，用公开的列表发布和维护TCK测试结果"
+
+[pages-compatibility-get-listed-certification-requirements-tck-email]
+ other = "将TCK测试的结果发送至 <a href=\"mailto:tck@eclipse.org\">tck@eclipse.org</a>"
+
+[pages-compatibility-get-listed-certification-requirements-file-request]
+ other = "在 <a href=\"https://github.com/eclipse-ee4j/jakartaee-platform\">GitHub代码库</a> 的规范项目上，发布一个 <a href=\"https://raw.githubusercontent.com/jakartaee/specification-committee/master/compatibility-certification-request.md\">认证申请</a>"
+
+[pages-compatibility-get-listed-certification-requirements-open-issue]
+ other = "在 Jakarta EE 兼容产品代码仓库中发起一个 <a href=\"https://github.com/jakartaee/jakarta.ee/issues/new?template=compatibility.md\">GitHub Issue</a> 并填写相关信息"
+
+[pages-compatibility-get-listed-compatibility-products-title]
+ other = "兼容产品"
+
+[pages-compatibility-get-listed-compatibility-products-text]
+ other = "Jakarta EE 技术的成功依赖于兼容性来确保应用程序的可移植性、安全性、稳定性和弹性，兼容性将允许更多的技术提供商在企业Java社区中利用和加强 Jakarta EE 品牌."
+
+[pages-compatibility-get-listed-compatibility-products-view]
+ other = "查看兼容产品"
+
+[pages-community-adopt-a-spec-title]
+ other = "Adopt a Spec"
+
+[pages-community-adopt-a-spec-text]
+ other = "了解 Adopt a Spec 计划"
+
+[pages-community-adopt-a-spec-events]
+ other = "事件"
+
+[pages-community-adopt-a-spec-events-livestream]
+ other = "发现最新的 JakartaOne Livestream 活动"
+
+[pages-community-adopt-a-spec-events-other]
+ other = "发现最新的云原生Java活动"
+
+[pages-community-connect-title]
+ other = "保持联系"
+
+[pages-community-connect-link]
+ other = "发现联系渠道"
+
+[pages-community-meetup-title]
+ other = "技术沙龙活动"
+
+[pages-community-meetup-tech-talk]
+ other = "发现最新的Jakarta技术沙龙"
+
+[pages-community-meetup-sign-up]
+ other = "注册为活动主办人"
+
+[pages-community-videos-title]
+ other = "视频"
+
+[pages-community-videos-watch]
+ other = "查看最新的视频"
+
+[pages-community-videos-subscribe]
+ other = "订阅我们的Youtube频道"
+         
