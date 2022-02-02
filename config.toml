@@ -92,8 +92,8 @@ enableInlineShortcodes = true
     weight = 5
 
 [[menu.main]]
-    name = "Blog"
-    url = "/blogs"
+    name = "Resources"
+    url = "/resources/"
     weight = 6
 
 # About sub-menu
@@ -106,12 +106,6 @@ enableInlineShortcodes = true
 [[menu.main]]
     name = "Jakarta EE Working Group"
     url = "/"
-    weight = 2
-    parent = "About"
-
-[[menu.main]]
-    name = "Resources"
-    url = "/resources/"
     weight = 2
     parent = "About"
 
@@ -315,6 +309,12 @@ enableInlineShortcodes = true
     parent = "Community"
     weight = 5
 
+[[menu.main]]
+    name = "Blog"
+    url = "/blogs"
+	parent = "Community"
+    weight = 6
+
 # Membership sub-menu
 [[menu.main]]
     name = "Join"
@@ -376,8 +376,8 @@ enableInlineShortcodes = true
 		weight = 5
 
 	[[languages.zh.menu.main]]
-		name = "博客"
-		url = "/zh/blogs"
+		name = "Resources"
+		url = "/zh/resources/"
 		weight = 6
 
 	# About sub-menu
@@ -390,12 +390,6 @@ enableInlineShortcodes = true
 	[[languages.zh.menu.main]]
 		name = "Jakarta EE Working Group"
 		url = "/zh/"
-		weight = 2
-		parent = "关于"
-
-	[[languages.zh.menu.main]]
-		name = "Resources"
-		url = "/zh/resources/"
 		weight = 2
 		parent = "关于"
 
@@ -598,6 +592,12 @@ enableInlineShortcodes = true
 		url = "/zh/community/videos"
 		parent = "社区"
 		weight = 5
+
+	[[languages.zh.menu.main]]
+		name = "博客"
+		url = "/zh/blogs"
+		parent = "社区"
+		weight = 6
 
 	# Membership sub-menu
 	[[languages.zh.menu.main]]
