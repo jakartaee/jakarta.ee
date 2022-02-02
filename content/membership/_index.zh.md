@@ -1,11 +1,12 @@
 ---
 title: "成员单位"
-headline: "塑造Jakarta EE的未来"
+seo_title: "加入 Jakarta EE 工作组 | 塑造开源Java的未来"
+headline: "加入 Jakarta EE 工作组"
 date: 2018-04-05T16:09:45-04:00
-description: "加入一个开放过程来塑造Jakarta EE，打造云原生Java的未来."
+description: "和我们一起塑造 Jakarta EE 这一企业级Java的未来，确保治理良好、供应商中立和开源的Java生态系统的增长和发展。"
 hide_page_title: true
 hide_sidebar: true
 container: "fluid-container"
-links: [[href: "/zh/membership/members", text: "浏览成员"], [href: "#benefits", text: "成员收益"], [href: "/membership/join-us", text: "加入Jakarta EE"]]
 ---
+
 {{< pages/membership/index >}}
