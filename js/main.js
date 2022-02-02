@@ -60,5 +60,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
           }).slice(0,3).slideDown("slow")
         );
       });
+
+
+      $('#viewSpecificationSidebar').on('change', function() {
+        window.location.href = $('#viewSpecificationSelect').val();
+      });
     })(jQuery, document);
 });
