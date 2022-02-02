@@ -917,4 +917,25 @@
 
 [pages-community-videos-subscribe]
  other = "订阅我们的Youtube频道"
-         
+
+[pages-committees-document]
+ other = "文档" 
+
+[pages-committees-document-responsibilities-title]
+ other = "在每一个发布周期 Jakarta EE 委员会的角色"  
+
+[pages-committees-document-responsibilities-text]
+ other = "本文件简要介绍了 Jakarta EE 版本发布过程中，工作组委员会的作用和职责."   
+
+[pages-committees-document-download]
+ other = "下载文档" 
+
+[pages-committees-website-guidelines-title]
+ other = "jakarta.ee网站维护者指引" 
+
+[pages-committees-website-guidelines-text]
+ other = "选定的jakarta.ee网站维护人员同时也是Jakarta EE 工作组委员会成员，本文为上述人员提供了简短的摘要." 
+
+[pages-committees-website-guidelines-download]
+ other = "下载文档" 
+           

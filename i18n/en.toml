@@ -890,3 +890,25 @@ other = "Sign up now"
 
 [pages-community-videos-subscribe]
  other = "Subscribe to our Youtube channel"
+
+[pages-committees-document]
+ other = "Documents" 
+
+[pages-committees-document-responsibilities-title]
+ other = "Roles of Jakarta EE Committees during a Release Cycle"  
+
+[pages-committees-document-responsibilities-text]
+ other = "This document provides a short summary of the roles and responsibilities of Jakarta EE Working Group Committees during Jakarta EE releases."   
+
+[pages-committees-document-download]
+ other = "Download Document" 
+
+[pages-committees-website-guidelines-title]
+ other = "Guidelines for jakarta.ee website maintainer" 
+
+[pages-committees-website-guidelines-text]
+ other = "This document provides a short summary for a selected jakarta.ee website maintainers who are also Jakarta EE Working Group Committees members." 
+
+[pages-committees-website-guidelines-download]
+ other = "Download Document" 
+  
