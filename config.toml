@@ -286,34 +286,34 @@ enableInlineShortcodes = true
     weight = 2
 
 [[menu.main]]
+    name = "Blog"
+    url = "/blogs"
+	parent = "Community"
+    weight = 3
+
+[[menu.main]]
     name = "Events"
     url = "/community/events/"
     parent = "Community"
-    weight = 3
+    weight = 4
 
 [[menu.main]]
     name = "Stay Connected"
     url = "/connect/"
     parent = "Community"
-    weight = 4
+    weight = 5
 
 [[menu.main]]
     name = "Tech Talk Meet-ups"
     url = "/community/#meetups"
     parent = "Community"
-    weight = 5
+    weight = 6
 
 [[menu.main]]
     name = "Videos"
     url = "/community/videos"
     parent = "Community"
-    weight = 5
-
-[[menu.main]]
-    name = "Blog"
-    url = "/blogs"
-	parent = "Community"
-    weight = 6
+    weight = 7
 
 # Membership sub-menu
 [[menu.main]]
@@ -570,34 +570,34 @@ enableInlineShortcodes = true
 		weight = 2
 
 	[[languages.zh.menu.main]]
+		name = "博客"
+		url = "/zh/blogs"
+		parent = "社区"
+		weight = 3
+
+	[[languages.zh.menu.main]]
 		name = "活动"
 		url = "/zh/community/events/"
 		parent = "社区"
-		weight = 3
+		weight = 4
 
 	[[languages.zh.menu.main]]
 		name = "联系"
 		url = "/zh/connect/"
 		parent = "社区"
-		weight = 4
+		weight = 5
 
 	[[languages.zh.menu.main]]
 		name = "技术沙龙"
 		url = "/zh/community/#meetups"
 		parent = "社区"
-		weight = 5
+		weight = 6
 
 	[[languages.zh.menu.main]]
 		name = "视频"
 		url = "/zh/community/videos"
 		parent = "社区"
-		weight = 5
-
-	[[languages.zh.menu.main]]
-		name = "博客"
-		url = "/zh/blogs"
-		parent = "社区"
-		weight = 6
+		weight = 7
 
 	# Membership sub-menu
 	[[languages.zh.menu.main]]
