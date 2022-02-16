@@ -4,9 +4,9 @@
     <div class="news-content">
         <div class="content-meta">
             <div class="date">
-                <span class="month">{{ month }}</span>
-                <span class="day">{{ day }}</span>
-                <span class="year">{{ year }}</span>
+                <span class="month">{{#formatDate}}MMMM{{/formatDate}}</span>
+                <span class="day">{{#formatDate}}dd{{/formatDate}}</span>
+                <span class="year">{{#formatDate}}yyyy{{/formatDate}}</span>
             </div>
         </div>
       <div class="content-inner">
