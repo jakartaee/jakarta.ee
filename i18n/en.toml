@@ -689,6 +689,9 @@ other = "Sign up now"
 
 [pages-resources-ebooks-cloud-native-java]
  other = "Charting a Course for Cloud Native Java"
+
+[pages-resources-ebooks-cloud-native-java-html-version]
+ other = "Fulfilling the Vision for Open Source, Cloud Native Java"
  
 [pages-resources-infographics-title]
  other = "Infographics"
