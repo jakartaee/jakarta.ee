@@ -3,7 +3,7 @@ title: "Fulfilling the Vision for Open Source, Cloud Native Java"
 seo_title: "Fulfilling the Vision for Open Source, Cloud Native Java | Jakarta EE"
 headline: "Fulfilling the Vision for Open Source, Cloud Native Java"
 tagline: "Leveraging the Strength of a United Community to Advance Enterprise Java"
-date: 2019-02-27T16:10:38-04:00
+date: 2022-02-16T09:00:00-04:00
 description: "Jakarta EE resources including developer survey results, presentations, datasheets and more."
 layout: "single"
 hide_page_title: true
