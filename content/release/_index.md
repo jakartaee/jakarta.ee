@@ -1,14 +1,14 @@
 ---
 title: "Jakarta EE Releases"
 seo_title: "Jakarta EE Releases | Java EE 8 Compatible Products & Specifications"
-date: 2018-04-05T16:10:38-04:00
-hide_sidebar: true
+description: "Connect with the Jakarta EE community and find opportunities to contribute and participate."
 headline: "Jakarta&nbsp;EE"
-links: [[href: "/compatibility/", text: "Download Compatible Products"], [href: "/specifications/", text: "Specifications"]]
+tagline: "Release Versions"
+date: 2018-04-07T16:09:45-04:00
+layout: "single"
 hide_page_title: true
-header_wrapper_class: "header-release-9"
-container: "container-fluid"
-type: "release/9.1"
+hide_sidebar: true
+header_wrapper_class: "header-release-landing-page"
 ---
 
-{{< pages/release/9_1 >}}
+{{< pages/release >}}

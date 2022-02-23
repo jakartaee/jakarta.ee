@@ -1,0 +1,30 @@
+
+{{ $allReleases := where .Site.Pages "Section" "release" }}
+{{ $firstRelease := index (first 1 $allReleases) 0 }}
+<div class="row margin-top-60">
+    {{ range (where .Site.Pages "Section" "release") }}
+        {{ range sort .Pages "Params.date" "desc" }}
+            <div class="col-sm-24 card-container padding-bottom-0 padding-top-0">
+                <div id="datasheets" class="card-panel bordered alternate panel panel-default match-height-item-by-row">
+                    {{ if eq $firstRelease.Permalink .Permalink }} <span class="new-release">NEW!</span> {{ end }}
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <h2 class="big-text">{{ .Title }}</h2>
+                        </div>
+                        <div class="col-sm-12">
+                            <p class="big text-secondary text-right"><strong>{{ .Date.Format "January 2, 2006" }}</strong></p>
+                        </div>
+                    </div>
+                    
+                    
+                    <p class="big">{{ .Description }}</p>
+                    <ul class="list-inline margin-top-30 margin-bottom-0">
+                        <li><a class="btn btn-secondary card-panel-btn" href="{{ .Permalink }}"><i class="fa fa-code big" aria-hidden="true"></i> Release Page</a></li>
+                        <li><a class="btn btn-secondary card-panel-btn" href="{{ .Params.press_release_link }}"><i class="fa fa-file-text-o big" aria-hidden="true"></i> Press Release</a></li>
+                    </ul>
+                </div>
+            </div>
+        {{ end }}
+    {{ end }}
+    
+</div>
