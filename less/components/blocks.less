@@ -92,6 +92,40 @@
             border-top: 1px solid #e1e1e1;
             margin-top: 0;
         }
+        &.alternate {
+            background-color: #f1f1f1;
+            padding: 40px;
+            position: relative;
+            overflow: visible;
+            .big-text {
+                font-size: 37px;
+                margin-top: 0;
+            }
+            .card-panel-btn {
+                padding: 4px 20px 8px;
+                
+                .fa {
+                    position: relative;
+                    top: 2px;
+                    margin-right: 5px;
+                }
+            }
+            .new-release {
+                position: absolute;
+                top: -15px;
+                left: -15px;
+                background-color: @brand-secondary;
+                color: @white;
+                font-weight: 700;
+                border-radius: 100px;
+                display: block;
+                width: 60px;
+                height: 60px;
+                text-align: center;
+                padding-top: 19px;
+                transform: rotate(342deg);
+            }
+        }
     }
     .card-panel > .secondary-bg {
         background-color: @brand-primary;

@@ -1,6 +1,6 @@
 ---
 title: "Jakarta EE 9.1 Delivers"
-date: 2018-04-05T16:10:38-04:00
+date: 2021-05-25T16:10:38-04:00
 description: "The latest Jakarta EE 9.1 downloads including Java EE 9 compatible products & open source specifications to modernize your enterprise applications."
 hide_sidebar: true
 seo_title: "Jakarta EE 9.1 Downloads | Java EE 9 Compatible Products & Specifications"
@@ -13,6 +13,7 @@ container: "container-fluid"
 footer_class: "footer-release-9"
 type: "release/9.1"
 hide_call_for_action: true
+press_release_link: "/news/jakarta-ee-9-1-released/"
 ---
 
 {{< pages/release/9_1 >}}
