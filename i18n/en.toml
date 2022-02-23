@@ -867,9 +867,6 @@ other = "Sign up now"
 [pages-community-adopt-a-spec-events]
  other = "Events"
 
-[pages-community-adopt-a-spec-events-livestream]
- other = "Find the latest JakartaOne Livestream"
-
 [pages-community-adopt-a-spec-events-other]
  other = "Find the latest Cloud Native Java Events"
 
@@ -896,6 +893,12 @@ other = "Sign up now"
 
 [pages-community-videos-subscribe]
  other = "Subscribe to our Youtube channel"
+
+[pages-community-jakartaone-livestream]
+ other = "JakartaOne Livestream"
+
+[pages-community-jakartaone-livestream-latest]
+ other = "Find the latest JakartaOne Livestream"
 
 [pages-committees-document]
  other = "Documents" 
