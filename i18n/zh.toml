@@ -921,6 +921,12 @@
 [pages-community-videos-subscribe]
  other = "订阅我们的Youtube频道"
 
+[pages-community-jakartaone-livestream]
+ other = "JakartaOne Livestream"
+
+[pages-community-jakartaone-livestream-latest]
+ other = "Find the latest JakartaOne Livestream"
+
 [pages-committees-document]
  other = "文档" 
 
