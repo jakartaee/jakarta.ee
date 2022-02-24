@@ -900,6 +900,9 @@ other = "Sign up now"
 [pages-community-jakartaone-livestream-latest]
  other = "Find the latest JakartaOne Livestream"
 
+[pages-community-jakartaone-livestream-language]
+ other = "Find out how to host a JakartaOne Livestream in your own language"
+
 [pages-committees-document]
  other = "Documents" 
 
