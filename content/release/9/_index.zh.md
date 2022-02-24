@@ -1,7 +1,6 @@
 ---
-title: "Jakarta EE 9 发布"
+title: "Jakarta EE 9"
 date: 2018-04-05T16:10:38-04:00
-description: "最新的 Jakarta EE 9 下载，包括 Java EE 9 兼容产品和开源规范，现代化你的企业应用."
 hide_sidebar: true
 seo_title: "Jakarta EE 9 下载 | Java EE 9 兼容产品和规范"
 headline: "Jakarta&nbsp;EE"
@@ -13,6 +12,9 @@ container: "container-fluid"
 footer_class: "footer-release-9"
 type: "release/9"
 hide_call_for_action: true
+press_release_link: "/news/jakarta-ee-9-released/"
+subtitle: "Jakarta EE 9 Released!"
+description: "The Jakarta EE Working Group, hosted by the Eclipse Foundation, one of the world’s largest open source software foundations, today announced during the JakartaOne Livestream virtual conference the release of the Jakarta EE 9 Platform and Web Profile specifications and related TCKs."
 ---
 
 {{< pages/release/9 >}}

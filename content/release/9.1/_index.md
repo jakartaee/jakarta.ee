@@ -1,7 +1,7 @@
 ---
-title: "Jakarta EE 9.1 Delivers"
+title: "Jakarta EE 9.1"
 date: 2021-05-25T16:10:38-04:00
-description: "The latest Jakarta EE 9.1 downloads including Java EE 9 compatible products & open source specifications to modernize your enterprise applications."
+description: "The Jakarta EE Working Group, hosted by the Eclipse Foundation, one of the world’s largest open source software foundations, today announced the release of the Jakarta EE 9.1 Platform and Web Profile specifications and related TCKs."
 hide_sidebar: true
 seo_title: "Jakarta EE 9.1 Downloads | Java EE 9 Compatible Products & Specifications"
 headline: "Jakarta&nbsp;EE"
@@ -14,6 +14,7 @@ footer_class: "footer-release-9"
 type: "release/9.1"
 hide_call_for_action: true
 press_release_link: "/news/jakarta-ee-9-1-released/"
+subtitle: "The Jakarta EE Working Group Releases Jakarta EE 9.1 as Industry Continues to Embrace Open Source Enterprise Java"
 ---
 
 {{< pages/release/9_1 >}}
