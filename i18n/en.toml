@@ -10,6 +10,9 @@
 [home-calltoaction-specifications]
   other = "GET THE <br>SPECIFICATIONS"
 
+[home-calltoaction-presentation]
+  other = "JAKARTA EE PRESENTATION"
+
 [home-calltoaction-getinvolved]
   other = "GET INVOLVED"
 
@@ -717,8 +720,11 @@ other = "Sign up now"
 [pages-resources-presentations-title]
  other = "Presentations"
  
-[pages-resources-presentations-presentations]
- other = "Jakarta EE presentations"
+[pages-resources-presentations-presentation]
+ other = "Jakarta EE presentation"
+
+[pages-resources-presentations-presentation-template]
+ other = "Jakarta EE Presentation Template"
  
 [pages-resources-presentations-efsp]
  other = "Introducing the EFSP"
