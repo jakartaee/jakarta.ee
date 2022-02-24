@@ -31,9 +31,9 @@ sets:
         image_width: 195
         download: 'https://glassfish.org/download'
         versions:
-        - version: 6.1 RC1
-          compatibility: 'https://glassfish.org/certifications/jakarta-platform/9.1/TCK-Results-6.1-RC1'
-          download_url: 'https://download.eclipse.org/ee4j/glassfish/glassfish-6.1.0-RC1.zip'
+        - version: 6.1
+          compatibility: 'https://glassfish.org/certifications/jakarta-platform/9.1/TCK-Results-6.1'
+          download_url: 'https://download.eclipse.org/ee4j/glassfish/glassfish-6.1.0.zip'
         - version: 6.0
           compatibility: 'https://glassfish.org/certifications/jakarta-platform/9.1/TCK-Results-6.0'
           download_url: 'https://download.eclipse.org/ee4j/glassfish/glassfish-6.0.0.zip'
@@ -121,9 +121,9 @@ sets:
         image_width: 195
         download: 'https://glassfish.org/download'
         versions:
-        - version: 6.1 RC1
-          compatibility: 'https://glassfish.org/certifications/jakarta-web-profile/9.1/TCK-Results-6.1-RC1'
-          download_url: 'https://download.eclipse.org/ee4j/glassfish/glassfish-6.0.0.zip'
+        - version: 6.1
+          compatibility: 'https://glassfish.org/certifications/jakarta-web-profile/9.1/TCK-Results-6.1'
+          download_url: 'https://download.eclipse.org/ee4j/glassfish/glassfish-6.1.0.zip'
         - version: 6.0
           compatibility: 'https://glassfish.org/certifications/jakarta-web-profile/9.1/TCK-Results-6.0'
           download_url: 'https://download.eclipse.org/ee4j/glassfish/glassfish-6.0.0.zip'
