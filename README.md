@@ -113,6 +113,45 @@ The rest of the `_index.md` needs general markdown format to populate the new en
 Eclipse Foundation Marketing Manager is responsible for approving the new entry (via pull request) for the `https://jakarta.ee/news/` section.
 
 
+### How to include a new entry in https://jakarta.ee/blogs section
+
+* Create a new folder under `jakarta.ee/content/blogs`, the folder name will become part of the final URL for the new entry.
+* Create a file name `_index.md`. This will hold the main entry content for the URL defined in the previous step.
+* Add images to be used in the content of the new entry.
+
+Final structure for a new entry should look like this:
+```
+├── content
+│   ├── blogs
+│   │   ├── new-entry-name
+│   │   │   ├── images
+│   │   │   │   └── image.jpg
+│   │   │   ├── _index.md
+│   │   │   └── banner.png
+```
+
+`_index.md` has two man sections: `Header` and `Content`
+The `header` provide metadata need it for the new entry to be published in the list from https://jakarta.ee/blogs/
+
+```
+---
+title: "New entry title"
+date: "2021-06-30"
+summary: "Summary text to be presented in the blogs index page"
+---
+```
+
+The rest of the `_index.md` needs general markdown format to populate the new entry content. 
+
+Eclipse Foundation Marketing Manager is responsible for approving the new entry (via pull request) for the `https://jakarta.ee/blogs/` section.
+
+**External blog posts**
+
+The blog section currently supports the addition of blog posts coming from an external source.
+
+If you wish to add you blog to the list of external source, please file an issue on the [JakartaBlogs repo](https://github.com/jakartaee/jakartablogs.ee/issues/new?assignees=&labels=&template=add_blog.md).
+
+
 ### How to add a reference in Jakarta EE Announcements section from one Jakarta EE Working Group post
 
 Let's say we created a new post on jakarta.ee/news/ with the title "Jakarta EE 9.1 Released" and the url of https://jakarta.ee/news/jakartaee-91-released/
