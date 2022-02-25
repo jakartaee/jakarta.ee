@@ -71,11 +71,11 @@ SPDX-License-Identifier: EPL-2.0
 
 ### How to include a new entry in https://jakarta.ee/news/ section
 
-* Create a new folder under `jakarta.ee/content/news`, the folder name will become part of the final URL for the new entry.
-* Create a file name `_index.md`. This will be hold the main entry content for the URL defined in the previous step.
+* Create a new folder under `jakarta.ee/content/news`, the folder's name will become part of the final URL for the new entry.
+* Create a file named `_index.md`. This will hold the main entry content for the URL defined in the previous step.
 * Add an image `banner.png` to be used as the main card for the new entry defined in the file from previous step.
 
-Final structure for a new entry should look like this:
+Final structure for a new News entry should look like this:
 ```
 ├── content
 │   ├── news
@@ -84,8 +84,8 @@ Final structure for a new entry should look like this:
 │   │   │   └── banner.png
 ```
 
-`_index.md` has two man sections: `Header` and `Content`
-The `header` provide metadata need it for the new entry to be published in the list from https://jakarta.ee/news/
+`_index.md` has two main sections: `Header` and `Content`
+The `header` provide metadata needed for the new entry to be published in the list from https://jakarta.ee/news/
 
 ```
 ---
@@ -104,9 +104,9 @@ summary: "Summary text to be presented in the news index page"
 
 **Important**
 
--  `publishDate` is need it for the new entry to appear in the `https://jakarta.ee/news/` list if the `date` is set in the future.
+- `publishDate` is needed for the new entry to appear in the `https://jakarta.ee/news/` list if the `date` is set in the future.
 - For the correct list of `type` and `news/tags`, review previous entries before creating a new one.
-- `authors` section recive a list of Github Handles and names, this is used to populate images and authors names automatically in the entry.
+- `authors` section receive a list of Github Handles and names, this is used to populate images and authors name automatically in the entry.
 
 The rest of the `_index.md` needs general markdown format to populate the new entry content. 
 
@@ -115,11 +115,11 @@ Eclipse Foundation Marketing Manager is responsible for approving the new entry 
 
 ### How to include a new entry in https://jakarta.ee/blogs section
 
-* Create a new folder under `jakarta.ee/content/blogs`, the folder name will become part of the final URL for the new entry.
-* Create a file name `_index.md`. This will hold the main entry content for the URL defined in the previous step.
+* Create a new folder under `jakarta.ee/content/blogs`, the folder's name will become part of the final URL for the new entry.
+* Create a file named `_index.md`. This will hold the main entry content for the URL defined in the previous step.
 * Add images to be used in the content of the new entry.
 
-Final structure for a new entry should look like this:
+Final structure for a new blog entry should look like this:
 ```
 ├── content
 │   ├── blogs
@@ -130,8 +130,8 @@ Final structure for a new entry should look like this:
 │   │   │   └── banner.png
 ```
 
-`_index.md` has two man sections: `Header` and `Content`
-The `header` provide metadata need it for the new entry to be published in the list from https://jakarta.ee/blogs/
+`_index.md` has two main sections: `Header` and `Content`
+The `header` provide metadata needed for the new entry to be published in the list from https://jakarta.ee/blogs/
 
 ```
 ---
