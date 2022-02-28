@@ -1,3 +1,16 @@
+{{ $scratch := newScratch }}
+{{ range .Site.Data.videos.categories}}
+    {{ if .title }}
+        {{ $scratch.Set "category_title" (.title | urlize) }}
+        {{ $scratch.SetInMap "categories" (.title | urlize) . }}
+    {{ end }}
+    {{ range $index, $video := .videos }}
+        {{ $category := dict "category" ($scratch.Get "category_title") }}
+        {{ $video = merge . ($category) }}
+        {{ $scratch.SetInMap "videos" (.title | urlize) $video }}
+    {{ end }}
+{{ end }}
+
 <div class="card-banner card-banner-dark padding-15 margin-bottom-60">
     <div class="row">
         <div class="col-sm-4 match-height-item-by-row vertical-align-container">
@@ -21,16 +34,26 @@
 
 <div class="row featured-section featured-section-resources">
     <div class="container">
-        <div class="row">
-
-            {{ if .Site.Data.videos.items }}
-                <div class="col-sm-24">
-                    {{ range .Site.Data.videos.items }}
-                        <div class="row featured-section-resources-video-item margin-bottom-60">
+        <div id="videos-list">
+            {{ if gt (len ($scratch.Get "videos")) 0 }}
+                <div class="form-group row">
+                    <div class="col-sm-6">
+                        <select id="video-categories" class="search form-control">
+                            <option selected value="none">Choose a category</option>
+                            {{ range sort ($scratch.GetSortedMapValues "categories") "title" "asc" }}
+                                <option value="{{ .title | urlize }}">{{ .title }}</option>
+                            {{ end }}
+                        </select>
+                    </div>
+                </div>
+                <ul class="list list-unstyled">
+                    {{ range sort ($scratch.GetSortedMapValues "videos") "date" "desc" }}
+                        <li class="row featured-section-resources-video-item margin-bottom-60">
                             <div class="col-sm-11">
                                 <a class="{{.link_class}}" href="{{.link}}"></a>
                             </div>
                             <div class="col-sm-11 col-sm-offset-1 padding-top-30 padding-bottom-30">
+                                <p class="category hide">{{.category}}</p>
                                 <p class="featured-section-resources-video-date text-secondary">{{ time.Format "January 2, 2006" .date  }}</p>
                                 <h2 class="h3 featured-section-resources-video-heading big-text"><a href="{{.link}}">{{ .title }}</a></h2>
                                 <p class="featured-section-resources-video-description margin-bottom-20">{{ .description | truncate 200 }}</p>
@@ -41,10 +64,14 @@
                                     {{ end }}
                                 </ul>
                             </div>
-                        </div>
-                    {{ end }}
+                        </li>
+                    {{ end }} 
+                </ul>
+                <div class="text-center">
+                    <ul class="pagination text-center"></ul>
                 </div>
             {{ end }}
         </div>
+        <p class="text-center"><a class="btn btn-primary btn-huge" href="https://www.youtube.com/c/JakartaEE/playlists">View All</a></p>
     </div>
 </div>
