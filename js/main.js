@@ -12,6 +12,7 @@
  */
 
 import 'eclipsefdn-solstice-assets'
+import List from 'list.js';
 
 document.addEventListener("DOMContentLoaded", function(event) {
     (function($, document) {
@@ -65,5 +66,26 @@ document.addEventListener("DOMContentLoaded", function(event) {
       $('#viewSpecificationSidebar').on('change', function() {
         window.location.href = $('#viewSpecificationSelect').val();
       });
+
+      const options = {
+        valueNames: ['category'],
+        page: 5,
+        pagination: true
+      };
+      
+      const videosList = new List('videos-list', options);
+      let updateList = function(){
+        const category = $("#video-categories").val();
+
+        if (category == 'none') {
+          videosList.filter();
+        }
+        else {
+          videosList.filter(function(item) {
+            return (category.includes(item.values().category) || !category);
+          });
+        }
+      }
+      $("#video-categories").on("change", updateList);
     })(jQuery, document);
 });
