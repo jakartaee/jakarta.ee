@@ -67,16 +67,16 @@ document.addEventListener("DOMContentLoaded", function(event) {
         window.location.href = $('#viewSpecificationSelect').val();
       });
 
-      const options = {
+      // Initiate List.js for videos
+      const videosList = new List('videos-list', {
         valueNames: ['category'],
         page: 5,
-        pagination: true
-      };
-      
-      const videosList = new List('videos-list', options);
+        pagination: true,
+        paginationClass: "pagination-videos"
+      });
+
       let updateList = function(){
         const category = $("#video-categories").val();
-
         if (category == 'none') {
           videosList.filter();
         }
@@ -85,7 +85,18 @@ document.addEventListener("DOMContentLoaded", function(event) {
             return (category.includes(item.values().category) || !category);
           });
         }
+
+        // Replace youtube videos
+        eclipseFdnVideos.replace();
       }
+
+      // Update list after using the filter
       $("#video-categories").on("change", updateList);
+
+      // Replace youtube videos when pagination is clicked
+      $(document).on('click', 'a.page', function() {
+        eclipseFdnVideos.replace();
+      });
+
     })(jQuery, document);
 });

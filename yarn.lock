@@ -2675,21 +2675,19 @@ duplexer3@^0.1.4:
   resolved "https://registry.yarnpkg.com/duplexer3/-/duplexer3-0.1.4.tgz#ee01dd1cac0ed3cbc7fdbea37dc0a8f1ce002ce2"
   integrity sha1-7gHdHKwO08vH/b6jfcCo8c4ALOI=
 
-eclipsefdn-hugo-solstice-theme@^0.0.140:
+"eclipsefdn-hugo-solstice-theme@git+ssh://git@gitlab.eclipse.org:eclipsefdn/it/webdev/hugo-solstice-theme.git#epoirier/src/issue-291":
   version "0.0.140"
-  resolved "https://registry.yarnpkg.com/eclipsefdn-hugo-solstice-theme/-/eclipsefdn-hugo-solstice-theme-0.0.140.tgz#b8258f687c6deb88757491f2e9c33533055f3833"
-  integrity sha512-8J2mrfXtsnnl8wcafKRZrFpmXVfwygQ5JIT0SDjYZ/5Hj3PayDowjhjTYROCcWGlHvzKXQckUOHyzNZr9I2ujA==
+  resolved "git+ssh://git@gitlab.eclipse.org:eclipsefdn/it/webdev/hugo-solstice-theme.git#4ba79ce8f9d51d69cf339b8ed0e70a15a99ad2b3"
   dependencies:
     axios "^0.21.1"
-    eclipsefdn-solstice-assets "0.0.184"
+    eclipsefdn-solstice-assets "git+ssh://git@gitlab.eclipse.org:eclipsefdn/it/webdev/solstice-assets.git#epoirier/src/issue-291"
     json2yaml "^1.1.0"
     parse-link-header "^1.0.1"
     toml "^3.0.0"
 
-eclipsefdn-solstice-assets@0.0.184:
-  version "0.0.184"
-  resolved "https://registry.yarnpkg.com/eclipsefdn-solstice-assets/-/eclipsefdn-solstice-assets-0.0.184.tgz#e276d0dd25be15a726f57af9e723bc4ec8b27e78"
-  integrity sha512-Q+0VK6kCe1enUfTGObNDOepib4/D8a1FbcN7k76NHEFRMVz9Z42/103W7L4crtl72M74sXYknP5vLeNR3Bvquw==
+"eclipsefdn-solstice-assets@git+ssh://git@gitlab.eclipse.org:eclipsefdn/it/webdev/solstice-assets.git#epoirier/src/issue-291":
+  version "0.0.185"
+  resolved "git+ssh://git@gitlab.eclipse.org:eclipsefdn/it/webdev/solstice-assets.git#e73711b0abc635caf11cc93042c5eb42ffcee5b0"
   dependencies:
     "@babel/core" "^7.0.0-0"
     "@babel/plugin-proposal-class-properties" "^7.12.1"
@@ -2735,9 +2733,9 @@ ee-first@1.1.1:
   integrity sha1-WQxhFWsK4vTwJVcyoViyZrxWsh0=
 
 electron-to-chromium@^1.4.71:
-  version "1.4.73"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.73.tgz#422f6f514315bcace9615903e4a9b6b9fa283137"
-  integrity sha512-RlCffXkE/LliqfA5m29+dVDPB2r72y2D2egMMfIy3Le8ODrxjuZNVo4NIC2yPL01N4xb4nZQLwzi6Z5tGIGLnA==
+  version "1.4.75"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.75.tgz#d1ad9bb46f2f1bf432118c2be21d27ffeae82fdd"
+  integrity sha512-LxgUNeu3BVU7sXaKjUDD9xivocQLxFtq6wgERrutdY/yIOps3ODOZExK1jg8DTEg4U8TUCb5MLGeWFOYuxjF3Q==
 
 element-closest-polyfill@^1.0.4:
   version "1.0.4"
@@ -6153,9 +6151,9 @@ terser@^4.6.3:
     source-map-support "~0.5.12"
 
 terser@^5.10.0, terser@^5.7.2, terser@^5.9.0:
-  version "5.11.0"
-  resolved "https://registry.yarnpkg.com/terser/-/terser-5.11.0.tgz#2da5506c02e12cd8799947f30ce9c5b760be000f"
-  integrity sha512-uCA9DLanzzWSsN1UirKwylhhRz3aKPInlfmpGfw8VN6jHsAtu8HJtIpeeHHK23rxnE/cDc+yvmq5wqkIC6Kn0A==
+  version "5.12.0"
+  resolved "https://registry.yarnpkg.com/terser/-/terser-5.12.0.tgz#728c6bff05f7d1dcb687d8eace0644802a9dae8a"
+  integrity sha512-R3AUhNBGWiFc77HXag+1fXpAxTAFRQTJemlJKjAgD9r8xXTpjNKqIXwHM/o7Rh+O0kUJtS3WQVdBeMKFk5sw9A==
   dependencies:
     acorn "^8.5.0"
     commander "^2.20.0"
