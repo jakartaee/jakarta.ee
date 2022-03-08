@@ -1,36 +1,89 @@
-items:
-   - company: Founder and CEO of Tomitribe
-     name:  David Blevins
-     logo: /images/members/jakarta-member_tomitribe.svg
-     text: In 20 years working in open source and Java standards I've never seen such a truly diverse and equally shared effort as that required to ship Jakarta EE 8. Source code has been donated, but what emerged is a community that bravely accepts change, innovates open processes and repeatedly choses shared victory over individual success. When we look back in 10 years at all we've accomplished in Jakarta, everyone will agree this was the singular moment in time that shaped our future.
-     picture: /images/testimonials/david-blevins.png
-   - company: VP, Deputy Head of Fujitsu Middleware Unit
-     name: Hideki Nozaki
-     logo: /images/members/jakarta-member_fujitsu.svg
-     text: Through the years, Fujitsu Limited has been not only a user of the Java language, but has also been actively involved in the development of Java, and as a Charter Member of the Java Community Process Executive Committee, it has helped create the development process for the Java language. As the future of Java EE development moves to Eclipse and becomes an Open Source Developed Specification, Fujitsu has joined Eclipse as a Strategic Member in order to continue its participation in the evolution of Java EE as Jakarta EE, providing it in the cloud native world.
-     picture: /images/silhouette.jpg
-   - company: Distinguished Engineer, CTO IBM App Platform
-     name: Ian Robinson
-     logo: /images/members/jakarta-member_ibm.png
-     picture: /images/testimonials/ian-robinson.jpg
-     text: IBM helped create Java EE and guide it through its teenage years and I’m delighted to see the progress made under Jakarta EE. I look forward to Jakarta EE and MicroProfile becoming the open standard for cloud native innovation and the technology we need for Java in the cloud.
-   - company: CEO and co-founder of Webtide LLC
-     name: Jesse McConnell
-     logo: /images/members/jakarta-member_webtide.svg
-     picture: /images/testimonials/jesse-mcconnell.jpg
-     text: The Jakarta EE project represents a noble goal of free and open-source development on a body of Java specifications that are fundamentally core to the Java experience. The Eclipse Jetty project and its developers at Webtide have contributed to many of these specifications since their inception and are pleased to continue doing so as a part of Jakarta EE.
-   - company: VP of Red Hat Software Engineering
-     name: Mark Little
-     logo: /images/members/jakarta-member_redhat.svg
-     picture: /images/silhouette.jpg
-     text: Red Hat reaffirms its support for the development of Jakarta EE. We look forward to working with the Eclipse Foundation and the broader Java community to align efforts to drive Enterprise Java forward. The breadth of participation in combination with community governance will help accelerate the evolution of Jakarta EE. We believe that Jakarta EE represents one of the most significant events to have happened to the open source enterprise Java ecosystem since OpenJDK was released.
-   - company: Founder and Director of Payara® Services, LTD and the Payara Foundation
-     name: Stephen Millidge
-     logo: /images/members/jakarta-member_payara.svg
-     picture: /images/testimonials/stephen-millidge.jpg
-     text: The Payara Team is dedicated to the growth and success of Jakarta EE. Our customer support contracts help fund our ongoing development efforts and we continue to lend our expertise and resources to the development of Jakarta EE. We’re committed to helping shape the future of open source cloud native Java.
-   - company: VP of Engineering, Oracle Enterprise Cloud Native Java
-     name: Tom Snyder
-     logo: /images/members/jakarta-member_oracle.svg
-     picture: /images/silhouette.jpg
-     text: Oracle remains committed to the success of Jakarta EE and is pleased with its progress and community support. We are contributing to the projects and the committees and are leveraging the technologies in Oracle Enterprise Cloud Native Java products.
+categories:
+   - title: "common"
+   - testimonials:
+      - company: Founder and CEO of Tomitribe
+        name:  David Blevins
+        logo: /images/members/jakarta-member_tomitribe.svg
+        text: In 20 years working in open source and Java standards I've never seen such a truly diverse and equally shared effort as that required to ship Jakarta EE 8. Source code has been donated, but what emerged is a community that bravely accepts change, innovates open processes and repeatedly choses shared victory over individual success. When we look back in 10 years at all we've accomplished in Jakarta, everyone will agree this was the singular moment in time that shaped our future.
+        picture: /images/testimonials/david-blevins.png
+        link: "" 
+      - company: VP, Deputy Head of Fujitsu Middleware Unit
+        name: Hideki Nozaki
+        logo: /images/members/jakarta-member_fujitsu.svg
+        text: Through the years, Fujitsu Limited has been not only a user of the Java language, but has also been actively involved in the development of Java, and as a Charter Member of the Java Community Process Executive Committee, it has helped create the development process for the Java language. As the future of Java EE development moves to Eclipse and becomes an Open Source Developed Specification, Fujitsu has joined Eclipse as a Strategic Member in order to continue its participation in the evolution of Java EE as Jakarta EE, providing it in the cloud native world.
+        picture: /images/silhouette.jpg
+        link: ""
+      - company: Distinguished Engineer, CTO IBM App Platform
+        name: Ian Robinson
+        logo: /images/members/jakarta-member_ibm.png
+        picture: /images/testimonials/ian-robinson.jpg
+        link: ""
+        text: IBM helped create Java EE and guide it through its teenage years and I’m delighted to see the progress made under Jakarta EE. I look forward to Jakarta EE and MicroProfile becoming the open standard for cloud native innovation and the technology we need for Java in the cloud.
+      - company: CEO and co-founder of Webtide LLC
+        name: Jesse McConnell
+        logo: /images/members/jakarta-member_webtide.svg
+        picture: /images/testimonials/jesse-mcconnell.jpg
+        link: ""
+        text: The Jakarta EE project represents a noble goal of free and open-source development on a body of Java specifications that are fundamentally core to the Java experience. The Eclipse Jetty project and its developers at Webtide have contributed to many of these specifications since their inception and are pleased to continue doing so as a part of Jakarta EE.
+      - company: VP of Red Hat Software Engineering
+        name: Mark Little
+        logo: /images/members/jakarta-member_redhat.svg
+        picture: /images/silhouette.jpg
+        link: ""
+        text: Red Hat reaffirms its support for the development of Jakarta EE. We look forward to working with the Eclipse Foundation and the broader Java community to align efforts to drive Enterprise Java forward. The breadth of participation in combination with community governance will help accelerate the evolution of Jakarta EE. We believe that Jakarta EE represents one of the most significant events to have happened to the open source enterprise Java ecosystem since OpenJDK was released.
+      - company: Founder and Director of Payara® Services, LTD and the Payara Foundation
+        name: Stephen Millidge
+        logo: /images/members/jakarta-member_payara.svg
+        picture: /images/testimonials/stephen-millidge.jpg
+        link: ""
+        text: The Payara Team is dedicated to the growth and success of Jakarta EE. Our customer support contracts help fund our ongoing development efforts and we continue to lend our expertise and resources to the development of Jakarta EE. We’re committed to helping shape the future of open source cloud native Java.
+      - company: VP of Engineering, Oracle Enterprise Cloud Native Java
+        name: Tom Snyder
+        logo: /images/members/jakarta-member_oracle.svg
+        picture: /images/silhouette.jpg
+        link: ""
+        text: Oracle remains committed to the success of Jakarta EE and is pleased with its progress and community support. We are contributing to the projects and the committees and are leveraging the technologies in Oracle Enterprise Cloud Native Java products.
+   - title: "get-involved"
+   - testimonials:
+      - company: "Be-Tse Group - Milan Office"
+        name:  "Dmitri Cherkas"
+        logo: ""
+        text: "The seriousness, competence, and hospitality in the Jakarta EE community cannot be matched in any other community. I believe I’m doing something important with some of the best programmers in the world. I think I can help make Jakarta EE better, and more importantly, I’m better at using Jakarta EE. This motivates me and makes me happy. The best thing about being a committer is seeing your work released, and the most challenging thing is finding areas where you can really make an improvement. "
+        picture: "/images/silhouette.jpg"
+        link: "https://newsroom.eclipse.org/eclipse-newsletter/2021/november/committer-profile-dmitri-cherkas"
+      - company: "Self-employed software consultant, author"
+        name: Arjan Tijms
+        logo: ""
+        text: "You absolutely don’t have to be the most brilliant, sophisticated, or advanced person in the world to be a committer, but you do need a lot of passion for the work and for the role. You must be willing to dedicate a lot of time to open source because you really like it and it’s your hobby. That passion will take you a long way. When you work with open source software, you have an advantage, and your customers have an even bigger advantage because you implemented the stack you’re working on and you know the other people involved."
+        picture: "/images/testimonials/arjan-tijms.png"
+        link: "https://www.eclipse.org/community/eclipse_newsletter/2020/november/5.php"
+      - company: "Oracle Corporation"
+        name: "Lukas Jungmann"
+        logo: "/images/members/jakarta-member_oracle.svg"
+        picture: "/images/testimonials/lukas-jungmann.png"
+        link: "https://www.eclipse.org/community/eclipse_newsletter/2020/august/5.php"
+        text: "<p>Getting involved in an open source project is a very good way to solve problems you’re having because Eclipse open source is all about contributions and collaboration. If you have a project that’s not getting appropriate attention, the Eclipse and Jakarta EE community can help you move it forward.</p><p>You can start by doing small stuff. It may seem as though it’s not important, but it very often is. You can grow your knowledge about a project and the processes around it to gain experience and work toward committer status if that’s what you want.</p>"
+      - company: "INNOQ"
+        name: "Tobias Erdle"
+        logo: ""
+        picture: "/images/silhouette.jpg"
+        link: "https://newsroom.eclipse.org/eclipse-newsletter/2021/may/committer-profile-tobias-erdle"
+        text: "The best thing about being a committer on an open source project in an environment such as Jakarta EE is that it’s very different from my daily work. At work, I rarely get feedback from the people who actually use my code, whereas here, I can communicate directly with people and respond to their needs. That's a lot of fun for me. Have the confidence to contribute something. You’ll find that the people working on most open source projects gladly accept every improvement."
+      - company: "Oracle"
+        name: "Jan Supol"
+        logo: "/images/members/jakarta-member_oracle.svg"
+        picture: "/images/silhouette.jpg"
+        link: "https://newsroom.eclipse.org/eclipse-newsletter/2021/august/committer-profile-jan-supol"
+        text: "Getting involved in open source gives you experience, knowledge, and a really good feeling because you’re accomplishing something meaningful. Being a committer is a great opportunity to work on projects that are popular, widely used, and make life easier for project communities. Solving the community’s problems is very rewarding. I also enjoy the opportunity to solve a different issue every day because it allows me to have rich experiences in a variety of situations."
+      - company: "Inpixon"
+        name: "Jason Mehrens"
+        logo: ""
+        picture: "/images/testimonials/jason-mehrens.jpg"
+        link: "https://www.eclipse.org/community/eclipse_newsletter/2021/march/4.php"
+        text: "I like the openness, the access to the code base, the expertise, and the people who are developing the software. It’s a great knowledge base. There are many ways to contribute, from answering questions on the various project mailing lists to filing issues or creating pull requests. You can influence a project by issuing a patch, having an expert review that patch, and having it committed to a project. The big advantage of being more involved is access to expertise."
+      - company: "IBM"
+        name: "Emily Jiang"
+        logo: "/images/members/jakarta-member_ibm.png"
+        picture: "/images/silhouette.jpg"
+        link: "https://newsroom.eclipse.org/eclipse-newsletter/2022/january/committer-profile-emily-jiang"
+        text: "I like the fact that you can contribute to projects, review other people's work, and help the community. Keeping the community growing is one of the important factors for the success of the project. I want to help MicroProfile and Jakarta EE be as successful as possible, encourage innovation, and encourage others to join these communities and collaborate because these open source communities are full of passionate people"

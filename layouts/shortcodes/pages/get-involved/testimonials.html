@@ -1,0 +1,49 @@
+{{ $lang := .Page.Lang }}
+{{$langBase:=index .Site.Data $lang}}
+
+{{ $scratch := newScratch }}
+{{ range $langBase.testimonials.categories }}
+    {{ if .title }}
+        {{ $scratch.Set "category_title" (.title | urlize) }}
+        {{ $scratch.SetInMap "categories" (.title | urlize) . }}
+    {{ end }}
+    {{ range $index, $testimonial := .testimonials }}
+        {{ $category := dict "category" ($scratch.Get "category_title") }}
+        {{ $testimonial = merge . ($category) }}
+        {{ $scratch.SetInMap "testimonials" (.name | urlize) $testimonial }}
+    {{ end }}
+{{ end }}
+
+{{ $testimonials := $scratch.GetSortedMapValues "testimonials" }}
+
+{{ if $testimonials }}
+<div class="get-involved-testimonials testimonials-alternate row">
+    
+        <h2 class="big-text-secondary text-center margin-bottom-40">{{ i18n "home-testimonials" }}</h2>
+        <div class="row">
+            <ul class="solstice-slider owl-carousel owl-theme list-inline" data-slider-lg-count="1" data-slider-md-count="1" data-slider-sm-count="1">
+                {{ range $testimonials }}
+                    {{ if eq .category "get-involved"}}
+                        <li class="container">
+                            <div class="row">
+                                <div class="col-sm-16 col-sm-offset-4">
+                                <div class="row">
+                                    <div class="col-sm-4">
+                                        <div class="testimonials-alternate-img"><img class="img-responsive" class="img" src="{{ .picture }}" alt="{{ .name }}'s picture"></div>
+                                    </div>
+                                    <div class="col-sm-20 testimonials-alternate-text">
+                                        <p>{{ .text | safeHTML }}</p>
+                                        <p><strong>- {{ .name }},</strong> <em>{{ .company }}</em></p>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                        </li>
+                    {{ end }}
+                {{ end }}
+            </ul>
+        </div>
+    
+</div>
+    
+{{ end }}
