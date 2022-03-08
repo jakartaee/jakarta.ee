@@ -23,6 +23,7 @@
 @import 'components/panels.less';
 @import 'components/blocks.less';
 @import 'components/typography.less';
+@import 'components/testimonials.less';
 
 @import 'transient.less';
 @import 'release-8.less';
@@ -184,4 +185,44 @@ div.card-panel.panel div.panel-body.panel-body-with-img {
     margin-bottom: 10px;
   }
   padding: 30px;
+}
+
+.get-involved-blocks, .get-involved-why {
+  margin-bottom: 60px;
+}
+
+.get-involved-blocks {
+  background-color: @white;
+  .panel {
+    background-color: #f1f1f1;
+  }
+}
+
+.get-involved-contributors {
+  padding-top: 60px;
+  background-color: #f1f1f1;
+  padding-bottom: 60px;
+  margin-bottom: -30px;
+  h2 {
+    margin-bottom: 30px;
+  }
+}
+
+.eclipsefdn-contributor {
+  margin-bottom: 30px;
+  background-color: @white;
+  box-shadow: 4px 4px 16px 0 #888888;
+  overflow: hidden;
+  h3 {
+    margin-bottom: 0;
+  }
+}
+
+.eclipsefdn-contributor-description {
+  padding: 20px;
+}
+
+.eclipsefdn-contributor-img {
+  position: relative;
+  right: -1px;
 }

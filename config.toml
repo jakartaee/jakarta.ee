@@ -322,6 +322,12 @@ enableInlineShortcodes = true
     parent = "Community"
     weight = 8
 
+[[menu.main]]
+    name = "Get Involved"
+    url = "/community/get-involved"
+    parent = "Community"
+    weight = 9
+
 # Membership sub-menu
 [[menu.main]]
     name = "Join"
@@ -611,6 +617,12 @@ enableInlineShortcodes = true
 		url = "/zh/community/videos"
 		parent = "社区"
 		weight = 8
+
+	[[languages.zh.menu.main]]
+		name = "Get Involved"
+		url = "/community/get-involved"
+		parent = "社区"
+		weight = 9
 
 	# Membership sub-menu
 	[[languages.zh.menu.main]]
