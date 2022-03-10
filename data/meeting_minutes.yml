@@ -7,8 +7,16 @@ years:
 items:
    marketing_committee:
        -
-          url: marketing_committee/minutes-marketing-0120-2022.pdf
-          title: January 20, 2022 (pdf)
+          url: marketing_committee/minutes-marketing-0303-2022.pdf
+          title: March 03, 2022 (pdf)
+          year: 2022
+       -
+          url: marketing_committee/minutes-marketing-0217-2022.pdf
+          title: February 17, 2022 (pdf)
+          year: 2022
+       -
+          url: marketing_committee/minutes-marketing-0203-2022.pdf
+          title: February 03, 2022 (pdf)
           year: 2022
        -
           url: marketing_committee/minutes-marketing-0106-2022.pdf
