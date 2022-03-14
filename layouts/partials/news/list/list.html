@@ -1,11 +1,3 @@
 <div class="news-section">
   {{ .Content }}
-  <div class="announcements-news-list news-list">
-    {{/*where "Type" "etc"*/}} 
-    {{ $paginator := .Paginate .Data.Pages 4 }} 
-    {{ range $paginator.Pages }} 
-        {{ partial "news/list/summary" . }} 
-    {{ end }} 
-    {{ partial "news/list/list_nav" . }}
-  </div>
 </div>
