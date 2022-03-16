@@ -58,6 +58,12 @@ types:
          image: /images/members/jakarta-member_apusic.png
          img_width: 155
          type: "participant"
+       - title: Beijing Vsettan Data Technology Co. Ltd.
+         id: "vsettan"
+         link: http://www.vsettan.com.cn/
+         image: /images/members/jakarta-member_beijing_vsettan_data_technology.png
+         img_width: 155
+         type: "participant"
        - title: Bessystem
          id: "bessystem"
          link: https://www.bessystem.com
