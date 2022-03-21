@@ -116,7 +116,7 @@ Eclipse Foundation Marketing Manager is responsible for approving the new entry 
 ### How to include a new entry in https://jakarta.ee/blogs section
 
 * Create a new folder under `jakarta.ee/content/blogs`, the folder's name will become part of the final URL for the new entry.
-* Create a file named `_index.md`. This will hold the main entry content for the URL defined in the previous step.
+* Create a file named `index.md`. This will hold the main entry content for the URL defined in the previous step.
 * Add images to be used in the content of the new entry.
 
 Final structure for a new blog entry should look like this:
@@ -126,11 +126,11 @@ Final structure for a new blog entry should look like this:
 │   │   ├── new-entry-name
 │   │   │   ├── images
 │   │   │   │   └── image.jpg
-│   │   │   ├── _index.md
+│   │   │   ├── index.md
 │   │   │   └── banner.png
 ```
 
-`_index.md` has two main sections: `Header` and `Content`
+`index.md` has two main sections: `Header` and `Content`
 The `header` provide metadata needed for the new entry to be published in the list from https://jakarta.ee/blogs/
 
 ```
@@ -141,7 +141,7 @@ summary: "Summary text to be presented in the blogs index page"
 ---
 ```
 
-The rest of the `_index.md` needs general markdown format to populate the new entry content. 
+The rest of the `index.md` needs general markdown format to populate the new entry content. 
 
 Eclipse Foundation Marketing Manager is responsible for approving the new entry (via pull request) for the `https://jakarta.ee/blogs/` section.
 
