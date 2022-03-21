@@ -1,6 +1,6 @@
 ---
 title: "The 2022 Jakarta EE Developer Survey is Now Open!"
-date: "2022-03-21"
+date: 2022-03-21T00:00:00-05:00
 summary: "Completing the 2022 Jakarta EE Developer Survey takes less than 6 minutes of your time. But your input is extremely important."
 author: Shabnam Mayel
 email: shabnam.mayel@eclipse-foundation.org
