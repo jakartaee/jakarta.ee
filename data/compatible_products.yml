@@ -439,7 +439,7 @@ sets:
           compatibility: 'http://www.tongtech.com/tw7.jakarta-full-platform-8.html'
           download_url: 'http://www.tongtech.com/Services/Services-104.html'
 
-      - name: xigemaAS
+      - name: xigema Application Server
         vendor: Beijing Vsettan Data Technology Co. Ltd.
         image: '/images/compatible_products/xigema-as-logo.svg'
         image_width: 195
