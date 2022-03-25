@@ -517,7 +517,7 @@ other = "Sign up now"
  other = "Skip to main content"   
  
 [jakarta-ee-version-9-section-new-release]
- other = "<span class=\"p text-secondary\">version 9.1</span> new release"   
+ other = "<span class=\"p text-secondary\">version 9</span>"   
  
 [jakarta-ee-version-9-section-release-text]
  other = "An open, community-driven platform</span> <br> for future innovation of <br> enterprise Java technologies"   
