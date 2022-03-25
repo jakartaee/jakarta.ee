@@ -107,5 +107,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
         eclipseFdnVideos.replace();
       });
 
+      $(document).on("click", ".pagination li a", function(){
+        window.scrollTo({top: 0, behavior: 'smooth'});
+      });
+
     })(jQuery, document);
 });
