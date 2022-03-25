@@ -12,7 +12,7 @@ hide_sidebar: true
 {{< newsroom/news
     id="announcements_news_lists" 
     publishTarget="jakarta_ee"
-    count="5"
+    count="10"
     type="community_news"
     includeList="true"
     paginate="true"
