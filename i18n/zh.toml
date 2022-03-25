@@ -541,7 +541,7 @@
  other = "返回"   
  
 [jakarta-ee-version-9-section-new-release]
- other = "<span class=\"p text-secondary\">version 9</span> 新版本"   
+ other = "<span class=\"p text-secondary\">version 9</span>"   
  
 [jakarta-ee-version-9-section-release-text]
  other = "开源、社区驱动的平台</span> <br> 致力于企业级Java技术的 <br> 未来创新"   
