@@ -17,6 +17,7 @@
   dependencies:
     "@babel/highlight" "^7.16.7"
 
+<<<<<<< HEAD
 "@babel/compat-data@^7.13.11", "@babel/compat-data@^7.17.10":
   version "7.17.10"
   resolved "https://registry.yarnpkg.com/@babel/compat-data/-/compat-data-7.17.10.tgz#711dc726a492dfc8be8220028b1b92482362baab"
@@ -34,6 +35,25 @@
     "@babel/helper-module-transforms" "^7.18.0"
     "@babel/helpers" "^7.18.2"
     "@babel/parser" "^7.18.0"
+=======
+"@babel/compat-data@^7.13.11", "@babel/compat-data@^7.16.8", "@babel/compat-data@^7.17.0", "@babel/compat-data@^7.17.7":
+  version "7.17.7"
+  resolved "https://registry.yarnpkg.com/@babel/compat-data/-/compat-data-7.17.7.tgz#078d8b833fbbcc95286613be8c716cef2b519fa2"
+  integrity sha512-p8pdE6j0a29TNGebNm7NzYZWB3xVZJBZ7XGs42uAKzQo8VQ3F0By/cQCtUEABwIqw5zo6WA4NbmxsfzADzMKnQ==
+
+"@babel/core@^7.0.0-0", "@babel/core@^7.15.8":
+  version "7.17.8"
+  resolved "https://registry.yarnpkg.com/@babel/core/-/core-7.17.8.tgz#3dac27c190ebc3a4381110d46c80e77efe172e1a"
+  integrity sha512-OdQDV/7cRBtJHLSOBqqbYNkOcydOgnX59TZx4puf41fzcVtN3e/4yqY8lMQsK+5X2lJtAdmA+6OHqsj1hBJ4IQ==
+  dependencies:
+    "@ampproject/remapping" "^2.1.0"
+    "@babel/code-frame" "^7.16.7"
+    "@babel/generator" "^7.17.7"
+    "@babel/helper-compilation-targets" "^7.17.7"
+    "@babel/helper-module-transforms" "^7.17.7"
+    "@babel/helpers" "^7.17.8"
+    "@babel/parser" "^7.17.8"
+>>>>>>> 79167ce (Update hugo theme version)
     "@babel/template" "^7.16.7"
     "@babel/traverse" "^7.18.2"
     "@babel/types" "^7.18.2"
@@ -43,10 +63,17 @@
     json5 "^2.2.1"
     semver "^6.3.0"
 
+<<<<<<< HEAD
 "@babel/generator@^7.18.2":
   version "7.18.2"
   resolved "https://registry.yarnpkg.com/@babel/generator/-/generator-7.18.2.tgz#33873d6f89b21efe2da63fe554460f3df1c5880d"
   integrity sha512-W1lG5vUwFvfMd8HVXqdfbuG7RuaSrTCCD8cl8fP8wOivdbtbIg2Db3IWUcgvfxKbbn6ZBGYRW/Zk1MIwK49mgw==
+=======
+"@babel/generator@^7.17.3", "@babel/generator@^7.17.7":
+  version "7.17.7"
+  resolved "https://registry.yarnpkg.com/@babel/generator/-/generator-7.17.7.tgz#8da2599beb4a86194a3b24df6c085931d9ee45ad"
+  integrity sha512-oLcVCTeIFadUoArDTwpluncplrYBmTCCZZgXCbgNGvOBBiSDDK3eWO4b/+eOTli5tKv1lg+a5/NAXg+nTcei1w==
+>>>>>>> 79167ce (Update hugo theme version)
   dependencies:
     "@babel/types" "^7.18.2"
     "@jridgewell/gen-mapping" "^0.3.0"
@@ -67,12 +94,21 @@
     "@babel/helper-explode-assignable-expression" "^7.16.7"
     "@babel/types" "^7.16.7"
 
+<<<<<<< HEAD
 "@babel/helper-compilation-targets@^7.13.0", "@babel/helper-compilation-targets@^7.16.7", "@babel/helper-compilation-targets@^7.17.10", "@babel/helper-compilation-targets@^7.18.2":
   version "7.18.2"
   resolved "https://registry.yarnpkg.com/@babel/helper-compilation-targets/-/helper-compilation-targets-7.18.2.tgz#67a85a10cbd5fc7f1457fec2e7f45441dc6c754b"
   integrity sha512-s1jnPotJS9uQnzFtiZVBUxe67CuBa679oWFHpxYYnTpRL/1ffhyX44R9uYiXoa/pLXcY9H2moJta0iaanlk/rQ==
   dependencies:
     "@babel/compat-data" "^7.17.10"
+=======
+"@babel/helper-compilation-targets@^7.13.0", "@babel/helper-compilation-targets@^7.16.7", "@babel/helper-compilation-targets@^7.17.7":
+  version "7.17.7"
+  resolved "https://registry.yarnpkg.com/@babel/helper-compilation-targets/-/helper-compilation-targets-7.17.7.tgz#a3c2924f5e5f0379b356d4cfb313d1414dc30e46"
+  integrity sha512-UFzlz2jjd8kroj0hmCFV5zr+tQPi1dpC2cRsDV/3IEW8bJfCPrPpmcSN6ZS8RqIq4LXcmpipCQFPddyFA5Yc7w==
+  dependencies:
+    "@babel/compat-data" "^7.17.7"
+>>>>>>> 79167ce (Update hugo theme version)
     "@babel/helper-validator-option" "^7.16.7"
     browserslist "^4.20.2"
     semver "^6.3.0"
@@ -139,7 +175,11 @@
   dependencies:
     "@babel/types" "^7.16.7"
 
+<<<<<<< HEAD
 "@babel/helper-member-expression-to-functions@^7.17.7":
+=======
+"@babel/helper-member-expression-to-functions@^7.16.7":
+>>>>>>> 79167ce (Update hugo theme version)
   version "7.17.7"
   resolved "https://registry.yarnpkg.com/@babel/helper-member-expression-to-functions/-/helper-member-expression-to-functions-7.17.7.tgz#a34013b57d8542a8c4ff8ba3f747c02452a4d8c4"
   integrity sha512-thxXgnQ8qQ11W2wVUObIqDL4p148VMxkt5T/qpN5k2fboRyzFGFmKsTGViquyM5QHKUy48OZoca8kw4ajaDPyw==
@@ -153,10 +193,17 @@
   dependencies:
     "@babel/types" "^7.16.7"
 
+<<<<<<< HEAD
 "@babel/helper-module-transforms@^7.18.0":
   version "7.18.0"
   resolved "https://registry.yarnpkg.com/@babel/helper-module-transforms/-/helper-module-transforms-7.18.0.tgz#baf05dec7a5875fb9235bd34ca18bad4e21221cd"
   integrity sha512-kclUYSUBIjlvnzN2++K9f2qzYKFgjmnmjwL4zlmU5f8ZtzgWe8s0rUPSTGy2HmK4P8T52MQsS+HTQAgZd3dMEA==
+=======
+"@babel/helper-module-transforms@^7.16.7", "@babel/helper-module-transforms@^7.17.7":
+  version "7.17.7"
+  resolved "https://registry.yarnpkg.com/@babel/helper-module-transforms/-/helper-module-transforms-7.17.7.tgz#3943c7f777139e7954a5355c815263741a9c1cbd"
+  integrity sha512-VmZD99F3gNTYB7fJRDTi+u6l/zxY0BE6OIxPSU7a50s6ZUQkHwSDmV92FfM+oCG0pZRVojGYhkR8I0OGeCVREw==
+>>>>>>> 79167ce (Update hugo theme version)
   dependencies:
     "@babel/helper-environment-visitor" "^7.16.7"
     "@babel/helper-module-imports" "^7.16.7"
@@ -199,12 +246,21 @@
     "@babel/traverse" "^7.18.2"
     "@babel/types" "^7.18.2"
 
+<<<<<<< HEAD
 "@babel/helper-simple-access@^7.17.7", "@babel/helper-simple-access@^7.18.2":
   version "7.18.2"
   resolved "https://registry.yarnpkg.com/@babel/helper-simple-access/-/helper-simple-access-7.18.2.tgz#4dc473c2169ac3a1c9f4a51cfcd091d1c36fcff9"
   integrity sha512-7LIrjYzndorDY88MycupkpQLKS1AFfsVRm2k/9PtKScSy5tZq0McZTj+DiMRynboZfIqOKvo03pmhTaUgiD6fQ==
   dependencies:
     "@babel/types" "^7.18.2"
+=======
+"@babel/helper-simple-access@^7.17.7":
+  version "7.17.7"
+  resolved "https://registry.yarnpkg.com/@babel/helper-simple-access/-/helper-simple-access-7.17.7.tgz#aaa473de92b7987c6dfa7ce9a7d9674724823367"
+  integrity sha512-txyMCGroZ96i+Pxr3Je3lzEJjqwaRC9buMUgtomcrLe5Nd0+fk1h0LLA+ixUF5OW7AhHuQ7Es1WcQJZmZsz2XA==
+  dependencies:
+    "@babel/types" "^7.17.0"
+>>>>>>> 79167ce (Update hugo theme version)
 
 "@babel/helper-skip-transparent-expression-wrappers@^7.16.0":
   version "7.16.0"
@@ -240,6 +296,7 @@
     "@babel/traverse" "^7.16.8"
     "@babel/types" "^7.16.8"
 
+<<<<<<< HEAD
 "@babel/helpers@^7.18.2":
   version "7.18.2"
   resolved "https://registry.yarnpkg.com/@babel/helpers/-/helpers-7.18.2.tgz#970d74f0deadc3f5a938bfa250738eb4ac889384"
@@ -248,6 +305,16 @@
     "@babel/template" "^7.16.7"
     "@babel/traverse" "^7.18.2"
     "@babel/types" "^7.18.2"
+=======
+"@babel/helpers@^7.17.8":
+  version "7.17.8"
+  resolved "https://registry.yarnpkg.com/@babel/helpers/-/helpers-7.17.8.tgz#288450be8c6ac7e4e44df37bcc53d345e07bc106"
+  integrity sha512-QcL86FGxpfSJwGtAvv4iG93UL6bmqBdmoVY0CMCU2g+oD2ezQse3PT5Pa+jiD6LJndBQi0EDlpzOWNlLuhz5gw==
+  dependencies:
+    "@babel/template" "^7.16.7"
+    "@babel/traverse" "^7.17.3"
+    "@babel/types" "^7.17.0"
+>>>>>>> 79167ce (Update hugo theme version)
 
 "@babel/highlight@^7.16.7":
   version "7.17.12"
@@ -258,10 +325,17 @@
     chalk "^2.0.0"
     js-tokens "^4.0.0"
 
+<<<<<<< HEAD
 "@babel/parser@^7.1.0", "@babel/parser@^7.16.7", "@babel/parser@^7.18.0":
   version "7.18.4"
   resolved "https://registry.yarnpkg.com/@babel/parser/-/parser-7.18.4.tgz#6774231779dd700e0af29f6ad8d479582d7ce5ef"
   integrity sha512-FDge0dFazETFcxGw/EXzOkN8uJp0PC7Qbm+Pe9T+av2zlBpOgunFHkQPPn+eRuClU73JF+98D531UgayY89tow==
+=======
+"@babel/parser@^7.1.0", "@babel/parser@^7.16.7", "@babel/parser@^7.17.3", "@babel/parser@^7.17.8":
+  version "7.17.8"
+  resolved "https://registry.yarnpkg.com/@babel/parser/-/parser-7.17.8.tgz#2817fb9d885dd8132ea0f8eb615a6388cca1c240"
+  integrity sha512-BoHhDJrJXqcg+ZL16Xv39H9n+AqJ4pcDrQBGZN+wHxIysrLZ3/ECwCBUch/1zUNhnsXULcONU3Ei5Hmkfk6kiQ==
+>>>>>>> 79167ce (Update hugo theme version)
 
 "@babel/plugin-bugfix-safari-id-destructuring-collision-in-function-expression@^7.17.12":
   version "7.17.12"
@@ -563,10 +637,17 @@
   dependencies:
     "@babel/helper-plugin-utils" "^7.17.12"
 
+<<<<<<< HEAD
 "@babel/plugin-transform-destructuring@^7.18.0":
   version "7.18.0"
   resolved "https://registry.yarnpkg.com/@babel/plugin-transform-destructuring/-/plugin-transform-destructuring-7.18.0.tgz#dc4f92587e291b4daa78aa20cc2d7a63aa11e858"
   integrity sha512-Mo69klS79z6KEfrLg/1WkmVnB8javh75HX4pi2btjvlIoasuxilEyjtsQW6XPrubNd7AQy0MMaNIaQE4e7+PQw==
+=======
+"@babel/plugin-transform-destructuring@^7.16.7":
+  version "7.17.7"
+  resolved "https://registry.yarnpkg.com/@babel/plugin-transform-destructuring/-/plugin-transform-destructuring-7.17.7.tgz#49dc2675a7afa9a5e4c6bdee636061136c3408d1"
+  integrity sha512-XVh0r5yq9sLR4vZ6eVZe8FKfIcSgaTBxVBRSYokRj2qksf6QerYnTxz9/GTuKTH/n/HwLP7t6gtlybHetJ/6hQ==
+>>>>>>> 79167ce (Update hugo theme version)
   dependencies:
     "@babel/helper-plugin-utils" "^7.17.12"
 
@@ -632,6 +713,7 @@
     "@babel/helper-plugin-utils" "^7.17.12"
     babel-plugin-dynamic-import-node "^2.3.3"
 
+<<<<<<< HEAD
 "@babel/plugin-transform-modules-commonjs@^7.18.2":
   version "7.18.2"
   resolved "https://registry.yarnpkg.com/@babel/plugin-transform-modules-commonjs/-/plugin-transform-modules-commonjs-7.18.2.tgz#1aa8efa2e2a6e818b6a7f2235fceaf09bdb31e9e"
@@ -650,6 +732,26 @@
     "@babel/helper-hoist-variables" "^7.16.7"
     "@babel/helper-module-transforms" "^7.18.0"
     "@babel/helper-plugin-utils" "^7.17.12"
+=======
+"@babel/plugin-transform-modules-commonjs@^7.16.8":
+  version "7.17.7"
+  resolved "https://registry.yarnpkg.com/@babel/plugin-transform-modules-commonjs/-/plugin-transform-modules-commonjs-7.17.7.tgz#d86b217c8e45bb5f2dbc11eefc8eab62cf980d19"
+  integrity sha512-ITPmR2V7MqioMJyrxUo2onHNC3e+MvfFiFIR0RP21d3PtlVb6sfzoxNKiphSZUOM9hEIdzCcZe83ieX3yoqjUA==
+  dependencies:
+    "@babel/helper-module-transforms" "^7.17.7"
+    "@babel/helper-plugin-utils" "^7.16.7"
+    "@babel/helper-simple-access" "^7.17.7"
+    babel-plugin-dynamic-import-node "^2.3.3"
+
+"@babel/plugin-transform-modules-systemjs@^7.16.7":
+  version "7.17.8"
+  resolved "https://registry.yarnpkg.com/@babel/plugin-transform-modules-systemjs/-/plugin-transform-modules-systemjs-7.17.8.tgz#81fd834024fae14ea78fbe34168b042f38703859"
+  integrity sha512-39reIkMTUVagzgA5x88zDYXPCMT6lcaRKs1+S9K6NKBPErbgO/w/kP8GlNQTC87b412ZTlmNgr3k2JrWgHH+Bw==
+  dependencies:
+    "@babel/helper-hoist-variables" "^7.16.7"
+    "@babel/helper-module-transforms" "^7.17.7"
+    "@babel/helper-plugin-utils" "^7.16.7"
+>>>>>>> 79167ce (Update hugo theme version)
     "@babel/helper-validator-identifier" "^7.16.7"
     babel-plugin-dynamic-import-node "^2.3.3"
 
@@ -869,9 +971,15 @@
     esutils "^2.0.2"
 
 "@babel/runtime@^7.15.4", "@babel/runtime@^7.8.4":
+<<<<<<< HEAD
   version "7.18.3"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.18.3.tgz#c7b654b57f6f63cf7f8b418ac9ca04408c4579f4"
   integrity sha512-38Y8f7YUhce/K7RMwTp7m0uCumpv9hZkitCbBClqQIow1qSbCvGkcegKOXpEWCQLfWmevgRiWokZ1GkpfhbZug==
+=======
+  version "7.17.8"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.17.8.tgz#3e56e4aff81befa55ac3ac6a0967349fd1c5bca2"
+  integrity sha512-dQpEpK0O9o6lj6oPu0gRDbbnk+4LeHlNcBpspf6Olzt3GIX4P1lWF1gS+pHLDFlaJvbR6q7jCfQ08zA4QJBnmA==
+>>>>>>> 79167ce (Update hugo theme version)
   dependencies:
     regenerator-runtime "^0.13.4"
 
@@ -884,10 +992,17 @@
     "@babel/parser" "^7.16.7"
     "@babel/types" "^7.16.7"
 
+<<<<<<< HEAD
 "@babel/traverse@^7.13.0", "@babel/traverse@^7.16.8", "@babel/traverse@^7.18.0", "@babel/traverse@^7.18.2":
   version "7.18.2"
   resolved "https://registry.yarnpkg.com/@babel/traverse/-/traverse-7.18.2.tgz#b77a52604b5cc836a9e1e08dca01cba67a12d2e8"
   integrity sha512-9eNwoeovJ6KH9zcCNnENY7DMFwTU9JdGCFtqNLfUAqtUHRCOsTOqWoffosP8vKmNYeSBUv3yVJXjfd8ucwOjUA==
+=======
+"@babel/traverse@^7.13.0", "@babel/traverse@^7.16.7", "@babel/traverse@^7.16.8", "@babel/traverse@^7.17.3":
+  version "7.17.3"
+  resolved "https://registry.yarnpkg.com/@babel/traverse/-/traverse-7.17.3.tgz#0ae0f15b27d9a92ba1f2263358ea7c4e7db47b57"
+  integrity sha512-5irClVky7TxRWIRtxlh2WPUUOLhcPN06AGgaQSB8AEwuyEBgJVuJ5imdHm5zxk8w0QS5T+tDfnDxAlhWjpb7cw==
+>>>>>>> 79167ce (Update hugo theme version)
   dependencies:
     "@babel/code-frame" "^7.16.7"
     "@babel/generator" "^7.18.2"
@@ -1185,9 +1300,15 @@
   integrity sha512-Klz949h02Gz2uZCMGwDUSDS1YBlTdDDgbWHi+81l29tQALUtvz4rAYi5uoVhE5Lagoq6DeqAUlbrHvW/mXDgdQ==
 
 "@types/node@*":
+<<<<<<< HEAD
   version "17.0.37"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-17.0.37.tgz#33ef36d1587be16d81822771c6cc3007e88786cb"
   integrity sha512-22CDt5mU+EbwJ/JYw4pZGVtO0M0UhaFQP1pJ+JW+lQYx8cqErY//QfvpE0nVBr4LJpPcIrFs1Ew2LAIx1OSXZw==
+=======
+  version "17.0.23"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-17.0.23.tgz#3b41a6e643589ac6442bdbd7a4a3ded62f33f7da"
+  integrity sha512-UxDxWn7dl97rKVeVS61vErvw086aCYhDLyvRQZ5Rk65rZKepaFdm53GeqXaKBuOhED4e9uWq34IC3TdSdJJ2Gw==
+>>>>>>> 79167ce (Update hugo theme version)
 
 "@types/parse-json@^4.0.0":
   version "4.0.0"
@@ -1236,7 +1357,11 @@
   resolved "https://registry.yarnpkg.com/@types/svgo/-/svgo-1.3.6.tgz#9db00a7ddf9b26ad2feb6b834bef1818677845e1"
   integrity sha512-AZU7vQcy/4WFEuwnwsNsJnFwupIpbllH1++LXScN6uxT1Z4zPzdrWG97w4/I7eFKFTvfy/bHFStWjdBAg2Vjug==
 
+<<<<<<< HEAD
 "@types/ws@^8.5.1":
+=======
+"@types/ws@^8.2.2":
+>>>>>>> 79167ce (Update hugo theme version)
   version "8.5.3"
   resolved "https://registry.yarnpkg.com/@types/ws/-/ws-8.5.3.tgz#7d25a1ffbecd3c4f2d35068d0b283c037003274d"
   integrity sha512-6YOoWjruKj1uLf3INHH7D3qTXwFfEsg1kf3c0uDdSBJwfa/llkwIjrAGV7j7mVgGNbzTQ3HiHKKDXl6bJPD97w==
@@ -1519,12 +1644,21 @@ assert@^1.1.1:
     util "0.10.3"
 
 autoprefixer@^10.4.0:
+<<<<<<< HEAD
   version "10.4.7"
   resolved "https://registry.yarnpkg.com/autoprefixer/-/autoprefixer-10.4.7.tgz#1db8d195f41a52ca5069b7593be167618edbbedf"
   integrity sha512-ypHju4Y2Oav95SipEcCcI5J7CGPuvz8oat7sUtYj3ClK44bldfvtvcxK6IEK++7rqB7YchDGzweZIBG+SD0ZAA==
   dependencies:
     browserslist "^4.20.3"
     caniuse-lite "^1.0.30001335"
+=======
+  version "10.4.4"
+  resolved "https://registry.yarnpkg.com/autoprefixer/-/autoprefixer-10.4.4.tgz#3e85a245b32da876a893d3ac2ea19f01e7ea5a1e"
+  integrity sha512-Tm8JxsB286VweiZ5F0anmbyGiNI3v3wGv3mz9W+cxEDYB/6jbnj6GM9H9mK3wIL8ftgl+C07Lcwb8PG5PCCPzA==
+  dependencies:
+    browserslist "^4.20.2"
+    caniuse-lite "^1.0.30001317"
+>>>>>>> 79167ce (Update hugo theme version)
     fraction.js "^4.2.0"
     normalize-range "^0.1.2"
     picocolors "^1.0.0"
@@ -1538,9 +1672,15 @@ axios@^0.21.1:
     follow-redirects "^1.14.0"
 
 babel-loader@^8.2.3:
+<<<<<<< HEAD
   version "8.2.5"
   resolved "https://registry.yarnpkg.com/babel-loader/-/babel-loader-8.2.5.tgz#d45f585e654d5a5d90f5350a779d7647c5ed512e"
   integrity sha512-OSiFfH89LrEMiWd4pLNqGz4CwJDtbs2ZVc+iGu2HrkRfPxId9F2anQj38IxWpmRfsUY0aBZYi1EFcd3mhtRMLQ==
+=======
+  version "8.2.4"
+  resolved "https://registry.yarnpkg.com/babel-loader/-/babel-loader-8.2.4.tgz#95f5023c791b2e9e2ca6f67b0984f39c82ff384b"
+  integrity sha512-8dytA3gcvPPPv4Grjhnt8b5IIiTcq/zeXOPk4iTYI0SVXcsmuGg7JtBRDp8S9X+gJfhQ8ektjXZlDu1Bb33U8A==
+>>>>>>> 79167ce (Update hugo theme version)
   dependencies:
     find-cache-dir "^3.3.1"
     loader-utils "^2.0.0"
@@ -1732,6 +1872,7 @@ browserify-zlib@^0.2.0:
   dependencies:
     pako "~1.0.5"
 
+<<<<<<< HEAD
 browserslist@^4.0.0, browserslist@^4.14.5, browserslist@^4.16.6, browserslist@^4.20.2, browserslist@^4.20.3:
   version "4.20.3"
   resolved "https://registry.yarnpkg.com/browserslist/-/browserslist-4.20.3.tgz#eb7572f49ec430e054f56d52ff0ebe9be915f8bf"
@@ -1739,6 +1880,15 @@ browserslist@^4.0.0, browserslist@^4.14.5, browserslist@^4.16.6, browserslist@^4
   dependencies:
     caniuse-lite "^1.0.30001332"
     electron-to-chromium "^1.4.118"
+=======
+browserslist@^4.0.0, browserslist@^4.14.5, browserslist@^4.16.6, browserslist@^4.17.5, browserslist@^4.19.1, browserslist@^4.20.2:
+  version "4.20.2"
+  resolved "https://registry.yarnpkg.com/browserslist/-/browserslist-4.20.2.tgz#567b41508757ecd904dab4d1c646c612cd3d4f88"
+  integrity sha512-CQOBCqp/9pDvDbx3xfMi+86pr4KXIf2FDkTTdeuYw8OxS9t898LA1Khq57gtufFILXpfgsSx5woNgsBgvGjpsA==
+  dependencies:
+    caniuse-lite "^1.0.30001317"
+    electron-to-chromium "^1.4.84"
+>>>>>>> 79167ce (Update hugo theme version)
     escalade "^3.1.1"
     node-releases "^2.0.3"
     picocolors "^1.0.0"
@@ -1816,10 +1966,17 @@ caniuse-api@^3.0.0:
     lodash.memoize "^4.1.2"
     lodash.uniq "^4.5.0"
 
+<<<<<<< HEAD
 caniuse-lite@^1.0.0, caniuse-lite@^1.0.30001332, caniuse-lite@^1.0.30001335:
   version "1.0.30001344"
   resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001344.tgz#8a1e7fdc4db9c2ec79a05e9fd68eb93a761888bb"
   integrity sha512-0ZFjnlCaXNOAYcV7i+TtdKBp0L/3XEU2MF/x6Du1lrh+SRX4IfzIVL4HNJg5pB2PmFb8rszIGyOvsZnqqRoc2g==
+=======
+caniuse-lite@^1.0.0, caniuse-lite@^1.0.30001317:
+  version "1.0.30001322"
+  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001322.tgz#2e4c09d11e1e8f852767dab287069a8d0c29d623"
+  integrity sha512-neRmrmIrCGuMnxGSoh+x7zYtQFFgnSY2jaomjU56sCkTA6JINqQrxutF459JpWcWRajvoyn95sOXq4Pqrnyjew==
+>>>>>>> 79167ce (Update hugo theme version)
 
 chalk@^2.0.0:
   version "2.4.2"
@@ -1918,9 +2075,15 @@ clone-deep@^4.0.1:
     shallow-clone "^3.0.0"
 
 collect.js@^4.28.5:
+<<<<<<< HEAD
   version "4.33.0"
   resolved "https://registry.yarnpkg.com/collect.js/-/collect.js-4.33.0.tgz#9670e6cdf9a01e671d128917c2f049f2dc112ada"
   integrity sha512-jEFD39H+09JyvjxwwHGX6Z7j+SB4OdXxHWG8Dus5eVQmwngWGNluRBQ2qS92K9MkRH+fjh91u1TGa31LIeBKhQ==
+=======
+  version "4.32.0"
+  resolved "https://registry.yarnpkg.com/collect.js/-/collect.js-4.32.0.tgz#4c1569243cd340f19cedb955e28c1288d013bd09"
+  integrity sha512-Ro0fspulC0J325cgFdkzFEkRDs6MmclMy2Fy5adhdFKg5QqMv1nn1zLpCdAxiehlur6Ep08Wr1f7ldNv+fB6+Q==
+>>>>>>> 79167ce (Update hugo theme version)
 
 color-convert@^1.9.0:
   version "1.9.3"
@@ -2175,7 +2338,11 @@ crypto-browserify@^3.11.0:
     randombytes "^2.0.0"
     randomfill "^1.0.3"
 
+<<<<<<< HEAD
 css-declaration-sorter@^6.2.2:
+=======
+css-declaration-sorter@^6.0.3:
+>>>>>>> 79167ce (Update hugo theme version)
   version "6.2.2"
   resolved "https://registry.yarnpkg.com/css-declaration-sorter/-/css-declaration-sorter-6.2.2.tgz#bfd2f6f50002d6a3ae779a87d3a0c5d5b10e0f02"
   integrity sha512-Ufadglr88ZLsrvS11gjeu/40Lw74D9Am/Jpr3LlYm5Q4ZP5KdlUhG+6u2EjyXeZcxmZ2h1ebCKngDjolpeLHpg==
@@ -2216,19 +2383,32 @@ css-tree@^1.1.2, css-tree@^1.1.3:
     source-map "^0.6.1"
 
 css-what@^6.0.1:
+<<<<<<< HEAD
   version "6.1.0"
   resolved "https://registry.yarnpkg.com/css-what/-/css-what-6.1.0.tgz#fb5effcf76f1ddea2c81bdfaa4de44e79bac70f4"
   integrity sha512-HTUrgRJ7r4dsZKU6GjmpfRK1O76h97Z8MfS1G0FozR+oF2kG6Vfe8JE6zwrkbxigziPHinCJ+gCPjA9EaBDtRw==
+=======
+  version "6.0.1"
+  resolved "https://registry.yarnpkg.com/css-what/-/css-what-6.0.1.tgz#3be33be55b9f302f710ba3a9c3abc1e2a63fc7eb"
+  integrity sha512-z93ZGFLNc6yaoXAmVhqoSIb+BduplteCt1fepvwhBUQK6MNE4g6fgjpuZKJKp0esUe+vXWlIkwZZjNWoOKw0ZA==
+>>>>>>> 79167ce (Update hugo theme version)
 
 cssesc@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/cssesc/-/cssesc-3.0.0.tgz#37741919903b868565e1c09ea747445cd18983ee"
   integrity sha512-/Tb/JcjK111nNScGob5MNtsntNM1aCNUDipB/TkwZFhyDrrE47SOx/18wF2bbjgc3ZzCSKW1T5nt5EbFoAz/Vg==
 
+<<<<<<< HEAD
 cssnano-preset-default@^5.2.10:
   version "5.2.10"
   resolved "https://registry.yarnpkg.com/cssnano-preset-default/-/cssnano-preset-default-5.2.10.tgz#6dfffe6cc3b13f3bb356a42c49a334a98700ef45"
   integrity sha512-H8TJRhTjBKVOPltp9vr9El9I+IfYsOMhmXdK0LwdvwJcxYX9oWkY7ctacWusgPWAgQq1vt/WO8v+uqpfLnM7QA==
+=======
+cssnano-preset-default@^5.2.5:
+  version "5.2.5"
+  resolved "https://registry.yarnpkg.com/cssnano-preset-default/-/cssnano-preset-default-5.2.5.tgz#267ded811a3e1664d78707f5355fcd89feeb38ac"
+  integrity sha512-WopL7PzN7sos3X8B54/QGl+CZUh1f0qN4ds+y2d5EPwRSSc3jsitVw81O+Uyop0pXyOfPfZxnc+LmA8w/Ki/WQ==
+>>>>>>> 79167ce (Update hugo theme version)
   dependencies:
     css-declaration-sorter "^6.2.2"
     cssnano-utils "^3.1.0"
@@ -2239,12 +2419,21 @@ cssnano-preset-default@^5.2.10:
     postcss-discard-duplicates "^5.1.0"
     postcss-discard-empty "^5.1.1"
     postcss-discard-overridden "^5.1.0"
+<<<<<<< HEAD
     postcss-merge-longhand "^5.1.5"
     postcss-merge-rules "^5.1.2"
     postcss-minify-font-values "^5.1.0"
     postcss-minify-gradients "^5.1.1"
     postcss-minify-params "^5.1.3"
     postcss-minify-selectors "^5.2.1"
+=======
+    postcss-merge-longhand "^5.1.3"
+    postcss-merge-rules "^5.1.1"
+    postcss-minify-font-values "^5.1.0"
+    postcss-minify-gradients "^5.1.1"
+    postcss-minify-params "^5.1.2"
+    postcss-minify-selectors "^5.2.0"
+>>>>>>> 79167ce (Update hugo theme version)
     postcss-normalize-charset "^5.1.0"
     postcss-normalize-display-values "^5.1.0"
     postcss-normalize-positions "^5.1.0"
@@ -2266,11 +2455,19 @@ cssnano-utils@^3.1.0:
   integrity sha512-JQNR19/YZhz4psLX/rQ9M83e3z2Wf/HdJbryzte4a3NSuafyp9w/I4U+hx5C2S9g41qlstH7DEWnZaaj83OuEA==
 
 cssnano@^5.0.8:
+<<<<<<< HEAD
   version "5.1.10"
   resolved "https://registry.yarnpkg.com/cssnano/-/cssnano-5.1.10.tgz#fc6ddd9a4d7d238f320634326ed814cf0abf6e1c"
   integrity sha512-ACpnRgDg4m6CZD/+8SgnLcGCgy6DDGdkMbOawwdvVxNietTNLe/MtWcenp6qT0PRt5wzhGl6/cjMWCdhKXC9QA==
   dependencies:
     cssnano-preset-default "^5.2.10"
+=======
+  version "5.1.5"
+  resolved "https://registry.yarnpkg.com/cssnano/-/cssnano-5.1.5.tgz#5f3f519538c7f1c182c527096892243db3e17397"
+  integrity sha512-VZO1e+bRRVixMeia1zKagrv0lLN1B/r/u12STGNNUFxnp97LIFgZHQa0JxqlwEkvzUyA9Oz/WnCTAFkdEbONmg==
+  dependencies:
+    cssnano-preset-default "^5.2.5"
+>>>>>>> 79167ce (Update hugo theme version)
     lilconfig "^2.0.3"
     yaml "^1.10.2"
 
@@ -2305,7 +2502,11 @@ debug@^4.1.0, debug@^4.1.1:
   dependencies:
     ms "2.1.2"
 
+<<<<<<< HEAD
 deep-equal@~1.1.1:
+=======
+deep-equal@^1.0.1, deep-equal@~1.1.1:
+>>>>>>> 79167ce (Update hugo theme version)
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/deep-equal/-/deep-equal-1.1.1.tgz#b5c98c942ceffaf7cb051e24e1434a25a2e6076a"
   integrity sha512-yd9c5AdiqVcR+JjcwUQb9DkhJc8ngNr0MahEBGvDiJw8puWab2yZlh+nkasOnZP+EGTAP6rRp2JzJhJZzvNF8g==
@@ -2342,10 +2543,26 @@ defined@~1.0.0:
   resolved "https://registry.yarnpkg.com/defined/-/defined-1.0.0.tgz#c98d9bcef75674188e110969151199e39b1fa693"
   integrity sha512-Y2caI5+ZwS5c3RiNDJ6u53VhQHv+hHKwhkI1iHvceKUHw9Df6EK2zRLfjejRgMuCuxK7PfSWIMwWecceVvThjQ==
 
+<<<<<<< HEAD
 depd@2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/depd/-/depd-2.0.0.tgz#b696163cc757560d09cf22cc8fad1571b79e76df"
   integrity sha512-g7nH6P6dyDioJogAAGprGpCtVImJhpPk/roCzdb3fIh61/s/nPsfR6onyMwkCAR/OlC3yBC0lESvUoQEAssIrw==
+=======
+del@^6.0.0:
+  version "6.0.0"
+  resolved "https://registry.yarnpkg.com/del/-/del-6.0.0.tgz#0b40d0332cea743f1614f818be4feb717714c952"
+  integrity sha512-1shh9DQ23L16oXSZKB2JxpL7iMy2E0S9d517ptA1P8iw0alkPtQcrKH7ru31rYtKwF499HkTu+DRzq3TCKDFRQ==
+  dependencies:
+    globby "^11.0.1"
+    graceful-fs "^4.2.4"
+    is-glob "^4.0.1"
+    is-path-cwd "^2.2.0"
+    is-path-inside "^3.0.2"
+    p-map "^4.0.0"
+    rimraf "^3.0.2"
+    slash "^3.0.0"
+>>>>>>> 79167ce (Update hugo theme version)
 
 depd@~1.1.2:
   version "1.1.2"
@@ -2360,10 +2577,17 @@ des.js@^1.0.0:
     inherits "^2.0.1"
     minimalistic-assert "^1.0.0"
 
+<<<<<<< HEAD
 destroy@1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/destroy/-/destroy-1.2.0.tgz#4803735509ad8be552934c67df614f94e66fa015"
   integrity sha512-2sJGJTaXIIaR1w4iJSNoN0hnMY7Gpc/n8D4qSCJw8QqFWXf7cuAgnEHxBpweaVcPevC2l3KpjYCx3NypQQgaJg==
+=======
+destroy@~1.0.4:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/destroy/-/destroy-1.0.4.tgz#978857442c44749e4206613e37946205826abd80"
+  integrity sha1-l4hXRCxEdJ5CBmE+N5RiBYJqvYA=
+>>>>>>> 79167ce (Update hugo theme version)
 
 detect-node@^2.0.4:
   version "2.1.0"
@@ -2472,6 +2696,7 @@ dotignore@~0.1.2:
   dependencies:
     minimatch "^3.0.4"
 
+<<<<<<< HEAD
 eclipsefdn-hugo-solstice-theme@0.0.153:
   version "0.0.153"
   resolved "https://registry.yarnpkg.com/eclipsefdn-hugo-solstice-theme/-/eclipsefdn-hugo-solstice-theme-0.0.153.tgz#945b0226d013cd258ac009637dc769d7b554126e"
@@ -2486,6 +2711,22 @@ eclipsefdn-solstice-assets@0.0.196:
   version "0.0.196"
   resolved "https://registry.yarnpkg.com/eclipsefdn-solstice-assets/-/eclipsefdn-solstice-assets-0.0.196.tgz#006f1c2aa01e30523b1f3d585c4d187c47556494"
   integrity sha512-5wI8yPyyRvzQt9GoCS7OKeLiZ9byuJnQVrWvhcJQl5eUVasKlxKzfIjHrNGgYkJQGWO60WYtKedPPfT37ntFbQ==
+=======
+eclipsefdn-hugo-solstice-theme@0.0.145:
+  version "0.0.145"
+  resolved "https://registry.yarnpkg.com/eclipsefdn-hugo-solstice-theme/-/eclipsefdn-hugo-solstice-theme-0.0.145.tgz#4b3dfe982bac86f3d934cc157dbd9b0898ac47d8"
+  integrity sha512-49qay6d+sYSLwZ6eCoBmafqfqQAnbFnQBfFIV0bm8D2FZQvgdakDZ0GBQkTAVTXVjHJJYL0RKhxA+sg5Euql0A==
+  dependencies:
+    axios "^0.21.1"
+    eclipsefdn-solstice-assets "0.0.189"
+    json2yaml "^1.1.0"
+    toml "^3.0.0"
+
+eclipsefdn-solstice-assets@0.0.189:
+  version "0.0.189"
+  resolved "https://registry.yarnpkg.com/eclipsefdn-solstice-assets/-/eclipsefdn-solstice-assets-0.0.189.tgz#23e8ae06208e965f161373ab467d2f6ed0ec39a5"
+  integrity sha512-TiOGuxeAgMmoGjBGZ8HAdY4V829XlxFiMx8wZSbMU5l81qIzhXl3IWROcbRdT8ntWTC1axAL274GCLKL0UYXyg==
+>>>>>>> 79167ce (Update hugo theme version)
   dependencies:
     "@babel/core" "^7.0.0-0"
     "@babel/plugin-proposal-class-properties" "^7.12.1"
@@ -2518,7 +2759,10 @@ eclipsefdn-solstice-assets@0.0.196:
     list.js "^1.2.0"
     mustache "^4.0.1"
     mustache-loader "^1.4.3"
+<<<<<<< HEAD
     numeral "^1.4.5"
+=======
+>>>>>>> 79167ce (Update hugo theme version)
     owl.carousel "^2.3.4"
     parse-link-header "^2.0.0"
     postcss "^8.3.5"
@@ -2531,10 +2775,17 @@ ee-first@1.1.1:
   resolved "https://registry.yarnpkg.com/ee-first/-/ee-first-1.1.1.tgz#590c61156b0ae2f4f0255732a158b266bc56b21d"
   integrity sha512-WMwm9LhRUo+WUaRN+vRuETqG89IgZphVSNkdFgeb6sS/E4OrDIN7t48CAewSHXc6C8lefD8KKfr5vY61brQlow==
 
+<<<<<<< HEAD
 electron-to-chromium@^1.4.118:
   version "1.4.142"
   resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.142.tgz#70cc8871f7c0122b29256089989e67cee637b40d"
   integrity sha512-ea8Q1YX0JRp4GylOmX4gFHIizi0j9GfRW4EkaHnkZp0agRCBB4ZGeCv17IEzIvBkiYVwfoKVhKZJbTfqCRdQdg==
+=======
+electron-to-chromium@^1.4.84:
+  version "1.4.99"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.99.tgz#da97e2c116dc6de2f91a81b4ff8d1b19bf54dc1f"
+  integrity sha512-YXMzbvlo6pW12KWw0bj6cIGCJi1Moy8PLCuuzgRzg6WYIcHILK3szU+HHnHFx2b373qRv+cfmHhbmRbatyAbPA==
+>>>>>>> 79167ce (Update hugo theme version)
 
 element-closest-polyfill@^1.0.4:
   version "1.0.5"
@@ -2576,10 +2827,17 @@ encodeurl@~1.0.2:
   resolved "https://registry.yarnpkg.com/encodeurl/-/encodeurl-1.0.2.tgz#ad3ff4c86ec2d029322f5a02c3a9a606c95b3f59"
   integrity sha512-TPJXq8JqFaVYm2CWmPvnP2Iyo4ZSM7/QKcSmuMLDObfpH5fi7RUGmd/rTDf+rut/saiDiQEeVTNgAmJEdAOx0w==
 
+<<<<<<< HEAD
 enhanced-resolve@^5.9.3:
   version "5.9.3"
   resolved "https://registry.yarnpkg.com/enhanced-resolve/-/enhanced-resolve-5.9.3.tgz#44a342c012cbc473254af5cc6ae20ebd0aae5d88"
   integrity sha512-Bq9VSor+kjvW3f9/MiiR4eE3XYgOl7/rS8lnSxbRbF3kS0B2r+Y9w5krBWxZgDxASVZbdYrn5wT4j/Wb0J9qow==
+=======
+enhanced-resolve@^5.9.2:
+  version "5.9.2"
+  resolved "https://registry.yarnpkg.com/enhanced-resolve/-/enhanced-resolve-5.9.2.tgz#0224dcd6a43389ebfb2d55efee517e5466772dd9"
+  integrity sha512-GIm3fQfwLJ8YZx2smuHpBKkXC1yOk+OBEmKckVyL0i/ea8mqDEykK3ld5dgH1QYPNyT/lIllxV2LULnxCHaHkA==
+>>>>>>> 79167ce (Update hugo theme version)
   dependencies:
     graceful-fs "^4.2.4"
     tapable "^2.2.0"
@@ -2608,10 +2866,17 @@ error-ex@^1.3.1:
   dependencies:
     is-arrayish "^0.2.1"
 
+<<<<<<< HEAD
 es-abstract@^1.19.0, es-abstract@^1.19.5:
   version "1.20.1"
   resolved "https://registry.yarnpkg.com/es-abstract/-/es-abstract-1.20.1.tgz#027292cd6ef44bd12b1913b828116f54787d1814"
   integrity sha512-WEm2oBhfoI2sImeM4OF2zE2V3BYdSF+KnSi9Sidz51fQHd7+JuF8Xgcj9/0o+OWeIeIS/MiuNnlruQrJf16GQA==
+=======
+es-abstract@^1.19.1:
+  version "1.19.2"
+  resolved "https://registry.yarnpkg.com/es-abstract/-/es-abstract-1.19.2.tgz#8f7b696d8f15b167ae3640b4060670f3d054143f"
+  integrity sha512-gfSBJoZdlL2xRiOCy0g8gLMryhoe1TlimjzU99L/31Z8QEGIhVQI+EWwt5lT+AuU9SnorVupXFqqOGqGfsyO6w==
+>>>>>>> 79167ce (Update hugo theme version)
   dependencies:
     call-bind "^1.0.2"
     es-to-primitive "^1.2.1"
@@ -2620,7 +2885,10 @@ es-abstract@^1.19.0, es-abstract@^1.19.5:
     get-intrinsic "^1.1.1"
     get-symbol-description "^1.0.0"
     has "^1.0.3"
+<<<<<<< HEAD
     has-property-descriptors "^1.0.0"
+=======
+>>>>>>> 79167ce (Update hugo theme version)
     has-symbols "^1.0.3"
     internal-slot "^1.0.3"
     is-callable "^1.2.4"
@@ -2899,7 +3167,11 @@ fraction.js@^4.2.0:
 fresh@0.5.2:
   version "0.5.2"
   resolved "https://registry.yarnpkg.com/fresh/-/fresh-0.5.2.tgz#3d8cadd90d976569fa835ab1f8e4b23a105605a7"
+<<<<<<< HEAD
   integrity sha512-zJ2mQYM18rEFOudeV4GShTGIQ7RbzA7ozbU9I/XBpm7kqgMywgmylMwXHxZJmkVoYkna9d2pVXVXPdYTP9ej8Q==
+=======
+  integrity sha1-PYyt2Q2XZWn6g1qx+OSyOhBWBac=
+>>>>>>> 79167ce (Update hugo theme version)
 
 fs-extra@^10.0.0:
   version "10.1.0"
@@ -2930,6 +3202,7 @@ function-bind@^1.1.1:
   resolved "https://registry.yarnpkg.com/function-bind/-/function-bind-1.1.1.tgz#a56899d3ea3c9bab874bb9773b7c5ede92f4895d"
   integrity sha512-yIovAzMX49sF8Yl58fSCWJ5svSLuaibPxXQJFLmBObTuCr0Mf1KiPopGM9NiFjiYBCbfaa2Fh6breQ6ANVTI0A==
 
+<<<<<<< HEAD
 function.prototype.name@^1.1.5:
   version "1.1.5"
   resolved "https://registry.yarnpkg.com/function.prototype.name/-/function.prototype.name-1.1.5.tgz#cce0505fe1ffb80503e6f9e46cc64e46a12a9621"
@@ -2945,6 +3218,8 @@ functions-have-names@^1.2.2:
   resolved "https://registry.yarnpkg.com/functions-have-names/-/functions-have-names-1.2.3.tgz#0404fe4ee2ba2f607f0e0ec3c80bae994133b834"
   integrity sha512-xckBUXyTIqT97tq2x2AMb+g163b5JFysYk0x4qxNFwbfQkmNZoiRHb6sPzI9/QV33WeuvVYBUIiD4NzNIyqaRQ==
 
+=======
+>>>>>>> 79167ce (Update hugo theme version)
 gensync@^1.0.0-beta.2:
   version "1.0.0-beta.2"
   resolved "https://registry.yarnpkg.com/gensync/-/gensync-1.0.0-beta.2.tgz#32a6ee76c3d7f52d46b2b1ae5d93fea8580a25e0"
@@ -3020,10 +3295,29 @@ globby@^10.0.0:
     merge2 "^1.2.3"
     slash "^3.0.0"
 
+<<<<<<< HEAD
 graceful-fs@^4.1.2, graceful-fs@^4.1.6, graceful-fs@^4.2.0, graceful-fs@^4.2.2, graceful-fs@^4.2.4, graceful-fs@^4.2.6, graceful-fs@^4.2.9:
   version "4.2.10"
   resolved "https://registry.yarnpkg.com/graceful-fs/-/graceful-fs-4.2.10.tgz#147d3a006da4ca3ce14728c7aefc287c367d7a6c"
   integrity sha512-9ByhssR2fPVsNZj478qUUbKfmL0+t5BDVyjShtyZZLiK7ZDAArFFfopyOTj0M05wE2tJPisA4iTnnXl2YoPvOA==
+=======
+globby@^11.0.1:
+  version "11.1.0"
+  resolved "https://registry.yarnpkg.com/globby/-/globby-11.1.0.tgz#bd4be98bb042f83d796f7e3811991fbe82a0d34b"
+  integrity sha512-jhIXaOzy1sb8IyocaruWSn1TjmnBVs8Ayhcy83rmxNJ8q2uWKCAj3CnJY+KpGSXCueAPc0i05kVvVKtP1t9S3g==
+  dependencies:
+    array-union "^2.1.0"
+    dir-glob "^3.0.1"
+    fast-glob "^3.2.9"
+    ignore "^5.2.0"
+    merge2 "^1.4.1"
+    slash "^3.0.0"
+
+graceful-fs@^4.1.2, graceful-fs@^4.1.6, graceful-fs@^4.2.0, graceful-fs@^4.2.2, graceful-fs@^4.2.4, graceful-fs@^4.2.6, graceful-fs@^4.2.9:
+  version "4.2.9"
+  resolved "https://registry.yarnpkg.com/graceful-fs/-/graceful-fs-4.2.9.tgz#041b05df45755e587a24942279b9d113146e1c96"
+  integrity sha512-NtNxqUcXgpW2iMrfqSfR73Glt39K+BLwWsPs94yR63v45T0Wbej7eRmL5cWfwEgqXnmjQp3zaJTshdRW/qC2ZQ==
+>>>>>>> 79167ce (Update hugo theme version)
 
 growly@^1.3.0:
   version "1.3.0"
@@ -3050,6 +3344,7 @@ has-flag@^4.0.0:
   resolved "https://registry.yarnpkg.com/has-flag/-/has-flag-4.0.0.tgz#944771fd9c81c81265c4d6941860da06bb59479b"
   integrity sha512-EykJT/Q1KjTWctppgIAgfSO0tKVuZUjhgMr17kqTumMl6Afv3EISleU7qZUzoXDFTAHTDC4NOoG/ZxU3EvlMPQ==
 
+<<<<<<< HEAD
 has-property-descriptors@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/has-property-descriptors/-/has-property-descriptors-1.0.0.tgz#610708600606d36961ed04c196193b6a607fa861"
@@ -3057,6 +3352,8 @@ has-property-descriptors@^1.0.0:
   dependencies:
     get-intrinsic "^1.1.1"
 
+=======
+>>>>>>> 79167ce (Update hugo theme version)
 has-symbols@^1.0.1, has-symbols@^1.0.2, has-symbols@^1.0.3:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/has-symbols/-/has-symbols-1.0.3.tgz#bb7b2c4349251dce87b125f7bdf874aa7c8b39f8"
@@ -3246,10 +3543,17 @@ http-parser-js@>=0.5.1:
   resolved "https://registry.yarnpkg.com/http-parser-js/-/http-parser-js-0.5.6.tgz#2e02406ab2df8af8a7abfba62e0da01c62b95afd"
   integrity sha512-vDlkRPDJn93swjcjqMSaGSPABbIarsr1TLAui/gLDXzV5VsJNdXNzMYDyNBLQkjWQCJ1uizu8T2oDMhmGt0PRA==
 
+<<<<<<< HEAD
 http-proxy-middleware@^2.0.3:
   version "2.0.6"
   resolved "https://registry.yarnpkg.com/http-proxy-middleware/-/http-proxy-middleware-2.0.6.tgz#e1a4dd6979572c7ab5a4e4b55095d1f32a74963f"
   integrity sha512-ya/UeJ6HVBYxrgYotAZo1KvPWlgB48kUJLDePFeneHsVujFaW5WNj2NgWCAE//B1Dl02BIfYlpNgBy8Kf8Rjmw==
+=======
+http-proxy-middleware@^2.0.0:
+  version "2.0.4"
+  resolved "https://registry.yarnpkg.com/http-proxy-middleware/-/http-proxy-middleware-2.0.4.tgz#03af0f4676d172ae775cb5c33f592f40e1a4e07a"
+  integrity sha512-m/4FxX17SUvz4lJ5WPXOHDUuCwIqXLfLHs1s0uZ3oYjhoXlx9csYxaOa0ElDEJ+h8Q4iJ1s+lTMbiCa4EXIJqg==
+>>>>>>> 79167ce (Update hugo theme version)
   dependencies:
     "@types/http-proxy" "^1.17.8"
     http-proxy "^1.18.1"
@@ -3339,6 +3643,14 @@ import-local@^3.0.2:
     pkg-dir "^4.2.0"
     resolve-cwd "^3.0.0"
 
+<<<<<<< HEAD
+=======
+indent-string@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/indent-string/-/indent-string-4.0.0.tgz#624f8f4497d619b2d9768531d58f4122854d7251"
+  integrity sha512-EdDDZu4A2OyIK7Lr/2zG+w5jmbuk1DVBnEwREQvBzspBJkCEbRa8GxU1lghYcaGJCnRWibjDXlq779X1/y5xwg==
+
+>>>>>>> 79167ce (Update hugo theme version)
 inflight@^1.0.4:
   version "1.0.6"
   resolved "https://registry.yarnpkg.com/inflight/-/inflight-1.0.6.tgz#49bd6331d7d02d0c09bc910a1075ba8165b56df9"
@@ -3360,7 +3672,11 @@ inherits@2.0.1:
 inherits@2.0.3:
   version "2.0.3"
   resolved "https://registry.yarnpkg.com/inherits/-/inherits-2.0.3.tgz#633c2c83e3da42a502f52466022480f4208261de"
+<<<<<<< HEAD
   integrity sha512-x00IRNXNy63jwGkJmzPigoySHbaqpNuzKbBOmzK+g2OdZpQ9w+sxCN+VSB3ja7IAge2OP2qpfxTjeNcyjmW1uw==
+=======
+  integrity sha1-Yzwsg+PaQqUC9SRmAiSA9CCCYd4=
+>>>>>>> 79167ce (Update hugo theme version)
 
 internal-slot@^1.0.3:
   version "1.0.3"
@@ -3453,7 +3769,11 @@ is-docker@^2.0.0, is-docker@^2.1.1:
 is-extglob@^2.1.1:
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/is-extglob/-/is-extglob-2.1.1.tgz#a88c02535791f02ed37c76a1b9ea9773c833f8c2"
+<<<<<<< HEAD
   integrity sha512-SbKbANkN603Vi4jEZv49LeVJMn4yGwsbzZworEoyEiutsN3nJYdbO36zfhGJ6QEDpOZIFkDtnq5JRxmvl3jsoQ==
+=======
+  integrity sha1-qIwCU1eR8C7TfHahueqXc8gz+MI=
+>>>>>>> 79167ce (Update hugo theme version)
 
 is-fullwidth-code-point@^3.0.0:
   version "3.0.0"
@@ -3484,6 +3804,19 @@ is-number@^7.0.0:
   resolved "https://registry.yarnpkg.com/is-number/-/is-number-7.0.0.tgz#7535345b896734d5f80c4d06c50955527a14f12b"
   integrity sha512-41Cifkg6e8TylSpdtTpeLVMqvSBEVzTttHvERD741+pnZ8ANv0004MRL43QKPDlK9cGvNp6NZWZUBlbGXYxxng==
 
+<<<<<<< HEAD
+=======
+is-path-cwd@^2.2.0:
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/is-path-cwd/-/is-path-cwd-2.2.0.tgz#67d43b82664a7b5191fd9119127eb300048a9fdb"
+  integrity sha512-w942bTcih8fdJPJmQHFzkS76NEP8Kzzvmw92cXsazb8intwLqPibPPdXf4ANdKV3rYMuuQYGIWtvz9JilB3NFQ==
+
+is-path-inside@^3.0.2:
+  version "3.0.3"
+  resolved "https://registry.yarnpkg.com/is-path-inside/-/is-path-inside-3.0.3.tgz#d231362e53a07ff2b0e0ea7fed049161ffd16283"
+  integrity sha512-Fd4gABb+ycGAmKou8eMftCupSir5lRxqf4aD/vd0cD2qc4HL07OjCeuHMr8Ro4CoMaeCKDB0/ECBOVWjTwUvPQ==
+
+>>>>>>> 79167ce (Update hugo theme version)
 is-plain-obj@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/is-plain-obj/-/is-plain-obj-3.0.0.tgz#af6f2ea14ac5a646183a5bbdb5baabbc156ad9d7"
@@ -3504,12 +3837,19 @@ is-regex@^1.0.4, is-regex@^1.1.4, is-regex@~1.1.4:
     call-bind "^1.0.2"
     has-tostringtag "^1.0.0"
 
+<<<<<<< HEAD
 is-shared-array-buffer@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/is-shared-array-buffer/-/is-shared-array-buffer-1.0.2.tgz#8f259c573b60b6a32d4058a1a07430c0a7344c79"
   integrity sha512-sqN2UDu1/0y6uvXyStCOzyhAjCSlHceFoMKJW8W9EU9cvic/QdsZ0kEU93HEy3IUEFZIiH/3w+AH/UQbPHNdhA==
   dependencies:
     call-bind "^1.0.2"
+=======
+is-shared-array-buffer@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/is-shared-array-buffer/-/is-shared-array-buffer-1.0.1.tgz#97b0c85fbdacb59c9c446fe653b82cf2b5b7cfe6"
+  integrity sha512-IU0NmyknYZN0rChcKhRO1X8LYz5Isj/Fsqh8NJOSf+N/hCOTwy29F32Ik7a+QszE63IdvmwdTPDd6cZ5pg4cwA==
+>>>>>>> 79167ce (Update hugo theme version)
 
 is-stream@^2.0.0:
   version "2.0.1"
@@ -3635,7 +3975,11 @@ json5@^1.0.1:
   dependencies:
     minimist "^1.2.0"
 
+<<<<<<< HEAD
 json5@^2.1.2, json5@^2.2.1:
+=======
+json5@^2.1.2:
+>>>>>>> 79167ce (Update hugo theme version)
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/json5/-/json5-2.2.1.tgz#655d50ed1e6f95ad1a3caababd2b0efda10b395c"
   integrity sha512-1hqLFMSrGHRHxav9q9gNjJ5EXznIxGVO09xQRrwplcS8qs28pZ8s8hupZAmqDwZUmVZ2Qb2jnyPOWcDH8m8dlA==
@@ -3973,14 +4317,22 @@ minimalistic-crypto-utils@^1.0.1:
   resolved "https://registry.yarnpkg.com/minimalistic-crypto-utils/-/minimalistic-crypto-utils-1.0.1.tgz#f6c00c1c0b082246e5c4d99dfb8c7c083b2b582a"
   integrity sha512-JIYlbt6g8i5jKfJ3xz7rF0LXmv2TkDxBLUkiBeZ7bAx4GnnNMr8xFpGnOxn6GhTEHx3SjRrZEoU+j04prX1ktg==
 
+<<<<<<< HEAD
 minimatch@^3.0.4, minimatch@^3.1.1:
+=======
+minimatch@^3.0.4:
+>>>>>>> 79167ce (Update hugo theme version)
   version "3.1.2"
   resolved "https://registry.yarnpkg.com/minimatch/-/minimatch-3.1.2.tgz#19cd194bfd3e428f049a70817c038d89ab4be35b"
   integrity sha512-J7p63hRiAjw1NDEww1W7i37+ByIrOWO5XQQAzZ3VOcL0PNybwpfmV/N05zFAzwQ9USyEcX6t3UO+K5aqBQOIHw==
   dependencies:
     brace-expansion "^1.1.7"
 
+<<<<<<< HEAD
 minimist@^1.2.0, minimist@~1.2.6:
+=======
+minimist@^1.2.0, minimist@^1.2.6, minimist@~1.2.5:
+>>>>>>> 79167ce (Update hugo theme version)
   version "1.2.6"
   resolved "https://registry.yarnpkg.com/minimist/-/minimist-1.2.6.tgz#8637a5b759ea0d6e98702cfb3a9283323c93af44"
   integrity sha512-Jsjnk4bw3YJqYzbdyBiNsPWHPfO++UGG749Cxs6peCu5Xg4nrena6OVxOYxrQTqww0Jmwt+Ref8rggumkTLz9Q==
@@ -3988,7 +4340,18 @@ minimist@^1.2.0, minimist@~1.2.6:
 mkdirp@0.3.0:
   version "0.3.0"
   resolved "https://registry.yarnpkg.com/mkdirp/-/mkdirp-0.3.0.tgz#1bbf5ab1ba827af23575143490426455f481fe1e"
+<<<<<<< HEAD
   integrity sha512-OHsdUcVAQ6pOtg5JYWpCBo9W/GySVuwvP9hueRMW7UqshC0tbfzLv8wjySTPm3tfUZ/21CE9E1pJagOA91Pxew==
+=======
+  integrity sha1-G79asbqCevI1dRQ0kEJkVfSB/h4=
+
+mkdirp@^0.5.5:
+  version "0.5.6"
+  resolved "https://registry.yarnpkg.com/mkdirp/-/mkdirp-0.5.6.tgz#7def03d2432dcae4ba1d611445c48396062255f6"
+  integrity sha512-FP+p8RB8OWpF3YZBCrP5gtADmtXApB5AMLn+vdyA+PyxCjrCs00mjyUozssO33cwDeT3wNGdLxJ5M//YqtHAJw==
+  dependencies:
+    minimist "^1.2.6"
+>>>>>>> 79167ce (Update hugo theme version)
 
 ms@2.0.0:
   version "2.0.0"
@@ -4027,10 +4390,17 @@ mustache@^4.0.1:
   resolved "https://registry.yarnpkg.com/mustache/-/mustache-4.2.0.tgz#e5892324d60a12ec9c2a73359edca52972bf6f64"
   integrity sha512-71ippSywq5Yb7/tVYyGbkBggbU8H3u5Rz56fH60jGFgr8uHwxs+aSKeqmluIVzM0m0kB7xQjKS6qPfd0b2ZoqQ==
 
+<<<<<<< HEAD
 nanoid@^3.3.4:
   version "3.3.4"
   resolved "https://registry.yarnpkg.com/nanoid/-/nanoid-3.3.4.tgz#730b67e3cd09e2deacf03c027c81c9d9dbc5e8ab"
   integrity sha512-MqBkQh/OHTS2egovRtLk45wEyNXwF+cokD+1YPf9u5VfJiRdAiRwB2froX5Co9Rh20xs4siNPm8naNotSD6RBw==
+=======
+nanoid@^3.3.1:
+  version "3.3.2"
+  resolved "https://registry.yarnpkg.com/nanoid/-/nanoid-3.3.2.tgz#c89622fafb4381cd221421c69ec58547a1eec557"
+  integrity sha512-CuHBogktKwpm5g2sRgv83jEy2ijFzBwMoYA60orPDR7ynsLijJDqgsi4RDGj3OJpy3Ieb+LYwiRmIOGyytgITA==
+>>>>>>> 79167ce (Update hugo theme version)
 
 native-request@^1.0.5:
   version "1.1.0"
@@ -4070,9 +4440,15 @@ node-fetch@^2.6.1:
     whatwg-url "^5.0.0"
 
 node-forge@^1:
+<<<<<<< HEAD
   version "1.3.1"
   resolved "https://registry.yarnpkg.com/node-forge/-/node-forge-1.3.1.tgz#be8da2af243b2417d5f646a770663a92b7e9ded3"
   integrity sha512-dPEtOeMvF9VMcYV/1Wb8CPoVAXtp6MKMlcbAt4ddqmGqUJ6fQZFXkNZNkNlfevtNkGtaSoXf/vNNNSvgrdXwtA==
+=======
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/node-forge/-/node-forge-1.3.0.tgz#37a874ea723855f37db091e6c186e5b67a01d4b2"
+  integrity sha512-08ARB91bUi6zNKzVmaj3QO7cr397uiDT2nJ63cHjyNtCTWIgvS47j3eT0WfzUwS9+6Z5YshRaoasFkXCKrIYbA==
+>>>>>>> 79167ce (Update hugo theme version)
 
 node-libs-browser@^2.2.1:
   version "2.2.1"
@@ -4156,20 +4532,29 @@ nth-check@^2.0.1:
   dependencies:
     boolbase "^1.0.0"
 
+<<<<<<< HEAD
 numeral@^1.4.5:
   version "1.5.6"
   resolved "https://registry.yarnpkg.com/numeral/-/numeral-1.5.6.tgz#3831db968451b9cf6aff9bf95925f1ef8e37b33f"
   integrity sha1-ODHbloRRuc9q/5v5WSXx7443sz8=
 
+=======
+>>>>>>> 79167ce (Update hugo theme version)
 object-assign@^4.1.1:
   version "4.1.1"
   resolved "https://registry.yarnpkg.com/object-assign/-/object-assign-4.1.1.tgz#2109adc7965887cfc05cbbd442cac8bfbb360863"
   integrity sha1-IQmtx5ZYh8/AXLvUQsrIv7s2CGM=
 
 object-inspect@^1.12.0, object-inspect@^1.9.0, object-inspect@~1.12.0:
+<<<<<<< HEAD
   version "1.12.2"
   resolved "https://registry.yarnpkg.com/object-inspect/-/object-inspect-1.12.2.tgz#c0641f26394532f28ab8d796ab954e43c009a8ea"
   integrity sha512-z+cPxW0QGUp0mcqcsgQyLVRDoXFQbXOwBaqyF7VIgI4TWNQsDHrBpUQslRmIfAoYWdYzs6UlKJtB2XJpTaNSpQ==
+=======
+  version "1.12.0"
+  resolved "https://registry.yarnpkg.com/object-inspect/-/object-inspect-1.12.0.tgz#6e2c120e868fd1fd18cb4f18c31741d0d6e776f0"
+  integrity sha512-Ho2z80bVIvJloH+YzRmpZVQe87+qASmBUKZDWgx9cu+KDrX2ZDH/3tMy+gXbZETVGs2M8YdxObOh7XAtim9Y0g==
+>>>>>>> 79167ce (Update hugo theme version)
 
 object-is@^1.0.1:
   version "1.1.5"
@@ -4477,18 +4862,32 @@ postcss-loader@^6.2.0:
     klona "^2.0.5"
     semver "^7.3.5"
 
+<<<<<<< HEAD
 postcss-merge-longhand@^5.1.5:
   version "5.1.5"
   resolved "https://registry.yarnpkg.com/postcss-merge-longhand/-/postcss-merge-longhand-5.1.5.tgz#b0e03bee3b964336f5f33c4fc8eacae608e91c05"
   integrity sha512-NOG1grw9wIO+60arKa2YYsrbgvP6tp+jqc7+ZD5/MalIw234ooH2C6KlR6FEn4yle7GqZoBxSK1mLBE9KPur6w==
+=======
+postcss-merge-longhand@^5.1.3:
+  version "5.1.3"
+  resolved "https://registry.yarnpkg.com/postcss-merge-longhand/-/postcss-merge-longhand-5.1.3.tgz#a49e2be6237316e3b55e329e0a8da15d1f9f47ab"
+  integrity sha512-lX8GPGvZ0iGP/IboM7HXH5JwkXvXod1Rr8H8ixwiA372hArk0zP4ZcCy4z4Prg/bfNlbbTf0KCOjCF9kKnpP/w==
+>>>>>>> 79167ce (Update hugo theme version)
   dependencies:
     postcss-value-parser "^4.2.0"
     stylehacks "^5.1.0"
 
+<<<<<<< HEAD
 postcss-merge-rules@^5.1.2:
   version "5.1.2"
   resolved "https://registry.yarnpkg.com/postcss-merge-rules/-/postcss-merge-rules-5.1.2.tgz#7049a14d4211045412116d79b751def4484473a5"
   integrity sha512-zKMUlnw+zYCWoPN6yhPjtcEdlJaMUZ0WyVcxTAmw3lkkN/NDMRkOkiuctQEoWAOvH7twaxUUdvBWl0d4+hifRQ==
+=======
+postcss-merge-rules@^5.1.1:
+  version "5.1.1"
+  resolved "https://registry.yarnpkg.com/postcss-merge-rules/-/postcss-merge-rules-5.1.1.tgz#d327b221cd07540bcc8d9ff84446d8b404d00162"
+  integrity sha512-8wv8q2cXjEuCcgpIB1Xx1pIy8/rhMPIQqYKNzEdyx37m6gpq83mQQdCxgIkFgliyEnKvdwJf/C61vN4tQDq4Ww==
+>>>>>>> 79167ce (Update hugo theme version)
   dependencies:
     browserslist "^4.16.6"
     caniuse-api "^3.0.0"
@@ -4511,10 +4910,17 @@ postcss-minify-gradients@^5.1.1:
     cssnano-utils "^3.1.0"
     postcss-value-parser "^4.2.0"
 
+<<<<<<< HEAD
 postcss-minify-params@^5.1.3:
   version "5.1.3"
   resolved "https://registry.yarnpkg.com/postcss-minify-params/-/postcss-minify-params-5.1.3.tgz#ac41a6465be2db735099bbd1798d85079a6dc1f9"
   integrity sha512-bkzpWcjykkqIujNL+EVEPOlLYi/eZ050oImVtHU7b4lFS82jPnsCb44gvC6pxaNt38Els3jWYDHTjHKf0koTgg==
+=======
+postcss-minify-params@^5.1.2:
+  version "5.1.2"
+  resolved "https://registry.yarnpkg.com/postcss-minify-params/-/postcss-minify-params-5.1.2.tgz#77e250780c64198289c954884ebe3ee4481c3b1c"
+  integrity sha512-aEP+p71S/urY48HWaRHasyx4WHQJyOYaKpQ6eXl8k0kxg66Wt/30VR6/woh8THgcpRbonJD5IeD+CzNhPi1L8g==
+>>>>>>> 79167ce (Update hugo theme version)
   dependencies:
     browserslist "^4.16.6"
     cssnano-utils "^3.1.0"
@@ -4670,9 +5076,15 @@ postcss-value-parser@^4.1.0, postcss-value-parser@^4.2.0:
   integrity sha512-1NNCs6uurfkVbeXG4S8JFT9t19m45ICnif8zWLd5oPSZ50QnwMfK+H3jv408d4jw/7Bttv5axS5IiHoLaVNHeQ==
 
 postcss@^8.2.15, postcss@^8.3.5:
+<<<<<<< HEAD
   version "8.4.14"
   resolved "https://registry.yarnpkg.com/postcss/-/postcss-8.4.14.tgz#ee9274d5622b4858c1007a74d76e42e56fd21caf"
   integrity sha512-E398TUmfAYFPBSdzgeieK2Y1+1cpdxJx8yXbK/m57nRhKSmk1GB2tO4lbLBtlkfPQTDKfe4Xqv1ASWPpayPEig==
+=======
+  version "8.4.12"
+  resolved "https://registry.yarnpkg.com/postcss/-/postcss-8.4.12.tgz#1e7de78733b28970fa4743f7da6f3763648b1905"
+  integrity sha512-lg6eITwYe9v6Hr5CncVbK70SoioNQIq81nsaG86ev5hAidQvmOeETBqs7jm43K2F5/Ley3ytDtriImV6TpNiSg==
+>>>>>>> 79167ce (Update hugo theme version)
   dependencies:
     nanoid "^3.3.4"
     picocolors "^1.0.0"
@@ -5040,7 +5452,11 @@ select-hose@^2.0.0:
   resolved "https://registry.yarnpkg.com/select-hose/-/select-hose-2.0.0.tgz#625d8658f865af43ec962bfc376a37359a4994ca"
   integrity sha1-Yl2GWPhlr0Psliv8N2o3NZpJlMo=
 
+<<<<<<< HEAD
 selfsigned@^2.0.1:
+=======
+selfsigned@^2.0.0:
+>>>>>>> 79167ce (Update hugo theme version)
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/selfsigned/-/selfsigned-2.0.1.tgz#8b2df7fa56bf014d19b6007655fff209c0ef0a56"
   integrity sha512-LmME957M1zOsUhG+67rAjKfiWFox3SBxE/yymatMZsAx+oMrJ0YQ8AToOnyCm7xbeg2ep37IHLxdu0o2MavQOQ==
@@ -5116,7 +5532,11 @@ serve-static@1.15.0:
     encodeurl "~1.0.2"
     escape-html "~1.0.3"
     parseurl "~1.3.3"
+<<<<<<< HEAD
     send "0.18.0"
+=======
+    send "0.17.2"
+>>>>>>> 79167ce (Update hugo theme version)
 
 setimmediate@^1.0.4:
   version "1.0.5"
@@ -5340,6 +5760,16 @@ strip-ansi@^6.0.0, strip-ansi@^6.0.1:
   dependencies:
     ansi-regex "^5.0.1"
 
+<<<<<<< HEAD
+=======
+strip-ansi@^7.0.0:
+  version "7.0.1"
+  resolved "https://registry.yarnpkg.com/strip-ansi/-/strip-ansi-7.0.1.tgz#61740a08ce36b61e50e65653f07060d000975fb2"
+  integrity sha512-cXNxvT8dFNRVfhVME3JAe98mkXDYN2O1l7jmcwMnOslDeESg1rF/OZMtK0nRAhiari1unG5cD4jG3rapUAkLbw==
+  dependencies:
+    ansi-regex "^6.0.1"
+
+>>>>>>> 79167ce (Update hugo theme version)
 strip-final-newline@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/strip-final-newline/-/strip-final-newline-2.0.0.tgz#89b852fb2fcbe936f6f4b3187afb0a12c1ab58ad"
@@ -5447,9 +5877,15 @@ terser@^4.6.3:
     source-map-support "~0.5.12"
 
 terser@^5.10.0, terser@^5.7.2, terser@^5.9.0:
+<<<<<<< HEAD
   version "5.14.0"
   resolved "https://registry.yarnpkg.com/terser/-/terser-5.14.0.tgz#eefeec9af5153f55798180ee2617f390bdd285e2"
   integrity sha512-JC6qfIEkPBd9j1SMO3Pfn+A6w2kQV54tv+ABQLgZr7dA3k/DL/OBoYSWxzVpZev3J+bUHXfr55L8Mox7AaNo6g==
+=======
+  version "5.12.1"
+  resolved "https://registry.yarnpkg.com/terser/-/terser-5.12.1.tgz#4cf2ebed1f5bceef5c83b9f60104ac4a78b49e9c"
+  integrity sha512-NXbs+7nisos5E+yXwAD+y7zrcTkMqb0dEJxIGtSKPdCBzopf7ni4odPul2aechpV7EXNvOudYOX2bb5tln1jbQ==
+>>>>>>> 79167ce (Update hugo theme version)
   dependencies:
     "@jridgewell/source-map" "^0.3.2"
     acorn "^8.5.0"
@@ -5536,10 +5972,17 @@ uglify-js@3.4.x:
     commander "~2.19.0"
     source-map "~0.6.1"
 
+<<<<<<< HEAD
 unbox-primitive@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/unbox-primitive/-/unbox-primitive-1.0.2.tgz#29032021057d5e6cdbd08c5129c226dff8ed6f9e"
   integrity sha512-61pPlCD9h51VoreyJ0BReideM3MDKMKnh6+V9L08331ipq6Q8OFXZYiqP6n/tbHx4s5I9uRhcye6BrbkizkBDw==
+=======
+unbox-primitive@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/unbox-primitive/-/unbox-primitive-1.0.1.tgz#085e215625ec3162574dc8859abee78a59b14471"
+  integrity sha512-tZU/3NqK3dA5gpE1KtyiJUrEB0lxnGkMFHptJ7q6ewdZ8s12QrODwNbhIJStmJkd1QDXa1NRA8aF2A1zk/Ypyw==
+>>>>>>> 79167ce (Update hugo theme version)
   dependencies:
     call-bind "^1.0.2"
     has-bigints "^1.0.2"
@@ -5906,9 +6349,15 @@ yargs-parser@^21.0.0:
   integrity sha512-9BK1jFpLzJROCI5TzwZL/TU4gqjK5xiHV/RfWLOahrjAko/e4DJkRDZQXfvqAsiZzzYhgAzbgz6lg48jcm4GLg==
 
 yargs@^17.2.1:
+<<<<<<< HEAD
   version "17.5.1"
   resolved "https://registry.yarnpkg.com/yargs/-/yargs-17.5.1.tgz#e109900cab6fcb7fd44b1d8249166feb0b36e58e"
   integrity sha512-t6YAJcxDkNX7NFYiVtKvWUz8l+PaKTLiL63mJYWR2GnHq2gjEWISzsLp9wg3aY36dY1j+gfIEL3pIF+XlJJfbA==
+=======
+  version "17.4.0"
+  resolved "https://registry.yarnpkg.com/yargs/-/yargs-17.4.0.tgz#9fc9efc96bd3aa2c1240446af28499f0e7593d00"
+  integrity sha512-WJudfrk81yWFSOkZYpAZx4Nt7V4xp7S/uJkX0CnxovMCt1wCE8LNftPpNuF9X/u9gN5nsD7ycYtRcDf2pL3UiA==
+>>>>>>> 79167ce (Update hugo theme version)
   dependencies:
     cliui "^7.0.2"
     escalade "^3.1.1"
