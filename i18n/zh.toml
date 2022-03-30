@@ -16,6 +16,9 @@
 [home-calltoaction-membership]
   other = "加入工作组"
 
+[home-calltoaction-howtogetinvolved]
+  other = "How to Get Involved"
+
 [home-calltoaction-getstarted]
   other = "开始使用Jakarta"
 

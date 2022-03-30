@@ -19,6 +19,9 @@
 [home-calltoaction-membership]
   other = "JOIN THE <br>WORKING GROUP"
 
+[home-calltoaction-howtogetinvolved]
+  other = "How to Get Involved"
+
 [home-calltoaction-getstarted]
   other = "GET STARTED"
 
