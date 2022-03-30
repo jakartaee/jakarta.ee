@@ -11,5 +11,3 @@ hide_breadcrumb: true
 {{< pages/get-involved/main-content >}}
 
 {{< pages/get-involved/testimonials >}}
-
-{{< pages/get-involved/contributors >}}
