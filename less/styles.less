@@ -193,21 +193,24 @@ div.card-panel.panel div.panel-body.panel-body-with-img {
   background-image: url(images/get-involved/get-involved-content-prefix-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  .container {
-    position: relative;
-    &:before {
-      display: block;
-      content: "";
-      width: 320px;
-      height: 300px;
-      background-image: url(images/get-involved/jakarta-ee-logo.png);
-      background-size: cover;
-      background-repeat: no-repeat;
-      position: absolute;
-      top: -190px;
-      right: 0;
+  @media (min-width: @screen-md-min) {
+    .container {
+      position: relative;
+      &:before {
+        display: block;
+        content: "";
+        width: 320px;
+        height: 300px;
+        background-image: url(images/get-involved/jakarta-ee-logo.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: -190px;
+        right: 0;
+      }
     }
   }
+  
 }
 
 .get-involved-blocks, .get-involved-why {
