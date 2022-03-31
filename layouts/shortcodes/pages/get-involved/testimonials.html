@@ -21,10 +21,10 @@
     
         <h2 class="big-text-secondary text-center margin-bottom-40">{{ i18n "home-testimonials" }}</h2>
         
-            <ul class="solstice-slider owl-carousel owl-theme list-inline" data-slider-lg-count="1" data-slider-md-count="1" data-slider-sm-count="1">
+            <div class="solstice-slider owl-carousel owl-theme list-inline" data-slider-lg-count="1" data-slider-md-count="1" data-slider-sm-count="1">
                 {{ range $testimonials }}
                     {{ if eq .category "get-involved"}}
-                        <li class="container">
+                        <div class="container">
                             <div class="row">
                                 <div class="col-sm-16 col-sm-offset-4">
                                 <div class="row">
@@ -38,10 +38,10 @@
                                 </div>
                             </div>
                             </div>
-                        </li>
+                        </div>
                     {{ end }}
                 {{ end }}
-            </ul>
+                    </div>
         
     
 </div>
