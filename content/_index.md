@@ -14,7 +14,12 @@ container: "container-fluid"
 
 {{< home/call-to-actions >}}
 
-{{< home/featured-story >}}
+{{< home/featured-story
+    id="featured-story-container"
+    publishTarget="jakarta_ee"
+    templateId="featured-story-custom"
+    count="1"
+    templatePath="/js/templates/featured-story-custom.mustache" >}}
 
 {{< home/members >}}
 
