@@ -255,23 +255,56 @@
 }
 
 .jakartaee-9-white-paper-bg {
-
   //* background *//
-  background-image: url("images/release/release-9-download-mobile-bg.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  overflow-x: hidden;
-  overflow-y: visible;
+  position: relative;
+  overflow: hidden;
 
-  @media (min-width: @screen-lg-min) { // 1200px
-    background-position: top;
-  }
-
-  @media (min-width: @screen-sm-min) {  // 768px
-    background-image: url("images/release/jakarta9-image.png");
-    background-position: left;
+  @media (min-width: @screen-sm-min) {
+    // 768px
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding-top: 200px;
     padding-bottom: 200px;
+  }
+
+  .jakartaee-9-white-paper-bg-front-layer {
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: -10;
+    background-image: url('images/release/release-9-download-mobile-bg.jpg');
+    @media (min-width: @screen-sm-min) {
+      // 768px
+      background-image: url('images/release/jakarta9-image.png');
+    }
+    @media (min-width: 1700px) {
+      background-size: contain;
+      background-position: center;
+    }
+  }
+  .jakartaee-9-white-paper-bg-back-layer-ctn {
+    position: absolute;
+    top: 131px;
+    bottom: 142px;
+    overflow: hidden;
+    z-index: -100;
+    display: none;
+    @media (min-width: 1700px) {
+      // 1200px
+      display: block;
+    }
+    .jakartaee-9-white-paper-bg-back-layer {
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-image: url('images/release/release-9-download-mobile-bg.jpg');
+      filter: blur(10px) opacity(0.6);
+      width: 110vw;
+      height: 110%;
+    }
   }
   //* background *//
 
@@ -287,15 +320,21 @@
 
 .jakartaee-9-white-paper-download {
   background-color: rgba(255, 165, 0, 0.8);
-
-  padding-top:100px;
+  padding-top: 100px;
   padding-bottom: 100px;
-  text-align: center;
-  
-  @media (min-width: @screen-sm-min) {  // 768px
+  @media (min-width: @screen-sm-min) {
+    // 768px
     background: none;
     margin-top: 100px;
     margin-bottom: 100px;
+  }
+
+  .text-center {
+    width: 100%;
+    min-width: 400px;
+    @media (min-width: @screen-sm-min) {
+      width: 400px
+    }
   }
 }
 
