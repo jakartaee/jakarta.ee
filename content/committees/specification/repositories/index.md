@@ -11,7 +11,7 @@ aliases:
 
 - [Introduction]({{< ref "#intro" >}})
 - [GitHub Organizations]({{< ref "#gh-org" >}})
-- [Naming]({{< ref "#naming" >}})
+- [Repository Naming]({{< ref "#naming" >}})
 
 ## Introduction {#intro}
 
@@ -34,7 +34,20 @@ Repositories in the `eclipse-ee4j` organization are associated with EE4J project
 Examples of this are tools, examples, demos, tutorials, and implementations of Jakarta EE specifications.
 **Note** that there is absolutely no requirement that an implementation must be created by an EE4J project.
 
-## Naming {#naming}
+## Repository Naming {#naming}
+
+These naming guidelines only apply to repositories in the [jakartaee](https://github.com/jakartaee/) GitHub organization.
+
+A specification project will typically have two repositories. One for the specification, which contains the specification document as well as the API artifact(s). And one for the Test Compatibility Kit (TCK).
+
+The following naming standard SHOULD be used for these two repositories:
+
+- Specification: {SPEC-SHORT-NAME}-api \
+Examples: *mail-api*, *mvc-api*, *batch-api*
+
+- TCK: {SPEC-SHORT-NAME}-tck \
+Examples: *mail-tck*, *mvc-tcK*, *batch-tck*
+
 
 
 
