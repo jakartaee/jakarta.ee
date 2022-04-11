@@ -6,7 +6,6 @@ date: 2018-04-05T16:09:45-04:00
 hide_page_title: true
 header_wrapper_class: "announcements-news-list header-default-bg-img"
 layout: "list"
-hide_sidebar: true
 ---
 
 {{< newsroom/news
@@ -17,4 +16,5 @@ hide_sidebar: true
     paginate="true"
     class="news-list"
     templateId="custom-announcement-template"
-    templatePath="/js/templates/news-page.mustache" >}}
+    templatePath="/js/templates/news-page.mustache"
+    filterId="news-filter" >}}
