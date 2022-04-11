@@ -18,4 +18,5 @@ hide_sidebar: true
     paginate="true"
     class="news-list"
     templateId="custom-announcement-template"
-    templatePath="/js/templates/news-page.mustache" >}}
+    templatePath="/js/templates/news-page.mustache"
+    filterId="news-filter" >}}
