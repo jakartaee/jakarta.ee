@@ -16,6 +16,9 @@
                     {{ title }}
                 </a>
             </h4>
+            {{#image}}
+                <img class="author-image" src="{{ image }}?size=90" title="{{ title }}">
+            {{/image}}
             <p class="content-text">{{body}}</p>
             <p class="news-authors">
                 <span class="authors-images">
