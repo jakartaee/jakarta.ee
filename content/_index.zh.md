@@ -15,9 +15,9 @@ show_featured_footer: false
 container: "container-fluid"
 ---
 
-{{< home/call-to-actions >}}
-
 {{< home/featured-story >}}
+
+{{< home/call-to-actions >}}
 
 {{< home/members >}}
 
