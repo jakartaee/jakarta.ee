@@ -12,9 +12,14 @@ show_featured_footer: false
 container: "container-fluid"
 ---
 
-{{< home/call-to-actions >}}
+{{< home/featured-story
+    id="featured-story-container"
+    publishTarget="jakarta_ee"
+    templateId="featured-story-custom"
+    count="5"
+    templatePath="/js/templates/featured-story-custom.mustache" >}}
 
-{{< home/featured-story >}}
+{{< home/call-to-actions >}}
 
 {{< home/members >}}
 
