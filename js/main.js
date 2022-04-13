@@ -44,9 +44,12 @@ document.addEventListener("DOMContentLoaded", function(event) {
         }
       });
 
+      var owlSolsticeSlider = $('.solstice-slider');
+      owlSolsticeSlider.owlCarousel();
+
       const solsticeSliderHome = () => {
-        var owl = $('.solstice-slider');
-        owl.owlCarousel({
+        var owlSolsticeFeaturedStorySlider = $('.solstice-featured-story-slider');
+        owlSolsticeFeaturedStorySlider.owlCarousel({
             items:1,
             autoplay:true,
             autoplayTimeout:6000,
@@ -58,13 +61,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
       
       $(window).on("load", function() {
           solsticeSliderHome();
-      });
-      
-      $("body").on("shown.ef.featured_story", function(e) {
-          var owl = $('.solstice-slider');
-          owl.trigger('destroy.owl.carousel');
-          solsticeSliderHome();
-          owl.trigger('refresh.owl.carousel');
       });
 
       $(document).ready(function() {
