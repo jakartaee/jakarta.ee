@@ -36,13 +36,11 @@ Examples of this are tools, examples, demos, tutorials, and implementations of J
 Repositories in the `eclipse-ee4j` organization may not be owned by Specification Projects. 
 **Note** that there is absolutely no requirement that an implementation must be created by an EE4J project.
 
-## Repository Naming {#naming}
+## Specification Project Repository Naming {#naming}
 
-These naming guidelines only apply to repositories in the [jakartaee](https://github.com/jakartaee/) GitHub organization.
+All repositories in the [jakartaee](https://github.com/jakartaee/) GitHub organization SHOULD begin with the short name of the related specification.  The goal of this is keep the `jakartaee` organization clean with a clear mapping to the specifications as they are published on https://jakarta.ee/specifications/
 
-A specification project will typically have two repositories. One for the specification, which contains the specification document as well as the API artifact(s). And one for the Test Compatibility Kit (TCK).
-
-The following naming standard SHOULD be used for these two repositories:
+For example, a specification project will typically have two repositories. One for the specification, which contains the specification document as well as the API artifact(s). And one for the Test Compatibility Kit (TCK).  The following naming standard would be used for these two repositories:
 
 - Specification: {SPEC-SHORT-NAME}-api \
 Examples: *mail-api*, *mvc-api*, *batch-api*
@@ -50,6 +48,7 @@ Examples: *mail-api*, *mvc-api*, *batch-api*
 - TCK: {SPEC-SHORT-NAME}-tck \
 Examples: *mail-tck*, *mvc-tcK*, *batch-tck*
 
+As noted above, separate repositories for API and TCK is the typical layout.  Specification projects are free to organize their specification, API and TCK how they see fit as long as all repositories start with the short name of the related specification. 
 
 
 
