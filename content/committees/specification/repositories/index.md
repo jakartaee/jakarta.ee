@@ -20,9 +20,10 @@ aliases:
 The following GitHub Organizations are used by the Jakarta EE Working Group:
 
 - [Jakarta Specifications](https://github.com/jakartaee/) \
-Repositories in the `jakarta` organization are associated with a Jakarta Specification project.
+Repositories in the `jakartaee` organization are associated with a Jakarta Specification project.
 Specifically, repositories for Specificaton Documents, APIs, and TCKs.
-No other repositories are allowed in this organization.
+Only repositories owned by Specification Projects are allowed in this organization.  All repositories 
+owned by Specification Projects must be in the `jakartaee` organization.
 
 - [Jakarta Working Group](https://github.com/jakartaee-wg/) \
 Repositories in the `jakartaee-wg` organization are for use by the Jakarta EE Working Group.
@@ -31,7 +32,8 @@ Examples of repositories in this organization are websites, collateral materials
 
 - [EE4J Projects](https://github.com/eclipse-ee4j/) \
 Repositories in the `eclipse-ee4j` organization are associated with EE4J projects related to Jakarta EE.
-Examples of this are tools, examples, demos, tutorials, and implementations of Jakarta EE specifications.
+Examples of this are tools, examples, demos, tutorials, and implementations of Jakarta EE specifications.  
+Repositories in the `eclipse-ee4j` organization may not be owned by Specification Projects. 
 **Note** that there is absolutely no requirement that an implementation must be created by an EE4J project.
 
 ## Repository Naming {#naming}
