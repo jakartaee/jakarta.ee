@@ -48,7 +48,10 @@ Examples: *mail-api*, *mvc-api*, *batch-api*
 - TCK: {SPEC-SHORT-NAME}-tck \
 Examples: *mail-tck*, *mvc-tcK*, *batch-tck*
 
-As noted above, separate repositories for API and TCK is the typical layout.  Specification projects are free to organize their specification, API and TCK how they see fit as long as all repositories start with the short name of the related specification. 
+As noted above, separate repositories for API and TCK is the typical layout.  Specification projects are free to organize their specification, API and TCK how they see fit as long as all repositories start with the short name of the related specification.
 
+## Specification Project Repository Ownership {#ownership}
 
+All repositories owned by Specification Projects must be in the `jakartaee` organization and meet very high implementation-neutrality standards.
 
+Repositories that contain or are tied to implementations should not be owned or developed by Specification Projects.  This includes not just implementation code, but demos, examples or tutorials that create dependencies on implementations.  Repositories that allow dependencies from any implementation, such as examples with profiles for specific implementations, are not exempt.   All such repositories should be owned by separate projects dedicated to managing these assets.
