@@ -26,7 +26,7 @@
     "optimize_news_images": "bash ./optimize_images.sh content/news"
   },
   "dependencies": {
-    "eclipsefdn-hugo-solstice-theme": "0.0.141",
+    "eclipsefdn-hugo-solstice-theme": "https://gitlab.eclipse.org/zhoufang/hugo-solstice-theme.git#zhoufang/master/solstice279",
     "lodash-es": "4.17.15",
     "list.js": "^1.2.0"
   },
