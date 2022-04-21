@@ -190,11 +190,6 @@ footer#solstice-footer {
   display: flex;
   align-items: center;
 }
-.featured-section-members .featured-members-item {
-  display: flex;
-  align-items: center;
-  height: 115px;
-}
 
 #main-sidebar {
   margin-top: 20px;
@@ -295,12 +290,15 @@ footer#solstice-footer {
   }
 }
 
-.jakarta-members {
-  ul.list-inline .img-responsive {
-    max-width: 110px;
-    max-height: 90px;
-  }
-  ul.list-inline:first-of-type img.img-responsive {
+.jakarta-members ul.list-inline {
+  &:first-of-type img.img-responsive {
     max-width: 140px;
+  }
+  a {
+    max-width: none;
+    .img-responsive {
+      max-width: 110px;
+      max-height: 90px;
+    }
   }
 }
