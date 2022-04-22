@@ -2451,7 +2451,7 @@ dotignore@~0.1.2:
 
 "eclipsefdn-solstice-assets@https://gitlab.eclipse.org/zhoufang/solstice-assets.git#zhoufang/master/279":
   version "0.0.191"
-  resolved "https://gitlab.eclipse.org/zhoufang/solstice-assets.git#70c01d353d0c35d2983244ae596d34044a734996"
+  resolved "https://gitlab.eclipse.org/zhoufang/solstice-assets.git#80849015bdb3bd1654f5cb121af1f7b3024b71dd"
   dependencies:
     "@babel/core" "^7.0.0-0"
     "@babel/plugin-proposal-class-properties" "^7.12.1"
