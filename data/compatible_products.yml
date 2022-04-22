@@ -13,7 +13,7 @@
 sets:
   - jakartaee_version: 10
     items:
-    - title: Jakarta EE 10 Platform
+    - title: Jakarta EE 10 Core Profile
       release: "/release/10"
       items:
   - jakartaee_version: 9.1
