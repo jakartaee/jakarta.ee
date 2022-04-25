@@ -161,10 +161,10 @@ releases:
       description: XML Schema for the Application client deployment descriptor
       status: Draft
 
-    # - schema: connector_2_0.xsd
-    #   namespace: jakartaee
-    #   description: XML Schema for the Connectors deployment descriptor
-    #   status: Final
+    - schema: connector_2_1.xsd
+      namespace: jakartaee
+      description: XML Schema for the Connectors deployment descriptor
+      status: Draft
 
     # - schema: ejb-jar_4_0.xsd
     #   namespace: jakartaee
