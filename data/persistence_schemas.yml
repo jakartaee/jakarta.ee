@@ -22,7 +22,7 @@ releases:
     - schema: orm_3_1.xsd
       namespace: persistence/orm
       description: XML Schema for for the persistence object/relational mapping file
-      status: Draft
+      status: Final
 
 # Template: Example for creating new schema entry
 #   - schema: a_simple_example.xsd
