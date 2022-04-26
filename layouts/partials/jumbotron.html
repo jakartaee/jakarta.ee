@@ -18,7 +18,7 @@
       <div class="{{- .Params.jumbotron_class | default .Site.Params.jumbotron_class | default "col-md-20 col-md-offset-2 col-sm-18 col-sm-offset-3"}}">
         <h1>{{ .Page.Params.headline | safeHTML }}</h1>
          {{ if isset .Page.Params "subtitle" }}
-        <h2>{{ .Page.Params.subtitle  | title }}</h2>
+        <h2>{{ .Page.Params.subtitle  | safeHTML }}</h2>
          {{end}} 
          
          {{ if isset .Page.Params "tagline" }}
