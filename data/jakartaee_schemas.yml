@@ -146,10 +146,10 @@ releases:
     #   description: XML Schema for the Jakarta Batch Job Specification Language (JSL)
     #   status: Final
 
-    # - schema: jsp_3_0.xsd
-    #   namespace: jakartaee
-    #   description: XML Schema for the JavaServer Pages deployment descriptor
-    #   status: Final
+    - schema: jsp_3_1.xsd
+      namespace: jakartaee
+      description: XML Schema for the JavaServer Pages deployment descriptor
+      status: Draft
 
     - schema: application_10.xsd
       namespace: jakartaee
@@ -186,20 +186,20 @@ releases:
       description: XML Schema for the application or module declared permissions
       status: Draft
 
-    # - schema: web-app_5_0.xsd
-    #   namespace: jakartaee
-    #   description: XML Schema for the Servlet deployment descriptor (web.xml)
-    #   status: Final
+    - schema: web-app_6_0.xsd
+      namespace: jakartaee
+      description: XML Schema for the Servlet deployment descriptor (web.xml)
+      status: Draft
 
-    # - schema: web-fragment_5_0.xsd
-    #   namespace: jakartaee
-    #   description: XML Schema for the Servlet deployment descriptor (web-fragment.xml)
-    #   status: Final
+    - schema: web-fragment_6_0.xsd
+      namespace: jakartaee
+      description: XML Schema for the Servlet deployment descriptor (web-fragment.xml)
+      status: Draft
 
-    # - schema: web-common_5_0.xsd
-    #   namespace: jakartaee
-    #   description: XML Schema common for the various Servlet deployment descriptors
-    #   status: Final
+    - schema: web-common_6_0.xsd
+      namespace: jakartaee
+      description: XML Schema common for the various Servlet deployment descriptors
+      status: Draft
       
     # - schema: web-facesconfig_3_0.xsd
     #   namespace: jakartaee
