@@ -76,6 +76,24 @@ document.addEventListener("DOMContentLoaded", function(event) {
             return .5 - Math.random()
           }).slice(0,3).slideDown("slow")
         );
+
+        $('.features-and-benefits-btn').on('click', function(){
+          const parent = $(this).parent().parent();
+          $(parent).find('.features-and-benefits-text').slideToggle(300, function(){
+            if ($(this).is(":hidden")) {
+              $.fn.matchHeight._update();
+            }
+          });
+          if ($(parent).is('[style]')) {
+            $(parent).removeAttr('style');
+          }
+          if ($(this).text().toLowerCase() === "learn more") {
+            $(this).text('Close');
+          }
+          else {
+            $(this).text('Learn more');
+          }
+        });
       });
 
 

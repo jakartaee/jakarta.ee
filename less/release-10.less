@@ -3,17 +3,32 @@
   position: relative;
 }
 
+.header-release-10-logo {
+  width: 350px;
+  @media (min-width: @screen-sm-min) {
+    width: 540px;
+  }
+}
+
 .header-release-10 {
-  min-height: 600px;
+  padding-top: 60px;
+  background-color: @brand-primary;
   background-image:url("images/release/jakarta10-header.jpg");
   background-repeat:no-repeat;
   background-size:cover;
 
   &.header-secondary-bg-img {
     .featured-jumbotron {
-        min-height:300px;
-        padding-top: 80px;
+      min-height:300px;
+      padding-top: 80px;
     }
+  }
+
+  .header-release-10-container {
+    position: relative;
+    height: 56vh;
+    max-height: 680px;
+    min-height: 560px;
   }
 
   .btn-primary {
@@ -43,16 +58,7 @@
       }
     }
   }
-}
 
-.header-release-10-logo {
-  width: 350px;
-  @media (min-width: @screen-sm-min) {  // 768px
-    width: 470px;
-  }
-}
-
-.header-release-10 {
   .row-toolbar-col {
     a {
       color: @brand-secondary;
@@ -79,19 +85,49 @@
     }
   } 
 
-  background-color: @white;
+  .jakartaee-10-jumbotron-title-prefix {
+    text-transform: uppercase;
+    font-size: 18px;
+    color: @orange;
+    margin-left: 5px;
+    font-weight: 700;
+    margin-bottom: -5px;
+  }
+  .jakartaee-10-jumbotron-subtitle {
+    text-transform: uppercase;
+  }
+
+  .jakartaee-10-jumbotron-footer {
+    @media (min-width: @screen-sm-min) {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      text-align: right;
+    }
+    
+    
+    font-weight: bold;
+    .jakartaee-10-jumbotron-footer-list {
+      color: @orange;
+      font-size: 22px;
+      text-shadow: 0px 0px 8px rgba(0,0,0,0.6);
+      @media (min-width: @screen-sm-min) {
+        font-size: 36px;
+      }
+    }
+    .jakartaee-10-jumbotron-footer-tagline {
+      font-size: 22px;
+      font-weight: bold;
+      text-shadow: 0px 0px 8px rgba(0,0,0,0.6);
+      @media (min-width: @screen-sm-min) {
+        font-size: 42px;
+      }
+    }
+  }
+  
 
   h1 {
     margin-bottom: 0;
-    &:before {
-      content: "New Release";
-      text-transform: uppercase;
-      display: block;
-      font-size: 18px;
-      color: @orange;
-      margin-left: 5px;
-      font-weight: 700;
-    }
     &:after {
       border-bottom:none;
     }
@@ -104,39 +140,13 @@
     margin-top: 5px;
   }
 
-  p, p span {
-    font-weight: 400;
-    text-transform: uppercase;
-    font-stretch: condensed;
-  }
-
-  .jumbotron-right-content {
-    font-family: 'Exo', sans-serif;
-    font-size: 130px;
-    @media (min-width: @screen-sm-min) {
-      font-size: 250px;
-    }
-    @media (min-width: @screen-md-min) {
-      font-size: 250px;
-    }
-    @media (min-width: @screen-lg-min) {
-      font-size: 250px;
-    }
-    line-height: 1;
-    font-weight: 400;
-  }
-  ul.buttons {
-    li {
-      width:100%;
-      @media (min-width: @screen-md-min) {
-        width:49%;
-      }
-    }
-  }
   .btn {
-    width:100%;
     @media (max-width: @screen-sm-max) {
       margin-bottom:15px;
     }
   }
+}
+
+.features-and-benefits-text {
+  display: none;
 }
