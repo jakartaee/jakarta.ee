@@ -11,17 +11,36 @@
 }
 
 .header-release-10 {
-  padding-top: 60px;
   background-color: @brand-primary;
-  background-image:url("images/release/jakarta10-header.jpg");
-  background-repeat:no-repeat;
-  background-size:cover;
 
   &.header-secondary-bg-img {
     .featured-jumbotron {
       min-height:300px;
       padding-top: 80px;
     }
+  }
+
+  .jakartaee-10-cloud-img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    img {
+      width: 550px;
+      display: none;
+      @media (min-width: @screen-sm-min) {
+        display: block;
+        width: 370px;
+        margin-top: 195px;
+      }
+      @media (min-width: @screen-lg-min) {
+        margin-top: 0;
+        width: 550px;
+      }
+    }
+  }
+
+  .featured-jumbotron {
+    padding-top: 60px;
   }
 
   .header-release-10-container {

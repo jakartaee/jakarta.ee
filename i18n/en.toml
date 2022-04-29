@@ -451,7 +451,7 @@ other = "Sign up now"
  other = "features and benefits"
 
 [jakarta-ee-version-10-features-subtitle]
- other = "Jakarta EE 10 is packed with new features for building modernized, simplified, and lightweight cloud native Java applications. This innovative community-driven release is designed for organizations looking to start developing new, or advancing existing enterprise Java applications."
+ other = "Jakarta EE 10 is packed with new features for building modernized, simplified, and lightweight cloud native Java applications. This new innovative community-driven release is designed for organizations looking to start developing new enterprise Java applications or advancing their existing ones."
 
 [jakarta-ee-version-10-features-block1-title]
  other = "Modernized"
@@ -466,8 +466,7 @@ other = "Sign up now"
  other = "Simplified"
 
 [jakarta-ee-version-10-features-block2-summary]
- other = "WithJakarta EE 10, application development is made simpler by supporting the broader use of additional annotations"
-
+ other = "With Jakarta EE 10, application development is made simpler by supporting the broader use of additional annotations"
 
 [jakarta-ee-version-10-features-block2-text]
  other = "This makes it easier to build modularized applications and offers improved integration across component APIs. Ultimately, Jakarta EE 10 helps developers more easily implement applications with modern security requirements, remove deprecated APIs, and maintain high levels of compatibility with prior Jakarta EE releases."

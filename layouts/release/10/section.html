@@ -13,24 +13,27 @@
    
     {{ if isset .Page.Params "headline" }}
     <div class="jakartaee-9-jumbotron-wrapper">
+      <video autoplay muted loop id="jakartaee-9-video-background">
+        <source src="/release/9/videos/header-video.mp4" type="video/mp4">
+      </video>
       <div class="jumbotron featured-jumbotron featured-jumbotron-download vertical-align flex-column margin-bottom-0">
         <div class="container header-release-10-container">
+          <div class="jakartaee-10-cloud-img">
+            <img src="/release/10/images/cloud.png" alt="">
+          </div>
           <div class="row jakartaee-9-flex-grow-container">
             <div class="col-md-24">
               <p class="jakartaee-10-jumbotron-title-prefix">New release</p>
               <h1><img class='header-release-10-logo' src='images/jakarta10-logo.svg' alt='Jakarta EE 10'></h1>
-            </div>
-            <div class="col-md-24">
               <p class="jakartaee-10-jumbotron-subtitle"><strong><span class='orange'>An Open, community-driven innovation</span><br> driving the future of cloud native Java technologies</strong></p>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col-sm-14">
-              <ul class="list-inline buttons">
-                <li><a class="btn btn-primary uppercase" href="/compatibility/">{{ i18n "jakarta-ee-version-10-section-download-compatible-products" | safeHTML }}</a></li>
-                <li><a class="btn btn-primary uppercase" href="/specifications/">{{ i18n "jakarta-ee-version-10-section-specifications" }}</a></li>
-              </ul>
+              <div class="row">
+                <div class="col-sm-14">
+                  <ul class="list-inline buttons">
+                    <li><a class="btn btn-primary uppercase" href="/compatibility/">{{ i18n "jakarta-ee-version-10-section-download-compatible-products" | safeHTML }}</a></li>
+                    <li><a class="btn btn-primary uppercase" href="/specifications/">{{ i18n "jakarta-ee-version-10-section-specifications" }}</a></li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
 
