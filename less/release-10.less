@@ -102,7 +102,7 @@
         }
       }
     }
-  } 
+  }
 
   .jakartaee-10-jumbotron-title-prefix {
     text-transform: uppercase;
@@ -123,8 +123,7 @@
       right: 0;
       text-align: right;
     }
-    
-    
+
     font-weight: bold;
     .jakartaee-10-jumbotron-footer-list {
       color: @orange;
@@ -143,7 +142,6 @@
       }
     }
   }
-  
 
   h1 {
     margin-bottom: 0;
@@ -168,4 +166,25 @@
 
 .features-and-benefits-text {
   display: none;
+}
+
+.jakartaee-10-white-paper-bg {
+  position: relative;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  background-position: top;
+  margin-bottom: 60px;
+  background-image: url('images/release/release-10-download-mobile.jpg');
+  padding: 50px 0;
+  @media (min-width: @screen-sm-min) {
+    padding: 150px 0;
+  }
+  @media (min-width: @screen-lg-min) {
+    background-image: url('images/release/release-10-download.jpg');
+    padding: 300px 0;
+    .btn {
+      margin-left: 60px;
+    }
+  }
 }
