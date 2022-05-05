@@ -10,7 +10,7 @@
    {{ partial "navbar.html" . }}
    <!---Navbar end --->
   <header class="header-wrapper{{- with .Params.header_wrapper_class | default .Site.Params.header_wrapper_class }} {{ . }}{{end}}" id="header-wrapper">
-   
+
     {{ if isset .Page.Params "headline" }}
     <div class="jakartaee-9-jumbotron-wrapper">
       <video autoplay muted loop id="jakartaee-9-video-background">
@@ -25,7 +25,7 @@
             <div class="col-md-24">
               <p class="jakartaee-10-jumbotron-title-prefix">New release</p>
               <h1><img class='header-release-10-logo' src='images/jakarta10-logo.svg' alt='Jakarta EE 10'></h1>
-              <p class="jakartaee-10-jumbotron-subtitle"><strong><span class='orange'>An Open, community-driven innovation</span><br> driving the future of cloud native Java technologies</strong></p>
+              <p class="jakartaee-10-jumbotron-subtitle"><strong><span class='orange'>Open, community-driven innovation</span><br> driving the future of cloud native Java technologies</strong></p>
               <div class="row">
                 <div class="col-sm-14">
                   <ul class="list-inline buttons">
@@ -48,9 +48,9 @@
                 </ul>
               </div>
             </div>
-            
+
           </div>
-          
+
         </div>
       </div>
     </div>

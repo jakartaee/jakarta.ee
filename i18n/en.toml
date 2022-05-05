@@ -424,7 +424,7 @@ other = "Sign up now"
  other = "An open and stable platform for developers for testing migration to the new namespace"
 
 [jakarta-ee-version-9-features-participation-title]
- other = "<h2 class=\"text-blue text-center fw-600 uppercase\"><strong>community-powered</strong><br><span class=\"text-secondary fw-600 margin-top-0 font-exo uppercase\"><em>innovation</em></span></h2>"
+ other = "<h2 class=\"text-blue text-center fw-600 uppercase\"><strong>community-powered</strong></h2><h2 class=\"text-secondary fw-600 margin-top-0 font-exo uppercase\"><em>innovation</em></h2>"
 
 [jakarta-ee-version-9-participation-projects]
  other = "projects"
@@ -436,7 +436,7 @@ other = "Sign up now"
  other = "git repositories"
 
 [jakarta-ee-version-9-powered-by-participation-title]
- other = "<h2 class=\"text-blue text-center fw-600 uppercase\"><strong>Powered by</strong><br><span class=\"text-secondary text-center fw-600 margin-top-0 font-exo uppercase\"><em>Participation</em></span></h2>"
+ other = "<h2 class=\"text-blue text-center fw-600 uppercase\"><strong>Powered by</strong></h2><h2 class=\"text-secondary text-center fw-600 margin-top-0 font-exo uppercase\"><em>Participation</em></h2>"
 
 [jakarta-ee-version-9-white-paper-title]
  other = "New white paper"
@@ -460,13 +460,14 @@ other = "Sign up now"
  other = "The Jakarta EE 10 release provides new functionality in over 20 component specifications."
 
 [jakarta-ee-version-10-features-block1-text]
- other = "This release enables builders of  modern cloud native Java applications to develop and deploy Jakarta EE 10 applications on Java SE 17, the most current LTS release of Java SE, as well as Java SE 11. This allows developers to take full advantage of the modular system introduced in Java SE 9 and supported in Java SE 11."
+ other = "This release enables builders of modern cloud native Java applications to develop and deploy Jakarta EE 10 applications on Java SE 11 as well as Java SE 17, the most current LTS release of Java SE. This allows developers to take full advantage of new features including the modular system introduced in Java SE 9 and supported in Java SE 11"
 
 [jakarta-ee-version-10-features-block2-title]
  other = "Simplified"
 
 [jakarta-ee-version-10-features-block2-summary]
  other = "With Jakarta EE 10, application development is made simpler by supporting the broader use of additional annotations"
+
 
 [jakarta-ee-version-10-features-block2-text]
  other = "This makes it easier to build modularized applications and offers improved integration across component APIs. Ultimately, Jakarta EE 10 helps developers more easily implement applications with modern security requirements, remove deprecated APIs, and maintain high levels of compatibility with prior Jakarta EE releases."
@@ -476,6 +477,7 @@ other = "Sign up now"
 
 [jakarta-ee-version-10-features-block3-summary]
  other = "Jakarta EE 10 defines a new profile specification with Jakarta EE Core Profile 10. The “Core Profile” enables the development of lightweight and modernized Java applications."
+
 
 [jakarta-ee-version-10-features-block3-text]
  other = "The new Core Profile provides a subset of Jakarta EE specifications that target smaller runtimes suitable for microservices development with lightweight runtimes.This includes an innovative new CDI-Lite specification for building lightweight Jakarta EE applications."
@@ -534,14 +536,16 @@ other = "Sign up now"
 [jakarta-ee-version-9_1-features-migration-title]
  other = "easy <br> migration"
 
-[jakarta-ee-version-9_1-features-supporting-java-se-11]
- other = "now supporting java se 11"
-
 [jakarta-ee-version-9_1-features-migration-text]
  other = "An open and stable platform for developers for testing migration to the new namespace"
 
+[jakarta-ee-version-9_1-features-supporting-java-se-11]
+ other = "now supporting java se 11"
+
+
+
 [jakarta-ee-version-9_1-features-participation-title]
- other = "<h2 class=\"text-blue text-center fw-600 uppercase\"><strong>community-powered</strong><br><span class=\"text-secondary fw-600 margin-top-0 font-exo uppercase\"><em>innovation</em></span></h2>"
+ other = "<h2 class=\"text-blue text-center fw-600 uppercase\"><strong>community-powered</strong></h2><h2 class=\"text-secondary fw-600 margin-top-0 font-exo uppercase\"><em>innovation</em></h2>"
 
 [jakarta-ee-version-9_1-participation-projects]
  other = "projects"
@@ -556,7 +560,7 @@ other = "Sign up now"
  other = "git repositories"
 
 [jakarta-ee-version-9_1-powered-by-participation-title]
- other = "<h2 class=\"text-blue text-center fw-600 uppercase\"><strong>Powered by</strong><br><span class=\"text-secondary text-center fw-600 margin-top-0 font-exo uppercase\"><em>Participation</em></span></h2>"
+ other = "<h2 class=\"text-blue text-center fw-600 uppercase\"><strong>Powered by</strong></h2><h2 class=\"text-secondary text-center fw-600 margin-top-0 font-exo uppercase\"><em>Participation</em></h2>"
 
 [jakarta-ee-version-9_1-white-paper-title]
  other = "New white paper"
