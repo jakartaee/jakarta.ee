@@ -558,6 +558,9 @@ other = "注册"
 [jakarta-ee-version-9_1-white-paper-title]
  other = "新的白皮书"
 
+[jakarta-ee-version-10-white-paper-title]
+ other = "New Cloud Native Java eBook"
+
 [jakarta-ee-version-9_1-white-paper-download]
  other = "下载"
 

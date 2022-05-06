@@ -177,14 +177,20 @@
   margin-bottom: 60px;
   background-image: url('images/release/release-10-download-mobile.jpg');
   padding: 50px 0;
+  text-align: center;
   @media (min-width: @screen-sm-min) {
     padding: 150px 0;
   }
   @media (min-width: @screen-lg-min) {
     background-image: url('images/release/release-10-download.jpg');
     padding: 300px 0;
-    .btn {
-      margin-left: 60px;
+    text-align: left;
+  }
+  .btn {
+    padding:20px 40px;
+    text-transform: uppercase;
+    @media (min-width: @screen-lg-min) {
+      margin-left: 125px;
     }
   }
 }
