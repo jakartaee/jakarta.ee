@@ -11,6 +11,17 @@
 #        compatibility: 'https://eclipse-ee4j.github.io/glassfish/certifications/jakarta-full-profile/8.0/TCK-Results'
 
 sets:
+  - jakartaee_version: 10
+    items:
+    - title: Jakarta EE 10 Platform
+      release: "/release/10"
+      items:
+    - title: Jakarta EE 10 Web Profile
+      release: "/release/10"
+      items:
+    - title: Jakarta EE 10 Core Profile
+      release: "/release/10"
+      items:
   - jakartaee_version: 9.1
     items:
     - title: Jakarta EE 9.1 Platform
@@ -31,24 +42,27 @@ sets:
         image_width: 195
         download: 'https://glassfish.org/download'
         versions:
-        - version: 6.1 RC1
-          compatibility: 'https://glassfish.org/certifications/jakarta-platform/9.1/TCK-Results-6.1-RC1'
-          download_url: 'https://download.eclipse.org/ee4j/glassfish/glassfish-6.1.0-RC1.zip'
+        - version: 6.1
+          compatibility: 'https://glassfish.org/certifications/jakarta-platform/9.1/TCK-Results-6.1'
+          download_url: 'https://download.eclipse.org/ee4j/glassfish/glassfish-6.1.0.zip'
         - version: 6.0
           compatibility: 'https://glassfish.org/certifications/jakarta-platform/9.1/TCK-Results-6.0'
           download_url: 'https://download.eclipse.org/ee4j/glassfish/glassfish-6.0.0.zip'
       - name: Open Liberty
         vendor: IBM Corporation
         image: '/images/compatible_products/ibm_open_liberty.svg'
-        image_width: 195
-        download: 'https://openliberty.io/downloads/#runtime_betas'
+        image_width: 160
+        download: 'https://openliberty.io/start/#runtime_releases'
         versions:
-        - version: 21.0.0.3-beta, Java 11
-          compatibility: 'https://openliberty.io/certifications/jakartaee/platform/9.1/21.0.0.3-beta-Java11-TCKResults.html'
-          download_url: 'https://public.dhe.ibm.com/ibmdl/export/pub/software/openliberty/runtime/tck/2021-02-09_1100/openliberty-jakartaee9-21.0.0.3-beta.zip'
-        - version: 21.0.0.3-beta, Java 8
-          compatibility: 'https://openliberty.io/certifications/jakartaee/platform/9.1/21.0.0.3-beta-Java8-TCKResults.html'
-          download_url: 'https://public.dhe.ibm.com/ibmdl/export/pub/software/openliberty/runtime/tck/2021-02-09_1100/openliberty-jakartaee9-21.0.0.3-beta.zip'
+        - version: 21.0.0.12, Java 17
+          compatibility: 'https://openliberty.io/certifications/jakartaee/9.1/platform/21.0.0.12-Java17-TCKResults.html'
+          download_url: 'https://public.dhe.ibm.com/ibmdl/export/pub/software/openliberty/runtime/release/2021-11-17_1256/openliberty-jakartaee9-21.0.0.12.zip'
+        - version: 21.0.0.12, Java 11
+          compatibility: 'https://openliberty.io/certifications/jakartaee/9.1/platform/21.0.0.12-Java11-TCKResults.html'
+          download_url: 'https://public.dhe.ibm.com/ibmdl/export/pub/software/openliberty/runtime/release/2021-11-17_1256/openliberty-jakartaee9-21.0.0.12.zip'
+        - version: 21.0.0.12, Java 8
+          compatibility: 'https://openliberty.io/certifications/jakartaee/9.1/platform/21.0.0.12-Java8-TCKResults.html'
+          download_url: 'https://public.dhe.ibm.com/ibmdl/export/pub/software/openliberty/runtime/release/2021-11-17_1256/openliberty-jakartaee9-21.0.0.12.zip'
       - name: WildFly
         vendor: Red Hat
         image: '/images/compatible_products/red-hat-wildfly-logo.png'
@@ -118,24 +132,27 @@ sets:
         image_width: 195
         download: 'https://glassfish.org/download'
         versions:
-        - version: 6.1 RC1
-          compatibility: 'https://glassfish.org/certifications/jakarta-web-profile/9.1/TCK-Results-6.1-RC1'
-          download_url: 'https://download.eclipse.org/ee4j/glassfish/glassfish-6.0.0.zip'
+        - version: 6.1
+          compatibility: 'https://glassfish.org/certifications/jakarta-web-profile/9.1/TCK-Results-6.1'
+          download_url: 'https://download.eclipse.org/ee4j/glassfish/glassfish-6.1.0.zip'
         - version: 6.0
           compatibility: 'https://glassfish.org/certifications/jakarta-web-profile/9.1/TCK-Results-6.0'
           download_url: 'https://download.eclipse.org/ee4j/glassfish/glassfish-6.0.0.zip'
       - name: Open Liberty
         vendor: IBM Corporation
         image: '/images/compatible_products/ibm_open_liberty.svg'
-        image_width: 195
-        download: 'https://openliberty.io/downloads/#runtime_betas'
+        image_width: 160
+        download: 'https://openliberty.io/start/#runtime_releases'
         versions:
-        - version: 21.0.0.3-beta, Java 11
-          compatibility: 'https://openliberty.io/certifications/jakartaee/webprofile/9.1/21.0.0.3-beta-Java11-TCKResults.html'
-          download_url: 'https://public.dhe.ibm.com/ibmdl/export/pub/software/openliberty/runtime/tck/2021-02-09_1100/openliberty-jakartaee9-21.0.0.3-beta.zip'
-        - version: 21.0.0.3-beta, Java 8
-          compatibility: 'https://openliberty.io/certifications/jakartaee/webprofile/9.1/21.0.0.3-beta-Java8-TCKResults.html'
-          download_url: 'https://public.dhe.ibm.com/ibmdl/export/pub/software/openliberty/runtime/tck/2021-02-09_1100/openliberty-jakartaee9-21.0.0.3-beta.zip'
+        - version: 21.0.0.12, Java 17
+          compatibility: 'https://openliberty.io/certifications/jakartaee/9.1/webprofile/21.0.0.12-Java17-TCKResults.html'
+          download_url: 'https://public.dhe.ibm.com/ibmdl/export/pub/software/openliberty/runtime/release/2021-11-17_1256/openliberty-jakartaee9-21.0.0.12.zip'
+        - version: 21.0.0.12, Java 11
+          compatibility: 'https://openliberty.io/certifications/jakartaee/9.1/webprofile/21.0.0.12-Java11-TCKResults.html'
+          download_url: 'https://public.dhe.ibm.com/ibmdl/export/pub/software/openliberty/runtime/release/2021-11-17_1256/openliberty-jakartaee9-21.0.0.12.zip'
+        - version: 21.0.0.12, Java 8
+          compatibility: 'https://openliberty.io/certifications/jakartaee/9.1/webprofile/21.0.0.12-Java8-TCKResults.html'
+          download_url: 'https://public.dhe.ibm.com/ibmdl/export/pub/software/openliberty/runtime/release/2021-11-17_1256/openliberty-jakartaee9-21.0.0.12.zip'
       - name: WildFly
         vendor: Red Hat
         image: '/images/compatible_products/red-hat-wildfly-logo.png'
@@ -187,7 +204,7 @@ sets:
       - name: Open Liberty
         vendor: IBM Corporation
         image: '/images/compatible_products/ibm_open_liberty.svg'
-        image_width: 195
+        image_width: 160
         download: 'https://openliberty.io/downloads/#runtime_betas'
         versions:
         - version: 21.0.0.3-beta
@@ -244,7 +261,7 @@ sets:
       - name: Open Liberty
         vendor: IBM Corporation
         image: '/images/compatible_products/ibm_open_liberty.svg'
-        image_width: 195
+        image_width: 160
         download: 'https://openliberty.io/downloads/#runtime_betas'
         versions:
         - version: 21.0.0.2-beta
@@ -288,7 +305,7 @@ sets:
         vendor: Eclipse Foundation
         image: '/images/compatible_products/glassfish_logo.svg'
         image_width: 195
-        download: 'https://www.eclipse.org/downloads/download.php?file=/glassfish/glassfish-5.1.0.zip'
+        download: 'https://glassfish.org/download'
         versions:
         - version: 5.1.0
           compatibility: 'https://eclipse-ee4j.github.io/glassfish/certifications/jakarta-full-profile/8.0/TCK-Results'
@@ -297,7 +314,7 @@ sets:
       - name: Open Liberty
         vendor: IBM Corporation
         image: '/images/compatible_products/ibm_open_liberty.svg'
-        image_width: 195
+        image_width: 160
         download: 'https://openliberty.io/downloads/'
         versions:
         - version: 19.0.0.6
@@ -433,13 +450,23 @@ sets:
           compatibility: 'http://www.tongtech.com/tw7.jakarta-full-platform-8.html'
           download_url: 'http://www.tongtech.com/Services/Services-104.html'
 
+      - name: xigema Application Server
+        vendor: Beijing Vsettan Data Technology Co. Ltd.
+        image: '/images/compatible_products/xigema-as-logo.svg'
+        image_width: 195
+        download: 'http://www.vsettan.com.cn/7752.html'
+        versions:
+        - version: 9.1
+          compatibility: 'http://www.vsettan.com.cn/10073.html'
+          download_url: 'http://www.vsettan.com.cn/7752.html'
+
     - title: Jakarta EE 8 Web Profile
       items:
       - name: Eclipse GlassFish
         vendor: Eclipse Foundation
         image: '/images/compatible_products/glassfish_logo.svg'
         image_width: 195
-        download: 'https://www.eclipse.org/downloads/download.php?file=/glassfish/web-5.1.0.zip'
+        download: 'https://glassfish.org/download'
         versions:
         - version: 5.1.0
           compatibility: 'https://eclipse-ee4j.github.io/glassfish/certifications/jakarta-web-profile/8.0/TCK-Results'
@@ -448,7 +475,7 @@ sets:
       - name: Open Liberty
         vendor: IBM Corporation
         image: '/images/compatible_products/ibm_open_liberty.svg'
-        image_width: 195
+        image_width: 160
         download: 'https://openliberty.io/downloads/'
         versions:
         - version: 19.0.0.6

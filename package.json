@@ -26,8 +26,9 @@
     "optimize_news_images": "bash ./optimize_images.sh content/news"
   },
   "dependencies": {
-    "eclipsefdn-hugo-solstice-theme": "^0.0.139",
-    "lodash-es": "4.17.15"
+    "eclipsefdn-hugo-solstice-theme": "0.0.141",
+    "lodash-es": "4.17.15",
+    "list.js": "^1.2.0"
   },
   "devDependencies": {
     "vue-template-compiler": "2.6.12"

@@ -1,0 +1,66 @@
+{{ $version := .Get "version" }}
+
+<div class="row">
+    <div class="col-sm-18">
+        <div class="content-nav-tab-body tab-content margin-bottom-20" id="tabs-content">
+            <div role="tabpanel" class="tab-pane tab-pane active" id="tab-download">
+              {{ range $.Site.Data.compatible_products.sets }}
+                {{ $release_version := .jakartaee_version }}
+                {{ if eq $version (string $release_version) }}
+                    {{ range .items }}
+                        <div class="row margin-bottom-50">
+                            <div class="col-md-24">
+                                <h2 class="margin-bottom-40 big-text text-secondary"><strong>{{ .title }} Compatible Products</strong></h2>
+                                <table class='table borderless compatibility-download-table table-striped' style="width:100%;">
+                                <thead>
+                                    <tr>
+                                    <th>
+                                        <strong>Product</strong>
+                                    </th>
+                                    <th class="compatibility-download-table-middle"></th>
+                                    <th>
+                                        <strong>Certification Results</strong>
+                                    </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    {{ range .items }}
+                                    <tr>
+                                        <td><img src="{{ .image }}" alt="{{ .name }}"></td>
+                                        <td class="compatibility-download-table-middle">{{ .name }}</td>
+                                        <td>
+                                        {{ $len := (len .versions) }}
+                                        {{ range $index, $version := .versions }}
+                                            <a class="compatibility-link" href="{{ .compatibility }}">{{ .version }}</a> 
+                                            <br>
+                                        {{ end }}
+                                        </td>
+                                    </tr>
+                                    {{ end }}
+                                </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    {{ end }}
+                {{ end }}
+                
+              {{ end }}
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6">
+        <aside id="main-sidebar">
+            <ul id="leftnav" class="ul-left-nav fa-ul hidden-print compatibility-sidebar">
+                <li class="separator brand-secondary">
+                    Jakarta EE Releases
+                </li>
+                {{ range $.Site.Data.compatible_products.sets }}
+                    <li>
+                        <a {{ if eq $version (string .jakartaee_version) }}class="active"{{ end }} href="/compatibility/certification/{{.jakartaee_version}}" target="_self">Jakarta EE {{.jakartaee_version}}</a>
+                    </li>
+                {{ end }}
+            </ul>
+        </aside>
+    </div>
+</div>
+

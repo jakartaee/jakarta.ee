@@ -25,6 +25,10 @@
         @media (max-width: @screen-sm-max) {
             margin-bottom: 30px;
         }
+
+        .panel-footer {
+            padding: 15px 0 0;
+        }
         
         .tri-col {
             padding-left: 20px;
@@ -48,10 +52,81 @@
         ul li {
             margin-bottom: 10px;
         }
-        ul li a:not(.btn) {
-            color: @text-color;
-            &:hover {
+        ul li a {
+            &.brand-primary:hover, 
+            &.brand-primary:visited {
+                color: @brand-primary;
+            }
+        }
+        ul.card-arrow-list {
+            list-style: none;
+            margin-left: 0;
+            padding-left: 0;
+            li {
+                padding-left: 18px;
+                position: relative;
+            }
+            li:not(.card-remove-arrow):before {
+                font-family: FontAwesome;
+                content: @fa-var-arrow-right;
+                position: absolute;
+                left: 0;
+                top: 1px;
+                color: @brand-secondary;
+            }
+        }
+        p, li {
+            a:not(.btn):not(.brand-primary) {
                 color: @text-color;
+                font-size: inherit;
+                font-weight: inherit;
+                text-transform: inherit;
+                font-style: inherit;
+                &:hover, &:visited {
+                    color: @text-color;
+                }
+            }
+        }
+        
+        hr {
+            border-top: 1px solid #e1e1e1;
+            margin-top: 0;
+        }
+        &.alternate {
+            background-color: #f1f1f1;
+            padding: 40px;
+            position: relative;
+            overflow: visible;
+            .big-text {
+                font-size: 37px;
+                margin-top: 0;
+            }
+            .subtitle {
+                font-size: 27px;
+            }
+            .card-panel-btn {
+                padding: 4px 20px 8px;
+                
+                .fa {
+                    position: relative;
+                    top: 2px;
+                    margin-right: 5px;
+                }
+            }
+            .new-release {
+                position: absolute;
+                top: -15px;
+                left: -15px;
+                background-color: @brand-secondary;
+                color: @white;
+                font-weight: 700;
+                border-radius: 100px;
+                display: block;
+                width: 60px;
+                height: 60px;
+                text-align: center;
+                padding-top: 19px;
+                transform: rotate(342deg);
             }
         }
     }
@@ -130,3 +205,20 @@
       color: @brand-primary;
     }
 }
+
+.card-container .card-panel ul li .card-badge {
+    background-color: @white;
+    color: lighten(@text-color, 20%);
+    border: 1px solid lighten(@text-color, 20%);
+    border-radius: 3px;
+    text-transform: capitalize;
+    font-size: 10px;
+}
+
+@media (min-width: 768px) {
+    .card-container .card-panel.horizontal-card .panel-body, .card-container .card-panel.horizontal-card .panel-footer {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+

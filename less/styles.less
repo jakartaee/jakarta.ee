@@ -23,6 +23,7 @@
 @import 'components/panels.less';
 @import 'components/blocks.less';
 @import 'components/typography.less';
+@import 'components/testimonials.less';
 
 @import 'transient.less';
 @import 'release-8.less';
@@ -152,4 +153,118 @@ ul.tri-col {
     padding-left: 30px;
     padding-right: 30px;
   }
+}
+
+.header-wrapper.header-secondary-bg-img.header-release-landing-page .featured-jumbotron {
+  padding-top: 130px;
+}
+
+.header-release-landing-page {
+  .featured-jumbotron {
+    text-align: center;
+    padding-bottom: 110px;
+    h1 {
+      font-size: 86px;
+    }
+    p {
+      font-size: 32px;
+      text-transform: uppercase;
+      color: @brand-secondary;
+      font-weight: 700;
+    }
+  }
+}
+
+div.card-panel.panel div.panel-body.panel-body-with-img {
+  h2,
+  h3,
+  p {
+    margin: 0;
+  }
+  h3 {
+    margin-bottom: 10px;
+  }
+  padding: 30px;
+}
+
+.get-involved-content-prefix {
+  padding: 50px 0 120px;
+  margin-bottom: -70px;
+  background-image: url(images/get-involved/get-involved-content-prefix-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  @media (min-width: @screen-md-min) {
+    .container {
+      position: relative;
+      &:before {
+        display: block;
+        content: "";
+        width: 320px;
+        height: 300px;
+        background-image: url(images/get-involved/jakarta-ee-logo.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: -190px;
+        right: 0;
+      }
+    }
+  }
+  
+}
+
+.get-involved-blocks, .get-involved-why {
+  margin-bottom: 60px;
+}
+
+.get-involved-blocks {
+  background-color: transparent;
+  .panel {
+    background-color: #f1f1f1;
+  }
+}
+
+.get-involved-contributors {
+  padding-top: 60px;
+  background-color: #f1f1f1;
+  padding-bottom: 60px;
+  margin-bottom: -30px;
+  h2 {
+    margin-bottom: 30px;
+  }
+}
+
+.get-involved-orange-icon {
+  width: 45px;
+  margin-right: 15px;
+}
+
+.get-involved-testimonials {
+  background-image: url(images/get-involved/testimonials-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.testimonials-alternate-img {
+  border-radius: 100px;
+  overflow: hidden;
+}
+
+.eclipsefdn-contributor {
+  margin-bottom: 30px;
+  background-color: @white;
+  box-shadow: 4px 4px 16px 0 #888888;
+  overflow: hidden;
+  h3 {
+    margin-bottom: 0;
+  }
+}
+
+.eclipsefdn-contributor-description {
+  padding: 20px;
+}
+
+.eclipsefdn-contributor-img {
+  position: relative;
+  right: -1px;
 }

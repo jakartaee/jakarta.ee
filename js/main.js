@@ -12,6 +12,7 @@
  */
 
 import 'eclipsefdn-solstice-assets'
+import List from 'list.js';
 
 document.addEventListener("DOMContentLoaded", function(event) {
     (function($, document) {
@@ -43,14 +44,23 @@ document.addEventListener("DOMContentLoaded", function(event) {
         }
       });
 
-      var owl = $('.solstice-slider');
-      owl.owlCarousel({
-          items:1,
-          autoplay:true,
-          autoplayTimeout:6000,
-          autoplayHoverPause:true,
-          autoplaySpeed: 2000,
-          loop:true,
+      var owlSolsticeSlider = $('.solstice-slider');
+      owlSolsticeSlider.owlCarousel();
+
+      const solsticeSliderHome = () => {
+        var owlSolsticeFeaturedStorySlider = $('.solstice-featured-story-slider');
+        owlSolsticeFeaturedStorySlider.owlCarousel({
+            items:1,
+            autoplay:true,
+            autoplayTimeout:6000,
+            autoplayHoverPause:true,
+            autoplaySpeed: 2000,
+            loop:true,
+        });
+      }
+      
+      $(window).on("load", function() {
+          solsticeSliderHome();
       });
 
       $(document).ready(function() {
@@ -60,5 +70,42 @@ document.addEventListener("DOMContentLoaded", function(event) {
           }).slice(0,3).slideDown("slow")
         );
       });
+
+
+      $('#viewSpecificationSidebar').on('change', function() {
+        window.location.href = $('#viewSpecificationSelect').val();
+      });
+
+      // Initiate List.js for videos
+      const videosList = new List('videos-list', {
+        valueNames: ['category'],
+        page: 5,
+        pagination: true,
+        paginationClass: "pagination-videos"
+      });
+
+      let updateList = function(){
+        const category = $("#video-categories").val();
+        if (category == 'none') {
+          videosList.filter();
+        }
+        else {
+          videosList.filter(function(item) {
+            return (category.includes(item.values().category) || !category);
+          });
+        }
+
+        // Replace youtube videos
+        eclipseFdnVideos.replace();
+      }
+
+      // Update list after using the filter
+      $("#video-categories").on("change", updateList);
+
+      // Replace youtube videos when pagination is clicked
+      $(document).on('click', 'a.page', function() {
+        eclipseFdnVideos.replace();
+      });
+
     })(jQuery, document);
 });

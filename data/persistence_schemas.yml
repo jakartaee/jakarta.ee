@@ -15,6 +15,15 @@ releases:
       description: XML Schema for the persistence configuration file
       status: Final
 
+- name: Jakarta Persistence 3.1
+  version: 3.1
+  schemas:
+
+    - schema: orm_3_1.xsd
+      namespace: persistence/orm
+      description: XML Schema for for the persistence object/relational mapping file
+      status: Final
+
 # Template: Example for creating new schema entry
 #   - schema: a_simple_example.xsd
 #     description: Some text descring the schema

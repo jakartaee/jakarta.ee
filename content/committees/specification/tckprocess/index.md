@@ -1,6 +1,6 @@
 ---
-title: "Jakarta EE TCK Process 1.1"
-date: "2021-08-7T00:00:00+00:00"
+title: "Jakarta EE TCK Process 1.2"
+date: "2022-02-07T00:00:00+00:00"
 aliases:
     - committees/specification/TCKProcess/
 ---
@@ -26,6 +26,23 @@ This document defines:
 -   Process for self-certification
 
 -   Process for (TCK) service release (x.y.z) to resolve a TCK challenge
+
+## Role and Restrictions
+
+It is the role of the TCK to ensure both compatability of
+implementations and portability of applications.
+
+TCK tests must be written following all rules and restrictions that
+applications must follow including, but not limited to, specification
+rules, trademark guidelines and license terms.  Tests that do not
+follow these rules and restrictions as they pertain to applications
+may be deemed invalid and excluded using the Challenge process.
+
+### Namespace
+
+TCK tests must not be packaged in the `jakarta.*` namespace.  At the
+current time TCKs may be packaged in any other namespace, however, the
+namespace format of `ee.jakarta.tck.<spec-name>` is recommended.
 
 ## Materials for a TCK Release {#_materials_for_a_tck_release}
 

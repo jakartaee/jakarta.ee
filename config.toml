@@ -16,13 +16,13 @@ enableInlineShortcodes = true
   seo_title_suffix = " | The Eclipse Foundation"
   keywords = ["Jakarta EE software", "Java EE", "cloud", "microservices", "enterprise", "open source", "innovation"]
   logo = "images/jakarta/jakarta-ee-logo-color.svg"
-  styles = "css/styles.css?v2.2"
+  styles = "css/styles.css?v2.3"
   favicon = "images/jakarta/favicon.ico"
   share_img = "images/jakarta/jakarta_ee_400x400.png"
   gcse = "011805775785170369411:p3ec0igo0qq"
   subtheme = "jakarta"
   header_wrapper_class = "header-default-bg-img"
-  js = "js/solstice.js?v2.2"
+  js = "js/solstice.js?v2.3"
   show_events = true
   call_for_action_text = "Download"
   call_for_action_url = "/compatibility/download/"
@@ -38,6 +38,7 @@ enableInlineShortcodes = true
   logo_width = "200"
   call_for_action_classes = "btn btn-warning btn-call-for-action"
   jumbotron_class = "col-md-24 col-sm-18 "
+  jumbotron_tagline_class = "col-sm-24"
   footer_section_eclipse_foundation_class = "col-sm-5th padding-top-20"
   footer_section_legal_class = "col-sm-5th padding-top-20"
   footer_section_useful_links_class = "col-sm-5th padding-top-20"
@@ -92,8 +93,8 @@ enableInlineShortcodes = true
     weight = 5
 
 [[menu.main]]
-    name = "Blog"
-    url = "https://jakartablogs.ee/"
+    name = "Resources"
+    url = "/resources/"
     weight = 6
 
 # About sub-menu
@@ -106,12 +107,6 @@ enableInlineShortcodes = true
 [[menu.main]]
     name = "Jakarta EE Working Group"
     url = "/"
-    weight = 2
-    parent = "About"
-
-[[menu.main]]
-    name = "Resources"
-    url = "/resources/"
     weight = 2
     parent = "About"
 
@@ -129,21 +124,27 @@ enableInlineShortcodes = true
 
 # Jakarta EE sub-menu
 [[menu.main]]
+    name = "About Jakarta EE"
+    url = "/about/jakarta-ee"
+    parent = "Jakarta EE"
+    weight = 1
+
+[[menu.main]]
     name = "Frequently Asked Questions"
     url = "/about/faq/"
     parent = "Jakarta EE"
-    weight = 1
+    weight = 2
 
 [[menu.main]]
     name = "Releases" 
     url = "/release/"
     parent = "Jakarta EE"
-    weight = 2
+    weight = 3
 
 # Jakarta EE Group sub-menu
 [[menu.main]]
     name = "About Working Group"
-    url = "/about/"
+    url = "/about/working-group"
     weight = 1
     parent = "Jakarta EE Working Group"
 
@@ -229,7 +230,7 @@ enableInlineShortcodes = true
 
 [[menu.main]]
     name = "Starter for Jakarta EE"
-    url = "https://start.jakarta.ee/"
+    url = "/resources/#starter_jakartaee"
     parent = "Resources"
     weight = 9
 
@@ -286,28 +287,46 @@ enableInlineShortcodes = true
     weight = 2
 
 [[menu.main]]
+    name = "Blog"
+    url = "/blogs"
+	parent = "Community"
+    weight = 3
+
+[[menu.main]]
     name = "Events"
     url = "/community/events/"
     parent = "Community"
-    weight = 3
+    weight = 4
+
+[[menu.main]]
+    name = "JakartaOne Livestream"
+    url = "https://jakartaone.org"
+    parent = "Community"
+    weight = 5
 
 [[menu.main]]
     name = "Stay Connected"
     url = "/connect/"
     parent = "Community"
-    weight = 4
+    weight = 6
 
 [[menu.main]]
     name = "Tech Talk Meet-ups"
     url = "/community/#meetups"
     parent = "Community"
-    weight = 5
+    weight = 7
 
 [[menu.main]]
     name = "Videos"
     url = "/community/videos"
     parent = "Community"
-    weight = 5
+    weight = 8
+
+[[menu.main]]
+    name = "Get Involved"
+    url = "/community/get-involved"
+    parent = "Community"
+    weight = 9
 
 # Membership sub-menu
 [[menu.main]]
@@ -340,151 +359,280 @@ enableInlineShortcodes = true
       call_for_action_url = "/zh/compatibility/download/"
 	
 	[[languages.zh.menu.main]]
+		name = "中国社区"
+		url = "/zh/community/china"
+		weight = 0
+
+	[[languages.zh.menu.main]]
 		name = "关于"
 		url = "/zh/about/"
-		weight = 10
+		weight = 1
 
 	[[languages.zh.menu.main]]
-		name = "成员"
-		url = "/zh/Membership/"
-		weight = 20
-
-	[[languages.zh.menu.main]] 
-		name = "联系我们"
-		url = "/zh/connect/"
-		weight = 30
-
-	[[languages.zh.menu.main]]
-		name = "资源"
-		url = "/zh/resources/"
-		weight = 40
+		name = "规范"
+		url = "/zh/specifications/"
+		weight = 2
 
 	[[languages.zh.menu.main]]
 		name = "兼容产品"
 		url = "/zh/compatibility/"
-		weight = 50
-
-	[[languages.zh.menu.main]]
-		name = "中国社区"
-		url = "/zh/community/china"
-		weight = 5
-
-	# Resource sub-menu
-    [[languages.zh.menu.main]]
-        name = "Overview"
-        url = "/zh/resources"
-        weight = 1
-        parent = "资源"
-
-
-	[[languages.zh.menu.main]]
-		name = "案例"
-		url = "/zh/resources#cases-studies"
-		parent = "资源"
-		weight = 1
-
-	[[languages.zh.menu.main]]
-		name = "文档"
-		url = "/zh/resources#documentation"
-		parent = "资源"
-		weight = 2
-
-	[[languages.zh.menu.main]]
-		name = "调研"
-		url = "/zh/resources#surveys"
-		parent = "资源"
 		weight = 3
 
 	[[languages.zh.menu.main]]
-		name = "信息图表"
-		url = "/zh/resources#infographics"
-		parent = "资源"
+		name = "社区"
+		url = "/zh/community"
 		weight = 4
-	[[languages.zh.menu.main]]
-		name = "数据表"
-		url = "/zh/resources#datasheets"
-		parent = "资源"
-		weight = 5
-	[[languages.zh.menu.main]]
-		name = "演讲"
-		url = "/zh/resources#presentations"
-		parent = "资源"
-		weight = 6
 
 	[[languages.zh.menu.main]]
-		name = "规范采纳"
-		parent = "资源"
-		url = "/zh/community/adopt-a-spec/"
-		weight = 7
+		name = "成员"
+		url = "/zh/Membership/"
+		weight = 5
+
+	[[languages.zh.menu.main]]
+		name = "Resources"
+		url = "/zh/resources/"
+		weight = 6
+
+	# About sub-menu
+	[[languages.zh.menu.main]]
+		name = "Jakarta EE"
+		url = "/zh/"
+		weight = 1
+		parent = "关于"
+
+	[[languages.zh.menu.main]]
+		name = "Jakarta EE Working Group"
+		url = "/zh/"
+		weight = 2
+		parent = "关于"
+
+	[[languages.zh.menu.main]]
+		name = "新闻"
+		url = "/zh/news/"
+		parent = "关于"
+		weight = 5
+
+	[[languages.zh.menu.main]]
+		name = "新闻"
+		url = "/zh/news/"
+		parent = "关于"
+		weight = 6
+
+	# Jakarta EE sub-menu
+	[[languages.zh.menu.main]]
+		name = "关于 Jakarta EE"
+		url = "/zh/about/jakarta-ee"
+		parent = "Jakarta EE"
+		weight = 1
+
+	[[languages.zh.menu.main]]
+		name = "常见问题"
+		url = "/zh/about/faq/"
+		parent = "Jakarta EE"
+		weight = 2
+
+	[[languages.zh.menu.main]]
+		name = "发布版本" 
+		url = "/zh/release/"
+		parent = "Jakarta EE"
+		weight = 3
+
+	# Jakarta EE Group sub-menu
+	[[languages.zh.menu.main]]
+		name = "关于工作组"
+		url = "/zh/about/working-group"
+		weight = 1
+		parent = "Jakarta EE Working Group"
+
+	[[languages.zh.menu.main]]
+		name = "章程"
+		url = "https://eclipse.org/org/workinggroups/jakarta_ee_charter.php"
+		weight = 2
+		parent = "Jakarta EE Working Group"
+
+	[[languages.zh.menu.main]]
+		name = "商标指引"
+		url = "/zh/legal/trademark_guidelines/"
+		weight = 3
+		parent = "Jakarta EE Working Group"
+
+	[[languages.zh.menu.main]]
+		name = "技术指引"
+		url = "https://www.eclipse.org/ee4j/direction.php"
+		weight = 4
+		parent = "Jakarta EE Working Group"
 
 	[[languages.zh.menu.main]]
 		name = "委员会"
 		url = "/zh/committees"
-		parent = "资源"
-		weight = 8
-
-	[[languages.zh.menu.main]]
-		name = "简讯存档"
-		url = "/zh/newsletter/"
-		parent = "资源"
-		weight = 9
+		parent = "Jakarta EE Working Group"
+		weight = 5
 
 	[[languages.zh.menu.main]]
 		name = "会议纪要"
 		url = "/zh/meeting_minutes/"
-		parent = "资源"
-		weight = 10
+		parent = "Jakarta EE Working Group"
+		weight = 6
+
+	# Resource sub-menu
+	[[languages.zh.menu.main]]
+		name = "概述"
+		url = "/zh/resources"
+		weight = 1
+		parent = "Resources"
+		identifier = "overview_resources"
 
 	[[languages.zh.menu.main]]
-		name = "博客"
-		url = "https://Jakartablogs.ee"
-		parent = "资源"
-		weight = 11
+		name = "数据表"
+		url = "/zh/resources#datasheets"
+		parent = "Resources"
+		weight = 2
 
 	[[languages.zh.menu.main]]
-		name = "技术沙龙"
-		url = "/zh/resources#meetups"
-		parent = "资源"
-		weight = 12
+		name = "文档"
+		url = "/zh/resources#documentation"
+		parent = "Resources"
+		weight = 3
 
 	[[languages.zh.menu.main]]
-		name = "Jakarta EE YouTube 频道"
-		url = "https://www.youtube.com/channel/UC4M7h5b6elu9VlzjLfzuXyg"
-		parent = "资源"
-		weight = 13
+		name = "演讲"
+		url = "/zh/resources#presentations"
+		parent = "Resources"
+		weight = 4
 
 	[[languages.zh.menu.main]]
-		name = "Jakarta EE 规范项目"
-		url = "https://projects.eclipse.org/list-of-projects?combine=jakarta&field_project_techology_types_tid=1102&field_state_value_2=All"
-		parent = "资源"
-		weight = 14
+		name = "调研"
+		url = "/zh/resources#surveys"
+		parent = "Resources"
+		weight = 5
 
 	[[languages.zh.menu.main]]
-		name = "Jakarta EE 社区文件夹"
-		url = "https://drive.google.com/drive/folders/11nvqdVqFlCxm5AfPh2NdnanTBrCPW8Xv"
-		parent = "资源"
-		weight = 15
-		
+		name = "电子书"
+		url = "/zh/resources/#ebooks"
+		parent = "Resources"
+		weight = 6
+
 	[[languages.zh.menu.main]]
-		name = "Jakarta EE 社区日历"
-		url = "/zh/resources#calendar"
-		parent = "资源"
-		weight = 16
+		name = "白皮书"
+		url = "/zh/resources/#white-papers"
+		parent = "Resources"
+		weight = 7
+
+	[[languages.zh.menu.main]]
+		name = "案例研究"
+		url = "/zh/resources/#cases-studies"
+		parent = "Resources"
+		weight = 8
 
 	[[languages.zh.menu.main]]
 		name = "Jakarta EE 起步"
-		url = "https://start.jakarta.ee/"
-		parent = "资源"
-		weight = 17
-		
+		url = "/resources/#starter_jakartaee"
+		parent = "Resources"
+		weight = 9
+
+	# specifications
 	[[languages.zh.menu.main]]
-		name = "JakartaOne Livestream 大会"
-		url = "https://jakartaone.org/"
-		parent = "资源"
-		weight = 18
-		
+		name = "浏览规范"
+		url = "/zh/specifications/"
+		weight = 1
+		parent = "规范"
+
 	[[languages.zh.menu.main]]
-		name = "Jakarta EE 伙伴"
-		url = "/zh/resources#friends"
-		parent = "资源"
-		weight = 19
+		name = "规范过程"
+		url = "/zh/about/jesp/"
+		weight = 2
+		parent = "规范"
+
+	[[languages.zh.menu.main]]
+		name = "JESP向导"
+		url = "/zh/committees/specification/guide/"
+		parent = "规范"
+		weight = 3
+
+	[[languages.zh.menu.main]]
+		name = "规范项目"
+		url = "https://projects.eclipse.org/list-of-projects?combine=jakarta&field_project_techology_types_tid=1102&field_state_value_2=All"
+		weight = 4
+		parent = "规范"
+
+	# Compatible Products
+	[[languages.zh.menu.main]]
+		name = "Jakarta EE 兼容产品"
+		url = "/zh/compatibility/"
+		parent = "兼容产品"
+		weight = 1
+
+	[[languages.zh.menu.main]]
+		name = "加入列表"
+		url = "/zh/compatibility/get-listed/"
+		parent = "兼容产品"
+		weight = 2
+
+	# Community sub-menu
+	[[languages.zh.menu.main]]
+		name = "概述"
+		url = "/zh/community/"
+		parent = "社区"
+		weight = 1
+		identifier = "community"
+
+	[[languages.zh.menu.main]]
+		name = "Adopt a Spec 计划"
+		parent = "社区"
+		url = "/zh/community/adopt-a-spec/"
+		weight = 2
+
+	[[languages.zh.menu.main]]
+		name = "博客"
+		url = "/zh/blogs"
+		parent = "社区"
+		weight = 3
+
+	[[languages.zh.menu.main]]
+		name = "活动"
+		url = "/zh/community/events/"
+		parent = "社区"
+		weight = 4
+
+	[[languages.zh.menu.main]]
+		name = "JakartaOne Livestream"
+		url = "https://jakartaone.org"
+		parent = "社区"
+		weight = 5
+
+	[[languages.zh.menu.main]]
+		name = "联系"
+		url = "/zh/connect/"
+		parent = "社区"
+		weight = 6
+
+	[[languages.zh.menu.main]]
+		name = "技术沙龙"
+		url = "/zh/community/#meetups"
+		parent = "社区"
+		weight = 7
+
+	[[languages.zh.menu.main]]
+		name = "视频"
+		url = "/zh/community/videos"
+		parent = "社区"
+		weight = 8
+
+	[[languages.zh.menu.main]]
+		name = "Get Involved"
+		url = "/community/get-involved"
+		parent = "社区"
+		weight = 9
+
+	# Membership sub-menu
+	[[languages.zh.menu.main]]
+		name = "加入"
+		url = "/zh/membership"
+		parent = "成员"
+		weight = 1
+
+	[[languages.zh.menu.main]]
+		name = "成员"
+		url = "/zh/membership/members/"
+		parent = "成员"
+		weight = 2

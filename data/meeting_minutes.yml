@@ -1,10 +1,67 @@
 years:
+  - 2022
   - 2021
   - 2020
   - 2019
   - 2018
 items:
    marketing_committee:
+       -
+          url: marketing_committee/minutes-marketing-0414-2022.pdf
+          title: April 14, 2022 (pdf)
+          year: 2022
+       -
+          url: marketing_committee/minutes-marketing-0331-2022.pdf
+          title: March 31, 2022 (pdf)
+          year: 2022
+       -
+          url: marketing_committee/minutes-marketing-0317-2022.pdf
+          title: March 17, 2022 (pdf)
+          year: 2022
+       -
+          url: marketing_committee/minutes-marketing-0310-2022.pdf
+          title: March 10, 2022 (pdf)
+          year: 2022
+       -
+          url: marketing_committee/minutes-marketing-0303-2022.pdf
+          title: March 03, 2022 (pdf)
+          year: 2022
+       -
+          url: marketing_committee/minutes-marketing-0217-2022.pdf
+          title: February 17, 2022 (pdf)
+          year: 2022
+       -
+          url: marketing_committee/minutes-marketing-0203-2022.pdf
+          title: February 03, 2022 (pdf)
+          year: 2022
+       -
+          url: marketing_committee/minutes-marketing-0120-2022.pdf
+          title: January 20, 2022 (pdf)
+          year: 2022
+       -
+          url: marketing_committee/minutes-marketing-0106-2022.pdf
+          title: January 06, 2022 (pdf)
+          year: 2022
+       -
+          url: marketing_committee/minutes-marketing-1209-2021.pdf
+          title: December 09, 2021 (pdf)
+          year: 2021
+       -
+          url: marketing_committee/minutes-marketing-1118-2021.pdf
+          title: November 18, 2021 (pdf)
+          year: 2021
+       -
+          url: marketing_committee/minutes-marketing-1111-2021.pdf
+          title: November 11, 2021 (pdf)
+          year: 2021
+       -
+          url: marketing_committee/minutes-marketing-1028-2021.pdf
+          title: October 28, 2021 (pdf)
+          year: 2021
+       -
+          url: marketing_committee/minutes-marketing-1014-2021.pdf
+          title: October 14, 2021 (pdf)
+          year: 2021
        -
           url: marketing_committee/minutes-marketing-0930-2021.pdf
           title: September 30, 2021 (pdf)
@@ -451,6 +508,42 @@ items:
           year: 2018
 
    specification_committee:
+       -
+          url: specification_committee/minutes-specification-january-26-2022.pdf
+          title: January 26, 2022 (pdf)
+          year: 2022
+       -
+          url: specification_committee/minutes-specification-january-12-2022.pdf
+          title: January 12, 2022 (pdf)
+          year: 2022
+       -
+          url: specification_committee/minutes-specification-december-15-2021.pdf
+          title: December 15, 2021 (pdf)
+          year: 2021
+       -
+          url: specification_committee/minutes-specification-december-1-2021.pdf
+          title: December 1, 2021 (pdf)
+          year: 2021
+       -
+          url: specification_committee/minutes-specification-november-17-2021.pdf
+          title: November 17, 2021 (pdf)
+          year: 2021
+       -
+          url: specification_committee/minutes-specification-november-3-2021.pdf
+          title: November 3, 2021 (pdf)
+          year: 2021
+       -
+          url: specification_committee/minutes-specification-october-20-2021.pdf
+          title: October 20, 2021 (pdf)
+          year: 2021
+       -
+          url: specification_committee/minutes-specification-october-6-2021.pdf
+          title: October 6, 2021 (pdf)
+          year: 2021
+       -
+          url: specification_committee/minutes-specification-september-22-2021.pdf
+          title: September 22, 2021 (pdf)
+          year: 2021
        -
           url: specification_committee/minutes-specification-september-8-2021.pdf
           title: September 8, 2021 (pdf)
@@ -970,6 +1063,26 @@ items:
           year: 2018
 
    steering_committee:
+       -
+          url: steering_committee/minutes-january-11-2022.pdf
+          title: January 11, 2022 (pdf)
+          year: 2022
+       -
+          url: steering_committee/minutes-december-14-2021.pdf
+          title: December 14, 2021 (pdf)
+          year: 2021
+       -
+          url: steering_committee/minutes-november-30-2021.pdf
+          title: November 30, 2021 (pdf)
+          year: 2021
+       -
+          url: steering_committee/minutes-november-23-2021.pdf
+          title: November 23, 2021 (pdf)
+          year: 2021
+       -
+          url: steering_committee/minutes-november-9-2021.pdf
+          title: November 9, 2021 (pdf)
+          year: 2021
        -
           url: steering_committee/minutes-october-26-2021.pdf
           title: October 26, 2021 (pdf)

@@ -25,12 +25,6 @@ types:
          image: /images/members/jakarta-member_payara.svg
          type: "strategic"
          img_width: 100
-       - title: Red Hat
-         id: "redhat"
-         link: https://www.redhat.com/
-         image: /images/members/jakarta-member_redhat.svg
-         type: "strategic"
-         img_width: 100
        - title: Tomitribe
          id: "tomitribe"
          link: https://www.tomitribe.com/
@@ -45,6 +39,12 @@ types:
          image: /images/members/jakarta-member_primeton.png
          img_width: 155
          type: "enterprise"
+       - title: Red Hat
+         id: "redhat"
+         link: https://www.redhat.com/
+         image: /images/members/jakarta-member_redhat.svg
+         type: "enterprise"
+         img_width: 100
        - title: shandong_cvicse_middleware
          id: "shandong_cvicse_middleware"
          image: /images/members/jakarta-member_shandong_cvicse_middleware.png
@@ -56,6 +56,12 @@ types:
          id: "apusic"
          link: http://www.apusic.com/
          image: /images/members/jakarta-member_apusic.png
+         img_width: 155
+         type: "participant"
+       - title: Beijing Vsettan Data Technology Co. Ltd.
+         id: "vsettan"
+         link: http://www.vsettan.com.cn/
+         image: /images/members/jakarta-member_beijing_vsettan_data_technology.png
          img_width: 155
          type: "participant"
        - title: Bessystem
@@ -74,12 +80,6 @@ types:
          id: "jadeva"
          link: https://jadeva.eu/
          image: /images/members/jakarta-member_jadeva_gmbh.png
-         img_width: 90
-         type: "participant"
-       - title: Jelastic
-         id: "jelastic"
-         link: https://jelastic.com
-         image: /images/members/jakarta-member_jelastic.png
          img_width: 90
          type: "participant"
        - title: Liferay

@@ -7,10 +7,11 @@ description: "Find Jakarta EE compatible products including enterprise java appl
 hide_sidebar: true
 hide_page_title: true
 draft: false
-links: [[href: "/compatibility/get_listed/", text: "Get Listed"]]
 container: "container margin-top-20"
 ---
 
-{{< pages/compatibility-products-header >}}
+{{< pages/compatibility/navigation active="download" >}}
 
-{{< pages/compatibility-products-download >}}
+{{< pages/compatibility/download >}}
+
+{{< pages/compatibility/footer >}}

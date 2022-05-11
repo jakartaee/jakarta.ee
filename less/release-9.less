@@ -79,7 +79,6 @@
       a:hover {
         color: @brand-primary;
         text-decoration: none;
-        border-bottom: solid @brand-primary;
       }
 
       .dropdown-menu {
@@ -179,7 +178,17 @@
 
 .jakartaee-9-features-and-benefits {
     padding:30px 0 50px 0;
-
+    .jakartaee-9-platform-img-container {
+      & {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+      }
+      .jakartaee-platform-img {
+        max-width: 700px;
+        width: 100%;
+      }
+    }
     .feature-box {
         background-color: #eeeded;
         margin: 10px;
@@ -246,23 +255,59 @@
 }
 
 .jakartaee-9-white-paper-bg {
-
   //* background *//
-  background-image: url("images/release/release-9-download-mobile-bg.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  overflow-x: hidden;
-  overflow-y: visible;
+  position: relative;
+  overflow: hidden;
 
-  @media (min-width: @screen-lg-min) { // 1200px
-    background-position: top;
-  }
-
-  @media (min-width: @screen-sm-min) {  // 768px
-    background-image: url("images/release/jakarta9-image.png");
-    background-position: left;
+  @media (min-width: @screen-sm-min) {
+    // 768px
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding-top: 200px;
     padding-bottom: 200px;
+  }
+
+  @media (min-width: @screen-sm-min) and (-ms-high-contrast: none) {
+    justify-content: flex-start;
+  }
+
+  .jakartaee-9-white-paper-bg-front-layer {
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: -10;
+    background-image: url('images/release/release-9-download-mobile-bg.jpg');
+    @media (min-width: @screen-sm-min) {
+      // 768px
+      background-image: url('images/release/jakarta9-image.png');
+    }
+    @media (min-width: 1700px) {
+      background-size: contain;
+      background-position: center;
+    }
+  }
+  .jakartaee-9-white-paper-bg-back-layer-ctn {
+    position: absolute;
+    top: 131px;
+    bottom: 142px;
+    overflow: hidden;
+    z-index: -100;
+    display: none;
+    @media (min-width: 1700px) {
+      display: block;
+    }
+    .jakartaee-9-white-paper-bg-back-layer {
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-image: url('images/release/release-9-download-mobile-bg.jpg');
+      filter: blur(10px) opacity(0.6);
+      width: 110vw;
+      height: 110%;
+    }
   }
   //* background *//
 
@@ -278,15 +323,29 @@
 
 .jakartaee-9-white-paper-download {
   background-color: rgba(255, 165, 0, 0.8);
-
-  padding-top:100px;
+  padding-top: 100px;
   padding-bottom: 100px;
-  text-align: center;
-  
-  @media (min-width: @screen-sm-min) {  // 768px
+  @media (min-width: @screen-sm-min) {
+    // 768px
     background: none;
     margin-top: 100px;
     margin-bottom: 100px;
+  }
+  @media (min-width: 1700px) {
+    width: 1200px;
+  }
+  .text-center {
+    width: 100%;
+    min-width: 400px;
+    @media (min-width: @screen-sm-min) {
+      width: 440px;
+    }
+    @media (min-width: @screen-sm-min) and (-ms-high-contrast: none) {
+      width: 900px;
+    }
+    h2 {
+      text-shadow: 0 0 20px rgba(250, 250, 250, 0.5);
+    }
   }
 }
 

@@ -1,4 +1,4 @@
-<h3>Meeting Minutes</h3>
+<h3>{{ i18n "meeting-minutes-title" }}</h3>
 {{ $index_type := .Get 0 }}
 {{ $meeting_minute_types := index $.Site.Data.meeting_minutes "items" $index_type }}
 <div class="row">

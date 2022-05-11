@@ -12,8 +12,7 @@ This committee owns the overall strategy and the high level, long term roadmap s
 * Will Lyons (**chair**)- Oracle, Ed Bratt - alternate
 * Kenji Kazumura - Fujitsu, Yuichi Kusano - alternate
 * Ian Robinson - IBM, Alasdair Nottingham - alternate
-* Steve Millidge - Payara, Eliot Martin - alternate
-* Mark Little - Red Hat, Scott Stark - alternate
+* Steve Millidge - Payara, Hadar Vorenshtein - alternate
 * David Blevins - Tomitribe, Cesar Hernandez - alternate
 * Martijn Verburg - London Java Community - Elected Participant Member Representative, Marcelo Ancelmo - alternate
 * Arjan Tijms - Elected Committer Member Representative

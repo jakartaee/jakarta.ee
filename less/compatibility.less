@@ -34,10 +34,13 @@
 }
 
 a.compatibility-link,
-a:visited.compatibility-link {
-  text-decoration-color: #000;
-  text-decoration: underline;
-  color: #000;
+a:visited.compatibility-link { 
+  white-space: nowrap;
+}
+
+.compatibility-link-separator {
+  color: #a7a7a7;
+  padding: 0 10px;
 }
 
 .card-list.contributor-list {
@@ -158,8 +161,16 @@ a:visited.compatibility-link {
     border: none;
     border-bottom: none;
     vertical-align: middle;
-    width: 50%;
+    width: 20%;
     padding: 15px;
+  }
+  .compatibility-download-table-middle {
+    width: 60%;
+  }
+
+  img {
+    max-width: 130px;
+    max-height: 50px;
   }
 
   thead {
@@ -195,8 +206,27 @@ a:visited.compatibility-link {
 }
 
 @media (min-width: @screen-md-min) {
-    .product-list .center-block {
-      padding-left: 30px;
-      padding-right: 30px;
+  .product-list .center-block {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+.compatibility-sidebar {
+  .active {
+    position: relative;
+    font-weight: bold;
+    &:before {
+      float: left;
+      content: "";
+      width: 0;
+      height: 0;
+      border-top: 5px solid transparent;
+      border-left: 5px solid @brand-secondary;
+      border-bottom: 5px solid transparent;
+      margin-right: 10px;
+      top: 6px;
+      position: relative;
     }
   }
+}

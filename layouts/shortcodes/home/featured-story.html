@@ -1,9 +1,21 @@
-  <div class="eclipsefdn-featured-story featured-story" id="featured-story" data-publish-target="{{ .Page.Params.featured_content_publish_target | default .Site.Params.featured_content_publish_target | default "eclipse_org"}}">
-    <div class="container">
-        <h2 class="big-text-secondary">Featured</h2>
-        <div class="row">
-            <div class="col-sm-18 col-sm-offset-3 text-center featured-story-block featured-story-block-content match-height-item-by-row featured-container">
-            </div>
+{{ $id := .Get "id" | default "featured-story-container" }}
+{{ $templateId := .Get "templateId" }}
+{{ $templatePath := .Get "templatePath" }}
+{{ $publishTarget := .Get "publishTarget" }}
+{{ $count := .Get "count" }}
+{{ if and $templateId $templatePath }}
+  {{ .Page.Scratch.SetInMap "mustache-templates" $templateId $templatePath }}
+{{ end }}
+
+<div class="row">
+  <div class="featured-section eclipsefdn-featured-story featured-story" 
+     id="{{ $id }}" 
+     data-template-id="{{ $templateId }}" 
+     data-publish-target="{{ $publishTarget }}"
+     data-count="{{ $count }}">
+    
+        <div class="featured-container owl-carousel owl-theme solstice-featured-story-slider" data-slider-lg-count="1" data-slider-md-count="1" data-slider-sm-count="1">
         </div>
-    </div>
+    
   </div>
+</div>

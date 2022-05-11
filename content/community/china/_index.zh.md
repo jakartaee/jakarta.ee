@@ -21,3 +21,4 @@ Jakarta EE中国社区，是经Eclipse基金会授权，由普元信息（Primet
 * 列名以示对Jakarta EE的支持：通过把自己的名字列在这里，表示对Jakarta EE的声援。
 
 {{< pages/community/china/index >}}
+

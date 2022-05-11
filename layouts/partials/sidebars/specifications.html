@@ -1,12 +1,33 @@
+{{ .Scratch.Set "parent_section" .Parent }}
+
+{{ if ne .Parent.Title "Specifications" }}
+  {{ .Scratch.Set "parent_section" .Parent.Parent  }}
+{{ end }}
+
+{{ $parent_section := .Scratch.Get "parent_section" }}
+
 <aside id="news-sidebar">
+    <aside id="main-sidebar" class="margin-bottom-30">
+      <div class="main-sidebar-html-block hidden-print">
+          <p class="text-left">View a Specification</p>
+          <form id="viewSpecificationSidebar" method="post" class="text-left" action="">
+            <select id="viewSpecificationSelect" name="select_specification" class="form-control">
+              <option value="none">Select a Specification</option>
+              {{ range ($parent_section.Sections.ByParam "title").ByParam "weight" }}
+                <option value="{{- with .Params.redirect_url | default .RelPermalink }}{{.}}{{- end }}">{{ .Title }}</option>
+              {{ end }}
+            </select>
+          </form>
+        </div>
+    </aside>
     <div class="row">
       <div class="card-container">
         <div class="card-panel panel panel-default">
           <div class="panel-heading" aria-hidden="true">
             <img class="img-responsive" src="/images/specifications/adopt-a-spec.png" alt="Adopt a spec">
           </div>
-          <div class="panel-body secondary-bg">
-            <h3 class="big-text margin-top-30">Adopt a Spec</h3>
+          <div class="panel-body panel-body-with-img secondary-bg">
+            <h3 class="big-text">Adopt a Spec</h3>
             <p><a class="big-text text-secondary uppercase" href="/community/adopt-a-spec/">Learn more</a></p>
           </div>
         </div>
