@@ -282,6 +282,16 @@ sets:
     - title: Jakarta EE 8 Platform
       release: "/release/8"
       items:
+      - name: AISWare Flying Server
+        vendor: Hunan AsiaInfo Anhui Technology Limited
+        image: '/images/compatible_products/aisware_flyingServer_logo.svg'
+        image_width: 195
+        download: 'https://cms.101test.com/ai_sino_info/en_us/content_603710669.html'
+        versions:
+        - version: 2.0.0
+          compatibility: 'http://download.eclipse.org/jakartaee/platform/8/eclipse-jakartaeetck-8.0.2.zip'
+          download_url: 'http://download.eclipse.org/jakartaee/platform/8/eclipse-jakartaeetck-8.0.2.zip'
+
       - name: Payara Server Enterprise
         vendor: Payara Services Limited
         image: '/images/compatible_products/payara_server.png'
@@ -300,7 +310,7 @@ sets:
         - version: 5.2021.4
           compatibility: 'https://docs.payara.fish/community/docs/jakartaee-certification/5.2021.4/tck-results-full-5.2021.4.html'
           download_url: 'https://docs.payara.fish/community/docs/jakartaee-certification/5.2021.4/tck-results-full-5.2021.4.html'
-  
+
       - name: Eclipse GlassFish
         vendor: Eclipse Foundation
         image: '/images/compatible_products/glassfish_logo.svg'
@@ -310,7 +320,7 @@ sets:
         - version: 5.1.0
           compatibility: 'https://eclipse-ee4j.github.io/glassfish/certifications/jakarta-full-profile/8.0/TCK-Results'
           download_url: 'https://www.eclipse.org/downloads/download.php?file=/glassfish/glassfish-5.1.0.zip'
-  
+
       - name: Open Liberty
         vendor: IBM Corporation
         image: '/images/compatible_products/ibm_open_liberty.svg'
@@ -323,7 +333,7 @@ sets:
         - version: 20.0.0.3
           compatibility: 'https://openliberty.io/certifications/jakartaee/platform/8/20.0.0.3-TCKResults.html'
           download_url: 'https://openliberty.io/certifications/jakartaee/platform/8/20.0.0.3-TCKResults.html'
-  
+
       - name: WildFly
         vendor: Red Hat
         image: '/images/compatible_products/red-hat-wildfly-logo.png'
@@ -333,8 +343,8 @@ sets:
         - version: 18.0.0
           compatibility: 'https://github.com/wildfly/certifications/blob/EE8/WildFly_18.0.0.Final/jakarta-full-platform.adoc'
           download_url: 'https://github.com/wildfly/certifications/blob/EE8/WildFly_18.0.0.Final/jakarta-full-platform.adoc'
-  
-      - name: JBoss Enterprise Application Platform 
+
+      - name: JBoss Enterprise Application Platform
         vendor: Red Hat
         image: '/images/compatible_products/red-hat-jboss-logo.png'
         image_width: 195
@@ -343,7 +353,7 @@ sets:
         - version: 7.4.0
           compatibility: 'https://github.com/RedHatOfficial/jbosseap-certifications/blob/EE8/EAP-7.3.0/jakarta-full-platform.adoc#tck-results'
           download_url: 'https://github.com/RedHatOfficial/jbosseap-certifications/blob/EE8/EAP-7.3.0/jakarta-full-platform.adoc#tck-results'
-  
+
       - name: JEUS
         vendor: TmaxSoft Co., Ltd
         image: '/images/compatible_products/jeus_logo.svg'
@@ -353,7 +363,7 @@ sets:
         - version: 8.5
           compatibility: 'https://kr.tmaxsoft.com/jakee/JEUS8.5_Full_Profile_Certification_Summary.html'
           download_url: 'https://kr.tmaxsoft.com/jakee/JEUS8.5_Full_Profile_Certification_Summary.html'
-  
+
       - name: Primeton AppServer
         vendor: Primeton
         image: '/images/compatible_products/primeton_appserver_logo.png'
@@ -363,20 +373,20 @@ sets:
         - version: 7
           compatibility: 'http://primeton.com/products/pas/tck_results/EE8-jakarta-full-platform-V7.html'
           download_url: 'http://primeton.com/products/pas/tck_results/EE8-jakarta-full-platform-V7.html'
-         
+
       - name: Apusic AAS
         vendor: Kingdee Apusic cloud computing Co., Ltd.
         image: '/images/compatible_products/aas.jpg'
         image_width: 195
         download: 'https://www.apusic.com/list-117.html'
-        versions: 
+        versions:
         - version: 10
           compatibility: 'https://www.apusic.com/about/aas_v10_ee8.html'
           download_url: 'https://www.apusic.com/list-117.html'
         - version: 9
           compatibility: 'https://www.apusic.com/about/aas_v9_ee8.html'
           download_url: 'https://www.apusic.com/list-117.html'
-          
+
       - name: FUJITSU Software Enterprise Application Platform
         vendor: Fujitsu Limited
         image: '/images/compatible_products/fujitsu_eap.svg'
@@ -386,7 +396,7 @@ sets:
         - version: 1.0
           compatibility: 'https://www.fujitsu.com/jp/products/software/middleware/business-middleware/middleware/applatform/jakartaee-report/eap100-ee8full-tck-results/'
           download_url: 'https://www.fujitsu.com/jp/products/software/middleware/business-middleware/middleware/applatform/jakartaee-report/eap100-ee8full-tck-results/'
-  
+
       - name: FUJITSU Software Interstage Application Server
         vendor: Fujitsu Limited
         image: '/images/compatible_products/fujitsu_iaps.svg'
@@ -471,7 +481,7 @@ sets:
         - version: 5.1.0
           compatibility: 'https://eclipse-ee4j.github.io/glassfish/certifications/jakarta-web-profile/8.0/TCK-Results'
           download_url: 'https://www.eclipse.org/downloads/download.php?file=/glassfish/web-5.1.0.zip'
-  
+
       - name: Open Liberty
         vendor: IBM Corporation
         image: '/images/compatible_products/ibm_open_liberty.svg'
@@ -484,7 +494,7 @@ sets:
         - version: 20.0.0.3
           compatibility: 'https://openliberty.io/certifications/jakartaee/webprofile/8/20.0.0.3-TCKResults.html'
           download_url: 'https://openliberty.io/certifications/jakartaee/webprofile/8/20.0.0.3-TCKResults.html'
-  
+
       - name: WildFly
         vendor: Red Hat
         image: '/images/compatible_products/red-hat-wildfly-logo.png'
@@ -494,18 +504,18 @@ sets:
         - version: 18.0.0
           compatibility: 'https://github.com/wildfly/certifications/blob/EE8/WildFly_18.0.0.Final/jakarta-web-profile.adoc'
           download_url: 'https://github.com/wildfly/certifications/blob/EE8/WildFly_18.0.0.Final/jakarta-web-profile.adoc'
-             
-      - name: JBoss Enterprise Application Platform 
+
+      - name: JBoss Enterprise Application Platform
         vendor: Red Hat
         image: '/images/compatible_products/red-hat-jboss-logo.png'
         image_width: 195
         download: 'http://www.redhat.com/en/technologies/jboss-middleware/application-platform'
         versions:
-        - version: 7.4.0  
+        - version: 7.4.0
           compatibility: 'https://github.com/RedHatOfficial/jbosseap-certifications/blob/EE8/EAP-7.3.0/jakarta-web-profile.adoc'
           download_url: 'https://github.com/RedHatOfficial/jbosseap-certifications/blob/EE8/EAP-7.3.0/jakarta-web-profile.adoc'
-  
-      - name: IBM WebSphere Liberty 
+
+      - name: IBM WebSphere Liberty
         vendor: IBM Corporation
         image: '/images/compatible_products/websphereliberty.svg'
         image_width: 120
@@ -521,6 +531,6 @@ sets:
         image_width: 195
         download: 'https://www.payara.fish/downloads/'
         versions:
-        - version: 5.28.1 
+        - version: 5.28.1
           compatibility: 'https://docs.payara.fish/enterprise/docs/jakartaee-certification/5.28.1/tck-results-web-5.28.1.html'
           download_url: 'https://docs.payara.fish/enterprise/docs/jakartaee-certification/5.28.1/tck-results-web-5.28.1.html'
