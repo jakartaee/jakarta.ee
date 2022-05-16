@@ -124,7 +124,7 @@ releases:
     - schema: jakartaee_10.xsd
       namespace: jakartaee
       description: Common shareable schemas of Jakarta EE deployment descriptors
-      status: Draft
+      status: Final
 
     - schema: jakartaee_web_services_metadata_handler_3_0.xsd
       namespace: jakartaee
