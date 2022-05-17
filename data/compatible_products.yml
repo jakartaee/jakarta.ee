@@ -289,7 +289,7 @@ sets:
         download: 'http://asiainfoah.com/#/product/flyingserver'
         versions:
         - version: 2.0.0
-          compatibility: 'http://download.eclipse.org/jakartaee/platform/8/eclipse-jakartaeetck-8.0.2.zip'
+          compatibility: 'https://github.com/AsiainfoAnhui/aisware_flyingserver_v2_ee8/blob/master/aisware_flyingserver_v2_ee8.md#tck-results'
           download_url: 'http://download.eclipse.org/jakartaee/platform/8/eclipse-jakartaeetck-8.0.2.zip'
 
       - name: Payara Server Enterprise
