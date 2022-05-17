@@ -167,7 +167,19 @@ Let's say we created a new post on jakarta.ee/news/ with the title "Jakarta EE 9
     - check the "Jakarta EE" option under "Publishing Information"
     - click "Save"
 
+### How to add a compatible product in Jakarta EE compatible products section
 
+Create a new item with the same structure as existing ones in /data/compatible_products.yml-sets-items-items and fill the information. 
+` - name: [product name]
+    vendor: [member/company name]
+    image: '/images/compatible_products/[product logo]'
+    image_width: [width number]
+    download: '[product download URL]'
+    versions:
+    - version: [version number]
+      compatibility: '[TCK result URL]'
+      download_url: '[product download URL]'
+`
 
 ## Related Projects
 
