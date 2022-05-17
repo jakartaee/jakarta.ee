@@ -286,7 +286,7 @@ sets:
         vendor: Hunan AsiaInfo Anhui Technology Limited
         image: '/images/compatible_products/aisware_flyingServer_logo.svg'
         image_width: 195
-        download: 'https://cms.101test.com/ai_sino_info/en_us/content_603710669.html'
+        download: 'http://asiainfoah.com/#/product/flyingserver'
         versions:
         - version: 2.0.0
           compatibility: 'http://download.eclipse.org/jakartaee/platform/8/eclipse-jakartaeetck-8.0.2.zip'
