@@ -13,7 +13,6 @@ date: 2020-01-05T15:50:25-04:00
 * Kenji Kazumura - Fujitsu, Yuichi Kusano - alternate
 * Ian Robinson - IBM, Alasdair Nottingham - alternate
 * Steve Millidge - Payara, Hadar Vorenshtein - alternate
-* Mark Little - Red Hat, Scott Stark - alternate
 * David Blevins - Tomitribe, Cesar Hernandez - alternate
 * Martijn Verburg - London Java Community - Elected Participant Member Representative, Marcelo Ancelmo - alternate
 * Arjan Tijms - Elected Committer Member Representative
