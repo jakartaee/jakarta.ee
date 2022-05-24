@@ -1064,6 +1064,14 @@ items:
 
    steering_committee:
        -
+          url: steering_committee/minutes-march-29-2022.pdf
+          title: March 29, 2022 (pdf)
+          year: 2022
+       -
+          url: steering_committee/minutes-march-15-2022.pdf
+          title: March 15, 2022 (pdf)
+          year: 2022
+       -
           url: steering_committee/minutes-march-1-2022.pdf
           title: March 1, 2022 (pdf)
           year: 2022
