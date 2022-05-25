@@ -30,7 +30,7 @@
     <ul>
       {{ range (.Page.Sections.ByParam "title").ByParam "weight" }}
         <li>
-          <h3><a href="{{- with .Params.redirect_url | default .RelPermalink }} {{.}} {{- end }}">{{ .Title }}</a></h3>
+          <h2><a href="{{- with .Params.redirect_url | default .RelPermalink }} {{.}} {{- end }}">{{ .Title }}</a></h2>
           {{ if eq .Params.summary_sixty_char nil  }}
             <p>{{ .Params.summary | truncate 57 }}</p>
           {{ else }}

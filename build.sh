@@ -19,7 +19,9 @@ mkdir /tmp/specifications && cp content/specifications/_index.md /tmp/specificat
 rm -rf content/specifications && rm -rf static/specifications
 
 echo "Step 2: Clone specifications git repository"
-git clone https://github.com/jakartaee/specifications.git content/specifications
+git clone -b zhoufang/master/1478 https://github.com/linkfang/specifications.git content/specifications
+# git clone https://github.com/jakartaee/specifications.git content/specifications
+
 
 echo -e "\nStep 3: Remove specifications/.git\n"
 rm -rf content/specifications/.git
