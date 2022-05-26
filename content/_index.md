@@ -26,12 +26,12 @@ container: "container-fluid"
 {{< home/whats-new >}}
 
 {{< grid/section-container >}}
-  
+
     {{< grid/div class="featured-section-news tab-content tab-content-home" isMarkdown="false" >}}
 
       {{< grid/div role="tabpanel" class="tab-pane active" id="whats-new-announcements" isMarkdown="false" >}}
         {{< newsroom/news
-          id="announcements_news_lists" 
+          id="announcements_news_lists"
           publishTarget="jakarta_ee"
           type="announcements"
           count="5"
@@ -43,7 +43,7 @@ container: "container-fluid"
 
       {{< grid/div role="tabpanel" class="tab-pane fade" id="whats-new-news" isMarkdown="false" >}}
           {{< newsroom/news
-          id="community_news_lists" 
+          id="community_news_lists"
           publishTarget="jakarta_ee"
           type="community_news"
           count="5"
@@ -54,9 +54,9 @@ container: "container-fluid"
       {{</ grid/div >}}
 
       {{< grid/div role="tabpanel" class="tab-pane fade" id="whats-new-events" isMarkdown="false" >}}
-        {{< events >}}    
+        {{< events >}}
           {{< newsroom/events
-              id="events_lists" 
+              id="events_lists"
               containerClass="news-items clearfix"
               publishTarget="jakarta_ee"
               upcoming="1"
@@ -67,7 +67,7 @@ container: "container-fluid"
       {{</ grid/div >}}
 
     {{</ grid/div >}}
-  
+
 {{</ grid/section-container >}}
 
 {{< home/videos >}}

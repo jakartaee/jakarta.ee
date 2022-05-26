@@ -364,9 +364,14 @@ enableInlineShortcodes = true
 		weight = 0
 
 	[[languages.zh.menu.main]]
+		name = "中国社区"
+		url = "/zh/community/china"
+		weight = 0
+
+	[[languages.zh.menu.main]]
 		name = "关于"
 		url = "/zh/about/"
-		weight = 10
+		weight = 1
 
 	[[languages.zh.menu.main]]
 		name = "规范"
@@ -389,7 +394,7 @@ enableInlineShortcodes = true
 		weight = 5
 
 	[[languages.zh.menu.main]]
-		name = "Resources"
+		name = "资源"
 		url = "/zh/resources/"
 		weight = 6
 
@@ -468,6 +473,7 @@ enableInlineShortcodes = true
 		parent = "Jakarta EE Working Group"
 		weight = 5
 
+	# specifications
 	[[languages.zh.menu.main]]
 		name = "会议纪要"
 		url = "/zh/meeting_minutes/"
@@ -479,55 +485,55 @@ enableInlineShortcodes = true
 		name = "概述"
 		url = "/zh/resources"
 		weight = 1
-		parent = "Resources"
+		parent = "资源"
 		identifier = "overview_resources"
 
 	[[languages.zh.menu.main]]
 		name = "数据表"
 		url = "/zh/resources#datasheets"
-		parent = "Resources"
+		parent = "资源"
 		weight = 2
 
 	[[languages.zh.menu.main]]
 		name = "文档"
 		url = "/zh/resources#documentation"
-		parent = "Resources"
+		parent = "资源"
 		weight = 3
 
 	[[languages.zh.menu.main]]
 		name = "演讲"
 		url = "/zh/resources#presentations"
-		parent = "Resources"
+		parent = "资源"
 		weight = 4
 
 	[[languages.zh.menu.main]]
 		name = "调研"
 		url = "/zh/resources#surveys"
-		parent = "Resources"
+		parent = "资源"
 		weight = 5
 
 	[[languages.zh.menu.main]]
 		name = "电子书"
 		url = "/zh/resources/#ebooks"
-		parent = "Resources"
+		parent = "资源"
 		weight = 6
 
 	[[languages.zh.menu.main]]
 		name = "白皮书"
 		url = "/zh/resources/#white-papers"
-		parent = "Resources"
+		parent = "资源"
 		weight = 7
 
 	[[languages.zh.menu.main]]
 		name = "案例研究"
 		url = "/zh/resources/#cases-studies"
-		parent = "Resources"
+		parent = "资源"
 		weight = 8
 
 	[[languages.zh.menu.main]]
 		name = "Jakarta EE 起步"
 		url = "/resources/#starter_jakartaee"
-		parent = "Resources"
+		parent = "资源"
 		weight = 9
 
 	# specifications
@@ -595,7 +601,7 @@ enableInlineShortcodes = true
 		weight = 4
 
 	[[languages.zh.menu.main]]
-		name = "JakartaOne Livestream"
+		name = "JakartaOne Livestream 线上活动"
 		url = "https://jakartaone.org"
 		parent = "社区"
 		weight = 5
@@ -619,8 +625,8 @@ enableInlineShortcodes = true
 		weight = 8
 
 	[[languages.zh.menu.main]]
-		name = "Get Involved"
-		url = "/community/get-involved"
+		name = "加入社区"
+		url = "/zh/community/get-involved"
 		parent = "社区"
 		weight = 9
 
@@ -632,7 +638,7 @@ enableInlineShortcodes = true
 		weight = 1
 
 	[[languages.zh.menu.main]]
-		name = "成员"
+		name = "成员列表"
 		url = "/zh/membership/members/"
 		parent = "成员"
 		weight = 2

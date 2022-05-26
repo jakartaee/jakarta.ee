@@ -9,7 +9,7 @@ releases:
     - location: https://jakarta.ee/xml/ns/persistence#3
     - location: https://jakarta.ee/xml/ns/validation
 
-  schemas: 
+  schemas:
 
     - schema: jakartaee_9.xsd
       namespace: jakartaee
@@ -90,17 +90,17 @@ releases:
       namespace: jakartaee
       description: XML Schema common for the various Jakarta Servlet deployment descriptors
       status: Final
-      
+
     - schema: web-facesconfig_3_0.xsd
       namespace: jakartaee
       description: XML Schema for the Jakarta Faces Application Configuration File
       status: Final
-      
+
     - schema: web-facelettaglibrary_3_0.xsd
       namespace: jakartaee
       description: XML Schema for the Jakarta Tag Libraries in the Jakarta Faces Standard Facelets View Declaration Language (Facelets VDL)
       status: Final
-      
+
     - schema: web-partialresponse_3_0.xsd
       namespace: jakartaee
       description: XML Schema for the Jakarta Faces Partial Response used in JSF Ajax frameworks
@@ -119,7 +119,7 @@ releases:
     - location: https://jakarta.ee/xml/ns/persistence#3.1
     - location: https://jakarta.ee/xml/ns/validation
 
-  schemas: 
+  schemas:
 
     - schema: jakartaee_10.xsd
       namespace: jakartaee
@@ -200,17 +200,17 @@ releases:
       namespace: jakartaee
       description: XML Schema common for the various Servlet deployment descriptors
       status: Draft
-      
+
     - schema: web-facesconfig_4_0.xsd
       namespace: jakartaee
       description: XML Schema for the Jakarta Server Faces Application Configuration File
       status: Final
-      
+
     - schema: web-facelettaglibrary_3_0.xsd
       namespace: jakartaee
       description: XML Schema for the Jakarta Tag Libraries in the Jakarta Faces Standard Facelets View Declaration Language (Facelets VDL)
       status: Final
-      
+
     - schema: web-partialresponse_4_0.xsd
       namespace: jakartaee
       description: XML Schema for the Jakarta Faces Partial Response used in JSF Ajax frameworks
@@ -220,6 +220,101 @@ releases:
       namespace: jakartaee
       description: XML Schema for the Jakarta Server Pages Taglibrary descriptor
       status: Final
+
+    # - schema: jakartaee_web_services_metadata_handler_3_0.xsd
+    #   namespace: jakartaee
+    #   description: XML Schema for the Handler chain configuration descriptor
+    #   status: Final
+
+    # - schema: batchXML_2_0.xsd
+    #   namespace: jakartaee
+    #   description: XML Schema for the Jakarta Batch artifacts XML file (batch.xml)
+    #   status: Final
+
+    - schema: beans_4_0.xsd
+      namespace: jakartaee
+      description: XML Schema for the Jakarta Contexts and Dependency Injection XML file (beans.xml)
+      status: Draft
+
+    # - schema: jobXML_2_0.xsd
+    #   namespace: jakartaee
+    #   description: XML Schema for the Jakarta Batch Job Specification Language (JSL)
+    #   status: Final
+
+    - schema: jsp_3_1.xsd
+      namespace: jakartaee
+      description: XML Schema for the Jakarta Server Pages deployment descriptor
+      status: Draft
+
+    - schema: application_10.xsd
+      namespace: jakartaee
+      description: XML Schema for the Application deployment descriptor
+      status: Draft
+
+    - schema: application-client_10.xsd
+      namespace: jakartaee
+      description: XML Schema for the Application client deployment descriptor
+      status: Draft
+
+    - schema: connector_2_1.xsd
+      namespace: jakartaee
+      description: XML Schema for the Jakarta Connectors deployment descriptor
+      status: Draft
+
+    # - schema: ejb-jar_4_0.xsd
+    #   namespace: jakartaee
+    #   description: XML Schema for the Enterprise Beans deployment descriptor
+    #   status: Final
+
+    # - schema: jakartaee_web_services_2_0.xsd
+    #   namespace: jakartaee
+    #   description: XML Schema for the Web Services deployment descriptor
+    #   status: Final
+
+    # - schema: jakartaee_web_services_client_2_0.xsd
+    #   namespace: jakartaee
+    #   description: XML Schema for the Web Services Client deployment descriptor
+    #   status: Final
+
+    - schema: permissions_10.xsd
+      namespace: jakartaee
+      description: XML Schema for the application or module declared permissions
+      status: Draft
+
+    - schema: web-app_6_0.xsd
+      namespace: jakartaee
+      description: XML Schema for the Jakarta Servlet deployment descriptor (web.xml)
+      status: Draft
+
+    - schema: web-fragment_6_0.xsd
+      namespace: jakartaee
+      description: XML Schema for the Jakarta Servlet deployment descriptor (web-fragment.xml)
+      status: Draft
+
+    - schema: web-common_6_0.xsd
+      namespace: jakartaee
+      description: XML Schema common for the various Servlet deployment descriptors
+      status: Draft
+
+    # - schema: web-facesconfig_3_0.xsd
+    #   namespace: jakartaee
+    #   description: XML Schema for the Jakarta Server Faces Application Configuration File
+    #   status: Final
+
+    # - schema: web-facelettaglibrary_3_0.xsd
+    #   namespace: jakartaee
+    #   description: XML Schema for the Jakarta Tag Libraries in the Jakarta Faces Standard Facelets View Declaration Language (Facelets VDL)
+    #   status: Final
+
+    # - schema: web-partialresponse_3_0.xsd
+    #   namespace: jakartaee
+    #   description: XML Schema for the Jakarta Faces Partial Response used in JSF Ajax frameworks
+    #   status: Final
+
+    # - schema: web-jsptaglibrary_3_0.xsd
+    #   namespace: jakartaee
+    #   description: XML Schema for the Jakarta Server Pages Taglibrary descriptor
+    #   status: Final
 
 # Template: Example for creating new schema entry
 #   - schema: a_simple_example.xsd

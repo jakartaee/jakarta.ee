@@ -9,7 +9,7 @@ layout: "list"
 ---
 
 {{< newsroom/news
-    id="announcements_news_lists" 
+    id="announcements_news_lists"
     publishTarget="jakarta_ee"
     count="10"
     includeList="true"

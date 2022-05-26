@@ -9,7 +9,6 @@ date: 2018-04-05T15:50:25-04:00
 hide_page_title: true
 hide_sidebar: true
 hide_breadcrumb: true
-
 show_featured_story: false
 jumbotron_tagline_class: "col-sm-18"
 show_featured_footer: false
@@ -66,7 +65,6 @@ container: "container-fluid"
       {{</ grid/div >}}
 
     {{</ grid/div >}}
-
 {{</ grid/section-container >}}
 
 {{< home/videos >}}

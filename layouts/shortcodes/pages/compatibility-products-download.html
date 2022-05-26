@@ -1,0 +1,44 @@
+{{ range $.Site.Data.compatible_products.sets }}
+    {{ $release_version := .jakartaee_version }}
+    {{ range .items }}
+
+    <div class="margin-top-50">
+
+        {{ with .release }}
+        <p class="compatibility-release-download">
+            <a class="fw-600" href="{{ . }}">Visit Jakarta {{ $release_version }} Release Page</a>
+        </p>
+        {{ end }}
+
+        <div class="row margin-bottom-20 padding-bottom-40 compatibility-download">
+            <div class="col-md-16">
+                <h2 class="h4 margin-top-20 margin-bottom-20"><strong>{{ .title }}</strong></h2>
+                <table class='table borderless compatibility-download-table'>
+                    <thead>
+                        <tr>
+                            <th class="uppercase">
+                                Product Name
+                            </th>
+                            <th>
+                                <span class="uppercase">Product Version(s)</span> <span>(click to download)</span>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {{ range .items }}
+                            <tr>
+                                <td>{{ .name }}</td>
+                                <td>
+                                {{ range .versions }}
+                                    <a class="compatibility-link" href="{{ .download_url }}">{{ .version }}</a><br />
+                                {{ end }}
+                                </td>
+                            </tr>
+                        {{ end }}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    {{ end }}
+{{ end }}
