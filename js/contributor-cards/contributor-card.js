@@ -14,7 +14,7 @@ export default ({ name, login }) =>
 						d="M172.6,239.1c5.5,0,10.8,0.3,16.1,0.7L10.8,196c0,0,33.1,11,73.1,70.8C105,249.8,136.9,239.1,172.6,239.1z" />
 				</g>
 			</svg>
-			<h4>${name}</h4></div>
+			<h3>${name}</h3></div>
 		<div class="contributor-image">
 			<img src="//github.com/${login}.png?size=160" />
     </div>
