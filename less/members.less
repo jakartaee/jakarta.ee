@@ -11,17 +11,31 @@
     }
     &::after,
     &::before {
-      content: '';
-      position: absolute;
-      left: 0;
-      right: calc(50vw - 100px);
-      top: 16px;
-      height: 1px;
-      background-color: #bdbdbd;
+      & {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 78%;
+        top: 16px;
+        height: 1px;
+        background-color: #bdbdbd;
+      }
+      @media (min-width: 720px) {
+        right: 70%;
+      }
+      @media (min-width: 900px) {
+        right: 65%;
+      }
     }
     &::after {
       right: 0;
-      left: calc(50vw - 100px);
+      left: 78%;
+      @media (min-width: 720px) {
+        left: 70%;
+      }
+      @media (min-width: 900px) {
+        left: 65%;
+      }
     }
   }
   .row {
