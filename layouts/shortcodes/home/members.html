@@ -5,17 +5,9 @@
   http://www.eclipse.org/legal/epl-2.0.
   Contributors:
     Eric Poirier <eric.poirier@eclipse-foundation.org>
+    Zhou Fang <zhou.fang@eclipse-foundation.org>
   SPDX-License-Identifier: EPL-2.0
 -->
-
-{{ $data := index (where .Site.Data.members.types "name" "strategic") 0 }}
-
-{{ $items := $data.items }}
-
-{{ $limit := .Get "limit" }}
-{{ if $limit }}
-  {{ $items = first $limit $items }}
-{{ end }}
 
 <div class="featured-section featured-section-members">
   <div class="container">
@@ -23,14 +15,11 @@
       <div class="col-sm-18 col-sm-offset-3">
         <h2 class="big-text-secondary">{{ i18n "home-members" }}</h2>
         <p>{{ i18n "home-members-title" }}</p>
-        <ul class="list-inline members-items owl-carousel owl-theme solstice-slider" data-slider-lg-count="6" data-slider-md-count="6" data-slider-sm-count="3">
-            {{ range $items }}
-                <li><a style="width:{{ .img_width }}px;" href="{{ .link }}"><img class="members-logo" alt="{{ .title }}" src="{{ .image }}"></a><br> {{ .type | title }} {{ i18n "home-members" }}</li>
-            {{ end }}
+        <ul class="list-inline eclipsefdn-members-list members-by-level flex-center gap-50" data-ml-wg="jakarta-ee"
+          data-ml-template="logo-with-levels" data-ml-wg-level="WGSD" data-ml-level-under-logo="true">
         </ul>
       </div>
     </div>
     <p class="margin-top-20"><a class="btn btn-primary" href="/membership/members/">{{ i18n "home-members-explore" }}</a></p>
   </div>
 </div>
-

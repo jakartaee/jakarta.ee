@@ -1,0 +1,79 @@
+.eclipsefdn-members-list {
+  h2 {
+    & {
+      position: relative;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    &:nth-of-type(3),
+    &:nth-of-type(4) {
+      font-size: 22px;
+    }
+    &::after,
+    &::before {
+      & {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 78%;
+        top: 16px;
+        height: 1px;
+        background-color: #bdbdbd;
+      }
+      @media (min-width: 720px) {
+        right: 70%;
+      }
+      @media (min-width: 900px) {
+        right: 65%;
+      }
+    }
+    &::after {
+      right: 0;
+      left: 78%;
+      @media (min-width: 720px) {
+        left: 70%;
+      }
+      @media (min-width: 900px) {
+        left: 65%;
+      }
+    }
+  }
+  .row {
+    & {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 50px;
+    }
+    .m-card {
+      & {
+        width: auto;
+        max-width: 110px;
+        max-height: 100px;
+        margin-bottom: 0;
+      }
+      .bordered-box {
+        border: none;
+        div.box-body.vertical-align {
+          // Need to use important to override the element style
+          height: 100px !important;
+        }
+        .box-header {
+          display: none;
+        }
+      }
+      img {
+        max-width: 110px;
+      }
+    }
+
+    &:nth-of-type(1) .m-card,
+    &:nth-of-type(2) .m-card {
+      max-width: 145px;
+      max-height: 110px;
+      img {
+        max-width: 145px;
+      }
+    }
+  }
+}
