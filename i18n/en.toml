@@ -838,7 +838,7 @@ other = "Sign up now"
  other = "Get familiar with <a href=\"https://jakarta.ee/legal/trademark_guidelines/\">Jakarta EE Trademark Guidelines</a>."
 
 [pages-compatibility-get-listed-branding-requirements-license-agreement]
- other = "Execute (digitally sign) the <a href=\"https://app.hellosign.com/s/DQ9uVw4b\">Jakarta EE Compatibility Trademark License Agreement</a> (or print the <a href=\"https://jakarta.ee/legal/trademark_guidelines/jakarta-ee-trademark-license.pdf\">License Agreement PDF</a> and return the signed agreement to <a href=\"mailto:emo-records@eclipse.org\">emo-records@eclipse.org</a>)"
+ other = "Execute (digitally sign) the <a href=\"https://app.hellosign.com/s/DQ9uVw4b\">Jakarta EE Compatibility Trademark License Agreement</a> (or print the <a href=\"/legal/trademark_guidelines/jakarta-ee-trademark-license.pdf\">License Agreement PDF</a> and return the signed agreement to <a href=\"mailto:emo-records@eclipse.org\">emo-records@eclipse.org</a>)"
 
 [pages-compatibility-get-listed-certification-requirements-title]
  other = "Certification and listing on jakarta.ee Compatible Product pages requirements"
