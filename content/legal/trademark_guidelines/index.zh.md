@@ -13,7 +13,7 @@ Jakarta EE 徽标的使用受到如下限制 (需要具备相关资格要求):
 
 *   “Jakarta EE 兼容性”标志仅限于与“兼容软件产品”一起使用。“兼容软件产品”是指根据当时的TCK流程，通过使用 **技术兼容套件** （“TCK”）认证为 **Jakarta EE Profiles 兼容实现** 的任何产品，相关术语在当时的 **Jakarta EE 规范过程** 中定义。
 *   “Jakarta EE 兼容性”标记的使用仅限于与以下公司发行的兼容软件产品（定义见下文）结合使用：
-    1.  Jakarta EE 工作组的参与成员/企业成员/战略成员，同时也是[Jakarta EE 兼容性商标许可协议](https://app.hellosign.com/s/DQ9uVw4b)的被许可方; 以及
+    1.  Jakarta EE 工作组的参与成员/企业成员/战略成员，同时也是[Jakarta EE 兼容性商标许可协议](https://app.hellosign.com/s/Aoi0Sx4E)的被许可方; 以及
     2.  Jakarta EE 工作组的访客（Guest）成员, 满足以下条件:
         *   Jakarta EE 兼容标志的使用得到 Jakarta EE 工作组指导委员会的一致批准；且
         *   此类**访客成员**也是 Eclipse Foundation 商标许可下的被许可方。

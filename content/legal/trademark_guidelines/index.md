@@ -16,7 +16,7 @@ Use of the Jakarta EE Marks is restricted as follows (eligibility requirements):
 
 *   Use of the "Jakarta EE Compatible" mark is limited to use in conjunction with Compatible Software Products. “Compatible Software Products” mean any products which are certified as Compatible Implementations of Jakarta EE Profiles by the use of Technology Compatibility Kits (“TCKs”) under the then-current TCK Process, as those terms are defined in the then-current Jakarta EE Specification Process.
 *   Use of the "Jakarta EE Compatible" mark is limited to use in conjunction with Compatible Software Products (as defined below) distributed by:
-    1.  Participant, Enterprise or Strategic Members of the Jakarta EE WG who are also licensees under the [Jakarta EE Compatibility Trademark License Agreement](https://app.hellosign.com/s/DQ9uVw4b); or
+    1.  Participant, Enterprise or Strategic Members of the Jakarta EE WG who are also licensees under the [Jakarta EE Compatibility Trademark License Agreement](https://app.hellosign.com/s/Aoi0Sx4E); or
     2.  Guest Members of the Jakarta EE WG, if:
         *   Use of the Jakarta EE Compatible mark is approved unanimously by the Jakarta EE WG Steering Committee; and
         *   Such Guest Members are also licensees under the Eclipse Foundation Trademark License.
