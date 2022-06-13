@@ -33,7 +33,7 @@ To get your product listed on the Compatible Products page and in order to be ab
   1. Branding and compatible logo requirements
      - [Join](https://jakarta.ee/membership/) the Jakarta EE Working Group
      - Get familiar with [Jakarta EE Trademark Guidelines](https://jakarta.ee/legal/trademark_guidelines/).
-     - Execute (digitally sign) the [Jakarta EE Compatibility Trademark License Agreement](https://app.hellosign.com/s/DQ9uVw4b) (or print the [License Agreement PDF](https://jakarta.ee/legal/trademark_guidelines/jakarta-ee-trademark-license.pdf) and return the signed agreement to [emo-records@eclipse.org](mailto:emo-records@eclipse.org))
+     - Execute (digitally sign) the [Jakarta EE Compatibility Trademark License Agreement](https://app.hellosign.com/s/Aoi0Sx4E) (or print the [License Agreement PDF](/legal/trademark_guidelines/jakarta-ee-trademark-license.pdf) and return the signed agreement to [emo-records@eclipse.org](mailto:emo-records@eclipse.org))
 2.	Certification and listing on jakarta.ee Compatible Product pages requirements 
     - Follow the [Jakarta EE TCK process](https://jakarta.ee/committees/specification/tckprocess/) to completely run and satisfy all of the requirements of the applicable TCK test
       - Publish the TCK results and maintain the public listing of your TCK results for as long as you continue to claim compatibility.

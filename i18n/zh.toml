@@ -856,7 +856,7 @@
  other = "熟悉 <a href=\"https://jakarta.ee/legal/trademark_guidelines/\">Jakarta EE 商标指引</a>."
 
 [pages-compatibility-get-listed-branding-requirements-license-agreement]
- other = "执行(在线签署) <a href=\"https://app.hellosign.com/s/DQ9uVw4b\">Jakarta EE 兼容性商标许可协议</a> (或者打印 <a href=\"https://jakarta.ee/legal/trademark_guidelines/jakarta-ee-trademark-license.pdf\">许可协议 PDF</a> 并将签署后的协议发送至 <a href=\"mailto:emo-records@eclipse.org\">emo-records@eclipse.org</a>)"
+ other = "执行(在线签署) <a href=\"https://app.hellosign.com/s/Aoi0Sx4E\">Jakarta EE 兼容性商标许可协议</a> (或者打印 <a href=\"/legal/trademark_guidelines/jakarta-ee-trademark-license.pdf\">许可协议 PDF</a> 并将签署后的协议发送至 <a href=\"mailto:emo-records@eclipse.org\">emo-records@eclipse.org</a>)"
 
 [pages-compatibility-get-listed-certification-requirements-title]
  other = "认证和加入兼容产品页面的要求："

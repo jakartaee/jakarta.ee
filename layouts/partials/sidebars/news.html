@@ -1,39 +1,38 @@
+{{ $id := "news-list-sidebar" }}
+{{ $templateId := "custom-announcement-template-sidebar" }}
+{{ $templatePath := "/js/templates/news-sidebar.mustache" }}
+{{ if not (in (.Page.Scratch.Get "news-container-ids") $id) }}
+  {{ .Page.Scratch.Add "news-container-ids" (slice $id) }}
+{{ end }}
+{{ if and $templateId $templatePath }}
+  {{ .Page.Scratch.SetInMap "mustache-templates" $templateId $templatePath }}
+{{ end }}
+
 <aside id="news-sidebar">
+  {{ if eq .Page.RelPermalink "/news/" }}
     <div class="sidebar-block">
-      <h4>{{ i18n "news-sidebar-news-title" }}</h4>
-      <ul>
-        {{ range (where (where .Site.Pages "Section" "news" ) "Type" "announcement") }}
-          <li><a href="{{ .Permalink }}">
-            <span class="meta-wrap">
-              <span class="post-title">
-                {{ .Params.title }}
-              </span>
-              <span class="post-date">{{.Params.date.Format "January 2, 2006" }} </span> </span> </a>
-          </a></li>
-        {{ end }}
-      </ul>
+      <h4>Filter</h4>
+      <div class="form-group row">
+        <div class="col-sm-24">
+          <select id="news-filter" class="search form-control">
+            <option value="all">All</option>
+            <option value="announcements">Announcements</option>
+            <option value="community_news">Community News</option>
+          </select>
+        </div>
+      </div>
     </div>
-    <div class="sidebar-block">
-      <h4>{{ i18n "news-sidebar-tags-title" }}</h4>
-      <ul class="cat-list">
-        {{ range $value := index .Site.Taxonomies "news/tags" }}
-            <li class="cat-item"><a href="{{ $value.Page.Permalink }}">{{ $value.Page.Title }} [{{ $value.Count }}]</a></li>
-        {{ end }}
-      </ul>
+  {{ end }}
+
+  {{ if eq .Parent.Section "news" }}
+  <div class="sidebar-block">
+    <h4>{{ i18n "news-sidebar-news-title" }}</h4>
+    <div id="{{ $id }}" class="news-items" data-news-count="10" 
+      {{ with $templateId }} data-template-id="{{ . }}" {{ end }}
+      data-publish-target="jakarta_ee">
     </div>
-    <!-- <div class="sidebar-block">
-      <h4>Newsletter</h4>
-    </div> -->
-    <div class="sidebar-block">
-      <h4>{{ i18n "news-sidebar-archive-title" }}</h4>
-      {{ range .Data.Pages.GroupByDate "2006" }}
-        <h2>{{ .Key }}</h2>
-        <ul id="cat-list">
-            {{ range .Pages }}
-            <li class="cat-item"><a href="{{ .Permalink }}">{{ .Title }}</a></li>
-            {{ end }}
-        </ul>
-      {{ end }}
-    </div>
-  </aside>
+    <p><a class="btn btn-primary" href="/news">View More</a></p>
+  </div>
+  {{ end }}
+</aside>
   

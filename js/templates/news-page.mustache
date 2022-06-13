@@ -1,0 +1,51 @@
+{{#news}}
+<div class="row item">
+  <div class="col-md-18 col-sm-offset-3">
+    <div class="news-content">
+        <div class="content-meta">
+            <div class="date">
+                <span class="month">{{month}}</span>
+                <span class="day">{{day}}</span>
+                <span class="year">{{year}}</span>
+            </div>
+        </div>
+      <div class="content-inner">
+          <span class="flex-column" style="height: 100%;">
+            <h4 class="content-title">
+                <a href="{{ link }}" class="content-link">
+                    {{ title }}
+                </a>
+            </h4>
+            {{#image}}
+                <img class="author-image" src="{{ image }}?size=90" title="{{ title }}">
+            {{/image}}
+            <p class="content-text">{{body}}</p>
+            <p class="news-authors">
+                <span class="authors-images">
+                {{#author}}
+                    <img class="author-image" src="{{ picture }}?size=90" title="{{ full_name }}">
+                {{/author}}
+                </span>
+                <span class="authors-names">
+                {{#author}}
+                    <a class="author-name content-link" href="//accounts.eclipse.org/users/{{ username }}" title="{{ full_name }}">{{ full_name }}</a> 
+                {{/author}}
+                </span>
+            </p>
+            <p class="news-footer">
+                <a href="{{ link }}" class="content-link read-more">
+                    Continue reading
+                </a>
+                <span class="summary-icons">
+                    | 
+                    <a class="nav-item" href="https://www.facebook.com/sharer/sharer.php?u={{ link }}" title="Share on Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    <a class="nav-item" href="https://www.linkedin.com/shareArticle?mini=true&amp;url={{ link }}" title="Share on LinkedIn"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                    <a class="nav-item" href="https://twitter.com/home?status={{ link }}" title="Tweet this"><i class="fa fa-twitter"></i></a>
+                </span>
+            </p>
+          </span>
+      </div>
+    </div>
+  </div>
+</div>
+{{/news}} 
