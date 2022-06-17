@@ -249,6 +249,22 @@
                    type="jakartaee:administered-objectType"
                    minOccurs="0"
                    maxOccurs="unbounded"/>
+      <xsd:element name="context-service"
+                   type="jakartaee:context-serviceType"
+                   minOccurs="0"
+                   maxOccurs="unbounded"/>
+      <xsd:element name="managed-executor"
+                   type="jakartaee:managed-executorType"
+                   minOccurs="0"
+                   maxOccurs="unbounded"/>
+      <xsd:element name="managed-scheduled-executor"
+                   type="jakartaee:managed-scheduled-executorType"
+                   minOccurs="0"
+                   maxOccurs="unbounded"/>
+      <xsd:element name="managed-thread-factory"
+                   type="jakartaee:managed-thread-factoryType"
+                   minOccurs="0"
+                   maxOccurs="unbounded"/>
     </xsd:sequence>
     <xsd:attribute name="version"
                    type="jakartaee:dewey-versionType"
