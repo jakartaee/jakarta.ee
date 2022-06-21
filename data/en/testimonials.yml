@@ -6,7 +6,7 @@ categories:
         logo: /images/members/jakarta-member-tomitribe.svg
         text: In 20 years working in open source and Java standards I've never seen such a truly diverse and equally shared effort as that required to ship Jakarta EE 8. Source code has been donated, but what emerged is a community that bravely accepts change, innovates open processes and repeatedly choses shared victory over individual success. When we look back in 10 years at all we've accomplished in Jakarta, everyone will agree this was the singular moment in time that shaped our future.
         picture: /images/testimonials/david-blevins.png
-        link: "" 
+        link: ""
       - company: VP, Deputy Head of Fujitsu Middleware Unit
         name: Hideki Nozaki
         logo: /images/members/jakarta-member-fujitsu.svg
@@ -24,7 +24,7 @@ categories:
         logo: /images/members/jakarta-member-webtide.svg
         picture: /images/testimonials/jesse-mcconnell.jpg
         link: ""
-        text: The Jakarta EE project represents a noble goal of free and open-source development on a body of Java specifications that are fundamentally core to the Java experience. The Eclipse Jetty project and its developers at Webtide have contributed to many of these specifications since their inception and are pleased to continue doing so as a part of Jakarta EE.
+        text: Jakarta EE's specifications are fundamental to the core Java experience. Webtide LLC, through its developers of Eclipse Jetty, has contributed to many specifications since their inception and is pleased to continue doing so as a part of Jakarta EE.
       - company: VP of Red Hat Software Engineering
         name: Mark Little
         logo: /images/members/jakarta-member-redhat.svg
