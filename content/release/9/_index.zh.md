@@ -13,8 +13,8 @@ footer_class: "footer-release-9"
 type: "release/9"
 hide_call_for_action: true
 press_release_link: "/news/jakarta-ee-9-released/"
-subtitle: "Jakarta EE 9 Released!"
-description: "The Jakarta EE 9 release is here, the future of Java EE. Download compatible products and see what’s new in the specifications."
+subtitle: "Jakarta EE 9 发布啦!"
+description: "Eclipse Foundation是世界最大的开源软件基金会之一，今日，由其主办的Jakarta EE工作组在JakartaOne Livestream虚拟线上会议上正式宣布，Jakarta EE 9 的Platform、Web Profile规范以及相关技术兼容工具包（TCKs）正式发布。"
 ---
 
 {{< pages/release/9 >}}

@@ -9,6 +9,8 @@
 
 [home-calltoaction-specifications]
   other = "获取规范文档"
+[home-calltoaction-presentation]
+  other = "JAKARTA EE 演讲"
 
 [home-calltoaction-getinvolved]
   other = "加入我们"
@@ -17,7 +19,7 @@
   other = "加入工作组"
 
 [home-calltoaction-howtogetinvolved]
-  other = "How to Get Involved"
+  other = "加入我们"
 
 [home-calltoaction-getstarted]
   other = "开始使用Jakarta"
@@ -77,13 +79,13 @@
   other = "{{ .Name }} logo"
 
 [compatibility-download-button-text]
-  other = "Download"
+  other = "下载"
 
 [compatibility-proof-of-compatibility-text]
-  other = "Proof of compatibility"
+  other = "兼容性证明"
 
 [compatibility-version-text]
-  other = "Version: "
+  other = "版本: "
 
 [connect-mailing-lists-subscribe]
   other = "订阅"
@@ -231,42 +233,6 @@
 [membership-testimonials-title]
   other = "成员感言"
 
-[jakarta-ee-china-section-index-title]
-  other = "Jakarta EE 中国社区"
-
-[jakarta-ee-china-section-index-info]
-  other = "Jakarta EE中国社区，是经Eclipse基金会授权，由普元信息（Primeton）发起创立并推动发展。致力于在大中化地区推动Jakarta EE的认知与技术分享。\n正如我们所知道的，Java EE改名为Jakarta EE已有很长一段时间了，但是在中国，很少有人意识到Jakarta EE项目以及它的规范性实现的重要性。因此，普元信息现正呼吁您与我们一起努力，扩大Jakarta EE的影响力，为中国的开发者和中国企业做更多有益的事情。"
-
-[jakarta-ee-china-section-index-mailinglist-title]
-  other = "Jakarta EE 中国社区邮件列表"
-
-[jakarta-ee-china-section-index-mailinglist-info]
-  other = "订阅和了解最新的Jakarta EE 中国社区资讯"
-
-[jakarta-ee-china-section-index-mailinglist-subscribe]
-  other = "加入邮件列表"
-
-[jakarta-ee-china-section-index-wechat-group-title]
-  other = "加入微信群"
-
-[jakarta-ee-china-section-index-wechat-group-join]
-  other = "加入微信群"
-
-[jakarta-ee-china-section-index-wechat-group-info]
-  other = "如果您想参与社区讨论，协作推进中国社区的活动，请长按或扫描添加下方二维码，注明“加入Jakarta”"
-
-[jakarta-ee-china-section-index-getlisted-title]
-  other = "想要把你的名字也加入列表么？"
-
-[jakarta-ee-china-section-index-getlisted-info]
-  other = "目前Jakarta EE中国社区已经正式成立，我们欢迎所有对Java EE或Jakarta EE感兴趣的同道，将自己的名字列在这里，以示对社区的声援。"
-
-[jakarta-ee-china-section-index-getlisted-signup]
-  other = "加入 Jakarta EE 中国社区"
-
-[jakarta-ee-china-section-index-memberlist]
-  other = "成员列表"
-
 [sidebar-title]
   other = "和我们一起创新"
 
@@ -300,6 +266,9 @@
 [sidebar-specification-process]
   other = "规范过程"
 
+[sidebar-overview]
+  other = "概览"
+
 [sidebar-community]
   other = "关于社区"
 
@@ -308,9 +277,6 @@
 
 [sidebar-jakartatechtalks]
   other = "TechTalk聚会"
-
-[sidebar-videos]
-  other = "视频"
 
 [sidebar-events-hosting]
   other = "想举办你的活动么"
@@ -331,34 +297,40 @@
   other = "敬请期待"
 
 [news-list-nav-next]
-  other = "Next"
+  other = "下一页"
 
 [news-list-nav-prev]
-  other = "Previous"
+  other = "前一页"
 
 [news-sidebar-news-title]
- other = "News"
+ other = "新闻"
 
 [news-sidebar-tags-title]
- other = "Tags"
+ other = "标签"
 
 [news-sidebar-archive-title]
- other = "Archive"
+ other = "存档"
 
 [news-summary-continue-reading]
-  other = "Continue reading"
+  other = "继续阅读"
 
 [news-summary-icons-facebook]
- other = "Share on Facebook"
+ other = "分享到 Facebook"
 
 [news-summary-icons-linkedin]
- other = "Share on LinkedIn"
+ other = "分享到 LinkedIn"
 
 [news-summary-icons-twitter]
- other = "Tweet this"
+ other = "分享到 Twitter"
 
 [news-single-see-all-news]
- other = "See all news"
+ other = "查看所有新闻"
+
+[footer-join-mailing-list]
+other = "加入邮件列表"
+
+[footer-join-mailing-list-button-text]
+other = "注册"
 
 [faq-title]
  other = "常见问题解答"
@@ -489,11 +461,11 @@
 [jakarta-ee-version-9_1-features-migration-title]
  other = "<br>更易迁移"
 
-[jakarta-ee-version-9_1-features-migration-text]
- other = "为开发者测试迁移到新的命名空间提供开放、稳定的平台"
-
 [jakarta-ee-version-9_1-features-supporting-java-se-11]
  other = "全新支持 java se 11"
+
+[jakarta-ee-version-9_1-features-migration-text]
+ other = "为开发者测试迁移到新的命名空间提供开放、稳定的平台"
 
 [jakarta-ee-version-9_1-features-participation-title]
  other = "<h2 class=\"text-blue text-center fw-600 uppercase\"><strong>社区掌控的</strong></h2><h2 class=\"text-secondary fw-600 margin-top-0 font-exo uppercase\"><em>创新</em></h2>"
@@ -714,11 +686,14 @@
 [pages-resources-ebooks-title]
  other = "电子书"
 
+[pages-resources-ebooks-cloud-native-java-vision]
+ other = "Jakarta EE 如何实现开源、云原生Java的愿景"
+
 [pages-resources-ebooks-cloud-native-java]
  other = "为云原生Java规划方向"
 
 [pages-resources-ebooks-cloud-native-java-html-version]
- other = "Fulfilling the Vision for Open Source, Cloud Native Java"
+ other = "实现开源、云原生Java的愿景"
 
 [pages-resources-infographics-title]
  other = "信息图表"
@@ -743,6 +718,9 @@
 
 [pages-resources-presentations-title]
  other = "演讲"
+
+[pages-resources-presentations-presentation]
+ other = "Jakarta EE 演讲"
 
 [pages-resources-presentations-presentations]
  other = "Jakarta EE 演讲"
@@ -894,9 +872,6 @@
 [pages-community-adopt-a-spec-events]
  other = "事件"
 
-[pages-community-adopt-a-spec-events-livestream]
- other = "发现最新的 JakartaOne Livestream 活动"
-
 [pages-community-adopt-a-spec-events-other]
  other = "发现最新的云原生Java活动"
 
@@ -925,13 +900,88 @@
  other = "订阅我们的Youtube频道"
 
 [pages-community-jakartaone-livestream]
- other = "JakartaOne Livestream"
+ other = "JakartaOne Livestream 线上活动"
 
 [pages-community-jakartaone-livestream-latest]
- other = "Find the latest JakartaOne Livestream"
+ other = "发现最新的 JakartaOne Livestream 线上活动"
 
 [pages-community-jakartaone-livestream-language]
- other = "Find out how to host a JakartaOne Livestream in your own language"
+ other = "了解如何举办母语版本的 JakartaOne Livestream 线上活动"
+
+[pages-get-involved-getinvolved-title]
+ other = "加入 Jakarta EE"
+
+[pages-get-involved-getinvolved-content]
+ other = "<p>想要参与 Jakarta EE 项目或者相关倡议, 从 <a href=\"https://accounts.eclipse.org/user/register\">建立一个 Eclipse Foundation 账号</a>开始。</p><p>然后你就可以选择如下的任何方式参与进来：</p>"
+
+[pages-get-involved-jointheconversation-title]
+ other = "加入讨论"
+
+[pages-get-involved-jointheconversation-content]
+ other = "加入我们的社区频道，以便了解最新的社区倡议，并根据自己的情况选择参与。"
+
+[pages-get-involved-jointheconversation-button-email]
+ other = "通过 Email 加入"
+
+[pages-get-involved-jointheconversation-button-slack]
+ other = "通过 Slack 加入"
+
+[pages-get-involved-jointheconversation-button-social]
+ other = "通过社交媒体加入"
+
+[pages-get-involved-HowToContribute-title]
+ other = "如何提交贡献"
+
+[pages-get-involved-HowToContribute-content]
+ other = "<p>选择一个你感兴趣的 <a href=\"https://github.com/eclipse-ee4j\">Jakarta EE 项目</a>, 加入项目的邮件列表与项目团队沟通。</p><p>在提交贡献之前，确保相关的准备工作已经就绪：作为个人，请登陆你的Eclipse Foundation 账号，并签署 Eclipse 贡献者协议（ECA），这样你就可以与项目团队协作，并提交你的贡献。访问 <a href=\"https://www.eclipse.org/legal/ECA.php\">Eclipse 贡献者协议（ECA）</a> 页面以获得更多信息。如果你所在的机构已经是 Jakarta EE 工作组的成员, 你所在的机构会有一个 <a href=\"https://www.eclipse.org/legal/committer_process/EclipseMemberCommitterAgreement.pdf\">成员单位提交与贡献协议</a> 覆盖了所有做出贡献的员工，这将大大简化您的工作!</p>"
+
+[pages-get-involved-HowToContribute-button-LoginToEF]
+ other = "登陆 Eclipse Foundation 账号"
+
+[pages-get-involved-BecomeACommitter-title]
+ other = "成为提交者"
+
+[pages-get-involved-BecomeACommitter-content]
+ other = "<p>Jakarta EE 贡献者有资格成为提交者。可以通过以下几种方式成为提交者：1）对于现有的 Jakarta EE 项目，通过选举实现！在您做出了表明您了解开源项目工作原理的贡献之后，该项目的当前提交人将发起一次选举。现任委员必须在选举中投票；因此，创建一个高质量贡献的公共记录以便提交者（和社区）可以审查，是整个过程中最重要的部分。2） 另一种选择是通过做出初步贡献，成为新的 Jakarta EE 规范项目的提交人。项目的相应项目管理委员会（PMC）提名一组初始提交人，供执行董事（或其代表）批准</p> 如果您所在的机构是 Jakarta EE 工作组的成员，则相关机构已经签署了必要的文件，你没什么需要做的</p> 如果您所在的机构不是 Jakarta EE 工作组的成员，则您需要填写以下表格：</p>"
+
+[pages-get-involved-BecomeACommitter-IndividualAgreement]
+ other = "Jakarta EE 工作组个人参与协议"
+
+[pages-get-involved-BecomeACommitter-EmployerAgreement]
+ other = "Eclipse Foundation 规范项目员工知情协议"
+
+[pages-get-involved-JoinWG-title]
+ other = "加入 Jakarta EE 工作组"
+
+[pages-get-involved-JoinWG-content]
+ other = "<p>对推进 Jakarta EE 感兴趣的机构或者个人都可以加入 Jakarta EE 工作组</p> <p><img class=\"get-involved-orange-icon\" src=\"/images/get-involved/icons/reward.svg\" alt=\"Reward icon\">了解 <a href=\"https://www.eclipse.org/org/workinggroups/jakarta_ee_charter.php\">Jakarta EE 工作组章程</a>，<em class=\"margin-right-10\">然后</em> <img class=\"get-involved-orange-icon\" src=\"/images/get-involved/icons/envelope.svg\" alt=\"Envelope icon\"><a href=\"https://accounts.eclipse.org/contact/membership/jakarta-ee\">与我们联系</a>。</p><p>访问 <a href=\"https://jakarta.ee/\">Jakarta EE 官网</a> 了解更多。</p>"
+
+[pages-get-involved-WhyDevelopersInvolved-title]
+ other = "为什么我们鼓励更多开发者加入我们"
+
+[pages-get-involved-WhyDevelopersInvolved-Experience-title]
+ other = "获得经验"
+
+[pages-get-involved-WhyDevelopersInvolved-Experience-content]
+ other = "更好地了解技术，并有机会与经验丰富的工程师和行业领导者团队合作并向他们学习"
+
+[pages-get-involved-WhyDevelopersInvolved-Recognition-title]
+ other = "获得声誉"
+
+[pages-get-involved-WhyDevelopersInvolved-Recognition-content]
+ other = "变得更引人注目，在社区中树立声誉"
+
+[pages-get-involved-WhyDevelopersInvolved-Flexibility-title]
+ other = "灵活自由"
+
+[pages-get-involved-WhyDevelopersInvolved-Flexibility-content]
+ other = "自由的选择贡献的时间和地点，即使身处世界各地"
+
+[pages-get-involved-WhyDevelopersInvolved-Impact-title]
+ other = "塑造影响力"
+
+[pages-get-involved-WhyDevelopersInvolved-Impact-content]
+ other = "影响云原生开源Java的未来，并与Java生态系统中的领先者建立新的关系。帮助提升 Jakarta EE 技术，以及 Jakarta EE 规范的质量和相关性，同时在帮助实现这一目标的过中获得满足感。"
 
 [pages-committees-document]
  other = "文档"
@@ -953,3 +1003,39 @@
 
 [pages-committees-website-guidelines-download]
  other = "下载文档"
+
+[jakarta-ee-china-section-index-title]
+  other = "Jakarta EE 中国社区"
+
+[jakarta-ee-china-section-index-info]
+  other = "Jakarta EE中国社区，是经Eclipse基金会授权，由普元信息（Primeton）发起创立并推动发展。致力于在大中化地区推动Jakarta EE的认知与技术分享。\n正如我们所知道的，Java EE改名为Jakarta EE已有很长一段时间了，但是在中国，很少有人意识到Jakarta EE项目以及它的规范性实现的重要性。因此，普元信息现正呼吁您与我们一起努力，扩大Jakarta EE的影响力，为中国的开发者和中国企业做更多有益的事情。"
+
+[jakarta-ee-china-section-index-mailinglist-title]
+  other = "Jakarta EE 中国社区邮件列表"
+
+[jakarta-ee-china-section-index-mailinglist-info]
+  other = "订阅和了解最新的Jakarta EE 中国社区资讯"
+
+[jakarta-ee-china-section-index-mailinglist-subscribe]
+  other = "加入邮件列表"
+
+[jakarta-ee-china-section-index-wechat-group-title]
+  other = "加入微信群"
+
+[jakarta-ee-china-section-index-wechat-group-join]
+  other = "加入微信群"
+
+[jakarta-ee-china-section-index-wechat-group-info]
+  other = "如果您想参与社区讨论，协作推进中国社区的活动，请长按或扫描添加下方二维码，注明“加入Jakarta”"
+
+[jakarta-ee-china-section-index-getlisted-title]
+  other = "想要把你的名字也加入列表么？"
+
+[jakarta-ee-china-section-index-getlisted-info]
+  other = "目前Jakarta EE中国社区已经正式成立，我们欢迎所有对Java EE或Jakarta EE感兴趣的同道，将自己的名字列在这里，以示对社区的声援。"
+
+[jakarta-ee-china-section-index-getlisted-signup]
+  other = "加入 Jakarta EE 中国社区"
+
+[jakarta-ee-china-section-index-memberlist]
+  other = "成员列表"
