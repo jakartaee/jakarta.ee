@@ -136,7 +136,7 @@ enableInlineShortcodes = true
     weight = 2
 
 [[menu.main]]
-    name = "Releases" 
+    name = "Releases"
     url = "/release/"
     parent = "Jakarta EE"
     weight = 3
@@ -344,20 +344,20 @@ enableInlineShortcodes = true
 [languages]
   [languages.en]
 	languageName = "English"
-	weight =  1   
+	weight =  1
 
   [languages.zh]
 	languageName = "简体中文"
 	weight =  2
 	title = "Jakarta® EE: 云原生Java的新家园"
-	
+
 	[languages.zh.params]
 	  description = "Jakarta® Enterprise Edition (EE) 是云原生的未来. Jakarta® EE 开源软件驱动云原生创新, 让企业应用更加现代化，并同时保护Java EE的现有投资."
 	  subtitle = "云原生Java的新家园"
 	  keywords = ["Jakarta EE 软件", "Java EE", "cloud", "云", "云原生", "microservices", "微服务", "enterprise", "企业应用", "open source", "开源", "innovation"]
 	  call_for_action_text = "下载"
       call_for_action_url = "/zh/compatibility/download/"
-	
+
 	[[languages.zh.menu.main]]
 		name = "中国社区"
 		url = "/zh/community/china"
@@ -389,7 +389,7 @@ enableInlineShortcodes = true
 		weight = 5
 
 	[[languages.zh.menu.main]]
-		name = "Resources"
+		name = "资源"
 		url = "/zh/resources/"
 		weight = 6
 
@@ -432,7 +432,7 @@ enableInlineShortcodes = true
 		weight = 2
 
 	[[languages.zh.menu.main]]
-		name = "发布版本" 
+		name = "发布版本"
 		url = "/zh/release/"
 		parent = "Jakarta EE"
 		weight = 3
@@ -479,55 +479,55 @@ enableInlineShortcodes = true
 		name = "概述"
 		url = "/zh/resources"
 		weight = 1
-		parent = "Resources"
+		parent = "资源"
 		identifier = "overview_resources"
 
 	[[languages.zh.menu.main]]
 		name = "数据表"
 		url = "/zh/resources#datasheets"
-		parent = "Resources"
+		parent = "资源"
 		weight = 2
 
 	[[languages.zh.menu.main]]
 		name = "文档"
 		url = "/zh/resources#documentation"
-		parent = "Resources"
+		parent = "资源"
 		weight = 3
 
 	[[languages.zh.menu.main]]
 		name = "演讲"
 		url = "/zh/resources#presentations"
-		parent = "Resources"
+		parent = "资源"
 		weight = 4
 
 	[[languages.zh.menu.main]]
 		name = "调研"
 		url = "/zh/resources#surveys"
-		parent = "Resources"
+		parent = "资源"
 		weight = 5
 
 	[[languages.zh.menu.main]]
 		name = "电子书"
 		url = "/zh/resources/#ebooks"
-		parent = "Resources"
+		parent = "资源"
 		weight = 6
 
 	[[languages.zh.menu.main]]
 		name = "白皮书"
 		url = "/zh/resources/#white-papers"
-		parent = "Resources"
+		parent = "资源"
 		weight = 7
 
 	[[languages.zh.menu.main]]
 		name = "案例研究"
 		url = "/zh/resources/#cases-studies"
-		parent = "Resources"
+		parent = "资源"
 		weight = 8
 
 	[[languages.zh.menu.main]]
 		name = "Jakarta EE 起步"
-		url = "/resources/#starter_jakartaee"
-		parent = "Resources"
+		url = "/zh/resources/#starter_jakartaee"
+		parent = "资源"
 		weight = 9
 
 	# specifications
@@ -595,7 +595,7 @@ enableInlineShortcodes = true
 		weight = 4
 
 	[[languages.zh.menu.main]]
-		name = "JakartaOne Livestream"
+		name = "JakartaOne Livestream 线上活动"
 		url = "https://jakartaone.org"
 		parent = "社区"
 		weight = 5
@@ -619,8 +619,8 @@ enableInlineShortcodes = true
 		weight = 8
 
 	[[languages.zh.menu.main]]
-		name = "Get Involved"
-		url = "/community/get-involved"
+		name = "加入社区"
+		url = "/zh/community/get-involved"
 		parent = "社区"
 		weight = 9
 
@@ -632,7 +632,7 @@ enableInlineShortcodes = true
 		weight = 1
 
 	[[languages.zh.menu.main]]
-		name = "成员"
+		name = "成员列表"
 		url = "/zh/membership/members/"
 		parent = "成员"
 		weight = 2

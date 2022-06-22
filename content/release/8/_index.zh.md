@@ -11,8 +11,8 @@ header_wrapper_class: "header-release-8"
 container: "container-fluid"
 type: "release/8"
 press_release_link: "/news/jakarta-ee-8-released/"
-subtitle: "Jakarta EE 8 Released!"
-description: "The Eclipse Foundation today announced during the JakartaOne Livestream virtual conference the release of the Jakarta EE 8 Full Platform and Web Profile specifications and related Technology Compatibility Kits (TCKs)."
+subtitle: "Jakarta EE 8 发布啦!"
+description: "今日，Eclipse Foundation在JakartaOne Livestream虚拟线上会议上正式宣布，Jakarta EE 8 的Full Platform版本和Web Profile版本以及相关技术兼容工具包（TCKs）正式发布。"
 ---
 
 {{< pages/release/8 >}}
