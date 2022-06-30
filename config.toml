@@ -230,7 +230,7 @@ enableInlineShortcodes = true
 
 [[menu.main]]
     name = "Starter for Jakarta EE"
-    url = "/resources/#starter_jakartaee"
+    url = "https://start.jakarta.ee/"
     parent = "Resources"
     weight = 9
 
