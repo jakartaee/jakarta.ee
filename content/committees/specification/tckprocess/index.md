@@ -459,8 +459,11 @@ is not a mechanism to attempt to handle implementation specific issues.
 ### How Tests May be Added to a TCK {#_how_tests_may_be_added_to_a_tck}
 
 The only time tests may be added to a TCK are in a major or minor
-release. A service release which updates the exclude list MUST not have
-test additions or updates (see exception below for addressing newer Java SE versions).
+release. 
+
+### How Tests May be Updated to address TCK Challenges
+
+A service release may update tests as described under Accepted Challenges.
 
 ### How tests may be Updated to address newer Java SE versions {#_how_tests_may_be_updated_for_new_java_se_versions}
 
