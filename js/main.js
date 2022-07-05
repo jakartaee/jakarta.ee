@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
           remove: true
         });
       }
-    
+
       $(window).on("load", function() {
         if ($(window).width() > 768) {
           matchHeightDropdownMenuItems();
@@ -45,7 +45,14 @@ document.addEventListener("DOMContentLoaded", function(event) {
       });
 
       var owlSolsticeSlider = $('.solstice-slider');
-      owlSolsticeSlider.owlCarousel();
+      owlSolsticeSlider.owlCarousel({
+          items:1,
+          autoplay:true,
+          autoplayTimeout:6000,
+          autoplayHoverPause:true,
+          autoplaySpeed: 2000,
+          loop:true,
+      });
 
       const solsticeSliderHome = () => {
         var owlSolsticeFeaturedStorySlider = $('.solstice-featured-story-slider');
@@ -58,7 +65,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
             loop:true,
         });
       }
-      
+
       $(window).on("load", function() {
           solsticeSliderHome();
       });
