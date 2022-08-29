@@ -206,7 +206,7 @@ releases:
       description: XML Schema for the Jakarta Server Faces Application Configuration File
       status: Final
       
-    - schema: web-facelettaglibrary_3_0.xsd
+    - schema: web-facelettaglibrary_4_0.xsd
       namespace: jakartaee
       description: XML Schema for the Jakarta Tag Libraries in the Jakarta Faces Standard Facelets View Declaration Language (Facelets VDL)
       status: Final
