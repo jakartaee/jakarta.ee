@@ -123,6 +123,15 @@ sets:
         - version: 11
           compatibility: 'http://www.inforbus.com/InforsuiteAS/platform-tckresults/FullPlatform9.1/index.html'
           download_url: 'http://www.inforbus.com/as.html'
+      - name: IBM WebSphere Liberty
+        vendor: IBM Corporation
+        image: '/images/compatible_products/ibm-websphere-liberty-logo.svg'
+        image_width: 120
+        download: 'https://www.ibm.com/support/pages/node/6250961#asset/runtimes-wlp-javaee8'
+        versions:
+          - version: '21.0.0.1'
+            compatibility: 'https://www.ibm.com/support/fixcentral/swg/selectFixes?parent=ibm%7EWebSphere&product=ibm/WebSphere/WebSphere+Liberty&release=21.0.0.12&platform=All&function=fixId&fixids=wlp-jakartaee9-21.0.0.12&includeSupersedes=0'
+            download_url: 'https://www.ibm.com/support/pages/node/6250961#asset/runtimes-wlp-javaee8'
 
     - title: Jakarta EE 9.1 Web Profile
       items:
@@ -409,7 +418,7 @@ sets:
 
       - name: IBM WebSphere Liberty
         vendor: IBM Corporation
-        image: '/images/compatible_products/websphereliberty.svg'
+        image: '/images/compatible_products/ibm-websphere-liberty-logo.svg'
         image_width: 120
         download: 'https://www.ibm.com/support/fixcentral/swg/selectFixes?parent=ibm%7EWebSphere&product=ibm/WebSphere/WebSphere+Liberty&release=20.0.0.3&platform=All&function=fixId&fixids=wlp-javaee8-20.0.0.3&includeSupersedes=0'
         versions:
@@ -517,7 +526,7 @@ sets:
 
       - name: IBM WebSphere Liberty
         vendor: IBM Corporation
-        image: '/images/compatible_products/websphereliberty.svg'
+        image: '/images/compatible_products/ibm-websphere-liberty-logo.svg'
         image_width: 120
         download: 'https://www.ibm.com/support/fixcentral/swg/selectFixes?parent=ibm%7EWebSphere&product=ibm/WebSphere/WebSphere+Liberty&release=20.0.0.3&platform=All&function=fixId&fixids=wlp-javaee8-20.0.0.3&includeSupersedes=0'
         versions:
