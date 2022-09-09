@@ -28,427 +28,86 @@ Did we get something wrong? Please let us know in the comments!
 
 There are multiple Jakarta EE 9 and 10 implementations supporting the new `jakarta.*` namespace.
 
-<table>
-  <tr>
-   <td><strong>Vendor / Community</strong>
-   </td>
-   <td><strong>Implementation / Project</strong>
-   </td>
-   <td><strong>Transitioned?</strong>
-   </td>
-   <td><strong>Version with jakarta namespace</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>Apache Software Foundation
-   </td>
-   <td>TomEE
-   </td>
-   <td>Yes
-   </td>
-   <td>9.0.0-M+
-   </td>
-  </tr>
-  <tr>
-   <td>Eclipse Foundation
-   </td>
-   <td>Glassfish
-   </td>
-   <td>Yes
-   </td>
-   <td>6.0+
-   </td>
-  </tr>
-  <tr>
-   <td>Fujitsu
-   </td>
-   <td>Enterprise Application Server
-   </td>
-   <td>In Progress
-   </td>
-   <td>1.1+
-   </td>
-  </tr>
-  <tr>
-   <td>Payara
-   </td>
-   <td>Payara
-   </td>
-   <td>Yes
-   </td>
-   <td>6.2021.1.Alpha, Preview: 5.2020.5+
-   </td>
-  </tr>
-  <tr>
-   <td>IBM
-   </td>
-   <td>OpenLiberty
-   </td>
-   <td>Yes
-   </td>
-   <td>21.0.0.12+
-   </td>
-  </tr>
-  <tr>
-   <td>Red Hat
-   </td>
-   <td>Wildfly
-   </td>
-   <td>In Progress
-   </td>
-   <td>Normal: NYI, Preview: 22+
-   </td>
-  </tr>
-</table>
+|**Vendor / Community**|**Implementation / Project**|**Transitioned?**|**Version with jakarta namespace**|
+|:----|:----|:----|:----|
+|Apache Software Foundation|TomEE|Yes|9.0.0-M+|
+|Eclipse Foundation|Glassfish|Yes|6.0+|
+|Fujitsu|Enterprise Application Server|In Progress|1.1+|
+|Payara|Payara|Yes|6.2021.1.Alpha, Preview: 5.2020.5+|
+|IBM|OpenLiberty|Yes|21.0.0.12+|
+|Red Hat|Wildfly|In Progress|Normal: NYI, Preview: 22+|
 
 ## Web Servers
 
 The most popular web servers also now support the new `jakarta.*` namespace.
 
-<table>
-  <tr>
-   <td><strong>Vendor / Community</strong>
-   </td>
-   <td><strong>Implementation / Project</strong>
-   </td>
-   <td><strong>Transitioned?</strong>
-   </td>
-   <td><strong>Version with jakarta namespace</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>Apache Software Foundation
-   </td>
-   <td>Tomcat
-   </td>
-   <td>Yes
-   </td>
-   <td>10.0+
-   </td>
-  </tr>
-  <tr>
-   <td>Eclipse Foundation
-   </td>
-   <td>Jetty
-   </td>
-   <td>Yes
-   </td>
-   <td>11.0.0+
-   </td>
-  </tr>
-</table>
+|**Vendor / Community**|**Implementation / Project**|**Transitioned?**|**Version with jakarta namespace**|
+|:----|:----|:----|:----|
+|Apache Software Foundation|Tomcat|Yes|10.0+|
+|Eclipse Foundation|Jetty|Yes|11.0.0+|
 
 ## MicroProfile Implementations
 
 MicroProfile is a related set of specifications and APIs which utilize some of the Jakarta EE 9 and 10 specifications. Several implementations are compatible.
 
-<table>
-  <tr>
-   <td><strong>Vendor / Community</strong>
-   </td>
-   <td><strong>Implementation / Project</strong>
-   </td>
-   <td><strong>Transitioned?</strong>
-   </td>
-   <td><strong>Version with jakarta namespace</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>Apache Software Foundation
-   </td>
-   <td>TomEE
-   </td>
-   <td>Yes
-   </td>
-   <td>9.0.0-M+
-   </td>
-  </tr>
-  <tr>
-   <td>Fujitsu
-   </td>
-   <td>Launcher
-   </td>
-   <td>Yes
-   </td>
-   <td>4.0+
-   </td>
-  </tr>
-  <tr>
-   <td>IBM
-   </td>
-   <td>OpenLiberty
-   </td>
-   <td>Yes
-   </td>
-   <td>22.0.0.1+
-   </td>
-  </tr>
-  <tr>
-   <td>Oracle
-   </td>
-   <td>Helidon
-   </td>
-   <td>Yes
-   </td>
-   <td>3.0.0
-   </td>
-  </tr>
-  <tr>
-   <td>Payara
-   </td>
-   <td>Payara
-   </td>
-   <td>Yes
-   </td>
-   <td>Payara 6.2022.1.Alpha2
-   </td>
-  </tr>
-  <tr>
-   <td>PiranhaCloud
-   </td>
-   <td>Piranha
-   </td>
-   <td>Yes
-   </td>
-   <td>20.6.1
-   </td>
-  </tr>
-  <tr>
-   <td>Red Hat
-   </td>
-   <td>Quarkus
-   </td>
-   <td>Partly
-   </td>
-   <td>2.7.1+
-   </td>
-  </tr>
-</table>
+|**Vendor / Community**|**Implementation / Project**|**Transitioned?**|**Version with jakarta namespace**|
+|:----|:----|:----|:----|
+|Apache Software Foundation|TomEE|Yes|9.0.0-M+|
+|Fujitsu|Launcher|Yes|4.0+|
+|IBM|OpenLiberty|Yes|22.0.0.1+|
+|Oracle|Helidon|Yes|3.0.0|
+|Payara|Payara|Yes|Payara 6.2022.1.Alpha2|
+|PiranhaCloud|Piranha|Yes|20.6.1|
+|Red Hat|Quarkus|Partly|2.7.1+|
 
 ## Middleware Tools
 
 Middleware tools is a broad term but include data store and messaging libraries that rely on Jakarta EE specifications.
 
-<table>
-  <tr>
-   <td><strong>Vendor / Community</strong>
-   </td>
-   <td><strong>Implementation / Project</strong>
-   </td>
-   <td><strong>Transitioned?</strong>
-   </td>
-   <td><strong>Version with jakarta namespace</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>Apache Software Foundation
-   </td>
-   <td>ActiveMQ Artemis
-   </td>
-   <td>Yes
-   </td>
-   <td>2.17.0+
-   </td>
-  </tr>
-  <tr>
-   <td>Oracle
-   </td>
-   <td>Coherence Community Edition
-   </td>
-   <td>In Process
-   </td>
-   <td>22.09
-   </td>
-  </tr>
-</table>
+|**Vendor / Community**|**Implementation / Project**|**Transitioned?**|**Version with jakarta namespace**|
+|:----|:----|:----|:----|
+|Apache Software Foundation|ActiveMQ Artemis|Yes|2.17.0+|
+|Oracle|Coherence Community Edition|In Process|22.09|
 
 ## IDES
 
 The major IDEs have steadily added 1st class support for jakarta.* namespace.
 
-<table>
-  <tr>
-   <td><strong>Vendor / Community</strong>
-   </td>
-   <td><strong>Implementation / Project</strong>
-   </td>
-   <td><strong>Transitioned?</strong>
-   </td>
-   <td><strong>Notes</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>Apache Software Foundation
-   </td>
-   <td>Netbeans
-   </td>
-   <td>Partly
-   </td>
-   <td>Supports JakartaEE as any 3rd party lib you add to a Java project but no native plugins or specialized support
-   </td>
-  </tr>
-  <tr>
-   <td>Eclipse Foundation
-   </td>
-   <td>Eclipse IDE
-   </td>
-   <td>Partly
-   </td>
-   <td>Supports JakartaEE as any 3rd party lib you add to a Java project but no native plugins or specialized support
-   </td>
-  </tr>
-  <tr>
-   <td>Jetbrains
-   </td>
-   <td>IntelliJ
-   </td>
-   <td>Yes
-   </td>
-   <td>Native support for creating Jakarta EE projects, plugins for running. Migration tool for the namespace switch.
-   </td>
-  </tr>
-  <tr>
-   <td>Microsoft
-   </td>
-   <td>VS Code
-   </td>
-   <td>Partly
-   </td>
-   <td>Supports JakartaEE as any 3rd party lib you add to a Java project, but no native plugins or specialized support
-   </td>
-  </tr>
-</table>
+|**Vendor / Community**|**Implementation / Project**|**Transitioned?**|**Notes**|
+|:----|:----|:----|:----|
+|Apache Software Foundation|Netbeans|Partly|Supports JakartaEE as any 3rd party lib you add to a Java project but no native plugins or specialized support|
+|Eclipse Foundation|Eclipse IDE|Partly|Supports JakartaEE as any 3rd party lib you add to a Java project but no native plugins or specialized support|
+|Jetbrains|IntelliJ|Yes|Native support for creating Jakarta EE projects, plugins for running. Migration tool for the namespace switch.|
+|Microsoft|VS Code|Partly|Supports JakartaEE as any 3rd party lib you add to a Java project, but no native plugins or specialized support|
 
 ## Build Tools
 
 Maven, Gradle, and Ant have all added functionality to support the new namespace, especially concerning the various deployment plugins.
 
-<table>
-  <tr>
-   <td><strong>Vendor / Community</strong>
-   </td>
-   <td><strong>Implementation / Project</strong>
-   </td>
-   <td><strong>Transitioned?</strong>
-   </td>
-   <td><strong>Version with jakarta namespace</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>Apache Software Foundation
-   </td>
-   <td>Ant
-   </td>
-   <td>Partly
-   </td>
-   <td>1.10.12+
-   </td>
-  </tr>
-  <tr>
-   <td>Apache Software Foundation
-   </td>
-   <td>Maven
-   </td>
-   <td>Partly
-   </td>
-   <td>3.6.5+
-   </td>
-  </tr>
-  <tr>
-   <td>Gradleware
-   </td>
-   <td>Gradle
-   </td>
-   <td>Partly
-   </td>
-   <td>7.4+
-   </td>
-  </tr>
-</table>
+|**Vendor / Community**|**Implementation / Project**|**Transitioned?**|**Version with jakarta namespace**|
+|:----|:----|:----|:----|
+|Apache Software Foundation|Ant|Partly|1.10.12+|
+|Apache Software Foundation|Maven|Partly|3.6.5+|
+|Gradleware|Gradle|Partly|7.4+|
 
 ## Frameworks
 
 Several popular frameworks assist in building Jakarta EE applications.
 
-<table>
-  <tr>
-   <td><strong>Vendor / Community</strong>
-   </td>
-   <td><strong>Implementation / Project</strong>
-   </td>
-   <td><strong>Transitioned?</strong>
-   </td>
-   <td><strong>version with jakarta namespace</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>Eclipse Foundation
-   </td>
-   <td>Jersey
-   </td>
-   <td>Yes
-   </td>
-   <td>3.0.0+
-   </td>
-  </tr>
-  <tr>
-   <td>Object Computing
-   </td>
-   <td>Micronaut
-   </td>
-   <td>Partly
-   </td>
-   <td>3.0.0+
-   </td>
-  </tr>
-  <tr>
-   <td>Red Hat
-   </td>
-   <td>Hibernate
-   </td>
-   <td>Yes
-   </td>
-   <td>6.0.0-Beta3
-   </td>
-  </tr>
-  <tr>
-   <td>VMware
-   </td>
-   <td>Spring
-   </td>
-   <td>Yes
-   </td>
-   <td>6.0.0-M1
-   </td>
-  </tr>
-</table>
+|**Vendor / Community**|**Implementation / Project**|**Transitioned?**|**version with jakarta namespace**|
+|:----|:----|:----|:----|
+|Eclipse Foundation|Jersey|Yes|3.0.0+|
+|Object Computing|Micronaut|Partly|3.0.0+|
+|Red Hat|Hibernate|Yes|6.0.0-Beta3|
+|VMware|Spring|Yes|6.0.0-M1|
 
 ## Testing Frameworks
 
 Testing is vitally essential, and alongside the core JUnit and TestNG libs is the popular Arquillian framework.
 
-<table>
-  <tr>
-   <td><strong>Vendor / Community</strong>
-   </td>
-   <td><strong>Implementation / Project</strong>
-   </td>
-   <td><strong>Transitioned?</strong>
-   </td>
-   <td><strong>Version with jakarta namespace</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>Red Hat
-   </td>
-   <td>Arquillian
-   </td>
-   <td>Yes
-   </td>
-   <td>1.7.0.Alpha10
-   </td>
-  </tr>
-</table>
+|**Vendor / Community**|**Implementation / Project**|**Transitioned?**|**Version with jakarta namespace**|
+|:----|:----|:----|:----|
+|Red Hat|Arquillian|Yes|1.7.0.Alpha10|
 
 ## Conclusion
 
