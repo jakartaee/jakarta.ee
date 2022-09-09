@@ -127,7 +127,7 @@ sets:
         vendor: IBM Corporation
         image: '/images/compatible_products/ibm-websphere-liberty-logo.svg'
         image_width: 120
-        download: 'https://www.ibm.com/cloud/websphere-liberty'
+        download: 'https://www.ibm.com/support/pages/node/6250961#asset/runtimes-wlp-javaee8'
         versions:
           - version: '21.0.0.12, Java 17'
             compatibility: 'https://www.ibm.com/support/fixcentral/swg/selectFixes?parent=ibm%7EWebSphere&product=ibm/WebSphere/WebSphere+Liberty&release=21.0.0.12&platform=All&function=fixId&fixids=wlp-jakartaee9-21.0.0.12&includeSupersedes=0'
@@ -196,7 +196,7 @@ sets:
         vendor: IBM Corporation
         image: '/images/compatible_products/ibm-websphere-liberty-logo.svg'
         image_width: 120
-        download: 'https://www.ibm.com/cloud/websphere-liberty'
+        download: 'https://www.ibm.com/support/pages/node/6250961#asset/runtimes-wlp-javaee8'
         versions:
           - version: '21.0.0.12, Java 17'
             compatibility: 'https://www.ibm.com/support/fixcentral/swg/selectFixes?parent=ibm%7EWebSphere&product=ibm/WebSphere/WebSphere+Liberty&release=21.0.0.12&platform=All&function=fixId&fixids=wlp-jakartaee9-21.0.0.12&includeSupersedes=0'
