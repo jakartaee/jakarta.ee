@@ -127,11 +127,17 @@ sets:
         vendor: IBM Corporation
         image: '/images/compatible_products/ibm-websphere-liberty-logo.svg'
         image_width: 120
-        download: 'https://www.ibm.com/support/pages/node/6250961#asset/runtimes-wlp-javaee8'
+        download: 'https://www.ibm.com/cloud/websphere-liberty'
         versions:
-          - version: '21.0.0.1'
+          - version: '21.0.0.12, Java 17'
             compatibility: 'https://www.ibm.com/support/fixcentral/swg/selectFixes?parent=ibm%7EWebSphere&product=ibm/WebSphere/WebSphere+Liberty&release=21.0.0.12&platform=All&function=fixId&fixids=wlp-jakartaee9-21.0.0.12&includeSupersedes=0'
-            download_url: 'https://www.ibm.com/support/pages/node/6250961#asset/runtimes-wlp-javaee8'
+            download_url: 'https://download.eclipse.org/jakartaee/platform/9.1/jakarta-jakartaeetck-9.1.0.zip'
+          - version: '21.0.0.12, Java 11'
+            compatibility: 'https://www.ibm.com/support/fixcentral/swg/selectFixes?parent=ibm%7EWebSphere&product=ibm/WebSphere/WebSphere+Liberty&release=21.0.0.12&platform=All&function=fixId&fixids=wlp-jakartaee9-21.0.0.12&includeSupersedes=0'
+            download_url: 'https://download.eclipse.org/jakartaee/platform/9.1/jakarta-jakartaeetck-9.1.0.zip'
+          - version: '21.0.0.12, Java 8'
+            compatibility: 'https://www.ibm.com/support/fixcentral/swg/selectFixes?parent=ibm%7EWebSphere&product=ibm/WebSphere/WebSphere+Liberty&release=21.0.0.12&platform=All&function=fixId&fixids=wlp-jakartaee9-21.0.0.12&includeSupersedes=0'
+            download_url: 'https://download.eclipse.org/jakartaee/platform/9.1/jakarta-jakartaeetck-9.1.0.zip'
 
     - title: Jakarta EE 9.1 Web Profile
       items:
@@ -186,6 +192,21 @@ sets:
         - version: 9.0.0-M7
           compatibility: 'https://tomee.apache.org/9.0.0-M7/plume/webprofile-9.1.html'
           download_url: 'https://www.apache.org/dyn/closer.cgi/tomee/tomee-9.0.0-M7/apache-tomee-9.0.0-M7-plume.zip'
+      - name: IBM WebSphere Liberty
+        vendor: IBM Corporation
+        image: '/images/compatible_products/ibm-websphere-liberty-logo.svg'
+        image_width: 120
+        download: 'https://www.ibm.com/cloud/websphere-liberty'
+        versions:
+          - version: '21.0.0.12, Java 17'
+            compatibility: 'https://www.ibm.com/support/fixcentral/swg/selectFixes?parent=ibm%7EWebSphere&product=ibm/WebSphere/WebSphere+Liberty&release=21.0.0.12&platform=All&function=fixId&fixids=wlp-jakartaee9-21.0.0.12&includeSupersedes=0'
+            download_url: 'https://download.eclipse.org/jakartaee/platform/9.1/jakarta-jakartaeetck-9.1.0.zip'
+          - version: '21.0.0.12, Java 11'
+            compatibility: 'https://www.ibm.com/support/fixcentral/swg/selectFixes?parent=ibm%7EWebSphere&product=ibm/WebSphere/WebSphere+Liberty&release=21.0.0.12&platform=All&function=fixId&fixids=wlp-jakartaee9-21.0.0.12&includeSupersedes=0'
+            download_url: 'https://download.eclipse.org/jakartaee/platform/9.1/jakarta-jakartaeetck-9.1.0.zip'
+          - version: '21.0.0.12, Java 8'
+            compatibility: 'https://www.ibm.com/support/fixcentral/swg/selectFixes?parent=ibm%7EWebSphere&product=ibm/WebSphere/WebSphere+Liberty&release=21.0.0.12&platform=All&function=fixId&fixids=wlp-jakartaee9-21.0.0.12&includeSupersedes=0'
+            download_url: 'https://download.eclipse.org/jakartaee/platform/9.1/jakarta-jakartaeetck-9.1.0.zip'
 
   - jakartaee_version: 9
     items:
