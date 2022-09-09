@@ -131,13 +131,13 @@ sets:
         versions:
           - version: '21.0.0.12, Java 17'
             compatibility: 'https://www.ibm.com/support/pages/node/6612941'
-            download_url: 'https://download.eclipse.org/jakartaee/platform/9.1/jakarta-jakartaeetck-9.1.0.zip'
+            download_url: https://www.ibm.com/support/fixcentral/swg/selectFixes?parent=ibm%7EWebSphere&product=ibm/WebSphere/WebSphere+Liberty&release=21.0.0.12&platform=All&function=fixId&fixids=wlp-jakartaee9-21.0.0.12&includeSupersedes=0
           - version: '21.0.0.12, Java 11'
             compatibility: 'https://www.ibm.com/support/pages/node/6612939'
-            download_url: 'https://download.eclipse.org/jakartaee/platform/9.1/jakarta-jakartaeetck-9.1.0.zip'
+            download_url: https://www.ibm.com/support/fixcentral/swg/selectFixes?parent=ibm%7EWebSphere&product=ibm/WebSphere/WebSphere+Liberty&release=21.0.0.12&platform=All&function=fixId&fixids=wlp-jakartaee9-21.0.0.12&includeSupersedes=0
           - version: '21.0.0.12, Java 8'
             compatibility: 'https://www.ibm.com/support/pages/node/6612937'
-            download_url: 'https://download.eclipse.org/jakartaee/platform/9.1/jakarta-jakartaeetck-9.1.0.zip'
+            download_url: https://www.ibm.com/support/fixcentral/swg/selectFixes?parent=ibm%7EWebSphere&product=ibm/WebSphere/WebSphere+Liberty&release=21.0.0.12&platform=All&function=fixId&fixids=wlp-jakartaee9-21.0.0.12&includeSupersedes=0
 
     - title: Jakarta EE 9.1 Web Profile
       items:
@@ -200,13 +200,13 @@ sets:
         versions:
           - version: '21.0.0.12, Java 17'
             compatibility: 'https://www.ibm.com/support/pages/node/6612933'
-            download_url: 'https://download.eclipse.org/jakartaee/platform/9.1/jakarta-jakartaeetck-9.1.0.zip'
+            download_url: 'https://www.ibm.com/support/fixcentral/swg/selectFixes?parent=ibm~WebSphere&product=ibm/WebSphere/WebSphere+Liberty&release=21.0.0.12&platform=All&function=fixId&fixids=wlp-webProfile9-21.0.0.12&includeSupersedes=0'
           - version: '21.0.0.12, Java 11'
             compatibility: 'https://www.ibm.com/support/pages/node/6612863'
-            download_url: 'https://download.eclipse.org/jakartaee/platform/9.1/jakarta-jakartaeetck-9.1.0.zip'
+            download_url: 'https://www.ibm.com/support/fixcentral/swg/selectFixes?parent=ibm~WebSphere&product=ibm/WebSphere/WebSphere+Liberty&release=21.0.0.12&platform=All&function=fixId&fixids=wlp-webProfile9-21.0.0.12&includeSupersedes=0'
           - version: '21.0.0.12, Java 8'
             compatibility: 'https://www.ibm.com/support/pages/node/6612851'
-            download_url: 'https://download.eclipse.org/jakartaee/platform/9.1/jakarta-jakartaeetck-9.1.0.zip'
+            download_url: 'https://www.ibm.com/support/fixcentral/swg/selectFixes?parent=ibm~WebSphere&product=ibm/WebSphere/WebSphere+Liberty&release=21.0.0.12&platform=All&function=fixId&fixids=wlp-webProfile9-21.0.0.12&includeSupersedes=0'
 
   - jakartaee_version: 9
     items:
