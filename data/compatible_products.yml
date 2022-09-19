@@ -19,6 +19,15 @@ sets:
     - title: Jakarta EE 10 Web Profile
       release: "/release/10"
       items:
+        - name: Eclipse GlassFish
+          vendor: Eclipse Foundation
+          image: '/images/compatible_products/glassfish_logo.svg'
+          image_width: 195
+          download: 'https://glassfish.org/download'
+          versions:
+            - version: 7
+              compatibility: 'https://glassfish.org/certifications/jakarta-web-profile/10/TCK-Results-7.0.0-M8'
+              download_url: 'https://download.eclipse.org/ee4j/glassfish/web-7.0.0-M8.zip'
     - title: Jakarta EE 10 Core Profile
       release: "/release/10"
       items:
