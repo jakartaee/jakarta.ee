@@ -18,7 +18,7 @@ sets:
       items:
         - name: Eclipse GlassFish
           vendor: Eclipse Foundation
-          image: 'images/comaptible_products/glassfish_logo.svg'
+          image: '/images/compatible_products/glassfish_logo.svg'
           image_width: 195
           download: 'https://glassfish.org/download'
           versions:
