@@ -56,10 +56,10 @@ sets:
           image_width: 100
           download: 'https://wildfly.org/downloads'
           versions:
-            - version: 27.0.0.Alpha5, OpenJDK 17
+            - version: 27.0.0.Alpha5, Java SE 17
               compatibility: 'https://github.com/wildfly/certifications/blob/EE10/WildFly_27.0.0.Alpha5/jakarta-web-profile-jdk17.adoc'
               download_url: 'https://wildfly.org/downloads'
-            - version: 27.0.0.Alpha5, OpenJDK 11
+            - version: 27.0.0.Alpha5, JavaSE 11
               compatibility: 'https://github.com/wildfly/certifications/blob/EE10/WildFly_27.0.0.Alpha5/jakarta-web-profile-jdk11.adoc'
               download_url: 'https://wildfly.org/downloads'
 
