@@ -33,10 +33,10 @@ sets:
           versions:
             - version: 27.0.0.Alpha5, Java SE 17
               compatibility: 'https://github.com/wildfly/certifications/blob/EE10/WildFly_27.0.0.Alpha5/jakarta-full-platform-jdk17.adoc'
-              download_url: 'https://wildfly.org/downloads'
+              download_url: 'https://github.com/wildfly/certifications/blob/EE10/WildFly_27.0.0.Alpha5/jakarta-full-platform-jdk17.adoc'
             - version: 27.0.0.Alpha5, Java SE 11
               compatibility: 'https://github.com/wildfly/certifications/blob/EE10/WildFly_27.0.0.Alpha5/jakarta-full-platform-jdk11.adoc'
-              download_url: 'https://wildfly.org/downloads'
+              download_url: 'https://github.com/wildfly/certifications/blob/EE10/WildFly_27.0.0.Alpha5/jakarta-full-platform-jdk11.adoc'
 
     - title: Jakarta EE 10 Web Profile
       release: "/release/10"
@@ -58,10 +58,10 @@ sets:
           versions:
             - version: 27.0.0.Alpha5, Java SE 17
               compatibility: 'https://github.com/wildfly/certifications/blob/EE10/WildFly_27.0.0.Alpha5/jakarta-web-profile-jdk17.adoc'
-              download_url: 'https://wildfly.org/downloads'
+              download_url: 'https://github.com/wildfly/certifications/blob/EE10/WildFly_27.0.0.Alpha5/jakarta-web-profile-jdk17.adoc'
             - version: 27.0.0.Alpha5, JavaSE 11
               compatibility: 'https://github.com/wildfly/certifications/blob/EE10/WildFly_27.0.0.Alpha5/jakarta-web-profile-jdk11.adoc'
-              download_url: 'https://wildfly.org/downloads'
+              download_url: 'https://github.com/wildfly/certifications/blob/EE10/WildFly_27.0.0.Alpha5/jakarta-web-profile-jdk11.adoc'
 
     - title: Jakarta EE 10 Core Profile
       release: "/release/10"
