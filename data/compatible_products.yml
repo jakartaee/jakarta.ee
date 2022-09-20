@@ -66,6 +66,15 @@ sets:
     - title: Jakarta EE 10 Core Profile
       release: "/release/10"
       items:
+        - name: Payara Server Community
+          vendor: Payara Services Limited
+          image: '/images/compatible_products/payara-server-community-logo.svg'
+          image_width: 195
+          download: 'https://www.payara.fish/downloads/payara-platform-community-edition/'
+          versions:
+          - version: 6.2022.1.Alpha3
+            compatibility: 'https://docs.payara.fish/community/docs/6.2022.1.alpha3/Jakarta%20EE%20Certification/6.2022.1.Alpha3/6.2022.1.Alpha3%20Core%20TCK%20Results.html'
+            download_url: 'https://docs.payara.fish/community/docs/6.2022.1.alpha3/Jakarta%20EE%20Certification/6.2022.1.Alpha3/6.2022.1.Alpha3%20Core%20TCK%20Results.html'
         - name: WildFly
           vendor: Red Hat
           image: '/images/compatible_products/red-hat-wildfly-logo.png'
@@ -381,10 +390,13 @@ sets:
 
       - name: Payara Server Enterprise
         vendor: Payara Services Limited
-        image: '/images/compatible_products/payara_server.png'
+        image: '/images/compatible_products/payara-server-enterprise-logo.svg'
         image_width: 195
         download: 'https://www.payara.fish/downloads/'
         versions:
+        - version: 5.43.0
+          compatibility: 'https://docs.payara.fish/enterprise/docs/Jakarta%20EE%20Certification/5.43.0/5.43.0%20Web%20TCK%20Results.html'
+          download_url: 'https://docs.payara.fish/enterprise/docs/Jakarta%20EE%20Certification/5.43.0/5.43.0%20Web%20TCK%20Results.html'
         - version: 5.28.1
           compatibility: 'https://docs.payara.fish/enterprise/docs/jakartaee-certification/5.28.1/tck-results-full-5.28.1.html'
           download_url: 'https://docs.payara.fish/enterprise/docs/jakartaee-certification/5.28.1/tck-results-full-5.28.1.html'
@@ -624,10 +636,13 @@ sets:
 
       - name: Payara Server Enterprise
         vendor: Payara Services Limited
-        image: '/images/compatible_products/payara_server.png'
+        image: '/images/compatible_products/payara-server-enterprise-logo.svg'
         image_width: 195
         download: 'https://www.payara.fish/downloads/'
         versions:
+        - version: 5.43.0
+          compatibility: 'https://docs.payara.fish/enterprise/docs/Jakarta%20EE%20Certification/5.43.0/5.43.0%20Web%20TCK%20Results.html'
+          download_url: 'https://docs.payara.fish/enterprise/docs/Jakarta%20EE%20Certification/5.43.0/5.43.0%20Web%20TCK%20Results.html'
         - version: 5.28.1
           compatibility: 'https://docs.payara.fish/enterprise/docs/jakartaee-certification/5.28.1/tck-results-web-5.28.1.html'
           download_url: 'https://docs.payara.fish/enterprise/docs/jakartaee-certification/5.28.1/tck-results-web-5.28.1.html'
