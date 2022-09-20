@@ -25,6 +25,18 @@ sets:
             - version: 7.0
               compatibility: 'https://glassfish.org/certifications/jakarta-platform/10/TCK-Results-7.0.0-M8'
               download_url: 'https://download.eclipse.org/ee4j/glassfish/glassfish-7.0.0-M8.zip'
+        - name: WildFly
+          vendor: Red Hat 
+          image: '/images/compatible_products/red-hat-wildfly-logo.png'
+          image_width: 100
+          download: 'https://wildfly.org/downloads'
+          versions:
+            - version: 27.0.0.Alpha5, Java SE 17
+              compatibility: 'https://github.com/wildfly/certifications/blob/EE10/WildFly_27.0.0.Alpha5/jakarta-full-platform-jdk17.adoc'
+              download_url: 'https://github.com/wildfly/certifications/blob/EE10/WildFly_27.0.0.Alpha5/jakarta-full-platform-jdk17.adoc'
+            - version: 27.0.0.Alpha5, Java SE 11
+              compatibility: 'https://github.com/wildfly/certifications/blob/EE10/WildFly_27.0.0.Alpha5/jakarta-full-platform-jdk11.adoc'
+              download_url: 'https://github.com/wildfly/certifications/blob/EE10/WildFly_27.0.0.Alpha5/jakarta-full-platform-jdk11.adoc'
 
     - title: Jakarta EE 10 Web Profile
       release: "/release/10"
@@ -38,6 +50,19 @@ sets:
             - version: 7
               compatibility: 'https://glassfish.org/certifications/jakarta-web-profile/10/TCK-Results-7.0.0-M8'
               download_url: 'https://download.eclipse.org/ee4j/glassfish/web-7.0.0-M8.zip'
+        - name: WildFly
+          vendor: Red Hat 
+          image: '/images/compatible_products/red-hat-wildfly-logo.png'
+          image_width: 100
+          download: 'https://wildfly.org/downloads'
+          versions:
+            - version: 27.0.0.Alpha5, Java SE 17
+              compatibility: 'https://github.com/wildfly/certifications/blob/EE10/WildFly_27.0.0.Alpha5/jakarta-web-profile-jdk17.adoc'
+              download_url: 'https://github.com/wildfly/certifications/blob/EE10/WildFly_27.0.0.Alpha5/jakarta-web-profile-jdk17.adoc'
+            - version: 27.0.0.Alpha5, JavaSE 11
+              compatibility: 'https://github.com/wildfly/certifications/blob/EE10/WildFly_27.0.0.Alpha5/jakarta-web-profile-jdk11.adoc'
+              download_url: 'https://github.com/wildfly/certifications/blob/EE10/WildFly_27.0.0.Alpha5/jakarta-web-profile-jdk11.adoc'
+
     - title: Jakarta EE 10 Core Profile
       release: "/release/10"
       items:
@@ -50,6 +75,19 @@ sets:
           - version: 6.2022.1.Alpha3
             compatibility: 'https://docs.payara.fish/community/docs/6.2022.1.alpha3/Jakarta%20EE%20Certification/6.2022.1.Alpha3/6.2022.1.Alpha3%20Core%20TCK%20Results.html'
             download_url: 'https://docs.payara.fish/community/docs/6.2022.1.alpha3/Jakarta%20EE%20Certification/6.2022.1.Alpha3/6.2022.1.Alpha3%20Core%20TCK%20Results.html'
+        - name: WildFly
+          vendor: Red Hat
+          image: '/images/compatible_products/red-hat-wildfly-logo.png'
+          image_width: 100
+          download: 'https://wildfly.org/downloads'
+          versions:
+            - version: Preview 27.0.0.Alpha1, Java SE 17
+              compatibility: 'https://github.com/jakartaredhat/wf-core-tck-runner/wiki/Jakarta-Core-Profile-10.0.0-TCK-Java-SE-17-Results'
+              download_url: 'https://github.com/wildfly/wildfly/releases/download/27.0.0.Alpha1/wildfly-preview-27.0.0.Alpha1.zip'
+            - version: Preview 27.0.0.Alpha1, Java SE 11
+              compatibility: 'https://github.com/jakartaredhat/wf-core-tck-runner/wiki/Jakarta-Core-Profile-10.0.0-TCK-Java-SE-11-Results'
+              download_url: 'https://github.com/wildfly/wildfly/releases/download/27.0.0.Alpha1/wildfly-preview-27.0.0.Alpha1.zip'
+
   - jakartaee_version: 9.1
     items:
     - title: Jakarta EE 9.1 Platform
@@ -507,6 +545,16 @@ sets:
         - version: 10
           compatibility: 'http://www.inforbus.com/InforsuiteAS/platform-tckresults/index1.html'
           download_url: 'http://www.inforbus.com/as.html'
+      
+      - name: RockyAS
+        vendor: Ping An Technology
+        image: '/images/compatible_products/rockyas-logo.svg'
+        image_width: 130
+        download: 'https://rockyasfile.obs-cn-shenzhen.pinganyun.com/RockyAS.html'
+        versions:
+          - version: 1.0
+            compatibility: 'https://rockyas.obs-cn-shenzhen.pinganyun.com/rockyAS.html'
+            download_url: 'https://rockyas.obs-cn-shenzhen.pinganyun.com/rockyAS.html'
 
       - name: TongWeb Application Server
         vendor: Beijing TongTech Co., Ltd.
