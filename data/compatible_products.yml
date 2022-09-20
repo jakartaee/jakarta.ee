@@ -504,7 +504,7 @@ sets:
         versions:
           - version: 1.0
             compatibility: 'https://rockyas.obs-cn-shenzhen.pinganyun.com/rockyAS.html'
-            download_url: 'https://rockyasfile.obs-cn-shenzhen.pinganyun.com/RockyAS.html'
+            download_url: 'https://rockyas.obs-cn-shenzhen.pinganyun.com/rockyAS.html'
 
       - name: TongWeb Application Server
         vendor: Beijing TongTech Co., Ltd.
