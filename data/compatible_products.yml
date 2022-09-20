@@ -41,6 +41,15 @@ sets:
     - title: Jakarta EE 10 Core Profile
       release: "/release/10"
       items:
+        - name: Payara Server Community
+          vendor: Payara Services Limited
+          image: '/images/compatible_products/payara-server-community-logo.svg'
+          image_width: 195
+          download: 'https://www.payara.fish/downloads/payara-platform-community-edition/'
+          versions:
+          - version: 6.2022.1.Alpha3
+            compatibility: 'https://docs.payara.fish/community/docs/6.2022.1.alpha3/Jakarta%20EE%20Certification/6.2022.1.Alpha3/6.2022.1.Alpha3%20Core%20TCK%20Results.html'
+            download_url: 'https://docs.payara.fish/community/docs/6.2022.1.alpha3/Jakarta%20EE%20Certification/6.2022.1.Alpha3/6.2022.1.Alpha3%20Core%20TCK%20Results.html'
   - jakartaee_version: 9.1
     items:
     - title: Jakarta EE 9.1 Platform
