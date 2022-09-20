@@ -31,10 +31,10 @@ sets:
           image_width: 100
           download: 'https://wildfly.org/downloads'
           versions:
-            - version: 27.0.0.Alpha5, OpenJDK 17
+            - version: 27.0.0.Alpha5, Java SE 17
               compatibility: 'https://github.com/wildfly/certifications/blob/EE10/WildFly_27.0.0.Alpha5/jakarta-full-platform-jdk17.adoc'
               download_url: 'https://wildfly.org/downloads'
-            - version: 27.0.0.Alpha5, OpenJDK 11
+            - version: 27.0.0.Alpha5, Java SE 11
               compatibility: 'https://github.com/wildfly/certifications/blob/EE10/WildFly_27.0.0.Alpha5/jakarta-full-platform-jdk11.adoc'
               download_url: 'https://wildfly.org/downloads'
 
@@ -66,6 +66,19 @@ sets:
     - title: Jakarta EE 10 Core Profile
       release: "/release/10"
       items:
+        - name: WildFly
+          vendor: Red Hat
+          image: '/images/compatible_products/red-hat-wildfly-logo.png'
+          image_width: 100
+          download: 'https://wildfly.org/downloads'
+          versions:
+            - version: Preview 27.0.0.Alpha1, Java SE 17
+              compatibility: 'https://github.com/jakartaredhat/wf-core-tck-runner/wiki/Jakarta-Core-Profile-10.0.0-TCK-Java-SE-17-Results'
+              download_url: 'https://github.com/wildfly/wildfly/releases/download/27.0.0.Alpha1/wildfly-preview-27.0.0.Alpha1.zip'
+            - version: Preview 27.0.0.Alpha1, Java SE 11
+              compatibility: 'https://github.com/jakartaredhat/wf-core-tck-runner/wiki/Jakarta-Core-Profile-10.0.0-TCK-Java-SE-11-Results'
+              download_url: 'https://github.com/wildfly/wildfly/releases/download/27.0.0.Alpha1/wildfly-preview-27.0.0.Alpha1.zip'
+
   - jakartaee_version: 9.1
     items:
     - title: Jakarta EE 9.1 Platform
