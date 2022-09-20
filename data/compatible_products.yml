@@ -495,6 +495,16 @@ sets:
         - version: 10
           compatibility: 'http://www.inforbus.com/InforsuiteAS/platform-tckresults/index1.html'
           download_url: 'http://www.inforbus.com/as.html'
+      
+      - name: RockyAS
+        vendor: Ping An Technology
+        image: '/images/compatible_products/rockyas-logo.svg'
+        image_width: 130
+        download: 'https://rockyasfile.obs-cn-shenzhen.pinganyun.com/RockyAS.html'
+        versions:
+          - version: 1.0
+            compatibility: 'https://rockyas.obs-cn-shenzhen.pinganyun.com/rockyAS.html'
+            download_url: 'https://rockyasfile.obs-cn-shenzhen.pinganyun.com/RockyAS.html'
 
       - name: TongWeb Application Server
         vendor: Beijing TongTech Co., Ltd.
