@@ -352,7 +352,7 @@ sets:
 
       - name: Payara Server Enterprise
         vendor: Payara Services Limited
-        image: '/images/compatible_products/payara_server.png'
+        image: '/images/compatible_products/payara-server-enterprise-logo.svg'
         image_width: 195
         download: 'https://www.payara.fish/downloads/'
         versions:
@@ -588,7 +588,7 @@ sets:
 
       - name: Payara Server Enterprise
         vendor: Payara Services Limited
-        image: '/images/compatible_products/payara_server.png'
+        image: '/images/compatible_products/payara-server-enterprise-logo.svg'
         image_width: 195
         download: 'https://www.payara.fish/downloads/'
         versions:
