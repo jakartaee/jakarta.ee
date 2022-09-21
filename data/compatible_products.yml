@@ -66,6 +66,18 @@ sets:
     - title: Jakarta EE 10 Core Profile
       release: "/release/10"
       items:
+        - name: Open Liberty
+          vendor: IBM Corporation
+          image: '/images/compatible_products/ibm-open-liberty-logo.svg'
+          image_width: 160
+          download: 'https://openliberty.io/start/#runtime_betas'
+          versions:
+            - version: 22.0.0.10-beta, Java 17
+              compatibility: 'https://openliberty.io/certifications/jakartaee/10/coreprofile/22.0.0.10-beta-Java11-TCKResults.html'
+              download_url: 'https://public.dhe.ibm.com/ibmdl/export/pub/software/openliberty/runtime/beta/22.0.0.10-beta/openliberty-22.0.0.10-beta.zip'
+            - version: 22.0.0.10-beta, Java 11
+              compatibility: 'https://openliberty.io/certifications/jakartaee/10/coreprofile/22.0.0.10-beta-Java17-TCKResults.html'
+              download_url: 'https://public.dhe.ibm.com/ibmdl/export/pub/software/openliberty/runtime/beta/22.0.0.10-beta/openliberty-22.0.0.10-beta.zip'
         - name: Payara Server Community
           vendor: Payara Services Limited
           image: '/images/compatible_products/payara-server-community-logo.svg'
@@ -116,7 +128,7 @@ sets:
           download_url: 'https://download.eclipse.org/ee4j/glassfish/glassfish-6.0.0.zip'
       - name: Open Liberty
         vendor: IBM Corporation
-        image: '/images/compatible_products/ibm_open_liberty.svg'
+        image: '/images/compatible_products/ibm-open-liberty-logo.svg'
         image_width: 160
         download: 'https://openliberty.io/start/#runtime_releases'
         versions:
@@ -221,7 +233,7 @@ sets:
           download_url: 'https://download.eclipse.org/ee4j/glassfish/glassfish-6.0.0.zip'
       - name: Open Liberty
         vendor: IBM Corporation
-        image: '/images/compatible_products/ibm_open_liberty.svg'
+        image: '/images/compatible_products/ibm-open-liberty-logo.svg'
         image_width: 160
         download: 'https://openliberty.io/start/#runtime_releases'
         versions:
@@ -299,7 +311,7 @@ sets:
           download_url: 'http://www.inforbus.com/as.html'
       - name: Open Liberty
         vendor: IBM Corporation
-        image: '/images/compatible_products/ibm_open_liberty.svg'
+        image: '/images/compatible_products/ibm-open-liberty-logo.svg'
         image_width: 160
         download: 'https://openliberty.io/downloads/#runtime_betas'
         versions:
@@ -356,7 +368,7 @@ sets:
           download_url: 'https://download.eclipse.org/ee4j/glassfish/web-6.0.0.zip'
       - name: Open Liberty
         vendor: IBM Corporation
-        image: '/images/compatible_products/ibm_open_liberty.svg'
+        image: '/images/compatible_products/ibm-open-liberty-logo.svg'
         image_width: 160
         download: 'https://openliberty.io/downloads/#runtime_betas'
         versions:
@@ -422,7 +434,7 @@ sets:
 
       - name: Open Liberty
         vendor: IBM Corporation
-        image: '/images/compatible_products/ibm_open_liberty.svg'
+        image: '/images/compatible_products/ibm-open-liberty-logo.svg'
         image_width: 160
         download: 'https://openliberty.io/downloads/'
         versions:
@@ -593,7 +605,7 @@ sets:
 
       - name: Open Liberty
         vendor: IBM Corporation
-        image: '/images/compatible_products/ibm_open_liberty.svg'
+        image: '/images/compatible_products/ibm-open-liberty-logo.svg'
         image_width: 160
         download: 'https://openliberty.io/downloads/'
         versions:
