@@ -476,7 +476,7 @@ other = "Sign up now"
  other = "Lightweight"
 
 [jakarta-ee-version-10-features-block3-summary]
- other = "Jakarta EE 10 defines a new profile specification with Jakarta EE Core Profile 10. The “Core Profile” enables the development of lightweight and modernized Java applications."
+ other = "Jakarta EE 10 defines a new profile specification with Jakarta EE Core Profile 10. The “Core Profile” which defines a multi-vendor platform for modernized and lightweight Java applications and microservices."
 
 
 [jakarta-ee-version-10-features-block3-text]
