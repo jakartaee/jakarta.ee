@@ -76,6 +76,37 @@ document.addEventListener("DOMContentLoaded", function(event) {
             return .5 - Math.random()
           }).slice(0,3).slideDown("slow")
         );
+
+        $('.features-and-benefits-btn').on('click', function(){
+          const parent = $(this).parent().parent();
+          $(parent).find('.features-and-benefits-text').slideToggle(300, function(){
+            if ($(this).is(":hidden")) {
+              $(parent).removeClass('match-height-item-active').addClass('match-height-item-closed');
+            }
+            else {
+              $(parent).removeClass('match-height-item-closed').addClass('match-height-item-active');
+            }
+            // Update match height if all items are active
+            if ($(".feature-box.match-height-item-active").length > 1) {
+              $.fn.matchHeight._apply('.match-height-item-active');
+            }
+            if ($(".feature-box.match-height-item-closed").length > 1) {
+              $.fn.matchHeight._apply('.match-height-item-closed');
+            }
+            if ($(".feature-box.match-height-item-active").length === 0 || $(".feature-box.match-height-item-active").length == $(".feature-box").length) {
+              $.fn.matchHeight._update();
+            }
+          });
+          if ($(parent).is('[style]')) {
+            $(parent).removeAttr('style');
+          }
+          if ($(this).text().toLowerCase() === "learn more") {
+            $(this).text('Close');
+          }
+          else {
+            $(this).text('Learn more');
+          }
+        });
       });
 
 

@@ -16,7 +16,7 @@
                         </div>
                     </div>
                     
-                    <p class="subtitle">{{ .Params.subtitle }}</p>
+                    <p class="subtitle">{{ .Params.subtitle | plainify }}</p>
                     <p>{{ .Description }}</p>
                     <ul class="list-inline margin-top-30 margin-bottom-0">
                         <li><a class="btn btn-secondary card-panel-btn" href="{{ .Permalink }}"><i class="fa fa-code big" aria-hidden="true"></i> Release Page</a></li>

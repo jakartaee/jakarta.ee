@@ -1,14 +1,14 @@
 #!/bin/bash
 # ===========================================================================
 # Copyright (c) 2019 Eclipse Foundation and others.
-# 
+#
 # This program and the accompanying materials are made
 # available under the terms of the Eclipse Public License 2.0
 # which is available at https://www.eclipse.org/legal/epl-2.0/
-# 
+#
 # Contributors:
 # Andrii Malytksyi (TomiTribe)
-# 
+#
 # SPDX-License-Identifier: EPL-2.0
 # ===========================================================================
 #
@@ -19,10 +19,10 @@
 # you need GH_TOKEN env variable for https://api.github.com/graphql
 CREDENTIALS=$GH_TOKEN:x-oauth-basic
 CURSOR=null
-LIST_FILE=data/contributors/${1:-jakarta-ee-9.1.json} # first argument ('jakarta-ee-9.1.json' by default)
+LIST_FILE=data/contributors/${1:-jakarta-ee-10.json} # first argument ('jakarta-ee-9.1.json' by default)
 EXCLUDED_LIST=data/contributors/excluded-list.json
-FROM_DATE=${2:-2020-11-21} # second argument ('2020-11-21' by default)
-TO_DATE=${3:-2021-05-18} # third argument ('2021-05-18' by default)
+FROM_DATE=${2:-2021-05-18} # second argument ('2021-11-21' by default)
+TO_DATE=${3:-2022-05-18} # third argument ('2022-05-18' by default)
 
 function getGrraphQL() {
     curl -s -X POST -u $CREDENTIALS -H "Content-Type: application/json" -d "{\"query\": $1}" https://api.github.com/graphql
