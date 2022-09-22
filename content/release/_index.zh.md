@@ -11,4 +11,4 @@ container: "container-fluid"
 type: "release/9.1"
 ---
 
-{{< pages/release/9_1 >}}
+{{< pages/release >}}
