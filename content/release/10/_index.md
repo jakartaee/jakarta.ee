@@ -13,7 +13,7 @@ container: "container-fluid"
 footer_class: "footer-release-9"
 type: "release/10"
 hide_call_for_action: true
-#press_release_link: "/news/jakarta-ee-10-released/"
+press_release_link: "/news/jakarta-ee-10-released/"
 subtitle: "<span class='orange'>An Open, community-driven innovation</span><br> driving the future of cloud native Java technologies"
 ---
 
