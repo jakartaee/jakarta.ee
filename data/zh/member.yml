@@ -12,13 +12,15 @@
 
 sets:
     items:
-    - title: 【公司成员 4 家】【个人成员 76 人】【用户组成员 1 家】
+    - title: 【公司成员 7 家】【个人成员 79 人】【用户组成员 1 家】
     - title:
     - title: 【COMPANY】普元信息技术股份有限公司（Jakarta EE 中国社区发起人）
     - title: 【COMPANY】青岛北斗聚星网络科技有限公司
     - title: 【COMPANY】烟台海颐软件股份有限公司
     - title: 【COMPANY】Shandong Cvicse Middleware Co.,Ltd.（山东中创软件商用中间件股份有限公司）
-    - title: 【PERSON】Ondrej Mihalyi
+    - title: 【COMPANY】湖南亚信安慧科技有限公司
+    - title: 【COMPANY】金蝶天燕云计算股份有限公司(中间件及云计算厂商)
+    - title: 【COMPANY】北京华胜信泰数据技术有限公司（中国IT综合服务领导企业华胜天成旗下成员企业）
     - title: 【PERSON】Jon Zhang（A solid technology enthusias）
     - title: 【PERSON】米帅
     - title: 【PERSON】刘冬
@@ -54,9 +56,9 @@ sets:
     - title: 【PERSON】Wang Jian
     - title: 【PERSON】Liu Yong
     - title: 【PERSON】闫启
-    - title: 【PERSON】Xiao Lian
+    - title: 【PERSON】Xiao Lian
     - title: 【PERSON】詹启军
-    - title: 【PERSON】Huang Yang
+    - title: 【PERSON】Huang Yang
     - title: 【PERSON】Ding FeiFei
     - title: 【PERSON】谭煌
     - title: 【PERSON】漫漫
@@ -72,7 +74,7 @@ sets:
     - title: 【PERSON】吴诗琛（学生）
     - title: 【PERSON】Zhang Wenjie
     - title: 【PERSON】Linton
-    - title: 【PERSON】He Sai Ma
+    - title: 【PERSON】He Sai Ma
     - title: 【PERSON】Wu Jiajun
     - title: 【PERSON】Huang Hanpeng
     - title: 【PERSON】Xie Fei
@@ -81,22 +83,21 @@ sets:
     - title: 【PERSON】Zeral
     - title: 【PERSON】张子强
     - title: 【PERSON】戴毅
-    - title: 【PERSON】Zilong Ya
     - title: 【PERSON】Nicholas Zha
     - title: 【PERSON】刘航宇
-    - title: 【PERSON】Wang Shenghua
-    - title: 【PERSON】张磊
     - title: 【PERSON】Vinc
-    - title: 【PERSON】李高杰
-    - title: 【PERSON】YourBatman
     - title: 【PERSON】张磊
     - title: 【PERSON】Leo
     - title: 【PERSON】刘春明
     - title: 【PERSON】泠恒谦(学生)
     - title: 【PERSON】Likas
-    - title: 【PERSON】李高杰
     - title: 【PERSON】常峥
     - title: 【PERSON】区铁毅先生
     - title: 【PERSON】吴三岳
     - title: 【PERSON】YourBatman（博客专家、领域专家）
+    - title: 【PERSON】张明豪
+    - title: 【PERSON】刘万林
+    - title: 【PERSON】王炫盛
+    - title: 【PERSON】River (软件开发，DevOps工程师)
+    - title: 【PERSON】王胜华（Jakarta 技术爱好者）
     - title: 【USERGROUP】Nipingy
