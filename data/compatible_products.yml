@@ -102,10 +102,10 @@ sets:
           image_width: 100
           download: 'https://wildfly.org/downloads'
           versions:
-            - version: Preview 27.0.0.Alpha5, Java SE 17
+            - version: 27.0.0.Alpha5, Java SE 17
               compatibility: 'https://github.com/eclipse-ee4j/jakartaee-platform/issues/555'
               download_url: 'https://github.com/wildfly/wildfly/releases/download/27.0.0.Alpha5/wildfly-27.0.0.Alpha5.zip'
-            - version: Preview 27.0.0.Alpha5, Java SE 11
+            - version: 27.0.0.Alpha5, Java SE 11
               compatibility: 'https://github.com/eclipse-ee4j/jakartaee-platform/issues/556'
               download_url: 'https://github.com/wildfly/wildfly/releases/download/27.0.0.Alpha5/wildfly-27.0.0.Alpha5.zip'
             - version: Preview 27.0.0.Alpha1, Java SE 17
