@@ -518,6 +518,9 @@ other = "Sign up now"
 [jakarta-ee-version-10-section-specifications]
  other = "specifications"
 
+[jakarta-ee-version-10-section-view-all-releases]
+ other = "View all Releases"
+
 [jakarta-ee-version-9_1-features-title]
  other = "features and benefits"
 
