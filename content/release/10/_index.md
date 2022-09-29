@@ -1,9 +1,9 @@
 ---
 title: "Jakarta EE 10"
 date: 2022-09-22T00:00:00-00:00
-description: "The Jakarta EE Working Group, hosted by the Eclipse Foundation, one of the world’s largest open source software foundations, today announced the release of the Jakarta EE 10 Platform and Web Profile specifications and related TCKs."
+description: "The Jakarta EE 10 release is here. Modern, simplified & lightweight, see what's new in the Jakarta EE 10 Specifications."
 hide_sidebar: true
-seo_title: "Jakarta EE 10 Downloads | Java EE 10 Compatible Products & Specifications"
+seo_title: "Jakarta EE 10 Release | Java EE 10 | Download Compatible Products & Specifications | The Eclipse Foundation"
 headline: "<img class='header-release-10-logo' src='images/jakarta10-logo.svg' alt='Jakarta EE 10'>"
 logo: "images/jakarta/jakarta_ee_logo_schooner_color_horizontal_default.png"
 links: [[href: "/compatibility/", text: "Download Compatible Products"], [href: "/specifications/", text: "Specifications"]]
