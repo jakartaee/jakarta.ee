@@ -20,9 +20,9 @@ hide_sidebar: true
 * 编写一个完整的端到端的web应用测试 (就像 Jakarta EE Pet Store 一样 )
 * 阅读规范文档并对意义含混的部分进行评论
 * 在现有的基础上编写更多的测试：
-  * EE4J GitHub 的所有库: https://github.com/eclipse-ee4j
-  * 示例 1 - Jakarta Servlet: https://github.com/eclipse-ee4j/servlet-api
-  * 示例 2 - Jakarta Messaging: https://github.com/eclipse-ee4j/jms-api
+  * Jakarta EE GitHub 的所有库: https://github.com/jakartaee
+  * 示例 1 - Jakarta Servlet: https://github.com/jakartaee/servlet
+  * 示例 2 - Jakarta Messaging: https://github.com/jakartaee/messaging
 
 ## 我们可以为JUG提供:
 
