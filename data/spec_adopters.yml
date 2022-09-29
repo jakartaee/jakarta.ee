@@ -141,6 +141,14 @@ adopters:
       homepage_url: https://www.jugistanbul.org/
       logo: jugistanbul.png
       logo_white: jugistanbul.png
+
+  - name: Jakarta Data
+    directory: specifications/data
+    adopters:
+    - name: Garden State Java User Group
+      homepage_url: https://gsjug.org
+      logo: duke-gsjug-twitter.png
+      logo_white: duke-gsjug-twitter.png
       
 # Template: Example for creating new specification entry
 #  - name: Jakarta Bean Validation
