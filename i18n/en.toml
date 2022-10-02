@@ -548,7 +548,7 @@ other = "Sign up now"
 
 
 [jakarta-ee-version-9_1-features-participation-title]
- other = "<h2 class=\"text-blue text-center fw-600 uppercase\"><strong>community-powered</strong></h2><h2 class=\"text-secondary fw-600 margin-top-0 font-exo uppercase\"><em>innovation</em></h2>"
+ other = "<h2 class=\"text-blue text-center fw-600 uppercase\"><strong>community-powered</strong><br><span class=\"text-secondary font-exo\"><em>innovation</em></span></h2>"
 
 [jakarta-ee-version-9_1-participation-projects]
  other = "projects"
@@ -563,7 +563,7 @@ other = "Sign up now"
  other = "git repositories"
 
 [jakarta-ee-version-9_1-powered-by-participation-title]
- other = "<h2 class=\"text-blue text-center fw-600 uppercase\"><strong>Powered by</strong></h2><h2 class=\"text-secondary text-center fw-600 margin-top-0 font-exo uppercase\"><em>Participation</em></h2>"
+ other = "<h2 class=\"text-blue text-center fw-600 uppercase\"><strong>Powered by</strong><br><span class=\"text-secondary font-exo\"><em>Participation</em></span></h2>"
 
 [jakarta-ee-version-10-white-paper-title]
  other = "New Cloud Native Java eBook"
