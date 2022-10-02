@@ -541,7 +541,7 @@ other = "注册"
  other = "为开发者测试迁移到新的命名空间提供开放、稳定的平台"
 
 [jakarta-ee-version-9_1-features-participation-title]
- other = "<h2 class=\"text-blue text-center fw-600 uppercase\"><strong>社区掌控的</strong></h2><h2 class=\"text-secondary fw-600 margin-top-0 font-exo uppercase\"><em>创新</em></h2>"
+ other = "<h2 class=\"text-blue text-center fw-600 uppercase\"><strong>社区掌控的</strong><br><span class=\"text-secondary fw-600 margin-top-0 font-exo uppercase\"><em>创新</em></span></h2>"
 
 [jakarta-ee-version-9_1-participation-projects]
  other = "项目"
@@ -556,7 +556,7 @@ other = "注册"
  other = "git仓库"
 
 [jakarta-ee-version-9_1-powered-by-participation-title]
- other = "<h2 class=\"text-blue text-center fw-600 uppercase\"><strong>由参与者</strong></h2><h2 class=\"text-secondary text-center fw-600 margin-top-0 font-exo uppercase\"><em>贡献</em></h2>"
+ other = "<h2 class=\"text-blue text-center fw-600 uppercase\"><strong>由参与者</strong><br><span class=\"text-secondary text-center fw-600 margin-top-0 font-exo uppercase\"><em>贡献</em></span></h2>"
 
 [jakarta-ee-version-9_1-white-paper-title]
  other = "新的白皮书"
