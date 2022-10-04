@@ -25,6 +25,15 @@ sets:
             - version: 7.0
               compatibility: 'https://glassfish.org/certifications/jakarta-platform/10/TCK-Results-7.0.0-M8'
               download_url: 'https://download.eclipse.org/ee4j/glassfish/glassfish-7.0.0-M8.zip'
+        - name: FUJITSU Software Enterprise Application Platform
+          vendor: Fujitsu Limited
+          image: '/images/compatible_products/fujitsu_eap.svg'
+          image_width: 195
+          download: 'https://www.fujitsu.com/jp/software/applatform/'
+          versions:
+          - version: 1.1.0
+            compatibility: 'https://www.fujitsu.com/jp/products/software/middleware/business-middleware/middleware/applatform/jakartaee-report/eap110-ee10full-tck-results'
+            download_url: 'https://www.fujitsu.com/jp/products/software/middleware/business-middleware/middleware/applatform/'
         - name: Payara Server Community
           vendor: Payara Services Limited
           image: '/images/compatible_products/payara-server-community-logo.svg'
