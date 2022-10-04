@@ -112,10 +112,10 @@ sets:
           download: 'https://wildfly.org/downloads'
           versions:
             - version: 27.0.0.Alpha5, Java SE 17
-              compatibility: 'https://github.com/eclipse-ee4j/jakartaee-platform/issues/555'
+              compatibility: 'https://github.com/wildfly/certifications/blob/EE10/WildFly_27.0.0.Alpha5/jakarta-core-jdk17.adoc#jakarta-core-profile-1000-tck-java-se-17-results'
               download_url: 'https://github.com/wildfly/wildfly/releases/download/27.0.0.Alpha5/wildfly-27.0.0.Alpha5.zip'
             - version: 27.0.0.Alpha5, Java SE 11
-              compatibility: 'https://github.com/eclipse-ee4j/jakartaee-platform/issues/556'
+              compatibility: 'https://github.com/wildfly/certifications/blob/EE10/WildFly_27.0.0.Alpha5/jakarta-core-jdk11.adoc#jakarta-core-profile-1000-tck-java-se-11-results'
               download_url: 'https://github.com/wildfly/wildfly/releases/download/27.0.0.Alpha5/wildfly-27.0.0.Alpha5.zip'
             - version: Preview 27.0.0.Alpha1, Java SE 17
               compatibility: 'https://github.com/jakartaredhat/wf-core-tck-runner/wiki/Jakarta-Core-Profile-10.0.0-TCK-Java-SE-17-Results'
