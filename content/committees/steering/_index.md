@@ -18,5 +18,6 @@ This committee owns the overall strategy and the high level, long term roadmap s
 * Arjan Tijms - Elected Committer Member Representative
 * Dr. Jun Qian - Primeton - Elected Enterprise Representative
 * Zhao Xin - Shandong Cvicse Middleware Co. - Elected Enterprise Representative
+* Reza Rahman - Microsoft - Elected Enterprise Representative, Ed Burns - alternate
 
 {{< meeting-minutes-single "steering_committee" >}}
