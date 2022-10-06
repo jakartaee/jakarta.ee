@@ -1,6 +1,6 @@
 ---
 title: "Jakarta EE Releases"
-seo_title: "Jakarta EE 9 Releases | Download the Latest Version of Jakarta EE (Java EE)"
+seo_title: "Jakarta EE Releases | Download the Latest Version of Jakarta EE (Java EE)"
 description: "See all Jakarta EE release versions (Java EE). Download Jakarta EE compatible products and find out what’s new in the latest version."
 headline: "Jakarta&nbsp;EE  <br> <span class='release-versions'>Release Versions<span>"
 date: 2018-04-07T16:09:45-04:00
