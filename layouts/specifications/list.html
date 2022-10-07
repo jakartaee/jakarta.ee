@@ -39,7 +39,8 @@
         </li>
       {{ end }}
     </ul>
-  {{ else }}
+  {{ end }}
+  {{ if eq .Page.Parent.Title "Home" }}
     <p>{{ i18n "layouts-specifications-list-click-to-access-text" }}</p>
 
     <h2 class="big-text text-secondary">{{ i18n "layouts-specifications-list-platform-and-profile-title" }}</h2>
@@ -52,7 +53,7 @@
 
               <div class="col-sm-8 card-container">
                   <div class="card-panel bordered panel panel-default">
-                  
+
                       <div class="panel-body match-height-item-by-row">
                         <h2 class="big-text h3">
                             <a href="{{- with .Params.redirect_url | default .RelPermalink }}{{.}}{{- end }}">{{ .Title }}</a>
@@ -88,7 +89,7 @@
                   </div>
               </div>
           {{ end }}
-  
+
       {{ end }}
       </div>
     </div>
@@ -139,7 +140,7 @@
       {{ end }}
       </div>
     </div>
-    
+
   {{ end }}
     <div>
       {{ $section := .CurrentSection }}
