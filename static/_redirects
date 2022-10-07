@@ -1,6 +1,8 @@
 # start.jakarta.ee
 https://start.jakarta.ee/* https://eclipse-ee4j.github.io/starter/:splat 200!
 http://start.jakarta.ee/* https://eclipse-ee4j.github.io/starter/:splat 200!
+https://mail.jakarta.ee/* https://eclipse-ee4j.github.io/mail/:splat 200!
+http://mail.jakarta.ee/* https://eclipse-ee4j.github.io/mail/:splat 200!
 
 # redirect meeting minutes old location to new location
 /meeting_minutes /about/meeting_minutes 301!
