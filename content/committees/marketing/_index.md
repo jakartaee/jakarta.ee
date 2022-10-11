@@ -16,6 +16,7 @@ The focus of this committee is on marketing, branding and community awareness an
 * Jonathan Gallimore - Tomitribe, Cesar Hernandez - alternate
 * Eric (QingYu) Meng - Primeton - Elected Enterprise Representative
 * Zhao Xin - Shandong Cvicse Middleware Co. - Elected Enterprise Representative
+* Reza Rehman - Microsoft - Elected Enterprise Representative, Ed Burns - alternate
 * Otavio Santana - Elected Committer Member Representative
 
 {{< meeting-minutes-single "marketing_committee" >}}
