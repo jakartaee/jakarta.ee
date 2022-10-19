@@ -436,7 +436,7 @@ is not a mechanism to attempt to handle implementation specific issues.
 
 ### How Tests May be Added to a TCK {#_how_tests_may_be_added_to_a_tck}
 
-Tests may be added, updated, removed or excluded as the specification team sees fit.
+Tests may be added, updated, removed or excluded as the specification team sees fit in major or minor updates. In service releases, specification teams should only make changes that are documented in TCK challenge issues, and service release notes should document which challenges have been addressed.
 
 ## Process for releasing a point revision of a TCK
 
