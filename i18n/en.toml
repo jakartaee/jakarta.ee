@@ -992,7 +992,7 @@ other = "Sign up now"
  other = "Find out how to host a JakartaOne Livestream in your own language"
 
 [pages-get-involved-getinvolved-title]
- other = "Get Involved in Jakarta EE"
+ other = "Get Involved in Jakarta EE!"
 
 [pages-get-involved-getinvolved-content]
  other = "<p>To get involved in any Jakarta EE project or initiative, start by <a href=\"https://accounts.eclipse.org/user/register\">creating an Eclipse Foundation account</a>.</p><p>Once you have an account, you can choose any of the methods below to participate.</p>"
