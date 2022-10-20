@@ -1,5 +1,5 @@
 # jakarta.ee
-
+test
 The [jakarta.ee](https://jakarta.ee) website is generated with [Hugo](https://gohugo.io/documentation/) 0.76.5.
 
 Jakarta EE is the future of cloud native Java. Jakarta EE open source software drives cloud native innovation, modernizes enterprise applications and protects investments in Java EE.
@@ -108,7 +108,7 @@ summary: "Summary text to be presented in the news index page"
 - For the correct list of `type` and `news/tags`, review previous entries before creating a new one.
 - `authors` section receive a list of Github Handles and names, this is used to populate images and authors name automatically in the entry.
 
-The rest of the `_index.md` needs general markdown format to populate the new entry content. 
+The rest of the `_index.md` needs general markdown format to populate the new entry content.
 
 Eclipse Foundation Marketing Manager is responsible for approving the new entry (via pull request) for the `https://jakarta.ee/news/` section.
 
@@ -141,7 +141,7 @@ summary: "Summary text to be presented in the blogs index page"
 ---
 ```
 
-The rest of the `index.md` needs general markdown format to populate the new entry content. 
+The rest of the `index.md` needs general markdown format to populate the new entry content.
 
 Eclipse Foundation Marketing Manager is responsible for approving the new entry (via pull request) for the `https://jakarta.ee/blogs/` section.
 
@@ -169,8 +169,8 @@ Let's say we created a new post on jakarta.ee/news/ with the title "Jakarta EE 9
 
 ### How to add a compatible product in Jakarta EE compatible products section
 
-Create a new item with the same structure as existing ones in /data/compatible_products.yml-sets-items-items and fill the information. 
-``` 
+Create a new item with the same structure as existing ones in /data/compatible_products.yml-sets-items-items and fill the information.
+```
 - name: [product name]
   vendor: [member/company name]
   image: '/images/compatible_products/[product logo]'
