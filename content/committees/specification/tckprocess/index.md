@@ -456,7 +456,7 @@ Handling](https://www.eclipse.org/projects/dev_process/#6_5_Grievance_Handling)
 procedure SHOULD be followed to escalate the resolution. Note that this
 is not a mechanism to attempt to handle implementation specific issues.
 
-### How Tests May be Added or Changed in a TCK {#_how_tests_may_be_added_to_a_tck}
+### How Tests May be Added or Changed in a TCK {#_how_tests_may_be_added_or_changed_in_a_tck}
 
 Tests may be added, updated, removed or excluded as the specification team sees fit in major or minor updates.
 
