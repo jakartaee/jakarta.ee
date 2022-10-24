@@ -14,6 +14,6 @@
 <a class="sr-only" href="#content">{{ i18n "navigation-content-skip" }}</a>
 {{ partial "toolbar.html" . }}
 {{ partial "navbar.html" . }}
-<header class="header-wrapper{{ if ne .IsHome true }} header-secondary-bg-img {{ end }}{{- with .Params.header_wrapper_class | default .Site.Params.header_wrapper_class }} {{ . }}{{end}}" id="header-wrapper">
+<header class="header-wrapper{{ if and (ne .IsHome true) (ne .Params.disable_header_bg true) }} header-secondary-bg-img {{ end }}{{- with .Params.header_wrapper_class | default .Site.Params.header_wrapper_class }} {{ . }}{{end}}" id="header-wrapper">
   {{ partial "jumbotron.html" . }}
 </header>

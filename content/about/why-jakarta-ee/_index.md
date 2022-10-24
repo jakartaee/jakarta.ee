@@ -18,5 +18,6 @@ custom_jumbotron: |
     <h1>Why Jakarta EE</h1>
 layout: single
 page_css_file: public/css/why-jakarta-ee-styles.css
+disable_header_bg: true
 ---
 
