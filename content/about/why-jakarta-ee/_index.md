@@ -20,10 +20,15 @@ custom_jumbotron: |
             <h1 class="jumbotron-title text-center">Why Jakarta EE</h1>
         </div>
         <div class="jumbotron-graphic-container">
+            <div class="jumbotron-graphic-breakout-container">
+                <img class="jumbotron-graphic-bg" src="/images/about/why-jakarta-ee/laptop-frame.png">
+            </div>
         </div>
     </div>
 layout: single
 page_css_file: public/css/why-jakarta-ee-styles.css
 disable_header_bg: true
 ---
+
+TODO: reduce size of laptop frame from 1MB to whatever intrinsic size.
 
