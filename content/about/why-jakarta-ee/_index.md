@@ -15,7 +15,13 @@ headline: ''
 header_wrapper_class: header-why-jakarta-ee
 custom_jumbotron_class: jumbotron-why-jakarta-ee
 custom_jumbotron: |
-    <h1>Why Jakarta EE</h1>
+    <div class="jumbotron-why-jakarta-ee-container">
+        <div class="jumbotron-title-container">
+            <h1 class="jumbotron-title text-center">Why Jakarta EE</h1>
+        </div>
+        <div class="jumbotron-graphic-container">
+        </div>
+    </div>
 layout: single
 page_css_file: public/css/why-jakarta-ee-styles.css
 disable_header_bg: true
