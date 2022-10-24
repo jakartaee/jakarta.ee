@@ -2,10 +2,43 @@
 @import '_variables.less';
 
 .header-why-jakarta-ee {
-    min-height: calc(@jumbotron-height + 10rem);
+    position: relative;
+    min-height: calc(@jumbotron-height + 20rem);
+    overflow-y: hidden;
+    background-color: transparent;
+    border: red 1px solid;
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: -10%;
+        left: -10%;
+        z-index: -1;
+        height: 110%;
+        width: 100%;
+        background-image: url(/images/jakarta-ee-logo.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        mix-blend-mode: multiply;
+    }
 
     .jumbotron.featured-jumbotron {
+        position: relative;
         min-height: @jumbotron-height;
         padding: 0;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            height: 100%;
+            width: 100%;
+            background-size: cover;
+            background-position: right;
+            background-repeat: no-repeat;
+            background-image: url('/images/blue-shape-bg.jpg');
+        }
     }
 }
