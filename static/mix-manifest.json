@@ -1,5 +1,6 @@
 {
     "/js/solstice.js": "/js/solstice.js",
     "/js/release-page-cards.js": "/js/release-page-cards.js",
-    "/css/styles.css": "/css/styles.css"
+    "/css/styles.css": "/css/styles.css",
+    "/public/css/why-jakarta-ee-styles.css": "/public/css/why-jakarta-ee-styles.css"
 }
