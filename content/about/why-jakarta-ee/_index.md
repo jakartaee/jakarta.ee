@@ -13,6 +13,7 @@ hide_sidebar: true
 hide_page_title: true
 headline: ''
 header_wrapper_class: header-why-jakarta-ee
+jumbotron_class: ' '
 custom_jumbotron_class: jumbotron-why-jakarta-ee
 custom_jumbotron: |
     <div class="jumbotron-why-jakarta-ee-container">
