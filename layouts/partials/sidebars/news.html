@@ -27,12 +27,17 @@
   {{ if eq .Parent.Section "news" }}
   <div class="sidebar-block">
     <h4>{{ i18n "news-sidebar-news-title" }}</h4>
-    <div id="{{ $id }}" class="news-items" data-news-count="10" 
+    <div id="{{ $id }}" class="news-items" data-news-count="10"
       {{ with $templateId }} data-template-id="{{ . }}" {{ end }}
       data-publish-target="jakarta_ee">
     </div>
     <p><a class="btn btn-primary" href="/news">View More</a></p>
   </div>
   {{ end }}
+
+  <div class="sidebar-block">
+    <h4>Tags</h4>
+    <ul class="news-tags-sidebar cat-list" data-id="news-tags-sidebar" data-url="https://newsroom.eclipse.org/api/news?parameters[publish_to]=jakarta_ee"></ul>
+  </div>
+
 </aside>
-  
