@@ -3,7 +3,7 @@
 
 .header-why-jakarta-ee {
     position: relative;
-    min-height: calc(@jumbotron-height + 20rem);
+    min-height: calc(@jumbotron-height-xs + 20rem);
     overflow-y: hidden;
     background-color: transparent;
     border: red 1px solid;
@@ -24,7 +24,7 @@
 
     .jumbotron.featured-jumbotron {
         position: relative;
-        min-height: @jumbotron-height;
+        min-height: @jumbotron-height-xs;
         padding: 0;
 
         &::before {
@@ -41,6 +41,14 @@
             background-image: url('/images/blue-shape-bg.jpg');
         }
     }
+
+    @media (min-width: @jumbotron-graphic-breakpoint) {
+        min-height: calc(@jumbotron-height-lg + 20rem);
+
+        .jumbotron.featured-jumbotron {
+            min-height: @jumbotron-height-lg;
+        }
+    }
 }
 
 .jumbotron-why-jakarta-ee-container {
@@ -49,19 +57,21 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: @jumbotron-height;
+    height: @jumbotron-height-xs;
 
     @media (min-width: @jumbotron-graphic-breakpoint) {
+        height: @jumbotron-height-lg;
         flex-direction: row;
     }
 
     & > * {
         width: 100%;
+        border: 2px green dashed;
     }
 
     .jumbotron-title {
         width: auto;
-        font-size: 5rem;
+        font-size: 3.5rem;
         font-weight: 700;
         text-transform: none;
     }
@@ -74,21 +84,31 @@
         
         @media (min-width: @jumbotron-graphic-breakpoint) {
             width: 100%;
+
+            .jumbotron-title {
+                font-size: 5rem;
+            }
         }
     }
 
     .jumbotron-graphic-breakout-container {
         position: absolute;
-        bottom: 0;
+        bottom: -2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
         height: 100%;
     }
 
     .jumbotron-graphic-bg {
-        width: 100%;
+        max-width: 100%;
+        max-height: 100%;
     }
 
     @media (min-width: @jumbotron-graphic-breakpoint) {
         .jumbotron-graphic-breakout-container {
+            display: block;
+            justify-content: unset;
             top: 29%;
             width: 100%;
         }
