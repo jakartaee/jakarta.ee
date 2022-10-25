@@ -45,9 +45,15 @@
 
 .jumbotron-why-jakarta-ee-container {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: 100%;
     height: @jumbotron-height;
+
+    @media (min-width: @jumbotron-graphic-breakpoint) {
+        flex-direction: row;
+    }
 
     & > * {
         width: 100%;
@@ -63,15 +69,28 @@
     .jumbotron-graphic-container {
         position: relative;
         align-self: flex-end;
+        width: 100%;
         height: 100%;
+        
+        @media (min-width: @jumbotron-graphic-breakpoint) {
+            width: 100%;
+        }
     }
 
     .jumbotron-graphic-breakout-container {
         position: absolute;
-        top: 18%;
+        bottom: 0;
+        height: 100%;
     }
 
     .jumbotron-graphic-bg {
         width: 100%;
+    }
+
+    @media (min-width: @jumbotron-graphic-breakpoint) {
+        .jumbotron-graphic-breakout-container {
+            top: 29%;
+            width: 100%;
+        }
     }
 }
