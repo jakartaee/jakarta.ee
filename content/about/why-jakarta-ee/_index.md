@@ -31,5 +31,6 @@ page_css_file: public/css/why-jakarta-ee-styles.css
 disable_header_bg: true
 ---
 
-TODO: reduce size of laptop frame from 1MB to whatever intrinsic size.
+{{< pages/about/why-jakarta-ee/split-section id="continuation" >}}
 
+TODO: reduce size of laptop frame from 1MB to whatever intrinsic size.
