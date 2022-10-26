@@ -120,11 +120,15 @@
 
 // Sections
 
+.row-dark {
+    background-color: @bg-gray;
+}
+
 .split-section {
     display: flex;
     flex-wrap: wrap;
-    padding-top: 4rem;
-    padding-bottom: 4rem;
+    margin-top: 4rem;
+    margin-bottom: 8rem;
 
     .split-section-title-container {
         display: flex;
@@ -160,6 +164,7 @@
 
     .split-section-title {
         margin-left: 2rem;
+        font-style: italic;
     }
 
     @media (min-width: @screen-md-min) {
@@ -180,11 +185,21 @@
         
         .split-section-content {
             height: 100%;
-            padding-left: 1.5rem;
+            padding: 7rem 3rem;
+            max-width: 59rem;
+            margin: 0 0 0 auto;
         }
 
         .split-section-content-body {
             padding-left: calc(6rem + 2rem);
+        }
+    }
+}
+
+.split-section.row-dark {
+    @media (min-width: @screen-md-min) {
+        .split-section-content {
+            margin: 0 auto 0 0;
         }
     }
 }
