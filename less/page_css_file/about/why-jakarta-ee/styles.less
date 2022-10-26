@@ -123,10 +123,12 @@
 .split-section {
     display: flex;
     flex-wrap: wrap;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
 
     .split-section-title-container {
         display: flex;
-        align-items: flex-start;
+        align-items: center;
         padding-bottom: 1rem;
     }
 
@@ -135,8 +137,8 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 60px;
-        height: 60px;
+        width: 6rem;
+        height: 6rem;
         padding: 12px 8px 4px;
         background-color: @brand-primary;
     }
@@ -157,8 +159,7 @@
     }
 
     .split-section-title {
-        margin: 0;
-        margin-left: 1em;
+        margin-left: 2rem;
     }
 
     @media (min-width: @screen-md-min) {
@@ -166,10 +167,24 @@
             height: 100%;
             object-fit: cover;
         }
+
+        .split-section-title-container {
+            align-items: flex-start;
+        }
+
+        .split-section-title {
+            margin-top: 0;
+            margin-right: 0;
+            margin-bottom: 0;
+        }
         
         .split-section-content {
             height: 100%;
             padding-left: 1.5rem;
+        }
+
+        .split-section-content-body {
+            padding-left: calc(6rem + 2rem);
         }
     }
 }
