@@ -121,6 +121,9 @@
 // Sections
 
 .split-section {
+    display: flex;
+    flex-wrap: wrap;
+
     .split-section-title-container {
         display: flex;
         align-items: center;
@@ -154,5 +157,17 @@
 
     .split-section-title {
         margin-left: 1em;
+    }
+
+    @media (min-width: @screen-md-min) {
+        .split-section-image {
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .split-section-content {
+            height: 100%;
+            padding-left: 1.5rem;
+        }
     }
 }
