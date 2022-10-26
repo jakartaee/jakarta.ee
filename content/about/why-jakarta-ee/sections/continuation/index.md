@@ -1,8 +1,13 @@
 ---
 section_id: continuation
 title: Jakarta EE is Continuation
-icon:
-image: 
+title_parts:
+    primary: Jakarta EE
+    secondary: is Continuation
+icon: ''
+image:
+    url: ./images/continuation-image.jpg
+    alt: Alt
 ---
 
 Java is one of the prevalent programming languages in the industry, with an unbeaten reputation for stability, compatibility, and portability. 
