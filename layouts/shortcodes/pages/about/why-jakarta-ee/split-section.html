@@ -9,10 +9,15 @@
         <img class="split-section-image img img-responsive" src="{{ $image_url }}" alt="{{ $section.Params.image.alt }}" />        
     </div>
     <div class="split-section-content">
-        <h2 class="big-text">
-            <span class="text-primary">{{ $section.Params.title_parts.primary | upper }}</span>
-            <span class="text-secondary br">{{ $section.Params.title_parts.secondary | upper }}</span>
-        </h2>
+        <div class="split-section-title-container">
+            <div class="split-section-title-icon-wrapper">
+                <img class="split-section-title-icon" src="/images/home/get-informed.svg" alt="" />
+            </div>
+            <h2 class="split-section-title big-text">
+                <span class="text-primary">{{ $section.Params.title_parts.primary | upper }}</span>
+                <span class="text-secondary br">{{ $section.Params.title_parts.secondary | upper }}</span>
+            </h2>
+        </div>
         <div class="split-section-content-body">
             {{ $section.Content }}
         </div>

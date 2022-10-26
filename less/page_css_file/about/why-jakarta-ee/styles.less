@@ -1,4 +1,5 @@
 @import (reference) '~eclipsefdn-solstice-assets/less/quicksilver/styles.less';
+@import (reference) '../../../styles.less';
 @import '_variables.less';
 
 // Header
@@ -118,3 +119,40 @@
 }
 
 // Sections
+
+.split-section {
+    .split-section-title-container {
+        display: flex;
+        align-items: center;
+    }
+
+    .split-section-title-icon-wrapper {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 60px;
+        height: 60px;
+        padding: 12px 8px 4px;
+        background-color: @brand-primary;
+    }
+
+    .split-section-title-icon {
+        width: 45px;
+    }
+
+    .split-section-title-icon-wrapper::after {
+        content: "";
+        position: absolute;
+        bottom: -10px;
+        width: 0;
+        height: 0;
+        border-left: 30px solid transparent;
+        border-right: 30px solid transparent;
+        border-top: 10px solid @brand-primary;
+    }
+
+    .split-section-title {
+        margin-left: 1em;
+    }
+}
