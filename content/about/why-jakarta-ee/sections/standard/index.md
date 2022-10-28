@@ -6,7 +6,7 @@ title_parts:
     secondary: is the Standard
 icon: ''
 image:
-    url: ./images/continuation-image.jpg
+    url: ./images/standard-image.jpg
     alt: Alt
 ---
 

@@ -6,14 +6,14 @@ title_parts:
     secondary: is Ubiquitous
 icon: ''
 image:
-    url: ./images/continuation-image.jpg
+    url: ./images/ubiquitous-image.jpg
     alt: Alt
 ---
 
 The Jakarta EE vendor-neutral community is currently at work to keep the back-end of enterprise java applications running in various industries. Products you may know - such as Jetty, Tomcat, Jersey and Spring - all rely on Jakarta EE technologies.
 The [Jakarta EE Compatible products](/compatibility/) are implementing Jakarta EE Platform and profile specifications.
 
-TODO: Insert row of icons
+{{< pages/about/why-jakarta-ee/technologies >}}
 
 In addition to these products, there are many more that are implementing some of the individual specifications. Apache Tomcat implements four Jakarta EE specifications,
 Spring Boot embeds Apache Tomcat, Eclipse Jetty, or Undertow as a runtime.

@@ -6,7 +6,7 @@ title_parts:
     secondary: is Innovative
 icon: ''
 image:
-    url: ./images/continuation-image.jpg
+    url: ./images/innovative-image.png
     alt: Alt
 ---
 
