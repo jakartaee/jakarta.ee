@@ -2,6 +2,15 @@
 @import (reference) '../../../styles.less';
 @import '_variables.less';
 
+// Utility
+
+.brand-secondary, 
+.brand-secondary:visited,
+.brand-secondary:hover {
+    color: @brand-secondary;
+    text-decoration: none;
+}
+
 // Header
 
 .header-why-jakarta-ee {
@@ -211,5 +220,38 @@
 
     .technologies-logo-wrapper {
         max-width: 8rem;
+    }
+}
+
+// Info cards
+
+.info-cards {
+    display: flex;
+    justify-content: center;
+    padding: 10rem 0;
+
+    .info-cards-card {
+        width: 26rem;
+        padding: 2rem;
+        border-radius: 1rem;
+        background-color: @fg-gray;
+        box-shadow: rgba(109, 117, 135, 0.5) 0px 8px 20px;
+    }
+
+    .info-cards-card-inverted {
+        background-color: @accent-dark;
+    }
+
+    .info-cards-card-heading {
+        font-size: 1.75rem;
+    }
+
+    .info-cards-card-body {
+        display: flex;
+        padding: 2rem 0;
+    }
+
+    .info-cards-card-link {
+        font-size: 1.2rem;
     }
 }

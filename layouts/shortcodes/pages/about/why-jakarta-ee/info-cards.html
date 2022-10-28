@@ -1,0 +1,20 @@
+{{ $info_cards := where .Page.Resources "Type" "info_card" }}
+
+<div class="container">
+    <div class="info-cards">
+        {{ range $index, $info_card := $info_cards }}
+            {{ $modifier_class := "" }}
+            {{ if not (modBool $index 2) }}
+                {{ $modifier_class = "info-cards-card-inverted" }}
+            {{ end }}
+            <div class="info-cards-card {{ $modifier_class }} text-center">
+                <div class="info-cards-card-icon-wrapper">
+                    <img src="info-cards-card-icon" alt="" />
+                </div>
+                <p class="info-cards-card-heading big-text brand-secondary">{{ .Title }}</p>
+                <div class="info-cards-card-body">{{ .Content }}</div>
+                <a class="info-cards-card-link big-text brand-secondary" href="{{ .Params.link.url }}">{{ .Params.link.text | upper }}</a>
+            </div>
+        {{ end }}
+    </div>
+</div>
