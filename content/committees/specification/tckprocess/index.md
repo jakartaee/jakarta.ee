@@ -248,7 +248,7 @@ it could be a valid course of action to modify the challenged test to allow
 either "A1" OR "A2" for "x". 
 
 Since this line of thinking might be applied to cases that aren't quite as 
-straightfoward as this example, care should be taken when using this approach.
+straightforward as this example, care should be taken when using this approach.
 A particular danger is that an implementation that has already demonstrated compliance 
 before the challenge was raised might actually not pass the new, modified test.
 
