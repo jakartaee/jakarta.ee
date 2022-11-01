@@ -71,6 +71,18 @@ document.addEventListener("DOMContentLoaded", function(event) {
       });
 
       $(document).ready(function() {
+
+        const queryString = window.location.search;
+        const urlParams = new URLSearchParams(queryString);
+        const tag = urlParams.get('news_tags');
+        if (tag !== null) {
+          const collection = document.querySelector('.breadcrumb');
+          let activeBreadcrumb = collection.querySelector('.active');
+          activeBreadcrumb.removeAttribute("class");
+          activeBreadcrumb.removeAttribute("aria-current");
+          collection.innerHTML += '<li class="active" aria-current="page">' + tag + '</li>';
+        }
+
         $('.testimonial-container').html(
           $(".testimonial-item").sort(function(){
             return .5 - Math.random()
