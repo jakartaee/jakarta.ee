@@ -156,6 +156,11 @@
     }
 }
 
+// Page layout
+.container-why-jakarta-ee {
+    overflow: hidden;
+}
+
 // Sections
 
 .row-dark {
@@ -199,15 +204,34 @@
         border-top: 10px solid @brand-primary;
     }
 
-    .split-section-title {
-        margin-left: 2rem;
-        font-style: italic;
-    }
-
     @media (min-width: @screen-md-min) {
         .split-section-image {
             height: 100%;
             object-fit: cover;
+        }
+
+        .split-section-title {
+            margin-left: 2rem;
+            font-style: italic;
+        }
+
+        .wireframe-pattern::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-size: contain;
+            background-repeat: no-repeat;     
+        }
+
+        .wireframe-pattern-1::after {
+            top: -12%;
+            left: 50%;
+            height: 150%;
+            width: 150%;
+            background-image: url(/images/about/why-jakarta-ee/split-section-pattern.png);
         }
 
         .split-section-title-container {

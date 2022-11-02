@@ -7,11 +7,11 @@
 {{ $image_url := path.Join $section_dir $section.Params.image.url | relURL }}
 
 {{ $reverse_class := "" }}
-{{ $image_section_class := "" }}
+{{ $image_section_class := $section.Params.image.wrapper_class | default "" }}
 {{ $content_section_class := "" }}
 
 {{ if eq $reverse "false" }}
-    {{ $image_section_class = "col-md-push-12" }}
+    {{ $image_section_class = printf "col-md-push-12 %s" $image_section_class }}
     {{ $content_section_class = "col-md-pull-12" }}
 {{ else }}
     {{ $reverse_class = "split-section-reverse" }}
