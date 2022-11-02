@@ -1,5 +1,6 @@
 ---
 title: Download Compatible Products
+icon: ./icon.png
 link:
     url: https://www.google.com/
     text: Read More
