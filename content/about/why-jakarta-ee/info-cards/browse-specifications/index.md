@@ -1,5 +1,6 @@
 ---
 title: Browse Specifications
+icon: ./icon.svg
 link: 
     url: https://www.google.com
     text: Browse Now

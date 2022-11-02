@@ -1,5 +1,6 @@
 ---
 title: Get involved
+icon: ./icon.svg
 link: 
     url: https://www.google.com
     text: Learn More

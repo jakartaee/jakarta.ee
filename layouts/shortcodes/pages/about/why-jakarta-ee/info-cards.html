@@ -7,9 +7,15 @@
             {{ if not (modBool $index 2) }}
                 {{ $modifier_class = "info-cards-card-inverted" }}
             {{ end }}
+
+            {{ $info_card_dir := .File.Dir }}
+            {{ $icon_url := path.Join $info_card_dir .Params.icon | relURL }}
+
             <div class="info-cards-card {{ $modifier_class }} text-center">
-                <div class="info-cards-card-icon-wrapper">
-                    <img src="info-cards-card-icon" alt="" />
+                <div class="info-cards-card-icon-container">
+                    <div class="info-cards-card-icon-wrapper">
+                        <img class="info-cards-card-icon" src="{{ $icon_url }}" alt="" />
+                    </div>
                 </div>
                 <p class="info-cards-card-heading big-text brand-secondary">{{ .Title }}</p>
                 <div class="info-cards-card-body">{{ .Content }}</div>

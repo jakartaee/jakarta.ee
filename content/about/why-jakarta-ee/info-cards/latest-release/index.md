@@ -1,5 +1,6 @@
 ---
-title: Find the latest Release
+title: Find the Latest Release
+icon: ./icon.svg
 link: 
     url: https://www.google.com
     text: Read More
