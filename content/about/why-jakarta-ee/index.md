@@ -23,8 +23,9 @@ custom_jumbotron: |
         <div class="jumbotron-graphic-container">
             <div class="jumbotron-graphic-breakout-container">
                 <div class="jumbotron-graphic-wrapper container">
-                    <img class="jumbotron-graphic-bg" src="/images/about/why-jakarta-ee/laptop-frame.png">
-                    <img class="jumbotron-graphic-placeholder" src="/images/about/why-jakarta-ee/video-placeholder.jpg">
+                    <div class="jumbotron-graphic-bg">
+                        <img class="jumbotron-graphic-placeholder" src="/images/about/why-jakarta-ee/video-placeholder.jpg">
+                    </div>
                 </div>
             </div>
         </div>
