@@ -1,5 +1,5 @@
 ---
-title: "Jakarta EE TCK Process 1.2"
+title: "Jakarta EE TCK Process 1.3"
 date: "2022-02-07T00:00:00+00:00"
 aliases:
     - committees/specification/TCKProcess/
