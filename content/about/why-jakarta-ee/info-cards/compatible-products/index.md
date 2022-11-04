@@ -2,7 +2,7 @@
 title: Download Compatible Products
 icon: ./icon.png
 link:
-    url: https://www.google.com/
+    url: /compatibility
     text: Read More
 type: info_card
 weight: 4

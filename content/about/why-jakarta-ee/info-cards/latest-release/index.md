@@ -2,7 +2,7 @@
 title: Find the Latest Release
 icon: ./icon.svg
 link: 
-    url: https://www.google.com
+    url: /release
     text: Read More
 type: info_card
 weight: 1
