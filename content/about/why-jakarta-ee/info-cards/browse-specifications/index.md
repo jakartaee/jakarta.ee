@@ -2,7 +2,7 @@
 title: Browse Specifications
 icon: ./icon.svg
 link: 
-    url: https://www.google.com
+    url: /specifications
     text: Browse Now
 type: info_card
 weight: 3

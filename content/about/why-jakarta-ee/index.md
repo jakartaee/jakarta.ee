@@ -45,5 +45,3 @@ disable_header_bg: true
 {{< pages/about/why-jakarta-ee/split-section id="innovative" reverse="true" class="row-dark" >}}
 
 {{< pages/about/why-jakarta-ee/info-cards >}}
-
-TODO: reduce size of laptop frame from 1MB to whatever intrinsic size.
