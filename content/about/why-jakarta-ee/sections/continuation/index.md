@@ -4,7 +4,7 @@ title: Jakarta EE is Continuation
 title_parts:
     primary: Jakarta EE
     secondary: is Continuation
-icon: ''
+icon: ./images/icon.svg
 image:
     url: ./images/continuation-image.jpg
     alt: Alt

@@ -4,7 +4,7 @@ title: Jakarta EE is Innovative
 title_parts:
     primary: Jakarta EE
     secondary: is Innovative
-icon: ''
+icon: ./images/icon.svg
 image:
     url: ./images/innovative-image.png
     alt: Alt
