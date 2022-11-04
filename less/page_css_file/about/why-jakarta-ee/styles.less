@@ -172,6 +172,10 @@
     flex-wrap: wrap;
     padding-bottom: 10rem;
 
+    .split-section-inner-container {
+        margin: auto;
+    }
+
     .split-section-title-container {
         display: flex;
         align-items: center;
@@ -204,15 +208,15 @@
         border-top: 10px solid @brand-primary;
     }
 
+    .split-section-title {
+        margin-left: 2rem;
+        font-style: italic;
+    }
+
     @media (min-width: @screen-md-min) {
         .split-section-image {
             height: 100%;
             object-fit: cover;
-        }
-
-        .split-section-title {
-            margin-left: 2rem;
-            font-style: italic;
         }
 
         .graph-pattern::after {
@@ -249,6 +253,17 @@
             height: 200%;
             top: -17.5%;
             left: -83%;
+        }
+
+        .graph-pattern-standard::after {
+            background-image: url(/images/about/why-jakarta-ee/graph-pattern-3.png);
+            width: 110%;
+            top: 56%;
+            left: 5%;
+
+            @media (min-width: 1920px) {
+                top: 40%;
+            }
         }
 
         .split-section-title-container {
