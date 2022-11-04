@@ -5,6 +5,7 @@
 {{ $section := index (where .Page.Resources "Params.section_id" $section_id) 0 }}
 {{ $section_dir := $section.File.Dir }}
 {{ $image_url := path.Join $section_dir $section.Params.image.url | relURL }}
+{{ $icon_url := path.Join $section_dir $section.Params.icon | relURL }}
 
 {{ $reverse_class := "" }}
 {{ $image_section_class := $section.Params.image.wrapper_class | default "" }}
@@ -26,7 +27,7 @@
             <div class="split-section-content">
                 <div class="split-section-title-container">
                     <div class="split-section-title-icon-wrapper">
-                        <img class="split-section-title-icon" src="/images/home/get-informed.svg" alt="" />
+                        <img class="split-section-title-icon" src="{{ $icon_url }}" alt="" />
                     </div>
                     <h2 class="split-section-title big-text">
                         <span class="text-primary">{{ $section.Params.title_parts.primary | upper }}</span>

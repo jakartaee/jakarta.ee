@@ -4,7 +4,7 @@ title: Jakarta EE is Ubiquitous
 title_parts:
     primary: Jakarta EE
     secondary: is Ubiquitous
-icon: ''
+icon: ./images/icon.svg
 image:
     url: ./images/ubiquitous-image.jpg
     alt: Alt

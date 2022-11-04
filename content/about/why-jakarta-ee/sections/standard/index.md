@@ -4,7 +4,7 @@ title: Jakarta EE is the Standard
 title_parts:
     primary: Jakarta EE
     secondary: is the Standard
-icon: ''
+icon: ./images/icon.svg
 image:
     url: ./images/standard-image.jpg
     alt: Alt
