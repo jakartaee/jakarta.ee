@@ -8,7 +8,7 @@ icon: ''
 image:
     url: ./images/continuation-image.jpg
     alt: Alt
-    wrapper_class: wireframe-pattern wireframe-pattern-1
+    wrapper_class: graph-pattern graph-pattern-1
 ---
 
 Java is one of the prevalent programming languages in the industry, with an unbeaten reputation for stability, compatibility, and portability. 
