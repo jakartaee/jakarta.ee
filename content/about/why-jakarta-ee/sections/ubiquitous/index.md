@@ -8,6 +8,7 @@ icon: ''
 image:
     url: ./images/ubiquitous-image.jpg
     alt: Alt
+    wrapper_class: graph-pattern graph-pattern-ubiquitous
 ---
 
 The Jakarta EE vendor-neutral community is currently at work to keep the back-end of enterprise java applications running in various industries. Products you may know - such as Jetty, Tomcat, Jersey and Spring - all rely on Jakarta EE technologies.
