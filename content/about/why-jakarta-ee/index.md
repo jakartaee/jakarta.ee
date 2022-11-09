@@ -25,6 +25,7 @@ custom_jumbotron: |
                 <div class="jumbotron-graphic-wrapper container">
                     <div class="jumbotron-graphic-bg">
                         <img class="jumbotron-graphic-placeholder" src="/images/about/why-jakarta-ee/video-placeholder.jpg">
+                        <button type="button" data-toggle="modal" data-target="#video-modal-why-jakarta-ee">Play</button>
                     </div>
                 </div>
             </div>
@@ -45,3 +46,5 @@ disable_header_bg: true
 {{< pages/about/why-jakarta-ee/split-section id="innovative" reverse="true" class="row-dark" >}}
 
 {{< pages/about/why-jakarta-ee/info-cards >}}
+
+{{< video-modal id="video-modal-why-jakarta-ee" url="https://google.com/" >}}
