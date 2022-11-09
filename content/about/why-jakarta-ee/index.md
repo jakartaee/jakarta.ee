@@ -24,8 +24,12 @@ custom_jumbotron: |
             <div class="jumbotron-graphic-breakout-container">
                 <div class="jumbotron-graphic-wrapper container">
                     <div class="jumbotron-graphic-bg">
-                        <img class="jumbotron-graphic-placeholder" src="/images/about/why-jakarta-ee/video-placeholder.jpg">
-                        <button type="button" data-toggle="modal" data-target="#video-modal-why-jakarta-ee">Play</button>
+                        <img class="jumbotron-graphic-placeholder" src="/images/about/why-jakarta-ee/video-placeholder.jpg" />
+                        <div class="jumbotron-graphic-play-wrapper">
+                            <button class="jumbotron-graphic-play" type="button" data-toggle="modal" data-target="#video-modal-why-jakarta-ee">
+                                <i class="fa fa-play-circle"></i>
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -47,4 +51,4 @@ disable_header_bg: true
 
 {{< pages/about/why-jakarta-ee/info-cards >}}
 
-{{< video-modal id="video-modal-why-jakarta-ee" url="https://google.com/" >}}
+{{< video-modal id="video-modal-why-jakarta-ee" url="https://www.youtube-nocookie.com/embed/eSY6Uo62IH8" >}}
