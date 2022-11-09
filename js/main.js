@@ -13,6 +13,7 @@
 
 import 'eclipsefdn-solstice-assets'
 import List from 'list.js';
+import './video-modal';
 
 document.addEventListener("DOMContentLoaded", function(event) {
     (function($, document) {
