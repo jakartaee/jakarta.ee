@@ -16,6 +16,33 @@
     flex-wrap: wrap;
 }
 
+.color-white {
+    color: @white;
+}
+
+.color-black {
+    color: @black;
+}
+
+// Vendor extension
+.btn.btn-transparent,
+.btn.btn-transparent:focus,
+.btn.btn-transparent:active {
+    color: #000;
+    border: none;
+    overflow: hidden;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    outline: none;
+    box-shadow: none;
+}
+
+.feather-32 {
+    width: 3.2rem;
+    height: 3.2rem;
+}
+
 // Header
 
 .header-why-jakarta-ee {
@@ -393,4 +420,7 @@
             color: @white;
         }
     }
+}
+
+.video-modal-dialog {
 }
