@@ -28,14 +28,14 @@
 .btn.btn-transparent,
 .btn.btn-transparent:focus,
 .btn.btn-transparent:active {
-    color: #000;
     border: none;
+    padding: 0;
     overflow: hidden;
+    color: #000;
     background-color: transparent;
     background-repeat: no-repeat;
-    cursor: pointer;
-    outline: none;
     box-shadow: none;
+    cursor: pointer;
 }
 
 .feather-32 {
@@ -429,5 +429,7 @@
         position: absolute;
         top: 0;
         left: 100%;
+        width: min-content;
+        height: min-content;
     }
 }
