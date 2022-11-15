@@ -4,12 +4,10 @@
 <div id="{{ $id }}" class="video-modal modal" tabindex="-1" role="dialog">
     <div class="video-modal-dialog modal-dialog" role="document">
         <div class="video-modal-dialog-content modal-content">
-            <div class="eclipsefdn-video-with-js">
-                <iframe width="100%" height="315" src="{{ $url }}?enablejsapi=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
+            <a class="eclipsefdn-video eclipsefdn-video-with-js" href="//www.youtube.com/embed/{{ $url }}" data-enable-js="true"></a>
         </div>
         <div class="video-modal-dialog-controls">
-            <button class="video-modal-dialog-controls-close-button btn btn-transparent" data-dismiss="modal">
+            <button class="video-modal-dialog-controls-close-button btn btn-transparent margin-left-10" data-dismiss="modal">
                 <i class="feather-32 color-white" data-feather="x"></i>
             </button>
         </div>

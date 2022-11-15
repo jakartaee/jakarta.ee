@@ -37,7 +37,7 @@ export const VideoModal = (() => {
     const videoModal = document.querySelector('.video-modal');
 
     $(videoModal).on('hidden.bs.modal', () => {
-        const videoElem = videoModal.querySelector('.eclipsefdn-video-with-js');
+        const videoElem = videoModal.querySelector('.eclipsefdn-video');
 
         if (!videoElem) return;
 
@@ -45,7 +45,7 @@ export const VideoModal = (() => {
     });
 
     $(videoModal).on('shown.bs.modal', () => {
-        const videoElem = videoModal.querySelector('.eclipsefdn-video-with-js');
+        const videoElem = videoModal.querySelector('.eclipsefdn-video');
         videoElem.focus();
 
         if (!videoElem) return;
