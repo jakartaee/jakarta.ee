@@ -8,7 +8,7 @@ version 1.4. Effective August 31/2022
 
 The Jakarta EE Specification Process (JESP) is concerned with the Specification Process as it applies to Specification Projects operating under the purview of the Jakarta EE Working Group. 
 
-The Jakarta EE Specification Committee hereby adopts the https://www.eclipse.org/projects/efsp?version=1.3[Eclipse Foundation Specification Process v1.3] (EFSP) as the Jakarta EE Specification Process with the following modifications:
+The Jakarta EE Specification Committee hereby adopts the [Eclipse Foundation Specification Process v1.3](https://www.eclipse.org/projects/efsp?version=1.3) (EFSP) as the Jakarta EE Specification Process with the following modifications:
 
 1. Any modification to or revision of this Jakarta EE Specification Process, including the adoption of a new version of the EFSP, must be approved by a Super-majority of the Specification Committee, including a Super-majority of the Strategic Members of the Jakarta EE Working Group, in addition to any other ballot requirements set forth in the EFSP.
 2. All specification committee approval ballot periods will have durations as outlined below (notwithstanding the exception process defined by the EFSP)
