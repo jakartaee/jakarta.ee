@@ -14,9 +14,10 @@ This committee owns the overall strategy and the high level, long term roadmap s
 * Ian Robinson - IBM, Alasdair Nottingham - alternate
 * Steve Millidge - Payara, Hadar Vorenshtein - alternate
 * David Blevins - Tomitribe, Cesar Hernandez - alternate
-* Martijn Verburg - London Java Community - Elected Participant Member Representative, Marcelo Ancelmo - alternate
+* Marcin Kruglik - London Java Community - Elected Participant Member Representative - Abraham Marin-Perez - alternate
 * Arjan Tijms - Elected Committer Member Representative
 * Dr. Jun Qian - Primeton - Elected Enterprise Representative
 * Zhao Xin - Shandong Cvicse Middleware Co. - Elected Enterprise Representative
+* Reza Rahman - Microsoft - Elected Enterprise Representative, Ed Burns - alternate
 
 {{< meeting-minutes-single "steering_committee" >}}

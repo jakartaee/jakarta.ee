@@ -15,10 +15,10 @@ date: 2020-02-19T15:00:25-08:00
 * Andrew Pielage - Payara, Petr Aubrecht - alternate
 * David Blevins - Tomitribe, Jean-Louis Monterio - alternate
 * Ivar Grimstad - PMC Representative
-* Marcelo Ancelmo - London Java Community - Elected Participant Member Representative, Martijn Verburg - alternate
+* Marcelo Ancelmo - London Java Community - Elected Participant Member Representative, Abraham Marin-Perez - alternate
 * Werner Keil - Elected Committer Member Representative
-* Dr. Jun Qian - Primeton - Elected Enterprise Representative
+* Scott Stark - Red Hat - Elected Enterprise Representative, Scott Marlow - alternate
 * Zhai Luchao - Shandong Cvicse Middleware Co. - Elected Enterprise Representative
-* Paul Buck - Eclipse Foundation (serves as chair, but is not a voting committee member)
+* Paul Buck - Eclipse Foundation (serves as its non-voting chair)
 
 {{< meeting-minutes-single "specification_committee" >}}

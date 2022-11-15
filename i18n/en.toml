@@ -518,6 +518,9 @@ other = "Sign up now"
 [jakarta-ee-version-10-section-specifications]
  other = "specifications"
 
+[jakarta-ee-version-10-section-view-all-releases]
+ other = "View all Releases"
+
 [jakarta-ee-version-9_1-features-title]
  other = "features and benefits"
 
@@ -545,7 +548,7 @@ other = "Sign up now"
 
 
 [jakarta-ee-version-9_1-features-participation-title]
- other = "<h2 class=\"text-blue text-center fw-600 uppercase\"><strong>community-powered</strong></h2><h2 class=\"text-secondary fw-600 margin-top-0 font-exo uppercase\"><em>innovation</em></h2>"
+ other = "<h2 class=\"text-blue text-center fw-600 uppercase\"><strong>community-powered</strong><br> <span class=\"text-secondary font-exo\"><em>innovation</em></span></h2>"
 
 [jakarta-ee-version-9_1-participation-projects]
  other = "projects"
@@ -560,7 +563,7 @@ other = "Sign up now"
  other = "git repositories"
 
 [jakarta-ee-version-9_1-powered-by-participation-title]
- other = "<h2 class=\"text-blue text-center fw-600 uppercase\"><strong>Powered by</strong></h2><h2 class=\"text-secondary text-center fw-600 margin-top-0 font-exo uppercase\"><em>Participation</em></h2>"
+ other = "<h2 class=\"text-blue text-center fw-600 uppercase\"><strong>Powered by</strong><br> <span class=\"text-secondary font-exo\"><em>Participation</em></span></h2>"
 
 [jakarta-ee-version-10-white-paper-title]
  other = "New Cloud Native Java eBook"
@@ -784,6 +787,9 @@ other = "Sign up now"
 [pages-resources-infographics-developer-survey-findings-2020]
  other = "2020 Jakarta EE Developer Survey Findings"
 
+[pages-resources-infographics-developer-survey-findings-2021]
+ other = "2021 Jakarta EE Developer Survey Findings"
+
 [pages-resources-starter-title]
  other = "Starter for Jakarta EE"
 
@@ -989,7 +995,7 @@ other = "Sign up now"
  other = "Find out how to host a JakartaOne Livestream in your own language"
 
 [pages-get-involved-getinvolved-title]
- other = "Get Involved in Jakarta EE1"
+ other = "Get Involved in Jakarta EE!"
 
 [pages-get-involved-getinvolved-content]
  other = "<p>To get involved in any Jakarta EE project or initiative, start by <a href=\"https://accounts.eclipse.org/user/register\">creating an Eclipse Foundation account</a>.</p><p>Once you have an account, you can choose any of the methods below to participate.</p>"

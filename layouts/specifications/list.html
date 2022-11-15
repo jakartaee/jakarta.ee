@@ -39,7 +39,8 @@
         </li>
       {{ end }}
     </ul>
-  {{ else }}
+  {{ end }}
+  {{ if eq .Page.Parent.Title "Home" }}
     <p>{{ i18n "layouts-specifications-list-click-to-access-text" }}</p>
 
     <h2 class="big-text text-secondary">{{ i18n "layouts-specifications-list-platform-and-profile-title" }}</h2>
@@ -52,11 +53,11 @@
 
               <div class="col-sm-8 card-container">
                   <div class="card-panel bordered panel panel-default">
-                  
+
                       <div class="panel-body match-height-item-by-row">
-                        <h2 class="big-text h3">
+                        <h3 class="big-text h3">
                             <a href="{{- with .Params.redirect_url | default .RelPermalink }}{{.}}{{- end }}">{{ .Title }}</a>
-                        </h2>
+                        </h3>
                         {{ if .Params.project_id }}
                             <ul class="list-inline">
                                 <li><a class="btn card-badge btn-xs" href="https://projects.eclipse.org/projects/{{ .Params.project_id }}"><i class="fa fa-archive" aria-hidden="true"></i> {{ i18n "layouts-specifications-list-project" }}</a></li>
@@ -88,7 +89,7 @@
                   </div>
               </div>
           {{ end }}
-  
+
       {{ end }}
       </div>
     </div>
@@ -103,9 +104,9 @@
               <div class="col-sm-8 card-container">
                 <div class="card-panel bordered panel panel-default">
                   <div class="panel-body match-height-item-by-row">
-                    <h2 class="big-text h3 specification-item">
+                    <h3 class="big-text h3 specification-item">
                       <a href="{{- with .Params.redirect_url | default .RelPermalink }}{{.}}{{- end }}">{{ .Title }}</a>
-                    </h2>
+                    </h3>
                     {{ if .Params.project_id }}
                         <ul class="list-inline">
                             <li><a class="btn card-badge btn-xs" href="https://projects.eclipse.org/projects/{{ .Params.project_id }}"><i class="fa fa-archive" aria-hidden="true"></i> Project</a></li>
@@ -139,7 +140,7 @@
       {{ end }}
       </div>
     </div>
-    
+
   {{ end }}
     <div>
       {{ $section := .CurrentSection }}

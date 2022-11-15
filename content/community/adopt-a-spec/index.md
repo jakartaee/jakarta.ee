@@ -22,9 +22,9 @@ Ensure that the topic of the adopted Jakarta EE Specification is consistently di
 * Write a full end to end test web application (e.g. Pet Store for Jakarta EE )
 * Read the specification and comment on areas it is unclear
 * Write more tests above what we already have
-  * All the repositories are under the EE4J GitHub Organization: https://github.com/eclipse-ee4j
-  * Example 1 - Jakarta Servlet: https://github.com/eclipse-ee4j/servlet-api
-  * Example 2 - Jakarta Messaging: https://github.com/eclipse-ee4j/jms-api
+  * All the repositories are under the Jakarta EE GitHub Organization: https://github.com/jakartaee
+  * Example 1 - Jakarta Servlet: https://github.com/jakartaee/servlet
+  * Example 2 - Jakarta Messaging: https://github.com/jakartaee/messaging
 
 ## What we can offer to JUGs:
 
