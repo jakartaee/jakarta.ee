@@ -31,3 +31,9 @@ HUGO_VERSION = "0.76.5"
 
 [context.next.environment]
 HUGO_ENABLEGITINFO = "true"
+
+[[headers]]
+  for = "/*.woff"
+  [headers.values]
+    Access-Control-Allow-Origin = "*"
+    Content-Type = "application/font-woff"
