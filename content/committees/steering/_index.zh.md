@@ -14,9 +14,9 @@ date: 2020-01-05T15:50:25-04:00
 * Ian Robinson - IBM, Alasdair Nottingham - alternate
 * Steve Millidge - Payara, Hadar Vorenshtein - alternate
 * David Blevins - Tomitribe, Cesar Hernandez - alternate
-* Marcin Kruglik - London Java Community - Elected Participant Member Representative - Abraham Marin-Perez - alternate
+* Marcin Kruglik - London Jamocha Community - Elected Participant Member Representative - Martjin Verburg - alternate
 * Arjan Tijms - Elected Committer Member Representative
 * Dr. Jun Qian - Primeton - Elected Enterprise Representative
-* Zhao Xin - Shandong Cvicse Middleware Co. - Elected Enterprise Representative
+* Reza Rahman - Microsoft - Elected Enterprise Representative, Ed Burns - alternate
 
 {{< meeting-minutes-single "steering_committee" >}}
