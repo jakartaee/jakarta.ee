@@ -4,6 +4,10 @@
  * @param {'play' | 'pause' | 'stop' } state 
  */
 const setVideoState = (videoElem, state) => {
+    const videoPlayer = videoElem.querySelector('iframe');
+
+    if (!videoPlayer) return;
+
     let func;
 
     switch (state) {
@@ -20,15 +24,12 @@ const setVideoState = (videoElem, state) => {
             return;
     };
 
-    videoElem
-        .querySelector('iframe')
-        .contentWindow
-        .postMessage(
-            JSON.stringify({
-                event: "command",
-                func,
-            }), 
-        '*');
+    videoPlayer.contentWindow.postMessage(
+        JSON.stringify({
+            event: "command",
+            func,
+        }), 
+    '*');
 
     return;
 };

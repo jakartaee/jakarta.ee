@@ -51,4 +51,4 @@ disable_header_bg: true
 
 {{< pages/about/why-jakarta-ee/info-cards >}}
 
-{{< video-modal id="video-modal-why-jakarta-ee" url="eSY6Uo62IH8" >}}
+{{< video-modal id="video-modal-why-jakarta-ee" url="fLqYvjuCxeE" >}}
