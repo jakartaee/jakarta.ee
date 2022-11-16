@@ -1,5 +1,5 @@
 ---
-title: "Jakarta EE TCK Process 1.2"
+title: "Jakarta EE TCK Process 1.3"
 date: "2022-02-07T00:00:00+00:00"
 aliases:
     - committees/specification/TCKProcess/
@@ -237,7 +237,29 @@ update and release of an official distribution of the TCK including the
 new exclude list. The associated `challenge` issue MUST be closed with
 an `accepted` label to indicate it has been resolved.
 
-The specification project may approve (user) workarounds for an `accepted` TCK challenge (as alternative to excluding TCK tests).
+The specification project may approve (user) workarounds for an `accepted` TCK challenge (as an alternative to excluding TCK tests).
+
+As another alternative to excluding a challenged test, it may be possible 
+to adjust the test validation logic to "expand" the validation check. 
+E.g. if a test expects a value "A1" for a specific variable "x", but a challenge
+is raised arguing that the specification language actually allows for either
+values "A1" and "A2" (but no other values) to be valid values for "x", then
+it could be a valid course of action to modify the challenged test to allow 
+either "A1" OR "A2" for "x". 
+
+Since this line of thinking might be applied to cases that aren't quite as 
+straightforward as this example, care should be taken when using this approach.
+A particular danger is that an implementation that has already demonstrated compliance 
+before the challenge was raised might actually not pass the new, modified test.
+
+To limit the confusion and additional work such a scenario would cause, if 
+there is already at least one certified compatible implementation before the challenge,
+the new, modified TCK should be run against at least one such implementation (and ideally all of them)
+before the changes are published, released, and finalized.
+
+If such a change were released, and it was later found to cause a previously-certified implementation
+to fail the new, modified test, then excluding the test would likely be the only option, and this would
+require yet another, additional service release.
 
 
 #### Rejected Challenges and Remedy {#_rejected_challenges_and_remedy}
@@ -434,15 +456,13 @@ Handling](https://www.eclipse.org/projects/dev_process/#6_5_Grievance_Handling)
 procedure SHOULD be followed to escalate the resolution. Note that this
 is not a mechanism to attempt to handle implementation specific issues.
 
-### How Tests May be Added to a TCK {#_how_tests_may_be_added_to_a_tck}
+### How Tests May be Added or Changed in a TCK {#_how_tests_may_be_added_or_changed_in_a_tck}
 
-The only time tests may be added to a TCK are in a major or minor
-release. A service release which updates the exclude list MUST not have
-test additions or updates (see exception below for addressing newer Java SE versions).
+Tests may be added, updated, removed or excluded as the specification team sees fit in major or minor updates.
 
-### How tests may be Updated to address newer Java SE versions {#_how_tests_may_be_updated_for_new_java_se_versions}
-
-A service release may update tests to work with newer Java SE versions.
+In service releases, specification teams should only make changes that are documented in TCK challenge issues, and 
+service release notes should document which challenges have been addressed. Test updates within a service release
+should follow the guidance described under Accepted Challenges.
 
 ## Process for releasing a point revision of a TCK
 
