@@ -15,7 +15,6 @@ The focus of this committee is on marketing, branding and community awareness an
 * Dominika Tasarz - Payara, Jadon Ortlepp - alternate
 * Jonathan Gallimore - Tomitribe, Cesar Hernandez - alternate
 * Eric (QingYu) Meng - Primeton - Elected Enterprise Representative
-* Zhao Xin - Shandong Cvicse Middleware Co. - Elected Enterprise Representative
 * Reza Rehman - Microsoft - Elected Enterprise Representative, Ed Burns - alternate
 * Otavio Santana - Elected Committer Member Representative
 
