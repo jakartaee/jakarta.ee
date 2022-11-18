@@ -336,6 +336,12 @@ other = "Join our Mailing List"
 [footer-join-mailing-list-button-text]
 other = "Sign up now"
 
+[footer-useful-links-forums-text]
+  other = "Stay Connected"
+
+[footer-useful-links-marketplace-text]
+  other = "Compatible Products"
+
 [faq-title]
  other = "Frequently Asked Questions"
 

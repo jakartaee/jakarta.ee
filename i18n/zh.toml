@@ -332,6 +332,12 @@ other = "加入邮件列表"
 [footer-join-mailing-list-button-text]
 other = "注册"
 
+[footer-useful-links-forums-text]
+  other = "Stay Connected"
+
+[footer-useful-links-marketplace-text]
+  other = "Compatible Products"
+
 [faq-title]
  other = "常见问题解答"
 
