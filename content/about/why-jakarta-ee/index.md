@@ -41,7 +41,7 @@ page_css_file: public/css/why-jakarta-ee-styles.css
 disable_header_bg: true
 ---
 
-{{< pages/about/why-jakarta-ee/table-of-contents section_ids="continuation, ubiquitous, standard, innovative" >}}
+{{< pages/about/why-jakarta-ee/table-of-contents section_ids="continuation,ubiquitous,standard,innovative" >}}
 
 {{< pages/about/why-jakarta-ee/split-section id="continuation" >}}
 
