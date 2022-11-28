@@ -1,20 +1,22 @@
 {{ $section_ids := .Get "section_ids" }}
 
+{{ $page := . }}
+
 {{ $sections := dict }}
-{{ $delimited_section_ids := delimit $section_ids "," }}
+{{ $delimited_section_ids := split $section_ids "," }}
 {{ range $delimited_section_ids }}
-    {{ $trimmed_id := trim . }}
-    {{ $section := index (where .Page.Resources "Params.section_id" .) 0 }}
-    {{ $sections = $sections | merge (dict $trimmed_id $section) }}
+    {{ $trimmed_id := trim . " " }}
+    {{ $section := index (where $page.Page.Resources "Params.section_id" .) 0 }}
+    {{ $sections = merge $sections (dict $trimmed_id $section) }}
 {{ end }}
 
 <nav class="table-of-contents">
-    <ul>
+    <ul class="table-of-contents-item-list list-unstyled">
         {{ range $section_id, $section := $sections }}
-            <li class="">
-                <a class="" href="#{{ $section_id }}">
-                    <span class="text-primary h4 big-text italic">JAKARTA EE</span>
-                    <span class="text-secondary h4 big-text italic">IS CONTINUATION</span>
+            <li class="table-of-contents-item">
+                <a class="h4" href="#{{ $section_id }}">
+                    <span class="text-primary big-text italic">{{ $section.Params.title_parts.primary | upper }}</span>
+                    <span class="text-secondary big-text italic br">{{ $section.Params.title_parts.secondary | upper }}</span>
                 </a>
             </li>
         {{ end }}
