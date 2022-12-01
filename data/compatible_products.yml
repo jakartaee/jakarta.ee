@@ -111,6 +111,15 @@ sets:
             - version: 6.2022.1.Alpha3
               compatibility: 'https://docs.payara.fish/community/docs/6.2022.1.alpha3/Jakarta%20EE%20Certification/6.2022.1.Alpha3/6.2022.1.Alpha3%20Core%20TCK%20Results.html'
               download_url: 'https://docs.payara.fish/community/docs/6.2022.1.alpha3/Jakarta%20EE%20Certification/6.2022.1.Alpha3/6.2022.1.Alpha3%20Core%20TCK%20Results.html'
+        - name: Payara Server Community (Web Profile)
+          vendor: Payara Services Limited
+          image: '/images/compatible_products/payara-server-community-logo.svg'
+          image_width: 195
+          download: 'https://www.payara.fish/downloads/payara-platform-community-edition/'
+          versions:
+            - version: 6.2022.1
+              compatibility: 'https://docs.payara.fish/community/docs/6.2022.1/Jakarta%20EE%20Certification/6.2022.1/6.2022.1%20(Web%20Profile)%20Core%20TCK%20Results.html'
+              download_url: 'https://www.payara.fish/downloads/payara-platform-community-edition/'
         - name: WildFly
           vendor: Red Hat
           image: '/images/compatible_products/red-hat-wildfly-logo.png'
