@@ -8,6 +8,7 @@ icon: ./images/icon.svg
 image:
     url: ./images/innovative-image.png
     alt: Alt
+weight: 4
 ---
 
 Jakarta EE opens the door to cloud native Java Innovation, and allows global contributors to continuously build and shape the open-source future of Jakarta EE as a community. 

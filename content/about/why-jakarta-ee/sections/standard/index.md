@@ -9,6 +9,7 @@ image:
     url: ./images/standard-image.jpg
     alt: Alt
     wrapper_class: graph-pattern graph-pattern-standard
+weight: 3
 ---
 
 Jakarta EE is the standard, a set of specifications for enterprise Java application development. It is well-understood and widely accepted because of its stability, portability, and backwards compatibility.
