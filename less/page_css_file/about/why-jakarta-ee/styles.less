@@ -208,18 +208,26 @@
 }
 
 .table-of-contents {
-    margin-left: 25%;
+    @media (min-width: @screen-md-min) {
+        margin-left: 25%;
+    }
 
     .table-of-contents-item-list {
         display: flex;
+        flex-wrap: wrap;
         justify-content: center;
     }
 
     .table-of-contents-item {
+        width: 100%;
         padding: 1em;
-        margin-left: 1em;
         border: 1px solid black;
         line-height: 0.25;
+
+        @media (min-width: @screen-md-min) {
+            width: auto;
+            margin-left: 1em;
+        }
     }
 }
 
@@ -440,6 +448,13 @@
 
 .video-modal-dialog {
     position: relative;
+    min-width: calc(100% - @grid-gutter-width);
+    top: 25%;
+
+    @media (min-width: @screen-sm-min) {
+        min-width: unset;
+        top: unset;
+    }
 
     .video-modal-dialog-controls {
         position: absolute;
@@ -448,4 +463,12 @@
         width: min-content;
         height: min-content;
     }
+}
+
+// Remove once utility class has been added to EFSA
+.link-unstyled,
+.link-unstyled:link,
+.link-unstyled:hover {
+    color: inherit;
+    text-decoration: inherit;
 }

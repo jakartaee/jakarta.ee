@@ -37,7 +37,7 @@ custom_jumbotron: |
     </div>
 container: container-fluid container-why-jakarta-ee
 layout: single
-page_css_file: public/css/why-jakarta-ee-styles.css
+page_css_file: css/why-jakarta-ee-styles.css
 disable_header_bg: true
 ---
 

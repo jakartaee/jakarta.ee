@@ -14,7 +14,7 @@
     <ul class="table-of-contents-item-list list-unstyled">
         {{ range $section_id, $section := sort ($sections) "Params.weight" }}
             <li class="table-of-contents-item">
-                <a class="h4" href="#{{ $section.Params.section_id }}">
+                <a class="h4 link-unstyled" href="#{{ $section.Params.section_id }}">
                     <span class="text-primary big-text italic">{{ $section.Params.title_parts.primary | upper }}</span>
                     <span class="text-secondary big-text italic br">{{ $section.Params.title_parts.secondary | upper }}</span>
                 </a>
