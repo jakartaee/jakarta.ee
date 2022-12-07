@@ -49,7 +49,7 @@ disable_header_bg: true
     subheading="is Continuation" 
     image="images/continuation-image.jpg" 
     image_wrapper_class="graph-pattern graph-pattern-1" 
-    icon="images/continuation-icon.svg" 
+    icon="images/icons/continuation-icon.svg" 
 >}}
     {{% markdown %}}
 
@@ -70,7 +70,7 @@ There are several strategies and designs in enterprise architecture, such as mic
     subheading="is Ubiquitous"
     image="images/ubiquitous-image.jpg"
     image_wrapper_class="graph-pattern graph-pattern-ubiquitous"
-    icon="images/ubiquitous-icon.svg"
+    icon="images/icons/ubiquitous-icon.svg"
     reverse="true"
 >}}
     {{% markdown %}}
@@ -98,7 +98,7 @@ Beyond these implementations, the industry is increasingly recognizing that Jaka
     subheading="is the Standard"
     image="images/standard-image.jpg"
     image_wrapper_class="graph-pattern graph-pattern-standard"
-    icon="images/standard-icon.svg"
+    icon="images/icons/standard-icon.svg"
 >}}
     {{% markdown %}}
 
@@ -114,8 +114,8 @@ But being the standard does not mean being rigid. Jakarta EE is modular - capabl
     id="innovative"
     heading="Jakarta EE"
     subheading="is Innovative"
-    image="images/innovative-image.png"
-    icon="images/innovative-icon.svg"
+    image="images/innovative-image.jpg"
+    icon="images/icons/innovative-icon.svg"
     reverse="true"
 >}}
     {{% markdown %}}
