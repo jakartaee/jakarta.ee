@@ -24,7 +24,7 @@ custom_jumbotron: |
             <div class="jumbotron-graphic-breakout-container">
                 <div class="jumbotron-graphic-wrapper container">
                     <div class="jumbotron-graphic-bg">
-                        <img class="jumbotron-graphic-placeholder" src="/images/about/why-jakarta-ee/video-placeholder.jpg" />
+                        <img class="jumbotron-graphic-placeholder" src="images/video-placeholder.jpg" />
                         <div class="jumbotron-graphic-play-wrapper">
                             <button class="jumbotron-graphic-play" type="button" data-toggle="modal" data-target="#video-modal-why-jakarta-ee">
                                 <i class="fa fa-play-circle"></i>
@@ -134,7 +134,7 @@ Jakarta EE is ready to innovate and always looking for community feedback. It ha
 {{< grid/div class="info-cards container flex-center padding-top-60 padding-bottom-20" isMarkdown="false" >}}
     {{< pages/about/why-jakarta-ee/info-card 
         title="Find the Latest Release" 
-        icon="images/latest-release-icon.svg"
+        icon="images/icons/latest-release-icon.svg"
         href="/release"
         link_text="Read More"  
     >}}
@@ -143,7 +143,7 @@ Jakarta EE is ready to innovate and always looking for community feedback. It ha
     
     {{< pages/about/why-jakarta-ee/info-card 
         title="Get Involved"
-        icon="images/get-involved-icon.svg"
+        icon="images/icons/get-involved-icon.svg"
         href="/community/get-involved"
         link_text="Learn More"
         inverted="true"
@@ -153,7 +153,7 @@ Jakarta EE is ready to innovate and always looking for community feedback. It ha
 
     {{< pages/about/why-jakarta-ee/info-card
         title="Browse Specifications"
-        icon="images/browse-specifications-icon.svg"
+        icon="images/icons/browse-specifications-icon.svg"
         href="/specifications"
         link_text="Browse Now"
     >}}
@@ -162,7 +162,7 @@ Jakarta EE is ready to innovate and always looking for community feedback. It ha
 
     {{< pages/about/why-jakarta-ee/info-card 
         title="Download Compatible Products"
-        icon="images/compatible-products-icon.png"
+        icon="images/icons/compatible-products-icon.png"
         href=""
         link_text="Read More"
         inverted="true"
