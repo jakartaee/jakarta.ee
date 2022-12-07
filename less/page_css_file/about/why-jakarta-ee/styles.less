@@ -239,7 +239,7 @@
 
         @media (min-width: @screen-md-min) {
             width: auto;
-            margin-left: 1em;
+            margin: 0.5em;
         }
     }
 }
@@ -284,10 +284,12 @@
         font-style: italic;
     }
 
+    .split-section-image {
+        width: 100vw;
+    }
+
     @media (min-width: @screen-md-min) {
         .split-section-image {
-            //height: 100%;
-            width: 100vw;
             min-height: 100%;
             max-height: 70rem;
             object-fit: cover;
