@@ -18,9 +18,9 @@ custom_jumbotron: |
             <div class="jumbotron-graphic-breakout-container">
                 <div class="jumbotron-graphic-wrapper container">
                     <div class="jumbotron-graphic-bg">
-                        <img class="jumbotron-graphic-placeholder" src="images/video-placeholder.jpg" />
+                        <img class="jumbotron-graphic-placeholder" src="images/video-placeholder.jpg" alt="" />
                         <div class="jumbotron-graphic-play-wrapper">
-                            <button class="jumbotron-graphic-play" type="button" data-toggle="modal" data-target="#video-modal-why-jakarta-ee">
+                            <button class="jumbotron-graphic-play" type="button" data-toggle="modal" data-target="#video-modal-why-jakarta-ee" aria-label="Open an explainer video for why you should choose Jakarta EE">
                                 <i class="fa fa-play-circle"></i>
                             </button>
                         </div>
