@@ -5,7 +5,7 @@
         {{ range $index, $info_card := $info_cards }}
             {{ $modifier_class := "" }}
             {{ if not (modBool $index 2) }}
-                {{ $modifier_class = "info-cards-card-inverted" }}
+                {{ $modifier_class = "info-card-inverted" }}
             {{ end }}
 
             {{ $info_card_dir := .File.Dir }}

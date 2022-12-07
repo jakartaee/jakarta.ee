@@ -131,15 +131,45 @@ Jakarta EE is ready to innovate and always looking for community feedback. It ha
     {{%/ markdown %}}
 {{</ pages/about/why-jakarta-ee/section >}}
 
-{{< grid/div class="container flex-center" isMarkdown="false" >}}
+{{< grid/div class="info-cards container flex-center padding-top-60 padding-bottom-20" isMarkdown="false" >}}
     {{< pages/about/why-jakarta-ee/info-card 
         title="Find the Latest Release" 
-        icon="latest-release-icon.png"
+        icon="images/latest-release-icon.svg"
         href="/release"
         link_text="Read More"  
     >}}
-See all the Jakarta EE release versions and find out what’s new in the related press release.
+        See all the Jakarta EE release versions and find out what’s new in the related press release.
     {{</ pages/about/why-jakarta-ee/info-card >}}
+    
+    {{< pages/about/why-jakarta-ee/info-card 
+        title="Get Involved"
+        icon="images/get-involved-icon.svg"
+        href="/community/get-involved"
+        link_text="Learn More"
+        inverted="true"
+    >}}
+        Find out more about how you can influence the future of cloud native Java.
+    {{</ pages/about/why-jakarta-ee/info-card >}}
+
+    {{< pages/about/why-jakarta-ee/info-card
+        title="Browse Specifications"
+        icon="images/browse-specifications-icon.svg"
+        href="/specifications"
+        link_text="Browse Now"
+    >}}
+        Find Jakarta EE Platform, Profile and Individual specification documents.
+    {{</ pages/about/why-jakarta-ee/info-card >}}
+
+    {{< pages/about/why-jakarta-ee/info-card 
+        title="Download Compatible Products"
+        icon="images/compatible-products-icon.png"
+        href=""
+        link_text="Read More"
+        inverted="true"
+    >}}
+        See all Jakarta EE Compatible certified products to help build your cloud native application.
+    {{</ pages/about/why-jakarta-ee/info-card >}}
+
 {{</ grid/div >}}
 
 {{< video-modal id="video-modal-why-jakarta-ee" url="dKzAOEc4obw" >}}
