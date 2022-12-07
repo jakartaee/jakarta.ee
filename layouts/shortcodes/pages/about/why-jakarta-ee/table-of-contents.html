@@ -1,24 +1,32 @@
-{{ $section_ids := .Get "section_ids" }}
-
-{{ $page := . }}
-
-{{ $sections := slice }}
-{{ $delimited_section_ids := split $section_ids "," }}
-{{ range $delimited_section_ids }}
-    {{ $trimmed_id := trim . " " }}
-    {{ $section := index (where $page.Page.Resources "Params.section_id" .) 0 }}
-    {{ $sections = $sections | append $section }}
-{{ end }}
-
 <nav class="table-of-contents margin-bottom-60">
     <ul class="table-of-contents-item-list list-unstyled">
-        {{ range $section_id, $section := sort ($sections) "Params.weight" }}
+
             <li class="table-of-contents-item">
-                <a class="h4 link-unstyled" href="#{{ $section.Params.section_id }}">
-                    <span class="text-primary big-text italic">{{ $section.Params.title_parts.primary | upper }}</span>
-                    <span class="text-secondary big-text italic br">{{ $section.Params.title_parts.secondary | upper }}</span>
+                <a class="h4 link-unstyled" href="#continuation">
+                    <span class="text-primary big-text italic">JAKARTA EE</span>
+                    <span class="text-secondary big-text italic br">IS CONTINUATION</span>
                 </a>
             </li>
-        {{ end }}
+            
+            <li class="table-of-contents-item">
+                <a class="h4 link-unstyled" href="#ubiquitous">
+                    <span class="text-primary big-text italic">JAKARTA EE</span>
+                    <span class="text-secondary big-text italic br">IS UBIQUITOUS</span>
+                </a>
+            </li>
+            
+            <li class="table-of-contents-item">
+                <a class="h4 link-unstyled" href="#standard">
+                    <span class="text-primary big-text italic">JAKARTA EE</span>
+                    <span class="text-secondary big-text italic br">IS THE STANDARD</span>
+                </a>
+            </li>
+            
+            <li class="table-of-contents-item">
+                <a class="h4 link-unstyled" href="#innovative">
+                    <span class="text-primary big-text italic">JAKARTA EE</span>
+                    <span class="text-secondary big-text italic br">IS INNOVATIVE</span>
+                </a>
+            </li>
     </ul>
 </nav>

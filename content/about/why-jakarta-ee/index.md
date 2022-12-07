@@ -1,19 +1,13 @@
 ---
 title: "Why Jakarta EE?"
 date: 2022-10-20T14:49:08-04:00
-description: ""
-categories: []
-keywords: []
-slug: ""
-aliases: []
-toc: false
-draft: false
+description: "Reasons for choosing Jakarta EE"
+tags: ['specification', 'jakarta ee', 'java ee']
 hide_breadcrumb: true
 hide_sidebar: true
 hide_page_title: true
 headline: null
 header_wrapper_class: header-why-jakarta-ee
-jumbotron_class: ' '
 custom_jumbotron_class: jumbotron-why-jakarta-ee
 custom_jumbotron: |
     <div class="jumbotron-why-jakarta-ee-container">
