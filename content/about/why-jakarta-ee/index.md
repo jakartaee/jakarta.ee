@@ -37,7 +37,7 @@ disable_header_bg: true
 
 {{< pages/about/why-jakarta-ee/table-of-contents section_ids="continuation,ubiquitous,standard,innovative" >}}
 
-{{< pages/about/why-jakarta-ee/section 
+{{< pages/about/why-jakarta-ee/split-section 
     id="continuation" 
     heading="Jakarta EE" 
     subheading="is Continuation" 
@@ -45,7 +45,6 @@ disable_header_bg: true
     image_wrapper_class="graph-pattern graph-pattern-1" 
     icon="images/icons/continuation-icon.svg" 
 >}}
-    {{% markdown %}}
 
 Java is one of the prevalent programming languages in the industry, with an unbeaten reputation for stability, compatibility, and portability. With the rise of Java, Java EE was established as a set of specifications for enterprise Java application development. Java EE has become an application developer’s go-to technology over the past decade. A vast majority of Fortune 500 companies are running their mission-critical applications on Java EE, and now, Jakarta EE - they are choosing an open, vendor-neutral, and community-driven approach to application development technologies.
 
@@ -54,10 +53,9 @@ architectures. However, they may not be fully aware of how ingrained the technol
 
 There are several strategies and designs in enterprise architecture, such as microservices, monolithic applications, etc. Jakarta EE brings stability with innovation and the guarantee of long-term support for all your company needs.
 
-    {{%/ markdown %}}
-{{</ pages/about/why-jakarta-ee/section >}}
+{{</ pages/about/why-jakarta-ee/split-section >}}
 
-{{< pages/about/why-jakarta-ee/section
+{{< pages/about/why-jakarta-ee/split-section
     id="ubiquitous"
     class="row-dark"
     heading="Jakarta EE"
@@ -67,14 +65,14 @@ There are several strategies and designs in enterprise architecture, such as mic
     icon="images/icons/ubiquitous-icon.svg"
     reverse="true"
 >}}
-    {{% markdown %}}
 
 The Jakarta EE vendor-neutral community is currently at work to keep the back-end of enterprise java applications running in various industries. Products you may know - such as Jetty, Tomcat, Jersey and Spring - all rely on Jakarta EE technologies.
 The [Jakarta EE Compatible products](/compatibility/) are implementing Jakarta EE Platform and profile specifications.
 
-    {{%/ markdown %}}
-    {{< pages/about/why-jakarta-ee/technologies >}}
-    {{% markdown %}}
+- ![Eclipse Jetty](images/logos/jetty.png)
+- ![Tomcat](images/logos/tomcat.svg)
+- ![Jersey](images/logos/jersey.png)
+- ![Spring](images/logos/spring.svg)
 
 In addition to these products, there are many more that are implementing some of the individual specifications. Apache Tomcat implements four Jakarta EE specifications,
 Spring Boot embeds Apache Tomcat, Eclipse Jetty, or Undertow as a runtime.
@@ -82,11 +80,10 @@ Eclipse Jetty, the Eclipse IDE, MicroProfile, and other industry frameworks that
 
 Beyond these implementations, the industry is increasingly recognizing that Jakarta EE delivers a combination of strategically important features and functions that is not available in any other Java framework.
     
-    {{%/ markdown %}}
-{{</ pages/about/why-jakarta-ee/section >}}
+{{</ pages/about/why-jakarta-ee/split-section >}}
 
 
-{{< pages/about/why-jakarta-ee/section
+{{< pages/about/why-jakarta-ee/split-section
     id="standard"
     heading="Jakarta EE"
     subheading="is the Standard"
@@ -94,16 +91,14 @@ Beyond these implementations, the industry is increasingly recognizing that Jaka
     image_wrapper_class="graph-pattern graph-pattern-standard"
     icon="images/icons/standard-icon.svg"
 >}}
-    {{% markdown %}}
 
 Jakarta EE is the standard, a set of specifications for enterprise Java application development. It is well-understood and widely accepted because of its stability, portability, and backwards compatibility.
 
 But being the standard does not mean being rigid. Jakarta EE is modular - capable of being adapted to fit different platforms and profiles for different organisations all over the world. Jakarta EE enables you to use the individual specifications independently or together.  Depending on your application type and needs you may choose to utilise the Jakarta EE Platform, Jakarta EE Web Profile or Jakarta EE Core Profile.
 
-    {{%/ markdown %}}
-{{</ pages/about/why-jakarta-ee/section >}}
+{{</ pages/about/why-jakarta-ee/split-section >}}
 
-{{< pages/about/why-jakarta-ee/section
+{{< pages/about/why-jakarta-ee/split-section
     class="row-dark"
     id="innovative"
     heading="Jakarta EE"
@@ -112,7 +107,6 @@ But being the standard does not mean being rigid. Jakarta EE is modular - capabl
     icon="images/icons/innovative-icon.svg"
     reverse="true"
 >}}
-    {{% markdown %}}
 
 Jakarta EE opens the door to cloud native Java Innovation, and allows global contributors to continuously build and shape the open-source future of Jakarta EE as a community. 
 
@@ -122,8 +116,7 @@ The Jakarta EE 10 release defines a new profile specification with Jakarta EE Co
  
 Jakarta EE is ready to innovate and always looking for community feedback. It has an open and transparent process to keep the platform forward; it includes companies, Java User Groups, and individuals in this process. 
 
-    {{%/ markdown %}}
-{{</ pages/about/why-jakarta-ee/section >}}
+{{</ pages/about/why-jakarta-ee/split-section >}}
 
 {{< grid/div class="info-cards container flex-center padding-top-60 padding-bottom-20" isMarkdown="false" >}}
     {{< pages/about/why-jakarta-ee/info-card 
