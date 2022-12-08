@@ -56,6 +56,12 @@
     height: 3.2rem;
 }
 
+// Main
+
+body {
+    overflow-x: hidden;
+}
+
 // Header
 
 .header-why-jakarta-ee {
@@ -126,6 +132,7 @@
 
     .jumbotron-title {
         width: auto;
+        margin: 4rem 0;
         font-size: 3.5rem;
         font-weight: 700;
         text-transform: none;
@@ -143,6 +150,7 @@
             width: 100%;
 
             .jumbotron-title {
+                margin: 0;
                 font-size: 5rem;
             }
         }
@@ -220,9 +228,17 @@
     }
 }
 
-.table-of-contents {
+.table-of-contents { 
+    position: relative;
+    z-index: 10;
+    margin-top: 2rem;
+
     @media (min-width: @screen-md-min) {
-        margin-left: 25%;
+        margin-left: 15%;
+    }
+
+    @media(min-width: @screen-lg-min) {
+        margin-top: -10rem;
     }
 
     .table-of-contents-item-list {
@@ -236,17 +252,13 @@
         padding: 1em;
         border: 1px solid black;
         line-height: 0.25;
+        margin: 0.5em;
 
         @media (min-width: @screen-md-min) {
+            min-width: 20rem;
             width: auto;
-            margin: 0.5em;
         }
     }
-}
-
-// Page layout
-.container-why-jakarta-ee {
-    overflow: hidden;
 }
 
 // Sections
@@ -258,6 +270,7 @@
 .split-section {
     display: flex;
     flex-wrap: wrap;
+    max-width: 100vw;
     padding-bottom: 10rem;
 
     .split-section-inner-container {
@@ -331,8 +344,7 @@
         .graph-pattern-1::after {
             top: -12%;
             left: 50%;
-            height: 150%;
-            width: 150%;
+            transform: scale(1.5);
             background-image: url(/images/about/why-jakarta-ee/graph-pattern-1.png);
         }
 
