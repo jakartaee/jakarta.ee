@@ -250,13 +250,25 @@ body {
     .table-of-contents-item {
         width: 100%;
         padding: 1em;
+        margin: 0.5em;
         border: 1px solid black;
         line-height: 0.25;
-        margin: 0.5em;
+        background-color: inherit;
+        transition: background-color, color, 0.1s ease-out;
 
         @media (min-width: @screen-md-min) {
             min-width: 20rem;
             width: auto;
+
+            &:hover {
+                border-color: @brand-primary;
+                background-color: @brand-primary;
+                transition: border-color, color, 0.1s ease-in;
+
+                .text-primary {
+                    color: @white;
+                }
+            }
         }
     }
 }
