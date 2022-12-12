@@ -6,7 +6,8 @@
  * http://www.eclipse.org/legal/epl-2.0.
  *
  * Contributors:
- *   Eric Poirier <chris.guindon@eclipse-foundation.org>
+ *   Eric Poirier <eric.poirier@eclipse-foundation.org>
+ *   Olivier Goulet <olivier.goulet@eclipse-foundation.org>
  *
  * SPDX-License-Identifier: EPL-2.0
 */
@@ -24,6 +25,7 @@
 @import 'components/blocks.less';
 @import 'components/typography.less';
 @import 'components/testimonials.less';
+@import 'components/video-modal.less';
 
 @import 'transient.less';
 @import 'release-8.less';
@@ -38,6 +40,14 @@
 
 // Commenting this out but keeping it in case we need stuff in there
 //@import 'redesign.less';
+
+html {
+  scroll-behavior: smooth;
+}
+
+.br {
+  display: block;
+}
 
 .jakarta-ee-hr {
   border-top: 5px solid @brand-primary;

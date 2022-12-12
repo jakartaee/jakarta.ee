@@ -1,0 +1,512 @@
+/*!
+ * Copyright (c) 2022 Eclipse Foundation, Inc.
+ *
+ * This program and the accompanying materials are made available under the
+ * terms of the Eclipse Public License v. 2.0 which is available at
+ * http://www.eclipse.org/legal/epl-2.0.
+ *
+ * Contributors:
+ *   Olivier Goulet <olivier.goulet@eclipse-foundation.org>
+ *
+ * SPDX-License-Identifier: EPL-2.0
+*/
+
+@import (reference) '~eclipsefdn-solstice-assets/less/quicksilver/styles.less';
+@import (reference) '../../../styles.less';
+@import '_variables.less';
+
+// Utility
+
+.brand-secondary, 
+.brand-secondary:visited,
+.brand-secondary:hover {
+    color: @brand-secondary;
+    text-decoration: none;
+}
+
+.equal-height {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.color-white {
+    color: @white;
+}
+
+.color-black {
+    color: @black;
+}
+
+// Vendor extension
+.btn.btn-transparent,
+.btn.btn-transparent:focus,
+.btn.btn-transparent:active {
+    border: none;
+    padding: 0;
+    overflow: hidden;
+    color: #000;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    box-shadow: none;
+    cursor: pointer;
+}
+
+.feather-32 {
+    width: 3.2rem;
+    height: 3.2rem;
+}
+
+// Main
+
+body {
+    overflow-x: hidden;
+}
+
+// Header
+
+.header-why-jakarta-ee {
+    position: relative;
+    min-height: calc(@jumbotron-height-xs + @jumbotron-height-offset-xs);
+    overflow: hidden;
+    background-color: transparent;
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: -10%;
+        left: -11.5%;
+        z-index: -1;
+        height: 110%;
+        width: 100%;
+        background-image: url(/images/jakarta-ee-logo.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        mix-blend-mode: multiply;
+    }
+
+    .jumbotron.featured-jumbotron {
+        position: relative;
+        min-height: @jumbotron-height-xs;
+        padding: 0;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            height: 100%;
+            width: 100%;
+            background-size: cover;
+            background-position: right;
+            background-repeat: no-repeat;
+            background-image: url('/images/blue-shape-bg.jpg');
+        }
+    }
+
+    @media (min-width: @jumbotron-graphic-breakpoint) {
+        min-height: calc(@jumbotron-height-lg + @jumbotron-height-offset-lg);
+
+        .jumbotron.featured-jumbotron {
+            min-height: @jumbotron-height-lg;
+        }
+    }
+}
+
+.jumbotron-why-jakarta-ee-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: @jumbotron-height-xs;
+
+    @media (min-width: @jumbotron-graphic-breakpoint) {
+        height: @jumbotron-height-lg;
+        flex-direction: row;
+    }
+
+    & > * {
+        width: 100%;
+    }
+
+    .jumbotron-title {
+        width: auto;
+        margin: 4rem 0;
+        font-size: 3.5rem;
+        font-weight: 700;
+        text-transform: none;
+    }
+
+    .jumbotron-graphic-container {
+        position: relative;
+        align-self: flex-end;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        
+        @media (min-width: @jumbotron-graphic-breakpoint) {
+            width: 100%;
+
+            .jumbotron-title {
+                margin: 0;
+                font-size: 5rem;
+            }
+        }
+    }
+
+    .jumbotron-graphic-breakout-container {
+        position: absolute;
+        bottom: -2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        height: 100%;
+    }
+
+    .jumbotron-graphic-wrapper {
+        position: relative;
+        width: 100%;
+        max-height: 100%;
+        align-self: center;
+    }
+
+    .jumbotron-graphic-placeholder {
+        position: absolute;
+        top: 6%;
+        left: 18%;
+        width: 66%;
+        height: 78%;
+    }
+
+    .jumbotron-graphic-play-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    .jumbotron-graphic-play {
+        position: relative;
+        border: none;
+        color: @brand-primary;
+        background-color: transparent;
+        
+        .fa.fa-play-circle {
+            font-size: 6em;
+        }
+    }
+    
+    // TODO: IE fallback
+    .jumbotron-graphic-bg {
+        width: 28rem;
+        aspect-ratio: 834 / 482;
+        background-image: url(/images/laptop-frame.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    @media (min-width: @screen-sm-min) {
+        .jumbotron-graphic-bg {
+            width: 36rem;
+        }
+    }
+
+    @media (min-width: @jumbotron-graphic-breakpoint) {
+        .jumbotron-graphic-breakout-container {
+            display: block;
+            justify-content: unset;
+            top: 29%;
+            width: 100%;
+        }
+
+        .jumbotron-graphic-bg {
+            width: unset;
+        }
+    }
+}
+
+.table-of-contents { 
+    position: relative;
+    z-index: 10;
+    margin-top: 2rem;
+
+    @media (min-width: @screen-md-min) {
+        margin-left: 15%;
+    }
+
+    @media(min-width: @screen-lg-min) {
+        margin-top: -10rem;
+    }
+
+    .table-of-contents-item-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .table-of-contents-item {
+        width: 100%;
+        padding: 1em;
+        margin: 0.5em;
+        border: 1px solid black;
+        line-height: 0.25;
+        background-color: inherit;
+        transition: background-color, color, 0.1s ease-out;
+
+        @media (min-width: @screen-md-min) {
+            min-width: 20rem;
+            width: auto;
+
+            &:hover {
+                border-color: @brand-primary;
+                background-color: @brand-primary;
+                transition: border-color, color, 0.1s ease-in;
+
+                .text-primary {
+                    color: @white;
+                }
+            }
+        }
+    }
+}
+
+// Sections
+
+.row-dark {
+    background-color: @bg-gray;
+}
+
+.split-section {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100vw;
+    padding-bottom: 10rem;
+
+    .split-section-inner-container {
+        margin: auto;
+    }
+
+    .split-section-title-container {
+        display: flex;
+        align-items: center;
+        padding-bottom: 1rem;
+    }
+
+    .split-section-title-icon-wrapper {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 5rem;
+        padding-top: 0.5rem;
+    }
+
+    .split-section-title {
+        margin-left: 2rem;
+        font-style: italic;
+    }
+
+    .split-section-image {
+        width: 100vw;
+    }
+
+    .split-section-content-body {
+        ul {
+            display: flex;
+            padding: 1.5rem 0;
+            list-style: none;
+        }
+
+        li {
+            width: auto;
+            height: 3.5rem;
+            max-width: 8rem;
+            margin-right: 2rem;
+
+            img {
+                .img-responsive;
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+    }
+
+    @media (min-width: @screen-md-min) {
+        .split-section-image {
+            min-height: 100%;
+            max-height: 70rem;
+            object-fit: cover;
+        }
+
+        .graph-pattern::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-size: contain;
+            background-repeat: no-repeat;     
+        }
+
+        .graph-pattern-1::after {
+            top: -12%;
+            left: 50%;
+            transform: scale(1.5);
+            background-image: url(/images/about/why-jakarta-ee/graph-pattern-1.png);
+        }
+
+        .graph-pattern-ubiquitous::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+
+        .graph-pattern-ubiquitous::after {
+            background-image: url(/images/about/why-jakarta-ee/graph-pattern-2.png);
+            width: 200%;
+            height: 200%;
+            top: -17.5%;
+            left: -83%;
+        }
+
+        .graph-pattern-standard::after {
+            background-image: url(/images/about/why-jakarta-ee/graph-pattern-3.png);
+            width: 110%;
+            top: 56%;
+            left: 5%;
+
+            @media (min-width: 1920px) {
+                top: 40%;
+            }
+        }
+
+        .split-section-title-container {
+            align-items: flex-start;
+        }
+
+        .split-section-title {
+            margin-top: 0;
+            margin-right: 0;
+            margin-bottom: 0;
+        }
+        
+        .split-section-content {
+            height: 100%;
+            padding: 7rem 3rem;
+            max-width: 59rem;
+            margin: 0 0 0 auto;
+        }
+
+        .split-section-content-body {
+            padding-left: calc(6rem + 2rem);    
+        }
+    }
+}
+
+.split-section.row-dark {
+    @media (min-width: @screen-md-min) {
+        .split-section-content {
+            margin: 0 auto 0 0;
+        }
+    }
+}
+
+// Info cards
+
+.info-card {
+    display: flex;
+    flex-direction: column;
+    width: 25rem;
+    padding: 2rem;
+    margin: 0 1rem 2rem 1rem;
+    border-radius: 1rem;
+    background-color: @fg-gray;
+    box-shadow: rgba(109, 117, 135, 0.5) 0px 8px 20px;
+
+    .info-card-icon-container {
+        min-height: 6rem;
+        margin: 1rem auto;
+    }
+
+    .info-card-icon-wrapper {
+        width: 100%;
+        max-width: 4rem;
+        height: 5rem;
+    }
+
+    .info-card-icon {
+        width: 100%;
+        height: inherit;
+        object-fit: contain;
+    }
+
+    .info-card-heading {
+        flex-shrink: 0;
+        font-size: 2.1rem;
+        height: 6rem;
+    }
+
+    .info-card-body {
+        display: flex;
+        height: 100%;
+        padding: 2rem 0 1.5rem 0;
+        align-content: center;
+    }
+
+    .info-card-link-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
+    .info-card-link {
+        font-size: 1.2rem;
+    }
+}
+
+.info-card.info-card-inverted {
+    background-color: @accent-dark;
+    
+    .info-card-body {
+        color: @white;
+    }
+}
+
+.info-cards {
+    align-items: stretch;
+}
+
+.video-modal-dialog {
+    position: relative;
+    min-width: calc(100% - @grid-gutter-width);
+    top: 25%;
+
+    @media (min-width: @screen-sm-min) {
+        min-width: unset;
+        top: unset;
+    }
+
+    .video-modal-dialog-controls {
+        position: absolute;
+        top: 0;
+        left: 100%;
+        width: min-content;
+        height: min-content;
+    }
+}
+
+// Remove once utility class has been added to EFSA
+.link-unstyled,
+.link-unstyled:link,
+.link-unstyled:hover {
+    color: inherit;
+    text-decoration: inherit;
+}

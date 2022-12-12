@@ -1,0 +1,27 @@
+{{ $title := .Get "title" }}
+{{ $href := .Get "href" }}
+{{ $link_text := .Get "link_text" }}
+{{ $icon := .Get "icon" }}
+{{ $inverted := .Get "inverted" | default "false" }}
+
+{{ $inverted_class := "" }}
+{{ if eq $inverted "true" }}
+    {{ $inverted_class = "info-card-inverted" }}
+{{ end }}
+
+<div class="info-card text-center {{ $inverted_class }}">
+    <div class="info-card-icon-container">
+        <div class="info-card-icon-wrapper">
+            <img class="info-card-icon" src="{{ $icon }}" alt="" />
+        </div>
+    </div>
+    <p class="info-card-heading big-text brand-secondary">{{ $title }}</p>
+    <div class="info-card-body">
+        <p>{{ .Inner }}</p>
+    </div>
+    <div class="info-card-link-container">
+        <a class="info-card-link big-text brand-secondary" href="{{ $href }}">
+            {{ $link_text | upper }}
+        </a>
+    </div>
+</div>
