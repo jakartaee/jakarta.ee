@@ -10,6 +10,9 @@
 [home-calltoaction-specifications]
   other = "GET THE <br>SPECIFICATIONS"
 
+[home-calltoaction-why-jakarta-ee]
+  other = "WHY JAKARTA EE"
+
 [home-calltoaction-presentation]
   other = "JAKARTA EE PRESENTATION"
 
