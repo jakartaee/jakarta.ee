@@ -4,9 +4,9 @@ The [jakarta.ee](https://jakarta.ee) website is generated with [Hugo](https://go
 
 Jakarta EE is the future of cloud native Java. Jakarta EE open source software drives cloud native innovation, modernizes enterprise applications and protects investments in Java EE.
 
-This site is powered by [Netlify](https://www.netlify.com/). 
-
 [![Netlify Status](https://api.netlify.com/api/v1/badges/8d42015f-09c7-46b1-9f9c-419404d01f6d/deploy-status)](https://app.netlify.com/sites/jakartaee/deploys)
+
+This site is powered by [Netlify](https://www.netlify.com/). 
 
 ## Getting Started
 
