@@ -751,6 +751,15 @@ other = "Sign up now"
 [pages-resources-view-our-resources]
  other = "View our Resources"
 
+[pages-resources-branding-title]
+ other = "Branding"
+
+[pages-resources-branding-guidelines]
+ other = "Branding Guidelines"
+
+[pages-resources-branding-artwork]
+ other = "Artwork"
+
 [pages-resources-case-studies-title]
  other = "Case Studies"
 
