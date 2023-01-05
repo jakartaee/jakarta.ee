@@ -193,52 +193,58 @@ enableInlineShortcodes = true
     identifier = "overview_resources"
 
 [[menu.main]]
+	name = "Branding"
+	url = "/resources#branding"
+	parent = "Resources"
+	weight = 2
+
+[[menu.main]]
     name = "Datasheets"
     url = "/resources#datasheets"
     parent = "Resources"
-    weight = 2
+    weight = 3
 
 [[menu.main]]
     name = "Documentation"
     url = "/resources#documentation"
     parent = "Resources"
-    weight = 3
+    weight = 4
 
 [[menu.main]]
     name = "Presentations"
     url = "/resources#presentations"
     parent = "Resources"
-    weight = 4
+    weight = 5
 
 [[menu.main]]
     name = "Surveys"
     url = "/resources#surveys"
     parent = "Resources"
-    weight = 5
+    weight = 6
 
 [[menu.main]]
     name = "eBooks"
     url = "/resources/#ebooks"
     parent = "Resources"
-    weight = 6
+    weight = 7
 
 [[menu.main]]
     name = "White Papers"
     url = "/resources/#white-papers"
     parent = "Resources"
-    weight = 7
+    weight = 8
 
 [[menu.main]]
     name = "Case Studies"
     url = "/resources/#cases-studies"
     parent = "Resources"
-    weight = 8
+    weight = 9
 
 [[menu.main]]
     name = "Starter for Jakarta EE"
     url = "https://start.jakarta.ee/"
     parent = "Resources"
-    weight = 9
+    weight = 10
 
 # specifications
 [[menu.main]]
