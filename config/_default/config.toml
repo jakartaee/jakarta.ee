@@ -1,0 +1,68 @@
+baseurl = "https://jakarta.ee/"
+DefaultContentLanguage = "en"
+title = "Jakarta® EE: The New Home of Cloud Native Java"
+theme = "eclipsefdn-hugo-solstice-theme"
+metaDataFormat = "yaml"
+googleAnalytics = "UA-910670-30"
+#disableKinds = ["taxonomy", "taxonomyTerm"]
+themesDir = "node_modules/"
+enableRobotsTXT = true
+enableInlineShortcodes = true
+
+[Params]
+  google_tag_manager = "GTM-5WLCZXC"
+  description = "Jakarta® Enterprise Edition (EE) is the future of cloud native Java. Jakarta® EE open source software drives cloud native innovation, modernizes enterprise applications and protects investments in Java EE."
+  subtitle = "The New Home of Cloud Native Java"
+  seo_title_suffix = " | The Eclipse Foundation"
+  keywords = ["Jakarta EE software", "Java EE", "cloud", "microservices", "enterprise", "open source", "innovation"]
+  logo = "images/jakarta/jakarta-ee-logo-color.svg"
+  styles = "css/styles.css?v2.3"
+  favicon = "images/jakarta/favicon.ico"
+  share_img = "images/jakarta/jakarta_ee_400x400.png"
+  gcse = "011805775785170369411:p3ec0igo0qq"
+  subtheme = "jakarta"
+  header_wrapper_class = "header-default-bg-img"
+  js = "js/solstice.js?v2.3"
+  show_events = true
+  call_for_action_text = "Download"
+  call_for_action_url = "/compatibility/download/"
+  call_for_action_icon = ""
+  linkedin_url="https://www.linkedin.com/groups/13597511/"
+  youtube_url="https://www.youtube.com/channel/UC4M7h5b6elu9VlzjLfzuXyg"
+  twitter_url="https://twitter.com/JakartaEE"
+  facebook_url="https://www.facebook.com/JakartaEE"
+  header_left_classes = "col-sm-5"
+  main_menu_wrapper_classes = "col-sm-19 margin-top-20"
+#   hide_cfa_same_page = "true"
+  featured_content_publish_target = "jakarta_ee"
+  logo_width = "200"
+  call_for_action_classes = "btn btn-warning btn-call-for-action"
+  jumbotron_class = "col-md-24 col-sm-18 "
+  jumbotron_tagline_class = "col-sm-24"
+  footer_section_eclipse_foundation_class = "col-sm-5th padding-top-20"
+  footer_section_legal_class = "col-sm-5th padding-top-20"
+  footer_section_useful_links_class = "col-sm-5th padding-top-20"
+  footer_section_other_class = "col-sm-5th padding-top-20"
+  footer_section_socials_class = "col-sm-5th footer-section-socials"
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+  news_tags = "news/tags"
+
+[Author]
+  name = "Christopher Guindon"
+  website = "https://www.eclipse.org"
+  email = "webdev@eclipse-foundation.org"
+  facebook = "eclipse.org"
+  twitter = "EclipseFdn"
+  youtube = "EclipseFdn"
+  googleplus = "+Eclipse"
+  linkedin = "company/eclipse-foundation/"
+
+[permalinks]
+  news = "/:sections/:year/:month/:day/:slug/"
+
+[blackfriday]
+  plainIDAnchors = true
+  hrefTargetBlank = true
