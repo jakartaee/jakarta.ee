@@ -216,6 +216,15 @@ sets:
         - version: 6.2021.1 Alpha 1
           compatibility: 'https://docs.payara.fish/community/docs/jakartaee-certification/6.2021.1.Alpha1/tck-results-full-6.2021.1.Alpha1.html'
           download_url: 'https://search.maven.org/remotecontent?filepath=fish/payara/distributions/payara/6.2021.1.Alpha1/payara-6.2021.1.Alpha1.zip'
+      - name: Primeton AppServer
+        vendor: Primeton
+        image: '/images/compatible_products/primeton_appserver_logo.png'
+        image_width: 195
+        download: 'https://primeton.com/products/pas/'
+        versions:
+          - version: 7.2
+            compatibility: 'https://www.primeton.com/products/pas/tck_results/TCK_9.1_FULL.html'
+            download_url: 'https://www.primeton.com/products/pas/tck_results/pas-7.2-dist.zip'
       - name: Thunisoft Application Server
         vendor: Beijing Thunisoft Information Technology Co.,Ltd
         image: '/images/compatible_products/tas-logo.png'
