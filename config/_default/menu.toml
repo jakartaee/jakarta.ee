@@ -173,10 +173,16 @@
     weight = 9
 
 [[main]]
+    name = "Developer Advocate"
+    url = "/resources/developer-advocate"
+    parent = "Resources"
+    weight = 10
+
+[[main]]
     name = "Starter for Jakarta EE"
     url = "https://start.jakarta.ee/"
     parent = "Resources"
-    weight = 10
+    weight = 11
 
 # specifications
 [[main]]
