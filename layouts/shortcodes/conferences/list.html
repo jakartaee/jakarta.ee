@@ -1,0 +1,28 @@
+<ul>
+  {{- range sort .Site.Data.conferences_ivar.years "year" "desc" }}
+     <li><a href="#{{ .year }}">{{ .year }}</a></li>
+  {{- end }}
+</ul>
+  
+{{- range sort .Site.Data.conferences_ivar.years "year" "desc" }}
+  
+<a name ="{{ .year }}">
+<h2>{{ .year }}</h2>
+</a>
+  <table>
+    <th>Name</th>
+    <th>Location</th>
+    <th>Date</th>
+  
+    {{- range .conferences }}
+      <tr>
+        <td><a href="{{ .url }}" target="_blank"> {{ .name }}</a></td>
+        <td>{{ .location }}</td>
+        <td>{{ .date }}</td>
+      </tr>
+   {{- end }}
+  </table>
+
+{{- end }}
+  
+

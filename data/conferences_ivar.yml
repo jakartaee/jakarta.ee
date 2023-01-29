@@ -1,0 +1,379 @@
+---
+years:
+
+- year: 2023
+  conferences:
+
+  - name: GOTO Amsterdam
+    url: https://devnexus.com
+    location: Amsterdam, Netherlands
+    date: 2023-06-29
+
+  - name: Devoxx UK
+    url: https://www.devoxx.co.uk/
+    location: London, UK
+    date: 2023-05-10
+
+  - name: GIDS
+    url: https://developersummit.com/
+    location: Bangalore, India
+    date: 2023-04-25
+
+  - name: Devnexus
+    url: https://devnexus.com
+    location: Atlanta, USA
+    date: 2023-04-06
+
+  - name: JavaLand
+    url: https://www.javaland.eu/en/home/
+    location: Brühl, Germany
+    date: 2023-03-22
+
+  - name: ConFoo
+    url: https://confoo.ca/en/2023
+    location: Montreal, Canada
+    date: 2023-02-22
+
+  - name: DeveloperWeek
+    url: https://www.developerweek.com/
+    location: Oakland, USA
+    date: 2023-02-15
+
+  - name: Jfokus
+    url: https://jfokus.se
+    location: Stockholm, Sweden
+    date: 2023-02-08
+
+  - name: jChampionsConf
+    url: https://jchampionsconf.com/
+    location: online
+    date: 2023-01-20
+
+  - name: THAT Conference Texas
+    url: https://that.us/events/tx/2023/
+    location: Round Rock, USA
+    date: 2023-01-17
+
+- year: 2022
+  conferences:
+
+  - name: JakartaOne Livestream
+    url: https://jakartaone.org/2022/
+    location: online
+    date: 2022-12-06
+
+  - name: Øredev
+    url: https://oredev.org/
+    location: Malmö, Sweden
+    date: 2022-11-09
+
+  - name: J-Fall
+    url: https://jfall.nl/
+    location: Ede, Netherlands
+    date: 2022-11-03
+
+  - name: EclipseCon
+    url: https://www.eclipsecon.org/2022
+    location: Ludwigsburg, Germany
+    date: 2022-10-25
+
+  - name: JavaOne
+    url: https://www.oracle.com/cloudworld/javaone/
+    location: Las Vegas, USA
+    date: 2022-10-22
+    
+  - name: Devoxx Belgium
+    url: https://devoxx.be/
+    location: Antwerp, Belgium
+    date: 2022-10-13
+
+  - name: JConf
+    url: https://2022.jconf.dev/
+    location: Chicago, USA
+    date: 2022-09-28
+
+  - name: JavaZone
+    url: https://2022.javazone.no/
+    location: Oslo, Norway
+    date: 2022-09-08
+
+  - name: JBCNConf
+    url: https://www.jbcnconf.com/2022/
+    location: Barcelona, Spain
+    date: 2022-07-19
+
+  - name: DWX
+    url: https://www.developer-week.de/
+    location: Nürnberg, Germany
+    date: 2022-07-06
+
+  - name: Devoxx Poland
+    url: https://devoxx.pl/
+    location: Kraków, Poland
+    date: 2022-06-23
+
+  - name: WeAreDevelopers World Congress
+    url: https://www.wearedevelopers.com/world-congress/#/
+    location: Berlin, Germany
+    date: 2022-06-14
+
+  - name: JNation
+    url: https://2022.jnation.pt/
+    location: Coimbra, Portugal
+    date: 2022-06-07
+
+  - name: Java Day Istanbul
+    url: https://www.javaday.istanbul/
+    location: Istanbul, Turkey
+    date: 2022-05-28
+
+  - name: GeeCON
+    url: https://2022.geecon.org/
+    location: Kraków, Poland
+    date: 2022-05-12
+
+  - name: Jfokus
+    url: https://jfokus.se/
+    location: Stockholm, Sweden
+    date: 2022-05-03
+
+  - name: Devnexus
+    url: https://devnexus.com/
+    location: Atlanta, USA
+    date: 2022-04-14
+
+  - name: Umedev
+    url: https://umedev.se/
+    location: Umeå, Sweden
+    date: 2022-04-05
+
+  - name: Dublin JUG
+    url: https://www.dubjug.org/
+    location: Dublin, Ireland
+    date: 2022-03-31
+
+  - name: Belfast JUG
+    url: https://www.meetup.com/BelfastJUG/
+    location: Belfast, Northern Ireland
+    date: 2022-0--30
+
+  - name: JavaLand
+    url: https://www.javaland.eu/en/home/
+    location: Brühl, Germany
+    date: 2022-03-15
+
+  - name: jChampionsConf
+    url: https://jchampionsconf.com/
+    location: online
+    date: 2022-01-24
+
+  - name: CodeMash
+    url: https://www.codemash.org/
+    location: Sandusky, USA
+    date: 2022-01-14
+
+- year: 2021
+  conferences:
+
+  - name: JakartaOne Livestream
+    url: https://jakartaone.org/2022/
+    location: online
+    date: 2021-12-07
+
+  - name: JVM-CON
+    url: 
+    location: online
+    date: 2021-12-01
+
+  - name: J-Fall
+    url: 
+    location: Ede, Netherlands
+    date: 2021-11-04
+
+  - name: Devoxx UK
+    url: 
+    location: London, UK
+    date: 2021-11-02
+
+  - name: EclipseCon
+    url: 
+    location: online
+    date: 2021-10-25
+
+  - name: Infoshare
+    url: 
+    location: Gdańsk, Poland
+    date: 2021-10-14
+
+  - name: JCON
+    url: 
+    location: online
+    date: 2021-10-07
+
+  - name: CH Open Business Lunch
+    url: 
+    location: online
+    date: 2021-09-20
+
+  - name: DWX
+    url: 
+    location: online
+    date: 2021-06-30
+
+  - name: JOnConf
+    url: 
+    location: online
+    date: 2021-06-24
+
+  - name: J4K
+    url: 
+    location: online
+    date: 2021-06-09
+
+  - name: IBM Think
+    url: 
+    location: online
+    date: 2021-05-11
+
+  - name: Foojay Virtual JUG Tour
+    url: 
+    location: online
+    date: 2021-04-15
+
+  - name: JPoint
+    url: 
+    location: online
+    date: 2021-04-15
+
+  - name: JakartaOne Livestream - Russian
+    url: 
+    location: online
+    date: 2021-03-31
+
+  - name: JavaLand
+    url: 
+    location: online
+    date: 2021-03-16
+
+  - name: Jfokus
+    url: 
+    location: online
+    date: 2021-02-09
+
+  - name: FOSDEM
+    url: 
+    location: online
+    date: 2021-02-06
+
+- year: 2020
+  conferences:
+
+  - name: Java2Days
+    url: 
+    location: online
+    date: 2020-12-22
+
+  - name: JakartaOne Livestream
+    url: https://jakartaone.org/2022/
+    location: online
+    date: 2020-12-08
+
+  - name: J-Fall
+    url: 
+    location: online
+    date: 2020-11-05
+
+  - name: JCON
+    url: 
+    location: online
+    date: 2020-10-28
+
+  - name: Jfokus Brown Bag Lunch
+    url: 
+    location: online
+    date: 2020-10-27
+
+  - name: EclipseCon
+    url: 
+    location: online
+    date: 2020-10-20
+
+  - name: J4K
+    url: 
+    location: online
+    date: 2020-10-14
+
+  - name: Jakarta Tech Talk
+    url: 
+    location: online
+    date: 2020-09-16
+
+  - name: Java Day Istanbul
+    url: 
+    location: online
+    date: 2020-09-12
+
+  - name: GIDS Australia
+    url: 
+    location: online
+    date: 2020-09-03
+
+  - name: Jetbrains Webinar
+    url: 
+    location: online
+    date: 2020-08-20
+
+  - name: IBM Think
+    url: 
+    location: online
+    date: 2020-05-06
+
+  - name: ConFoo
+    url: 
+    location: Montreal, Canada
+    date: 2020-02-26
+
+  - name: Devnexus
+    url: 
+    location: Atlanta, USA
+    date: 2020-02-21
+
+  - name: CodeMash
+    url: 
+    location: Sandusky, USA
+    date: 2020-01-09
+
+- year: 2019
+  conferences:
+
+  - name: Java2Days
+    url: 
+    location: Sofia, Bulgaria
+    date: 2019-12-11
+
+  - name: Devoxx Morocco
+    url: 
+    location: Agadir, Morocco
+    date: 2019-11-13
+
+  - name: Devoxx Belgium
+    url: 
+    location: Antwerp, Belgium
+    date: 2019-11-08
+
+  - name: Devoxx Ukraine
+    url: 
+    location: Kiyv, Ukraine
+    date: 2019-11-01
+
+  - name: Trondheim DC
+    url: 
+    location: Trondheim, Norway
+    date: 2019-10-28
+
+  - name: EclipseCon Europe
+    url: 
+    location: Ludwigsburg, Germany
+    date: 2019-10-22
+
+    
