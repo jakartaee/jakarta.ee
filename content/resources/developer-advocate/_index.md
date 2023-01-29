@@ -4,8 +4,6 @@ date: 2023-01-25T00:00:00-00:00
 layout: "single"
 ---
 
-## About {#about}
-
 ![Ivar Grimstad](https:/github.com/ivargrimstad.png?size=90)
 
 **Hi, my name is Ivar Grimstad and I am the Jakarta EE Developer Advocate.**
