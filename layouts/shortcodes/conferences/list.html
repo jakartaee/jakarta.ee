@@ -16,7 +16,13 @@
   
     {{- range .conferences }}
       <tr>
-        <td><a href="{{ .url }}" target="_blank"> {{ .name }}</a></td>
+        <td>
+        {{ if .url }}
+          <a href="{{ .url }}" target="_blank">{{ .name }}</a></td>
+        {{ else }}
+          {{ .name }}
+        {{ end }}
+        </td>
         <td>{{ .location }}</td>
         <td>{{ .date }}</td>
       </tr>
