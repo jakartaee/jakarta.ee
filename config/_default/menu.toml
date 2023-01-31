@@ -173,16 +173,10 @@
     weight = 9
 
 [[main]]
-    name = "Developer Advocate"
-    url = "/resources/developer-advocate"
-    parent = "Resources"
-    weight = 10
-
-[[main]]
     name = "Starter for Jakarta EE"
     url = "https://start.jakarta.ee/"
     parent = "Resources"
-    weight = 11
+    weight = 10
 
 # specifications
 [[main]]
@@ -277,6 +271,12 @@
     url = "/community/get-involved"
     parent = "Community"
     weight = 9
+
+[[main]]
+    name = "Developer Advocate"
+    url = "/community/developer-advocate"
+    parent = "Community"
+    weight = 10
 
 # Membership sub-menu
 [[main]]

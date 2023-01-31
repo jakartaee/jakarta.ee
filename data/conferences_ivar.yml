@@ -8,41 +8,49 @@ years:
     url: https://devnexus.com
     location: Amsterdam, Netherlands
     date: Jun 27-29
+    upcoming: true
 
   - name: Devoxx UK
     url: https://www.devoxx.co.uk/
     location: London, UK
     date: May 10-12
+    upcoming: true
 
   - name: GIDS
     url: https://developersummit.com/
     location: Bangalore, India
     date: Apr 25-28
+    upcoming: true
 
   - name: Devnexus
     url: https://devnexus.com
     location: Atlanta, USA
     date: Apr 4-6
+    upcoming: true
 
   - name: JavaLand
     url: https://www.javaland.eu/en/home/
     location: Brühl, Germany
     date: Mar 21-23
+    upcoming: true
 
   - name: ConFoo
     url: https://confoo.ca/en/2023
     location: Montreal, Canada
     date: Feb 23-25
+    upcoming: true
 
   - name: DeveloperWeek
     url: https://www.developerweek.com/
     location: Oakland, USA
     date: Feb 15-17
+    upcoming: true
 
   - name: Jfokus
     url: https://jfokus.se
     location: Stockholm, Sweden
     date: Feb 6-8
+    upcoming: true
 
   - name: jChampionsConf
     url: https://jchampionsconf.com/
