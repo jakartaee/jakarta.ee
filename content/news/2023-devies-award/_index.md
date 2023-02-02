@@ -1,7 +1,7 @@
 ---
 title: "DEVIES Award to Jakarta EE 10"
 date: "2023-02-02"
-publishDate: "2023-02-02"
+publishDate: "2023-02-01"
 type: "announcement"
 news/tags:
   - "Jakarta EE"
