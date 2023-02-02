@@ -7,7 +7,7 @@ news/tags:
   - "Jakarta EE"
   - "Award"
 authors: [{gh_handle: "ivargrimstad", name: "Ivar Grimstad"}]
-image: "./banner.png"
+image: "./banner.jpg"
 summary: "Jakarta EE 10 is the recipient of a 2023 DEVIES Award for Programming Languages & Frameworks recognizing outstanding design, engineering, and innovation in developer technology."
 ---
 
