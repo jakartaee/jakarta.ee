@@ -1,9 +1,3 @@
-<ul>
-  {{- range sort .Site.Data.conferences_ivar.years "year" "desc" }}
-     <li><a href="#{{ .year }}">{{ .year }}</a></li>
-  {{- end }}
-</ul>
-  
 {{- range sort .Site.Data.conferences_ivar.years "year" "desc" }}
   
 <a name ="{{ .year }}">
