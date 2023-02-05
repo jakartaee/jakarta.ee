@@ -7,13 +7,15 @@
     <th>Name</th>
     <th>Location</th>
     <th>Date</th>
+    {{ if gt $year 2021 }}
     <th>Blog Post</th>
+    {{ end }}
   
     {{- range .conferences }}
       <tr>
-        <td>
+        <td>     
         {{ if .url }}
-          <a href="{{ .url }}" target="_blank">{{ .name }}</a>
+          <a href="{{ .url }}" target="_blank">{{ .name }} {{ if .upcoming }}(*){{ end }}</a>
         {{ else }}
           {{ .name }}
         {{ end }}
