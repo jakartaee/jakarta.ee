@@ -1,5 +1,5 @@
 {{- range sort .Site.Data.conferences_ivar.years "year" "desc" }}
-  
+{{ $year := .year }}
 <a name ="{{ .year }}">
 <h3>{{ .year }}</h3>
 </a>
@@ -7,18 +7,26 @@
     <th>Name</th>
     <th>Location</th>
     <th>Date</th>
+    {{ if gt $year 2021 }}
+    <th>Blog Post</th>
+    {{ end }}
   
     {{- range .conferences }}
       <tr>
-        <td>
+        <td>     
         {{ if .url }}
-          <a href="{{ .url }}" target="_blank">{{ .name }}</a></td>
+          <a href="{{ .url }}" target="_blank">{{ .name }} {{ if .upcoming }}(*){{ end }}</a>
         {{ else }}
           {{ .name }}
         {{ end }}
         </td>
         <td>{{ .location }}</td>
         <td>{{ .date }}</td>
+        <td>
+        {{ if .blog }}
+          <a href="{{ .blog }}" target="_blank">{{ .name }} {{ $year }}</a>
+        {{ end }}
+        </td>
       </tr>
    {{- end }}
   </table>
