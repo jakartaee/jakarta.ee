@@ -2472,20 +2472,20 @@ dotignore@~0.1.2:
   dependencies:
     minimatch "^3.0.4"
 
-eclipsefdn-hugo-solstice-theme@0.0.172:
-  version "0.0.172"
-  resolved "https://registry.yarnpkg.com/eclipsefdn-hugo-solstice-theme/-/eclipsefdn-hugo-solstice-theme-0.0.172.tgz#6fdbb3c4b35569169a4f579183cd2394d4c16509"
-  integrity sha512-OJlYTU5jX1I1E4suRENgrdPKWaNjTO5NgmnfVrpfjPM2JmxjWFzquEJPKUWGjMnJIcJHeNeJFFT417H9Lzilfw==
+eclipsefdn-hugo-solstice-theme@0.0.181:
+  version "0.0.181"
+  resolved "https://registry.yarnpkg.com/eclipsefdn-hugo-solstice-theme/-/eclipsefdn-hugo-solstice-theme-0.0.181.tgz#4b31153a5d4271145cd2ea393d80a4a597deb979"
+  integrity sha512-VEZDOwVZsO3SDvxlQEmIM55+oYXuEsO2ZziN+sYoM9sEk/a9CnTZK6lYHxusQ24xvaZF3MGPeAMta/d36+mQoQ==
   dependencies:
     axios "^0.21.1"
-    eclipsefdn-solstice-assets "^0.0.210"
+    eclipsefdn-solstice-assets "0.0.216"
     json2yaml "^1.1.0"
     toml "^3.0.0"
 
-eclipsefdn-solstice-assets@^0.0.210:
-  version "0.0.210"
-  resolved "https://registry.yarnpkg.com/eclipsefdn-solstice-assets/-/eclipsefdn-solstice-assets-0.0.210.tgz#39397111bc90c52449979c350a270c05d7f5f4c6"
-  integrity sha512-okgMzU0Iy+hEzGUtkbeZAQ3naDQakWs/Nx9qK7KAhBhVPq2CMMwgWigg5Q4LM8BeOFUf8T/DWGGa3nvFH/pxMA==
+eclipsefdn-solstice-assets@0.0.216:
+  version "0.0.216"
+  resolved "https://registry.yarnpkg.com/eclipsefdn-solstice-assets/-/eclipsefdn-solstice-assets-0.0.216.tgz#c488e3db0661d7a4743507c258e171959696ff07"
+  integrity sha512-zsGa0Kv8+NYdWuR2yFx0Iw0s/0OItkkMTAa4OjXuS+Ula2S4IUZRrcgCXv4YAaAgh07qhbDef+kS6qcYjfF3GA==
   dependencies:
     "@babel/core" "^7.0.0-0"
     "@babel/plugin-proposal-class-properties" "^7.12.1"
@@ -2506,11 +2506,11 @@ eclipsefdn-solstice-assets@^0.0.210:
     file-loader "^6.2.0"
     font-awesome "^4.7.0"
     hogan.js "^3.0.2"
-    html-webpack-plugin "^5.3.2"
+    html-webpack-plugin "^5.5.0"
     isomorphic-fetch "^3.0.0"
     jquery "^3.5.1"
     jquery-match-height "^0.7.2"
-    laravel-mix "^6.0.43"
+    laravel-mix "^6.0.49"
     laravel-mix-transpile-node-modules "^2.0.1"
     less "^3.13.1"
     less-loader "^7.3.0"
@@ -3184,7 +3184,7 @@ html-minifier@^3.1.0:
     relateurl "0.2.x"
     uglify-js "3.4.x"
 
-html-webpack-plugin@^5.3.2:
+html-webpack-plugin@^5.5.0:
   version "5.5.0"
   resolved "https://registry.yarnpkg.com/html-webpack-plugin/-/html-webpack-plugin-5.5.0.tgz#c3911936f57681c1f9f4d8b68c158cd9dfe52f50"
   integrity sha512-sy88PC2cRTVxvETRgUHFrL4No3UxvcH8G1NepGhqaTT+GXN2kTamqasot0inS5hXeg1cMbFDt27zzo9p35lZVw==
@@ -3669,7 +3669,7 @@ laravel-mix-transpile-node-modules@^2.0.1:
   resolved "https://registry.yarnpkg.com/laravel-mix-transpile-node-modules/-/laravel-mix-transpile-node-modules-2.0.4.tgz#83aad186c7b5cfa27240198f504cdaee2a8fb4f0"
   integrity sha512-hSQI3irqIMhUbBALiaGO9lqyoS9Is44w1tNdhpcLarDwXvSuf7zwAaXIEio/eGpMdr21J1BVMKmryhP0WQROEQ==
 
-laravel-mix@^6.0.43:
+laravel-mix@^6.0.49:
   version "6.0.49"
   resolved "https://registry.yarnpkg.com/laravel-mix/-/laravel-mix-6.0.49.tgz#d718414858045df9d7467245e13fd4b45bc52c15"
   integrity sha512-bBMFpFjp26XfijPvY5y9zGKud7VqlyOE0OWUcPo3vTBY5asw8LTjafAbee1dhfLz6PWNqDziz69CP78ELSpfKw==
