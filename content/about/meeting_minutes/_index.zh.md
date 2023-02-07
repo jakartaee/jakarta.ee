@@ -11,4 +11,4 @@ aliases: [
 ]
 ---
 
-{{< pages/meeting_minutes >}}
+{{< eclipsefdn_meeting_minutes >}}
