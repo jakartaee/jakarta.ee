@@ -9,6 +9,18 @@ dir: /about/meeting_minutes/
 items:
    marketing_committee:
        -
+          url: marketing_committee/minutes-marketing-0112-2023.pdf
+          title: January 12, 2023 (pdf)
+          year: 2023
+       -
+          url: marketing_committee/minutes-marketing-1215-2022.pdf
+          title: December 15, 2022 (pdf)
+          year: 2022
+       -
+          url: marketing_committee/minutes-marketing-1201-2022.pdf
+          title: December 01, 2022 (pdf)
+          year: 2022
+       -
           url: marketing_committee/minutes-marketing-1117-2022.pdf
           title: November 17, 2022 (pdf)
           year: 2022
