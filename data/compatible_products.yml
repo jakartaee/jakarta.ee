@@ -642,6 +642,16 @@ sets:
           compatibility: 'http://www.vsettan.com.cn/10073.html'
           download_url: 'http://www.vsettan.com.cn/7752.html'
 
+      - name: WebOTX Application Server
+        vendor: NEC Corporation
+        image: '/images/compatible_products/webotx.svg'
+        image_width: 195
+        download: 'https://jpn.nec.com/webotx/appserver/index.html'
+        versions:
+        - version: 11
+          compatibility: 'https://jpn.nec.com/webotx/appserver/ee8_tck_result_exp_11100000.html'
+          download_url: 'https://jpn.nec.com/webotx/appserver/index.html'
+
     - title: Jakarta EE 8 Web Profile
       items:
       - name: Eclipse GlassFish
