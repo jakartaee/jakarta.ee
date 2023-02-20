@@ -4,6 +4,12 @@ years:
 - year: 2023
   conferences:
 
+  - name: jCrete
+    url: https://www.jcrete.org/
+    location: Kolymvari, Greece
+    date: Jul 2-7
+    upcoming: true
+
   - name: GOTO Amsterdam
     url: https://devnexus.com
     location: Amsterdam, Netherlands
