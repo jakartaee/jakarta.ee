@@ -22,6 +22,12 @@ years:
     date: May 10-12
     upcoming: true
 
+  - name: Devoxx Greece
+    url: https://www.devoxx.gr/
+    location: Athens, Greece
+    date: May 4-6
+    upcoming: true
+
   - name: GIDS
     url: https://developersummit.com/
     location: Bangalore, India
