@@ -113,7 +113,7 @@
   other = "https://accounts.eclipse.org/mailing-list/jakarta.ee-wg"
 
 [connect-mailing-list-projects-title]
-  other = "Project Mailing Lists"
+  other = "Specification Project Mailing Lists"
 
 [connect-mailing-list-projects-body]
   other = "Want to get involved? Sign up to the Jakarta EE project mailing lists here."
