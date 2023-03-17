@@ -16,6 +16,12 @@ years:
     date: Jun 27-29
     upcoming: true
 
+  - name: jPrime
+    url: https://jprime.io/
+    location: Sofia, Bulgaria
+    date: May 30-31
+    upcoming: true
+
   - name: Infoshare
     url: https://infoshare.pl/conference/
     location: Gdańsk, Poland
@@ -38,6 +44,12 @@ years:
     url: https://developersummit.com/
     location: Bangalore, India
     date: Apr 25-28
+    upcoming: true
+
+  - name: Java Heroes Conference (Singapore JUG)
+    url: http://singajug.org/
+    location: Singapore
+    date: Apr 13
     upcoming: true
 
   - name: Devnexus
