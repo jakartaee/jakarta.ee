@@ -4,6 +4,12 @@ years:
 - year: 2023
   conferences:
 
+  - name: JakartaOne Livestream
+    url: https://jakartaone.org/
+    location: online
+    date: Dec 5
+    upcoming: true
+
   - name: jCrete
     url: https://www.jcrete.org/
     location: Kolymvari, Greece
