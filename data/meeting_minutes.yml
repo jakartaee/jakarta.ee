@@ -1189,6 +1189,18 @@ items:
           year: 2018
 
    steering_committee:
+       -
+         url: steering_committee/minutes-february-14-2023.pdf
+         title: February 14, 2023 (pdf) 
+         year: 2023
+       -
+         url: steering_committee/minutes-january-31-2023.pdf
+         title: January 31, 2023 (pdf) 
+         year: 2023
+       -
+         url: steering_committee/minutes-january-17-2023.pdf
+         title: January 17, 2023 (pdf) 
+         year: 2023
        - 
          url: steering_committee/minutes-january-10-2023.pdf
          title: January 10, 2023 (pdf)
