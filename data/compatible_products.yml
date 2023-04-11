@@ -156,6 +156,15 @@ sets:
         - version: 10-EE9
           compatibility: 'https://www.apusic.com/about/aas_v10_ee9-1_full.html'
           download_url: 'https://www.apusic.com/list-117.html'
+      - name: BES Application Server
+        vendor: Beijing Baolande Software Corporation
+        image: '/images/compatible_products/bes_application_server_for_eclipse.svg'
+        image_width: 100
+        download: 'https://www.bessystem.com/product/0ad9b8c4d6af462b8d15723a5f25a87d/info?p=101#page-2'
+        versions:
+          - version: v10.0.0
+            compatibility: https://www.bessystem.com/certifications/jakartaee/platform9.1/10.0.0-TCKResults.html
+            download_url: https://www.bessystem.com/product/0ad9b8c4d6af462b8d15723a5f25a87d/info?p=101#page-2
       - name: Eclipse GlassFish
         vendor: Eclipse Foundation
         image: '/images/compatible_products/glassfish_logo.svg'
