@@ -1190,6 +1190,10 @@ items:
 
    steering_committee:
        -
+         url: steering_committee/minutes-march-14-2023.pdf
+         title: March 14, 2023 (pdf) 
+         year: 2023
+       -
          url: steering_committee/minutes-february-14-2023.pdf
          title: February 14, 2023 (pdf) 
          year: 2023
