@@ -272,6 +272,12 @@
     parent = "Community"
     weight = 9
 
+[[main]]
+    name = "Developer Advocate"
+    url = "/community/developer-advocate"
+    parent = "Community"
+    weight = 10
+
 # Membership sub-menu
 [[main]]
     name = "Join"

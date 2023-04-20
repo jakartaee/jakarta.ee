@@ -26,6 +26,7 @@
 @import 'components/typography.less';
 @import 'components/testimonials.less';
 @import 'components/video-modal.less';
+@import 'components/_eclipsefdn-meeting-minutes.less';
 
 @import 'transient.less';
 @import 'release-8.less';
@@ -293,4 +294,15 @@ div.card-panel.panel div.panel-body.panel-body-with-img {
   color: #F98200;
   font-weight: 700;
   margin-top: 10px;
+}
+
+// Hotfixes
+.project-summary {
+  .btn-sm {
+    .btn;
+    
+    &:hover {
+      color: @white;
+    }
+  }
 }
