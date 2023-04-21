@@ -120,6 +120,18 @@ sets:
     - title: Jakarta EE 10 Core Profile
       release: "/release/10"
       items:
+        - name: IBM WebSphere Liberty
+          vendor: IBM Corporation
+          image: '/images/compatible_products/ibm-websphere-liberty-logo.svg'
+          image_width: 120
+          download: 'https://www.ibm.com/support/pages/node/6250961#asset/runtimes-wlp-javaee8'
+          versions:
+            - version: 23.0.0.3, Java 17
+              compatibility: 'https://www.ibm.com/support/pages/ibm-websphere-liberty-23003-jakarta-ee-core-profile-10-using-java-17-certification-summary'
+              download_url: 'https://www.ibm.com/support/fixcentral/swg/selectFixes?parent=ibm%7EWebSphere&product=ibm/WebSphere/WebSphere+Liberty&release=23.0.0.3&platform=All&function=fixId&fixids=wlp-webProfile10-23.0.0.3&includeSupersedes=0'
+            - version: 23.0.0.3, Java 11
+              compatibility: 'https://www.ibm.com/support/pages/ibm-websphere-liberty-23003-jakarta-ee-core-profile-10-using-java-11-certification-summary'
+              download_url: 'https://www.ibm.com/support/fixcentral/swg/selectFixes?parent=ibm%7EWebSphere&product=ibm/WebSphere/WebSphere+Liberty&release=23.0.0.3&platform=All&function=fixId&fixids=wlp-webProfile10-23.0.0.3&includeSupersedes=0'
         - name: Open Liberty
           vendor: IBM Corporation
           image: '/images/compatible_products/ibm-open-liberty-logo.svg'
@@ -147,18 +159,6 @@ sets:
             - version: 6.2022.1.Alpha3
               compatibility: 'https://docs.payara.fish/community/docs/6.2022.1.alpha3/Jakarta%20EE%20Certification/6.2022.1.Alpha3/6.2022.1.Alpha3%20Core%20TCK%20Results.html'
               download_url: 'https://docs.payara.fish/community/docs/6.2022.1.alpha3/Jakarta%20EE%20Certification/6.2022.1.Alpha3/6.2022.1.Alpha3%20Core%20TCK%20Results.html'
-        - name: IBM WebSphere Liberty
-          vendor: IBM Corporation
-          image: '/images/compatible_products/ibm-websphere-liberty-logo.svg'
-          image_width: 120
-          download: 'https://www.ibm.com/support/pages/node/6250961#asset/runtimes-wlp-javaee8'
-          versions:
-            - version: 23.0.0.3, Java 17
-              compatibility: 'https://www.ibm.com/support/pages/ibm-websphere-liberty-23003-jakarta-ee-core-profile-10-using-java-17-certification-summary'
-              download_url: 'https://www.ibm.com/support/fixcentral/swg/selectFixes?parent=ibm%7EWebSphere&product=ibm/WebSphere/WebSphere+Liberty&release=23.0.0.3&platform=All&function=fixId&fixids=wlp-webProfile10-23.0.0.3&includeSupersedes=0'
-            - version: 23.0.0.3, Java 11
-              compatibility: 'https://www.ibm.com/support/pages/ibm-websphere-liberty-23003-jakarta-ee-core-profile-10-using-java-11-certification-summary'
-              download_url: 'https://www.ibm.com/support/fixcentral/swg/selectFixes?parent=ibm%7EWebSphere&product=ibm/WebSphere/WebSphere+Liberty&release=23.0.0.3&platform=All&function=fixId&fixids=wlp-webProfile10-23.0.0.3&includeSupersedes=0'
         - name: WildFly
           vendor: Red Hat
           image: '/images/compatible_products/red-hat-wildfly-logo.png'
