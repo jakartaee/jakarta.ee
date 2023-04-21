@@ -83,6 +83,18 @@ sets:
             - version: 7
               compatibility: 'https://glassfish.org/certifications/jakarta-web-profile/10/TCK-Results-7.0.0-M8'
               download_url: 'https://download.eclipse.org/ee4j/glassfish/web-7.0.0-M8.zip'
+        - name: IBM WebSphere Liberty
+          vendor: IBM Corporation
+          image: '/images/compatible_products/ibm-websphere-liberty-logo.svg'
+          image_width: 120
+          download: 'https://www.ibm.com/support/pages/node/6250961#asset/runtimes-wlp-javaee8'
+          versions:
+            - version: 23.0.0.3, Java 17
+              compatibility: 'https://www.ibm.com/support/pages/ibm-websphere-liberty-23003-jakarta-ee-web-profile-10-using-java-17-certification-summary'
+              download_url: 'https://www.ibm.com/support/fixcentral/swg/selectFixes?parent=ibm%7EWebSphere&product=ibm/WebSphere/WebSphere+Liberty&release=23.0.0.3&platform=All&function=fixId&fixids=wlp-webProfile10-23.0.0.3&includeSupersedes=0'
+            - version: 23.0.0.3, Java 11
+              compatibility: 'https://www.ibm.com/support/pages/ibm-websphere-liberty-23003-jakarta-ee-web-profile-10-using-java-11-certification-summary'
+              download_url: 'https://www.ibm.com/support/fixcentral/swg/selectFixes?parent=ibm%7EWebSphere&product=ibm/WebSphere/WebSphere+Liberty&release=23.0.0.3&platform=All&function=fixId&fixids=wlp-webProfile10-23.0.0.3&includeSupersedes=0'
         - name: Open Liberty
           vendor: IBM Corporation
           image: '/images/compatible_products/ibm-open-liberty-logo.svg'
