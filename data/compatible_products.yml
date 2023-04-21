@@ -34,6 +34,18 @@ sets:
           - version: 1.1.0
             compatibility: 'https://www.fujitsu.com/jp/products/software/middleware/business-middleware/middleware/applatform/jakartaee-report/eap110-ee10full-tck-results'
             download_url: 'https://www.fujitsu.com/jp/products/software/middleware/business-middleware/middleware/applatform/'
+        - name: Open Liberty
+          vendor: IBM Corporation
+          image: '/images/compatible_products/ibm-open-liberty-logo.svg'
+          image_width: 160
+          download: 'https://openliberty.io/start/#runtime_betas'
+          versions:
+            - version: 23.0.0.3, Java 17
+              compatibility: 'https://openliberty.io/certifications/jakartaee/10/platform/23.0.0.3-Java17-TCKResults.html'
+              download_url: 'https://public.dhe.ibm.com/ibmdl/export/pub/software/openliberty/runtime/release/23.0.0.3/openliberty-jakartaee10-23.0.0.3.zip' 
+            - version: 23.0.0.3, Java 11
+              compatibility: 'https://openliberty.io/certifications/jakartaee/10/platform/23.0.0.3-Java11-TCKResults.html'
+              download_url: 'https://public.dhe.ibm.com/ibmdl/export/pub/software/openliberty/runtime/release/23.0.0.3/openliberty-jakartaee10-23.0.0.3.zip' 
         - name: Payara Server Community
           vendor: Payara Services Limited
           image: '/images/compatible_products/payara-server-community-logo.svg'
@@ -71,6 +83,18 @@ sets:
             - version: 7
               compatibility: 'https://glassfish.org/certifications/jakarta-web-profile/10/TCK-Results-7.0.0-M8'
               download_url: 'https://download.eclipse.org/ee4j/glassfish/web-7.0.0-M8.zip'
+        - name: Open Liberty
+          vendor: IBM Corporation
+          image: '/images/compatible_products/ibm-open-liberty-logo.svg'
+          image_width: 160
+          download: 'https://openliberty.io/start/#runtime_betas'
+          versions:
+            - version: 23.0.0.3, Java 17
+              compatibility: 'https://openliberty.io/certifications/jakartaee/10/webprofile/23.0.0.3-Java17-TCKResults.html'
+              download_url: 'https://public.dhe.ibm.com/ibmdl/export/pub/software/openliberty/runtime/release/23.0.0.3/openliberty-webProfile10-23.0.0.3.zip' 
+            - version: 23.0.0.3, Java 11
+              compatibility: 'https://openliberty.io/certifications/jakartaee/10/webprofile/23.0.0.3-Java11-TCKResults.html'
+              download_url: 'https://public.dhe.ibm.com/ibmdl/export/pub/software/openliberty/runtime/release/23.0.0.3/openliberty-webProfile10-23.0.0.3.zip' 
         - name: Payara Server Community
           vendor: Payara Services Limited
           image: '/images/compatible_products/payara-server-community-logo.svg'
@@ -102,12 +126,12 @@ sets:
           image_width: 160
           download: 'https://openliberty.io/start/#runtime_betas'
           versions:
-            - version: 22.0.0.10-beta, Java 17
-              compatibility: 'https://openliberty.io/certifications/jakartaee/10/coreprofile/22.0.0.10-beta-Java17-TCKResults.html'
-              download_url: 'https://public.dhe.ibm.com/ibmdl/export/pub/software/openliberty/runtime/beta/22.0.0.10-beta/openliberty-22.0.0.10-beta.zip'
-            - version: 22.0.0.10-beta, Java 11
-              compatibility: 'https://openliberty.io/certifications/jakartaee/10/coreprofile/22.0.0.10-beta-Java11-TCKResults.html'
-              download_url: 'https://public.dhe.ibm.com/ibmdl/export/pub/software/openliberty/runtime/beta/22.0.0.10-beta/openliberty-22.0.0.10-beta.zip'
+            - version: 23.0.0.3, Java 17
+              compatibility: 'https://openliberty.io/certifications/jakartaee/10/coreprofile/23.0.0.3-Java17-TCKResults.html'
+              download_url: 'https://public.dhe.ibm.com/ibmdl/export/pub/software/openliberty/runtime/release/23.0.0.3/openliberty-microProfile6-23.0.0.3.zip'
+            - version: 23.0.0.3, Java 11
+              compatibility: 'https://openliberty.io/certifications/jakartaee/10/coreprofile/23.0.0.3-Java11-TCKResults.html'
+              download_url: 'https://public.dhe.ibm.com/ibmdl/export/pub/software/openliberty/runtime/release/23.0.0.3/openliberty-microProfile6-23.0.0.3.zip'
         - name: Payara Server Community
           vendor: Payara Services Limited
           image: '/images/compatible_products/payara-server-community-logo.svg'
