@@ -50,7 +50,7 @@ years:
     url: https://developersummit.com/
     location: Bangalore, India
     date: Apr 25-28
-    upcoming: true
+    blog: https://www.agilejava.eu/2023/04/27/gids-2023/
 
   - name: Java Heroes Conference (Singapore JUG)
     url: http://singajug.org/
