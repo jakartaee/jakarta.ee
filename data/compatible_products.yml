@@ -307,11 +307,11 @@ sets:
         vendor: Beijing TongTech Co., Ltd.
         image: '/images/compatible_products/tongweb_logo.svg'
         image_width: 195
-        download: 'http://www.tongtech.com/Services/Services-104.html'
+        download: 'https://www.tongtech.com/dft/pctype/25.html'
         versions:
         - version: 9
           compatibility: 'http://www.tongtech.com/tw9.jakarta-full-platform-9.1.html'
-          download_url: 'http://www.tongtech.com/Services/Services-104.html'
+          download_url: 'https://www.tongtech.com/dft/contactus.html'
       - name: InforSuite Application Server
         vendor: Shandong Cvicse Middleware Co.,Ltd.
         image: '/images/compatible_products/inforsuite_logo.svg'
@@ -692,14 +692,14 @@ sets:
         vendor: Beijing TongTech Co., Ltd.
         image: '/images/compatible_products/tongweb_logo.svg'
         image_width: 195
-        download: 'http://www.tongtech.com/Services/Services-104.html'
+        download: "https://www.tongtech.com/dft/pctype/25.html"
         versions:
         - version: 8
           compatibility: 'http://www.tongtech.com/tw8.jakarta-full-platform-8.html'
-          download_url: 'http://www.tongtech.com/Services/Services-104.html'
+          download_url: 'https://www.tongtech.com/dft/contactus.html'
         - version: 7
           compatibility: 'http://www.tongtech.com/tw7.jakarta-full-platform-8.html'
-          download_url: 'http://www.tongtech.com/Services/Services-104.html'
+          download_url: 'https://www.tongtech.com/dft/contactus.html'
 
       - name: xigema Application Server
         vendor: Beijing Vsettan Data Technology Co. Ltd.
