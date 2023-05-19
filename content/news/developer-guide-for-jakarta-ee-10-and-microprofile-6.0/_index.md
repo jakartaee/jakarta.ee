@@ -247,7 +247,7 @@ update. Some of the spec updates are listed below.
 CDI 4.0 splits the CDI Core into CDI Lite and CDI Full, as shown in the diagram
 below.
 
-INSERT IMAGE
+{{< figure src="./images/cdi-4.0.jpg" >}}
 
 CDI 4.0 also contains the following changes.
 
@@ -501,14 +501,14 @@ years, it has done many releases. The release of MicroProfile 6.0 in December
 2022 embraces Jakarta EE 10 Core Profile. Below is the diagram of the
 MicroProfile releases.
 
-INSERT IMAGE
+{{< figure src="./images/microprofile-releases.png" >}}
 
 This blog will bring you up to date what MicroProfile 6.0 delivers.
 MicroProfile adopts semantic versions. As you may know, MicroProfile 6.0
 contains backward incompatible changes. Below are the full details of the
 release.
 
-INSERT IMAGE
+{{< figure src="./images/microprofile-changes.png" >}}
 
 MicroProfile 6.0 introduced a new specification MicroProfile Telemetry, which
 supercedes MicroProfile OpenTracing. MicroProfile Metrics 5.0 has backward
@@ -731,7 +731,7 @@ OpenTelemetry, Tracer, Span and Baggage. The following diagram demonstrates
 how MicroProfile Telemetry can be used to trace requests that involve
 multiple microservices and how the traces can then be viewed on browsers.
 
-INSERT IMAGE
+{{< figure src="./images/telemetry.png" >}}
 
 The spans can be in otlp or other format, and they can be sent to the backend
 Jaeger or Zipkin to be displayed such as the following diagram. This diagram
@@ -739,7 +739,7 @@ shows individual traces with multiple spans included. Each span records an
 individual operation. With the span information, if something goes wrong,
 spotting errors is no longer a challenge.
 
-INSERT IMAGE
+{{< figure src="./images/compare-traces.png" >}}
 
 I have covered all MicroProfile 6.0 content. You can find the compatible
 implementation for MicroProfile 6.0 here. Open Liberty is one of the first one.
