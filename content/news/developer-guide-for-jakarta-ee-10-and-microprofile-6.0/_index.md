@@ -57,7 +57,7 @@ liberty:dev` or `gradle libertyDev`. Liberty also integrates Liberty Tools for
 3 popular IDEs, VSCode, Intellij and Eclipse. Below is the animation showing 
 how Liberty Dev Model works.
 
-Insert Image Here
+{{< figure src="./images/liberty-dev-mode.gif" >}}
 
 The animation shows an example of Liberty Dev Mode in action:
 
@@ -140,7 +140,7 @@ This blog will focus on the functionality updates in this release. Jakarta EE
 10 consists of three types of releases: Platform, Web Profile and Core Profile,
 demonstrated below.
 
-Insert Image Here
+{{< figure src="./images/jakarta-ee-10-platform.png" >}}
 
 Let’s discuss the three types of releases: Core Profile, Web Profile and
 Platform in more details.
