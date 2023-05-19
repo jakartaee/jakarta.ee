@@ -690,7 +690,7 @@ It also supports multi-dimensional metrics as follows.
  | Request                                          | Description                                                                             |
  |---                                               |---                                                                                      |
  | /metrics                                         | Returns all registered metrics, same as the previous versions of MicroProfile Metrics   |
- | /metrics?scope=<scope_name>                      | Returns metrics registerd for the respective scope                                      |
+ | /metrics?scope=<scope_name>                      | Returns metrics registered for the respective scope                                     |
  | /metrics?scope=<scope_name>&name=<metric_name>   | Returns metrics that match the metric name for the respective scope                     |
 
  Open Liberty provides the feature mpMetrics-5.0 to track metrics from Liberty
