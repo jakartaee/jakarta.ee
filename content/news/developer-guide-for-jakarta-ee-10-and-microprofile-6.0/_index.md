@@ -140,7 +140,7 @@ This blog will focus on the functionality updates in this release. Jakarta EE
 10 consists of three types of releases: Platform, Web Profile and Core Profile,
 demonstrated below.
 
-{{< figure src="./images/jakarta-ee-10-platform.png" >}}
+{{< figure src="./images/jakarta-ee-10-platform.jpg" >}}
 
 Let’s discuss the three types of releases: Core Profile, Web Profile and
 Platform in more details.
@@ -501,14 +501,14 @@ years, it has done many releases. The release of MicroProfile 6.0 in December
 2022 embraces Jakarta EE 10 Core Profile. Below is the diagram of the
 MicroProfile releases.
 
-{{< figure src="./images/microprofile-releases.png" >}}
+{{< figure src="./images/microprofile-releases.jpg" >}}
 
 This blog will bring you up to date what MicroProfile 6.0 delivers.
 MicroProfile adopts semantic versions. As you may know, MicroProfile 6.0
 contains backward incompatible changes. Below are the full details of the
 release.
 
-{{< figure src="./images/microprofile-changes.png" >}}
+{{< figure src="./images/microprofile-changes.jpg" >}}
 
 MicroProfile 6.0 introduced a new specification MicroProfile Telemetry, which
 supercedes MicroProfile OpenTracing. MicroProfile Metrics 5.0 has backward
@@ -652,7 +652,7 @@ key algorithm for the JWS tokens.
 MicroProfile Metrics 5.0 reworked its APIs so that the implementors can use
 their chosen Metrics libraries such as Micrometer or OpenTelemetry Metrics.
 Consequently, some annotations were removed such as `@SimplyTimed`,
-`@ConcurrentGauage`, `@Metered`. Some annotations such as `@Gauage`, `@Counter`,
+`@ConcurrentGauge`, `@Metered`. Some annotations such as `@Gauge`, `@Counter`,
 `@Metric` and `@Timer`.
 
 The ones below have been removed.
@@ -731,7 +731,7 @@ OpenTelemetry, Tracer, Span and Baggage. The following diagram demonstrates
 how MicroProfile Telemetry can be used to trace requests that involve
 multiple microservices and how the traces can then be viewed on browsers.
 
-{{< figure src="./images/telemetry.png" >}}
+{{< figure src="./images/telemetry.jpg" >}}
 
 The spans can be in otlp or other format, and they can be sent to the backend
 Jaeger or Zipkin to be displayed such as the following diagram. This diagram
@@ -739,7 +739,7 @@ shows individual traces with multiple spans included. Each span records an
 individual operation. With the span information, if something goes wrong,
 spotting errors is no longer a challenge.
 
-{{< figure src="./images/compare-traces.png" >}}
+{{< figure src="./images/compare-traces.jpg" >}}
 
 I have covered all MicroProfile 6.0 content. You can find the compatible
 implementation for MicroProfile 6.0 here. Open Liberty is one of the first one.
