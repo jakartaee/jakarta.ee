@@ -447,6 +447,199 @@ pull in Jakarta EE 10 Web Profile.
 </featureManager>
 ```
 
+### Jakarta EE 10 Platform
 
+Jakarta EE 10 Platform includes Jakarta EE 10 Web Profile and 7 other
+specifications including Authorization, Activation, Batch, Connectors, Mail,
+Messaging and EJB. It also consists of 5 optional specifications. The optional
+specifications including SOAP with Attachments 4.0, XML Binding 4.0 and XML Web
+Services 4.0 have some updates and Open Liberty implemented them as part of
+Jakarta EE 10 platform implementation.
 
+#### Jakarta Batch 2.1
 
+The following changes were added:
+
+- Defines Jakarta Batch integration with Jakarta Contexts and Dependency
+  Injection (CDI) within and outside of the Jakarta EE Platform
+- Require Jakarta Batch + CDI integration (which in previous releases was
+  optional from the Jakarta Batch perspective
+
+#### Jakarta Authorization 2.1
+
+The following changes were made to this release:
+
+- Add `getPolicyConfiguration` methods without state requirement 
+- Add methods to `PolicyConfiguation` to read permissions 
+- Generic return value for `getContext()`
+
+#### Jakarta Mail 2.1
+
+This release splits the implementation from the APIs
+
+- In the class `jakarta.mail.Session` , the method `public StreamProvider
+  getStreamProvider()` returns the `StreamProvider` instance of the Session
+- `StreamProvider` is used to create instances of the encoders/decoders as
+  required by the API
+
+#### Use Jakarta EE 10 Platform with Open Liberty
+
+In Open Liberty, you can specify the following snippet in the server.xml to
+pull in Jakarta EE 10 Platform.
+
+```
+<featureManager>
+        <feature>jakartaee-10.0</feature>
+</featureManager>
+```
+
+## MicroProfile 6.0
+
+MicroProfile was created in 2016 and then moved to Eclipse Foundation in 2017.
+It was created by IBM, Red Hat, Tomitribe, Payara, and others. In the past few
+years, it has done many releases. The release of MicroProfile 6.0 in December
+2022 embraces Jakarta EE 10 Core Profile. Below is the diagram of the
+MicroProfile releases.
+
+INSERT IMAGE
+
+This blog will bring you up to date what MicroProfile 6.0 delivers.
+MicroProfile adopts semantic versions. As you may know, MicroProfile 6.0
+contains backward incompatible changes. Below are the full details of the
+release.
+
+INSERT IMAGE
+
+MicroProfile 6.0 introduced a new specification MicroProfile Telemetry, which
+supercedes MicroProfile OpenTracing. MicroProfile Metrics 5.0 has backward
+incompatible changes, while MicroProfile OpenAPI 3.1 and MicroProfile JWT
+Authentication 2.1 only contains minor changes. This release also includes
+Jakarta EE 10 Core Profile. Let’s take a look at the four updated MicroProfile
+specifications.
+
+### MicroProfile OpenAPI 3.1
+
+This releases supports Jakarta Bean Validation integration as well as other
+annotation updates.
+
+#### Integrating with Jakarta Bean Validation
+
+MicroProfile OpenAPI 3.1 integrates with Jakarta Bean Validation. A limited
+subset of Jakarta Bean Validation annotations can be read by MP OpenAPI and
+those constraints are automatically reflected in the schema. In the previous
+version, in order to document a field contains a positive number, you have to
+use the `@Schema` annotation. From this release, `@Schema` annotation is no
+longer needed.
+
+```
+public class MyClass {
+  @Positive
+  @Schema(minimum = 0, exclusiveMinimum = true)
+  public int myField;
+}
+```
+
+#### SecurityRequirementsSet modeling optional or multiple auth
+
+The `@SecurityRequirementsSet` annotation can be used to model both an optional
+authentication requirement, and multiple authentication requirements. The
+following examples demonstrates how to specify multiple or optional
+requirements.
+
+INSERT IMAGE
+
+#### AdditionalProperties added to @Schema
+
+The `additionalProperties` attribute is added to the `@Schema` annotation. It can
+be set to True, False or a class representing a schema. The following example
+demonstrates the Schema `MyClass` contains `additionalProperty AnotherClass`.
+
+INSERT IMAGE
+
+#### APIResponse can be applied on the classes
+
+The annotation `APIResponse` can be applied directly to the resource class,
+indicating that it applies to all resource methods within the class. In the
+example below, the `APIResponse` applies to both methods `get` and `search`.
+
+INSERT IMAGE CODE
+
+The annotation declared at the class level add to those declared at the method
+level if all annotations have different response codes.
+
+The annotation declared on the method override those on the class if they have
+the same response code.
+
+#### The extensions attribute added to Extension
+
+Most OpenAPI annotations have been extended to include an extensions attribute
+of type `Extension[]`. In the following example, the extensions attribute is
+added to the `@Extension` in the annotation `@SecuritySchema`.
+
+```
+@SecurityScheme(
+  securitySchemeName = "testSecurityScheme"
+  type = OPENIDCONNECT,
+  openIdConnectUrl = "http://example.org"
+  extensions = @Extension(name = "x-tokenName", value = "tokenId")
+)
+```
+
+```
+securitySchemes;
+  testSecuritySchemes;
+    type: 'openIdConnect'
+    openIdConnectUrl: 'http://example.org'
+    x-tokenName: 'tokenId'
+```
+
+### MicroProfile JWT Authentication 2.1
+
+MicroProfile JWT Authentication 2.1 introduces the following new
+configurations.
+
+- `mp.jwt.verify.token.age=3600`
+- `mp.jwt.verify.clock.skew=60`
+- `mp.jwt.decrypt.key.algorithm=RSA-OAEP`
+
+They are used to indicate the token age, clock skew in seconds and then decrypt
+key algorithm for the JWS tokens.
+
+### MicroProfile Metrics 5.0
+
+MicroProfile Metrics 5.0 reworked its APIs so that the implementors can use
+their chosen Metrics libraries such as Micrometer or OpenTelemetry Metrics.
+Consequently, some annotations were removed such as `@SimplyTimed`,
+`@ConcurrentGauage`, `@Metered`. Some annotations such as `@Gauage`, `@Counter`,
+`@Metric` and `@Timer`.
+
+The ones below have been removed.
+
+- org.eclipse.microprofile.metrics.annotations.SimplyTimed
+- org.eclipse.microprofile.metrics.annotations.ConcurrentGauge
+- org.eclipse.microprofile.metrics.annotations.Metered
+
+And the ones below this have been updated.
+
+- org.eclipse.microprofile.metrics.annotations.Gauge
+- org.eclipse.microprofile.metrics.annotations.Counter
+- org.eclipse.microprofile.metrics.annotations.Metric
+- org.eclipse.microprofile.metrics.annotations.Timer
+
+The corresponding API/SPIs were updated or removed as well. For more
+information regarding the changes, please refer to [this](https://download.eclipse.org/microprofile/microprofile-metrics-5.0.0/microprofile-metrics-spec-5.0.0.html#release_notes_5_0) 
+release note.
+
+It also supports multi-dimensional metrics as follows.
+
+- `car_speed{driver=”Emily",mp_scope="carScope",} 115`
+
+ MicroProfile Metrics 5.0 enables application metrics to be grouped in custom
+ scopes and allows querying of metrics by those scopes, detailed below in the
+ table.
+
+ | Request                                          | Description                                                                             |
+ |---                                               |---                                                                                      |
+ | /metrics                                         | Returns all registered metrics, same as the previous versions of MicroProfile Metrics   |
+ | /metrics?scope=<scope_name>                      | Returns metrics registerd for the respective scope                                      |
+ | /metrics?scope=<scope_name>&name=<metric_name>   | Returns metrics that match the metric name for the respective scope                     |
