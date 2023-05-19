@@ -7,7 +7,14 @@ news/tags:
   - Jakarta EE
   - MicroProfile
 authors: [{ gh_handle: Emily-Jiang, name: Emily Jiang }]
-summary: ""
+summary: >-
+  On 22nd September 2022, Jakarta EE 10 was released. Three months later,
+  MicroProfile 6.0 was released with Jakarta EE 10 Core Profile alignment. We
+  are very proud to announce that Open Liberty 23.0.0.3 supports both Jakarta
+  EE 10 and MicroProfile 6.0, and it is the first runtime that support both
+  Jakarta EE 10 and MicroProfile 6.0 in a production ready version. In this
+  blog, we are going to discuss some of the main features in Jakarta EE 10 and
+  MicroProfile 6.0 and then demonstrate how you can use them.
 ---
 
 On 22nd September 2022, Jakarta EE 10 was released. Three months later,
