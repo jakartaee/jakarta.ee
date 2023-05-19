@@ -546,7 +546,22 @@ authentication requirement, and multiple authentication requirements. The
 following examples demonstrates how to specify multiple or optional
 requirements.
 
-INSERT IMAGE
+Optional Auth Example:
+
+```
+@SecurityRequirement(name = "APIKeyAuth")
+@SecurityRequirement(name = "BearerTokenAuth")
+@SecurityRequirementSet({})
+```
+
+Multiple Auth Example:
+
+```
+@SecurityRequirementSet({
+  @SecurityRequirement(name = "APIKeyAuth")
+  @SecurityRequirement(name = "BearerTokenAuth")
+})
+```
 
 #### AdditionalProperties added to @Schema
 
@@ -554,7 +569,23 @@ The `additionalProperties` attribute is added to the `@Schema` annotation. It ca
 be set to True, False or a class representing a schema. The following example
 demonstrates the Schema `MyClass` contains `additionalProperty AnotherClass`.
 
-INSERT IMAGE
+Example: 
+
+```
+@Schema(additionalProperties = AnotherClass.class)
+public class MyClass {
+  /* ... */
+}
+```
+
+```
+schemas:
+  'MyClass':
+    type: 'object'
+    additionalProperties;
+      $ref: '#/components/schemas/AnotherClass'
+    properties: [ ... ]
+```
 
 #### APIResponse can be applied on the classes
 
@@ -562,7 +593,18 @@ The annotation `APIResponse` can be applied directly to the resource class,
 indicating that it applies to all resource methods within the class. In the
 example below, the `APIResponse` applies to both methods `get` and `search`.
 
-INSERT IMAGE CODE
+```
+@PATH("/")
+@APIResponse(responseCode = "429", description = "Client is rated limited")
+public class MyClass {
+  
+  @GET
+  public Response get(...) { ... }
+
+  @GET
+  public Response search(...) { ... }
+}
+```
 
 The annotation declared at the class level add to those declared at the method
 level if all annotations have different response codes.
@@ -643,3 +685,94 @@ It also supports multi-dimensional metrics as follows.
  | /metrics                                         | Returns all registered metrics, same as the previous versions of MicroProfile Metrics   |
  | /metrics?scope=<scope_name>                      | Returns metrics registerd for the respective scope                                      |
  | /metrics?scope=<scope_name>&name=<metric_name>   | Returns metrics that match the metric name for the respective scope                     |
+
+ Open Liberty provides the feature mpMetrics-5.0 to track metrics from Liberty
+ components and the JVM to help you understand how your servers are performing.
+ This feature provides the MicroProfile Metrics API, which you can use to add
+ metrics to your applications as well as the ability to group application
+ metrics into custom scopes and allows querying of metrics by those scopes.
+
+ This feature is based on Micrometer, which can ship metrics to your choice of
+ monitoring systems including AppOptics, Azure Monitor, Netflix Atlas,
+ CloudWatch, Datadog, Dynatrace, Elastic, Ganglia, Graphite, Humio,
+ Influx/Telegraf, JMX, KairosDB, New Relic, Prometheus, SignalFx, Google
+ Stackdriver, StatsD, and Wavefront.
+
+### MicroProfile Telemetry 1.0
+
+MicroProfile Telemetry 1.0 was added to MicroProfile 6.0 to superceed
+MicroProfile OpenTracing. Consequently, MicroProfile OpenTracing was moved out
+of MicroProfile 6.0 and remained as a standalone specification. MicroProfile
+Telemetry 1.0 Adopts [OpenTelemetry Tracing](https://opentelemetry.io/). The
+tracing is disabled by default. In order to get tracing, you need to set the
+property `otel.sdk.disabled=false`.
+
+It supports three types of instrumentations:
+
+- Automatic Instrumentation:
+  - Jakarta RESTful Web Services and MicroProfile Rest Client automatically enlisted in distributed tracing
+- Manual Instrumentation:
+  -	Manual instrumentation can be added via annotations `@WithSpan` or via CDI
+    injection `@Inject Tracer` or `@Inject Span` or programmatic lookup 
+    ```
+    Span.current()
+    @WithSpan
+    @SpanAttribute
+    @Inject io.opentelemetry.api.OpenTelemetry
+    @Inject io.opentelemetry.api.trace.Tracer
+    @Inject io.opentelemetry.api.trace.Span
+    @Inject io.opentelemetry.api.baggage.Baggage```
+- Agent Instrumentation:
+  - Use [OpenTelemetry Java Instrumetion](https://github.com/open-telemetry/opentelemetry-java-instrumentation) 
+    project to gather telemetry data without any code modification.
+
+MicroProfile Telemetry provides the support for the injection of
+OpenTelemetry, Tracer, Span and Baggage. The following diagram demonstrates
+how MicroProfile Telemetry can be used to trace requests that involve
+multiple microservices and how the traces can then be viewed on browsers.
+
+INSERT IMAGE
+
+The spans can be in otlp or other format, and they can be sent to the backend
+Jaeger or Zipkin to be displayed such as the following diagram. This diagram
+shows individual traces with multiple spans included. Each span records an
+individual operation. With the span information, if something goes wrong,
+spotting errors is no longer a challenge.
+
+INSERT IMAGE
+
+I have covered all MicroProfile 6.0 content. You can find the compatible
+implementation for MicroProfile 6.0 here. Open Liberty is one of the first one.
+
+### Using MicroProfile 6.0 with OpenLiberty
+
+Configure the feature microProfile-6.0 in your server.xml to use MicroProfile
+6.0. For more information, please refer to this blog.
+
+```
+<featureManager>
+        <feature>microProfile-6.0</feature>
+</featureManager>
+```
+
+### Using both Jakarta EE 10 and MicroProfile 6.0 with Open Liberty
+
+Open Liberty supports both Jakarta EE 10 and MicroProfile 6.0. If you want to
+use both technologies together, you can simply add the following to your
+server.xml
+
+```
+<featureManager>
+        <feature>platform-10.0</feature>
+        <feature>microPorfile-6.0</feature>
+</featureManager>
+```
+
+### Migration from older Jakarta EE and MicroProfile
+
+Open Liberty lists specification differences for Jakarta EE versions and
+MicroProfile versions. Refer to [this doc page](https://openliberty.io/docs/latest/reference/diff/jakarta-ee10-diff.html) 
+lists the behaviour differences from Jakarta EE 9.1 to Jakarta EE 10 and [this page](https://openliberty.io/docs/latest/reference/diff/mp-50-60-diff.html) 
+for the differences between MicroProfile 5.0 and MicroProfile 6.0.
+
+
