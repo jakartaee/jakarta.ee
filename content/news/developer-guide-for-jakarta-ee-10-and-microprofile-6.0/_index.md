@@ -11,14 +11,14 @@ summary: >-
   On 22nd September 2022, Jakarta EE 10 was released. Three months later,
   MicroProfile 6.0 was released with Jakarta EE 10 Core Profile alignment. We
   are very proud to announce that Open Liberty 23.0.0.3 supports both Jakarta
-  EE 10 and MicroProfile 6.0, and it is the first runtime that support both
+  EE 10 and MicroProfile 6.0, and it is the **first** runtime that support both
   Jakarta EE 10 and MicroProfile 6.0 in a production ready version. In this
   blog, we are going to discuss some of the main features in Jakarta EE 10 and
   MicroProfile 6.0 and then demonstrate how you can use them.
 ---
 
-On 22nd September 2022, Jakarta EE 10 was released. Three months later,
-MicroProfile 6.0 was released with Jakarta EE 10 Core Profile alignment. We are
+On 22nd September 2022, [Jakarta EE 10](https://jakarta.ee/specifications/platform/10/) was released. Three months later,
+  [MicroProfile 6.0](https://microprofile.io/2023/01/10/microprofile-6-0-release/) was released with Jakarta EE 10 Core Profile alignment. We
 very proud to announce that [Open Liberty 23.0.0.3](https://openliberty.io/blog/2023/04/04/23.0.0.3.html) 
 supports both Jakarta EE 10 and MicroProfile 6.0, and it is the first runtime
 that support both Jakarta EE 10 and MicroProfile 6.0 in a production ready
@@ -751,7 +751,7 @@ spotting errors is no longer a challenge.
 I have covered all MicroProfile 6.0 content. You can find the compatible
 implementation for MicroProfile 6.0 here. Open Liberty is one of the first one.
 
-### Using MicroProfile 6.0 with OpenLiberty
+### Using MicroProfile 6.0 with Open Liberty
 
 Configure the feature microProfile-6.0 in your server.xml to use MicroProfile
 6.0. For more information, please refer to this blog.
@@ -780,6 +780,15 @@ server.xml
 Open Liberty lists specification differences for Jakarta EE versions and
 MicroProfile versions. Refer to [this doc page](https://openliberty.io/docs/latest/reference/diff/jakarta-ee10-diff.html) 
 lists the behaviour differences from Jakarta EE 9.1 to Jakarta EE 10 and [this page](https://openliberty.io/docs/latest/reference/diff/mp-50-60-diff.html) 
-for the differences between MicroProfile 5.0 and MicroProfile 6.0.
+for the differences between MicroProfile 5.0 and MicroProfile 6.0. To learn more on Jakarta EE, MicroProfile as well as other cloud native technologies, checkout the [Open Liberty Guides](https://openliberty.io/guides/). To create your cloud native applications using MicroProfile 6.0 and Jakarta EE 10, use [Open Liberty starter ](https://openliberty.io/start/)to start coding.
 
+## Useful links
+
+- [Jakarta EE](https://jakarta.ee/)
+- [MicroProfile](https://microprofile.io/)
+- [Open Liberty](https://openliberty.io/)
+- Create applications using MicroProfile and Jakarta EE
+  - [Open Liberty Starter](https://openliberty.io/start/)
+  - [MicroProfile Starter](https://start.microprofile.io/)
+  - [Jakarta EE Starter](https://start.jakarta.ee/)
 
