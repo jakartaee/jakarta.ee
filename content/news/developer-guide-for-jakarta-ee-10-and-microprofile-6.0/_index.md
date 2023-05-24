@@ -6,7 +6,7 @@ type: announcements
 news/tags:
   - Jakarta EE
   - MicroProfile
-authors: [{ gh_handle: Emily-Jiang, name: Emily Jiang }]
+authors: [{ eclipse_handle: ejiang, gh_handle: Emily-Jiang, name: Emily Jiang }]
 summary: >-
   On 22nd September 2022, Jakarta EE 10 was released. Three months later,
   MicroProfile 6.0 was released with Jakarta EE 10 Core Profile alignment. We
