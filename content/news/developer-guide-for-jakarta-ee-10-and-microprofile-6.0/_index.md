@@ -779,7 +779,7 @@ server.xml
 
 Open Liberty lists specification differences for Jakarta EE versions and
 MicroProfile versions. Refer to [this doc page](https://openliberty.io/docs/latest/reference/diff/jakarta-ee10-diff.html) 
-lists the behaviour differences from Jakarta EE 9.1 to Jakarta EE 10 and [this page](https://openliberty.io/docs/latest/reference/diff/mp-50-60-diff.html) 
+for the behaviour differences from Jakarta EE 9.1 to Jakarta EE 10 and [this page](https://openliberty.io/docs/latest/reference/diff/mp-50-60-diff.html) 
 for the differences between MicroProfile 5.0 and MicroProfile 6.0. To learn more on Jakarta EE, MicroProfile as well as other cloud native technologies, checkout the [Open Liberty Guides](https://openliberty.io/guides/). To create your cloud native applications using MicroProfile 6.0 and Jakarta EE 10, use [Open Liberty starter ](https://openliberty.io/start/)to start coding.
 
 ## Useful links
