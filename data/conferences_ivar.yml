@@ -22,11 +22,10 @@ years:
     date: Jun 27-29
     upcoming: true
 
-  - name: jPrime
+  - name: JPrime
     url: https://jprime.io/
     location: Sofia, Bulgaria
     date: May 30-31
-    upcoming: true
 
   - name: Infoshare
     url: https://infoshare.pl/conference/
