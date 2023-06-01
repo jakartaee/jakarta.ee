@@ -10,6 +10,12 @@ years:
     date: Dec 5
     upcoming: true
 
+  - name: Øredev
+    url: https://oredev.org/
+    location: Malmö, Sweden
+    date: Nov 8-10
+    upcoming: true
+
   - name: JCrete
     url: https://www.jcrete.org/
     location: Kolymvari, Greece
