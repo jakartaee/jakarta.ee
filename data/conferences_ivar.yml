@@ -22,8 +22,14 @@ years:
     date: Jul 2-7
     upcoming: true
 
+  - name: Amsterdam JUG
+    url: http://amsterdamjug.com/
+    location: Amsterdam, Netherlands
+    date: Jun 29
+    upcoming: true
+
   - name: GOTO Amsterdam
-    url: https://devnexus.com
+    url: https://gotoams.nl/2023
     location: Amsterdam, Netherlands
     date: Jun 27-29
     upcoming: true
