@@ -10,6 +10,8 @@
         {{range .Params.authors}}
           {{ if isset . "tw_handle"}}
             <a class="author-name content-link" href="//twitter.com/{{ .tw_handle }}" title="{{ .name }}">{{ .name }}</a>
+          {{ else if isset . "eclipse_handle"}}
+            <a class="author-name content-link" href="//accounts.eclipse.org/users/{{ .eclipse_handle }}" title="{{ .name }}">{{ .name }}</a>
           {{ else }}
             <a class="author-name content-link" href="//github.com/{{ .gh_handle }}" title="{{ .name }}">{{ .name }}</a>
           {{ end }}

@@ -34,6 +34,30 @@ sets:
           - version: 1.1.0
             compatibility: 'https://www.fujitsu.com/jp/products/software/middleware/business-middleware/middleware/applatform/jakartaee-report/eap110-ee10full-tck-results'
             download_url: 'https://www.fujitsu.com/jp/products/software/middleware/business-middleware/middleware/applatform/'
+        - name: IBM WebSphere Liberty
+          vendor: IBM Corporation
+          image: '/images/compatible_products/ibm-websphere-liberty-logo.svg'
+          image_width: 120
+          download: 'https://www.ibm.com/support/pages/node/6250961#asset/runtimes-wlp-javaee8'
+          versions:
+            - version: 23.0.0.3, Java 17
+              compatibility: 'https://www.ibm.com/support/pages/ibm-websphere-liberty-23003-jakarta-ee-platform-10-using-java-17-certification-summary'
+              download_url: 'https://www.ibm.com/support/fixcentral/swg/selectFixes?parent=ibm%7EWebSphere&product=ibm/WebSphere/WebSphere+Liberty&release=23.0.0.3&platform=All&function=fixId&fixids=wlp-jakartaee10-23.0.0.3&includeSupersedes=0'
+            - version: 23.0.0.3, Java 11
+              compatibility: 'https://www.ibm.com/support/pages/ibm-websphere-liberty-23003-jakarta-ee-platform-10-using-java-11-certification-summary'
+              download_url: 'https://www.ibm.com/support/fixcentral/swg/selectFixes?parent=ibm%7EWebSphere&product=ibm/WebSphere/WebSphere+Liberty&release=23.0.0.3&platform=All&function=fixId&fixids=wlp-jakartaee10-23.0.0.3&includeSupersedes=0'
+        - name: Open Liberty
+          vendor: IBM Corporation
+          image: '/images/compatible_products/ibm-open-liberty-logo.svg'
+          image_width: 160
+          download: 'https://openliberty.io/start/#runtime_betas'
+          versions:
+            - version: 23.0.0.3, Java 17
+              compatibility: 'https://openliberty.io/certifications/jakartaee/10/platform/23.0.0.3-Java17-TCKResults.html'
+              download_url: 'https://public.dhe.ibm.com/ibmdl/export/pub/software/openliberty/runtime/release/23.0.0.3/openliberty-jakartaee10-23.0.0.3.zip' 
+            - version: 23.0.0.3, Java 11
+              compatibility: 'https://openliberty.io/certifications/jakartaee/10/platform/23.0.0.3-Java11-TCKResults.html'
+              download_url: 'https://public.dhe.ibm.com/ibmdl/export/pub/software/openliberty/runtime/release/23.0.0.3/openliberty-jakartaee10-23.0.0.3.zip' 
         - name: Payara Server Community
           vendor: Payara Services Limited
           image: '/images/compatible_products/payara-server-community-logo.svg'
@@ -71,6 +95,30 @@ sets:
             - version: 7
               compatibility: 'https://glassfish.org/certifications/jakarta-web-profile/10/TCK-Results-7.0.0-M8'
               download_url: 'https://download.eclipse.org/ee4j/glassfish/web-7.0.0-M8.zip'
+        - name: IBM WebSphere Liberty
+          vendor: IBM Corporation
+          image: '/images/compatible_products/ibm-websphere-liberty-logo.svg'
+          image_width: 120
+          download: 'https://www.ibm.com/support/pages/node/6250961#asset/runtimes-wlp-javaee8'
+          versions:
+            - version: 23.0.0.3, Java 17
+              compatibility: 'https://www.ibm.com/support/pages/ibm-websphere-liberty-23003-jakarta-ee-web-profile-10-using-java-17-certification-summary'
+              download_url: 'https://www.ibm.com/support/fixcentral/swg/selectFixes?parent=ibm%7EWebSphere&product=ibm/WebSphere/WebSphere+Liberty&release=23.0.0.3&platform=All&function=fixId&fixids=wlp-webProfile10-23.0.0.3&includeSupersedes=0'
+            - version: 23.0.0.3, Java 11
+              compatibility: 'https://www.ibm.com/support/pages/ibm-websphere-liberty-23003-jakarta-ee-web-profile-10-using-java-11-certification-summary'
+              download_url: 'https://www.ibm.com/support/fixcentral/swg/selectFixes?parent=ibm%7EWebSphere&product=ibm/WebSphere/WebSphere+Liberty&release=23.0.0.3&platform=All&function=fixId&fixids=wlp-webProfile10-23.0.0.3&includeSupersedes=0'
+        - name: Open Liberty
+          vendor: IBM Corporation
+          image: '/images/compatible_products/ibm-open-liberty-logo.svg'
+          image_width: 160
+          download: 'https://openliberty.io/start/#runtime_betas'
+          versions:
+            - version: 23.0.0.3, Java 17
+              compatibility: 'https://openliberty.io/certifications/jakartaee/10/webprofile/23.0.0.3-Java17-TCKResults.html'
+              download_url: 'https://public.dhe.ibm.com/ibmdl/export/pub/software/openliberty/runtime/release/23.0.0.3/openliberty-webProfile10-23.0.0.3.zip' 
+            - version: 23.0.0.3, Java 11
+              compatibility: 'https://openliberty.io/certifications/jakartaee/10/webprofile/23.0.0.3-Java11-TCKResults.html'
+              download_url: 'https://public.dhe.ibm.com/ibmdl/export/pub/software/openliberty/runtime/release/23.0.0.3/openliberty-webProfile10-23.0.0.3.zip' 
         - name: Payara Server Community
           vendor: Payara Services Limited
           image: '/images/compatible_products/payara-server-community-logo.svg'
@@ -96,18 +144,30 @@ sets:
     - title: Jakarta EE 10 Core Profile
       release: "/release/10"
       items:
+        - name: IBM WebSphere Liberty
+          vendor: IBM Corporation
+          image: '/images/compatible_products/ibm-websphere-liberty-logo.svg'
+          image_width: 120
+          download: 'https://www.ibm.com/support/pages/node/6250961#asset/runtimes-wlp-javaee8'
+          versions:
+            - version: 23.0.0.3, Java 17
+              compatibility: 'https://www.ibm.com/support/pages/ibm-websphere-liberty-23003-jakarta-ee-core-profile-10-using-java-17-certification-summary'
+              download_url: 'https://www.ibm.com/support/fixcentral/swg/selectFixes?parent=ibm%7EWebSphere&product=ibm/WebSphere/WebSphere+Liberty&release=23.0.0.3&platform=All&function=fixId&fixids=wlp-webProfile10-23.0.0.3&includeSupersedes=0'
+            - version: 23.0.0.3, Java 11
+              compatibility: 'https://www.ibm.com/support/pages/ibm-websphere-liberty-23003-jakarta-ee-core-profile-10-using-java-11-certification-summary'
+              download_url: 'https://www.ibm.com/support/fixcentral/swg/selectFixes?parent=ibm%7EWebSphere&product=ibm/WebSphere/WebSphere+Liberty&release=23.0.0.3&platform=All&function=fixId&fixids=wlp-webProfile10-23.0.0.3&includeSupersedes=0'
         - name: Open Liberty
           vendor: IBM Corporation
           image: '/images/compatible_products/ibm-open-liberty-logo.svg'
           image_width: 160
           download: 'https://openliberty.io/start/#runtime_betas'
           versions:
-            - version: 22.0.0.10-beta, Java 17
-              compatibility: 'https://openliberty.io/certifications/jakartaee/10/coreprofile/22.0.0.10-beta-Java17-TCKResults.html'
-              download_url: 'https://public.dhe.ibm.com/ibmdl/export/pub/software/openliberty/runtime/beta/22.0.0.10-beta/openliberty-22.0.0.10-beta.zip'
-            - version: 22.0.0.10-beta, Java 11
-              compatibility: 'https://openliberty.io/certifications/jakartaee/10/coreprofile/22.0.0.10-beta-Java11-TCKResults.html'
-              download_url: 'https://public.dhe.ibm.com/ibmdl/export/pub/software/openliberty/runtime/beta/22.0.0.10-beta/openliberty-22.0.0.10-beta.zip'
+            - version: 23.0.0.3, Java 17
+              compatibility: 'https://openliberty.io/certifications/jakartaee/10/coreprofile/23.0.0.3-Java17-TCKResults.html'
+              download_url: 'https://public.dhe.ibm.com/ibmdl/export/pub/software/openliberty/runtime/release/23.0.0.3/openliberty-microProfile6-23.0.0.3.zip'
+            - version: 23.0.0.3, Java 11
+              compatibility: 'https://openliberty.io/certifications/jakartaee/10/coreprofile/23.0.0.3-Java11-TCKResults.html'
+              download_url: 'https://public.dhe.ibm.com/ibmdl/export/pub/software/openliberty/runtime/release/23.0.0.3/openliberty-microProfile6-23.0.0.3.zip'
         - name: Payara Server Community
           vendor: Payara Services Limited
           image: '/images/compatible_products/payara-server-community-logo.svg'
@@ -247,11 +307,11 @@ sets:
         vendor: Beijing TongTech Co., Ltd.
         image: '/images/compatible_products/tongweb_logo.svg'
         image_width: 195
-        download: 'http://www.tongtech.com/Services/Services-104.html'
+        download: 'https://www.tongtech.com/dft/pctype/25.html'
         versions:
         - version: 9
           compatibility: 'http://www.tongtech.com/tw9.jakarta-full-platform-9.1.html'
-          download_url: 'http://www.tongtech.com/Services/Services-104.html'
+          download_url: 'https://www.tongtech.com/dft/contactus.html'
       - name: InforSuite Application Server
         vendor: Shandong Cvicse Middleware Co.,Ltd.
         image: '/images/compatible_products/inforsuite_logo.svg'
@@ -527,13 +587,16 @@ sets:
 
       - name: JEUS
         vendor: TmaxSoft Co., Ltd
-        image: '/images/compatible_products/jeus_logo.svg'
+        image: '/images/compatible_products/jeus-logo.svg'
         image_width: 110
         download: 'https://kr.tmaxsoft.com/jakee/jeus8-b266.zip'
         versions:
-        - version: 8.5
-          compatibility: 'https://kr.tmaxsoft.com/jakee/JEUS8.5_Full_Profile_Certification_Summary.html'
-          download_url: 'https://kr.tmaxsoft.com/jakee/JEUS8.5_Full_Profile_Certification_Summary.html'
+          - version: 21
+            compatibility: 'https://kr.tmaxsoft.com/jakee/JEUS21_JakartaEE8_Certification_Summary.html'
+            download_url: https://kr.tmaxsoft.com/jakee/jeus21-b425-SNAPSHOT.zip
+          - version: 8.5
+            compatibility: 'https://kr.tmaxsoft.com/jakee/JEUS8.5_Full_Profile_Certification_Summary.html'
+            download_url: 'https://kr.tmaxsoft.com/jakee/JEUS8.5_Full_Profile_Certification_Summary.html'
 
       - name: Primeton AppServer
         vendor: Primeton
@@ -632,14 +695,14 @@ sets:
         vendor: Beijing TongTech Co., Ltd.
         image: '/images/compatible_products/tongweb_logo.svg'
         image_width: 195
-        download: 'http://www.tongtech.com/Services/Services-104.html'
+        download: "https://www.tongtech.com/dft/pctype/25.html"
         versions:
         - version: 8
           compatibility: 'http://www.tongtech.com/tw8.jakarta-full-platform-8.html'
-          download_url: 'http://www.tongtech.com/Services/Services-104.html'
+          download_url: 'https://www.tongtech.com/dft/contactus.html'
         - version: 7
           compatibility: 'http://www.tongtech.com/tw7.jakarta-full-platform-8.html'
-          download_url: 'http://www.tongtech.com/Services/Services-104.html'
+          download_url: 'https://www.tongtech.com/dft/contactus.html'
 
       - name: xigema Application Server
         vendor: Beijing Vsettan Data Technology Co. Ltd.
