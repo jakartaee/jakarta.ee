@@ -9,6 +9,10 @@
 
 [home-calltoaction-specifications]
   other = "获取规范文档"
+
+[home-calltoaction-why-jakarta-ee]
+  other = "为何选择 JAKARTA EE"
+
 [home-calltoaction-presentation]
   other = "JAKARTA EE 演讲"
 
@@ -109,7 +113,7 @@
   other = "https://accounts.eclipse.org/mailing-list/jakarta.ee-wg"
 
 [connect-mailing-list-projects-title]
-  other = "项目邮件列表"
+  other = "规范项目邮件列表"
 
 [connect-mailing-list-projects-body]
   other = "想加入么? 注册Jakarta EE 项目邮件列表."
@@ -333,10 +337,10 @@ other = "加入邮件列表"
 other = "注册"
 
 [footer-useful-links-forums-text]
-  other = "Stay Connected"
+  other = "保持联系"
 
 [footer-useful-links-marketplace-text]
-  other = "Compatible Products"
+  other = "兼容产品"
 
 [faq-title]
  other = "常见问题解答"
@@ -450,77 +454,77 @@ other = "注册"
  other = "点赞关注不迷路"
 
 [jakarta-ee-version-10-features-title]
- other = "features and benefits"
+ other = "特性和收益"
 
 [jakarta-ee-version-10-features-subtitle]
- other = "Jakarta EE 10 is packed with new features for building modernized, simplified, and lightweight cloud native Java applications. This new innovative community-driven release is designed for organizations looking to start developing new enterprise Java applications or advancing their existing ones."
+ other = " Jakarta EE 10充满了用于构建现代化、简化和轻量级云原生Java应用程序的新功能。这个由社区驱动的新的创新性发布版本是为那些希望开始开发新的企业Java应用程序或推进现有应用程序的组织而设计的。"
 
 [jakarta-ee-version-10-features-block1-title]
- other = "Modernized"
+ other = "现代化的"
 
 [jakarta-ee-version-10-features-block1-summary]
- other = "The Jakarta EE 10 release provides new functionality in over 20 component specifications."
+ other = "The Jakarta EE 10 版本在20个组件规范中提供了新的功能特性。"
 
 [jakarta-ee-version-10-features-block1-text]
- other = "This release enables builders of modern cloud native Java applications to develop and deploy Jakarta EE 10 applications on Java SE 11 as well as Java SE 17, the most current LTS release of Java SE. This allows developers to take full advantage of new features including the modular system introduced in Java SE 9 and supported in Java SE 11"
+ other = " 此版本使现代云原生Java应用程序的构建者能够在Java SE 11以及Java SE 17上开发和部署Jakarta EE 10应用程序（Java SE 17是Java SE的最新LTS版本（。这使开发人员能够充分利用Java SE的很多新功能，包括Java SE 9中引入并在Java SE 11中得到支持的模块化系统。"
 
 [jakarta-ee-version-10-features-block2-title]
- other = "Simplified"
+ other = "简化的"
 
 [jakarta-ee-version-10-features-block2-summary]
- other = "With Jakarta EE 10, application development is made simpler by supporting the broader use of additional annotations"
+ other = "Jakarta EE 10通过支持更广泛地使用额外的注解，简化了应用程序开发。"
 
 
 [jakarta-ee-version-10-features-block2-text]
- other = "This makes it easier to build modularized applications and offers improved integration across component APIs. Ultimately, Jakarta EE 10 helps developers more easily implement applications with modern security requirements, remove deprecated APIs, and maintain high levels of compatibility with prior Jakarta EE releases."
+ other = "这使得构建模块化应用程序更加容易，并改进了跨组件的API集成。最终，Jakarta EE 10帮助开发人员更轻松地实现具有现代安全要求的应用程序，删除已弃用的API，并保持与之前的Jakarta EE版本的高度兼容性。"
 
 [jakarta-ee-version-10-features-block3-title]
- other = "Lightweight"
+ other = "轻量级"
 
 [jakarta-ee-version-10-features-block3-summary]
- other = "Jakarta EE 10 defines a new profile specification with Jakarta EE Core Profile 10. The “Core Profile” enables the development of lightweight and modernized Java applications."
+ other = "Jakarta EE 10定义了一个新的配置规范，即Jakarta EE Core Profile 10，使得开发轻量级和现代化的Java应用程序成为可能。"
 
 [jakarta-ee-version-10-features-block3-text]
- other = "The new Core Profile provides a subset of Jakarta EE specifications that target smaller runtimes suitable for microservices development with lightweight runtimes.This includes an innovative new CDI-Lite specification for building lightweight Jakarta EE applications."
+ other = "新的Core Profile提供了一组针对较小运行时的Jakarta EE规范子集，适用于使用轻量级运行时开发微服务。这包括一个创新的新CDI-Lite规范，用于构建轻量级的Jakarta EE应用程序。"
 
 [jakarta-ee-version-10-specifications-title]
- other = "Jakarta EE 10 Specifications"
+ other = "Jakarta EE 10 规范"
 
 [jakarta-ee-version-10-specifications-text]
- other = "Jakarta EE 10 delivers noteworthy API upgrades in over 20 specifications and adds important features requested by our global community. These enhancements include:"
+ other = "Jakarta EE 10在20多个规范中提供了值得注意的API升级，并针对来自全球Jakarta EE社区的请求添加了很多重要功能。这些增强包括："
 
 [jakarta-ee-version-10-specifications-list1]
- other = "Jakarta Contexts and Dependency Injection (CDI) 4.0, including CDI-Lite that enables build time extensions"
+ other = "Jakarta Contexts and Dependency Injection (CDI) 4.0, 包括支持构建时扩展的 CDI-Lite"
 
 [jakarta-ee-version-10-specifications-list2]
- other = "Jakarta Security 3.0 supporting OpenID Connect"
+ other = "支持 OpenID Connect 的 Jakarta Security 3.0 "
 
 [jakarta-ee-version-10-specifications-list3]
- other = "Jakarta Servlet 6.0 for simplified programming and improved security"
+ other = "简化编程和改进安全性的Jakarta Servlet 6.0"
 
 [jakarta-ee-version-10-specifications-list4]
- other = "Jakarta Faces (JSF) 4.0 with a modernized API using CDI"
+ other = "Jakarta Faces (JSF) 4.0，提供经CDI现代化的API"
 
 [jakarta-ee-version-10-specifications-list5]
- other = "Jakarta JSON Binding (JSON-B) 3.0 with new support for polymorphic types"
+ other = "Jakarta JSON Binding (JSON-B) 3.0，具有对多态类型的新支持。"
 
 [jakarta-ee-version-10-specifications-list6]
- other = "Jakarta RESTful Web Services standardizes a Java SE Bootstrap API and standard support for multipart/form-data"
+ other = "Jakarta RESTful Web Services 标准化了一个 Java SE Bootstrap API 并且提供了对 multipart/form-data 标准支持"
 
 [jakarta-ee-version-10-specifications-list7]
- other = "Jakarta Persistence standardizing UUID as Basic Type and extending Query language and Query API"
+ other = "Jakarta Persistence 将 UUID 标准化为 Basic Type 并且扩展了 Query language 和 Query API"
 
 [jakarta-ee-version-10-specifications-list8]
- other = "Jakarta Concurrency 3.0 is moved to the Web Profile and enhances parallel and reactive programming models available to applications"
+ other = "Jakarta Concurrency 3.0 划归 Web Profile 增强了应用程序可用的并行和反应式编程模型"
 
 [jakarta-ee-version-10-section-download-compatible-products]
- other = "download compatible products"
+ other = "下载兼容产品"
 
 [jakarta-ee-version-10-section-specifications]
- other = "specifications"
+ other = "规范"
 
 [jakarta-ee-version-10-section-view-all-releases]
- other = "View all Releases"
+ other = "查看所有版本"
 
 [jakarta-ee-version-9_1-features-title]
  other = "特性和收益"
@@ -540,11 +544,13 @@ other = "注册"
 [jakarta-ee-version-9_1-features-migration-title]
  other = "<br>更易迁移"
 
+[jakarta-ee-version-9_1-features-migration-text]
+ other = "为开发者测试迁移到新的命名空间提供开放、稳定的平台"
 [jakarta-ee-version-9_1-features-supporting-java-se-11]
  other = "全新支持 java se 11"
 
-[jakarta-ee-version-9_1-features-migration-text]
- other = "为开发者测试迁移到新的命名空间提供开放、稳定的平台"
+
+
 
 [jakarta-ee-version-9_1-features-participation-title]
  other = "<h2 class=\"text-blue text-center fw-600 uppercase\"><strong>社区掌控的</strong><br><span class=\"text-secondary fw-600 margin-top-0 font-exo uppercase\"><em>创新</em></span></h2>"
@@ -563,6 +569,9 @@ other = "注册"
 
 [jakarta-ee-version-9_1-powered-by-participation-title]
  other = "<h2 class=\"text-blue text-center fw-600 uppercase\"><strong>由参与者</strong><br><span class=\"text-secondary text-center fw-600 margin-top-0 font-exo uppercase\"><em>贡献</em></span></h2>"
+
+
+
 
 [jakarta-ee-version-9_1-white-paper-title]
  other = "新的白皮书"
@@ -669,6 +678,21 @@ other = "注册"
 [pages-about-jakarta-ee-learn-more]
  other = "了解更多"
 
+[pages-about-why-jakarta-ee-table-of-contents-text-primary]
+ other = "JAKARTA EE"
+
+[pages-about-why-jakarta-ee-table-of-contents-continuation-text-secondary]
+ other = "是传承"
+
+[pages-about-why-jakarta-ee-table-of-contents-ubiquitous-text-secondary]
+ other = "无所不在"
+
+[pages-about-why-jakarta-ee-table-of-contents-standard-text-secondary]
+ other = "是标准"
+
+[pages-about-why-jakarta-ee-table-of-contents-innovative-text-secondary]
+ other = "是创新"
+ 
 [pages-about-jakarta-ee-learn-more-explore-specifications]
  other = "浏览 Jakarta EE 规范"
 
@@ -741,6 +765,15 @@ other = "注册"
 [pages-resources-view-our-resources]
  other = "查看全部资源"
 
+[pages-resources-branding-title]
+ other = "品牌"
+
+[pages-resources-branding-guidelines]
+ other = "品牌指引"
+
+[pages-resources-branding-artwork]
+ other = "作品"				  
+
 [pages-resources-case-studies-title]
  other = "案例研究"
 
@@ -786,6 +819,12 @@ other = "注册"
 [pages-resources-infographics-developer-survey-findings-2020]
  other = "2020 Jakarta EE 开发者调研发现"
 
+[pages-resources-infographics-developer-survey-findings-2021]
+ other = "2021 Jakarta EE 开发者调研发现"
+
+[pages-resources-infographics-developer-survey-findings-2022]
+ other = "2022 Jakarta EE 开发者调研发现"
+ 
 [pages-resources-starter-title]
  other = "Jakarta EE 起步"
 

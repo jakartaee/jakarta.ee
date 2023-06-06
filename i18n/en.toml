@@ -677,6 +677,21 @@ other = "Sign up now"
 [pages-about-jakarta-ee-learn-more]
  other = "Learn More"
 
+[pages-about-why-jakarta-ee-table-of-contents-text-primary]
+ other = "JAKARTA EE"
+
+[pages-about-why-jakarta-ee-table-of-contents-continuation-text-secondary]
+ other = "IS CONTINUATION"
+
+[pages-about-why-jakarta-ee-table-of-contents-ubiquitous-text-secondary]
+ other = "IS UBIQUITOUS"
+
+[pages-about-why-jakarta-ee-table-of-contents-standard-text-secondary]
+ other = "IS THE STANDARD"
+
+[pages-about-why-jakarta-ee-table-of-contents-innovative-text-secondary]
+ other = "IS INNOVATIVE"
+
 [pages-about-jakarta-ee-learn-more-explore-specifications]
  other = "Explore the Jakarta EE specifications"
 

@@ -66,6 +66,12 @@
     weight = 1
 
 [[main]]
+	name = "Why Jakarta EE"
+	url = "/zh/about/why-jakarta-ee"
+	parent = "Jakarta EE"
+	weight = 2
+	
+[[main]]
     name = "常见问题"
     url = "/zh/about/faq/"
     parent = "Jakarta EE"
@@ -123,52 +129,58 @@
     identifier = "overview_resources"
 
 [[main]]
+	name = "品牌"
+	url = "/zh/resources/#branding"
+	parent = "资源"
+	weight = 3
+	
+[[main]]
     name = "数据表"
     url = "/zh/resources#datasheets"
     parent = "资源"
-    weight = 2
+    weight = 4
 
 [[main]]
     name = "文档"
     url = "/zh/resources#documentation"
     parent = "资源"
-    weight = 3
+    weight = 5
 
 [[main]]
     name = "演讲"
     url = "/zh/resources#presentations"
     parent = "资源"
-    weight = 4
+    weight = 6
 
 [[main]]
     name = "调研"
     url = "/zh/resources#surveys"
     parent = "资源"
-    weight = 5
+    weight = 7
 
 [[main]]
     name = "电子书"
     url = "/zh/resources/#ebooks"
     parent = "资源"
-    weight = 6
+    weight = 8
 
 [[main]]
     name = "白皮书"
     url = "/zh/resources/#white-papers"
     parent = "资源"
-    weight = 7
+    weight = 9
 
 [[main]]
     name = "案例研究"
     url = "/zh/resources/#cases-studies"
     parent = "资源"
-    weight = 8
+    weight = 10
 
 [[main]]
     name = "Jakarta EE 起步"
     url = "/zh/resources/#starter_jakartaee"
     parent = "资源"
-    weight = 9
+    weight = 11
 
 # specifications
 [[main]]
@@ -263,6 +275,12 @@
     url = "/zh/community/get-involved"
     parent = "社区"
     weight = 9
+
+[[main]]
+    name = "Developer Advocate"
+    url = "/zh/community/developer-advocate"
+    parent = "社区"
+    weight = 10
 
 # Membership sub-menu
 [[main]]
