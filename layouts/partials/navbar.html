@@ -1,0 +1,78 @@
+{{/*
+  Copyright (c) 2023 Eclipse Foundation, Inc.
+
+  This program and the accompanying materials are made available under the
+  terms of the Eclipse Public License v. 2.0 which is available at
+  http://www.eclipse.org/legal/epl-2.0.
+
+  Contributors:
+    Olivier Goulet <olivier.goulet@eclipse-foundation.org>
+
+  SPDX-License-Identifier: EPL-2.0
+*/}}
+
+<div class="{{ $.Site.Params.navbar_wrapper_classes | default "navbar-wrapper" }}">
+  <div class="container">
+    <div class="row" id="header-row">
+      <div class="{{ $.Site.Params.header_left_classes | default "col-sm-5 col-md-4" }}" id="header-left">
+        <div class="wrapper-logo-default">
+
+            {{ with .Page.Params.logo | default .Site.Params.logo | default "https://www.eclipse.org/eclipse.org-common/themes/solstice/public/images/logo/eclipse-foundation-white-orange.svg" }}
+
+            {{ $currentPageLogo := . }}
+            {{ $currentPageLogoTitle := $.Site.Title }}
+            {{ $currentPageLogoLink := "" }}
+
+            {{ range $.Site.Data.subsites_custom_logo.items }}
+              {{ $section := $.Site.GetPage (.page_url) }}
+              {{ if or (eq ($.Section) ($section)) ( $.Page.IsDescendant $section ) }}
+                {{ $currentPageLogo = .logo }}
+                {{ $currentPageLogoTitle = .logo_title }}
+                {{ $currentPageLogoLink = .logo_url }}
+              {{ end }}
+            {{ end }}
+
+            <a title="{{ $currentPageLogoTitle }}" href="{{ $currentPageLogoLink | absLangURL }}">
+              <img width="{{ $.Page.Params.logo_width | default $.Site.Params.logo_width | default "140"}}" class="logo-eclipse-default img-responsive hidden-xs" src="{{ $currentPageLogo | relURL }}" alt="{{ $currentPageLogoTitle }}" />
+            </a>
+            {{ end }}
+
+        </div>
+      </div>
+      {{ $has_cfa := 0 }}
+      {{ if (and (isset .Site.Params "call_for_action_text") (isset .Site.Params "call_for_action_url") (isset .Site.Params "call_for_action_icon")) }}
+        {{ $has_cfa = 1 }}
+      {{ end }}
+      <div class="{{ $.Site.Params.main_menu_wrapper_classes | default "col-sm-19 col-md-20 margin-top-10" }}{{ if eq $has_cfa 0}} reset{{ end }}" id="main-menu-wrapper">
+        {{ $normalized_cta_url := .Site.Params.call_for_action_url }}
+        {{ $hide_call_for_action := .Page.Params.hide_call_for_action }}
+        {{ if (eq (len (findRE `(\.[^\/]{3,4}|\/)$` $normalized_cta_url)) 0) }}
+          {{ $normalized_cta_url = printf "%s/" $normalized_cta_url }}
+        {{ end }}
+
+        {{ $abs_cfa := printf "%s" ($normalized_cta_url | relURL) }}
+        {{ $is_cfa_page := 0 }}
+        {{ if or (eq $normalized_cta_url .Permalink) (eq $abs_cfa .Permalink) }}
+          {{ $is_cfa_page = 1 }}
+        {{ end }}
+        {{ if and (eq $has_cfa 1) (not (or (eq .Site.Params.hide_cfa_same_page "true") (eq $is_cfa_page 1) (eq $hide_call_for_action true))) }}
+          <div class="{{ $.Site.Params.call_for_action_wrapper_classes | default "float-right hidden-xs" }}" id="btn-call-for-action">
+            <div id="btn-call-for-action"><a href="{{ .Site.Params.call_for_action_url }}" class="{{ .Site.Params.call_for_action_classes | default "btn btn-huge btn-warning" }}"><i class="fa {{ .Site.Params.call_for_action_icon }}"></i> {{ .Site.Params.call_for_action_text }}</a></div>
+            <div class="btn-starter">
+              <a class="btn btn-secondary margin-0" href="#">Starter WIP</a>
+            </div>
+          </div>
+        {{ end }}
+        <div class="{{ $.Site.Params.main_menu_classes | default "navbar float-sm-right yamm" }}" id="main-menu">
+          <div class="navbar-collapse collapse reset float-right" id="navbar-main-menu">
+            <ul class="nav navbar-nav">
+              {{ partial "nav.html" . }}
+            </ul>
+          </div>
+          {{ partial "nav_toggle.html" . }}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
