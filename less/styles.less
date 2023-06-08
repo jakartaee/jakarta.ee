@@ -27,6 +27,8 @@
 @import 'components/video-modal.less';
 @import 'components/_eclipsefdn-meeting-minutes.less';
 
+@import 'layout/_header.less';
+
 @import 'transient.less';
 @import 'release-8.less';
 @import 'release-9.less';
@@ -43,20 +45,6 @@
 
 html {
   scroll-behavior: smooth;
-}
-
-.navbar-wrapper, 
-.toolbar-container-wrapper {
-  & > .container {
-    width: 100%;
-    max-width: 1920px;
-  }
-}
-
-@media (max-width: @screen-md-max) {
-  #btn-call-for-action {
-    margin-top: 0;
-  }
 }
 
 .br {
