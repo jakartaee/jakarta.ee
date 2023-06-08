@@ -57,10 +57,10 @@
         {{ end }}
         {{ if and (eq $has_cfa 1) (not (or (eq .Site.Params.hide_cfa_same_page "true") (eq $is_cfa_page 1) (eq $hide_call_for_action true))) }}
           <div class="{{ $.Site.Params.call_for_action_wrapper_classes | default "float-right hidden-xs" }}" id="btn-call-for-action">
-            <div id="btn-call-for-action"><a href="{{ .Site.Params.call_for_action_url }}" class="{{ .Site.Params.call_for_action_classes | default "btn btn-huge btn-warning" }}"><i class="fa {{ .Site.Params.call_for_action_icon }}"></i> {{ .Site.Params.call_for_action_text }}</a></div>
             <div class="btn-starter">
               <a class="btn btn-secondary margin-0" href="https://start.jakarta.ee/">Starter</a>
             </div>
+            <div id="btn-call-for-action"><a href="{{ .Site.Params.call_for_action_url }}" class="{{ .Site.Params.call_for_action_classes | default "btn btn-huge btn-warning" }}"><i class="fa {{ .Site.Params.call_for_action_icon }}"></i> {{ .Site.Params.call_for_action_text }}</a></div>
           </div>
         {{ end }}
         <div class="{{ $.Site.Params.main_menu_classes | default "navbar float-sm-right yamm" }}" id="main-menu">
