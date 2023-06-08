@@ -17,9 +17,42 @@ Jakarta EE 为基于云原生的企业级应用程序提供了一套开源的技
 
 ## 社区活动
 
-首次 [JakartaOne LIveStream](https://jakartaone.org/zh/2022/chinese/) 中文活动于2022年8月31日成功举办，活动吸引接近5000人次关注，[点击此处查看活动回放](https://meeting.tencent.com/dw/5U7mti09N1FF)
+主题: Jakarta EE 和 MicroProfile 的明天会怎样？
+- 说明：首次Jakarta中国社区技术活动
+- 日期: 2022-07-07 19:38:04
+- [点此查看回放](https://meeting.tencent.com/v2/cloud-record/share?id=343cdca2-098a-416b-aaba-b0b5a973aa5d&from=3)
 
-首次 JakartaTechTalk 中国区活动于2022年7月7日成功举办，[点击此处查看活动回放](https://meeting.tencent.com/dw/8LlPUUrtEqAZ)
+主题: JakartaOne Livestream Chinese
+- 说明：首次 [JakartaOne LIveStream](https://jakartaone.org/zh/2022/chinese/) 中文活动于2022年8月31日成功举办，活动吸引接近5000人次关注
+- 日期: 2022-08-31 13:09:25
+- [点此查看回放](https://meeting.tencent.com/v2/cloud-record/share?id=8a3e8c40-93fb-4616-b280-3bc50b9fcff7&from=3&is-single=true)
+
+主题: Jakarta EE 工作组会议通报
+- 说明：分享工作组最新工作进展
+- 日期: 2023-04-13 19:43:49
+- [点此查看回放](https://meeting.tencent.com/v2/cloud-record/share?id=db2a6491-3430-4caf-8717-c0d66f9562ab&from=3&is-single=true)
+
+主题: MicroProfile是SpringCloud的挑战者还是掘墓人?
+- 说明：多方面对比标准框架和实现框架
+- 日期: 2023-02-16 19:27:29
+- [点此查看回放](https://meeting.tencent.com/v2/cloud-record/share?id=2fb667b6-d7c9-43e4-bb8d-01ff680dada7&from=3&is-single=true)
+
+## 翻译文章
+[Jakarta EE社区更新](http://jakartaee.cn/index.php/archives/88/)
+
+[Liberty InstantOn 为云原生Java应用程序提供快速启动能力](http://jakartaee.cn/index.php/archives/58/)
+
+[构建云原生微服务，我该选择哪种技术路线？](http://jakartaee.cn/index.php/archives/51/)
+
+[Jakarta EE 10 最值得关注的5项新特性](http://jakartaee.cn/index.php/archives/48/)
+
+[Jakarta EE 社区 2022 年度回顾](http://jakartaee.cn/index.php/archives/49/)
+
+[Jakarta EE白皮书：为什么Jakarta EE是当今Java应用的正确选择](http://jakartaee.cn/index.php/archives/28/)
+
+[JAKARTA EE 2020开发者调研报告](http://jakartaee.cn/admin/write-post.php?cid=24)
+
+[关于 Jakarta EE 的一些问答](http://jakartaee.cn/admin/write-post.php?cid=3)
 
 ## 如何与我们一起推动 Jakarta EE 中国社区的进展
 
