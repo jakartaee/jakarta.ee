@@ -1,0 +1,31 @@
+/*
+ * Copyright (c) 2022, 2023 Eclipse Foundation, Inc.
+ *
+ * This program and the accompanying materials are made available under the
+ * terms of the Eclipse Public License v. 2.0 which is available at
+ * http://www.eclipse.org/legal/epl-2.0.
+ *
+ * Contributors:
+ *   Olivier Goulet <olivier.goulet@eclipse-foundation.org>
+ *
+ * SPDX-License-Identifier: EPL-2.0
+*/
+
+// Expand container size for navbar and toolbar
+.navbar-wrapper, 
+.toolbar-container-wrapper {
+  & > .container {
+    width: 100%;
+    max-width: 1920px;
+  }
+}
+
+@media (max-width: @screen-md-max) {
+  #btn-call-for-action {
+    margin-top: 0;
+  }
+}
+
+.navbar-wrapper .btn {
+  padding: 0.8rem 1.5rem;
+}
