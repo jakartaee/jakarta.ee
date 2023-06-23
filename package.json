@@ -28,7 +28,8 @@
   "dependencies": {
     "eclipsefdn-hugo-solstice-theme": "0.0.181",
     "list.js": "^1.2.0",
-    "lodash-es": "4.17.15"
+    "lodash-es": "4.17.15",
+    "querystring-es3": "^0.2.1"
   },
   "devDependencies": {
     "vue-template-compiler": "2.6.12"
