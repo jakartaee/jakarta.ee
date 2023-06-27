@@ -16,6 +16,12 @@ years:
     date: Nov 8-10
     upcoming: true
 
+  - name: IBM TechXchange
+    url: https://www.ibm.com/community/ibm-techxchange-conference/
+    location: Las Vegas, USA
+    date: Sep 11-14
+    upcoming: true
+
   - name: JCrete
     url: https://www.jcrete.org/
     location: Kolymvari, Greece
