@@ -32,13 +32,12 @@ years:
     url: http://amsterdamjug.com/
     location: Amsterdam, Netherlands
     date: Jun 29
-    upcoming: true
 
   - name: GOTO Amsterdam
     url: https://gotoams.nl/2023
     location: Amsterdam, Netherlands
     date: Jun 27-29
-    upcoming: true
+    blog: https://www.agilejava.eu/2023/06/29/goto-amsterdam-2023/
 
   - name: JPrime
     url: https://jprime.io/
