@@ -28,7 +28,7 @@
   "dependencies": {
     "eclipsefdn-hugo-solstice-theme": "0.0.186",
     "list.js": "^1.2.0",
-    "lodash-es": "4.17.15",
+    "lodash-es": "^4.17.21",
     "querystring-es3": "^0.2.1"
   },
   "devDependencies": {
