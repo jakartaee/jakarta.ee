@@ -15,11 +15,20 @@ require('./node_modules/eclipsefdn-solstice-assets/webpack-solstice-assets.mix.j
 let mix = require('laravel-mix');
 mix.EclipseFdnSolsticeAssets();
 
+// required to resolve missing polyfills
+mix.webpackConfig({
+  resolve: {
+    fallback: {
+      querystring: require.resolve('querystring-es3'),
+    },
+  },
+});
+
 mix.setPublicPath('static');
 mix.setResourceRoot('../');
 
 mix.less('./less/styles.less', 'static/css/styles.css');
-mix.less('./less/page_css_file/about/why-jakarta-ee/styles.less', 'static/css/why-jakarta-ee-styles.css')
+mix.less('./less/page_css_file/about/why-jakarta-ee/styles.less', 'static/css/why-jakarta-ee-styles.css');
 
 mix.js('js/main.js', './static/js/solstice.js');
 
