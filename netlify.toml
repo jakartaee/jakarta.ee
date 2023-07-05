@@ -3,7 +3,7 @@ publish = "public"
 command = "npm run build_netlify && hugo"
 
 [build.environment]
-NODE_VERSION = "12.18.3"
+NODE_VERSION = "18.13.0"
 
 [context.production.environment]
 HUGO_VERSION = "0.110.0"
