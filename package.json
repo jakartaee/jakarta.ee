@@ -26,13 +26,15 @@
     "optimize_news_images": "bash ./optimize_images.sh content/news"
   },
   "dependencies": {
-    "eclipsefdn-hugo-solstice-theme": "0.0.186",
+    "eclipsefdn-hugo-solstice-theme": "^0.0.187",
     "list.js": "^1.2.0",
-    "lodash-es": "^4.17.21",
-    "querystring-es3": "^0.2.1"
+    "lodash-es": "^4.17.21"
   },
   "devDependencies": {
     "vue-template-compiler": "2.6.12"
+  },
+  "overrides": {
+    "semver": "^7.5.3"
   },
   "browserslist": "last 5 version, > 0.2%, not dead, IE 11"
 }

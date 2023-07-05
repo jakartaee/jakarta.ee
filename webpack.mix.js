@@ -15,15 +15,6 @@ require('./node_modules/eclipsefdn-solstice-assets/webpack-solstice-assets.mix.j
 let mix = require('laravel-mix');
 mix.EclipseFdnSolsticeAssets();
 
-// required to resolve missing polyfills
-mix.webpackConfig({
-  resolve: {
-    fallback: {
-      querystring: require.resolve('querystring-es3'),
-    },
-  },
-});
-
 mix.setPublicPath('static');
 mix.setResourceRoot('../');
 
