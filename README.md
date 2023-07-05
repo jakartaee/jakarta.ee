@@ -1,6 +1,6 @@
 # jakarta.ee
 
-The [jakarta.ee](https://jakarta.ee) website is generated with [Hugo](https://gohugo.io/documentation/) 0.76.5.
+The [jakarta.ee](https://jakarta.ee) website is generated with [Hugo](https://gohugo.io/documentation/) 0.110.0.
 
 Jakarta EE is the future of cloud native Java. Jakarta EE open source software drives cloud native innovation, modernizes enterprise applications and protects investments in Java EE.
 
@@ -13,7 +13,7 @@ This site is powered by [Netlify](https://www.netlify.com/).
 Install dependencies, build assets and start a web server:
 
 ```bash
-npm && npm run production
+npm install -ci && npm run production
 hugo server
 ```
 
