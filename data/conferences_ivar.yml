@@ -16,6 +16,12 @@ years:
     date: Nov 8-10
     upcoming: true
 
+  - name: EclipseCon
+    url: https://www.eclipsecon.org/2023
+    location: Ludwigsburg, Germany
+    date: Oct 16-19
+    upcoming: true
+
   - name: IBM TechXchange
     url: https://www.ibm.com/community/ibm-techxchange-conference/
     location: Las Vegas, USA
@@ -26,8 +32,7 @@ years:
     url: https://www.jcrete.org/
     location: Kolymvari, Greece
     date: Jul 2-7
-    upcoming: true
-
+    
   - name: Amsterdam JUG
     url: http://amsterdamjug.com/
     location: Amsterdam, Netherlands
