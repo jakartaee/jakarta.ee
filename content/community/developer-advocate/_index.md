@@ -14,6 +14,7 @@ On this page, you can find some information about how to reach out to me, and wh
 - [LinkedIn](https://www.linkedin.com/in/ivargrimstad/)
 - [Twitter](https://twitter.com/ivar_grimstad)
 - [Mastodon](https://mastodon.social/@ivar_grimstad)
+- [Bluesky](https://bsky.app/profile/ivargrimstad.bsky.social)
 - [Instagram](https://www.instagram.com/ivargrimstad_official/)
 - [Blog](https://blogs.eclipse.org/blogs/ivar-grimstad)
 
