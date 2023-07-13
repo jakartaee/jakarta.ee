@@ -34,6 +34,12 @@ years:
     date: Sep 11-14
     upcoming: true
 
+  - name: Java Meetup @ Picnic
+    url: 
+    location: Amsterdam, Netherlands
+    date: Sep 7
+    upcoming: true
+
   - name: JCrete
     url: https://www.jcrete.org/
     location: Kolymvari, Greece
