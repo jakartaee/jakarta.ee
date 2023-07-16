@@ -28,6 +28,24 @@ years:
     date: Oct 16-19
     upcoming: true
 
+  - name: Omaha JUG
+    url: 
+    location: Omaha, USA
+    date: Sep 21
+    upcoming: true
+
+  - name: Garden State JUG
+    url: 
+    location: New Jersey, USA
+    date: Sep 19
+    upcoming: true
+
+  - name: Central Ohio JUG
+    url: 
+    location: Columbus, USA
+    date: Sep 18
+    upcoming: true
+
   - name: IBM TechXchange
     url: https://www.ibm.com/community/ibm-techxchange-conference/
     location: Las Vegas, USA
