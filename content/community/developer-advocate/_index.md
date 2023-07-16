@@ -24,6 +24,6 @@ Here is a list of past and future conferences where you will be able to meet me.
 My favorite part of every conference is the *hallway track*.
 Please come over and say hello. Don't be shy!
 
-The slides from my conference talks are posted either on [SlideShare](https://www.slideshare.net/ivargrimstad) or [SpeakerDeck](https://speakerdeck.com/ivargrimstad).
+The slides from my conference talks are posted either on [SpeakerDeck](https://speakerdeck.com/ivargrimstad) or [SlideShare](https://www.slideshare.net/ivargrimstad).
 
 {{< conferences/list >}}
