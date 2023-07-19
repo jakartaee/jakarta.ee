@@ -50,7 +50,6 @@
       <div class="row">
       {{ range (.Page.Sections.ByParam "title").ByParam "weight" }}
           {{ if or (eq .Title "Jakarta EE Platform") (eq .Title "Jakarta EE Web Profile") (eq .Title "Jakarta EE Core Profile") }}
-              {{ $video_url := "https://www.youtube.com/watch?v=wK5Uis9QnFU" }}
               <div class="col-sm-8 card-container">
                   <div class="card-panel bordered panel panel-default">
 
@@ -69,7 +68,7 @@
                                 <li>
                                   <a 
                                     class="btn btn-xs card-badge" 
-                                    href="{{ $video_url }}" 
+                                    href="https://www.youtube.com/watch?v=wK5Uis9QnFU" 
                                     target="_blank"
                                   >
                                     <i class="fa fa-youtube-play" aria-hidden="true"></i>
