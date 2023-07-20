@@ -19,8 +19,15 @@ mix.setPublicPath('static');
 mix.setResourceRoot('../');
 
 mix.less('./less/styles.less', 'static/css/styles.css');
-mix.less('./less/page_css_file/about/why-jakarta-ee/styles.less', 'static/css/why-jakarta-ee-styles.css')
+mix.less('./less/page_css_file/about/why-jakarta-ee/styles.less', 'static/css/why-jakarta-ee-styles.css');
 
 mix.js('js/main.js', './static/js/solstice.js');
 
 mix.js('./js/contributor-cards/index.js', './static/js/release-page-cards.js');
+
+https://github.com/laravel-mix/laravel-mix/issues/3235#issuecomment-1594021917
+mix.webpackConfig({
+  "resolve": {
+      "fallback": { "querystring": require.resolve("querystring-es3")}
+  }
+})

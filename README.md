@@ -1,19 +1,19 @@
 # jakarta.ee
 
-The [jakarta.ee](https://jakarta.ee) website is generated with [Hugo](https://gohugo.io/documentation/) 0.76.5.
+The [jakarta.ee](https://jakarta.ee) website is generated with [Hugo](https://gohugo.io/documentation/) 0.110.0.
 
 Jakarta EE is the future of cloud native Java. Jakarta EE open source software drives cloud native innovation, modernizes enterprise applications and protects investments in Java EE.
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/8d42015f-09c7-46b1-9f9c-419404d01f6d/deploy-status)](https://app.netlify.com/sites/jakartaee/deploys)
 
-This site is powered by [Netlify](https://www.netlify.com/). 
+This site is powered by [Netlify](https://www.netlify.com/).
 
 ## Getting Started
 
 Install dependencies, build assets and start a web server:
 
 ```bash
-yarn && yarn run production
+npm install -ci && npm run production
 hugo server
 ```
 
@@ -22,7 +22,7 @@ hugo server
 Fetch and copy pages for the Specification section:
 
 ```bash
-yarn run specifications
+npm run specifications
 ```
 
 ### Contributors list (Optional)
@@ -30,13 +30,13 @@ yarn run specifications
 Contributors list json file (_used on release page_) can be generate via:
 
 ```bash
-yarn run generate_contributor_list
+npm run generate_contributor_list
 ```
 
 P.S. Script also needs GH_TOKEN env variable to work, to run with env variable inline:
 
 ```bash
-GH_TOKEN=<gh token here> yarn run generate_contributor_list
+GH_TOKEN=<gh token here> npm run generate_contributor_list
 ```
 
 ## Contributing
@@ -110,7 +110,7 @@ summary: "Summary text to be presented in the news index page"
 - For the correct list of `type` and `news/tags`, review previous entries before creating a new one.
 - `authors` section receive a list of Github Handles and names, this is used to populate images and authors name automatically in the entry.
 
-The rest of the `_index.md` needs general markdown format to populate the new entry content. 
+The rest of the `_index.md` needs general markdown format to populate the new entry content.
 
 Eclipse Foundation Marketing Manager is responsible for approving the new entry (via pull request) for the `https://jakarta.ee/news/` section.
 
@@ -143,7 +143,7 @@ summary: "Summary text to be presented in the blogs index page"
 ---
 ```
 
-The rest of the `index.md` needs general markdown format to populate the new entry content. 
+The rest of the `index.md` needs general markdown format to populate the new entry content.
 
 Eclipse Foundation Marketing Manager is responsible for approving the new entry (via pull request) for the `https://jakarta.ee/blogs/` section.
 
@@ -171,8 +171,8 @@ Let's say we created a new post on jakarta.ee/news/ with the title "Jakarta EE 9
 
 ### How to add a compatible product in Jakarta EE compatible products section
 
-Create a new item with the same structure as existing ones in /data/compatible_products.yml-sets-items-items and fill the information. 
-``` 
+Create a new item with the same structure as existing ones in /data/compatible_products.yml-sets-items-items and fill the information.
+```
 - name: [product name]
   vendor: [member/company name]
   image: '/images/compatible_products/[product logo]'

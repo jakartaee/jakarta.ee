@@ -14,6 +14,7 @@ On this page, you can find some information about how to reach out to me, and wh
 - [LinkedIn](https://www.linkedin.com/in/ivargrimstad/)
 - [Twitter](https://twitter.com/ivar_grimstad)
 - [Mastodon](https://mastodon.social/@ivar_grimstad)
+- [Bluesky](https://bsky.app/profile/ivargrimstad.bsky.social)
 - [Instagram](https://www.instagram.com/ivargrimstad_official/)
 - [Blog](https://blogs.eclipse.org/blogs/ivar-grimstad)
 
@@ -23,6 +24,6 @@ Here is a list of past and future conferences where you will be able to meet me.
 My favorite part of every conference is the *hallway track*.
 Please come over and say hello. Don't be shy!
 
-The slides from my conference talks are posted either on [SlideShare](https://www.slideshare.net/ivargrimstad) or [SpeakerDeck](https://speakerdeck.com/ivargrimstad).
+The slides from my conference talks are posted either on [SpeakerDeck](https://speakerdeck.com/ivargrimstad) or [SlideShare](https://www.slideshare.net/ivargrimstad).
 
 {{< conferences/list >}}

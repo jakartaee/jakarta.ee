@@ -10,29 +10,71 @@ years:
     date: Dec 5
     upcoming: true
 
+  - name: JDevSummitIL
+    url: https://jdevsummitil.com/
+    location: Tel-Aviv, Israel
+    date: Nov 20
+    upcoming: true
+
   - name: Øredev
     url: https://oredev.org/
     location: Malmö, Sweden
     date: Nov 8-10
     upcoming: true
 
+  - name: EclipseCon
+    url: https://www.eclipsecon.org/2023
+    location: Ludwigsburg, Germany
+    date: Oct 16-19
+    upcoming: true
+
+  - name: Omaha JUG
+    url: 
+    location: Omaha, USA
+    date: Sep 21
+    upcoming: true
+
+  - name: Garden State JUG
+    url: 
+    location: New Jersey, USA
+    date: Sep 19
+    upcoming: true
+
+  - name: Central Ohio JUG
+    url: 
+    location: Columbus, USA
+    date: Sep 18
+    upcoming: true
+
+  - name: IBM TechXchange
+    url: https://www.ibm.com/community/ibm-techxchange-conference/
+    location: Las Vegas, USA
+    date: Sep 11-14
+    upcoming: true
+
+  - name: Java Meetup @ Picnic
+    url: 
+    location: Amsterdam, Netherlands
+    date: Sep 7
+    upcoming: true
+
   - name: JCrete
     url: https://www.jcrete.org/
     location: Kolymvari, Greece
     date: Jul 2-7
-    upcoming: true
-
+    blog: https://www.agilejava.eu/2023/07/12/jcrete-2023/
+    
   - name: Amsterdam JUG
     url: http://amsterdamjug.com/
     location: Amsterdam, Netherlands
     date: Jun 29
-    upcoming: true
+    blog: https://www.agilejava.eu/2023/06/30/amsterdam-jug/
 
   - name: GOTO Amsterdam
     url: https://gotoams.nl/2023
     location: Amsterdam, Netherlands
     date: Jun 27-29
-    upcoming: true
+    blog: https://www.agilejava.eu/2023/06/29/goto-amsterdam-2023/
 
   - name: JPrime
     url: https://jprime.io/
