@@ -28,6 +28,18 @@ years:
     date: Oct 16-19
     upcoming: true
 
+  - name: Community Over Code
+    url: https://communityovercode.org/
+    location: Halifax, Canada
+    date: Oct 7-10
+    upcoming: true
+
+  - name: Montreal JUG
+    url: 
+    location: Montreal, Canada
+    date: Sep 22
+    upcoming: true
+
   - name: Omaha JUG
     url: 
     location: Omaha, USA
