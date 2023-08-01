@@ -28,6 +28,12 @@ years:
     date: Oct 16-19
     upcoming: true
 
+  - name: Devoxx Morocco
+    url: https://devoxx.ma/
+    location: Agadir, Morocco
+    date: Oct 11-13
+    upcoming: true
+
   - name: Community Over Code
     url: https://communityovercode.org/
     location: Halifax, Canada
