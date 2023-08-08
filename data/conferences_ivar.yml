@@ -41,25 +41,25 @@ years:
     upcoming: true
 
   - name: Montreal JUG
-    url: 
+    url: https://www.montreal-jug.org/
     location: Montreal, Canada
     date: Sep 22
     upcoming: true
 
   - name: Omaha JUG
-    url: 
+    url: https://www.meetup.com/omahajava/
     location: Omaha, USA
     date: Sep 21
     upcoming: true
 
   - name: Garden State JUG
-    url: 
+    url: https://gsjug.org
     location: New Jersey, USA
     date: Sep 19
     upcoming: true
 
   - name: Central Ohio JUG
-    url: 
+    url: https://www.cojug.org/
     location: Columbus, USA
     date: Sep 18
     upcoming: true
