@@ -1,5 +1,13 @@
 ---
 title: Jakarta EE 10 Tools Vendor Datasheet
+description: > 
+  Jakarta EE 10 includes a number of improvements to existing specifications.
+keywords:
+  - specifications
+  - updates
+  - roadmap
+  - jakarta ee 10
+  - release
 headline: Tools Vendor Datasheet
 subtitle: Jakarta EE 10
 tagline: Start your migration today!
