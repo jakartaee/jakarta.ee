@@ -17,7 +17,7 @@
         {{ if .url }}
           <a href="{{ .url }}" target="_blank">{{ .name }} {{ if .upcoming }}(*){{ end }}</a>
         {{ else }}
-          {{ .name }}
+          {{ .name }} {{ if .upcoming }}(*){{ end }}
         {{ end }}
         </td>
         <td>{{ .location }}</td>
