@@ -785,6 +785,12 @@ other = "Sign up now"
 [pages-resources-datasheets-text]
  other = "Jakarta EE 9 Tools Vendor Datasheet"
 
+[pages-resources-datasheets-jakarta-ee-10-tools-vendor-pdf]
+ other = "Jakarta EE 10 Tools Vendor Datasheet (PDF)"
+
+[pages-resources-datasheets-jakarta-ee-10-tools-vendor-html]
+ other = "Jakarta EE 10 Tools Vendor Datasheet (HTML)"
+
 [pages-resources-documentation-title]
  other = "Documentation"
 
