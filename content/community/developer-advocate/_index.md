@@ -12,7 +12,7 @@ On this page, you can find some information about how to reach out to me, and wh
 ## Social Media {#socials}
 
 - [LinkedIn](https://www.linkedin.com/in/ivargrimstad/)
-- [X.](https://x.com/ivar_grimstad)
+- [X (Twitter)](https://x.com/ivar_grimstad)
 - [Mastodon](https://mastodon.social/@ivar_grimstad)
 - [Bluesky](https://bsky.app/profile/ivargrimstad.bsky.social)
 - [Instagram](https://www.instagram.com/ivargrimstad_official/)
