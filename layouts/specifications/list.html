@@ -25,6 +25,7 @@
       {{ end }}
     </h1>
   {{ end }}
+  <p>{{ .Params.summary }}</p>
   {{ .Content }}
   {{ if eq .Page.Parent.Title "Specifications" }}
     <ul>
