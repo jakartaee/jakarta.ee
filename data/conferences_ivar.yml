@@ -40,6 +40,12 @@ years:
     date: Oct 7-10
     upcoming: true
 
+  - name: Devoxx Belgium
+    url: https://devoxx.be/
+    location: Antwerp, Belgium
+    date: Oct 2-6
+    upcoming: true
+
   - name: Montreal JUG
     url: https://www.montreal-jug.org/
     location: Montreal, Canada
