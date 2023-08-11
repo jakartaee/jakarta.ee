@@ -144,12 +144,12 @@ Jakarta EE is ready to innovate and always looking for community feedback. It ha
     {{</ pages/about/why-jakarta-ee/info-card >}}
 
     {{< pages/about/why-jakarta-ee/info-card
-        title="Browse Specifications"
+        title="Get Started"
         icon="images/icons/browse-specifications-icon.svg"
-        href="/specifications"
-        link_text="Browse Now"
+        href="https://start.jakarta.ee/"
+        link_text="Start Now"
     >}}
-        Find Jakarta EE Platform, Profile and Individual specification documents.
+        Generate a Jakarta EE project to get started.
     {{</ pages/about/why-jakarta-ee/info-card >}}
 
     {{< pages/about/why-jakarta-ee/info-card 
