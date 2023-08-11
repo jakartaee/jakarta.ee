@@ -55,12 +55,12 @@ Jakarta EE is the standard, a set of [specifications](/specifications) for
 enterprise Java application development. It is well-understood and widely
 accepted because of its stability, portability, and backwards compatibility.
 
-But being the standard does not mean being rigid. Jakarta EE is modular -
-capable of being adapted to fit different platforms and profiles for different
-organisations all over the world. Jakarta EE enables you to use the individual
-specifications independently or together.  Depending on your application type
-and needs you may choose to utilise the Jakarta EE Platform, Jakarta EE Web
-Profile or Jakarta EE Core Profile.
+But being the standard does not mean being rigid. Jakarta EE avoids single
+vendor lock-in and is modular - capable of being adapted to fit different
+platforms and profiles for different organisations all over the world. Jakarta
+EE enables you to use the individual specifications independently or together.
+Depending on your application type and needs you may choose to utilise the
+Jakarta EE Platform, Jakarta EE Web Profile or Jakarta EE Core Profile.
 
 {{</ pages/about/why-jakarta-ee/split-section >}}
 
