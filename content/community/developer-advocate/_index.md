@@ -27,3 +27,5 @@ Please come over and say hello. Don't be shy!
 The slides from my conference talks are posted either on [SpeakerDeck](https://speakerdeck.com/ivargrimstad) or [SlideShare](https://www.slideshare.net/ivargrimstad).
 
 {{< conferences/list >}}
+
+[Prior Talks](https://www.agilejava.eu/about/speaker-bio/)
