@@ -40,36 +40,27 @@ page_css_file: css/why-jakarta-ee-styles.css
 disable_header_bg: true
 ---
 
-{{< pages/about/why-jakarta-ee/table-of-contents section_ids="continuation,ubiquitous,standard,innovative" >}}
+{{< pages/about/why-jakarta-ee/table-of-contents section_ids="standard,ubiquitous,continuation,innovative" >}}
 
-{{< pages/about/why-jakarta-ee/split-section 
-    id="continuation" 
-    heading="Jakarta EE" 
-    subheading="is Continuation" 
-    image="images/continuation-image.jpg" 
-    image_wrapper_class="graph-pattern graph-pattern-1" 
-    icon="images/icons/continuation-icon.svg" 
+{{< pages/about/why-jakarta-ee/split-section
+    id="standard"
+    heading="Jakarta EE"
+    subheading="is the Standard"
+    image="images/standard-image.jpg"
+    image_wrapper_class="graph-pattern graph-pattern-standard"
+    icon="images/icons/standard-icon.svg"
 >}}
 
-Java is one of the prevalent programming languages in the industry, with an
-unbeaten reputation for stability, compatibility, and portability. With the
-rise of Java, Java EE was established as a set of
-[specifications](/specifications) for enterprise Java application development.
-Java EE has become an application developer’s go-to technology over the past
-decade. A vast majority of Fortune 500 companies are running their
-mission-critical applications on Java EE, and now, Jakarta EE - they are
-choosing an open, vendor-neutral, and community-driven approach to application
-development technologies.
+Jakarta EE is the standard, a set of [specifications](/specifications) for
+enterprise Java application development. It is well-understood and widely
+accepted because of its stability, portability, and backwards compatibility.
 
-Most developers already know that Jakarta EE is the continuation of Java EE,
-focusing on modernizing its foundation for today’s needs of cloud
-architectures. However, they may not be fully aware of how ingrained the
-technologies continue to be in the industry, or why leading organizations are
-choosing Jakarta EE for cloud native Java applications.
-
-There are several strategies and designs in enterprise architecture, such as
-microservices, monolithic applications, etc. Jakarta EE brings stability with
-innovation and the guarantee of long-term support for all your company needs.
+But being the standard does not mean being rigid. Jakarta EE is modular -
+capable of being adapted to fit different platforms and profiles for different
+organisations all over the world. Jakarta EE enables you to use the individual
+specifications independently or together.  Depending on your application type
+and needs you may choose to utilise the Jakarta EE Platform, Jakarta EE Web
+Profile or Jakarta EE Core Profile.
 
 {{</ pages/about/why-jakarta-ee/split-section >}}
 
@@ -108,26 +99,34 @@ functions that is not available in any other Java framework.
     
 {{</ pages/about/why-jakarta-ee/split-section >}}
 
-
-{{< pages/about/why-jakarta-ee/split-section
-    id="standard"
-    heading="Jakarta EE"
-    subheading="is the Standard"
-    image="images/standard-image.jpg"
-    image_wrapper_class="graph-pattern graph-pattern-standard"
-    icon="images/icons/standard-icon.svg"
+{{< pages/about/why-jakarta-ee/split-section 
+    id="continuation" 
+    heading="Jakarta EE" 
+    subheading="is Continuation" 
+    image="images/continuation-image.jpg" 
+    image_wrapper_class="graph-pattern graph-pattern-1" 
+    icon="images/icons/continuation-icon.svg" 
 >}}
 
-Jakarta EE is the standard, a set of [specifications](/specifications) for
-enterprise Java application development. It is well-understood and widely
-accepted because of its stability, portability, and backwards compatibility.
+Java is one of the prevalent programming languages in the industry, with an
+unbeaten reputation for stability, compatibility, and portability. With the
+rise of Java, Java EE was established as a set of
+[specifications](/specifications) for enterprise Java application development.
+Java EE has become an application developer’s go-to technology over the past
+decade. A vast majority of Fortune 500 companies are running their
+mission-critical applications on Java EE, and now, Jakarta EE - they are
+choosing an open, vendor-neutral, and community-driven approach to application
+development technologies.
 
-But being the standard does not mean being rigid. Jakarta EE is modular -
-capable of being adapted to fit different platforms and profiles for different
-organisations all over the world. Jakarta EE enables you to use the individual
-specifications independently or together.  Depending on your application type
-and needs you may choose to utilise the Jakarta EE Platform, Jakarta EE Web
-Profile or Jakarta EE Core Profile.
+Most developers already know that Jakarta EE is the continuation of Java EE,
+focusing on modernizing its foundation for today’s needs of cloud
+architectures. However, they may not be fully aware of how ingrained the
+technologies continue to be in the industry, or why leading organizations are
+choosing Jakarta EE for cloud native Java applications.
+
+There are several strategies and designs in enterprise architecture, such as
+microservices, monolithic applications, etc. Jakarta EE brings stability with
+innovation and the guarantee of long-term support for all your company needs.
 
 {{</ pages/about/why-jakarta-ee/split-section >}}
 
