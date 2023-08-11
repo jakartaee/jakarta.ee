@@ -6,175 +6,175 @@ years:
 
   - name: JakartaOne Livestream
     url: https://jakartaone.org/
-    location: online
+    location: online 🌐
     date: Dec 5
     upcoming: true
 
   - name: JDevSummitIL
     url: https://jdevsummitil.com/
-    location: Tel-Aviv, Israel
+    location: Tel-Aviv, Israel 🇮🇱
     date: Nov 20
     upcoming: true
 
   - name: Øredev
     url: https://oredev.org/
-    location: Malmö, Sweden
+    location: Malmö, Sweden 🇸🇪
     date: Nov 8-10
     upcoming: true
 
   - name: EclipseCon
     url: https://www.eclipsecon.org/2023
-    location: Ludwigsburg, Germany
+    location: Ludwigsburg, Germany 🇩🇪
     date: Oct 16-19
     upcoming: true
 
   - name: Devoxx Morocco
     url: https://devoxx.ma/
-    location: Agadir, Morocco
+    location: Agadir, Morocco 🇲🇦
     date: Oct 11-13
     upcoming: true
 
   - name: Community Over Code
     url: https://communityovercode.org/
-    location: Halifax, Canada
+    location: Halifax, Canada 🇨🇦
     date: Oct 7-10
     upcoming: true
 
   - name: Devoxx Belgium
     url: https://devoxx.be/
-    location: Antwerp, Belgium
+    location: Antwerp, Belgium 🇧🇪
     date: Oct 2-6
     upcoming: true
 
   - name: Montreal JUG
     url: https://www.montreal-jug.org/
-    location: Montreal, Canada
+    location: Montreal, Canada 🇨🇦
     date: Sep 22
     upcoming: true
 
   - name: Omaha JUG
     url: https://www.meetup.com/omahajava/
-    location: Omaha, USA
+    location: Omaha, USA 🇺🇸
     date: Sep 21
     upcoming: true
 
   - name: Garden State JUG
     url: https://gsjug.org
-    location: New Jersey, USA
+    location: New Jersey, USA 🇺🇸
     date: Sep 19
     upcoming: true
 
   - name: Central Ohio JUG
     url: https://www.cojug.org/
-    location: Columbus, USA
+    location: Columbus, USA 🇺🇸
     date: Sep 18
     upcoming: true
 
   - name: IBM TechXchange
     url: https://www.ibm.com/community/ibm-techxchange-conference/
-    location: Las Vegas, USA
+    location: Las Vegas, USA 🇺🇸
     date: Sep 11-14
     upcoming: true
 
   - name: Java Meetup @ Picnic
     url: 
-    location: Amsterdam, Netherlands
+    location: Amsterdam, Netherlands 🇳🇱
     date: Sep 6
     upcoming: true
 
   - name: JCrete
     url: https://www.jcrete.org/
-    location: Kolymvari, Greece
+    location: Kolymvari, Greece 🇬🇷
     date: Jul 2-7
     blog: https://www.agilejava.eu/2023/07/12/jcrete-2023/
     
   - name: Amsterdam JUG
     url: http://amsterdamjug.com/
-    location: Amsterdam, Netherlands
+    location: Amsterdam, Netherlands 🇳🇱
     date: Jun 29
     blog: https://www.agilejava.eu/2023/06/30/amsterdam-jug/
 
   - name: GOTO Amsterdam
     url: https://gotoams.nl/2023
-    location: Amsterdam, Netherlands
+    location: Amsterdam, Netherlands 🇳🇱
     date: Jun 27-29
     blog: https://www.agilejava.eu/2023/06/29/goto-amsterdam-2023/
 
   - name: JPrime
     url: https://jprime.io/
-    location: Sofia, Bulgaria
+    location: Sofia, Bulgaria 🇧🇬
     date: May 30-31
     blog: https://www.agilejava.eu/2023/06/01/jprime-2023/
 
   - name: Infoshare
     url: https://infoshare.pl/conference/
-    location: Gdańsk, Poland
+    location: Gdańsk, Poland 🇵🇱
     date: May 24-25
     blog: https://www.agilejava.eu/2023/05/25/infoshare-2023/
 
   - name: Devoxx UK
     url: https://www.devoxx.co.uk/
-    location: London, UK
+    location: London, UK 🇬🇧
     date: May 10-12
     blog: https://www.agilejava.eu/2023/05/12/devoxx-uk-2023/
 
   - name: Devoxx Greece
     url: https://www.devoxx.gr/
-    location: Athens, Greece
+    location: Athens, Greece 🇬🇷
     date: May 4-6
     blog: https://www.agilejava.eu/2023/05/06/devoxx-greece-2023/
 
   - name: GIDS
     url: https://developersummit.com/
-    location: Bangalore, India
+    location: Bangalore, India 🇮🇳
     date: Apr 25-28
     blog: https://www.agilejava.eu/2023/04/27/gids-2023/
 
   - name: Java Heroes Conference (Singapore JUG)
     url: http://singajug.org/
-    location: Singapore
+    location: Singapore 🇸🇬
     date: Apr 13
     blog: https://www.agilejava.eu/2023/04/16/hashtag-jakarta-ee-172/
 
   - name: Devnexus
     url: https://devnexus.com
-    location: Atlanta, USA
+    location: Atlanta, USA 🇺🇸
     date: Apr 4-6
     blog: https://www.agilejava.eu/2023/04/07/devnexus-2023/
 
   - name: JavaLand
     url: https://www.javaland.eu/en/home/
-    location: Brühl, Germany
+    location: Brühl, Germany 🇩🇪
     date: Mar 21-23
     blog: https://www.agilejava.eu/2023/03/24/javaland-2023/
 
   - name: ConFoo
     url: https://confoo.ca/en/2023
-    location: Montreal, Canada
+    location: Montreal, Canada 🇨🇦
     date: Feb 22-24
     blog: https://www.agilejava.eu/2023/02/24/confoo-2023/
   
   - name: DeveloperWeek
     url: https://www.developerweek.com/
-    location: Oakland, USA
+    location: Oakland, USA 🇺🇸
     date: Feb 15-17
     blog: https://www.agilejava.eu/2023/02/17/developerweek-2023/
 
   - name: Jfokus
     url: https://jfokus.se
-    location: Stockholm, Sweden
+    location: Stockholm, Sweden 🇸🇪
     date: Feb 6-8
     blog: https://www.agilejava.eu/2023/02/09/jfokus-2023/
 
   - name: jChampionsConf
     url: https://jchampionsconf.com/
-    location: online
+    location: online 🌐
     date: Jan 19-24
     blog: https://www.agilejava.eu/2023/01/24/jchampionsconf-2023/
 
   - name: THAT Conference Texas
     url: https://that.us/events/tx/2023/
-    location: Round Rock, USA
+    location: Round Rock, USA 🇺🇸
     date: Jan 16-18
     blog: https://www.agilejava.eu/2023/01/19/that-conference-2023/
 
