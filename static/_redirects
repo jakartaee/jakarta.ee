@@ -25,3 +25,5 @@ http://mail.jakarta.ee/* https://eclipse-ee4j.github.io/mail/:splat 200!
 # redirect events page from old to new location
 /events /community/events 301!
 
+# redirect get involved page from old to new location
+/getinvolved /community/get-involved 301!
