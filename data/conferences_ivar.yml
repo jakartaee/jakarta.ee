@@ -58,6 +58,12 @@ years:
     date: Sep 21
     upcoming: true
 
+  - name: Detroit JUG
+    url: https://www.meetup.com/detroit-java-user-group/
+    location: Detroit 🇺🇸
+    date: Sep 20
+    upcoming: true
+  
   - name: Garden State JUG
     url: https://gsjug.org
     location: New Jersey 🇺🇸
@@ -77,7 +83,7 @@ years:
     upcoming: true
 
   - name: Java Meetup @ Picnic
-    url: 
+    url: https://www.meetup.com/meetinup-picnic/events/295503409/
     location: Amsterdam 🇳🇱
     date: Sep 6
     upcoming: true
