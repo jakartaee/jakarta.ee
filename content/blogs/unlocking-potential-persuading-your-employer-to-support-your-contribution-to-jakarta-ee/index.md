@@ -4,6 +4,8 @@ date: 2023-08-24T12:00:00
 summary: "In this blog post, we will explore the numerous benefits that arise when employees are encouraged to contribute to Jakarta EE as part of their normal work activities. These compelling arguments will help you convince your employer of the value it brings to your organisation while respecting the demands of your everyday work."
 author: Tanja Obradovic
 email: tanja.obradovic@eclipse-foundation.org
+seo_title: "Unlocking Potential | Persuading Your Employer to Support Your Contribution to Jakarta EE"
+keywords: ["unlocking potential", "Jakarta EE", "contribute"]
 ---
 
 &nbsp;
