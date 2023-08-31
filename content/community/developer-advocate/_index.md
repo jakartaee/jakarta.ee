@@ -6,7 +6,7 @@ layout: "single"
 
 ![Ivar Grimstad](https://github.com/ivargrimstad.png?size=90)
 
-**Ivar Grimstad - Jakarta EE Developer Advocate.** \
+**Ivar Grimstad - Jakarta EE Developer Advocate** \
 On this page, you can find some information about how to reach out to me, and where you can meet me at a conference near you.
 
 ## Social Media {#socials}
