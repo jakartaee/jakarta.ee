@@ -64,6 +64,9 @@ sets:
           image_width: 195
           download: 'https://www.payara.fish/downloads/payara-platform-community-edition/'
           versions:
+            - version: 6.2023.7
+              compatibility: 'https://docs.payara.fish/community/docs/Jakarta%20EE%20Certification/6.2023.7/6.2023.7%20Platform%20TCK%20Results.html'
+              download_url: 'https://www.payara.fish/downloads/payara-platform-community-edition/'
             - version: 6.2022.1
               compatibility: 'https://docs.payara.fish/community/docs/6.2022.1/Jakarta%20EE%20Certification/6.2022.1/6.2022.1%20Platform%20TCK%20Results.html'
               download_url: 'https://github.com/payara/Payara/releases/tag/payara-server-6.2022.1'
@@ -174,6 +177,9 @@ sets:
           image_width: 195
           download: 'https://www.payara.fish/downloads/payara-platform-community-edition/'
           versions:
+            - version: 6.2023.7
+              compatibility: 'https://docs.payara.fish/community/docs/Jakarta%20EE%20Certification/6.2023.7/6.2023.7%20Core%20TCK%20Results.html'
+              download_url: 'https://www.payara.fish/downloads/payara-platform-community-edition/'
             - version: 6.2022.1
               compatibility: 'https://docs.payara.fish/community/docs/6.2022.1/Jakarta%20EE%20Certification/6.2022.1/6.2022.1%20Core%20TCK%20Results.html'
               download_url: 'https://www.payara.fish/downloads/payara-platform-community-edition/'
