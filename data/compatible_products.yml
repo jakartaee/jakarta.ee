@@ -519,13 +519,15 @@ sets:
         - version: 2.0.0
           compatibility: 'https://github.com/AsiainfoAnhui/aisware_flyingserver_v2_ee8/blob/master/aisware_flyingserver_v2_ee8.md#tck-results'
           download_url: 'http://asiainfoah.com/#/product/flyingserver'
-
       - name: Payara Server Enterprise
         vendor: Payara Services Limited
         image: '/images/compatible_products/payara-server-enterprise-logo.svg'
         image_width: 195
         download: 'https://www.payara.fish/downloads/'
         versions:
+        - version: 5.53.0
+          compatibility: 'https://docs.payara.fish/enterprise/docs/5.53.0/Jakarta%20EE%20Certification/5.53.0/5.53.0%20Platform%20TCK%20Results.html'
+          download_url: 'https://www.payara.fish/page/payara-enterprise-downloads/'
         - version: 5.43.0
           compatibility: 'https://docs.payara.fish/enterprise/docs/Jakarta%20EE%20Certification/5.43.0/5.43.0%20Web%20TCK%20Results.html'
           download_url: 'https://docs.payara.fish/enterprise/docs/Jakarta%20EE%20Certification/5.43.0/5.43.0%20Web%20TCK%20Results.html'
