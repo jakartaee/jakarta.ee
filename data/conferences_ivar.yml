@@ -47,31 +47,31 @@ years:
     upcoming: true
 
   - name: Montreal JUG
-    url: https://www.montreal-jug.org/
+    url: https://www.meetup.com/montreal-jug/events/295689971/
     location: Montreal 🇨🇦
     date: Sep 22
     upcoming: true
 
   - name: Omaha JUG
-    url: https://www.meetup.com/omahajava/
+    url: https://www.meetup.com/omahajava/events/295587171/
     location: Omaha 🇺🇸
     date: Sep 21
     upcoming: true
 
   - name: Detroit JUG
-    url: https://www.meetup.com/detroit-java-user-group/
+    url: https://www.meetup.com/detroit-java-user-group/events/295614617/
     location: Detroit 🇺🇸
     date: Sep 20
     upcoming: true
   
   - name: Garden State JUG
-    url: https://gsjug.org
+    url: https://gsjug.org/meetings/2023/sep2023.html
     location: New Jersey 🇺🇸
     date: Sep 19
     upcoming: true
 
   - name: Central Ohio JUG
-    url: https://www.cojug.org/
+    url: http://www.cojug.org/2023/09/18/dinner-Wargames-306/
     location: Columbus 🇺🇸
     date: Sep 18
     upcoming: true
@@ -86,6 +86,7 @@ years:
     url: https://www.meetup.com/meetinup-picnic/events/295503409/
     location: Amsterdam 🇳🇱
     date: Sep 6
+    blog: https://www.agilejava.eu/2023/09/08/picnic-java-meetup/
 
   - name: JCrete
     url: https://www.jcrete.org/
