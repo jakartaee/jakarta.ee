@@ -74,13 +74,12 @@ years:
     url: http://www.cojug.org/2023/09/18/dinner-Wargames-306/
     location: Columbus 🇺🇸
     date: Sep 18
-    upcoming: true
 
   - name: IBM TechXchange
     url: https://www.ibm.com/community/ibm-techxchange-conference/
     location: Las Vegas 🇺🇸
     date: Sep 11-14
-    upcoming: true
+    blog: https://www.agilejava.eu/2023/09/15/ibm-techxchange-2023/
 
   - name: Picnic Java Meetup
     url: https://www.meetup.com/meetinup-picnic/events/295503409/
