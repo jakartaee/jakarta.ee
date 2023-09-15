@@ -73,6 +73,15 @@ sets:
             - version: 6.2022.1.Alpha4
               compatibility: 'https://docs.payara.fish/community/docs/6.2022.1.alpha4/Jakarta%20EE%20Certification/6.2022.1.Alpha4/6.2022.1.Alpha4%20Platform%20TCK%20Results.html'
               download_url: 'https://github.com/payara/Payara/releases/tag/payara-server-6.2022.1.Alpha4'
+        - name: Payara Server Enterprise
+          vendor: Payara Services Limited
+          image: '/images/compatible_products/payara-server-enterprise-logo.svg'
+          image_width: 195
+          download: 'https://www.payara.fish/page/payara-enterprise-downloads/'
+          versions:
+            - version: 6.4.0
+              compatibility: 'https://docs.payara.fish/enterprise/docs/Jakarta%20EE%20Certification/6.4.0/6.4.0%20Platform%20TCK%20Results.html'
+              download_url: 'https://www.payara.fish/page/payara-enterprise-downloads/'
         - name: WildFly
           vendor: Red Hat 
           image: '/images/compatible_products/red-hat-wildfly-logo.png'
@@ -134,6 +143,15 @@ sets:
             - version: 6.2022.1, Web Profile
               compatibility: 'https://docs.payara.fish/community/docs/6.2022.1/Jakarta%20EE%20Certification/6.2022.1/6.2022.1%20Web%20TCK%20Results.html'
               download_url: 'https://www.payara.fish/downloads/payara-platform-community-edition/'
+        - name: Payara Server Enterprise
+          vendor: Payara Services Limited
+          image: '/images/compatible_products/payara-server-enterprise-logo.svg'
+          image_width: 195
+          download: 'https://www.payara.fish/page/payara-enterprise-downloads/'
+          versions:
+            - version: 6.4.0, Web Profile
+              compatibility: 'https://docs.payara.fish/enterprise/docs/Jakarta%20EE%20Certification/6.4.0/6.4.0%20(Web%20Profile)%20Web%20TCK%20Results.html'
+              download_url: 'https://www.payara.fish/page/payara-enterprise-downloads/'
         - name: WildFly
           vendor: Red Hat 
           image: '/images/compatible_products/red-hat-wildfly-logo.png'
@@ -195,6 +213,18 @@ sets:
             - version: 6.2022.1.Alpha3
               compatibility: 'https://docs.payara.fish/community/docs/6.2022.1.alpha3/Jakarta%20EE%20Certification/6.2022.1.Alpha3/6.2022.1.Alpha3%20Core%20TCK%20Results.html'
               download_url: 'https://docs.payara.fish/community/docs/6.2022.1.alpha3/Jakarta%20EE%20Certification/6.2022.1.Alpha3/6.2022.1.Alpha3%20Core%20TCK%20Results.html'
+        - name: Payara Server Enterprise
+          vendor: Payara Services Limited
+          image: '/images/compatible_products/payara-server-enterprise-logo.svg'
+          image_width: 195
+          download: 'https://www.payara.fish/page/payara-enterprise-downloads/'
+          versions:
+            - version: 6.4.0
+              compatibility: 'https://docs.payara.fish/enterprise/docs/Jakarta%20EE%20Certification/6.4.0/6.4.0%20Core%20TCK%20Results.html'
+              download_url: 'https://www.payara.fish/page/payara-enterprise-downloads/'
+            - version: 6.4.0, Web Profile
+              compatibility: 'https://docs.payara.fish/enterprise/docs/Jakarta%20EE%20Certification/6.4.0/6.4.0%20(Web%20Profile)%20Core%20TCK%20Results.html'
+              download_url: 'https://www.payara.fish/page/payara-enterprise-downloads/'
         - name: WildFly
           vendor: Red Hat
           image: '/images/compatible_products/red-hat-wildfly-logo.png'
@@ -799,6 +829,9 @@ sets:
         image_width: 195
         download: 'https://www.payara.fish/downloads/'
         versions:
+        - version: 5.53.0, Web Profile
+          compatibility: 'https://docs.payara.fish/enterprise/docs/5.53.0/Jakarta%20EE%20Certification/5.53.0/5.53.0%20Web%20TCK%20Results.html'
+          download_url: 'https://www.payara.fish/page/payara-enterprise-downloads/'
         - version: 5.43.0
           compatibility: 'https://docs.payara.fish/enterprise/docs/Jakarta%20EE%20Certification/5.43.0/5.43.0%20Web%20TCK%20Results.html'
           download_url: 'https://docs.payara.fish/enterprise/docs/Jakarta%20EE%20Certification/5.43.0/5.43.0%20Web%20TCK%20Results.html'
