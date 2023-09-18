@@ -1,8 +1,9 @@
 ---
 title: "Jakarta EE Compatible Implementations and Compatible Products"
 date: "2021-03-11T00:00:00+00:00"
+headline: Jakarta EE Compatible Implementations and Compatible Products
+hide_page_title: true
 ---
-
 
 **Jakarta EE** is a set of open [specifications](https://jakarta.ee/specifications/ "Jakarta EE Specifications") used for enterprise Java application development. It is a continuation of Java EE technology that gathers the wide community of Java developers interested in advancing the specifications for future cloud native Java enterprise applications. Each specification release includes its respective Technology Compatibility Kit (TCK). You can find a link to the TCK on the appropriate specification release page, for example see [Jakarta EE Platform 9.0](https://jakarta.ee/specifications/platform/9/) or in the case of individual specification see [Jakarta Authentication 2.0](https://jakarta.ee/specifications/authentication/2.0/).
 
