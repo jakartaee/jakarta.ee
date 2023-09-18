@@ -1,6 +1,8 @@
 ---
 title: "Jakarta EE Specification Committee Operation"
 date: "2021-01-13T00:00:00+00:00"
+headline: Jakarta EE Specification Committee Operation
+hide_page_title: true
 ---
 
 This document describes the practices of the Jakarta EE Specification
@@ -12,7 +14,7 @@ EE Specification Committee (<jakarta.ee-spec@eclipse.org>) mailing list.
 
 This is a public document.
 
-## Specification Committee # {#specification_committee}
+## Specification Committee {#specification_committee}
 
 The Jakarta EE Specification Committee is responsible for implementing
 the Eclipse Foundation Specification Process (EFSP) for all
