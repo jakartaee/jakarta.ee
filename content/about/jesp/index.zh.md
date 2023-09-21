@@ -1,10 +1,11 @@
 ---
 title: "Jakarta EE 规范过程"
 date: 2022-08-31T13:00:00-04:00
+headline: Jakarta EE 规范过程
+tagline: Version 1.4. August 31/2022 生效
 hide_sidebar: true
+hide_page_title: true
 ---
-
-version 1.4. August 31/2022 生效
 
 **Jakarta EE 规范过程** (JESP) 适用于由 **Jakarta EE 工作组** 运营的 **规范项目** 的 **规范过程** 。
 
