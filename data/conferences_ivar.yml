@@ -56,12 +56,12 @@ years:
     url: https://www.meetup.com/montreal-jug/events/295689971/
     location: Montreal 🇨🇦
     date: Sep 22
-    upcoming: true
 
   - name: Omaha JUG
     url: https://www.meetup.com/omahajava/events/295587171/
     location: Omaha 🇺🇸
     date: Sep 21
+    blog: https://www.agilejava.eu/2023/09/22/north-america-jug-tour-2023-omaha-%f0%9f%87%ba%f0%9f%87%b8/
  
   - name: Detroit JUG
     url: https://www.meetup.com/detroit-java-user-group/events/295614617/
