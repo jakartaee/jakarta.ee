@@ -19,7 +19,7 @@ We will build a service that will accept an HTTP GET request at
 It will respond with the following JSON payload, as the following listing
 shows:  
 
-```
+```json
 {"text": "Hello from Jakarta EE"}
 ```
 
@@ -65,7 +65,7 @@ To use Eclipse Starter for Jakarta EE, we need to take the following steps:
 4. Once you have done this, the following box will let you copy a command. Copy
    the command, open your terminal, paste it, and run it.
 
-```
+```shell
 mvn archetype:generate -DarchetypeGroupId=org.eclipse.starter -DarchetypeArtifactId=jakartaee10-minimal -DarchetypeVersion=1.1.0 -DgroupId=org.eclipse.rest -DartifactId=rest-service -Dprofile=web-api -Dversion=1.0.0-SNAPSHOT -DinteractiveMode=false
 ```
 
@@ -101,7 +101,7 @@ interested in two classes in particular: `RestResource.java` and
 
 Let's open the `RestResource.java` file first.
 
-```
+```java
 package org.eclipse.restfulservice.resources;
 
 import jakarta.ws.rs.GET;
@@ -133,7 +133,7 @@ JSON<sup>2</sup> response by converting the object of `HelloRecord`.
 The method `hello()` is defined to return a `HelloRecord`. This is the new 
 [record class](https://openjdk.org/jeps/395) that was released in Java 16.
 
-```
+```java
 package org.eclipse.restfulservice.resources;
 
 public record HelloRecord(String text) {
@@ -142,7 +142,7 @@ public record HelloRecord(String text) {
 
 But if you use a lower version of Java, you can change it to a traditional POJO<sup>3</sup>.
 
-```
+```java
 package org.eclipse.restfulservice.resources;
 
 public final class HelloRecord {
@@ -168,7 +168,7 @@ We will use WildFly in this tutorial.
 
 To do that, we need to add an additional plugin to the `pom.xml` file.
 
-```
+```xml
 <plugin>
   <groupId>org.wildfly.plugins</groupId>
   <artifactId>wildfly-maven-plugin</artifactId>
@@ -201,7 +201,7 @@ we will use the default, and that's enough for us.
 In particular, we are interested in `wildfly:run` CLI command. Let’s run the
 following command from the command line:
 
-```
+```shell
 mvn clean package wildfly:run
 ```
 
@@ -210,7 +210,7 @@ installed, it will download and run it, and then the war file will be deployed.
 
 Once the application runs, we will get the following output in the terminal:
 
-```
+```shell
 [INFO] Scanning for projects...
 [INFO]
 [INFO] ------------------in< org.eclipse:restfulservice >---------------------
@@ -227,9 +227,85 @@ skipped the log for brevity
 
 ## Let's test the Service
 
-Now that the service is running let’s visit <http://localhost:8080/restfulservice/hello>.
+Now that the service is running let’s visit <http://localhost:8080/restfulservice/hello>.\
+It should return:
 
--- TODO --
+```json
+{ "text": "Hello from Jakarta EE" }
+```
+
+Alternatively, we can curl from the command line:
+
+```shell
+curl -v http://localhost:8080/restfulservice/hello
+
+*   Trying 127.0.0.1:8080...
+* Connected to localhost (127.0.0.1) port 8080 (#0)
+> GET /restfulservice/hello HTTP/1.1
+> Host: localhost:8080
+> User-Agent: curl/7.86.0
+> Accept: */*
+>
+* Mark bundle as not supporting multiuse
+< HTTP/1.1 200 OK
+< Connection: keep-alive
+< Content-Type: application/json
+< Content-Length: 32
+< Date: Sun, 18 Dec 2022 08:45:51 GMT
+<
+* Connection #0 to host localhost left intact
+{"text":"Hello from Jakarta EE"}%      
+```
+
+Let us have a look at the URL structure.
+
+```
+http://<hostname>:<port>/<context-root>/<REST-config>/<resource-config>
+```
+
+Let’s unpack the URL pattern here:
+
+**Hostname**: the name of the machine on which WildFly Server is installed.
+
+**Port:** The WildFly Server's listening port for incoming HTTP requests. This is
+port 8080 by default, but it can be configured.
+
+**Context-root:** The context root to which the deployed application has been
+assigned. By default, this is the filename (without the extension) of the WAR
+file that is being deployed. But it can be changed when the file is being
+deployed.
+
+**REST-config:** The value we have defined for the `@ApplicationPath`
+annotation in our project. By default, it is empty, which is indicated simply
+by /. We can easily configure it in our `ApplicationConfig` class.
+
+**Resource-config:** the value defined in the `@Path` annotation on the Java
+class defines an endpoint. In our case, `"/hello"` is handled by the
+`RestResource` class.
+
+If we want to change the `REST-config` part, for example, to `"/api"`, we can
+change the value in the  `@ApplicationPath` annotation like this:
+
+```java
+import jakarta.ws.rs.ApplicationPath;
+import jakarta.ws.rs.core.Application;
+
+@ApplicationPath("/api")
+public class ApplicationConfig extends Application {    
+}
+```
+
+After making this change, if we run again, we have to change the curl command
+to consume the service as follows:
+
+```shell
+curl -v http://localhost:8080/restfulservice/api/hello
+```
+
+## Conclusion
+
+Congratulations! You have just learned how to develop a RESTful web service
+using Jakarta EE.
 
 ---
 
