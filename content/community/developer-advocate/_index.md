@@ -1,7 +1,9 @@
 ---
-title: "Jakarta EE Developer Advocate"
+title: Jakarta EE Developer Advocate
 date: 2023-01-25T00:00:00-00:00
-layout: "single"
+headline: Jakarta EE Developer Advocate
+hide_page_title: true
+layout: single
 ---
 
 ![Ivar Grimstad](https://github.com/ivargrimstad.png?size=90)
