@@ -15,7 +15,7 @@ We will first begin by summarizing what we want to build. Next, we build a
 [RESTful web service](/specifications/restful-ws/) that can consume data, store
 it in a database using Jakarta Persistence, and serve it as a REST endpoint.
 For those unfamiliar with RESTful web services, we recommend reading our
-[previous article](./how-to-build-a-restful-web-service).
+[previous article](../how-to-build-a-restful-web-service/).
 
 We will build an application that handles coffee product data. The service will
 consume a JSON payload containing the product's ID, name, and price. Here's an
