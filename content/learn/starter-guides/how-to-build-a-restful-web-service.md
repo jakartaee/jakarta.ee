@@ -13,8 +13,8 @@ This guide shows you how to use Jakarta EE to make a
 To create a RESTful web service using [Jakarta EE](/), we will begin by
 summarizing what we want to build.
 
-We will build a service that will accept an HTTP GET request at
-<span>http://localhost:8080/restfulservice/hello</span>.
+We will build a service that will accept an HTTP GET{{< sup href="#footnote-1" >}}1{{</ sup >}} 
+request at <span>http://localhost:8080/restfulservice/hello</span>.
 
 It will respond with the following JSON payload, as the following listing
 shows:  
@@ -128,7 +128,8 @@ given by the user and the Java class responsible for handling the request. The
 `jakarta.ws.rs.GET` annotation tells us we must use the `HTTP GET` method to
 access our endpoint. The `jakarta.ws.rs.Produces` annotation allows you to
 specify the format of the response. In our case, it will produce a
-JSON<sup>2</sup> response by converting the object of `HelloRecord`.
+JSON{{< sup href="#footnote-2">}}2{{</ sup >}} response by converting the
+object of `HelloRecord`.
 
 The method `hello()` is defined to return a `HelloRecord`. This is the new 
 [record class](https://openjdk.org/jeps/395) that was released in Java 16.
@@ -140,7 +141,8 @@ public record HelloRecord(String text) {
 }
 ```
 
-But if you use a lower version of Java, you can change it to a traditional POJO<sup>3</sup>.
+But if you use a lower version of Java, you can change it to a traditional
+POJO{{< sup href="#footnote-3">}}3{{</ sup >}}.
 
 ```java
 package org.eclipse.restfulservice.resources;
@@ -309,13 +311,19 @@ using Jakarta EE.
 
 ---
 
-{{< grid/div class="footnote" >}}
-
-1. HTTP GET is a request method supported by HTTP used by the World Wide Web.
-   It requests a representation of the specified resource. Its general form is:
-   GET /path/to/resource HTTP/1.1
-2. JSON - It stands for JavaScript Object Notation. JSON is a text format for
-   storing and transporting data
-3. POJO - [Plain Old Java Object](https://en.wikipedia.org/wiki/Plain_old_Java_object)
-
+{{< grid/div class="footnote" isMarkdown="false" >}}
+  <ol>
+    <li id="footnote-1">
+      HTTP GET is a request method supported by HTTP used by the World Wide
+      Web. It requests a representation of the specified resource. Its general
+      form is: GET /path/to/resource HTTP/1.1
+    </li>
+    <li id="footnote-2">
+      JSON - It stands for JavaScript Object Notation. JSON is a text format
+      for storing and transporting data
+   </li>
+    <li id="footnote-3">
+      POJO - <a href="https://en.wikipedia.org/wiki/Plain_old_Java_object">Plain Old Java Object</a>
+    </li>
+  </ol>
 {{</ grid/div >}}
