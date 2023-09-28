@@ -64,10 +64,10 @@ To use Eclipse Starter for Jakarta EE, we need to take the following steps:
 1. Navigate to https://start.jakarta.ee. This service will set up all the
    essential dependencies for an application. The current version of the
    Starter only supports Maven. In the future, we may be able to choose between
-   Gradle and Maven.\
-   ![A screenshot of the Eclipse Starter for Jakarta EE form with fields selected](./images/eclipse-starter.png)
+   Gradle and Maven.
+   {{< figure class="padding-20 margin-top-40 margin-bottom-40" src="../images/generate-project-detailed.jpg" alt="A screenshot of the Eclipse Starter for jakarta EE form with fields selected" >}}
 2. Select the desired version of Jakarta EE from the available options.
-   Currently, the options include Jakarta EE 8, Jakarta EE 9.1, and Jakarta EE 10. 
+   Currently, the options include Jakarta EE 8, Jakarta EE 9.1, [and](and) Jakarta EE 10. 
    In addition, you may choose the Jakarta EE Platform or one of the Jakarta EE
    profiles (Web, Core).
 3. For this project, we have chosen Jakarta EE 10 Platform, Java SE 11 and

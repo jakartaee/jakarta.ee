@@ -56,7 +56,7 @@ To use Eclipse Starter for Jakarta EE, we need to take the following steps:
   dependencies for an application. The current version of the Starter only
   supports Maven. In the future, we may be able to choose between Gradle and
   Maven.
-  ![A screenshot of the Generate a Jakarta EE Project form with fields filled out. More details on how to go through the form below.](./images/generate-project.jpg)
+  {{< figure class="padding-20 margin-top-40 margin-bottom-40 img-thumbnail" src="../images/generate-project.jpg" alt="A screenshot of the Generate a Jakarta EE Project form with fields filled out. More details on how to go through the form below." >}}
 2. Select the desired version of Jakarta EE from the available options. As of
    now, the options include Jakarta EE 8, Jakarta 9.1, and Jakarta 10. You may
    choose the Jakarta EE profile from Platform, Core, or Web. However, for most
@@ -64,7 +64,6 @@ To use Eclipse Starter for Jakarta EE, we need to take the following steps:
 3. Then specify the Group, Artifact and Version for your new project.
 4. Once you have done this, the following box will let you copy a command. Copy
    the command, open your terminal, paste it, and run it.
-
 ```shell
 mvn archetype:generate -DarchetypeGroupId=org.eclipse.starter -DarchetypeArtifactId=jakartaee10-minimal -DarchetypeVersion=1.1.0 -DgroupId=org.eclipse.rest -DartifactId=rest-service -Dprofile=web-api -Dversion=1.0.0-SNAPSHOT -DinteractiveMode=false
 ```
