@@ -196,9 +196,9 @@ connection by creating a Jakarta Persistence configuration file named
 folder in our project.
 
 The `persistence.xml` file allows specifying the JDBC Connection Settings or
-the Datasource JNDI name. For instance, we can use the WildFly default [H2
-database](https://www.h2database.com/html/main.html), specified within the
-`persistence.xml`.
+the Datasource JNDI{{< sup href="#footnote-1" >}}1{{</ sup >}} name. For
+instance, we can use the WildFly default [H2 database](https://www.h2database.com/html/main.html), 
+specified within the `persistence.xml`.
 
 ```xml
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
@@ -280,7 +280,7 @@ Other properties are used to configure logging for the Jakarta Persistence
 provider, such as `"eclipselink.logging.level.sql"` and
 `"eclipselink.logging.parameters"`. Finally, the `"hibernate.show_sql"`
 property is used to enable SQL query logging for the Hibernate Jakarta
-Persistence provider.
+Persistence provider{{< sup href="#footnote-2" >}}2{{</ sup >}}.
 
 ## Setting up the Jakarta Persistence repository
 
@@ -579,13 +579,17 @@ Jakarta Persistence.
 
 ---
 
-{{< grid/div class="footnote" >}}
-
-1.  The Java Naming and Directory Interface (JNDI) is a Java API for a
-    directory service that allows Java software clients to discover and look up
-    data and objects via a name.
-2.  Jakarta Persistence is a Java ORM specification with multiple compatible
-    implementations, such as EclipseLink 3.0.0 and Hibernate ORM 6.0.0.Final.
-
+{{< grid/div class="footnote" isMarkdown="false" >}}
+  <ol class="footnote">
+    <li id="footnote-1">
+      The Java Naming and Directory Interface (JNDI) is a Java API for a
+      directory service that allows Java software clients to discover and look up
+      data and objects via a name.
+    </li>
+    <li id="footnote-2">
+      Jakarta Persistence is a Java ORM specification with multiple compatible
+      implementations, such as EclipseLink 3.0.0 and Hibernate ORM 6.0.0.Final.
+    </li>
+  </ol>
 {{</ grid/div >}}
 
