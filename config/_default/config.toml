@@ -8,6 +8,9 @@ googleAnalytics = "UA-910670-30"
 themesDir = "node_modules/"
 enableRobotsTXT = true
 enableInlineShortcodes = true
+[markup.highlight]
+  noClasses = false
+  style = "github"
 
 [Params]
   layout_style = "quicksilver"
