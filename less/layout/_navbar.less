@@ -1,3 +1,17 @@
+/*!
+ * Copyright (c) 2019, 2023 Eclipse Foundation, Inc.
+ *
+ * This program and the accompanying materials are made available under the
+ * terms of the Eclipse Public License v. 2.0 which is available at
+ * http://www.eclipse.org/legal/epl-2.0.
+ *
+ * Contributors:
+ *   Eric Poirier <eric.poirier@eclipse-foundation.org>
+ *   Olivier Goulet <olivier.goulet@eclipse-foundation.org>
+ *
+ * SPDX-License-Identifier: EPL-2.0
+*/
+
 .toolbar-container-wrapper{
     background-size: cover;
 }
@@ -213,6 +227,18 @@
     }
 }
 
+// Prevent menu from overflowing on the right side of the screen. The reason we
+// are selecting the 2nd last child is because the last child is a mobile-only
+// menu item. 
+#main-menu .navbar-nav li.dropdown:nth-last-child(2) { 
+  position: relative;
+
+  & > .dropdown-menu {
+    left: -100%;
+    right: auto;
+  }
+}
+
 .gsc-search-button-v2 {
     border: 1px solid @white !important;
     border-radius: 0px !important;
@@ -231,3 +257,4 @@
     position: relative;
     top: 3px;
 }
+
