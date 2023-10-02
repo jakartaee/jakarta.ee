@@ -6,6 +6,7 @@ description: >-
   This guide shows you how to store and retrieve data using Jakarta
   Persistence.
 hide_page_title: true
+weight: 2
 ---
 
 This guide shows you how to store and retrieve data using 

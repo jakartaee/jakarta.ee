@@ -5,6 +5,7 @@ headline: How to Build a RESTful Web Service Using Jakarta EE
 description: >-
   This guide shows you how to use Jakarta EE to make a RESTful web service.
 hide_page_title: true
+weight: 1
 ---
 
 This guide shows you how to use Jakarta EE to make a 
