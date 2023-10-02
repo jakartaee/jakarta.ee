@@ -5,6 +5,7 @@ headline: "How to Start with Servlets Using Jakarta EE 10"
 description: >-
   This guide aims to walk you through the process of building a simple Servlet
   application using Jakarta Servlet.
+keywords: ['servlet', 'tutorial', 'guide', 'application', 'wildfly']
 hide_page_title: true
 ---
 
