@@ -1,6 +1,15 @@
 ---
 years:
 
+- year: 2024
+  conferences:
+
+  - name: GIDS
+    url: https://developersummit.com/
+    location: Bangalore 🇮🇳
+    date: April 23-26
+    upcoming: true
+    
 - year: 2023
   conferences:
 
