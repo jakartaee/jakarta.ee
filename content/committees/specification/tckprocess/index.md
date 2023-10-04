@@ -49,7 +49,7 @@ namespace format of `ee.jakarta.tck.<spec-name>` is recommended.
 There are 3 different types of TCKs, detailed below.
 - Type 1: Tests that only apply when running outside of a platform (or profile), such as on Java SE, to test behavior defined by the specification for that mode of execution.
 - Type 2: Tests that only apply when running in a platform (or profile) to test behavior defined by the specification for that mode of execution.
-- Type 3: Tests that apply to the behavior defined by a specification for all modes of execution.
+- Type 3: Tests that apply to the behavior defined by a specification for the execution either as a standalone or in a platform (or profile).
 
 The individual specification TCK must contain Type 2 or Type 3 tests while Type 1 tests are optional. A profile-ready mechanism must be provided for running the required TCK tests (types 2 and 3) in the profiles they are included in: platform, web profile or core profile. Type 1 tests must be excluded and not required to be executed.
 
