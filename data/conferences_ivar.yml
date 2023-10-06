@@ -53,12 +53,12 @@ years:
     url: https://communityovercode.org/
     location: Halifax 🇨🇦
     date: Oct 7-10
-    upcoming: true
 
   - name: Devoxx Belgium
     url: https://devoxx.be/
     location: Antwerp 🇧🇪
     date: Oct 2-6
+    blog: https://www.agilejava.eu/2023/10/06/devoxx-belgium-2023/
 
   - name: Montreal JUG
     url: https://www.meetup.com/montreal-jug/events/295689971/
