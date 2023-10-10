@@ -12,4 +12,5 @@
 /.project
 /data/eclipsefdn_projects.yaml
 .vscode/
+.idea/
 
