@@ -47,12 +47,12 @@ years:
     url: https://devoxx.ma/
     location: Agadir 🇲🇦
     date: Oct 11-13
-    upcoming: true
 
   - name: Community Over Code
     url: https://communityovercode.org/
     location: Halifax 🇨🇦
     date: Oct 7-10
+    blog: https://www.agilejava.eu/2023/10/10/community-over-code-2023/
 
   - name: Devoxx Belgium
     url: https://devoxx.be/
