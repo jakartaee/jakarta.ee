@@ -41,12 +41,12 @@ years:
     url: https://www.eclipsecon.org/2023
     location: Ludwigsburg 🇩🇪
     date: Oct 16-19
-    upcoming: true
-
+    
   - name: Devoxx Morocco
     url: https://devoxx.ma/
     location: Agadir 🇲🇦
     date: Oct 11-13
+    blog: https://www.agilejava.eu/2023/10/14/devoxx-morocco-2023/
 
   - name: Community Over Code
     url: https://communityovercode.org/
