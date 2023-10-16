@@ -9,6 +9,12 @@ years:
     location: Bangalore 🇮🇳
     date: April 23-26
     upcoming: true
+
+  - name: JDevSummitIL
+    url: https://jdevsummitil.com/
+    location: Tel-Aviv 🇮🇱
+    date: TBD
+    upcoming: true
     
 - year: 2023
   conferences:
@@ -17,12 +23,6 @@ years:
     url: https://jakartaone.org/
     location: online 🌐
     date: Dec 5
-    upcoming: true
-
-  - name: JDevSummitIL
-    url: https://jdevsummitil.com/
-    location: Tel-Aviv 🇮🇱
-    date: Nov 20
     upcoming: true
 
   - name: Øredev
