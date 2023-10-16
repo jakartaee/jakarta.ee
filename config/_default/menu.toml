@@ -209,6 +209,12 @@
     weight = 4
     parent = "Specifications"
 
+[[main]]
+    name = "Releases"
+    url = "/release/"
+    weight = 5
+    parent = "Specifications"
+
 # Compatible Products
 [[main]]
     name = "Jakarta EE Compatible Products"
