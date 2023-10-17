@@ -56,7 +56,7 @@ enableInlineShortcodes = true
   news_tags = "news/tags"
 
 [Author]
-  name = "Christopher Guindon"
+  name = "Eclipse Foundation"
   website = "https://www.eclipse.org"
   email = "webdev@eclipse-foundation.org"
   facebook = "eclipse.org"
