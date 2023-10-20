@@ -8,8 +8,12 @@ googleAnalytics = "UA-910670-30"
 themesDir = "node_modules/"
 enableRobotsTXT = true
 enableInlineShortcodes = true
+[markup.highlight]
+  noClasses = false
+  style = "github"
 
 [Params]
+  layout_style = "quicksilver"
   google_tag_manager = "GTM-5WLCZXC"
   description = "Jakarta® Enterprise Edition (EE) is the future of cloud native Java. Jakarta® EE open source software drives cloud native innovation, modernizes enterprise applications and protects investments in Java EE."
   subtitle = "The New Home of Cloud Native Java"
@@ -52,7 +56,7 @@ enableInlineShortcodes = true
   news_tags = "news/tags"
 
 [Author]
-  name = "Christopher Guindon"
+  name = "Eclipse Foundation"
   website = "https://www.eclipse.org"
   email = "webdev@eclipse-foundation.org"
   facebook = "eclipse.org"

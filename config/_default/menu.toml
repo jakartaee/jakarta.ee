@@ -178,6 +178,12 @@
     parent = "Resources"
     weight = 10
 
+[[main]]
+    name = "Jakarta EE Overview Course"
+    url = "https://www.linkedin.com/learning/jakarta-ee-overview"
+    parent = "Resources"
+    weight = 11
+
 # specifications
 [[main]]
     name = "Browse Specifications"
@@ -201,6 +207,12 @@
     name = "Specification Projects"
     url = "https://projects.eclipse.org/list-of-projects?combine=jakarta&field_project_techology_types_tid=1102&field_state_value_2=All"
     weight = 4
+    parent = "Specifications"
+
+[[main]]
+    name = "Releases"
+    url = "/release/"
+    weight = 5
     parent = "Specifications"
 
 # Compatible Products
