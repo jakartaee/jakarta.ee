@@ -19,6 +19,12 @@ years:
 - year: 2023
   conferences:
 
+  - name: Toronto JUG
+    url: https://www.meetup.com/toronto-java-users-group/
+    location: Toronto 🇨🇦
+    date: Dec 7
+    upcoming: true
+
   - name: JakartaOne Livestream
     url: https://jakartaone.org/
     location: online 🌐
