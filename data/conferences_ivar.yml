@@ -25,6 +25,12 @@ years:
     date: Dec 7
     upcoming: true
 
+  - name: Ottawa JUG
+    url: https://www.meetup.com/ottawa-java-user-group/
+    location: Ottawa 🇨🇦
+    date: Dec 6
+    upcoming: true
+
   - name: JakartaOne Livestream
     url: https://jakartaone.org/
     location: online 🌐
