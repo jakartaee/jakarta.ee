@@ -16,6 +16,12 @@ years:
     date: April 4
     upcoming: true
     
+  - name: ConFoo
+    url: https://confoo.ca/en/2024
+    location: Montreal 🇨🇦
+    date: Feb 21-23
+    upcoming: true
+  
 - year: 2023
   conferences:
 
