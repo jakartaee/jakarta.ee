@@ -43,6 +43,12 @@ years:
     date: Dec 5
     upcoming: true
 
+  - name: Malmö JUG
+    url: https://www.meetup.com/javaforum-malmo/
+    location: Malmö 🇸🇪
+    date: Nov 22
+    upcoming: true
+
   - name: Øredev
     url: https://oredev.org/
     location: Malmö 🇸🇪
