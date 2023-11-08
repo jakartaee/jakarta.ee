@@ -53,13 +53,11 @@ years:
     url: https://oredev.org/
     location: Malmö 🇸🇪
     date: Nov 8-10
-    upcoming: true
 
   - name: J-Fall
     url: https://jfall.nl/
     location: Ede 🇳🇱
     date: Nov 9
-    upcoming: true
 
   - name: EclipseCon
     url: https://www.eclipsecon.org/2023
