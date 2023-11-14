@@ -1,30 +1,59 @@
 {{ $guides := .Page.RegularPages }}
 
-<div class="row">
-  <div class="col-sm-20 col-sm-offset-2">
-    <ul class="row list-unstyled margin-top-40">
-      {{ range $guides }}
-        <li class="col-sm-12 card-container padding-bottom-0 padding-top-0">
-          <div class="starter-guide-card card-panel bordered panel panel-default match-height-item-by-row">
-            <div class="starter-guide-content">
-              <div class="display-flex gap-20 align-items-center">
-                <i class="starter-guide-card-icon fa fa-code text-secondary" aria-hidden="true"></i>
-                <h2 class="h4 big-text text-primary">
-                  {{ .Title }}
-                </h2>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-20 col-sm-offset-2">
+      <ul class="row list-unstyled margin-top-40">
+        {{ range $guides }}
+          <li class="col-sm-12 card-container padding-bottom-0 padding-top-0">
+            <div class="starter-guide-card card-panel bordered panel panel-default match-height-item-by-row">
+              <div class="starter-guide-content">
+                <div class="display-flex gap-20 align-items-center">
+                  <i class="starter-guide-card-icon fa fa-code text-secondary" aria-hidden="true"></i>
+                  <h2 class="h4 big-text text-primary">
+                    {{ .Title }}
+                  </h2>
+                </div>
+                <div class="description">
+                  <p>
+                    {{ .Description }}
+                  </p>
+                </div>
               </div>
-              <div class="description">
-                <p>
-                  {{ .Description }}
-                </p>
+              <div class="starter-guide-links">
+                <a class="btn btn-primary" href="{{ .Permalink }}">Read Guide</a>
               </div>
             </div>
-            <div class="starter-guide-links">
-              <a class="btn btn-primary" href="{{ .Permalink }}">Read Guide</a>
-            </div>
-          </div>
-        </li>
-      {{ end }}
-    </ul>
+          </li>
+        {{ end }}
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="row bg-tertiary padding-top-60 padding-bottom-60">
+  <div class="col-md-8">
+    <h2>Learn</h2>
+    <p>
+      A collection of resources to learn Jakarta EE
+    </p>
+    <a href="#">Read more</a>
+  </div>
+  <div class="col-md-8">
+    <h2>Find the Latest Release</h2>
+    <p>
+      See all the Jakarta EE release versions and find out what's new in the
+      related press release.
+    </p>
+    <a href="#">Read more</a>
+  </div>
+  <div class="col-md-8">
+    <h2>Download Compatible Products</h2>
+    <p>
+      See all Jakarta EE Compatible certified products to help build your cloud
+      native application.
+    </p>
+    <a href="#">Read more</a>
+
   </div>
 </div>

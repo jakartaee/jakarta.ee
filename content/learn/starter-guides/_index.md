@@ -7,6 +7,7 @@ description: >-
 hide_page_title: true
 hide_sidebar: true
 layout: single
+container: container-fluid
 ---
 
 {{< pages/learn/starter_guides >}}
