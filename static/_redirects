@@ -1,5 +1,5 @@
 # start.jakarta.ee
-/learn/tutorial/* https://jakartaee.github.io/jakartaee-documentation/:splat 200!
+/learn/tutorial/* https://jakartaee.github.io/jakartaee-documentation/jakartaee-tutorial/current/:splat 200!
 https://start.jakarta.ee/* https://jakarta-ee-starter.azurewebsites.net/:splat 200!
 http://start.jakarta.ee/* https://jakarta-ee-starter.azurewebsites.net/:splat 200!
 https://mail.jakarta.ee/* https://eclipse-ee4j.github.io/mail/:splat 200!
