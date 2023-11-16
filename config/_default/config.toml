@@ -31,6 +31,7 @@ enableInlineShortcodes = true
   call_for_action_text = "Download"
   call_for_action_url = "/compatibility/download/"
   call_for_action_icon = ""
+  call_for_starter_action_text = "Starter"
   linkedin_url="https://www.linkedin.com/groups/13597511/"
   youtube_url="https://www.youtube.com/channel/UC4M7h5b6elu9VlzjLfzuXyg"
   twitter_url="https://twitter.com/JakartaEE"
