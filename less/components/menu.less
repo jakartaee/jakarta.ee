@@ -15,10 +15,9 @@
     .gsst_a {
         padding:0;
     }
-    .language-selector {
-        a {
-            color:@white;
-        }
+
+    .language-selector .dropdown-menu a {
+        color: @text-color;
     }
     ul {
         @media (max-width: @screen-xs-max) {
@@ -31,7 +30,7 @@
         margin-top:0;
         a {
             color:@white;
-            &:active, &:focus, &:visited {
+            &:active, &:focus {
                 color:@white;
                 background-color:darken(@brand-secondary, 20%);
             }
