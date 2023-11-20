@@ -43,6 +43,12 @@ years:
     date: Dec 5
     upcoming: true
 
+  - name: JCON WORLD ONLINE 2023
+    url: https://2023.world.jcon.one/
+    location: online 🌐
+    date: Nov 21-23
+    upcoming: true
+
   - name: Malmö JUG
     url: https://www.meetup.com/javaforum-malmo/
     location: Malmö 🇸🇪
