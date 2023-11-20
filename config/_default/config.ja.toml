@@ -1,0 +1,6 @@
+[params]
+  description = "Jakarta® Enterprise Edition (EE)は、クラウドネイティブJavaの未来です。Jakarta® EEオープンソースソフトウェアは、クラウドネイティブのイノベーションを促進し、エンタープライズアプリケーションをモダナイズし、Java EEへの投資を保護します。"
+  subtitle = "クラウドネイティブJavaの新ホーム"
+  keywords = ["Jakarta EE software", "Java EE", "cloud", "microservices", "enterprise", "open source", "innovation"]
+  call_for_action_text = "ダウンロード"
+  call_for_action_url = "/compatibility/download/"
