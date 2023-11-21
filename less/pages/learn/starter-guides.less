@@ -1,0 +1,35 @@
+/*!
+ * Copyright (c) 2023 Eclipse Foundation, Inc.
+ *
+ * This program and the accompanying materials are made available under the
+ * terms of the Eclipse Public License v. 2.0 which is available at
+ * http://www.eclipse.org/legal/epl-2.0.
+ *
+ * Contributors:
+ *   Olivier Goulet <olivier.goulet@eclipse-foundation.org>
+ *
+ * SPDX-License-Identifier: EPL-2.0
+*/
+
+@import (reference) '../../styles.less';
+
+.starter-guide-card {
+  // Set to flex column and space between so the card content is always at top
+  // and links are always bottom-aligned.
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1.5rem;
+
+  &-icon {
+    font-size: 4.5rem;
+  }
+}
+
+.cta-section .cta-title {
+  font-size: 2.3rem;
+}
+
+#featured-footer {
+  margin-top: unset;
+}
