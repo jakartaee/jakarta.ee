@@ -16,7 +16,7 @@
 
 [[main]]
     name = "コミュニティ"
-    url = "/community"
+    url = "/ja/community"
     weight = 4
 
 [[main]]
@@ -230,16 +230,16 @@
 
 # Community sub-menu
 [[main]]
-    name = "Overview"
-    url = "/community/"
+    name = "概要"
+    url = "/ja/community/"
     parent = "コミュニティ"
     weight = 1
     identifier = "community"
 
 [[main]]
-    name = "Adopt A Spec"
+    name = "仕様を採用する"
     parent = "コミュニティ"
-    url = "/community/adopt-a-spec/"
+    url = "/ja/community/adopt-a-spec/"
     weight = 2
 
 [[main]]
@@ -249,8 +249,8 @@
     weight = 3
 
 [[main]]
-    name = "Events"
-    url = "/community/events/"
+    name = "イベント"
+    url = "/ja/community/events/"
     parent = "コミュニティ"
     weight = 4
 
@@ -267,20 +267,20 @@
     weight = 6
 
 [[main]]
-    name = "Tech Talk Meet-ups"
-    url = "/community/#meetups"
+    name = "Tech Talkの閲覧"
+    url = "/ja/community/#meetups"
     parent = "コミュニティ"
     weight = 7
 
 [[main]]
-    name = "Videos"
-    url = "/community/videos"
+    name = "ビデオ"
+    url = "/ja/community/videos"
     parent = "コミュニティ"
     weight = 8
 
 [[main]]
-    name = "Get Involved"
-    url = "/community/get-involved"
+    name = "参加する"
+    url = "/ja/community/get-involved"
     parent = "コミュニティ"
     weight = 9
 
