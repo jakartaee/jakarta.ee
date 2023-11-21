@@ -12,7 +12,7 @@ This committee owns the overall strategy and the high level, long term roadmap s
 * Will Lyons (**chair**)- Oracle, Ed Bratt - alternate
 * Kenji Kazumura - Fujitsu, Yuichi Kusano - alternate
 * Alasdair Nottingham - IBM, Emily Jiang - alternate
-* Steve Millidge - Payara, Hadar Vorenshtein - alternate
+* Steve Millidge - Payara, Louise Castens - alternate
 * David Blevins - Tomitribe, Cesar Hernandez - alternate
 * Marcin Kruglik - London Jamocha Community - Elected Participant Member Representative - Abraham Marin-Perez - alternate 
 * Arjan Tijms - Elected Committer Member Representative
