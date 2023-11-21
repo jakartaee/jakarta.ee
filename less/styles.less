@@ -297,6 +297,19 @@ div.card-panel.panel div.panel-body.panel-body-with-img {
   right: -1px;
 }
 
+.column-section {
+  display: flex;
+  flex-direction: column;
+
+  &-even > * {
+    flex-basis: 100%;
+  }
+
+  @media (min-width: @screen-md-min) {
+    flex-direction: row;
+  }
+}
+
 // Resources
 .newsroom-resources h2 {
   font-size: 18px;

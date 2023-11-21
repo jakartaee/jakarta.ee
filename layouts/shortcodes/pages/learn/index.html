@@ -1,0 +1,34 @@
+{{/*
+  Copyright (c) 2023 Eclipse Foundation, Inc.
+  This program and the accompanying materials are made available under the
+  terms of the Eclipse Public License v. 2.0 which is available at
+  http://www.eclipse.org/legal/epl-2.0.
+
+  Contributors:
+    Olivier Goulet <olivier.goulet@eclipse-foundation.org>
+  
+  SPDX-License-Identifier: EPL-2.0
+*/}}
+
+{{ $guides := (.Page.GetPage "starter-guides").RegularPages }}
+
+<section class="column-section column-section-even gap-30">
+  <div class="image-column">
+    <img src="/images/bg-tertiary.jpg" alt="" />
+  </div>
+  <div>
+    <h2 class="big-text" id="starter-guides">Starter Guides</h2>
+    <p>Get started with Jakarta EE starter guides.</p>
+    <ul class="starter-guides-list">
+      {{ range first 4 $guides }}
+        <li class="starter-guide margin-bottom-10 margin-top-10">
+          <i class="margin-right-20 fa fa-code fa-xl text-secondary" aria-hidden="true"></i>
+          <a href="{{ .Permalink }}">{{ .Title }}</a>
+        </li>
+      {{ end }}
+    </ul>
+    <a class="btn btn-primary">View the Starter Guides</a>
+  </div>
+</section>
+
+<hr class="margin-top-40 margin-bottom-40">
