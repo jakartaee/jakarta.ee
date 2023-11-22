@@ -243,8 +243,8 @@
     weight = 2
 
 [[main]]
-    name = "Blog"
-    url = "/blogs"
+    name = "ブログ"
+    url = "/ja/blogs"
     parent = "コミュニティ"
     weight = 3
 
