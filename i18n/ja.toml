@@ -1,0 +1,1134 @@
+[jakarta-ee-logo-alt]
+  other = "Jakarta EE logo"
+
+[home-calltoaction-title]
+  other = "Jakarta EE brings together a global community of leading developers, vendors, and enterprises to collaborate on advancing enterprise Java technologies in the cloud"
+
+[home-calltoaction-getinformed]
+  other = "GET INFORMED"
+
+[home-calltoaction-specifications]
+  other = "GET THE <br>SPECIFICATIONS"
+
+[home-calltoaction-why-jakarta-ee]
+  other = "WHY JAKARTA EE"
+
+[home-calltoaction-presentation]
+  other = "JAKARTA EE PRESENTATION"
+
+[home-calltoaction-getinvolved]
+  other = "GET INVOLVED"
+
+[home-calltoaction-membership]
+  other = "JOIN THE <br>WORKING GROUP"
+
+[home-calltoaction-howtogetinvolved]
+  other = "How to Get Involved"
+
+[home-calltoaction-getstarted]
+  other = "GET STARTED"
+
+[home-calltoaction-jakartaeestarter]
+  other = "STARTER FOR JAKARTA EE"
+
+[home-calltoaction-compatibility]
+  other = "DOWNLOAD <br>COMPATIBLE PRODUCTS"
+
+[home-calltoaction-release]
+  other = "RELEASES"
+
+[home-featured]
+  other = "Featured"
+
+[home-members]
+  other = "Members"
+
+[home-members-title]
+  other = "Working together, the world’s enterprise Java ecosystem leaders, including Fujitsu, IBM, Oracle, Red Hat, and Tomitribe, are advancing Java EE and Jakarta EE to support moving mission-critical applications and workloads to the cloud."
+
+[home-members-explore]
+  other = "Explore All Members"
+
+[home-testimonials]
+  other = "Testimonials"
+
+[home-videos]
+  other = "Videos"
+
+[jakarta-ee-on-youtube]
+  other = "Jakarta EE on YouTube"
+
+[home-videos-title]
+  other = "The Jakarta EE Youtube channel is a platform that features Jakarta EE related videos aiming to educate the new and existing enterprise java community members about open source, cloud native and microservices technologies."
+
+[home-videos-watch-more]
+  other = "Watch More"
+
+[home-whats-new]
+  other = "What's New"
+
+[home-whats-new-announcements]
+  other = "Announcements"
+
+[home-whats-new-news]
+  other = "News"
+
+[home-whats-new-events]
+  other = "Events"
+
+[compatibility-intro-text]
+  other = "The success of Jakarta EE technology relies on compatibility to ensure application portability, security, stability, and resiliency. Compatibility will allow more technology providers to leverage and strengthen the Jakarta EE brand in the enterprise Java community. If you are interested in featuring your product here, follow the steps on the <a href=\"/compatibility/get_listed\">Get Listed</a> page."
+
+[compatibility-logo-alt]
+  other = "{{ .Name }} logo"
+
+[compatibility-download-button-text]
+  other = "Download"
+
+[compatibility-proof-of-compatibility-text]
+  other = "Proof of compatibility"
+
+[compatibility-version-text]
+  other = "Version: "
+
+[connect-mailing-lists-subscribe]
+  other = "Subscribe"
+
+[connect-mailing-list-community-title]
+  other = "Jakarta EE Community Mailing List"
+
+[connect-mailing-list-community-body]
+  other = "jakarta.ee-community is the mailing list for Jakarta EE community discussions. Subscribe to this list for all things Jakarta EE."
+
+[connect-mailing-list-community-link]
+  other = "https://accounts.eclipse.org/mailing-list/jakarta.ee-community"
+
+[connect-mailing-list-working-group-title]
+  other = "Jakarta EE Working Group Mailing List"
+
+[connect-mailing-list-working-group-body]
+  other = "jakarta.ee-wg is the mailing list for the Jakarta EE Working Group. Subscribe to this list to share general information regarding Jakarta EE."
+
+[connect-mailing-list-working-group-link]
+  other = "https://accounts.eclipse.org/mailing-list/jakarta.ee-wg"
+
+[connect-mailing-list-projects-title]
+  other = "Specification Project Mailing Lists"
+
+[connect-mailing-list-projects-body]
+  other = "Want to get involved? Sign up to the Jakarta EE project mailing lists here."
+
+[connect-mailing-list-projects-link-text]
+  other = "Mailing Lists"
+
+[connect-slack-title]
+  other = "Slack"
+
+[connect-slack-subtitle]
+  other = "Join the conversations on Jakarta EE slack workspace and see what the community members are up to."
+
+[connect-slack-link]
+  other = "https://join.slack.com/t/eclipsefoundationhq/shared_invite/zt-crh7mheq-3on2tophEuvQTUGidEAWlg"
+
+[connect-slack-link-join]
+  other = "Join"
+
+[connect-newsletter-title]
+  other = "Newsletter"
+
+[connect-newsletter-subscribe]
+  other = "Subscribe"
+
+[connect-newsletter-view-archives]
+  other = "View Archives"
+
+[connect-newsletter-subtitle]
+  other = "With a Jakarta EE-themed edition released each quarter, the Eclipse Foundation Community Newsletter is your destination for original articles about projects and key technologies."
+
+[connect-newsletter-link]
+  other = "https://eclipsecon.us6.list-manage.com/subscribe/post"
+
+[connect-updates-title]
+  other = "Updates"
+
+[connect-updates-body]
+  other = "Receive updates from the Eclipse Foundation on Jakarta EE and other Eclipse projects, events and community announcements."
+
+[connect-updates-edit-link]
+  other = "https://accounts.eclipse.org/user/edit#open_tab_privacy"
+
+[connect-updates-edit-text]
+  other = "Edit Preferences"
+
+[connect-updates-link-divider-text]
+  other = "- Or -"
+
+[connect-updates-create-link]
+  other = "https://accounts.eclipse.org/user/register"
+
+[connect-updates-create-text]
+  other = "Create Account"
+
+[connect-community-calendar-title]
+  other = "Jakarta EE Community Calendar"
+
+[connect-community-calendar-body]
+  other = "Join the Jakarta EE Community Calendar to learn more about Jakarta EE-related plans."
+
+[connect-community-calendar-link]
+  other = "https://calendar.google.com/calendar/embed?src=eclipse-foundation.org_3281qms6riu4kdf354jn5idon0%40group.calendar.google.com&ctz=America%2FToronto"
+
+
+[connect-community-folder-title]
+  other = "Community Folder"
+
+[connect-community-folder-body]
+  other = "Our public Community Folder features promotional resources and slides from past update calls and other community meetings."
+
+[connect-community-folder-link]
+  other = "https://drive.google.com/drive/u/0/folders/11nvqdVqFlCxm5AfPh2NdnanTBrCPW8Xv"
+
+[connect-community-folder-link-text]
+  other = "View"
+
+
+[connect-tech-talk-title]
+  other = "Tech Talks Meet-Ups"
+
+[connect-tech-talk-body]
+  other = "Jakarta Tech Talks are both conference based and virtual webinars dedicated to the discussion and discovery of any cloud native java projects, microservices projects, and technologies."
+
+[connect-tech-talk-link-1]
+  other = "https://www.meetup.com/jakartatechtalks_/"
+
+[connect-tech-talk-link-1-text]
+  other = "Tech Talks"
+
+[connect-tech-talk-link-2]
+  other = "https://forms.gle/3wK3oBavYDBWsGkq7"
+
+[connect-tech-talk-link-2-text]
+  other = "Sign Up to Host"
+
+
+[connect-specification-calendar-title]
+  other = "Jakarta EE Specifications Calendar"
+
+[connect-specification-calendar-body]
+  other = "Jakarta EE Specifications Calendar lists meetings dedicated to different Jakarta EE Specifications. Subscribe to the Jakarta EE Specifications Calendar to learn more about Specification-related plans."
+
+[connect-specification-calendar-link]
+  other = "https://calendar.google.com/calendar/embed?src=eclipse-foundation.org_e9ki8t2gc75sh07qdh95c8ofvc%40group.calendar.google.com&ctz=America%2FToronto"
+
+[connect-specification-calendar-link-text]
+  other = "Calendar"
+
+
+
+[members-strategic-members-title]
+  other = "Strategic Members"
+
+[members-enterprise-members-title]
+  other = "Enterprise Members"
+
+[members-participant-members-title]
+  other = "Participant Members"
+
+[members-guest-members-title]
+  other = "Guest Members"
+
+[membership-testimonials-title]
+  other = "Member Testimonials"
+
+[sidebar-title]
+  other = "Innovate with Us"
+
+[sidebar-about-jakartaee]
+  other = "About Jakarta EE"
+
+[sidebar-faqs]
+  other = "Frequently Asked Questions"
+
+[sidebar-become-a-member]
+  other = "Become a Member"
+
+[sidebar-connect]
+  other = "Stay Connected"
+
+[sidebar-working-group-charter]
+  other = "Working Group Charter"
+
+[sidebar-technical-direction]
+  other = "Technical Direction"
+
+[sidebar-newsletter-archives]
+  other = "Newsletter Archives"
+
+[sidebar-meeting-minutes]
+  other = "Meeting Minutes"
+
+[sidebar-trademark-guidelines]
+  other = "Trademark Guidelines"
+
+[sidebar-specification-process]
+  other = "Specification Process"
+
+[sidebar-overview]
+  other = "Overview"
+
+[sidebar-events]
+  other = "Events"
+
+[sidebar-adopt-a-spec]
+  other = "Adopt a Spec"
+
+[sidebar-jakartatechtalks]
+  other = "TechTalk Meet-Ups"
+
+[sidebar-events-hosting]
+  other = "Interested in Hosting an Event?"
+
+[sidebar-events-add]
+  other = "Learn more"
+
+[sidebar-events-youtube]
+  other = "Watch recordings from the past events"
+
+[sidebar-events-youtube-channel]
+  other = "on our YouTube channel"
+
+[pages-newsletter-sign-up-to-our-newsletter]
+  other = "Subscribe to our Newsletter"
+
+[coming-soon]
+  other = "Coming soon"
+
+[news-list-nav-next]
+  other = "Next"
+
+[news-list-nav-prev]
+  other = "Previous"
+
+[news-sidebar-news-title]
+ other = "News"
+
+[news-sidebar-tags-title]
+ other = "Tags"
+
+[news-sidebar-archive-title]
+ other = "Archive"
+
+[news-summary-continue-reading]
+  other = "Continue reading"
+
+[news-summary-icons-facebook]
+ other = "Share on Facebook"
+
+[news-summary-icons-linkedin]
+ other = "Share on LinkedIn"
+
+[news-summary-icons-twitter]
+ other = "Tweet this"
+
+[news-single-see-all-news]
+ other = "See all news"
+
+[footer-join-mailing-list]
+other = "Join our Mailing List"
+
+[footer-join-mailing-list-button-text]
+other = "Sign up now"
+
+[footer-useful-links-forums-text]
+  other = "Stay Connected"
+
+[footer-useful-links-marketplace-text]
+  other = "Compatible Products"
+
+[faq-title]
+ other = "Frequently Asked Questions"
+
+[meeting-minutes-title]
+  other = "Meeting Minutes"
+
+[jakarta-ee-meeting-minutes-title]
+  other = "Jakarta EE Working Group Committees Meeting Minutes"
+
+[jakarta-ee-version-8-delivers-text]
+ other = "Delivers"
+
+[jakarta-ee-version-8-feature-compatibility-title]
+ other = "Full Compatibility with Java<sup>TM</sup>&nbsp;EE 8"
+
+[jakarta-ee-version-8-feature-compatibility-text]
+ other = "Fully compatible with the Java EE 8 specifications and Technology Compatibility Kits (TCKs)"
+
+[jakarta-ee-version-8-feature-open-title]
+ other = "Open Specifications"
+
+[jakarta-ee-version-8-feature-open-text]
+ other = "Leveraging the <a href=\"/about/jesp/\">Jakarta EE Specification Process</a>, an open source specification process that enables code-first development"
+
+[jakarta-ee-version-8-feature-tck-title]
+ other = "Open Source TCK License and Process"
+
+[jakarta-ee-version-8-feature-tck-text]
+ other = "An open process for certifying products as Compatible Implementations of Jakarta EE Profiles using TCKs licensed under the Eclipse TCK License"
+
+[jakarta-ee-version-8-feature-implementations-title]
+ other = "Compatible Implementations"
+
+[jakarta-ee-version-8-feature-implementations-text]
+ other = "Compatible implementations of the Jakarta EE 8 Platform (Full and Web profiles)"
+
+[jakarta-ee-version-8-participation-title]
+ other = "Powered by Participation"
+
+[jakarta-ee-version-8-participation-projects]
+ other = "43 projects"
+
+[jakarta-ee-version-8-participation-committers]
+ other = "174 committers"
+
+[jakarta-ee-version-8-participation-lines-of-code]
+ other = "61.5 million lines of code"
+
+[jakarta-ee-version-8-participation-repositories]
+ other = "129 Repositories"
+
+[jakarta-ee-version-8-ebook-title]
+ other = "<strong>New eBook!</strong> <br>Fulfilling the Vision for Open Source, Cloud Native Java"
+
+[jakarta-ee-version-8-ebook-text]
+ other = "This eBook explores what cloud native Java is, why it matters so much to so many people, and provides the community’s perspective of where Jakarta EE technologies are headed."
+
+[jakarta-ee-version-8-ebook-download]
+ other = "Download"
+
+[jakarta-ee-version-8-social-title]
+ other = "Get Social"
+
+[jakarta-ee-version-8-social-text]
+ other = "Stay up-to-date with Jakarta EE by following us on social media!"
+
+[jakarta-ee-version-9-features-title]
+ other = "features and benefits"
+
+[jakarta-ee-version-9-features-barriers-title]
+ other = "lower entry <br> barriers"
+
+[jakarta-ee-version-9-features-barriers-text]
+ other = "Jakarta EE 9 lowers the barrier of entry to new vendors and implementations to achieve compatibility"
+
+[jakarta-ee-version-9-features-innovation-title]
+ other = "foundation <br> for innovation"
+
+[jakarta-ee-version-9-features-innovation-text]
+ other = "The Jakarta EE 9 release is a key step towards future innovation in cloud native Java"
+
+[jakarta-ee-version-9-features-migration-title]
+ other = "easy <br> migration"
+
+[jakarta-ee-version-9-features-migration-text]
+ other = "An open and stable platform for developers for testing migration to the new namespace"
+
+[jakarta-ee-version-9-features-participation-title]
+ other = "<h2 class=\"text-blue text-center fw-600 uppercase\"><strong>community-powered</strong></h2><h2 class=\"text-secondary fw-600 margin-top-0 font-exo uppercase\"><em>innovation</em></h2>"
+
+[jakarta-ee-version-9-participation-projects]
+ other = "projects"
+
+[jakarta-ee-version-9-participation-committers]
+ other = "committers"
+
+[jakarta-ee-version-9-participation-repositories]
+ other = "git repositories"
+
+[jakarta-ee-version-9-powered-by-participation-title]
+ other = "<h2 class=\"text-blue text-center fw-600 uppercase\"><strong>Powered by</strong></h2><h2 class=\"text-secondary text-center fw-600 margin-top-0 font-exo uppercase\"><em>Participation</em></h2>"
+
+[jakarta-ee-version-9-white-paper-title]
+ other = "New white paper"
+
+[jakarta-ee-version-9-white-paper-download]
+ other = "Download"
+
+[jakarta-ee-version-9-social-title]
+ other = "let's get social"
+
+[jakarta-ee-version-10-features-title]
+ other = "features and benefits"
+
+[jakarta-ee-version-10-features-subtitle]
+ other = "Jakarta EE 10 is packed with new features for building modernized, simplified, and lightweight cloud native Java applications. This new innovative community-driven release is designed for organizations looking to start developing new enterprise Java applications or advancing their existing ones."
+
+[jakarta-ee-version-10-features-block1-title]
+ other = "Modernized"
+
+[jakarta-ee-version-10-features-block1-summary]
+ other = "The Jakarta EE 10 release provides new functionality in over 20 component specifications."
+
+[jakarta-ee-version-10-features-block1-text]
+ other = "This release enables builders of modern cloud native Java applications to develop and deploy Jakarta EE 10 applications on Java SE 11 as well as Java SE 17, the most current LTS release of Java SE. This allows developers to take full advantage of new features including the modular system introduced in Java SE 9 and supported in Java SE 11"
+
+[jakarta-ee-version-10-features-block2-title]
+ other = "Simplified"
+
+[jakarta-ee-version-10-features-block2-summary]
+ other = "With Jakarta EE 10, application development is made simpler by supporting the broader use of additional annotations"
+
+
+[jakarta-ee-version-10-features-block2-text]
+ other = "This makes it easier to build modularized applications and offers improved integration across component APIs. Ultimately, Jakarta EE 10 helps developers more easily implement applications with modern security requirements, remove deprecated APIs, and maintain high levels of compatibility with prior Jakarta EE releases."
+
+[jakarta-ee-version-10-features-block3-title]
+ other = "Lightweight"
+
+[jakarta-ee-version-10-features-block3-summary]
+ other = "Jakarta EE 10 defines a new profile specification with Jakarta EE Core Profile 10. The “Core Profile” which defines a multi-vendor platform for modernized and lightweight Java applications and microservices."
+
+
+[jakarta-ee-version-10-features-block3-text]
+ other = "The new Core Profile provides a subset of Jakarta EE specifications that target smaller runtimes suitable for microservices development with lightweight runtimes.This includes an innovative new CDI-Lite specification for building lightweight Jakarta EE applications."
+
+[jakarta-ee-version-10-specifications-title]
+ other = "Jakarta EE 10 Specifications"
+
+[jakarta-ee-version-10-specifications-text]
+ other = "Jakarta EE 10 delivers noteworthy API upgrades in over 20 specifications and adds important features requested by our global community. These enhancements include:"
+
+[jakarta-ee-version-10-specifications-list1]
+ other = "Jakarta Contexts and Dependency Injection (CDI) 4.0, including CDI-Lite that enables build time extensions"
+
+[jakarta-ee-version-10-specifications-list2]
+ other = "Jakarta Security 3.0 supporting OpenID Connect"
+
+[jakarta-ee-version-10-specifications-list3]
+ other = "Jakarta Servlet 6.0 for simplified programming and improved security"
+
+[jakarta-ee-version-10-specifications-list4]
+ other = "Jakarta Faces (JSF) 4.0 with a modernized API using CDI"
+
+[jakarta-ee-version-10-specifications-list5]
+ other = "Jakarta JSON Binding (JSON-B) 3.0 with new support for polymorphic types"
+
+[jakarta-ee-version-10-specifications-list6]
+ other = "Jakarta RESTful Web Services standardizes a Java SE Bootstrap API and standard support for multipart/form-data"
+
+[jakarta-ee-version-10-specifications-list7]
+ other = "Jakarta Persistence standardizing UUID as Basic Type and extending Query language and Query API"
+
+[jakarta-ee-version-10-specifications-list8]
+ other = "Jakarta Concurrency 3.0 is moved to the Web Profile and enhances parallel and reactive programming models available to applications"
+
+[jakarta-ee-version-10-section-download-compatible-products]
+ other = "download compatible products"
+
+[jakarta-ee-version-10-section-specifications]
+ other = "specifications"
+
+[jakarta-ee-version-10-section-view-all-releases]
+ other = "View all Releases"
+
+[jakarta-ee-version-9_1-features-title]
+ other = "features and benefits"
+
+[jakarta-ee-version-9_1-features-barriers-title]
+ other = "lower entry <br> barriers"
+
+[jakarta-ee-version-9_1-features-barriers-text]
+ other = "Jakarta EE 9 lowers the barrier of entry to new vendors and implementations to achieve compatibility"
+
+[jakarta-ee-version-9_1-features-innovation-title]
+ other = "foundation <br> for innovation"
+
+[jakarta-ee-version-9_1-features-innovation-text]
+ other = "The Jakarta EE 9 release is a key step towards future innovation in cloud native Java"
+
+[jakarta-ee-version-9_1-features-migration-title]
+ other = "easy <br> migration"
+
+[jakarta-ee-version-9_1-features-migration-text]
+ other = "An open and stable platform for developers for testing migration to the new namespace"
+
+[jakarta-ee-version-9_1-features-supporting-java-se-11]
+ other = "now supporting java se 11"
+
+[jakarta-ee-version-9_1-features-participation-title]
+ other = "<h2 class=\"text-blue text-center fw-600 uppercase\"><strong>community-powered</strong><br> <span class=\"text-secondary font-exo\"><em>innovation</em></span></h2>"
+
+[jakarta-ee-version-9_1-participation-projects]
+ other = "projects"
+
+[jakarta-ee-version-9_1-participation-specifications]
+ other = "specifications"
+
+[jakarta-ee-version-9_1-participation-committers]
+ other = "committers"
+
+[jakarta-ee-version-9_1-participation-repositories]
+ other = "git repositories"
+
+[jakarta-ee-version-9_1-powered-by-participation-title]
+ other = "<h2 class=\"text-blue text-center fw-600 uppercase\"><strong>Powered by</strong><br> <span class=\"text-secondary font-exo\"><em>Participation</em></span></h2>"
+
+[jakarta-ee-version-10-white-paper-title]
+ other = "New Cloud Native Java eBook"
+
+[jakarta-ee-version-9_1-white-paper-title]
+ other = "New white paper"
+
+[jakarta-ee-version-9_1-white-paper-download]
+ other = "Download"
+
+[jakarta-ee-version-9_1-social-title]
+ other = "let's get social"
+
+[jakarta-ee-version-9_1-section-skip-to-main-content]
+ other = "Skip to main content"
+
+[jakarta-ee-version-9_1-section-new-release]
+ other = "<span class=\"p text-secondary\">version 9.1</span> new release"
+
+[jakarta-ee-version-9_1-section-release-text]
+ other = "An open, community-driven platform</span> <br> for future innovation of <br> enterprise Java technologies"
+
+[jakarta-ee-version-9_1-section-download-compatible-products]
+ other = "download <br/> compatible products"
+
+[jakarta-ee-version-9_1-section-specifications]
+ other = "specifications"
+
+[jakarta-ee-version-9_1-previous-release-link]
+ other = "<a id=\"text-white\" href=\"/release\" class=\"uppercase\">view all releases</a>"
+
+[jakarta-ee-version-9-section-skip-to-main-content]
+ other = "Skip to main content"
+
+[jakarta-ee-version-9-section-new-release]
+ other = "<span class=\"p text-secondary\">version 9</span>"
+
+[jakarta-ee-version-9-section-release-text]
+ other = "An open, community-driven platform</span> <br> for future innovation of <br> enterprise Java technologies"
+
+[jakarta-ee-version-9-section-download-compatible-products]
+ other = "download <br/> compatible products"
+
+[jakarta-ee-version-9-section-specifications]
+ other = "specifications"
+
+[jakarta-ee-version-9-previous-release-link]
+ other = "<a id=\"text-white\" href=\"/release\" class=\"uppercase\">view all releases</a>"
+
+[jakarta-ee-version-8-section-skip-to-main-content]
+ other = "Skip to main content"
+
+[jakarta-ee-version-8-section-release-text]
+ other = "An open, community-driven baseline for<br> the evolution of enterprise Java technologies"
+
+[pages-membership-title]
+ other = "Shape the future of Cloud Native, Open Source Java"
+
+[pages-membership-text]
+ other = "<p>Working together, the world’s Java ecosystem leaders, including Fujitsu, IBM, Oracle, Red Hat, and Tomitribe, are advancing Java EE and Jakarta EE to support moving mission-critical applications and workloads to the cloud. </p><p>Joining the Jakarta EE Working Group demonstrates your commitment not only to the evolution and sustainability of Jakarta EE, but also to ensuring the growth and development of a well-governed, vendor-neutral open source ecosystem which benefits all. </p>"
+
+[pages-membership-benefits-title]
+ other = "Benefits"
+
+[pages-membership-benefits-text]
+ other = "<p>Members of the Jakarta EE Working Group take advantage of the following opportunities:  </p><ul><li>Protect your strategic investment in Java EE, including ensuring the relevancy of your technology and your developer’s skills for the next generation of technology</li><li>Play a role in defining Jakarta EE strategic themes and priorities to evolve the platform in alignment with your requirements and use cases — and those of your customers</li><li>Gain insights to and influence over the technology roadmap</li><li>Shape the definition, evolution, and execution of the specifications process</li><li>Participate in open collaboration through professionally managed development initiatives</li><li>Ensure your development teams benefit from sharing best practices and cutting edge information for building the next generation of enterprise Java applications </li></ul>"
+
+[pages-membership-download-prospectus]
+ other = "Download Membership Prospectus"
+
+[pages-membership-download-flyer]
+ other = "Download Membership Flyer"
+
+[pages-membership-contact]
+ other = "Contact Us About Membership"
+
+[pages-membership-testimonials]
+ other = "Member Testimonials"
+
+[layouts-committees-list-landing-page-committees]
+ other = "Committees"
+
+[layouts-committees-list-landing-page-view]
+ other = "View"
+
+[layouts-committees-list-landing-page-list-documents]
+ other = "Documents"
+
+[pages-about-jakarta-ee-overview-title]
+ other = "Build Enterprise Cloud Native Java Applications With Confidence"
+
+[pages-about-jakarta-ee-overview-text]
+ other = "<p>Jakarta EE gives developers a comprehensive set of vendor neutral, open specifications that are used for developing modern, cloud native Java applications from the ground up. With Jakarta EE, technology developers and consumers can be confident they have the best technologies for developing cloud native, mission-critical applications. And they can build on decades of Java developer expertise to move existing workloads to the cloud.</p><p>Jakarta EE specifications, previously known as Java EE specifications, are developed by well-known industry leaders following the <a href=\"/about/jesp/\">Jakarta EE Specification Process (JESP)</a>.&nbsp;</p>"
+
+[pages-about-jakarta-ee-specification-includes]
+ other = "<p>Every Jakarta EE specification includes:&nbsp;</p><ul><li>A specification document and Javadoc (APIs) that describe how the technology is implemented.</li><li>A Technology Compatibility Kit (TCK) document that describes the tests that must be passed for Jakarta EE implementations to be certified as compatible.</li><li>A compatible implementation that successfully passed the TCK.</li></ul>"
+
+[pages-about-jakarta-ee-benefits-title]
+ other = "Jakarta EE Delivers Strategic and Technical Benefits"
+
+[pages-about-jakarta-ee-benefits-text]
+ other = "<p>Jakarta EE delivers a combination of advantages that cannot be found in other Java frameworks:</p><ul><li>Unparalleled maturity, stability, and backwards compatibility</li><li>The architectural flexibility to support cloud-based microservices architectures as well as traditional, monolithic architectures</li><li>A full-featured platform that can be set up in just a few dozen lines of code</li><li>The ability to easily switch out underlying technologies to meet new requirements and take advantage of faster, lighter implementations</li></ul><p>Together, these advantages give Java developers and enterprises everything they need to build and evolve cloud native Java applications today and in the future.</p>"
+
+[pages-about-jakarta-ee-learn-more]
+ other = "Learn More"
+
+[pages-about-why-jakarta-ee-table-of-contents-text-primary]
+ other = "JAKARTA EE"
+
+[pages-about-why-jakarta-ee-table-of-contents-continuation-text-secondary]
+ other = "IS CONTINUATION"
+
+[pages-about-why-jakarta-ee-table-of-contents-ubiquitous-text-secondary]
+ other = "IS UBIQUITOUS"
+
+[pages-about-why-jakarta-ee-table-of-contents-standard-text-secondary]
+ other = "IS THE STANDARD"
+
+[pages-about-why-jakarta-ee-table-of-contents-innovative-text-secondary]
+ other = "IS INNOVATIVE"
+
+[pages-about-jakarta-ee-learn-more-explore-specifications]
+ other = "Explore the Jakarta EE specifications"
+
+[pages-about-jakarta-ee-learn-more-review-specification-process]
+ other = "Review the Jakarta EE Specification Process"
+
+[pages-about-jakarta-ee-learn-more-view-compatible-products]
+ other = "View Jakarta EE-compatible products"
+
+[pages-about-jakarta-ee-learn-more-discover-working-group]
+ other = "Discover the Jakarta EE Working Group"
+
+[pages-about-jakarta-ee-learn-more-connect-community]
+ other = "Connect with the Jakarta EE community"
+
+[pages-about-working-group-overview-title]
+ other = "Influence the Future of Cloud Native Java"
+
+[pages-about-working-group-overview-text]
+ other = "<p>The Jakarta EE Working Group is the global community of leading technology organizations and individuals that collaborate to ensure <a href=\"/about/jakarta-ee\">Jakarta EE</a> remains relevant and continues to evolve as a true, open platform for innovation. </p>"
+
+[pages-about-working-group-overview-list]
+ other = "<p>To drive broad adoption of Jakarta EE, working group members strive to:</p><ul><li>Deliver more frequent Jakarta EE releases</li><li>Simplify the process for Jakarta EE compatibility certification</li><li>Grow the Jakarta EE community with members of all sizes and from diverse industries</li><li>Manage and increase awareness of the Jakarta EE brand on behalf of the community&nbsp;</li></ul>"
+
+[pages-about-working-group-level-playing-field-title]
+ other = "A Level Playing Field Opens the Door to All"
+
+[pages-about-working-group-level-playing-field-text]
+ other = "<p>The <a href=\"https://www.eclipse.org/org/documents/\">vendor neutral governance model at the Eclipse Foundation</a> ensures every Jakarta EE Working Group member has an equal voice, no matter what size their organization is or how involved they are in the Eclipse Foundation.</p>"
+
+[pages-about-working-group-level-playing-field-list]
+ other = "<p>The working group operates based on the Jakarta EE Working Group <a href=\"https://www.eclipse.org/org/workinggroups/jakarta_ee_charter.php\">charter</a> that:</p><ul><li>Establishes the scope, goals, and vision for the ecosystem</li><li>Identifies all policies, processes, and guidelines the working group must follow</li><li>Defines the membership levels, types, and fees</li><li>Explains the power and duties of each working group committee</li><li>Outlines the rules for working group meetings</li></ul>"
+
+[pages-about-working-group-flexible-membership-options-title]
+ other = "Flexible Membership Options"
+
+[pages-about-working-group-flexible-membership-options-text]
+ other = "Each working group participant can choose the membership level that matches their size, budget, and business goals. This flexibility means organizations at all stages of development can afford to join. And special, fee-free membership levels allow individuals to participate."
+
+[pages-about-working-group-testimonials]
+ other = "We were very surprised and pleased to learn we would be on equal terms with the big vendors, with the same voice and the same vote as they have on the projects we participate in. As a small company, that opportunity is extremely important for our growth and success. Just having our logo next to theirs is fantastic for us from a brand awareness perspective."
+
+[pages-about-working-group-learn-more-text]
+ other = "Learn More"
+
+[pages-about-working-group-learn-more-read-charter]
+ other = "Read the Jakarta EE Working Group Charter"
+
+[pages-about-working-group-learn-more-discover-membership]
+ other = "Discover the benefits of membership"
+
+[pages-about-working-group-learn-more-explore-members]
+ other = "Explore working group members"
+
+[pages-about-working-group-learn-more-contact-us]
+ other = "Contact us about membership in the Jakarta EE Working Group"
+
+[pages-about-working-group-learn-more-connect-community]
+ other = "Connect with the Jakarta EE community"
+
+[pages-about-working-group-links-charter]
+ other = "Working Group Charter"
+
+[pages-about-working-group-links-faq]
+ other = "Jakarta EE FAQ"
+
+[pages-about-working-group-links-membership]
+ other = "Learn about Membership"
+
+[pages-resources-view-our-resources]
+ other = "View our Resources"
+
+[pages-resources-branding-title]
+ other = "Branding"
+
+[pages-resources-branding-guidelines]
+ other = "Branding Guidelines"
+
+[pages-resources-branding-artwork]
+ other = "Artwork"
+
+[pages-resources-case-studies-title]
+ other = "Case Studies"
+
+[pages-resources-case-studies-payara]
+ other = "Payara Services Gains an Equal Footing With Industry Leaders at the Eclipse Foundation"
+
+[pages-resources-datasheets-title]
+ other = "Datasheets"
+
+[pages-resources-datasheets-text]
+ other = "Jakarta EE 9 Tools Vendor Datasheet"
+
+[pages-resources-datasheets-jakarta-ee-10-tools-vendor-pdf]
+ other = "Jakarta EE 10 Tools Vendor Datasheet (PDF)"
+
+[pages-resources-datasheets-jakarta-ee-10-tools-vendor-html]
+ other = "Jakarta EE 10 Tools Vendor Datasheet (HTML)"
+
+[pages-resources-documentation-title]
+ other = "Documentation"
+
+[pages-resources-documentation-tutorial]
+ other = "Jakarta EE Tutorial"
+
+[pages-resources-documentation-first-cup]
+ other = "Jakarta EE First Cup"
+
+[pages-resources-documentation-cargocracker]
+ other = "CargoTracker Example Application"
+
+[pages-resources-ebooks-title]
+ other = "eBooks"
+
+[pages-resources-ebooks-cloud-native-java-vision]
+ other = "How Jakarta EE Delivers on the Vision for Open Source, Cloud Native Java"
+
+[pages-resources-ebooks-cloud-native-java]
+ other = "Charting a Course for Cloud Native Java"
+
+[pages-resources-ebooks-cloud-native-java-html-version]
+ other = "Fulfilling the Vision for Open Source, Cloud Native Java"
+
+[pages-resources-infographics-title]
+ other = "Infographics"
+
+[pages-resources-infographics-developer-survey-findings-2018]
+ other = "2018 Jakarta EE Developer Survey Findings"
+
+[pages-resources-infographics-developer-survey-findings-2020]
+ other = "2020 Jakarta EE Developer Survey Findings"
+
+[pages-resources-infographics-developer-survey-findings-2021]
+ other = "2021 Jakarta EE Developer Survey Findings"
+
+[pages-resources-infographics-developer-survey-findings-2022]
+ other = "2022 Jakarta EE Developer Survey Findings"
+
+[pages-resources-starter-title]
+ other = "Starter for Jakarta EE"
+
+[pages-resources-starter-maven-project]
+ other = "Generate Jakarta EE Maven Project with Examples"
+
+[pages-resources-livestream-title]
+ other = "JakartaOne Livestream"
+
+[pages-resources-livestream-events]
+ other = "Find the Latest Events"
+
+[pages-resources-presentations-title]
+ other = "Presentations"
+
+[pages-resources-presentations-presentation]
+ other = "Jakarta EE presentation"
+
+[pages-resources-presentations-presentation-template]
+ other = "Jakarta EE Presentation Template"
+
+[pages-resources-presentations-efsp]
+ other = "Introducing the EFSP"
+
+[pages-resources-social-cards-title]
+ other = "Social Cards"
+
+[pages-resources-social-cards-community-cards]
+ other = "Jakarta EE Community Cards"
+
+[pages-resources-social-cards-survey]
+ other = "Completed the Jakarta EE Survey"
+
+[pages-resources-surveys-title]
+ other = "Surveys"
+
+[pages-resources-surveys-2018]
+ other = "2018 Jakarta EE Developer Survey"
+
+[pages-resources-surveys-2019]
+ other = "2019 Jakarta EE Developer Survey"
+
+[pages-resources-surveys-2020]
+ other = "2020 Jakarta EE Developer Survey"
+
+[pages-resources-surveys-2021]
+ other = "2021 Jakarta EE Developer Survey"
+
+[pages-resources-white-papers-title]
+ other = "White Papers"
+
+[pages-resources-white-papers-why-jakarta-ee]
+ other = "Why Jakarta EE Is the Right Choice for Today’s Java Applications"
+
+[layouts-specifications-list-website]
+ other = "Website"
+
+[layouts-specifications-list-project]
+ other = "Project"
+
+[layouts-specifications-list-video]
+ other = "Latest Updates"
+
+[layouts-specifications-list-click-to-access-text]
+ other = "Click on the specifications below to access the specification document, Javadoc, Technology Compatibility Kit (TCK), and compatible implementation for each release of the specification."
+
+[layouts-specifications-list-platform-and-profile-title]
+ other = "Platform and Profile Specifications"
+
+[layouts-specifications-list-platform-and-profile-text]
+ other = "The Jakarta EE Platform and Profile specifications are the umbrella specifications for the individual specifications. The Jakarta EE Platform includes most of the individual specifications, while the Profile specifications include the individual specifications for developing web platforms and microservices architectures."
+
+[layouts-specifications-list-view-more]
+ other = "View More"
+
+[layouts-specifications-list-individual-specifications-title]
+ other = "Individual Specifications"
+
+[layouts-specifications-list-individual-specifications-text]
+ other = "Each individual specification describes a standardized way of implementing a particular aspect of an enterprise Java application."
+
+[layouts-specifications-list-jug-spec-adopters-title]
+ other = "JUG Spec Adopters"
+
+[layouts-specifications-list-jug-spec-adopters-text]
+ other = "To learn how your JUG can sign-up, check out the <a href=\"/community/adopt-a-spec\">Adopt a Specification</a> program."
+
+[pages-compatibility-get-listed-title]
+ other = "Benefits of Getting Listed as a Compatible Product"
+
+[pages-compatibility-get-listed-overview]
+ other = "There are several benefits associated with completing the process to get listed on the Compatible Products page, including: "
+
+[pages-compatibility-get-listed-customer-confidence-title]
+ other = "Customer Confidence"
+
+[pages-compatibility-get-listed-customer-confidence-text]
+ other = "Provide your enterprise customers and prospects with the confidence that your product meets their quality, portability, and scalability requirements"
+
+[pages-compatibility-get-listed-collaboration-title]
+ other = "Collaboration"
+
+[pages-compatibility-get-listed-collaboration-text]
+ other = "Demonstrate your organization is collaborating with industry leaders to advance Jakarta EE technologies"
+
+[pages-compatibility-get-listed-brand-building-title]
+ other = "Brand <br>Building"
+
+[pages-compatibility-get-listed-brand-building-text]
+ other = "Strengthen your brand in partnership with Jakarta EE Working Group"
+
+[pages-compatibility-get-listed-community-support-title]
+ other = "Community Support"
+
+[pages-compatibility-get-listed-community-support-text]
+ other = "Demonstrate your support for the Jakarta EE developer community"
+
+[pages-compatibility-get-listed-how-get-listed-title]
+ other = "How to Get Listed as a Compatible Product"
+
+[pages-compatibility-get-listed-how-get-listed-text]
+ other = "To get your product listed on the Compatible Products page and in order to be able to use Jakarta EE Compatible logo, please follow these steps:"
+
+[pages-compatibility-get-listed-branding-requirements-title]
+ other = "Branding and compatible logo requirements"
+
+[pages-compatibility-get-listed-branding-requirements-join-working-group]
+ other = "<a href=\"https://jakarta.ee/membership/\">Join</a> the Jakarta EE Working Group"
+
+[pages-compatibility-get-listed-branding-requirements-trademark-guidelines]
+ other = "Get familiar with <a href=\"https://jakarta.ee/legal/trademark_guidelines/\">Jakarta EE Trademark Guidelines</a>."
+
+[pages-compatibility-get-listed-branding-requirements-license-agreement]
+ other = "Execute (digitally sign) the <a href=\"https://app.hellosign.com/s/Aoi0Sx4E\">Jakarta EE Compatibility Trademark License Agreement</a> (or print the <a href=\"/legal/trademark_guidelines/jakarta-ee-trademark-license.pdf\">License Agreement PDF</a> and return the signed agreement to <a href=\"mailto:emo-records@eclipse.org\">emo-records@eclipse.org</a>)"
+
+[pages-compatibility-get-listed-certification-requirements-title]
+ other = "Certification and listing on jakarta.ee Compatible Product pages requirements"
+
+[pages-compatibility-get-listed-certification-requirements-tck-title]
+ other = "Follow the <a href=\"https://jakarta.ee/committees/specification/tckprocess/\">Jakarta EE TCK process</a> to completely run and satisfy all of the requirements of the applicable TCK test"
+
+[pages-compatibility-get-listed-certification-requirements-tck-publish]
+ other = "Publish the TCK results and maintain the public listing of your TCK results for as long as you continue to claim compatibility."
+
+[pages-compatibility-get-listed-certification-requirements-tck-email]
+ other = "Email the TCK results to <a href=\"mailto:tck@eclipse.org\">tck@eclipse.org</a>"
+
+[pages-compatibility-get-listed-certification-requirements-file-request]
+ other = "File a <a href=\"https://raw.githubusercontent.com/jakartaee/specification-committee/master/compatibility-certification-request.md\">Certification Request</a> with a specification project in the <a href=\"https://github.com/eclipse-ee4j/jakartaee-platform\">GitHub repository</a>"
+
+[pages-compatibility-get-listed-certification-requirements-open-issue]
+ other = "Open a <a href=\"https://github.com/jakartaee/jakarta.ee/issues/new?template=compatibility.md\">GitHub issue</a> against the Jakarta EE Compatible Products repository and fill in the required information"
+
+[pages-compatibility-get-listed-compatibility-products-title]
+ other = "Compatibility Products"
+
+[pages-compatibility-get-listed-compatibility-products-text]
+ other = "The success of Jakarta EE technology relies on compatibility to ensure application portability, security, stability, and resiliency. Compatibility will allow more technology providers to leverage and strengthen the Jakarta EE brand in the enterprise Java community."
+
+[pages-compatibility-get-listed-compatibility-products-view]
+ other = "View Compatibility Products"
+
+[pages-community-adopt-a-spec-title]
+ other = "仕様を採用する"
+
+[pages-community-adopt-a-spec-text]
+ other = "仕様に参加プログラムについて"
+
+[pages-community-adopt-a-spec-events]
+ other = "イベント"
+
+[pages-community-adopt-a-spec-events-other]
+ other = "最新のクラウドネイティブJavaイベントを見つける"
+
+[pages-community-connect-title]
+ other = "コミュニティとつながる"
+
+[pages-community-connect-link]
+ other = "コミュニケーションチャネルの検索"
+
+[pages-community-meetup-title]
+ other = "Tech Talkの閲覧"
+
+[pages-community-meetup-tech-talk]
+ other = "最新のJakarta Tech Talkを検索"
+
+[pages-community-meetup-sign-up]
+ other = "サインアップしてトークを主催する"
+
+[pages-community-videos-title]
+ other = "ビデオ"
+
+[pages-community-videos-watch]
+ other = "最新のビデオを見る"
+
+[pages-community-videos-subscribe]
+ other = "Youtubeチャンネルを購読する"
+
+[pages-community-jakartaone-livestream]
+ other = "JakartaOneライブストリーム"
+
+[pages-community-jakartaone-livestream-latest]
+ other = "最新のJakartaOneライブストリームを検索する"
+
+[pages-community-jakartaone-livestream-language]
+ other = "ローカル言語でJakartaOne ライブストリームをホストする方法"
+
+[pages-get-involved-getinvolved-title]
+ other = "Jakarta EEに参加しよう！"
+
+[pages-get-involved-getinvolved-content]
+ other = "<p>Jakarta EEプロジェクトやイニシアチブに参加するには、まず<a href=\"https://accounts.eclipse.org/user/register\">Eclipse Foundationアカウントを作成</a>します。</p><p>アカウントを取得したら、以下のいずれかの方法で参加できます。</p>"
+
+[pages-get-involved-jointheconversation-title]
+ other = "会話に参加する"
+
+[pages-get-involved-jointheconversation-content]
+ other = "最新のコミュニティの取り組みについて学び、参加する方法を決めるために、ミュニケーションチャネルに参加してください。"
+
+[pages-get-involved-jointheconversation-button-email]
+ other = "電子メールで会話に参加する"
+
+[pages-get-involved-jointheconversation-button-slack]
+ other = "Slackに参加する"
+
+[pages-get-involved-jointheconversation-button-social]
+ other = "ソーシャルメディアに参加する"
+
+[pages-get-involved-HowToContribute-title]
+ other = "貢献の方法"
+
+[pages-get-involved-HowToContribute-content]
+ other = "<p>興味のある<a href=\"https://github.com/eclipse-ee4j\">Jakarta EEプロジェクト</a>を選び、プロジェクトのメーリングリストに参加してチームとコミュニケーションを取りましょう。</p><p>貢献を開始する前に、事務手続きが正しく行われていることを確認する必要があります。個人で貢献する場合は、EFアカウントにログインし、Eclipse Contributor Agreementに署名してください。その後、プロジェクトチームと協力して作業を行うことができます。契約の詳細については、<a href=\"https://www.eclipse.org/legal/ECA.php\">Eclipse Contributor Agreement</a>ページを参照してください。ただし、雇用主がすでにJakarta EEワーキンググループメンバーである場合、雇用主は貢献している従業員すべてをカバーする<a href=\"https://www.eclipse.org/legal/committer_process/EclipseMemberCommitterAgreement.pdf\">メンバーコミッタ寄稿同意書</a>があるため、何もする必要はありません。</p>"
+
+[pages-get-involved-HowToContribute-button-LoginToEF]
+ other = "EFアカウントにログインします"
+
+[pages-get-involved-BecomeACommitter-title]
+ other = "コミッターになる"
+
+[pages-get-involved-BecomeACommitter-content]
+ other = "<p>Jakarta EE貢献者はコミッターになる資格があります。コミッターになるには、いくつかの方法があります。1) 既存のJakarta EEプロジェクトの場合、投票により選出されます。該当オープンソースプロジェクトがどのように機能するか理解していることを示す貢献を行った後、そのプロジェクトの現在のコミッターの一人が投票を開始します。現在のコミッターはそれに投票しなければなりません。そのため、コミッター（およびコミュニティ）がレビューできる質の高い貢献を公に積み重ねることが、このプロセス全体の中で最も重要な部分です。2) もう一つの選択肢は、初期貢献をすることで、新しいJakarta EE仕様プロジェクトのコミッターになることです。プロジェクトの対応するプロジェクト管理委員会（PMC）は、エグゼクティブディレクター（またはその代理）に承認をえるための初期コミッターを指名します。</p><p>雇用主がJakarta EEワーキンググループメンバーである場合、雇用主はすでに必要な書類に署名しており、あなたが用意する書類はありません。</p> <p>雇用主がJakarta EEワーキンググループのメンバーでない場合は、次のフォームに記入する必要があります。</p>"
+
+[pages-get-involved-BecomeACommitter-IndividualAgreement]
+ other = "Jakarta EEワーキンググループIndividual Participation Agreement"
+
+[pages-get-involved-BecomeACommitter-EmployerAgreement]
+ other = "Employer Consent Agreement for Eclipse Foundation Specification Projects"
+
+[pages-get-involved-JoinWG-title]
+ other = "Jakarta EEワーキンググループに参加する"
+
+[pages-get-involved-JoinWG-content]
+ other = "<p>Jakarta EEの向上に関心を持つ個人または団体は、Jakarta EEワーキンググループに参加することができます。</p> <p><img class=\"get-involved-orange-icon\" src=\"/images/get-involved/icons/reward.svg\" alt=\"Reward icon\"><a href=\"https://www.eclipse.org/org/workinggroups/jakarta_ee_charter.php\">Jakarta EEワーキンググループチャーター</a>を確認し、<em class=\"margin-right-10\"></em> <img class=\"get-involved-orange-icon\" src=\"/images/get-involved/icons/envelope.svg\" alt=\"Envelope icon\"><a href=\"https://accounts.eclipse.org/contact/membership/jakarta-ee\">お問い合わせください</a>。</p><p>詳細については、<a href=\"https://jakarta.ee/\">Jakarta EEのWebサイト</a>を参照してください。</p>"
+
+[pages-get-involved-WhyDevelopersInvolved-title]
+ other = "開発者が参加すべき理由"
+
+[pages-get-involved-WhyDevelopersInvolved-Experience-title]
+ other = "経験"
+
+[pages-get-involved-WhyDevelopersInvolved-Experience-content]
+ other = "技術をより深く理解し、経験豊富なエンジニアと業界リーダーのチームと協力して学ぶ機会を得る"
+
+[pages-get-involved-WhyDevelopersInvolved-Recognition-title]
+ other = "認知"
+
+[pages-get-involved-WhyDevelopersInvolved-Recognition-content]
+ other = "露出が増えて、コミュニティで自身の評判を築く"
+
+[pages-get-involved-WhyDevelopersInvolved-Flexibility-title]
+ other = "柔軟性"
+
+[pages-get-involved-WhyDevelopersInvolved-Flexibility-content]
+ other = "自分の時間で、世界のどこからでも貢献し、作業できる"
+
+[pages-get-involved-WhyDevelopersInvolved-Impact-title]
+ other = "影響"
+
+[pages-get-involved-WhyDevelopersInvolved-Impact-content]
+ other = "クラウドネイティブやオープン ソースJavaの将来に影響を与え、Javaエコシステムの主要なプレイヤーと新しい関係を築きます。Jakarta EE仕様の質と普及によりJakarta EEを前進させ、それを実現するのに役立ったと知ることで満足感をえることができます。"
+
+[pages-committees-document]
+ other = "Documents"
+
+[pages-committees-document-responsibilities-title]
+ other = "Roles of Jakarta EE Committees during a Release Cycle"
+
+[pages-committees-document-responsibilities-text]
+ other = "This document provides a short summary of the roles and responsibilities of Jakarta EE Working Group Committees during Jakarta EE releases."
+
+[pages-committees-document-download]
+ other = "Download Document"
+
+[pages-committees-website-guidelines-title]
+ other = "Guidelines for jakarta.ee website maintainer"
+
+[pages-committees-website-guidelines-text]
+ other = "This document provides a short summary for a selected jakarta.ee website maintainers who are also Jakarta EE Working Group Committees members."
+
+[pages-committees-website-guidelines-download]
+ other = "Download Document"
