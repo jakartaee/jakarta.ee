@@ -993,124 +993,124 @@ other = "Sign up now"
  other = "View Compatibility Products"
 
 [pages-community-adopt-a-spec-title]
- other = "Adopt a Spec"
+ other = "仕様を採用する"
 
 [pages-community-adopt-a-spec-text]
- other = "Learn about the Adopt a Spec Program"
+ other = "仕様に参加プログラムについて"
 
 [pages-community-adopt-a-spec-events]
- other = "Events"
+ other = "イベント"
 
 [pages-community-adopt-a-spec-events-other]
- other = "Find the latest Cloud Native Java Events"
+ other = "最新のクラウドネイティブJavaイベントを見つける"
 
 [pages-community-connect-title]
- other = "Stay Connected"
+ other = "コミュニティとつながる"
 
 [pages-community-connect-link]
- other = "Find the Communication Channels"
+ other = "コミュニケーションチャネルの検索"
 
 [pages-community-meetup-title]
- other = "Tech Talk Meet-Ups"
+ other = "Tech Talkの閲覧"
 
 [pages-community-meetup-tech-talk]
- other = "Find the latest Jakarta Tech Talk"
+ other = "最新のJakarta Tech Talkを検索"
 
 [pages-community-meetup-sign-up]
- other = "Sign up to host a talk"
+ other = "サインアップしてトークを主催する"
 
 [pages-community-videos-title]
- other = "Videos"
+ other = "ビデオ"
 
 [pages-community-videos-watch]
- other = "Watch the latest videos"
+ other = "最新のビデオを見る"
 
 [pages-community-videos-subscribe]
- other = "Subscribe to our Youtube channel"
+ other = "Youtubeチャンネルを購読する"
 
 [pages-community-jakartaone-livestream]
- other = "JakartaOne Livestream"
+ other = "JakartaOneライブストリーム"
 
 [pages-community-jakartaone-livestream-latest]
- other = "Find the latest JakartaOne Livestream"
+ other = "最新のJakartaOneライブストリームを検索する"
 
 [pages-community-jakartaone-livestream-language]
- other = "Find out how to host a JakartaOne Livestream in your own language"
+ other = "ローカル言語でJakartaOne ライブストリームをホストする方法"
 
 [pages-get-involved-getinvolved-title]
- other = "Get Involved in Jakarta EE!"
+ other = "Jakarta EEに参加しよう！"
 
 [pages-get-involved-getinvolved-content]
- other = "<p>To get involved in any Jakarta EE project or initiative, start by <a href=\"https://accounts.eclipse.org/user/register\">creating an Eclipse Foundation account</a>.</p><p>Once you have an account, you can choose any of the methods below to participate.</p>"
+ other = "<p>Jakarta EEプロジェクトやイニシアチブに参加するには、まず<a href=\"https://accounts.eclipse.org/user/register\">Eclipse Foundationアカウントを作成</a>します。</p><p>アカウントを取得したら、以下のいずれかの方法で参加できます。</p>"
 
 [pages-get-involved-jointheconversation-title]
- other = "Join the Conversation"
+ other = "会話に参加する"
 
 [pages-get-involved-jointheconversation-content]
- other = "Join our communication channels to learn about the latest community initiatives and determine how you can get involved."
+ other = "最新のコミュニティの取り組みについて学び、参加する方法を決めるために、ミュニケーションチャネルに参加してください。"
 
 [pages-get-involved-jointheconversation-button-email]
- other = "Join the conversation on email"
+ other = "電子メールで会話に参加する"
 
 [pages-get-involved-jointheconversation-button-slack]
- other = "Join us on Slack"
+ other = "Slackに参加する"
 
 [pages-get-involved-jointheconversation-button-social]
- other = "Join us on Social Media"
+ other = "ソーシャルメディアに参加する"
 
 [pages-get-involved-HowToContribute-title]
- other = "How to Contribute"
+ other = "貢献の方法"
 
 [pages-get-involved-HowToContribute-content]
- other = "<p>Select a <a href=\"https://github.com/eclipse-ee4j\">Jakarta EE project of interest</a>, join the project&rsquo;s mailing list and start communicating with the team.</p><p>Before starting to contribute, you need to make sure your paperwork is in order. When contributing as an individual, login to your EF account and sign the Eclipse Contributor Agreement. You can then work with the project team to contribute your work. Visit the <a href=\"https://www.eclipse.org/legal/ECA.php\">Eclipse Contributor Agreement</a> page to learn more about the agreement. However, in the case your employer is already a member of the Jakarta EE Working Group, your employer has a <a href=\"https://www.eclipse.org/legal/committer_process/EclipseMemberCommitterAgreement.pdf\">Member Committer and Contributor Agreement</a> in place that covers all their employees who are contributing, and you do not need to do anything!</p>"
+ other = "<p>興味のある<a href=\"https://github.com/eclipse-ee4j\">Jakarta EEプロジェクト</a>を選び、プロジェクトのメーリングリストに参加してチームとコミュニケーションを取りましょう。</p><p>貢献を開始する前に、事務手続きが正しく行われていることを確認する必要があります。個人で貢献する場合は、EFアカウントにログインし、Eclipse Contributor Agreementに署名してください。その後、プロジェクトチームと協力して作業を行うことができます。契約の詳細については、<a href=\"https://www.eclipse.org/legal/ECA.php\">Eclipse Contributor Agreement</a>ページを参照してください。ただし、雇用主がすでにJakarta EEワーキンググループメンバーである場合、雇用主は貢献している従業員すべてをカバーする<a href=\"https://www.eclipse.org/legal/committer_process/EclipseMemberCommitterAgreement.pdf\">メンバーコミッタ寄稿同意書</a>があるため、何もする必要はありません。</p>"
 
 [pages-get-involved-HowToContribute-button-LoginToEF]
- other = "Login to your EF account"
+ other = "EFアカウントにログインします"
 
 [pages-get-involved-BecomeACommitter-title]
- other = "Become a Committer"
+ other = "コミッターになる"
 
 [pages-get-involved-BecomeACommitter-content]
- other = "<p>Jakarta EE contributors are eligible to become committers. Becoming a committer can happen in a couple of ways: 1) For existing Jakarta EE projects, it happens through an election! After you have made contributions that demonstrate that you understand how the open source project works, a current committer on that project will initiate an election. Current committers must vote in the election; so creating a public record of high quality contributions that committers (and the community) can review is the most important part of this entire process. 2) Another option is to become a committer of a new Jakarta EE Specification project, by making initial contributions. The corresponding Project Management Committee (PMC) of the project nominates an initial set of committers for approval by the Executive Director (or his delegates).</p><p>If your employer is a member of the Jakarta EE Working Group, they&rsquo;ve already signed the necessary paperwork and there is no paperwork for you to complete.</p> <p>If your employer is not a member of the Jakarta EE Working Group, you will need to complete the following forms:</p>"
+ other = "<p>Jakarta EE貢献者はコミッターになる資格があります。コミッターになるには、いくつかの方法があります。1) 既存のJakarta EEプロジェクトの場合、投票により選出されます。該当オープンソースプロジェクトがどのように機能するか理解していることを示す貢献を行った後、そのプロジェクトの現在のコミッターの一人が投票を開始します。現在のコミッターはそれに投票しなければなりません。そのため、コミッター（およびコミュニティ）がレビューできる質の高い貢献を公に積み重ねることが、このプロセス全体の中で最も重要な部分です。2) もう一つの選択肢は、初期貢献をすることで、新しいJakarta EE仕様プロジェクトのコミッターになることです。プロジェクトの対応するプロジェクト管理委員会（PMC）は、エグゼクティブディレクター（またはその代理）に承認をえるための初期コミッターを指名します。</p><p>雇用主がJakarta EEワーキンググループメンバーである場合、雇用主はすでに必要な書類に署名しており、あなたが用意する書類はありません。</p> <p>雇用主がJakarta EEワーキンググループのメンバーでない場合は、次のフォームに記入する必要があります。</p>"
 
 [pages-get-involved-BecomeACommitter-IndividualAgreement]
- other = "Jakarta EE Working Group Individual Participation Agreement"
+ other = "Jakarta EEワーキンググループIndividual Participation Agreement"
 
 [pages-get-involved-BecomeACommitter-EmployerAgreement]
  other = "Employer Consent Agreement for Eclipse Foundation Specification Projects"
 
 [pages-get-involved-JoinWG-title]
- other = "Join the Jakarta EE Working Group"
+ other = "Jakarta EEワーキンググループに参加する"
 
 [pages-get-involved-JoinWG-content]
- other = "<p>Any individual or organization with an interest in advancing Jakarta EE can join the Jakarta EE Working Group.</p> <p><img class=\"get-involved-orange-icon\" src=\"/images/get-involved/icons/reward.svg\" alt=\"Reward icon\">Review the <a href=\"https://www.eclipse.org/org/workinggroups/jakarta_ee_charter.php\">Jakarta EE Working Group Charter</a>, <em class=\"margin-right-10\">then</em> <img class=\"get-involved-orange-icon\" src=\"/images/get-involved/icons/envelope.svg\" alt=\"Envelope icon\"><a href=\"https://accounts.eclipse.org/contact/membership/jakarta-ee\">contact us</a>.</p><p>For more information, explore the <a href=\"https://jakarta.ee/\">Jakarta EE website</a>.</p>"
+ other = "<p>Jakarta EEの向上に関心を持つ個人または団体は、Jakarta EEワーキンググループに参加することができます。</p> <p><img class=\"get-involved-orange-icon\" src=\"/images/get-involved/icons/reward.svg\" alt=\"Reward icon\"><a href=\"https://www.eclipse.org/org/workinggroups/jakarta_ee_charter.php\">Jakarta EEワーキンググループチャーター</a>を確認し、<em class=\"margin-right-10\"></em> <img class=\"get-involved-orange-icon\" src=\"/images/get-involved/icons/envelope.svg\" alt=\"Envelope icon\"><a href=\"https://accounts.eclipse.org/contact/membership/jakarta-ee\">お問い合わせください</a>。</p><p>詳細については、<a href=\"https://jakarta.ee/\">Jakarta EEのWebサイト</a>を参照してください。</p>"
 
 [pages-get-involved-WhyDevelopersInvolved-title]
- other = "Why Developers Should Get Involved"
+ other = "開発者が参加すべき理由"
 
 [pages-get-involved-WhyDevelopersInvolved-Experience-title]
- other = "Experience"
+ other = "経験"
 
 [pages-get-involved-WhyDevelopersInvolved-Experience-content]
- other = "Gain a better understanding of the technology, and have the opportunity  to work with, and learn from, a team of experienced engineers and industry leaders"
+ other = "技術をより深く理解し、経験豊富なエンジニアと業界リーダーのチームと協力して学ぶ機会を得る"
 
 [pages-get-involved-WhyDevelopersInvolved-Recognition-title]
- other = "Recognition"
+ other = "認知"
 
 [pages-get-involved-WhyDevelopersInvolved-Recognition-content]
- other = "Be more visible and establish your reputation in the community"
+ other = "露出が増えて、コミュニティで自身の評判を築く"
 
 [pages-get-involved-WhyDevelopersInvolved-Flexibility-title]
- other = "Flexibility"
+ other = "柔軟性"
 
 [pages-get-involved-WhyDevelopersInvolved-Flexibility-content]
- other = "Contribute and work on your own time and from anywhere in the world"
+ other = "自分の時間で、世界のどこからでも貢献し、作業できる"
 
 [pages-get-involved-WhyDevelopersInvolved-Impact-title]
- other = "Impact"
+ other = "影響"
 
 [pages-get-involved-WhyDevelopersInvolved-Impact-content]
- other = "Influence the future of cloud native, open source Java, and build new relationships with leading players in the Java ecosystem. Help advance Jakarta EE technologies, along with the quality and relevance of the Jakarta EE specification, while enjoying the satisfaction of knowing you helped make it happen."
+ other = "クラウドネイティブやオープン ソースJavaの将来に影響を与え、Javaエコシステムの主要なプレイヤーと新しい関係を築きます。Jakarta EE仕様の質と普及によりJakarta EEを前進させ、それを実現するのに役立ったと知ることで満足感をえることができます。"
 
 [pages-committees-document]
  other = "Documents"
