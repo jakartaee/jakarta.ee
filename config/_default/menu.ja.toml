@@ -93,8 +93,8 @@
     parent = "Jakarta EE Working Group"
 
 [[main]]
-    name = "Trademark Guidelines"
-    url = "/legal/trademark_guidelines/"
+    name = "商標ガイドライン"
+    url = "/ja/legal/trademark_guidelines/"
     weight = 3
     parent = "Jakarta EE Working Group"
 
