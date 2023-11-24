@@ -5,6 +5,7 @@ headline: |
   <img class='jumbotron-title' src='/images/jakarta/jakarta-ee-text.svg' alt='Jakarta EE'>
   <br>
 subtitle: Building an open source ecosystem for cloud native architectures with Enterprise Java
+jumbotron_btn_class: btn btn-secondary 
 custom_jumbotron_class: col-xs-24
 custom_jumbotron: |
   <p>Latest Release: Jakarta EE now available</p>
