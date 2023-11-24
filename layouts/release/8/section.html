@@ -18,8 +18,9 @@
             <p class="text-center">{{ i18n "jakarta-ee-version-8-section-release-text" | safeHTML }}</p>
             {{ if isset .Page.Params "links" }}
             <ul class="list-inline buttons">
+              {{ $page := .Page }}
               {{range $key,$val := index .Page.Params.links}}
-                <li><a class="btn btn-primary" href="{{ (index $val 0).href}}">{{ (index $val 1).text}}</a></li>
+              <li><a class="{{ $page.Params.jumbotron_btn_class | default "btn btn-primary" }}" href="{{ (index $val 0).href}}">{{ (index $val 1).text}}</a></li>
               {{end}}
             </ul>
              {{end}} 

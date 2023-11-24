@@ -6,6 +6,7 @@ description: "最新的 Jakarta EE 8 下载，包括 Java EE 8 兼容产品和�
 hide_sidebar: true
 headline: "Jakarta&nbsp;EE"
 links: [[href: "/compatibility/", text: "下载兼容产品"], [href: "/specifications/", text: "规范"]]
+jumbotron_btn_class: "btn btn-contained" 
 hide_page_title: true
 header_wrapper_class: "header-release-8"
 container: "container-fluid"
