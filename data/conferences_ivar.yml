@@ -21,7 +21,13 @@ years:
     location: Montreal 🇨🇦
     date: Feb 21-23
     upcoming: true
-  
+
+  - name: Philly JUG
+    url: https://www.meetup.com/phillyjug/
+    location: Philadelphia 🇺🇸
+    date: Feb 20 (to be confirmed)
+    upcoming: true
+
 - year: 2023
   conferences:
 
