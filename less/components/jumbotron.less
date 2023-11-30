@@ -4,6 +4,22 @@
         min-height:400px;
         padding-top: 250px;
         padding-bottom: 30px;
+
+        // Selects the column within the row which comes after the heading.
+        // This is used to add the orange line below the heading.
+        h2::after,
+        .h2::after {
+            content: "";
+            display: block;
+            width: 7.5rem;
+            height: 1px;
+            margin: .8em 0;
+            background-color: @brand-secondary;
+        }
+
+        .btn {
+          min-width: unset;
+        }
     }
     &.header-secondary-bg-img {
         .featured-jumbotron {
