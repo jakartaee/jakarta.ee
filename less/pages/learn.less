@@ -14,13 +14,22 @@
 @import (reference) '../styles.less';
 
 main {
-  color: #1b208b;
-  font-weight: 600;
-
   h2,
   .h2 {
     margin-top: 0;
   }
+
+  a {
+    &,
+    &:link,
+    &:visited,
+    &:hover,
+    &:active {
+      color: #1b208b;
+      font-weight: 600;
+    }
+  }
+
 }
 
 .column-section {
