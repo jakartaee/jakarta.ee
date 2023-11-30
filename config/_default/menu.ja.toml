@@ -105,9 +105,9 @@
     parent = "Jakarta EE Working Group"
 
 [[main]]
-    name = "Committees"
-    url = "/committees"
-    parent = "Jakarta EE Working Group"
+    name = "委員会"
+    url = "/ja/committees"
+    parent = "Jakarta EEワーキンググループ"
     weight = 5
 
 [[main]]
