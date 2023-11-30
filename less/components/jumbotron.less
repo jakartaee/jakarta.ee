@@ -22,7 +22,11 @@
         }
     }
     &.header-default-bg-img {
-      background-position: center;
+      background-position: 90% 0;
+
+      @media (min-width: @screen-sm-min) {
+        background-position: center;
+      }
     }
     &.header-secondary-bg-img {
         .featured-jumbotron {
