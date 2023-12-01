@@ -2,8 +2,8 @@
     background-position:left;
     .featured-jumbotron-default {
         min-height:400px;
-        padding-top: 250px;
-        padding-bottom: 30px;
+        padding-top: 16.4rem;
+        padding-bottom: 3rem;
 
         // Selects the column within the row which comes after the heading.
         // This is used to add the orange line below the heading.
@@ -25,7 +25,11 @@
       background-position: 90% 0;
 
       @media (min-width: @screen-sm-min) {
-        background-position: center;
+        background-position: -230px 0;
+      }
+
+      @media (min-width: 1400px) {
+        background-position: left center;
       }
     }
     &.header-secondary-bg-img {
