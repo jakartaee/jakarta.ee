@@ -4,9 +4,9 @@ seo_title: "Jakarta® EE | Cloud Native Enterprise Java | Java EE | The Eclipse 
 headline: |
   <img class='jumbotron-title' src='/images/jakarta/jakarta-ee-text.svg' alt='Jakarta EE'>
   <br>
-subtitle: Building an open source ecosystem for &nbsp;cloud native architectures with Enterprise Java
+subtitle: Building an open source ecosystem for <div></div>cloud native architectures with Enterprise Java
 jumbotron_btn_class: btn btn-secondary 
-jumbotron_class: col-xs-24 
+jumbotron_class: col-sm-15 
 custom_jumbotron_class: col-xs-24
 custom_jumbotron: |
   <p>Latest Release: Jakarta EE 10 now available</p>
