@@ -241,37 +241,37 @@
   other = "Member Testimonials"
 
 [sidebar-title]
-  other = "Innovate with Us"
+  other = "共にイノベーションを"
 
 [sidebar-about-jakartaee]
-  other = "About Jakarta EE"
+  other = "Jakarta EEについて"
 
 [sidebar-faqs]
-  other = "Frequently Asked Questions"
+  other = "よくある質問"
 
 [sidebar-become-a-member]
-  other = "Become a Member"
+  other = "メンバーになる"
 
 [sidebar-connect]
-  other = "Stay Connected"
+  other = "コミュニティとつながる"
 
 [sidebar-working-group-charter]
-  other = "Working Group Charter"
+  other = "ワーキンググループチャーター"
 
 [sidebar-technical-direction]
-  other = "Technical Direction"
+  other = "技術的方向"
 
 [sidebar-newsletter-archives]
-  other = "Newsletter Archives"
+  other = "ニュースレターのアーカイブ"
 
 [sidebar-meeting-minutes]
-  other = "Meeting Minutes"
+  other = "ミーティング議事録"
 
 [sidebar-trademark-guidelines]
-  other = "Trademark Guidelines"
+  other = "商標ガイドライン"
 
 [sidebar-specification-process]
-  other = "Specification Process"
+  other = "仕様プロセス"
 
 [sidebar-overview]
   other = "Overview"
@@ -346,7 +346,7 @@ other = "Sign up now"
   other = "Compatible Products"
 
 [faq-title]
- other = "Frequently Asked Questions"
+ other = "よくある質問"
 
 [meeting-minutes-title]
   other = "Meeting Minutes"
@@ -660,22 +660,37 @@ other = "Sign up now"
  other = "ドキュメント"
 
 [pages-about-jakarta-ee-overview-title]
- other = "Build Enterprise Cloud Native Java Applications With Confidence"
+ other = "自信を持って、エンタープライズクラウドネイティブJavaアプリケーションを構築"
 
 [pages-about-jakarta-ee-overview-text]
- other = "<p>Jakarta EE gives developers a comprehensive set of vendor neutral, open specifications that are used for developing modern, cloud native Java applications from the ground up. With Jakarta EE, technology developers and consumers can be confident they have the best technologies for developing cloud native, mission-critical applications. And they can build on decades of Java developer expertise to move existing workloads to the cloud.</p><p>Jakarta EE specifications, previously known as Java EE specifications, are developed by well-known industry leaders following the <a href=\"/about/jesp/\">Jakarta EE Specification Process (JESP)</a>.&nbsp;</p>"
+ other = "<p>Jakarta EEは、開発者にベンダー中立でオープンな包括的仕様を提供し、モダンなクラウドネイティブJavaアプリケーションをゼロから開発するために使用されます。Jakarta EEにより、技術開発者とその利用者は、クラウドネイティブやミッションクリティカルなアプリケーション開発に最適な技術を持っていると確信できます。また、数十年に及ぶJava開発者の専門知識を基盤として、既存のワークロードをクラウドに移行できます。</p><p>以前はJava EE仕様として知られていたJakarta EE仕様は、<a href=\"/ja/about/jesp/\">Jakarta EE仕様プロセス(JESP)</a>に従い著名な業界リーダーによって開発されています。 </p>"
 
 [pages-about-jakarta-ee-specification-includes]
- other = "<p>Every Jakarta EE specification includes:&nbsp;</p><ul><li>A specification document and Javadoc (APIs) that describe how the technology is implemented.</li><li>A Technology Compatibility Kit (TCK) document that describes the tests that must be passed for Jakarta EE implementations to be certified as compatible.</li><li>A compatible implementation that successfully passed the TCK.</li></ul>"
+ other = "<p>各Jakarta EE仕様には次のものが含まれます。 </p><ul><li>テクノロジの実装方法を説明する仕様ドキュメントとJavadoc (API)。</li><li>Jakarta EE実装が互換認定のために合格する必要があるテストについて説明したTechnology Compatibility Kit (TCK)ドキュメント。</li><li>TCKに合格した互換実装。</li></ul>"
 
 [pages-about-jakarta-ee-benefits-title]
- other = "Jakarta EE Delivers Strategic and Technical Benefits"
+ other = "Jakarta EEは戦略的および技術的なメリットをもたらします" 
 
 [pages-about-jakarta-ee-benefits-text]
- other = "<p>Jakarta EE delivers a combination of advantages that cannot be found in other Java frameworks:</p><ul><li>Unparalleled maturity, stability, and backwards compatibility</li><li>The architectural flexibility to support cloud-based microservices architectures as well as traditional, monolithic architectures</li><li>A full-featured platform that can be set up in just a few dozen lines of code</li><li>The ability to easily switch out underlying technologies to meet new requirements and take advantage of faster, lighter implementations</li></ul><p>Together, these advantages give Java developers and enterprises everything they need to build and evolve cloud native Java applications today and in the future.</p>"
+ other = "<p>Jakarta EEには、他のJavaフレームワークにはない利点が組み合わされています。</p><ul><li>比類のない完成度、安定性、後方互換性</li><li>クラウドベースのマイクロサービスのアーキテクチャーと従来のモノリシックなアーキテクチャの両方をサポートする柔軟性</li><li>わずか数十行のコードでフル機能が使えるようになるプラットフォーム</li><li>新しい要件を満たし、より高速で軽量な実装の恩恵を受けるために、基盤となるテクノロジを簡単に切り替えられる機能</li></ul><p>これらの利点を組み合わせることで、Java開発者とエンタープライズは現在および将来のクラウドネイティブJavaアプリケーションの構築と発展に必要なすべてを得ることができます。</p>" 
 
 [pages-about-jakarta-ee-learn-more]
- other = "Learn More"
+ other = "詳細"
+
+[pages-about-jakarta-ee-learn-more-explore-specifications]
+ other = "Jakarta EE仕様を見る" 
+
+[pages-about-jakarta-ee-learn-more-review-specification-process]
+ other = "Jakarta EE仕様プロセスを確認する" 
+
+[pages-about-jakarta-ee-learn-more-view-compatible-products]
+ other = "Jakarta EE互換製品の表示"
+
+[pages-about-jakarta-ee-learn-more-discover-working-group]
+ other = "Jakarta EEワーキンググループの紹介"
+
+[pages-about-jakarta-ee-learn-more-connect-community]
+ other = "Jakarta EEコミュニティに参加する"
 
 [pages-about-why-jakarta-ee-table-of-contents-text-primary]
  other = "JAKARTA EE"
@@ -691,21 +706,6 @@ other = "Sign up now"
 
 [pages-about-why-jakarta-ee-table-of-contents-innovative-text-secondary]
  other = "IS INNOVATIVE"
-
-[pages-about-jakarta-ee-learn-more-explore-specifications]
- other = "Explore the Jakarta EE specifications"
-
-[pages-about-jakarta-ee-learn-more-review-specification-process]
- other = "Review the Jakarta EE Specification Process"
-
-[pages-about-jakarta-ee-learn-more-view-compatible-products]
- other = "View Jakarta EE-compatible products"
-
-[pages-about-jakarta-ee-learn-more-discover-working-group]
- other = "Discover the Jakarta EE Working Group"
-
-[pages-about-jakarta-ee-learn-more-connect-community]
- other = "Connect with the Jakarta EE community"
 
 [pages-about-working-group-overview-title]
  other = "Influence the Future of Cloud Native Java"

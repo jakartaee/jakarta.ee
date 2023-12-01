@@ -1,7 +1,7 @@
 
 [[main]]
     name = "私たちについて"
-    url = "/about/"
+    url = "/ja/about/"
     weight = 1
 
 [[main]]
@@ -56,20 +56,20 @@
 
 # Jakarta EE sub-menu
 [[main]]
-    name = "About Jakarta EE"
-    url = "/about/jakarta-ee"
+    name = "Jakarta EEについて"
+    url = "/ja/about/jakarta-ee"
     parent = "Jakarta EE"
     weight = 1
 
 [[main]]
-	name = "Why Jakarta EE"
-	url = "/about/why-jakarta-ee"
+	name = "Jakarta EEを使用する理由"
+	url = "/ja/about/why-jakarta-ee"
 	parent = "Jakarta EE"
 	weight = 2
 
 [[main]]
-    name = "Frequently Asked Questions"
-    url = "/about/faq/"
+    name = "よくある質問"
+    url = "/ja/about/faq/"
     parent = "Jakarta EE"
     weight = 3
 
@@ -192,8 +192,8 @@
     parent = "仕様"
 
 [[main]]
-    name = "Specification Process"
-    url = "/about/jesp/"
+    name = "Jakarta EE仕様プロセス"
+    url = "/ja/about/jesp/"
     weight = 2
     parent = "仕様"
 
