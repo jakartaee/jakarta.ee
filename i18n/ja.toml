@@ -651,13 +651,13 @@ other = "Sign up now"
  other = "Member Testimonials"
 
 [layouts-committees-list-landing-page-committees]
- other = "Committees"
+ other = "委員会"
 
 [layouts-committees-list-landing-page-view]
- other = "View"
+ other = "表示"
 
 [layouts-committees-list-landing-page-list-documents]
- other = "Documents"
+ other = "ドキュメント"
 
 [pages-about-jakarta-ee-overview-title]
  other = "自信を持って、エンタープライズクラウドネイティブJavaアプリケーションを構築"
@@ -1113,22 +1113,22 @@ other = "Sign up now"
  other = "クラウドネイティブやオープン ソースJavaの将来に影響を与え、Javaエコシステムの主要なプレイヤーと新しい関係を築きます。Jakarta EE仕様の質と普及によりJakarta EEを前進させ、それを実現するのに役立ったと知ることで満足感をえることができます。"
 
 [pages-committees-document]
- other = "Documents"
+ other = "ドキュメント"
 
 [pages-committees-document-responsibilities-title]
- other = "Roles of Jakarta EE Committees during a Release Cycle"
+ other = "リリースサイクルにおけるJakarta EE委員会の役割"
 
 [pages-committees-document-responsibilities-text]
- other = "This document provides a short summary of the roles and responsibilities of Jakarta EE Working Group Committees during Jakarta EE releases."
+ other = "本ドキュメントでは、Jakarta EEをリリースする際のJakarta EEワーキンググループ委員会の役割と責任について簡単に説明します。"
 
 [pages-committees-document-download]
- other = "Download Document"
+ other = "ドキュメントのダウンロード"
 
 [pages-committees-website-guidelines-title]
- other = "Guidelines for jakarta.ee website maintainer"
+ other = "jakarta.ee Webサイトメンテナのガイドライン"
 
 [pages-committees-website-guidelines-text]
- other = "This document provides a short summary for a selected jakarta.ee website maintainers who are also Jakarta EE Working Group Committees members."
+ other = "本ドキュメントでは、Jakarta EEワーキンググループ委員会メンバーでもあるjakarta.ee Webサイトメンテナに選出された方への簡単な概要を説明します。"
 
 [pages-committees-website-guidelines-download]
- other = "Download Document"
+ other = "ドキュメントのダウンロード"
