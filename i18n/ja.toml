@@ -708,58 +708,58 @@ other = "Sign up now"
  other = "IS INNOVATIVE"
 
 [pages-about-working-group-overview-title]
- other = "Influence the Future of Cloud Native Java"
+ other = "クラウドネイティブJavaの未来に影響を与える"
 
 [pages-about-working-group-overview-text]
- other = "<p>The Jakarta EE Working Group is the global community of leading technology organizations and individuals that collaborate to ensure <a href=\"/about/jakarta-ee\">Jakarta EE</a> remains relevant and continues to evolve as a true, open platform for innovation. </p>"
+ other = "<p>Jakarta EEワーキンググループは、<a href=\"/ja/about/jakarta-ee\">Jakarta EE</a>が継続して使用され、真にオープンなイノベーション基盤として発展し続けることを確実にするために協力する、主要な技術団体および個人から構成されるグローバルなコミュニティです。 </p>"
 
 [pages-about-working-group-overview-list]
- other = "<p>To drive broad adoption of Jakarta EE, working group members strive to:</p><ul><li>Deliver more frequent Jakarta EE releases</li><li>Simplify the process for Jakarta EE compatibility certification</li><li>Grow the Jakarta EE community with members of all sizes and from diverse industries</li><li>Manage and increase awareness of the Jakarta EE brand on behalf of the community&nbsp;</li></ul>"
+ other = "<p>Jakarta EEの幅広い導入を推進するために、ワーキンググループメンバーは次の取り組みを行います。</p><ul><li>より頻繁なJakarta EEのリリース</li><li>Jakarta EE互換性認証のプロセスを単純化</li><li>あらゆる規模のメンバー、多様な業界からのメンバーにより、Jakarta EEコミュニティを成長させる</li><li>コミュニティのために、Jakarta EEブランドを管理し、認知度を高める </li></ul>"
 
 [pages-about-working-group-level-playing-field-title]
- other = "A Level Playing Field Opens the Door to All"
+ other = "すべてのレベルのメンバーが公平に参加"
 
 [pages-about-working-group-level-playing-field-text]
- other = "<p>The <a href=\"https://www.eclipse.org/org/documents/\">vendor neutral governance model at the Eclipse Foundation</a> ensures every Jakarta EE Working Group member has an equal voice, no matter what size their organization is or how involved they are in the Eclipse Foundation.</p>"
+ other = "<p><a href=\"https://www.eclipse.org/org/documents/\">Eclipse Foundationのベンダー中立なガバナンスモデル</a>により、組織の規模やEclipse Foundationへの参加の度合いに関係なく、すべてのJakarta EEワーキンググループメンバーが平等な発言権を持つことを保証します。</p>"
 
 [pages-about-working-group-level-playing-field-list]
- other = "<p>The working group operates based on the Jakarta EE Working Group <a href=\"https://www.eclipse.org/org/workinggroups/jakarta_ee_charter.php\">charter</a> that:</p><ul><li>Establishes the scope, goals, and vision for the ecosystem</li><li>Identifies all policies, processes, and guidelines the working group must follow</li><li>Defines the membership levels, types, and fees</li><li>Explains the power and duties of each working group committee</li><li>Outlines the rules for working group meetings</li></ul>"
+ other = "<p>ワーキンググループは、Jakarta EEワーキンググループ<a href=\"https://www.eclipse.org/org/workinggroups/jakarta_ee_charter.php\">チャーター</a>に基づいて行動します。</p><ul><li>エコシステムの範囲、目標、およびビジョンを確立する</li><li>ワーキンググループグループが従う必要のあるすべてのポリシー、プロセス、およびガイドラインを策定します</li><li>会員レベル、種類、参加費を策定します</li><li>ワーキンググループの各委員会の権限と義務を定義します</li><li>ワーキンググループ会議規則の概要を決めます</li></ul>"
 
 [pages-about-working-group-flexible-membership-options-title]
- other = "Flexible Membership Options"
+ other = "柔軟なメンバーシップオプション"
 
 [pages-about-working-group-flexible-membership-options-text]
- other = "Each working group participant can choose the membership level that matches their size, budget, and business goals. This flexibility means organizations at all stages of development can afford to join. And special, fee-free membership levels allow individuals to participate."
+ other = "各ワーキンググループ参加者は、規模、予算、事業目標に合った会員レベルを選ぶことができます。この柔軟性により、開発のあらゆる段階にある企業が参加できます。また、特別な無料の会員レベルにより、個人でも参加できます。"
 
 [pages-about-working-group-testimonials]
- other = "We were very surprised and pleased to learn we would be on equal terms with the big vendors, with the same voice and the same vote as they have on the projects we participate in. As a small company, that opportunity is extremely important for our growth and success. Just having our logo next to theirs is fantastic for us from a brand awareness perspective."
+ other = "私たちは大手ベンダーと対等な立場にあり、私たちが参加するプロジェクトに対して同じ意見や投票権があることを知り、非常に驚き、嬉しく思いました。小さな企業として、その機会は当社の成長と成功にとって非常に重要です。ブランド認知度の観点から見ると、彼らのロゴの隣に当社のロゴが置かれるだけでも素晴らしいことです。"
 
 [pages-about-working-group-learn-more-text]
- other = "Learn More"
+ other = "詳細"
 
 [pages-about-working-group-learn-more-read-charter]
- other = "Read the Jakarta EE Working Group Charter"
+ other = "Jakarta EEワーキンググループチャーターを読む"
 
 [pages-about-working-group-learn-more-discover-membership]
- other = "Discover the benefits of membership"
+ other = "メンバーシップのメリットを知る"
 
 [pages-about-working-group-learn-more-explore-members]
- other = "Explore working group members"
+ other = "ワーキンググループメンバーの検索"
 
 [pages-about-working-group-learn-more-contact-us]
- other = "Contact us about membership in the Jakarta EE Working Group"
+ other = "Jakarta EEワーキンググループのメンバーシップについては、お問い合わせください"
 
 [pages-about-working-group-learn-more-connect-community]
- other = "Connect with the Jakarta EE community"
+ other = "Jakarta EEコミュニティに参加する"
 
 [pages-about-working-group-links-charter]
- other = "Working Group Charter"
+ other = "ワーキンググループチャーター"
 
 [pages-about-working-group-links-faq]
  other = "Jakarta EE FAQ"
 
 [pages-about-working-group-links-membership]
- other = "Learn about Membership"
+ other = "メンバーシップについて"
 
 [pages-resources-view-our-resources]
  other = "View our Resources"
