@@ -10,6 +10,12 @@ years:
     date: April 23-26
     upcoming: true
 
+  - name: Devnexus
+    url: https://devnexus.com/
+    location: Atlanta 🇺🇸
+    date: April 9-11
+    upcoming: true
+
   - name: JDevSummitIL
     url: https://jdevsummitil.com/
     location: Tel-Aviv 🇮🇱
