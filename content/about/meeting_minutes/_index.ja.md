@@ -8,7 +8,7 @@ hide_sidebar: true
 layout: "single"
 hide_page_title: true
 aliases: [
-    "/meeting_minutes/"
+    "/ja/meeting_minutes/"
 ]
 ---
 
