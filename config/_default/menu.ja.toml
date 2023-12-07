@@ -81,13 +81,13 @@
 
 # Jakarta EE Group sub-menu
 [[main]]
-    name = "About Working Group"
-    url = "/about/working-group"
+    name = "ワーキンググループについて"
+    url = "/ja/about/working-group"
     weight = 1
     parent = "Jakarta EE Working Group"
 
 [[main]]
-    name = "Charter"
+    name = "特権"
     url = "https://eclipse.org/org/workinggroups/jakarta_ee_charter.php"
     weight = 2
     parent = "Jakarta EE Working Group"
@@ -99,7 +99,7 @@
     parent = "Jakarta EE Working Group"
 
 [[main]]
-    name = "Technical Direction"
+    name = "技術的方向性"
     url = "https://www.eclipse.org/ee4j/direction.php"
     weight = 4
     parent = "Jakarta EE Working Group"
@@ -111,8 +111,8 @@
     weight = 5
 
 [[main]]
-    name = "Committees Meeting Minutes"
-    url = "/meeting_minutes/"
+    name = "委員会のミーティング議事録"
+    url = "/ja/meeting_minutes/"
     parent = "Jakarta EE Working Group"
     weight = 6
 
