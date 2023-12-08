@@ -198,8 +198,8 @@
     parent = "仕様"
 
 [[main]]
-    name = "JESP guide"
-    url = "/committees/specification/guide/"
+    name = "JESPガイド"
+    url = "/ja/committees/specification/guide/"
     parent = "仕様"
     weight = 3
 
