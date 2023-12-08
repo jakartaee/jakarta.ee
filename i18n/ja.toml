@@ -918,79 +918,79 @@ other = "Sign up now"
  other = "To learn how your JUG can sign-up, check out the <a href=\"/community/adopt-a-spec\">Adopt a Specification</a> program."
 
 [pages-compatibility-get-listed-title]
- other = "Benefits of Getting Listed as a Compatible Product"
+ other = "互換製品として登録することの利点"
 
 [pages-compatibility-get-listed-overview]
- other = "There are several benefits associated with completing the process to get listed on the Compatible Products page, including: "
+ other = "「互換製品」ページに表示されることによって、次のようなメリットがあります。 "
 
 [pages-compatibility-get-listed-customer-confidence-title]
- other = "Customer Confidence"
+ other = "お客様の信頼"
 
 [pages-compatibility-get-listed-customer-confidence-text]
- other = "Provide your enterprise customers and prospects with the confidence that your product meets their quality, portability, and scalability requirements"
+ other = "お客様や導入を検討されているお客様に、製品が品質、移植性、スケーラビリティの要件を満たしているという安心感を提供する"
 
 [pages-compatibility-get-listed-collaboration-title]
- other = "Collaboration"
+ other = "共同作業"
 
 [pages-compatibility-get-listed-collaboration-text]
- other = "Demonstrate your organization is collaborating with industry leaders to advance Jakarta EE technologies"
+ other = "業界リーダーと連携してJakarta EE技術を向上させていることを示す"
 
 [pages-compatibility-get-listed-brand-building-title]
- other = "Brand <br>Building"
+ other = "ブランド<br/>構築"
 
 [pages-compatibility-get-listed-brand-building-text]
- other = "Strengthen your brand in partnership with Jakarta EE Working Group"
+ other = "Jakarta EEワーキンググループとのパートナーシップによりブランドを強化"
 
 [pages-compatibility-get-listed-community-support-title]
- other = "Community Support"
+ other = "コミュニティサポート"
 
 [pages-compatibility-get-listed-community-support-text]
- other = "Demonstrate your support for the Jakarta EE developer community"
+ other = "Jakarta EE開発者コミュニティに対するサポートを示す"
 
 [pages-compatibility-get-listed-how-get-listed-title]
- other = "How to Get Listed as a Compatible Product"
+ other = "互換製品として登録する方法"
 
 [pages-compatibility-get-listed-how-get-listed-text]
- other = "To get your product listed on the Compatible Products page and in order to be able to use Jakarta EE Compatible logo, please follow these steps:"
+ other = "あなたの製品を互換製品ページに表示し、Jakarta EE互換ロゴを使用できるようにするには、次の手順に従います。"
 
 [pages-compatibility-get-listed-branding-requirements-title]
- other = "Branding and compatible logo requirements"
+ other = "ブランドと互換ロゴの要件"
 
 [pages-compatibility-get-listed-branding-requirements-join-working-group]
- other = "<a href=\"https://jakarta.ee/membership/\">Join</a> the Jakarta EE Working Group"
+ other = "Jakarta EEワーキンググループに<a href=\"https://jakarta.ee/membership/\">参加する</a>"
 
 [pages-compatibility-get-listed-branding-requirements-trademark-guidelines]
- other = "Get familiar with <a href=\"https://jakarta.ee/legal/trademark_guidelines/\">Jakarta EE Trademark Guidelines</a>."
+ other = "<a href=\"https://jakarta.ee/ja/legal/trademark_guidelines/\"> Jakarta EE商標ガイドライン</a>を理解します。"
 
 [pages-compatibility-get-listed-branding-requirements-license-agreement]
- other = "Execute (digitally sign) the <a href=\"https://app.hellosign.com/s/Aoi0Sx4E\">Jakarta EE Compatibility Trademark License Agreement</a> (or print the <a href=\"/legal/trademark_guidelines/jakarta-ee-trademark-license.pdf\">License Agreement PDF</a> and return the signed agreement to <a href=\"mailto:emo-records@eclipse.org\">emo-records@eclipse.org</a>)"
+ other = "<a href=\"https://app.hellosign.com/s/Aoi0Sx4E\">Jakarta EE Compatibility Trademark License Agreement</a>に署名する（デジタル署名する）（または<a href=\"/legal/trademark_guidelines/jakarta-ee-trademark-license.pdf\">License Agreement PDF</a>印刷し、署名した契約書を<a href=\"mailto:emo-records@eclipse.org\">emo-records@eclipse.org</a>に返送する）"
 
 [pages-compatibility-get-listed-certification-requirements-title]
- other = "Certification and listing on jakarta.ee Compatible Product pages requirements"
+ other = "互換認証とjakarta.eeの互換製品ページ掲載の要件"
 
 [pages-compatibility-get-listed-certification-requirements-tck-title]
- other = "Follow the <a href=\"https://jakarta.ee/committees/specification/tckprocess/\">Jakarta EE TCK process</a> to completely run and satisfy all of the requirements of the applicable TCK test"
+ other = "<a href=\"https://jakarta.ee/committees/specification/tckprocess/\">Jakarta EETCKプロセス</a>に従い、該当するTCKテストのすべての要件を完全に満たし、サインする"
 
 [pages-compatibility-get-listed-certification-requirements-tck-publish]
- other = "Publish the TCK results and maintain the public listing of your TCK results for as long as you continue to claim compatibility."
+ other = "互換性を主張し続ける限り、TCKの結果を公開し、TCKの結果の公開リストを維持します。"
 
 [pages-compatibility-get-listed-certification-requirements-tck-email]
- other = "Email the TCK results to <a href=\"mailto:tck@eclipse.org\">tck@eclipse.org</a>"
+ other = "TCKの結果を<a href=\"mailto:tck@eclipse.org\">tck@eclipse.org</a>に電子メールで送信する"
 
 [pages-compatibility-get-listed-certification-requirements-file-request]
- other = "File a <a href=\"https://raw.githubusercontent.com/jakartaee/specification-committee/master/compatibility-certification-request.md\">Certification Request</a> with a specification project in the <a href=\"https://github.com/eclipse-ee4j/jakartaee-platform\">GitHub repository</a>"
+ other = "<a href=\"https://github.com/eclipse-ee4j/jakartaee-platform\">GitHubリポジトリ</a>内の仕様プロジェクトに<a href=\"https://raw.githubusercontent.com/jakartaee/specification-committee/master/compatibility-certification-request.md\">認証リクエスト</a>をファイルする"
 
 [pages-compatibility-get-listed-certification-requirements-open-issue]
- other = "Open a <a href=\"https://github.com/jakartaee/jakarta.ee/issues/new?template=compatibility.md\">GitHub issue</a> against the Jakarta EE Compatible Products repository and fill in the required information"
+ other = "Jakarta EE互換製品リポジトリに対して<a href=\"https://github.com/jakartaee/jakarta.ee/issues/new?template=compatibility.md\">GitHub Issue</a>を発行し、必要な情報を入力する"
 
 [pages-compatibility-get-listed-compatibility-products-title]
- other = "Compatibility Products"
+ other = "互換製品"
 
 [pages-compatibility-get-listed-compatibility-products-text]
- other = "The success of Jakarta EE technology relies on compatibility to ensure application portability, security, stability, and resiliency. Compatibility will allow more technology providers to leverage and strengthen the Jakarta EE brand in the enterprise Java community."
+ other = "Jakarta EE技術の成功は、アプリケーションの移植性、セキュリティ、安定性、および耐障害性を確保するための互換性に依存しています。互換性があることで、より多くの技術提供者がエンタープライズJavaコミュニティにおいてJakarta EEブランドを活用し、強化できます。"
 
 [pages-compatibility-get-listed-compatibility-products-view]
- other = "View Compatibility Products"
+ other = "互換製品の表示"
 
 [pages-community-adopt-a-spec-title]
  other = "仕様を採用する"
