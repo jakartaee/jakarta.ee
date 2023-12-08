@@ -32,7 +32,7 @@
   other = "STARTER FOR JAKARTA EE"
 
 [home-calltoaction-compatibility]
-  other = "DOWNLOAD <br>COMPATIBLE PRODUCTS"
+  other = "互換製品の<br/>ダウンロード"
 
 [home-calltoaction-release]
   other = "RELEASES"
@@ -77,19 +77,19 @@
   other = "Events"
 
 [compatibility-intro-text]
-  other = "The success of Jakarta EE technology relies on compatibility to ensure application portability, security, stability, and resiliency. Compatibility will allow more technology providers to leverage and strengthen the Jakarta EE brand in the enterprise Java community. If you are interested in featuring your product here, follow the steps on the <a href=\"/compatibility/get_listed\">Get Listed</a> page."
+  other = "Jakarta EE技術の成功は、アプリケーションの移植性、セキュリティ、安定性、および耐障害性を確保するための互換性に依存しています。互換性があることで、より多くの技術提供者がエンタープライズJavaコミュニティにおいてJakarta EEブランドを活用し、強化できます。こちらに製品の掲載を希望する場合は、<a href=\"/ja/compatibility/get-listed\">一覧表示</a>ページの手順に従ってください。"
 
 [compatibility-logo-alt]
-  other = "{{ .Name }} logo"
+  other = "{{ .Name }}ロゴ"
 
 [compatibility-download-button-text]
-  other = "Download"
+  other = "ダウンロード"
 
 [compatibility-proof-of-compatibility-text]
-  other = "Proof of compatibility"
+  other = "互換性の証明"
 
 [compatibility-version-text]
-  other = "Version: "
+  other = "バージョン： "
 
 [connect-mailing-lists-subscribe]
   other = "Subscribe"
