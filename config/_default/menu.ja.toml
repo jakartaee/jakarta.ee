@@ -11,7 +11,7 @@
 
 [[main]]
     name = "互換製品"
-    url = "/compatibility/"
+    url = "/ja/compatibility/"
     weight = 3
 
 [[main]]
@@ -217,14 +217,14 @@
 
 # Compatible Products
 [[main]]
-    name = "Jakarta EE Compatible Products"
-    url = "/compatibility/"
+    name = "Jakarta EEの互換製品"
+    url = "/ja/compatibility/"
     parent = "互換製品"
     weight = 1
 
 [[main]]
-    name = "Get Listed"
-    url = "/compatibility/get-listed/"
+    name = "リストへの掲載"
+    url = "/ja/compatibility/get-listed/"
     parent = "互換製品"
     weight = 2
 
