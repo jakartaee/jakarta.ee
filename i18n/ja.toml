@@ -969,7 +969,7 @@ other = "Sign up now"
  other = "互換認証とjakarta.eeの互換製品ページ掲載の要件"
 
 [pages-compatibility-get-listed-certification-requirements-tck-title]
- other = "<a href=\"https://jakarta.ee/committees/specification/tckprocess/\">Jakarta EETCKプロセス</a>に従い、該当するTCKテストのすべての要件を完全に満たし、サインする"
+ other = "<a href=\"https://jakarta.ee/ja/committees/specification/tckprocess/\">Jakarta EE TCKプロセス</a>に従い、該当するTCKテストのすべての要件を完全に満たし、サインする"
 
 [pages-compatibility-get-listed-certification-requirements-tck-publish]
  other = "互換性を主張し続ける限り、TCKの結果を公開し、TCKの結果の公開リストを維持します。"
