@@ -166,7 +166,7 @@ Eclipse開発プロセスに従いますが、いくつかの追加がありま�
 
 1. [プロジェクト提案](https://projects.eclipse.org/node/add/project-proposal) を作成します。(*)
 2. 公開[メーリング リスト](https://accounts.eclipse.org/mailing-list/jakarta.ee-spec) のメールで仕様策定委員会に連絡します。(*)
-3. 仕様プロジェクトがメーリングリストでの投票により仕様策定委員会によって承認され、EMOによる作成レビューが正常に完了したら、[Jakarta EE仕様](https://jakarta.ee/specifications/)としてリストされるプルリクエストを作成します。PRには、仕様のショートネームにちなんで名付けられたフォルダにある `_index.md` ファイルを含む必要があります。Jakarta MVCの例を次に示します。[_index.md](https://github.com/jakartaee/specifications/blob/master/mvc/_index.md) は、Jakarta EE仕様GitHub [リポジトリ](https://github.com/jakartaee/specifications)の[mvc](https://github.com/jakartaee/specifications/blob/master/mvc/) フォルダーにあります。
+3. 仕様プロジェクトがメーリングリストでの投票により仕様策定委員会によって承認され、EMOによる作成レビューが正常に完了したら、[Jakarta EE仕様](https://jakarta.ee/ja/specifications/)としてリストされるプルリクエストを作成します。PRには、仕様のショートネームにちなんで名付けられたフォルダにある `_index.md` ファイルを含む必要があります。Jakarta MVCの例を次に示します。[_index.md](https://github.com/jakartaee/specifications/blob/master/mvc/_index.md) は、Jakarta EE仕様GitHub [リポジトリ](https://github.com/jakartaee/specifications)の[mvc](https://github.com/jakartaee/specifications/blob/master/mvc/) フォルダーにあります。
 
 ``` 
 ---
@@ -225,7 +225,7 @@ APIと仕様コンテンツ用にapiおよびspec
 ## 仕様の配布 # {#distributing_specifications}
 
 各仕様プロジェクトは、jakarta.ee Webサイトの
-[仕様](https://jakarta.ee/specifications/)の下にあります。
+[仕様](https://jakarta.ee/ja/specifications/)の下にあります。
 
 それぞれの最終仕様には、次の項目が含まれます:
 

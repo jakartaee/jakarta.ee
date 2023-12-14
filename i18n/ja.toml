@@ -885,37 +885,37 @@ other = "Sign up now"
  other = "Why Jakarta EE Is the Right Choice for Today’s Java Applications"
 
 [layouts-specifications-list-website]
- other = "Website"
+ other = "Webサイト"
 
 [layouts-specifications-list-project]
- other = "Project"
+ other = "プロジェクト"
 
 [layouts-specifications-list-video]
- other = "Latest Updates"
+ other = "最新のアップデート"
 
 [layouts-specifications-list-click-to-access-text]
- other = "Click on the specifications below to access the specification document, Javadoc, Technology Compatibility Kit (TCK), and compatible implementation for each release of the specification."
+ other = "以下の仕様をクリックすると、仕様の各リリースの仕様ドキュメント、Javadoc、Technology Compatibility Kit (TCK)、および互換実装にアクセスできます。"
 
 [layouts-specifications-list-platform-and-profile-title]
- other = "Platform and Profile Specifications"
+ other = "プラットフォームとプロファイルの仕様"
 
 [layouts-specifications-list-platform-and-profile-text]
- other = "The Jakarta EE Platform and Profile specifications are the umbrella specifications for the individual specifications. The Jakarta EE Platform includes most of the individual specifications, while the Profile specifications include the individual specifications for developing web platforms and microservices architectures."
+ other = "Jakarta EEプラットフォームおよびプロファイル仕様は、コンポーネント仕様から構成されるアンブレラ仕様です。Jakarta EEプラットフォームには個々の仕様の大部分が含まれており、プロファイル仕様にはWebプラットフォームとマイクロサービスのアーキテクチャーを開発するためのコンポーネント仕様が含まれています。"
 
 [layouts-specifications-list-view-more]
- other = "View More"
+ other = "詳細を表示"
 
 [layouts-specifications-list-individual-specifications-title]
- other = "Individual Specifications"
+ other = "コンポーネント仕様"
 
 [layouts-specifications-list-individual-specifications-text]
- other = "Each individual specification describes a standardized way of implementing a particular aspect of an enterprise Java application."
+ other = "コンポーネント仕様は、エンタープライズJavaアプリケーションの特定領域を実装するための標準方法を示します。"
 
 [layouts-specifications-list-jug-spec-adopters-title]
- other = "JUG Spec Adopters"
+ other = "JUGによる仕様への参加"
 
 [layouts-specifications-list-jug-spec-adopters-text]
- other = "To learn how your JUG can sign-up, check out the <a href=\"/community/adopt-a-spec\">Adopt a Specification</a> program."
+ other = "JUGの参加方法については、<a href=\"/ja/community/adopt-a-spec\">仕様に参加</a>プログラムを参照してください。"
 
 [pages-compatibility-get-listed-title]
  other = "互換製品として登録することの利点"

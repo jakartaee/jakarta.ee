@@ -142,7 +142,7 @@ Jakarta EEは、イノベーションの準備が整っており、常にコミ�
     {{< pages/about/why-jakarta-ee/info-card
         title="仕様ドキュメントを確認する"
         icon="images/icons/browse-specifications-icon.svg"
-        href="/specifications"
+        href="/ja/specifications"
         link_text="Browse Now"
     >}}
         Jakarta EEプラットフォーム、プロファイル、およびコンポーネント仕様ドキュメントを検索します。

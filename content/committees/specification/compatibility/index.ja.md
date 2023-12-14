@@ -5,7 +5,7 @@ headline: "Jakarta EE互換実装と互換製品"
 hide_page_title: true
 ---
 
-**Jakarta EE**は、エンタープライズJavaアプリケーション開発に使用されるオープンな[仕様](https://jakarta.ee/specifications/ "Jakarta EE Specifications")のセットです。これは、Java EE技術の後継で、将来のクラウドネイティブJavaエンタープライズ アプリケーションの仕様を前進させることに興味を持つJava開発者が集まった幅広いコミュニティです。各仕様リリースには、関連するTechnology Compatibility Kit（TCK）が含まれます。TCKへのリンクは、該当する仕様リリースページにあります。例えば、[Jakarta EE Platform 9.0](https://jakarta.ee/specifications/platform/9/)、または、コンポーネント仕様の場合は、[Jakarta Authentication 2.0](https://jakarta.ee/specifications/authentication/2.0/)を参照してください。
+**Jakarta EE**は、エンタープライズJavaアプリケーション開発に使用されるオープンな[仕様](https://jakarta.ee/ja/specifications/ "Jakarta EE Specifications")のセットです。これは、Java EE技術の後継で、将来のクラウドネイティブJavaエンタープライズ アプリケーションの仕様を前進させることに興味を持つJava開発者が集まった幅広いコミュニティです。各仕様リリースには、関連するTechnology Compatibility Kit（TCK）が含まれます。TCKへのリンクは、該当する仕様リリースページにあります。例えば、[Jakarta EE Platform 9.0](https://jakarta.ee/ja/specifications/platform/9/)、または、コンポーネント仕様の場合は、[Jakarta Authentication 2.0](https://jakarta.ee/ja/specifications/authentication/2.0/)を参照してください。
 
 Jakarta EEワーキンググループでは、コンポーネント仕様のすべての**互換実装**に焦点を当てることができます。さらに、Jakarta EEワーキンググループは、Jakarta EEプラットフォームまたはJakarta EE Webプロファイル仕様の互換実装である**互換製品**に焦点を当てています。 
 
