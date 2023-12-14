@@ -12,7 +12,7 @@ date: 2020-01-05T15:50:25-04:00
 * Will Lyons (**委員長**)- Oracle、Ed Bratt - 代理
 * Kenji Kazumura - 富士通、Yuichi Kusano - 代理
 * Ian Robinson - IBM、Alasdair Nottingham - 代理
-* Steve Millidge -Payara、Hadar Vorenshtein – 代理
+* Steve Millidge - Payara、Ilias Efstathiou  – 代理
 * David Blevins - Tomitribe、Cesar Hernandez - 代理
 * Marcin Kruglik - ロンドンJamochaコミュニティ - 選出されたParticipantメンバー代表 - Abraham Marin-Perez - 代理 
 * Arjan Tijms - 選出されたCommitterメンバー代表
