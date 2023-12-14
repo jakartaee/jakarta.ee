@@ -6,7 +6,7 @@
 
 [[main]]
     name = "仕様"
-    url = "/specifications/"
+    url = "/ja/specifications/"
     weight = 2
 
 [[main]]
@@ -186,8 +186,8 @@
 
 # specifications
 [[main]]
-    name = "Browse Specifications"
-    url = "/specifications/"
+    name = "仕様の参照"
+    url = "/ja/specifications/"
     weight = 1
     parent = "仕様"
 
