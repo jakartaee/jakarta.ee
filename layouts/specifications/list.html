@@ -159,7 +159,7 @@
           {{ $project := . }}
           {{ with $section.File.Dir }}
             {{ if eq . $project.directory }}
-             <h3>{{ i18n "layouts-specifications-list-jug-spec-adopters-title" }}</h3>
+             <h2>{{ i18n "layouts-specifications-list-jug-spec-adopters-title" }}</h2>
               <p>{{ i18n "layouts-specifications-list-jug-spec-adopters-text" | safeHTML }}</p>
                 <ul class="list-inline">
                 {{ range sort $project.adopters  "name" "asc"}}
