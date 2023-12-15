@@ -137,52 +137,34 @@
     weight = 3
 
 [[main]]
-    name = "Documentation"
-    url = "/resources#documentation"
-    parent = "Resources"
-    weight = 4
-
-[[main]]
     name = "Presentations"
     url = "/resources#presentations"
     parent = "Resources"
-    weight = 5
+    weight = 4
 
 [[main]]
     name = "Surveys"
     url = "/resources#surveys"
     parent = "Resources"
-    weight = 6
+    weight = 5
 
 [[main]]
     name = "eBooks"
     url = "/resources/#ebooks"
     parent = "Resources"
-    weight = 7
+    weight = 6
 
 [[main]]
     name = "White Papers"
     url = "/resources/#white-papers"
     parent = "Resources"
-    weight = 8
+    weight = 7
 
 [[main]]
     name = "Case Studies"
     url = "/resources/#cases-studies"
     parent = "Resources"
-    weight = 9
-
-[[main]]
-    name = "Starter for Jakarta EE"
-    url = "https://start.jakarta.ee/"
-    parent = "Resources"
-    weight = 10
-
-[[main]]
-    name = "Jakarta EE Overview Course"
-    url = "https://www.linkedin.com/learning/jakarta-ee-overview"
-    parent = "Resources"
-    weight = 11
+    weight = 8
 
 # specifications
 [[main]]
