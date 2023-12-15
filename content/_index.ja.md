@@ -4,6 +4,12 @@ seo_title: "Jakarta® EE | クラウドネイティブエンタープライズJa
 headline: "<img class='jumbotron-title' src='/images/jakarta/jakarta-ee-text.svg' alt='Jakarta EE'/><br/>クラウドネイティブエンタープライズJavaのオープンソースエコシステムの構築"
 description: "Jakarta Enterprise Edition (EE)は、クラウドネイティブエンタープライズJavaのオープンソースの未来です。Java EEに対する投資を保護して、エンタープライズアプリケーションをモダナイズしましょう。"
 date: 2018-04-05T15:50:25-04:00
+jumbotron_class: "col-xs-24"
+jumbotron_btn_class: "btn btn-secondary"
+custom_jumbotron_class: "col-xs-24"
+custom_jumbotron: |
+  <p>Latest Release: Jakarta EE 10 now available</p>
+links: [[href: "/release/10", text: "Learn More"]]
 hide_page_title: true
 hide_sidebar: true
 hide_breadcrumb: true

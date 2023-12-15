@@ -1,17 +1,17 @@
 
 [[main]]
     name = "私たちについて"
-    url = "/about/"
+    url = "/ja/about/"
     weight = 1
 
 [[main]]
     name = "仕様"
-    url = "/specifications/"
+    url = "/ja/specifications/"
     weight = 2
 
 [[main]]
     name = "互換製品"
-    url = "/compatibility/"
+    url = "/ja/compatibility/"
     weight = 3
 
 [[main]]
@@ -56,20 +56,20 @@
 
 # Jakarta EE sub-menu
 [[main]]
-    name = "About Jakarta EE"
-    url = "/about/jakarta-ee"
+    name = "Jakarta EEについて"
+    url = "/ja/about/jakarta-ee"
     parent = "Jakarta EE"
     weight = 1
 
 [[main]]
-	name = "Why Jakarta EE"
-	url = "/about/why-jakarta-ee"
+	name = "Jakarta EEを使用する理由"
+	url = "/ja/about/why-jakarta-ee"
 	parent = "Jakarta EE"
 	weight = 2
 
 [[main]]
-    name = "Frequently Asked Questions"
-    url = "/about/faq/"
+    name = "よくある質問"
+    url = "/ja/about/faq/"
     parent = "Jakarta EE"
     weight = 3
 
@@ -81,13 +81,13 @@
 
 # Jakarta EE Group sub-menu
 [[main]]
-    name = "About Working Group"
-    url = "/about/working-group"
+    name = "ワーキンググループについて"
+    url = "/ja/about/working-group"
     weight = 1
     parent = "Jakarta EE Working Group"
 
 [[main]]
-    name = "Charter"
+    name = "特権"
     url = "https://eclipse.org/org/workinggroups/jakarta_ee_charter.php"
     weight = 2
     parent = "Jakarta EE Working Group"
@@ -99,20 +99,20 @@
     parent = "Jakarta EE Working Group"
 
 [[main]]
-    name = "Technical Direction"
+    name = "技術的方向性"
     url = "https://www.eclipse.org/ee4j/direction.php"
     weight = 4
     parent = "Jakarta EE Working Group"
 
 [[main]]
-    name = "Committees"
-    url = "/committees"
+    name = "委員会"
+    url = "/ja/committees"
     parent = "Jakarta EE Working Group"
     weight = 5
 
 [[main]]
-    name = "Committees Meeting Minutes"
-    url = "/meeting_minutes/"
+    name = "委員会のミーティング議事録"
+    url = "/ja/meeting_minutes/"
     parent = "Jakarta EE Working Group"
     weight = 6
 
@@ -186,20 +186,20 @@
 
 # specifications
 [[main]]
-    name = "Browse Specifications"
-    url = "/specifications/"
+    name = "仕様の参照"
+    url = "/ja/specifications/"
     weight = 1
     parent = "仕様"
 
 [[main]]
-    name = "Specification Process"
-    url = "/about/jesp/"
+    name = "Jakarta EE仕様プロセス"
+    url = "/ja/about/jesp/"
     weight = 2
     parent = "仕様"
 
 [[main]]
-    name = "JESP guide"
-    url = "/committees/specification/guide/"
+    name = "JESPガイド"
+    url = "/ja/committees/specification/guide/"
     parent = "仕様"
     weight = 3
 
@@ -217,14 +217,14 @@
 
 # Compatible Products
 [[main]]
-    name = "Jakarta EE Compatible Products"
-    url = "/compatibility/"
+    name = "Jakarta EEの互換製品"
+    url = "/ja/compatibility/"
     parent = "互換製品"
     weight = 1
 
 [[main]]
-    name = "Get Listed"
-    url = "/compatibility/get-listed/"
+    name = "リストへの掲載"
+    url = "/ja/compatibility/get-listed/"
     parent = "互換製品"
     weight = 2
 
