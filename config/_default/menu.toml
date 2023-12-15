@@ -118,6 +118,12 @@
 
 # Resource sub-menu
 [[main]]
+	name = "Overview"
+	url = "/resources"
+	parent = "Resources"
+	weight = 1
+
+[[main]]
 	name = "Branding"
 	url = "/resources#branding"
 	parent = "Resources"
