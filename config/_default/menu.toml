@@ -117,54 +117,54 @@
     weight = 6
 
 # Resource sub-menu
-[[main]]
-	name = "Overview"
-	url = "/resources"
-	parent = "Resources"
-	weight = 1
-
-[[main]]
-	name = "Branding"
-	url = "/resources#branding"
-	parent = "Resources"
-	weight = 2
-
-[[main]]
-    name = "Datasheets"
-    url = "/resources#datasheets"
-    parent = "Resources"
-    weight = 3
-
-[[main]]
-    name = "Presentations"
-    url = "/resources#presentations"
-    parent = "Resources"
-    weight = 4
-
-[[main]]
-    name = "Surveys"
-    url = "/resources#surveys"
-    parent = "Resources"
-    weight = 5
-
-[[main]]
-    name = "eBooks"
-    url = "/resources/#ebooks"
-    parent = "Resources"
-    weight = 6
-
-[[main]]
-    name = "White Papers"
-    url = "/resources/#white-papers"
-    parent = "Resources"
-    weight = 7
-
-[[main]]
-    name = "Case Studies"
-    url = "/resources/#cases-studies"
-    parent = "Resources"
-    weight = 8
-
+# [[main]]
+# 	name = "Overview"
+# 	url = "/resources"
+# 	parent = "Resources"
+# 	weight = 1
+# 
+# [[main]]
+# 	name = "Branding"
+# 	url = "/resources#branding"
+# 	parent = "Resources"
+# 	weight = 2
+# 
+# [[main]]
+#     name = "Datasheets"
+#     url = "/resources#datasheets"
+#     parent = "Resources"
+#     weight = 3
+# 
+# [[main]]
+#     name = "Presentations"
+#     url = "/resources#presentations"
+#     parent = "Resources"
+#     weight = 4
+# 
+# [[main]]
+#     name = "Surveys"
+#     url = "/resources#surveys"
+#     parent = "Resources"
+#     weight = 5
+# 
+# [[main]]
+#     name = "eBooks"
+#     url = "/resources/#ebooks"
+#     parent = "Resources"
+#     weight = 6
+# 
+# [[main]]
+#     name = "White Papers"
+#     url = "/resources/#white-papers"
+#     parent = "Resources"
+#     weight = 7
+# 
+# [[main]]
+#     name = "Case Studies"
+#     url = "/resources/#cases-studies"
+#     parent = "Resources"
+#     weight = 8
+ 
 # specifications
 [[main]]
     name = "Browse Specifications"
