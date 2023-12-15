@@ -25,9 +25,9 @@
     weight = 5
 
 [[main]]
-    name = "Resources"
-    url = "/resources/"
-    weight = 6
+  name = "Learn"
+  url = "/learn/"
+  weight = 6
 
 # About sub-menu
 [[main]]
@@ -117,13 +117,6 @@
     weight = 6
 
 # Resource sub-menu
-[[main]]
-    name = "Overview"
-    url = "/resources"
-    weight = 1
-    parent = "Resources"
-    identifier = "overview_resources"
-
 [[main]]
 	name = "Branding"
 	url = "/resources#branding"
@@ -225,52 +218,58 @@
     weight = 2
 
 [[main]]
+    name = "Resources"
+    url = "/resources/"
+    weight = 3
+    parent = "Community"
+
+[[main]]
     name = "Blog"
     url = "/blogs"
 	parent = "Community"
-    weight = 3
+    weight = 4
 
 [[main]]
     name = "Events"
     url = "/community/events/"
     parent = "Community"
-    weight = 4
+    weight = 5
 
 [[main]]
     name = "JakartaOne Livestream"
     url = "https://jakartaone.org"
     parent = "Community"
-    weight = 5
+    weight = 6
 
 [[main]]
     name = "Stay Connected"
     url = "/connect/"
     parent = "Community"
-    weight = 6
+    weight = 7
 
 [[main]]
     name = "Tech Talk Meet-ups"
     url = "/community/#meetups"
     parent = "Community"
-    weight = 7
+    weight = 8
 
 [[main]]
     name = "Videos"
     url = "/community/videos"
     parent = "Community"
-    weight = 8
+    weight = 9
 
 [[main]]
     name = "Get Involved"
     url = "/community/get-involved"
     parent = "Community"
-    weight = 9
+    weight = 10
 
 [[main]]
     name = "Developer Advocate"
     url = "/community/developer-advocate"
     parent = "Community"
-    weight = 10
+    weight = 11
 
 # Membership sub-menu
 [[main]]
@@ -284,3 +283,28 @@
     url = "/membership/members/"
     parent = "Membership"
     weight = 2
+
+# Learn sub-menu
+[[main]]
+  name = "Overview"
+  url = "/learn/"
+  weight = 1
+  parent = "Learn"
+
+[[main]]
+  name = "Documentation"
+  url = "/learn#documentation"
+  weight = 2
+  parent = "Learn"
+
+[[main]]
+  name = "Starter Guides"
+  url = "/learn/starter-guides/"
+  weight = 3
+  parent = "Learn"
+
+[[main]]
+  name = "Jakarta EE Overview Course"
+  url = "https://www.linkedin.com/learning/jakarta-ee-overview"
+  weight = 4
+  parent = "Learn"
