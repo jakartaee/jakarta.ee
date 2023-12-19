@@ -9,7 +9,7 @@ jumbotron_btn_class: "btn btn-secondary"
 custom_jumbotron_class: "col-xs-24"
 custom_jumbotron: |
   <p>Latest Release: Jakarta EE 10 now available</p>
-links: [[href: "/release/10", text: "Learn More"]]
+links: [[href: "/ja/release/10", text: "Learn More"]]
 hide_page_title: true
 hide_sidebar: true
 hide_breadcrumb: true

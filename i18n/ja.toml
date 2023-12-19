@@ -355,276 +355,276 @@ other = "Sign up now"
   other = "Jakarta EE Working Group Committees Meeting Minutes"
 
 [jakarta-ee-version-8-delivers-text]
- other = "Delivers"
+ other = "デリバリ"
 
 [jakarta-ee-version-8-feature-compatibility-title]
- other = "Full Compatibility with Java<sup>TM</sup>&nbsp;EE 8"
+ other = "Java<sup>TM</sup>&nbsp;EE 8との完全な互換性"
 
 [jakarta-ee-version-8-feature-compatibility-text]
- other = "Fully compatible with the Java EE 8 specifications and Technology Compatibility Kits (TCKs)"
+ other = "Java EE 8仕様およびTechnology Compatibility Kit (TCK) との完全互換"
 
 [jakarta-ee-version-8-feature-open-title]
- other = "Open Specifications"
+ other = "仕様を開く"
 
 [jakarta-ee-version-8-feature-open-text]
- other = "Leveraging the <a href=\"/about/jesp/\">Jakarta EE Specification Process</a>, an open source specification process that enables code-first development"
+ other = "<a href=\"/ja/about/jesp/\">Jakarta EE仕様プロセス</a>を活用し、コードファーストの開発を可能にするオープンソース仕様プロセス"
 
 [jakarta-ee-version-8-feature-tck-title]
- other = "Open Source TCK License and Process"
+ other = "オープンソースTCKのライセンスとプロセス"
 
 [jakarta-ee-version-8-feature-tck-text]
- other = "An open process for certifying products as Compatible Implementations of Jakarta EE Profiles using TCKs licensed under the Eclipse TCK License"
+ other = "EclipseTCKライセンスに基づいてライセンスされたTCKを使用して、Jakarta EEプロファイルの互換実装として製品を認証するオープンなプロセス"
 
 [jakarta-ee-version-8-feature-implementations-title]
- other = "Compatible Implementations"
+ other = "互換実装"
 
 [jakarta-ee-version-8-feature-implementations-text]
- other = "Compatible implementations of the Jakarta EE 8 Platform (Full and Web profiles)"
+ other = "Jakarta EE 8プラットフォーム (FullとWebプロファイル) の互換実装"
 
 [jakarta-ee-version-8-participation-title]
- other = "Powered by Participation"
+ other = "参加型"
 
 [jakarta-ee-version-8-participation-projects]
- other = "43 projects"
+ other = "43プロジェクト"
 
 [jakarta-ee-version-8-participation-committers]
- other = "174 committers"
+ other = "174コミッター"
 
 [jakarta-ee-version-8-participation-lines-of-code]
- other = "61.5 million lines of code"
+ other = "6,150万行のコード"
 
 [jakarta-ee-version-8-participation-repositories]
- other = "129 Repositories"
+ other = "129リポジトリ"
 
 [jakarta-ee-version-8-ebook-title]
- other = "<strong>New eBook!</strong> <br>Fulfilling the Vision for Open Source, Cloud Native Java"
+ other = "<strong>新しいeBook！</strong> <br>オープンソースクラウドネイティブJavaのビジョンが満載"
 
 [jakarta-ee-version-8-ebook-text]
- other = "This eBook explores what cloud native Java is, why it matters so much to so many people, and provides the community’s perspective of where Jakarta EE technologies are headed."
+ other = "このeBookでは、クラウドネイティブのJavaとは何か、なぜこれほど多くの人に重要なのか、そしてJakarta EE技術がどこへ向かっているのかという、コミュニティの視点を提供します。"
 
 [jakarta-ee-version-8-ebook-download]
- other = "Download"
+ other = "ダウンロード"
 
 [jakarta-ee-version-8-social-title]
- other = "Get Social"
+ other = "SNSでつながる"
 
 [jakarta-ee-version-8-social-text]
- other = "Stay up-to-date with Jakarta EE by following us on social media!"
+ other = "ソーシャルメディアでフォローして、Jakarta EEに関する最新情報を入手しましょう！"
 
 [jakarta-ee-version-9-features-title]
- other = "features and benefits"
+ other = "機能とメリット"
 
 [jakarta-ee-version-9-features-barriers-title]
- other = "lower entry <br> barriers"
+ other = "参入障壁を低くする"
 
 [jakarta-ee-version-9-features-barriers-text]
- other = "Jakarta EE 9 lowers the barrier of entry to new vendors and implementations to achieve compatibility"
+ other = "Jakarta EE 9は、新しいベンダーと実装が互換性を実現するための参入障壁を下げます"
 
 [jakarta-ee-version-9-features-innovation-title]
- other = "foundation <br> for innovation"
+ other = "イノベーションの基盤"
 
 [jakarta-ee-version-9-features-innovation-text]
- other = "The Jakarta EE 9 release is a key step towards future innovation in cloud native Java"
+ other = "Jakarta EE 9リリースは、クラウドネイティブJavaにおける将来の技術革新に向けた重要なステップです"
 
 [jakarta-ee-version-9-features-migration-title]
- other = "easy <br> migration"
+ other = "容易な移行"
 
 [jakarta-ee-version-9-features-migration-text]
- other = "An open and stable platform for developers for testing migration to the new namespace"
+ other = "新しいネームスペースへの移行をテストするための、開発者向けのオープンで安定したプラットフォーム"
 
 [jakarta-ee-version-9-features-participation-title]
- other = "<h2 class=\"text-blue text-center fw-600 uppercase\"><strong>community-powered</strong></h2><h2 class=\"text-secondary fw-600 margin-top-0 font-exo uppercase\"><em>innovation</em></h2>"
+ other = "<h2 class=\"text-blue text-center fw-600 uppercase\"><strong>コミュニティ駆動の</strong></h2><h2 class=\"text-secondary fw-600 margin-top-0 font-exo uppercase\"><em>イノベーション</em></h2>"
 
 [jakarta-ee-version-9-participation-projects]
- other = "projects"
+ other = "プロジェクト"
 
 [jakarta-ee-version-9-participation-committers]
- other = "committers"
+ other = "コミッター"
 
 [jakarta-ee-version-9-participation-repositories]
- other = "git repositories"
+ other = "Gitリポジトリ"
 
 [jakarta-ee-version-9-powered-by-participation-title]
- other = "<h2 class=\"text-blue text-center fw-600 uppercase\"><strong>Powered by</strong></h2><h2 class=\"text-secondary text-center fw-600 margin-top-0 font-exo uppercase\"><em>Participation</em></h2>"
+ other = "<h2 class=\"text-blue text-center fw-600 uppercase\"><strong>参加による</strong></h2><h2 class=\"text-secondary text-center fw-600 margin-top-0 font-exo uppercase\"><em>パワーアップ</em></h2>"
 
 [jakarta-ee-version-9-white-paper-title]
- other = "New white paper"
+ other = "新しいホワイトペーパー"
 
 [jakarta-ee-version-9-white-paper-download]
- other = "Download"
+ other = "ダウンロード"
 
 [jakarta-ee-version-9-social-title]
- other = "let's get social"
+ other = "つながろう"
 
 [jakarta-ee-version-10-features-title]
- other = "features and benefits"
+ other = "機能とメリット"
 
 [jakarta-ee-version-10-features-subtitle]
- other = "Jakarta EE 10 is packed with new features for building modernized, simplified, and lightweight cloud native Java applications. This new innovative community-driven release is designed for organizations looking to start developing new enterprise Java applications or advancing their existing ones."
+ other = "Jakarta EE 10には、モダナイズされたシンプルで軽量なクラウドネイティブJavaアプリケーションを構築するための新しい機能が満載されています。この新しいイノベーティブなコミュニティ主導のリリースは、エンタープライズJavaアプリケーションの新規開発や既存のエンハンスを検討している企業向けに適しています。"
 
 [jakarta-ee-version-10-features-block1-title]
- other = "Modernized"
+ other = "モダナイズ"
 
 [jakarta-ee-version-10-features-block1-summary]
- other = "The Jakarta EE 10 release provides new functionality in over 20 component specifications."
+ other = "Jakarta EE 10リリースでは、20以上のコンポーネント仕様で新しい機能を提供しています。"
 
 [jakarta-ee-version-10-features-block1-text]
- other = "This release enables builders of modern cloud native Java applications to develop and deploy Jakarta EE 10 applications on Java SE 11 as well as Java SE 17, the most current LTS release of Java SE. This allows developers to take full advantage of new features including the modular system introduced in Java SE 9 and supported in Java SE 11"
+ other = "このリリースにより、モダンなクラウドネイティブJavaアプリケーション開発者は、Java SE 11と最新のLTSリリースであるJava SE17で、Jakarta EE 10アプリケーションを開発・ディプロイできます。これにより、開発者はJava SE 9で導入され、Java SE 11でもサポートされるモジュールシステムなどの新しい機能徴を最大限に活用できます"
 
 [jakarta-ee-version-10-features-block2-title]
- other = "Simplified"
+ other = "単純化"
 
 [jakarta-ee-version-10-features-block2-summary]
- other = "With Jakarta EE 10, application development is made simpler by supporting the broader use of additional annotations"
+ other = "Jakarta EE 10を使用すると、より幅広いアノテーションの使用が可能になるため、アプリケーション開発が簡単になります"
 
 
 [jakarta-ee-version-10-features-block2-text]
- other = "This makes it easier to build modularized applications and offers improved integration across component APIs. Ultimately, Jakarta EE 10 helps developers more easily implement applications with modern security requirements, remove deprecated APIs, and maintain high levels of compatibility with prior Jakarta EE releases."
+ other = "これにより、モジュール化されたアプリケーションの構築が容易になり、コンポーネントAPI間の統合が改善されます。Jakarta EE 10によって、最新のセキュリティ要件を満たし、非推奨のAPIを排除し、以前のJakarta EEリリースとの高いレベルの互換性を維持する、アプリケーションを簡単に開発できます。"
 
 [jakarta-ee-version-10-features-block3-title]
- other = "Lightweight"
+ other = "軽量"
 
 [jakarta-ee-version-10-features-block3-summary]
- other = "Jakarta EE 10 defines a new profile specification with Jakarta EE Core Profile 10. The “Core Profile” which defines a multi-vendor platform for modernized and lightweight Java applications and microservices."
+ other = "Jakarta EE 10では、新しいプロファイルである、Jakarta EE Core Profile 10が策定されました。「Coreプロファイル」は、モダナイズされた軽量のJavaアプリケーションとマイクロサービスのためのマルチベンダープラットフォームです。"
 
 
 [jakarta-ee-version-10-features-block3-text]
- other = "The new Core Profile provides a subset of Jakarta EE specifications that target smaller runtimes suitable for microservices development with lightweight runtimes.This includes an innovative new CDI-Lite specification for building lightweight Jakarta EE applications."
+ other = "この新しいCoreプロファイルは、Jakarta EE仕様のサブセットを提供し、軽量ランタイムで動作するマイクロサービスの開発に適した小規模ランタイムを対象としています。この中には、軽量なJakarta EEアプリケーションを構築するためのイノベーティブな新しいCDI-Lite仕様が含まれます。"
 
 [jakarta-ee-version-10-specifications-title]
- other = "Jakarta EE 10 Specifications"
+ other = "Jakarta EE 10仕様"
 
 [jakarta-ee-version-10-specifications-text]
- other = "Jakarta EE 10 delivers noteworthy API upgrades in over 20 specifications and adds important features requested by our global community. These enhancements include:"
+ other = "Jakarta EE 10は、20以上の仕様で注目すべきAPIの更新があり、グローバルコミュニティから要望されている重要な機能を追加します。機能追加には、以下が含まれます。"
 
 [jakarta-ee-version-10-specifications-list1]
- other = "Jakarta Contexts and Dependency Injection (CDI) 4.0, including CDI-Lite that enables build time extensions"
+ other = "Jakarta Contexts and Dependency Injection (CDI) 4.0 (ビルド時処理を可能にするCDI-Liteを含む)"
 
 [jakarta-ee-version-10-specifications-list2]
- other = "Jakarta Security 3.0 supporting OpenID Connect"
+ other = "OpenID ConnectをサポートするJakarta Security 3.0"
 
 [jakarta-ee-version-10-specifications-list3]
- other = "Jakarta Servlet 6.0 for simplified programming and improved security"
+ other = "Jakarta Servlet 6.0によるプログラミングの簡素化とセキュリティの向上"
 
 [jakarta-ee-version-10-specifications-list4]
- other = "Jakarta Faces (JSF) 4.0 with a modernized API using CDI"
+ other = "CDIを使用した最新のAPIを備えたJakarta Faces (JSF) 4.0"
 
 [jakarta-ee-version-10-specifications-list5]
- other = "Jakarta JSON Binding (JSON-B) 3.0 with new support for polymorphic types"
+ other = "ポリモーフィズムをサポートするJakarta JSON Binding (JSON-B) 3.0"
 
 [jakarta-ee-version-10-specifications-list6]
- other = "Jakarta RESTful Web Services standardizes a Java SE Bootstrap API and standard support for multipart/form-data"
+ other = "Jakarta RESTful Web Servicesは、Java SEブートストラップAPIの標準化と、multipart/form-dataサポートを標準化します"
 
 [jakarta-ee-version-10-specifications-list7]
- other = "Jakarta Persistence standardizing UUID as Basic Type and extending Query language and Query API"
+ other = "Jakarta Persistenceは、UUIDを基本型として標準化し、クエリ言語とクエリAPIを拡張しました"
 
 [jakarta-ee-version-10-specifications-list8]
- other = "Jakarta Concurrency 3.0 is moved to the Web Profile and enhances parallel and reactive programming models available to applications"
+ other = "Jakarta Concurrency 3.0はWeb Profileに移行し、また、アプリケーションで使用可能な並列およびリアクティブプログラミングモデルが強化されます"
 
 [jakarta-ee-version-10-section-download-compatible-products]
- other = "download compatible products"
+ other = "互換製品のダウンロード"
 
 [jakarta-ee-version-10-section-specifications]
- other = "specifications"
+ other = "仕様"
 
 [jakarta-ee-version-10-section-view-all-releases]
- other = "View all Releases"
+ other = "すべてのリリースを表示"
 
 [jakarta-ee-version-9_1-features-title]
- other = "features and benefits"
+ other = "機能とメリット"
 
 [jakarta-ee-version-9_1-features-barriers-title]
- other = "lower entry <br> barriers"
+ other = "参入障壁を低くする"
 
 [jakarta-ee-version-9_1-features-barriers-text]
- other = "Jakarta EE 9 lowers the barrier of entry to new vendors and implementations to achieve compatibility"
+ other = "Jakarta EE 9は、新しいベンダーと実装が互換性を実現するための参入障壁を下げます"
 
 [jakarta-ee-version-9_1-features-innovation-title]
- other = "foundation <br> for innovation"
+ other = "イノベーションの基盤"
 
 [jakarta-ee-version-9_1-features-innovation-text]
- other = "The Jakarta EE 9 release is a key step towards future innovation in cloud native Java"
+ other = "Jakarta EE 9リリースは、クラウドネイティブJavaにおける将来の技術革新に向けた重要なステップです"
 
 [jakarta-ee-version-9_1-features-migration-title]
- other = "easy <br> migration"
+ other = "容易な移行"
 
 [jakarta-ee-version-9_1-features-migration-text]
- other = "An open and stable platform for developers for testing migration to the new namespace"
+ other = "新しいネームスペースへの移行をテストするための、開発者向けのオープンで安定したプラットフォーム"
 
 [jakarta-ee-version-9_1-features-supporting-java-se-11]
- other = "now supporting java se 11"
+ other = "Java SE 11をサポート"
 
 [jakarta-ee-version-9_1-features-participation-title]
- other = "<h2 class=\"text-blue text-center fw-600 uppercase\"><strong>community-powered</strong><br> <span class=\"text-secondary font-exo\"><em>innovation</em></span></h2>"
+ other = "<h2 class=\"text-blue text-center fw-600 uppercase\"><strong>コミュニティ駆動の</strong><br> <span class=\"text-secondary font-exo\"><em>イノベーション</em></span></h2>"
 
 [jakarta-ee-version-9_1-participation-projects]
- other = "projects"
+ other = "プロジェクト"
 
 [jakarta-ee-version-9_1-participation-specifications]
- other = "specifications"
+ other = "仕様"
 
 [jakarta-ee-version-9_1-participation-committers]
- other = "committers"
+ other = "コミッター"
 
 [jakarta-ee-version-9_1-participation-repositories]
- other = "git repositories"
+ other = "Gitリポジトリ"
 
 [jakarta-ee-version-9_1-powered-by-participation-title]
- other = "<h2 class=\"text-blue text-center fw-600 uppercase\"><strong>Powered by</strong><br> <span class=\"text-secondary font-exo\"><em>Participation</em></span></h2>"
+ other = "<h2 class=\"text-blue text-center fw-600 uppercase\"><strong>参加による</strong><br> <span class=\"text-secondary font-exo\"><em>パワーアップ</em></span></h2>"
 
 [jakarta-ee-version-10-white-paper-title]
- other = "New Cloud Native Java eBook"
+ other = "新しいクラウドネイティブJava eBook"
 
 [jakarta-ee-version-9_1-white-paper-title]
- other = "New white paper"
+ other = "新しいホワイトペーパー"
 
 [jakarta-ee-version-9_1-white-paper-download]
- other = "Download"
+ other = "ダウンロード"
 
 [jakarta-ee-version-9_1-social-title]
- other = "let's get social"
+ other = "つながろう"
 
 [jakarta-ee-version-9_1-section-skip-to-main-content]
- other = "Skip to main content"
+ other = "メインコンテンツにスキップ"
 
 [jakarta-ee-version-9_1-section-new-release]
- other = "<span class=\"p text-secondary\">version 9.1</span> new release"
+ other = "<span class=\"p text-secondary\">version 9.1</span> 新リリース"
 
 [jakarta-ee-version-9_1-section-release-text]
- other = "An open, community-driven platform</span> <br> for future innovation of <br> enterprise Java technologies"
+ other = "エンタープライズJavaテクノロジー</span> <br> の将来の技術革新のための <br> オープンでコミュニティ主導的なプラットフォーム"
 
 [jakarta-ee-version-9_1-section-download-compatible-products]
- other = "download <br/> compatible products"
+ other = "互換製品<br/>のダウンロード"
 
 [jakarta-ee-version-9_1-section-specifications]
- other = "specifications"
+ other = "仕様"
 
 [jakarta-ee-version-9_1-previous-release-link]
- other = "<a id=\"text-white\" href=\"/release\" class=\"uppercase\">view all releases</a>"
+ other = "<a id=\"text-white\" href=\"/release\" class=\"uppercase\">すべてのリリースを表示</a>"
 
 [jakarta-ee-version-9-section-skip-to-main-content]
- other = "Skip to main content"
+ other = "メインコンテンツにスキップ"
 
 [jakarta-ee-version-9-section-new-release]
- other = "<span class=\"p text-secondary\">version 9</span>"
+ other = "<span class=\"p text-secondary\">バージョン9</span>"
 
 [jakarta-ee-version-9-section-release-text]
- other = "An open, community-driven platform</span> <br> for future innovation of <br> enterprise Java technologies"
+ other = "エンタープライズJavaテクノロジー</span> <br> の将来の技術革新のための <br> オープンでコミュニティ主導的なプラットフォーム"
 
 [jakarta-ee-version-9-section-download-compatible-products]
- other = "download <br/> compatible products"
+ other = "互換製品<br/>のダウンロード"
 
 [jakarta-ee-version-9-section-specifications]
- other = "specifications"
+ other = "仕様"
 
 [jakarta-ee-version-9-previous-release-link]
- other = "<a id=\"text-white\" href=\"/release\" class=\"uppercase\">view all releases</a>"
+ other = "<a id=\"text-white\" href=\"/release\" class=\"uppercase\">すべてのリリースを表示</a>"
 
 [jakarta-ee-version-8-section-skip-to-main-content]
- other = "Skip to main content"
+ other = "メインコンテンツにスキップ"
 
 [jakarta-ee-version-8-section-release-text]
- other = "An open, community-driven baseline for<br> the evolution of enterprise Java technologies"
+ other = "エンタープライズJava技術に対する<br> これからのイノベーションのためのオープンでコミュニティ主導のプラットフォーム"
 
 [pages-membership-title]
  other = "Shape the future of Cloud Native, Open Source Java"

@@ -123,7 +123,7 @@ Jakarta EEは、イノベーションの準備が整っており、常にコミ�
     {{< pages/about/why-jakarta-ee/info-card 
         title="最新版を確認する" 
         icon="images/icons/latest-release-icon.svg"
-        href="/release"
+        href="/ja/release"
         link_text="Read More"  
     >}}
         すべてのJakarta EEリリースのバージョンを確認し、関連するプレスリリースの新機能を確認してください。
