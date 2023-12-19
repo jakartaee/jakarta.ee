@@ -74,8 +74,8 @@
     weight = 3
 
 [[main]]
-    name = "Releases"
-    url = "/release/"
+    name = "リリース"
+    url = "/ja/release/"
     parent = "Jakarta EE"
     weight = 4
 
@@ -210,8 +210,8 @@
     parent = "仕様"
 
 [[main]]
-    name = "Releases"
-    url = "/release/"
+    name = "リリース"
+    url = "/ja/release/"
     weight = 5
     parent = "仕様"
 
