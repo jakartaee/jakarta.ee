@@ -171,6 +171,13 @@ ul.tri-col {
   }
 }
 
+.bg-tertiary {
+  background: @bg-img-tertiary;
+  background-repeat: none;
+  background-size: cover;
+  background-position: center;
+}
+
 .header-wrapper.header-secondary-bg-img.header-release-landing-page .featured-jumbotron {
   padding-top: 130px;
 }
@@ -291,6 +298,19 @@ div.card-panel.panel div.panel-body.panel-body-with-img {
   right: -1px;
 }
 
+.column-section {
+  display: flex;
+  flex-direction: column;
+
+  &-even > * {
+    flex-basis: 100%;
+  }
+
+  @media (min-width: @screen-md-min) {
+    flex-direction: row;
+  }
+}
+
 // Resources
 .newsroom-resources h2 {
   font-size: 18px;
@@ -308,4 +328,8 @@ div.card-panel.panel div.panel-body.panel-body-with-img {
       color: @white;
     }
   }
+}
+
+.align-items-center {
+  align-items: center;
 }

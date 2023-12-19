@@ -19,7 +19,9 @@ mix.setPublicPath('static');
 mix.setResourceRoot('../');
 
 mix.less('./less/styles.less', 'static/css/styles.css');
-mix.less('./less/page_css_file/about/why-jakarta-ee/styles.less', 'static/css/why-jakarta-ee-styles.css');
+mix.less('./less/pages/about/why-jakarta-ee/styles.less', 'static/css/why-jakarta-ee-styles.css');
+mix.less('./less/pages/learn.less', 'static/css/learn.css');
+mix.less('./less/pages/learn/starter-guides.less', 'static/css/starter-guides.css');
 
 mix.js('js/main.js', './static/js/solstice.js');
 
