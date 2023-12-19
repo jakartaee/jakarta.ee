@@ -364,7 +364,7 @@ other = "Sign up now"
  other = "Java EE 8仕様およびTechnology Compatibility Kit (TCK) との完全互換"
 
 [jakarta-ee-version-8-feature-open-title]
- other = "仕様を開く"
+ other = "オープンな仕様"
 
 [jakarta-ee-version-8-feature-open-text]
  other = "<a href=\"/ja/about/jesp/\">Jakarta EE仕様プロセス</a>を活用し、コードファーストの開発を可能にするオープンソース仕様プロセス"
