@@ -16,12 +16,12 @@ years:
     date: April 9-11
     upcoming: true
 
-  - name: JDevSummitIL
-    url: https://jdevsummitil.com/
-    location: Tel-Aviv 🇮🇱
-    date: April 4
-    upcoming: true
-    
+#  - name: JDevSummitIL
+#    url: https://jdevsummitil.com/
+#    location: Tel-Aviv 🇮🇱
+#    date: April 4
+#    upcoming: true
+#    
   - name: ConFoo
     url: https://confoo.ca/en/2024
     location: Montreal 🇨🇦
