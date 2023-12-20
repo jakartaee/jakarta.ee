@@ -10,37 +10,80 @@ years:
     date: April 23-26
     upcoming: true
 
-  - name: JDevSummitIL
-    url: https://jdevsummitil.com/
-    location: Tel-Aviv 🇮🇱
-    date: April 4
+  - name: Devnexus
+    url: https://devnexus.com/
+    location: Atlanta 🇺🇸
+    date: April 9-11
     upcoming: true
-    
+
+#  - name: JDevSummitIL
+#    url: https://jdevsummitil.com/
+#    location: Tel-Aviv 🇮🇱
+#    date: April 4
+#    upcoming: true
+#    
+  - name: ConFoo
+    url: https://confoo.ca/en/2024
+    location: Montreal 🇨🇦
+    date: Feb 21-23
+    upcoming: true
+
+  - name: Philly JUG
+    url: https://www.meetup.com/phillyjug/
+    location: Philadelphia 🇺🇸
+    date: Feb 20 (to be confirmed)
+    upcoming: true
+
 - year: 2023
   conferences:
+
+  - name: Toronto JUG
+    url: https://www.meetup.com/toronto-java-users-group/
+    location: Toronto 🇨🇦
+    date: Dec 7
+    blog: https://www.agilejava.eu/2023/12/08/toronto-jug/
+
+  - name: Ottawa JUG
+    url: https://www.meetup.com/ottawa-java-user-group/
+    location: Ottawa 🇨🇦
+    date: Dec 6
+    blog: https://www.agilejava.eu/2023/12/07/ottawa-jug/
 
   - name: JakartaOne Livestream
     url: https://jakartaone.org/
     location: online 🌐
     date: Dec 5
-    upcoming: true
+    blog: https://www.agilejava.eu/2023/12/06/jakartaone-livestream-2023/
+
+  - name: JCON WORLD ONLINE 2023
+    url: https://2023.world.jcon.one/
+    location: online 🌐
+    date: Nov 21-23
+    blog: https://www.agilejava.eu/2023/11/24/jcon-world-online-2023/
+
+  - name: Malmö JUG
+    url: https://www.meetup.com/javaforum-malmo/
+    location: Malmö 🇸🇪
+    date: Nov 22
+    blog: https://www.agilejava.eu/2023/11/23/javaforum-malmo/
 
   - name: Øredev
     url: https://oredev.org/
     location: Malmö 🇸🇪
     date: Nov 8-10
-    upcoming: true
+    blog: https://www.agilejava.eu/2023/11/11/oredev-2023/
 
   - name: J-Fall
     url: https://jfall.nl/
     location: Ede 🇳🇱
     date: Nov 9
-    upcoming: true
+    blog: https://www.agilejava.eu/2023/11/11/j-fall-2023/
 
   - name: EclipseCon
     url: https://www.eclipsecon.org/2023
     location: Ludwigsburg 🇩🇪
     date: Oct 16-19
+    blog: https://www.agilejava.eu/2023/10/20/eclipsecon-2023/
     
   - name: Devoxx Morocco
     url: https://devoxx.ma/

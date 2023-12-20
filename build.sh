@@ -15,7 +15,7 @@
 echo -e "Processing Jakarta EE Specifications...\n"
 
 echo -e "Step 1: Clean up specifications content\n"
-mkdir /tmp/specifications && cp content/specifications/_index.md /tmp/specifications/ && cp content/specifications/_index.zh.md /tmp/specifications/
+mkdir /tmp/specifications && cp content/specifications/_index.md /tmp/specifications/ && cp content/specifications/_index.*.md /tmp/specifications/
 rm -rf content/specifications && rm -rf static/specifications
 
 echo "Step 2: Clone specifications git repository"
@@ -50,7 +50,7 @@ for f in specifications/*/*/*/; do
 done
 
 echo -e "Step 7: Create missing language copies..."
-LANGS=(zh)
+LANGS=(ja zh)
 FILES=`find ./specifications -type f -name "*.md"`
 for F in $FILES; do
   if [ -f "$F" ]; then

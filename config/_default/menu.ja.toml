@@ -1,0 +1,304 @@
+
+[[main]]
+    name = "私たちについて"
+    url = "/ja/about/"
+    weight = 1
+
+[[main]]
+    name = "仕様"
+    url = "/ja/specifications/"
+    weight = 2
+
+[[main]]
+    name = "互換製品"
+    url = "/ja/compatibility/"
+    weight = 3
+
+[[main]]
+    name = "コミュニティ"
+    url = "/ja/community"
+    weight = 4
+
+[[main]]
+    name = "メンバーシップ"
+    url = "/Membership/"
+    weight = 5
+
+[[main]]
+    name = "リソース"
+    url = "/resources/"
+    weight = 6
+
+# About sub-menu
+[[main]]
+    name = "Jakarta EE"
+    url = "/"
+    weight = 1
+    parent = "私たちについて"
+
+[[main]]
+    name = "Jakarta EE Working Group"
+    url = "/"
+    weight = 2
+    parent = "私たちについて"
+
+[[main]]
+    name = "News"
+    url = "/news/"
+    parent = "私たちについて"
+    weight = 5
+
+[[main]]
+    name = "News"
+    url = "/news/"
+    parent = "私たちについて"
+    weight = 6
+
+# Jakarta EE sub-menu
+[[main]]
+    name = "Jakarta EEについて"
+    url = "/ja/about/jakarta-ee"
+    parent = "Jakarta EE"
+    weight = 1
+
+[[main]]
+	name = "Jakarta EEを使用する理由"
+	url = "/ja/about/why-jakarta-ee"
+	parent = "Jakarta EE"
+	weight = 2
+
+[[main]]
+    name = "よくある質問"
+    url = "/ja/about/faq/"
+    parent = "Jakarta EE"
+    weight = 3
+
+[[main]]
+    name = "リリース"
+    url = "/ja/release/"
+    parent = "Jakarta EE"
+    weight = 4
+
+# Jakarta EE Group sub-menu
+[[main]]
+    name = "ワーキンググループについて"
+    url = "/ja/about/working-group"
+    weight = 1
+    parent = "Jakarta EE Working Group"
+
+[[main]]
+    name = "特権"
+    url = "https://eclipse.org/org/workinggroups/jakarta_ee_charter.php"
+    weight = 2
+    parent = "Jakarta EE Working Group"
+
+[[main]]
+    name = "商標ガイドライン"
+    url = "/ja/legal/trademark_guidelines/"
+    weight = 3
+    parent = "Jakarta EE Working Group"
+
+[[main]]
+    name = "技術的方向性"
+    url = "https://www.eclipse.org/ee4j/direction.php"
+    weight = 4
+    parent = "Jakarta EE Working Group"
+
+[[main]]
+    name = "委員会"
+    url = "/ja/committees"
+    parent = "Jakarta EE Working Group"
+    weight = 5
+
+[[main]]
+    name = "委員会のミーティング議事録"
+    url = "/ja/meeting_minutes/"
+    parent = "Jakarta EE Working Group"
+    weight = 6
+
+# Resource sub-menu
+[[main]]
+    name = "Overview"
+    url = "/resources"
+    weight = 1
+    parent = "リソース"
+    identifier = "overview_resources"
+
+[[main]]
+	name = "Branding"
+	url = "/resources#branding"
+	parent = "リソース"
+	weight = 2
+
+[[main]]
+    name = "Datasheets"
+    url = "/resources#datasheets"
+    parent = "リソース"
+    weight = 3
+
+[[main]]
+    name = "Documentation"
+    url = "/resources#documentation"
+    parent = "リソース"
+    weight = 4
+
+[[main]]
+    name = "Presentations"
+    url = "/resources#presentations"
+    parent = "リソース"
+    weight = 5
+
+[[main]]
+    name = "Surveys"
+    url = "/resources#surveys"
+    parent = "リソース"
+    weight = 6
+
+[[main]]
+    name = "eBooks"
+    url = "/resources/#ebooks"
+    parent = "リソース"
+    weight = 7
+
+[[main]]
+    name = "White Papers"
+    url = "/resources/#white-papers"
+    parent = "リソース"
+    weight = 8
+
+[[main]]
+    name = "Case Studies"
+    url = "/resources/#cases-studies"
+    parent = "リソース"
+    weight = 9
+
+[[main]]
+    name = "Starter for Jakarta EE"
+    url = "https://start.jakarta.ee/"
+    parent = "リソース"
+    weight = 10
+
+[[main]]
+    name = "Jakarta EE Overview Course"
+    url = "https://www.linkedin.com/learning/jakarta-ee-overview"
+    parent = "リソース"
+    weight = 11
+
+# specifications
+[[main]]
+    name = "仕様の参照"
+    url = "/ja/specifications/"
+    weight = 1
+    parent = "仕様"
+
+[[main]]
+    name = "Jakarta EE仕様プロセス"
+    url = "/ja/about/jesp/"
+    weight = 2
+    parent = "仕様"
+
+[[main]]
+    name = "JESPガイド"
+    url = "/ja/committees/specification/guide/"
+    parent = "仕様"
+    weight = 3
+
+[[main]]
+    name = "Specification Projects"
+    url = "https://projects.eclipse.org/list-of-projects?combine=jakarta&field_project_techology_types_tid=1102&field_state_value_2=All"
+    weight = 4
+    parent = "仕様"
+
+[[main]]
+    name = "リリース"
+    url = "/ja/release/"
+    weight = 5
+    parent = "仕様"
+
+# Compatible Products
+[[main]]
+    name = "Jakarta EEの互換製品"
+    url = "/ja/compatibility/"
+    parent = "互換製品"
+    weight = 1
+
+[[main]]
+    name = "リストへの掲載"
+    url = "/ja/compatibility/get-listed/"
+    parent = "互換製品"
+    weight = 2
+
+# Community sub-menu
+[[main]]
+    name = "概要"
+    url = "/ja/community/"
+    parent = "コミュニティ"
+    weight = 1
+    identifier = "community"
+
+[[main]]
+    name = "仕様を採用する"
+    parent = "コミュニティ"
+    url = "/ja/community/adopt-a-spec/"
+    weight = 2
+
+[[main]]
+    name = "ブログ"
+    url = "/ja/blogs"
+    parent = "コミュニティ"
+    weight = 3
+
+[[main]]
+    name = "イベント"
+    url = "/ja/community/events/"
+    parent = "コミュニティ"
+    weight = 4
+
+[[main]]
+    name = "JakartaOne Livestream"
+    url = "https://jakartaone.org"
+    parent = "コミュニティ"
+    weight = 5
+
+[[main]]
+    name = "Stay Connected"
+    url = "/connect/"
+    parent = "コミュニティ"
+    weight = 6
+
+[[main]]
+    name = "Tech Talkの閲覧"
+    url = "/ja/community/#meetups"
+    parent = "コミュニティ"
+    weight = 7
+
+[[main]]
+    name = "ビデオ"
+    url = "/ja/community/videos"
+    parent = "コミュニティ"
+    weight = 8
+
+[[main]]
+    name = "参加する"
+    url = "/ja/community/get-involved"
+    parent = "コミュニティ"
+    weight = 9
+
+[[main]]
+    name = "Developer Advocate"
+    url = "/community/developer-advocate"
+    parent = "コミュニティ"
+    weight = 10
+
+# Membership sub-menu
+[[main]]
+    name = "Join"
+    url = "/membership"
+    parent = "メンバーシップ"
+    weight = 1
+
+[[main]]
+    name = "Members"
+    url = "/membership/members/"
+    parent = "メンバーシップ"
+    weight = 2

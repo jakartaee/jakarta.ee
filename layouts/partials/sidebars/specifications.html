@@ -42,7 +42,7 @@
             {{ $project := . }}
             {{ with $section.File.Dir }}
               {{ if eq . $project.directory }}
-              <h3>JUG Spec Adopters</h3>
+              <h2>JUG Spec Adopters</h2>
                 <p>To learn how your JUG can sign-up, check out the <a href="/community/adopt-a-spec">Adopt a Specification</a> program.</p>
                   <ul class="list-unstyled text-center">
                   {{ range sort $project.adopters  "name" "asc"}}

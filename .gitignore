@@ -6,7 +6,7 @@
 /public/
 /content/specifications/*
 !/content/specifications/_index.md
-!/content/specifications/_index.zh.md
+!/content/specifications/_index.*.md
 /static/specifications
 /layouts/robots.txt
 /.project

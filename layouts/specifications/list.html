@@ -9,7 +9,7 @@
 
 {{ define "main" }}
   {{ if ne .Page.Params.hide_page_title true }}
-    <h1>
+    <h1 class="big-text">
       {{ .Title }}
       {{ if .Params.project_id }}
         <span class="badge">
@@ -26,9 +26,8 @@
     </h1>
   {{ end }}
   <p>{{ .Params.summary }}</p>
-  {{ .Content }}
   {{ if eq .Page.Parent.Title "Specifications" }}
-    <ul>
+    <ul class="margin-bottom-60">
       {{ range (.Page.Sections.ByParam "title").ByParam "weight" }}
         <li>
           <h2><a href="{{- with .Params.redirect_url | default .RelPermalink }} {{.}} {{- end }}">{{ .Title }}</a></h2>
@@ -41,6 +40,7 @@
       {{ end }}
     </ul>
   {{ end }}
+  {{ .Content }}
   {{ if eq .Page.Parent.Title "Home" }}
     <p>{{ i18n "layouts-specifications-list-click-to-access-text" }}</p>
 
@@ -159,7 +159,7 @@
           {{ $project := . }}
           {{ with $section.File.Dir }}
             {{ if eq . $project.directory }}
-             <h3>{{ i18n "layouts-specifications-list-jug-spec-adopters-title" }}</h3>
+             <h2>{{ i18n "layouts-specifications-list-jug-spec-adopters-title" }}</h2>
               <p>{{ i18n "layouts-specifications-list-jug-spec-adopters-text" | safeHTML }}</p>
                 <ul class="list-inline">
                 {{ range sort $project.adopters  "name" "asc"}}
