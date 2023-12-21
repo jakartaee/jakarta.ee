@@ -1,8 +1,8 @@
-[[main]]
+ [[main]]
     name = "中国社区"
-    url = "/zh/community/china"
+    url = "/zh/zh/community/china"
     weight = 0
-
+	
 [[main]]
     name = "关于"
     url = "/zh/about/"
@@ -29,9 +29,9 @@
     weight = 5
 
 [[main]]
-    name = "资源"
-    url = "/zh/resources/"
-    weight = 6
+  name = "学习"
+  url = "/zh/learn/"
+  weight = 6
 
 # About sub-menu
 [[main]]
@@ -70,18 +70,18 @@
 	url = "/zh/about/why-jakarta-ee"
 	parent = "Jakarta EE"
 	weight = 2
-	
+
 [[main]]
     name = "常见问题"
     url = "/zh/about/faq/"
     parent = "Jakarta EE"
-    weight = 2
+    weight = 3
 
 [[main]]
     name = "发布版本"
     url = "/zh/release/"
     parent = "Jakarta EE"
-    weight = 3
+    weight = 4
 
 # Jakarta EE Group sub-menu
 [[main]]
@@ -121,67 +121,54 @@
     weight = 6
 
 # Resource sub-menu
-[[main]]
-    name = "概述"
-    url = "/zh/resources"
-    weight = 1
-    parent = "资源"
-    identifier = "overview_resources"
-
-[[main]]
-	name = "品牌"
-	url = "/zh/resources/#branding"
-	parent = "资源"
-	weight = 3
-	
-[[main]]
-    name = "数据表"
-    url = "/zh/resources#datasheets"
-    parent = "资源"
-    weight = 4
-
-[[main]]
-    name = "文档"
-    url = "/zh/resources#documentation"
-    parent = "资源"
-    weight = 5
-
-[[main]]
-    name = "演讲"
-    url = "/zh/resources#presentations"
-    parent = "资源"
-    weight = 6
-
-[[main]]
-    name = "调研"
-    url = "/zh/resources#surveys"
-    parent = "资源"
-    weight = 7
-
-[[main]]
-    name = "电子书"
-    url = "/zh/resources/#ebooks"
-    parent = "资源"
-    weight = 8
-
-[[main]]
-    name = "白皮书"
-    url = "/zh/resources/#white-papers"
-    parent = "资源"
-    weight = 9
-
-[[main]]
-    name = "案例研究"
-    url = "/zh/resources/#cases-studies"
-    parent = "资源"
-    weight = 10
-
-[[main]]
-    name = "Jakarta EE 起步"
-    url = "/zh/resources/#starter_jakartaee"
-    parent = "资源"
-    weight = 11
-
+# [[main]]
+# 	name = "Overview"
+# 	url = "/zh/resources"
+# 	parent = "Resources"
+# 	weight = 1
+# 
+# [[main]]
+# 	name = "Branding"
+# 	url = "/zh/resources#branding"
+# 	parent = "Resources"
+# 	weight = 2
+# 
+# [[main]]
+#     name = "Datasheets"
+#     url = "/zh/resources#datasheets"
+#     parent = "Resources"
+#     weight = 3
+# 
+# [[main]]
+#     name = "Presentations"
+#     url = "/zh/resources#presentations"
+#     parent = "Resources"
+#     weight = 4
+# 
+# [[main]]
+#     name = "Surveys"
+#     url = "/zh/resources#surveys"
+#     parent = "Resources"
+#     weight = 5
+# 
+# [[main]]
+#     name = "eBooks"
+#     url = "/zh/resources/#ebooks"
+#     parent = "Resources"
+#     weight = 6
+# 
+# [[main]]
+#     name = "White Papers"
+#     url = "/zh/resources/#white-papers"
+#     parent = "Resources"
+#     weight = 7
+# 
+# [[main]]
+#     name = "Case Studies"
+#     url = "/zh/resources/#cases-studies"
+#     parent = "Resources"
+#     weight = 8
+ 
 # specifications
 [[main]]
     name = "浏览规范"
@@ -196,7 +183,7 @@
     parent = "规范"
 
 [[main]]
-    name = "JESP向导"
+    name = "JESP 向导"
     url = "/zh/committees/specification/guide/"
     parent = "规范"
     weight = 3
@@ -205,6 +192,12 @@
     name = "规范项目"
     url = "https://projects.eclipse.org/list-of-projects?combine=jakarta&field_project_techology_types_tid=1102&field_state_value_2=All"
     weight = 4
+    parent = "规范"
+
+[[main]]
+    name = "发布版本"
+    url = "/zh/release/"
+    weight = 5
     parent = "规范"
 
 # Compatible Products
@@ -229,62 +222,68 @@
     identifier = "community"
 
 [[main]]
-    name = "Adopt a Spec 计划"
+    name = "Adopt A Spec 计划"
     parent = "社区"
     url = "/zh/community/adopt-a-spec/"
     weight = 2
 
 [[main]]
+    name = "资源"
+    url = "/zh/resources/"
+    weight = 3
+    parent = "社区"
+
+[[main]]
     name = "博客"
     url = "/zh/blogs"
-    parent = "社区"
-    weight = 3
+	parent = "社区"
+    weight = 4
 
 [[main]]
     name = "活动"
     url = "/zh/community/events/"
     parent = "社区"
-    weight = 4
+    weight = 5
 
 [[main]]
     name = "JakartaOne Livestream 线上活动"
     url = "https://jakartaone.org"
     parent = "社区"
-    weight = 5
+    weight = 6
 
 [[main]]
-    name = "联系"
+    name = "保持联系"
     url = "/zh/connect/"
     parent = "社区"
-    weight = 6
+    weight = 7
 
 [[main]]
     name = "技术沙龙"
     url = "/zh/community/#meetups"
     parent = "社区"
-    weight = 7
+    weight = 8
 
 [[main]]
     name = "视频"
     url = "/zh/community/videos"
     parent = "社区"
-    weight = 8
+    weight = 9
 
 [[main]]
     name = "加入社区"
     url = "/zh/community/get-involved"
     parent = "社区"
-    weight = 9
+    weight = 10
 
 [[main]]
-    name = "Developer Advocate"
+    name = "开发者布道师"
     url = "/zh/community/developer-advocate"
     parent = "社区"
-    weight = 10
+    weight = 11
 
 # Membership sub-menu
 [[main]]
-    name = "加入"
+    name = "加入成员"
     url = "/zh/membership"
     parent = "成员"
     weight = 1
@@ -294,3 +293,28 @@
     url = "/zh/membership/members/"
     parent = "成员"
     weight = 2
+
+# Learn sub-menu
+[[main]]
+  name = "概述"
+  url = "/zh/learn/"
+  weight = 1
+  parent = "学习"
+
+[[main]]
+  name = "文档"
+  url = "/zh/learn#documentation"
+  weight = 2
+  parent = "学习"
+
+[[main]]
+  name = "Starter 向导"
+  url = "/zh/learn/starter-guides/"
+  weight = 3
+  parent = "学习"
+
+[[main]]
+  name = "Jakarta EE 概要课程"
+  url = "https://www.linkedin.com/learning/jakarta-ee-overview"
+  weight = 4
+  parent = "学习"
