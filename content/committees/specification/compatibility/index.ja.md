@@ -32,7 +32,7 @@ Jakarta EEワーキンググループへのメンバーシップを含む、追�
 
 あなたの製品を互換製品ページに表示し、Jakarta EE互換ロゴを使用できるようにするには、次の手順に従います。
  1. ブランドと互換ロゴの要件
-     - Jakarta EEワーキンググループに[参加します](https://jakarta.ee/membership/)
+     - Jakarta EEワーキンググループに[参加します](https://jakarta.ee/ja/membership/)
      - [Jakarta EE商標ガイドライン](https://jakarta.ee/ja/legal/trademark_guidelines/)を参照します。
      - [Jakarta EE Compatibility Trademark License Agreement](https://app.hellosign.com/s/Aoi0Sx4E)を実行（デジタル署名）します（または[License Agreement PDF](/legal/trademark_guidelines/jakarta-ee-trademark-license.pdf)を印刷し、署名した契約書を[emo-records@eclipse.org](mailto:emo-records@eclipse.org)に返送します）
 2.	互換認証とjakarta.eeの互換製品ページ掲載の要件 
