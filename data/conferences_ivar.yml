@@ -22,6 +22,12 @@ years:
 #    date: April 4
 #    upcoming: true
 #    
+  - name: Voxxed Days Bucharest
+    url: https://romania.voxxeddays.com/voxxed-days-bucharest-2024/
+    location: Bucharest 🇷🇴
+    date: Mar 27-28
+    upcoming: true
+
   - name: ConFoo
     url: https://confoo.ca/en/2024
     location: Montreal 🇨🇦
