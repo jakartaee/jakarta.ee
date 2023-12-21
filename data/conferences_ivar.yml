@@ -21,7 +21,13 @@ years:
 #    location: Tel-Aviv 🇮🇱
 #    date: April 4
 #    upcoming: true
-#    
+    
+  - name: Voxxed Days Bucharest
+    url: https://romania.voxxeddays.com/voxxed-days-bucharest-2024/
+    location: Bucharest 🇷🇴
+    date: Mar 27-28
+    upcoming: true
+
   - name: ConFoo
     url: https://confoo.ca/en/2024
     location: Montreal 🇨🇦
@@ -55,7 +61,7 @@ years:
     date: Dec 5
     blog: https://www.agilejava.eu/2023/12/06/jakartaone-livestream-2023/
 
-  - name: JCON WORLD ONLINE 2023
+  - name: JCON WORLD ONLINE
     url: https://2023.world.jcon.one/
     location: online 🌐
     date: Nov 21-23
