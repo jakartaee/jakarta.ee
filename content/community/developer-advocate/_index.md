@@ -17,6 +17,7 @@ On this page, you can find some information about how to reach out to me, and wh
 - [ X ](https://x.com/ivar_grimstad)
 - [Mastodon](https://mastodon.social/@ivar_grimstad)
 - [Bluesky](https://bsky.app/profile/ivargrimstad.bsky.social)
+- [Threads](https://www.threads.net/@ivargrimstad_official)
 - [Instagram](https://www.instagram.com/ivargrimstad_official/)
 - [Blog](https://blogs.eclipse.org/blogs/ivar-grimstad)
 
