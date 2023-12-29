@@ -40,6 +40,12 @@ years:
     date: Feb 20
     upcoming: true
 
+ - name: Seattle JUG
+    url: https://www.meetup.com/seajug/
+    location: Seattle 🇺🇸
+    date: Jan 30
+    upcoming: true
+
   - name: JCP 25-year Anniversary Celebration
     url: https://jcp.org/en/press/news/JCP_25_Year_Anniversary
     location: Mountain View 🇺🇸
