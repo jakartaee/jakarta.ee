@@ -21,7 +21,13 @@ years:
 #    location: Tel-Aviv 🇮🇱
 #    date: April 4
 #    upcoming: true
-#    
+    
+  - name: Voxxed Days Bucharest
+    url: https://romania.voxxeddays.com/voxxed-days-bucharest-2024/
+    location: Bucharest 🇷🇴
+    date: Mar 27-28
+    upcoming: true
+
   - name: ConFoo
     url: https://confoo.ca/en/2024
     location: Montreal 🇨🇦
@@ -31,7 +37,19 @@ years:
   - name: Philly JUG
     url: https://www.meetup.com/phillyjug/
     location: Philadelphia 🇺🇸
-    date: Feb 20 (to be confirmed)
+    date: Feb 20
+    upcoming: true
+
+  - name: Seattle JUG
+    url: https://www.meetup.com/seajug/
+    location: Seattle 🇺🇸
+    date: Jan 30
+    upcoming: true
+
+  - name: JCP 25-year Anniversary Celebration
+    url: https://jcp.org/en/press/news/JCP_25_Year_Anniversary
+    location: Mountain View 🇺🇸
+    date: Jan 25
     upcoming: true
 
 - year: 2023
@@ -55,7 +73,7 @@ years:
     date: Dec 5
     blog: https://www.agilejava.eu/2023/12/06/jakartaone-livestream-2023/
 
-  - name: JCON WORLD ONLINE 2023
+  - name: JCON WORLD ONLINE
     url: https://2023.world.jcon.one/
     location: online 🌐
     date: Nov 21-23
