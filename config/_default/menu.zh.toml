@@ -1,6 +1,6 @@
  [[main]]
     name = "中国社区"
-    url = "/zh/zh/community/china"
+    url = "/zh/community/china"
     weight = 0
 	
 [[main]]
