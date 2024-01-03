@@ -19,7 +19,7 @@
 
             {{ with .Page.Params.logo | default .Site.Params.logo | default "https://www.eclipse.org/eclipse.org-common/themes/solstice/public/images/logo/eclipse-foundation-white-orange.svg" }}
 
-            {{ $currentPageLogo := . }}
+            {{ $currentPageLogo := absURL . }}
             {{ $currentPageLogoTitle := $.Site.Title }}
             {{ $currentPageLogoLink := "" }}
 
@@ -33,7 +33,7 @@
             {{ end }}
 
             <a title="{{ $currentPageLogoTitle }}" href="{{ $currentPageLogoLink | absLangURL }}">
-              <img width="{{ $.Page.Params.logo_width | default $.Site.Params.logo_width | default "140"}}" class="logo-eclipse-default img-responsive hidden-xs" src="{{ $currentPageLogo | relURL }}" alt="{{ $currentPageLogoTitle }}" />
+              <img width="{{ $.Page.Params.logo_width | default $.Site.Params.logo_width | default "140"}}" class="logo-eclipse-default img-responsive hidden-xs" src="{{ $currentPageLogo }}" alt="{{ $currentPageLogoTitle }}" />
             </a>
             {{ end }}
 
