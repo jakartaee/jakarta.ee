@@ -9,6 +9,46 @@ dir: /about/meeting_minutes/
 items:
    marketing_committee:
        -
+          url: marketing_committee/minutes-marketing-1130-2023.pdf
+          title: November 30, 2023 (pdf)
+          year: 2023
+       -
+          url: marketing_committee/minutes-marketing-1116-2023.pdf
+          title: November 16, 2023 (pdf)
+          year: 2023
+       -
+          url: marketing_committee/minutes-marketing-1102-2023.pdf
+          title: November 2, 2023 (pdf)
+          year: 2023
+       -
+          url: marketing_committee/minutes-marketing-1012-2023.pdf
+          title: October 12, 2023 (pdf)
+          year: 2023
+       -
+          url: marketing_committee/minutes-marketing-1005-2023.pdf
+          title: October 5, 2023 (pdf)
+          year: 2023
+       -
+          url: marketing_committee/minutes-marketing-0921-2023.pdf
+          title: September 21, 2023 (pdf)
+          year: 2023
+       -
+          url: marketing_committee/minutes-marketing-0907-2023.pdf
+          title: September 7, 2023 (pdf)
+          year: 2023
+       -
+          url: marketing_committee/minutes-marketing-0824-2023.pdf
+          title: August 24, 2023 (pdf)
+          year: 2023
+       -
+          url: marketing_committee/minutes-marketing-0810-2023.pdf
+          title: August 10, 2023 (pdf)
+          year: 2023
+       -
+          url: marketing_committee/minutes-marketing-0627-2023.pdf
+          title: July 27, 2023 (pdf)
+          year: 2023
+       -
           url: marketing_committee/minutes-marketing-0713-2023.pdf
           title: July 13, 2023 (pdf)
           year: 2023
