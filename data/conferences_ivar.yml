@@ -25,7 +25,7 @@ years:
   - name: Voxxed Days Bucharest
     url: https://romania.voxxeddays.com/voxxed-days-bucharest-2024/
     location: Bucharest 🇷🇴
-    date: Mar 27-28
+    date: Mar 27-29
     upcoming: true
 
   - name: ConFoo
@@ -38,6 +38,12 @@ years:
     url: https://www.meetup.com/phillyjug/
     location: Philadelphia 🇺🇸
     date: Feb 20
+    upcoming: true
+
+  - name: Jfokus
+    url: https://jfokus.se
+    location: Stockholm 🇸🇪
+    date: Feb 5-7
     upcoming: true
 
   - name: Seattle JUG
