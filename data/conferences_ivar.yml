@@ -46,6 +46,12 @@ years:
     date: Feb 5-7
     upcoming: true
 
+  - name: Portland JUG
+    url: https://www.meetup.com/pdxjug/
+    location: Portland 🇺🇸
+    date: Jan 31
+    upcoming: true
+
   - name: Seattle JUG
     url: https://www.meetup.com/seajug/
     location: Seattle 🇺🇸
