@@ -28,13 +28,27 @@
   <p>{{ .Params.summary }}</p>
   {{ if eq .Page.Parent.Title "Specifications" }}
     <ul class="margin-bottom-60">
-      {{ range (.Page.Sections.ByParam "title").ByParam "weight" }}
+      {{/* 
+        Iterate over the section's pages, extract the version from the title
+        and group them by version.
+      */}}
+
+      {{ $sorted_specs := slice }}
+      {{ range .Page.Sections }}
+        {{ $version := index (findRE "[0-9]+([.][0-9]+)?" .) 0 }}
+        {{ $sorted_specs = $sorted_specs | append (dict "version" $version "page" .) }}
+      {{end }}
+
+      {{/* Sort the specifications by version, descending. */}}
+      {{ $sorted_specs = sort $sorted_specs "version" "desc" }}
+
+      {{ range $sorted_specs }}
         <li>
-          <h2><a href="{{- with .Params.redirect_url | default .RelPermalink }} {{.}} {{- end }}">{{ .Title }}</a></h2>
-          {{ if eq .Params.summary_sixty_char nil  }}
-            <p>{{ .Params.summary | truncate 57 }}</p>
+          <h2><a href="{{- with .page.Params.redirect_url | default .page.RelPermalink }} {{.}} {{- end }}">{{ .page.Title }}</a></h2>
+          {{ if eq .page.Params.summary_sixty_char nil  }}
+            <p>{{ .page.Params.summary | truncate 57 }}</p>
           {{ else }}
-            <p>{{ .Params.summary_sixty_char }}</p>
+            <p>{{ .page.Params.summary_sixty_char }}</p>
           {{ end }}
         </li>
       {{ end }}
