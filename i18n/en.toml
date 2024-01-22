@@ -891,7 +891,7 @@ other = "Sign up now"
  other = "Project"
 
 [layouts-specifications-list-video]
- other = "Latest Updates"
+ other = "Video Guide"
 
 [layouts-specifications-list-click-to-access-text]
  other = "Click on the specifications below to access the specification document, Javadoc, Technology Compatibility Kit (TCK), and compatible implementation for each release of the specification."
