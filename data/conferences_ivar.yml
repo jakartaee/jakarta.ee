@@ -4,6 +4,18 @@ years:
 - year: 2024
   conferences:
 
+  - name: St. Louis JUG
+    url: https://www.meetup.com/gatewayjug/
+    location: St. Louis 🇺🇸
+    date: September 12 (in planning)
+    upcoming: true
+
+  - name: Java Metroplex User Group
+    url: https://www.meetup.com/javamug/
+    location: Dallas 🇺🇸
+    date: September 11 (in planning)
+    upcoming: true
+
   - name: GIDS
     url: https://developersummit.com/
     location: Bangalore 🇮🇳
@@ -74,7 +86,6 @@ years:
     url: https://jcp.org/en/press/news/JCP_25_Year_Anniversary
     location: Mountain View 🇺🇸
     date: Jan 25
-    upcoming: true
 
 - year: 2023
   conferences:
