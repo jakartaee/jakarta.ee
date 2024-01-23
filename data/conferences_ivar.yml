@@ -6,13 +6,13 @@ years:
 
   - name: St. Louis JUG
     url: https://www.meetup.com/gatewayjug/
-    location: St. Louis 🇺🇸
+    location: St. Louis, MO 🇺🇸
     date: September 12 (in planning)
     upcoming: true
 
   - name: Java Metroplex User Group
     url: https://www.meetup.com/javamug/
-    location: Dallas 🇺🇸
+    location: Dallas, TX 🇺🇸
     date: September 11 (in planning)
     upcoming: true
 
@@ -24,7 +24,7 @@ years:
 
   - name: Devnexus
     url: https://devnexus.com/
-    location: Atlanta 🇺🇸
+    location: Atlanta, GA 🇺🇸
     date: April 9-11
     upcoming: true
 
@@ -54,7 +54,7 @@ years:
 
   - name: Philly JUG
     url: https://www.meetup.com/phillyjug/
-    location: Philadelphia 🇺🇸
+    location: Philadelphia, PA 🇺🇸
     date: Feb 20
     upcoming: true
 
@@ -66,25 +66,25 @@ years:
 
   - name: Portland JUG
     url: https://www.meetup.com/pdxjug/
-    location: Portland 🇺🇸
+    location: Portland, OR 🇺🇸
     date: Jan 31
     upcoming: true
 
   - name: Seattle JUG
     url: https://www.meetup.com/seajug/
-    location: Seattle 🇺🇸
+    location: Seattle, WA 🇺🇸
     date: Jan 30
     upcoming: true
 
   - name: Nashville JUG
     url: https://www.meetup.com/nashvillejug/
-    location: Nashville 🇺🇸
+    location: Nashville, TN 🇺🇸
     date: Jan 29
     upcoming: true
 
   - name: JCP 25-year Anniversary Celebration
     url: https://jcp.org/en/press/news/JCP_25_Year_Anniversary
-    location: Mountain View 🇺🇸
+    location: Mountain View, CA 🇺🇸
     date: Jan 25
 
 - year: 2023
@@ -164,31 +164,31 @@ years:
 
   - name: Omaha JUG
     url: https://www.meetup.com/omahajava/events/295587171/
-    location: Omaha 🇺🇸
+    location: Omaha, NE 🇺🇸
     date: Sep 21
     blog: https://www.agilejava.eu/2023/09/22/north-america-jug-tour-2023-omaha-%f0%9f%87%ba%f0%9f%87%b8/
  
   - name: Detroit JUG
     url: https://www.meetup.com/detroit-java-user-group/events/295614617/
-    location: Detroit 🇺🇸
+    location: Detroit, MI 🇺🇸
     date: Sep 20
     blog: https://www.agilejava.eu/2023/09/21/north-america-jug-tour-2023-detroit-%f0%9f%87%ba%f0%9f%87%b8/
   
   - name: Garden State JUG
     url: https://gsjug.org/meetings/2023/sep2023.html
-    location: New Jersey 🇺🇸
+    location: New Jersey, NJ 🇺🇸
     date: Sep 19
     blog: https://www.agilejava.eu/2023/09/20/north-america-jug-tour-2023-new-jersey-%f0%9f%87%ba%f0%9f%87%b8/
 
   - name: Central Ohio JUG
     url: http://www.cojug.org/2023/09/18/dinner-Wargames-306/
-    location: Columbus 🇺🇸
+    location: Columbus, OH 🇺🇸
     date: Sep 18
     blog: https://www.agilejava.eu/2023/09/19/north-america-jug-tour-2023-columbus-%f0%9f%87%ba%f0%9f%87%b8/
 
   - name: IBM TechXchange
     url: https://www.ibm.com/community/ibm-techxchange-conference/
-    location: Las Vegas 🇺🇸
+    location: Las Vegas, NV 🇺🇸
     date: Sep 11-14
     blog: https://www.agilejava.eu/2023/09/15/ibm-techxchange-2023/
 
@@ -254,7 +254,7 @@ years:
 
   - name: Devnexus
     url: https://devnexus.com
-    location: Atlanta 🇺🇸
+    location: Atlanta, GA 🇺🇸
     date: Apr 4-6
     blog: https://www.agilejava.eu/2023/04/07/devnexus-2023/
 
@@ -272,7 +272,7 @@ years:
   
   - name: DeveloperWeek
     url: https://www.developerweek.com/
-    location: Oakland 🇺🇸
+    location: Oakland, CA 🇺🇸
     date: Feb 15-17
     blog: https://www.agilejava.eu/2023/02/17/developerweek-2023/
 
@@ -290,7 +290,7 @@ years:
 
   - name: THAT Conference Texas
     url: https://that.us/events/tx/2023/
-    location: Round Rock 🇺🇸
+    location: Round Rock, TX 🇺🇸
     date: Jan 16-18
     blog: https://www.agilejava.eu/2023/01/19/that-conference-2023/
 
@@ -323,7 +323,7 @@ years:
 
   - name: JavaOne
     url: https://www.oracle.com/cloudworld/javaone/
-    location: Las Vegas 🇺🇸
+    location: Las Vegas, NV 🇺🇸
     date: Oct 17-20
     blog: https://www.agilejava.eu/2022/10/21/javaone-2022/
     
@@ -335,7 +335,7 @@ years:
 
   - name: JConf
     url: https://2022.jconf.dev/
-    location: Chicago 🇺🇸
+    location: Chicago, IL 🇺🇸
     date: Sep 26-28
     blog: https://www.agilejava.eu/2022/10/02/jconf-dev-2022/
 
@@ -401,7 +401,7 @@ years:
 
   - name: Devnexus
     url: https://devnexus.com/
-    location: Atlanta 🇺🇸
+    location: Atlanta, GA 🇺🇸
     date: Apr 12-14
     blog: https://www.agilejava.eu/2022/04/15/devnexus-2022/
 
@@ -437,7 +437,7 @@ years:
 
   - name: CodeMash
     url: https://www.codemash.org/
-    location: Sandusky 🇺🇸
+    location: Sandusky, OH 🇺🇸
     date: Jan 11-14
     blog: https://www.agilejava.eu/2022/01/15/codemash-2022/
 
@@ -614,12 +614,12 @@ years:
 
   - name: Devnexus
     url: 
-    location: Atlanta 🇺🇸
+    location: Atlanta, GA 🇺🇸
     date: Feb 19-21
 
   - name: CodeMash
     url: 
-    location: Sandusky 🇺🇸
+    location: Sandusky, OH 🇺🇸
     date: Jan 7-10
 
 - year: 2019
