@@ -134,6 +134,18 @@ sets:
             - version: 23.0.0.3, Java 11
               compatibility: 'https://www.ibm.com/support/pages/ibm-websphere-liberty-23003-jakarta-ee-web-profile-10-using-java-11-certification-summary'
               download_url: 'https://www.ibm.com/support/fixcentral/swg/selectFixes?parent=ibm%7EWebSphere&product=ibm/WebSphere/WebSphere+Liberty&release=23.0.0.3&platform=All&function=fixId&fixids=wlp-webProfile10-23.0.0.3&includeSupersedes=0'
+        - name: JBoss Enterprise Application Platform
+          vendor: Red Hat
+          image: '/images/compatible_products/red-hat-jboss-logo.png'
+          image_width: 195
+          download: 'https://www.redhat.com/en/technologies/jboss-middleware/application-platform'
+          versions:
+            - version: 8.0.0, Java 17
+              compatibility: 'https://github.com/RedHatOfficial/jbosseap-certifications/blob/EE10/EAP-8.0.0/jakarta-web-profile-jdk17.adoc#tck-results' 
+              download_url: 'https://www.redhat.com/en/technologies/jboss-middleware/application-platform'
+            - version: 8.0.0, Java 11
+              compatibility: 'https://github.com/RedHatOfficial/jbosseap-certifications/blob/EE10/EAP-8.0.0/jakarta-web-profile-jdk11.adoc#tck-results'
+              download_url: 'https://www.redhat.com/en/technologies/jboss-middleware/application-platform'
         - name: Open Liberty
           vendor: IBM Corporation
           image: '/images/compatible_products/ibm-open-liberty-logo.svg'
