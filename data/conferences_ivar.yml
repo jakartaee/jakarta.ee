@@ -4,6 +4,12 @@ years:
 - year: 2024
   conferences:
 
+  - name: JakartaOne Livestream
+    url: https://jakartaone.org/
+    location: online 🌐
+    date: Dec 3
+    upcoming: true
+
   - name: St. Louis JUG
     url: https://www.meetup.com/gatewayjug/
     location: St. Louis, MO 🇺🇸
