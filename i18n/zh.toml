@@ -813,17 +813,8 @@ other = "注册"
 [pages-resources-infographics-title]
  other = "信息图表"
 
-[pages-resources-infographics-developer-survey-findings-2018]
- other = "2018 Jakarta EE 开发者调研发现"
-
-[pages-resources-infographics-developer-survey-findings-2020]
- other = "2020 Jakarta EE 开发者调研发现"
-
-[pages-resources-infographics-developer-survey-findings-2021]
- other = "2021 Jakarta EE 开发者调研发现"
-
-[pages-resources-infographics-developer-survey-findings-2022]
- other = "2022 Jakarta EE 开发者调研发现"
+[pages-resources-infographics-developer-survey-findings]
+ other = "{{ .year }} Jakarta EE 开发者调研发现"
  
 [pages-resources-starter-title]
  other = "Jakarta EE 起步"
