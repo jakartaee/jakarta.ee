@@ -80,13 +80,12 @@ years:
     url: https://jfokus.se
     location: Stockholm 🇸🇪
     date: Feb 5-7
-    upcoming: true
 
   - name: Portland JUG
     url: https://www.meetup.com/pdxjug/
     location: Portland, OR 🇺🇸
     date: Jan 31
-    upcoming: true
+    blog: https://www.agilejava.eu/2024/02/01/portland-jug-2024/
 
   - name: Seattle JUG
     url: https://www.meetup.com/seajug/
