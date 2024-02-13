@@ -51,11 +51,7 @@ There are 3 different types of TCKs, detailed below.
 - Type 2: Tests that only apply when running in a platform (or profile) to test behavior defined by the specification for that mode of execution.
 - Type 3: Tests that apply to the behavior defined by a specification for the execution either as a standalone or in a platform (or profile).
 
-The individual specification TCK must contain Type 2 or Type 3 tests while Type 1 tests are optional. A profile-ready mechanism must be provided for running the required TCK tests (types 2 and 3) in the profiles they are included in: platform, web profile or core profile. Type 1 tests must be excluded and not required to be executed.
-
-The individual specification TCK must provide a mechanism for running the required TCK tests (types 1 and 3) outside the context of a platform or profile. Type 2 tests must be excluded and not run.
-
-The type 3 tests must be executed in compatible implementations of the profiles to validate the individual specification implementation functions properly in the profile implementation: platform, web profile or core profile.
+A profile-ready mechanism must be provided for running the required TCK tests in the profiles they are included in: platform, web profile or core profile.
 
 ## Materials for a TCK Release {#_materials_for_a_tck_release}
 
