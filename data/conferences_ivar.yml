@@ -28,6 +28,18 @@ years:
     date: Sep 10
     upcoming: true
 
+  - name: DWX
+    url: https://www.developer-week.de/en/
+    location: Nürnberg 🇩🇪
+    date: Jul 1-5
+    upcoming: true
+    
+  - name: GeeCON
+    url: https://2024.geecon.org/
+    location: Kraków 🇵🇱
+    date: May 15-17
+    upcoming: true
+
   - name: JCON EUROPE
     url: https://2024.europe.jcon.one/
     location: Köln 🇩🇪
@@ -74,7 +86,6 @@ years:
     url: https://www.meetup.com/phillyjug/
     location: Philadelphia, PA 🇺🇸
     date: Feb 20
-    upcoming: true
 
   - name: Jfokus
     url: https://jfokus.se
