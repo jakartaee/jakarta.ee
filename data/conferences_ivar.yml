@@ -80,12 +80,12 @@ years:
     url: https://confoo.ca/en/2024
     location: Montreal 🇨🇦
     date: Feb 21-23
-    upcoming: true
 
   - name: Philly JUG
     url: https://www.meetup.com/phillyjug/
     location: Philadelphia, PA 🇺🇸
     date: Feb 20
+    blog: https://www.agilejava.eu/2024/02/21/philly-jug-2024/
 
   - name: Jfokus
     url: https://jfokus.se
