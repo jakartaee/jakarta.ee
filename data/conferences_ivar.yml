@@ -28,6 +28,12 @@ years:
     date: Sep 10
     upcoming: true
 
+  - name: JCrete
+    url: https://www.jcrete.org/
+    location: Kolymvari 🇬🇷
+    date: Jul 22-26
+    upcoming: true
+    
   - name: DWX
     url: https://www.developer-week.de/en/
     location: Nürnberg 🇩🇪
