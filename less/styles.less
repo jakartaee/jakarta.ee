@@ -2,7 +2,7 @@
  * Copyright (c) 2019, 2023 Eclipse Foundation, Inc.
  *
  * This program and the accompanying materials are made available under the
- * terms of the Eclipse Public License v. 2.0 which is available at
+ * terms of the Elipse Public License v. 2.0 which is available at
  * http://www.eclipse.org/legal/epl-2.0.
  *
  * Contributors:
@@ -56,7 +56,7 @@ html {
 }
 
 .jakarta-ee-hr {
-  border-top: 5px solid @brand-primary;
+ border-top: 5px solid @brand-primary;
 }
 
 .font-100 {
@@ -345,4 +345,50 @@ main > div.container {
 // unintentionally by Hugo.
 p:empty {
   display: none;
+}
+.bordered-section-top {
+  border-top: 3px solid @brand-secondary;
+}
+
+.bordered-section-bottom {
+  border-bottom: 3px solid @brand-secondary;
+}
+
+.bordered-section-y {
+  .bordered-section-top;
+  .bordered-section-bottom;
+}
+
+.border-hidden-xs {
+  @media (max-width: @screen-sm-max) {
+    border: transparent;
+  }
+}
+
+.eclipsefdn-video-list {
+  .video-list-item {
+    padding: unset;
+  }
+
+  .video-list-item-details {
+    margin-left: 3rem;
+  }
+
+  .video-details-title {
+    .big-text;
+    font-size: 2rem;
+  }
+
+  .video-details-button-container {
+    margin-bottom: 6rem;
+
+    @media (min-width: @screen-sm-min) {
+      justify-content: flex-start;
+    }
+  }
+
+  .eclipsefdn-video {
+    min-width: 48rem;
+    max-width: unset;
+  }
 }
