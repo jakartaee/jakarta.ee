@@ -111,28 +111,28 @@ web.xml.
 
 Jakarta Servlet enables developers to write web UIs using pure Java. At its
 simplest, a servlet is developed by creating a Java class and extending the
-Servlet interface. There are two classes that are generally used to extend
-Servlet interface:  GenericServlet and HttpServlet. In most cases, HttpServlet
-is extended. The service() method is called upon when the servlet is loaded
-into the web browser. The Servlet interface defines a service method that is
+`Servlet` interface. There are two classes that are generally used to extend
+`Servlet` interface: `GenericServlet` and `HttpServlet`. In most cases, `HttpServlet`
+is extended. The `service()` method is called upon when the servlet is loaded
+into the web browser. The `Servlet` interface defines a service method that is
 invoked to act upon each request. There are a number of methods that are
-automatically called upon via the service() method, and a servlet should
+automatically called upon via the `service()` method, and a servlet should
 implement those methods which provide the processing needed for the task at
 hand.
 
-- doGet(): handles HTTP GET requests for displaying data
-- doPost(): handles HTTP POST requests for performing inserts
-- doPut(): handles HTTP PUT requests for performing updates
-- doDelete(): handles HTTP DELETE requests for performing deletions
-- doHead(): handles HTTP HEAD requests
-- doOptions(): handles HTTP OPTIONS requests
-- doTrace(): handles HTTP TRACE requests
+- `doGet()`: handles HTTP GET requests for displaying data
+- `doPost()`: handles HTTP POST requests for performing inserts
+- `doPut()`: handles HTTP PUT requests for performing updates
+- `doDelete()`: handles HTTP DELETE requests for performing deletions
+- `doHead()`: handles HTTP HEAD requests
+- `doOptions()`: handles HTTP OPTIONS requests
+- `doTrace()`: handles HTTP TRACE requests
 
-In the case of loading some simple dynamic content, implementing the doGet()
-method may be all that is required. The @WebServlet annotation can be applied
+In the case of loading some simple dynamic content, implementing the `doGet()`
+method may be all that is required. The `@WebServlet` annotation can be applied
 to a servlet class in order to register it with the container. The path to
 which a user must visit to invoke the servlet should be passed to the
-@WebServlet annotation. In the following example the servlet can be invoked by
+`@WebServlet` annotation. In the following example the servlet can be invoked by
 visiting the URL path containing the host name, port, and servlet path of
 /HelloServlet within a web browser:
 
@@ -169,14 +169,14 @@ The servlet life cycle is as follows:
 
 1. Loading and Instantiation: Servlet container loads the servlets that are
    registered and instantiates them for use.
-2. Initialization: Servlet initialization occurs calling upon the init() method
+2. Initialization: Servlet initialization occurs calling upon the `init()` method
    of the servlet.
-3. RequestHandling: Request objects of type ServletRequest are handled, and
-   then ServletResponse objects are filled out and passed as parameters to the
-   service() method. At this stage, single requests or multiple asynchronous
+3. `RequestHandling`: Request objects of type `ServletRequest` are handled, and
+   then `ServletResponse` objects are filled out and passed as parameters to the
+   `service()` method. At this stage, single requests or multiple asynchronous
    requests can be processed, depending upon configuration.
 4. End of Service: Once a container determines that a servlet is no longer
-   needed, the destroy() method of the servlet is called to allow the servlet
+   needed, the `destroy()` method of the servlet is called to allow the servlet
    to release resources, if needed.
 
 In some cases, data needs to be passed in from a web form to a servlet for
@@ -199,7 +199,7 @@ Servlet Filters are lightweight and reusable Java components that allow
 on-the-fly modifications of header and payload for both the request and
 response. Jakarta Servlet provides a framework for writing filters and
 applying them to servlets. To write a filter, a class must extend
-jakarta.servlet.Filter, and implement the doFilter() method. The @WebFilter
+`jakarta.servlet.Filter`, and implement the `doFilter()` method. The `@WebFilter`
 annotation can be applied to a class, along with metadata, to define it as a
 filter.
 
@@ -207,16 +207,16 @@ Servlet Listeners can be used to listen for events and perform actions when the
 corresponding events occur. There are a number of different event types, from
 servlet startup/shutdown, to session or request events. Listener classes must
 implement a listener interface corresponding to the associated type of event
-listener being developed. Listener events include:  AsyncListener,
-ServletContextListener, ServletContextAttributeListener,
-ServletRequestListener, ServletRequestAttributeListener, HttpSessionListener,
-HttpSessionBindingListener, HttpSessionAttributeListener,
-HttpSessionActivationListener. Listeners can be registered by applying the
-@WebListener annotation to a listener class.
+listener being developed. Listener events include: `AsyncListener`,
+`ServletContextListener`, `ServletContextAttributeListener`,
+`ServletRequestListener`, `ServletRequestAttributeListener`, `HttpSessionListener`,
+`HttpSessionBindingListener`, `HttpSessionAttributeListener`,
+`HttpSessionActivationListener`. Listeners can be registered by applying the
+`@WebListener` annotation to a listener class.
 
 Servlet containers allow files to be uploaded when data is sent via
-multipart/form-data. To indicate that a servlet is used for performing upload,
-it must have the @MultipartConfig annotation applied to it.
+`multipart/form-data`. To indicate that a servlet is used for performing upload,
+it must have the `@MultipartConfig` annotation applied to it.
 
 Servlets can access information pertaining to attributes and headers via
 provided APIs. Attributes are associated with each request, and they can be
@@ -284,7 +284,7 @@ example from the previous section.
 </html>
 ```
 
-The code for the corresponding HelloBean is as follows:
+The code for the corresponding `HelloBean` is as follows:
 
 ```java
 public class HelloBean {
@@ -356,8 +356,8 @@ known as Jakarta Server Pages Standard Tag Library (JSTL) which contains a
 number of tags for doing things such as calling functions or performing
 conditionals without embedding code in a page. However, as an example of using
 Jakarta Expression Language, one can utilize conditionals to determine whether
-values are less than, equal to, or greater than other values by specifying lt,
-eq, or gt, respectively. For example the following would produce the value
+values are less than, equal to, or greater than other values by specifying `lt`,
+`eq`, or `gt`, respectively. For example the following would produce the value
 `"true"`:
 
 ```
@@ -369,32 +369,32 @@ pages, and within server side business logic. These objects can be used for
 doing things such as obtaining the request URI. The following objects are
 available for use:
 
-- request: Belongs to the HttpServletRequest class, and makes all request
+- `request`: Belongs to the `HttpServletRequest` class, and makes all request
   inputs available to the server.
-- requestScope:  Maps request scoped attribute names to their values.
-- response: Belongs to the HttpServletResponse class, and determines the
+- `requestScope`:  Maps request scoped attribute names to their values.
+- `response`: Belongs to the HttpServletResponse class, and determines the
   details that are passed back to a client after a request has been made.
-- page: Supplies access to the current servlet information.
-- pageContext:  Page Context Object.
-- session: Maintains information throughout a session.
-- sessionScope: Maps session scoped attribute names to their values.
-- application: Contains application based parameters.
-- applicationScope: Maps application scoped attribute names to their values.
-- param: Maps parameter names to a single String based parameter value.
-- params: Maps parameter names to a String[] of values for that parameter.
-- pageScope:  Maps page scoped attribute names to their values.
-- header: Maps header names to single String header values.
-- headerValues: Maps header names to a Sting[] of values for the associated name.
-- cookie: Maps cookie names to a single Cookie object.
-- initParam: Maps context initialization parameter names to their String based
+- `page`: Supplies access to the current servlet information.
+- `pageContext`:  Page Context Object.
+- `session`: Maintains information throughout a session.
+- `sessionScope`: Maps session scoped attribute names to their values.
+- `application`: Contains application based parameters.
+- `applicationScope`: Maps application scoped attribute names to their values.
+- `param`: Maps parameter names to a single String based parameter value.
+- `params`: Maps parameter names to a String[] of values for that parameter.
+- `pageScope`:  Maps page scoped attribute names to their values.
+- `header`: Maps header names to single String header values.
+- `headerValues`: Maps header names to a Sting[] of values for the associated name.
+- `cookie`: Maps cookie names to a single Cookie object.
+- `initParam`: Maps context initialization parameter names to their String based
   parameter value.
-- out: Used to write content to the client. 
-- exception: Used to display error messages within a JSP page.
-- config: Supplies access to the servlet context, name, and configuration
+- `out`: Used to write content to the client. 
+- `exception`: Used to display error messages within a JSP page.
+- `config`: Supplies access to the servlet context, name, and configuration
   parameters.
 
 For instance, to obtain a request parameter value from within a Java class, the
-request object can be called upon by invoking the getParameter() method.
+request object can be called upon by invoking the `getParameter()` method.
 
 ```java
 String message = request.getParameter("message");
@@ -403,34 +403,34 @@ String message = request.getParameter("message");
 Jakarta Server Pages also makes a number of actions available for use within a
 page. These actions can be applied by specifying the following tags:
 
-- jsp:include: Enables inclusion of static and dynamic resources within the
+- `jsp:include`: Enables inclusion of static and dynamic resources within the
   same context of the current page.
-- jsp:forward: Allows current request to be dispatched to a static resource,
+- `jsp:forward`: Allows current request to be dispatched to a static resource,
   JSP Page, or servlet within the same context of the current page. 
-- jsp:param: Used to specify key/value information within the jsp:include,
-  jsp:forward, or jsp:params tags.
-- jsp:plugin: Specifies an associated plugin for the page. Deprecated as of JSP
+- `jsp:param`: Used to specify key/value information within the `jsp:include`,
+  `jsp:forward`, or `jsp:params` tags.
+- `jsp:plugin`: Specifies an associated plugin for the page. Deprecated as of JSP
   3.1
-- jsp:params: Associated with plugins. Deprecated as of JSP 3.1
-- jsp:fallback: Associated with plugins. Deprecated as of JSP 3.1
-- jsp:attribute: Allows page author to define value of an action attribute in
+- `jsp:params`: Associated with plugins. Deprecated as of JSP 3.1
+- `jsp:fallback`: Associated with plugins. Deprecated as of JSP 3.1
+- `jsp:attribute`: Allows page author to define value of an action attribute in
   the body of an XML element, or it can be used to enable the page author to
-  specify the attributes of the element being output by a jsp:element action.
-- jsp:body: Used to define the body of a standard or custom action.
-- jsp:element: Dynamically creates an XML element and adds it to the response.
-- jsp:useBean: Associates a Java object to a JSP variable, making it available
+  specify the attributes of the element being output by a `jsp:element` action.
+- `jsp:body`: Used to define the body of a standard or custom action.
+- `jsp:element`: Dynamically creates an XML element and adds it to the response.
+- `jsp:useBean`: Associates a Java object to a JSP variable, making it available
   for use within the page.
-- jsp:setProperty: Sets values of properties within a page.
-- jsp:getProperty: Places value of bean instance property into the implicit
-  “out” object, from which the value can be displayed as output.
-- jsp:invoke: Only used in tag files for invoking a JSP fragment.
-- jsp:doBody: Only used in tag files for invoking the body of a tag.
-- jsp:text: Encloses template data in a JSP page.
-- jsp:output: Only used in JSP documents for modifying some properties of the
+- `jsp:setProperty`: Sets values of properties within a page.
+- `jsp:getProperty`: Places value of bean instance property into the implicit
+  "out" object, from which the value can be displayed as output.
+- `jsp:invoke`: Only used in tag files for invoking a JSP fragment.
+- `jsp:doBody`: Only used in tag files for invoking the body of a tag.
+- `jsp:text`: Encloses template data in a JSP page.
+- `jsp:output`: Only used in JSP documents for modifying some properties of the
   output of a JSP document or tag file.
 
 There are a number of other optional directives that can be placed on a page
-within the <%@ directive %> enclosing characters. These directives enable
+within the `<%@ directive %>` enclosing characters. These directives enable
 developers to do things such as specify tag libraries that can be used within a
 page using the taglib directive. The include directive allows other JSP file
 contents to be substituted or included within the page at translation time. It
@@ -484,7 +484,7 @@ are processed throughout the lifecycle of a Jakarta Faces request/response.
 Jakarta Faces allows communication between the front end and the back end via
 the use of Contexts and Dependency Injection (CDI) beans. CDI beans can be
 referenced within Jakarta Faces views using Expression Language, enclosing
-expressions within #{ expression }. The following Faces view provides similar
+expressions within `#{ expression }`. The following Faces view provides similar
 output as that of the Jakarta Servlet example from earlier in this article,
 displaying a message from a Java class on screen:
 
@@ -502,7 +502,7 @@ displaying a message from a Java class on screen:
 </html>
 ```
 
-The corresponding CDI Bean is named HelloCdi, and it contains the following
+The corresponding CDI Bean is named `HelloCdi`, and it contains the following
 code. For the first example, only the message field is used.
 
 ```java
@@ -543,19 +543,19 @@ public class HelloCdi implements java.io.Serializable {
 
 To break the example down, <html> tag lists tag library namespaces that can be
 utilized within the view, and maps them to a corresponding letter. In the
-example, the xmlns:h="jakarta.faces.html" maps the letter “h” to the Jakarta
+example, the `xmlns:h="jakarta.faces.html"` maps the letter "h" to the Jakarta
 Faces HTML tag library namespace. As such, any of the Jakarta Faces HTML tags
-must be prefaced with “h:”. Another often used namespace that is part of
+must be prefaced with "h:". Another often used namespace that is part of
 Jakarta Faces contains the Faces core components. This namespace is typically
-bound to the letter “f” as such:  xmlns:f="jakarta.faces.core", and the core
+bound to the letter "f" as such: `xmlns:f="jakarta.faces.core"`, and the core
 components cover converters, validators, and others. The body of the XHTML
-form contains opening and closing <h:head> and <h:body> tags. Any parameters
+form contains opening and closing `<h:head>` and `<h:body>` tags. Any parameters
 that need to be placed into the head of the view would be placed within the
-h:head section, and any components that will be used to compose the view would
-be placed within the h:body section. In the example, the Jakarta Faces
-h:outputText component is contained within the h:body and it is used to display
+`h:head` section, and any components that will be used to compose the view would
+be placed within the `h:body` section. In the example, the Jakarta Faces
+`h:outputText` component is contained within the `h:body` and it is used to display
 the data which is stored within the message property of the CDI bean. Note
-that the CDI bean has the @ViewScoped annotation applied, which makes this bean
+that the CDI bean has the `@ViewScoped` annotation applied, which makes this bean
 hold state for the life of the view. When the user navigates away from the
 page, the state is lost. However, a CDI bean can contain any of the valid CDI
 scopes.
@@ -564,8 +564,8 @@ Jakarta Faces makes templating easy, providing the ability to create portions
 of a page such as a footer once, and then apply that portion to other pages.
 Using templating, it is possible to create headers, footers, menus on the top,
 left, or right, and so forth. To utilize facelets templating, the facelets
-namespace must be brought into a page within the <html> tag
-xmlns:ui="jakarta.faces.facelets". The facelets “insert” and “include”
+namespace must be brought into a page within the `<html>` tag
+`xmlns:ui="jakarta.faces.facelets"`. The facelets "insert" and "include"
 components enable one to include facelets pages within each other.
 
 ```xhtml
@@ -584,9 +584,9 @@ components enable one to include facelets pages within each other.
 As mentioned, Jakarta Faces contains a large number of components for use
 within the views, and they can be easily wired up to save values and
 communicate with backend business logic via CDI beans. To name a few, the
-inputText component translates to an HTML input component of type text, the
-commandButton component translates to a button which submits form contents, and
-the dataTable component allows data to be displayed within an HTML table. It
+`inputText` component translates to an HTML input component of type text, the
+`commandButton` component translates to a button which submits form contents, and
+the `dataTable` component allows data to be displayed within an HTML table. It
 is easy to develop a create, remove, update, delete data application using a
 dataTable component. The Jakarta Faces HTML components that ship with the
 platform are basic without much styling applied, but there are many third party
@@ -594,12 +594,12 @@ component providers that contain enhanced styling that can make forms and
 tables very visually appealing. 
 
 As an example of Jakarta Faces forms functionality, the following page contains
-a Jakarta Faces form. Inside the form are an outputText component to display a
-message bound to a CDI property, an inputText component that is bound to a
+a Jakarta Faces form. Inside the form are an `outputText` component to display a
+message bound to a CDI property, an `inputText` component that is bound to a
 property within a CDI bean, which can have its value changed from the view
-since it contains a setter method. The view also contains a commandButton
-which is bound to an action method within the bean. When the commandButton is
-pressed, the text which has been entered into the inputText component is
+since it contains a setter method. The view also contains a `commandButton`
+which is bound to an action method within the bean. When the `commandButton` is
+pressed, the text which has been entered into the `inputText` component is
 assigned to the message property and redisplayed on the screen.
 
 ```xhtml
@@ -629,7 +629,7 @@ within Jakarta Faces. An optional faces-config.xml file can be included within
 the WEB-INF folder of the application, and navigational rules, amongst other
 configurations, can be specified via XML. The following navigational rule can
 be placed within this file and it will route the user to the
-authentication.xhtml page when a value of GOTO_LOGIN is returned from an action
+authentication.xhtml page when a value of `GOTO_LOGIN` is returned from an action
 method within a CDI bean. 
 
 ```xml
@@ -644,9 +644,9 @@ method within a CDI bean.
 
 Navigation can also occur by returning the name of the view to which navigation
 should occur from an action method. For instance, when a user clicks a command
-button to initiate an action method, it could return a String of
-“authenticate.xhtml” to navigate to that page. There are also components that
-contain an “outcome” attribute, which can be used to specify the name of the
+button to initiate an action method, it could return a `String` of
+"authenticate.xhtml" to navigate to that page. There are also components that
+contain an "outcome" attribute, which can be used to specify the name of the
 view to which navigation should route the user.
 
 Jakarta Faces includes a validation framework to validate data as it is entered
@@ -656,10 +656,10 @@ to develop custom validators that can be applied to components within a Faces
 form. In a similar fashion, Jakarta Faces includes a converter framework that
 allows data to be converted automatically by the supplied converters or by
 custom created converters. An example of a converter would be converting all
-characters of a String to uppercase, or converting a String to a date object.
+characters of a String to uppercase, or converting a `String` to a date object.
 
 The following example demonstrates how to apply a length validator to the
-inputText field. Note that the applied validateLength converter is part of the
+`inputText` field. Note that the applied `validateLength` converter is part of the
 Jakarta Faces core component library, so it contains a prefix of “f”.
 
 ```xhtml
@@ -668,14 +668,14 @@ Jakarta Faces core component library, so it contains a prefix of “f”.
 </h:inputText>
 ```
 
-It is possible to provide a label attribute on an inputText field to change the
+It is possible to provide a label attribute on an `inputText` field to change the
 label color of a field label when the contents fail validation. Another option
 is to associate an outputText with a particular error message if validation
 fails. Modern applications utilize JavaScript and AJAX (Asynchronous
 JavaScript and XML) to submit forms and display content to users without page
 refreshes. This process also helps the user identify issues with form entry
 more easily. The Jakarta Faces components are ready to use with AJAX by
-applying the core ajax component to corresponding Faces tags. There is no
+applying the core `ajax` component to corresponding Faces tags. There is no
 JavaScript code necessary, as Jakarta Faces abstracts the code intricacies from
 the developer. The following code demonstrates how to apply AJAX to a command
 button and process the inputMessage and the commandButton action, and then
@@ -692,7 +692,7 @@ finally refresh the value of the component assigned to an ID of “message”.
 Jakarta Faces supports features such as resource bundles, which enable
 internationalization and the ability to store static messages. Centralizing
 text within resource bundles makes management much easier. There is also an
-outputStylesheet component that can be used to easily apply style sheets to
+`outputStylesheet` component that can be used to easily apply style sheets to
 pages, and each of the components contains styling attributes. As mentioned
 previously, there are a number of third party component libraries that have
 components that already have styling applied to them. There is also a dialog
