@@ -76,16 +76,22 @@ years:
     date: Mar 27-29
     upcoming: true
 
+  - name: Belgian JUG
+    url: https://www.meetup.com/belgian-java-user-group/
+    location: Hasselt 🇧🇪
+    date: Mar 19
+    upcoming: true
+
   - name: Javaforum Malmø
     url: https://www.meetup.com/javaforum-malmo/
     location: Malmö 🇸🇪
     date: Feb 29
-    upcoming: true
 
   - name: ConFoo
     url: https://confoo.ca/en/2024
     location: Montreal 🇨🇦
     date: Feb 21-23
+    blog: https://www.agilejava.eu/2024/02/24/confoo-2024/
 
   - name: Philly JUG
     url: https://www.meetup.com/phillyjug/
