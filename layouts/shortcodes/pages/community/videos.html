@@ -1,14 +1,13 @@
 {{ $scratch := newScratch }}
-{{ range .Site.Data.videos.categories}}
-    {{ if .title }}
-        {{ $scratch.Set "category_title" (.title | urlize) }}
-        {{ $scratch.SetInMap "categories" (.title | urlize) . }}
-    {{ end }}
-    {{ range $index, $video := .videos }}
-        {{ $category := dict "category" ($scratch.Get "category_title") }}
-        {{ $video = merge . ($category) }}
-        {{ $scratch.SetInMap "videos" (.title | urlize) $video }}
-    {{ end }}
+{{ $playlists := sort $.Site.Data.videos "title" "asc" }}
+{{ range $playlists }}
+  {{ $scratch.Set "category_title" (.title | urlize) }}
+  {{ $scratch.SetInMap "categories" (.title | urlize) . }}
+  {{ range $index, $video := .entry }}
+    {{ $category := dict "category" ($scratch.Get "category_title") }}
+    {{ $video := merge . ($category) }}
+    {{ $scratch.SetInMap "videos" (.title | urlize) $video }}
+  {{ end }}
 {{ end }}
 
 <div class="card-banner card-banner-dark padding-15 margin-bottom-60">
@@ -35,7 +34,7 @@
 <div class="row featured-section featured-section-resources">
     <div class="container">
         <div id="videos-list">
-            {{ if gt (len ($scratch.Get "videos")) 0 }}
+            {{ if gt ($scratch.Get "videos") 0 }}
                 <div class="form-group row">
                     <div class="col-sm-6">
                         <select id="video-categories" class="search form-control">
@@ -47,25 +46,22 @@
                     </div>
                 </div>
                 <ul class="list list-unstyled">
-                    {{ range sort ($scratch.GetSortedMapValues "videos") "date" "desc" }}
+                    {{ range sort ($scratch.GetSortedMapValues "videos") "published" "desc" }}
                         <li class="row featured-section-resources-video-item margin-bottom-60">
                             <div class="col-sm-11">
-                                <a class="{{.link_class}}" href="{{.link}}"></a>
+                                <a class="eclipsefdn-video" href="//www.youtube.com/embed/{{.videoId}}"></a>
                             </div>
                             <div class="col-sm-11 col-sm-offset-1 padding-top-30 padding-bottom-30">
-                                <p class="category hide">{{.category}}</p>
-                                <p class="featured-section-resources-video-date text-secondary">{{ time.Format "January 2, 2006" .date  }}</p>
-                                <h2 class="h3 featured-section-resources-video-heading big-text"><a href="{{.link}}">{{ .title }}</a></h2>
+                                <p class="category hide">{{ .category }}</p>
+                                <p class="featured-section-resources-video-date text-secondary">{{ time.Format "January 2, 2006" .published }}</p>
+                                <h2 class="h3 featured-section-resources-video-heading big-text">
+                                    <a href="{{ index .link "-href" }}">{{ .title }}</a>
+                                </h2>
                                 <p class="featured-section-resources-video-description margin-bottom-20">{{ .description | truncate 200 }}</p>
-                                <p><a class="btn btn-primary" href="{{.link}}">Watch on Youtube</a></p>
-                                <ul class="list-inline featured-section-resources-video-tags">
-                                    {{ range .tags }}
-                                        <li class="featured-section-resources-video-tag">{{.}}</li>
-                                    {{ end }}
-                                </ul>
+                                <p><a class="btn btn-primary" href="{{.link.href}}">Watch on Youtube</a></p>
                             </div>
                         </li>
-                    {{ end }} 
+                    {{ end }}
                 </ul>
                 <div class="text-center">
                     <ul class="pagination pagination-videos text-center"></ul>
