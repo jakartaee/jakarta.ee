@@ -11,6 +11,7 @@
 /layouts/robots.txt
 /.project
 /data/eclipsefdn_projects.yaml
+/data/videos/
 .vscode/
 .idea/
 
