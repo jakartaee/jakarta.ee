@@ -19,8 +19,25 @@ playlist_ids=(
   "PLutlXcN4EAwCGe7GN9htD_QvANU9xTvrh" # Livestream 2023 ZH
 )
 
+# Create the data file directory of videos if it does not already exist.
 mkdir -p ./data/videos
 
+# Clean the data file directory of videos which may of been downloaded from a
+# previous run.
+rm -f ./data/videos/*.xml
+echo "Cleaning the video data file directory"
+
+# Loop through each playlist ID and download its XML feed.
 for playlist_id in "${playlist_ids[@]}"; do
-  curl -s "https://www.youtube.com/feeds/videos.xml?playlist_id=$playlist_id" > "./data/videos/$playlist_id.xml"
+  curl_output=$(curl -s "https://www.youtube.com/feeds/videos.xml?playlist_id=$playlist_id")
+  
+  # Check if curl command was successful. Otherwise, print an error.
+  if [ $? -eq 0 ]; then
+    # Save the XML feed to a new data file.
+    echo "$curl_output" > "./data/videos/$playlist_id.xml"
+    echo "Downloaded XML for playlist: $playlist_id"
+  else
+    echo "Failed to download XML for playlist: $playlist_id"
+    exit 1 # Return non-zero exit code to indicate failure.
+  fi
 done
