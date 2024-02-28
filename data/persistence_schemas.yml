@@ -33,6 +33,11 @@ releases:
       description: XML Schema for for the persistence object/relational mapping file
       status: Draft
 
+    - schema: persistence_3_2.xsd
+      namespace: persistence
+      description: XML Schema for the persistence configuration file
+      status: Draft
+
 # Template: Example for creating new schema entry
 #   - schema: a_simple_example.xsd
 #     description: Some text descring the schema

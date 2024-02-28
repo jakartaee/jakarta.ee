@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-    Copyright (c) 2023 Oracle and/or its affiliates. All rights reserved.
+    Copyright (c) 2023, 2024 Oracle and/or its affiliates. All rights reserved.
 
     This program and the accompanying materials are made available under the
     terms of the Eclipse Public License v. 2.0 which is available at
@@ -387,7 +387,7 @@
       <xsd:element name="basic" type="orm:basic"
                    minOccurs="0" maxOccurs="unbounded"/>
       <xsd:element name="version" type="orm:version"
-                   minOccurs="0" maxOccurs="unbounded"/>
+                   minOccurs="0"/>
       <xsd:element name="many-to-one" type="orm:many-to-one"
                    minOccurs="0" maxOccurs="unbounded"/>
       <xsd:element name="one-to-many" type="orm:one-to-many"
@@ -538,6 +538,7 @@
           int length() default 255;
           int precision() default 0; // decimal precision
           int scale() default 0; // decimal scale
+          int secondPrecision() default -1; //fractional second precision
           CheckConstraint[] check() default {};
           String comment() default "";
         }
@@ -560,6 +561,7 @@
     <xsd:attribute name="length" type="xsd:int"/>
     <xsd:attribute name="precision" type="xsd:int"/>
     <xsd:attribute name="scale" type="xsd:int"/>
+    <xsd:attribute name="second-precision" type="xsd:int"/>
   </xsd:complexType>
 
 <!-- **************************************************** -->
