@@ -2,11 +2,14 @@
 <div class="container">
   <h2 id="contact-us" class="big-text-secondary">{{ i18n "pages-membership-title" }}</h2>
 
-{{ i18n "pages-membership-text" | safeHTML }}
+  {{ i18n "pages-membership-text" | safeHTML }}
+  <div class="margin-y-30 text-center">
+    <a class="btn btn-primary btn-lg" href="/membership/join-us/">{{ i18n "pages-membership-join-cta" }}</a>
+  </div>
 
-<h3 id="benefits" class="big-text text-secondary margin-top-60">{{ i18n "pages-membership-benefits-title" }}</h3>
+  <h3 id="benefits" class="big-text text-secondary margin-top-60">{{ i18n "pages-membership-benefits-title" }}</h3>
 
-{{ i18n "pages-membership-benefits-text" | safeHTML }}
+  {{ i18n "pages-membership-benefits-text" | safeHTML }}
 
 <div class="row card-container text-center margin-top-60 margin-bottom-60">
   <div class="col-sm-8">
