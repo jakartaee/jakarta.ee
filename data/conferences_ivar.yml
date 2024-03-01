@@ -502,6 +502,21 @@ years:
     location: online 🌐
     date: Nov 29 - Dec 1
 
+  - name: Jforum Stockholm
+    url: https://www.meetup.com/jforum-stockholm/events/281092411/
+    location: Stockholm 🇸🇪
+    date: Nov 18
+    
+  - name: Javaforum Göteborg
+    url: https://www.meetup.com/javaforum-goteborg/events/281224053/
+    location: Gothenburg 🇸🇪
+    date: Nov 17
+
+  - name: Javaforum Malmø
+    url: https://www.meetup.com/javaforum-malmo/events/281222065/
+    location: Malmö 🇸🇪
+    date: Nov 16
+    
   - name: J-Fall
     url: 
     location: Ede 🇳🇱
