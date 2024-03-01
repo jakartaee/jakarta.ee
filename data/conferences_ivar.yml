@@ -70,11 +70,11 @@ years:
     date: April 9-11
     upcoming: true
 
-#  - name: JDevSummitIL
-#    url: https://jdevsummitil.com/
-#    location: Tel-Aviv 🇮🇱
-#    date: April 4
-#    upcoming: true
+  - name: JDevSummitIL
+    url: https://jdevsummitil.com/
+    location: online 🌐
+    date: April 4
+    upcoming: true
     
   - name: Voxxed Days Bucharest
     url: https://romania.voxxeddays.com/voxxed-days-bucharest-2024/
