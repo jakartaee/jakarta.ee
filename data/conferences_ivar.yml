@@ -39,7 +39,13 @@ years:
     location: Nürnberg 🇩🇪
     date: Jul 1-5
     upcoming: true
-    
+
+  - name: Spring I/O
+    url: https://2024.springio.net/
+    location: Barcelona 🇪🇸
+    date: May 30-31
+    upcoming: true
+        
   - name: GeeCON
     url: https://2024.geecon.org/
     location: Kraków 🇵🇱
