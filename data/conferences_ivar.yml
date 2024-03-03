@@ -45,7 +45,13 @@ years:
     location: Barcelona 🇪🇸
     date: May 30-31
     upcoming: true
-        
+
+  - name: JPrime
+    url: https://jprime.io/
+    location: Sofia 🇧🇬
+    date: May 28-29
+    upcoming: true
+            
   - name: GeeCON
     url: https://2024.geecon.org/
     location: Kraków 🇵🇱
