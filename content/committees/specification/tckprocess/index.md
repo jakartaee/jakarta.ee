@@ -60,7 +60,7 @@ The individual specification TCK must provide a mechanism for running the requir
 
 A profile-ready mechanism must also be provided for running the required TCK tests (Types 2 and 3) in the profiles in which they are included: platform, web profile or core profile. Type 1 tests must be excluded and not run. This mechanism is to be used by platform or profile implementations who wish to certify their compatibility with the specification.
 
-The requirement to produce a profile-ready mechanism does not mean a platform or profile implementation must pass the individual specification TCK using this mechanism before the individual specification can perform a release. If problems with the tests when run using the profile-ready mechanism are found after a specification release, they can be addressed by an update of the individual specification TCK.
+The requirement to produce a profile-ready mechanism does not mean a platform or profile implementation must pass the individual specification TCK using this mechanism before the individual specification can perform a release. If problems with the tests when run using the profile-ready mechanism are found after a specification release, they can be addressed by a new release of the individual specification TCK.
 
 The requirements discussed in this section are not intended to impose additional requirements on specifications that are producing service releases of their TCKs, beyond the requirements that were imposed by the 
 Specification Committee when the applicable major or minor release of the TCK binary was ratified.
