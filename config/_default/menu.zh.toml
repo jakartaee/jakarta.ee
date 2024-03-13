@@ -203,7 +203,7 @@
 
 [[main]]
     name = "规范项目"
-    url = "https://projects.eclipse.org/list-of-projects?combine=jakarta&field_project_techology_types_tid=1102&field_state_value_2=All"
+    url = "/zh/projects/"
     weight = 4
     parent = "规范"
 
