@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <!--
-~ JBoss, Home of Professional Open Source
-~ Copyright 2024, Red Hat, Inc., and individual contributors
-~ by the @authors tag. See the copyright.txt in the distribution for a
-~ full listing of individual contributors.
+~ Copyright 2021, Red Hat, Inc., and individual contributors
 ~
 ~ Licensed under the Apache License, Version 2.0 (the "License");
 ~ you may not use this file except in compliance with the License.
@@ -104,7 +101,7 @@
         <xs:annotation>
           <xs:documentation>
             It is strongly recommended you use "annotated". This is now the default and it
-            is also the default as of 4.0 when an empty beans.xml file is seen. When running
+            is also the default as of 4.1 when an empty beans.xml file is seen. When running
             in a CDI Lite  environment, this is the only aspect of the beans.xml file that
             is used.
 
@@ -360,13 +357,13 @@
     </xs:complexType>
   </xs:element>
   <xs:element name="trim" type="xs:string" fixed="">
-    <xs:annotation>
-      <xs:documentation>
-        If an explicit bean archive contains the &lt;trim/&lt; element in its beans.xml file, types that don’t have
-        either a bean defining annotation (as defined in Bean defining annotations) or any scope annotation,
-        are removed from the set of discovered types.
-      </xs:documentation>
-    </xs:annotation>
+      <xs:annotation>
+        <xs:documentation>
+          If an explicit bean archive contains the &lt;trim/&lt; element in its beans.xml file, types that don’t have
+          either a bean defining annotation (as defined in Bean defining annotations) or any scope annotation,
+          are removed from the set of discovered types.
+        </xs:documentation>
+      </xs:annotation>
   </xs:element>
 
 </xs:schema>
