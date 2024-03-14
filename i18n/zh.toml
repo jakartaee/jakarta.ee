@@ -1151,3 +1151,84 @@ other = "注册"
 
 [jakarta-ee-china-section-index-memberlist]
   other = "成员列表"
+
+[pages-specification-jakarta-ee-release-release-page]
+  other = "发布页面"
+  
+[pages-specification-jakarta-ee-release-press-release]
+  other = "发布新闻"
+  
+[pages-learn-index-starter-guides-title]
+  other = "入门向导" 
+  
+[pages-learn-index-starter-guides-describe]
+  other = "开始学习 Jakarta EE 入门向导."   
+  
+[pages-learn-index-starter-guides-view]
+  other = "查看入门向导" 
+  
+[pages-learn-index-documentation-title]
+  other = "文档"   
+
+[pages-learn-index-documentation-tutorial]
+  other = "Jakarta EE 教程" 
+  
+[pages-learn-index-documentation-first-cup]
+  other = "Jakarta EE 起步"   
+  
+[pages-learn-index-documentation-cargo-cracker-example-application]
+  other = "CargoTracker 示例应用" 
+  
+[pages-learn-index-jakarta-ee-project-title]
+  other = "生成 Jakarta EE 项目"   
+  
+[pages-learn-index-jakarta-ee-project-describe]
+  other = "官方的Eclipse Foundation Starter for Jakarta EE。该Starter使用Maven Archetype生成示例代码，让您快速处理简单的Jakarta EE微服务项目。" 
+  
+[pages-learn-index-jakarta-ee-project-start]
+  other = "开始一个项目"   
+  
+[pages-learn-index-jakarta-ee-overview-course-title]
+  other = "Jakarta EE 概述课程" 
+  
+[pages-learn-index-jakarta-ee-overview-course-instructor]
+  other = "导师"   
+  
+[pages-learn-index-jakarta-ee-overview-course-instructor-describe]
+  other = "Java Champion and Jakarta EE Developer " 
+  
+[pages-learn-index-jakarta-ee-overview-course-describe]
+  other = "您是否需要了解Jakarta EE的整体情况？在本课程中，Java Champion和Jakarta EE开发者布道师Ivar Grimstad将指导您了解Jakarta EE的目的和您需要了解的规范。Ivar快速概述了Jakarta EE、其规范和实现、将用于不同组件类型的容器以及用于部署的标准单元。他在Jakarta EE平台上进行了更深入的研究，然后深入到Web概要文件和核心概要文件。本课程包含了有用的提示和实际挑战，可以帮助您决定Jakarta EE之旅的下一步行动。"   
+  
+[pages-learn-index-jakarta-ee-overview-course-enroll]
+  other = "今天就报名参加我们的课程!" 
+  
+[pages-learn-starter-guides-read-guide]
+  other = "阅读向导"   
+  
+[pages-learn-starter-guides-learn-title]
+  other = "学习" 
+  
+[pages-learn-starter-guides-learn-describe]
+  other = "Jakarta EE学习资源的集合"   
+  
+[pages-learn-starter-guides-learn-read-more]
+  other = "了解更多" 
+  
+[pages-learn-starter-guides-find-release-title]
+  other = "查看最新发布版本"   
+  
+[pages-learn-starter-guides-find-release-describe]
+  other = "查看 Jakarta EE 的所有发布版本并在相关新闻稿中了解最新消息。" 
+  
+[pages-learn-starter-guides-find-release-read-more]
+  other = "了解更多"   
+  
+[pages-learn-starter-guides-download-products-title]
+  other = "下载兼容产品" 
+  
+[pages-learn-starter-guides-download-products-describe]
+  other = "查看所有Jakarta EE 兼容认证产品，帮助构建您的云原生应用程序。"   
+  
+[pages-learn-starter-guides-download-products-read-more]
+  other = "了解更多"   

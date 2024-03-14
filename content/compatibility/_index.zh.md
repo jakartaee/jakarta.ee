@@ -1,9 +1,9 @@
 ---
-title: "Compatible Products"
-seo_title: "Jakarta EE Compatible Products | Enterprise Java Application and Web Servers"
-headline: "Jakarta EE Compatible Products"
+title: "兼容产品"
+seo_title: "Jakarta EE 兼容产品 | 企业级Java应用和Web服务器"
+headline: "Jakarta EE 兼容产品"
 date: 2019-04-2T11:10:38-04:00
-description: "Find Jakarta EE compatible products including enterprise java application servers and platforms to build your cloud native Java application."
+description: "浏览Jakarta EE 兼容产品，包括企业级Java应用服务器和平台，以构建您的云原生Java应用程序."
 hide_sidebar: true
 hide_page_title: true
 draft: false
