@@ -59,7 +59,7 @@
     }
   },{
     "@type": "Question",
-    "name": "How often will new releases of Jakarta EE be delivered?",
+    "name": "Jakarta EE 新版本多久交付一次?",
     "acceptedAnswer": {
       "@type": "Answer",
       "text": "<p>目前我们仍在对此进行定义，所以我们现在尚不能确定任何特定的时间表或周期。不过，所有相关方都坚定地承诺会全力加速创新。同时，我们还打算听取来自开发者社区和企业用户两方的意见，以便更了解他们的需求。显然，稳定性与创新速度等因素是需要权衡的，但事实上，这些权衡正在以一种开放和包容的态度进行处理，这都将有助于Jakarta EE的成功。</p>"

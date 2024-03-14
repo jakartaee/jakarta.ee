@@ -19,8 +19,8 @@
                     <p class="subtitle">{{ .Params.subtitle | plainify }}</p>
                     <p>{{ .Description }}</p>
                     <ul class="list-inline margin-top-30 margin-bottom-0">
-                        <li><a class="btn btn-secondary card-panel-btn" href="{{ .Permalink }}"><i class="fa fa-code big" aria-hidden="true"></i> Release Page</a></li>
-                        <li><a class="btn btn-secondary card-panel-btn" href="{{ .Params.press_release_link }}"><i class="fa fa-file-text-o big" aria-hidden="true"></i> Press Release</a></li>
+                        <li><a class="btn btn-secondary card-panel-btn" href="{{ .Permalink }}"><i class="fa fa-code big" aria-hidden="true"></i> {{ i18n "pages-specification-jakarta-ee-release-release-page" }}</a></li>
+                        <li><a class="btn btn-secondary card-panel-btn" href="{{ .Params.press_release_link }}"><i class="fa fa-file-text-o big" aria-hidden="true"></i> {{ i18n "pages-specification-jakarta-ee-release-press-release" }}</a></li>
                     </ul>
                 </div>
             </div>

@@ -17,42 +17,74 @@ Jakarta EE 为基于云原生的企业级应用程序提供了一套开源的技
 
 ## 社区活动
 
-主题: Jakarta EE 和 MicroProfile 的明天会怎样？
-- 说明：首次Jakarta中国社区技术活动
-- 日期: 2022-07-07 19:38:04
-- [点此查看回放](https://meeting.tencent.com/v2/cloud-record/share?id=343cdca2-098a-416b-aaba-b0b5a973aa5d&from=3)
+主题：Jakarta Techtalk - 微服务架构的黄金标准MicroProfile：构建高效、可扩展的微服务架构
+主题：Jakarta Techtalk - Jakarta EE与Spring Boot：云原生应用的两个重要选择
+- 说明：本次会议将深入探讨微服务架构的黄金标准MicroProfile以及云原生应用开发的两个重要选择，Jakarta EE与Spring Boot
+- 日期: 2023-12-14 17:00:32
+- [点此查看回放](https://meeting.tencent.com/v2/cloud-record/share?id=3bf255e9-88b8-45b4-899b-5c1702f7128d&from=3)
 
-主题: JakartaOne Livestream Chinese
-- 说明：首次 [JakartaOne LIveStream](https://jakartaone.org/zh/2022/chinese/) 中文活动于2022年8月31日成功举办，活动吸引接近5000人次关注
-- 日期: 2022-08-31 13:09:25
-- [点此查看回放](https://meeting.tencent.com/v2/cloud-record/share?id=8a3e8c40-93fb-4616-b280-3bc50b9fcff7&from=3&is-single=true)
+主题: JakartaOne Livestream Chinese 2023
+- 说明：本次盛会带领我们深入探讨云原生应用中间件的建设思路、效益及发展，分析企业 Java EE 应用迁移至 Jakarta EE 环境的策略与路径，研究Java应用创新与 Jakarta EE 云原生启动的优化方法，一并揭秘Java事务处理的发展历程、核心概念和分布式模型。
+- 日期: 2023-09-27 13:55:03
+- [点此查看回放](https://meeting.tencent.com/v2/cloud-record/share?id=a83d46ef-7430-4956-bf47-802012c08ecc&from=3)
 
-主题: Jakarta EE 工作组会议通报
+主题: Jakarta Techtalk - 如何加入 Jakarta EE
+- 说明：介绍加入流程，如何参与营销、技术和内容方面的工作，如何签署贡献者协议等。
+- 日期: 2023-07-06 19:58:13
+- [点此查看回放](https://meeting.tencent.com/v2/cloud-record/share?id=f533eb21-440a-4a8d-9e28-ad4f7083211a&from=3)
+
+主题: Jakarta Techtalk - Jakarta EE 工作组会议通报
 - 说明：分享工作组最新工作进展
 - 日期: 2023-04-13 19:43:49
 - [点此查看回放](https://meeting.tencent.com/v2/cloud-record/share?id=db2a6491-3430-4caf-8717-c0d66f9562ab&from=3&is-single=true)
 
-主题: MicroProfile是SpringCloud的挑战者还是掘墓人?
+主题: Jakarta Techtalk - MicroProfile是SpringCloud的挑战者还是掘墓人?
 - 说明：多方面对比标准框架和实现框架
 - 日期: 2023-02-16 19:27:29
 - [点此查看回放](https://meeting.tencent.com/v2/cloud-record/share?id=2fb667b6-d7c9-43e4-bb8d-01ff680dada7&from=3&is-single=true)
 
-## 翻译文章
-[Jakarta EE社区更新](http://jakartaee.cn/index.php/archives/88/)
+主题: JakartaOne Livestream Chinese 2022
+- 说明：首次 [JakartaOne LIveStream](https://jakartaone.org/zh/2022/chinese/) 中文活动于2022年8月31日成功举办，活动吸引接近5000人次关注
+- 日期: 2022-08-31 13:09:25
+- [点此查看回放](https://meeting.tencent.com/v2/cloud-record/share?id=8a3e8c40-93fb-4616-b280-3bc50b9fcff7&from=3&is-single=true)
 
-[Liberty InstantOn 为云原生Java应用程序提供快速启动能力](http://jakartaee.cn/index.php/archives/58/)
+主题: Jakarta Techtalk - Jakarta EE 和 MicroProfile 的明天会怎样？
+- 说明：首次Jakarta中国社区技术活动
+- 日期: 2022-07-07 19:38:04
+- [点此查看回放](https://meeting.tencent.com/v2/cloud-record/share?id=343cdca2-098a-416b-aaba-b0b5a973aa5d&from=3)
+
+## 翻译文章
+[MicroProfileConfigSpec3.1](http://jakartaee.cn/index.php/archives/129/)
+
+[MicroProfileOpenAPI规范3.0](http://jakartaee.cn/index.php/archives/126/)
+
+[JakartaEE10中的7大功能](http://jakartaee.cn/index.php/archives/125/)
+
+[JakartaEE10即将推出的5大新功能](http://jakartaee.cn/index.php/archives/121/)
+
+[JakartaEE9工具供应商数据表命名空间迁移质询&amp;机会](http://jakartaee.cn/index.php/archives/117/)
+
+[2022JakartaEE开发人员调查报告](http://jakartaee.cn/index.php/archives/115/)
+
+[JaKarta企业版9工具供应商数据表命名空间迁移挑战及机遇](http://jakartaee.cn/index.php/archives/91/)
+
+[JakartaEE10有何新功能？](http://jakartaee.cn/index.php/archives/90/)
+
+[JakartaEE社区更新](http://jakartaee.cn/index.php/archives/88/)
+
+[LibertyInstantOn为云原生Java应用程序提供快速启动能力](http://jakartaee.cn/index.php/archives/58/)
 
 [构建云原生微服务，我该选择哪种技术路线？](http://jakartaee.cn/index.php/archives/51/)
 
-[Jakarta EE 10 最值得关注的5项新特性](http://jakartaee.cn/index.php/archives/48/)
+[JakartaEE社区2022年度回顾](http://jakartaee.cn/index.php/archives/49/)
 
-[Jakarta EE 社区 2022 年度回顾](http://jakartaee.cn/index.php/archives/49/)
+[JakartaEE10最值得关注的5项新特性](http://jakartaee.cn/index.php/archives/48/)
 
-[Jakarta EE白皮书：为什么Jakarta EE是当今Java应用的正确选择](http://jakartaee.cn/index.php/archives/28/)
+[JakartaEE白皮书：为什么JakartaEE是当今Java应用的正确选择](http://jakartaee.cn/index.php/archives/28/)
 
-[JAKARTA EE 2020开发者调研报告](http://jakartaee.cn/admin/write-post.php?cid=24)
+[JAKARTAEE2020开发者调研报告](http://jakartaee.cn/index.php/archives/24/)
 
-[关于 Jakarta EE 的一些问答](http://jakartaee.cn/admin/write-post.php?cid=3)
+[关于JakartaEE的一些问答](http://jakartaee.cn/index.php/archives/3/)
 
 ## 如何与我们一起推动 Jakarta EE 中国社区的进展
 

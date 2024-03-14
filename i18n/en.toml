@@ -1126,3 +1126,84 @@ other = "Sign up now"
 
 [pages-committees-website-guidelines-download]
  other = "Download Document"
+
+[pages-specification-jakarta-ee-release-release-page]
+  other = "Release Page"
+  
+[pages-specification-jakarta-ee-release-press-release]
+  other = "Press Release"
+  
+[pages-learn-index-starter-guides-title]
+  other = "Starter Guides" 
+  
+[pages-learn-index-starter-guides-describe]
+  other = "Get started with Jakarta EE starter guides."   
+  
+[pages-learn-index-starter-guides-view]
+  other = "View the Starter Guides" 
+  
+[pages-learn-index-documentation-title]
+  other = "Documentation"   
+
+[pages-learn-index-documentation-tutorial]
+  other = "Jakarta EE Tutorial" 
+  
+[pages-learn-index-documentation-first-cup]
+  other = "Jakarta EE First Cup"   
+  
+[pages-learn-index-documentation-cargo-cracker-example-application]
+  other = "CargoTracker Example Application" 
+  
+[pages-learn-index-jakarta-ee-project-title]
+  other = "Generate a Jakarta EE Project"   
+  
+[pages-learn-index-jakarta-ee-project-describe]
+  other = "The official Eclipse Foundation Starter for Jakarta EE. The starter uses a Maven Archetype to generate sample code to get you going quickly with simple Jakarta EE microservices projects." 
+  
+[pages-learn-index-jakarta-ee-project-start]
+  other = "Start a Project"   
+  
+[pages-learn-index-jakarta-ee-overview-course-title]
+  other = "Jakarta EE Overview Course" 
+  
+[pages-learn-index-jakarta-ee-overview-course-instructor]
+  other = "Instructor"   
+  
+[pages-learn-index-jakarta-ee-overview-course-instructor-describe]
+  other = "Java Champion and Jakarta EE Developer " 
+  
+[pages-learn-index-jakarta-ee-overview-course-describe]
+  other = "Do you need an overview of Jakarta EE as a whole? In this course, Java Champion and Jakarta EE Developer Advocate Ivar Grimstad guides you through the purpose of Jakarta EE and the specifications that you will need to understand. Ivar presents a quick overview of Jakarta EE, its specifications and implementations, the containers you will use for different component types, and the standard units for deployments. He goes into more depth on the Jakarta EE Platform, then dives into Web Profiles and Core Profiles. Packed with useful tips and practical challenges, this course can help you to decide the next steps in your Jakarta EE journey."   
+  
+[pages-learn-index-jakarta-ee-overview-course-enroll]
+  other = "Enroll in our course today!" 
+  
+[pages-learn-starter-guides-read-guide]
+  other = "Read Guide"   
+  
+[pages-learn-starter-guides-learn-title]
+  other = "Learn" 
+  
+[pages-learn-starter-guides-learn-describe]
+  other = "A collection of resources to learn Jakarta EE"   
+  
+[pages-learn-starter-guides-learn-read-more]
+  other = "Read more" 
+  
+[pages-learn-starter-guides-find-release-title]
+  other = "Find the Latest Release"   
+  
+[pages-learn-starter-guides-find-release-describe]
+  other = "See all the Jakarta EE release versions and find out what's new in the related press release." 
+  
+[pages-learn-starter-guides-find-release-read-more]
+  other = "Read more"   
+  
+[pages-learn-starter-guides-download-products-title]
+  other = "Download Compatible Products" 
+  
+[pages-learn-starter-guides-download-products-describe]
+  other = "See all Jakarta EE Compatible certified products to help build your cloud native application."   
+  
+[pages-learn-starter-guides-download-products-read-more]
+  other = "Read more"   
