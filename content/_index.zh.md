@@ -1,27 +1,32 @@
 ---
 title: "Home"
-seo_title: "Jakarta® EE 软件 | 云原生"
-headline: "<img class='jumbotron-title' src='/images/jakarta/jakarta-ee-text.svg' alt='Jakarta EE'>"
-subtitle: "开源的云原生Java"
-description: "Jakarta Enterprise Edition (EE) 是云原生Java的未来. Jakarta EE 开源软件驱动了云原生的创新与企业应用的现代化，并且保护了Java EE的现有投资."
-tagline: "以参与为动力, Jakarta EE 致力于使能社区驱动的协作与云时代的开放创新."
-date: 2018-04-05T15:50:25-04:00
-jumbotron_class: "col-xs-24"
-jumbotron_btn_class: "btn btn-secondary"
-custom_jumbotron_class: "col-xs-24"
+seo_title: "Jakarta® EE | 云原生企业级Java | Java EE | The Eclipse Foundation"
+headline: |
+  <img class='jumbotron-title' src='/images/jakarta/jakarta-ee-text.svg' alt='Jakarta EE'>
+  <br>
+subtitle: 使用企业级Java为<br>云原生架构构建开源生态系统
+jumbotron_btn_class: btn btn-secondary 
+jumbotron_class: col-xs-24 
+custom_jumbotron_class: col-xs-24
 custom_jumbotron: |
-  <p>Latest Release: Jakarta EE 10 now available</p>
-links: [[href: "/zh/release/10", text: "Learn More"]]
+  <p>最新版本: Jakarta EE 10 已就绪</p>
+links: [[href: "/release/10", text: "Learn More"]]
+description: "Jakarta Enterprise Edition（EE）是云原生企业Java的开源未来。保护您在Java EE中的投资，并使您的企业应用程序现代化。"
+date: 2018-04-05T15:50:25-04:00
 hide_page_title: true
 hide_sidebar: true
 hide_breadcrumb: true
 show_featured_story: false
-jumbotron_tagline_class: "col-sm-18"
 show_featured_footer: false
 container: "container-fluid"
 ---
 
-{{< home/featured-story >}}
+{{< home/featured-story
+    id="featured-story-container"
+    publishTarget="jakarta_ee"
+    templateId="featured-story-custom"
+    count="5"
+    templatePath="/js/templates/featured-story-custom.mustache" >}}
 
 {{< home/call-to-actions >}}
 

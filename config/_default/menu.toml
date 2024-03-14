@@ -186,7 +186,7 @@
 
 [[main]]
     name = "Specification Projects"
-    url = "https://projects.eclipse.org/list-of-projects?combine=jakarta&field_project_techology_types_tid=1102&field_state_value_2=All"
+    url = "/projects/"
     weight = 4
     parent = "Specifications"
 
