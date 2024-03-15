@@ -1,0 +1,17 @@
+.cta-section {
+  .cta-item:not(:last-child) {
+    // Create gap between items but not around.
+    margin-bottom: 6rem;
+  }
+
+  .cta-title {
+    font-size: 2.3rem;
+  }
+}
+
+@media (min-width: @screen-md-min) {
+  .cta-section .cta-item {
+    margin-bottom: unset;
+  }
+}
+

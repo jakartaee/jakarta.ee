@@ -9,4 +9,6 @@ layout: "single"
 container: "container-fluid"
 ---
 
+{{< guides_list >}}
 
+{{< cta_section >}}
