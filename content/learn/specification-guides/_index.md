@@ -9,6 +9,5 @@ layout: "single"
 container: "container-fluid"
 ---
 
-{{< guides_list >}}
-
+{{< guides_list icon="fa-check-square-o" >}}
 {{< cta_section >}}

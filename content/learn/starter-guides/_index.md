@@ -10,5 +10,5 @@ layout: single
 container: container-fluid
 ---
 
-{{< guides_list >}}
+{{< guides_list icon="fa-code" >}}
 {{< cta_section >}}
