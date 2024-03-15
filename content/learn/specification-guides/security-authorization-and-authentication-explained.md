@@ -3,16 +3,9 @@ title: "Jakarta Security, Jakarta Authorization, and Jakarta Authentication Expl
 date: "2024-03-12"
 headline: "Jakarta Security, Jakarta Authorization, and Jakarta Authentication Explained" 
 description: >-
-  Security is a major component of application development.  Jakarta EE
-  provides the robust Jakarta Security specification that when paired with the
-  Jakarta Authentication and Jakarta Authorization specifications, provides
-  APIs that deliver end-to-end security.  There are a large number of
-  application processes that require security measures, and these
-  specifications provide the ability to do so in a straightforward manner using
-  annotations and minimal XML configurations.  Jakarta EE compliant containers
-  and deployment environments adhere to the constructs of the Authentication
-  and Authorization policies to ensure that applications can be secured in a
-  standard way and deployed across a number of different environments.
+  Jakarta EE provides the robust Jakarta Security specification that when
+  paired with the Jakarta Authentication and Jakarta Authorization
+  specifications, provides APIs that deliver end-to-end security.  
 keywords: ["security", "authorization", "authentication", "specification", "spec", "guide", "tutorial"]
 hide_page_title: true
 weight: 2

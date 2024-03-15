@@ -3,12 +3,9 @@ title: "Jakarta Persistence Explained"
 date: "2024-03-12"
 headline: "Jakarta Persistence Explained" 
 description: >-
-  Enterprise applications typically require persistence for data storage. The
-  specification is foundational for many technologies since relational
-  databases are widely used within the industry. The Jakarta Persistence
-  specification, also known as Jakarta Persistence API (JPA), encompasses a
-  number of APIs that facilitate the creation, reading, updating, and deletion
-  of data within data stores.
+  The Jakarta Persistence specification, also known as Jakarta Persistence API
+  (JPA), encompasses a number of APIs that facilitate the creation, reading,
+  updating, and deletion of data within data stores.
 keywords: ["spec", "specification", "guide", "tutorial", "persistence", "database", "sql", "query", "named", "typed", "data"]
 hide_page_title: true
 weight: 4
