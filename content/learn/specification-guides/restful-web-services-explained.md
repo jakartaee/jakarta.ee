@@ -4,21 +4,16 @@ date: "2024-03-12"
 headline: "Jakarta RESTful Web Services Explained" 
 description: >-
   Jakarta REST is the solution for development of building Representational
-  State Transfer web services on the Jakarta EE Platform.  The specification is
-  easy to learn, and it enables one to construct powerful REST APIs and it also
-  includes APIs for working with web services as a client .  As such, this
-  specification is key to the development of microservices and cloud based
-  applications, and it is part of the Jakarta EE Web Profile as well as the
-  full platform.
+  State Transfer web services on the Jakarta EE Platform. 
 keywords: ["spec", "specification", "guide", "rest", "restful", "api", "web services", "http"]
 hide_page_title: true
 weight: 3
 ---
 
 Jakarta REST is the solution for development of building Representational State
-Transfer web services on the Jakarta EE Platform.  The specification is easy to
+Transfer web services on the Jakarta EE Platform. The specification is easy to
 learn, and it enables one to construct powerful REST APIs and it also includes
-APIs for working with web services as a client .  As such, this specification
+APIs for working with web services as a client. As such, this specification
 is key to the development of microservices and cloud based applications, and it
 is part of the Jakarta EE Web Profile as well as the full platform.
 
@@ -32,7 +27,7 @@ robust REST APIs.
 ## Configuration
 
 If using the Jakarta EE Web Profile or the full Jakarta EE Platform, Jakarta
-REST will be bundled so there are no additional dependencies.  However, if not
+REST will be bundled so there are no additional dependencies. However, if not
 using either of these options, you will need to include the following
 dependency:
 
@@ -47,7 +42,7 @@ dependency:
 To configure an application for Jakarta REST, a class must be created which
 extends `jakarta.ws.rs.core.Application`. This class must be annotated with
 `@ApplicationPath`, supplying the String-based root path of the URI to the
-RESTful resources for the application.  For instance, if an application name is
+RESTful resources for the application. For instance, if an application name is
 “HelloWorld” and `@ApplicationPath("resources")` is specified, then the URI
 format to reach any web services that are registered within the HelloWorld
 application is http://hostname:port/HelloWorld/resources/<<service-path>>,
@@ -58,10 +53,10 @@ or to specify individual web service classes.
 ## Overview of the API
 
 To create a basic web service resource class, only the `@Path` and `@GET`
-annotations are required.  The `@Path` annotation can be placed on any Java class
+annotations are required. The `@Path` annotation can be placed on any Java class
 that will be a REST resource class, and it is used to specify the URI path that
-should be used to access the endpoint.  The `@GET` annotation should be applied
-to a method to indicate that it must be called upon with an HTTP `Get` call.  In
+should be used to access the endpoint. The `@GET` annotation should be applied
+to a method to indicate that it must be called upon with an HTTP `Get` call. In
 the following example, assuming the use of the application name and path as
 specified previously, the URI to access the `ping()` method would be as follows:\
 http://localhost:port/HelloWorld/resources/jakartaee10
@@ -81,9 +76,9 @@ public class JakartaEE10Resource {
 
 When the URI to the service is visited, the message `"ping Jakarta 10"` will be
 displayed. The resource method can optionally include a `@Path` annotation,
-specifying a custom path for accessing the endpoint.  If more than one method
+specifying a custom path for accessing the endpoint. If more than one method
 annotated with `@GET` is specified within the same resource class, then one of
-them must specify a string-based path in order to differentiate.  If
+them must specify a string-based path in order to differentiate. If
 `@Path("/ping")` were applied to the `ping()` method, then the URI to access the
 endpoint would change to the following:\
 http://localhost:port/HelloWorld/resources/jakartaee10/ping
@@ -107,7 +102,7 @@ different types of data from a web service, such as a plain text or JSON. By
 default, Jakarta REST should negotiate with the client to determine the type of
 data to return. However, to explicitly specify a type of data to be returned,
 the `@Produces` annotation can be applied to the resource method and a
-`jakarta.ws.rs.core.MediaType` can be applied.  Applying following annotations
+`jakarta.ws.rs.core.MediaType` can be applied. Applying following annotations
 to an resource method would result in a JSON response at the URI\
 http://localhost:port/HelloWorld/resources/jakartaee10/json :
 
@@ -135,7 +130,7 @@ annotation can be applied to the method.
 public String updateService(Message message) {...}
 ```
 
-There are various ways to pass parameters to a web service resource.  They
+There are various ways to pass parameters to a web service resource. They
 differ in the way that they are passed via the URI. A path parameter can be
 specified within the `@Path` by enclosing the parameter name within curly
 braces `{}`. If a parameter is passed in this manner, then it must be explicitly
@@ -265,7 +260,7 @@ features that provide advanced configuration and use of RESTful web services
 enabling flexibility and extensibility. One such feature is called a
 “provider”, and providers enable the use of cross cutting actions within
 Jakarta REST. A provider can be used to take a specific action based upon an
-event or a type action that occurs when a service resource is invoked.  For
+event or a type action that occurs when a service resource is invoked. For
 instance, a provider can be used to automatically convert an HTTP payload to a
 Java object, or vice versa. Providers can be automatically registered with an
 application by specifying the `@Provider` annotation on the provider class
@@ -281,7 +276,7 @@ use of interceptors is to intercept requests and manipulate HTTP payloads.
 
 Asynchronous processing can provide the end user with a better experience, as
 it can greatly improve the performance of an application. Jakarta REST
-provides asynchronous processing for both the client and the server.  On the
+provides asynchronous processing for both the client and the server. On the
 server, asynchronous processing enables the resource method to send a message
 to Jakarta REST to indicate that a response is forthcoming at some point in the
 future. This allows the client to suspend the connection, perform other tasks,

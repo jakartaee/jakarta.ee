@@ -4,10 +4,8 @@ date: "2024-02-22"
 headline: "Jakarta Servlet, Jakarta Faces and Jakarta Server Pages Explained" 
 description: >-
   The Jakarta EE Platform offers a number of APIs that can be used to create
-  web based user interfaces. The most mature and perhaps most well known is
-  the Jakarta Servlet specification. Jakarta Servlet was first released in
-  1996, and it enables Java developers to create web pages containing dynamic
-  web content using pure Java.
+  web based user interfaces. 
+keywords: ["tutorial", "guide", "specification", "spec", "servlet", "faces", "server pages", "jsp", "views", "html"]
 hide_page_title: true
 weight: 1
 ---

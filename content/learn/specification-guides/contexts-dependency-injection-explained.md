@@ -5,11 +5,7 @@ headline: "Jakarta Contexts Dependency Injection Explained"
 description: >-
   Jakarta Dependency Injection provides the ability to make
   use of contextual objects in an application with maximum
-  reusability, testability, and maintainability. This
-  specification provides a means for developers to easily
-  obtain objects throughout classes within an application
-  without the requirement to use constructors, factories,
-  or service locators.
+  reusability, testability, and maintainability.
 keywords: ["spec", "specification", "guide", "dependency injection", "design pattern", "contexts", "cdi", "scope assignment", "tutorial"]
 hide_page_title: true
 weight: 6
