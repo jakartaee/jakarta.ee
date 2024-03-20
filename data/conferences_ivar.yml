@@ -92,7 +92,7 @@ years:
     url: https://www.meetup.com/belgian-java-user-group/
     location: Hasselt 🇧🇪
     date: Mar 19
-    upcoming: true
+    blog: https://www.agilejava.eu/2024/03/20/belgian-jug-2024/
 
   - name: Javaforum Malmø
     url: https://www.meetup.com/javaforum-malmo/
