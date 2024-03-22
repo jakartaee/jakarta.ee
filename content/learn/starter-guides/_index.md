@@ -8,8 +8,7 @@ hide_page_title: true
 hide_sidebar: true
 layout: single
 container: container-fluid
-page_css_file: /css/starter-guides.css
 ---
 
-{{< pages/learn/starter_guides >}}
-
+{{< guides_list icon="fa-code" >}}
+{{< cta_section >}}
