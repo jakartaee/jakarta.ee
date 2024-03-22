@@ -104,7 +104,7 @@ or `supplyAsync()` methods. The following code demonstrates how to obtain
 the `ManagedExecutorService` resource and submit a task to it.
 
 ```java
-@Resource(name = “concurrent/_defaultManagedExecutorService”)
+@Resource(name = "concurrent/_defaultManagedExecutorService")
 ManagedExecutorService managedExecutorService;
 
 // Pass task class to the ManagedExecutorService
@@ -150,7 +150,7 @@ following code demonstrates how to obtain a
 `ManagedScheduledExecutorService` resource and schedule a task.
 
 ```java
-@Resource(name=”concurrent/_defaultManagedScheduledExecutorService”)
+@Resource(name="concurrent/_defaultManagedScheduledExecutorService")
 ManagedScheduledExecutorService managedScheduledExecutorService;
 
 // Pass task class to the ManagedExecutorService
@@ -172,7 +172,7 @@ example task class from the previous section, the following code
 demonstrates how to create a new thread and pass the task to the thread:
 
 ```java
-@Resource(name=”concurrent/MyManagedThreadFactory”)
+@Resource(name="concurrent/MyManagedThreadFactory")
 ManagedThreadFactory threadFactory;
 . . .
 // Create task and pass to thread
@@ -216,7 +216,7 @@ container context is propagated to asynchronous methods. The following
 code demonstrates an example of developing an asynchronous method:
 
 ```java
-@Asynchronous(executor=”java:module/env/concurrent/myExecutor”)
+@Asynchronous(executor="java:module/env/concurrent/myExecutor")
 public CompletableFuture<String> myMethod() {
     // Processing
     return Asynchronous.Result.complete(string);

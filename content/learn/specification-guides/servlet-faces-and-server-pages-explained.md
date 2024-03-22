@@ -658,7 +658,7 @@ characters of a String to uppercase, or converting a `String` to a date object.
 
 The following example demonstrates how to apply a length validator to the
 `inputText` field. Note that the applied `validateLength` converter is part of the
-Jakarta Faces core component library, so it contains a prefix of “f”.
+Jakarta Faces core component library, so it contains a prefix of "f".
 
 ```xhtml
 <h:inputText id="inputMessage" value="#{helloCdi.changedText}">
@@ -677,7 +677,7 @@ applying the core `ajax` component to corresponding Faces tags. There is no
 JavaScript code necessary, as Jakarta Faces abstracts the code intricacies from
 the developer. The following code demonstrates how to apply AJAX to a command
 button and process the inputMessage and the commandButton action, and then
-finally refresh the value of the component assigned to an ID of “message”.
+finally refresh the value of the component assigned to an ID of "message".
 
 ```xhtml
 <h:commandButton id="ajaxSubmitButton"

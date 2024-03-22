@@ -24,7 +24,7 @@ short, is one of the paramount specifications of the
 Jakarta EE Platform, as it contains a number of powerful
 complimentary services that are utilized across a majority
 of Jakarta EE applications. Jakarta CDI has been known as
-the “glue” for the Jakarta EE Platform because one of the
+the "glue" for the Jakarta EE Platform because one of the
 most significant features is the enablement of contextual
 objects to be made available for use throughout other
 classes and views within an application. The specification
@@ -76,8 +76,8 @@ configure Jakarta CDI for an application. Configurable
 items include: Bean Discovery Mode: Mechanism to indicate
 how the bean manager determines which beans to manage
 Interceptors, Decorators, Alternatives In Jakarta CDI 4.0
-the bean-management-mode has changed from “all” to
-“annotated”, which means only beans that are annotated with
+the bean-management-mode has changed from "all" to
+"annotated", which means only beans that are annotated with
 a Jakarta CDI annotation are managed. This is a breaking
 change in functionality that developers must be aware of
 when moving to Jakarta EE 10.

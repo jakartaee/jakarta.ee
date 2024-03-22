@@ -125,7 +125,7 @@ annotated with `@Id` within the entity class. By default, database column names
 map directly to the field that are declared within an entity class using
 camelcase field names rather than underscores. However, a field name may be
 different than that of the corresponding database column so long as the field
-name is annotated with `@Column(name=”THE_FIELD_NAME”)`.
+name is annotated with `@Column(name="THE_FIELD_NAME")`.
 
 Considering the example database schema, the following entity class would map
 to the `PET_OWNER` database table:
@@ -189,7 +189,7 @@ Relational databases are built around the idea of breaking down data types into
 their simplest form possible, and creating tables to hold the data. Since
 tables correlate to simple form (aka: first normal form), oftentimes it takes
 more than one table to store the data associated along with corresponding
-attribute data. Relating tables to each other is also known as “joining” the
+attribute data. Relating tables to each other is also known as "joining" the
 tables, usually by providing a column(s) to hold the key(s) for the related
 tables. Entity classes can also provide relationships to other entities in a
 similar manner. 

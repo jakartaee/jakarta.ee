@@ -117,7 +117,7 @@ apply Basic authentication, the following annotation can be placed on an
 
 ```java
 @BasicAuthenticationMechanismDefinition(
-    realmName = “myRealm”)
+    realmName = "myRealm")
 @ApplicationScoped
 public class MyClass {}
 ```
@@ -129,8 +129,8 @@ login screen or to an error page if the login attempt is unsuccessful.
 ```java
 @FormAuthenticationMechanismDefinition (
     loginToContinue = @LoginToContinue (
-        loginPage = “/authenticate.html”,
-        errorPage = “/loginError.html”))
+        loginPage = "/authenticate.html",
+        errorPage = "/loginError.html"))
 @ApplicationScoped
 public class MyClass {}
 ```
@@ -146,10 +146,10 @@ identity store, one may do the following:
 
 ```java
 @LdapIdentityStoreDefinition(
-    url = “ldap://myserver:port”,
-    callerBaseDn = “ou=caller,dc=example,dc=org”,
-    gropuSearchBase = “ou=group,dc=example,dc=org”,
-    groupSearchFilter = “”)
+    url = "ldap://myserver:port",
+    callerBaseDn = "ou=caller,dc=example,dc=org",
+    gropuSearchBase = "ou=group,dc=example,dc=org",
+    groupSearchFilter = "")
 @ApplicationScoped
 public class MyClass {}
 ```

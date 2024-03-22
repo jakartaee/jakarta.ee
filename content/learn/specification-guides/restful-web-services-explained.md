@@ -43,7 +43,7 @@ To configure an application for Jakarta REST, a class must be created which
 extends `jakarta.ws.rs.core.Application`. This class must be annotated with
 `@ApplicationPath`, supplying the String-based root path of the URI to the
 RESTful resources for the application. For instance, if an application name is
-“HelloWorld” and `@ApplicationPath("resources")` is specified, then the URI
+"HelloWorld" and `@ApplicationPath("resources")` is specified, then the URI
 format to reach any web services that are registered within the HelloWorld
 application is http://hostname:port/HelloWorld/resources/<<service-path>>,
 substituting <<service-path>> with the service to access. The `Application`
@@ -258,7 +258,7 @@ additional information please refer to the specification documentation.
 Jakarta REST is a mature specification, and as such, it contains a number of
 features that provide advanced configuration and use of RESTful web services
 enabling flexibility and extensibility. One such feature is called a
-“provider”, and providers enable the use of cross cutting actions within
+"provider", and providers enable the use of cross cutting actions within
 Jakarta REST. A provider can be used to take a specific action based upon an
 event or a type action that occurs when a service resource is invoked. For
 instance, a provider can be used to automatically convert an HTTP payload to a

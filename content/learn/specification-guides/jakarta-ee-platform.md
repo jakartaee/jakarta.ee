@@ -24,7 +24,7 @@ different expert groups and timelines, while the platform
 enables each to work together in harmony.
 
 Given the wide variety of applications being developed
-today, a “one size fits all” approach is rarely feasible.
+today, a "one size fits all" approach is rarely feasible.
 Some applications may be deployed to on premise containers,
 whereas others are deployed to cloud environments.
 Similarly, some applications may require the use of very
