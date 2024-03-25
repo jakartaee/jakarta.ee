@@ -21,7 +21,7 @@
 
 [[main]]
     name = "メンバーシップ"
-    url = "/Membership/"
+    url = "/ja/Membership/"
     weight = 5
 
 [[main]]
@@ -292,13 +292,13 @@
 
 # Membership sub-menu
 [[main]]
-    name = "Join"
-    url = "/membership"
+    name = "参加"
+    url = "/ja/membership"
     parent = "メンバーシップ"
     weight = 1
 
 [[main]]
-    name = "Members"
-    url = "/membership/members/"
+    name = "メンバー"
+    url = "/ja/membership/members/"
     parent = "メンバーシップ"
     weight = 2

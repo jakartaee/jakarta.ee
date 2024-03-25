@@ -226,19 +226,19 @@
 
 
 [members-strategic-members-title]
-  other = "Strategic Members"
+  other = "Strategicメンバー"
 
 [members-enterprise-members-title]
-  other = "Enterprise Members"
+  other = "Enterpriseメンバー"
 
 [members-participant-members-title]
-  other = "Participant Members"
+  other = "Participantメンバー"
 
 [members-guest-members-title]
-  other = "Guest Members"
+  other = "Guestメンバー"
 
 [membership-testimonials-title]
-  other = "Member Testimonials"
+  other = "メンバーの声"
 
 [sidebar-title]
   other = "共にイノベーションを"
@@ -627,28 +627,28 @@ other = "Sign up now"
  other = "エンタープライズJava技術に対する<br> これからのイノベーションのためのオープンでコミュニティ主導のプラットフォーム"
 
 [pages-membership-title]
- other = "Shape the future of Cloud Native, Open Source Java"
+ other = "クラウドネイティブとオープン ソースJavaの未来を形作る"
 
 [pages-membership-text]
- other = "<p>Working together, the world’s Java ecosystem leaders, including Fujitsu, IBM, Oracle, Red Hat, and Tomitribe, are advancing Java EE and Jakarta EE to support moving mission-critical applications and workloads to the cloud. </p><p>Joining the Jakarta EE Working Group demonstrates your commitment not only to the evolution and sustainability of Jakarta EE, but also to ensuring the growth and development of a well-governed, vendor-neutral open source ecosystem which benefits all. </p>"
+ other = "<p>富士通、IBM、Oracle、Red Hat、Tomitribeなど、世界のJavaエコシステムリーダーが協力して、ミッションクリティカルアプリケーションやワークロードのクラウド移行をサポートするためにJava EEとJakarta EEを推進しています。 </p><p>Jakarta EEワーキンググループに加わることで、Jakarta EEの進化と持続性に対する取り組みを示すだけでなく、すべての人が恩恵を受けるガバナンスの効いたベンダー中立なオープンソースエコシステムの発展と開発に対する取り組みも示すことができます。 </p>"
 
 [pages-membership-benefits-title]
- other = "Benefits"
+ other = "メリット"
 
 [pages-membership-benefits-text]
- other = "<p>Members of the Jakarta EE Working Group take advantage of the following opportunities:  </p><ul><li>Protect your strategic investment in Java EE, including ensuring the relevancy of your technology and your developer’s skills for the next generation of technology</li><li>Play a role in defining Jakarta EE strategic themes and priorities to evolve the platform in alignment with your requirements and use cases — and those of your customers</li><li>Gain insights to and influence over the technology roadmap</li><li>Shape the definition, evolution, and execution of the specifications process</li><li>Participate in open collaboration through professionally managed development initiatives</li><li>Ensure your development teams benefit from sharing best practices and cutting edge information for building the next generation of enterprise Java applications </li></ul>"
+ other = "<p>Jakarta EEワーキンググループメンバーは、次のメリットを享受できます。  </p><ul><li>Java EEに対する戦略的な投資を保護します。これには、メンバーの技術が継続して使われることや、次世代技術においても保有する開発者スキルが有効であることの保証が含まれます</li><li>メンバーとメンバーのお客様の要件やユースケースに合わせてプラットフォームを進化させるために、Jakarta EE戦略のテーマや優先度を策定する役割を担うことができます</li><li>技術ロードマップに関して、洞察を得たり、影響力を与えることができます</li><li>仕様プロセスの定義、改版、および実行を形づくることができます</li><li>専門的に統制された開発主導を通じてオープンなコラボレーションに参加できます</li><li>次世代の企業向けJavaアプリケーションを構築するためのベストプラクティスと最先端の情報を共有することで、開発チームが確実にメリットを得られるようにします </li></ul>"
 
 [pages-membership-download-prospectus]
- other = "Download Membership Prospectus"
+ other = "メンバーシップ目論見書のダウンロード"
 
 [pages-membership-download-flyer]
- other = "Download Membership Flyer"
+ other = "メンバーシップチラシのダウンロード"
 
 [pages-membership-contact]
- other = "Contact Us About Membership"
+ other = "メンバーシップに関するお問い合わせ"
 
 [pages-membership-testimonials]
- other = "Member Testimonials"
+ other = "メンバーの声"
 
 [layouts-committees-list-landing-page-committees]
  other = "委員会"
