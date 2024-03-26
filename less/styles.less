@@ -392,3 +392,10 @@ p:empty {
     max-width: unset;
   }
 }
+
+// This workaround was introduced to style a video list without the need of
+// using its JS. Should be removed once the learn page can use the video list
+// widget to fetch latest videos.
+.video-list-container {
+  .eclipsefdn-video-list;
+}

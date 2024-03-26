@@ -112,5 +112,34 @@
 
 <section class="padding-top-30 padding-bottom-30">
   <h2 class="big-text margin-bottom-30">Videos</h2>
-  <div class="eclipsefdn-video-list" data-playlist-ids="PLy7t4z5SYNaSruNciCsq79vfquXnZ7iTi, PLy7t4z5SYNaQejP4OMb-i3hC7-fO_u03j, PLy7t4z5SYNaRYI7lH26szREOi9pfqxOUU"></div>
+  <div class="video-list-container">
+    {{ $playlists := sort $.Site.Data.videos "title" "asc" }}
+    <ul class="video-list video-list-default">
+      {{ $videos := slice }}
+      {{ range $playlists }}
+        {{ $videos = $videos | append .entry }}
+      {{ end }}
+      {{ $videos = sort $videos "published" "desc" }}
+
+      {{ range first 3 $videos }}
+        <li class="video-list-item">
+          <div class="video-list-item-video-container">
+            <a class="eclipsefdn-video" href="//www.youtube.com/embed/{{.videoId}}"></a>
+          </div>
+          <div class="video-list-item-details text-center">
+            <p class="video-details-title h3 margin-top-0">{{ .title | safeHTML }}</p>
+            <p class="video-details-description">
+              {{ substr (.group.description | safeHTML) 0 200 }}{{- if gt (len .group.description) 200 }}...{{- end }}
+            </p>
+            <div class="video-details-button-container flex-center margin-top-30">
+              <a class="btn btn-primary" href="{{ index .link "-href" }}">Watch on YouTube</a>
+            </div>
+          </div>
+        </li>
+      {{ end }}
+    </ul>
+    <div class="text-center margin-y-30">
+      <a class="btn btn-primary btn-lg" href="{{ "/community/videos/" | relURL }}">View More Videos</a>
+    </div>
+  </div>
 </section>
