@@ -1425,10 +1425,68 @@ items:
           year: 2018
 
    steering_committee:
-       - url: steering_committee/minutes-april-25-2023.pdf
+       - 
+         url: steering_committee/minutes-december-19-2023.pdf
+         title: 19 December 2023 (pdf)
+         year: 2023
+       - 
+         url: steering_committee/minutes-november-21-2023.pdf
+         title: 21 November 2023 (pdf)
+         year: 2023
+       - 
+         url: steering_committee/minutes-october-24-2023.pdf
+         title: 24 October 2023 (pdf)
+         year: 2023
+       - 
+         url: steering_committee/minutes-october-10-2023.pdf
+         title: 10 October 2023 (pdf)
+         year: 2023
+       - 
+         url: steering_committee/minutes-september-12-2023.pdf
+         title: 12 September 2023 (pdf)
+         year: 2023
+       - 
+         url: steering_committee/minutes-august-29-2023.pdf
+         title: 29 August 2023 (pdf)
+         year: 2023
+       - 
+         url: steering_committee/minutes-august-15-2023.pdf
+         title: 15 August 2023 (pdf)
+         year: 2023
+       - 
+         url: steering_committee/minutes-august-1-2023.pdf
+         title: 1 August 2023 (pdf)
+         year: 2023
+       - 
+         url: steering_committee/minutes-july-18-2023.pdf
+         title: 18 July 2023 (pdf)
+         year: 2023
+       - 
+         url: steering_committee/minutes-july-11-2023.pdf
+         title: 11 July 2023 (pdf)
+         year: 2023
+       - 
+         url: steering_committee/minutes-june-20-2023.pdf
+         title: 20 June 2023 (pdf)
+         year: 2023
+       - 
+         url: steering_committee/minutes-june-6-2023.pdf
+         title: 6 June 2023 (pdf)
+         year: 2023
+       - 
+         url: steering_committee/minutes-may-23-2023.pdf
+         title: 23 May 2023 (pdf)
+         year: 2023
+       - 
+         url: steering_committee/minutes-may-9-2023.pdf
+         title: 9 May 2023 (pdf)
+         year: 2023
+       - 
+         url: steering_committee/minutes-april-25-2023.pdf
          title: 25 April 2023 (pdf)
          year: 2023
-       - url: steering_committee/minutes-april-11-2023.pdf
+       - 
+         url: steering_committee/minutes-april-11-2023.pdf
          title: 11 April 2023 (pdf)
          year: 2023
        - 
