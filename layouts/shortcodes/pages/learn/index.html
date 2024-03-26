@@ -33,9 +33,9 @@
   <section class="bordered-section-top border-hidden-xs padding-top-30 padding-bottom-30">
     <h2 class="big-text">Starter Guides</h2>
     <p>Get started with Jakarta EE starter guides.</p>
-    {{ $guides := ($.Site.GetPage "/learn/starter-guides").RegularPages }}
     <ul class="learn-resource-list">
-      {{ range $guides }}
+      {{ $guides := ($.Site.GetPage "/learn/starter-guides").RegularPages }}
+      {{ range first 4 $guides.ByDate }}
         <li class="resource-item margin-bottom-30 margin-top-30">
           <i class="margin-right-20 fa fa-code fa-xl text-secondary" aria-hidden="true"></i>
           <a href="{{ .Permalink }}">{{ .Title }}</a>
@@ -50,6 +50,13 @@
       Check out our specification guides.
     </p>
     <ul class="learn-resource-list">
+      {{ $guides = ($.Site.GetPage "/learn/specification-guides").RegularPages }}
+      {{ range first 4 $guides.ByDate }}
+          <li class="resource-item margin-bottom-30 margin-top-30">
+            <i class="margin-right-20 fa fa-check-square-o fa-xl text-secondary" aria-hidden="true"></i>
+            <a href="{{ .Permalink }}">{{ .Title }}</a>
+          </li>
+      {{ end }}
     </ul>
     <a class="btn btn-primary" href="{{ "/learn/specification-guides" | relURL }}">View the Specification Guides</a>
   </section>
