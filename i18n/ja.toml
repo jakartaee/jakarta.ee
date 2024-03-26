@@ -92,111 +92,111 @@
   other = "バージョン： "
 
 [connect-mailing-lists-subscribe]
-  other = "Subscribe"
+  other = "購読"
 
 [connect-mailing-list-community-title]
-  other = "Jakarta EE Community Mailing List"
+  other = "Jakarta EEコミュニティメーリング リスト"
 
 [connect-mailing-list-community-body]
-  other = "jakarta.ee-community is the mailing list for Jakarta EE community discussions. Subscribe to this list for all things Jakarta EE."
+  other = "jakarta.ee-communityは、Jakarta EEコミュニティで議論するためのメーリングリストです。すべてのJakarta EEに関することに対して、このメーリングリストを購読します。"
 
 [connect-mailing-list-community-link]
   other = "https://accounts.eclipse.org/mailing-list/jakarta.ee-community"
 
 [connect-mailing-list-working-group-title]
-  other = "Jakarta EE Working Group Mailing List"
+  other = "Jakarta EEワーキンググループメーリング リスト"
 
 [connect-mailing-list-working-group-body]
-  other = "jakarta.ee-wg is the mailing list for the Jakarta EE Working Group. Subscribe to this list to share general information regarding Jakarta EE."
+  other = "jakarta.ee-wgは、Jakarta EEワーキンググループのメーリングリストです。このメーリングリストを購読して、Jakarta EEに関する一般的な情報を共有します"
 
 [connect-mailing-list-working-group-link]
   other = "https://accounts.eclipse.org/mailing-list/jakarta.ee-wg"
 
 [connect-mailing-list-projects-title]
-  other = "Specification Project Mailing Lists"
+  other = "プロジェクトのメーリングリスト"
 
 [connect-mailing-list-projects-body]
-  other = "Want to get involved? Sign up to the Jakarta EE project mailing lists here."
+  other = "参加しますか？こちらから、Jakarta EEプロジェクトメーリングリストに登録してください。"
 
 [connect-mailing-list-projects-link-text]
-  other = "Mailing Lists"
+  other = "メーリングリスト"
 
 [connect-slack-title]
   other = "Slack"
 
 [connect-slack-subtitle]
-  other = "Join the conversations on Jakarta EE slack workspace and see what the community members are up to."
+  other = "Jakarta EE Slack ワークスペースの会話に参加して、コミュニティの最新情報を確認します。"
 
 [connect-slack-link]
   other = "https://join.slack.com/t/eclipsefoundationhq/shared_invite/zt-crh7mheq-3on2tophEuvQTUGidEAWlg"
 
 [connect-slack-link-join]
-  other = "Join"
+  other = "参加"
 
 [connect-newsletter-title]
-  other = "Newsletter"
+  other = "ニュースレター"
 
 [connect-newsletter-subscribe]
-  other = "Subscribe"
+  other = "購読"
 
 [connect-newsletter-view-archives]
-  other = "View Archives"
+  other = "アーカイブの表示"
 
 [connect-newsletter-subtitle]
-  other = "With a Jakarta EE-themed edition released each quarter, the Eclipse Foundation Community Newsletter is your destination for original articles about projects and key technologies."
+  other = "Jakarta EEをテーマにしたエディションが各四半期にリリースされ、プロジェクトや主要技術に関するオリジナル記事がEclipse Foundationコミュニティニュースレターに掲載されます。"
 
 [connect-newsletter-link]
   other = "https://eclipsecon.us6.list-manage.com/subscribe/post"
 
 [connect-updates-title]
-  other = "Updates"
+  other = "更新"
 
 [connect-updates-body]
-  other = "Receive updates from the Eclipse Foundation on Jakarta EE and other Eclipse projects, events and community announcements."
+  other = "Jakarta EEやその他のEclipseプロジェクト、イベント、コミュニティお知らせに関する更新をEclipse Foundationから受け取ります。"
 
 [connect-updates-edit-link]
   other = "https://accounts.eclipse.org/user/edit#open_tab_privacy"
 
 [connect-updates-edit-text]
-  other = "Edit Preferences"
+  other = "設定の編集"
 
 [connect-updates-link-divider-text]
-  other = "- Or -"
+  other = " – または –"
 
 [connect-updates-create-link]
   other = "https://accounts.eclipse.org/user/register"
 
 [connect-updates-create-text]
-  other = "Create Account"
+  other = "アカウントの作成"
 
 [connect-community-calendar-title]
-  other = "Jakarta EE Community Calendar"
+  other = "Jakarta EEコミュニティカレンダー"
 
 [connect-community-calendar-body]
-  other = "Join the Jakarta EE Community Calendar to learn more about Jakarta EE-related plans."
+  other = "Jakarta EEコミュニティカレンダーに参加して、Jakarta EE関連のプランの詳細を確認してください。"
 
 [connect-community-calendar-link]
   other = "https://calendar.google.com/calendar/embed?src=eclipse-foundation.org_3281qms6riu4kdf354jn5idon0%40group.calendar.google.com&ctz=America%2FToronto"
 
 
 [connect-community-folder-title]
-  other = "Community Folder"
+  other = "コミュニティフォルダ"
 
 [connect-community-folder-body]
-  other = "Our public Community Folder features promotional resources and slides from past update calls and other community meetings."
+  other = "パブリックコミュニティフォルダは、過去のアップデート会議やその他のコミュニティミーティングのプロモーションリソースやスライドを提供します"
 
 [connect-community-folder-link]
   other = "https://drive.google.com/drive/u/0/folders/11nvqdVqFlCxm5AfPh2NdnanTBrCPW8Xv"
 
 [connect-community-folder-link-text]
-  other = "View"
+  other = "表示"
 
 
 [connect-tech-talk-title]
-  other = "Tech Talks Meet-Ups"
+  other = "Tech Talksの閲覧"
 
 [connect-tech-talk-body]
-  other = "Jakarta Tech Talks are both conference based and virtual webinars dedicated to the discussion and discovery of any cloud native java projects, microservices projects, and technologies."
+  other = "Jakarta Tech Talksは、クラウドネイティブJavaプロジェクト、マイクロサービスプロジェクト、および技術に関する議論と学習をするための、会議ベースの仮想ウェビナーです。"
 
 [connect-tech-talk-link-1]
   other = "https://www.meetup.com/jakartatechtalks_/"
@@ -208,20 +208,20 @@
   other = "https://forms.gle/3wK3oBavYDBWsGkq7"
 
 [connect-tech-talk-link-2-text]
-  other = "Sign Up to Host"
+  other = "ホストにサインアップ"
 
 
 [connect-specification-calendar-title]
-  other = "Jakarta EE Specifications Calendar"
+  other = "Jakarta EE仕様プロジェクトカレンダー"
 
 [connect-specification-calendar-body]
-  other = "Jakarta EE Specifications Calendar lists meetings dedicated to different Jakarta EE Specifications. Subscribe to the Jakarta EE Specifications Calendar to learn more about Specification-related plans."
+  other = "Jakarta EE仕様カレンダーには、さまざまなJakarta EE仕様専用のミーティングが一覧表示されます。仕様関連のプランの詳細については、Jakarta EE仕様カレンダーを購読してください。"
 
 [connect-specification-calendar-link]
   other = "https://calendar.google.com/calendar/embed?src=eclipse-foundation.org_e9ki8t2gc75sh07qdh95c8ofvc%40group.calendar.google.com&ctz=America%2FToronto"
 
 [connect-specification-calendar-link-text]
-  other = "Calendar"
+  other = "カレンダー"
 
 
 
