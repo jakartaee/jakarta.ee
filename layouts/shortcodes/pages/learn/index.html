@@ -127,6 +127,7 @@
             <a class="eclipsefdn-video" href="//www.youtube.com/embed/{{.videoId}}"></a>
           </div>
           <div class="video-list-item-details text-center">
+            <p class="text-secondary">{{ time.Format "2 January 2006" .published }}</p>
             <p class="video-details-title h3 margin-top-0">{{ .title | safeHTML }}</p>
             <p class="video-details-description">
               {{ substr (.group.description | safeHTML) 0 200 }}{{- if gt (len .group.description) 200 }}...{{- end }}
