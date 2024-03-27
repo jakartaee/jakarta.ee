@@ -113,32 +113,30 @@
 <section class="padding-top-30 padding-bottom-30">
   <h2 class="big-text margin-bottom-30">Videos</h2>
   <div class="video-list-container">
-    {{ $playlists := sort $.Site.Data.videos "title" "asc" }}
-    <ul class="video-list video-list-default">
-      {{ $videos := slice }}
-      {{ range $playlists }}
-        {{ $videos = $videos | append .entry }}
-      {{ end }}
-      {{ $videos = sort $videos "published" "desc" }}
-
-      {{ range first 3 $videos }}
-        <li class="video-list-item">
-          <div class="video-list-item-video-container">
-            <a class="eclipsefdn-video" href="//www.youtube.com/embed/{{.videoId}}"></a>
-          </div>
-          <div class="video-list-item-details text-center">
-            <p class="text-secondary">{{ time.Format "2 January 2006" .published }}</p>
-            <p class="video-details-title h3 margin-top-0">{{ .title | safeHTML }}</p>
-            <p class="video-details-description">
-              {{ substr (.group.description | safeHTML) 0 200 }}{{- if gt (len .group.description) 200 }}...{{- end }}
-            </p>
-            <div class="video-details-button-container flex-center margin-top-30">
-              <a class="btn btn-primary" href="{{ index .link "-href" }}">Watch on YouTube</a>
+    {{ $playlist_id := "PLutlXcN4EAwDxs85DUnmbnWov3SusY9mG" }}
+    {{ $videos := index $.Site.Data.videos $playlist_id }}
+    {{ if $videos.entry }}
+      <ul class="video-list video-list-default">
+        {{ $videos = sort $videos.entry "published" "desc" }}
+        {{ range first 3 $videos }}
+          <li class="video-list-item">
+            <div class="video-list-item-video-container">
+              <a class="eclipsefdn-video" href="//www.youtube.com/embed/{{.videoId}}"></a>
             </div>
-          </div>
-        </li>
-      {{ end }}
-    </ul>
+            <div class="video-list-item-details text-center">
+              <p class="text-secondary fw-600">{{ time.Format "2 January 2006" .published }}</p>
+              <p class="video-details-title h3 margin-top-0">{{ .title | safeHTML }}</p>
+              <p class="video-details-description">
+                {{ substr (.group.description | safeHTML) 0 200 }}{{- if gt (len .group.description) 200 }}...{{- end }}
+              </p>
+              <div class="video-details-button-container flex-center margin-top-30">
+                <a class="btn btn-primary" href="{{ index .link "-href" }}&list={{ $playlist_id }}">Watch on YouTube</a>
+              </div>
+            </div>
+          </li>
+        {{ end }}
+      </ul>
+    {{ end }}
     <div class="text-center margin-y-30">
       <a class="btn btn-primary btn-lg" href="{{ "/community/videos/" | relURL }}">View More Videos</a>
     </div>
