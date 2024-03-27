@@ -17,6 +17,7 @@ playlist_ids=(
   "PLutlXcN4EAwDNN2lVNlfV3u2rBvJMOFCn" # Livestream 2023 EN
   "PLutlXcN4EAwD_rW8juyr1ZQf7MEYRQuWb" # Livestream 2023 ES
   "PLutlXcN4EAwCGe7GN9htD_QvANU9xTvrh" # Livestream 2023 ZH
+  "PLutlXcN4EAwDxs85DUnmbnWov3SusY9mG" # Specification Guides
 )
 
 # Create the data file directory of videos if it does not already exist.
