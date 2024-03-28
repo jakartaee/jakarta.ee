@@ -8,6 +8,8 @@ hide_page_title: true
 hide_sidebar: true
 layout: single
 container: container-fluid
+cascade:
+  categories: ["Starter Guides"]
 ---
 
 {{< guides_list icon="fa-code" >}}

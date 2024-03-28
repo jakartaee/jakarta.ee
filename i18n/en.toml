@@ -794,18 +794,6 @@ other = "Sign up now"
 [pages-resources-datasheets-jakarta-ee-10-tools-vendor-html]
  other = "Jakarta EE 10 Tools Vendor Datasheet (HTML)"
 
-[pages-resources-documentation-title]
- other = "Documentation"
-
-[pages-resources-documentation-tutorial]
- other = "Jakarta EE Tutorial"
-
-[pages-resources-documentation-first-cup]
- other = "Jakarta EE First Cup"
-
-[pages-resources-documentation-cargocracker]
- other = "CargoTracker Example Application"
-
 [pages-resources-ebooks-title]
  other = "eBooks"
 
@@ -1163,7 +1151,7 @@ other = "Sign up now"
 [pages-learn-index-documentation-first-cup]
   other = "Jakarta EE First Cup"   
   
-[pages-learn-index-documentation-cargo-tracker-example-application]
+[pages-learn-index-documentation-cargotracker]
   other = "CargoTracker Example Application" 
   
 [pages-learn-index-jakarta-ee-project-title]

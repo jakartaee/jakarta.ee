@@ -10,8 +10,8 @@
   SPDX-License-Identifier: EPL-2.0
 */}}
 
-{{ $starter_guides := ($.Site.GetPage "/learn/starter-guides").RegularPages }}
-{{ $specification_guides := ($.Site.GetPage "/learn/specification-guides").RegularPages }}
+{{ $starter_guides := where $.Site.RegularPages ".Params.categories" "intersect" (slice "Starter Guides") | lang.Merge (where $.Site.AllPages ".Params.categories" "intersect" (slice "Starter Guides")) }}
+{{ $specification_guides := where $.Site.RegularPages ".Params.categories" "intersect" (slice "Specification Guides") | lang.Merge (where $.Site.AllPages ".Params.categories" "intersect" (slice "Specification Guides")) }}
 
 <section class="row">
   <div class="container">
@@ -73,7 +73,7 @@
       </li>
       <li class="resource-item margin-bottom-30 margin-top-30">
         <i class="margin-right-20 fa fa-file-code-o fa-xl text-secondary" aria-hidden="true"></i>
-        <a href="https://github.com/eclipse-ee4j/cargotracker">{{ i18n "pages-learn-index-documentation-cargo-tracker-example-appplication" }}</a>
+        <a href="https://github.com/eclipse-ee4j/cargotracker">{{ i18n "pages-learn-index-documentation-cargotracker" }}</a>
       </li>
     </ul>
   </section>

@@ -11,6 +11,8 @@ hide_page_title: true
 hide_sidebar: true
 layout: "single"
 container: "container-fluid"
+cascade:
+  categories: ["Specification Guides"]
 ---
 
 {{< guides_list icon="fa-check-square-o" >}}
