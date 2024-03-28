@@ -8,7 +8,10 @@
 */}}
 
 {{ $icon := .Get "icon" }}
-{{ $guides := .Page.RegularPages }}
+{{ $category := .Get "category" }}
+  
+{{ $en_pages := where $.Site.AllPages "Lang" "en" }}
+{{ $guides := where $.Site.RegularPages ".Params.categories" "intersect" (slice $category) | lang.Merge (where $en_pages ".Params.categories" "intersect" (slice $category)) }}
 
 <div class="container">
   <div class="row">

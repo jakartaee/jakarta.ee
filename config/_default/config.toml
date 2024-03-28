@@ -71,3 +71,4 @@ enableInlineShortcodes = true
 [blackfriday]
   plainIDAnchors = true
   hrefTargetBlank = true
+

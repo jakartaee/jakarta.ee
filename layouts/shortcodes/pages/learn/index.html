@@ -10,8 +10,9 @@
   SPDX-License-Identifier: EPL-2.0
 */}}
 
-{{ $starter_guides := where $.Site.RegularPages ".Params.categories" "intersect" (slice "Starter Guides") | lang.Merge (where $.Site.AllPages ".Params.categories" "intersect" (slice "Starter Guides")) }}
-{{ $specification_guides := where $.Site.RegularPages ".Params.categories" "intersect" (slice "Specification Guides") | lang.Merge (where $.Site.AllPages ".Params.categories" "intersect" (slice "Specification Guides")) }}
+{{ $en_pages := where $.Site.AllPages "Lang" "en" }}
+{{ $starter_guides := where $.Site.RegularPages ".Params.categories" "intersect" (slice "Starter Guides") | lang.Merge (where $en_pages ".Params.categories" "intersect" (slice "Starter Guides")) }}
+{{ $specification_guides := where $.Site.RegularPages ".Params.categories" "intersect" (slice "Specification Guides") | lang.Merge (where $en_pages ".Params.categories" "intersect" (slice "Specification Guides")) }}
 
 <section class="row">
   <div class="container">
@@ -40,7 +41,7 @@
         </li>
       {{ end }}
     </ul>
-    <a class="btn btn-primary" href="{{ "/learn/starter-guides" | relURL }}">{{ i18n "pages-learn-index-starter-guides-view" }}</a>
+    <a class="btn btn-primary" href="{{ "/learn/starter-guides" | relLangURL }}">{{ i18n "pages-learn-index-starter-guides-view" }}</a>
   </section>
   <section class="bordered-section-top border-hidden-xs padding-top-30 padding-bottom-30">
     <h2 class="big-text">{{ i18n "pages-learn-index-specification-guides-title" }}</h2>
@@ -55,7 +56,7 @@
           </li>
       {{ end }}
     </ul>
-    <a class="btn btn-primary" href="{{ "/learn/specification-guides" | relURL }}">{{ i18n "pages-learn-index-specification-guides-view" }}</a>
+    <a class="btn btn-primary" href="{{ "/learn/specification-guides" | relLangURL }}">{{ i18n "pages-learn-index-specification-guides-view" }}</a>
   </section>
   <section class="bordered-section-top bordered-section-sm-hidden border-hidden-xs padding-top-30 padding-bottom-30">
     <h2 class="big-text">{{ i18n "pages-learn-index-documentation-title" }}</h2>

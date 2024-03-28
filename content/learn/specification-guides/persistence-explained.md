@@ -9,6 +9,7 @@ description: >-
 keywords: ["spec", "specification", "guide", "tutorial", "persistence", "database", "sql", "query", "named", "typed", "data"]
 hide_page_title: true
 weight: 4
+categories: ["Specification Guides"]
 ---
 
 Enterprise applications typically require persistence for data storage. The

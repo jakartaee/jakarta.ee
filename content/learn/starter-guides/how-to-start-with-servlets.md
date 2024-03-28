@@ -7,6 +7,7 @@ description: >-
   application using Jakarta Servlet.
 keywords: ['servlet', 'tutorial', 'guide', 'application', 'wildfly']
 hide_page_title: true
+categories: ["Starter Guides"]
 ---
 
 This guide aims to walk you through the process of building a simple Servlet

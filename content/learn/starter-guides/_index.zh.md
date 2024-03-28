@@ -9,9 +9,7 @@ hide_sidebar: true
 layout: single
 container: container-fluid
 page_css_file: /css/starter-guides.css
-cascade:
-  categories: ["Starter Guides"]
 ---
 
-{{< pages/learn/starter_guides >}}
-
+{{< guides_list category="Starter Guides" icon="fa-code" >}}
+{{< cta_section >}}
