@@ -1136,14 +1136,26 @@ other = "Sign up now"
 [pages-learn-index-starter-guides-title]
   other = "Starter Guides" 
   
-[pages-learn-index-starter-guides-describe]
+[pages-learn-index-starter-guides-description]
   other = "Get started with Jakarta EE starter guides."   
   
 [pages-learn-index-starter-guides-view]
   other = "View the Starter Guides" 
+
+[pages-learn-index-specification-guides-title]
+  other = "Specification Guides" 
+  
+[pages-learn-index-specification-guides-description]
+  other = "Check out our specification guides."   
+
+[pages-learn-index-specification-guides-view]
+  other = "View the Specification Guides"
   
 [pages-learn-index-documentation-title]
   other = "Documentation"   
+
+[pages-learn-index-documentation-description]
+  other = "Check out our documentation."
 
 [pages-learn-index-documentation-tutorial]
   other = "Jakarta EE Tutorial" 
@@ -1151,17 +1163,24 @@ other = "Sign up now"
 [pages-learn-index-documentation-first-cup]
   other = "Jakarta EE First Cup"   
   
-[pages-learn-index-documentation-cargo-cracker-example-application]
+[pages-learn-index-documentation-cargo-tracker-example-application]
   other = "CargoTracker Example Application" 
   
 [pages-learn-index-jakarta-ee-project-title]
   other = "Generate a Jakarta EE Project"   
-  
-[pages-learn-index-jakarta-ee-project-describe]
-  other = "The official Eclipse Foundation Starter for Jakarta EE. The starter uses a Maven Archetype to generate sample code to get you going quickly with simple Jakarta EE microservices projects." 
-  
-[pages-learn-index-jakarta-ee-project-start]
-  other = "Start a Project"   
+
+[pages-learn-index-starter-heading]
+  other = "Try the Jakarta EE Starter"
+
+[pages-learn-index-starter-description]
+  other = """
+    The official Eclipse Foundation Starter for Jakarta EE. The starter uses a
+    Maven Archetype to generate sample code to get you going quickly with
+    simple Jakarta EE microservices projects.
+  """
+
+[pages-learn-index-starter-start]
+  other = "Start a Project"
   
 [pages-learn-index-jakarta-ee-overview-course-title]
   other = "Jakarta EE Overview Course" 
@@ -1170,13 +1189,22 @@ other = "Sign up now"
   other = "Instructor"   
   
 [pages-learn-index-jakarta-ee-overview-course-instructor-describe]
-  other = "Java Champion and Jakarta EE Developer " 
+  other = "Java Champion and Jakarta EE Developer Advocate" 
   
 [pages-learn-index-jakarta-ee-overview-course-describe]
   other = "Do you need an overview of Jakarta EE as a whole? In this course, Java Champion and Jakarta EE Developer Advocate Ivar Grimstad guides you through the purpose of Jakarta EE and the specifications that you will need to understand. Ivar presents a quick overview of Jakarta EE, its specifications and implementations, the containers you will use for different component types, and the standard units for deployments. He goes into more depth on the Jakarta EE Platform, then dives into Web Profiles and Core Profiles. Packed with useful tips and practical challenges, this course can help you to decide the next steps in your Jakarta EE journey."   
   
 [pages-learn-index-jakarta-ee-overview-course-enroll]
   other = "Enroll in our course today!" 
+
+[pages-learn-index-videos-title]
+  other = "Videos"
+
+[pages-learn-index-videos-view-more]
+  other = "View More Videos"
+
+[pages-learn-index-videos-youtube]
+  other = "Watch on YouTube"
   
 [pages-learn-starter-guides-read-guide]
   other = "Read Guide"   

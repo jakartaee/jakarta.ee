@@ -10,73 +10,70 @@
   SPDX-License-Identifier: EPL-2.0
 */}}
 
-{{ $guides := (.Page.GetPage "starter-guides").RegularPages }}
+{{ $starter_guides := ($.Site.GetPage "/learn/starter-guides").RegularPages }}
+{{ $specification_guides := ($.Site.GetPage "/learn/specification-guides").RegularPages }}
 
 <section class="row">
   <div class="container">
     <div class="col-sm-16 match-height-item-by-row">
-      <h2 class="generate-project-heading big-text">Generate a <br>Jakarta EE Project</h2>
+      <h2 class="generate-project-heading big-text">{{ i18n "pages-learn-index-jakarta-ee-project-title" }}</h2>
     </div>
     <div class="col-sm-7 col-sm-offset-1 match-height-item-by-row">
-      <h2 class="big-text" id="starter-guides">Try the Jakarta EE Starter</h2>
+      <h2 class="big-text" id="starter-guides">{{ i18n "pages-learn-index-starter-heading" }}</h2>
       <p>
-        The official Eclipse Foundation Starter for Jakarta EE. The starter uses
-        a Maven Archetype to generate sample code to get you going quickly with
-        simple Jakarta EE microservices projects.
+        {{ i18n "pages-learn-index-starter-description" }}
       </p>
-      <a class="btn btn-primary margin-top-20" href="https://start.jakarta.ee/">Start a Project</a>
+      <a class="btn btn-primary margin-top-20" href="https://start.jakarta.ee/">{{ i18n "pages-learn-index-starter-start" }}</a>
     </div>
   </div>
 </section>
 
 <div class="column-section column-section-even gap-40 padding-top-60 padding-bottom-30">
   <section class="bordered-section-top border-hidden-xs padding-top-30 padding-bottom-30">
-    <h2 class="big-text">Starter Guides</h2>
-    <p>Get started with Jakarta EE starter guides.</p>
+    <h2 class="big-text">{{ i18n "pages-learn-index-starter-guides-title" }}</h2>
+    <p>{{ i18n "pages-learn-index-starter-guides-description" }}</p>
     <ul class="learn-resource-list">
-      {{ $guides := ($.Site.GetPage "/learn/starter-guides").RegularPages }}
-      {{ range first 4 $guides.ByDate }}
+      {{ range first 4 $starter_guides.ByDate }}
         <li class="resource-item margin-bottom-30 margin-top-30">
           <i class="margin-right-20 fa fa-code fa-xl text-secondary" aria-hidden="true"></i>
           <a href="{{ .Permalink }}">{{ .Title }}</a>
         </li>
       {{ end }}
     </ul>
-    <a class="btn btn-primary" href="{{ "/learn/starter-guides" | relURL }}">View the Starter Guides</a>
+    <a class="btn btn-primary" href="{{ "/learn/starter-guides" | relURL }}">{{ i18n "pages-learn-index-starter-guides-view" }}</a>
   </section>
   <section class="bordered-section-top border-hidden-xs padding-top-30 padding-bottom-30">
-    <h2 class="big-text">Specification Guides</h2>
+    <h2 class="big-text">{{ i18n "pages-learn-index-specification-guides-title" }}</h2>
     <p>
-      Check out our specification guides.
+      {{ i18n "pages-learn-index-specification-guides-description" }}
     </p>
     <ul class="learn-resource-list">
-      {{ $guides = ($.Site.GetPage "/learn/specification-guides").RegularPages }}
-      {{ range first 4 $guides.ByDate }}
+      {{ range first 4 $specification_guides.ByDate }}
           <li class="resource-item margin-bottom-30 margin-top-30">
             <i class="margin-right-20 fa fa-check-square-o fa-xl text-secondary" aria-hidden="true"></i>
             <a href="{{ .Permalink }}">{{ .Title }}</a>
           </li>
       {{ end }}
     </ul>
-    <a class="btn btn-primary" href="{{ "/learn/specification-guides" | relURL }}">View the Specification Guides</a>
+    <a class="btn btn-primary" href="{{ "/learn/specification-guides" | relURL }}">{{ i18n "pages-learn-index-specification-guides-view" }}</a>
   </section>
   <section class="bordered-section-top bordered-section-sm-hidden border-hidden-xs padding-top-30 padding-bottom-30">
-    <h2 class="big-text">Documentation</h2>
+    <h2 class="big-text">{{ i18n "pages-learn-index-documentation-title" }}</h2>
     <p>
-      Check out our documentation.
+      {{ i18n "pages-learn-index-documentation-description" }}
     </p>
     <ul class="learn-resource-list">
       <li class="resource-item margin-bottom-30 margin-top-30">
         <i class="margin-right-20 fa fa-file-code-o fa-xl text-secondary" aria-hidden="true"></i>
-        <a href="/learn/docs/jakartaee-tutorial/current/index.html">Jakarta EE Tutorial</a>
+        <a href="/learn/docs/jakartaee-tutorial/current/index.html">{{ i18n "pages-learn-index-documentation-tutorial" }}</a>
       </li>
       <li class="resource-item margin-bottom-30 margin-top-30">
         <i class="margin-right-20 fa fa-file-code-o fa-xl text-secondary" aria-hidden="true"></i>
-        <a href="https://eclipse-ee4j.github.io/jakartaee-firstcup/">Jakarta EE First Cup</a>
+        <a href="https://eclipse-ee4j.github.io/jakartaee-firstcup/">{{ i18n "pages-learn-index-documentation-first-cup" }}</a>
       </li>
       <li class="resource-item margin-bottom-30 margin-top-30">
         <i class="margin-right-20 fa fa-file-code-o fa-xl text-secondary" aria-hidden="true"></i>
-        <a href="https://github.com/eclipse-ee4j/cargotracker">CargoTracker Example Application</a>
+        <a href="https://github.com/eclipse-ee4j/cargotracker">{{ i18n "pages-learn-index-documentation-cargo-tracker-example-appplication" }}</a>
       </li>
     </ul>
   </section>
@@ -87,31 +84,22 @@
     <img src="/learn/images/jakarta-ee-overview-course.jpg" alt="The thumbnail of Jakarta EE Overview Course found on Linkedin Learning." />
   </div>
   <div>
-    <h2 class="big-text" id="jakarta-ee-essentials">Jakarta EE Overview Course</h2>
-
+    <h2 class="big-text" id="jakarta-ee-essentials">{{ i18n "pages-learn-index-jakarta-ee-overview-course-title" }}</h2>
     <div class="margin-bottom-20 margin-top-20">
-      <p class="margin-0"><strong>Instructor: Ivar Grimstad</strong></p>
-      <i>Java Champion and Jakarta EE Developer Advocate</i>
+      <p class="margin-0"><strong>{{ i18n "pages-learn-index-jakarta-ee-overview-course-instructor" }}: Ivar Grimstad</strong></p>
+      <i>{{ i18n "pages-learn-index-jakarta-ee-overview-course-instructor-describe" }}</i>
     </div>
-
     <p>
-      Do you need an overview of Jakarta EE as a whole? In this course, Java
-      Champion and Jakarta EE Developer Advocate Ivar Grimstad guides you
-      through the purpose of Jakarta EE and the specifications that you will
-      need to understand. Ivar presents a quick overview of Jakarta EE, its
-      specifications and implementations, the containers you will use for
-      different component types, and the standard units for deployments. He
-      goes into more depth on the Jakarta EE Platform, then dives into Web
-      Profiles and Core Profiles. Packed with useful tips and practical
-      challenges, this course can help you to decide the next steps in your
-      Jakarta EE journey.
+      {{ i18n "pages-learn-index-jakarta-ee-overview-course-describe" }}
     </p>
-    <a class="btn btn-primary margin-top-20" href="https://www.linkedin.com/learning/jakarta-ee-overview">Enroll in our course today!</a>
+    <a class="btn btn-primary margin-top-20" href="https://www.linkedin.com/learning/jakarta-ee-overview">
+      {{ i18n "pages-learn-index-jakarta-ee-overview-course-enroll" }}
+    </a>
   </div>
 </section>
 
 <section class="padding-top-30 padding-bottom-30">
-  <h2 class="big-text margin-bottom-30">Videos</h2>
+  <h2 class="big-text margin-bottom-30">{{ i18n "pages-learn-index-videos-title" }}</h2>
   <div class="video-list-container">
     {{ $playlist_id := "PLutlXcN4EAwDxs85DUnmbnWov3SusY9mG" }}
     {{ $videos := index $.Site.Data.videos $playlist_id }}
@@ -130,7 +118,9 @@
                 {{ substr (.group.description | safeHTML) 0 200 }}{{- if gt (len .group.description) 200 }}...{{- end }}
               </p>
               <div class="video-details-button-container flex-center margin-top-30">
-                <a class="btn btn-primary" href="{{ index .link "-href" }}&list={{ $playlist_id }}">Watch on YouTube</a>
+                <a class="btn btn-primary" href="{{ index .link "-href" }}&list={{ $playlist_id }}">
+                  {{ i18n "pages-learn-index-videos-youtube" }}
+                </a>
               </div>
             </div>
           </li>
@@ -138,7 +128,9 @@
       </ul>
     {{ end }}
     <div class="text-center margin-y-30">
-      <a class="btn btn-primary btn-lg" href="{{ "/community/videos/" | relURL }}">View More Videos</a>
+      <a class="btn btn-primary btn-lg" href="{{ "/community/videos/" | relURL }}">
+        {{ i18n "pages-learn-index-videos-view-more" }}
+      </a>
     </div>
   </div>
 </section>
