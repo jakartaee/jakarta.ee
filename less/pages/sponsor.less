@@ -10,6 +10,9 @@
 
 @import (reference) '../styles.less';
 
+//== Layout
+
+// Jumbotron
 .header-wrapper.header-secondary-bg-img .featured-jumbotron {
   // Reset secondary jumbotron styles
   min-height: 40rem;
@@ -37,4 +40,22 @@
   p {
     font-style: italic;
   }
+}
+
+// Sections
+.section-featured-text {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+//== Components 
+
+.subsection-divider {
+  width: 16rem;
+  border-width: 0.2rem;
+}
+
+.subsection-divider-darker {
+  border-color: @black;
+  opacity: 0.1;
 }

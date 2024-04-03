@@ -13,3 +13,5 @@ hide_sidebar: true
 container: "container-fluid"
 page_css_file: "/css/sponsor.css"
 ---
+
+{{< pages/sponsor >}}
