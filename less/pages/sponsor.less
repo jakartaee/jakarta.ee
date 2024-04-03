@@ -58,6 +58,12 @@
   }
 }
 
+.sponsor-section {
+  background: url('../images/sponsor/sponsor-bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 //== Components 
 
 .subsection-divider {
@@ -78,4 +84,44 @@
   // Unset the typography styles set across all featured-section-cta-item.
   font-weight: 500;
   text-transform: none;
+}
+
+.icon-description {
+  display: flex;
+
+  img {
+    width: 3em;
+  }
+}
+
+.wide-image-split {
+  display: flex;
+  gap: 5%;
+
+  .wide-image-split-divider {
+    width: 1px;
+    background-color: @brand-secondary;
+  }
+
+  & > *:last-child {
+    flex-grow: 1;
+    align-self: center;
+    width: 100%;
+  }
+}
+
+//== Page Specific
+
+.wide-image-split img {
+  width: 18em;
+}
+
+//== Hotfixes
+
+.dark { // Remove for EFHST ^0.0.208
+  color: @white;
+}
+
+.featured-section {
+  font-size: @featured-section-font-size;
 }
