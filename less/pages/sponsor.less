@@ -10,4 +10,31 @@
 
 @import (reference) '../styles.less';
 
+.header-wrapper.header-secondary-bg-img .featured-jumbotron {
+  // Reset secondary jumbotron styles
+  min-height: 40rem;
+  padding-top: 12.4rem;
+  padding-bottom: 3rem;
 
+  text-align: center;
+
+  h1,
+  .h1 {
+    .big-text;
+    color: @brand-secondary;
+    text-transform: uppercase;
+    font-size: 3rem;
+  }
+
+  p {
+    margin: 2.5rem auto;
+    max-width: 45ch; // Break after 45 characters
+    font-size: 1.8rem;
+  }
+
+  h1,
+  .h1,
+  p {
+    font-style: italic;
+  }
+}
