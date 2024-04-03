@@ -48,6 +48,16 @@
   font-weight: 500;
 }
 
+.heading-underline {
+  &,
+  small,
+  .small {
+    .big-text;
+    color: @brand-primary;
+    text-transform: uppercase;
+  }
+}
+
 //== Components 
 
 .subsection-divider {
@@ -58,4 +68,14 @@
 .subsection-divider-darker {
   border-color: @black;
   opacity: 0.1;
+}
+
+.featured-section-cta-item {
+  padding-top: 30px;
+}
+
+.featured-section-cta-item-body {
+  // Unset the typography styles set across all featured-section-cta-item.
+  font-weight: 500;
+  text-transform: none;
 }
