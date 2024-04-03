@@ -9,6 +9,7 @@ description: >-
 keywords: ["spec", "specification", "guide", "dependency injection", "design pattern", "contexts", "cdi", "scope assignment", "tutorial"]
 hide_page_title: true
 weight: 6
+categories: ["Specification Guides"]
 ---
 
 Jakarta Dependency Injection provides the ability to make

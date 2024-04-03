@@ -10,32 +10,59 @@
   SPDX-License-Identifier: EPL-2.0
 */}}
 
-{{ $guides := (.Page.GetPage "starter-guides").RegularPages }}
+{{ $en_pages := where $.Site.AllPages "Lang" "en" }}
+{{ $starter_guides := where $.Site.RegularPages ".Params.categories" "intersect" (slice "Starter Guides") | lang.Merge (where $en_pages ".Params.categories" "intersect" (slice "Starter Guides")) }}
+{{ $specification_guides := where $.Site.RegularPages ".Params.categories" "intersect" (slice "Specification Guides") | lang.Merge (where $en_pages ".Params.categories" "intersect" (slice "Specification Guides")) }}
 
-<section class="column-section column-section-even gap-60">
-  <div class="image-column hidden-xs hidden-sm">
-    <img src="/learn/images/starter-guides.jpg" alt="" />
+<section class="row">
+  <div class="container">
+    <div class="col-sm-16 match-height-item-by-row">
+      <h2 class="generate-project-heading big-text">{{ i18n "pages-learn-index-jakarta-ee-project-title" }}</h2>
+    </div>
+    <div class="col-sm-7 col-sm-offset-1 match-height-item-by-row">
+      <h2 class="big-text" id="starter-guides">{{ i18n "pages-learn-index-starter-heading" }}</h2>
+      <p>
+        {{ i18n "pages-learn-index-starter-description" }}
+      </p>
+      <a class="btn btn-primary margin-top-20" href="https://start.jakarta.ee/">{{ i18n "pages-learn-index-starter-start" }}</a>
+    </div>
   </div>
-  <div>
-    <h2 class="big-text" id="starter-guides">{{ i18n "pages-learn-index-starter-guides-title" }}</h2>
-    <p>{{ i18n "pages-learn-index-starter-guides-describe" }}</p>
+</section>
+
+<div class="column-section column-section-even gap-40 padding-top-60 padding-bottom-30">
+  <section class="bordered-section-top border-hidden-xs padding-top-30 padding-bottom-30">
+    <h2 class="big-text">{{ i18n "pages-learn-index-starter-guides-title" }}</h2>
+    <p>{{ i18n "pages-learn-index-starter-guides-description" }}</p>
     <ul class="learn-resource-list">
-      {{ range first 4 $guides }}
+      {{ range first 4 $starter_guides.ByDate }}
         <li class="resource-item margin-bottom-30 margin-top-30">
           <i class="margin-right-20 fa fa-code fa-xl text-secondary" aria-hidden="true"></i>
           <a href="{{ .Permalink }}">{{ .Title }}</a>
         </li>
       {{ end }}
     </ul>
-    <a class="btn btn-primary margin-top-40" href="/learn/starter-guides/">{{ i18n "pages-learn-index-starter-guides-view" }}</a>
-  </div>
-</section>
-
-<hr class="margin-top-40 margin-bottom-40">
-
-<div class="column-section column-section-even gap-60">
-  <section>
-    <h2 class="big-text" id="documentation">{{ i18n "pages-learn-index-documentation-title" }}</h2>
+    <a class="btn btn-primary" href="{{ "/learn/starter-guides" | relLangURL }}">{{ i18n "pages-learn-index-starter-guides-view" }}</a>
+  </section>
+  <section class="bordered-section-top border-hidden-xs padding-top-30 padding-bottom-30">
+    <h2 class="big-text">{{ i18n "pages-learn-index-specification-guides-title" }}</h2>
+    <p>
+      {{ i18n "pages-learn-index-specification-guides-description" }}
+    </p>
+    <ul class="learn-resource-list">
+      {{ range first 4 $specification_guides.ByDate }}
+          <li class="resource-item margin-bottom-30 margin-top-30">
+            <i class="margin-right-20 fa fa-check-square-o fa-xl text-secondary" aria-hidden="true"></i>
+            <a href="{{ .Permalink }}">{{ .Title }}</a>
+          </li>
+      {{ end }}
+    </ul>
+    <a class="btn btn-primary" href="{{ "/learn/specification-guides" | relLangURL }}">{{ i18n "pages-learn-index-specification-guides-view" }}</a>
+  </section>
+  <section class="bordered-section-top bordered-section-sm-hidden border-hidden-xs padding-top-30 padding-bottom-30">
+    <h2 class="big-text">{{ i18n "pages-learn-index-documentation-title" }}</h2>
+    <p>
+      {{ i18n "pages-learn-index-documentation-description" }}
+    </p>
     <ul class="learn-resource-list">
       <li class="resource-item margin-bottom-30 margin-top-30">
         <i class="margin-right-20 fa fa-file-code-o fa-xl text-secondary" aria-hidden="true"></i>
@@ -47,44 +74,64 @@
       </li>
       <li class="resource-item margin-bottom-30 margin-top-30">
         <i class="margin-right-20 fa fa-file-code-o fa-xl text-secondary" aria-hidden="true"></i>
-        <a href="https://github.com/eclipse-ee4j/cargotracker">{{ i18n "pages-learn-index-documentation-cargo-cracker-example-application" }}</a>
+        <a href="https://github.com/eclipse-ee4j/cargotracker">{{ i18n "pages-learn-index-documentation-cargotracker" }}</a>
       </li>
     </ul>
   </section>
-  <section>
-    <h2 class="big-text" id="Generate a Jakarta EE Project">{{ i18n "pages-learn-index-jakarta-ee-project-title" }}</h2>
-    <div class="column-section column-section-even gap-40">
-      <div class="image-column hidden-xs hidden-sm">
-        <img src="/learn/images/generate-project.jpg" alt="" />
-      </div>
-      <div>
-        <p>
-          {{ i18n "pages-learn-index-jakarta-ee-project-describe" }}
-        </p>
-        <a class="btn btn-primary margin-top-20" href="https://start.jakarta.ee/">{{ i18n "pages-learn-index-jakarta-ee-project-start" }}</a>
-      </div>
-    </div>
-  </section>
 </div>
 
-<hr class="margin-top-40 margin-bottom-40">
-
-<section class="column-section column-section-even gap-60">
+<section class="column-section column-section-even gap-60 bordered-section-y border-hidden-xs padding-top-40 padding-bottom-40">
   <div class="image-column">
     <img src="/learn/images/jakarta-ee-overview-course.jpg" alt="The thumbnail of Jakarta EE Overview Course found on Linkedin Learning." />
   </div>
   <div>
     <h2 class="big-text" id="jakarta-ee-essentials">{{ i18n "pages-learn-index-jakarta-ee-overview-course-title" }}</h2>
-
     <div class="margin-bottom-20 margin-top-20">
       <p class="margin-0"><strong>{{ i18n "pages-learn-index-jakarta-ee-overview-course-instructor" }}: Ivar Grimstad</strong></p>
-      <i>Advocate{{ i18n "pages-learn-index-jakarta-ee-overview-course-instructor-describe" }}</i>
+      <i>{{ i18n "pages-learn-index-jakarta-ee-overview-course-instructor-describe" }}</i>
     </div>
-
     <p>
       {{ i18n "pages-learn-index-jakarta-ee-overview-course-describe" }}
     </p>
-    <a class="btn btn-primary margin-top-20" href="https://www.linkedin.com/learning/jakarta-ee-overview">{{ i18n "pages-learn-index-jakarta-ee-overview-course-enroll" }}
-</a>
+    <a class="btn btn-primary margin-top-20" href="https://www.linkedin.com/learning/jakarta-ee-overview">
+      {{ i18n "pages-learn-index-jakarta-ee-overview-course-enroll" }}
+    </a>
+  </div>
+</section>
+
+<section class="padding-top-30 padding-bottom-30">
+  <h2 class="big-text margin-bottom-30">{{ i18n "pages-learn-index-videos-title" }}</h2>
+  <div class="video-list-container">
+    {{ $playlist_id := "PLutlXcN4EAwDxs85DUnmbnWov3SusY9mG" }}
+    {{ $videos := index $.Site.Data.videos $playlist_id }}
+    {{ if $videos.entry }}
+      <ul class="video-list video-list-default">
+        {{ $videos = sort $videos.entry "published" "desc" }}
+        {{ range first 3 $videos }}
+          <li class="video-list-item">
+            <div class="video-list-item-video-container">
+              <a class="eclipsefdn-video" href="//www.youtube.com/embed/{{.videoId}}"></a>
+            </div>
+            <div class="video-list-item-details text-center">
+              <p class="text-secondary fw-600">{{ time.Format "2 January 2006" .published }}</p>
+              <p class="video-details-title h3 margin-top-0">{{ .title | safeHTML }}</p>
+              <p class="video-details-description">
+                {{ substr (.group.description | safeHTML) 0 200 }}{{- if gt (len .group.description) 200 }}...{{- end }}
+              </p>
+              <div class="video-details-button-container flex-center margin-top-30">
+                <a class="btn btn-primary" href="{{ index .link "-href" }}&list={{ $playlist_id }}">
+                  {{ i18n "pages-learn-index-videos-youtube" }}
+                </a>
+              </div>
+            </div>
+          </li>
+        {{ end }}
+      </ul>
+    {{ end }}
+    <div class="text-center margin-y-30">
+      <a class="btn btn-primary btn-lg" href="{{ "/community/videos/" | relURL }}">
+        {{ i18n "pages-learn-index-videos-view-more" }}
+      </a>
+    </div>
   </div>
 </section>

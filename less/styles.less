@@ -56,7 +56,7 @@ html {
 }
 
 .jakarta-ee-hr {
-  border-top: 5px solid @brand-primary;
+ border-top: 5px solid @brand-primary;
 }
 
 .font-100 {
@@ -345,4 +345,57 @@ main > div.container {
 // unintentionally by Hugo.
 p:empty {
   display: none;
+}
+.bordered-section-top {
+  border-top: 3px solid @brand-secondary;
+}
+
+.bordered-section-bottom {
+  border-bottom: 3px solid @brand-secondary;
+}
+
+.bordered-section-y {
+  .bordered-section-top;
+  .bordered-section-bottom;
+}
+
+.border-hidden-xs {
+  @media (max-width: @screen-sm-max) {
+    border: transparent;
+  }
+}
+
+.eclipsefdn-video-list {
+  .video-list-item {
+    padding: unset;
+  }
+
+  .video-list-item-details {
+    margin-left: 3rem;
+  }
+
+  .video-details-title {
+    .big-text;
+    font-size: 2rem;
+  }
+
+  .video-details-button-container {
+    margin-bottom: 6rem;
+
+    @media (min-width: @screen-sm-min) {
+      justify-content: flex-start;
+    }
+  }
+
+  .eclipsefdn-video {
+    min-width: 48rem;
+    max-width: unset;
+  }
+}
+
+// This workaround was introduced to style a video list without the need of
+// using its JS. Should be removed once the learn page can use the video list
+// widget to fetch latest videos.
+.video-list-container {
+  .eclipsefdn-video-list;
 }

@@ -6,6 +6,7 @@ description: >-
   This guide shows you how to use Jakarta EE to make a RESTful web service.
 hide_page_title: true
 weight: 1
+categories: ["Starter Guides"]
 ---
 
 This guide shows you how to use Jakarta EE to make a 

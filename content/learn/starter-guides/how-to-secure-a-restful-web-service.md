@@ -9,6 +9,7 @@ description: >-
 tags: ['rest', 'api', 'service', 'starter', 'authentication', 'auth', 'security']
 hide_page_title: true
 weight: 2
+categories: ["Starter Guides"]
 ---
 
 This guide shows you how to secure a rest endpoint using 

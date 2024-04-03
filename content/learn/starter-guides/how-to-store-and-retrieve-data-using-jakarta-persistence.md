@@ -7,6 +7,7 @@ description: >-
   Persistence.
 hide_page_title: true
 weight: 2
+categories: ["Starter Guides"]
 ---
 
 This guide shows you how to store and retrieve data using 

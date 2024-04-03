@@ -8,6 +8,7 @@ description: >-
 keywords: ["spec", "specification", "guide", "rest", "restful", "api", "web services", "http"]
 hide_page_title: true
 weight: 3
+categories: ["Specification Guides"]
 ---
 
 Jakarta REST is the solution for development of building Representational State

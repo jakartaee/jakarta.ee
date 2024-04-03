@@ -8,6 +8,7 @@ description: >-
 keywords: ["tutorial", "guide", "specification", "spec", "servlet", "faces", "server pages", "jsp", "views", "html"]
 hide_page_title: true
 weight: 1
+categories: ["Specification Guides"]
 ---
 
 The Jakarta EE Platform offers a number of APIs that can be used to create web
