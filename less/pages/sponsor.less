@@ -76,10 +76,6 @@
   opacity: 0.1;
 }
 
-.featured-section-cta-item {
-  padding-top: 30px;
-}
-
 .featured-section-cta-item-body {
   // Unset the typography styles set across all featured-section-cta-item.
   font-weight: 500;
@@ -123,6 +119,19 @@
   margin-bottom: 0.3em;
 }
 
+.contribution-icon {
+  padding: 0.5rem;
+}
+
+.featured-section-cta-item-img {
+  padding: 1rem;
+  background-color: @brand-primary;
+
+  &::after {
+    border-top-color: @brand-primary;
+  }
+}
+
 //== Hotfixes
 
 .dark { // Remove for EFHST ^0.0.208
@@ -132,3 +141,4 @@
 .featured-section {
   font-size: @featured-section-font-size;
 }
+
