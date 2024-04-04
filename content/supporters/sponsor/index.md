@@ -5,7 +5,9 @@ headline: "We Appreciate Your Support"
 tagline: "in our mission to drive innovation and faster evolution of cloud native enterprise Java."
 custom_jumbotron: |
   <div class="text-center">
-    <a class="btn btn-secondary btn-lg">Become a Sponsor</a>
+    <a class="btn btn-secondary btn-lg" href="https://www.eclipse.org/org/workinggroups/sponsorship/working-group-sponsorship-agreement.pdf">
+      Become a Sponsor
+    </a>
   </div>
 tags: ["support", "sponsor", "sponsorship", "benefits", "ocx", "open code experience", "jakarta ee", "working group"]
 hide_breadcrumb: true
