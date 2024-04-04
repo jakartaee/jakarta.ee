@@ -94,9 +94,12 @@
 
 .wide-image-split {
   display: flex;
-  gap: 5%;
+  flex-direction: column;
+  gap: 5rem;
+  text-align: center;
 
   .wide-image-split-divider {
+    display: none;
     width: 1px;
     background-color: @brand-secondary;
   }
@@ -105,6 +108,16 @@
     flex-grow: 1;
     align-self: center;
     width: 100%;
+  }
+
+  @media (min-width: @screen-sm-min) {
+    flex-direction: row;
+    gap: 5%;
+    text-align: unset;
+
+    .wide-image-split-divider {
+      display: unset;
+    }
   }
 }
 
