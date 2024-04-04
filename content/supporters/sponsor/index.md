@@ -7,6 +7,7 @@ custom_jumbotron: |
   <div class="text-center">
     <a class="btn btn-secondary btn-lg">Become a Sponsor</a>
   </div>
+tags: ["support", "sponsor", "sponsorship", "benefits", "ocx", "open code experience", "jakarta ee", "working group"]
 hide_breadcrumb: true
 hide_page_title: true
 hide_sidebar: true
@@ -14,4 +15,4 @@ container: "container-fluid"
 page_css_file: "/css/sponsor.css"
 ---
 
-{{< pages/sponsor >}}
+{{< pages/supporters/sponsor >}}
