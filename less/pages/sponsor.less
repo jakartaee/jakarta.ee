@@ -1,0 +1,157 @@
+/*!
+ * Copyright (c) 2023 Eclipse Foundation, Inc.
+ *
+ * This program and the accompanying materials are made available under the
+ * terms of the Eclipse Public License v. 2.0 which is available at
+ * http://www.eclipse.org/legal/epl-2.0.
+ *
+ * SPDX-License-Identifier: EPL-2.0
+*/
+
+@import (reference) '../styles.less';
+
+//== Layout
+
+// Jumbotron
+.header-wrapper.header-secondary-bg-img .featured-jumbotron {
+  // Reset secondary jumbotron styles
+  min-height: 40rem;
+  padding-top: 12.4rem;
+  padding-bottom: 3rem;
+
+  text-align: center;
+
+  h1,
+  .h1 {
+    .big-text;
+    color: @brand-secondary;
+    text-transform: uppercase;
+    font-size: 3rem;
+  }
+
+  p {
+    margin: 2.5rem auto;
+    max-width: 45ch; // Break after 45 characters
+    font-size: 1.8rem;
+  }
+
+  h1,
+  .h1,
+  p {
+    font-style: italic;
+  }
+}
+
+// Sections
+.section-featured-text {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.heading-underline {
+  &,
+  small,
+  .small {
+    .big-text;
+    color: @brand-primary;
+    text-transform: uppercase;
+  }
+}
+
+.sponsor-section {
+  background: url('../images/sponsor/sponsor-bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+//== Components 
+
+.subsection-divider {
+  width: 16rem;
+  border-width: 0.2rem;
+}
+
+.subsection-divider-darker {
+  border-color: @black;
+  opacity: 0.1;
+}
+
+.featured-section-cta-item-body {
+  // Unset the typography styles set across all featured-section-cta-item.
+  font-weight: 500;
+  text-transform: none;
+}
+
+.icon-description {
+  display: flex;
+  gap: 1em;
+
+  img {
+    width: 2em;
+    aspect-ratio: 1;
+  }
+}
+
+.wide-image-split {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  text-align: center;
+
+  .wide-image-split-divider {
+    display: none;
+    width: 1px;
+    background-color: @brand-secondary;
+  }
+
+  & > *:last-child {
+    flex-grow: 1;
+    align-self: center;
+    width: 100%;
+  }
+
+  @media (min-width: @screen-sm-min) {
+    flex-direction: row;
+    gap: 5%;
+    text-align: unset;
+
+    .wide-image-split-divider {
+      display: unset;
+    }
+  }
+}
+
+//== Page Specific
+
+.wide-image-split img {
+  width: 18em;
+}
+
+.medal-icon {
+  margin-top: 0.3em;
+  margin-bottom: 0.3em;
+}
+
+.contribution-icon {
+  padding: 0.5rem;
+}
+
+.featured-section-cta-item-img {
+  padding: 1rem;
+  background-color: @brand-primary;
+
+  &::after {
+    border-top-color: @brand-primary;
+  }
+}
+
+//== Hotfixes
+
+.dark { // Remove for EFHST ^0.0.208
+  color: @white;
+}
+
+.featured-section {
+  font-size: @featured-section-font-size;
+}
+

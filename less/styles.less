@@ -16,9 +16,11 @@
 
 @import 'vendors/_syntax.less';
 @import '_variables.less';
+
 @import 'components/tabs.less';
 @import 'components/_buttons.less';
 @import 'components/_commons.less';
+@import 'components/_sections.less';
 @import 'components/menu.less';
 @import 'components/jumbotron.less';
 @import 'components/home.less';
@@ -54,7 +56,7 @@ html {
 }
 
 .jakarta-ee-hr {
-  border-top: 5px solid @brand-primary;
+ border-top: 5px solid @brand-primary;
 }
 
 .font-100 {
@@ -332,4 +334,72 @@ div.card-panel.panel div.panel-body.panel-body-with-img {
 
 .align-items-center {
   align-items: center;
+}
+
+// Add padding to container pages.
+main > div.container {
+  padding-bottom: 30px;
+}
+
+// Hide empty paragraph tags that may of been rendered
+// unintentionally by Hugo.
+p:empty {
+  display: none;
+}
+.bordered-section-top {
+  border-top: 3px solid @brand-secondary;
+}
+
+.bordered-section-bottom {
+  border-bottom: 3px solid @brand-secondary;
+}
+
+.bordered-section-y {
+  .bordered-section-top;
+  .bordered-section-bottom;
+}
+
+.border-hidden-xs {
+  @media (max-width: @screen-sm-max) {
+    border: transparent;
+  }
+}
+
+.eclipsefdn-video-list {
+  .video-list-item {
+    padding: unset;
+  }
+
+  .video-list-item-details {
+    margin-left: 3rem;
+  }
+
+  .video-details-title {
+    .big-text;
+    font-size: 2rem;
+  }
+
+  .video-details-button-container {
+    margin-bottom: 6rem;
+
+    @media (min-width: @screen-sm-min) {
+      justify-content: flex-start;
+    }
+  }
+
+  .eclipsefdn-video {
+    min-width: 48rem;
+    max-width: unset;
+  }
+}
+
+// This workaround was introduced to style a video list without the need of
+// using its JS. Should be removed once the learn page can use the video list
+// widget to fetch latest videos.
+.video-list-container {
+  .eclipsefdn-video-list;
+}
+
+.font-italic {
+  font-style: italic;
 }

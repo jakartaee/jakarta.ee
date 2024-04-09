@@ -1,5 +1,5 @@
 ---
-title: "Jakarta EE TCK Process 1.4"
+title: "Jakarta EE TCK Process 1.4.1"
 date: "2022-02-07T00:00:00+00:00"
 aliases:
     - committees/specification/TCKProcess/
@@ -46,16 +46,24 @@ namespace format of `ee.jakarta.tck.<spec-name>` is recommended.
 
 ## TCK types and requirements
 
-There are 3 different types of TCKs, detailed below.
-- Type 1: Tests that only apply when running outside of a platform (or profile), such as on Java SE, to test behavior defined by the specification for that mode of execution.
-- Type 2: Tests that only apply when running in a platform (or profile) to test behavior defined by the specification for that mode of execution.
-- Type 3: Tests that apply to the behavior defined by a specification for the execution either as a standalone or in a platform (or profile).
+TCKs for individual specifications can include tests of three different types of specification requirements, detailed below:
 
-The individual specification TCK must contain Type 2 or Type 3 tests while Type 1 tests are optional. A profile-ready mechanism must be provided for running the required TCK tests (types 2 and 3) in the profiles they are included in: platform, web profile or core profile. Type 1 tests must be excluded and not required to be executed.
+- Type 1: Behavior defined by the specification that is _only_ applicable when the implementation is running outside of a platform (or profile), such as on Java SE, to test behavior defined by the specification for that mode of execution.
+- Type 2: Behavior defined by the specification that is _only_ applicable when the implementation is running in a platform (or profile).
+- Type 3: Behavior defined by the specification that is applicable _both_ when the implementation is running outside of a platform (or profile) _and_ when it is running in a platform (or profile).
 
-The individual specification TCK must provide a mechanism for running the required TCK tests (types 1 and 3) outside the context of a platform or profile. Type 2 tests must be excluded and not run.
+Not all individual specifications will have Type 1 or Type 2 requirements. The individual specification TCK should include tests of all types of requirements and must contain tests of Type 2 requirements, if they exist, and of Type 3 requirements.
 
-The type 3 tests must be executed in compatible implementations of the profiles to validate the individual specification implementation functions properly in the profile implementation: platform, web profile or core profile.
+The tests of Type 2 or Type 3 requirements must be executed in compatible implementations of the profiles to validate the individual specification implementation functions properly in the profile implementation: platform, web profile or core profile.
+
+The individual specification TCK must provide a mechanism for running the required TCK tests (Types 1 and 3) outside the context of a platform or profile. Type 2 tests must be excluded and not run. This mechanism is to be used by standalone implementations of the specification who wish to certify their compatibility.
+
+A profile-ready mechanism must also be provided for running the required TCK tests (Types 2 and 3) in the profiles in which they are included: platform, web profile or core profile. Type 1 tests must be excluded and not run. This mechanism is to be used by platform or profile implementations who wish to certify their compatibility with the specification.
+
+The requirement to produce a profile-ready mechanism does not mean a platform or profile implementation must pass the individual specification TCK using this mechanism before the individual specification can perform a release. If problems with the tests when run using the profile-ready mechanism are found after a specification release, they can be addressed by a new release of the individual specification TCK.
+
+The requirements discussed in this section are not intended to impose additional requirements on specifications that are producing service releases of their TCKs, beyond the requirements that were imposed by the 
+Specification Committee when the applicable major or minor release of the TCK binary was ratified.
 
 ## Materials for a TCK Release {#_materials_for_a_tck_release}
 

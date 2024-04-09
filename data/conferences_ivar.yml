@@ -74,25 +74,24 @@ years:
     url: https://devnexus.com/
     location: Atlanta, GA 🇺🇸
     date: April 9-11
-    upcoming: true
 
   - name: JDevSummitIL
     url: https://jdevsummitil.com/
     location: online 🌐
     date: April 4
-    upcoming: true
+    blog: https://www.agilejava.eu/2024/04/04/jdevsummitil-2024/
     
   - name: Voxxed Days Bucharest
     url: https://romania.voxxeddays.com/voxxed-days-bucharest-2024/
     location: Bucharest 🇷🇴
     date: Mar 27-29
-    upcoming: true
+    blog: https://www.agilejava.eu/2024/03/29/voxxed-days-bucharest-2024/
 
   - name: Belgian JUG
     url: https://www.meetup.com/belgian-java-user-group/
     location: Hasselt 🇧🇪
     date: Mar 19
-    upcoming: true
+    blog: https://www.agilejava.eu/2024/03/20/belgian-jug-2024/
 
   - name: Javaforum Malmø
     url: https://www.meetup.com/javaforum-malmo/

@@ -786,18 +786,6 @@ other = "注册"
 [pages-resources-datasheets-text]
  other = "Jakarta EE 9 工具厂商数据表"
 
-[pages-resources-documentation-title]
- other = "文档"
-
-[pages-resources-documentation-tutorial]
- other = "Jakarta EE 指南"
-
-[pages-resources-documentation-first-cup]
- other = "Jakarta EE First Cup"
-
-[pages-resources-documentation-cargocracker]
- other = "CargoTracker 示例应用"
-
 [pages-resources-ebooks-title]
  other = "电子书"
 
@@ -1161,7 +1149,7 @@ other = "注册"
 [pages-learn-index-starter-guides-title]
   other = "入门向导" 
   
-[pages-learn-index-starter-guides-describe]
+[pages-learn-index-starter-guides-description]
   other = "开始学习 Jakarta EE 入门向导."   
   
 [pages-learn-index-starter-guides-view]
@@ -1176,16 +1164,16 @@ other = "注册"
 [pages-learn-index-documentation-first-cup]
   other = "Jakarta EE 起步"   
   
-[pages-learn-index-documentation-cargo-cracker-example-application]
+[pages-learn-index-documentation-cargotracker]
   other = "CargoTracker 示例应用" 
   
 [pages-learn-index-jakarta-ee-project-title]
   other = "生成 Jakarta EE 项目"   
-  
-[pages-learn-index-jakarta-ee-project-describe]
+
+[pages-learn-index-starter-description]
   other = "官方的Eclipse Foundation Starter for Jakarta EE。该Starter使用Maven Archetype生成示例代码，让您快速处理简单的Jakarta EE微服务项目。" 
   
-[pages-learn-index-jakarta-ee-project-start]
+[pages-learn-index-starter-start]
   other = "开始一个项目"   
   
 [pages-learn-index-jakarta-ee-overview-course-title]

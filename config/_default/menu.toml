@@ -20,7 +20,7 @@
     weight = 4
 
 [[main]]
-    name = "Membership"
+    name = "Supporters"
     url = "/Membership/"
     weight = 5
 
@@ -281,14 +281,20 @@
 [[main]]
     name = "Join"
     url = "/membership"
-    parent = "Membership"
+    parent = "Supporters"
     weight = 1
 
 [[main]]
     name = "Members"
     url = "/membership/members/"
-    parent = "Membership"
+    parent = "Supporters"
     weight = 2
+
+[[main]]
+    name = "Become a Sponsor"
+    url = "/supporters/sponsor/"
+    parent = "Supporters"
+    weight = 3
 
 # Learn sub-menu
 [[main]]
