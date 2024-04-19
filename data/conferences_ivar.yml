@@ -28,10 +28,22 @@ years:
     date: Sep 10
     upcoming: true
 
+  - name: Triangle JUG
+    url: https://www.meetup.com/triangle-java-users-group/
+    location: Durham, NC 🇺🇸
+    date: Sep 9
+    upcoming: true
+
   - name: JCrete
     url: https://www.jcrete.org/
     location: Kolymvari 🇬🇷
     date: Jul 22-26
+    upcoming: true
+    
+  - name: JConfDominica
+    url: https://jconfdominicana.org/
+    location: Santiago de los Caballeros 🇩🇴
+    date: Jul 19-20
     upcoming: true
     
   - name: DWX
