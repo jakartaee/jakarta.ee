@@ -10,6 +10,34 @@ dir: /about/meeting_minutes/
 items:
    marketing_committee:
        -
+          url: marketing_committee/minutes-marketing-0321-2024.pdf
+          title: 21 March 2024 (pdf)
+          year: 2024
+       -
+          url: marketing_committee/minutes-marketing-0307-2024.pdf
+          title: 7 March 2024 (pdf)
+          year: 2024
+       -
+          url: marketing_committee/minutes-marketing-0222-2024.pdf
+          title: 22 February 2024 (pdf)
+          year: 2024
+       -
+          url: marketing_committee/minutes-marketing-0208-2024.pdf
+          title: 8 February 2024 (pdf)
+          year: 2024
+       -
+          url: marketing_committee/minutes-marketing-0125-2024.pdf
+          title: 25 January 2024 (pdf)
+          year: 2024
+       -
+          url: marketing_committee/minutes-marketing-0111-2024.pdf
+          title: 11 January 2024 (pdf)
+          year: 2024
+       -
+          url: marketing_committee/minutes-marketing-1214-2023.pdf
+          title: 14 December 2023 (pdf)
+          year: 2023
+       -
           url: marketing_committee/minutes-marketing-1130-2023.pdf
           title: 30 November 2023 (pdf)
           year: 2023
