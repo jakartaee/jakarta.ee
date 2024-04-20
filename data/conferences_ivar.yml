@@ -52,6 +52,12 @@ years:
     date: Jul 1-5
     upcoming: true
 
+  - name: DevBCN
+    url: https://www.devbcn.com/
+    location: Barcelona 🇪🇸
+    date: June 13-14
+    upcoming: true
+
   - name: Spring I/O
     url: https://2024.springio.net/
     location: Barcelona 🇪🇸
