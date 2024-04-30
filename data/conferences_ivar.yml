@@ -10,6 +10,12 @@ years:
     date: Dec 3
     upcoming: true
 
+  - name: Jalapeño 2024
+    url: https://jalapeño.net
+    location: Puerto Vallarta 🇲🇽
+    date: Sep 14-15
+    upcoming: true
+
   - name: St. Louis JUG
     url: https://www.meetup.com/gatewayjug/
     location: St. Louis, MO 🇺🇸
