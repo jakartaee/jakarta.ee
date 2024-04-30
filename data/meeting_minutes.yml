@@ -1455,6 +1455,14 @@ items:
 
    steering_committee:
        - 
+         url: steering_committee/minutes-march-26-2024.pdf
+         title: 26 March 2024 (pdf)
+         year: 2024
+       - 
+         url: steering_committee/minutes-march-12-2024.pdf
+         title: 12 March 2024 (pdf)
+         year: 2024
+       - 
          url: steering_committee/minutes-february-27-2024.pdf
          title: 27 February 2024 (pdf)
          year: 2024
@@ -1477,6 +1485,10 @@ items:
        - 
          url: steering_committee/minutes-november-21-2023.pdf
          title: 21 November 2023 (pdf)
+         year: 2023
+       - 
+         url: steering_committee/minutes-november-7-2023.pdf
+         title: 7 November 2023 (pdf)
          year: 2023
        - 
          url: steering_committee/minutes-october-24-2023.pdf
