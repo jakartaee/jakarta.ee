@@ -232,7 +232,7 @@ releases:
     - schema: beans_4_1.xsd
       namespace: jakartaee
       description: XML Schema for the Jakarta Contexts and Dependency Injection XML file (beans.xml)
-      status: Draft
+      status: Final
 
 
 # Template: Example for creating new schema entry
