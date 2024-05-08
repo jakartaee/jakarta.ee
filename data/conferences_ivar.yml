@@ -10,6 +10,12 @@ years:
     date: Dec 3
     upcoming: true
 
+  - name: Berlin Expert Days 2024
+    url: https://bed-con.org/
+    location: Berlin 🇩🇪
+    date: Sep 19-20
+    upcoming: true
+
   - name: Jalapeño 2024
     url: https://jalapeño.net
     location: Puerto Vallarta 🇲🇽
