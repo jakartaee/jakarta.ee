@@ -218,22 +218,16 @@
     identifier = "community"
 
 [[main]]
-    name = "Adopt A Spec"
-    parent = "Community"
-    url = "/community/adopt-a-spec/"
-    weight = 2
-
-[[main]]
     name = "Resources"
     url = "/resources/"
-    weight = 3
+    weight = 2
     parent = "Community"
 
 [[main]]
     name = "Blog"
-    url = "/blogs"
-	parent = "Community"
-    weight = 4
+    url = "/blogs/"
+    weight = 3
+    parent = "Community"
 
 [[main]]
     name = "Events"
@@ -242,40 +236,34 @@
     weight = 5
 
 [[main]]
-    name = "JakartaOne Livestream"
-    url = "https://jakartaone.org"
-    parent = "Community"
-    weight = 6
-
-[[main]]
     name = "Stay Connected"
     url = "/connect/"
     parent = "Community"
-    weight = 7
-
-[[main]]
-    name = "Tech Talk Meet-ups"
-    url = "/community/#meetups"
-    parent = "Community"
-    weight = 8
+    weight = 6
 
 [[main]]
     name = "Videos"
     url = "/community/videos"
     parent = "Community"
-    weight = 9
+    weight = 7
 
 [[main]]
-    name = "Get Involved"
-    url = "/community/get-involved"
+    name = "JakartaOne Livestream"
+    url = "https://jakartaone.org"
     parent = "Community"
-    weight = 10
+    weight = 8
+
+[[main]]
+    name = "Tech Talk Meet-ups"
+    url = "/community/#meetups"
+    parent = "Community"
+    weight = 9
 
 [[main]]
     name = "Developer Advocate"
     url = "/community/developer-advocate"
     parent = "Community"
-    weight = 11
+    weight = 9
 
 # Membership sub-menu
 [[main]]
