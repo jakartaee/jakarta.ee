@@ -1007,6 +1007,9 @@ other = "Sign up now"
 [pages-community-blog-title]
   other = "Blog"
 
+[pages-community-blog-text]
+  other = "Read community blog posts about Jakarta EE"
+
 [pages-community-adopt-a-spec-title]
  other = "Adopt a Spec"
 
