@@ -1010,6 +1010,18 @@ other = "Sign up now"
 [pages-community-blog-text]
   other = "Read community blog posts about Jakarta EE"
 
+[pages-community-developer-advocate-title]
+  other = "Developer Advocate"
+
+[pages-community-developer-advocate-text]
+  other = "Read community blog posts about Jakarta EE"
+
+[pages-community-get-involved-title]
+  other = "Get Involved"
+
+[pages-community-get-involved-text]
+  other = "Read all about the ways you can get involved in Jakarta EE"
+
 [pages-community-adopt-a-spec-title]
  other = "Adopt a Spec"
 
