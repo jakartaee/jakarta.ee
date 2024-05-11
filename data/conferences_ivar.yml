@@ -10,6 +10,12 @@ years:
     date: Dec 3
     upcoming: true
 
+  - name: Seattle JUG
+    url: 
+    location: Seattle, WA 🇺🇸
+    date: Oct 15
+    upcoming: true
+
   - name: Berlin Expert Days 2024
     url: https://bed-con.org/
     location: Berlin 🇩🇪
