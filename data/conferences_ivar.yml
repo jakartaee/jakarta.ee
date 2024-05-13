@@ -92,13 +92,11 @@ years:
     url: https://2024.geecon.org/
     location: Kraków 🇵🇱
     date: May 15-17
-    upcoming: true
 
   - name: JCON EUROPE
     url: https://2024.europe.jcon.one/
     location: Köln 🇩🇪
     date: May 13-16
-    upcoming: true
 
   - name: GIDS
     url: https://developersummit.com/
