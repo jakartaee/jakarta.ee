@@ -230,6 +230,12 @@
     parent = "Community"
 
 [[main]]
+    name = "Get Involved"
+    url = "/community/get-involved/"
+    weight = 4
+    parent = "Community"
+
+[[main]]
     name = "Events"
     url = "/community/events/"
     parent = "Community"
