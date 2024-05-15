@@ -974,6 +974,54 @@ other = "Sign up now"
 [pages-compatibility-get-listed-compatibility-products-view]
  other = "View Compatibility Products"
 
+[pages-community-resources]
+  other = "Resources"
+
+[pages-community-resources-branding]
+  other = "Branding"
+
+[pages-community-resources-case-studies]
+  other = "Case Studies"
+
+[pages-community-resources-datasheets]
+  other = "Datasheets"
+
+[pages-community-resources-ebooks]
+  other = "eBooks"
+
+[pages-community-resources-infographics]
+  other = "Infographics"
+
+[pages-community-resources-presentations]
+  other = "Presentations"
+
+[pages-community-resources-social-cards]
+  other = "Social Cards"
+
+[pages-community-resources-surveys]
+  other = "Surveys"
+
+[pages-community-resources-white-papers]
+  other = "White Papers"
+
+[pages-community-blog-title]
+  other = "Blog"
+
+[pages-community-blog-text]
+  other = "Read community blog posts about Jakarta EE"
+
+[pages-community-developer-advocate-title]
+  other = "Developer Advocate"
+
+[pages-community-developer-advocate-text]
+  other = "Learn about Ivar Grimstad, our Jakarta EE Developer Advocate"
+
+[pages-community-get-involved-title]
+  other = "Get Involved"
+
+[pages-community-get-involved-text]
+  other = "Read all about the ways you can get involved in Jakarta EE"
+
 [pages-community-adopt-a-spec-title]
  other = "Adopt a Spec"
 
