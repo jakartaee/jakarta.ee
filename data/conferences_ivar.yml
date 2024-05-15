@@ -10,6 +10,12 @@ years:
     date: Dec 3
     upcoming: true
 
+  - name: Seattle JUG
+    url: https://www.seajug.org/
+    location: Seattle, WA 🇺🇸
+    date: Oct 15
+    upcoming: true
+
   - name: Berlin Expert Days 2024
     url: https://bed-con.org/
     location: Berlin 🇩🇪
@@ -44,6 +50,12 @@ years:
     url: https://www.meetup.com/triangle-java-users-group/
     location: Durham, NC 🇺🇸
     date: Sep 9
+    upcoming: true
+
+  - name: Oracle LAOUC Tour 2024
+    url: https://www.laouc.org/
+    location: Asunción 🇵🇾
+    date: Aug 23
     upcoming: true
 
   - name: JCrete
@@ -86,13 +98,11 @@ years:
     url: https://2024.geecon.org/
     location: Kraków 🇵🇱
     date: May 15-17
-    upcoming: true
 
   - name: JCON EUROPE
     url: https://2024.europe.jcon.one/
     location: Köln 🇩🇪
     date: May 13-16
-    upcoming: true
 
   - name: GIDS
     url: https://developersummit.com/
