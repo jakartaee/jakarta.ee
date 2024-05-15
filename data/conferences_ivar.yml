@@ -52,6 +52,12 @@ years:
     date: Sep 9
     upcoming: true
 
+  - name: Oracle LAOUC Tour 2024
+    url: https://www.laouc.org/
+    location: Asunción 🇵🇾
+    date: Aug 23
+    upcoming: true
+
   - name: JCrete
     url: https://www.jcrete.org/
     location: Kolymvari 🇬🇷
