@@ -93,6 +93,11 @@ years:
     location: Sofia 🇧🇬
     date: May 28-29
     upcoming: true
+
+  - name: Berlin JUG
+    url: https://www.meetup.com/de-DE/jug-bb/events/301036198/
+    location: Berlin 🇩🇪
+    date: May 22
             
   - name: GeeCON
     url: https://2024.geecon.org/
