@@ -16,6 +16,12 @@ years:
     date: Oct 15
     upcoming: true
 
+  - name: Community Over Code 2024
+    url: https://communityovercode.org/
+    location: Denver, CO 🇺🇸
+    date: Oct 7-10
+    upcoming: true
+    
   - name: Berlin Expert Days 2024
     url: https://bed-con.org/
     location: Berlin 🇩🇪
