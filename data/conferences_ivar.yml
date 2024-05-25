@@ -92,13 +92,11 @@ years:
     url: https://2024.springio.net/
     location: Barcelona 🇪🇸
     date: May 30-31
-    upcoming: true
 
   - name: JPrime
     url: https://jprime.io/
     location: Sofia 🇧🇬
     date: May 28-29
-    upcoming: true
 
   - name: Berlin JUG
     url: https://www.meetup.com/de-DE/jug-bb/events/301036198/
