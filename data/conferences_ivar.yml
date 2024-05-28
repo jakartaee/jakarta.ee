@@ -16,6 +16,12 @@ years:
     date: Oct 15
     upcoming: true
 
+  - name: Community Over Code 2024
+    url: https://communityovercode.org/
+    location: Denver, CO 🇺🇸
+    date: Oct 7-10
+    upcoming: true
+    
   - name: Berlin Expert Days 2024
     url: https://bed-con.org/
     location: Berlin 🇩🇪
@@ -86,18 +92,17 @@ years:
     url: https://2024.springio.net/
     location: Barcelona 🇪🇸
     date: May 30-31
-    upcoming: true
 
   - name: JPrime
     url: https://jprime.io/
     location: Sofia 🇧🇬
     date: May 28-29
-    upcoming: true
 
   - name: Berlin JUG
     url: https://www.meetup.com/de-DE/jug-bb/events/301036198/
     location: Berlin 🇩🇪
     date: May 22
+    blog: https://www.agilejava.eu/2024/05/23/berlin-jug-2024/
             
   - name: GeeCON
     url: https://2024.geecon.org/
