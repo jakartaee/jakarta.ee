@@ -10,6 +10,12 @@ years:
     date: Dec 3
     upcoming: true
 
+  - name: Open Community for Java
+    url: https://java.ocxconf.org
+    location: Mainz 🇩🇪
+    date: Oct 22-24
+    upcoming: true
+
   - name: Seattle JUG
     url: https://www.seajug.org/
     location: Seattle, WA 🇺🇸
@@ -58,7 +64,7 @@ years:
     date: Sep 9
     upcoming: true
 
-  - name: Oracle LAOUC Tour 2024
+  - name: Oracle LAOUC Community Tour 2024
     url: https://www.laouc.org/
     location: Asunción 🇵🇾
     date: Aug 23
