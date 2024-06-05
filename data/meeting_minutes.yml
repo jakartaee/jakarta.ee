@@ -1,4 +1,5 @@
 years:
+   - 2024
    - 2023
    - 2022
    - 2021
@@ -8,6 +9,34 @@ years:
 dir: /about/meeting_minutes/
 items:
    marketing_committee:
+       -
+          url: marketing_committee/minutes-marketing-0321-2024.pdf
+          title: 21 March 2024 (pdf)
+          year: 2024
+       -
+          url: marketing_committee/minutes-marketing-0307-2024.pdf
+          title: 7 March 2024 (pdf)
+          year: 2024
+       -
+          url: marketing_committee/minutes-marketing-0222-2024.pdf
+          title: 22 February 2024 (pdf)
+          year: 2024
+       -
+          url: marketing_committee/minutes-marketing-0208-2024.pdf
+          title: 8 February 2024 (pdf)
+          year: 2024
+       -
+          url: marketing_committee/minutes-marketing-0125-2024.pdf
+          title: 25 January 2024 (pdf)
+          year: 2024
+       -
+          url: marketing_committee/minutes-marketing-0111-2024.pdf
+          title: 11 January 2024 (pdf)
+          year: 2024
+       -
+          url: marketing_committee/minutes-marketing-1214-2023.pdf
+          title: 14 December 2023 (pdf)
+          year: 2023
        -
           url: marketing_committee/minutes-marketing-1130-2023.pdf
           title: 30 November 2023 (pdf)
@@ -686,6 +715,34 @@ items:
           year: 2018
 
    specification_committee:
+       -
+          url: specification_committee/minutes-specification-april-3-2024.pdf
+          title: 3 April 2024 (pdf)
+          year: 2024
+       -
+          url: specification_committee/minutes-specification-march-20-2024.pdf
+          title: 20 March 2024 (pdf)
+          year: 2024
+       -
+          url: specification_committee/minutes-specification-march-6-2024.pdf
+          title: 6 March 2024 (pdf)
+          year: 2024
+       -
+          url: specification_committee/minutes-specification-february-21-2024.pdf
+          title: 21 February 2024 (pdf)
+          year: 2024
+       -
+          url: specification_committee/minutes-specification-february-7-2024.pdf
+          title: 7 February 2024 (pdf)
+          year: 2024
+       -
+          url: specification_committee/minutes-specification-january-24-2024.pdf
+          title: 24 January 2024 (pdf)
+          year: 2024
+       -
+          url: specification_committee/minutes-specification-january-10-2024.pdf
+          title: 10 January 2024 (pdf)
+          year: 2024
        -
           url: specification_committee/minutes-specification-december-13-2023.pdf
           title: 13 December 2023 (pdf)
@@ -1426,6 +1483,14 @@ items:
 
    steering_committee:
        - 
+         url: steering_committee/minutes-march-26-2024.pdf
+         title: 26 March 2024 (pdf)
+         year: 2024
+       - 
+         url: steering_committee/minutes-march-12-2024.pdf
+         title: 12 March 2024 (pdf)
+         year: 2024
+       - 
          url: steering_committee/minutes-february-27-2024.pdf
          title: 27 February 2024 (pdf)
          year: 2024
@@ -1448,6 +1513,10 @@ items:
        - 
          url: steering_committee/minutes-november-21-2023.pdf
          title: 21 November 2023 (pdf)
+         year: 2023
+       - 
+         url: steering_committee/minutes-november-7-2023.pdf
+         title: 7 November 2023 (pdf)
          year: 2023
        - 
          url: steering_committee/minutes-october-24-2023.pdf

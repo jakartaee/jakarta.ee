@@ -10,8 +10,38 @@ years:
     date: Dec 3
     upcoming: true
 
+  - name: Open Community for Java
+    url: https://java.ocxconf.org
+    location: Mainz 🇩🇪
+    date: Oct 22-24
+    upcoming: true
+
+  - name: Seattle JUG
+    url: https://www.seajug.org/
+    location: Seattle, WA 🇺🇸
+    date: Oct 15
+    upcoming: true
+
+  - name: Community Over Code 2024
+    url: https://communityovercode.org/
+    location: Denver, CO 🇺🇸
+    date: Oct 7-10
+    upcoming: true
+    
+  - name: Berlin Expert Days 2024
+    url: https://bed-con.org/
+    location: Berlin 🇩🇪
+    date: Sep 19-20
+    upcoming: true
+
+  - name: Jalapeño 2024
+    url: https://jalapeño.net
+    location: Puerto Vallarta 🇲🇽
+    date: Sep 14-15
+    upcoming: true
+
   - name: St. Louis JUG
-    url: https://www.meetup.com/gatewayjug/
+    url: https://www.meetup.com/gatewayjug/events/300785154
     location: St. Louis, MO 🇺🇸
     date: Sep 12
     upcoming: true
@@ -28,10 +58,28 @@ years:
     date: Sep 10
     upcoming: true
 
+  - name: Triangle JUG
+    url: https://www.meetup.com/triangle-java-users-group/
+    location: Durham, NC 🇺🇸
+    date: Sep 9
+    upcoming: true
+
+  - name: Oracle LAOUC Community Tour 2024
+    url: https://www.laouc.org/
+    location: Asunción 🇵🇾
+    date: Aug 23
+    upcoming: true
+
   - name: JCrete
     url: https://www.jcrete.org/
     location: Kolymvari 🇬🇷
     date: Jul 22-26
+    upcoming: true
+    
+  - name: JConfDominica
+    url: https://jconfdominicana.org/
+    location: Santiago de los Caballeros 🇩🇴
+    date: Jul 19-20
     upcoming: true
     
   - name: DWX
@@ -40,40 +88,53 @@ years:
     date: Jul 1-5
     upcoming: true
 
+  - name: DevBCN
+    url: https://www.devbcn.com/
+    location: Barcelona 🇪🇸
+    date: June 13-14
+    upcoming: true
+
   - name: Spring I/O
     url: https://2024.springio.net/
     location: Barcelona 🇪🇸
     date: May 30-31
-    upcoming: true
+    blog: https://www.agilejava.eu/2024/05/31/spring-i-o-2024/
 
   - name: JPrime
     url: https://jprime.io/
     location: Sofia 🇧🇬
     date: May 28-29
-    upcoming: true
+    blog: https://www.agilejava.eu/2024/05/29/jprime-2024/
+
+  - name: Berlin JUG
+    url: https://www.meetup.com/de-DE/jug-bb/events/301036198/
+    location: Berlin 🇩🇪
+    date: May 22
+    blog: https://www.agilejava.eu/2024/05/23/berlin-jug-2024/
             
   - name: GeeCON
     url: https://2024.geecon.org/
     location: Kraków 🇵🇱
     date: May 15-17
-    upcoming: true
+    blog: https://www.agilejava.eu/2024/05/18/geecon-2024/
 
   - name: JCON EUROPE
     url: https://2024.europe.jcon.one/
     location: Köln 🇩🇪
     date: May 13-16
-    upcoming: true
+    blog: https://www.agilejava.eu/2024/05/16/jcon-europe-2024/
 
   - name: GIDS
     url: https://developersummit.com/
     location: Bangalore 🇮🇳
     date: April 23-26
-    upcoming: true
+    blog: https://www.agilejava.eu/2024/04/26/gids-2024/
 
   - name: Devnexus
     url: https://devnexus.com/
     location: Atlanta, GA 🇺🇸
     date: April 9-11
+    blog: https://www.agilejava.eu/2024/04/13/devnexus-2024/
 
   - name: JDevSummitIL
     url: https://jdevsummitil.com/
