@@ -233,6 +233,21 @@ releases:
       namespace: jakartaee
       description: XML Schema for the Jakarta Contexts and Dependency Injection XML file (beans.xml)
       status: Final
+      
+    - schema: web-facesconfig_4_1.xsd
+      namespace: jakartaee
+      description: XML Schema for the Jakarta Server Faces Application Configuration File
+      status: Final
+      
+    - schema: web-facelettaglibrary_4_1.xsd
+      namespace: jakartaee
+      description: XML Schema for the Jakarta Tag Libraries in the Jakarta Faces Standard Facelets View Declaration Language (Facelets VDL)
+      status: Final
+      
+    - schema: web-partialresponse_4_1.xsd
+      namespace: jakartaee
+      description: XML Schema for the Jakarta Faces Partial Response used in JSF Ajax frameworks
+      status: Final
 
 
 # Template: Example for creating new schema entry
