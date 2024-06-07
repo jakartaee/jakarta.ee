@@ -14,4 +14,4 @@
 /data/videos/
 .vscode/
 .idea/
-
+.DS_Store
