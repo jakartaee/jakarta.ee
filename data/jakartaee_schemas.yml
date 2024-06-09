@@ -229,10 +229,40 @@ releases:
 
   schemas: 
 
+    - schema: jakartaee_11.xsd
+      namespace: jakartaee
+      description: Common shareable schemas of Jakarta EE deployment descriptors
+      status: Draft
+
+    - schema: application_11.xsd
+      namespace: jakartaee
+      description: XML Schema for the Application deployment descriptor
+      status: Draft
+
     - schema: beans_4_1.xsd
       namespace: jakartaee
       description: XML Schema for the Jakarta Contexts and Dependency Injection XML file (beans.xml)
       status: Final
+
+    - schema: jsp_4_1.xsd
+      namespace: jakartaee
+      description: XML Schema for the Jakarta Server Pages deployment descriptor
+      status: Draft
+
+    - schema: web-app_6_1.xsd
+      namespace: jakartaee
+      description: XML Schema for the Jakarta Servlet deployment descriptor (web.xml)
+      status: Draft
+
+    - schema: web-fragment_6_1.xsd
+      namespace: jakartaee
+      description: XML Schema for the Jakarta Servlet deployment descriptor (web-fragment.xml)
+      status: Draft
+
+    - schema: web-common_6_1.xsd
+      namespace: jakartaee
+      description: XML Schema common for the various Servlet deployment descriptors
+      status: Draft
       
     - schema: web-facesconfig_4_1.xsd
       namespace: jakartaee
@@ -248,6 +278,11 @@ releases:
       namespace: jakartaee
       description: XML Schema for the Jakarta Faces Partial Response used in JSF Ajax frameworks
       status: Final
+
+    - schema: web-jsptaglibrary_4_0.xsd
+      namespace: jakartaee
+      description: XML Schema for the Jakarta Server Pages Taglibrary descriptor
+      status: Draft
 
 
 # Template: Example for creating new schema entry
