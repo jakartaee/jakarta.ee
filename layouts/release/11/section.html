@@ -1,0 +1,56 @@
+{{ define "head-suffix" }}
+<link href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+{{ end }}
+
+{{ define "header"}}
+  <a class="sr-only" href="#content">{{ i18n "jakarta-ee-version-10-section-skip-to-main-content" }}</a>
+  {{ partial "toolbar.html" . }}
+
+   <!---Navbar--->
+   {{ partial "navbar.html" . }}
+   <!---Navbar end --->
+  <header class="header-wrapper{{- with .Params.header_wrapper_class | default .Site.Params.header_wrapper_class }} {{ . }}{{end}}" id="header-wrapper">
+
+    {{ if isset .Page.Params "headline" }}
+    <div class="jakartaee-9-jumbotron-wrapper">
+      <video autoplay muted loop id="jakartaee-9-video-background">
+        <source src="/release/9/videos/header-video.mp4" type="video/mp4">
+      </video>
+      <div class="jumbotron featured-jumbotron">
+        <div class="container header-release-10-container">
+          <div class="row jakartaee-9-flex-grow-container">
+            <div class="col-md-24">
+              <p class="featured-jumbotron-title-prefix uppercase">
+                <span class="orange">Version 11</span> New Release
+              </p>
+              <h1 class="featured-jumbotron-title"><span class="underlined">Jakarta EE</span> <span class="release-number">11</span></h1>
+              <p class="featured-jumbotron-subtitle uppercase orange">
+                Open, community-driven innovation
+              </p>
+              <p class="featured-jumbotron-tagline">
+                Experience the new powerful<br>and streamlined Jakarta EE 11
+              </p>
+              <div class="row">
+                <div class="col-sm-20">
+                  <ul class="list-inline">
+                    <li><a class="btn btn-contained uppercase" href="/compatibility/">{{ i18n "jakarta-ee-version-10-section-download-compatible-products" | safeHTML }}</a></li>
+                    <li><a class="btn btn-contained uppercase" href="/specifications/">{{ i18n "jakarta-ee-version-10-section-specifications" }}</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="additional-links">
+                <a class="uppercase" href="#">View All Releases</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    {{ end }}
+  </header>
+{{ end }}
+
+{{ define "footer-suffix"}}
+  <script src="{{ "/js/release-page-cards.js" | absURL }}"></script>
+{{ end }}
