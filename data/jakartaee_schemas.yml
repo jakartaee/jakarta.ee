@@ -252,22 +252,22 @@ releases:
     - schema: jsp_4_0.xsd
       namespace: jakartaee
       description: XML Schema for the Jakarta Server Pages deployment descriptor
-      status: Draft
+      status: Final
 
     - schema: web-app_6_1.xsd
       namespace: jakartaee
       description: XML Schema for the Jakarta Servlet deployment descriptor (web.xml)
-      status: Draft
+      status: Final
 
     - schema: web-fragment_6_1.xsd
       namespace: jakartaee
       description: XML Schema for the Jakarta Servlet deployment descriptor (web-fragment.xml)
-      status: Draft
+      status: Final
 
     - schema: web-common_6_1.xsd
       namespace: jakartaee
       description: XML Schema common for the various Servlet deployment descriptors
-      status: Draft
+      status: Final
       
     - schema: web-facesconfig_4_1.xsd
       namespace: jakartaee
@@ -287,7 +287,7 @@ releases:
     - schema: web-jsptaglibrary_4_0.xsd
       namespace: jakartaee
       description: XML Schema for the Jakarta Server Pages Taglibrary descriptor
-      status: Draft
+      status: Final
 
 
 # Template: Example for creating new schema entry
