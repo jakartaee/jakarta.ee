@@ -249,7 +249,7 @@ releases:
       description: XML Schema for the Enterprise Beans deployment descriptor
       status: Final
 
-    - schema: jsp_4_1.xsd
+    - schema: jsp_4_0.xsd
       namespace: jakartaee
       description: XML Schema for the Jakarta Server Pages deployment descriptor
       status: Draft
