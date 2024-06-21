@@ -92,7 +92,7 @@ years:
     url: https://www.devbcn.com/
     location: Barcelona 🇪🇸
     date: June 13-14
-    upcoming: true
+    blog: https://www.agilejava.eu/2024/06/15/devbcn-2024/
 
   - name: Spring I/O
     url: https://2024.springio.net/
