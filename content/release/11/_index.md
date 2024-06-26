@@ -18,4 +18,4 @@ press_release_link: "/news/jakarta-ee-11-released/"
 subtitle: "<span class='orange'>An Open, community-driven innovation</span><br> driving the future of cloud native Java technologies"
 ---
 
-{{< pages/release/10 >}}
+{{< pages/release/11 >}}

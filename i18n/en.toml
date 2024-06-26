@@ -626,6 +626,72 @@ other = "Sign up now"
 [jakarta-ee-version-8-section-release-text]
  other = "An open, community-driven baseline for<br> the evolution of enterprise Java technologies"
 
+[jakarta-ee-version-11-features-title]
+ other = "features and benefits"
+
+[jakarta-ee-version-11-features-subtitle]
+ other = "Jakarta EE 11 marks a significant step forward in simplifying enterprise Java with a strong focus on increasing developer productivity and performance. This release introduces new specifications and major updates to existing ones, ensuring compatibility with Java 17 and optimisations for Java 21."
+
+[jakarta-ee-version-11-features-block1-title]
+ other = "Developer Productivity"
+
+[jakarta-ee-version-11-features-block1-summary]
+ other = """
+  <h4 class="fw-700">Jakarta Data</h4>
+  <p>The new Jakarta Data specification simplifies data access and enhances productivity by separating persistence logic across databases from the model using a simple interface.</p>
+"""
+
+[jakarta-ee-version-11-features-block1-text]
+ other = """
+   <p class="margin-bottom-0">
+      Key features include:
+   </p>
+    <ul>
+      <li>
+        <strong>BasicRepository</strong>: A built-in repository supertype for
+        performing basic operations on entities.
+      </li>   
+      <li>
+        <strong>CrudRepository</strong>: Facilitates basic CRUD operations,
+        making database interactions more straightforward and less error-prone.
+      </li>
+      <li>
+        <strong>Pagination</strong>: Support for two types of pagination:
+        offset and Cursor.
+      </li>
+      <li>
+        <strong>Query Language</strong>: A streamlined query language designed
+        to specify the semantics of query methods within Jakarta Data
+        repositories.
+      </li>
+    </ul>
+    <h4 class="fw-700">Streamlining the Platform</h4>
+    <ul>
+      <li>
+        Deprecated Specifications: The continued removal of outdated
+        specifications to streamline and simplify development.
+      </li>
+    </ul>
+ """
+
+[jakarta-ee-version-11-features-block2-title]
+ other = "Performance"
+
+[jakarta-ee-version-11-features-block2-summary]
+ other = "Java Platform Support: The new release supports Java 17 or higher, with unique enhancements for those using Java 21 or above, such as:"
+
+[jakarta-ee-version-11-features-block2-text]
+ other = "This makes it easier to build modularized applications and offers improved integration across component APIs. Ultimately, Jakarta EE 10 helps developers more easily implement applications with modern security requirements, remove deprecated APIs, and maintain high levels of compatibility with prior Jakarta EE releases."
+
+[jakarta-ee-version-11-features-block3-title]
+ other = "Lightweight"
+
+[jakarta-ee-version-11-features-block3-summary]
+ other = "Jakarta EE 10 defines a new profile specification with Jakarta EE Core Profile 10. The “Core Profile” which defines a multi-vendor platform for modernized and lightweight Java applications and microservices."
+
+[jakarta-ee-version-11-features-block3-text]
+ other = "The new Core Profile provides a subset of Jakarta EE specifications that target smaller runtimes suitable for microservices development with lightweight runtimes.This includes an innovative new CDI-Lite specification for building lightweight Jakarta EE applications."
+
 [pages-membership-title]
  other = "Shape the future of Cloud Native, Open Source Java"
 
