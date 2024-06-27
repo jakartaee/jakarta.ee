@@ -15,7 +15,7 @@ date: 2020-01-05T15:50:25-04:00
 * Steve Millidge - Payara、Ilias Efstathiou  – 代理
 * David Blevins - Tomitribe、Cesar Hernandez - 代理
 * Marcin Kruglik - ロンドンJamochaコミュニティ - 選出されたParticipantメンバー代表 - Abraham Marin-Perez - 代理 
-* Arjan Tijms - 選出されたCommitterメンバー代表
+* Vacant - 選出されたCommitterメンバー代表
 * Dr. Jun Qian - Primeton - 選出されたEnterpriseメンバー代表
 * Reza Rahman - Microsoft - 選出されたEnterpriseメンバー代表、Ed Burns - 代理
 
