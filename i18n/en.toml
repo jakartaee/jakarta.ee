@@ -633,19 +633,20 @@ other = "Sign up now"
  other = "Jakarta EE 11 marks a significant step forward in simplifying enterprise Java with a strong focus on increasing developer productivity and performance. This release introduces new specifications and major updates to existing ones, ensuring compatibility with Java 17 and optimisations for Java 21."
 
 [jakarta-ee-version-11-features-block1-title]
- other = "Developer Productivity"
+ other = "Developer<br> Productivity"
 
 [jakarta-ee-version-11-features-block1-summary]
  other = """
-  <h4 class="fw-700">Jakarta Data</h4>
-  <p>The new Jakarta Data specification simplifies data access and enhances productivity by separating persistence logic across databases from the model using a simple interface.</p>
+  <h4 class="h5 fw-700 margin-top-0">Jakarta Data</h4>
+  <p>
+    The new Jakarta Data specification simplifies data access and enhances
+    productivity by separating persistence logic across databases from the
+    model using a simple interface. Key features include:
+  </p>
 """
 
 [jakarta-ee-version-11-features-block1-text]
  other = """
-   <p class="margin-bottom-0">
-      Key features include:
-   </p>
     <ul>
       <li>
         <strong>BasicRepository</strong>: A built-in repository supertype for
@@ -665,23 +666,65 @@ other = "Sign up now"
         repositories.
       </li>
     </ul>
-    <h4 class="fw-700">Streamlining the Platform</h4>
+    <h4 class="h5 fw-700">Streamlining the Platform</h4>
     <ul>
       <li>
-        Deprecated Specifications: The continued removal of outdated
+        <strong>Deprecated Specifications</strong>: The continued removal of outdated
         specifications to streamline and simplify development.
       </li>
+      <li>
+        <strong>Contexts and Dependency Injection (CDI) Enhancements</strong>:
+        Jakarta EE 11 release focuses on the continued shift towards CDI
+        centricity, including replacing Managed Beans with superior CDI
+        alternatives.
+      </li>
+      <li>
+        <strong>XML and REST Simplifications</strong>: Note the removal of
+        Jakarta XML Binding from Jakarta RESTful Web Services to streamline and
+        focus the framework's capabilities.
+      </li>
+      <li>
+        Embracing Records throughout the release
+      </li>
+      <li>
+        Deprecation of the SecurityManager
+      </li>
+      <li>
+        Removal of optional features
+      </li>
+      <li>
+        General cleanup and clarifications (continued from Jakarta EE 10)
+      </li>
     </ul>
+    <h4 class="h5 fw-700">Jakarta Validation supporting Java Records</h4>
+    <p>
+      This integration allows developers to use Java Records with Jakarta
+      Validation to ensure data integrity and reduce boilerplate code.
+    </p>
  """
 
 [jakarta-ee-version-11-features-block2-title]
  other = "Performance"
 
 [jakarta-ee-version-11-features-block2-summary]
- other = "Java Platform Support: The new release supports Java 17 or higher, with unique enhancements for those using Java 21 or above, such as:"
+ other = """
+  <p>
+    <strong>Java Platform Support</strong>: The new release supports Java 17 or
+    higher, with unique enhancements for those using Java 21 or above, such as:
+  </p>
+ """
 
 [jakarta-ee-version-11-features-block2-text]
- other = "This makes it easier to build modularized applications and offers improved integration across component APIs. Ultimately, Jakarta EE 10 helps developers more easily implement applications with modern security requirements, remove deprecated APIs, and maintain high levels of compatibility with prior Jakarta EE releases."
+ other = """
+    <ul>
+      <li>
+        <strong>Virtual Threads</strong>: The updated Concurrency specification
+        enables developers to leverage virtual threads in Java 21 to
+        significantly boost performance, allowing more efficient handling of
+        concurrent tasks without the overhead of traditional thread management.
+      </li>
+    </ul>
+ """
 
 [jakarta-ee-version-11-features-block3-title]
  other = "Lightweight"
