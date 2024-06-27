@@ -236,3 +236,110 @@
     font-size: 4.5rem;
   }
 }
+
+//== Badge Card
+
+.badge-card {
+  padding: 0 3rem 3.5rem;
+  background-color: @light-grey;
+  box-shadow: @default-box-shadow;
+
+  &-rounded {
+    border-radius: 1rem;
+  }
+}
+
+// Featured Section CTA Item
+.featured-section-cta-item {
+  .badge-card;
+  text-align:left;
+  box-shadow: @default-box-shadow;
+  text-transform: uppercase;
+  font-family: @font-family-sans-serif;
+  font-weight: 700;
+
+  h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color:@brand-primary;
+  }
+
+  h2,
+  h3,
+  .h2,
+  .h3 {
+    padding-top: 60px;
+  }
+
+  .heading-underline {
+      margin: 30px 0 20px;
+      &:after {
+          margin: 20px 0 0;
+      }
+  }
+  p {
+      font-size: 16px;
+      a {
+          color:@brand-secondary;
+          &:hover {
+              color:darken(@brand-secondary, 15%);
+          }
+      }
+  }
+
+  &-links {
+    text-transform: uppercase;
+    list-style: none;
+    padding: 0;
+
+    li {
+      display: flex;
+      align-items: first baseline;
+      margin-bottom: 1rem;
+      gap: 1rem;
+      font-size: 1.6rem;
+
+      & > .fa {
+        color: @brand-primary;
+      }
+    }
+
+    a {
+      color: @brand-secondary;
+    }
+  }
+}
+
+.featured-section-cta-item-container {
+    position:relative;
+    margin-top:-100px;
+}
+
+.featured-section-cta-item-img {
+    background-color:darken(@brand-primary, 20%);
+    box-shadow: 0px 4px 12px 2px rgba(0,0,0,0.2);
+    padding:12px 8px 4px;
+    width:60px;
+    height:60px;
+    float: right;
+    top: -8px;
+    position: relative;
+    right: 0px;
+    margin:0 auto;
+    display: flex;
+    justify-content: center;
+    &:after {
+        content:"";
+        position:absolute;
+        bottom:-10px;
+        left:0;
+        width: 0;
+        height: 0;
+        border-left: 30px solid transparent;
+        border-right: 30px solid transparent;
+        border-top: 10px solid darken(@brand-primary, 20%);
+    }
+    img {
+        width:45px;
+    }
+}
