@@ -5,6 +5,15 @@
 [watch-on-youtube]
   other = "Watch on YouTube"
 
+[read-more]
+  other = "Read More"
+
+[learn-more]
+  other = "Learn More"
+
+[browse-now]
+  other = "Browse Now"
+
 # Translations specific to pages
 [home-calltoaction-title]
   other = "Jakarta EE brings together a global community of leading developers, vendors, and enterprises to collaborate on advancing enterprise Java technologies in the cloud"
@@ -831,6 +840,20 @@ other = "Sign up now"
   possible. Let's hear it from our community members about what this new
   release means to them.
  """
+[jakarta-ee-version-11-info-card-tutorial-title]
+  other = "Jakarta EE<br>Tutorial"
+[jakarta-ee-version-11-info-card-tutorial-description]
+  other = "Learn how to use features of the Jakarta EE Platform"
+
+[jakarta-ee-version-11-info-card-starter-guides-title]
+  other = "Starter<br>Guides"
+[jakarta-ee-version-11-info-card-starter-guides-description]
+  other = "Quick, hands-on instructions for building different applications using Jakarta EE"
+
+[jakarta-ee-version-11-info-card-specification-guides-title]
+  other = "Specification<br>Guides"
+[jakarta-ee-version-11-info-card-specification-guides-description]
+  other = "In-depth explanations about how Jakarta EE specifications work"
 
 [pages-membership-title]
  other = "Shape the future of Cloud Native, Open Source Java"
