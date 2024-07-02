@@ -158,13 +158,15 @@
             <img class="info-card-icon" src="" alt="" />
           </div>
         </div>
-        <p class="info-card-heading big-text text-secondary">Jakarta EE<br>Tutorial</p>
+        <p class="info-card-heading big-text text-secondary">
+          {{ i18n "jakarta-ee-version-11-info-card-tutorial-title" | safeHTML }}
+        </p>
         <div class="info-card-body">
-          <p>Learn how to use features of the Jakarta EE Platform</p>
+          {{ i18n "jakarta-ee-version-11-info-card-tutorial-description" | safeHTML }}
         </div>
         <div class="info-card-link-container">
-          <a class="info-card-link big-text text-secondary uppercase" href="#">
-            Read More
+          <a class="info-card-link big-text text-secondary uppercase" href="{{ relURL "/learn/docs/jakartaee-tutorial/current/index.html" }}">
+            {{ i18n "read-more" }}
           </a>
         </div>
       </div>
@@ -176,17 +178,16 @@
           </div>
         </div>
         <p class="info-card-heading big-text text-secondary">
-          Starter<br>Guides
+          {{ i18n "jakarta-ee-version-11-info-card-starter-guides-title" | safeHTML }}
         </p>
         <div class="info-card-body">
           <p>
-            Quick, hands-on instructions for building different applications
-            using Jakarta EE
+            {{ i18n "jakarta-ee-version-11-info-card-starter-guides-description" | safeHTML }}
           </p>
         </div>
         <div class="info-card-link-container">
-          <a class="info-card-link big-text text-secondary uppercase" href="#">
-            Read More
+          <a class="info-card-link big-text text-secondary uppercase" href="{{ relLangURL "/learn/starter-guides" }}">
+            {{ i18n "learn-more" }}
           </a>
         </div>
       </div>
@@ -198,16 +199,16 @@
           </div>
         </div>
         <p class="info-card-heading big-text text-secondary">
-          Specification<br>Guides
+          {{ i18n "jakarta-ee-version-11-info-card-specification-guides-title" | safeHTML }}
         </p>
         <div class="info-card-body">
           <p>
-            In-depth explanations about how Jakarta EE specifications work
+            {{ i18n "jakarta-ee-version-11-info-card-specification-guides-description" | safeHTML }}
           </p>
         </div>
         <div class="info-card-link-container">
-          <a class="info-card-link big-text text-secondary uppercase" href="#">
-            Browse Now
+          <a class="info-card-link big-text text-secondary uppercase" href="{{ relLangURL "/learn/specification-guides" }}">
+            {{ i18n "browse-now" }}
           </a>
         </div>
       </div>
