@@ -726,16 +726,20 @@ other = "Sign up now"
 [jakarta-ee-version-11-features-block2-title]
  other = "Performance"
 
+[jakarta-ee-version-11-modal-performance-title]
+ other = "Performance"
+
 [jakarta-ee-version-11-features-block2-summary]
  other = """
-  <p>
-    <strong>Java Platform Support</strong>: The new release supports Java 17 or
-    higher, with unique enhancements for those using Java 21 or above, such as:
-  </p>
+  The new release supports Java 17 or higher, with unique enhancements for those using Java 21 or above, such as:
  """
 
-[jakarta-ee-version-11-features-block2-text]
+[jakarta-ee-version-11-modal-performance-body]
  other = """
+    <p>
+      <strong>Java Platform Support</strong>: The new release supports Java 17 or
+      higher, with unique enhancements for those using Java 21 or above, such as:
+    </p>
     <ul>
       <li>
         <strong>Virtual Threads</strong>: The updated Concurrency specification

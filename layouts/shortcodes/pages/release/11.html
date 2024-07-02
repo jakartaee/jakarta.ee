@@ -32,9 +32,8 @@
         <h3 class="heading-underline padding-top-20 text-primary big-text">
           {{ i18n "jakarta-ee-version-11-features-block2-title" | safeHTML }}
         </h3>
-        <div>{{ i18n "jakarta-ee-version-11-features-block2-summary" | safeHTML }}</div>
-        <div class="features-and-benefits-text">{{ i18n "jakarta-ee-version-11-features-block2-text" | safeHTML }}</div>
-        <div><a class="btn btn-primary btn-sm features-and-benefits-btn">Learn more</a></div>
+        <p class="margin-bottom-30">{{ i18n "jakarta-ee-version-11-features-block2-summary" | safeHTML }}</p>
+        <div><button class="btn btn-primary btn-sm" type="button" data-toggle="modal" data-target="#learn-more-performance">{{ i18n "learn-more" }}</a></div>
       </div>
     </div>
   </div>
@@ -245,8 +244,23 @@
 <div class="modal fade" id="read-more-productivity" tabindex="-1" role="dialog">
   <div class="modal-dialog" role="document">
     <div class="modal-content padding-30">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <i class="fa fa-close" aria-hidden="true"></i>
+      </button>
       <h2 class="heading-underline big-text">{{ i18n "jakarta-ee-version-11-modal-productivity-title" | safeHTML }}</h2>
       {{ i18n "jakarta-ee-version-11-modal-productivity-body" | safeHTML }}
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="learn-more-performance" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content padding-30">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <i class="fa fa-close" aria-hidden="true"></i>
+      </button>
+      <h2 class="heading-underline big-text">{{ i18n "jakarta-ee-version-11-modal-performance-title" | safeHTML }}</h2>
+      {{ i18n "jakarta-ee-version-11-modal-performance-body" | safeHTML }}
     </div>
   </div>
 </div>
