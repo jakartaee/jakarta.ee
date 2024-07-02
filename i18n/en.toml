@@ -651,16 +651,19 @@ other = "Sign up now"
 
 [jakarta-ee-version-11-features-block1-summary]
  other = """
-  <h4 class="h5 fw-700 margin-top-0">Jakarta Data</h4>
-  <p>
-    The new Jakarta Data specification simplifies data access and enhances
-    productivity by separating persistence logic across databases from the
-    model using a simple interface. Key features include:
-  </p>
+  The new Jakarta Data specification simplifies data access and enhances
+  productivity by separating persistence logic across databases from the model
+  using a simple interface.
 """
 
-[jakarta-ee-version-11-features-block1-text]
+[jakarta-ee-version-11-modal-productivity-body]
  other = """
+  <p>
+    <span class="h5 fw-700 margin-top-0">Jakarta Data:</p> The new Jakarta Data
+    specification simplifies data access and enhances productivity by
+    separating persistence logic across databases from the model using a simple
+    interface. Key features include:
+  </p>
     <ul>
       <li>
         <strong>BasicRepository</strong>: A built-in repository supertype for
@@ -716,6 +719,9 @@ other = "Sign up now"
       Validation to ensure data integrity and reduce boilerplate code.
     </p>
  """
+
+[jakarta-ee-version-11-modal-productivity-title]
+ other = "Developer Productivity"
 
 [jakarta-ee-version-11-features-block2-title]
  other = "Performance"
