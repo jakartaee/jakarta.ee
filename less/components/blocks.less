@@ -399,3 +399,68 @@
         width:45px;
     }
 }
+
+// Info cards
+.info-card {
+    display: flex;
+    flex-direction: column;
+    width: 25rem;
+    padding: 2rem;
+    margin: 0 1rem 2rem 1rem;
+    border-radius: 1rem;
+    background-color: #efeff0;
+    box-shadow: rgba(109, 117, 135, 0.5) 0px 8px 20px;
+
+    .info-card-icon-container {
+        min-height: 6rem;
+        margin: 1rem auto;
+    }
+
+    .info-card-icon-wrapper {
+        width: 100%;
+        max-width: 4rem;
+        height: 5rem;
+    }
+
+    .info-card-icon {
+        width: 100%;
+        height: inherit;
+        object-fit: contain;
+    }
+
+    .info-card-heading {
+        flex-shrink: 0;
+        font-size: 2.1rem;
+        height: 6rem;
+    }
+
+    .info-card-body {
+        display: flex;
+        height: 100%;
+        padding: 2rem 0 1.5rem 0;
+        align-content: center;
+    }
+
+    .info-card-link-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
+    .info-card-link {
+        font-size: 1.2rem;
+    }
+}
+
+.info-card.info-card-inverted {
+    background-color: @brand-primary;
+    
+    .info-card-body {
+        color: @white;
+    }
+}
+
+.info-cards {
+    align-items: stretch;
+}
+
