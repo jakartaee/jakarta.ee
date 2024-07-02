@@ -21,7 +21,7 @@ CREDENTIALS=$GH_TOKEN:x-oauth-basic
 CURSOR=null
 LIST_FILE=data/contributors/${1:-jakarta-ee-11.json} # first argument ('jakarta-ee-11.json' by default)
 EXCLUDED_LIST=data/contributors/excluded-list.json
-FROM_DATE=${2:-2021-05-18} # second argument ('2021-11-21' by default)
+FROM_DATE=${2:-2022-05-18} # second argument ('2022-05-18' by default)
 TO_DATE=${3:-2024-07-02} # third argument ('2024-07-02' by default)
 
 function getGrraphQL() {
