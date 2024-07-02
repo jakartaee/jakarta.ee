@@ -20,9 +20,8 @@
         <h3 class="heading-underline big-text text-primary padding-top-20">
           {{ i18n "jakarta-ee-version-11-features-block1-title" | safeHTML }}
         </h3>
-        <div>{{ i18n "jakarta-ee-version-11-features-block1-summary" | safeHTML }}</div>
-        <div class="features-and-benefits-text">{{ i18n "jakarta-ee-version-11-features-block1-text" | safeHTML }}</div>
-        <div><a class="btn btn-primary btn-sm features-and-benefits-btn">Learn more</a></div>
+        <p class="margin-bottom-30">{{ i18n "jakarta-ee-version-11-features-block1-summary" | safeHTML }}</p>
+        <div><button class="btn btn-primary btn-sm" type="button" data-toggle="modal" data-target="#read-more-productivity">{{ i18n "read-more" }}</a></div>
       </div>
     </div>
     <div class="col-sm-12 margin-bottom-15">
@@ -241,4 +240,13 @@
       </a>
     </li>
   </ul>
+</div>
+
+<div class="modal fade" id="read-more-productivity" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content padding-30">
+      <h2 class="heading-underline big-text">{{ i18n "jakarta-ee-version-11-modal-productivity-title" | safeHTML }}</h2>
+      {{ i18n "jakarta-ee-version-11-modal-productivity-body" | safeHTML }}
+    </div>
+  </div>
 </div>
