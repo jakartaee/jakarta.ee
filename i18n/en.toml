@@ -735,6 +735,89 @@ other = "Sign up now"
 [jakarta-ee-version-11-features-block3-text]
  other = "The new Core Profile provides a subset of Jakarta EE specifications that target smaller runtimes suitable for microservices development with lightweight runtimes.This includes an innovative new CDI-Lite specification for building lightweight Jakarta EE applications."
 
+[jakarta-ee-version-11-specifications-title]
+ other = """
+  Jakarta EE 11 brings significant API enhancements across multiple
+  specifications, incorporating features highly anticipated by the global
+  community.
+  """
+[jakarta-ee-version-11-specifications-text]
+ other = "Key updates include:"
+
+[jakarta-ee-version-11-specifications-list1]
+ other = """
+  Java SE Records can now be marked as <code>@Embeddable</code> or
+  <code>@IdClass</code> in Jakarta Persistence 3.2.
+ """
+[jakarta-ee-version-11-specifications-list2]
+ other = """
+  Validation rules can be applied to Java SE Records in Jakarta Validation 3.1.
+ """
+[jakarta-ee-version-11-specifications-list3]
+ other = """
+  Jakarta Persistence 3.2 automatically maps <code>java.time.Instant</code> and
+  <code>java.time.Year</code> as built-in types.
+ """
+[jakarta-ee-version-11-specifications-list4]
+ other = """
+  The use of <code>java.util/java.sql</code>,
+  <code>Date/Time/Timestamp/Calendar</code> and <code>@Temporal</code> is
+  deprecated in Persistence 3.2, in favor of the <code>java.time</code> API.
+ """
+[jakarta-ee-version-11-specifications-list5]
+ other = """
+  An <code>EntityManager</code> can now be <code>@Injected</code> with a
+  defined Jakarta Contexts and Dependency Injection (CDI) scope in Persistence
+  3.2.
+ """
+[jakarta-ee-version-11-specifications-list6]
+ other = """
+  Jakarta Concurrency 3.1 introduces support for Java SE Virtual Threads in
+  managed resources, such as via <code>@ManagedExecutorDefinition</code>.
+ """
+[jakarta-ee-version-11-specifications-list7]
+ other = """
+  Persistence 3.2 enhances query capabilities with various SQL-like features
+  such as <code>concat</code> (<code>||</code>), <code>union</code>,
+  <code>intersect</code>, <code>except</code>, <code>cast</code>,
+  <code>left</code>, <code>right</code>, and <code>replace</code>.
+ """
+
+[jakarta-ee-version-11-specifications-list8]
+ other = """
+  Persistence units can be configured using Java, providing an alternative to
+  the <code>persistence.xml</code> file in Persistence 3.2.
+ """
+
+[jakarta-ee-version-11-specifications-list9]
+ other = """
+  Producers can now specify an <code>@Priority</code> using CDI 4.1.
+ """
+[jakarta-ee-version-11-specifications-list10]
+ other = """
+  The <code>@Context</code> annotation has been deprecated in Jakarta RESTful Web Services
+  4.0.
+ """
+[jakarta-ee-version-11-specifications-list11]
+ other = """
+  Specifications for Jakarta SOAP with Attachments and Jakarta XML Binding have
+  been removed from the Jakarta EE 11 platform.
+ """
+[jakarta-ee-version-11-specifications-list12]
+ other = """
+  The requirement for Common Object Request Broker Architecture (CORBA)
+  interoperability has been eliminated.
+ """
+[jakarta-ee-version-11-specifications-list13]
+ other = """
+  The <code>@jakarta.annotation.ManagedBean</code> annotation is deprecated.
+ """
+[jakarta-ee-version-11-specifications-list14]
+ other = """
+  All specifications in Jakarta EE 11 have removed dependencies on the Java SE
+  <code>SecurityManager</code>.
+ """
+
 [pages-membership-title]
  other = "Shape the future of Cloud Native, Open Source Java"
 
