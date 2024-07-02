@@ -1,6 +1,11 @@
+# Generic translations to be used site-wide
 [jakarta-ee-logo-alt]
   other = "Jakarta EE logo"
 
+[watch-on-youtube]
+  other = "Watch on YouTube"
+
+# Translations specific to pages
 [home-calltoaction-title]
   other = "Jakarta EE brings together a global community of leading developers, vendors, and enterprises to collaborate on advancing enterprise Java technologies in the cloud"
 
@@ -816,6 +821,15 @@ other = "Sign up now"
  other = """
   All specifications in Jakarta EE 11 have removed dependencies on the Java SE
   <code>SecurityManager</code>.
+ """
+[jakarta-ee-version-11-community-video-title]
+ other = "Jakarta EE 11<br>Community Interviews"
+[jakarta-ee-version-11-community-video-description]
+ other = """
+  Jakarta EE 11 is here and we want to celebrate our dedicated community by
+  highlighting the passion and creativity that helped make this release
+  possible. Let's hear it from our community members about what this new
+  release means to them.
  """
 
 [pages-membership-title]
