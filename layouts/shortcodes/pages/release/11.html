@@ -41,9 +41,12 @@
   </div>
 
   <h2 class="text-center text-blue fw-600 uppercase margin-top-60">{{ i18n "jakarta-ee-version-11-specifications-title"  | safeHTML }}</h2>
+  {{ partial "svg.html" (dict "path" "/content/release/11/images/specifications-laptop.svg") }}
+  <!--
   <a class="jakartaee-10-platform-img-container margin-top-30" href="/release/10/images/jakarta-ee-10-platform.svg">
     <img class="jakartaee-platform-img img-responsive" src="/release/10/images/jakarta-ee-10-platform.svg" alt="New and Updated Specifications in Jakarta EE 10">
   </a>
+  -->
   <div class="row">
     <div class="col-sm-18 col-sm-offset-3">
       <p class="text-center big margin-top-60 margin-bottom-20">{{ i18n "jakarta-ee-version-11-specifications-text"  | safeHTML }}</p>
