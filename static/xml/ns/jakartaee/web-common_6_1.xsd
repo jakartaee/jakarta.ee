@@ -1471,7 +1471,7 @@
         <xsd:annotation>
           <xsd:documentation>
 
-            The maximum size limit of uploaded files
+            The maximum size limit of uploaded files in bytes
             
           </xsd:documentation>
         </xsd:annotation>
@@ -1483,7 +1483,7 @@
         <xsd:annotation>
           <xsd:documentation>
 
-            The maximum size limit of multipart/form-data requests
+            The maximum size limit of multipart/form-data requests in bytes
             
           </xsd:documentation>
         </xsd:annotation>
@@ -1495,7 +1495,7 @@
         <xsd:annotation>
           <xsd:documentation>
 
-            The size threshold after which an uploaded file will be
+            The size threshold (in bytes) after which an uploaded file will be
             written to disk
             
           </xsd:documentation>
