@@ -659,7 +659,7 @@ other = "Sign up now"
 [jakarta-ee-version-11-modal-productivity-body]
  other = """
   <p>
-    <span class="h5 fw-700 margin-top-0">Jakarta Data:</p> The new Jakarta Data
+    <span class="h5 fw-700 margin-top-0">Jakarta Data</p> The new Jakarta Data
     specification simplifies data access and enhances productivity by
     separating persistence logic across databases from the model using a simple
     interface. Key features include:
