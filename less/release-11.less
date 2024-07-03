@@ -6,8 +6,13 @@
   }
 
   .featured-jumbotron {
+    text-align: center;
     padding-top: 10rem;
-    padding-bottom: 10rem;
+    padding-bottom: 5rem;
+
+    @media (min-width: @screen-md-min) {
+      text-align: left;
+    }
 
     &-title-prefix {
       font-size: 1.75rem;
@@ -17,11 +22,21 @@
     &-title {
       position: relative;
       margin-bottom: 3rem;
-      font-size: 7.5rem;
+      font-size: 4rem;
 
+      // Hide the underline on mobile.
       .underlined {
-        text-underline-offset: 3rem;
-        text-decoration-thickness: 1px;
+        text-decoration: none;
+
+        @media (min-width: @screen-md-min) {
+          text-decoration: underline;
+          text-underline-offset: 3rem;
+          text-decoration-thickness: 1px;
+        }
+      }
+
+      @media (min-width: @screen-md-min) {
+        font-size: 7.5rem;
       }
     }
 
@@ -32,8 +47,12 @@
     }
 
     &-tagline {
-      font-size: 3rem;
+      font-size: 2rem;
       font-style: italic;
+
+      @media (min-width: @screen-md-min) {
+        font-size: 3rem;
+      }
     }
 
     .additional-links {
@@ -46,16 +65,39 @@
     }
 
     .btn-contained {
-      padding: 1.5rem;
+      display: block;
+      width: 100%;
+      padding: 1rem;
+    }
+
+    @media (min-width: @screen-md-min) {
+      &-links {
+        display: flex;
+        gap: 2rem;
+      }
+
+      .btn-contained {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        white-space: break-spaces;
+        min-height: 7.5rem;
+      }
     }
   }
 
   .release-number {
-    position: absolute;
-    top: -3rem;
-    font-size: 16rem;
+    display: block;
+    font-size: 8rem;
     font-style: italic;
     letter-spacing: -0.2ch;
+
+    @media (min-width: @screen-md-min) {
+      display: inline;
+      position: absolute;
+      top: -3rem;
+      font-size: 16rem;
+    }
   }
 }
 
