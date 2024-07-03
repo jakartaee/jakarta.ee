@@ -449,6 +449,16 @@
 
     .info-card-link {
         font-size: 1.2rem;
+        &,
+        &:link,
+        &:visited,
+        &:active {
+          color: @brand-secondary;
+        }
+
+        &:hover {
+          color: darken(@brand-secondary, 10%);
+        }
     }
 }
 
