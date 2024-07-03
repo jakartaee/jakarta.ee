@@ -15,7 +15,7 @@ This committee owns the overall strategy and the high level, long term roadmap s
 * Steve Millidge - Payara, Ilias Efstathiou - alternate
 * David Blevins - Tomitribe, Cesar Hernandez - alternate
 * Marcin Kruglik - London Jamocha Community - Elected Participant Member Representative - Abraham Marin-Perez - alternate 
-* Arjan Tijms - Elected Committer Member Representative
+* Vacant - Elected Committer Member Representative
 * Dr. Jun Qian - Primeton - Elected Enterprise Representative
 * Reza Rahman - Microsoft - Elected Enterprise Representative, Ed Burns - alternate
 
