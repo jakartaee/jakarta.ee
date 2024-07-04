@@ -1,75 +1,48 @@
 ---
-title: "How to Start with Servlets Using Jakarta EE 10" 
+title: "从使用 Jakarta EE 10 构建 Servlets开始"
 date: 2023-09-22
-headline: "How to Start with Servlets Using Jakarta EE 10" 
+headline: "开始使用 Jakarta EE 10 构建 Servlets开始"
 description: >-
-  This guide aims to walk you through the process of building a simple Servlet
-  application using Jakarta Servlet.
-keywords: ['servlet', 'tutorial', 'guide', 'application', 'wildfly']
+  本指南旨在带您了解使用 Jakarta Servlet 构建一个简单的 Servlet 应用程序的过程。
+keywords: ['servlet', '教程', '指南', '应用程序', 'wildfly']
 hide_page_title: true
+categories: ["Starter Guides"]
 ---
 
-This guide aims to walk you through the process of building a simple Servlet
-application using [Jakarta Servlet](/specifications/servlet/6.0/). We'll start
-by outlining what we aim to achieve and then step-by-step guide you through
-setting up your environment, writing code, and deploying the Servlet
-application. If you're new to Servlets or Jakarta EE, this guide should be a
-great starting point.
+本指南旨在带您了解使用 [Jakarta Servlet](/specifications/servlet/6.0/) 构建一个简单的 Servlet 应用程序的过程。我们将首先概述我们的目标，然后逐步引导您设置环境、编写代码和部署 Servlet 应用程序。如果您是 Servlets 或 Jakarta EE 的新手，本指南应该是一个很好的起点。
 
-We'll develop an application that accomplishes the following:
-- Presents a form asking the user to select their coffee preferences (e.g.,
-  black, latte, cold brew).
-- Stores these preferences in a session.
-- Dynamically generates a "Coffee Dashboard," displaying personalized coffee
-  recommendations.
+我们将开发一个实现以下功能的应用程序：
+- 提供一个表单，要求用户选择他们的咖啡偏好（例如，黑咖啡、拿铁、冷萃）。
+- 将这些偏好存储在会话中。
+- 动态生成一个“咖啡仪表板”，显示个性化的咖啡推荐。
 
-OK, now that we have specified our requirements, you will need to follow these
-steps:
+好的，现在我们已经明确了我们的要求，您需要按照以下步骤操作：
 
-## Set up your development environment:
-- Install a Java Development Kit (JDK). Please make sure you have Java SE 11 or
-  higher (we have tested with Java SE 11 and Java SE 17). You can choose any
-  vendor distribution of your choice as well as from
-  [Adoptium](https://adoptium.net/en-GB). 
-- Install an application server that supports Jakarta EE. Download any of the
-  Jakarta EE-compatible [products](/compatibility/download/). 
-- Install [Maven](https://maven.apache.org/) 3 or higher  
+## 设置开发环境：
+- 安装 Java 开发工具包（JDK）。请确保您安装了 Java SE 11 或更高版本（我们已使用 Java SE 11 和 Java SE 17 进行测试）。您可以选择任何供应商的发行版，也可以选择 [Adoptium](https://adoptium.net/en-GB)。
+- 安装支持 Jakarta EE 的应用服务器。下载任何 [Jakarta EE 兼容的](/compatibility/download/) 产品。
+- 安装 [Maven](https://maven.apache.org/) 3 或更高版本  
 
-To install JDK and Maven, we can use the [SDKMan](https://sdkman.io/). We can
-go through the steps mentioned in the [how-to](https://sdkman.io/install)
-guide.
+安装 JDK 和 Maven，我们可以使用 [SDKMan](https://sdkman.io/)。我们可以按照 [如何操作](https://sdkman.io/install) 指南中提到的步骤进行。
 
-## How to complete this guide
+## 如何完成本指南
 
-In this getting started guide, you may use Eclipse Starter for Jakarta EE,
-finish each step, or skip fundamental setup stages you already know. You can
-also begin with an IDE or choose a project structure from well-known 
-[Maven archetypes](https://maven.apache.org/guides/introduction/introduction-to-archetypes.html).
+在这个入门指南中，您可以使用 Eclipse Starter for Jakarta EE，完成每个步骤，或者跳过您已经知道的基础知识阶段。您也可以从 IDE 开始，或从知名的 [Maven 原型](https://maven.apache.org/guides/introduction/introduction-to-archetypes.html) 中选择一个项目结构。
 
-## Create a new project with Eclipse Starter for Jakarta EE
+## 使用 Eclipse Starter for Jakarta EE 创建一个新项目
 
-To use Eclipse Starter for Jakarta EE, we need to take the following steps:
+要使用 Eclipse Starter for Jakarta EE，我们需要采取以下步骤：
 
-1. Navigate to https://start.jakarta.ee. This service will set up all the
-   essential dependencies for an application. The current version of the
-   Starter only supports Maven. In the future, we may be able to choose between
-   Gradle and Maven.
-   {{< figure class="margin-top-40 margin-bottom-40" src="../images/generate-project-detailed-se-17.jpg" alt="A screenshot of the form from start.jakarta.ee to generate a Jakarta EE project." >}}
-2. Select the desired version of Jakarta EE from the available options.
-   Currently, the options include Jakarta EE 8, Jakarta EE 9.1, and Jakarta EE 10. 
-   In addition, you may choose the Jakarta EE Platform or one of the Jakarta EE
-   profiles (Web, Core).
-3. For this project, we have chosen Jakarta EE 10 Platform, Java SE 17 and
-   [WildFly](https://www.wildfly.org/) as a Runtime.
-4. Once we have selected our desired options, we will click the generate
-   button. This will give us the project structure and sample code, which we
-   can then build and run.
+1. 导航到 [https://start.jakarta.ee](https://start.jakarta.ee.)。此服务将为应用程序设置所有必要的依赖项。当前版本的 Starter 仅支持 Maven。未来，我们可能能够在 Gradle 和 Maven 之间进行选择。
+   {{< figure class="margin-top-40 margin-bottom-40" src="/learn/starter-guides/images/generate-project-detailed-se-17.jpg" alt="从 start.jakarta.ee 生成 Jakarta EE 项目的表单的屏幕截图。" >}}
+2. 从可用选项中选择所需的 Jakarta EE 版本。目前，选项包括 Jakarta EE 8、Jakarta EE 9.1 和 Jakarta EE 10。
+   此外，您可以选择 Jakarta EE Platform 或 某种Jakarta EE Profile（Web、Core）。
+3. 对于此项目，我们选择了 Jakarta EE 10 平台、Java SE 17 和 [WildFly](https://www.wildfly.org/) 作为运行时。
+4. 选择所需的选项，点击生成按钮，将生成项目结构和示例代码，用以构建并运行。
 
-## Let’s explore the code structure
+## 让我们探索代码结构
 
-When we unpack the generated code, we will have the structure of an
-application. We can open it in our favourite IDE, and then we can just run it
-from the command line. 
+解压缩生成的代码，我们将拥有一个应用程序的结构，可以在自己喜欢的 IDE 中打开，然后从命令行运行。
 
 ```txt
 .
@@ -94,66 +67,41 @@ from the command line.
             └── index.html
 ```
 
-This generated source code comes with an embedded Maven wrapper. So if you want
-to use it, make sure you run the following command first for Unix environments
-(Linux or Mac):
+生成的源代码附带了一个嵌入式 Maven Wrapper。因此，请确保您首先为 Unix 环境（Linux 或 Mac）运行以下命令：
 
 ```bash
 $ chmod +x mvnw
 ```
 
-Since we are using WildFly as a runtime, the following command would run the
-application: 
+由于我们使用 WildFly 作为运行时，以下命令将运行应用程序：
 
 ```bash
 $ ./mvnw clean package wildfly:run
 ```
 
-On the other hand, if you have Maven installed, you can run the following
-command:
+另一方面，如果您安装了 Maven，可以运行以下命令：
 
 ```bash
 $ mvn clean package wildfly:run
 ```
 
-For Windows, we don't need to run `chmod` command; rather use `mvnw.cmd`
-instead of `mvnw`.
+对于 Windows，不需要运行 `chmod` 命令；而是使用 `mvnw.cmd` 代替 `mvnw`。
 
-Now, if you hit the browser with the following URL, you will see the result.\
+好了，使用以下 URL 打开浏览器，您将看到结果。
 <span>http://localhost:8080/jakartaee-hello-world</span>
 
-We have already covered how to test them out in our previous article, so we’re
-skipping it.
+我们已经在前一篇文章中介绍了如何测试，此处不再赘述。
 
-## Setting up the Jakarta Servlet
+## 设置 Jakarta Servlet
 
-As we aim to kick off our journey with Jakarta Servlets, let's first grasp the
-essence of what Jakarta Servlets are all about. Originally part of the Java EE
-ecosystem and previously known as Java Servlets, Jakarta Servlets are a set of
-APIs in the Jakarta EE platform that enable server-side Java applications to
-handle HTTP requests and responses. Unlike traditional methods of dealing
-directly with low-level socket programming, Jakarta Servlets provides a
-high-level, component-based approach to building web applications. This makes
-it easier for developers to focus on business logic, as the underlying protocol
-handling and lifecycle management are taken care of by the Jakarta Servlet API.
+当我们的目标是与Jakarta Servlet开启我们的旅程时，让我们首先了解 Jakarta Servlets 的本质。Jakarta Servlets 最初是 Java EE 生态系统的一部分，以前称为 Java Servlets，是 Jakarta EE 平台中的一组 API，使服务器端 Java 应用程序能够处理 HTTP 请求和响应。与直接处理低级套接字编程的传统方法不同，Jakarta Servlets 提供了一种高级的、基于组件的方法来构建 web 应用程序。这使得开发人员更容易专注于业务逻辑，因为 Jakarta Servlet API 负责处理底层协议和生命周期管理。
 
-The
 [HttpServlet](/specifications/servlet/6.0/apidocs/jakarta.servlet/jakarta/servlet/http/httpservlet)
-interface plays a pivotal role in the Jakarta Servlet API, serving as the
-cornerstone for creating HTTP-specific servlets. It is an abstract class that
-extends the
+接口在 Jakarta Servlet API 中起着关键作用，是用以创建特定于 HTTP（HTTP-specific）  servlet的基石 。它是一个抽象类，扩展了
 [GenericServlet](/specifications/servlet/6.0/apidocs/jakarta.servlet/jakarta/servlet/genericservlet)
-class and provides methods like `doGet()`, `doPost()`, `doPut()`, etc., to
-handle various types of HTTP requests. When you create a custom servlet, you
-typically extend the `HttpServlet` class and override these methods to define
-the behaviour of your servlet for each HTTP request method.
+类，并提供了像 `doGet()`、`doPost()`、`doPut()` 等方法来处理各种类型的 HTTP 请求。当您创建自定义 servlet 时，通常扩展 `HttpServlet` 类并覆盖这些方法，用以定义您的 servlet 的行为，这些行为之于每个 HTTP 请求方法会有所不同。
 
-Creating your own servlet involves a few straightforward steps. First, create a
-new Java class that extends `HttpServlet`. Then, override the HTTP methods you
-want your servlet to handle-commonly `doGet()` for handling GET requests and
-`doPost()` for POST requests. For example, to create a simple servlet that
-returns a "Hello, World!" message for GET requests, you'd extend `HttpServlet`
-and override the `doGet()` method like so:
+创建自己的 servlet 涉及几个简单的步骤。首先，创建一个扩展 `HttpServlet` 的新 Java 类。然后，覆盖您希望 servlet 处理的 HTTP 方法——通常是 `doGet()` 用于处理 GET 请求和 `doPost()` 用于 POST 请求。例如，要创建一个简单的 servlet，对于 GET 请求返回“Hello, World!”消息，您将扩展 `HttpServlet` 并像这样覆盖 `doGet()` 方法：
 
 ```java
 import jakarta.servlet.*;
@@ -172,61 +120,45 @@ public class HelloWorldServlet extends HttpServlet {
 }
 ```
 
-
-The
 [`@WebServlet`](/specifications/servlet/6.0/apidocs/jakarta.servlet/jakarta/servlet/annotation/webservlet)
-annotation is a key feature in modern Jakarta Servlets, used to define the
-configuration and URL mapping of a Servlet class. When you see
-`@WebServlet("/hello")` above a class definition, it signifies that this
-particular Servlet will respond to HTTP requests that target the `/hello` path
-within your application's context root.
+注解是现代 Jakarta Servlets 中的一个关键特性，用于定义 Servlet 类的配置和 URL 映射。当您在类定义上方看到 `@WebServlet("/hello")` 时，它表示这个特定的 Servlet 将响应针对应用程序上下文根中的 `/hello` 路径的 HTTP 请求。
 
-Now, if we compile and rerun the application and hit the following URL on the
-browser, we will be able to see the output.
+现在，如果我们编译并重新运行应用程序，并在浏览器上访问以下 URL，我们将能够看到输出。
 
 http://localhost:8080/jakartaee-hello-world/hello
 
-Now that we have accomplished writing a simple hello world servlet application
-let’s go ahead and try a bit more complex one.
+现在我们已经完成了编写一个简单的 hello world servlet 应用程序，让我们继续尝试一个更复杂的。
 
-## Steps to Create Coffee Servlets
+## 创建 Coffee Servlets 的步骤
 
-### 1. Create the Coffee Preferences HTML Form
+### 1. 创建 Coffee Preferences HTML 表单
 
-First, create an HTML file named `coffee_preferences.html` that includes
-checkboxes for various coffee types. Place the file in the `WEB-INF` folder.
+首先，创建一个名为 `coffee_preferences.html` 的 HTML 文件，其中包括各种咖啡类型的复选框。将文件放置在 `WEB-INF` 文件夹中。
 
 ```html
 <!DOCTYPE html>
 <html>
   <head>
-     <title>Coffee Preferences</title>
+     <title>咖啡偏好</title>
   </head>
   <body>
     <form action="storePreferences" method="post">
-       <p>Select your coffee preferences:</p>
-       <input type="checkbox" name="coffeeType" value="Black"> Black<br>
-       <input type="checkbox" name="coffeeType" value="Latte"> Latte<br>
-       <input type="checkbox" name="coffeeType" value="Cold Brew"> Cold Brew<br>
+       <p>选择您的咖啡偏好：</p>
+       <input type="checkbox" name="coffeeType" value="Black"> 黑咖啡<br>
+       <input type="checkbox" name="coffeeType" value="Latte"> 拿铁<br>
+       <input type="checkbox" name="coffeeType" value="Cold Brew"> 冷萃<br>
 
-       <input type="submit" value="Submit">
+       <input type="submit" value="提交">
     </form>
   </body>
 </html>
 ```
 
-The `WEB-INF` folder in a Jakarta EE or Java EE web application serves as a
-secure directory to store resources that should not be directly accessible by
-clients. When you place HTML files (or any other web resources like JSPs) in
-the `WEB-INF` folder, they become inaccessible via a direct URL request from
-the client's browser. This provides an additional layer of security for
-application resources that should only be accessible through Servlets or other
-server-side components.
+在Jakarta EE 或 Java EE web 应用程序中， `WEB-INF` 作为一个安全的目录，用于存储不应直接由客户端访问的资源。当您将 HTML 文件（或其他 web 资源，如 JSP）放置在 `WEB-INF` 文件夹中时，将无法通过客户端浏览器的直接 URL 请求对其进行访问。这种机制为某些应用程序资源供了额外的安全层，使其仅能通过 Servlet 或其他服务器端组件被访问。
 
-### 2. Create the Servlet to Store Preferences
+### 2. 创建存储咖啡偏好的 Servlet
 
-Now, let's create a Servlet that serves the `coffee_preferences.html` and
-captures the selected coffee types and stores them in a session.
+现在，让我们创建一个 Servlet，用于提供 `coffee_preferences.html` 并捕获所选的咖啡类型并将它们存储在会话中。
 
 ```java
 package org.eclipse.jakarta.hello;
@@ -256,21 +188,11 @@ public class StorePreferencesServlet extends HttpServlet {
 }
 ```
 
-The Jakarta Servlet, `StorePreferencesServlet`, is written to handle both the
-displaying and storing of user coffee preferences. The Servlet is mapped to the
-`/storePreferences` URL via the `@WebServlet` annotation. The doGet method
-forwards the request to an HTML page located at
-`/WEB-INF/coffee_preferences.html`, which contains the form for users to select
-their coffee preferences. The `doPost` method, on the other hand, captures the
-user's coffee preferences from the submitted form. These preferences are stored
-as an array of strings in an HTTP session under the attribute name
-`userCoffeeTypes`. Once the preferences are stored, the user is redirected to
-the `coffeeDashboard` servlet.
+Jakarta Servlet，`StorePreferencesServlet`，旨在显示和存储用户咖啡偏好。Servlet 通过 `@WebServlet` 注解映射到 `/storePreferences` URL。doGet 方法将请求转发到位于 `/WEB-INF/coffee_preferences.html` 的 HTML 页面，该页面包含用户选择咖啡偏好的表单。另一方面，doPost 方法捕获提交表单中的用户咖啡偏好。这些偏好作为字符串数组存储在 HTTP 会话中的 `userCoffeeTypes` 属性下。一旦存储了偏好，用户将被重定向到 `coffeeDashboard` servlet。
 
-### 3. Create the Servlet to Generate Personalized Coffee Recommendations
+### 3. 创建生成个性化咖啡推荐的 Servlet
 
-Now, let's create another Servlet that reads the stored coffee preferences and
-dynamically generates a list of recommended coffee.
+现在，让我们创建另一个 Servlet，它读取存储的咖啡偏好并动态生成推荐的咖啡列表。
 
 ```java
 package org.eclipse.jakarta.hello;
@@ -287,21 +209,21 @@ import java.util.Map;
 @WebServlet("/coffeeDashboard")
 public class CoffeeDashboardServlet extends HttpServlet {
 
-   //This could ideally  come from a database
+   //这理想情况下应该来自数据库
    private static final Map<String, String> COFFEE_DESCRIPTIONS = new HashMap<>();
 
    static {
        COFFEE_DESCRIPTIONS.put("Black", """
-           <p>Black coffee has a robust flavor, perfect for those who prefer a coffee with some bite.</p>
-           <p>Try brewing methods like French Press or Aeropress for an enjoyable black coffee experience.</p>
+           <p>黑咖啡具有浓郁的风味，非常适合那些喜欢有点力度的咖啡的人。</p>
+           <p>尝试使用法压壶或 Aeropress 等冲泡方法，享受愉快的黑咖啡体验。</p>
        """);
        COFFEE_DESCRIPTIONS.put("Latte", """
-           <p>A latte is a creamy delight, suitable for people who enjoy a smoother and less harsh flavor.</p>
-           <p>Experimenting with various syrups and sweeteners can elevate your latte experience.</p>
+           <p>拿铁是一种奶油般的享受，适合喜欢更平滑、不那么刺激口味的人。</p>
+           <p>尝试使用各种糖浆和甜味剂可以提升您的拿铁体验。</p>
        """);
        COFFEE_DESCRIPTIONS.put("Cold Brew", """
-           <p>Cold brew coffee tends to be smoother and less acidic. It's perfect for those hot summer days.</p>
-           <p>Try brewing a batch in the fridge overnight for a refreshing morning pick-me-up.</p>
+           <p>冷萃咖啡往往更平滑、酸性更小。它非常适合炎热的夏日。</p>
+           <p>尝试在冰箱里过夜冲泡一批，为清晨提神。</p>
        """);
    }
 
@@ -319,14 +241,14 @@ public class CoffeeDashboardServlet extends HttpServlet {
        out.println("""
            <html>
            <body>
-           <h1>Your Personalized Coffee Dashboard</h1>
+           <h1>您的个性化咖啡仪表板</h1>
        """);
 
        for (String coffeeType : coffeeTypes) {
            String additionalInfo = COFFEE_DESCRIPTIONS.get(coffeeType);
            out.println("""
-           <h2>Recommended %s</h2>
-           <p>Here are some %s blends you might enjoy.</p>
+           <h2>推荐 %s</h2>
+           <p>这里有一些您可能会喜欢的 %s 混合咖啡。</p>
            %s
        """.formatted(coffeeType, coffeeType, additionalInfo));
        }
@@ -342,8 +264,8 @@ public class CoffeeDashboardServlet extends HttpServlet {
        out.println("""
        <html>
            <body>
-               <h1>No Coffee Types Found</h1>
-               <p>Please select at least one type of coffee.</p>
+               <h1>未发现咖啡类型</h1>
+               <p>请选择至少一种咖啡。</p>
            </body>
        </html>
        """);
@@ -351,37 +273,26 @@ public class CoffeeDashboardServlet extends HttpServlet {
 }
 ```
 
-The `CoffeeDashboardServlet` class generates a personalized coffee dashboard
-based on the user's coffee preferences.  The Servlet is mapped to the URL
-`/coffeeDashboard` via the `@WebServlet` annotation. It employs a static
-`HashMap` named `COFFEE_DESCRIPTIONS` to store descriptions for different types
-of coffee—this is a stand-in for what could ideally be fetched from a database.
+`CoffeeDashboardServlet` 类根据用户的咖啡偏好生成个性化的咖啡仪表板。Servlet 通过 `@WebServlet` 注解映射到 URL `/coffeeDashboard`。
+它使用一个名为 `COFFEE_DESCRIPTIONS` 的静态 `HashMap` 来存储不同类型咖啡的描述——在本例中，这是权宜之计，理想情况下应该从数据库中获取该内容。
 
-The servlet overrides the `doGet` method to handle HTTP GET requests. Inside
-this method, it first retrieves the user's coffee preferences stored in an HTTP
-session. If no preferences are found, a default message is displayed by calling
-the `handleNoCoffeeTypes` method. Otherwise, it iterates through the selected
-coffee types and fetches their corresponding descriptions from the
-`COFFEE_DESCRIPTIONS` map. Finally, it generates HTML content to display this
-information in a personalized dashboard.
+Servlet 覆盖了 `doGet` 方法来处理 HTTP GET 请求。在这个方法内部，它首先检索存储在 HTTP 会话中的用户咖啡偏好。如果没有找到偏好，将通过调用 `handleNoCoffeeTypes` 方法显示默认消息。否则，它将遍历所选的咖啡类型，并从 `COFFEE_DESCRIPTIONS` 映射中获取相应的描述。最后，它生成 HTML 内容以在个性化仪表板中显示这些信息。
 
-That's it. Our application is done; now, we can rerun it again and test it out.
+就这样。我们的应用程序完成了；现在，我们可以再次运行它并进行测试。
 
-## Testing out the application
+## 测试应用程序
 
-Once deployed, open a web browser and navigate to:
+部署后，在 web 浏览器中打开并导航到：
 [http://localhost:8080/jakartaee-hello-world/storePreferences](http://localhost:8080/jakartaee-hello-world/storePreferences)
 
-It will open the following page: 
+它将打开以下页面：
 
-{{< figure class="margin-top-40 margin-bottom-40 margin-left-60 margin-right-60" src="../images/servlet-checklist.jpg" alt="A webpage with a checklist labelled as \"Select your coffee preferences\" with three options: \"Black\"; \"Latte\"; and \"Cold Brew\"." >}}
+{{< figure class="margin-top-40 margin-bottom-40 margin-left-60 margin-right-60" src="/learn/starter-guides/images/servlet-checklist.jpg" alt="一个带有标题为 \"选择您的咖啡偏好\" 的清单网页，有三个选项：\"黑咖啡\"；\"拿铁\"；和 \"冷萃\"。" >}}
 
-Choose your preferred coffee type and hit the 'Submit' button; you'll then be
-directed to the subsequent page.
+选择您喜欢的咖啡类型并点击“提交”按钮；然后您将被引导到下一页。
 
-{{< figure class="margin-top-40 margin-bottom-40 margin-left-60 margin-right-60" src="../images/servlet-dashboard.jpg" alt="A webpage with the heading \"Your Personalized Coffee Dashboard\", a subheading \"Recommended Latte\", and body text recommending latte blends that you may enjoy." >}}
+{{< figure class="margin-top-40 margin-bottom-40 margin-left-60 margin-right-60" src="/learn/starter-guides/images/servlet-dashboard.jpg" alt="一个网页，标题为 \"您的个性化咖啡仪表板\"，副标题为 \"推荐拿铁\"，并推荐您可能会喜欢的拿铁混合咖啡。" >}}
 
-## Conclusion
+## 结论
 
-Congratulations! You have just learned how to develop an application with
-Jakarta Servlet.
+恭喜您！您刚刚学会了如何使用 Jakarta Servlet 开发应用程序。

@@ -1,26 +1,21 @@
 ---
-title: How to Secure a RESTful Web Service Using Jakarta EE
+title: 使用Jakarta EE对RESTful Web服务进行认证保护
 date: 2023-09-29
-headline: How to Secure a RESTful Web Service Using Jakarta EE
-seo_title: How to Secure a RESTful Web Service Using Jakarta EE | Jakarta EE
+headline: 使用Jakarta EE对RESTful Web服务进行认证保护
+seo_title: 使用Jakarta EE对RESTful Web服务进行认证保护 | Jakarta EE
 description: >-
-  This guide shows you how to secure a rest endpoint using Jakarta
-  Authentication. 
-tags: ['rest', 'api', 'service', 'starter', 'authentication', 'auth', 'security']
+  本指南向您展示如何使用Jakarta Authentication功能对RESTful服务进行访问认证。
+tags: ['rest', 'api', 'service', '入门', 'authentication', 'auth', 'security']
 hide_page_title: true
 weight: 2
+categories: ["Starter Guides"]
 ---
 
-This guide shows you how to secure a rest endpoint using 
-[Jakarta Authentication](https://jakarta.ee/specifications/authentication/).
+本指南向您展示如何使用[Jakarta Authentication](https://jakarta.ee/specifications/authentication/)对RESTful服务进行访问认证。
 
-As we delve into securing RESTful web services, let's first define a basic
-scenario that we will be working with throughout this article.
+在我们深入探讨如何对RESTful Web服务进行认证之前，让我们首先概述一下本篇文章中的使用场景。
 
-We are constructing a service that will accept an HTTP GET request at
-<span>http://localhost:8080/jakartaee-hello-world/rest/hello</span>. In
-response to this request, our service will return a JSON payload, as shown in
-the following example:
+我们构建一个RESTful Web 服务，该服务通过<span>http://localhost:8080/jakartaee-hello-world/rest/hello</span>的HTTP GET方法进行访问，正常情况下请求会得到如下响应：
 
 ```json
 {
@@ -28,60 +23,38 @@ the following example:
 }
 ```
 
-In this article, we will secure this endpoint.
+在本文中，我们将重点介绍对这个服务进行访问认证保护，这里只是个简单的样例，实际生产中需要进一步增强逻辑以满足更复杂的需求。
 
-Over time, this service can be further enhanced and customized to fit more
-complex requirements and situations. By starting with this simple setup, we can
-get a better grasp of the fundamental steps involved in securing a RESTful web
-service using Jakarta EE. Now, let's proceed with those steps. For those
-unfamiliar with RESTful web services, we recommend reading our 
-[previous article](../how-to-build-a-restful-web-service).
+通过一个简单样例，我们可以更好地了解如何使用Jakarta EE对RESTful Web 服务进行认证保护所涉及的基本步骤。如果您对RESTful Web 服务还不了解，请阅读我之前的文章[如何构建RESTful Web服务](../how-to-build-a-restful-web-service)。
 
-## Set up your development environment:
+## 准备开发环境：
 
-- Install a Java Development Kit (JDK). Please make sure you have Java SE 11 or
-  higher (we have tested with Java SE 11 and Java SE 17). You can choose any
-  vendor distribution of your choice as well as from
-  [Adoptium](https://adoptium.net/).
-- Install an application server that supports Jakarta EE. Download any of the
-  Jakarta EE-compatible [products](/compatibility/download/).
-- Install [Maven](https://maven.apache.org/) 3 or higher.
-  
-To install JDK and Maven, we can use the [SDKMan](https://sdkman.io/). We can
-go through the steps mentioned in the [how-to](https://sdkman.io/install)
-guide.
+- 安装Java开发工具包（JDK）。请确保您拥有Java SE 11或更高版本（我们已使用Java SE 11和Java SE 17进行了测试）。您可以选择任何您喜欢的供应商发行版，也可以从[Adoptium](https://adoptium.net/)获取。
+- 安装支持Jakarta EE的应用程序服务器。您可以下载任何与Jakarta EE兼容的[产品](/compatibility/download/)。
+- 安装[Maven](https://maven.apache.org/) 3或更高版本。
 
-## How to complete this guide
+我们可以使用[SDKMan](https://sdkman.io/)安装JDK和Maven，可以按照[如何操作](https://sdkman.io/install)指南中提到的步骤进行操作。
 
-In this getting started guide, you may use Eclipse Starter for Jakarta EE,
-finish each step, or skip fundamental setup stages you already know. You can
-also begin with an IDE or choose a project structure from well-known 
-[Maven archetypes](https://maven.apache.org/guides/introduction/introduction-to-archetypes.html).
+## 如何完成本指南
 
-## Create a new project with Eclipse Starter for Jakarta EE
+在本入门指南中，您可以使用Jakarta EE的Eclipse Starter，完成每个步骤，或者跳过您已经知道的基本设置阶段。您还可以使用IDE选择熟悉的[Maven原型](https://maven.apache.org/guides/introduction/introduction-to-archetypes.html)进行工程构建。
 
-To use Eclipse Starter for Jakarta EE, we need to take the following steps:
+## 使用Jakarta EE的Eclipse Starter创建新项目
 
-1. Navigate to https://start.jakarta.ee. This service will set up all the
-   essential dependencies for an application. The current version of the
-   Starter only supports Maven. In the future, we may be able to choose between
-   Gradle and Maven.
-   {{< figure class="margin-top-40 margin-bottom-40" src="../images/generate-project-detailed.jpg" alt="A screenshot of the form from start.jakarta.ee to generate a Jakarta EE project." >}}
-2. Select the desired version of Jakarta EE from the available options.
-   Currently, the options include Jakarta EE 8, Jakarta EE 9.1, and 
-   Jakarta EE 10. In addition, you may choose the Jakarta EE Platform or one of
-   the Jakarta EE profiles (Web, Core).
-3. For this project, we have chosen Jakarta EE 10 Platform, Java SE 11 and
-   [WildFly](https://www.wildfly.org/) as a Runtime.
-4. Once we have selected our desired options, we will click the generate
-   button. This will give us the project structure and sample code, which we
-   can then build and run.
+要使用Jakarta EE的Eclipse Starter，我们需要采取以下步骤：
 
-## Let's explore the code structure
+1. 访问https://start.jakarta.ee。该服务将为应用程序设置所有必要的依赖项。当前版本的Starter仅支持Maven。不久会支持Gradle。
+   {{< figure class="margin-top-40 margin-bottom-40" src="/learn/starter-guides/images/generate-project-detailed.jpg" alt="来自start.jakarta.ee的表单截图，用于生成Jakarta EE项目。" >}}
 
-When we unpack the generated code, we will have a structure of an application.
-We can open it in our favourite IDE, and then we can just run it from the
-command line. 
+2. 从可用选项中选择所需的Jakarta EE版本。目前，选项包括Jakarta EE 8、Jakarta EE 9.1和Jakarta EE 10。此外，您可以选择Jakarta EE Platform或某种Jakarta EE Profile（Web、Core）。
+
+3. 对于此项目，我们选择了Jakarta EE 10 Platform、Java SE 11和[WildFly](https://www.wildfly.org/)作为运行时。
+
+4. 选择了所需的选项后，点击生成按钮。将生成项目结构和示例代码，以便可以构建和运行。
+
+## 让我们查看代码结构
+
+解压生成的代码，会得到一个应用程序的结构。可以在您喜欢的IDE中打开，然后直接用命令行运行。
 
 ```txt
 .
@@ -106,55 +79,44 @@ command line.
             └── index.html
 ```
 
-This generated source code comes with an embedded Maven wrapper. So if you want
-to use it, make sure you run the following command first for Unix environments
-(Linux or Mac):
+生成的源代码包含一个嵌入式的Maven Wrapper。如果是Unix环境（Linux或Mac），请首先运行以下命令：
 
 ```bash
 $ chmod +x mvnw
 ```
 
-Since we are using WildFly as a runtime, the following command would run the
-application:
+由于我们使用的是WildFly作为运行时，因此以下命令将运行应用程序：
 
 ```bash
 $ ./mvnw clean package wildfly:run
 ```
 
-On the other hand, if you have Maven installed, you can run the following
-command:
+另一方面，如果您已经安装了Maven，可以用以下命令运行：
 
 ```bash
 $ mvn clean package wildfly:run
 ```
 
-For Windows, we don't need to run `chmod` command; rather use `mvnw.cmd`
-instead of `mvnw`.
+对于Windows系统，不需要运行`chmod`命令；而是应该使用`mvnw.cmd`来代替`mvnw`。
 
-Now, if you hit the browser with the following URL, you will see the result.
+好了，在浏览器中访问以下URL，您将看到结果。
 
 http://localhost:8080/jakartaee-hello-world
 
-We have already covered how to test them out in our previous article, so we’re
-skipping it.
+我们在之前的文章中已经介绍过关于测试的内容，此处不再赘述。
 
-## Setting up the Jakarta Authentication
+## 设置Jakarta认证
 
-The first step in securing your RESTful web service is to authenticate the user
-making the request. In Jakarta EE, this can be achieved using 
-[Jakarta Authentication](/specifications/authentication/) Specification. This
-Specification can be used to set up various forms of authentication, including
-basic, form-based, digest, and token-based authentication.
+保护您的RESTful Web 服务的第一步是对发出请求的用户进行身份验证。在Jakarta EE中，可以通过使用[Jakarta Authentication](/specifications/authentication/)规范来实现。这个规范可以用来设置各种形式的认证认证，包括基本认证、基于表单的认证、摘要认证和基于令牌的认证。
 
-### Authentication
+### 认证
 
-Let's consider basic authentication. To set this up, we'd need to configure
-your web.xml file with the following:
+下面谈谈基本认证。我们需要在web.xml文件中进行以下配置，对其进行设置：
 
 ```xml
 <security-constraint>
    <web-resource-collection>
-      <web-resource-name>Protected REST Services</web-resource-name>
+      <web-resource-name>受保护的REST服务</web-resource-name>
       <url-pattern>/rest/*</url-pattern>
    </web-resource-collection>
    <auth-constraint>
@@ -172,53 +134,34 @@ your web.xml file with the following:
 </security-role>
 ```
 
-It sets up basic authentication for the application and protects resources
-under the `/rest` path.
+这为应用程序设置了基本认证，并保护`/rest`路径下的资源。
 
-Let's break it down:
+我们来详细分析一下：
 
-- **Security Constraint:** This is used to define the access control rules for
-  a specific set of web resources.
-  - **Web Resource Collection:** The `<web-resource-collection>` tag is used to
-    group URLs to apply security constraints. In this configuration, the web
-    resource collection is named 'Protected REST Services', and it applies to
-    all URLs under the `/rest` path, as defined by
-    `<url-pattern>/rest/*</url-pattern>`.
-  - **Auth Constraint:** The `<auth-constraint>` tag is used to define the
-    roles that are allowed to access the URLs defined in the web resource
-    collection. Here, only users with the `'user'` role are allowed access.
-- **Login Config:** This tag is used to define the authentication method that
-  the server should use. In this case, it's set to BASIC, which means HTTP
-  Basic Authentication will be used. The `<realm-name>` is set to
-  `ApplicationRealm`, which is the realm used by the server for authentication.
-- **Security Role:** Finally, the `<security-role>` tag is used to define roles
-  that can be used in the web application. In this case, the role of 'user' is
-  defined. Note that the names used in the `<role-name>` tags need to match the
-  roles defined in the server or in your application’s security setup.
+- **安全约束（Security Constraint）：** 这用于定义特定一组网络资源的访问控制规则。
+  
+  - **网络资源集合（Web Resource Collection）：** `<web-resource-collection>` 标签用于将URL分组，以便配置安全约束。在此配置中，网络资源集合被命名为“受保护的REST服务”，并适用于`/rest`路径下的所有URL，由`<url-pattern>/rest/*</url-pattern>`定义。
+  
+  - **认证约束（Auth Constraint）：** `<auth-constraint>` 标签用于定义角色，这些角色 被允许访问网络资源集合中定义的URL。在本例中，只有具有`'user'`角色的用户才被允许访问。
 
-### Authorization
+- **登录配置（Login Config）：** 这个标签用于定义服务器应使用的认证方法。在本例中，它被设置为BASIC，这意味着将使用HTTP基本认证。`<realm-name>`被设置为`ApplicationRealm`，这是服务器用于认证的领域。
 
-Once authentication is successful, the next step is authorization.
-Authorization is the process of determining whether the authenticated entity
-has the right to access the desired resources or perform a certain action.
+- **安全角色（Security Role）：** 最后，`<security-role>` 标签用于定义可以在Web应用程序中使用的角色。在本例中，定义了“user”角色。请注意，在`<role-name>`标签中使用的名称需要与服务器或应用程序安全设置中定义的角色匹配。
 
-Jakarta EE uses role-based access control (RBAC) for authorization. In RBAC,
-access decisions are based on the roles that individual users have as part of
-the system. An entity's roles are verified against the security constraints
-defined in the deployment descriptor of the application. 
+### 授权
 
-Jakarta EE provides several annotations to secure your applications:
+认证成功后，下一步是授权。授权是一个过程，用以确定经过认证的实体是否有权访问所需资源或执行特定操作。
 
-- `@RolesAllowed:` indicates which security roles are allowed to invoke the
-  specified methods.
-- `@DenyAll:` specifies that no security roles are allowed to invoke the
-  specified methods.
-- `@PermitAll:` specifies that all security roles are allowed to invoke the
-  specified methods.
-- `@RunAs:` defines the security identity for executing the specified methods.
+Jakarta EE使用基于角色的访问控制（RBAC）进行授权。在RBAC中，访问决策基于系统中各个用户所拥有的角色。实体的角色会与应用程序部署描述符中定义的安全约束进行匹配。
 
-Now let’s secure our endpoint. To do that, we have just to make the following
-change in the `HelloWorldResource`:
+Jakarta EE提供了几个注解来保障应用程序的安全：
+
+- `@RolesAllowed:` 表示哪些安全角色被允许调用指定的方法。
+- `@DenyAll:` 拒绝所有安全角色调用指定的方法。
+- `@PermitAll:` 接受所有安全角色对指定方法的调用。
+- `@RunAs:` 定义执行指定方法的安全身份。
+
+现在，让我们保护我们的RESTful服务，我们只需在`HelloWorldResource`中进行以下更改：
 
 ```java
 @Path("hello")
@@ -237,16 +180,15 @@ public class HelloWorldResource {
 }
 ```
 
-In this article, we are using `@RolesAllowed` annotation to secure this
-endpoint.
+在本文中，我们将使用`@RolesAllowed`注解来保护这个服务。
 
-If we run the application, our endpoint will be secured. Let’s try it out.
+重新运行应用程序，服务将会受到保护。我们试一下。
 
 ```bash
 $ curl -v http://localhost:8080/jakartaee-hello-world/rest/hello
 ```
 
-This will produce the following results:
+这将产生以下结果：
 
 ```txt
 * Trying 127.0.0.1:8080...
@@ -271,36 +213,28 @@ This will produce the following results:
 <html><head><title>Error</title></head><body>Unauthorized</body></html>
 ```
 
-As we can see, our curl command receives a 401 Unauthorized response because it
-lacks valid authentication credentials for the requested resource.
+正如我们所见，我们的curl命令收到了一个401未授权的响应，因为它缺少请求资源所需的有效认证凭据。
 
-The next step is to create a credential so that we can access this endpoint
-securely.
+下一步是创建一个凭据，以便我们可以安全地访问这个服务。
 
-## Defining Users
+## 定义用户
 
-In WildFly, the `application-users.properties` and
-`application-roles.properties` files are typically located in the
-standalone/configuration directory of your WildFly installation. Since we are
-using embedded WildFly, to find this folder, we have to navigate to
-`target/server/standalone/configuration` folder.  
+在WildFly中，`application-users.properties`和`application-roles.properties`文件通常位于您的WildFly安装目录下的standalone/configuration文件夹中。由于我们使用的是嵌入式WildFly，要找到这个文件夹，我们需要导航到`target/server/standalone/configuration`文件夹。
 
-`application-users.properties` is used to define users and their passwords
-(hashed), while `application-roles.properties` is used to map users to roles.
+`application-users.properties`用于定义用户及其密码（哈希后的），而`application-roles.properties`用于将用户映射到角色。
 
-Here's how to do it:
+下面是如何操作的步骤：
 
-1. Navigate to the WildFly bin (`/target/server/bin`) folder.
-2. Use the `add-user.sh` (or `add-user.bat` for Windows) script to create a new
-   user.
+1. 导航到WildFly的bin（`/target/server/bin`）文件夹。
+2. 使用`add-user.sh`（对于Windows则是`add-user.bat`）脚本来创建一个新用户。
 
-The script will guide you through the process of adding a new user:
+脚本将引导您完成添加新用户的过程：
 
 ```bash
 $ ./add-user.sh
 ```
 
-Follow the prompts:
+按照提示操作：
 
 ```txt
 What type of user do you wish to add? 
@@ -316,28 +250,27 @@ Re-enter Password : your_password
 What roles do you want this user to belong to? (Please enter a comma separated list, or leave blank for none)[  ]: your_role
 ```
 
-These are the simple steps to define users and roles in WildFly. Restart the
-WildFly server to ensure your changes take effect.
+请根据您的实际情况替换`your_username`、`your_password`和`your_role`。在输入角色时，如果您想让用户拥有多个角色，请使用逗号分隔每个角色的名称。如果您不想将用户分配到任何角色，请留空。
 
-However, we have to be sure, this time, we don’t use clean the target folder
-while running from maven. Because the maven clean command removes the target
-folder altogether, and our user creation will be lost.
+这些是在WildFly中定义用户和角色的简单步骤。请重新启动WildFly服务器以确保您的更改生效。
 
-So simply run without `clean`:
+然而，我们需要确认在运行maven时不会清理target文件夹。因为maven的clean命令会完全删除target文件夹，我们创建的用户数据将会丢失。
+
+因此，请在不使用`clean`的情况下运行：
 
 ```bash
 ./mvnw package wildfly:run
 ```
 
-Now let’s run the curl command again:
+现在让我们再次运行curl命令：
 
 ```bash
 curl --user username:password http://localhost:8080/jakartaee-hello-world/rest/hello
 ```
 
-Replace the username and password you configured on `add-user.sh` prompt.
+请将上述命令中的username和password替换为您在`add-user.sh`提示中配置的用户名和密码。
 
-If username and password are correct, then we will get the following output.
+如果用户名和密码正确，我们将得到以下输出。
 
 ```json
 {
@@ -345,12 +278,6 @@ If username and password are correct, then we will get the following output.
 }
 ```
 
-## Conclusion
+## 结论
 
-Congratulations! You have just learned how to secure a rest endpoint using
-[Jakarta Authentication](/specifications/authentication). While this is a crucial starting point, real-world
-applications typically store user and role data in databases or LDAP servers
-rather than in properties files. Be aware that security is multifaceted and
-encompasses aspects such as HTTPS utilization and database protection. For a
-comprehensive understanding, it's recommended to refer to the official Jakarta
-EE security documentation and explore other relevant resources online.
+恭喜！您刚刚学习了如何使用[Jakarta Authentication](/specifications/authentication)来对REST 服务进行认证。虽然这是一个重要的起点，但现实的应用程序通常会将用户和角色数据存储在数据库或LDAP服务器中，而不是属性文件中。请注意，安全性是多方面的，包括HTTPS的使用和数据库保护等方面。为了获得全面的了解，建议参考官方的Jakarta EE安全文档，了解其他相关在线资源。

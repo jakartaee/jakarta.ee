@@ -1,26 +1,20 @@
 ---
-title: How to store and retrieve data using Jakarta Persistence of Jakarta EE 
+title: 如何使用Jakarta EE的Jakarta Persistence存储和检索数据 
 date: 2023-09-22
-headline: How to store and retrieve data using Jakarta Persistence of Jakarta EE
+headline: 如何使用Jakarta Persistence存储和检索数据
 description: >-
-  This guide shows you how to store and retrieve data using Jakarta
-  Persistence.
+  本指南向您展示如何使用Jakarta Persistence来存储和检索数据。
 hide_page_title: true
 weight: 2
+categories: ["Starter Guides"]
 ---
 
-This guide shows you how to store and retrieve data using 
-[Jakarta Persistence](/specifications/persistence/).
+本指南向您展示如何使用[Jakarta Persistence](/specifications/persistence/)来存储和检索数据。
 
-We will first begin by summarizing what we want to build. Next, we build a
-[RESTful web service](/specifications/restful-ws/) that can consume data, store
-it in a database using Jakarta Persistence, and serve it as a REST endpoint.
-For those unfamiliar with RESTful web services, we recommend reading our
-[previous article](../how-to-build-a-restful-web-service/).
+我们首先将简要介绍下我们想要构建的系统。接下来，我们将构建一个能够进行数据处理的RESTful web服务，使用Jakarta Persistence将其存储在数据库中，并作为REST端点提供服务。
+对于不熟悉RESTful web服务的人，建议阅读我们的[之前的文章](../how-to-build-a-restful-web-service/)。
 
-We will build an application that handles coffee product data. The service will
-consume a JSON payload containing the product's ID, name, and price. Here's an
-example of the JSON payload:
+我们将构建一个处理咖啡产品数据的应用程序。该服务将处理一条JSON数据（包含产品ID、名称和价格）。以下是JSON数据的示例：
 
 ```json
 {
@@ -30,58 +24,36 @@ example of the JSON payload:
 }
 ```
 
-The application will store the data and provide REST endpoints for basic CRUD
-(Create, Read, Update, and Delete) operations. We can then further customize
-and improve it according to our needs.
+应用程序将存储数据，并提供一些REST端点，用来进行基本的CRUD（增/删/改/查）操作。然后，我们可以根据需要对其进一步定制和改进。
 
-OK, now that we have specified our requirements, you will need to follow these
-steps:
+好的，现在我们已经明确了我们的要求，您需要按照以下步骤操作：
 
-## Set up your development environment:
+## 设置您的开发环境：
 
-- Install a Java Development Kit (JDK). Please make sure you have Java SE 11 or
-  higher (we have tested with Java SE 11 and Java SE 17). You can choose any
-  vendor distribution of your choice as well as from
-  [Adoptium](https://adoptium.net/).
-- Install an application server that supports Jakarta EE. Download any of the
-  Jakarta EE compatible [products](/compatibility/download/).
-- Install [Maven](https://maven.apache.org/) 3 or higher.
+- 安装Java开发工具包（JDK）。请确保您安装了Java SE 11或更高版本（Java SE 11和Java SE 17我们都测试过）。您可以选择任何供应商的发行版，也可以从[Adoptium](https://adoptium.net/)获取。
+- 安装支持Jakarta EE的应用服务器。下载任何[Jakarta EE兼容的产品](/compatibility/download/)。
+- 安装[Maven](https://maven.apache.org/) 3或更高版本。
 
-To install JDK and Maven, we can use the [SDKMan](https://sdkman.io/). We can
-go through the steps mentioned in the [how-to](https://sdkman.io/install)
-guide.
+要安装JDK和Maven，我们可以使用[SDKMan](https://sdkman.io/)。我们可以按照[安装指南](https://sdkman.io/install)中提到的步骤进行操作。
 
-## How to complete this guide
+## 如何完成本指南
 
-In this getting started guide, you may use Eclipse Starter for Jakarta EE,
-finish each step, or skip fundamental setup stages you already know. You can
-also begin with an IDE or choose a project structure from well-known 
-[Maven archetypes](https://maven.apache.org/guides/introduction/introduction-to-archetypes.html).
+在这个入门指南中，您可能会使用Eclipse Starter for Jakarta EE完成每个步骤，也可以跳过您已经知道的基础设置。您也可以从IDE开始，或从知名的[Maven原型](https://maven.apache.org/guides/introduction/introduction-to-archetypes.html)中选择项目结构。
 
-## Create a new project with Eclipse Starter for Jakarta EE
+## 使用Eclipse Starter for Jakarta EE创建一个新项目
 
-To use Eclipse Starter for Jakarta EE, we need to take the following steps:
+要使用Eclipse Starter for Jakarta EE，我们需要执行以下步骤：
 
-1. Navigate to https://start.jakarta.ee. This service will set up all the
-   essential dependencies for an application. The current version of the
-   Starter only supports Maven. In the future, we may be able to choose between
-   Gradle and Maven.
-   {{< figure class="padding-20 margin-top-40 margin-bottom-40" src="../images/generate-project-detailed.jpg" alt="A screenshot of the Eclipse Starter for jakarta EE form with fields selected" >}}
-2. Select the desired version of Jakarta EE from the available options.
-   Currently, the options include Jakarta EE 8, Jakarta EE 9.1, [and](and) Jakarta EE 10. 
-   In addition, you may choose the Jakarta EE Platform or one of the Jakarta EE
-   profiles (Web, Core).
-3. For this project, we have chosen Jakarta EE 10 Platform, Java SE 11 and
-   [WildFly](https://www.wildfly.org/) as a Runtime.
-4. Once we have selected our desired options, we will click the generate
-   button. This will give us the project structure and sample code, which we
-   can then build and run.
+1. 导航至[https://start.jakarta.ee](https://start.jakarta.ee)。此服务将为应用程序设置所有必要的依赖项。当前版本的Starter仅支持Maven。将来，我们可能能够在Gradle和Maven之间进行选择。
+   {{< figure class="padding-20 margin-top-40 margin-bottom-40" src="/learn/starter-guides/images/generate-project-detailed.jpg" alt="Eclipse Starter for Jakarta EE表单的截图，相关选项已选定" >}}
+2. 从可用选项中选择所需的Jakarta EE版本。目前，选项包括Jakarta EE 8、Jakarta EE 9.1和Jakarta EE 10。
+   此外，您可以选择Jakarta EE Platform或Jakarta EE的Profile版本（Web、Core等）。
+3. 对于此项目，我们选择了Jakarta EE 10 Platform、Java SE 11和[WildFly](https://www.wildfly.org/)作为运行时。
+4. 选择了所需的选项后，点击生成按钮，将生成项目结构和示例代码，我们可以用以构建并运行。
 
-## Let's explore the code structure
+## 探索代码结构
 
-When we unpack the generated code, we will have a structure of an application.
-We can open it in our favourite IDE, and then we can just run it from the
-command line. 
+解压缩生成的代码，将得到一个应用程序的结构。可以在自己喜欢的IDE中打开，然后可以从命令行运行。
 
 ```
 .
@@ -106,53 +78,39 @@ command line.
             └── index.html
 ```
 
-This generated source code comes with an embedded Maven wrapper. So if you want
-to use it, make sure you run the following command first for Unix environments
-(Linux or Mac):
+生成的源码附带了一个嵌入式的Maven wrapper。因此，如果需要再在Unix环境（Linux或Mac）中使用 Maven wrapper，需要首先确保运行以下命令：
 
 ```bash
 $ chmod +x mvnw
 ```
 
-Since we are using WildFly as a runtime, the following command would run the
-application:
+由于我们使用 WildFly 作为运行时环境，以下命令将运行应用程序：
 
 ```bash
 $ ./mvnw clean package wildfly:run
 ```
 
-On the other hand, if you have Maven installed, you can run the following
-command:
+另一方面，如果您安装了Maven，可以运行以下命令：
 
 ```bash
 $ mvn clean package wildfly:run
 ```
 
-For Windows, we don't need to run `chmod` command; rather use `mvnw.cmd`
-instead of `mvnw`.
+对于Windows，不需要运行`chmod`命令；而是使用`mvnw.cmd`代替`mvnw`。
 
-Now, if you hit the browser with the following URL, you will see the result. 
+现在，如果您使用以下URL在浏览器中访问，将看到结果。
 
-http://localhost:8080/jakartaee-hello-world
+[http://localhost:8080/jakartaee-hello-world](http://localhost:8080/jakartaee-hello-world)
 
-We have already covered how to test them out in our previous article, so we're
-skipping it.
+我们已经在之前的文章中介绍了如何测试，不再赘述。
 
-## Setting up the Jakarta Persistence
+## 设置Jakarta Persistence
 
-Since our goal is to start with Jakarta Persistence, let’s first understand
-what Jakarta Persistence essentially is. Java Persistence API is a Java
-programming language specification that provides an object-relational mapping
-(ORM) framework for managing relational data in Java applications. It
-simplifies database access and enables developers to work with objects and
-classes rather than SQL statements. It was formally known as Java Persistence
-API, in short, JPA.
+鉴于我们的目标是学习使用Jakarta Persistence，让我们首先了解Jakarta Persistence本质上是什么。Java Persistence API是一种Java编程语言规范，它提供了一个对象关系映射（ORM）框架，用于管理Java应用程序中的关联数据。它简化了数据库访问，并使开发人员能够使用对象和类而不是SQL语句。它曾被称为Java Persistence API，简称JPA。
 
-The next step is we start by creating our first Entity. An entity is a Java
-class that corresponds to a table of a database. This article will use an
-embedded H2 database to store our data.
+接下来，我们通过定义我们的第一个实体（@Entity）开始相关探索。实体（@Entity）是一个Java类，它与数据库中的一个表对应。本文将使用嵌入式H2数据库来存储我们的数据。
 
-Create a Coffee class in the `org.eclipse.jakarta.model.entity` package.
+在`org.eclipse.jakarta.model.entity`包中创建一个Coffee类。
 
 ```java
 package org.eclipse.jakarta.model.entity;
@@ -169,37 +127,21 @@ public class Coffee implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String name;
-    private String  price;
+    private String price;
 
-    //getter and setter    
-
- }
+    //getter和setter
+}
 ```
 
-As you can see, our Entity Class contains several annotations. The `@Entity`
-annotation designates a Java class as an Entity class, representing a database
-table where the class fields correspond to table columns. The `@Id` annotation
-marks a field or property in the entity class as the primary key. Additionally,
-you can use the `@GeneratedValue` annotation alongside `@Id` to indicate that
-the primary key value should be generated automatically.
+正如您所看到的，我们的实体类包含几个注解。`@Entity`注解将一个Java类指定为实体类，代表一个数据库表，其中类字段对应于表列。`@Id`注解将实体类中的字段或属性标记为主键。此外，您可以使用`@GeneratedValue`注解与`@Id`来表示主键值应该自动生成。
 
-The primary idea behind the Jakarta Persistence is to allow Java programmers to
-work with objects. They can create instances of these entities, and Jakarta
-Persistence will convert them into data and store them in the database. When an
-object is needed, Jakarta Persistence retrieves data and converts it into an
-object for easy use.
+Jakarta Persistence背后的主要思想是允许Java程序员使用对象。他们可以创建这些实体的实例，Jakarta Persistence将把它们转换成数据并存储在数据库中。当需要一个对象时，Jakarta Persistence检索数据并将其转换为一个易于使用的对象。
 
-## How to connect the Entity to a DataSource?
+## 如何将实体连接到DataSource？
 
-Before using Jakarta Persistence, the first step is configuring the database
-connection by creating a Jakarta Persistence configuration file named
-`persistence.xml`. This file can be placed under the `resources/META-INF`
-folder in our project.
+在使用Jakarta Persistence之前，首先需要创建一个名为`persistence.xml`的Jakarta Persistence配置文件，用以配置数据库连接。这个文件可以放在我们项目的`resources/META-INF`文件夹中。
 
-The `persistence.xml` file allows specifying the JDBC Connection Settings or
-the Datasource JNDI{{< sup href="#footnote-1" >}}1{{</ sup >}} name. For
-instance, we can use the WildFly default [H2 database](https://www.h2database.com/html/main.html), 
-specified within the `persistence.xml`.
+`persistence.xml`文件允许指定JDBC连接设置或Datasource JNDI{{< sup href="#footnote-1" >}}1{{</ sup >}}名称。例如，我们可以在`persistence.xml`中指定使用WildFly默认的[H2数据库](https://www.h2database.com/html/main.html)。
 
 ```xml
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
@@ -207,15 +149,12 @@ specified within the `persistence.xml`.
              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
              xsi:schemaLocation="https://jakarta.ee/xml/ns/persistence https://jakarta.ee/xml/ns/persistence/persistence_3_1.xsd"
              version="3.0">
-
+    
     <persistence-unit name="coffees">
         <jta-data-source>java:jboss/datasources/ExampleDS</jta-data-source>
         <properties>
-            <property
-                    name="jakarta.persistence.schema-generation.database.action"
-                    value="drop-and-create" />
-            <property name="jakarta.persistence.sql-load-script-source"
-                      value="META-INF/initial-data.sql" />
+            <property name="jakarta.persistence.schema-generation.database.action" value="drop-and-create" />
+            <property name="jakarta.persistence.sql-load-script-source" value="META-INF/initial-data.sql" />
             <property name="eclipselink.logging.level.sql" value="FINE" />
             <property name="eclipselink.logging.parameters" value="true" />
             <property name="hibernate.show_sql" value="true" />
@@ -224,47 +163,20 @@ specified within the `persistence.xml`.
 </persistence>
 ```
 
+在`resources/META-INF`文件夹中创建一个`persistence.xml`文件，并复制上面的内容。
 
-So create a `persistence.xml` file in `resources/META-INF` folder and copy the
-above. 
+这个`persistence.xml`文件设置了一个名为"coffees"的持久性单元（persistence unit ）。它指定了用于数据库连接管理的JDBC数据源的JNDI名称，在WildFly中，针对H2数据库，默认设置为"java:jboss/datasources/ExampleDS"。JNDI名称的配置通常位于`WILDFLY_HOME/standalone/configuration`目录中的standalone.xml文件中，其中`WILDFLY_HOME`是WildFly的安装目录。然而，对于这个例子，不需要额外的配置，因为我们使用了默认的JNDI名称。其他运行时环境可能有稍微不同的配置，可以在它们的文档中找到。
 
-This `persistence.xml` file sets up a persistence unit named `"coffees"`. It
-specifies the JNDI name of the JDBC datasource to be used for database
-connection management, which is `"java:jboss/datasources/ExampleDS"` by default
-in WildFly for an H2 database. The configuration for JNDI name is usually
-located in the standalone.xml file in the
-`WILDFLY_HOME/standalone/configuration` directory, where `WILDFLY_HOME` is the
-installation directory of WildFly. However, no additional configuration is
-required for this example since we are using the default JNDI name. Other
-runtimes may have slightly different configurations, which can be found in
-their documentation.
+`<properties>`元素包含几个属性，用以配置Jakarta Persistence提供者（provider）行为。例如，`persistence.xml`文件中的"jakarta.persistence.schema-generation.database.action"属性指定Jakarta Persistence提供者在生成数据库结构（schema） 时要采取的操作。其他的选项包括：
 
-The <properties> element contains several properties that configure the
-behaviour of the Jakarta Persistence provider. For example, the
-`"jakarta.persistence.schema-generation.database.action"` property in the
-`persistence.xml` file specifies the action to be taken by the Jakarta
-Persistence provider when generating the database schema. Some of the other
-options are:
+- `none`：Jakarta Persistence提供者不会生成数据库结构。
+- `create`：Jakarta Persistence提供者将创建数据库结构。
+- `drop`：Jakarta Persistence提供者将删除数据库结构。
+- `drop-and-create`：Jakarta Persistence提供者将删除现有数据库结构并创建一个新的。
 
-- `none`: The Jakarta Persistence provider won't generate the database schema.
-- `create`: The Jakarta Persistence provider will create the database schema.
-- `drop`: The Jakarta Persistence provider will drop the database schema.
-- `drop-and-create`: The Jakarta Persistence provider will drop the existing
-  database schema and create a new one.
+对于这个属性，还有其他可用的选项，如"create-only"、"drop-and-create-script"和"create-script"。选项的选择取决于用例和应用程序的具体要求。在本例中，在`persistence.xml`文件中选择了"drop-and-create"选项，它在开发环境中每次运行应用程序时都会删除现有数据库结构并创建一个新的。
 
-There are other options available for this property as well, such as
-`"create-only"`, `"drop-and-create-script"`, and `"create-script"`. The choice
-of the option depends on the use case and the application's specific
-requirements. For this particular case, `"drop-and-create"` option is chosen in
-the persistence.xml file, which drops the existing database schema and creates
-a new one whenever the application runs in the development environment.
-
-The `"jakarta.persistence.sql-load-script-source"` property specifies the
-location of the SQL script to be executed when the persistence unit is
-initialized. Here, the script is located in the `META-INF/initial-data.sql`
-file. So create a file named `initial-data.sql` and put the following insert
-queries in it.
-
+"jakarta.persistence.sql-load-script-source"属性指定在持久性单元初始化时要执行的SQL脚本的位置。在这里，脚本位于`META-INF/initial-data.sql`文件中。因此，创建一个名为`initial-data.sql`的文件，并在其中输入以下SQL语句。
 
 ```sql
 INSERT INTO coffee (name, price) VALUES ('Coffee-A', 2.75);
@@ -273,21 +185,13 @@ INSERT INTO coffee (name, price) VALUES ('Coffee-C', 3.25);
 INSERT INTO coffee (name, price) VALUES ('Coffee-D', 2.99);
 ```
 
-The purpose of this script is to ensure that when the server starts up, there
-is some data present in the database which can be used for testing or
-demonstration purposes.
+这个脚本的目的是确保当服务器启动时，数据库中就有一些数据可以用于测试或演示目的。
 
-Other properties are used to configure logging for the Jakarta Persistence
-provider, such as `"eclipselink.logging.level.sql"` and
-`"eclipselink.logging.parameters"`. Finally, the `"hibernate.show_sql"`
-property is used to enable SQL query logging for the Hibernate Jakarta
-Persistence provider{{< sup href="#footnote-2" >}}2{{</ sup >}}.
+其他属性用于配置Jakarta Persistence提供者的日志记录，例如"eclipselink.logging.level.sql"和"eclipselink.logging.parameters"。最后，"hibernate.show_sql"属性用于启用Hibernate Jakarta Persistence提供者{{< sup href="#footnote-2" >}}2{{</ sup >}}的SQL查询日志记录。
 
-## Setting up the Jakarta Persistence repository
+## 设置Jakarta Persistence仓库
 
-We will now create a `CafeRepository` class that will be responsible for
-handling the Create, Read, Update, and Delete (CRUD) operations on the `Coffee`
-entity.
+现在我们将创建一个`CafeRepository`类，负责处理`Coffee`实体的增删改查（CRUD）操作。
 
 ```java
 package org.eclipse.jakarta.model;
@@ -339,59 +243,39 @@ public class CafeRepository {
     }
 }
 ```
+该类使用了`@Stateless`注解，使其成为一个[无状态session bean](https://jakarta.ee/specifications/enterprise-beans/4.0/jakarta-enterprise-beans-spec-core-4.0.html#stateless-session-beans)。
+无状态session bean是[企业级Jakarta bean](https://jakarta.ee/specifications/enterprise-beans/4.0/)（EJB）的一种，用于在Jakarta EE应用程序中实现业务逻辑。
+无状态session bean被设计用于不需要在方法调用之间与客户端保持任何对话状态的场景。换句话说，无状态session bean不会记住任何客户端特定的数据。
 
-The class is annotated with `@Stateless`, which makes it a [Stateless session bean](https://jakarta.ee/specifications/enterprise-beans/4.0/jakarta-enterprise-beans-spec-core-4.0.html#stateless-session-beans). 
-A Stateless session bean is a type of [Jakarta Enterprise Beans](https://jakarta.ee/specifications/enterprise-beans/4.0/) 
-(EJB) that is used for implementing business logic in Jakarta EE applications.
-Stateless session beans are designed for scenarios where the bean does not need
-to maintain any conversational state with the client between method
-invocations. In other words, a Stateless session bean doesn't remember any
-client-specific data between method calls.
+让我们一步一步地分解：
 
-Let's break it down step-by-step:
+### EntityManager：
 
-### EntityManager:
+[`EntityManager`](https://jakarta.ee/specifications/persistence/3.0/jakarta-persistence-spec-3.0.html#a1062)是Jakarta Persistence中用于管理实体的主要接口。它使用[`@PersistenceContext`](https://jakarta.ee/specifications/persistence/3.0/apidocs/jakarta.persistence/jakarta/persistence/persistencecontext)注解，这将自动将`EntityManager`的实例注入到类中。
 
-The [`EntityManager`](https://jakarta.ee/specifications/persistence/3.0/jakarta-persistence-spec-3.0.html#a1062) 
-is the primary interface for managing entities in Jakarta Persistence. It is
-annotated with [`@PersistenceContext`](https://jakarta.ee/specifications/persistence/3.0/apidocs/jakarta.persistence/jakarta/persistence/persistencecontext), 
-which automatically injects an instance of the `EntityManager` into the class.
+### create()：
 
-### create():
+此方法以`Coffee`对象为参数，记录一条信息性（informational）消息，并使用EntityManager持久化对象。返回已持久化的`Coffee`对象。
 
-This method takes a `Coffee` object as a parameter, logs an informational
-message, and persists the object using the EntityManager. The persisted
-`Coffee` object is returned.
+### findAll()：
 
-### findAll():
+此方法从数据库中检索所有`Coffee`实体。它创建一个Jakarta Persistence查询，执行后，会返回`Coffee`对象的列表。
 
-This method retrieves all the `Coffee` entities from the database. It creates a
-Jakarta Persistence query, executes it, and returns a list of `Coffee` objects.
+### findById()：
 
-### findById():
+此方法以长整型ID为参数，记录一条信息性消息，并使用EntityManager搜索指定ID的`Coffee`实体。如果找到，它返回一个包含实体的`Optional<Coffee>`；否则，返回一个空的`Optional`。
 
-This method takes a Long id as a parameter, logs an informational message, and
-searches for the `Coffee` entity with the specified id using the
-`EntityManager`. If found, it returns an `Optional<Coffee>` containing the
-entity; otherwise, it returns an empty `Optional`.
+### delete()：
 
-### delete():
+此方法以长整型ID为参数，记录一条信息性消息，并尝试查找指定ID的`Coffee`实体。如果找到，它使用EntityManager移除实体。如果未找到实体，则抛出一个带有无效ID消息的`IllegalArgumentException`。
 
-This method takes a Long id as a parameter, logs an informational message, and
-tries to find the `Coffee` entity with the specified id. If found, it removes
-the entity using the `EntityManager`. If the entity is not found, an
-`IllegalArgumentException` is thrown with a message indicating the invalid id.
+### update()：
 
-### update():
+此方法以`Coffee`对象为参数，记录一条信息性消息，并使用EntityManager更新数据库中现有的`Coffee`实体。返回更新后的`Coffee`对象。
 
-This method takes a `Coffee` object as a parameter, logs an informational
-message, and updates the existing `Coffee` entity in the database using the
-`EntityManager`. The updated `Coffee` object is returned.
+## 为CRUD方法添加REST端点
 
-## Adding REST Endpoints for the CRUD methods
-
-Finally, we will add a REST Endpoint to be able to access our `Coffee` Service
-from a remote REST Client.
+最后，我们将添加一个REST端点，以便能够从远程REST客户端访问我们的`Coffee`服务。
 
 ```java
 package org.eclipse.jakarta.rest;
@@ -435,9 +319,9 @@ public class CafeResource {
     @Produces("application/json")
     public Coffee create(Coffee coffee) {
         logger.info("Creating coffee " + coffee.getName());
-        try{
+        try {
             return cafeRepository.create(coffee);
-        }catch (PersistenceException ex){
+        } catch (PersistenceException ex) {
             logger.info("Error creating coffee " + coffee.getName());
             throw new WebApplicationException(Response.Status.BAD_REQUEST);
         }
@@ -447,23 +331,22 @@ public class CafeResource {
     @Path("{id}")
     public void delete(@PathParam("id") Long id) {
         logger.info("Deleting coffee by id " + id);
-        try{
+        try {
             cafeRepository.delete(id);
-        }catch (IllegalArgumentException e){
+        } catch (IllegalArgumentException e) {
             logger.info("Error deleting coffee by id " + id);
             throw new WebApplicationException(Response.Status.NOT_FOUND);
         }
     }
-
 
     @PUT
     @Consumes("application/json")
     @Produces("application/json")
     public Coffee update(Coffee coffee) {
         logger.info("Updating coffee " + coffee.getName());
-        try{
+        try {
             return cafeRepository.create(coffee);
-        }catch (PersistenceException ex){
+        } catch (PersistenceException ex) {
             logger.info("Error updating coffee " + coffee.getName());
             throw new WebApplicationException(Response.Status.BAD_REQUEST);
         }
@@ -471,69 +354,40 @@ public class CafeResource {
 }
 ```
 
-The CafeResource class is a RESTful web service for managing `Coffee` entities
-using the Jakarta RESTful Web Services. The class exposes various HTTP
-endpoints for performing CRUD operations, such as creating, retrieving,
-updating, and deleting `Coffee` objects.
+CafeResource类是一个RESTful web服务，用于使用Jakarta RESTful Web Services管理`Coffee`实体。该类暴露了各种HTTP端点，用于执行CRUD操作，如创建、检索、更新和删除`Coffee`对象。
 
-1. `@Path("coffees")`: This annotation sets the base path of the web service to
-   `"/coffees"`. All the HTTP endpoints in this class will be relative to this
-   path.
-2. `@Inject`: This annotation is used to inject an instance of the
-   `CafeRepository` class, which handles the persistence operations for Coffee
-   entities.
-3. `@GET`, `@POST`, `@PUT`, `@DELETE`: These annotations define the HTTP
-   methods for the corresponding methods in the class (e.g., `findCoffee()`,
-   `findAll()`, `create()`, `delete()`, and `update()`). They map the Java
-   methods to HTTP operations.
-4. `@Path("{id}")`: This annotation is used in combination with the `@GET` and
-   `@DELETE` annotations to specify the path parameter "id" for retrieving or
-   deleting a `Coffee` entity by its id.
-5. `@Produces` and `@Consumes`: These annotations are used to define the media
-   type (e.g., `"application/json"`) that a method can produce as a response or
-   consume as input. In this case, the methods accept and return JSON
-   representations of `Coffee` entities.
+1. `@Path("coffees")`：此注解将web服务的基础路径设置为`"/coffees"`。此类中的所有HTTP端点都将相对于此路径。
+2. `@Inject`：此注解用于注入`CafeRepository`类的实例，该类处理Coffee实体的持久化操作。
+3. `@GET`、`@POST`、`@PUT`、`@DELETE`：这些注解定义了类中相应方法的HTTP方法（例如，`findCoffee()`、`findAll()`、`create()`、`delete()`和`update()`）。它们将Java方法映射到HTTP操作。
+4. `@Path("{id}")`：此注解与`@GET`和`@DELETE`注解结合使用，以指定通过其ID检索或删除`Coffee`实体的路径参数“id”。
+5. `@Produces`和`@Consumes`：这些注解用于定义方法可以（作为响应）生成或（作为输入)消耗的媒体类型（例如，`"application/json"`）。在本例中，方法接受并返回`Coffee`实体的JSON表示（representations）。
 
+该类还使用Logger记录信息性消息，并通过抛出[`WebApplicationException`](https://jakarta.ee/specifications/restful-ws/3.1/apidocs/jakarta.ws.rs/jakarta/ws/rs/webapplicationexception)处理异常，使用适当的HTTP状态码（例如，[`Response.Status.NOT_FOUND`](https://jakarta.ee/specifications/restful-ws/3.1/apidocs/jakarta.ws.rs/jakarta/ws/rs/core/response.status#NOT_FOUND)或[`Response.Status.BAD_REQUEST`](https://jakarta.ee/specifications/restful-ws/3.1/apidocs/jakarta.ws.rs/jakarta/ws/rs/core/response.status#BAD_REQUEST))处理错误。
 
-The class also utilizes the Logger for logging informational messages and
-handles exceptions by throwing [`WebApplicationException`](https://jakarta.ee/specifications/restful-ws/3.1/apidocs/jakarta.ws.rs/jakarta/ws/rs/webapplicationexception) 
-with appropriate HTTP status codes (e.g., [`Response.Status.NOT_FOUND`](https://jakarta.ee/specifications/restful-ws/3.1/apidocs/jakarta.ws.rs/jakarta/ws/rs/core/response.status#NOT_FOUND) 
-or [`Response.Status.BAD_REQUEST`](https://jakarta.ee/specifications/restful-ws/3.1/apidocs/jakarta.ws.rs/jakarta/ws/rs/core/response.status#BAD_REQUEST)) 
-in case of errors.
+## 让我们测试一下
 
-## Let's test the Service
-
-After adding the aforementioned classes to your project, execute the following
-command to build and run the application:
+在将上述类添加到您的项目后，执行以下命令以构建并运行应用程序：
 
 ```bash
 $ mvn clean package wildfly:run
 ```
 
-This command will clean any previous builds, compile and package the
-application, and then deploy it to the WildFly application server.
+此命令将清除任何以前的构建，编译和打包应用程序，然后将其部署到WildFly应用服务器。
 
-If everything is set up correctly, the application will be accessible through a
-web browser or a REST client. You can use cURL as a command-line REST client to
-interact with the service.
+如果一切设置正确，将可以通过Web浏览器或REST客户端访问应用程序。您可以使用cURL作为命令行REST客户端与服务交互。
 
-Here are the cURL commands for the different CRUD operations in the
-CafeResource class, using the provided base URL and JSON payload:
+以下是使用给定的基础URL和JSON有效载荷在CafeResource类中进行不同CRUD操作的cURL命令：
 
-### Create a new Coffee entity (HTTP POST):
+### 创建新的Coffee实体（HTTP POST）：
 
 ```bash
 curl -X POST \
  http://localhost:8080/jakartaee-hello-world/rest/coffees \
  -H 'Content-Type: application/json' \
- -d '{
- "id": 1,
- "name": "Coffee-A",
- "price": "2.75"
-}'
+ -d '{\n "id": 1,\n "name": "Coffee-A",\n "price": "2.75"\n}'
 ```
 
-### Retrieve all Coffee entities (HTTP GET):
+### 检索所有Coffee实体（HTTP GET）：
 
 ```bash
 curl -X GET \
@@ -541,56 +395,46 @@ curl -X GET \
  -H 'Content-Type: application/json'
 ```
 
-### Retrieve a specific Coffee entity by id (HTTP GET):
+### 通过ID检索特定的Coffee实体（HTTP GET）：
 
 ```bash
 curl -X GET \
- http://localhost:8080/jakartaee-hello-world/rest/coffees/<id> \
+ http://localhost:8080/jakartaee-hello-world/rest/coffees/{id} \
  -H 'Content-Type: application/json'
 ```
 
-### Update an existing Coffee entity (HTTP PUT):
+### 更新现有的Coffee实体（HTTP PUT）：
 
 ```bash
 curl -X PUT \
  http://localhost:8080/jakartaee-hello-world/rest/coffees \
  -H 'Content-Type: application/json' \
- -d '{
- "id": 1,
- "name": "Coffee-A",
- "price": "2.75"
-}'
+ -d '{\n "id": 1,\n "name": "Coffee-A",\n "price": "2.75"\n}'
 ```
 
-### Delete a Coffee entity by id (HTTP DELETE):
+### 通过ID删除Coffee实体（HTTP DELETE）：
 
 ```bash
 curl -X DELETE \
- http://localhost:8080/jakartaee-hello-world/rest/coffees/<id> \
+ http://localhost:8080/jakartaee-hello-world/rest/coffees/{id} \
  -H 'Content-Type: application/json'
 ```
 
-Make sure to replace the <id> placeholder with the actual id value when using
-the cURL commands for retrieving or deleting a specific `Coffee` entity.
+使用检索或删除特定`Coffee`实体的cURL命令时，请确保将`{id}`占位符替换为实际的ID值。
 
-## Conclusion
+## 结语
 
-Congratulations! You have just learned how to develop a web service using
-Jakarta Persistence.
+恭喜您！您刚刚学习了如何使用Jakarta Persistence开发web服务。
 
 ---
 
 {{< grid/div class="footnote" isMarkdown="false" >}}
   <ol class="footnote">
     <li id="footnote-1">
-      The Java Naming and Directory Interface (JNDI) is a Java API for a
-      directory service that allows Java software clients to discover and look up
-      data and objects via a name.
+      Java命名和目录接口（JNDI）是一种Java API，用于一种目录服务，它允许Java软件客户端通过名称发现和查找数据和对象。
     </li>
     <li id="footnote-2">
-      Jakarta Persistence is a Java ORM specification with multiple compatible
-      implementations, such as EclipseLink 3.0.0 and Hibernate ORM 6.0.0.Final.
+      Jakarta Persistence是一种具有多个兼容实现的Java ORM规范，例如EclipseLink 3.0.0和Hibernate ORM 6.0.0.Final。
     </li>
   </ol>
 {{</ grid/div >}}
-

@@ -13,7 +13,7 @@ container: "container-fluid"
 footer_class: "footer-release-9"
 type: "release/10"
 hide_call_for_action: true
-#press_release_link: "/news/jakarta-ee-10-released/"
+press_release_link: "/news/jakarta-ee-10-released/"
 subtitle: "<span class='range'>开放、社区驱动的创新</span><br>推动云原生Java技术的未来"
 ---
 

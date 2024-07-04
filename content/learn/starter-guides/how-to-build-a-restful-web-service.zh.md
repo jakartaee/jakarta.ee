@@ -1,80 +1,65 @@
 ---
-title: How to Build a RESTful Web Service Using Jakarta EE
+title: 如何使用Jakarta EE构建RESTful Web服务
 date: 2023-09-22
-headline: How to Build a RESTful Web Service Using Jakarta EE
+headline: 如何使用Jakarta EE构建RESTful Web服务
 description: >-
-  This guide shows you how to use Jakarta EE to make a RESTful web service.
+  本指南向您展示如何使用Jakarta EE创建一个RESTful web服务。
 hide_page_title: true
 weight: 1
+categories: ["Starter Guides"]
 ---
 
-This guide shows you how to use Jakarta EE to make a 
-[RESTful web service](https://jakarta.ee/specifications/restful-ws/).
+这篇博文将向您介绍如何使用 Jakarta EE创建一个 [RESTful web service](https://jakarta.ee/specifications/restful-ws/) 应用程序.
 
-To create a RESTful web service using [Jakarta EE](/), we will begin by
-summarizing what we want to build.
+使用 [Jakarta EE](/), 创建的一个RESTful web 服务样例程序的需求如下:
 
-We will build a service that will accept an HTTP GET{{< sup href="#footnote-1" >}}1{{</ sup >}} 
-request at <span>http://localhost:8080/restfulservice/hello</span>.
+- 我们将创建一个服务，该服务在 <span>http://localhost:8080/restfulservice/hello</span> 接收一个HTTP GET{{< sup href="#footnote-1" >}}1{{</ sup >}}请求。
 
-It will respond with the following JSON payload, as the following listing
-shows:  
+- 这个服务将返回请求一个带有JSON格式数据的响应，其内容如下：
 
 ```json
 {"text": "Hello from Jakarta EE"}
 ```
 
-We can then further customize and improve it according to our needs.
+- 后续可以根据我们的需要进行定制和改进。
 
-OK, now that we have specified our requirements, you will need to follow these
-steps:
+OK，已经明确了需求，您可以按照以下步骤开始编程。
 
-## Set up your development environment:
+## 建立开发环境
 
-- Install a Java Development Kit (JDK). Please make sure you have Java SE 8 or
-  higher (we have tested with Java SE 8, Java SE 11 and Java SE 17). You can
-  choose any vendor distribution of your choice from [Adoptium](https://adoptium.net/en-GB) 
-  as well.
-- Install an application server that supports Jakarta EE. Download any of the
-  Jakarta EE compatible [products](/compatibility/download/).
-- Install [Maven](https://maven.apache.org/) 3 or higher.
+- 安装Java开发工具包(JDK). 要确定是 Java SE 8 或者 更高版本 (本例使用Java SE 8进行开发,使用 Java SE 11 and Java SE 17进行测试). 您可以从[Adoptium](https://adoptium.net/en-GB) 选择需要的JDK版本。
+- 安装支持Jakarta EE规范的应用服务器。可以从Jakarta EE官网下载兼容的[产品](/zh/compatibility/download/).
+- 安装 [Maven](https://maven.apache.org/) 3 或更高版本
 
-To install all of these, we can use the [SDKMan](https://sdkman.io/). We can go
-through the steps mentioned in the [how-to](https://sdkman.io/install) guide.
+您可以使用[SDKMan](https://sdkman.io/) 安装以上所列的程序，可以按照[指南](https://sdkman.io/install) 的内容了解安装的操作步骤。
 
-## How to complete this guide
+## 如何创建一个RESTful Web 服务 工程
 
-In this getting started guide, you may start using Eclipse Starter for Jakarta
-EE, finish each step, or skip fundamental setup stages that you already know.
-You can also begin with an IDE or choose a project structure from well-known
-[Maven archetypes](https://maven.apache.org/guides/introduction/introduction-to-archetypes.html).
+    您可以使用Jakarta EE的Eclipse Starter完成工程创建，您也可以使用IDE，或者使用熟悉的 [Maven archetypes](https://maven.apache.org/guides/introduction/introduction-to-archetypes.html)选择一个ESTful的工程完成创建工作。
 
-## Create a new project with Eclipse Starter for Jakarta EE
+## 使用Jakarta EE的Eclipse Starter建立一个新的工程
 
-To use Eclipse Starter for Jakarta EE, we need to take the following steps:
+按照以下步骤，使用Jakarta EE的Eclipse Starter完成工程创建：
 
-1. Navigate to start.jakarta.ee. This service will set up all the essential
-  dependencies for an application. The current version of the Starter only
-  supports Maven. In the future, we may be able to choose between Gradle and
-  Maven.
-  {{< figure class="padding-20 margin-top-40 margin-bottom-40 img-thumbnail" src="../images/generate-project.jpg" alt="A screenshot of the Generate a Jakarta EE Project form with fields filled out. More details on how to go through the form below." >}}
-2. Select the desired version of Jakarta EE from the available options. As of
-   now, the options include Jakarta EE 8, Jakarta 9.1, and Jakarta 10. You may
-   choose the Jakarta EE profile from Platform, Core, or Web. However, for most
-   options, you may safely stick with the defaults.
-3. Then specify the Group, Artifact and Version for your new project.
-4. Once you have done this, the following box will let you copy a command. Copy
-   the command, open your terminal, paste it, and run it.
-```shell
+1. 在导航中选择start.jakarta.ee.建立应用的所有基本依赖。Starter的当前版本仅支持Maven. 不久后将支持Gradle。
+   
+   {{< figure class="padding-20 margin-top-40 margin-bottom-40 img-thumbnail" src="/learn/starter-guides/images/generate-project.jpg" alt="A screenshot of the Generate a Jakarta EE Project form with fields filled out. More details on how to go through the form below." >}}
+
+2. 从选项中选择Jakarta EE的版本，目前该选项包括Jakarta EE 8, Jakarta 9.1, and Jakarta 10等3个版本可选。 您可以从平台中选择Jakarta EE Profile（Core、  Web）。 通常默认选项就好。
+
+3. 填写该工程的组织名称（Group），项目名称（Artifact）以及项目版本号（ Version）。
+
+4. 完成以上工作后，拷贝下面的命令到命令行终端中执行，注意：-DgroupId的值改为您上面工程填写的Group名称，-DartifactId的值改为您上面Artifact填写的名称，-Dversion改为您上面Version填写的名称。
+
+```
 mvn archetype:generate -DarchetypeGroupId=org.eclipse.starter -DarchetypeArtifactId=jakartaee10-minimal -DarchetypeVersion=1.1.0 -DgroupId=org.eclipse.rest -DartifactId=rest-service -Dprofile=web-api -Dversion=1.0.0-SNAPSHOT -DinteractiveMode=false
 ```
 
-This will give us the project structure and sample code, which we can then
-build and run.
+这个命令将创建工程结构和代码样例。
 
-## Let's explore the code structure
+## 查看一下代码结构
 
-When we unpack the generated code, we will have the following code structure:
+打开刚生成的代码目录，我们将看到如下代码目录结构：
 
 ```
 .
@@ -95,11 +80,9 @@ When we unpack the generated code, we will have the following code structure:
     └── webapp
 ```
 
-In this code structure, along with other classes and configurations, we are
-interested in two classes in particular: `RestResource.java` and
-`HelloRecord.java`.
+在这些生成的代码文件中，我们对两个类文件尤其关注： `RestResource.java` 和`HelloRecord.java`.
 
-Let's open the `RestResource.java` file first.
+我们首先打开 `RestResource.java`文件。
 
 ```java
 package org.eclipse.restfulservice.resources;
@@ -111,7 +94,7 @@ import jakarta.ws.rs.Produces;
 
 @Path("hello")
 public class RestResource {
-    
+
     @GET
     @Produces(MediaType.APPLICATION_JSON)
     public HelloRecord hello(){
@@ -120,19 +103,15 @@ public class RestResource {
 }
 ```
 
-This defines a RESTful web service that returns a JSON representation of a
-`RestResource` when a `GET` request is made to the `"/hello"` endpoint.
+这里定义了一个RESTful web服务，当一个 `GET` 请求到 `"/hello"`访问点时，将会得到这个类的处理响应，客户端会得到一个 JSON 格式的返回数据。
 
-The `jakarta.ws.rs.Path` annotation establishes a connection between the URL
-given by the user and the Java class responsible for handling the request. The
-`jakarta.ws.rs.GET` annotation tells us we must use the `HTTP GET` method to
-access our endpoint. The `jakarta.ws.rs.Produces` annotation allows you to
-specify the format of the response. In our case, it will produce a
-JSON{{< sup href="#footnote-2">}}2{{</ sup >}} response by converting the
-object of `HelloRecord`.
+ 注解`jakarta.ws.rs.Path` 表示：该 Java 类会被绑定到对应值的URI请求地址。  
 
-The method `hello()` is defined to return a `HelloRecord`. This is the new 
-[record class](https://openjdk.org/jeps/395) that was released in Java 16.
+注解`jakarta.ws.rs.GET` 表示：只有请求以 `HTTP GET` 方法访问，才能被该类处理。
+
+注解`jakarta.ws.rs.Produces` 表示：允许您指定请求应答的格式。在这个例子中，通过转换 `HelloRecord`对象生成一个 JSON[2](https://jakarta.ee/learn/starter-guides/how-to-build-a-restful-web-service/#footnote-2) 数据。
+
+ `hello()` 方法返回一个 `HelloRecord`对象，这是Java 16新提供的类（[record class](https://openjdk.org/jeps/395) ）。
 
 ```java
 package org.eclipse.restfulservice.resources;
@@ -141,8 +120,7 @@ public record HelloRecord(String text) {
 }
 ```
 
-But if you use a lower version of Java, you can change it to a traditional
-POJO{{< sup href="#footnote-3">}}3{{</ sup >}}.
+如果您使用了低版本的java，您可以把它转换成传统的POJO{{< sup href="#footnote-3">}}3{{</ sup >}}对象。
 
 ```java
 package org.eclipse.restfulservice.resources;
@@ -160,15 +138,13 @@ public final class HelloRecord {
 }
 ```
 
-## Let's run the project from the CLI
+## 从CLI运行工程
 
-The project structure was generated without having a runtime associated with
-it. The merit of it is that we can choose from a multitude of runtimes. A list
-of compatible Jakarta EE can be found [here](/compatibility/download/).
+以上创建的工程中并没有包含运行时容器，这样做的目的是方便您选择合适的Jakarta EE兼容的运行时容器，清单详见 [这里](/compatibility/download/)。
 
-We will use WildFly in this tutorial.
+这里我们选择WildFly。
 
-To do that, we need to add an additional plugin to the `pom.xml` file.
+因此，我们在 `pom.xml` 文件中增加一个plugin。在 `pom.xml`文件的plugin区域中增加以下内容
 
 ```xml
 <plugin>
@@ -186,31 +162,19 @@ To do that, we need to add an additional plugin to the `pom.xml` file.
 </plugin>
 ```
 
-Include the above plugin in the plugins sections of the `pom.xml`.
+ `wildfly-maven-plugin` 是用来部署、重新部署、反部署或者运行 Jakarta EE 应用的Wildfly插件。这个plugin的完整配置可以查看这里: [WildFly Maven Plugin – Introduction](https://docs.jboss.org/wildfly/plugins/maven/latest/index.html)。
 
-The `wildfly-maven-plugin` is used to deploy, redeploy, undeploy or run the
-Jakarta EE application. There is also the ability to execute CLI commands. The
-whole configuration of this plugin can be found here: 
-[WildFly Maven Plugin – Introduction](https://docs.jboss.org/wildfly/plugins/maven/latest/index.html).
+有很多配置本地WildFly实例的样例，部分配置的样例请查看这里: [WildFly Maven Plugin – Run Example](https://docs.jboss.org/wildfly/plugins/maven/latest/examples/run-example.html).
 
-There are multiple ways you can configure a local instance of WildFly. Some
-configurations can be found here: 
-[WildFly Maven Plugin – Run Example](https://docs.jboss.org/wildfly/plugins/maven/latest/examples/run-example.html).
-
-However, in this tutorial, we can leave all the configurations as they are, as
-we will use the default, and that's enough for us.
-
-In particular, we are interested in `wildfly:run` CLI command. Let’s run the
-following command from the command line:
+我们可以通过 `wildfly:run` CLI 命令来运行应用，在命令窗口中输入如下命令:
 
 ```shell
 mvn clean package wildfly:run
 ```
 
-The command above will build the app and put it on Wildfly. If Wildfly is not
-installed, it will download and run it, and then the war file will be deployed.
+这个命令将编译应用并部署到Wildfly，如果 Wildfly 没安装，它将会下载并运行Wildfly，之后部署打包的应用war文件.
 
-Once the application runs, we will get the following output in the terminal:
+一旦应用运行起来，我们在终端上将看到以下输出:
 
 ```shell
 [INFO] Scanning for projects...
@@ -222,21 +186,21 @@ Once the application runs, we will get the following output in the terminal:
 .....
 skipped the log for brevity 
 .....
-03:35:02,323 INFO  [org.jboss.resteasy.resteasy_jaxrs.i18n] (ServerService Thread Pool -- 32) RESTEASY002225: Deploying jakarta.ws.rs.core.Application: class org.eclipse.restfulservice.ApplicationConfig
-03:35:02,346 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 32) WFLYUT0021: Registered web context: '/restfulservice' for server 'default-server'
-03:35:02,365 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0010: Deployed "restfulservice.war" (runtime-name : "restfulservice.war")
+03:35:02,323 INFO [org.jboss.resteasy.resteasy_jaxrs.i18n] (ServerService Thread Pool -- 32) RESTEASY002225: Deploying jakarta.ws.rs.core.Application: class org.eclipse.restfulservice.ApplicationConfig
+03:35:02,346 INFO [org.wildfly.extension.undertow] (ServerService Thread Pool -- 32) WFLYUT0021: Registered web context: '/restfulservice' for server 'default-server'
+03:35:02,365 INFO [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0010: Deployed "restfulservice.war" (runtime-name : "restfulservice.war")
 ```
 
-## Let's test the Service
+## 让我们测试这个服务
 
-Now that the service is running let’s visit <http://localhost:8080/restfulservice/hello>.\
-It should return:
+现在服务已经运行了，我们访问 <http://localhost:8080/restfulservice/hello>.\
+它将返回以下内容:
 
 ```json
 { "text": "Hello from Jakarta EE" }
 ```
 
-Alternatively, we can curl from the command line:
+也可以通过命令行测试，我们可以在命令行使用 curl:
 
 ```shell
 curl -v http://localhost:8080/restfulservice/hello
@@ -256,37 +220,26 @@ curl -v http://localhost:8080/restfulservice/hello
 < Date: Sun, 18 Dec 2022 08:45:51 GMT
 <
 * Connection #0 to host localhost left intact
-{"text":"Hello from Jakarta EE"}%      
+{"text":"Hello from Jakarta EE"}%  
 ```
 
-Let us have a look at the URL structure.
+这里，我们回顾一下URL的结构。
 
 ```
 http://<hostname>:<port>/<context-root>/<REST-config>/<resource-config>
 ```
 
-Let’s unpack the URL pattern here:
+**Hostname**: 安装WildFly 的服务器机器名称。
 
-**Hostname**: the name of the machine on which WildFly Server is installed.
+**Port:** WildFly 服务器启动的接收HTTP请求的端口。 这个端口缺省为 8080 , 但这是可以配置的。
 
-**Port:** The WildFly Server's listening port for incoming HTTP requests. This is
-port 8080 by default, but it can be configured.
+**Context-root:** 部署应用的根路径，默认是部署的WAR文件的文件名（不包括扩展名）。当文件部署完成后，这个值可以修改。
 
-**Context-root:** The context root to which the deployed application has been
-assigned. By default, this is the filename (without the extension) of the WAR
-file that is being deployed. But it can be changed when the file is being
-deployed.
+**REST-config:** 该值对应工程中 `@ApplicationPath` 注解，缺省为空，表示为 / 。我们可以在 `ApplicationConfig` 类中进行简单配置。
 
-**REST-config:** The value we have defined for the `@ApplicationPath`
-annotation in our project. By default, it is empty, which is indicated simply
-by /. We can easily configure it in our `ApplicationConfig` class.
+**Resource-config:** 该值是Java类中的 `@Path` 注解的值。这个例子中是 `"/hello"`.
 
-**Resource-config:** the value defined in the `@Path` annotation on the Java
-class defines an endpoint. In our case, `"/hello"` is handled by the
-`RestResource` class.
-
-If we want to change the `REST-config` part, for example, to `"/api"`, we can
-change the value in the  `@ApplicationPath` annotation like this:
+如果我们想改变 `REST-config` ,比如 改为`"/api"`, 我们可以参照以下例子在 `@ApplicationPath` 注解中进行修改:
 
 ```java
 import jakarta.ws.rs.ApplicationPath;
@@ -297,33 +250,28 @@ public class ApplicationConfig extends Application {
 }
 ```
 
-After making this change, if we run again, we have to change the curl command
-to consume the service as follows:
+完成如上修改后，需要重新运行应用，通过以下curl命令进行访问:
 
 ```shell
 curl -v http://localhost:8080/restfulservice/api/hello
 ```
 
-## Conclusion
+## 结论
 
-Congratulations! You have just learned how to develop a RESTful web service
-using Jakarta EE.
+恭喜! 您已经学会了如何使用Jakarta EE开发一个 RESTful web 服务。
 
 ---
 
 {{< grid/div class="footnote" isMarkdown="false" >}}
   <ol>
     <li id="footnote-1">
-      HTTP GET is a request method supported by HTTP used by the World Wide
-      Web. It requests a representation of the specified resource. Its general
-      form is: GET /path/to/resource HTTP/1.1
+      HTTP GET 是一种HTTP请求方法，它请求指定资源的表现形式。其一般形式为：GET /path/to/resource HTTP/1.1
     </li>
     <li id="footnote-2">
-      JSON - It stands for JavaScript Object Notation. JSON is a text format
-      for storing and transporting data
+      JSON - 它代表 JavaScript Object Notation（JavaScript对象表示法）。JSON 是一种用于存储和传输数据的文本格式。
    </li>
     <li id="footnote-3">
-      POJO - <a href="https://en.wikipedia.org/wiki/Plain_old_Java_object">Plain Old Java Object</a>
+      POJO - <a href="https://en.wikipedia.org/wiki/Plain_old_Java_object">简单Java对象（译注：即普通JavaBeans，是为了避免和EJB混淆所创造的简称）</a>
     </li>
   </ol>
 {{</ grid/div >}}

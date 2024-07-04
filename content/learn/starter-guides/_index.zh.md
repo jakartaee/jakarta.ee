@@ -2,8 +2,7 @@
 title: 入门指南
 headline: 入门指南
 description: >-
-  These guides provide quick, hands-on instructions for building different
-  applications using Jakarta EE.
+  这些指南提供了使用Jakarta EE构建不同应用程序的快速、实践性指导。
 hide_page_title: true
 hide_sidebar: true
 layout: single
