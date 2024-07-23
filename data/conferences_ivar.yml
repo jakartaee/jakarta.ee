@@ -74,13 +74,12 @@ years:
     url: https://www.jcrete.org/
     location: Kolymvari 🇬🇷
     date: Jul 22-26
-    upcoming: true
     
   - name: JConfDominica
     url: https://jconfdominicana.org/
     location: Santiago de los Caballeros 🇩🇴
     date: Jul 19-20
-    upcoming: true
+    blog: https://www.agilejava.eu/2024/07/20/jconf-dominicana-2024/
     
   - name: DWX
     url: https://www.developer-week.de/en/
