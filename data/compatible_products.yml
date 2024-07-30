@@ -207,14 +207,14 @@ sets:
           download: 'https://wildfly.org/downloads'
           versions:
             - version: 33.0.0.Final, Java 21
-              compatibility: https://github.com/wildfly/certifications/blob/EE10/WildFly_33.0.0.Final/jakarta-web-profile-jdk21.adoc
-              download_url: https://www.wildfly.org/downloads/#33.0.0.Final 
+              compatibility: 'https://github.com/wildfly/certifications/blob/EE10/WildFly_33.0.0.Final/jakarta-web-profile-jdk21.adoc'
+              download_url: 'https://www.wildfly.org/downloads/#33.0.0.Final'
             - version: 33.0.0.Final, Java 17
-              compatibility: https://github.com/wildfly/certifications/blob/EE10/WildFly_33.0.0.Final/jakarta-full-platform-jdk17.adoc
-              download_url: https://www.wildfly.org/downloads/#33.0.0.Final 
+              compatibility: 'https://github.com/wildfly/certifications/blob/EE10/WildFly_33.0.0.Final/jakarta-web-profile-jdk17.adoc'
+              download_url: 'https://www.wildfly.org/downloads/#33.0.0.Final'
             - version: 33.0.0.Final, Java 11
-              compatibility: https://github.com/wildfly/certifications/blob/EE10/WildFly_33.0.0.Final/jakarta-full-platform-jdk11.adoc
-              download_url: https://www.wildfly.org/downloads/#33.0.0.Final 
+              compatibility: 'https://github.com/wildfly/certifications/blob/EE10/WildFly_33.0.0.Final/jakarta-web-profile-jdk11.adoc'
+              download_url: 'https://www.wildfly.org/downloads/#33.0.0.Final'
             - version: 27.0.0.Alpha5, Java 17
               compatibility: 'https://github.com/wildfly/certifications/blob/EE10/WildFly_27.0.0.Alpha5/jakarta-web-profile-jdk17.adoc'
               download_url: 'https://github.com/wildfly/certifications/blob/EE10/WildFly_27.0.0.Alpha5/jakarta-web-profile-jdk17.adoc'
@@ -322,13 +322,13 @@ sets:
           download: 'https://wildfly.org/downloads'
           versions:
             - version: 33.0.0.Final, Java 21
-              compatibility: https://github.com/wildfly/certifications/blob/EE10/WildFly_33.0.0.Final/jakarta-core-jdk21.adoc#tck-results
-              download_url: https://www.wildfly.org/downloads/#33.0.0.Final
+              compatibility: 'https://github.com/wildfly/certifications/blob/EE10/WildFly_33.0.0.Final/jakarta-core-jdk21.adoc#tck-results'
+              download_url: 'https://www.wildfly.org/downloads/#33.0.0.Final'
             - version: 33.0.0.Final, Java 17
-              compatibility: https://github.com/wildfly/certifications/blob/EE10/WildFly_33.0.0.Final/jakarta-core-jdk21.adoc#tck-results
-              download_url: https://www.wildfly.org/downloads/#33.0.0.Final
+              compatibility: 'https://github.com/wildfly/certifications/blob/EE10/WildFly_33.0.0.Final/jakarta-core-jdk17.adoc#tck-results'
+              download_url: 'https://www.wildfly.org/downloads/#33.0.0.Final'
             - version: 33.0.0.Final, Java 11
-              compatibility: https://github.com/wildfly/certifications/blob/EE10/WildFly_33.0.0.Final/jakarta-core-jdk21.adoc#tck-results
+              compatibility: 'https://github.com/wildfly/certifications/blob/EE10/WildFly_33.0.0.Final/jakarta-core-jdk11.adoc#tck-results'
               download_url: https://www.wildfly.org/downloads/#33.0.0.Final
             - version: 27.0.0.Alpha5, Java 17
               compatibility: 'https://github.com/wildfly/certifications/blob/EE10/WildFly_27.0.0.Alpha5/jakarta-core-jdk17.adoc#jakarta-core-profile-1000-tck-java-se-17-results'
