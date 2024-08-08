@@ -213,7 +213,7 @@ sets:
           image_width: 120
           download: 'https://helidon.io'
           versions:
-            - version: 4.0
+            - version: '4.0'
               compatibility: 'https://github.com/helidon-io/helidon/wiki/MicroProfile-6-and-Jakarta-EE-10-Core-Profile-Certification,-Helidon-4#jakarta-ee-10-core-profile'
               download_url: 'https://helidon.io/'
         - name: IBM WebSphere Liberty
