@@ -207,6 +207,15 @@ sets:
     - title: Jakarta EE 10 Core Profile
       release: "/release/10"
       items:
+        - name: Helidon
+          vendor: Oracle Corporation
+          image: '/images/compatible_products/helidon.svg'
+          image_width: 120
+          download: 'https://helidon.io'
+          versions:
+            - version: '4.0'
+              compatibility: 'https://github.com/helidon-io/helidon/wiki/MicroProfile-6-and-Jakarta-EE-10-Core-Profile-Certification,-Helidon-4#jakarta-ee-10-core-profile'
+              download_url: 'https://helidon.io/'
         - name: IBM WebSphere Liberty
           vendor: IBM Corporation
           image: '/images/compatible_products/ibm-websphere-liberty-logo.svg'
