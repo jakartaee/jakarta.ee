@@ -9,6 +9,22 @@ years:
 dir: /about/meeting_minutes/
 items:
    marketing_committee:
+       - 
+          url: marketing_committee/minutes-marketing-0725-2024.pdf
+          title: 25 July 2024 (pdf)
+          year: 2024
+       - 
+          url: marketing_committee/minutes-marketing-0711-2024.pdf
+          title: 11 July 2024 (pdf)
+          year: 2024
+       - 
+          url: marketing_committee/minutes-marketing-0627-2024.pdf
+          title: 27 June 2024 (pdf)
+          year: 2024
+       - 
+          url: marketing_committee/minutes-marketing-0613-2024.pdf
+          title: 13 June 2024 (pdf)
+          year: 2024
        -
           url: marketing_committee/minutes-marketing-0516-2024.pdf
           title: 16 May 2024 (pdf)
