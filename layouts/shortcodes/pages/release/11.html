@@ -37,7 +37,7 @@
       </div>
     </div>
   </div>
-  <div class="margin-top-60">
+  <div class="margin-top-60 specification-graphic">
     {{ partial "svg.html" (dict "path" "/content/release/11/images/specifications-laptop.svg") }}
     <div class="margin-top-20 text-center">
       <a class="visible-xs visible-sm" href="./images/specifications-laptop.svg">View Enlarged Image</a>
@@ -267,3 +267,74 @@
     </div>
   </div>
 </div>
+
+<script>
+  const graphic = document.querySelector('.specification-graphic svg');
+  let isAnimating = false;
+
+  function calculateScale() {
+    const graphicRect = graphic.getBoundingClientRect();
+    const windowHeight = window.innerHeight;
+
+    // Calculate the graphic's top, bottom, and height
+    const graphicTop = graphicRect.top;
+    const graphicBottom = graphicRect.bottom;
+
+    // Calculate the top and bottom of the viewport
+    const viewportTop = 0;
+    const viewportBottom = windowHeight;
+
+    // Check if the entire graphic is within the viewport
+    if (graphicTop >= viewportTop && graphicBottom <= viewportBottom) {
+      // Calculate the midpoint of the viewport and the graphic
+      const viewportMidpoint = windowHeight / 2;
+      const graphicMidpoint = (graphicTop + graphicBottom) / 2;
+
+      // Calculate the distance of the graphic's midpoint from the viewport center
+      const distanceFromCenter = Math.abs(graphicMidpoint - viewportMidpoint);
+
+      // Normalize this distance to a scale factor between 1 and 1.5
+      const maxDistance = windowHeight / 2; // Define max distance
+      const normalizedDistance = Math.min(distanceFromCenter / maxDistance, 1); // Clamp between 0 and 1
+      const scale = 1 + (1 - normalizedDistance) * 0.5; // Scale grows up to 1.5
+
+      return scale;
+    }
+  }
+
+  function expandGraphic() {
+    const scale = calculateScale();
+    graphic.style.transform = `scale(${scale})`;
+    
+    const graphicRect = graphic.getBoundingClientRect();
+    if (graphicRect.top < window.innerHeight && graphicRect.bottom > 0) {
+      requestAnimationFrame(expandGraphic);
+    }
+  }
+
+  function startAnimation() {
+    if (!isAnimating && window.innerWidth >= 768) {
+      isAnimating = true;
+      requestAnimationFrame(expandGraphic);
+    }
+  }
+
+  function stopAnimation() {
+    isAnimating = false;
+  }
+
+  if (graphic) {
+    window.addEventListener('scroll', startAnimation);
+  }
+</script>
+
+<style>
+.specification-graphic svg {
+  position: sticky;
+
+  @media (min-width: 768px) {
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+  }
+}
+</style>
