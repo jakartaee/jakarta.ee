@@ -675,49 +675,36 @@ other = "Sign up now"
       </li>
       <li>
         <strong>Pagination</strong>: Support for two types of pagination:
-        offset and Cursor.
+        offset and cursor.
       </li>
       <li>
-        <strong>Query Language</strong>: A streamlined query language designed
-        to specify the semantics of query methods within Jakarta Data
-        repositories.
+        <strong>Jakarta Data Query Language</strong>: A streamlined query
+        language designed to specify the semantics of query methods within
+        Jakarta Data repositories.
       </li>
     </ul>
     <h4 class="h5 fw-700">Streamlining the Platform</h4>
     <ul>
       <li>
-        <strong>Deprecated Specifications</strong>: The continued removal of outdated
-        specifications to streamline and simplify development.
+        <strong>The Removal of Managed Beans</strong>: The Managed Beans
+        specification has been deprecated and removed from Jakarta EE 11 and
+        replaced by CDI (Context and Dependency Injection) alternatives.
       </li>
       <li>
-        <strong>Contexts and Dependency Injection (CDI) Enhancements</strong>:
-        Jakarta EE 11 release focuses on the continued shift towards CDI
-        centricity, including replacing Managed Beans with superior CDI
-        alternatives.
+        <strong>The removal of all references to the Java SE SecurityManager</strong>:
+        Aligning with JEP 411, all references to SecurityManager have been
+        removed, paving the way for more modern security practices.
       </li>
       <li>
-        <strong>XML and REST Simplifications</strong>: Note the removal of
-        Jakarta XML Binding from Jakarta RESTful Web Services to streamline and
-        focus the framework's capabilities.
+        <strong>The removal of optional features to lower the barrier for new vendors</strong>:
+        All optional specifications have been removed in Jakarta EE 11.
       </li>
       <li>
-        Embracing Records throughout the release
-      </li>
-      <li>
-        Deprecation of the SecurityManager
-      </li>
-      <li>
-        Removal of optional features
-      </li>
-      <li>
-        General cleanup and clarifications (continued from Jakarta EE 10)
+        <strong>Embracing Java Records</strong>: Continued support for Java
+        Records with various specifications (e.g. Java Validation) to ensure
+        data integrity and reduce boilerplate code
       </li>
     </ul>
-    <h4 class="h5 fw-700">Jakarta Validation supporting Java Records</h4>
-    <p>
-      This integration allows developers to use Java Records with Jakarta
-      Validation to ensure data integrity and reduce boilerplate code.
-    </p>
  """
 
 [jakarta-ee-version-11-modal-productivity-title]
