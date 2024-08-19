@@ -22,19 +22,25 @@ years:
     date: Oct 15
     upcoming: true
 
-  - name: Community Over Code 2024
+  - name: Community Over Code
     url: https://communityovercode.org/
     location: Denver, CO 🇺🇸
     date: Oct 7-10
     upcoming: true
-    
-  - name: Berlin Expert Days 2024
+
+  - name: Devoxx Morocco
+    url: https://devoxx.ma/
+    location: Marrakech 🇲🇦
+    date: Oct 2-4
+    upcoming: true
+        
+  - name: Berlin Expert Days
     url: https://bed-con.org/
     location: Berlin 🇩🇪
     date: Sep 19-20
     upcoming: true
 
-  - name: Jalapeño 2024
+  - name: Jalapeño
     url: https://jalapeño.net
     location: Puerto Vallarta 🇲🇽
     date: Sep 14-15
@@ -64,7 +70,7 @@ years:
     date: Sep 9
     upcoming: true
 
-  - name: Oracle LAOUC Community Tour 2024
+  - name: LAOUC Community Tour 2024
     url: https://www.laouc.org/
     location: Asunción 🇵🇾
     date: Aug 23
@@ -74,6 +80,7 @@ years:
     url: https://www.jcrete.org/
     location: Kolymvari 🇬🇷
     date: Jul 22-26
+    blog: https://www.agilejava.eu/2024/08/03/jcrete-2024/
     
   - name: JConfDominica
     url: https://jconfdominicana.org/
