@@ -19,12 +19,9 @@
 
 
 {{ if or (eq .Section "specifications") (strings.HasPrefix .Section "specifications/") }}
-  {{ if (strings.HasPrefix .RelPermalink "/zh/")}}
-    {{ with index (split .RelPermalink "/zh/")}}
-      <base href="/{{ index . 1 }}"/>
-    {{ end }}
-  {{ else if (strings.HasPrefix .RelPermalink "/ja/")}}
-    {{ with index (split .RelPermalink "/ja/")}}
+  {{ $lang_prefix := (print "/" .Language.Lang "/") }}
+  {{ if (strings.HasPrefix .RelPermalink $lang_prefix )}}
+    {{ with index (split .RelPermalink $lang_prefix)}}
       <base href="/{{ index . 1 }}"/>
     {{ end }}
   {{ end }}
