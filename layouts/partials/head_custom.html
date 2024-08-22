@@ -16,3 +16,16 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Exo:wght@400;700&display=swap" rel="stylesheet">
+
+
+{{ if or (eq .Section "specifications") (strings.HasPrefix .Section "specifications/") }}
+  {{ if (strings.HasPrefix .RelPermalink "/zh/")}}
+    {{ with index (split .RelPermalink "/zh/")}}
+      <base href="/{{ index . 1 }}"/>
+    {{ end }}
+  {{ else if (strings.HasPrefix .RelPermalink "/ja/")}}
+    {{ with index (split .RelPermalink "/ja/")}}
+      <base href="/{{ index . 1 }}"/>
+    {{ end }}
+  {{ end }}
+{{ end }}
