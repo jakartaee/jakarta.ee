@@ -16,3 +16,13 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Exo:wght@400;700&display=swap" rel="stylesheet">
+
+
+{{ if or (eq .Section "specifications") (strings.HasPrefix .Section "specifications/") }}
+  {{ $lang_prefix := (print "/" .Language.Lang "/") }}
+  {{ if (strings.HasPrefix .RelPermalink $lang_prefix )}}
+    {{ with index (split .RelPermalink $lang_prefix)}}
+      <base href="/{{ index . 1 }}"/>
+    {{ end }}
+  {{ end }}
+{{ end }}
