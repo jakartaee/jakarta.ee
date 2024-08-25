@@ -10,6 +10,12 @@ years:
     date: Dec 3
     upcoming: true
 
+  - name: DevCon
+    url: https://www.dev-con.ro
+    location: Bucharest 🇷🇴
+    date: Nov 6
+    upcoming: true
+
   - name: Open Community for Java
     url: https://java.ocxconf.org
     location: Mainz 🇩🇪
@@ -74,7 +80,7 @@ years:
     url: https://www.laouc.org/
     location: Asunción 🇵🇾
     date: Aug 23
-    upcoming: true
+    blog: https://www.agilejava.eu/2024/08/25/laouc-community-tour-2024/
 
   - name: JCrete
     url: https://www.jcrete.org/
