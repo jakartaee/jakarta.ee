@@ -10,6 +10,12 @@ years:
     date: Dec 3
     upcoming: true
 
+  - name: SFSCON
+    url: https://www.sfscon.it
+    location: Bolzano 🇮🇹
+    date: Nov 8-9
+    upcoming: true
+
   - name: DevCon
     url: https://www.dev-con.ro
     location: Bucharest 🇷🇴
