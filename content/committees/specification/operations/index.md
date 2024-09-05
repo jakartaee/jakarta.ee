@@ -215,6 +215,15 @@ pages](https://eclipse-ee4j.github.io/jakartaee-platform/jakartaee9/JakartaEE9Re
 The Release Plan should be reviewed with the Specification Committee
 before continuing with the ballot stage.
 
+If during the development of a specification the project team refines 
+the deliverable goal in such a way that they wish to change the specification version 
+being delivered from a major to a minor (such as if they decide to not include any 
+breaking changes), a new Plan or Progress Review does not necessarily need to be 
+undertaken. The project team should create a pull request to the 
+[Specifications](https://jakarta.ee/specifications/) repository changing 
+the existing specification, artefact, release record, and folder name versions to their new version. 
+The pull request description should provide details as to why this change is taking place.
+
 ## Recommended Specification Project Repository Structure # {#recommended_specification_project_repository_structure}
 
 The current recommendation for structure of the specification project
