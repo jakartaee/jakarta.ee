@@ -80,13 +80,12 @@ years:
     url: https://www.meetup.com/jacksonville-java-user-group-jaxjug/
     location: Jacksonville, FL 🇺🇸
     date: Sep 10
-    upcoming: true
 
   - name: Triangle JUG
     url: https://www.meetup.com/triangle-java-users-group/
     location: Durham, NC 🇺🇸
     date: Sep 9
-    upcoming: true
+    blog: https://www.agilejava.eu/2024/09/10/triangle-jug-2024/
 
   - name: LAOUC Community Tour 2024
     url: https://www.laouc.org/
