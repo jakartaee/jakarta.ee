@@ -14,9 +14,11 @@
 import 'eclipsefdn-solstice-assets'
 import List from 'list.js';
 import './video-modal';
+import eclipsefdnSpecificationBadges from './specification-badges';
 
-document.addEventListener("DOMContentLoaded", function(event) {
+document.addEventListener("DOMContentLoaded", function() {
     (function($, document) {
+      eclipsefdnSpecificationBadges.render();
 
       const matchHeightDropdownMenuItems = () => {
         $('.match-height-dropdown-menu-item').matchHeight({

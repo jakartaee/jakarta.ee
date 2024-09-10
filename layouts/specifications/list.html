@@ -12,10 +12,8 @@
     <h1 class="big-text">
       {{ .Title }}
       {{ if .Params.project_id }}
-        <span class="badge">
-          <a href="https://projects.eclipse.org/projects/{{ .Params.project_id }}"><i class="fa fa-archive" aria-hidden="true"></i> Project</a>
+        <span class="eclipsefdn-specification-badges" data-project-id="{{ .Params.project_id }}">
         </span>
-
       {{ end }}
     </h1>
   {{ end }}
