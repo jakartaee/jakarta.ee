@@ -15,20 +15,14 @@
         <span class="badge">
           <a href="https://projects.eclipse.org/projects/{{ .Params.project_id }}"><i class="fa fa-archive" aria-hidden="true"></i> Project</a>
         </span>
-        {{ range first 1 (where $.Site.Data.eclipsefdn_projects "project_id" .Params.project_id) }}
-        	{{- with .website_url }}
-	        <span class="badge">
-	          <a href="{{ . }}" target="_blank"><i class="fa fa-globe" aria-hidden="true"></i> {{ i18n "layouts-specifications-list-website" }}</a>
-	        </span>
-	        {{ end }}
-        {{ end }}
+
       {{ end }}
     </h1>
   {{ end }}
   <p>{{ .Params.summary }}</p>
   {{ if eq .Page.Parent.Title "Specifications" }}
     <ul class="margin-bottom-60">
-      {{/* 
+      {{/*
         Iterate over the section's pages, extract the version from the title
         and group them by version.
       */}}
@@ -75,15 +69,11 @@
                         {{ if .Params.project_id }}
                             <ul class="list-inline">
                                 <li><a class="btn card-badge btn-xs" href="https://projects.eclipse.org/projects/{{ .Params.project_id }}"><i class="fa fa-archive" aria-hidden="true"></i> {{ i18n "layouts-specifications-list-project" }}</a></li>
-                                {{ range first 1 (where $.Site.Data.eclipsefdn_projects "project_id" .Params.project_id) }}
-                                    {{- with .website_url }}
-                                        <li><a class="btn card-badge btn-xs" href="{{ . }}" target="_blank"><i class="fa fa-globe" aria-hidden="true"></i> {{ i18n "layouts-specifications-list-website" }}</a></li>
-                                    {{ end }}
-                                {{ end }}
+
                                 <li>
-                                  <a 
-                                    class="btn btn-xs card-badge" 
-                                    href="https://www.youtube.com/watch?v=wK5Uis9QnFU" 
+                                  <a
+                                    class="btn btn-xs card-badge"
+                                    href="https://www.youtube.com/watch?v=wK5Uis9QnFU"
                                     target="_blank"
                                   >
                                     <i class="fa fa-youtube-play" aria-hidden="true"></i>
@@ -134,16 +124,12 @@
                     {{ if .Params.project_id }}
                         <ul class="list-inline">
                             <li><a class="btn card-badge btn-xs" href="https://projects.eclipse.org/projects/{{ .Params.project_id }}"><i class="fa fa-archive" aria-hidden="true"></i> Project</a></li>
-                            {{ range first 1 (where $.Site.Data.eclipsefdn_projects "project_id" .Params.project_id) }}
-                                {{- with .website_url }}
-                                    <li><a class="btn card-badge btn-xs" href="{{ . }}" target="_blank"><i class="fa fa-globe" aria-hidden="true"></i> {{ i18n "layouts-specifications-list-website" }}</a></li>
-                                {{ end }}
-                            {{ end }}
+
                             {{ with .Params.video_guide }}
                               <li>
-                                <a 
-                                  class="btn btn-xs card-badge" 
-                                  href="{{ . }}" 
+                                <a
+                                  class="btn btn-xs card-badge"
+                                  href="{{ . }}"
                                   target="_blank"
                                 >
                                   <i class="fa fa-youtube-play" aria-hidden="true"></i>
