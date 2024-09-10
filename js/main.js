@@ -18,7 +18,7 @@ import eclipsefdnSpecificationBadges from './specification-badges';
 
 document.addEventListener("DOMContentLoaded", function() {
     (function($, document) {
-      eclipsefdnSpecificationBadges.render();
+      eclipsefdnSpecificationBadges.renderAll();
 
       const matchHeightDropdownMenuItems = () => {
         $('.match-height-dropdown-menu-item').matchHeight({
