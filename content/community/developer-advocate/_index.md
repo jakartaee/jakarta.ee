@@ -19,7 +19,8 @@ On this page, you can find some information about how to reach out to me, and wh
 - [Bluesky](https://bsky.app/profile/ivargrimstad.bsky.social)
 - [Threads](https://www.threads.net/@ivargrimstad_official)
 - [Instagram](https://www.instagram.com/ivargrimstad_official/)
-- [Blog](https://agilejava.eu)
+- [Blog](https://blogs.eclipse.org/blogs/ivar-grimstad)
+- [Hashtag Jakarta EE blog series](https://www.agilejava.eu/category/hashtag-jakartaee/)
 
 ## Conferences {#conferences}
 

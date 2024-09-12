@@ -68,18 +68,18 @@ years:
     url: https://www.meetup.com/gatewayjug/events/300785154
     location: St. Louis, MO 🇺🇸
     date: Sep 12
-    upcoming: true
 
   - name: Java Metroplex User Group
     url: https://www.meetup.com/javamug/
     location: Dallas, TX 🇺🇸
     date: Sep 11
-    upcoming: true
+    blog: https://www.agilejava.eu/2024/09/12/javamug-2024/
 
   - name: Jacksonville JUG
     url: https://www.meetup.com/jacksonville-java-user-group-jaxjug/
     location: Jacksonville, FL 🇺🇸
     date: Sep 10
+    blog: https://www.agilejava.eu/2024/09/11/jaxjug-2024/
 
   - name: Triangle JUG
     url: https://www.meetup.com/triangle-java-users-group/
