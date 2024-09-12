@@ -1,0 +1,89 @@
+categories:
+   - title: "共通、共有"
+   - testimonials:
+      - company: Tomitribeの創設者兼CEO
+        name:  David Blevins氏
+        logo: /images/members/jakarta-member-tomitribe.svg
+        text: オープンソースとJava標準化に20年間従事してきましたが、Jakarta EE 8のリリースに必要なほど、本当に多様で、平等に作業する取り組みを見たことがありません。ソースコードは寄付されましたが、重要なのは、変化を勇敢に受け入れ、オープンプロセスを革新し、個人の成功の上で成立する勝利が繰り返されるコミュニティが現れたことです。私たちがJakartaで10年の間に成し遂げたことを振り返ると、誰もが、これが私たちの未来を形作った特別な瞬間であったことに同意するでしょう。
+        picture: /images/testimonials/david-blevins.png
+        link: ""
+      - company: 富士通 ミドルウェア本部 本部長代理
+        name: 野崎秀樹
+        logo: /images/members/jakarta-member-fujitsu.svg
+        text: 富士通は長年にわたり、Java言語の利用者であるだけでなく、Javaの開発にも積極的に取り組み、Java Community Process Executive CommitteeのチャーターメンバとしてJava言語の開発プロセスづくりに貢献してきました。今後のJava EE開発がEclipseに移行し、オープンソース開発仕様となる中、富士通はJava EEをJakarta EEとして進化させ、クラウドネイティブの世界で提供するために、引き続きEclipseにStrategicメンバーとして参加していきます。
+        picture: /images/silhouette.jpg
+        link: ""
+      - company: Distinguished Engineer、CTO IBM アプリケーション・プラットフォーム
+        name: Ian Robinson氏
+        logo: /images/members/jakarta-member-ibm.png
+        picture: /images/testimonials/ian-robinson.jpg
+        link: ""
+        text: IBMはJava EEの作成と、黎明期のガイドを支援してきました。私はJakarta EEの下で行われた進歩を見て嬉しく思います。Jakarta EEとMicroProfileが、クラウドネイティブイノベーションとクラウドのJavaに必要な技術のオープンスタンダードになることを楽しみにしています。
+      - company: Webtide LLCのCEO兼共同設立者
+        name: Jesse McConnell氏
+        logo: /images/members/jakarta-member-webtide.svg
+        picture: /images/testimonials/jesse-mcconnell.jpg
+        link: ""
+        text: Jakarta EEの仕様は、コアJavaエクスペリエンスの基本です。Webtide LLCは、EclipseのJettyの開発者を通じて、創業以来、多くの仕様に貢献しており、Jakarta EEの一部としてこれを続けることを喜ばしく思っています。
+      - company: Red Hatソフトウェアエンジニアリング担当本部長
+        name: Mark Little氏
+        logo: /images/members/jakarta-member-redhat.svg
+        picture: /images/silhouette.jpg
+        link: ""
+        text: Red Hatは、Jakarta EEの開発に対するサポートを再度支持します。私たちは、Eclipse Foundation及び広範なJavaコミュニティと協力し、Enterprise Javaを前進させるための取組を調整することを期待しています。コミュニティガバナンスと組み合わせた幅広い参加は、Jakarta EEの進化を加速するのに役立ちます。Jakarta EEは、OpenJDKがリリースされて以来、オープンソースエンタープライズJavaエコシステムに起こった最も重要なイベントの1つであると考えています。
+      - company: Payara®サービス株式会社およびPayara Foundationの創設者および取締役
+        name: Stephen Millidge氏
+        logo: /images/members/jakarta-member-payara.svg
+        picture: /images/testimonials/stephen-millidge.jpg
+        link: ""
+        text: PayaraチームはJakarta EEの発展と成功に尽力しています。当社のカスタマーサポート契約は、継続的な開発活動に資金を提供し、当社の専門知識とリソースをJakarta EEの開発に引き続き提供します。私たちは、オープンソースクラウドネイティブJavaの未来を形作ることに尽力しています。
+      - company: Oracle Enterprise Cloud Native Java、エンジニアリング担当本部長
+        name: Tom Snyder氏
+        logo: /images/members/jakarta-member-oracle.svg
+        picture: /images/silhouette.jpg
+        link: ""
+        text: Oracleは、Jakarta EEの成功に引き続き尽力し、その進歩とコミュニティのサポートに喜んでいます。当社はプロジェクトと委員会に貢献し、Oracle Enterprise Cloud Native Java製品の技術を活用しています。
+   - title: "参加する"
+   - testimonials:
+      - company: "Be-Tseグループ - ミラノオフィス"
+        name:  "Dmitri Cherkas氏"
+        logo: ""
+        text: "Jakarta EEコミュニティの深刻さ、能力、おもてなしの心は、他のどのコミュニティとも一致しません。私は世界で最も優れたプログラマーの何人かと重要な事をしていると思います。私はJakarta EEをより良くすることに貢献できると思います。そして、より重要なことに、Jakarta EEを使う方が得意です。これは私にやる気を与え、幸せにさせます。コミッターであることの一番のメリットは、作品がリリースされるのを見ることです。そして、最も難しいのは、改善できる領域を見つけることです。 "
+        picture: "/images/testimonials/dmitri.jpg"
+        link: "https://newsroom.eclipse.org/eclipse-newsletter/2021/november/committer-profile-dmitri-cherkas"
+      - company: "自営業のソフトウェアコンサルタント、著者"
+        name: Arjan Tijms氏
+        logo: ""
+        text: "コミッターになるには、世界で最も優秀で洗練された人や上級者である必要はありませんが、仕事や役割に対する情熱は必要です。あなたはオープンソースが本当に好きで、それが趣味なので、オープンソースに多くの時間を捧げる意欲があるはずです。その情熱により、長く続けることができます。オープンソースソフトウェアに従事することは、あなたに大きな利点をもたらします。さらに、あなたの顧客にとっても、より大きな利点になります。なぜなら、あなたがスタックを実装し、そして、他の誰が、それに関わっているかを知っているからです。"
+        picture: "/images/testimonials/arjan-tijms.jpg"
+        link: "https://www.eclipse.org/community/eclipse_newsletter/2020/november/5.php"
+      - company: "Oracle Corporation"
+        name: "Lukas Jungmann氏"
+        logo: "/images/members/jakarta-member-oracle.svg"
+        picture: "/images/testimonials/lukas-jungmann.png"
+        link: "https://www.eclipse.org/community/eclipse_newsletter/2020/august/5.php"
+        text: "<p>Eclipseのオープン ソースは貢献とコラボレーションがすべてなので、オープンソースプロジェクトに参加することは、抱えている問題を解決するのに非常に有効な手段です。適切な配慮が行われていないプロジェクトがある場合は、EclipseとJakarta EEコミュニティがプロジェクトを進めるのに役立ちます。</p><p>あなたは小さなことから始めることができます。それはまるで重要ではないように見えるかもしれませんが、多くの場合、重要です。プロジェクトとそれに関連するプロセスに関する知識を増やし、経験を積み、必要に応じてコミッターの地位を目指すことができます。</p>"
+      - company: "INNOQ"
+        name: "Tobias Erdle氏"
+        logo: ""
+        picture: "/images/testimonials/tobias-erdle.png"
+        link: "https://newsroom.eclipse.org/eclipse-newsletter/2021/may/committer-profile-tobias-erdle"
+        text: "Jakarta EEのような環境でオープン ソースプロジェクトのコミッターを務める一番のメリットは、日々の仕事と大きく異なることです。職場では、実際に私のコードを使用している人からフィードバックを受けることはほとんどありませんが、ここでは人と直接コミュニケーションし、そのニーズに応えることができます。それは私にとってとても楽しいことです。自信を持って何かに貢献してください。ほとんどのオープンソースプロジェクトで働いている人は、すべての改善を喜んで受け入れていることが分かります。"
+      - company: "Oracle"
+        name: "Jan Supol氏"
+        logo: "/images/members/jakarta-member-oracle.svg"
+        picture: "/images/testimonials/jan-supol.png"
+        link: "https://newsroom.eclipse.org/eclipse-newsletter/2021/august/committer-profile-jan-supol"
+        text: "オープンソースに関わることで経験や知識が得られ、何か意味のあることを成し遂げているので良い気分になります。コミッターになることは、人気があり、広く使われ、プロジェクトコミュニティの生活を楽にするプロジェクトに取り組む絶好の機会です。コミュニティの問題を解決することは、とてもやりがいのあることです。毎日さまざまな問題を解決する機会があり、いろいろな場面で豊かな経験ができるので楽しいです。"
+      - company: "Inpixon"
+        name: "Jason Mehrens氏"
+        logo: ""
+        picture: "/images/testimonials/jason-mehrens.jpg"
+        link: "https://www.eclipse.org/community/eclipse_newsletter/2021/march/4.php"
+        text: "私はオープン性、コードベースへのアクセス、専門知識、ソフトウェアを開発している人が好きです。これは優れたナレッジベースです。さまざまなプロジェクトのメーリングリストで質問に答える、問題を提出する、プルリクエストを作成するなど、さまざまな方法で貢献できます。パッチを発行し、そのパッチをエキスパートにレビューしてもらい、プロジェクトにコミットさせることで、プロジェクトに影響を与えることができます。より深く関わることの大きな利点は、専門知識を利用できることです。"
+      - company: "IBM"
+        name: "Emily Jiang氏"
+        logo: "/images/members/jakarta-member-ibm.png"
+        picture: "/images/testimonials/emily-jiang.png"
+        link: "https://newsroom.eclipse.org/eclipse-newsletter/2022/january/committer-profile-emily-jiang"
+        text: "プロジェクトに貢献したり、他の人の仕事をレビューしたり、コミュニティを助けたりできるところが好きです。コミュニティを増やし続けることは、プロジェクトを成功に導く重要な要素の1つです。私はMicroProfileとJakarta EEを可能な限り成功に導き、イノベーションを促進し、他の人にこれらのコミュニティに参加して協力するよう勧めたいと思っています。なぜなら、これらのオープン ソース コミュニティは情熱的な人でいっぱいだからです"
