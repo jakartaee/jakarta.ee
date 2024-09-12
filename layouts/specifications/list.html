@@ -12,23 +12,15 @@
     <h1 class="big-text">
       {{ .Title }}
       {{ if .Params.project_id }}
-        <span class="badge">
-          <a href="https://projects.eclipse.org/projects/{{ .Params.project_id }}"><i class="fa fa-archive" aria-hidden="true"></i> Project</a>
+        <span class="eclipsefdn-specification-badges" data-project-id="{{ .Params.project_id }}">
         </span>
-        {{ range first 1 (where $.Site.Data.eclipsefdn_projects "project_id" .Params.project_id) }}
-        	{{- with .website_url }}
-	        <span class="badge">
-	          <a href="{{ . }}" target="_blank"><i class="fa fa-globe" aria-hidden="true"></i> {{ i18n "layouts-specifications-list-website" }}</a>
-	        </span>
-	        {{ end }}
-        {{ end }}
       {{ end }}
     </h1>
   {{ end }}
   <p>{{ .Params.summary }}</p>
   {{ if eq .Page.Parent.Title "Specifications" }}
     <ul class="margin-bottom-60">
-      {{/* 
+      {{/*
         Iterate over the section's pages, extract the version from the title
         and group them by version.
       */}}
@@ -73,24 +65,12 @@
                             <a href="{{- with .Params.redirect_url | default .RelPermalink }}{{.}}{{- end }}">{{ .Title }}</a>
                         </h3>
                         {{ if .Params.project_id }}
-                            <ul class="list-inline">
-                                <li><a class="btn card-badge btn-xs" href="https://projects.eclipse.org/projects/{{ .Params.project_id }}"><i class="fa fa-archive" aria-hidden="true"></i> {{ i18n "layouts-specifications-list-project" }}</a></li>
-                                {{ range first 1 (where $.Site.Data.eclipsefdn_projects "project_id" .Params.project_id) }}
-                                    {{- with .website_url }}
-                                        <li><a class="btn card-badge btn-xs" href="{{ . }}" target="_blank"><i class="fa fa-globe" aria-hidden="true"></i> {{ i18n "layouts-specifications-list-website" }}</a></li>
-                                    {{ end }}
-                                {{ end }}
-                                <li>
-                                  <a 
-                                    class="btn btn-xs card-badge" 
-                                    href="https://www.youtube.com/watch?v=wK5Uis9QnFU" 
-                                    target="_blank"
-                                  >
-                                    <i class="fa fa-youtube-play" aria-hidden="true"></i>
-                                    {{ i18n "layouts-specifications-list-video" }}
-                                  </a>
-                                </li>
-                            </ul>
+                          <div 
+                            class="eclipsefdn-specification-badges" 
+                            data-project-id="{{ .Params.project_id }}" 
+                            data-video="https://www.youtube.com/watch?v=wK5Uis9QnFU"
+                          >
+                          </div>
                         {{ end }}
                         {{ if eq .Params.summary_sixty_char nil  }}
                             <p>{{ .Params.summary | truncate 100 }}</p>
@@ -132,26 +112,12 @@
                       <a href="{{- with .Params.redirect_url | default .RelPermalink }}{{.}}{{- end }}">{{ .Title }}</a>
                     </h3>
                     {{ if .Params.project_id }}
-                        <ul class="list-inline">
-                            <li><a class="btn card-badge btn-xs" href="https://projects.eclipse.org/projects/{{ .Params.project_id }}"><i class="fa fa-archive" aria-hidden="true"></i> Project</a></li>
-                            {{ range first 1 (where $.Site.Data.eclipsefdn_projects "project_id" .Params.project_id) }}
-                                {{- with .website_url }}
-                                    <li><a class="btn card-badge btn-xs" href="{{ . }}" target="_blank"><i class="fa fa-globe" aria-hidden="true"></i> {{ i18n "layouts-specifications-list-website" }}</a></li>
-                                {{ end }}
-                            {{ end }}
-                            {{ with .Params.video_guide }}
-                              <li>
-                                <a 
-                                  class="btn btn-xs card-badge" 
-                                  href="{{ . }}" 
-                                  target="_blank"
-                                >
-                                  <i class="fa fa-youtube-play" aria-hidden="true"></i>
-                                  {{ i18n "layouts-specifications-list-video" }}
-                                </a>
-                              </li>
-                            {{ end }}
-                        </ul>
+                      <div 
+                        class="eclipsefdn-specification-badges" 
+                        data-project-id="{{ .Params.project_id }}" 
+                        data-video="{{ .Params.video_guide }}"
+                      >
+                      </div>
                     {{ end }}
                     {{ if eq .Params.summary_sixty_char nil  }}
                         <p>{{ .Params.summary | truncate 57 }}</p>
