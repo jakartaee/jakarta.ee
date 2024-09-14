@@ -62,12 +62,12 @@ years:
     url: https://jalapeño.net
     location: Puerto Vallarta 🇲🇽
     date: Sep 14-15
-    upcoming: true
 
   - name: St. Louis JUG
     url: https://www.meetup.com/gatewayjug/events/300785154
     location: St. Louis, MO 🇺🇸
     date: Sep 12
+    blog: https://www.agilejava.eu/2024/09/14/gateway-jug-2024/
 
   - name: Java Metroplex User Group
     url: https://www.meetup.com/javamug/
