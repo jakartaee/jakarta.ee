@@ -49,6 +49,15 @@ sets:
             - version: 23.0.0.3, Java 11
               compatibility: 'https://www.ibm.com/support/pages/ibm-websphere-liberty-23003-jakarta-ee-platform-10-using-java-11-certification-summary'
               download_url: 'https://www.ibm.com/support/fixcentral/swg/selectFixes?parent=ibm%7EWebSphere&product=ibm/WebSphere/WebSphere+Liberty&release=23.0.0.3&platform=All&function=fixId&fixids=wlp-jakartaee10-23.0.0.3&includeSupersedes=0'
+        - name: InforSuite Application Server
+          vendor: Shandong Cvicse Middleware Co.,Ltd.
+          image: '/images/compatible_products/inforsuite_logo.svg'
+          image_width: 195
+          download: 'http://www.inforbus.com/as.html'
+          versions:
+          - version: 10.0.10
+            compatibility: 'http://www.inforbus.com/InforsuiteAS/platform-tckresults/FullPlatform10/index.html'
+            download_url: 'http://www.inforbus.com/as.html'
         - name: Open Liberty
           vendor: IBM Corporation
           image: '/images/compatible_products/ibm-open-liberty-logo.svg'
