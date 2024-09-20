@@ -9,6 +9,12 @@ years:
     location: online 🌐
     date: Dec 3
     upcoming: true
+    
+  - name: JUG Torino
+    url: https://jugtorino.org
+    location: Torino 🇮🇹
+    date: Nov 12
+    upcoming: true
 
   - name: SFSCON
     url: https://www.sfscon.it
@@ -56,12 +62,12 @@ years:
     url: https://bed-con.org/
     location: Berlin 🇩🇪
     date: Sep 19-20
-    upcoming: true
 
   - name: Jalapeño
     url: https://jalapeño.net
     location: Puerto Vallarta 🇲🇽
     date: Sep 14-15
+    blog: https://www.agilejava.eu/2024/09/20/jalapeno-2024/
 
   - name: St. Louis JUG
     url: https://www.meetup.com/gatewayjug/events/300785154
