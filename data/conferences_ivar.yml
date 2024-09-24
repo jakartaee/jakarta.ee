@@ -28,6 +28,12 @@ years:
     date: Nov 12
     upcoming: true
 
+  - name: JUG Milano
+    url: https://www.jugmilano.it/
+    location: Milan 🇮🇹
+    date: Nov 11
+    upcoming: true
+
   - name: SFSCON
     url: https://www.sfscon.it
     location: Bolzano 🇮🇹
