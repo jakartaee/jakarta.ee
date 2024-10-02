@@ -1,6 +1,15 @@
 ---
 years:
 
+- year: 2025
+  conferences:
+
+  - name: GIDS
+    url: https://developersummit.com/
+    location: Bangalore 🇮🇳
+    date: April 22-25
+    upcoming: true
+
 - year: 2024
   conferences:
 
@@ -74,7 +83,6 @@ years:
     url: https://devoxx.ma/
     location: Marrakech 🇲🇦
     date: Oct 2-4
-    upcoming: true
         
   - name: Berlin Expert Days
     url: https://bed-con.org/
