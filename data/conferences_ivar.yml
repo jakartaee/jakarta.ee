@@ -77,12 +77,12 @@ years:
     url: https://communityovercode.org/
     location: Denver, CO 🇺🇸
     date: Oct 7-10
-    upcoming: true
 
   - name: Devoxx Morocco
     url: https://devoxx.ma/
     location: Marrakech 🇲🇦
     date: Oct 2-4
+    blog: https://www.agilejava.eu/2024/10/05/devoxx-morocco-2024/
         
   - name: Berlin Expert Days
     url: https://bed-con.org/
