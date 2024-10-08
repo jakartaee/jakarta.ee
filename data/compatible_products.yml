@@ -582,6 +582,15 @@ sets:
         - version: 11
           compatibility: 'http://www.inforbus.com/InforsuiteAS/platform-tckresults/FullPlatform9.0/'
           download_url: 'http://www.inforbus.com/as.html'
+      - name: JEUS
+        vendor: TmaxSoft Co., Ltd
+        image: '/images/compatible_products/jeus-logo.svg'
+        image_width: 110
+        download: 'https://www.tmaxsoft.com/en/solution/view?solutionSeq=27'
+        versions:
+          - version: 9
+            compatibility: 'https://www.tmaxsoft.com/jakee/JEUS9_JakartaEE9_Certification_Summary.html'
+            download_url: http://www.tmaxsoft.com/jakee/install/jeus9/jeus9-b15.zip 
       - name: Open Liberty
         vendor: IBM Corporation
         image: '/images/compatible_products/ibm-open-liberty-logo.svg'
