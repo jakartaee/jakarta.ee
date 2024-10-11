@@ -7,6 +7,7 @@ headline: |
 subtitle: Building an open source ecosystem for <br>cloud native architectures with Enterprise Java
 jumbotron_btn_class: btn btn-secondary 
 jumbotron_class: col-xs-24 
+header_wrapper_class: header-wrapper header-default-bg-img
 custom_jumbotron_class: col-xs-24
 custom_jumbotron: |
   <p>Latest Release: Jakarta EE 10 now available</p>
