@@ -756,14 +756,14 @@ sets:
         vendor: TmaxSoft Co., Ltd
         image: '/images/compatible_products/jeus-logo.svg'
         image_width: 110
-        download: 'https://kr.tmaxsoft.com/jakee/jeus8-b266.zip'
+        download: 'https://www.tmaxsoft.com/products/jeuswebtob/'
         versions:
           - version: 21
             compatibility: 'https://kr.tmaxsoft.com/jakee/JEUS21_JakartaEE8_Certification_Summary.html'
-            download_url: https://kr.tmaxsoft.com/jakee/jeus21-b425-SNAPSHOT.zip
+            download_url: 'https://www.tmaxsoft.com/products/jeuswebtob/' 
           - version: 8.5
             compatibility: 'https://kr.tmaxsoft.com/jakee/JEUS8.5_Full_Profile_Certification_Summary.html'
-            download_url: 'https://kr.tmaxsoft.com/jakee/JEUS8.5_Full_Profile_Certification_Summary.html'
+            download_url: 'https://www.tmaxsoft.com/products/jeuswebtob/' 
 
       - name: Primeton AppServer
         vendor: Primeton
