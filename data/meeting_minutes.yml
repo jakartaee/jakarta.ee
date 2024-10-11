@@ -1514,6 +1514,18 @@ items:
           year: 2018
 
    steering_committee:
+       - url: steering_committee/minutes-august-27-2024.pdf
+         title: 27 August 2024 (pdf)
+         year: 2024
+       - url: steering_committee/minutes-august-13-2024.pdf
+         title: 13 August 2024 (pdf)
+         year: 2024
+       - url: steering_committee/minutes-july-30-2024.pdf
+         title: 30 July 2024 (pdf)
+         year: 2024
+       - url: steering_committee/minutes-july-16-2024.pdf
+         title: 16 July 2024 (pdf)
+         year: 2024
        - 
          url: steering_committee/minutes-july-2-2024.pdf
          title: 2 July 2024 (pdf)
