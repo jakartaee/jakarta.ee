@@ -1,6 +1,10 @@
 ---
 title: "Adopt a Spec"
 date: 2020-02-01T16:09:45-04:00
+description: |
+  Adopt a Specification and empower your Java User Group (JUG) to shape the
+  future of Jakarta EE. Learn how to participate, get recognition, and enjoy
+  exclusive benefits.
 headline: "Adopt a Spec"
 hide_page_title: true
 hide_sidebar: true

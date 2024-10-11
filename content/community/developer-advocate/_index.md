@@ -1,6 +1,10 @@
 ---
 title: Jakarta EE Developer Advocate
 date: 2023-01-25T00:00:00-00:00
+seo_title: "Ivar Grimstad - Jakarta EE Developer Advocate"
+description: |
+  Learn more about Ivar Grimstad, our Jakarta EE Developer Advocate. Find
+  conferences where he will be speaking or connect with him on social media.
 headline: Jakarta EE Developer Advocate
 hide_page_title: true
 layout: single
