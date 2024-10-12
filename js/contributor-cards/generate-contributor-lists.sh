@@ -19,10 +19,10 @@
 # you need GH_TOKEN env variable for https://api.github.com/graphql
 CREDENTIALS=$GH_TOKEN:x-oauth-basic
 CURSOR=null
-LIST_FILE=data/contributors/${1:-jakarta-ee-10.json} # first argument ('jakarta-ee-9.1.json' by default)
+LIST_FILE=data/contributors/${1:-jakarta-ee-11.json} # first argument ('jakarta-ee-11.json' by default)
 EXCLUDED_LIST=data/contributors/excluded-list.json
-FROM_DATE=${2:-2021-05-18} # second argument ('2021-11-21' by default)
-TO_DATE=${3:-2022-05-18} # third argument ('2022-05-18' by default)
+FROM_DATE=${2:-2022-05-18} # second argument ('2022-05-18' by default)
+TO_DATE=${3:-2024-07-02} # third argument ('2024-07-02' by default)
 
 function getGrraphQL() {
     curl -s -X POST -u $CREDENTIALS -H "Content-Type: application/json" -d "{\"query\": $1}" https://api.github.com/graphql

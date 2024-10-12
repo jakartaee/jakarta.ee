@@ -1,6 +1,20 @@
+# Generic translations to be used site-wide
 [jakarta-ee-logo-alt]
   other = "Jakarta EE logo"
 
+[watch-on-youtube]
+  other = "Watch on YouTube"
+
+[read-more]
+  other = "Read More"
+
+[learn-more]
+  other = "Learn More"
+
+[browse-now]
+  other = "Browse Now"
+
+# Translations specific to pages
 [home-calltoaction-title]
   other = "Jakarta EE brings together a global community of leading developers, vendors, and enterprises to collaborate on advancing enterprise Java technologies in the cloud"
 
@@ -625,6 +639,218 @@ other = "Sign up now"
 
 [jakarta-ee-version-8-section-release-text]
  other = "An open, community-driven baseline for<br> the evolution of enterprise Java technologies"
+
+[jakarta-ee-version-11-features-title]
+ other = "features and benefits"
+
+[jakarta-ee-version-11-features-subtitle]
+ other = "Jakarta EE 11 marks a significant step forward in simplifying enterprise Java with a strong focus on increasing developer productivity and performance. This release introduces new specifications and major updates to existing ones, ensuring compatibility with Java 17 and optimisations for Java 21."
+
+[jakarta-ee-version-11-features-block1-title]
+ other = "Developer<br> Productivity"
+
+[jakarta-ee-version-11-features-block1-summary]
+ other = """
+  The new Jakarta Data specification simplifies data access and enhances
+  productivity by separating persistence logic across databases from the model
+  using a simple interface.
+"""
+
+[jakarta-ee-version-11-modal-productivity-body]
+ other = """
+  <p>
+    <span class="h5 fw-700 margin-top-0">Jakarta Data</p> The new Jakarta Data
+    specification simplifies data access and enhances productivity by
+    separating persistence logic across databases from the model using a simple
+    interface. Key features include:
+  </p>
+    <ul>
+      <li>
+        <strong>BasicRepository</strong>: A built-in repository supertype for
+        performing basic operations on entities.
+      </li>   
+      <li>
+        <strong>CrudRepository</strong>: Facilitates basic CRUD operations,
+        making database interactions more straightforward and less error-prone.
+      </li>
+      <li>
+        <strong>Pagination</strong>: Support for two types of pagination:
+        offset and cursor.
+      </li>
+      <li>
+        <strong>Jakarta Data Query Language</strong>: A streamlined query
+        language designed to specify the semantics of query methods within
+        Jakarta Data repositories.
+      </li>
+    </ul>
+    <h4 class="h5 fw-700">Streamlining the Platform</h4>
+    <ul>
+      <li>
+        <strong>The Removal of Managed Beans</strong>: The Managed Beans
+        specification has been deprecated and removed from Jakarta EE 11 and
+        replaced by CDI (Context and Dependency Injection) alternatives.
+      </li>
+      <li>
+        <strong>The removal of all references to the Java SE SecurityManager</strong>:
+        Aligning with JEP 411, all references to SecurityManager have been
+        removed, paving the way for more modern security practices.
+      </li>
+      <li>
+        <strong>The removal of optional features to lower the barrier for new vendors</strong>:
+        All optional specifications have been removed in Jakarta EE 11.
+      </li>
+      <li>
+        <strong>Embracing Java Records</strong>: Continued support for Java
+        Records with various specifications (e.g. Java Validation) to ensure
+        data integrity and reduce boilerplate code
+      </li>
+    </ul>
+ """
+
+[jakarta-ee-version-11-modal-productivity-title]
+ other = "Developer Productivity"
+
+[jakarta-ee-version-11-features-block2-title]
+ other = "Performance"
+
+[jakarta-ee-version-11-modal-performance-title]
+ other = "Performance"
+
+[jakarta-ee-version-11-features-block2-summary]
+ other = """
+  The new release supports Java 17 or higher, with unique enhancements for those using Java 21 or above, such as:
+ """
+
+[jakarta-ee-version-11-modal-performance-body]
+ other = """
+    <p>
+      <strong>Java Platform Support</strong>: The new release supports Java 17 or
+      higher, with unique enhancements for those using Java 21 or above, such as:
+    </p>
+    <ul>
+      <li>
+        <strong>Virtual Threads</strong>: The updated Concurrency specification
+        enables developers to leverage virtual threads in Java 21 to
+        significantly boost performance, allowing more efficient handling of
+        concurrent tasks without the overhead of traditional thread management.
+      </li>
+    </ul>
+ """
+
+[jakarta-ee-version-11-features-block3-title]
+ other = "Lightweight"
+
+[jakarta-ee-version-11-features-block3-summary]
+ other = "Jakarta EE 10 defines a new profile specification with Jakarta EE Core Profile 10. The “Core Profile” which defines a multi-vendor platform for modernized and lightweight Java applications and microservices."
+
+[jakarta-ee-version-11-features-block3-text]
+ other = "The new Core Profile provides a subset of Jakarta EE specifications that target smaller runtimes suitable for microservices development with lightweight runtimes.This includes an innovative new CDI-Lite specification for building lightweight Jakarta EE applications."
+
+[jakarta-ee-version-11-specifications-title]
+ other = """
+  Jakarta EE 11 brings significant API enhancements across multiple
+  specifications, incorporating features highly anticipated by the global
+  community.
+  """
+[jakarta-ee-version-11-specifications-text]
+ other = "Key updates include:"
+
+[jakarta-ee-version-11-specifications-list1]
+ other = """
+  Java SE Records can now be marked as <code>@Embeddable</code> or
+  <code>@IdClass</code> in Jakarta Persistence 3.2.
+ """
+[jakarta-ee-version-11-specifications-list2]
+ other = """
+  Validation rules can be applied to Java SE Records in Jakarta Validation 3.1.
+ """
+[jakarta-ee-version-11-specifications-list3]
+ other = """
+  Jakarta Persistence 3.2 automatically maps <code>java.time.Instant</code> and
+  <code>java.time.Year</code> as built-in types.
+ """
+[jakarta-ee-version-11-specifications-list4]
+ other = """
+  The use of <code>java.util/java.sql</code>,
+  <code>Date/Time/Timestamp/Calendar</code> and <code>@Temporal</code> is
+  deprecated in Persistence 3.2, in favor of the <code>java.time</code> API.
+ """
+[jakarta-ee-version-11-specifications-list5]
+ other = """
+  An <code>EntityManager</code> can now be <code>@Injected</code> with a
+  defined Jakarta Contexts and Dependency Injection (CDI) scope in Persistence
+  3.2.
+ """
+[jakarta-ee-version-11-specifications-list6]
+ other = """
+  Jakarta Concurrency 3.1 introduces support for Java SE Virtual Threads in
+  managed resources, such as via <code>@ManagedExecutorDefinition</code>.
+ """
+[jakarta-ee-version-11-specifications-list7]
+ other = """
+  Persistence 3.2 enhances query capabilities with various SQL-like features
+  such as <code>concat</code> (<code>||</code>), <code>union</code>,
+  <code>intersect</code>, <code>except</code>, <code>cast</code>,
+  <code>left</code>, <code>right</code>, and <code>replace</code>.
+ """
+
+[jakarta-ee-version-11-specifications-list8]
+ other = """
+  Persistence units can be configured using Java, providing an alternative to
+  the <code>persistence.xml</code> file in Persistence 3.2.
+ """
+
+[jakarta-ee-version-11-specifications-list9]
+ other = """
+  Producers can now specify an <code>@Priority</code> using CDI 4.1.
+ """
+[jakarta-ee-version-11-specifications-list10]
+ other = """
+  The <code>@Context</code> annotation has been deprecated in Jakarta RESTful Web Services
+  4.0.
+ """
+[jakarta-ee-version-11-specifications-list11]
+ other = """
+  Specifications for Jakarta SOAP with Attachments and Jakarta XML Binding have
+  been removed from the Jakarta EE 11 platform.
+ """
+[jakarta-ee-version-11-specifications-list12]
+ other = """
+  The requirement for Common Object Request Broker Architecture (CORBA)
+  interoperability has been eliminated.
+ """
+[jakarta-ee-version-11-specifications-list13]
+ other = """
+  The <code>@jakarta.annotation.ManagedBean</code> annotation is deprecated.
+ """
+[jakarta-ee-version-11-specifications-list14]
+ other = """
+  All specifications in Jakarta EE 11 have removed dependencies on the Java SE
+  <code>SecurityManager</code>.
+ """
+[jakarta-ee-version-11-community-video-title]
+ other = "Jakarta EE 11<br>Community Interviews"
+[jakarta-ee-version-11-community-video-description]
+ other = """
+  Jakarta EE 11 is here and we want to celebrate our dedicated community by
+  highlighting the passion and creativity that helped make this release
+  possible. Let's hear it from our community members about what this new
+  release means to them.
+ """
+[jakarta-ee-version-11-info-card-tutorial-title]
+  other = "Jakarta EE<br>Tutorial"
+[jakarta-ee-version-11-info-card-tutorial-description]
+  other = "Learn how to use features of the Jakarta EE Platform"
+
+[jakarta-ee-version-11-info-card-starter-guides-title]
+  other = "Starter<br>Guides"
+[jakarta-ee-version-11-info-card-starter-guides-description]
+  other = "Quick, hands-on instructions for building different applications using Jakarta EE"
+
+[jakarta-ee-version-11-info-card-specification-guides-title]
+  other = "Specification<br>Guides"
+[jakarta-ee-version-11-info-card-specification-guides-description]
+  other = "In-depth explanations about how Jakarta EE specifications work"
 
 [pages-membership-title]
  other = "Shape the future of Cloud Native, Open Source Java"
