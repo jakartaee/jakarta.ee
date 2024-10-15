@@ -699,6 +699,9 @@ sets:
         image_width: 195
         download: 'https://www.payara.fish/downloads/'
         versions:
+        - version: 5.67.0
+          compatibility: 'https://docs.payara.fish/enterprise/docs/5.67.0/Jakarta%20EE%20Certification/5.67.0/5.67.0%20Platform%20TCK%20Results.html'
+          download_url: 'https://www.payara.fish/page/payara-enterprise-downloads/'
         - version: 5.58.0
           compatibility: 'https://docs.payara.fish/enterprise/docs/5.58.0/Jakarta%20EE%20Certification/5.58.0/5.58.0%20Platform%20TCK%20Results.html'
           download_url: 'https://www.payara.fish/page/payara-enterprise-downloads/'
