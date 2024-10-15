@@ -1,6 +1,10 @@
 ---
 title: "Proper use of the Jakarta® Brand by Eclipse Projects"
 date: 2020-03-03T13:10:00-04:00
+description: |
+  Learn the proper usage of the Jakarta® EE brand by Eclipse Projects.
+  Understand the guidelines for naming specifications & projects to comply with
+  trademark regulations.
 headline: Proper use of Jakarta® Brand by Eclipse Projects
 hide_page_title: true
 ---

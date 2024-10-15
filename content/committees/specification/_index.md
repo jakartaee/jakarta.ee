@@ -1,6 +1,10 @@
 ---
 title: "Specification Committee"
 date: 2020-02-19T15:00:25-08:00
+seo_title: "Jakarta EE Specification Committee"
+description: |
+  Learn about the Jakarta EE Specification Committee and find related
+  documents, meeting minutes, and committee members.
 ---
 
 The Specification Committee is responsible for implementing the ​[Jakarta EE Specification Process (JESP)](/about/jesp/) ​for all Specification Projects under the purview of the Jakarta EE Working Group. This committee ensures that JESP is followed as intended, votes to approve creation reviews, progress reviews and release reviews submitted by Specification projects.

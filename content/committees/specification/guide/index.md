@@ -1,6 +1,10 @@
 ---
 title: "Guide to the Jakarta EE Specification Process"
 date: "2021-03-04T00:00:00+00:00"
+description: |
+  A comprehensive guide to the Jakarta EE Specification Process (JESP). Learn
+  the steps involved in creating, planning, releasing, and reviewing Jakarta EE
+  specifications.
 layout: "single"
 headline: Guide to the Jakarta EE Specification Process
 hide_page_title: true
