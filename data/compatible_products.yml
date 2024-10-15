@@ -197,6 +197,9 @@ sets:
           image_width: 195
           download: 'https://www.payara.fish/downloads/payara-platform-community-edition/'
           versions:
+            - version: 6.2024.9, Web Profile
+              compatibility: 'https://docs.payara.fish/community/docs/Jakarta%20EE%20Certification/6.2024.9/6.2024.9%20(Web%20Profile)%20Web%20TCK%20Results.html'
+              download_url: 'https://www.payara.fish/downloads/payara-platform-community-edition/'
             - version: 6.2023.12, Web Profile
               compatibility: 'https://docs.payara.fish/community/docs/Jakarta%20EE%20Certification/6.2023.12/6.2023.12%20(Web%20Profile)%20Web%20TCK%20Results.html'
               download_url: 'https://www.payara.fish/downloads/payara-platform-community-edition/'
@@ -299,6 +302,9 @@ sets:
           versions:
             - version: 6.2024.9
               compatibility: 'https://docs.payara.fish/community/docs/Jakarta%20EE%20Certification/6.2024.9/6.2024.9%20Core%20TCK%20Results.html'
+              download_url: 'https://www.payara.fish/downloads/payara-platform-community-edition/'
+            - version: 6.2024.9, Web Profile
+              compatibility: 'https://docs.payara.fish/community/docs/Jakarta%20EE%20Certification/6.2024.9/6.2024.9%20(Web%20Profile)%20Web%20TCK%20Results.html'
               download_url: 'https://www.payara.fish/downloads/payara-platform-community-edition/'
             - version: 6.2023.12
               compatibility: 'https://docs.payara.fish/community/docs/Jakarta%20EE%20Certification/6.2023.12/6.2023.12%20Core%20TCK%20Results.html'
