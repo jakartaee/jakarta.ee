@@ -1271,3 +1271,50 @@ other = "Sign up now"
   
 [pages-learn-starter-guides-download-products-read-more]
   other = "Read more"   
+  
+[pages-supporters-sponsor-header-description]
+  other = "<p class=\"fw-500\">Become a sponsor of the Jakarta EE Working Group and</p><h2 class=\"big-text uppercase text-secondary\">Empower the Future of Enterprise Java</h2><p class=\"section-featured-text text-primary\">Your organisation will play a pivotal role in shaping the future of open source enterprise Java and ensuring the continued growth and success of the global Java community.</p>"   
+
+[pages-supporters-sponsor-by-joining-header-title]
+  other = "By joining our sponsorship program:"          
+  
+[pages-supporters-sponsor-by-joining-support]
+  other = "<h3 class=\"heading-underline\"><div class=\"small\">Your</div><div>Support</div></h3><p class=\"featured-section-cta-item-body\">will help us maintain and expand our initiatives.</p>"          
+
+[pages-supporters-sponsor-by-joining-contribution]
+  other = "<h3 class=\"heading-underline\"><div class=\"small\">Your</div><div>Contribution</div></h3><p class=\"featured-section-cta-item-body\">will ensure that the Jakarta EE community remains a vibrant and innovative platform for developers, enterprises, and technology enthusiasts around the world.</p>" 
+
+[pages-supporters-sponsor-by-joining-participation]
+  other = "<h3 class=\"heading-underline\"><div class=\"small\">Your</div><div>Participation</div></h3><p class=\"featured-section-cta-item-body\">will support a wide range of initiatives aimed at promoting Jakarta EE, including marketing and promotional efforts, events, content creation, community giveaways, and more.</p>" 
+  
+[pages-supporters-sponsor-initiatives-description]
+  other = "Your contribution will support a wide range of initiatives aimed at promoting Jakarta EE, including marketing and promotional efforts, events, content creation, community giveaways, and more."  
+
+[pages-supporters-sponsor-perks]
+  other = "Sponsor Perks"
+  
+[pages-supporters-sponsor-perks-free-ocx]
+  other = "Free OCX<br class=\"hidden-xs\">Conference Pass"
+
+[pages-supporters-sponsor-perks-special-mention]
+  other = "Special mention on our social channels"
+
+[pages-supporters-sponsor-perks-use-of-logo]
+  other = "Use of our Jakarta EE Sponsor logo"
+
+[pages-supporters-sponsor-perks-display-logo]
+  other = "Display your logo on Jakarta EE's website"
+
+[pages-supporters-sponsor-become-a-sponsor]
+  other = "Become a Sponsor"
+
+[pages-supporters-sponsor-contact-us]
+  other = "Contact Us"
+
+[pages-supporters-sponsor-thank-you]
+  other = "Thank You!"
+
+[pages-supporters-sponsor-usage-description]
+  other = "The Jakarta EE Member logo may be used by Strategic, Enterprise, Participant, and Individual Committer Members that are current members of the Working Group to identify their participation and show their support for the initiative. Use of the Jakarta EE Member logo is subject to the Jakarta EE Trademark Guidelines."
+
+  

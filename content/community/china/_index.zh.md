@@ -9,13 +9,34 @@ layout: "single"
 
 ## Jakarta EE 中国社区
 
-Jakarta EE中国社区，经Eclipse基金会授权，由普元信息发起创立，并由亚信、IBM、东方通、金蝶、中创中间件等企业与个人开发者共同建设发展，致力于在大中华地区推动Jakarta EE的认知与技术分享。
+Jakarta EE中国社区，经Eclipse基金会授权，由普元信息发起创立，并由亚信、IBM、东方通、金蝶、中创中间件、永源中间件、宝兰德等企业与个人开发者共同建设发展，致力于在大中华地区推动Jakarta EE的认知与技术分享。
 
 Jakarta EE 为基于云原生的企业级应用程序提供了一套开源的技术规范和端到端的技术支持，在全球企业级Java领域有75%的采用率，是Java云原生的主流平台之一。
 
 正如我们所知道的，Java EE改名为Jakarta EE已有很长一段时间了，但是在中国，很少有人意识到Jakarta EE项目以及它的规范性实现的重要性。因此，呼吁您与我们一起努力，扩大Jakarta EE的影响力，为中国的开发者和中国企业做更多有益的事情。
 
 ## 社区活动
+
+主题：JakartaOne Livestream Chinese 2024
+- 说明：JakartaOne Livestream 是 Jakarta EE工作组 面向开发人员及技术负责人的线上会议，主要关注企业级Java应用云原生技术，探讨 Jakarta EE 技术发展现状及未来趋势。
+- 日期: 2024-09-26 13:30
+- [点此查看会议详情](https://jakartaone.org/zh/2024/chinese/)
+
+主题：Jakarta Techtalk Face2Face - 技术革新与职业发展：Java开发者的AI赋能与架构新篇章
+- 说明：在这个由代码编织的数字世界中，技术的每一次革新都是推动我们前进的巨浪。Java，作为软件开发的中坚力量，正站在新旧技术交汇的风口浪尖。我们诚邀您加入这场技术盛宴，一同探索Java如何在AI的赋能下焕发新生，如何在快速变化的业务需求中，通过革命性的架构快速响应，以及如何在MicroProfile、Jakarta EE与Spring的技术融合中找到职业生涯的新风口。
+- 日期：2024-07-21 13:30-17:30
+- 演讲PPT获取
+	- [JKTF2F.05.赵欣.从研发到领导力的转型之旅](http://jakartaee.cn/index.php/archives/147/)
+	- [JKTF2F.04.王峰.革命性低代码架构设计-极速打造业务应用的秘诀](http://jakartaee.cn/index.php/archives/145/)
+	- [JKTF2F.03.顾伟.从分散试用到场景聚焦，探索AIGC下的智能助手落地](http://jakartaee.cn/index.php/archives/143/)
+	- [JKTF2F.02.张建锋.JakartaEE 与 Spring-现代企业应用开发的技术对比和选择](http://jakartaee.cn/index.php/archives/141/)
+	- [JKTF2F.01.史建亮.数据源双队列实现](http://jakartaee.cn/index.php/archives/139/)
+	- [JKTF2F.00.张建锋.Jakarta EE 11震撼发布-引领企业级 Java 的未来](http://jakartaee.cn/index.php/archives/137/)
+
+主题：Jakarta Techtalk - Java与Jakarta EE的演进之路：应对挑战，拥抱未来技术趋势 && Jakarta Techtalk - JVMTI探秘：如何实现浏览器远程调试接口的神奇之旅
+- 说明：本场演讲将首先深度解析Java与Jakarta EE的崛起之路，揭示其成为企业应用开发核心平台的原因。此外，还将探索硬件发展趋势与多核并行计算对Java和Jakarta EE的深远影响，助您充分释放硬件性能的极致潜能。聆听本次演讲，您还将了解到JVMTI这个Java虚拟机的秘密武器，如何通过强大调试功能助力开发者轻松追踪代码问题，通过浏览器实现远程调试，让千里之外的Java应用尽在掌控，提高开发效率，优化应用性能。
+- 日期: 2024-03-28 20:00:00
+- [点此查看回放](https://meeting.tencent.com/user-center/shared-record-info?id=fda71dd8-6452-4482-9804-055596738df2&is-single=false&record_type=2&from=3)
 
 主题：Jakarta Techtalk - 微服务架构的黄金标准MicroProfile：构建高效、可扩展的微服务架构
 主题：Jakarta Techtalk - Jakarta EE与Spring Boot：云原生应用的两个重要选择
@@ -54,6 +75,17 @@ Jakarta EE 为基于云原生的企业级应用程序提供了一套开源的技
 - [点此查看回放](https://meeting.tencent.com/v2/cloud-record/share?id=343cdca2-098a-416b-aaba-b0b5a973aa5d&from=3)
 
 ## 翻译文章
+
+[从 javax 迁移到 jakarta 命名空间](http://jakartaee.cn/index.php/archives/135/)
+
+[监控 Java 虚拟线程](http://jakartaee.cn/index.php/archives/134/)
+
+[使用 JPA 和 Hibernate 存储 JSON 数据](http://jakartaee.cn/index.php/archives/133/)
+
+[Eclipse 基金会发布 2023 年 Jakarta EE 开发者调查报告](http://jakartaee.cn/index.php/archives/132/)
+
+[新调查:2023年开发人员对Java应用的看法](http://jakartaee.cn/index.php/archives/131/)
+
 [MicroProfileConfigSpec3.1](http://jakartaee.cn/index.php/archives/129/)
 
 [MicroProfileOpenAPI规范3.0](http://jakartaee.cn/index.php/archives/126/)

@@ -24,7 +24,7 @@
     weight = 4
 
 [[main]]
-    name = "成员"
+    name = "支持者"
     url = "/zh/Membership/"
     weight = 5
 
@@ -120,56 +120,6 @@
     parent = "Jakarta EE Working Group"
     weight = 6
 
-# Resource sub-menu
-# [[main]]
-# 	name = "Overview"
-# 	url = "/zh/resources"
-# 	parent = "Resources"
-# 	weight = 1
-# 
-# [[main]]
-# 	name = "Branding"
-# 	url = "/zh/resources#branding"
-# 	parent = "Resources"
-# 	weight = 2
-# 
-# [[main]]
-#     name = "Datasheets"
-#     url = "/zh/resources#datasheets"
-#     parent = "Resources"
-#     weight = 3
-# 
-# [[main]]
-#     name = "Presentations"
-#     url = "/zh/resources#presentations"
-#     parent = "Resources"
-#     weight = 4
-# 
-# [[main]]
-#     name = "Surveys"
-#     url = "/zh/resources#surveys"
-#     parent = "Resources"
-#     weight = 5
-# 
-# [[main]]
-#     name = "eBooks"
-#     url = "/zh/resources/#ebooks"
-#     parent = "Resources"
-#     weight = 6
-# 
-# [[main]]
-#     name = "White Papers"
-#     url = "/zh/resources/#white-papers"
-#     parent = "Resources"
-#     weight = 7
-# 
-# [[main]]
-#     name = "Case Studies"
-#     url = "/zh/resources/#cases-studies"
-#     parent = "Resources"
-#     weight = 8
- 
-# specifications
 [[main]]
     name = "浏览规范"
     url = "/zh/specifications/"
@@ -222,22 +172,22 @@
     identifier = "community"
 
 [[main]]
-    name = "Adopt A Spec 计划"
-    parent = "社区"
-    url = "/zh/community/adopt-a-spec/"
-    weight = 2
-
-[[main]]
     name = "资源"
     url = "/zh/resources/"
-    weight = 3
+    weight = 2
     parent = "社区"
 
 [[main]]
     name = "博客"
-    url = "/zh/blogs"
-	parent = "社区"
+    url = "/zh/blogs/"
+    weight = 3
+    parent = "社区"
+
+[[main]]
+    name = "加入社区"
+    url = "/zh/community/get-involved/"
     weight = 4
+    parent = "社区"
 
 [[main]]
     name = "活动"
@@ -246,54 +196,54 @@
     weight = 5
 
 [[main]]
-    name = "JakartaOne Livestream 线上活动"
-    url = "https://jakartaone.org"
-    parent = "社区"
-    weight = 6
-
-[[main]]
     name = "保持联系"
     url = "/zh/connect/"
     parent = "社区"
-    weight = 7
-
-[[main]]
-    name = "技术沙龙"
-    url = "/zh/community/#meetups"
-    parent = "社区"
-    weight = 8
+    weight = 6
 
 [[main]]
     name = "视频"
     url = "/zh/community/videos"
     parent = "社区"
-    weight = 9
+    weight = 7
 
 [[main]]
-    name = "加入社区"
-    url = "/zh/community/get-involved"
+    name = "JakartaOne Livestream"
+    url = "https://jakartaone.org"
     parent = "社区"
-    weight = 10
+    weight = 8
+
+[[main]]
+    name = "Tech Talk Meet-ups"
+    url = "/zh/community/#meetups"
+    parent = "社区"
+    weight = 9
 
 [[main]]
     name = "开发者布道师"
     url = "/zh/community/developer-advocate"
     parent = "社区"
-    weight = 11
-
+    weight = 9
+	
 # Membership sub-menu
 [[main]]
     name = "加入成员"
     url = "/zh/membership"
-    parent = "成员"
+    parent = "支持者"
     weight = 1
 
 [[main]]
     name = "成员列表"
     url = "/zh/membership/members/"
-    parent = "成员"
+    parent = "支持者"
     weight = 2
 
+[[main]]
+    name = "Become a Sponsor"
+    url = "/supporters/sponsor/"
+    parent = "支持者"
+    weight = 3
+	
 # Learn sub-menu
 [[main]]
   name = "概述"

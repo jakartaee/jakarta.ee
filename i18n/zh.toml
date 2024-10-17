@@ -775,7 +775,7 @@ other = "注册"
  other = "作品"				  
 
 [pages-resources-case-studies-title]
- other = "案例研究"
+ other = "在 Eclipse Foundation，Payara 获得了与行业领导者平等对话的机会。"
 
 [pages-resources-case-studies-payara]
  other = "在 Eclipse Foundation，Payara 获得了与行业领导者平等对话的机会。"
@@ -786,6 +786,12 @@ other = "注册"
 [pages-resources-datasheets-text]
  other = "Jakarta EE 9 工具厂商数据表"
 
+[pages-resources-datasheets-jakarta-ee-10-tools-vendor-pdf]
+ other = "Jakarta EE 10 工具厂商数据表 (PDF)"
+
+[pages-resources-datasheets-jakarta-ee-10-tools-vendor-html]
+ other = "Jakarta EE 10 工具厂商数据表 (HTML)"
+ 
 [pages-resources-ebooks-title]
  other = "电子书"
 
@@ -822,6 +828,9 @@ other = "注册"
 [pages-resources-presentations-presentation]
  other = "Jakarta EE 演讲"
 
+[pages-resources-presentations-presentation-template]
+ other = "Jakarta EE 演讲模板"
+ 
 [pages-resources-presentations-presentations]
  other = "Jakarta EE 演讲"
 
@@ -963,6 +972,54 @@ other = "注册"
 [pages-compatibility-get-listed-compatibility-products-view]
  other = "查看兼容产品"
 
+[pages-community-resources]
+  other = "资源"
+
+[pages-community-resources-branding]
+  other = "品牌"
+
+[pages-community-resources-case-studies]
+  other = "案例研究"
+
+[pages-community-resources-datasheets]
+  other = "数据表"
+
+[pages-community-resources-ebooks]
+  other = "电子书"
+
+[pages-community-resources-infographics]
+  other = "信息图表"
+
+[pages-community-resources-presentations]
+  other = "演讲"
+
+[pages-community-resources-social-cards]
+  other = "社交卡片"
+
+[pages-community-resources-surveys]
+  other = "调研"
+
+[pages-community-resources-white-papers]
+  other = "白皮书"
+
+[pages-community-blog-title]
+  other = "博客"
+
+[pages-community-blog-text]
+  other = "阅读关于 Jakarta EE 的社区博客文章"
+
+[pages-community-developer-advocate-title]
+  other = "开发者布道"
+
+[pages-community-developer-advocate-text]
+  other = "来认识 Ivar Grimstad, 我们的 Jakarta EE 开发者布道师"
+
+[pages-community-get-involved-title]
+  other = "加入社区"
+
+[pages-community-get-involved-text]
+  other = "关于加入 Jakarta EE 的各种方式"
+  
 [pages-community-adopt-a-spec-title]
  other = "Adopt a Spec"
 
@@ -1220,3 +1277,48 @@ other = "注册"
   
 [pages-learn-starter-guides-download-products-read-more]
   other = "了解更多"   
+  
+[pages-supporters-sponsor-header-description]
+  other = "<p class=\"fw-500\">成为 Jakarta EE 工作组的赞助商，</p><h2 class=\"big-text uppercase text-secondary\">推动未来企业级Java的发展</h2><p class=\"section-featured-text text-primary\">您的组织将在塑造开源企业级Java的未来以及确保全球Java社区持续增长和成功方面发挥关键作用。</p>"
+
+[pages-supporters-sponsor-by-joining-header-title]
+  other = "加入我们的赞助计划："
+
+[pages-supporters-sponsor-by-joining-support]
+  other = "<h3 class=\"heading-underline\"><div class=\"small\">您的</div><div>支持</div></h3><p class=\"featured-section-cta-item-body\">将帮助我们维护和扩展我们的计划。</p>"
+
+[pages-supporters-sponsor-by-joining-contribution]
+  other = "<h3 class=\"heading-underline\"><div class=\"small\">您的</div><div>贡献</div></h3><p class=\"featured-section-cta-item-body\">将确保 Jakarta EE 社区继续成为世界各地开发者、企业和技术爱好者充满活力和创新的平台。</p>"
+
+[pages-supporters-sponsor-by-joining-participation]
+  other = "<h3 class=\"heading-underline\"><div class=\"small\">您的</div><div>参与</div></h3><p class=\"featured-section-cta-item-body\">将支持一系列旨在推广 Jakarta EE 的计划，包括营销和促销活动、活动、内容创作、社区赠品等。</p>"
+
+[pages-supporters-sponsor-initiatives-description]
+  other = "您的贡献将支持一系列旨在推广 Jakarta EE 的计划，包括营销和促销活动、活动、内容创作、社区赠品等。"
+
+[pages-supporters-sponsor-perks]
+  other = "赞助商权益"
+  
+[pages-supporters-sponsor-perks-free-ocx]
+  other = "免费的OCX<br class=\"hidden-xs\">大会通行证"
+
+[pages-supporters-sponsor-perks-special-mention]
+  other = "在我们的社交媒体渠道上特别提及"
+
+[pages-supporters-sponsor-perks-use-of-logo]
+  other = "使用我们的 Jakarta EE 赞助商标志"
+
+[pages-supporters-sponsor-perks-display-logo]
+  other = "在 Jakarta EE 的网站上展示您的标志"
+
+[pages-supporters-sponsor-become-a-sponsor]
+  other = "成为赞助商"
+
+[pages-supporters-sponsor-contact-us]
+  other = "联系我们"
+
+[pages-supporters-sponsor-thank-you]
+  other = "谢谢！"
+
+[pages-supporters-sponsor-usage-description]
+  other = "Jakarta EE 成员标志可由战略成员、企业成员、参与成员和个体提交者成员使用，这些成员必须是工作组的当前成员，以标识他们的参与并表达他们对该计划的支持。使用 Jakarta EE 成员标志需遵守 Jakarta EE 商标指南。"
