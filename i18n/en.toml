@@ -633,7 +633,10 @@ other = "Sign up now"
  other = "<p>Working together, the world’s Java ecosystem leaders, including Fujitsu, IBM, Oracle, Red Hat, and Tomitribe, are advancing Java EE and Jakarta EE to support moving mission-critical applications and workloads to the cloud. </p><p>Joining the Jakarta EE Working Group demonstrates your commitment not only to the evolution and sustainability of Jakarta EE, but also to ensuring the growth and development of a well-governed, vendor-neutral open source ecosystem which benefits all. </p>"
 
 [pages-membership-join-cta]
- other = "Join us!"
+ other = "My Organisation is <br> Ready to Join Now"
+
+[pages-membership-contact-cta]
+ other = "Contact Us <br> About Membership"
 
 [pages-membership-benefits-title]
  other = "Benefits"
