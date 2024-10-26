@@ -65,12 +65,12 @@ years:
     url: https://www.java-users.jp/
     location: Tokyo 🇯🇵
     date: Oct 27
-    upcoming: true
     
   - name: Open Community for Java
     url: https://java.ocxconf.org
     location: Mainz 🇩🇪
     date: Oct 22-24
+    blog: https://www.agilejava.eu/2024/10/25/open-community-for-java-2024/
 
   - name: Seattle JUG
     url: https://www.seajug.org/
