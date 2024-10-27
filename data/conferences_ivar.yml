@@ -10,6 +10,12 @@ years:
     date: April 22-25
     upcoming: true
 
+  - name: Devnexus
+    url: https://devnexus.com/
+    location: Atlanta, GA 🇺🇸
+    date: March 4-6
+    upcoming: true
+
 - year: 2024
   conferences:
 
