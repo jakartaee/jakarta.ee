@@ -3,9 +3,18 @@
   <h2 id="contact-us" class="big-text-secondary">{{ i18n "pages-membership-title" }}</h2>
 
   {{ i18n "pages-membership-text" | safeHTML }}
-  <div class="margin-y-30 text-center">
-    <a class="btn btn-primary btn-lg" href="/membership/join-us/">{{ i18n "pages-membership-join-cta" }}</a>
-  </div>
+  <ul class="list-inline margin-y-30 text-center">
+    <li>
+      <a class="btn btn-primary btn-lg" href="/membership/join-us/">
+        {{ i18n "pages-membership-contact-cta" | safeHTML }}
+      </a>
+    </li>
+    <li>
+      <a class="btn btn-secondary btn-lg" href="https://membership.eclipse.org/application/ready-to-join">
+        {{ i18n "pages-membership-join-cta" | safeHTML }}
+      </a>
+    </li>
+  </ul>
 
   <h3 id="benefits" class="big-text text-secondary margin-top-60">{{ i18n "pages-membership-benefits-title" }}</h3>
 

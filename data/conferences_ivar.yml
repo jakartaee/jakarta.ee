@@ -10,6 +10,12 @@ years:
     date: April 22-25
     upcoming: true
 
+  - name: Devnexus
+    url: https://devnexus.com/
+    location: Atlanta, GA 🇺🇸
+    date: March 4-6
+    upcoming: true
+
 - year: 2024
   conferences:
 
@@ -17,6 +23,12 @@ years:
     url: https://jakartaone.org/
     location: online 🌐
     date: Dec 3
+    upcoming: true
+
+  - name: Porto Tech Hub
+    url: https://portotechhub.com
+    location: Porto 🇵🇹
+    date: Nov 26
     upcoming: true
     
   - name: Brno JUG
@@ -59,19 +71,19 @@ years:
     url: https://www.java-users.jp/
     location: Tokyo 🇯🇵
     date: Oct 27
-    upcoming: true
+    blog: https://www.agilejava.eu/2024/10/28/jjug-ccc-2024-fall/
     
   - name: Open Community for Java
     url: https://java.ocxconf.org
     location: Mainz 🇩🇪
     date: Oct 22-24
-    upcoming: true
+    blog: https://www.agilejava.eu/2024/10/25/open-community-for-java-2024/
 
   - name: Seattle JUG
     url: https://www.seajug.org/
     location: Seattle, WA 🇺🇸
     date: Oct 15
-    upcoming: true
+    blog: https://www.agilejava.eu/2024/10/17/jcp-ec-f2f-seattle-2024/
 
   - name: Community Over Code
     url: https://communityovercode.org/

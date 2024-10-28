@@ -1,6 +1,11 @@
 ---
 title: "Jakarta EE Specification Committee Operation"
 date: "2021-01-13T00:00:00+00:00"
+description: |
+  Learn about the Jakarta EE specifications committee processes. Find out how
+  to initiate reviews, create release plans, & ensure compliance with naming
+  conventions. Read guidelines for distributing specifications & creating final
+  releases.
 headline: Jakarta EE Specification Committee Operation
 hide_page_title: true
 ---
