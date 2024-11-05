@@ -10,6 +10,12 @@ years:
     date: April 22-25
     upcoming: true
 
+  - name: JavaLand
+    url: https://www.javaland.eu/en/home/
+    location: Nürburgring 🇩🇪
+    date: Apr 1-3
+    upcoming: true
+
   - name: Devnexus
     url: https://devnexus.com/
     location: Atlanta, GA 🇺🇸
