@@ -53,24 +53,23 @@ years:
     url: https://jugtorino.org
     location: Turin 🇮🇹
     date: Nov 12
-    upcoming: true
 
   - name: JUG Milano
     url: https://www.jugmilano.it/
     location: Milan 🇮🇹
     date: Nov 11
-    upcoming: true
 
   - name: SFSCON
     url: https://www.sfscon.it
     location: Bolzano 🇮🇹
     date: Nov 8-9
-    upcoming: true
+    blog: https://www.agilejava.eu/2024/11/09/sfscon-2024/
 
   - name: DevCon
     url: https://www.dev-con.ro
     location: Bucharest 🇷🇴
     date: Nov 6
+    blog: https://www.agilejava.eu/2024/11/07/devcon-2024/
 
   - name: JJUG CCC Fall 
     url: https://www.java-users.jp/
