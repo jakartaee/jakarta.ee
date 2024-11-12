@@ -121,6 +121,18 @@ sets:
             - version: 8.0.0, Java 11
               compatibility: 'https://github.com/RedHatOfficial/jbosseap-certifications/blob/EE10/EAP-8.0.0/jakarta-full-platform-jdk11.adoc#tck-results' 
               download_url: 'https://www.redhat.com/en/technologies/jboss-middleware/application-platform'
+        - name: TongWeb Application Server
+          vendor: Beijing TongTech Co., Ltd.
+          image: '/images/compatible_products/tongweb.svg'
+          image_width: 180
+          download: 'https://www.tongtech.com/dft/pctype/25.html'
+          versions:
+          - version: 8
+            compatibility: 'https://www.tongtech.com/tongweb/tck810.html'
+            download_url: 'https://www.tongtech.com/service.html'
+          - version: 7
+            compatibility: 'https://www.tongtech.com/tongweb/tck710.html'
+            download_url: 'https://www.tongtech.com/service.html'
         - name: WildFly
           vendor: Red Hat 
           image: '/images/compatible_products/red-hat-wildfly-logo.png'
@@ -482,8 +494,8 @@ sets:
           download_url: 'http://tas.thunisoft.com/download'
       - name: TongWeb Application Server
         vendor: Beijing TongTech Co., Ltd.
-        image: '/images/compatible_products/tongweb_logo.svg'
-        image_width: 195
+        image: '/images/compatible_products/tongweb.svg'
+        image_width: 180
         download: 'https://www.tongtech.com/dft/pctype/25.html'
         versions:
         - version: 9
@@ -887,8 +899,8 @@ sets:
 
       - name: TongWeb Application Server
         vendor: Beijing TongTech Co., Ltd.
-        image: '/images/compatible_products/tongweb_logo.svg'
-        image_width: 195
+        image: '/images/compatible_products/tongweb.svg'
+        image_width: 180
         download: "https://www.tongtech.com/dft/pctype/25.html"
         versions:
         - version: 8
