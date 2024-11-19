@@ -22,6 +22,12 @@ years:
     date: March 4-6
     upcoming: true
 
+  - name: Javaforum Malmø
+    url: https://foocafe.org/event/sound-scheduling-writing-linux-schedulers-java-ebpf
+    location: Malmö 🇸🇪
+    date: January 20
+    upcoming: true
+
 - year: 2024
   conferences:
 
@@ -41,13 +47,11 @@ years:
     url: https://www.meetup.com/brno-java-meetup/
     location: Brno 🇨🇿
     date: Nov 20
-    upcoming: true
   
   - name: Prague JUG
     url: https://www.jug.cz/czjug-en/
     location: Prague 🇨🇿
     date: Nov 19
-    upcoming: true
 
   - name: JUG Torino
     url: https://jugtorino.org
