@@ -932,6 +932,14 @@ sets:
 
     - title: Jakarta EE 8 Web Profile
       items:
+      - name: AliEE
+        vendor: Alibaba Cloud Computing
+        image: '/images/compatible_products/aliee.png'
+        download: 'https://help.aliyun.com/zh/edas/product-overview/what-is-alibaba-cloud-application-server?spm=a2c4g.11186623.0.0.72385806mPZpST'
+        versions:
+          - version: 1.0.0
+            compatibility: 'https://help.aliyun.com/zh/edas/product-overview/aliee-tck-results'
+            download_url: 'https://help.aliyun.com/zh/edas/product-overview/what-is-alibaba-cloud-application-server?spm=a2c4g.11186623.0.0.72385806mPZpST'
       - name: Eclipse GlassFish
         vendor: Eclipse Foundation
         image: '/images/compatible_products/glassfish_logo.svg'
