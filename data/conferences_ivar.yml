@@ -31,6 +31,12 @@ years:
 - year: 2024
   conferences:
 
+  - name: Ya!vaConf
+    url: https://yavaconf.com/en/
+    location: Warsaw 🇵🇱
+    date: Dec 11
+    upcoming: true
+
   - name: JakartaOne Livestream
     url: https://jakartaone.org/
     location: online 🌐
@@ -47,11 +53,13 @@ years:
     url: https://www.meetup.com/brno-java-meetup/
     location: Brno 🇨🇿
     date: Nov 20
+    blog: https://www.agilejava.eu/2024/11/21/brno-jug-2024/
   
   - name: Prague JUG
     url: https://www.jug.cz/czjug-en/
     location: Prague 🇨🇿
     date: Nov 19
+    blog: https://www.agilejava.eu/2024/11/20/prague-jug-2024/
 
   - name: JUG Torino
     url: https://jugtorino.org
