@@ -644,7 +644,15 @@ other = "Sign up now"
  other = "features and benefits"
 
 [jakarta-ee-version-11-features-subtitle]
- other = "Jakarta EE 11 marks a significant step forward in simplifying enterprise Java with a strong focus on increasing developer productivity and performance. This release introduces new specifications and major updates to existing ones, ensuring compatibility with Java 17 and optimisations for Java 21."
+ other = """
+    Jakarta EE 11 marks a significant step forward in simplifying enterprise
+    Java with a strong focus on increasing developer productivity and
+    performance. Key highlights include modernizing and restructuring the Test
+    Compatibility Kits (TCKs), the new Jakarta Data specification, major
+    updates to the existing specifications, and support for the latest Java LTS
+    release which enables developers to leverage enhancements in Java 21,
+    including Virtual Threads.
+  """
 
 [jakarta-ee-version-11-features-block1-title]
  other = "Developer<br> Productivity"
