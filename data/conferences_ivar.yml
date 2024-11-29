@@ -41,13 +41,12 @@ years:
     url: https://jakartaone.org/
     location: online 🌐
     date: Dec 3
-    upcoming: true
 
   - name: Porto Tech Hub
     url: https://portotechhub.com
     location: Porto 🇵🇹
     date: Nov 26
-    upcoming: true
+    blog: https://www.agilejava.eu/2024/11/29/porto-tech-hub-2024/
     
   - name: Brno JUG
     url: https://www.meetup.com/brno-java-meetup/
