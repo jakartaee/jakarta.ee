@@ -116,13 +116,18 @@
     overflow: hidden;
     box-sizing: border-box; /* Ensure padding is included in total width */
   }
-
-  h1 {
+  
+  h1,
+  .h1 {
     text-align: center;
     font-size: 28px;
     margin: 40px 0;
     font-family: 'Open Sans';
     font-weight: bold;
+  }
+  h2,
+  .h2 {
+    font-weight: 600;
   }
   .thinner { font-weight: 400;}
   .legend {
@@ -185,9 +190,10 @@
     flex-direction: column;
     justify-content: flex-end;
   }
-  .section h2 {
+  .section h2,
+  .section .h2 {
     font-size: 18px;
-    margin-bottom: 10px;
+    margin-bottom: 22px;
     font-family: 'Open Sans';
   }
   .items, .web-profile {
@@ -232,7 +238,8 @@
     gap: 8px 15px;
     justify-items: center;
   }
-  h2 { 
+  h2,
+  .h2 { 
     text-align: left;
   }
   .webprofile { 
@@ -244,10 +251,10 @@
 
   @media (max-width:1059px) {
     .section { padding: 20px;}
-    h1 { margin: 20px 0;}
+    h1, .h1 { margin: 22px 0;}
     .grid, .box2 { grid-template-columns: 1fr; padding-left:5%;}
     .section { justify-content: center;}
-    h2 { text-align: center;}
+    h2, .h2 { text-align: center;}
     .webprofile { padding-right: 10%;}
     .coreprofile { margin-top: 0; padding-right: 10%;}
     .coreprofile .items { align-items: center;}
