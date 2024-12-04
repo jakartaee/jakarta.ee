@@ -22,6 +22,12 @@ years:
     date: March 4-6
     upcoming: true
 
+  - name: Madrid JUG
+    url: https://madridjug.es
+    location: Madrid 🇪🇸
+    date: February 18
+    upcoming: true
+
   - name: Javaforum Malmø
     url: https://foocafe.org/event/sound-scheduling-writing-linux-schedulers-java-ebpf
     location: Malmö 🇸🇪
