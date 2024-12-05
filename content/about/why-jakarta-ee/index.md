@@ -1,6 +1,6 @@
 ---
 title: Why Jakarta EE?
-seo_title: Why Jakarta EE for Enterprise Java Application Development | Jakarta EE
+seo_title: Why Jakarta EE for Enterprise Java Application Development
 date: 2022-10-20T14:49:08-04:00
 description: >
   Discover the benefits of Jakarta EE for enterprise Java application

@@ -12,13 +12,12 @@ date: 2020-02-19T15:00:25-08:00
 * Kenji Kazumura - Fujitsu
 * Emily Jiang - IBM, Tom Watson - alternate
 * Ed Bratt - Oracle, Dmitry Kornilov - alternate
-* Andrew Pielage - Payara, Petr Aubrecht - alternate
+* Andrew Pielage (**chair**) - Payara, Petr Aubrecht - alternate
 * David Blevins - Tomitribe, Jean-Louis Monterio - alternate
 * Ivar Grimstad - PMC Representative
 * Marcelo Ancelmo - London Java Community - Elected Participant Member Representative, Abraham Marin-Perez - alternate
 * Werner Keil - Elected Committer Member Representative
 * Jun Qian - Primeton Information Technologies - Elected Enterprise Representative
 * Zhai Luchao - Shandong Cvicse Middleware Co. - Elected Enterprise Representative
-* Paul Buck - Eclipse Foundation (serves as its non-voting chair)
 
 {{< meeting-minutes-single "specification_committee" >}}

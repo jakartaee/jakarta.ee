@@ -12,7 +12,7 @@ date: 2020-01-05T15:50:25-04:00
 * Will Lyons (**chair**)- Oracle, Ed Bratt - alternate
 * Kenji Kazumura - Fujitsu, Yuichi Kusano - alternate
 * Alasdair Nottingham - IBM, Emily Jiang - alternate
-* Steve Millidge - Payara, Ilias Efstathiou - alternate
+* Steve Millidge - Payara, Steve Butler - alternate
 * David Blevins - Tomitribe, Cesar Hernandez - alternate
 * Marcin Kruglik - London Jamocha Community - Elected Participant Member Representative - Abraham Marin-Perez - alternate
 * Vacant - Elected Committer Member Representative

@@ -1,32 +1,32 @@
 
 [[main]]
-    name = "About"
-    url = "/about/"
-    weight = 1
-
-[[main]]
-    name = "Specifications"
-    url = "/specifications/"
-    weight = 2
-
-[[main]]
-    name = "Compatible Products"
-    url = "/compatibility/"
-    weight = 3
-
-[[main]]
-    name = "Community"
-    url = "/community"
-    weight = 4
-
-[[main]]
-    name = "Supporters"
-    url = "/Membership/"
-    weight = 5
-
-[[main]]
   name = "Learn"
   url = "/learn/"
+  weight = 1
+
+[[main]]
+  name = "Specifications"
+  url = "/specifications/"
+  weight = 2
+
+[[main]]
+  name = "Compatible Products"
+  url = "/compatibility/"
+  weight = 3
+
+[[main]]
+  name = "About"
+  url = "/about/"
+  weight = 4
+
+[[main]]
+  name = "Community"
+  url = "/community"
+  weight = 5
+
+[[main]]
+  name = "Supporters"
+  url = "/Membership/"
   weight = 6
 
 # About sub-menu

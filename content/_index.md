@@ -1,6 +1,7 @@
 ---
 title: "Home"
-seo_title: "Jakarta® EE | Cloud Native Enterprise Java | Java EE | The Eclipse Foundation"
+seo_title: "Jakarta EE"
+seo_title_suffix: " | Cloud Native Enterprise Java | Java EE | The Eclipse Foundation"
 headline: |
   <img class='jumbotron-title' src='/images/jakarta/jakarta-ee-text.svg' alt='Jakarta EE'>
   <br>

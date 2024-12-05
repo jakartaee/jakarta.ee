@@ -1,7 +1,6 @@
-
 [[main]]
-    name = "私たちについて"
-    url = "/ja/about/"
+    name = "Learn"
+    url = "/ja/learn/"
     weight = 1
 
 [[main]]
@@ -15,14 +14,19 @@
     weight = 3
 
 [[main]]
+    name = "私たちについて"
+    url = "/ja/about/"
+    weight = 4
+
+[[main]]
     name = "コミュニティ"
     url = "/ja/community"
-    weight = 4
+    weight = 5
 
 [[main]]
     name = "メンバーシップ"
     url = "/Membership/"
-    weight = 5
+    weight = 6
 
 [[main]]
     name = "リソース"

@@ -12,13 +12,12 @@ date: 2020-02-19T15:00:25-08:00
 * Kenji Kazumura - 富士通
 * Tom Watson - IBM、Emily Jiang - 代理
 * Ed Bratt - Oracle、Dmitry Kornilov - 代理
-* Andrew Pielage - Payara、Petr Aubrecht - 代理
+* Andrew Pielage (**chair**) - Payara、Petr Aubrecht - 代理
 * David Blevins - Tomitribe、Jean-Louis Monterio - 代理
 * Ivar Grimstad - PMC代表
 * Marcelo Ancelmo - ロンドンJavaコミュニティ - 選出されたParticipantメンバー代表、Abraham Marin-Perez - 代理
 * Werner Keil - 選出されたCommitterメンバー代表
 * Scott Stark - Red Hat - 選出されたEnterpriseメンバー代表、Scott Marlow - 代理
 * Zhai Luchao - Shandong Cvicse Middleware Co. - 選出されたEnterpriseメンバー代表
-* Paul Buck - Eclipse Foundation（議決権のない議長として任務）
 
 {{< meeting-minutes-single "specification_committee" >}}

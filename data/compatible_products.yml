@@ -49,6 +49,15 @@ sets:
             - version: 23.0.0.3, Java 11
               compatibility: 'https://www.ibm.com/support/pages/ibm-websphere-liberty-23003-jakarta-ee-platform-10-using-java-11-certification-summary'
               download_url: 'https://www.ibm.com/support/fixcentral/swg/selectFixes?parent=ibm%7EWebSphere&product=ibm/WebSphere/WebSphere+Liberty&release=23.0.0.3&platform=All&function=fixId&fixids=wlp-jakartaee10-23.0.0.3&includeSupersedes=0'
+        - name: InforSuite Application Server
+          vendor: Shandong Cvicse Middleware Co.,Ltd.
+          image: '/images/compatible_products/inforsuite_logo.svg'
+          image_width: 195
+          download: 'http://www.inforbus.com/as.html'
+          versions:
+          - version: 10.0.10
+            compatibility: 'http://www.inforbus.com/InforsuiteAS/platform-tckresults/FullPlatform10/index.html'
+            download_url: 'http://www.inforbus.com/as.html'
         - name: Open Liberty
           vendor: IBM Corporation
           image: '/images/compatible_products/ibm-open-liberty-logo.svg'
@@ -67,6 +76,9 @@ sets:
           image_width: 195
           download: 'https://www.payara.fish/downloads/payara-platform-community-edition/'
           versions:
+            - version: 6.2024.9
+              compatibility: 'https://docs.payara.fish/community/docs/Jakarta%20EE%20Certification/6.2024.9/6.2024.9%20Platform%20TCK%20Results.html'
+              download_url: 'https://www.payara.fish/downloads/payara-platform-community-edition/'
             - version: 6.2023.12
               compatibility: 'https://docs.payara.fish/community/docs/Jakarta%20EE%20Certification/6.2023.12/6.2023.12%20Platform%20TCK%20Results.html'
               download_url: 'https://www.payara.fish/downloads/payara-platform-community-edition/'
@@ -85,6 +97,9 @@ sets:
           image_width: 195
           download: 'https://www.payara.fish/page/payara-enterprise-downloads/'
           versions:
+            - version: 6.18.0
+              compatibility: 'https://docs.payara.fish/enterprise/docs/Jakarta%20EE%20Certification/6.18.0/6.18.0%20Platform%20TCK%20Results.html'
+              download_url: 'https://www.payara.fish/page/payara-enterprise-downloads/'
             - version: 6.9.0, Web Profile
               compatibility: 'https://docs.payara.fish/enterprise/docs/Jakarta%20EE%20Certification/6.9.0/6.9.0%20(Web%20Profile)%20Web%20TCK%20Results.html'
               download_url: 'https://www.payara.fish/page/payara-enterprise-downloads/'
@@ -106,16 +121,37 @@ sets:
             - version: 8.0.0, Java 11
               compatibility: 'https://github.com/RedHatOfficial/jbosseap-certifications/blob/EE10/EAP-8.0.0/jakarta-full-platform-jdk11.adoc#tck-results' 
               download_url: 'https://www.redhat.com/en/technologies/jboss-middleware/application-platform'
+        - name: TongWeb Application Server
+          vendor: Beijing TongTech Co., Ltd.
+          image: '/images/compatible_products/tongweb.svg'
+          image_width: 180
+          download: 'https://www.tongtech.com/dft/pctype/25.html'
+          versions:
+          - version: 8
+            compatibility: 'https://www.tongtech.com/tongweb/tck810.html'
+            download_url: 'https://www.tongtech.com/service.html'
+          - version: 7
+            compatibility: 'https://www.tongtech.com/tongweb/tck710.html'
+            download_url: 'https://www.tongtech.com/service.html'
         - name: WildFly
           vendor: Red Hat 
           image: '/images/compatible_products/red-hat-wildfly-logo.png'
           image_width: 100
           download: 'https://wildfly.org/downloads'
           versions:
-            - version: 27.0.0.Alpha5, Java SE 17
+            - version: 33.0.0.Final, Java 21
+              compatibility: 'https://github.com/wildfly/certifications/blob/EE10/WildFly_33.0.0.Final/jakarta-full-platform-jdk21.adoc' 
+              download_url: 'https://www.wildfly.org/downloads/#33.0.0.Final'
+            - version: 33.0.0.Final, Java 17
+              compatibility: 'https://github.com/wildfly/certifications/blob/EE10/WildFly_33.0.0.Final/jakarta-full-platform-jdk17.adoc'
+              download_url: 'https://www.wildfly.org/downloads/#33.0.0.Final'
+            - version: 33.0.0.Final, Java 11
+              compatibility: 'https://github.com/wildfly/certifications/blob/EE10/WildFly_33.0.0.Final/jakarta-full-platform-jdk11.adoc' 
+              download_url: 'https://www.wildfly.org/downloads/#33.0.0.Final'
+            - version: 27.0.0.Alpha5, Java 17
               compatibility: 'https://github.com/wildfly/certifications/blob/EE10/WildFly_27.0.0.Alpha5/jakarta-full-platform-jdk17.adoc'
               download_url: 'https://github.com/wildfly/certifications/blob/EE10/WildFly_27.0.0.Alpha5/jakarta-full-platform-jdk17.adoc'
-            - version: 27.0.0.Alpha5, Java SE 11
+            - version: 27.0.0.Alpha5, Java 11
               compatibility: 'https://github.com/wildfly/certifications/blob/EE10/WildFly_27.0.0.Alpha5/jakarta-full-platform-jdk11.adoc'
               download_url: 'https://github.com/wildfly/certifications/blob/EE10/WildFly_27.0.0.Alpha5/jakarta-full-platform-jdk11.adoc'
 
@@ -173,6 +209,9 @@ sets:
           image_width: 195
           download: 'https://www.payara.fish/downloads/payara-platform-community-edition/'
           versions:
+            - version: 6.2024.9, Web Profile
+              compatibility: 'https://docs.payara.fish/community/docs/Jakarta%20EE%20Certification/6.2024.9/6.2024.9%20(Web%20Profile)%20Web%20TCK%20Results.html'
+              download_url: 'https://www.payara.fish/downloads/payara-platform-community-edition/'
             - version: 6.2023.12, Web Profile
               compatibility: 'https://docs.payara.fish/community/docs/Jakarta%20EE%20Certification/6.2023.12/6.2023.12%20(Web%20Profile)%20Web%20TCK%20Results.html'
               download_url: 'https://www.payara.fish/downloads/payara-platform-community-edition/'
@@ -188,6 +227,9 @@ sets:
           image_width: 195
           download: 'https://www.payara.fish/page/payara-enterprise-downloads/'
           versions:
+            - version: 6.18.0, Web Profile
+              compatibility: 'https://docs.payara.fish/enterprise/docs/Jakarta%20EE%20Certification/6.18.0/6.18.0%20(Web%20Profile)%20Web%20TCK%20Results.html'
+              download_url: 'https://www.payara.fish/page/payara-enterprise-downloads/'
             - version: 6.4.0, Web Profile
               compatibility: 'https://docs.payara.fish/enterprise/docs/Jakarta%20EE%20Certification/6.4.0/6.4.0%20(Web%20Profile)%20Web%20TCK%20Results.html'
               download_url: 'https://www.payara.fish/page/payara-enterprise-downloads/'
@@ -197,10 +239,19 @@ sets:
           image_width: 100
           download: 'https://wildfly.org/downloads'
           versions:
-            - version: 27.0.0.Alpha5, Java SE 17
+            - version: 33.0.0.Final, Java 21
+              compatibility: 'https://github.com/wildfly/certifications/blob/EE10/WildFly_33.0.0.Final/jakarta-web-profile-jdk21.adoc'
+              download_url: 'https://www.wildfly.org/downloads/#33.0.0.Final'
+            - version: 33.0.0.Final, Java 17
+              compatibility: 'https://github.com/wildfly/certifications/blob/EE10/WildFly_33.0.0.Final/jakarta-web-profile-jdk17.adoc'
+              download_url: 'https://www.wildfly.org/downloads/#33.0.0.Final'
+            - version: 33.0.0.Final, Java 11
+              compatibility: 'https://github.com/wildfly/certifications/blob/EE10/WildFly_33.0.0.Final/jakarta-web-profile-jdk11.adoc'
+              download_url: 'https://www.wildfly.org/downloads/#33.0.0.Final'
+            - version: 27.0.0.Alpha5, Java 17
               compatibility: 'https://github.com/wildfly/certifications/blob/EE10/WildFly_27.0.0.Alpha5/jakarta-web-profile-jdk17.adoc'
               download_url: 'https://github.com/wildfly/certifications/blob/EE10/WildFly_27.0.0.Alpha5/jakarta-web-profile-jdk17.adoc'
-            - version: 27.0.0.Alpha5, Java SE 11
+            - version: 27.0.0.Alpha5, Java 11
               compatibility: 'https://github.com/wildfly/certifications/blob/EE10/WildFly_27.0.0.Alpha5/jakarta-web-profile-jdk11.adoc'
               download_url: 'https://github.com/wildfly/certifications/blob/EE10/WildFly_27.0.0.Alpha5/jakarta-web-profile-jdk11.adoc'
 
@@ -213,6 +264,9 @@ sets:
           image_width: 120
           download: 'https://helidon.io'
           versions:
+            - version: '4.1'
+              compatibility: 'https://github.com/helidon-io/helidon/wiki/MicroProfile-6.1-and-Jakarta-EE-10-Core-Profile-Certification,-Helidon-4.1'
+              download_url: 'https://helidon.io/'
             - version: '4.0'
               compatibility: 'https://github.com/helidon-io/helidon/wiki/MicroProfile-6-and-Jakarta-EE-10-Core-Profile-Certification,-Helidon-4#jakarta-ee-10-core-profile'
               download_url: 'https://helidon.io/'
@@ -258,6 +312,12 @@ sets:
           image_width: 195
           download: 'https://www.payara.fish/downloads/payara-platform-community-edition/'
           versions:
+            - version: 6.2024.9
+              compatibility: 'https://docs.payara.fish/community/docs/Jakarta%20EE%20Certification/6.2024.9/6.2024.9%20Core%20TCK%20Results.html'
+              download_url: 'https://www.payara.fish/downloads/payara-platform-community-edition/'
+            - version: 6.2024.9, Web Profile
+              compatibility: 'https://docs.payara.fish/community/docs/Jakarta%20EE%20Certification/6.2024.9/6.2024.9%20(Web%20Profile)%20Web%20TCK%20Results.html'
+              download_url: 'https://www.payara.fish/downloads/payara-platform-community-edition/'
             - version: 6.2023.12
               compatibility: 'https://docs.payara.fish/community/docs/Jakarta%20EE%20Certification/6.2023.12/6.2023.12%20Core%20TCK%20Results.html'
               download_url: 'https://www.payara.fish/downloads/payara-platform-community-edition/'
@@ -285,6 +345,12 @@ sets:
           image_width: 195
           download: 'https://www.payara.fish/page/payara-enterprise-downloads/'
           versions:
+            - version: 6.18.0
+              compatibility: 'https://docs.payara.fish/enterprise/docs/Jakarta%20EE%20Certification/6.18.0/6.18.0%20Core%20TCK%20Results.html'
+              download_url: 'https://www.payara.fish/page/payara-enterprise-downloads/'
+            - version: 6.18.0, Web Profile
+              compatibility: 'https://docs.payara.fish/enterprise/docs/Jakarta%20EE%20Certification/6.18.0/6.18.0%20(Web%20Profile)%20Core%20TCK%20Results.html'
+              download_url: 'https://www.payara.fish/page/payara-enterprise-downloads/'
             - version: 6.9.0, Web Profile
               compatibility: 'https://docs.payara.fish/enterprise/docs/Jakarta%20EE%20Certification/6.9.0/6.9.0%20(Web%20Profile)%20Core%20TCK%20Results.html'
               download_url: 'https://www.payara.fish/page/payara-enterprise-downloads/'
@@ -303,16 +369,25 @@ sets:
           image_width: 100
           download: 'https://wildfly.org/downloads'
           versions:
-            - version: 27.0.0.Alpha5, Java SE 17
+            - version: 33.0.0.Final, Java 21
+              compatibility: 'https://github.com/wildfly/certifications/blob/EE10/WildFly_33.0.0.Final/jakarta-core-jdk21.adoc#tck-results'
+              download_url: 'https://www.wildfly.org/downloads/#33.0.0.Final'
+            - version: 33.0.0.Final, Java 17
+              compatibility: 'https://github.com/wildfly/certifications/blob/EE10/WildFly_33.0.0.Final/jakarta-core-jdk17.adoc#tck-results'
+              download_url: 'https://www.wildfly.org/downloads/#33.0.0.Final'
+            - version: 33.0.0.Final, Java 11
+              compatibility: 'https://github.com/wildfly/certifications/blob/EE10/WildFly_33.0.0.Final/jakarta-core-jdk11.adoc#tck-results'
+              download_url: https://www.wildfly.org/downloads/#33.0.0.Final
+            - version: 27.0.0.Alpha5, Java 17
               compatibility: 'https://github.com/wildfly/certifications/blob/EE10/WildFly_27.0.0.Alpha5/jakarta-core-jdk17.adoc#jakarta-core-profile-1000-tck-java-se-17-results'
               download_url: 'https://github.com/wildfly/wildfly/releases/download/27.0.0.Alpha5/wildfly-27.0.0.Alpha5.zip'
-            - version: 27.0.0.Alpha5, Java SE 11
+            - version: 27.0.0.Alpha5, Java 11
               compatibility: 'https://github.com/wildfly/certifications/blob/EE10/WildFly_27.0.0.Alpha5/jakarta-core-jdk11.adoc#jakarta-core-profile-1000-tck-java-se-11-results'
               download_url: 'https://github.com/wildfly/wildfly/releases/download/27.0.0.Alpha5/wildfly-27.0.0.Alpha5.zip'
-            - version: Preview 27.0.0.Alpha1, Java SE 17
+            - version: Preview 27.0.0.Alpha1, Java 17
               compatibility: 'https://github.com/jakartaredhat/wf-core-tck-runner/wiki/Jakarta-Core-Profile-10.0.0-TCK-Java-SE-17-Results'
               download_url: 'https://github.com/wildfly/wildfly/releases/download/27.0.0.Alpha1/wildfly-preview-27.0.0.Alpha1.zip'
-            - version: Preview 27.0.0.Alpha1, Java SE 11
+            - version: Preview 27.0.0.Alpha1, Java 11
               compatibility: 'https://github.com/jakartaredhat/wf-core-tck-runner/wiki/Jakarta-Core-Profile-10.0.0-TCK-Java-SE-11-Results'
               download_url: 'https://github.com/wildfly/wildfly/releases/download/27.0.0.Alpha1/wildfly-preview-27.0.0.Alpha1.zip'
 
@@ -419,8 +494,8 @@ sets:
           download_url: 'http://tas.thunisoft.com/download'
       - name: TongWeb Application Server
         vendor: Beijing TongTech Co., Ltd.
-        image: '/images/compatible_products/tongweb_logo.svg'
-        image_width: 195
+        image: '/images/compatible_products/tongweb.svg'
+        image_width: 180
         download: 'https://www.tongtech.com/dft/pctype/25.html'
         versions:
         - version: 9
@@ -543,6 +618,15 @@ sets:
         - version: 11
           compatibility: 'http://www.inforbus.com/InforsuiteAS/platform-tckresults/FullPlatform9.0/'
           download_url: 'http://www.inforbus.com/as.html'
+      - name: JEUS
+        vendor: TmaxSoft Co., Ltd
+        image: '/images/compatible_products/jeus-logo.svg'
+        image_width: 110
+        download: 'https://www.tmaxsoft.com/en/solution/view?solutionSeq=27'
+        versions:
+          - version: 9
+            compatibility: 'https://www.tmaxsoft.com/jakee/JEUS9_JakartaEE9_Certification_Summary.html'
+            download_url: http://www.tmaxsoft.com/jakee/install/jeus9/jeus9-b15.zip 
       - name: Open Liberty
         vendor: IBM Corporation
         image: '/images/compatible_products/ibm-open-liberty-logo.svg'
@@ -639,6 +723,9 @@ sets:
         image_width: 195
         download: 'https://www.payara.fish/downloads/'
         versions:
+        - version: 5.67.0
+          compatibility: 'https://docs.payara.fish/enterprise/docs/5.67.0/Jakarta%20EE%20Certification/5.67.0/5.67.0%20Platform%20TCK%20Results.html'
+          download_url: 'https://www.payara.fish/page/payara-enterprise-downloads/'
         - version: 5.58.0
           compatibility: 'https://docs.payara.fish/enterprise/docs/5.58.0/Jakarta%20EE%20Certification/5.58.0/5.58.0%20Platform%20TCK%20Results.html'
           download_url: 'https://www.payara.fish/page/payara-enterprise-downloads/'
@@ -812,8 +899,8 @@ sets:
 
       - name: TongWeb Application Server
         vendor: Beijing TongTech Co., Ltd.
-        image: '/images/compatible_products/tongweb_logo.svg'
-        image_width: 195
+        image: '/images/compatible_products/tongweb.svg'
+        image_width: 180
         download: "https://www.tongtech.com/dft/pctype/25.html"
         versions:
         - version: 8
@@ -845,6 +932,14 @@ sets:
 
     - title: Jakarta EE 8 Web Profile
       items:
+      - name: AliEE
+        vendor: Alibaba Cloud Computing
+        image: '/images/compatible_products/aliee.png'
+        download: 'https://help.aliyun.com/zh/edas/product-overview/what-is-alibaba-cloud-application-server?spm=a2c4g.11186623.0.0.72385806mPZpST'
+        versions:
+          - version: 1.0.0
+            compatibility: 'https://help.aliyun.com/zh/edas/product-overview/aliee-tck-results'
+            download_url: 'https://help.aliyun.com/zh/edas/product-overview/what-is-alibaba-cloud-application-server?spm=a2c4g.11186623.0.0.72385806mPZpST'
       - name: Eclipse GlassFish
         vendor: Eclipse Foundation
         image: '/images/compatible_products/glassfish_logo.svg'
@@ -904,6 +999,9 @@ sets:
         image_width: 195
         download: 'https://www.payara.fish/downloads/'
         versions:
+        - version: 5.67.0, Web Profile
+          compatibility: 'https://docs.payara.fish/enterprise/docs/5.67.0/Jakarta%20EE%20Certification/5.67.0/5.67.0%20Web%20TCK%20Results.html'
+          download_url: 'https://www.payara.fish/page/payara-enterprise-downloads/'
         - version: 5.58.0, Web Profile
           compatibility: 'https://docs.payara.fish/enterprise/docs/5.58.0/Jakarta%20EE%20Certification/5.58.0/5.58.0%20Web%20TCK%20Results.html'
           download_url: 'https://www.payara.fish/page/payara-enterprise-downloads/'
