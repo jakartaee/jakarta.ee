@@ -16,6 +16,12 @@ years:
     date: Apr 1-3
     upcoming: true
 
+  - name: JavaOne
+    url: https://www.oracle.com/javaone/
+    location: Redwood Shores, CA 🇺🇸
+    date: March 18-20
+    upcoming: true
+
   - name: Devnexus
     url: https://devnexus.com/
     location: Atlanta, GA 🇺🇸
