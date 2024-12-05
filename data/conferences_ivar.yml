@@ -22,6 +22,12 @@ years:
     date: March 4-6
     upcoming: true
 
+  - name: Boston JUG
+    url: https://www.meetup.com/nejug1/
+    location: Boston, MA 🇺🇸
+    date: February 27
+    upcoming: true
+
   - name: Madrid JUG
     url: https://madridjug.es
     location: Madrid 🇪🇸
