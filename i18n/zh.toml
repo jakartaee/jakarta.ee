@@ -1177,13 +1177,13 @@ other = "注册"
   other = "加入邮件列表"
 
 [jakarta-ee-china-section-index-wechat-group-title]
-  other = "加入微信群"
+  other = "关注微信公众账号"
 
 [jakarta-ee-china-section-index-wechat-group-join]
-  other = "加入微信群"
+  other = "关注微信公众账号"
 
 [jakarta-ee-china-section-index-wechat-group-info]
-  other = "如果您想参与社区讨论，协作推进中国社区的活动，请长按或扫描添加下方二维码，注明“加入Jakarta”"
+  other = "如果您想了解更多关于社区的信息，参与社区讨论，协作推进中国社区的活动，请长按或扫描添加下方二维码，关注社区的公众账号"
 
 [jakarta-ee-china-section-index-getlisted-title]
   other = "想要把你的名字也加入列表么？"
