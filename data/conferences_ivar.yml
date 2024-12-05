@@ -53,12 +53,12 @@ years:
     url: https://yavaconf.com/en/
     location: Warsaw 🇵🇱
     date: Dec 11
-    upcoming: true
 
   - name: JakartaOne Livestream
     url: https://jakartaone.org/
     location: online 🌐
     date: Dec 3
+    blog: https://www.agilejava.eu/2024/12/05/jakartaone-livestream-2024/
 
   - name: Porto Tech Hub
     url: https://portotechhub.com
