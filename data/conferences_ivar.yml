@@ -16,10 +16,22 @@ years:
     date: Apr 1-3
     upcoming: true
 
+  - name: JavaOne
+    url: https://www.oracle.com/javaone/
+    location: Redwood Shores, CA 🇺🇸
+    date: March 18-20
+    upcoming: true
+
   - name: Devnexus
     url: https://devnexus.com/
     location: Atlanta, GA 🇺🇸
     date: March 4-6
+    upcoming: true
+
+  - name: Boston JUG
+    url: https://www.meetup.com/nejug1/
+    location: Boston, MA 🇺🇸
+    date: February 27
     upcoming: true
 
   - name: Madrid JUG
@@ -41,12 +53,12 @@ years:
     url: https://yavaconf.com/en/
     location: Warsaw 🇵🇱
     date: Dec 11
-    upcoming: true
 
   - name: JakartaOne Livestream
     url: https://jakartaone.org/
     location: online 🌐
     date: Dec 3
+    blog: https://www.agilejava.eu/2024/12/05/jakartaone-livestream-2024/
 
   - name: Porto Tech Hub
     url: https://portotechhub.com
