@@ -34,6 +34,12 @@ years:
     date: February 27
     upcoming: true
 
+  - name: Connecticut JUG
+    url: https://www.meetup.com/connecticut-java-users-group/
+    location: East Hartford, CT 🇺🇸
+    date: February 26
+    upcoming: true
+
   - name: Madrid JUG
     url: https://madridjug.es
     location: Madrid 🇪🇸
