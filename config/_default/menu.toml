@@ -25,7 +25,7 @@
   weight = 5
 
 [[main]]
-  name = "Supporters"
+  name = "Join"
   url = "/Membership/"
   weight = 6
 
@@ -273,21 +273,21 @@
 
 # Membership sub-menu
 [[main]]
-    name = "Join"
+    name = "Become a Member"
     url = "/membership"
-    parent = "Supporters"
+    parent = "Join"
     weight = 1
 
 [[main]]
     name = "Members"
     url = "/membership/members/"
-    parent = "Supporters"
+    parent = "Join"
     weight = 2
 
 [[main]]
     name = "Become a Sponsor"
     url = "/supporters/sponsor/"
-    parent = "Supporters"
+    parent = "Join"
     weight = 3
 
 # Learn sub-menu
