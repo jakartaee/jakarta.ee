@@ -16,6 +16,15 @@ sets:
     - title: Jakarta EE 10 Platform
       release: "/release/10"
       items:
+        - name: Apusic AAS
+          vendor: Kingdee Apusic Cloud Computing Co., Ltd.
+          image: '/images/compatible_products/aas.jpg'
+          image_width: 195
+          download: 'https://www.apusic.com/list-117.html'
+          versions:
+          - version: 10-EE10
+            compatibility: 'https://www.apusic.com/about/aas_v10_ee10_full.html'
+            download_url: 'https://www.apusic.com/list-117.html'
         - name: Eclipse GlassFish
           vendor: Eclipse Foundation
           image: '/images/compatible_products/glassfish_logo.svg'
