@@ -779,6 +779,14 @@ items:
           year: 2018
 
    specification_committee:
+      -
+         url: specification_committee/minutes-specification-december-11-2024.pdf
+         title: 11 December 2024 (pdf)
+         year: 2024
+      -
+         url: specification_committee/minutes-specification-november-27-2024.pdf
+         title: 27 November 2024 (pdf)
+         year: 2024
        -
          url: specification_committee/minutes-specification-november-13-2024.pdf
          title: 13 November 2024 (pdf)
