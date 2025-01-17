@@ -4,6 +4,12 @@ years:
 - year: 2025
   conferences:
 
+  - name: JCON EUROPE
+    url: https://2025.europe.jcon.one/
+    location: Köln 🇩🇪
+    date: May 12-15
+    upcoming: true
+
   - name: GIDS
     url: https://developersummit.com/
     location: Bangalore 🇮🇳
@@ -50,7 +56,6 @@ years:
     url: https://foocafe.org/event/sound-scheduling-writing-linux-schedulers-java-ebpf
     location: Malmö 🇸🇪
     date: January 20
-    upcoming: true
 
 - year: 2024
   conferences:
