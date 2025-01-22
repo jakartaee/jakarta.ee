@@ -15,7 +15,7 @@
       <tr>
         <td>     
         {{ if .url }}
-          <a href="{{ .url }}" target="_blank">{{ .name }} {{ if .upcoming }}(*){{ end }}</a>
+          <a href="{{ .url }}" target="_blank">{{ .name }}</a>
         {{ else }}
           {{ .name }} {{ if .upcoming }}(*){{ end }}
         {{ end }}
