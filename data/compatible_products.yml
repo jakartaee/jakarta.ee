@@ -882,8 +882,11 @@ sets:
         image_width: 150
         download: 'https://www.oracle.com/middleware/technologies/weblogic-server-downloads.html'
         versions:
+        - version: 14.1.2.0
+          compatibility: 'https://www.oracle.com/middleware/technologies/jakartaee_report.html#14.1.2-Summary'
+          download_url: 'https://www.oracle.com/middleware/technologies/weblogic-server-downloads.html'
         - version: 14.1.1.0
-          compatibility: 'https://www.oracle.com/middleware/technologies/jakartaee_report.html'
+          compatibility: 'https://www.oracle.com/middleware/technologies/jakartaee_report.html#14.1.1-Summary'
           download_url: 'https://www.oracle.com/middleware/technologies/weblogic-server-downloads.html'
 
       - name: InforSuite Application Server
