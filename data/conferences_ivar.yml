@@ -46,6 +46,12 @@ years:
     date: February 26
     upcoming: true
 
+  - name: New York Java SIG
+    url: https://www.javasig.com
+    location: New York, NY 🇺🇸
+    date: February 25
+    upcoming: true    
+
   - name: Madrid JUG
     url: https://madridjug.es
     location: Madrid 🇪🇸
