@@ -780,6 +780,10 @@ items:
 
    specification_committee:
        -
+         url: specification_committee/minutes-specification-january-22-2025.pdf
+         title: 22 January 2025 (pdf)
+         year: 2025
+       -
          url: specification_committee/minutes-specification-january-8-2025.pdf
          title: 8 January 2025 (pdf)
          year: 2025
