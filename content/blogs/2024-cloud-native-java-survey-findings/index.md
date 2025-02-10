@@ -1,7 +1,6 @@
 ---
 title: "2024 Cloud Native Java Survey Findings"
-date: 2025-02-07T00:00:00 
-# summary: ""
+date: 2025-02-11T00:00:00 
 author: Shabnam Mayel
 email: shabnam.mayel@eclipse-foundation.org
 ---
