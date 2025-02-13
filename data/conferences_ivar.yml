@@ -4,6 +4,12 @@ years:
 - year: 2025
   conferences:
 
+  - name: WeAreDevelopers World Congress
+    url: https://www.wearedevelopers.com/world-congress
+    location: Berlin 🇩🇪
+    date: July 9-11
+    upcoming: true
+
   - name: JCON EUROPE
     url: https://2025.europe.jcon.one/
     location: Köln 🇩🇪
