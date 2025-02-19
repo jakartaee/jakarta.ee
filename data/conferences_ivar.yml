@@ -62,7 +62,7 @@ years:
     url: https://madridjug.es
     location: Madrid 🇪🇸
     date: February 18
-    upcoming: true
+    blog: https://www.agilejava.eu/2025/02/19/madrid-jug-2025/
 
   - name: Javaforum Malmø
     url: https://foocafe.org/event/sound-scheduling-writing-linux-schedulers-java-ebpf
