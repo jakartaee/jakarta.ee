@@ -4,10 +4,16 @@ years:
 - year: 2025
   conferences:
 
+  - name: JCrete
+    url: https://www.jcrete.org
+    location: Kolymvari 🇬🇷
+    date: Aug 4-8
+    upcoming: true
+
   - name: WeAreDevelopers World Congress
     url: https://www.wearedevelopers.com/world-congress
     location: Berlin 🇩🇪
-    date: July 9-11
+    date: Jul 9-11
     upcoming: true
 
   - name: JCON EUROPE
@@ -19,7 +25,7 @@ years:
   - name: GIDS
     url: https://developersummit.com/
     location: Bangalore 🇮🇳
-    date: April 22-25
+    date: Apr 22-25
     upcoming: true
 
   - name: JavaLand
@@ -31,7 +37,7 @@ years:
   - name: JavaOne
     url: https://www.oracle.com/javaone/
     location: Redwood Shores, CA 🇺🇸
-    date: March 18-20
+    date: Mar 18-20
     upcoming: true
 
   - name: Devnexus
@@ -43,31 +49,31 @@ years:
   - name: Boston JUG
     url: https://www.meetup.com/nejug1/
     location: Boston, MA 🇺🇸
-    date: February 27
+    date: Feb 27
     upcoming: true
 
   - name: Connecticut JUG
     url: https://www.meetup.com/connecticut-java-users-group/
     location: Hartford, CT 🇺🇸
-    date: February 26
+    date: Feb 26
     upcoming: true
 
   - name: New York Java SIG
     url: https://www.javasig.com
     location: New York, NY 🇺🇸
-    date: February 25
+    date: Feb 25
     upcoming: true    
 
   - name: Madrid JUG
     url: https://madridjug.es
     location: Madrid 🇪🇸
-    date: February 18
+    date: Feb 18
     blog: https://www.agilejava.eu/2025/02/19/madrid-jug-2025/
 
   - name: Javaforum Malmø
     url: https://foocafe.org/event/sound-scheduling-writing-linux-schedulers-java-ebpf
     location: Malmö 🇸🇪
-    date: January 20
+    date: Jan 20
     blog: https://www.agilejava.eu/2025/01/21/javaforum-malmo-2025/
 
 - year: 2024
