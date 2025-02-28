@@ -46,11 +46,11 @@ years:
     date: March 4-6
     upcoming: true
 
-  - name: Boston JUG
+  - name: Boston Java Users
     url: https://www.meetup.com/nejug1/
     location: Boston, MA 🇺🇸
     date: Feb 27
-    upcoming: true
+    blog: https://www.agilejava.eu/2025/02/28/boston-java-users-2025/
 
   - name: Connecticut JUG
     url: https://www.meetup.com/connecticut-java-users-group/
