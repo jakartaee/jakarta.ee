@@ -56,7 +56,7 @@ years:
     url: https://www.meetup.com/connecticut-java-users-group/
     location: Hartford, CT 🇺🇸
     date: Feb 26
-    upcoming: true
+    blog: https://www.agilejava.eu/2025/02/27/connecticut-jug-2025/
 
   - name: New York Java SIG
     url: https://www.javasig.com
