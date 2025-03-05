@@ -7,7 +7,7 @@ releases:
     - location: https://jakarta.ee/xml/ns/jaxb#3
     - location: https://jakarta.ee/xml/ns/jaxws#3
     - location: https://jakarta.ee/xml/ns/persistence#3
-    - location: https://jakarta.ee/xml/ns/validation
+    - location: https://jakarta.ee/xml/ns/validation#3
 
   schemas: 
 
@@ -117,7 +117,7 @@ releases:
     - location: https://jakarta.ee/xml/ns/jaxb#4
     - location: https://jakarta.ee/xml/ns/jaxws#4
     - location: https://jakarta.ee/xml/ns/persistence#3.1
-    - location: https://jakarta.ee/xml/ns/validation
+    - location: https://jakarta.ee/xml/ns/validation#3
 
   schemas: 
 
@@ -225,7 +225,7 @@ releases:
   version: 11
   dependencies:
     - location: https://jakarta.ee/xml/ns/persistence#3.2
-    - location: https://jakarta.ee/xml/ns/validation
+    - location: https://jakarta.ee/xml/ns/validation#3.1
 
   schemas: 
 
