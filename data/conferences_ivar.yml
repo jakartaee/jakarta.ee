@@ -10,6 +10,12 @@ years:
     date: Aug 4-8
     upcoming: true
 
+  - name: JConfDominica
+    url: https://jconfdominicana.org/
+    location: Santiago de los Caballeros 🇩🇴
+    date: Jul 18-19
+    upcoming: true
+
   - name: WeAreDevelopers World Congress
     url: https://www.wearedevelopers.com/world-congress
     location: Berlin 🇩🇪
