@@ -50,7 +50,7 @@ years:
     url: https://devnexus.com/
     location: Atlanta, GA 🇺🇸
     date: March 4-6
-    upcoming: true
+    blog: https://www.agilejava.eu/2025/03/08/devnexus-2025/
 
   - name: Boston Java Users
     url: https://www.meetup.com/nejug1/
