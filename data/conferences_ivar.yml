@@ -28,6 +28,12 @@ years:
     date: May 12-15
     upcoming: true
 
+  - name: Javaforum Malmø
+    url: https://foocafe.org/event/jvm-age-ai
+    location: Malmö 🇸🇪
+    date: May 5
+    upcoming: true
+
   - name: GIDS
     url: https://developersummit.com/
     location: Bangalore 🇮🇳
@@ -44,7 +50,6 @@ years:
     url: https://www.oracle.com/javaone/
     location: Redwood Shores, CA 🇺🇸
     date: Mar 18-20
-    upcoming: true
 
   - name: Devnexus
     url: https://devnexus.com/
