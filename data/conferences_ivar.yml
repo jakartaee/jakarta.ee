@@ -4,6 +4,12 @@ years:
 - year: 2025
   conferences:
 
+  - name: JakartaOne Livestream
+    url: https://jakartaone.org/2025/
+    location: online 🌐
+    date: Dec 2
+    upcoming: true
+
   - name: JCrete
     url: https://www.jcrete.org
     location: Kolymvari 🇬🇷
@@ -97,7 +103,7 @@ years:
     blog: https://www.agilejava.eu/2024/12/11/yavaconf-2024/
 
   - name: JakartaOne Livestream
-    url: https://jakartaone.org/
+    url: https://jakartaone.org/2024/
     location: online 🌐
     date: Dec 3
     blog: https://www.agilejava.eu/2024/12/05/jakartaone-livestream-2024/
@@ -364,7 +370,7 @@ years:
     blog: https://www.agilejava.eu/2023/12/07/ottawa-jug/
 
   - name: JakartaOne Livestream
-    url: https://jakartaone.org/
+    url: https://jakartaone.org/2023/
     location: online 🌐
     date: Dec 5
     blog: https://www.agilejava.eu/2023/12/06/jakartaone-livestream-2023/
