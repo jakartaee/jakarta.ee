@@ -28,6 +28,12 @@ years:
     date: Jul 9-11
     upcoming: true
 
+  - name: JJUG CCC Spring 
+    url: https://ccc2025spring.java-users.jp/
+    location: Tokyo 🇯🇵
+    date: Jun 7
+    upcoming: true
+
   - name: JCON EUROPE
     url: https://2025.europe.jcon.one/
     location: Köln 🇩🇪
