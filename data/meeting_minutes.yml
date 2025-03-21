@@ -781,6 +781,14 @@ items:
 
    specification_committee:
        -
+         url: specification_committee/minutes-specification-march-5-2025.pdf
+         title: 5 March 2025 (pdf)
+         year: 2025
+       -
+         url: specification_committee/minutes-specification-february-19-2025.pdf
+         title: 19 February 2025 (pdf)
+         year: 2025
+       -
          url: specification_committee/minutes-specification-february-5-2025.pdf
          title: 5 February 2025 (pdf)
          year: 2025
