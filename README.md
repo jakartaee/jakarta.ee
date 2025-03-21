@@ -209,7 +209,6 @@ Have a bug or a feature request? Please search for existing and closed issues. I
 
 * Jakarta® is a Trademark of the Eclipse Foundation, Inc.
 * Eclipse® is a Trademark of the Eclipse Foundation, Inc.
-  
 
 ## Copyright and License
 
