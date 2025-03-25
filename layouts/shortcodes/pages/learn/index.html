@@ -99,6 +99,26 @@
   </div>
 </section>
 
+{{ define "video-list-item" }}
+  <li class="video-list-item">
+    <div class="video-list-item-video-container">
+      <a class="eclipsefdn-video" href="//www.youtube.com/embed/{{.video_id}}"></a>
+    </div>
+    <div class="video-list-item-details text-center">
+      <p class="text-secondary fw-600">{{ time.Format "2 January 2006" .published }}</p>
+      <p class="video-details-title h3 margin-top-0">{{ .title | safeHTML }}</p>
+      <p class="video-details-description">
+        {{ substr (.description | safeHTML) 0 200 }}{{- if gt (len .description) 200 }}...{{- end }}
+      </p>
+      <div class="video-details-button-container flex-center margin-top-30">
+        <a class="btn btn-primary" href="{{ .link }}&list={{ .playlist_id }}">
+          {{ i18n "pages-learn-index-videos-youtube" }}
+        </a>
+      </div>
+    </div>
+  </li>
+{{ end }}
+
 <section class="padding-top-30 padding-bottom-30">
   <h2 class="big-text margin-bottom-30" id="videos">{{ i18n "pages-learn-index-videos-title" }}</h2>
   <div class="video-list-container">
@@ -107,25 +127,26 @@
     {{ if $videos.entry }}
       <ul class="video-list video-list-default">
         {{ $videos = sort $videos.entry "published" "desc" }}
-        {{ range first 3 $videos }}
-          <li class="video-list-item">
-            <div class="video-list-item-video-container">
-              <a class="eclipsefdn-video" href="//www.youtube.com/embed/{{.videoId}}"></a>
-            </div>
-            <div class="video-list-item-details text-center">
-              <p class="text-secondary fw-600">{{ time.Format "2 January 2006" .published }}</p>
-              <p class="video-details-title h3 margin-top-0">{{ .title | safeHTML }}</p>
-              <p class="video-details-description">
-                {{ substr (.group.description | safeHTML) 0 200 }}{{- if gt (len .group.description) 200 }}...{{- end }}
-              </p>
-              <div class="video-details-button-container flex-center margin-top-30">
-                <a class="btn btn-primary" href="{{ index .link "-href" }}&list={{ $playlist_id }}">
-                  {{ i18n "pages-learn-index-videos-youtube" }}
-                </a>
-              </div>
-            </div>
-          </li>
+        {{ $videos_to_show := (first 3 $videos) }}
+        {{ range $videos_to_show }}
+          {{ template "video-list-item" (dict 
+            "video_id" .videoId 
+            "title" .title
+            "published" .published
+            "description" .group.description
+            "playlist_id" $playlist_id
+            "link" (index .link "-href")
+          )}}
         {{ end }}
+        <!-- Statically display the following video so it always remains at the bottom of the video list -->
+        {{ template "video-list-item" (dict
+          "video_id" "wK5Uis9QnFU"
+          "title" "What is the Jakarta EE Platform?"
+          "published" "2023-06-19T00:00:14+00:00"
+          "description" "The Jakarta EE Platform enables developers to produce lightweight, cloud native applications of all kinds while providing maximum developer productivity.  Now featuring multiple profiles geared towards producing microservices or full stack applications, the Platform provides flexibility for developing applications of all sizes.  The Jakarta EE Platform is composed of a number of specifications, each targeting specific areas in application architecture.  This modular approach allows the specifications to evolve under different expert groups and timelines, while the platform enables each to work together in harmony."
+          "playlist_id" $playlist_id
+          "link" "https://www.youtube.com/watch?v=wK5Uis9QnFU"
+        )}}
       </ul>
     {{ end }}
     <div class="text-center margin-y-30">
