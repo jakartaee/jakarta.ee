@@ -298,8 +298,8 @@
   parent = "Learn"
 
 [[main]]
-  name = "Documentation"
-  url = "/learn#documentation"
+  name = "Jakarta EE Tutorial"
+  url = "/learn/docs/jakartaee-tutorial/current/index.html"
   weight = 2
   parent = "Learn"
 
@@ -310,7 +310,13 @@
   parent = "Learn"
 
 [[main]]
+  name = "Video Guides"
+  url = "/learn/#videos"
+  weight = 4
+  parent = "Learn"
+
+[[main]]
   name = "Jakarta EE Overview Course"
   url = "https://www.linkedin.com/learning/jakarta-ee-overview"
-  weight = 4
+  weight = 5
   parent = "Learn"

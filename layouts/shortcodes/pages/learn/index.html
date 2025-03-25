@@ -100,7 +100,7 @@
 </section>
 
 <section class="padding-top-30 padding-bottom-30">
-  <h2 class="big-text margin-bottom-30">{{ i18n "pages-learn-index-videos-title" }}</h2>
+  <h2 class="big-text margin-bottom-30" id="videos">{{ i18n "pages-learn-index-videos-title" }}</h2>
   <div class="video-list-container">
     {{ $playlist_id := "PLutlXcN4EAwDxs85DUnmbnWov3SusY9mG" }}
     {{ $videos := index $.Site.Data.videos $playlist_id }}
