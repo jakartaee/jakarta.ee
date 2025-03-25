@@ -151,6 +151,15 @@ sets:
           - version: 7
             compatibility: 'https://www.tongtech.com/tongweb/tck710.html'
             download_url: 'https://www.tongtech.com/service.html'
+        - name: WebOTX Application Server
+          vendor: NEC Corporation
+          image: '/images/compatible_products/webotx.svg'
+          image_width: 195
+          download: 'https://jpn.nec.com/webotx/appserver/index.html'
+          versions:
+          - version: 12
+            compatibility: 'https://jpn.nec.com/webotx/appserver/ee10_tck_result_exp_12110000.html'
+            download_url: 'https://jpn.nec.com/webotx/appserver/index.html'
         - name: WildFly
           vendor: Red Hat 
           image: '/images/compatible_products/red-hat-wildfly-logo.png'
