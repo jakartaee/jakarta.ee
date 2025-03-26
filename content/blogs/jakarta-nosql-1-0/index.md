@@ -97,6 +97,7 @@ Jakarta NoSQL is already supported by Eclipse JNoSQL, the reference implementati
 * A Java **Annotation Processor** to avoid runtime reflection
 * Integration with IntelliJ IDEA, allowing real-time identification of persistable fields and entities  
 
+![Jakarta NoSQL](./jakarta-nosql-ide.png)
 
 
 Jakarta NoSQL is more than just another data access API — it’s the beginning of a new chapter for Java developers working with modern data systems. Its focus on extensibility, productivity, and alignment with Jakarta EE principles opens the door to a unified, portable, and future-proof way to work with NoSQL technologies.
