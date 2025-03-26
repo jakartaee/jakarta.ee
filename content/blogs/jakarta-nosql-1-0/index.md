@@ -3,6 +3,7 @@ title: "Jakarta NoSQL 1.0 Final Released: Bridging Java and NoSQL with Standards
 date: 2025-03-26T00:00:00
 tags: ["Jakarta EE", "Java EE", "EclipseFdn", "Community", "Java Survey", "Jakarta Adoption", "Key Stats"]
 author: "Otavio Santana"
+image: "./banner.png"
 ---
 
 We’re thrilled to announce the **final release of Jakarta NoSQL 1.0**, a brand-new specification designed to bring standardization, productivity, and portability to NoSQL integration in the Java ecosystem.
