@@ -2,7 +2,7 @@
 title: "Jakarta NoSQL 1.0 Final Released: Bridging Java and NoSQL with Standards"
 date: 2025-03-26T00:00:00
 tags: ["Jakarta EE", "Java EE", "EclipseFdn", "Community", "Java Survey", "Jakarta Adoption", "Key Stats"]
-author: "Otavio Santana"
+authors: [{gh_handle: "otaviojava", name: "Otavio Santana"}]
 image: "./banner.png"
 ---
 
