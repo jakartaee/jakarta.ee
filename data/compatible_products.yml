@@ -14,21 +14,20 @@ sets:
   - jakartaee_version: 11
     items:
     - title: Jakarta EE 11 Core Profile
-      release: "release/10"
+      release: "release/11"
       items: 
-        - name: 
         - name: Open Liberty
           vendor: IBM Corporation
           image: '/images/compatible_products/ibm-open-liberty-logo.svg'
           image_width: 160
           download: 'https://openliberty.io/start/#runtime_betas'
           versions:
-            - version: 24.0.0.11-beta, Java 17
-              compatibility: 'https://openliberty.io/certifications/jakartaee/11/coreprofile/24.0.0.11-beta-Java17-TCKResults.html'
-              download_url: 'https://public.dhe.ibm.com/ibmdl/export/pub/software/openliberty/runtime/beta/24.0.0.11-beta/openliberty-24.0.0.11-beta.zip' 
-            - version: 24.0.0.11-beta Java 21
-              compatibility: 'https://openliberty.io/certifications/jakartaee/11/coreprofile/24.0.0.11-beta-Java21-TCKResults.html'
-              download_url: 'https://public.dhe.ibm.com/ibmdl/export/pub/software/openliberty/runtime/beta/24.0.0.11-beta/openliberty-24.0.0.11-beta.zip' 
+          - version: 24.0.0.11-beta, Java 17
+            compatibility: 'https://openliberty.io/certifications/jakartaee/11/coreprofile/24.0.0.11-beta-Java17-TCKResults.html'
+            download_url: 'https://public.dhe.ibm.com/ibmdl/export/pub/software/openliberty/runtime/beta/24.0.0.11-beta/openliberty-24.0.0.11-beta.zip' 
+          - version: 24.0.0.11-beta Java 21
+            compatibility: 'https://openliberty.io/certifications/jakartaee/11/coreprofile/24.0.0.11-beta-Java21-TCKResults.html'
+            download_url: 'https://public.dhe.ibm.com/ibmdl/export/pub/software/openliberty/runtime/beta/24.0.0.11-beta/openliberty-24.0.0.11-beta.zip' 
 
   - jakartaee_version: 10
     items:
