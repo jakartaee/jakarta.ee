@@ -40,6 +40,15 @@ sets:
             - version: 34.0.0.Final, Java 21
               compatibility: 'https://github.com/wildfly/certifications/blob/EE11/WildFly_Preview_34.0.0.Final/jakarta-core-jdk21.adoc'
               download_url: 'https://github.com/wildfly/wildfly/releases/download/34.0.0.Final/wildfly-preview-34.0.0.Final.zip'
+        - name: FUJITSU Software Enterprise Application Platform
+          vendor: Fujitsu Limited
+          image: '/images/compatible_products/fujitsu_eap.svg'
+          image_width: 195
+          download: 'https://www.fujitsu.com/jp/software/applatform/'
+          versions:
+            - version: 2.0.0
+              compatibility: 'https://www.fujitsu.com/jp/products/software/middleware/business-middleware/middleware/applatform/jakartaee-report/eap200-ee11core-tck-results/#top'
+              download_url: 'https://www.fujitsu.com/jp/products/software/middleware/business-middleware/middleware/applatform/'
 
   - jakartaee_version: 10
     items:
