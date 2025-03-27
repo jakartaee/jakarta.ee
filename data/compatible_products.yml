@@ -28,6 +28,18 @@ sets:
           - version: 24.0.0.11-beta Java 21
             compatibility: 'https://openliberty.io/certifications/jakartaee/11/coreprofile/24.0.0.11-beta-Java21-TCKResults.html'
             download_url: 'https://public.dhe.ibm.com/ibmdl/export/pub/software/openliberty/runtime/beta/24.0.0.11-beta/openliberty-24.0.0.11-beta.zip' 
+        - name: WildFly
+          vendor: Red Hat 
+          image: '/images/compatible_products/red-hat-wildfly-logo.png'
+          image_width: 100
+          download: 'https://wildfly.org/downloads'
+          versions:
+            - version: 34.0.0.Final, Java 17
+              compatibility: 'https://github.com/wildfly/certifications/blob/EE11/WildFly_Preview_34.0.0.Final/jakarta-core-jdk17.adoc' 
+              download_url: 'https://github.com/wildfly/wildfly/releases/download/34.0.0.Final/wildfly-preview-34.0.0.Final.zip'
+            - version: 34.0.0.Final, Java 21
+              compatibility: 'https://github.com/wildfly/certifications/blob/EE11/WildFly_Preview_34.0.0.Final/jakarta-core-jdk21.adoc'
+              download_url: 'https://github.com/wildfly/wildfly/releases/download/34.0.0.Final/wildfly-preview-34.0.0.Final.zip'
 
   - jakartaee_version: 10
     items:
