@@ -14,7 +14,7 @@ sets:
   - jakartaee_version: 11
     items:
     - title: Jakarta EE 11 Core Profile
-      release: "release/11"
+      release: "release/10"
       items: 
         - name: 
         - name: Open Liberty
