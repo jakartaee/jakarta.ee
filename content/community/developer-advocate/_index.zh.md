@@ -12,12 +12,14 @@ layout: single
 在这个页面上，你可以找到一些关于如何联系我的信息，以及在你附近的会议上可以在哪里与我见面的信息。
 ## 社交媒体 {#socials}
 
+- [Bluesky](https://bsky.app/profile/theguywiththeduketattoo.com)
 - [LinkedIn](https://www.linkedin.com/in/ivargrimstad/)
-- [ X ](https://x.com/ivar_grimstad)
 - [Mastodon](https://mastodon.social/@ivar_grimstad)
-- [Bluesky](https://bsky.app/profile/ivargrimstad.bsky.social)
 - [Instagram](https://www.instagram.com/ivargrimstad_official/)
+- [Threads](https://www.threads.net/@ivargrimstad_official)
+- [ X ](https://x.com/ivar_grimstad)
 - [Blog](https://blogs.eclipse.org/blogs/ivar-grimstad)
+- [Hashtag Jakarta EE blog series](https://www.agilejava.eu/category/hashtag-jakartaee/)
 
 ## 会议 {#conferences}
 
