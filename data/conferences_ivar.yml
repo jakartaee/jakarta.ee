@@ -56,7 +56,7 @@ years:
     url: https://www.javaland.eu/en/home/
     location: Nürburgring 🇩🇪
     date: Apr 1-3
-    upcoming: true
+    blog: https://www.agilejava.eu/2025/04/03/javaland-2025/
 
   - name: JavaOne
     url: https://www.oracle.com/javaone/
