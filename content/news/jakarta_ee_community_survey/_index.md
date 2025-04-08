@@ -20,9 +20,11 @@ The Eclipse Foundation conducts largest survey to date of Java community on key 
 
 “Jakarta EE’s mission is more frequent releases, lowered barriers to participation, and putting the community back into the platform,” said Mike Milinkovich, Executive Director at Eclipse Foundation. “In this first polling of the community, the feedback was very specific that developers seek more cloud native support for enterprise Java systems. This means not only continuing the evolution of popular projects like Eclipse MicroProfile, but exploring integration with other projects in the cloud native stack, recruiting major cloud providers to contribute code, and deeper focus on the cloud modernization use cases that so many enterprise Java shops face today.” 
 
+{{< grid/div isMarkdown="false" >}}
 <div class="text-center padding-top-20 padding-bottom-20">
   <p><a href="/documents/insights/2018-jakarta-ee-developer-survey.pdf" class="btn btn-primary btn-lg">Download Survey Results</a></p>
 </div>
+{{</ grid/div >}}
 
 Jakarta EE is a new undertaking and everything that has occurred previously on the Java EE platform will remain called Java EE and comply with licensing agreements with Oracle. Future work will be led by the Jakarta EE Working Group, a consortium of vendors working collaboratively with a global community of open source developers operating under the auspices of the Eclipse Foundation.
 
@@ -51,9 +53,12 @@ The Eclipse Foundation provides a global community of individuals and organizati
 
 *Third-party trademarks mentioned are the property of their respective owners.*
 
-###
+---
 
-Editorial Contact<br/>
-Lonn Johnston<br/>
-+1 650.219.7764<br/>
-<a href="mailto:lonn@flak42.com">lonn@flak42.com</a>
+Editorial Contact
+
+Lonn Johnston
+
++1 650.219.7764
+
+<lonn@flak42.com>
