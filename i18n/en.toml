@@ -839,6 +839,9 @@ other = "Sign up now"
 [pages-resources-presentations-efsp]
  other = "Introducing the EFSP"
 
+[pages-resources-presentations-community]
+ other = "Presentations by the Community"
+
 [pages-resources-social-cards-title]
  other = "Social Cards"
 
