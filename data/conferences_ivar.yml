@@ -34,6 +34,12 @@ years:
     date: Jun 7
     upcoming: true
 
+  - name: Spring I/O
+    url: https://2025.springio.net
+    location: Barcelona 🇪🇸
+    date: May 21-23
+    upcoming: true
+
   - name: JCON EUROPE
     url: https://2025.europe.jcon.one/
     location: Köln 🇩🇪
@@ -50,7 +56,6 @@ years:
     url: https://developersummit.com/
     location: Bangalore 🇮🇳
     date: Apr 22-25
-    upcoming: true
 
   - name: JavaLand
     url: https://www.javaland.eu/en/home/
