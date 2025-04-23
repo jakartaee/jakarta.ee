@@ -86,7 +86,7 @@ document.addEventListener("DOMContentLoaded", function() {
           // Stop observing if the carousel element has more than one child. We
           // know that the data was fetched and populated if this is the case.
           if (isPopulated) {
-            observer.disonnect();
+            observer.disconnect();
             return;
           }
 
