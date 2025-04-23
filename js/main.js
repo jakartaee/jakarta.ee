@@ -16,8 +16,6 @@ import List from 'list.js';
 import './video-modal';
 import eclipsefdnSpecificationBadges from './specification-badges';
 
-let observer;
-
 document.addEventListener("DOMContentLoaded", function() {
     (function($, document) {
       eclipsefdnSpecificationBadges.renderAll();
