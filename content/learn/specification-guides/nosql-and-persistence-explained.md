@@ -113,3 +113,59 @@ EE profiles. Such is the case with Jakarta NoSQL.
 
 Let’s examine the required dependencies for each specification.
 
+#### Jakarta Persistence
+
+If Maven is your preferred build tool, use this artifact, as shown in Listing
+3, in your `pom.xml` file:
+
+```xml
+<dependency>
+    <groupId>jakarta.persistence</groupId>
+    <artifactId>jakarta.persistence-api</artifactId>
+    <version>3.2.0</version>
+</dependency>
+```
+*Listing 3: The Jakarta Persistence dependency defined in Maven.*
+
+If Gradle is your preferred build tool, use this artifact, as shown in Listing
+4, in your `build.gradle` file:
+
+```gradle
+implementation group: 'jakarta.persistence', name: 'jakarta.persistence-api', version: '3.2.0'
+```
+
+*Listing 4: The Jakarta Persistence dependency defined in Gradle*
+
+#### Jakarta NoSQL
+
+If Maven is your preferred build tool, use this artifact, as shown in Listing
+5, in your `pom.xml` file:
+
+```xml
+<dependency>
+    <groupId>jakarta.nosql</groupId>
+    <artifactId>jakarta.nosql-api</artifactId>
+    <version>1.0.0</version>
+</dependency>
+```
+
+*Listing 5: The Jakarta NoSQL dependency defined in Maven.*
+
+If Gradle is your preferred build tool, use this artifact, as shown in Listing
+6, in your `build.gradle` file:
+
+```gradle
+implementation group: 'jakarta.nosql', name: 'jakarta.nosql-api', version: '1.0.0'
+```
+
+*Listing 6: The Jakarta NoSQL dependency defined in Gradle.*
+
+Now that we have covered the application and dependencies, let’s review the
+individual specifications.
+
+### Common Annotations
+
+For both Jakarta Persistence and Jakarta NoSQL, annotations that represent a
+database entity, a primary key and database columns, share the same names.
+These are `@Entity`, `@Id` and `@Column`, respectively. While similar in
+design, there are notable differences that will be discussed in this document.
