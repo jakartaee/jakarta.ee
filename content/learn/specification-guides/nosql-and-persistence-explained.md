@@ -452,3 +452,113 @@ jnosql.mongodb.host=localhost:27017
 ```
 
 *Listing 10: Establishing a connection to a MongoDB database.*
+
+### Annotations
+
+The annotations shown in the example application shown in Listings 1 and 2, are
+defined under the [`jakarta.nosql`](/specifications/nosql/1.0/apidocs/jakarta.nosql.core/jakarta/nosql/package-summary) 
+package. 
+
+#### `@Entity`
+
+The `@Entity` annotation declares that the annotated class is an entity.
+Specific rules for using this annotation include:
+
+- At least one field must be annotated with `@Id` or `@Column`.
+- Must have a public or protected constructor with no parameters (or with
+  parameters annotated with `@Id` or `@Column`).
+- Constructor parameters without annotations will be ignored, and instead
+  utilize a non-argument constructor.
+
+It is also important to note that an `enum` or `interface` may not be designated as
+an entity. However, a `record` may be designated as an entity.
+
+A notable difference from Jakarta Persistence is that an `enum`, `record`, or
+`interface` may not be designated as an entity.
+
+#### `@Id`
+
+The `@Id` annotation identifies the primary key of the specified entity. The
+field or property to which the `@Id` annotation is applied should have one of
+the following Java types:
+
+- any Java primitive type (`int`, `double`, `byte`, etc.)
+- any Java primitive wrapper type (`Integer`, `Double`, `Byte`, etc.)
+- `String`
+- `UUID`
+- `BigDecimal`
+- `BigInteger`
+
+The mapped column for the primary key of the entity is assumed to be the
+primary key of the database table.
+
+A notable difference from Jakarta Persistence is that `java.util.Date` and
+`java.sql.Date` are Java types that are not allowed. They are marked as
+deprecated in Jakarta Persistence 3.2, so use of the **`java.time` API** is
+encouraged there as well.
+
+#### `@Column`
+
+The `@Column` annotation specifies the database column mapped by the annotated
+persistent property or field. If a `@Column` annotation is not explicitly
+specified, the field will be ignored.
+
+There are two optional parameters for this annotation:
+
+- **udt**: a string that defines the user-defined type for this column.
+- **value**: a string that defines the name of the column.
+
+The **value** parameter is useful in a situation where the database contains a
+foreign key from another collection defined using snake case, but the variable
+in the corresponding POJO is in camel case, as shown in Listing 11.
+
+```java
+@Column("brewer_id")
+private int brewerId;
+```
+
+*Listing 11: Demonstrating how to use the `@Column` annotation.*
+
+You also have the ability to do this in Jakarta Persistence, however, the
+notable difference is that the name of the method is `name()` as opposed to
+`name()`.
+
+### Current Status
+
+The current version of Jakarta NoSQL is 1.0.0, and is not part of the Jakarta
+EE 11 Platform. It is a candidate for inclusion in Jakarta EE 12.
+
+### Compatible Implementations
+
+One of the compatible implementations for Jakarta NoSQL is [Eclipse JNoSQL](https://www.jnosql.org/) 
+1.x.
+
+### Specification Adopters
+
+Jakarta NoSQL has been adopted by the 
+[Garden State JUG](https://gsjug.org/) and [SouJava](https://soujava.org.br/).
+
+## Conclusion
+
+The Jakarta NoSQL and Jakarta Persistence specifications allow you to build
+robust backend database applications.
+
+While there are obvious differences in these specifications, the use of the
+`@Entity`, `@Id`, and `@Column` annotations is very similar. This makes it easier for
+developers to move from NoSQL to relational database applications or vice
+versa.
+
+The [Jakarta Data](/specifications/data/) specification, introduced in the summer of 2022,
+is included in the Jakarta EE 11 Platform and Web Profile. This new
+specification aims to be a top-level specification supporting both Jakarta
+NoSQL and Jakarta Persistence.
+
+Looking ahead to Jakarta EE 12, the Jakarta NoSQL [committers](https://projects.eclipse.org/projects/ee4j.nosql/who) 
+will be working towards having this specification included in the Jakarta EE
+12, scheduled for release in 2026. In the meantime, however, you can still
+build your NoSQL applications with Jakarta NoSQL.
+
+This GitHub [repository](https://github.com/mpredli01/jakartaee-11) contains
+examples on how to use some of the Jakarta EE specifications. Please note that
+there are some parts of this repository that are a work in progress. Feedback
+would indeed be appreciated!
