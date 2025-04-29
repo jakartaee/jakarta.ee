@@ -433,8 +433,9 @@ Jakarta NoSQL supports many of today’s common NoSQL databases, as shown in
 Figure 1.
 
 {{< figure 
-  src="./images/nosql-dbs.jpg" 
-  alt="List of supported NoSQL databases in Jakarta NoSQL: ArangoDB; Apache TinkerPop; biazegraph; basho; Tom Sawyer Software; Cassandra; Couchbase; IBM Graph; CouchDB redux; Infinispan; Elastic; Grakn.ai; hazelcast; Apache HBASE; Azure Cosmos DB; Stardog; Titan; JanusGraph; KeyLines Network Insight; Linkurious; M; mongoDB; Solr; Scylla; neo4j; Oracle NoSQL Database; Orient DB; redis; riak; RavenDB" 
+  class="margin-bottom-40"
+  src="../images/nosql-dbs.jpg" 
+  alt="List of supported NoSQL databases in Jakarta NoSQL: ArangoDB; Apache TinkerPop; biazegraph; basho; Tom Sawyer Software; Cassandra; Couchbase; IBM Graph; CouchDB redux; Infinispan; Elastic; Grakn.ai; hazelcast; Apache HBASE; Azure Cosmos DB; Stardog; Titan; JanusGraph; KeyLines Network Insight; Linkurious; M; mongoDB; Solr; Scylla; neo4j; Oracle NoSQL Database; Orient DB; redis; riak; and RavenDB." 
   caption="Figure 1: The list of supported NoSQL databases in Jakarta NoSQL." 
 >}}
 
