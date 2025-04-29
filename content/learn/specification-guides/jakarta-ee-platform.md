@@ -8,7 +8,6 @@ description: >-
   maximum developer productivity.
 keywords: ["spec", "specification", "guide", "platform"]
 hide_page_title: true
-weight: 5
 categories: ["Specification Guides"]
 ---
 

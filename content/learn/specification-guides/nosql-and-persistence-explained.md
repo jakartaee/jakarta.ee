@@ -1,12 +1,12 @@
 ---
 title: "Jakarta NoSQL and Jakarta Persistence Explained"
-date: "2024-03-12T00:00:00"
+date: "2025-04-29T00:00:00"
 headline: "Jakarta NoSQL and Jakarta Persistence Explained" 
 description: >-
-    Todo
+  The Jakarta EE ecosystem offers specifications for building database backend
+  applications using relational and/or NoSQL databases. 
 keywords: ["spec", "specification", "guide", "nosql", "database", "persistence", "data", "store"]
 hide_page_title: true
-weight: 8
 categories: ["Specification Guides"]
 ---
 
