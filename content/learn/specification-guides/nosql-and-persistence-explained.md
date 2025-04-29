@@ -99,6 +99,9 @@ public class Dealer {
 *Listing 2: The `Dealer` class using the Jakarta Persistence and Jakarta NoSQL
 annotations.*
 
+We will examine these annotations in the overview section of both
+specifications.
+
 ### Dependencies
 
 Each of these database technologies requires a minimal set of dependencies that
@@ -197,7 +200,7 @@ You have two choices for specifying database connection configuration: a
 `persistence.xml` file or the [`PersistenceConfiguration`](/specifications/persistence/3.2/apidocs/jakarta.persistence/jakarta/persistence/persistenceconfiguration) 
 class in your application.
 
-#### `persistence.xml` File
+#### persistence.xml File
 
 The `persistence.xml` file, usually located under the `resources/META-INF`
 directory of your project, registers your database with your application.
@@ -228,7 +231,7 @@ for the database password. The persistence unit name, `mysql-persistence-unit`.
 *Listing 7: Establishing a connection to a MySQL database using the
 `persistence.xml` file.*
 
-#### `PersistenceConfiguration` Class
+#### PersistenceConfiguration Class
 
 The `PersistenceConfiguration` class, new for Jakarta Persistence 3.2,
 represents a configuration of a persistence unit that allows you to
@@ -265,7 +268,7 @@ EntityManagerFactory configure() {
 The annotations shown in the example application shown in Listings 1 and 2, are
 defined under the `jakarta.persistence` package.
 
-#### `@Entity`
+#### @Entity
 
 The [`@Entity`](/specifications/persistence/3.2/apidocs/jakarta.persistence/jakarta/persistence/entity) 
 annotation declares that the annotated class is an entity. Specific rules for
@@ -281,7 +284,7 @@ be designated as an entity.
 A notable difference from Jakarta NoSQL is that a `record` may be designated as
 an entity.
 
-#### `@Id`
+#### @Id
 
 The [`@Id`](/specifications/persistence/3.2/apidocs/jakarta.persistence/jakarta/persistence/id)
 annotation identifies the primary key of the specified entity. The field or
@@ -300,7 +303,7 @@ following Java types:
 A notable difference from Jakarta NoSQL is that `java.util.Date` and
 `java.sql.Date` are allowed Java types.
 
-#### `@Column`
+#### @Column
 
 The [`@Column`](/specifications/nosql/1.0/apidocs/jakarta.nosql.core/jakarta/nosql/column) 
 annotation specifies the database column mapped by the annotated persistent
@@ -333,7 +336,7 @@ private int dealerId;
 *Listing 9: Demonstrating how to use the `@Column` annotation.*
 
 You also have the ability to do this in Jakarta NoSQL, however, the notable
-difference is that the name of the method is `value()` as opposed to `name()`.
+difference is that the name of the method is `value()` as opposed to `valuename()`.
 
 ### Current Status
 
@@ -429,7 +432,11 @@ and [OrientDB](https://orientdb.org/).
 Jakarta NoSQL supports many of today’s common NoSQL databases, as shown in
 Figure 1.
 
-<!-- todo: add figure 1 -->
+{{< figure 
+  src="./images/nosql-dbs.jpg" 
+  alt="List of supported NoSQL databases in Jakarta NoSQL: ArangoDB; Apache TinkerPop; biazegraph; basho; Tom Sawyer Software; Cassandra; Couchbase; IBM Graph; CouchDB redux; Infinispan; Elastic; Grakn.ai; hazelcast; Apache HBASE; Azure Cosmos DB; Stardog; Titan; JanusGraph; KeyLines Network Insight; Linkurious; M; mongoDB; Solr; Scylla; neo4j; Oracle NoSQL Database; Orient DB; redis; riak; RavenDB" 
+  caption="Figure 1: The list of supported NoSQL databases in Jakarta NoSQL." 
+>}}
 
 ### Configuration
 
@@ -459,7 +466,7 @@ The annotations shown in the example application shown in Listings 1 and 2, are
 defined under the [`jakarta.nosql`](/specifications/nosql/1.0/apidocs/jakarta.nosql.core/jakarta/nosql/package-summary) 
 package. 
 
-#### `@Entity`
+#### @Entity
 
 The `@Entity` annotation declares that the annotated class is an entity.
 Specific rules for using this annotation include:
@@ -476,7 +483,7 @@ an entity. However, a `record` may be designated as an entity.
 A notable difference from Jakarta Persistence is that an `enum`, `record`, or
 `interface` may not be designated as an entity.
 
-#### `@Id`
+#### @Id
 
 The `@Id` annotation identifies the primary key of the specified entity. The
 field or property to which the `@Id` annotation is applied should have one of
@@ -497,11 +504,12 @@ A notable difference from Jakarta Persistence is that `java.util.Date` and
 deprecated in Jakarta Persistence 3.2, so use of the **`java.time` API** is
 encouraged there as well.
 
-#### `@Column`
+#### @Column
 
-The `@Column` annotation specifies the database column mapped by the annotated
-persistent property or field. If a `@Column` annotation is not explicitly
-specified, the field will be ignored.
+The [`@Column`](/specifications/nosql/1.0/apidocs/jakarta.nosql.core/jakarta/nosql/column) 
+annotation specifies the database column mapped by the annotated persistent
+property or field. If a `@Column` annotation is not explicitly specified, the
+field will be ignored.
 
 There are two optional parameters for this annotation:
 
