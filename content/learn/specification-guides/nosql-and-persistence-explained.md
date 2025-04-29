@@ -336,7 +336,7 @@ private int dealerId;
 *Listing 9: Demonstrating how to use the `@Column` annotation.*
 
 You also have the ability to do this in Jakarta NoSQL, however, the notable
-difference is that the name of the method is `value()` as opposed to `valuename()`.
+difference is that the name of the method is `value()` as opposed to `name()`.
 
 ### Current Status
 
@@ -530,7 +530,7 @@ private int brewerId;
 
 You also have the ability to do this in Jakarta Persistence, however, the
 notable difference is that the name of the method is `name()` as opposed to
-`name()`.
+`valuename()`.
 
 ### Current Status
 
