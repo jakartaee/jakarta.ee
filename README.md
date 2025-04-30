@@ -1,4 +1,4 @@
-# jakarta.ee
+# The jakarta.ee website
 
 The [jakarta.ee](https://jakarta.ee) website is generated with [Hugo](https://gohugo.io/documentation/) 0.110.0.
 
