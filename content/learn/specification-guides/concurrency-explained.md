@@ -8,7 +8,6 @@ description: >-
   application processes without compromising container integrity
 keywords: ["spec", "specification", "guide", "concurrency", "explained", "tutorial"]
 hide_page_title: true
-weight: 7
 categories: ["Specification Guides"]
 ---
 

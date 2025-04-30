@@ -7,7 +7,6 @@ description: >-
   web based user interfaces. 
 keywords: ["tutorial", "guide", "specification", "spec", "servlet", "faces", "server pages", "jsp", "views", "html"]
 hide_page_title: true
-weight: 1
 categories: ["Specification Guides"]
 ---
 

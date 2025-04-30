@@ -7,7 +7,6 @@ description: >-
   State Transfer web services on the Jakarta EE Platform. 
 keywords: ["spec", "specification", "guide", "rest", "restful", "api", "web services", "http"]
 hide_page_title: true
-weight: 3
 categories: ["Specification Guides"]
 ---
 
