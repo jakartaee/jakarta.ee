@@ -10,6 +10,12 @@ years:
     date: Dec 2
     upcoming: true
 
+  - name: JCON @ IBM TechXChange
+    url: https://www.ibm.com/community/ibm-techxchange-conference/
+    location: Orlando, FL 🇺🇸
+    date: Oct 6-9
+    upcoming: true
+
   - name: JCrete
     url: https://www.jcrete.org
     location: Kolymvari 🇬🇷
