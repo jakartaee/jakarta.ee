@@ -10,6 +10,18 @@ years:
     date: Dec 2
     upcoming: true
 
+  - name: JCON @ IBM TechXChange
+    url: https://www.ibm.com/community/ibm-techxchange-conference/
+    location: Orlando, FL 🇺🇸
+    date: Oct 6-9
+    upcoming: true
+
+  - name: dev2next
+    url: https://www.dev2next.com/
+    location: Colorado Springs, CO 🇺🇸
+    date: Sep 29-Oct 2
+    upcoming: true
+
   - name: JCrete
     url: https://www.jcrete.org
     location: Kolymvari 🇬🇷
@@ -73,7 +85,7 @@ years:
   - name: Devnexus
     url: https://devnexus.com/
     location: Atlanta, GA 🇺🇸
-    date: March 4-6
+    date: Mar 4-6
     blog: https://www.agilejava.eu/2025/03/08/devnexus-2025/
 
   - name: Boston Java Users
