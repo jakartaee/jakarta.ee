@@ -68,13 +68,12 @@ years:
     url: https://2025.europe.jcon.one/
     location: Köln 🇩🇪
     date: May 12-15
-    upcoming: true
 
   - name: Javaforum Malmø
     url: https://foocafe.org/event/jvm-age-ai
     location: Malmö 🇸🇪
     date: May 5
-    upcoming: true
+    blog: https://www.agilejava.eu/2025/05/07/javaforum-malmo-may-2025/
 
   - name: GIDS
     url: https://developersummit.com/
