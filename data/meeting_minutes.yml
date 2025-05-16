@@ -813,6 +813,10 @@ items:
 
    specification_committee:
        -
+         url: specification_committee/minutes-specification-april-30-2025.pdf
+         title: 30 April 2025 (pdf)
+         year: 2025
+       -
          url: specification_committee/minutes-specification-april-16-2025.pdf
          title: 16 April 2025 (pdf)
          year: 2025
