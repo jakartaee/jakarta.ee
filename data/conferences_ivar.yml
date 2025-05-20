@@ -22,13 +22,19 @@ years:
     date: Sep 29-Oct 2
     upcoming: true
 
-  - name: LAOUC Community Tour 2025
+  - name: Community Over Code
+    url: https://communityovercode.org/
+    location: Minneapolis, MN 🇺🇸
+    date: Sep 11-14
+    upcoming: true
+
+  - name: LAOUC Community Tour
     url: https://www.laouc.org/laouc-2025-inicio/
     location: São Paulo 🇧🇷
     date: Aug 23
     upcoming: true
 
-  - name: LAOUC Community Tour 2025
+  - name: LAOUC Community Tour
     url: https://www.laouc.org/laouc-2025-inicio/
     location: Buenos Aires 🇦🇷
     date: Aug 20
@@ -259,7 +265,7 @@ years:
     date: Sep 9
     blog: https://www.agilejava.eu/2024/09/10/triangle-jug-2024/
 
-  - name: LAOUC Community Tour 2024
+  - name: LAOUC Community Tour
     url: https://www.laouc.org/
     location: Asunción 🇵🇾
     date: Aug 23
