@@ -10,6 +10,12 @@ years:
     date: Dec 2
     upcoming: true
 
+  - name: JavaCro
+    url: https://2025.javacro.hr/eng
+    location: Rovinj 🇭🇷
+    date: Oct 12-15
+    upcoming: true
+
   - name: JCON @ IBM TechXChange
     url: https://www.ibm.com/community/ibm-techxchange-conference/
     location: Orlando, FL 🇺🇸
