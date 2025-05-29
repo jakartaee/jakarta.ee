@@ -66,6 +66,15 @@ sets:
             - version: 2.0.0
               compatibility: 'https://www.fujitsu.com/jp/products/software/middleware/business-middleware/middleware/applatform/jakartaee-report/eap200-ee11core-tck-results/#top'
               download_url: 'https://www.fujitsu.com/jp/products/software/middleware/business-middleware/middleware/applatform/'
+        - name: Payara Server Community
+          vendor: Payara Services Limited
+          image: '/images/compatible_products/payara-server-community-logo.svg'
+          image_width: 195
+          download: 'https://www.payara.fish/downloads/payara-platform-community-edition/'
+          versions:
+            - version: 7.2024.1.Alpha3
+              compatibility: 'https://docs.payara.fish/community/docs/Jakarta%20EE%20Certification/7.2024.1.Alpha3/7.2024.1.Alpha3%20Core%20TCK%20Results.html'
+              download_url: 'https://www.payara.fish/downloads/payara-platform-community-edition/' 
 
   - jakartaee_version: 10
     items:

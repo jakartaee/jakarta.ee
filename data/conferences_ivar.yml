@@ -10,6 +10,12 @@ years:
     date: Dec 2
     upcoming: true
 
+  - name: JavaCro
+    url: https://2025.javacro.hr/eng
+    location: Rovinj 🇭🇷
+    date: Oct 12-15
+    upcoming: true
+
   - name: JCON @ IBM TechXChange
     url: https://www.ibm.com/community/ibm-techxchange-conference/
     location: Orlando, FL 🇺🇸
@@ -22,13 +28,19 @@ years:
     date: Sep 29-Oct 2
     upcoming: true
 
-  - name: LAOUC Community Tour 2025
+  - name: Community Over Code
+    url: https://communityovercode.org/
+    location: Minneapolis, MN 🇺🇸
+    date: Sep 11-14
+    upcoming: true
+
+  - name: LAOUC Community Tour
     url: https://www.laouc.org/laouc-2025-inicio/
     location: São Paulo 🇧🇷
     date: Aug 23
     upcoming: true
 
-  - name: LAOUC Community Tour 2025
+  - name: LAOUC Community Tour
     url: https://www.laouc.org/laouc-2025-inicio/
     location: Buenos Aires 🇦🇷
     date: Aug 20
@@ -52,6 +64,12 @@ years:
     date: Jul 9-11
     upcoming: true
 
+  - name: Lisbon JUG
+    url: https://www.meetup.com/lisbon-jug/
+    location: Lisbon 🇵🇹
+    date: Jun 25
+    upcoming: true
+
   - name: JJUG CCC Spring 
     url: https://ccc2025spring.java-users.jp/
     location: Tokyo 🇯🇵
@@ -62,12 +80,13 @@ years:
     url: https://2025.springio.net
     location: Barcelona 🇪🇸
     date: May 21-23
-    upcoming: true
+    blog: https://www.agilejava.eu/2025/05/26/spring-i-o-2025/
 
   - name: JCON EUROPE
     url: https://2025.europe.jcon.one/
     location: Köln 🇩🇪
     date: May 12-15
+    blog: https://www.agilejava.eu/2025/05/16/jcon-europe-2025/
 
   - name: Javaforum Malmø
     url: https://foocafe.org/event/jvm-age-ai
@@ -252,7 +271,7 @@ years:
     date: Sep 9
     blog: https://www.agilejava.eu/2024/09/10/triangle-jug-2024/
 
-  - name: LAOUC Community Tour 2024
+  - name: LAOUC Community Tour
     url: https://www.laouc.org/
     location: Asunción 🇵🇾
     date: Aug 23
