@@ -893,8 +893,15 @@ other = "Sign up now"
 
 [jakarta-ee-version-11-info-card-specification-guides-title]
   other = "Specification<br>Guides"
+
 [jakarta-ee-version-11-info-card-specification-guides-description]
   other = "In-depth explanations about how Jakarta EE specifications work"
+
+[jakarta-ee-version-11-info-card-learn-title]
+  other = "Learn <br> Jakarta EE"
+
+[jakarta-ee-version-11-info-card-learn-description]
+  other = "Find Videos Guides, Courses, and Documentation to help you get started with Jakarta EE."
 
 [pages-membership-title]
  other = "Shape the future of Cloud Native, Open Source Java"

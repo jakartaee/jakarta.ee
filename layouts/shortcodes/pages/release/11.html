@@ -226,6 +226,27 @@
         </div>
       </div>
 
+      <div class="info-card info-card-inverted">
+        <div class="info-card-icon-container">
+          <div class="info-card-icon-wrapper">
+            <img class="info-card-icon" src="./images/learn-icon.svg" alt="" style="padding: 0.5rem;" />
+          </div>
+        </div>
+        <p class="info-card-heading big-text text-secondary">
+          {{ i18n "jakarta-ee-version-11-info-card-learn-title" | safeHTML }}
+        </p>
+        <div class="info-card-body">
+          <p>
+            {{ i18n "jakarta-ee-version-11-info-card-learn-description" | safeHTML }}
+          </p>
+        </div>
+        <div class="info-card-link-container">
+          <a class="info-card-link big-text text-secondary uppercase" href="{{ relLangURL "/learn/" }}">
+            {{ i18n "read-more" }}
+          </a>
+        </div>
+      </div>
+
     </div>
   </div>
 </div>
