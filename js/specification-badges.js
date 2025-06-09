@@ -29,7 +29,10 @@ const render = async (element) => {
   try {
     // Fetch the project based on the given project id.
     const response = await fetch(`https://projects.eclipse.org/api/projects/${options.projectId}`);
+    if (!response.ok) return;
+
     const project = (await response.json()).at(0);
+
   
     // Render the badges
     element.innerHTML = Mustache.render(`
