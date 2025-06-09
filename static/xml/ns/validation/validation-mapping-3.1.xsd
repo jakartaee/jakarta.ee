@@ -70,7 +70,7 @@
                         maxOccurs="unbounded"
                         minOccurs="0"/>
         </xs:sequence>
-        <xs:attribute name="version" type="map:versionType" fixed="3.0" use="required"/>
+        <xs:attribute name="version" type="map:versionType" fixed="3.1" use="required"/>
     </xs:complexType>
     <xs:simpleType name="versionType">
         <xs:restriction base="xs:token">

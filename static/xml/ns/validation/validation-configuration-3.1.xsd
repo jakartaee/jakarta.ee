@@ -56,7 +56,7 @@
             <xs:element type="config:propertyType" name="property" maxOccurs="unbounded"
                     minOccurs="0"/>
         </xs:sequence>
-        <xs:attribute name="version" type="config:versionType" fixed="3.0" use="required"/>
+        <xs:attribute name="version" type="config:versionType" fixed="3.1" use="required"/>
     </xs:complexType>
 
     <xs:complexType name="executable-validationType">
