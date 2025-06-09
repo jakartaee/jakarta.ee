@@ -68,13 +68,12 @@ years:
     url: https://www.meetup.com/lisbon-jug/
     location: Lisbon 🇵🇹
     date: Jun 25
-    upcoming: true
 
   - name: JJUG CCC Spring 
     url: https://ccc2025spring.java-users.jp/
     location: Tokyo 🇯🇵
     date: Jun 7
-    upcoming: true
+    blog: https://www.agilejava.eu/2025/06/07/jjug-ccc-2025-spring/
 
   - name: Spring I/O
     url: https://2025.springio.net
