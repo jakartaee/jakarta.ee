@@ -28,6 +28,12 @@ years:
     date: Sep 29-Oct 2
     upcoming: true
 
+  - name: Jalapeño
+    url: https://jalapeño.net
+    location: Cancún 🇲🇽
+    date: Sep 13-14
+    upcoming: true
+
   - name: Community Over Code
     url: https://communityovercode.org/
     location: Minneapolis, MN 🇺🇸
