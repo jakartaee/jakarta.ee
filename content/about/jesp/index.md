@@ -2,7 +2,7 @@
 title: "Jakarta EE Specification Process"
 date: 2022-08-31T13:00:00-04:00
 headline: Jakarta EE Specification Process
-tagline: Version 1.4. Effective August 31/2022
+tagline: Version 1.5. Effective June 12/2025
 hide_sidebar: true
 hide_page_title: true
 ---
@@ -26,7 +26,7 @@ The Jakarta EE Specification Committee hereby adopts the [Eclipse Foundation Spe
 4. A ballot will be declared invalid and concluded immediately in the event that the Specifiation Team withdraws from the corresponding review.
 5. Specification Projects must engage in at least one Progress or Release Review  per year while in active development.
 
-All development that modifies content in the `javax` namespace must be moved to a `jakarta` namespace. All `jakarta` namespace development must occur within the scope of a Specification Project operating under the purview of the Jakarta EE Working Group’s Specification Committee and must implement the process as defined by the most recently adopted revision of the JESP.
+All development that modifies content in the `javax` namespace must be moved to a `jakarta` namespace. All specifications must use the `jakarta` namespace. All `jakarta` namespace development must occur within the scope of a Specification Project operating under the purview of the Jakarta EE Working Group’s Specification Committee and must implement the process as defined by the most recently adopted revision of the JESP.
 Use of the `jakarta` namespace is limited to API artifacts (all API jars, javadoc, and schema namespaces).
 It must not be used for any deployment, including applications, TCKs, tools, libraries or any other assets produced by Specification Projects.
 
