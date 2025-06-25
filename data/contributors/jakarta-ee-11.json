@@ -24,6 +24,10 @@
     "name": "Arjan Tijms"
   },
   {
+    "login": "ashwin-ms-17",
+    "name": null
+  },
+  {
     "login": "aubi",
     "name": "Petr Aubrecht"
   },
@@ -48,16 +52,36 @@
     "name": "Ed Burns"
   },
   {
+    "login": "gavinking",
+    "name": "Gavin King"
+  },
+  {
+    "login": "gurunrao",
+    "name": "Gurunandan Rao"
+  },
+  {
     "login": "ivargrimstad",
     "name": "Ivar Grimstad"
+  },
+  {
+    "login": "jbescos",
+    "name": "Jorge Bescos Gascon"
   },
   {
     "login": "jeanouii",
     "name": "Jean-Louis Monteiro"
   },
   {
+    "login": "jhanders34",
+    "name": "Jared Anderson"
+  },
+  {
     "login": "jim-krueger",
     "name": "Jim Krueger"
+  },
+  {
+    "login": "jmstephensgit",
+    "name": "James M. Stephens"
   },
   {
     "login": "kazumura",
@@ -96,6 +120,10 @@
     "name": "Mark Thomas"
   },
   {
+    "login": "ngriffin7a",
+    "name": "Neil Griffin"
+  },
+  {
     "login": "njr-11",
     "name": "Nathan Rauh"
   },
@@ -106,6 +134,18 @@
   {
     "login": "otaviojava",
     "name": "Otávio Santana"
+  },
+  {
+    "login": "pmd1nh",
+    "name": "Phu Dinh"
+  },
+  {
+    "login": "pnicolucci",
+    "name": "Paul Nicolucci"
+  },
+  {
+    "login": "pzygielo",
+    "name": "Piotrek Żygieło"
   },
   {
     "login": "scottkurz",
@@ -124,8 +164,20 @@
     "name": "Scott M Stark"
   },
   {
+    "login": "tadamski",
+    "name": "Tomasz Adamski"
+  },
+  {
     "login": "tjwatson",
     "name": "Thomas Watson"
+  },
+  {
+    "login": "tomjenkinson",
+    "name": "Tom Jenkinson"
+  },
+  {
+    "login": "volosied",
+    "name": "Volodymyr Siedlecki"
   },
   {
     "login": "waynebeaton",
