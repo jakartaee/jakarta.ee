@@ -34,10 +34,6 @@
   "devDependencies": {
     "vue-template-compiler": "2.6.12"
   },
-  "overrides": {
-    "semver": "^7.5.3",
-    "eclipsefdn-solstice-assets": "0.1.15"
-  },
   "resolutions": {
     "eclipsefdn-solstice-assets": "0.1.15"
   },
