@@ -1,6 +1,6 @@
 ---
 title: "Jakarta EE 11"
-date: 2025-06-25T00:00:00 
+date: 2025-06-26T00:00:00 
 description: >-
     The Jakarta EE 11 release is here. Modern, simplified & lightweight, see
     what's new in the Jakarta EE 11 Specifications.
