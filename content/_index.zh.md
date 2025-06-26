@@ -9,8 +9,8 @@ jumbotron_btn_class: btn btn-secondary
 jumbotron_class: col-xs-24 
 custom_jumbotron_class: col-xs-24
 custom_jumbotron: |
-  <p>最新版本: Jakarta EE 10 已就绪</p>
-links: [[href: "/release/10", text: "Learn More"]]
+  <p>最新版本: Jakarta EE 11 已就绪</p>
+links: [[href: "/release/11", text: "Learn More"]]
 description: "Jakarta Enterprise Edition（EE）是云原生企业Java的开源未来。保护您在Java EE中的投资，并使您的企业应用程序现代化。"
 date: 2018-04-05T15:50:25-04:00
 hide_page_title: true
