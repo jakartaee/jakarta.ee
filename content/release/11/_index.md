@@ -14,7 +14,7 @@ container: "container-fluid"
 footer_class: "footer-release-9"
 type: "release/11"
 hide_call_for_action: true
-press_release_link: "/news/jakarta-ee-11-released/"
+press_release_link: "https://newsroom.eclipse.org/news/announcements/eclipse-foundation%E2%80%99s-jakarta-ee-working-group-announces-jakarta-ee-11-release"
 subtitle: "<span class='orange'>An Open, community-driven innovation</span><br> driving the future of cloud native Java technologies"
 ---
 
