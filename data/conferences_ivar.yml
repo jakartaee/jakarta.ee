@@ -80,12 +80,12 @@ years:
     url: https://www.wearedevelopers.com/world-congress
     location: Berlin 🇩🇪
     date: Jul 9-11
-    upcoming: true
 
   - name: Lisbon JUG
     url: https://www.meetup.com/lisbon-jug/
     location: Lisbon 🇵🇹
     date: Jun 25
+    blog: https://www.agilejava.eu/2025/06/27/lisbon-jug-2025/
 
   - name: JJUG CCC Spring 
     url: https://ccc2025spring.java-users.jp/
