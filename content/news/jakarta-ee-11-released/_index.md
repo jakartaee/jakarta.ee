@@ -37,7 +37,7 @@ Designed to make building applications faster and simpler for developers:
 **Modernised TCK Framework**  
  Improves compatibility testing and reduces the barriers to adding new tests as the platform evolves:
 
-- **Upgraded Tools:** Moved from Apache Antnt and Java Test Harness to JUnit 5 and Apache Maven for enhanced efficiency and relevance.
+- **Upgraded Tools:** Moved from Apache Ant and Java Test Harness to JUnit 5 and Apache Maven for enhanced efficiency and relevance.
 - **Streamlined TCK Structure:** Reduced complexity, making the TCK easier to learn and use.
 - **Improved Accessibility:** By updating the TCK to a multi-dependency Maven project, Jakarta EE 11 improves compatibility testing and reduces the barriers to adding new tests as the platform evolves, fostering future innovation.
 
