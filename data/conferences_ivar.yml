@@ -10,6 +10,12 @@ years:
     date: Dec 2
     upcoming: true
 
+  - name: ChurConf
+    url: https://churconf.com/
+    location: Auckland 🇳🇿
+    date: Nov 2
+    upcoming: true
+
   - name: JavaCro
     url: https://2025.javacro.hr/eng
     location: Rovinj 🇭🇷
