@@ -80,12 +80,12 @@ years:
     url: https://jconfdominicana.org/
     location: Santo Domingo 🇩🇴
     date: Jul 18-19
-    upcoming: true
 
   - name: WeAreDevelopers World Congress
     url: https://www.wearedevelopers.com/world-congress
     location: Berlin 🇩🇪
     date: Jul 9-11
+    blog: https://www.agilejava.eu/2025/07/11/wearedevelopers-world-congress-2025/
 
   - name: Lisbon JUG
     url: https://www.meetup.com/lisbon-jug/
