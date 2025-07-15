@@ -16,6 +16,12 @@ years:
     date: Nov 2
     upcoming: true
 
+  - name: JDD
+    url: https://jdd.org.pl/
+    location: Kraków 🇵🇱
+    date: Oct 21-22
+    upcoming: true
+
   - name: JavaCro
     url: https://2025.javacro.hr/eng
     location: Rovinj 🇭🇷
@@ -39,7 +45,7 @@ years:
     location: Pignola 🇮🇹
     date: Sep 27-28
     upcoming: true
-    
+      
   - name: Jalapeño
     url: https://jalapeño.net
     location: Cancún 🇲🇽
