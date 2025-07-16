@@ -15,7 +15,7 @@ date: 2020-01-05T15:50:25-04:00
 * Dominika Tasarz - Payara, Jadon Ortlepp - alternate
 * Jonathan Gallimore - Tomitribe, Cesar Hernandez - alternate
 * Eric (QingYu) Meng - Primeton - Elected Enterprise Representative
-* Reza Rehman - Microsoft - Elected Enterprise Representative, Ed Burns - alternate
+* Sonja Gu - Microsoft - Elected Enterprise Representative
 * Otavio Santana - Elected Committer Member Representative
 
 {{< meeting-minutes-single "marketing_committee" >}}
