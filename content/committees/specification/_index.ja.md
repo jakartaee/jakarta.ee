@@ -9,7 +9,7 @@ date: 2020-02-19T15:00:25-08:00
 
 ### 委員会メンバー
 
-* Kenji Kazumura - 富士通
+* Kenji Kazumura - 富士通、Takahiro Nagao - 代理
 * Tom Watson - IBM、Emily Jiang - 代理
 * Ed Bratt - Oracle、Dmitry Kornilov - 代理
 * Andrew Pielage (**chair**) - Payara、Petr Aubrecht - 代理

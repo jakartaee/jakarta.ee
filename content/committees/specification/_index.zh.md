@@ -9,7 +9,7 @@ date: 2020-02-19T15:00:25-08:00
 
 ### 委员会成员
 
-* Kenji Kazumura - Fujitsu
+* Kenji Kazumura - Fujitsu, Takahiro Nagao - alternate
 * Emily Jiang - IBM, Tom Watson - alternate
 * Ed Bratt - Oracle, Dmitry Kornilov - alternate
 * Andrew Pielage (**chair**) - Payara, Petr Aubrecht - alternate
