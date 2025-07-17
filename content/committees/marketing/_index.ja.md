@@ -15,7 +15,7 @@ date: 2020-01-05T15:50:25-04:00
 * Dominika Tasarz - Payara、Jadon Ortlepp - 代理
 * Jonathan Gallimore - Tomitribe、Cesar Hernandez - 代理
 * Eric (QingYu) Meng - Primeton - 選出されたEnterpriseメンバー代表
-* Reza Rehman - Microsoft - 選出されたEnterpriseメンバー代表、Ed Burns - 代理
+* Sonja Gu - Microsoft - 選出されたEnterpriseメンバー代表
 * Otavio Santana - 選出されたCommitterメンバー代表
 
 {{< meeting-minutes-single "marketing_committee" >}}

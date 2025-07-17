@@ -17,6 +17,6 @@ This committee owns the overall strategy and the high level, long term roadmap s
 * Marcin Kruglik - London Jamocha Community - Elected Participant Member Representative - Abraham Marin-Perez - alternate 
 * Vacant - Elected Committer Member Representative
 * Dr. Jun Qian - Primeton - Elected Enterprise Representative
-* Reza Rahman - Microsoft - Elected Enterprise Representative, Ed Burns - alternate
+* Ed Burns - Microsoft - Elected Enterprise Representative
 
 {{< meeting-minutes-single "steering_committee" >}}
