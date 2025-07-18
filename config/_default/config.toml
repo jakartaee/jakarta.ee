@@ -46,6 +46,36 @@ enableInlineShortcodes = true
   footer_section_other_class = "col-sm-5th padding-top-20"
   footer_section_socials_class = "col-sm-5th footer-section-socials"
 
+[[Params.socials]]
+  name = "Bluesky"
+  icon = "fa-brands fa-bluesky"
+  url = "https://bsky.app/profile/jakarta.ee"
+
+[[Params.socials]]
+  name = "Facebook"
+  icon = "fa-brands fa-facebook"
+  url = "https://www.facebook.com/JakartaEE/"
+
+[[Params.socials]]
+  name = "LinkedIn"
+  icon = "fa-brands fa-linkedin"
+  url = "https://ca.linkedin.com/showcase/jakartaee"
+
+[[Params.socials]]
+  name = "Mastodon"
+  icon = "fa-brands fa-mastodon"
+  url = "https://mastodon.social/@jakartaee"
+
+[[Params.socials]]
+  name = "Twitter"
+  icon = "fa-brands fa-x-twitter"
+  url = "https://twitter.com/JakartaEE"
+
+[[Params.socials]]
+  name = "YouTube"
+  icon = "fa-brands fa-youtube"
+  url = "https://www.youtube.com/c/JakartaEE"
+
 [taxonomies]
   category = "categories"
   tag = "tags"

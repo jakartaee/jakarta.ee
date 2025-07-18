@@ -1,6 +1,9 @@
 [jakarta-ee-logo-alt]
   other = "Jakarta EE logo"
 
+[footer-sr-social-account]
+  other = "{{ . }}账号"
+
 [home-calltoaction-title]
   other = "Jakarta EE 将全球顶尖的开发者、供应商和企业聚合在一起形成一个社区，共同协作推进云端的企业级Java技术。"
 

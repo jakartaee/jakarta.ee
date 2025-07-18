@@ -27,36 +27,13 @@
       <div class="col-sm-24">
         <ul class="list-inline">
           <li><a class="btn btn-primary margin-right-15" href="https://accounts.eclipse.org/mailing-list/jakarta.ee-wg">{{ i18n "footer-join-mailing-list-button-text" }}</a></li>
+            {{- range .Site.Params.socials }}
             <li>
-            <a class="social-icon" href="https://bsky.app/profile/jakarta.ee">
-              <i class="fa-brands fa-bluesky" aria-label="Bluesky profile for Jakarta EE"></i><span class="sr-only">{{ i18n "footer-sr-bluesky-text" }}</span>
+            <a class="social-icon" href="{{ .url }}">
+              <i class="{{ .icon }} fa-xl" aria-label="{{ i18n "footer-sr-social-account" .name }}"></i><span class="sr-only">{{ i18n "footer-sr-social-account" .name }}</span>
             </a>
             </li>
-            <li>
-            <a class="social-icon" href="https://www.facebook.com/JakartaEE/">
-              <i class="fa-brands fa-facebook" aria-label="Facebook page for Jakarta EE"></i><span class="sr-only">{{ i18n "footer-sr-facebook-text" }}</span>
-            </a>
-            </li>
-            <li>
-            <a class="social-icon" href="https://ca.linkedin.com/showcase/jakartaee">
-              <i class="fa-brands fa-linkedin" aria-label="Linkedin profile for Jakarta EE"></i><span class="sr-only">{{ i18n "footer-sr-linkedin-text" }}</span>
-            </a>
-            </li>
-            <li>
-            <a class="social-icon" href="https://mastodon.social/@jakartaee">
-              <i class="fa-brands fa-mastodon" aria-label="Mastodon profile for Jakarta EE"></i><span class="sr-only">{{ i18n "footer-sr-mastodon-text" }}</span>
-            </a>
-            </li>
-            <li>
-            <a class="social-icon" href="https://twitter.com/JakartaEE">
-              <i class="fa-brands fa-x-twitter" aria-label="Twitter profile for Jakarta EE"></i><span class="sr-only">{{ i18n "footer-sr-twitter-text" }}</span>
-            </a>
-            </li>
-            <li>
-            <a class="social-icon" href="https://www.youtube.com/c/JakartaEE">
-              <i class="fa-brands fa-youtube" aria-label="Youtube channel for Jakarta EE"></i><span class="sr-only">{{ i18n "footer-sr-youtube-text" }}</span>
-            </a>
-            </li>
+            {{- end }}
         </ul>
       </div>
     </div>
