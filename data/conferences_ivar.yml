@@ -46,6 +46,12 @@ years:
     date: Sep 27-28
     upcoming: true
       
+  - name: Open Source Community Day
+    url: https://www.eclipse.org/events/2025/oscd/
+    location: Madrid 🇪🇸
+    date: Sep 23-24
+    upcoming: true
+
   - name: Jalapeño
     url: https://jalapeño.net
     location: Cancún 🇲🇽
@@ -86,6 +92,7 @@ years:
     url: https://jconfdominicana.org/
     location: Santo Domingo 🇩🇴
     date: Jul 18-19
+    blog: https://www.agilejava.eu/2025/07/20/jconf-dominicana-2025/
 
   - name: WeAreDevelopers World Congress
     url: https://www.wearedevelopers.com/world-congress
