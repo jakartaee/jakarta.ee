@@ -1493,9 +1493,8 @@ other = "Sign up now"
 
 [pages-learn-index-starter-description]
   other = """
-    The official Eclipse Foundation Starter for Jakarta EE. The starter uses a
-    Maven Archetype to generate sample code to get you going quickly with
-    simple Jakarta EE microservices projects.
+    The starter uses the Jakarta EE Starter to generate sample code to get you
+    going quickly with simple Jakarta EE microservices projects.
   """
 
 [pages-learn-index-starter-start]
