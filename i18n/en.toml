@@ -1493,8 +1493,8 @@ other = "Sign up now"
 
 [pages-learn-index-starter-description]
   other = """
-    The starter uses the Jakarta EE Starter to generate sample code to get you
-    going quickly with simple Jakarta EE microservices projects.
+    Use the Jakarta EE Starter to quickly generate sample code for simple
+    microservices projects and kickstart your learning.
   """
 
 [pages-learn-index-starter-start]
