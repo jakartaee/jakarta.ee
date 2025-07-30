@@ -2,6 +2,9 @@
 [jakarta-ee-logo-alt]
   other = "Jakarta EE logo"
 
+[footer-sr-social-account]
+  other = "{{ . }} account"
+
 [watch-on-youtube]
   other = "Watch on YouTube"
 

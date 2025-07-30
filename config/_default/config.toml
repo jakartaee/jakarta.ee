@@ -31,10 +31,6 @@ enableInlineShortcodes = true
   call_for_action_text = "Download"
   call_for_action_url = "/compatibility/download/"
   call_for_action_icon = ""
-  linkedin_url="https://www.linkedin.com/groups/13597511/"
-  youtube_url="https://www.youtube.com/channel/UC4M7h5b6elu9VlzjLfzuXyg"
-  twitter_url="https://twitter.com/JakartaEE"
-  facebook_url="https://www.facebook.com/JakartaEE"
   header_left_classes = "col-sm-5"
   main_menu_wrapper_classes = "col-sm-19 margin-top-20"
 #   hide_cfa_same_page = "true"
@@ -49,6 +45,36 @@ enableInlineShortcodes = true
   footer_section_useful_links_class = "col-sm-5th padding-top-20"
   footer_section_other_class = "col-sm-5th padding-top-20"
   footer_section_socials_class = "col-sm-5th footer-section-socials"
+
+[[Params.socials]]
+  name = "Bluesky"
+  icon = "fa-brands fa-bluesky"
+  url = "https://bsky.app/profile/jakarta.ee"
+
+[[Params.socials]]
+  name = "Facebook"
+  icon = "fa-brands fa-facebook"
+  url = "https://www.facebook.com/JakartaEE/"
+
+[[Params.socials]]
+  name = "LinkedIn"
+  icon = "fa-brands fa-linkedin"
+  url = "https://ca.linkedin.com/showcase/jakartaee"
+
+[[Params.socials]]
+  name = "Mastodon"
+  icon = "fa-brands fa-mastodon"
+  url = "https://mastodon.social/@jakartaee"
+
+[[Params.socials]]
+  name = "Twitter"
+  icon = "fa-brands fa-x-twitter"
+  url = "https://twitter.com/JakartaEE"
+
+[[Params.socials]]
+  name = "YouTube"
+  icon = "fa-brands fa-youtube"
+  url = "https://www.youtube.com/c/JakartaEE"
 
 [taxonomies]
   category = "categories"
