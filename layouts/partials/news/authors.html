@@ -1,6 +1,6 @@
 {{ if isset .Params "authors" }}
   {{ if ( gt ( len .Params.authors ) 0 ) }}
-    <p class="news-authors">
+    <p class="news-authors margin-top-30">
         <span class="authors-images">
         {{range .Params.authors}}
           <img class="author-image" src="//github.com/{{ .gh_handle }}.png?size=90" title="{{ .name }}" />
