@@ -38,6 +38,17 @@ main {
     height: 100%;
     object-fit: cover;
   }
+
+  @media (min-width: @screen-md-min) {
+    // Aligns the descriptions and lists together
+    p {
+      min-height: 4rem;
+    }
+
+    ul {
+      min-height: 30rem;
+    }
+  }
 }
 
 .learn-resource-list {
