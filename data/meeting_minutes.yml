@@ -1711,6 +1711,21 @@ items:
           year: 2018
 
    steering_committee:
+       - url: steering_committee/minutes-june-3-2025.pdf
+         title: 3 June 2025 (pdf)
+         year: 2025
+       - url: steering_committee/minutes-may-20-2025.pdf
+         title: 20 May 2025 (pdf)
+         year: 2025
+       - url: steering_committee/minutes-may-6-2025.pdf
+         title: 6 May 2025 (pdf)
+         year: 2025
+       - url: steering_committee/minutes-april-22-2025.pdf
+         title: 22 April 2025 (pdf)
+         year: 2025
+       - url: steering_committee/minutes-april-8-2025.pdf
+         title: 8 April 2025 (pdf)
+         year: 2025
        - url: steering_committee/minutes-march-25-2025.pdf
          title: 25 March 2025 (pdf)
          year: 2025
