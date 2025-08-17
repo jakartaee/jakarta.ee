@@ -10,6 +10,12 @@ years:
     date: Dec 2
     upcoming: true
 
+  - name: Devoxx Morocco
+    url: https://devoxx.ma/
+    location: Marrakech 🇲🇦
+    date: Oct 12-14
+    upcoming: true
+
   - name: ChurConf
     url: https://churconf.com/
     location: Auckland 🇳🇿
