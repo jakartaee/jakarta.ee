@@ -2534,17 +2534,17 @@ dunder-proto@^1.0.0, dunder-proto@^1.0.1:
     es-errors "^1.3.0"
     gopd "^1.2.0"
 
-eclipsefdn-hugo-solstice-theme@0.1.1:
-  version "0.1.1"
-  resolved "https://registry.yarnpkg.com/eclipsefdn-hugo-solstice-theme/-/eclipsefdn-hugo-solstice-theme-0.1.1.tgz#a63823939730c2bca0675d877a80370b4a5b315a"
-  integrity sha512-MhMbObGk5IhGsbWt6XkDcHPUFXLwiCSS4SBZRvXZPdD6NpgkfKyxbqkvRTYQOGrCt6OSsl+dF0iZr0GKi6/xUg==
+eclipsefdn-hugo-solstice-theme@0.1.18:
+  version "0.1.18"
+  resolved "https://registry.yarnpkg.com/eclipsefdn-hugo-solstice-theme/-/eclipsefdn-hugo-solstice-theme-0.1.18.tgz#9709b4af93dfbfb250a6f4257ec36a4f8ece7760"
+  integrity sha512-0+yJ1edwJForf7gHWqvHSGQPRJU6s+uYonUKTWUffqiM0PW1wb/TRh/LMMUFdJOo1F2GlszkVN68zHl6XKG/OQ==
   dependencies:
     axios "^1.7.7"
-    eclipsefdn-solstice-assets "0.1.3"
+    eclipsefdn-solstice-assets "0.1.20"
     json2yaml "^1.1.0"
     toml "^3.0.0"
 
-eclipsefdn-solstice-assets@0.1.15, eclipsefdn-solstice-assets@0.1.3:
+eclipsefdn-solstice-assets@0.1.15, eclipsefdn-solstice-assets@0.1.20:
   version "0.1.15"
   resolved "https://registry.yarnpkg.com/eclipsefdn-solstice-assets/-/eclipsefdn-solstice-assets-0.1.15.tgz#c5725bcc62a5b9ca75cb991e0be9914063086108"
   integrity sha512-s3cFjZ9zZKXS8q588eFEsGGOuu+57AJeBagtwSD/kDiICpA+tjbipSzEo27t5TS+9HYn17h8D8jO6UaPVe7FrA==
