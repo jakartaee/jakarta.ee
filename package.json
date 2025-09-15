@@ -27,15 +27,12 @@
     "optimize_news_images": "bash ./optimize_images.sh content/news"
   },
   "dependencies": {
-    "eclipsefdn-hugo-solstice-theme": "0.1.18",
+    "eclipsefdn-hugo-solstice-theme": "0.1.19",
     "list.js": "^1.2.0",
     "lodash-es": "^4.17.21"
   },
   "devDependencies": {
     "vue-template-compiler": "2.6.12"
-  },
-  "resolutions": {
-    "eclipsefdn-solstice-assets": "0.1.15"
   },
   "browserslist": "last 5 version, > 0.2%, not dead, IE 11",
   "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"
