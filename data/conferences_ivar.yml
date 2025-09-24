@@ -16,6 +16,12 @@ years:
     date: Nov 12-14
     upcoming: true
 
+  - name: Universidade de Aveiro
+    url: 
+    location: Aveiro 🇵🇹
+    date: Nov 12
+    upcoming: true
+    
   - name: ChurConf
     url: https://churconf.com/
     location: Auckland 🇳🇿
