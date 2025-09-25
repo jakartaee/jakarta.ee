@@ -62,7 +62,7 @@ years:
     url: https://www.eclipse.org/events/2025/oscd/
     location: Madrid 🇪🇸
     date: Sep 23-24
-    upcoming: true
+    blog: https://www.agilejava.eu/2025/09/25/open-source-community-day-2025/
 
   - name: Jalapeño
     url: https://jalapeño.net
