@@ -1,22 +1,27 @@
 /*!
- * Copyright (c) 2019 Eclipse Foundation, Inc.
+ * Copyright (c) 2019, 2023 Eclipse Foundation, Inc.
  *
  * This program and the accompanying materials are made available under the
  * terms of the Eclipse Public License v. 2.0 which is available at
  * http://www.eclipse.org/legal/epl-2.0.
  *
  * Contributors:
- *   Eric Poirier <chris.guindon@eclipse-foundation.org>
+ *   Eric Poirier <eric.poirier@eclipse-foundation.org>
+ *   Olivier Goulet <olivier.goulet@eclipse-foundation.org>
  *
  * SPDX-License-Identifier: EPL-2.0
 */
 
-
 @import '~eclipsefdn-solstice-assets/less/quicksilver/jakarta/styles.less';
 
+@import 'vendors/_syntax.less';
 @import '_variables.less';
+
 @import 'components/tabs.less';
+@import 'components/_buttons.less';
 @import 'components/_commons.less';
+@import 'components/_modals.less';
+@import 'components/_sections.less';
 @import 'components/menu.less';
 @import 'components/jumbotron.less';
 @import 'components/home.less';
@@ -24,11 +29,15 @@
 @import 'components/blocks.less';
 @import 'components/typography.less';
 @import 'components/testimonials.less';
+@import 'components/_eclipsefdn-meeting-minutes.less';
+
+@import 'layout/_header.less';
 
 @import 'transient.less';
 @import 'release-8.less';
 @import 'release-9.less';
 @import 'release-10.less';
+@import 'release-11.less';
 
 @import 'news.less';
 @import 'compatibility.less';
@@ -39,8 +48,16 @@
 // Commenting this out but keeping it in case we need stuff in there
 //@import 'redesign.less';
 
+html {
+  scroll-behavior: smooth;
+}
+
+.br {
+  display: block;
+}
+
 .jakarta-ee-hr {
-  border-top: 5px solid @brand-primary;
+ border-top: 5px solid @brand-primary;
 }
 
 .font-100 {
@@ -123,10 +140,13 @@
   max-width:200px;
   margin-bottom: 20px;
 }
+
 ul.tri-col {
-  -webkit-column-count: 3;
-  -moz-column-count: 3;
   column-count: 3;
+}
+
+ul.dual-col {
+  column-count: 2;
 }
 
 .specifications-news-list {
@@ -155,6 +175,13 @@ ul.tri-col {
     padding-left: 30px;
     padding-right: 30px;
   }
+}
+
+.bg-tertiary {
+  background: @bg-img-tertiary;
+  background-repeat: none;
+  background-size: cover;
+  background-position: center;
 }
 
 .header-wrapper.header-secondary-bg-img.header-release-landing-page .featured-jumbotron {
@@ -277,10 +304,106 @@ div.card-panel.panel div.panel-body.panel-body-with-img {
   right: -1px;
 }
 
+.column-section {
+  display: flex;
+  flex-direction: column;
+
+  &-even > * {
+    flex-basis: 100%;
+  }
+
+  @media (min-width: @screen-md-min) {
+    flex-direction: row;
+  }
+}
+
 // Resources
 .newsroom-resources h2 {
   font-size: 18px;
   color: #F98200;
   font-weight: 700;
   margin-top: 10px;
+}
+
+// Hotfixes
+.project-summary {
+  .btn-sm {
+    .btn;
+    
+    &:hover {
+      color: @white;
+    }
+  }
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+// Add padding to container pages.
+main > div.container {
+  padding-bottom: 30px;
+}
+
+// Hide empty paragraph tags that may of been rendered
+// unintentionally by Hugo.
+p:empty {
+  display: none;
+}
+.bordered-section-top {
+  border-top: 3px solid @brand-secondary;
+}
+
+.bordered-section-bottom {
+  border-bottom: 3px solid @brand-secondary;
+}
+
+.bordered-section-y {
+  .bordered-section-top;
+  .bordered-section-bottom;
+}
+
+.border-hidden-xs {
+  @media (max-width: @screen-sm-max) {
+    border: transparent;
+  }
+}
+
+.eclipsefdn-video-list {
+  .video-list-item {
+    padding: unset;
+  }
+
+  .video-list-item-details {
+    margin-left: 3rem;
+  }
+
+  .video-details-title {
+    .big-text;
+    font-size: 2rem;
+  }
+
+  .video-details-button-container {
+    margin-bottom: 6rem;
+
+    @media (min-width: @screen-sm-min) {
+      justify-content: flex-start;
+    }
+  }
+
+  .eclipsefdn-video {
+    min-width: 48rem;
+    max-width: unset;
+  }
+}
+
+// This workaround was introduced to style a video list without the need of
+// using its JS. Should be removed once the learn page can use the video list
+// widget to fetch latest videos.
+.video-list-container {
+  .eclipsefdn-video-list;
+}
+
+.font-italic {
+  font-style: italic;
 }

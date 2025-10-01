@@ -1,0 +1,124 @@
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [{
+    "@type": "Question",
+    "name": "Jakarta EEとは？",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "<p>Jakarta EEは、クラウドネイティブで、軽量で、かつ、従来型のエンタープライズJavaアプリケーションの未来です</p><ul><li><p>Java EE技術Oracleによって提供されていたJava EE技術が、新しいJakarta EEプラットフォームの作成に使用されます</p></li><li><p>Eclipse Foundationは、クラウドネイティブJavaのオープンイノベーションの本拠地です</p></li><li><p>Jakarta EEワーキンググループは、Java EE技術とガバナンスプロセスをモダナイズし、よりオープンでコミュニティに基づくものにすることに重点を置いています</p></li></ul>"
+    }
+  },{
+    "@type": "Question",
+    "name": "「Jakarta EE」という名前は何を意味しますか？名前の由来は何ですか？",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "<p>Javaの初期の頃、Apache Jakartaプロジェクトは、Javaエコシステムにおける多くのエキサイティングなイノベーションの本拠地で>した。特にJavaプラットフォームの内外に強いオープンソースコミュニティを築く上で、大きな役割を果たしました。<a href='https://en.wikipedia.org/wiki/Jakarta_Project#Project_name'>Wikipediaによると、</a>この名前は元々、Sun Microsystemsでプロジェクトの作成に至った会議に使用された会議室であったために選択されました。</p><p>2018年2月、コミュニティはJava EEの新しい名前に投票することを歓迎されました。私たちのコミュニティ投票では、ほぼ7,000人のコミュニティが投票し、<a href='https://eclipse-foundation.blog/2018/02/26/and-the-name-is/'>64%以上がJakarta EEに賛成しました</a>。名前選択の歴史的背景については、<a href='https://www.tomitribe.com/blog/java-ee-to-jakarta-ee/'>Java EE to Jakarta EE</a>読んでください。Jakartaが2011年にApacheでのプロジェクト終了後、Apache Software Foundationは、親切にもEclipse Foundationにその名前を使い始めることを許可しました。</p>"
+    }
+  },{
+    "@type": "Question",
+    "name": "Jakarta EEプラットフォームには何が含まれていますか？",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "<p>当初、Jakarta EEはJava EE 8プラットフォームと完全に同等でした。<a href='https://www.oracle.com/java/technologies/java-ee-glance.html'>Java EE 8</a>を構成するすべての仕様、参照実装(RI)、およびTechnology Compatibility Kit (TCK)がEclipse Foundationに移管されました。以降のJakarta EEリリースは、この基盤の上に構築されます。</p>"
+    }
+  },{
+    "@type": "Question",
+    "name": "javax.*名前空間に何が起きたのですか？",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "<p>Jakarta EE 9リリースで、Jakarta EE仕様の名前空間が、javax.*からjakarta.*に変更になりました。</p>" 
+    }
+  },{
+    "@type": "Question",
+    "name": "Java EE TCKのステータスは何ですか？",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "<p>OracleからJava EE 8 Technology Compatibility Kit (TCK)が提供され、<a href='https://www.eclipse.org/legal/epl-2.0/'>Eclipse Public License (EPL-2.0)</a>の下、Eclipse Foundationでオープンソース化されています。TCKは財団の<a href='https://github.com/eclipse-ee4j'>Gitリポジトリ</a>でホストされています。これらは、Jakarta EE仕様の互換実装に対するJakarta EE互換テストの基盤となります。</p>" 
+    }
+  },{
+    "@type": "Question",
+    "name": "Java EEとJakarta EEのガバナンスモデルの違いは何ですか？",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "<p>Eclipse Foundationは、すべての関係者がテクノロジに関して協力するための実用的で十分に理解されたガバナンスモデルを14年にわたり提供してきた実績を持っています。主な違いは、ガバナンスモデルがオープンであり、ベンダー中立であり、すべての参加者のためにレベルに応じた場を提供することです。</p>" 
+    }
+  },{
+    "@type": "Question",
+    "name": "新しい仕様の作成に使用されるプロセスは何ですか？",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "<p>Eclipse Foundationは、定評のあるEclipse開発プロセスをベースに、新しい仕様開発プロセスであるEclipse Foundation仕様プロセスを作成しました。このプロセスは、Jakarta EE仕様策定委員会によってJakarta EE用にさらにカスタマイズされます。Jakarta EE仕様プロセスは、Jakarta EE仕様の提供のために作成および使用されます。</p>"
+    }
+  },{
+    "@type": "Question",
+    "name": "新しいJakarta EEリリースは、どのくらいの頻度でリリースされますか？",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "<p>これは現在も定義中であるため、現時点では特定のスケジュールや間隔を断言することはできません。しかし、イノベーションのペースを大幅に向上させるという強いコミットメントが関係者全員にあります。Jakarta EE技術の開発者コミュニティと企業利用者の両方の声を聞き、彼らの希望が何であるかを理解したいと考えています。安定性と新たなイノベーションのペースの間には明らかにトレードオフがありますが、これらのトレードオフは、Jakarta EEの成功を促進するのに役立つオープンで包括的な方法で取り組まれています。</p>" 
+    }
+  },{
+    "@type": "Question",
+    "name": "Eclipse GlassFishの次のリリースでは何が変わり、いつ提供されるのですか？",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "<p><a href='https://projects.eclipse.org/proposals/eclipse-glassfish'>Eclipse GlassFish</a>プロジェクトは、Eclipse GlassFishプロジェクトチームが運営しています。すべての情報と最新のリリースは、<a href='https://projects.eclipse.org/projects/ee4j.glassfish'>Eclipse GlassFishプロジェクトのページ</a>で見つけることができます。</p>" 
+    }
+  },{
+    "@type": "Question",
+    "name": "直近のロードマップの後、将来のJakarta EE技術に対する全体的なビジョンは何ですか？進化する最も重要な分野は何ですか？",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "<p>開発者やその他の関係者が重視すべき主な分野は、次のとおりです。</p><ul><li><p>マイクロサービスアーキテクチャーサポートの向上</p></li><li><p>DockerやKubernetesなどの技術との統合が強化されたクラウドネイティブJavaに移行</p></li><li><p>イノベーションのペースの加速</p></li><li><p>活気に満ちた開発者コミュニティの構築</p></li><li><p>製品品質のリファレンス実装の提供</p></li></ul>" 
+    }
+  },{
+    "@type": "Question",
+    "name": "EE4JとJakarta EEは、どのような関係ですか？",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "<p>以下の２つの記事が、二者の関係および二者のユースケースをうまく説明しています。</p><ul><li><p><a href='http://www.agilejava.eu/2018/03/22/the-relationship-between-jakarta-ee-ee4j-and-java-ee/'>Jakarta EE、EE4JとJava EEの関係</a></p></li><li><p><a href='https://www.eclipse.org//lists/ee4j-community/msg01403.html'>Jakarta EEを使用する場合とEE4Jを使用する場合</a></p></li></ul>"
+    }
+  },{
+    "@type": "Question",
+    "name": "Jakarta EEは、ほとんどの企業のモダナイゼーション取組みにおける最重要課題であるマイクロサービスの作成と管理をサポートしてくれるのでしょうか？",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "<p>はい。我々は、既存のEclipse MicroProfileコミュニティやその他のオープンソースコミュニティが引き続き先導すると予想します。これらのプロジェクトやコミュニティによるJavaイノベーションを新しいバージョンのプラットフォームに組み込むことが、成功の鍵となります。</p>"
+    }
+  },{
+    "@type": "Question",
+    "name": "Jakarta EEが、どのようにレガシーJavaシステムをクラウド対応することをサポートするか教えてください。",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "<p>KubernetesやDockerなどのクラウドネイティブ技術との連携を、コミュニティが強化していくことを予想しています。これらの統合の一部は、Javaバーチャルマシン(JVM)レベルで実行する必要があります。これらのJVM拡張機能が利用可能になったことで、Jakarta EEコミュニティはOpenJDKとEclipseOpenJ9チームと密接に連携し、フレームワークレベルのサポートすることが期待されます。</p>" 
+    }
+  },{
+    "@type": "Question",
+    "name": "言語とEEプラットフォームの歩調を合わせるための重要な接点は何でしょうか？",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "<p>Jakarta EEリリース間隔およびスケジュールはまだ決定されてません。コミュニティにおいて適切な間隔が決定されたら、OpenJDKなどの他のコミュニティと連携するように話し合いを開始できます。</p>" 
+    }
+  },{
+    "@type": "Question",
+    "name": "Jakarta EE互換ロゴの使用に関するガイドラインは何ですか？",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "<p>ロゴは、プロファイル（フル、Web）以外の仕様では使用できません。したがって、例えば、Servletのみの実装に対して、いかなる組織やプロジェクトによるJakarta EE互換ロゴの使用を許可しません。</p><p>Jakarta EE WebまたはFullプロファイルのオープンソース実装がTCKプロセスに従い、Eclipse Foundation TCKライセンスに準拠している場合、そのオープンソースプロジェクトは紛れもなく互換実装であると宣言できます。</p><p>Jakarta EE互換ロゴを使用するには、オープンソースプロジェクトを支援する組織がJakarta EE商標ガイドラインに定めるメンバーシップ適格要件を満たす必要があります。</p>おおまかに言うと、互換ロゴの使用は、Jakarta EE商標使用許諾契約に基づくライセンスを受けているJakarta EEワーキンググループのメンバーまたはワーキンググループで承認されたゲストメンバー(Eclipse Foundation商標使用許諾契約に基づくライセンスを受けているメンバー)のみに制限されます。</p><p>Jakarta EE互換ロゴとブランドは、当団体のコミュニティと業界に価値を持っているため、ワーキンググループでのメンバーシップが必要です。当社は、メンバーシップの資金を活用し、Jakarta EE仕様プロセス、互換ルール、開発者への周知活動の管理をしています。また、ワーキンググループメンバーシップ料は、Jakarta EE互換ブランドとそのマーケットプレイス上での価値の促進に利用しています。</p><p>詳細については、<a href='https://jakarta.ee/legal/trademark_guidelines/'>Jakarta EE商標ガイドライン</a>を参照してください。</p>"
+    }
+  },{
+    "@type": "Question",
+    "name": "どうすればJakarta EEのコントリビューターやコミッターになれますか？",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "<p>コントリビューターになるには、まず興味のあるJakarta EEプロジェクトを検索し、次にEclipse Foundationアカウントを作成して<a href='https://www.eclipse.org/legal/ECA.php'>Eclipse Contributors Agreement</a>に署名します。</p><p>プロジェクトチームがあなたの作業貢献を認めた後、コミッターステータスに昇格するプロセスが開始されます。</p><p>Jakarta EEワーキンググループメンバー企業の1つに雇用されている場合、ほとんどの事務手続きは雇用主が署名した契約によってカバーされています。</p>" 
+    }
+  },{
+    "@type": "Question",
+    "name": "どうすればJakarta EEに関わることができますか？",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "<p>Jakarta EEに関わるさまざまな方法を次に示します。</p><ul><li><p> <strong>コントリビューター</strong> としては、プルリクエストを介してGitHubの <a href='https://github.com/eclipse-ee4j'>EE4Jプロジェクト</a> に簡単に貢献できます。そのためには、当団体の<a href='https://www.eclipse.org/legal/ECA.php'>Eclipse Contributor Agreement</a>に署名して下さい。</p></li><li><p><strong>コミッター</strong>として既に関わっていますね！プロジェクトに参加いただいていること感謝します。当団体のガバナンスに関わるには、多くの方法があります。たとえば、Eclipse Foundationボードの選挙やJakarta EEワーキンググループの選挙に出る方法もあります。これらの選出されたポジションは非常に重要であり、当団体のガバナンスに影響を与える機会をコミッターコミュニティに提供します。コミッターがガバナンスに関わるための第一歩は、Eclipse Foundationのコミッターのメンバーになることです。詳細については、<a href='https://www.eclipse.org/membership/#tab-membership'>Eclipse Foundationメンバーシップページ</a>をご覧ください。</p></li><li><p><strong>ソフトウェアベンダー</strong>としては、ソリューションメンバとしてEclipse Foundationに参加し、かつ、ParticipantメンバーとしてJakarta EEワーキンググループに参加できます。これにより、コミュニティの持続可能性をサポートし、マーケティングプログラムに参加し、コミュニティと直接関わることができます。</p></li><li><p><strong>企業</strong>としては、Jakarta EEワーキンググループに企業メンバーとして参加できます。様々な会員レベルの詳細は、<a href='https://www.eclipse.org/org/workinggroups/jakarta_ee_charter.php'>Jakarta EEワーキンググループ憲章</a>に記載されています。これにより、コミュニティの持続可能性をサポートし、マーケティングプログラムに参加し、コミュニティと直接関わることができます。また、インフルエンサーメンバーはエンタープライズ要件委員会に参加し、Jakarta EEの年間ロードマッププロセスに関する具体的な要件を提供します。</p></li><li><p><strong>Java EEベンダー、クラウドプラットフォームベンダー</strong>としては、Eclipse FoundationおよびJakarta EEワーキンググループにStrategicメンバーとして参加できます。これにより、コミュニティの持続可能性をサポートし、マーケティングプログラムに参加し、コミュニティと直接関わることができます。また、Eclipse FoundationとJakarta EEワーキンググループの両方のガバナンスへの直接的なアクセスも提供します。</p></li></ul>" 
+    }
+  }]
+}

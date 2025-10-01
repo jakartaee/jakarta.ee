@@ -4,4 +4,12 @@ date: 2020-01-01T16:10:38-04:00
 hide_sidebar: true
 ---
 
-{{< eclipsefdn_project_list projects_working_group="jakarta-ee" >}}
+{{< grid/div isMarkdown="false" >}}
+  <ul 
+    class="eclipsefdn-projects list-inline" 
+    data-url="https://projects.eclipse.org/api/projects?working_group=jakarta-ee"
+    data-template-id="list"
+  >
+  </ul>
+{{</ grid/div >}}
+

@@ -12,4 +12,6 @@ aliases: [
 ]
 ---
 
-{{< pages/meeting_minutes >}}
+## Jakarta EE Working Group Committees Meeting Minutes { .big-text-secondary }
+
+{{< eclipsefdn_meeting_minutes tabs_class="solstice-tabs" yearly_sections_enabled="true" >}}

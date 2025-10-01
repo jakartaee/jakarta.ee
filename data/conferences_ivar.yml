@@ -1,0 +1,1042 @@
+---
+years:
+
+- year: 2025
+  conferences:
+
+  - name: JakartaOne Livestream
+    url: https://jakartaone.org/2025/
+    location: online 🌐
+    date: Dec 2
+    upcoming: true
+
+  - name: Devoxx Morocco
+    url: https://devoxx.ma/
+    location: Marrakech 🇲🇦
+    date: Nov 12-14
+    upcoming: true
+
+  - name: Universidade de Aveiro
+    url: 
+    location: Aveiro 🇵🇹
+    date: Nov 12
+    upcoming: true
+    
+  - name: ChurConf
+    url: https://churconf.com/
+    location: Auckland 🇳🇿
+    date: Nov 2
+    upcoming: true
+
+  - name: JDD
+    url: https://jdd.org.pl/
+    location: Kraków 🇵🇱
+    date: Oct 21-22
+    upcoming: true
+
+  - name: JavaCro
+    url: https://2025.javacro.hr/eng
+    location: Rovinj 🇭🇷
+    date: Oct 12-15
+    upcoming: true
+
+  - name: JCON @ IBM TechXChange
+    url: https://www.ibm.com/community/ibm-techxchange-conference/
+    location: Orlando, FL 🇺🇸
+    date: Oct 6-9
+    upcoming: true
+
+  - name: dev2next
+    url: https://www.dev2next.com/
+    location: Colorado Springs, CO 🇺🇸
+    date: Sep 29-Oct 2
+    upcoming: true
+
+  - name: Come To Code
+    url: https://www.cometocode.it/index.html
+    location: Pignola 🇮🇹
+    date: Sep 27-28
+    blog: https://www.agilejava.eu/2025/09/30/come-to-code-2025
+      
+  - name: Open Source Community Day
+    url: https://www.eclipse.org/events/2025/oscd/
+    location: Madrid 🇪🇸
+    date: Sep 23-24
+    blog: https://www.agilejava.eu/2025/09/25/open-source-community-day-2025/
+
+  - name: Jalapeño
+    url: https://jalapeño.net
+    location: Cancún 🇲🇽
+    date: Sep 13-14
+    blog: https://www.agilejava.eu/2025/09/15/jalapeno-2025/
+
+  - name: Community Over Code
+    url: https://communityovercode.org/
+    location: Minneapolis, MN 🇺🇸
+    date: Sep 11-14
+    blog: https://www.agilejava.eu/2025/09/14/community-over-code-2025/
+
+  - name: JavaZone
+    url: https://2025.javazone.no/en
+    location: Lillestrøm 🇳🇴
+    date: Sep 3-4
+    blog: https://www.agilejava.eu/2025/09/05/javazone-2025/
+
+  - name: LAOUC Community Tour
+    url: https://www.laouc.org/laouc-2025-inicio/
+    location: São Paulo 🇧🇷
+    date: Aug 23
+    blog: https://www.agilejava.eu/2025/08/24/laouc-community-tour-2025-brazil/
+
+  - name: LAOUC Community Tour
+    url: https://www.laouc.org/laouc-2025-inicio/
+    location: Buenos Aires 🇦🇷
+    date: Aug 20
+    blog: https://www.agilejava.eu/2025/08/22/laouc-community-tour-2025-argentina/
+
+  - name: JCrete
+    url: https://www.jcrete.org
+    location: Kolymvari 🇬🇷
+    date: Aug 4-8
+    blog: https://www.agilejava.eu/2025/08/21/jcrete-2025/
+
+  - name: JConfDominica
+    url: https://jconfdominicana.org/
+    location: Santo Domingo 🇩🇴
+    date: Jul 18-19
+    blog: https://www.agilejava.eu/2025/07/20/jconf-dominicana-2025/
+
+  - name: WeAreDevelopers World Congress
+    url: https://www.wearedevelopers.com/world-congress
+    location: Berlin 🇩🇪
+    date: Jul 9-11
+    blog: https://www.agilejava.eu/2025/07/11/wearedevelopers-world-congress-2025/
+
+  - name: Lisbon JUG
+    url: https://www.meetup.com/lisbon-jug/
+    location: Lisbon 🇵🇹
+    date: Jun 25
+    blog: https://www.agilejava.eu/2025/06/27/lisbon-jug-2025/
+
+  - name: JJUG CCC Spring 
+    url: https://ccc2025spring.java-users.jp/
+    location: Tokyo 🇯🇵
+    date: Jun 7
+    blog: https://www.agilejava.eu/2025/06/07/jjug-ccc-2025-spring/
+
+  - name: Spring I/O
+    url: https://2025.springio.net
+    location: Barcelona 🇪🇸
+    date: May 21-23
+    blog: https://www.agilejava.eu/2025/05/26/spring-i-o-2025/
+
+  - name: JCON EUROPE
+    url: https://2025.europe.jcon.one/
+    location: Köln 🇩🇪
+    date: May 12-15
+    blog: https://www.agilejava.eu/2025/05/16/jcon-europe-2025/
+
+  - name: Javaforum Malmø
+    url: https://foocafe.org/event/jvm-age-ai
+    location: Malmö 🇸🇪
+    date: May 5
+    blog: https://www.agilejava.eu/2025/05/07/javaforum-malmo-may-2025/
+
+  - name: GIDS
+    url: https://developersummit.com/
+    location: Bangalore 🇮🇳
+    date: Apr 22-25
+    blog: https://www.agilejava.eu/2025/04/26/gids-2025/
+
+  - name: JavaLand
+    url: https://www.javaland.eu/en/home/
+    location: Nürburgring 🇩🇪
+    date: Apr 1-3
+    blog: https://www.agilejava.eu/2025/04/03/javaland-2025/
+
+  - name: JavaOne
+    url: https://www.oracle.com/javaone/
+    location: Redwood Shores, CA 🇺🇸
+    date: Mar 18-20
+    blog: https://www.agilejava.eu/2025/03/25/javaone-2025/
+
+  - name: Devnexus
+    url: https://devnexus.com/
+    location: Atlanta, GA 🇺🇸
+    date: Mar 4-6
+    blog: https://www.agilejava.eu/2025/03/08/devnexus-2025/
+
+  - name: Boston Java Users
+    url: https://www.meetup.com/nejug1/
+    location: Boston, MA 🇺🇸
+    date: Feb 27
+    blog: https://www.agilejava.eu/2025/02/28/boston-java-users-2025/
+
+  - name: Connecticut JUG
+    url: https://www.meetup.com/connecticut-java-users-group/
+    location: Hartford, CT 🇺🇸
+    date: Feb 26
+    blog: https://www.agilejava.eu/2025/02/27/connecticut-jug-2025/
+
+  - name: New York Java SIG
+    url: https://www.javasig.com
+    location: New York, NY 🇺🇸
+    date: Feb 25
+    blog: https://www.agilejava.eu/2025/02/26/new-york-java-sig-2025/  
+
+  - name: Madrid JUG
+    url: https://madridjug.es
+    location: Madrid 🇪🇸
+    date: Feb 18
+    blog: https://www.agilejava.eu/2025/02/19/madrid-jug-2025/
+
+  - name: Javaforum Malmø
+    url: https://foocafe.org/event/sound-scheduling-writing-linux-schedulers-java-ebpf
+    location: Malmö 🇸🇪
+    date: Jan 20
+    blog: https://www.agilejava.eu/2025/01/21/javaforum-malmo-2025/
+
+- year: 2024
+  conferences:
+
+  - name: Ya!vaConf
+    url: https://yavaconf.com/en/
+    location: Warsaw 🇵🇱
+    date: Dec 11
+    blog: https://www.agilejava.eu/2024/12/11/yavaconf-2024/
+
+  - name: JakartaOne Livestream
+    url: https://jakartaone.org/2024/
+    location: online 🌐
+    date: Dec 3
+    blog: https://www.agilejava.eu/2024/12/05/jakartaone-livestream-2024/
+
+  - name: Porto Tech Hub
+    url: https://portotechhub.com
+    location: Porto 🇵🇹
+    date: Nov 26
+    blog: https://www.agilejava.eu/2024/11/29/porto-tech-hub-2024/
+    
+  - name: Brno JUG
+    url: https://www.meetup.com/brno-java-meetup/
+    location: Brno 🇨🇿
+    date: Nov 20
+    blog: https://www.agilejava.eu/2024/11/21/brno-jug-2024/
+  
+  - name: Prague JUG
+    url: https://www.jug.cz/czjug-en/
+    location: Prague 🇨🇿
+    date: Nov 19
+    blog: https://www.agilejava.eu/2024/11/20/prague-jug-2024/
+
+  - name: JUG Torino
+    url: https://jugtorino.org
+    location: Turin 🇮🇹
+    date: Nov 12
+    blog: https://www.agilejava.eu/2024/11/14/jug-torino-2024/
+
+  - name: JUG Milano
+    url: https://www.jugmilano.it/
+    location: Milan 🇮🇹
+    date: Nov 11
+    blog: https://www.agilejava.eu/2024/11/13/jug-milano-2024/
+
+  - name: SFSCON
+    url: https://www.sfscon.it
+    location: Bolzano 🇮🇹
+    date: Nov 8-9
+    blog: https://www.agilejava.eu/2024/11/09/sfscon-2024/
+
+  - name: DevCon
+    url: https://www.dev-con.ro
+    location: Bucharest 🇷🇴
+    date: Nov 6
+    blog: https://www.agilejava.eu/2024/11/07/devcon-2024/
+
+  - name: JJUG CCC Fall 
+    url: https://www.java-users.jp/
+    location: Tokyo 🇯🇵
+    date: Oct 27
+    blog: https://www.agilejava.eu/2024/10/28/jjug-ccc-2024-fall/
+    
+  - name: Open Community for Java
+    url: https://java.ocxconf.org
+    location: Mainz 🇩🇪
+    date: Oct 22-24
+    blog: https://www.agilejava.eu/2024/10/25/open-community-for-java-2024/
+
+  - name: Seattle JUG
+    url: https://www.seajug.org/
+    location: Seattle, WA 🇺🇸
+    date: Oct 15
+    blog: https://www.agilejava.eu/2024/10/17/jcp-ec-f2f-seattle-2024/
+
+  - name: Community Over Code
+    url: https://communityovercode.org/
+    location: Denver, CO 🇺🇸
+    date: Oct 7-10
+    blog: https://www.agilejava.eu/2024/10/11/community-over-code-2024/
+
+  - name: Devoxx Morocco
+    url: https://devoxx.ma/
+    location: Marrakech 🇲🇦
+    date: Oct 2-4
+    blog: https://www.agilejava.eu/2024/10/05/devoxx-morocco-2024/
+        
+  - name: Berlin Expert Days
+    url: https://bed-con.org/
+    location: Berlin 🇩🇪
+    date: Sep 19-20
+    blog: https://www.agilejava.eu/2024/09/21/bed-con-2024/
+
+  - name: Jalapeño
+    url: https://jalapeño.net
+    location: Puerto Vallarta 🇲🇽
+    date: Sep 14-15
+    blog: https://www.agilejava.eu/2024/09/20/jalapeno-2024/
+
+  - name: St. Louis JUG
+    url: https://www.meetup.com/gatewayjug/events/300785154
+    location: St. Louis, MO 🇺🇸
+    date: Sep 12
+    blog: https://www.agilejava.eu/2024/09/14/gateway-jug-2024/
+
+  - name: Java Metroplex User Group
+    url: https://www.meetup.com/javamug/
+    location: Dallas, TX 🇺🇸
+    date: Sep 11
+    blog: https://www.agilejava.eu/2024/09/12/javamug-2024/
+
+  - name: Jacksonville JUG
+    url: https://www.meetup.com/jacksonville-java-user-group-jaxjug/
+    location: Jacksonville, FL 🇺🇸
+    date: Sep 10
+    blog: https://www.agilejava.eu/2024/09/11/jaxjug-2024/
+
+  - name: Triangle JUG
+    url: https://www.meetup.com/triangle-java-users-group/
+    location: Durham, NC 🇺🇸
+    date: Sep 9
+    blog: https://www.agilejava.eu/2024/09/10/triangle-jug-2024/
+
+  - name: LAOUC Community Tour
+    url: https://www.laouc.org/
+    location: Asunción 🇵🇾
+    date: Aug 23
+    blog: https://www.agilejava.eu/2024/08/25/laouc-community-tour-2024/
+
+  - name: JCrete
+    url: https://www.jcrete.org/
+    location: Kolymvari 🇬🇷
+    date: Jul 22-26
+    blog: https://www.agilejava.eu/2024/08/03/jcrete-2024/
+    
+  - name: JConfDominica
+    url: https://jconfdominicana.org/
+    location: Santiago de los Caballeros 🇩🇴
+    date: Jul 19-20
+    blog: https://www.agilejava.eu/2024/07/20/jconf-dominicana-2024/
+    
+  - name: DWX
+    url: https://www.developer-week.de/en/
+    location: Nürnberg 🇩🇪
+    date: Jul 1-5
+    blog: https://www.agilejava.eu/2024/07/02/developer-week-24/
+
+  - name: DevBCN
+    url: https://www.devbcn.com/
+    location: Barcelona 🇪🇸
+    date: June 13-14
+    blog: https://www.agilejava.eu/2024/06/15/devbcn-2024/
+
+  - name: Spring I/O
+    url: https://2024.springio.net/
+    location: Barcelona 🇪🇸
+    date: May 30-31
+    blog: https://www.agilejava.eu/2024/05/31/spring-i-o-2024/
+
+  - name: JPrime
+    url: https://jprime.io/
+    location: Sofia 🇧🇬
+    date: May 28-29
+    blog: https://www.agilejava.eu/2024/05/29/jprime-2024/
+
+  - name: Berlin JUG
+    url: https://www.meetup.com/de-DE/jug-bb/events/301036198/
+    location: Berlin 🇩🇪
+    date: May 22
+    blog: https://www.agilejava.eu/2024/05/23/berlin-jug-2024/
+            
+  - name: GeeCON
+    url: https://2024.geecon.org/
+    location: Kraków 🇵🇱
+    date: May 15-17
+    blog: https://www.agilejava.eu/2024/05/18/geecon-2024/
+
+  - name: JCON EUROPE
+    url: https://2024.europe.jcon.one/
+    location: Köln 🇩🇪
+    date: May 13-16
+    blog: https://www.agilejava.eu/2024/05/16/jcon-europe-2024/
+
+  - name: GIDS
+    url: https://developersummit.com/
+    location: Bangalore 🇮🇳
+    date: April 23-26
+    blog: https://www.agilejava.eu/2024/04/26/gids-2024/
+
+  - name: Devnexus
+    url: https://devnexus.com/
+    location: Atlanta, GA 🇺🇸
+    date: April 9-11
+    blog: https://www.agilejava.eu/2024/04/13/devnexus-2024/
+
+  - name: JDevSummitIL
+    url: https://jdevsummitil.com/
+    location: online 🌐
+    date: April 4
+    blog: https://www.agilejava.eu/2024/04/04/jdevsummitil-2024/
+    
+  - name: Voxxed Days Bucharest
+    url: https://romania.voxxeddays.com/voxxed-days-bucharest-2024/
+    location: Bucharest 🇷🇴
+    date: Mar 27-29
+    blog: https://www.agilejava.eu/2024/03/29/voxxed-days-bucharest-2024/
+
+  - name: Belgian JUG
+    url: https://www.meetup.com/belgian-java-user-group/
+    location: Hasselt 🇧🇪
+    date: Mar 19
+    blog: https://www.agilejava.eu/2024/03/20/belgian-jug-2024/
+
+  - name: Javaforum Malmø
+    url: https://www.meetup.com/javaforum-malmo/
+    location: Malmö 🇸🇪
+    date: Feb 29
+    blog: https://www.agilejava.eu/2024/03/01/javaforum-malmo-february-2024/
+
+  - name: ConFoo
+    url: https://confoo.ca/en/2024
+    location: Montreal 🇨🇦
+    date: Feb 21-23
+    blog: https://www.agilejava.eu/2024/02/24/confoo-2024/
+
+  - name: Philly JUG
+    url: https://www.meetup.com/phillyjug/
+    location: Philadelphia, PA 🇺🇸
+    date: Feb 20
+    blog: https://www.agilejava.eu/2024/02/21/philly-jug-2024/
+
+  - name: Jfokus
+    url: https://jfokus.se
+    location: Stockholm 🇸🇪
+    date: Feb 5-7
+    blog: https://www.agilejava.eu/2024/02/06/jfokus-2024/
+
+  - name: Portland JUG
+    url: https://www.meetup.com/pdxjug/
+    location: Portland, OR 🇺🇸
+    date: Jan 31
+    blog: https://www.agilejava.eu/2024/02/01/portland-jug-2024/
+
+  - name: Seattle JUG
+    url: https://www.meetup.com/seajug/
+    location: Seattle, WA 🇺🇸
+    date: Jan 30
+    blog: https://www.agilejava.eu/2024/01/31/seattle-jug-2024/
+
+  - name: Nashville JUG
+    url: https://www.meetup.com/nashvillejug/
+    location: Nashville, TN 🇺🇸
+    date: Jan 29
+    blog: https://www.agilejava.eu/2024/01/30/nashville-jug-2024/
+
+  - name: JCP 25-year Anniversary Celebration
+    url: https://jcp.org/en/press/news/JCP_25_Year_Anniversary
+    location: Mountain View, CA 🇺🇸
+    date: Jan 25
+    blog: https://www.agilejava.eu/2024/01/27/jcp-25-year-anniversary-celebration/
+
+- year: 2023
+  conferences:
+
+  - name: Toronto JUG
+    url: https://www.meetup.com/toronto-java-users-group/
+    location: Toronto 🇨🇦
+    date: Dec 7
+    blog: https://www.agilejava.eu/2023/12/08/toronto-jug/
+
+  - name: Ottawa JUG
+    url: https://www.meetup.com/ottawa-java-user-group/
+    location: Ottawa 🇨🇦
+    date: Dec 6
+    blog: https://www.agilejava.eu/2023/12/07/ottawa-jug/
+
+  - name: JakartaOne Livestream
+    url: https://jakartaone.org/2023/
+    location: online 🌐
+    date: Dec 5
+    blog: https://www.agilejava.eu/2023/12/06/jakartaone-livestream-2023/
+
+  - name: JCON WORLD ONLINE
+    url: https://2023.world.jcon.one/
+    location: online 🌐
+    date: Nov 21-23
+    blog: https://www.agilejava.eu/2023/11/24/jcon-world-online-2023/
+
+  - name: Javaforum Malmø
+    url: https://www.meetup.com/javaforum-malmo/
+    location: Malmö 🇸🇪
+    date: Nov 22
+    blog: https://www.agilejava.eu/2023/11/23/javaforum-malmo/
+
+  - name: Øredev
+    url: https://oredev.org/
+    location: Malmö 🇸🇪
+    date: Nov 8-10
+    blog: https://www.agilejava.eu/2023/11/11/oredev-2023/
+
+  - name: J-Fall
+    url: https://jfall.nl/
+    location: Ede 🇳🇱
+    date: Nov 9
+    blog: https://www.agilejava.eu/2023/11/11/j-fall-2023/
+
+  - name: EclipseCon
+    url: https://www.eclipsecon.org/2023
+    location: Ludwigsburg 🇩🇪
+    date: Oct 16-19
+    blog: https://www.agilejava.eu/2023/10/20/eclipsecon-2023/
+    
+  - name: Devoxx Morocco
+    url: https://devoxx.ma/
+    location: Agadir 🇲🇦
+    date: Oct 11-13
+    blog: https://www.agilejava.eu/2023/10/14/devoxx-morocco-2023/
+
+  - name: Community Over Code
+    url: https://communityovercode.org/
+    location: Halifax 🇨🇦
+    date: Oct 7-10
+    blog: https://www.agilejava.eu/2023/10/10/community-over-code-2023/
+
+  - name: Devoxx Belgium
+    url: https://devoxx.be/
+    location: Antwerp 🇧🇪
+    date: Oct 2-6
+    blog: https://www.agilejava.eu/2023/10/06/devoxx-belgium-2023/
+
+  - name: Montreal JUG
+    url: https://www.meetup.com/montreal-jug/events/295689971/
+    location: Montreal 🇨🇦
+    date: Sep 22
+    blog: https://www.agilejava.eu/2023/09/23/north-america-jug-tour-2023-montreal-%f0%9f%87%a8%f0%9f%87%a6/
+
+  - name: Omaha JUG
+    url: https://www.meetup.com/omahajava/events/295587171/
+    location: Omaha, NE 🇺🇸
+    date: Sep 21
+    blog: https://www.agilejava.eu/2023/09/22/north-america-jug-tour-2023-omaha-%f0%9f%87%ba%f0%9f%87%b8/
+ 
+  - name: Detroit JUG
+    url: https://www.meetup.com/detroit-java-user-group/events/295614617/
+    location: Detroit, MI 🇺🇸
+    date: Sep 20
+    blog: https://www.agilejava.eu/2023/09/21/north-america-jug-tour-2023-detroit-%f0%9f%87%ba%f0%9f%87%b8/
+  
+  - name: Garden State JUG
+    url: https://gsjug.org/meetings/2023/sep2023.html
+    location: New Jersey, NJ 🇺🇸
+    date: Sep 19
+    blog: https://www.agilejava.eu/2023/09/20/north-america-jug-tour-2023-new-jersey-%f0%9f%87%ba%f0%9f%87%b8/
+
+  - name: Central Ohio JUG
+    url: http://www.cojug.org/2023/09/18/dinner-Wargames-306/
+    location: Columbus, OH 🇺🇸
+    date: Sep 18
+    blog: https://www.agilejava.eu/2023/09/19/north-america-jug-tour-2023-columbus-%f0%9f%87%ba%f0%9f%87%b8/
+
+  - name: IBM TechXchange
+    url: https://www.ibm.com/community/ibm-techxchange-conference/
+    location: Las Vegas, NV 🇺🇸
+    date: Sep 11-14
+    blog: https://www.agilejava.eu/2023/09/15/ibm-techxchange-2023/
+
+  - name: Picnic Java Meetup
+    url: https://www.meetup.com/meetinup-picnic/events/295503409/
+    location: Amsterdam 🇳🇱
+    date: Sep 6
+    blog: https://www.agilejava.eu/2023/09/08/picnic-java-meetup/
+
+  - name: JCrete
+    url: https://www.jcrete.org/
+    location: Kolymvari 🇬🇷
+    date: Jul 2-7
+    blog: https://www.agilejava.eu/2023/07/12/jcrete-2023/
+    
+  - name: Amsterdam JUG
+    url: http://amsterdamjug.com/
+    location: Amsterdam 🇳🇱
+    date: Jun 29
+    blog: https://www.agilejava.eu/2023/06/30/amsterdam-jug/
+
+  - name: GOTO Amsterdam
+    url: https://gotoams.nl/2023
+    location: Amsterdam 🇳🇱
+    date: Jun 27-29
+    blog: https://www.agilejava.eu/2023/06/29/goto-amsterdam-2023/
+
+  - name: JPrime
+    url: https://jprime.io/
+    location: Sofia 🇧🇬
+    date: May 30-31
+    blog: https://www.agilejava.eu/2023/06/01/jprime-2023/
+
+  - name: Infoshare
+    url: https://infoshare.pl/conference/
+    location: Gdańsk 🇵🇱
+    date: May 24-25
+    blog: https://www.agilejava.eu/2023/05/25/infoshare-2023/
+
+  - name: Devoxx UK
+    url: https://www.devoxx.co.uk/
+    location: London 🇬🇧
+    date: May 10-12
+    blog: https://www.agilejava.eu/2023/05/12/devoxx-uk-2023/
+
+  - name: Devoxx Greece
+    url: https://www.devoxx.gr/
+    location: Athens 🇬🇷
+    date: May 4-6
+    blog: https://www.agilejava.eu/2023/05/06/devoxx-greece-2023/
+
+  - name: GIDS
+    url: https://developersummit.com/
+    location: Bangalore 🇮🇳
+    date: Apr 25-28
+    blog: https://www.agilejava.eu/2023/04/27/gids-2023/
+
+  - name: Java Heroes Conference (Singapore JUG)
+    url: http://singajug.org/
+    location: Singapore 🇸🇬
+    date: Apr 13
+    blog: https://www.agilejava.eu/2023/04/16/hashtag-jakarta-ee-172/
+
+  - name: Devnexus
+    url: https://devnexus.com
+    location: Atlanta, GA 🇺🇸
+    date: Apr 4-6
+    blog: https://www.agilejava.eu/2023/04/07/devnexus-2023/
+
+  - name: JavaLand
+    url: https://www.javaland.eu/en/home/
+    location: Brühl 🇩🇪
+    date: Mar 21-23
+    blog: https://www.agilejava.eu/2023/03/24/javaland-2023/
+
+  - name: ConFoo
+    url: https://confoo.ca/en/2023
+    location: Montreal 🇨🇦
+    date: Feb 22-24
+    blog: https://www.agilejava.eu/2023/02/24/confoo-2023/
+  
+  - name: DeveloperWeek
+    url: https://www.developerweek.com/
+    location: Oakland, CA 🇺🇸
+    date: Feb 15-17
+    blog: https://www.agilejava.eu/2023/02/17/developerweek-2023/
+
+  - name: Jfokus
+    url: https://jfokus.se
+    location: Stockholm 🇸🇪
+    date: Feb 6-8
+    blog: https://www.agilejava.eu/2023/02/09/jfokus-2023/
+
+  - name: jChampionsConf
+    url: https://jchampionsconf.com/
+    location: online 🌐
+    date: Jan 19-24
+    blog: https://www.agilejava.eu/2023/01/24/jchampionsconf-2023/
+
+  - name: THAT Conference Texas
+    url: https://that.us/events/tx/2023/
+    location: Round Rock, TX 🇺🇸
+    date: Jan 16-18
+    blog: https://www.agilejava.eu/2023/01/19/that-conference-2023/
+
+- year: 2022
+  conferences:
+
+  - name: JakartaOne Livestream
+    url: https://jakartaone.org/2022/
+    location: online 🌐
+    date: Dec 6
+    blog: https://www.agilejava.eu/2022/12/08/jakartaone-livestream-2022/
+
+  - name: Øredev
+    url: https://oredev.org/
+    location: Malmö 🇸🇪
+    date: Nov 8-10
+    blog: https://www.agilejava.eu/2022/11/15/oredev-2022/
+
+  - name: J-Fall
+    url: https://jfall.nl/
+    location: Ede 🇳🇱
+    date: Nov 3
+    blog: https://www.agilejava.eu/2022/11/04/j-fall-2022/
+
+  - name: EclipseCon
+    url: https://www.eclipsecon.org/2022
+    location: Ludwigsburg 🇩🇪
+    date: Oct 24-27
+    blog: https://www.agilejava.eu/2022/10/29/eclipsecon-2022/
+
+  - name: JavaOne
+    url: https://www.oracle.com/cloudworld/javaone/
+    location: Las Vegas, NV 🇺🇸
+    date: Oct 17-20
+    blog: https://www.agilejava.eu/2022/10/21/javaone-2022/
+    
+  - name: Devoxx Belgium
+    url: https://devoxx.be/
+    location: Antwerp 🇧🇪
+    date: Oct 10-14
+    blog: https://www.agilejava.eu/2022/10/14/devoxx-belgium-2022/
+
+  - name: JConf
+    url: https://2022.jconf.dev/
+    location: Chicago, IL 🇺🇸
+    date: Sep 26-28
+    blog: https://www.agilejava.eu/2022/10/02/jconf-dev-2022/
+
+  - name: JavaZone
+    url: https://2022.javazone.no/
+    location: Oslo 🇳🇴
+    date: Sep 7-8
+    blog: https://www.agilejava.eu/2022/10/21/javaone-2022/
+
+  - name: JBCNConf
+    url: https://www.jbcnconf.com/2022/
+    location: Barcelona 🇪🇸
+    date: Jul 18-20
+    blog: https://www.agilejava.eu/2022/07/23/jbcnconf-2022/
+
+  - name: DWX
+    url: https://www.developer-week.de/
+    location: Nürnberg 🇩🇪
+    date: Jul 4-8
+    blog: https://www.agilejava.eu/2022/07/07/developer-week-22/
+
+  - name: Devoxx Poland
+    url: https://devoxx.pl/
+    location: Kraków 🇵🇱
+    date: Jun 22-24
+    blog: https://www.agilejava.eu/2022/06/29/devoxx-poland-2022/
+
+  - name: WeAreDevelopers World Congress
+    url: https://www.wearedevelopers.com/world-congress/#/
+    location: Berlin 🇩🇪
+    date: Jun 14-15
+    blog: https://www.agilejava.eu/2022/06/17/we-are-developers-world-congress-2022/
+
+  - name: JNation
+    url: https://2022.jnation.pt/
+    location: Coimbra 🇵🇹
+    date: Jun 7
+    blog: https://www.agilejava.eu/2022/06/16/jnation-2022/
+
+  - name: Rockstars IT Meetup
+    url: 
+    location: Eindhoven 🇳🇱
+    date: May 31
+    blog: https://www.agilejava.eu/2022/06/04/javas-greatest-by-rockstars-it/
+
+  - name: Java Day Istanbul
+    url: https://www.javaday.istanbul/
+    location: Istanbul 🇹🇷
+    date: May 27-28
+    blog: https://www.agilejava.eu/2022/06/02/java-day-istanbul-2022/
+
+  - name: GeeCON
+    url: https://2022.geecon.org/
+    location: Kraków 🇵🇱
+    date: May 11-13
+    blog: https://www.agilejava.eu/2022/05/13/geecon-2022/
+
+  - name: Jfokus
+    url: https://jfokus.se/
+    location: Stockholm 🇸🇪
+    date: May 2-4
+    blog: https://www.agilejava.eu/2022/05/06/jfokus-2022/
+
+  - name: Devnexus
+    url: https://devnexus.com/
+    location: Atlanta, GA 🇺🇸
+    date: Apr 12-14
+    blog: https://www.agilejava.eu/2022/04/15/devnexus-2022/
+
+  - name: Umedev
+    url: https://umedev.se/
+    location: Umeå 🇸🇪
+    date: Apr 5
+    blog: https://www.agilejava.eu/2022/04/07/umedev-2022/
+
+  - name: Dublin JUG
+    url: https://www.dubjug.org/
+    location: Dublin 🇮🇪
+    date: Mar 31
+    blog: https://www.agilejava.eu/2022/04/02/jakarta-ee-mini-tour-2022-ireland/
+
+  - name: Belfast JUG
+    url: https://www.meetup.com/BelfastJUG/
+    location: Belfast 🇬🇧
+    date: Mar 30
+    blog: https://www.agilejava.eu/2022/04/02/jakarta-ee-mini-tour-2022-ireland/
+
+  - name: JavaLand
+    url: https://www.javaland.eu/en/home/
+    location: Brühl 🇩🇪
+    date: Mar 15-17
+    blog: https://www.agilejava.eu/2022/03/17/javaland-2022/
+
+  - name: jChampionsConf
+    url: https://jchampionsconf.com/
+    location: online 🌐
+    date: Jan 20-25
+    blog: https://www.agilejava.eu/2022/01/23/hashtag-jakarta-ee-108/
+
+  - name: CodeMash
+    url: https://www.codemash.org/
+    location: Sandusky, OH 🇺🇸
+    date: Jan 11-14
+    blog: https://www.agilejava.eu/2022/01/15/codemash-2022/
+
+- year: 2021
+  conferences:
+
+  - name: JakartaOne Livestream
+    url: https://jakartaone.org/2022/
+    location: online 🌐
+    date: Dec 7
+
+  - name: JVM-CON
+    url: 
+    location: online 🌐
+    date: Nov 29 - Dec 1
+
+  - name: Jforum Stockholm
+    url: https://www.meetup.com/jforum-stockholm/events/281092411/
+    location: Stockholm 🇸🇪
+    date: Nov 18
+    
+  - name: Javaforum Göteborg
+    url: https://www.meetup.com/javaforum-goteborg/events/281224053/
+    location: Gothenburg 🇸🇪
+    date: Nov 17
+
+  - name: Javaforum Malmø
+    url: https://www.meetup.com/javaforum-malmo/events/281222065/
+    location: Malmö 🇸🇪
+    date: Nov 16
+    
+  - name: J-Fall
+    url: 
+    location: Ede 🇳🇱
+    date: Nov 4
+
+  - name: Devoxx UK
+    url: 
+    location: London 🇬🇧
+    date: Nov 1-3
+
+  - name: EclipseCon
+    url: 
+    location: online 🌐
+    date: Oct 25-28
+
+  - name: Infoshare
+    url: 
+    location: Gdańsk 🇵🇱
+    date: Oct 14-16
+
+  - name: JCON
+    url: 
+    location: online 🌐
+    date: Oct 5-8
+
+  - name: CH Open Business Lunch
+    url: 
+    location: online 🌐
+    date: Sep 9
+
+  - name: DWX
+    url: 
+    location: online 🌐
+    date: Jun 28 - Jul 2
+
+  - name: JOnConf
+    url: 
+    location: online 🌐
+    date: Jun 24
+
+  - name: J4K
+    url: 
+    location: online 🌐
+    date: Jun 9
+
+  - name: IBM Think
+    url: 
+    location: online 🌐
+    date: May 11-12
+
+  - name: Foojay Virtual JUG Tour
+    url: 
+    location: online 🌐
+    date: Apr 15
+
+  - name: JPoint
+    url: 
+    location: online 🌐
+    date: Apr 13-16
+
+  - name: JakartaOne Livestream - Russian
+    url: 
+    location: online 🌐
+    date: Mar 31
+
+  - name: JavaLand
+    url: 
+    location: online 🌐
+    date: Mar 16-17
+
+  - name: Jfokus
+    url: 
+    location: online 🌐
+    date: Feb 9
+
+  - name: FOSDEM
+    url: 
+    location: online 🌐
+    date: Feb 6-7
+
+- year: 2020
+  conferences:
+
+  - name: 2020 Tech Summit
+    url: 
+    location: online 🌐
+    date: Dec 29
+
+  - name: Java2Days
+    url: 
+    location: online 🌐
+    date: Dec 22
+
+  - name: JakartaOne Livestream
+    url: https://jakartaone.org/2022/
+    location: online 🌐
+    date: Dec 8
+
+  - name: J-Fall
+    url: 
+    location: online 🌐
+    date: Nov 3
+
+  - name: JCON
+    url: 
+    location: online 🌐
+    date: Oct 27-29
+
+  - name: Jfokus Brown Bag Lunch
+    url: 
+    location: online 🌐
+    date: Oct 27
+
+  - name: EclipseCon
+    url: 
+    location: online 🌐
+    date: Oct 19-22
+
+  - name: J4K
+    url: 
+    location: online 🌐
+    date: Oct 13-14
+
+  - name: Jakarta Tech Talk
+    url: 
+    location: online 🌐
+    date: Sep 16
+
+  - name: Java Day Istanbul
+    url: 
+    location: online 🌐
+    date: Sep 12
+
+  - name: GIDS Australia
+    url: 
+    location: online 🌐
+    date: Sep 3
+
+  - name: Jetbrains Webinar
+    url: 
+    location: online 🌐
+    date: Aug 20
+
+  - name: IBM Think
+    url: 
+    location: online 🌐
+    date: May 4-7
+
+  - name: SouJava Meetup
+    url: 
+    location: online 🌐
+    date: Apr 20
+
+  - name: ConFoo
+    url: 
+    location: Montreal 🇨🇦
+    date: Feb 26-28
+
+  - name: Devnexus
+    url: 
+    location: Atlanta, GA 🇺🇸
+    date: Feb 19-21
+
+  - name: CodeMash
+    url: 
+    location: Sandusky, OH 🇺🇸
+    date: Jan 7-10
+
+- year: 2019
+  conferences:
+
+  - name: Java2Days
+    url: 
+    location: Sofia 🇧🇬
+    date: Dec 10-12
+
+  - name: Devoxx Morocco
+    url: 
+    location: Agadir 🇲🇦
+    date: Nov 12-14
+
+  - name: Devoxx Belgium
+    url: 
+    location: Antwerp 🇧🇪
+    date: Nov 5-8
+
+  - name: Devoxx Ukraine
+    url: 
+    location: Kiyv 🇺🇦
+    date: Nov 1-2
+
+  - name: Trondheim DC
+    url: 
+    location: Trondheim 🇳🇴
+    date: Oct 28
+
+  - name: EclipseCon Europe
+    url: 
+    location: Ludwigsburg 🇩🇪
+    date: Oct 21-24
+    

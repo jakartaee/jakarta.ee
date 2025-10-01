@@ -1,0 +1,58 @@
+{{ $guides := .Page.RegularPages }}
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-20 col-sm-offset-2">
+      <ul class="row list-unstyled margin-top-40">
+        {{ range $guides }}
+          <li class="col-sm-12 card-container padding-bottom-0 padding-top-0">
+            <div class="starter-guide-card card-panel bordered panel panel-default match-height-item-by-row">
+              <div class="starter-guide-content">
+                <div class="display-flex gap-20 align-items-center">
+                  <i class="starter-guide-card-icon fa fa-code text-secondary" aria-hidden="true"></i>
+                  <h2 class="h4 big-text text-primary">
+                    {{ .Title }}
+                  </h2>
+                </div>
+                <div class="description">
+                  <p>
+                    {{ .Description }}
+                  </p>
+                </div>
+              </div>
+              <div class="starter-guide-links">
+                <a class="btn btn-primary" href="{{ .Permalink }}">{{ i18n "pages-learn-starter-guides-read-guide" }}</a>
+              </div>
+            </div>
+          </li>
+        {{ end }}
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="cta-section row bg-tertiary margin-top-60 padding-top-60 padding-bottom-60">
+  <div class="container">
+    <div class="cta-item col-md-8">
+      <h2 class="cta-title big-text">{{ i18n "pages-learn-starter-guides-learn-title" }}</h2>
+      <p>
+        {{ i18n "pages-learn-starter-guides-learn-describe" }}
+      </p>
+      <a href="/learn/">{{ i18n "pages-learn-starter-guides-learn-read-more" }}</a>
+    </div>
+    <div class="cta-item col-md-8">
+      <h2 class="cta-title big-text">{{ i18n "pages-learn-starter-guides-find-release-title" }}</h2>
+      <p>
+        {{ i18n "pages-learn-starter-guides-find-release-describe" }}
+      </p>
+      <a href="/release/">{{ i18n "pages-learn-starter-guides-find-release-read-more" }}</a>
+    </div>
+    <div class="cta-item col-md-8">
+      <h2 class="cta-title big-text">{{ i18n "pages-learn-starter-guides-download-products-title" }}</h2>
+      <p>
+      {{ i18n "pages-learn-starter-guides-download-products-describe" }}  
+      </p>
+      <a href="/compatibility/">{{ i18n "pages-learn-starter-guides-download-products-read-more" }}</a>
+    </div>
+  </div>
+</div>

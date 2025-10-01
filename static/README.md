@@ -11,7 +11,7 @@ Jakarta EE is the future of cloud native Java. Jakarta EE open source software d
 Install dependencies, build assets and start a web server:
 
 ```bash
-yarn && yarn run production
+npm && npm run production
 hugo server
 ```
 
@@ -20,7 +20,7 @@ hugo server
 Fetch and copy pages for the Specification section:
 
 ```bash
-yarn run specifications
+npm run specifications
 ```
 
 ### Contributors list (Optional)
@@ -28,13 +28,13 @@ yarn run specifications
 Contributors list json file (_used on release page_) can be generate via:
 
 ```bash
-yarn run generate_contributor_list
+npm run generate_contributor_list
 ```
 
 P.S. Script also needs GH_TOKEN env variable to work, to run with env variable inline:
 
 ```bash
-GH_TOKEN=<gh token here> yarn run generate_contributor_list
+GH_TOKEN=<gh token here> npm run generate_contributor_list
 ```
 
 ## Contributing

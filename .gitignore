@@ -6,10 +6,12 @@
 /public/
 /content/specifications/*
 !/content/specifications/_index.md
-!/content/specifications/_index.zh.md
+!/content/specifications/_index.*.md
 /static/specifications
 /layouts/robots.txt
 /.project
 /data/eclipsefdn_projects.yaml
+/data/videos/
 .vscode/
-
+.idea/
+.DS_Store

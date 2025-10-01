@@ -2,9 +2,13 @@
     font-size: 16px;
 }
 
+.featured-text {
+  font-family: @font-family-heading;
+  font-weight: 700;
+}
+
 .big-text, .big-text-secondary {
-    font-family: @font-family-heading;
-    font-weight: 700;
+    .featured-text;
     color: @brand-primary;
     a {
         color: @brand-primary;
@@ -56,10 +60,15 @@ main h3 {
     margin-top: 0;
 }
 
-p.big-text {
-    font-size: 12px;
+.featured-text-sm {
+  .big-text;
+  font-size: 12px;
 }
 
 .word-break {
     word-spacing: 100vw;
+}
+
+.fw-500 {
+  font-weight: 500;
 }

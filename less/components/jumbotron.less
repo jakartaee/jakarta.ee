@@ -2,8 +2,33 @@
     background-position:left;
     .featured-jumbotron-default {
         min-height:400px;
-        padding-top: 250px;
-        padding-bottom: 30px;
+        padding-top: 16.4rem;
+        padding-bottom: 3rem;
+
+        h2::after,
+        .h2::after {
+            content: "";
+            display: block;
+            width: 7.5rem;
+            height: 1px;
+            margin: .8em 0;
+            background-color: @brand-secondary;
+        }
+
+        .btn {
+          min-width: unset;
+        }
+    }
+    &.header-default-bg-img {
+      background-position: 90% 0;
+
+      @media (min-width: @screen-sm-min) {
+        background-position: -230px 0;
+      }
+
+      @media (min-width: 1400px) {
+        background-position: left center;
+      }
     }
     &.header-secondary-bg-img {
         .featured-jumbotron {
@@ -33,14 +58,6 @@
         margin-bottom: 20px;
         @media (max-width: @screen-xs-max) {
             width: 250px;
-        }
-    }
-    .btn {
-        border: 1px solid #fff;
-        background-color: transparent;
-        &:hover {
-            background-color: rgba(0,0,0,0.3);
-            border-color: #e2e2e2;
         }
     }
 }

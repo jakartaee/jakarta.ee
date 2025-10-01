@@ -1,5 +1,5 @@
 ---
-title: "Jakarta EE TCK Process 1.2"
+title: "Jakarta EE TCK Process 1.4.1"
 date: "2022-02-07T00:00:00+00:00"
 aliases:
     - committees/specification/TCKProcess/
@@ -43,6 +43,27 @@ may be deemed invalid and excluded using the Challenge process.
 TCK tests must not be packaged in the `jakarta.*` namespace.  At the
 current time TCKs may be packaged in any other namespace, however, the
 namespace format of `ee.jakarta.tck.<spec-name>` is recommended.
+
+## TCK types and requirements
+
+TCKs for individual specifications can include tests of three different types of specification requirements, detailed below:
+
+- Type 1: Behavior defined by the specification that is _only_ applicable when the implementation is running outside of a platform (or profile), such as on Java SE, to test behavior defined by the specification for that mode of execution.
+- Type 2: Behavior defined by the specification that is _only_ applicable when the implementation is running in a platform (or profile).
+- Type 3: Behavior defined by the specification that is applicable _both_ when the implementation is running outside of a platform (or profile) _and_ when it is running in a platform (or profile).
+
+Not all individual specifications will have Type 1 or Type 2 requirements. The individual specification TCK should include tests of all types of requirements and must contain tests of Type 2 requirements, if they exist, and of Type 3 requirements.
+
+The tests of Type 2 or Type 3 requirements must be executed in compatible implementations of the profiles to validate the individual specification implementation functions properly in the profile implementation: platform, web profile or core profile.
+
+The individual specification TCK must provide a mechanism for running the required TCK tests (Types 1 and 3) outside the context of a platform or profile. Type 2 tests must be excluded and not run. This mechanism is to be used by standalone implementations of the specification who wish to certify their compatibility.
+
+A profile-ready mechanism must also be provided for running the required TCK tests (Types 2 and 3) in the profiles in which they are included: platform, web profile or core profile. Type 1 tests must be excluded and not run. This mechanism is to be used by platform or profile implementations who wish to certify their compatibility with the specification.
+
+The requirement to produce a profile-ready mechanism does not mean a platform or profile implementation must pass the individual specification TCK using this mechanism before the individual specification can perform a release. If problems with the tests when run using the profile-ready mechanism are found after a specification release, they can be addressed by a new release of the individual specification TCK.
+
+The requirements discussed in this section are not intended to impose additional requirements on specifications that are producing service releases of their TCKs, beyond the requirements that were imposed by the 
+Specification Committee when the applicable major or minor release of the TCK binary was ratified.
 
 ## Materials for a TCK Release {#_materials_for_a_tck_release}
 
@@ -237,7 +258,29 @@ update and release of an official distribution of the TCK including the
 new exclude list. The associated `challenge` issue MUST be closed with
 an `accepted` label to indicate it has been resolved.
 
-The specification project may approve (user) workarounds for an `accepted` TCK challenge (as alternative to excluding TCK tests).
+The specification project may approve (user) workarounds for an `accepted` TCK challenge (as an alternative to excluding TCK tests).
+
+As another alternative to excluding a challenged test, it may be possible 
+to adjust the test validation logic to "expand" the validation check. 
+E.g. if a test expects a value "A1" for a specific variable "x", but a challenge
+is raised arguing that the specification language actually allows for either
+values "A1" and "A2" (but no other values) to be valid values for "x", then
+it could be a valid course of action to modify the challenged test to allow 
+either "A1" OR "A2" for "x". 
+
+Since this line of thinking might be applied to cases that aren't quite as 
+straightforward as this example, care should be taken when using this approach.
+A particular danger is that an implementation that has already demonstrated compliance 
+before the challenge was raised might actually not pass the new, modified test.
+
+To limit the confusion and additional work such a scenario would cause, if 
+there is already at least one certified compatible implementation before the challenge,
+the new, modified TCK should be run against at least one such implementation (and ideally all of them)
+before the changes are published, released, and finalized.
+
+If such a change were released, and it was later found to cause a previously-certified implementation
+to fail the new, modified test, then excluding the test would likely be the only option, and this would
+require yet another, additional service release.
 
 
 #### Rejected Challenges and Remedy {#_rejected_challenges_and_remedy}
@@ -434,15 +477,13 @@ Handling](https://www.eclipse.org/projects/dev_process/#6_5_Grievance_Handling)
 procedure SHOULD be followed to escalate the resolution. Note that this
 is not a mechanism to attempt to handle implementation specific issues.
 
-### How Tests May be Added to a TCK {#_how_tests_may_be_added_to_a_tck}
+### How Tests May be Added or Changed in a TCK {#_how_tests_may_be_added_or_changed_in_a_tck}
 
-The only time tests may be added to a TCK are in a major or minor
-release. A service release which updates the exclude list MUST not have
-test additions or updates (see exception below for addressing newer Java SE versions).
+Tests may be added, updated, removed or excluded as the specification team sees fit in major or minor updates.
 
-### How tests may be Updated to address newer Java SE versions {#_how_tests_may_be_updated_for_new_java_se_versions}
-
-A service release may update tests to work with newer Java SE versions.
+In service releases, specification teams should only make changes that are documented in TCK challenge issues, and 
+service release notes should document which challenges have been addressed. Test updates within a service release
+should follow the guidance described under Accepted Challenges.
 
 ## Process for releasing a point revision of a TCK
 

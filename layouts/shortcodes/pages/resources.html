@@ -1,74 +1,68 @@
 <h2 class="big-text-secondary margin-bottom-40">{{ i18n "pages-resources-view-our-resources" }}</h2>
 
 <div class="row">
+
+    <div class="col-sm-8 card-container padding-bottom-0 padding-top-0">
+        <div id="branding" class="card-panel bordered panel panel-default match-height-item-by-row">
+            <img src="/images/icons/branding.svg" width="60" class="margin-bottom-15" alt="Branding">
+            <h3 class="big-text text-secondary h4">{{ i18n "pages-resources-branding-title" }}</h3>
+            <ul>
+                <li><a href="/legal/trademark_guidelines/jakarta-ee-branding-guidelines.pdf">{{ i18n "pages-resources-branding-guidelines" }}</a></li>
+                <li><a href="https://www.eclipse.org/org/artwork/#jakarta-ee">{{ i18n "pages-resources-branding-artwork" }}</a></li>
+            </ul>
+        </div>
+    </div>
+
     <div class="col-sm-8 card-container padding-bottom-0 padding-top-0">
         <div id="cases-studies" class="card-panel bordered panel panel-default match-height-item-by-row">
             <img src="/images/icons/casestudies.svg" width="60" class="margin-bottom-15" alt="Case Studies">
             <div class="newsroom-resources" data-res-wg="jakarta_ee" data-res-title='{{ i18n "pages-resources-case-studies-title" }}' data-res-type="case_study" data-res-template="list" data-res-limit="3"></div>
         </div>
     </div>
+
     <div class="col-sm-8 card-container padding-bottom-0 padding-top-0">
         <div id="datasheets" class="card-panel bordered panel panel-default match-height-item-by-row">
             <img src="/images/icons/datasheets.svg" width="60" class="margin-bottom-15" alt="Datasheets">
             <h3 class="big-text text-secondary h4">{{ i18n "pages-resources-datasheets-title" }}</h3>
             <ul>
+                <li>
+                  <a href="datasheets/jakarta-ee-10-tools-vendor">
+                    {{ i18n "pages-resources-datasheets-jakarta-ee-10-tools-vendor-html" }}
+                  </a>
+                </li>
+                <li>
+                  <a href="documents/datasheets/jakarta-ee-10-tools-vendor-datasheet.pdf">
+                    {{ i18n "pages-resources-datasheets-jakarta-ee-10-tools-vendor-pdf" }}
+                  </a>
+                </li>
                 <li><a href="JakartaEE-Datasheet-July172020_final.pdf">{{ i18n "pages-resources-datasheets-text" }}</a></li>
             </ul>
         </div>
     </div>
-    <div class="col-sm-8 card-container padding-bottom-0 padding-top-0">
-        <div id="documentation" class="card-panel bordered panel panel-default match-height-item-by-row">
-            <img src="/images/icons/documentation.svg" width="60" class="margin-bottom-15" alt="Documentation">
-            <h3 class="big-text big-text text-secondary h4">{{ i18n "pages-resources-documentation-title" }}</h3>
-            <ul>
-                <li><a href="https://eclipse-ee4j.github.io/jakartaee-tutorial/">{{ i18n "pages-resources-documentation-tutorial" }}</a></li>
-                <li><a href="https://eclipse-ee4j.github.io/jakartaee-firstcup/">{{ i18n "pages-resources-documentation-first-cup" }}</a></li>
-                <li><a href="https://github.com/eclipse-ee4j/cargotracker">{{ i18n "pages-resources-documentation-cargocracker" }}</a></li>
-            </ul>
-        </div>
-    </div>
-</div>
 
-<div class="row">
+    <div class="clearfix"></div>
+
     <div class="col-sm-8 card-container padding-bottom-0 padding-top-0">
         <div id="ebooks" class="card-panel bordered panel panel-default match-height-item-by-row">
             <img src="/images/icons/ebooks.svg" width="60" class="margin-bottom-15" alt="eBooks">
             <div class="newsroom-resources" data-res-wg="jakarta_ee" data-res-title='{{ i18n "pages-resources-ebooks-title" }}' data-res-type="ebook" data-res-template="list" data-res-limit="3"></div>
         </div>
     </div>
+
     <div class="col-sm-8 card-container padding-bottom-0 padding-top-0">
-        <div id="surveys" class="card-panel bordered panel panel-default match-height-item-by-row">
+        <div id="infographics" class="card-panel bordered panel panel-default match-height-item-by-row">
             <img src="/images/icons/infographics.svg" width="60" class="margin-bottom-15" alt="Infographics">
             <h3 class="big-text text-secondary h4">{{ i18n "pages-resources-infographics-title" }}</h3>
             <ul>
-                <li><a href="/documents/insights/2021-jakarta-ee-survey-infographic.pdf">{{ i18n "pages-resources-infographics-developer-survey-findings-2021" }}</a></li>
-                <li><a href="https://f.hubspotusercontent30.net/hubfs/4753786/JakartaEE-Infographic.pdf?utm_campaign=2021%20Jakarta%20EE%20Developer%20Survey&utm_source=resources">{{ i18n "pages-resources-infographics-developer-survey-findings-2020" }}</a></li>
-                <li><a href="/documents/insights/2018-jakarta-ee-survey-infographic.pdf">{{ i18n "pages-resources-infographics-developer-survey-findings-2018" }}</a></li>
+                <li><a href="/documents/insights/2023-jakarta-ee-survey-infographic.pdf">{{ i18n "pages-resources-infographics-developer-survey-findings" (dict "year" 2023) }}</a></li>
+                <li><a href="/documents/insights/2022-jakarta-ee-survey-infographic.pdf">{{ i18n "pages-resources-infographics-developer-survey-findings" (dict "year" 2022) }}</a></li>
+                <li><a href="/documents/insights/2021-jakarta-ee-survey-infographic.pdf">{{ i18n "pages-resources-infographics-developer-survey-findings" (dict "year" 2021) }}</a></li>
+                <li><a href="/documents/insights/2020-jakarta-ee-survey-infographic.pdf">{{ i18n "pages-resources-infographics-developer-survey-findings" (dict "year" 2020) }}</a></li>
+                <li><a href="/documents/insights/2018-jakarta-ee-survey-infographic.pdf">{{ i18n "pages-resources-infographics-developer-survey-findings" (dict "year" 2018) }}</a></li>
             </ul>
         </div>
     </div>
-    <div class="col-sm-8 card-container padding-bottom-0 padding-top-0">
-        <div id="starter_jakartaee" class="card-panel bordered panel panel-default match-height-item-by-row">
-            <img src="/images/icons/specification.svg" width="60" class="margin-bottom-15" alt="Starter for Jakarta EE">
-            <h3 class="big-text text-secondary h4">{{ i18n "pages-resources-starter-title" }}</h3>
-            <ul>
-                <li><a href="https://start.jakarta.ee/">{{ i18n "pages-resources-starter-maven-project" }}</a></li>
-            </ul>
-        </div>
-    </div>
-</div>
 
-<div class="row">
-
-    <div class="col-sm-8 card-container padding-bottom-0 padding-top-0">
-        <div id="livestream" class="card-panel bordered panel panel-default match-height-item-by-row">
-            <img src="/images/icons/livestream.svg" width="60" class="margin-bottom-15" alt="JakartaOne Livestream">
-            <h3 class="big-text text-secondary h4">{{ i18n "pages-resources-livestream-title" }}</h3>
-            <ul>
-                <li><a href="https://jakartaone.org/">{{ i18n "pages-resources-livestream-events" }}</a></li>
-            </ul>
-        </div>
-    </div>
     <div id="presentations" class="col-sm-8 card-container padding-bottom-0 padding-top-0">
         <div class="card-panel bordered panel panel-default match-height-item-by-row">
             <img src="/images/icons/presentations.svg" width="60" class="margin-bottom-15" alt="Presentations">
@@ -77,9 +71,13 @@
                 <li><a href="https://docs.google.com/presentation/d/1LBjjJg64j0HjmFu6m3EApN--mkavemyPFMUobIbGZds/edit#slide=id.g10a8950dfd6_0_139">{{ i18n "pages-resources-presentations-presentation" }}</a></li>
                 <li><a href="https://docs.google.com/presentation/d/1fqsJOvWmwbtPeTu3pcEJAfsOb1pLdnN-YPsBpD7fouo/edit#slide=id.g10a8950dfd6_0_139">{{ i18n "pages-resources-presentations-presentation-template" }}</a></li>
                 <li><a href="/resources/introducing-the-efsp-ece-2018.pdf">{{ i18n "pages-resources-presentations-efsp" }}</a></li>
+                <li><a href="https://drive.google.com/drive/folders/1YBYS82XTjWUUlHnRfbHpV2duSs_IrFxH?usp=sharing">{{ i18n "pages-resources-presentations-community" }}</a></li>
             </ul>
         </div>
     </div>
+
+    <div class="clearfix"></div>
+
     <div class="col-sm-8 card-container padding-bottom-0 padding-top-0">
         <div id="social-cards" class="card-panel bordered panel panel-default match-height-item-by-row">
             <img src="/images/icons/socialcards.svg" width="60" class="margin-bottom-15" alt="Social Cards">
@@ -90,19 +88,19 @@
             </ul>
         </div>
     </div>
-</div>
 
-<div class="row">
-    <div class="col-sm-8 card-container padding-bottom-0 padding-top-0 col-sm-offset-4">
+    <div class="col-sm-8 card-container padding-bottom-0 padding-top-0">
         <div id="surveys" class="card-panel bordered panel panel-default match-height-item-by-row">
             <img src="/images/icons/surveys.svg" width="60" class="margin-bottom-15" alt="Surveys">
             <div class="newsroom-resources" data-res-wg="jakarta_ee" data-res-title='{{ i18n "pages-resources-surveys-title" }}' data-res-type="survey_report" data-res-template="list" data-res-limit="3"></div>
         </div>
     </div>
+
     <div class="col-sm-8 card-container padding-bottom-0 padding-top-0">
         <div id="white-papers" class="card-panel bordered panel panel-default match-height-item-by-row">
             <img src="/images/icons/whitepapers.svg" width="60" class="margin-bottom-15" alt="White Papers">
             <div class="newsroom-resources" data-res-wg="jakarta_ee" data-res-title='{{ i18n "pages-resources-white-papers-title" }}' data-res-type="white_paper" data-res-template="list" data-res-limit="3"></div>
         </div>
     </div>
+
 </div>

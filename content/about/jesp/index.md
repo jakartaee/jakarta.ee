@@ -1,10 +1,11 @@
 ---
 title: "Jakarta EE Specification Process"
 date: 2022-08-31T13:00:00-04:00
+headline: Jakarta EE Specification Process
+tagline: Version 1.4. Effective August 31/2022
 hide_sidebar: true
+hide_page_title: true
 ---
-
-version 1.4. Effective August 31/2022
 
 The Jakarta EE Specification Process (JESP) is concerned with the Specification Process as it applies to Specification Projects operating under the purview of the Jakarta EE Working Group. 
 
@@ -19,8 +20,8 @@ The Jakarta EE Specification Committee hereby adopts the [Eclipse Foundation Spe
   e. Service Release Review: 14 calendar days; and
   f. JESP Update: 7 calendar days.
 3. Each 7-day ballot will end after 7 days. Each 14-day ballot will conclude when either of the following occurs:
-  a. A minimum of 7 days have elapsed and all eligible members have voted
-  b. The 14 day ballot period has concluded
+  a. A minimum of 7 days have elapsed and all eligible members have voted;
+  b. The 14 day ballot period has concluded.
 
 4. A ballot will be declared invalid and concluded immediately in the event that the Specifiation Team withdraws from the corresponding review.
 5. Specification Projects must engage in at least one Progress or Release Review  per year while in active development.

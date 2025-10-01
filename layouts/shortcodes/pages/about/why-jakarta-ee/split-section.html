@@ -1,0 +1,42 @@
+{{ $class := .Get "class" }}
+{{ $id := .Get "id" }}
+{{ $heading := .Get "heading" }}
+{{ $subheading := .Get "subheading" }}
+{{ $icon := .Get "icon" }}
+{{ $image := .Get "image" }}
+{{ $image_wrapper_class := .Get "image_wrapper_class" }}
+{{ $reverse := .Get "reverse" | default "false" }}
+
+{{ $reverse_class := "" }}
+{{ $content_section_class := "" }}
+
+{{ if eq $reverse "false" }}
+    {{ $image_wrapper_class = printf "col-md-push-12 %s" $image_wrapper_class }}
+    {{ $content_section_class = "col-md-pull-12" }}
+{{ else }}
+    {{ $reverse_class = "split-section-reverse"}}
+{{ end }}
+
+<section id="{{ $id }}" class="split-section row {{ $reverse_class }} {{ $class }}">
+    <div class="split-section-inner-container equal-height">
+        <div class="split-section-image-wrapper col-md-12 padding-0 {{ $image_wrapper_class }}">
+            <img class="split-section-image img img-responsive" src="{{ $image }}" alt="" loading="lazy" />        
+        </div>
+        <div class="split-section-content-container col-md-12 {{ $content_section_class }}">
+            <div class="split-section-content">
+                <div class="split-section-title-container">
+                    <div class="split-section-title-icon-wrapper">
+                        <img class="split-section-title-icon" src="{{ $icon }}" alt="" />
+                    </div>
+                    <h2 class="split-section-title big-text">
+                        <span class="text-primary">{{ $heading | upper }}</span>
+                        <span class="text-secondary br">{{ $subheading | upper }}</span>
+                    </h2>
+                </div>
+                <div class="split-section-content-body">
+{{ .Inner | markdownify }}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

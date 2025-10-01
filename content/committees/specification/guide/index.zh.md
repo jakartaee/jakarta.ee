@@ -2,7 +2,9 @@
 title: "Jakarta EE 规范过程指引"
 date: "2021-03-04T00:00:00+00:00"
 layout: "single"
+headline: Jakarta EE 规范过程指引
 hide_sidebar: true
+hide_page_title: true
 aliases:
     - committees/specification/guide/
 ---

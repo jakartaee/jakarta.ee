@@ -37,7 +37,7 @@ The Jakarta EE community welcomes contributions and participation by all interes
 
 Companies that value enterprise Java and would like to help shape its future can join the Jakarta EE Working Group. Membership in the working group allows enterprises and other organizations to support the sustainability of the community, participate in marketing programs, and engage directly with the community. Learn more about the benefits and advantages of membership here: https://jakarta.ee/membership/.
 
-For those organizations interested in learning more about how Jakarta EE can benefit them, the Jakarta EE WG has published a white paper on the features and capabilities of Jakarta EE. These capabilities can help companies accelerate time-to-market for commercial offerings, increase the efficiency of software development, and transition to a cloud native future. Download it here: https://outreach.jakartaee.org/white-paper-java-applications.
+For those organizations interested in learning more about how Jakarta EE can benefit them, the Jakarta EE WG has published a white paper on the features and capabilities of Jakarta EE. These capabilities can help companies accelerate time-to-market for commercial offerings, increase the efficiency of software development, and transition to a cloud native future. Download it here: https://outreach.eclipse.foundation/white-paper-java-applications.
 
 ## Quotes from Jakarta EE Working Group Members
 

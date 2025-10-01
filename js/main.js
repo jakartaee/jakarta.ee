@@ -13,9 +13,12 @@
 
 import 'eclipsefdn-solstice-assets'
 import List from 'list.js';
+import './video-modal';
+import eclipsefdnSpecificationBadges from './specification-badges';
 
-document.addEventListener("DOMContentLoaded", function(event) {
+document.addEventListener("DOMContentLoaded", function() {
     (function($, document) {
+      eclipsefdnSpecificationBadges.renderAll();
 
       const matchHeightDropdownMenuItems = () => {
         $('.match-height-dropdown-menu-item').matchHeight({
@@ -55,14 +58,43 @@ document.addEventListener("DOMContentLoaded", function(event) {
       });
 
       const solsticeSliderHome = () => {
-        var owlSolsticeFeaturedStorySlider = $('.solstice-featured-story-slider');
-        owlSolsticeFeaturedStorySlider.owlCarousel({
-            items:1,
-            autoplay:true,
-            autoplayTimeout:6000,
-            autoplayHoverPause:true,
-            autoplaySpeed: 2000,
-            loop:true,
+        const owlSolsticeFeaturedStorySlider = $('.solstice-featured-story-slider');
+        
+        const initializeCarousel = () => {
+          owlSolsticeFeaturedStorySlider.owlCarousel({
+              items:1,
+              autoplay:true,
+              autoplayTimeout:6000,
+              autoplayHoverPause:true,
+              autoplaySpeed: 2000,
+              loop:true,
+          });
+        };
+
+        initializeCarousel();
+
+        // Setup a MutationObserver to observe whether the carousel has been
+        // populated. If populated, we want to initialize the owl carousel and
+        // stop observing.
+        // This fixes a problem where the owl carousel initializes before the
+        // data has been fetched - leading to UI issues.
+        const observer = new MutationObserver(() => {
+          const sliderElement = owlSolsticeFeaturedStorySlider.get(0);
+          const stageElement = sliderElement.querySelector('.owl-stage');
+          const isPopulated = stageElement?.length > 0;
+
+          // Stop observing if the carousel element has more than one child. We
+          // know that the data was fetched and populated if this is the case.
+          if (isPopulated) {
+            observer.disconnect();
+            return;
+          }
+
+          initializeCarousel();
+        });
+
+        observer.observe(owlSolsticeFeaturedStorySlider.get(0), {
+          childList: true,
         });
       }
 

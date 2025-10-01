@@ -9,37 +9,44 @@
 
 {{ define "main" }}
   {{ if ne .Page.Params.hide_page_title true }}
-    <h1>
+    <h1 class="big-text">
       {{ .Title }}
       {{ if .Params.project_id }}
-        <span class="badge">
-          <a href="https://projects.eclipse.org/projects/{{ .Params.project_id }}"><i class="fa fa-archive" aria-hidden="true"></i> Project</a>
+        <span class="eclipsefdn-specification-badges" data-project-id="{{ .Params.project_id }}" data-video="{{ .Params.video_guide }}">
         </span>
-        {{ range first 1 (where $.Site.Data.eclipsefdn_projects "project_id" .Params.project_id) }}
-        	{{- with .website_url }}
-	        <span class="badge">
-	          <a href="{{ . }}" target="_blank"><i class="fa fa-globe" aria-hidden="true"></i> {{ i18n "layouts-specifications-list-website" }}</a>
-	        </span>
-	        {{ end }}
-        {{ end }}
       {{ end }}
     </h1>
   {{ end }}
-  {{ .Content }}
+  <p>{{ .Params.summary }}</p>
   {{ if eq .Page.Parent.Title "Specifications" }}
-    <ul>
-      {{ range (.Page.Sections.ByParam "title").ByParam "weight" }}
+    <ul class="margin-bottom-60">
+      {{/*
+        Iterate over the section's pages, extract the version from the title
+        and group them by version.
+      */}}
+
+      {{ $sorted_specs := slice }}
+      {{ range .Page.Sections }}
+        {{ $version := index (findRE "[0-9]+([.][0-9]+)?" .) 0 }}
+        {{ $sorted_specs = $sorted_specs | append (dict "version" $version "page" .) }}
+      {{end }}
+
+      {{/* Sort the specifications by version, descending. */}}
+      {{ $sorted_specs = sort $sorted_specs "version" "desc" }}
+
+      {{ range $sorted_specs }}
         <li>
-          <h2><a href="{{- with .Params.redirect_url | default .RelPermalink }} {{.}} {{- end }}">{{ .Title }}</a></h2>
-          {{ if eq .Params.summary_sixty_char nil  }}
-            <p>{{ .Params.summary | truncate 57 }}</p>
+          <h2><a href="{{- with .page.Params.redirect_url | default .page.RelPermalink }} {{.}} {{- end }}">{{ .page.Title }}</a></h2>
+          {{ if eq .page.Params.summary_sixty_char nil  }}
+            <p>{{ .page.Params.summary | truncate 57 }}</p>
           {{ else }}
-            <p>{{ .Params.summary_sixty_char }}</p>
+            <p>{{ .page.Params.summary_sixty_char }}</p>
           {{ end }}
         </li>
       {{ end }}
     </ul>
   {{ end }}
+  {{ .Content }}
   {{ if eq .Page.Parent.Title "Home" }}
     <p>{{ i18n "layouts-specifications-list-click-to-access-text" }}</p>
 
@@ -50,7 +57,6 @@
       <div class="row">
       {{ range (.Page.Sections.ByParam "title").ByParam "weight" }}
           {{ if or (eq .Title "Jakarta EE Platform") (eq .Title "Jakarta EE Web Profile") (eq .Title "Jakarta EE Core Profile") }}
-
               <div class="col-sm-8 card-container">
                   <div class="card-panel bordered panel panel-default">
 
@@ -59,14 +65,12 @@
                             <a href="{{- with .Params.redirect_url | default .RelPermalink }}{{.}}{{- end }}">{{ .Title }}</a>
                         </h3>
                         {{ if .Params.project_id }}
-                            <ul class="list-inline">
-                                <li><a class="btn card-badge btn-xs" href="https://projects.eclipse.org/projects/{{ .Params.project_id }}"><i class="fa fa-archive" aria-hidden="true"></i> {{ i18n "layouts-specifications-list-project" }}</a></li>
-                                {{ range first 1 (where $.Site.Data.eclipsefdn_projects "project_id" .Params.project_id) }}
-                                    {{- with .website_url }}
-                                        <li><a class="btn card-badge btn-xs" href="{{ . }}" target="_blank"><i class="fa fa-globe" aria-hidden="true"></i> {{ i18n "layouts-specifications-list-website" }}</a></li>
-                                    {{ end }}
-                                {{ end }}
-                            </ul>
+                          <div 
+                            class="eclipsefdn-specification-badges" 
+                            data-project-id="{{ .Params.project_id }}" 
+                            data-video="https://www.youtube.com/watch?v=wK5Uis9QnFU"
+                          >
+                          </div>
                         {{ end }}
                         {{ if eq .Params.summary_sixty_char nil  }}
                             <p>{{ .Params.summary | truncate 100 }}</p>
@@ -108,14 +112,12 @@
                       <a href="{{- with .Params.redirect_url | default .RelPermalink }}{{.}}{{- end }}">{{ .Title }}</a>
                     </h3>
                     {{ if .Params.project_id }}
-                        <ul class="list-inline">
-                            <li><a class="btn card-badge btn-xs" href="https://projects.eclipse.org/projects/{{ .Params.project_id }}"><i class="fa fa-archive" aria-hidden="true"></i> Project</a></li>
-                            {{ range first 1 (where $.Site.Data.eclipsefdn_projects "project_id" .Params.project_id) }}
-                                {{- with .website_url }}
-                                    <li><a class="btn card-badge btn-xs" href="{{ . }}" target="_blank"><i class="fa fa-globe" aria-hidden="true"></i> {{ i18n "layouts-specifications-list-website" }}</a></li>
-                                {{ end }}
-                            {{ end }}
-                        </ul>
+                      <div 
+                        class="eclipsefdn-specification-badges" 
+                        data-project-id="{{ .Params.project_id }}" 
+                        data-video="{{ .Params.video_guide }}"
+                      >
+                      </div>
                     {{ end }}
                     {{ if eq .Params.summary_sixty_char nil  }}
                         <p>{{ .Params.summary | truncate 57 }}</p>
@@ -149,7 +151,7 @@
           {{ $project := . }}
           {{ with $section.File.Dir }}
             {{ if eq . $project.directory }}
-             <h3>{{ i18n "layouts-specifications-list-jug-spec-adopters-title" }}</h3>
+             <h2>{{ i18n "layouts-specifications-list-jug-spec-adopters-title" }}</h2>
               <p>{{ i18n "layouts-specifications-list-jug-spec-adopters-text" | safeHTML }}</p>
                 <ul class="list-inline">
                 {{ range sort $project.adopters  "name" "asc"}}

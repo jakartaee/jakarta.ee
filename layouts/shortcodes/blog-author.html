@@ -1,0 +1,23 @@
+<!-- 
+  Copyright (c) 2023 Eclipse Foundation, Inc.
+  This program and the accompanying materials are made available under the
+  terms of the Eclipse Public License v. 2.0 which is available at
+  http://www.eclipse.org/legal/epl-2.0.
+  Contributors:
+    Zachary Sabourin <zachary.sabourin@eclipse-foundation.org>
+  SPDX-License-Identifier: EPL-2.0
+-->
+
+{{ $src := .Get "src" }}
+{{ $date := .Page.Date.Format "January 2, 2006" }}
+{{ $author := .Get "author" }}
+
+<div class="margin-y-30">
+  <div class="vcenter margin-right-10">
+    <img src="{{ $src }}" alt="{{ $author }}" height="150" width="150" class=".img-responsive">
+  </div>
+  <div class="vcenter">
+    <p class="h3">Published on {{ $date }}</P>
+    <p class="h4">by {{ $author }}</p>
+  </div>
+</div>

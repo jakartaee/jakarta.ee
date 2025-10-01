@@ -17,21 +17,23 @@
     "watch": "NODE_ENV=development webpack --watch --progress --config=node_modules/laravel-mix/setup/webpack.config.js",
     "hot": "NODE_ENV=development webpack-dev-server --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
     "production": "NODE_ENV=production webpack --progress --config=node_modules/laravel-mix/setup/webpack.config.js",
-    "postinstall": "NODE_ENV=production npm run fetch_project",
+    "postinstall": "NODE_ENV=production npm run fetch_videos",
     "specifications": "bash build.sh",
-    "build_netlify": "NODE_ENV=production npm run production && npm run specifications && npm run fetch_project",
+    "build_netlify": "NODE_ENV=production npm run production && npm run specifications",
     "fetch_project": "NODE_ENV=production node node_modules/eclipsefdn-hugo-solstice-theme/bin/projects/index.js -l data",
+    "fetch_videos": "bash fetch_videos.sh",
     "generate_contributor_list": "./js/contributor-cards/generate-contributor-lists.sh",
     "disallow_robots_txt": "echo \"User-agent: *\r\nDisallow: /\" > layouts/robots.txt",
     "optimize_news_images": "bash ./optimize_images.sh content/news"
   },
   "dependencies": {
-    "eclipsefdn-hugo-solstice-theme": "0.0.156",
-    "lodash-es": "4.17.15",
-    "list.js": "^1.2.0"
+    "eclipsefdn-hugo-solstice-theme": "0.1.19",
+    "list.js": "^1.2.0",
+    "lodash-es": "^4.17.21"
   },
   "devDependencies": {
     "vue-template-compiler": "2.6.12"
   },
-  "browserslist": "last 5 version, > 0.2%, not dead, IE 11"
+  "browserslist": "last 5 version, > 0.2%, not dead, IE 11",
+  "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"
 }

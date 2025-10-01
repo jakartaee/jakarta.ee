@@ -5,8 +5,10 @@ description: "了解 Jakarta EE 及其对于开源、云原生企业级Java未�
 date: 2018-04-07T16:09:45-04:00
 type: "faq"
 layout: "section"
+headline: "Jakarta EE: FAQ"
+hide_sidebar: true
+hide_page_title: true
 ---
+  
 
-Last Updated: December 1, 2020
-
-{{< faq >}}
+{{< pages/faq >}}

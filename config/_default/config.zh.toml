@@ -1,0 +1,6 @@
+[params]
+    description = "Jakarta® Enterprise Edition (EE) 是云原生的未来. Jakarta® EE 开源软件驱动云原生创新, 让企业应用更加现代化，并同时保护Java EE的现有投资."
+    subtitle = "云原生Java的新家园"
+    keywords = ["Jakarta EE 软件", "Java EE", "cloud", "云", "云原生", "microservices", "微服务", "enterprise", "企业应用", "open source", "开源", "innovation"]
+    call_for_action_text = "下载"
+    call_for_action_url = "/zh/compatibility/download/"

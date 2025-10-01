@@ -3,7 +3,7 @@ releases:
 
 - name: Jakarta Persistence 3.0
   version: 3
-  schemas: 
+  schemas:
 
     - schema: orm_3_0.xsd
       namespace: persistence/orm
@@ -22,6 +22,20 @@ releases:
     - schema: orm_3_1.xsd
       namespace: persistence/orm
       description: XML Schema for for the persistence object/relational mapping file
+      status: Final
+
+- name: Jakarta Persistence 3.2
+  version: 3.2
+  schemas:
+
+    - schema: orm_3_2.xsd
+      namespace: persistence/orm
+      description: XML Schema for for the persistence object/relational mapping file
+      status: Final
+
+    - schema: persistence_3_2.xsd
+      namespace: persistence
+      description: XML Schema for the persistence configuration file
       status: Final
 
 # Template: Example for creating new schema entry

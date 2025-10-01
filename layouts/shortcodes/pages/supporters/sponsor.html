@@ -1,0 +1,118 @@
+{{/*
+  Copyright (c) 2024 Eclipse Foundation, Inc.
+  This program and the accompanying materials are made available under the
+  terms of the Eclipse Public License v. 2.0 which is available at
+  http://www.eclipse.org/legal/epl-2.0.
+
+  SPDX-License-Identifier: EPL-2.0
+*/}}
+
+<section class="row padding-y-60 text-center">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-18 col-sm-offset-4">
+			{{ i18n "pages-supporters-sponsor-header-description" | safeHTML  }}
+        <hr class="subsection-divider subsection-divider-darker margin-y-60">
+        <p class="section-featured-text text-secondary font-italic big-text margin-bottom-40">
+          {{ i18n "pages-supporters-sponsor-by-joining-header-title" }}
+        </p>
+        <div class="row">
+          <div class="col-sm-8 margin-bottom-30">
+            <div class="featured-section-cta-item match-height-item-by-row">
+              <div class="featured-section-cta-item-img bg-primary">
+                <img src="/supporters/sponsor/images/icons/support.svg" alt="">
+              </div>
+              {{ i18n "pages-supporters-sponsor-by-joining-support" | safeHTML  }}
+            </div>
+          </div>
+          <div class="col-sm-8 margin-bottom-30">
+            <div class="featured-section-cta-item match-height-item-by-row">
+              <div class="featured-section-cta-item-img">
+                <img class="contribution-icon" src="/supporters/sponsor/images/icons/contribution.svg" alt="">
+              </div>
+				{{ i18n "pages-supporters-sponsor-by-joining-contribution" | safeHTML  }}
+            </div>
+          </div>
+          <div class="col-sm-8 margin-bottom-30">
+            <div class="featured-section-cta-item match-height-item-by-row">
+              <div class="featured-section-cta-item-img">
+                <img src="/supporters/sponsor/images/icons/participation.svg" alt="">
+              </div>
+              {{ i18n "pages-supporters-sponsor-by-joining-participation" | safeHTML  }}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sponsor-section featured-section row dark padding-y-60">
+  <div class="container">
+    <div class="wide-image-split margin-bottom-60">
+      <img src="/supporters/sponsor/images/jakarta-ee-sponsor-logo.svg" alt="Jakarta EE Sponsor logo">
+      <div class="wide-image-split-divider"></div>
+      <p>
+        {{ i18n "pages-supporters-sponsor-initiatives-description" }}
+      </p>
+    </div>
+    <div class="row">
+      <div class="col-xs-24 text-center">
+        <h2 class="big-text text-secondary font-italic margin-bottom-40">{{ i18n "pages-supporters-sponsor-perks" }}</h2>
+      </div>
+      <div class="col-xs-12 col-md-6">
+        <div class="icon-description">
+          <img src="/supporters/sponsor/images/icons/ticket.svg" alt="">
+          <p>
+            <a class="link-unstyled" href="https://www.opencode-x.org/event/778b82cc-6834-48a4-a58e-f883c5a7b8c9/summary">
+              {{ i18n "pages-supporters-sponsor-perks-free-ocx" | safeHTML  }}
+              <i class="fa fa-link gray" aria-hidden="true"></i>
+            </a>
+          </p>
+        </div>
+      </div>
+      <div class="col-xs-12 col-md-6">
+        <div class="icon-description">
+          <img src="/supporters/sponsor/images/icons/megaphone.svg" alt="">
+          <p>
+            {{ i18n "pages-supporters-sponsor-perks-special-mention" }}
+        </div>
+      </div>
+      <div class="col-xs-12 col-md-6">
+        <div class="icon-description">
+          <img src="/supporters/sponsor/images/icons/jakarta-ee.svg" alt="">
+          <p>
+             {{ i18n "pages-supporters-sponsor-perks-use-of-logo" }}
+          </p>
+        </div>
+      </div>
+      <div class="col-xs-12 col-md-6">
+        <div class="icon-description">
+          <img class="medal-icon" src="/supporters/sponsor/images/icons/medal.svg" alt="">
+          <p>
+            {{ i18n "pages-supporters-sponsor-perks-display-logo" }}
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="row padding-y-60 text-center">
+  <div class="container">
+    <div class="flex-center gap-30">
+      <a class="btn btn-secondary btn-lg" href="https://www.eclipse.org/org/workinggroups/sponsorship/working-group-sponsorship-agreement.pdf">
+        {{ i18n "pages-supporters-sponsor-become-a-sponsor" }}
+      </a>
+      <a class="btn btn-primary btn-lg" href="/membership/join-us/">
+        {{ i18n "pages-supporters-sponsor-contact-us" }}
+      </a>
+    </div>
+    <h2 class="big-text text-secondary uppercase margin-top-60 margin-bottom-40">
+      {{ i18n "pages-supporters-sponsor-thank-you" }}
+    </h2>
+    <p class="featured-text text-primary">
+      {{ i18n "pages-supporters-sponsor-usage-description" }}
+    </p>
+  </div>
+</section>

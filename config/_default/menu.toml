@@ -1,0 +1,328 @@
+
+[[main]]
+  name = "Learn"
+  url = "/learn/"
+  weight = 1
+
+[[main]]
+  name = "Specifications"
+  url = "/specifications/"
+  weight = 2
+
+[[main]]
+  name = "Compatible Products"
+  url = "/compatibility/"
+  weight = 3
+
+[[main]]
+  name = "About"
+  url = "/about/"
+  weight = 4
+
+[[main]]
+  name = "Community"
+  url = "/community"
+  weight = 5
+
+[[main]]
+  name = "Join"
+  url = "/Membership/"
+  weight = 6
+
+# About sub-menu
+[[main]]
+    name = "Jakarta EE"
+    url = "/"
+    weight = 1
+    parent = "About"
+
+[[main]]
+    name = "Jakarta EE Working Group"
+    url = "/"
+    weight = 2
+    parent = "About"
+
+[[main]]
+    name = "News"
+    url = "/news/"
+    parent = "About"
+    weight = 5
+
+[[main]]
+    name = "News"
+    url = "/news/"
+    parent = "About"
+    weight = 6
+
+# Jakarta EE sub-menu
+[[main]]
+    name = "About Jakarta EE"
+    url = "/about/jakarta-ee"
+    parent = "Jakarta EE"
+    weight = 1
+
+[[main]]
+	name = "Why Jakarta EE"
+	url = "/about/why-jakarta-ee"
+	parent = "Jakarta EE"
+	weight = 2
+
+[[main]]
+    name = "Frequently Asked Questions"
+    url = "/about/faq/"
+    parent = "Jakarta EE"
+    weight = 3
+
+[[main]]
+    name = "Releases"
+    url = "/release/"
+    parent = "Jakarta EE"
+    weight = 4
+
+# Jakarta EE Group sub-menu
+[[main]]
+    name = "About Working Group"
+    url = "/about/working-group"
+    weight = 1
+    parent = "Jakarta EE Working Group"
+
+[[main]]
+    name = "Charter"
+    url = "https://eclipse.org/org/workinggroups/jakarta_ee_charter.php"
+    weight = 2
+    parent = "Jakarta EE Working Group"
+
+[[main]]
+    name = "Trademark Guidelines"
+    url = "/legal/trademark_guidelines/"
+    weight = 3
+    parent = "Jakarta EE Working Group"
+
+[[main]]
+    name = "Technical Direction"
+    url = "https://www.eclipse.org/ee4j/direction.php"
+    weight = 4
+    parent = "Jakarta EE Working Group"
+
+[[main]]
+    name = "Committees"
+    url = "/committees"
+    parent = "Jakarta EE Working Group"
+    weight = 5
+
+[[main]]
+    name = "Committees Meeting Minutes"
+    url = "/meeting_minutes/"
+    parent = "Jakarta EE Working Group"
+    weight = 6
+
+# Resource sub-menu
+# [[main]]
+# 	name = "Overview"
+# 	url = "/resources"
+# 	parent = "Resources"
+# 	weight = 1
+# 
+# [[main]]
+# 	name = "Branding"
+# 	url = "/resources#branding"
+# 	parent = "Resources"
+# 	weight = 2
+# 
+# [[main]]
+#     name = "Datasheets"
+#     url = "/resources#datasheets"
+#     parent = "Resources"
+#     weight = 3
+# 
+# [[main]]
+#     name = "Presentations"
+#     url = "/resources#presentations"
+#     parent = "Resources"
+#     weight = 4
+# 
+# [[main]]
+#     name = "Surveys"
+#     url = "/resources#surveys"
+#     parent = "Resources"
+#     weight = 5
+# 
+# [[main]]
+#     name = "eBooks"
+#     url = "/resources/#ebooks"
+#     parent = "Resources"
+#     weight = 6
+# 
+# [[main]]
+#     name = "White Papers"
+#     url = "/resources/#white-papers"
+#     parent = "Resources"
+#     weight = 7
+# 
+# [[main]]
+#     name = "Case Studies"
+#     url = "/resources/#cases-studies"
+#     parent = "Resources"
+#     weight = 8
+ 
+# specifications
+[[main]]
+    name = "Browse Specifications"
+    url = "/specifications/"
+    weight = 1
+    parent = "Specifications"
+
+[[main]]
+    name = "Specification Process"
+    url = "/about/jesp/"
+    weight = 2
+    parent = "Specifications"
+
+[[main]]
+    name = "JESP guide"
+    url = "/committees/specification/guide/"
+    parent = "Specifications"
+    weight = 3
+
+[[main]]
+    name = "Specification Projects"
+    url = "/projects/"
+    weight = 4
+    parent = "Specifications"
+
+[[main]]
+    name = "Releases"
+    url = "/release/"
+    weight = 5
+    parent = "Specifications"
+
+# Compatible Products
+[[main]]
+    name = "Jakarta EE Compatible Products"
+    url = "/compatibility/"
+    parent = "Compatible Products"
+    weight = 1
+
+[[main]]
+    name = "Get Listed"
+    url = "/compatibility/get-listed/"
+    parent = "Compatible Products"
+    weight = 2
+
+# Community sub-menu
+[[main]]
+    name = "Overview"
+    url = "/community/"
+    parent = "Community"
+    weight = 1
+    identifier = "community"
+
+[[main]]
+    name = "Resources"
+    url = "/resources/"
+    weight = 2
+    parent = "Community"
+
+[[main]]
+    name = "Blog"
+    url = "/blogs/"
+    weight = 3
+    parent = "Community"
+
+[[main]]
+    name = "Get Involved"
+    url = "/community/get-involved/"
+    weight = 4
+    parent = "Community"
+
+[[main]]
+    name = "Events"
+    url = "/community/events/"
+    parent = "Community"
+    weight = 5
+
+[[main]]
+    name = "Stay Connected"
+    url = "/connect/"
+    parent = "Community"
+    weight = 6
+
+[[main]]
+    name = "Videos"
+    url = "/community/videos"
+    parent = "Community"
+    weight = 7
+
+[[main]]
+    name = "JakartaOne Livestream"
+    url = "https://jakartaone.org"
+    parent = "Community"
+    weight = 8
+
+[[main]]
+    name = "Tech Talk Meet-ups"
+    url = "/community/#meetups"
+    parent = "Community"
+    weight = 9
+
+[[main]]
+    name = "Developer Advocate"
+    url = "/community/developer-advocate"
+    parent = "Community"
+    weight = 9
+
+# Membership sub-menu
+[[main]]
+    name = "Become a Member"
+    url = "/membership"
+    parent = "Join"
+    weight = 1
+
+[[main]]
+    name = "Members"
+    url = "/membership/members/"
+    parent = "Join"
+    weight = 2
+
+[[main]]
+    name = "Become a Sponsor"
+    url = "/supporters/sponsor/"
+    parent = "Join"
+    weight = 3
+
+# Learn sub-menu
+[[main]]
+  name = "Overview"
+  url = "/learn/"
+  weight = 1
+  parent = "Learn"
+
+[[main]]
+  name = "Jakarta EE Tutorial"
+  url = "/learn/docs/jakartaee-tutorial/current/index.html"
+  weight = 2
+  parent = "Learn"
+
+[[main]]
+  name = "Starter Guides"
+  url = "/learn/starter-guides/"
+  weight = 3
+  parent = "Learn"
+
+[[main]]
+  name = "Specification Guides"
+  url = "/learn/specification-guides/"
+  weight = 4
+  parent = "Learn"
+
+[[main]]
+  name = "Video Guides"
+  url = "/learn/#videos"
+  weight = 5
+  parent = "Learn"
+
+[[main]]
+  name = "Jakarta EE Overview Course"
+  url = "https://www.linkedin.com/learning/jakarta-ee-overview"
+  weight = 6
+  parent = "Learn"
