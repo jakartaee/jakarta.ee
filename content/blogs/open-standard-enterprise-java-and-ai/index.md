@@ -1,6 +1,6 @@
 ---
 title: "What's Up with Open Standard Enterprise Java and AI?"
-date: 2025-10-01T12:00:00
+date: 2025-10-02T12:00:00
 summary: "Enterprise Java has always been about standards—about providing a foundation that's stable, interoperable, and vendor-neutral. If you've been around since the days of Servlets, EJBs, and JPA, you know that Jakarta EE's approach is to standardize what's proven, not chase every shiny new thing. That's why mission-critical systems still rely on Jakarta EE's backbone, and why customers look to the platform for direction and leadership. The Eclipse Foundation's stewardship and open process help to reinforce this."
 seo_title: "Jakarta EE and Artificial Intelligence"
 keywords: ["unlocking potential", "Jakarta EE", "AI"]
