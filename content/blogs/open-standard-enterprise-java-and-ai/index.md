@@ -93,6 +93,8 @@ For more perspectives, see ["Jakarta EE: The Standard for Cloud Native Java" by 
 
 We can see from the continued success of the packet core Internet that open-interopable standards are the best way to empower creators to create value. This historically proven fact is more true now than ever in the extremely frothy market of ideas in our present age of AI. Let's not forget this timeless lesson (again) by ignoring the role open standards.
 
+Thanks to Brian Benz for doing the heavy lifting on the content of this blog post.
+
 Sincerely,
 
 The Jakarta EE Platform Project
