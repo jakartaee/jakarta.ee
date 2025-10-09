@@ -214,6 +214,12 @@ sets:
           image_width: 195
           download: 'http://www.redhat.com/en/technologies/jboss-middleware/application-platform'
           versions:
+            - version: 8.1.0, Java 21
+              compatibility: 'https://github.com/RedHatOfficial/jbosseap-certifications/blob/EE10/EAP-8.1.0/jakarta-full-platform-jdk21.adoc#tck-results' 
+              download_url: 'https://www.redhat.com/en/technologies/jboss-middleware/application-platform'
+            - version: 8.1.0, Java 17
+              compatibility: 'https://github.com/RedHatOfficial/jbosseap-certifications/blob/EE10/EAP-8.1.0/jakarta-full-platform-jdk17.adoc#tck-results' 
+              download_url: 'https://www.redhat.com/en/technologies/jboss-middleware/application-platform'
             - version: 8.0.0, Java 17
               compatibility: 'https://github.com/RedHatOfficial/jbosseap-certifications/blob/EE10/EAP-8.0.0/jakarta-full-platform-jdk17.adoc#tck-results' 
               download_url: 'https://www.redhat.com/en/technologies/jboss-middleware/application-platform'
@@ -293,6 +299,12 @@ sets:
           image_width: 195
           download: 'https://www.redhat.com/en/technologies/jboss-middleware/application-platform'
           versions:
+            - version: 8.1.0, Java 21
+              compatibility: 'https://github.com/RedHatOfficial/jbosseap-certifications/blob/EE10/EAP-8.1.0/jakarta-web-profile-jdk21.adoc#tck-results' 
+              download_url: 'https://www.redhat.com/en/technologies/jboss-middleware/application-platform'
+            - version: 8.1.0, Java 17
+              compatibility: 'https://github.com/RedHatOfficial/jbosseap-certifications/blob/EE10/EAP-8.1.0/jakarta-web-profile-jdk17.adoc#tck-results' 
+              download_url: 'https://www.redhat.com/en/technologies/jboss-middleware/application-platform'
             - version: 8.0.0, Java 17
               compatibility: 'https://github.com/RedHatOfficial/jbosseap-certifications/blob/EE10/EAP-8.0.0/jakarta-web-profile-jdk17.adoc#tck-results' 
               download_url: 'https://www.redhat.com/en/technologies/jboss-middleware/application-platform'
@@ -396,6 +408,12 @@ sets:
           image_width: 195
           download: 'https://www.redhat.com/en/technologies/jboss-middleware/application-platform'
           versions:
+            - version: 8.1.0, Java 21
+              compatibility: 'https://github.com/RedHatOfficial/jbosseap-certifications/blob/EE10/EAP-8.1.0/jakarta-core-jdk21.adoc#tck-results' 
+              download_url: 'https://www.redhat.com/en/technologies/jboss-middleware/application-platform'
+            - version: 8.1.0, Java 17
+              compatibility: 'https://github.com/RedHatOfficial/jbosseap-certifications/blob/EE10/EAP-8.1.0/jakarta-core-jdk17.adoc#tck-results' 
+              download_url: 'https://www.redhat.com/en/technologies/jboss-middleware/application-platform'
             - version: 8.0.0, Java 17
               compatibility: 'https://github.com/RedHatOfficial/jbosseap-certifications/blob/EE10/EAP-8.0.0/jakarta-core-jdk17.adoc#tck-results' 
               download_url: 'https://www.redhat.com/en/technologies/jboss-middleware/application-platform'
