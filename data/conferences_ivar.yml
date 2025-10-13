@@ -44,7 +44,7 @@ years:
     url: https://www.ibm.com/community/ibm-techxchange-conference/
     location: Orlando, FL 🇺🇸
     date: Oct 6-9
-    upcoming: true
+    blog: https://www.agilejava.eu/2025/10/10/ibm-techxchange-2025/
 
   - name: dev2next
     url: https://www.dev2next.com/
