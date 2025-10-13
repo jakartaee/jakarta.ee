@@ -23,6 +23,7 @@ mix.less('./less/pages/about/why-jakarta-ee/styles.less', 'static/css/why-jakart
 mix.less('./less/pages/learn.less', 'static/css/learn.css');
 mix.less('./less/pages/sponsor.less', 'static/css/sponsor.css');
 mix.less('./less/pages/contribute.less', 'static/css/contribute.css');
+mix.less('./less/pages/mentorship.less', 'static/css/mentorship.css');
 
 mix.js('js/main.js', './static/js/solstice.js');
 
