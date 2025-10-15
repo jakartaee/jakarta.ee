@@ -1308,6 +1308,12 @@ other = "Sign up now"
 [pages-community-get-involved-text]
   other = "Read all about the ways you can get involved in Jakarta EE"
 
+[pages-community-contribute-text]
+  other = "Contribute to Jakarta EE"
+
+[pages-community-mentorship-text]
+  other = "Jakarta EE Community Mentor Program"
+
 [pages-community-adopt-a-spec-title]
  other = "Adopt a Spec"
 
