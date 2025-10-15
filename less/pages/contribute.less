@@ -46,10 +46,20 @@
 
 .contribute-recognition-section {
   background-color: @brand-primary;
-  background-image: url("../images/contribute/bg-contribute-recognition.webp");
-  background-position: center;
-  background-size: cover;
-  background-blend-mode: soft-light;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url("../images/contribute/bg-contribute-recognition.webp");
+    background-position: center;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.15;
+  }
 
   .contribute-reward-item {
     margin-bottom: 40px;
