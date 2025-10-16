@@ -1,0 +1,101 @@
+/*!
+ * Copyright (c) 2025 Eclipse Foundation, Inc.
+ *
+ * This program and the accompanying materials are made available under the
+ * terms of the Eclipse Public License v. 2.0 which is available at
+ * http://www.eclipse.org/legal/epl-2.0.
+ *
+ * SPDX-License-Identifier: EPL-2.0
+ */
+
+@import (reference) "../styles.less";
+
+.rounded {
+  border-radius: 3rem;
+}
+
+.contribute-why-section {
+  .featured-section-cta-item {
+    .featured-section-cta-item-img {
+      background-color: @brand-primary;
+
+      &::after {
+        border-color: @brand-primary transparent transparent transparent;
+      }
+    }
+
+    p {
+      text-transform: none;
+      font-weight: 400;
+    }
+  }
+}
+
+.icon-title {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 15px;
+
+  .icon {
+    width: 50px;
+    height: 50px;
+    flex-shrink: 0;
+  }
+}
+
+.contribute-recognition-section {
+  background-color: @brand-primary;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url("../images/contribute/bg-contribute-recognition.webp");
+    background-position: center;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.15;
+  }
+
+  .contribute-reward-item {
+    margin-bottom: 40px;
+
+    h3 {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      color: #f7941e;
+      margin-top: 0;
+      margin-bottom: 15px;
+
+      .reward-icon {
+        width: 50px;
+        height: 50px;
+        flex-shrink: 0;
+      }
+    }
+
+    p {
+      color: rgba(255, 255, 255, 0.9);
+      margin: 0;
+    }
+  }
+}
+
+.contribute-mentor-cta {
+  .container {
+    background: @brand-primary;
+    background-image: url("../images/blue-shape-bg.jpg");
+    background-position: center;
+    background-size: cover;
+    padding: 50px;
+
+    @media (min-width: @screen-lg) {
+      border-radius: 3rem;
+    }
+  }
+}

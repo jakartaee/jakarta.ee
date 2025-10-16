@@ -32,31 +32,30 @@ years:
     url: https://jdd.org.pl/
     location: Kraków 🇵🇱
     date: Oct 21-22
-    upcoming: true
 
   - name: JavaCro
     url: https://2025.javacro.hr/eng
     location: Rovinj 🇭🇷
     date: Oct 12-15
-    upcoming: true
+    blog: https://www.agilejava.eu/2025/10/16/javacro-2025/
 
   - name: JCON @ IBM TechXChange
     url: https://www.ibm.com/community/ibm-techxchange-conference/
     location: Orlando, FL 🇺🇸
     date: Oct 6-9
-    upcoming: true
+    blog: https://www.agilejava.eu/2025/10/10/ibm-techxchange-2025/
 
   - name: dev2next
     url: https://www.dev2next.com/
     location: Colorado Springs, CO 🇺🇸
     date: Sep 29-Oct 2
-    upcoming: true
+    blog: https://www.agilejava.eu/2025/10/06/dev2next-2025
 
   - name: Come To Code
     url: https://www.cometocode.it/index.html
     location: Pignola 🇮🇹
     date: Sep 27-28
-    upcoming: true
+    blog: https://www.agilejava.eu/2025/09/30/come-to-code-2025
       
   - name: Open Source Community Day
     url: https://www.eclipse.org/events/2025/oscd/
