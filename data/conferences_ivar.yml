@@ -32,13 +32,12 @@ years:
     url: https://jdd.org.pl/
     location: Kraków 🇵🇱
     date: Oct 21-22
-    upcoming: true
 
   - name: JavaCro
     url: https://2025.javacro.hr/eng
     location: Rovinj 🇭🇷
     date: Oct 12-15
-    upcoming: true
+    blog: https://www.agilejava.eu/2025/10/16/javacro-2025/
 
   - name: JCON @ IBM TechXChange
     url: https://www.ibm.com/community/ibm-techxchange-conference/
