@@ -825,6 +825,15 @@ sets:
         - version: 2.0.0
           compatibility: 'https://github.com/AsiainfoAnhui/aisware_flyingserver_v2_ee8/blob/master/aisware_flyingserver_v2_ee8.md#tck-results'
           download_url: 'http://asiainfoah.com/#/product/flyingserver'
+      - name: BES Application Server
+        vendor: Beijing Baolande Software Corporation
+        image: '/images/compatible_products/bes_application_server_for_eclipse.svg'
+        image_width: 100
+        download: 'https://www.bessystem.com/product/0ad9b8c4d6af462b8d15723a5f25a87d/info?p=101#page-2'
+        versions:
+          - version: '9.5'
+            compatibility: 'https://www.bessystem.com/certifications/jakartaee/platform8/9.5-TCKResults.html' 
+            download_url: https://www.bessystem.com/
       - name: Payara Server Enterprise
         vendor: Payara Services Limited
         image: '/images/compatible_products/payara-server-enterprise-logo.svg'
