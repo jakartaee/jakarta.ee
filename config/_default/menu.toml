@@ -270,6 +270,16 @@
     url = "/community/developer-advocate"
     parent = "Community"
     weight = 9
+[[main]]
+    name = "Contribute"
+    url = "/contribute/"
+    parent = "Community"
+    weight = 10
+[[main]]
+    name = "Community Mentor Program"
+    url = "/mentorship/"
+    parent = "Community"
+    weight = 11
 
 # Membership sub-menu
 [[main]]

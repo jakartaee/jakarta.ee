@@ -16,11 +16,10 @@ years:
     date: Nov 12-14
     upcoming: true
 
-  - name: Universidade de Aveiro
+  - name: Aveiro Open Source Connect
     url: 
     location: Aveiro 🇵🇹
     date: Nov 12
-    upcoming: true
     
   - name: ChurConf
     url: https://churconf.com/
@@ -32,19 +31,18 @@ years:
     url: https://jdd.org.pl/
     location: Kraków 🇵🇱
     date: Oct 21-22
-    upcoming: true
 
   - name: JavaCro
     url: https://2025.javacro.hr/eng
     location: Rovinj 🇭🇷
     date: Oct 12-15
-    upcoming: true
+    blog: https://www.agilejava.eu/2025/10/16/javacro-2025/
 
   - name: JCON @ IBM TechXChange
     url: https://www.ibm.com/community/ibm-techxchange-conference/
     location: Orlando, FL 🇺🇸
     date: Oct 6-9
-    upcoming: true
+    blog: https://www.agilejava.eu/2025/10/10/ibm-techxchange-2025/
 
   - name: dev2next
     url: https://www.dev2next.com/
