@@ -29,6 +29,15 @@ sets:
             - version: 8.0.0-JDK17-M12
               compatibility: 'https://glassfish.org/certifications/jakarta-platform/11/TCK-Results-8.0.0-M12'
               download_url: 'https://download.eclipse.org/ee4j/glassfish/glassfish-8.0.0-JDK17-M12.zip'
+        - name: Payara Server Community
+          vendor: Payara Services Limited
+          image: '/images/compatible_products/payara-server-community-logo.svg'
+          image_width: 195
+          download: 'https://www.payara.fish/downloads/payara-platform-community-edition/'
+          versions:
+            - version: 7.2025.1.Beta1
+              compatibility: 'https://docs.payara.fish/community/docs/Jakarta%20EE%20Certification/7.2025.1.Beta1/7.2025.1.Beta1%20Platform%20TCK%20Results.html'
+              download_url: 'https://www.payara.fish/downloads/payara-platform-community-edition/' 
 
     - title: Jakarta EE 11 Web Profile
       release: "release/11"
