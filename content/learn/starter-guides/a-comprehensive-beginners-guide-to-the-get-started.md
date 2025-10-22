@@ -4,8 +4,11 @@ date: 2025-10-21T00:00:00
 headline: "Getting Started with Jakarta EE: A Comprehensive Beginner's Guide to the Get Started"
 seo_title: "Getting Started with Jakarta EE: A Comprehensive Beginner's Guide to the Get Started" 
 description: >-
-  This guide shows you how to secure a rest endpoint using Jakarta
-  Authentication. 
+    This comprehensive beginner's guide walks you through the Jakarta EE Get
+    Started tool, helping new developers quickly create and understand Jakarta
+    EE applications. Learn about version selection, profiles, Java compatibility,
+    runtime options, and project structure to kickstart your enterprise Java
+    journey.
 tags: ["get started", "tool", "starter", "tutorial", "starter guide"]
 hide_page_title: true
 weight: 2
