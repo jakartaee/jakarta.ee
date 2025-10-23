@@ -13,7 +13,7 @@ enableInlineShortcodes = true
   style = "github"
 
 [Params]
-  layout_style = "quicksilver"
+  layout_style = "astro"
   google_tag_manager = "GTM-5WLCZXC"
   description = "Jakarta® Enterprise Edition (EE) is the future of cloud native Java. Jakarta® EE open source software drives cloud native innovation, modernizes enterprise applications and protects investments in Java EE."
   subtitle = "The New Home of Cloud Native Java"
@@ -24,7 +24,6 @@ enableInlineShortcodes = true
   favicon = "images/jakarta/favicon.ico"
   share_img = "images/jakarta/jakarta_ee_400x400.png"
   gcse = "011805775785170369411:p3ec0igo0qq"
-  subtheme = "jakarta"
   header_wrapper_class = "header-default-bg-img"
   js = "js/solstice.js?v2.3"
   show_events = true
