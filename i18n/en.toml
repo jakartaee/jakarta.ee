@@ -1389,6 +1389,12 @@ other = "Sign up now"
 [pages-get-involved-HowToContribute-button-LoginToEF]
  other = "Login to your EF account"
 
+[pages-get-involved-HowToContribute-contribute-to-jakartaee]
+ other = "Contribute to Jakarta EE"
+
+[pages-get-involved-HowToContribute-mentorship]
+ other = "Mentorship"
+
 [pages-get-involved-BecomeACommitter-title]
  other = "Become a Committer"
 
