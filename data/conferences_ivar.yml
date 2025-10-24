@@ -27,7 +27,7 @@ years:
     date: Nov 2
     upcoming: true
 
-  - name: {% { %}code and compliance{% } %}
+  - name: <div>{`{`}</div>code and compliance<div>{`}`}</div>
     url: https://www.eclipse-foundation.events/event/Code-and-compliance-Community-Day-2025/summary
     location: Brussels 🇧🇪
     date: Oct 22-23
