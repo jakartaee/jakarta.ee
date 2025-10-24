@@ -27,6 +27,12 @@ years:
     date: Nov 2
     upcoming: true
 
+  - name: {code and compliance}
+    url: https://www.eclipse-foundation.events/event/Code-and-compliance-Community-Day-2025/summary
+    location: Brussels 🇧🇪
+    date: Oct 22-23
+    blog: https://www.agilejava.eu/2025/10/23/code-and-compliance-2025/
+
   - name: JDD
     url: https://jdd.org.pl/
     location: Kraków 🇵🇱
