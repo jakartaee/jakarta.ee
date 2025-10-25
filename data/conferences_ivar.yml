@@ -1,6 +1,14 @@
 ---
 years:
 
+- year: 2026
+  conferences:
+
+  - name: ConFoo
+    url: https://confoo.ca/en/2026
+    location: Montreal 🇨🇦
+    date: Feb 24-27
+
 - year: 2025
   conferences:
 
