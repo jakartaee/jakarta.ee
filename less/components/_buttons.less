@@ -46,5 +46,25 @@
 
 .btn {
   border-radius: @border-radius-large;
-  padding: 0.8rem 2rem;
+  padding: 0.5rem 2rem;
+}
+
+.btn-outline-primary {
+  border: 2px solid @brand-primary;
+  color: @brand-primary;
+
+  &:hover {
+    background-color: @brand-primary;
+    color: @white;
+  }
+}
+
+.btn-outline-secondary {
+  border: 2px solid @brand-secondary;
+  color: @brand-secondary;
+
+  &:hover {
+    background-color: @brand-secondary;
+    color: @white;
+  }
 }
