@@ -19,6 +19,11 @@ years:
 - year: 2025
   conferences:
 
+  - name: Paris JUG
+    url: 
+    location: Paris 🇫🇷
+    date: Dec 9
+
   - name: JakartaOne Livestream
     url: https://jakartaone.org/2025/
     location: online 🌐
