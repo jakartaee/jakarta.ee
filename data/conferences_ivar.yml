@@ -4,10 +4,17 @@ years:
 - year: 2026
   conferences:
 
+  - name: JCrete
+    url: https://www.jcrete.org
+    location: Kolymvari 🇬🇷
+    date: Jul 27-31
+    upcoming: true
+
   - name: ConFoo
     url: https://confoo.ca/en/2026
     location: Montreal 🇨🇦
     date: Feb 24-27
+    upcoming: true
 
 - year: 2025
   conferences:
