@@ -24,7 +24,7 @@
         {{ .Pre }}
         <!--<i class="icon_desktop"></i>-->
         <span>{{ .Name }}</span>
-        <b class="caret"></b>
+        <i class="fa fa-angle-down fa-xs" aria-hidden="true"></i>
       </a>
       <ul class="dropdown-menu">
         {{ if eq $multicol true }}
@@ -45,7 +45,7 @@
 
                           <a class="visible-xs" role="button" data-toggle="collapse" href="#{{ .Name | urlize }}-collapse" aria-expanded="false" aria-controls="{{ .Name | urlize }}-collapse">
                             {{.Name}}
-                            <b class="caret"></b>
+                            <i class="fa fa-angle-down fa-xs" aria-hidden="true"></i>
                           </a>
                           <div class="dropdown-collapse collapse" id="{{ .Name | urlize }}-collapse">
                             <ul class="list-unstyled">
