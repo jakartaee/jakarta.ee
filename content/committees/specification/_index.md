@@ -19,7 +19,7 @@ The Specification Committee is responsible for implementing the ​[Jakarta EE S
 * Andrew Pielage (**chair**) - Payara, Petr Aubrecht - alternate
 * David Blevins - Tomitribe, Jean-Louis Monterio - alternate
 * Ivar Grimstad - PMC Representative
-* Marcelo Ancelmo - London Java Community - Elected Participant Member Representative, Abraham Marin-Perez - alternate
+* Arjan Tijms - Elected Participant Member Representative
 * Werner Keil - Elected Committer Member Representative
 * Jun Qian - Primeton Information Technologies - Elected Enterprise Representative
 * Zhai Luchao - Shandong Cvicse Middleware Co. - Elected Enterprise Representative
