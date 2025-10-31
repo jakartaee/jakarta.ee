@@ -14,7 +14,7 @@ This committee owns the overall strategy and the high level, long term roadmap s
 * Alasdair Nottingham - IBM, Emily Jiang - alternate
 * Steve Millidge - Payara, Steve Butler - alternate
 * David Blevins - Tomitribe, Cesar Hernandez - alternate
-* Marcin Kruglik - London Jamocha Community - Elected Participant Member Representative - Abraham Marin-Perez - alternate 
+* Ondro Mihaly - Omnifish OU - Elected Participant Member Representative
 * Vacant - Elected Committer Member Representative
 * Dr. Jun Qian - Primeton - Elected Enterprise Representative
 * Ed Burns - Microsoft - Elected Enterprise Representative
