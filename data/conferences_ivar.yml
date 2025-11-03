@@ -45,7 +45,7 @@ years:
     url: https://churconf.com/
     location: Auckland 🇳🇿
     date: Nov 2
-    upcoming: true
+    blog: https://www.agilejava.eu/2025/11/03/churconf-2025
 
   - name: "{code and compliance}"
     url: https://www.eclipse-foundation.events/event/Code-and-compliance-Community-Day-2025/summary
