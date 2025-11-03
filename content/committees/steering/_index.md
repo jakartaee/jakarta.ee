@@ -17,6 +17,6 @@ This committee owns the overall strategy and the high level, long term roadmap s
 * Ondro Mihaly - Omnifish OU - Elected Participant Member Representative
 * Vacant - Elected Committer Member Representative
 * Dr. Jun Qian - Primeton - Elected Enterprise Representative
-* Ed Burns - Microsoft - Elected Enterprise Representative
+* Zhao Xin - Shandong Cvicse Middleware Co - Elected Enterprise Representative
 
 {{< meeting-minutes-single "steering_committee" >}}
