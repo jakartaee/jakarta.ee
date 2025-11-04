@@ -16,6 +16,12 @@ years:
     date: Feb 24-27
     upcoming: true
 
+  - name: I Code Java
+    url: https://j-sa.co
+    location: Johannesburg 🇿🇦
+    date: Feb 10-11
+    upcoming: true
+
 - year: 2025
   conferences:
 
