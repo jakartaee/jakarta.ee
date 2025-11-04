@@ -1,0 +1,204 @@
+main:
+  # Main Navigation (Top Level)
+  - name: "Developer portal"
+    url: "/learn/"
+    weight: 1
+
+  - name: "Specifications"
+    url: "/specifications/"
+    weight: 2
+
+  - name: "Compatible products"
+    url: "/compatibility/"
+    weight: 3
+
+  - name: "Community"
+    url: "/community"
+    weight: 4
+
+  - name: "About"
+    url: "/about/"
+    weight: 5
+
+  # ========================================
+  # Developer portal dropdown (Mega Menu)
+  # ========================================
+  # These column headers don't have URLs - they act as section dividers
+  # in the mega menu, creating a 3-column layout structure
+  
+  # Column 1: Develop with Jakarta EE
+  - name: "Develop with Jakarta EE"
+    weight: 1
+    parent: "Developer portal"
+
+  # Column 2: Contribute to Jakarta EE
+  - name: "Contribute to Jakarta EE"
+    weight: 2
+    parent: "Developer portal"
+
+  # Column 3: Learn
+  - name: "Learn"
+    weight: 3
+    parent: "Developer portal"
+
+  # ========================================
+  # Developer portal mega menu sub-items
+  # ========================================
+  
+  # Develop with Jakarta EE sub-items
+  - name: "Get started"
+    url: "https://start.jakarta.ee/"
+    parent: "Develop with Jakarta EE"
+    weight: 1
+
+  - name: "Learning hub"
+    url: "/learn/"
+    parent: "Develop with Jakarta EE"
+    weight: 2
+
+  - name: "Insights and publications"
+    url: "/resources/"
+    parent: "Develop with Jakarta EE"
+    weight: 3
+
+  # Contribute to Jakarta EE sub-items
+  - name: "How to contribute"
+    url: "/contribute/"
+    parent: "Contribute to Jakarta EE"
+    weight: 1
+
+  - name: "Mentorship program"
+    url: "/mentorship/"
+    parent: "Contribute to Jakarta EE"
+    weight: 2
+
+  - name: "Developer advocate"
+    url: "/community/developer-advocate/"
+    parent: "Contribute to Jakarta EE"
+    weight: 3
+
+  # Learn sub-items
+  - name: "How to guides"
+    url: "/learn/starter-guides/"
+    parent: "Learn"
+    weight: 1
+
+  - name: "Tutorial"
+    url: "/learn/specification-guides/"
+    parent: "Learn"
+    weight: 2
+
+  - name: "Get started"
+    url: "https://start.jakarta.ee/"
+    parent: "Learn"
+    weight: 3
+
+  # ========================================
+  # End of Developer portal mega menu
+  # ========================================
+
+  # Specifications dropdown
+  - name: "Explore specifications"
+    url: "/specifications/"
+    weight: 1
+    parent: "Specifications"
+
+  - name: "Releases"
+    url: "/release/"
+    weight: 2
+    parent: "Specifications"
+
+  - name: "Additional resources"
+    url: "/specifications/"
+    weight: 3
+    parent: "Specifications"
+
+  # Compatible products dropdown
+  - name: "Jakarta EE compatible products"
+    url: "/compatibility/"
+    parent: "Compatible products"
+    weight: 1
+
+  - name: "Get listed"
+    url: "/compatibility/get-listed/"
+    parent: "Compatible products"
+    weight: 2
+
+  - name: "Product certification results"
+    url: "/compatibility/"
+    parent: "Compatible products"
+    weight: 3
+
+  # Community dropdown
+  - name: "Take part"
+    url: "/community/"
+    parent: "Community"
+    weight: 1
+
+  - name: "Community content"
+    url: "/blogs/"
+    weight: 2
+    parent: "Community"
+
+  - name: "Community events"
+    url: "/community/events/"
+    parent: "Community"
+    weight: 3
+
+  - name: "Additional resources"
+    url: "/community/"
+    parent: "Community"
+    weight: 4
+
+  # About dropdown
+  - name: "Technology"
+    url: "/about/"
+    parent: "About"
+    weight: 1
+
+  - name: "Governance"
+    url: "/about/working-group"
+    parent: "About"
+    weight: 2
+
+  # Technology sub-items
+  - name: "What is Jakarta EE?"
+    url: "/about/jakarta-ee"
+    parent: "Technology"
+    weight: 1
+
+  - name: "Why Jakarta EE?"
+    url: "/about/why-jakarta-ee"
+    parent: "Technology"
+    weight: 2
+
+  - name: "Frequently asked questions"
+    url: "/about/faq/"
+    parent: "Technology"
+    weight: 3
+
+  # Governance sub-items
+  - name: "Jakarta EE working group"
+    url: "/about/working-group"
+    parent: "Governance"
+    weight: 1
+
+  - name: "Charter"
+    url: "https://eclipse.org/org/workinggroups/jakarta_ee_charter.php"
+    parent: "Governance"
+    weight: 2
+
+  - name: "Trademark guidelines"
+    url: "/legal/trademark_guidelines/"
+    parent: "Governance"
+    weight: 3
+
+  - name: "Technical direction"
+    url: "https://www.eclipse.org/ee4j/direction.php"
+    parent: "Governance"
+    weight: 4
+
+  - name: "Committees"
+    url: "/committees"
+    parent: "Governance"
+    weight: 5
