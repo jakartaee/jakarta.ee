@@ -1,8 +1,146 @@
 @media (min-width: @screen-sm-min) {
+  .navbar-wrapper {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+
+    // This is the height of the navbar, we set a negative margin to overlap content underneath so that the sticky navbar doesn't push content down
+    margin-bottom: -7rem;
+
+    transition: all 0.3s ease;
+
+    &:not(.top), &:has(.main-menu .menu-item.open) {
+      background-color: #ffffff;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+    }
+  }
+
+  .dropdown:not(.open):has(.mega-menu) .mega-menu {
+    display: none;
+  }
+
+  // Mega Menu styles
+  .mega-menu {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+    .mega-menu-dropdown {
+      width: 100%;
+      border-radius: 0 0 @border-radius-medium @border-radius-medium;
+      padding: 4rem 6rem;
+      background-color: #ffffff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .mega-menu-content {
+      display: flex;
+      justify-content: center;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .mega-menu-column {
+      flex: 1;
+      min-width: 200px;
+      position: relative;
+      padding: 0 5rem;
+
+      &:first-child {
+        padding-left: 0;
+      }
+
+      &:last-child {
+        padding-right: 0;
+
+        &::after {
+          display: none;
+        }
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 0;
+        width: 1px;
+        height: 80%;
+        background-color: @brand-primary;
+      }
+
+      .mega-menu-icon {
+        margin-bottom: 1.5rem;
+
+        svg,
+        img {
+          width: 3rem;
+          height: 3rem;
+          color: @brand-primary;
+        }
+      }
+
+      .mega-menu-title {
+        font-size: 1.8rem;
+        font-weight: 600;
+        color: @brand-primary;
+        margin-bottom: 2rem;
+        margin-top: 0;
+        white-space: nowrap;
+      }
+
+      .mega-menu-links {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        li {
+          margin-bottom: 1rem;
+
+          a {
+            color: @brand-primary-dark;
+            text-decoration: none;
+            font-size: 1.4rem;
+
+            &:hover {
+              color: @brand-secondary;
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+  }
+
   .main-menu {
     display: flex;
     align-items: stretch;
     justify-content: space-between;
+    gap: 3rem;
+    color: @brand-primary-dark;
+    min-height: 7rem;
+
+    .dropdown.mega-dropdown {
+      position: unset;
+    }
+
+    .dropdown-menu {
+      border-radius: 0 0 @border-radius-medium @border-radius-medium;
+      overflow: hidden;
+      margin: 0;
+      padding: 4rem 0;
+
+      & > li > a {
+        padding: 0.3rem 5rem;
+
+        &:hover {
+          background-color: inherit;
+
+          text-decoration: underline;
+          color: @brand-secondary;
+        }
+      }
+    }
 
     .menu-left,
     .menu-right {
@@ -10,7 +148,8 @@
       align-items: center;
       gap: 1rem;
 
-      flex: 0 0 23rem;
+      flex-grow: 1;
+      flex-basis: 0;
     }
 
     .menu-left {
@@ -25,6 +164,48 @@
       position: relative;
     }
 
+    .dropdown-menu {
+      border-radius: 0 0 @border-radius-medium @border-radius-medium;
+      overflow: hidden;
+      margin: 0;
+      padding: 4rem 0;
+
+      & > li > a {
+        padding: 0.3rem 5rem;
+
+        &:hover {
+          background-color: inherit;
+
+          text-decoration: underline;
+          color: @brand-secondary;
+        }
+      }
+    }
+
+    .menu-item {
+      a {
+        .link-unstyled();
+      }
+
+      & > a {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        gap: 0.8rem;
+
+        border-top: 0.4rem solid transparent;
+        border-bottom: 0.4rem solid transparent;
+      }
+
+      &.open,
+      &.active,
+      &:hover {
+        & > a {
+          border-bottom-color: @brand-secondary;
+        }
+      }
+    }
+
     .navigation-bar {
       height: 100%;
       display: flex;
@@ -33,15 +214,11 @@
         padding: 0;
         margin: 0;
         display: flex;
-        gap: 1.5rem;
+        gap: 2.5rem;
         list-style: none;
 
         & > li {
-          padding: 2.3rem 0;
-
-          a {
-            .link-unstyled();
-          }
+          height: 100%;
         }
       }
     }
