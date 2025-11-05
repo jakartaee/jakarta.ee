@@ -12,7 +12,7 @@
 */
 
 // Expand container size for navbar and toolbar
-.navbar-wrapper, 
+.navbar-wrapper,
 .toolbar-container-wrapper {
   & > .container {
     width: 100%;
@@ -25,7 +25,19 @@
   top: 0;
   left: 0;
   right: 0;
-  z-index: 10;
+  z-index: 15;
+
+  transition: all 0.3s ease;
+
+  &:has(+ .navbar-wrapper .menu-item.open) {
+    background-color: @header-toolbar-background-color-on-open-nav;
+  }
+
+  .toolbar-row {
+    height: @header-toolbar-height;
+    display: flex;
+    align-items: center;
+  }
 }
 
 @media (max-width: @screen-md-max) {
