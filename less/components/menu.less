@@ -5,13 +5,15 @@
     z-index: 10;
 
     // This is the height of the navbar, we set a negative margin to overlap content underneath so that the sticky navbar doesn't push content down
-    margin-bottom: -7rem;
+    margin-bottom: calc(-7rem - @header-toolbar-height);
+    margin-top: @header-toolbar-height;
 
     transition: all 0.3s ease;
 
-    &:not(.top), &:has(.main-menu .menu-item.open) {
+    &:not(.top),
+    &:has(.main-menu .menu-item.open) {
       background-color: #ffffff;
-      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+      box-shadow: 0 6px 30px rgba(0, 0, 0, 0.155);
     }
   }
 
@@ -183,6 +185,8 @@
     }
 
     .menu-item {
+      .text-medium;
+
       a {
         .link-unstyled();
       }
