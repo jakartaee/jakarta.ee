@@ -11,14 +11,22 @@
  * SPDX-License-Identifier: EPL-2.0
 */
 
-@brand-primary:         #1B208B; // Dark blue
-@brand-secondary:       #F98200; // Gold
-@brand-tertiary:        #58595B; // Dark Gray
-@brand-quaternary:      #FDB940; // Yellow 
+//=Primary Brand Colors
+@brand-primary:         #1B208B;
+@brand-primary-royal:   #182CB9;
+@brand-primary-light:   #182CB9;
+@brand-primary-orange:  #FF7110;
+@brand-primary-dark: #1C2085; 
+
+//= Secondary Brand Colors
+@brand-secondary-gray:        #58595B; // Dark Gray
+@brand-secondary-yellow:      #FDB940; // Yellow 
 @brand-quinary:         #f1f3f7; // Light Gray (Breadcrumbs)
 @light-grey:#f1f1f1;
 
-@brand-primary-dark: #1C2085; 
+//= Vars for inner styles
+@brand-secondary: @brand-primary-orange;
+
 
 //== Typography
 @font-family-sans-serif:  "Inter", sans-serif;
@@ -83,7 +91,7 @@
 
 @featured-section-cta-bg:url('images/blue-shape-bg.jpg'); 
 
-@heading-underline-border:2px solid @brand-secondary;
+@heading-underline-border:2px solid @brand-primary-orange;
 
 @nav-tabs-active-link-hover-border-color:transparent;
 @nav-tabs-active-link-hover-bg:transparent;
@@ -152,14 +160,14 @@
 @card-panel-bordered-h3-font-weight: 600;
 @card-panel-bordered-h3-color: @brand-primary;
 
-@card-panel-bordered-link-color: @brand-secondary;
+@card-panel-bordered-link-color: @brand-primary-orange;
 @card-panel-bordered-link-font-family: @font-family-heading;
 @card-panel-bordered-link-text-transform: uppercase;
 @card-panel-bordered-link-font-weight: 600;
 @card-panel-bordered-link-font-size: 12px;
 @card-image-max-height: 190px;
 
-@glyph-highlight-background-color: @brand-secondary;
+@glyph-highlight-background-color: @brand-primary-orange;
 
 @heading-underline-font-size: @font-size-h2;
 
