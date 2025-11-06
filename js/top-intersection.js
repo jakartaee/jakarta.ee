@@ -1,4 +1,4 @@
-export function setupTopIntersection(threshold = 10) {
+export function setupTopIntersection(threshold = 40) {
   const elements = document.querySelectorAll(".is-top");
 
   function handleScroll() {
