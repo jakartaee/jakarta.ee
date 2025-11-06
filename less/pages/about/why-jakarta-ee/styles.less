@@ -75,7 +75,6 @@ body {
         position: absolute;
         top: -10%;
         left: -11.5%;
-        z-index: -1;
         height: 110%;
         width: 100%;
         background-image: url(/images/jakarta-ee-logo.png);
@@ -87,21 +86,7 @@ body {
     .jumbotron.featured-jumbotron {
         position: relative;
         min-height: @jumbotron-height-xs;
-        padding: 0;
-
-        &::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            z-index: -1;
-            height: 100%;
-            width: 100%;
-            background-size: cover;
-            background-position: right;
-            background-repeat: no-repeat;
-            background-image: @bg-img-secondary;
-        }
+        padding: 0 !important;
     }
 
     @media (min-width: @jumbotron-graphic-breakpoint) {
