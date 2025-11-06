@@ -38,20 +38,36 @@
 }
 
 .btn-contained.btn-secondary {
-  border-color: @brand-primary-orange;
+  border-color: @brand-secondary;
   &:hover {
-    border-color: darken(@brand-primary-orange, 10%);
+    border-color: darken(@brand-secondary, 10%);
   }
 }
 
 .btn {
-  border-radius: @border-radius-large;
+  border-radius: @btn-border-radius;
+  font-weight: @btn-font-weight;
+  font-size: @btn-font-size;
   padding: 0.5rem 2rem;
+  transition: transform 0.2s cubic-bezier(0.39, -0.35, 0.54, 2.04);
+
+  &:active {
+    transform: scale(0.95);
+  }
 }
 
 .btn-outline-primary {
-  border: 2px solid @brand-primary;
+  box-shadow: inset 0px 0px 0px 2px @brand-primary;
   color: @brand-primary;
+
+  &,
+  &:visited,
+  &:hover,
+  &:focus,
+  &:active {
+    color: @brand-primary;
+  }
+
 
   &:hover {
     background-color: @brand-primary;
@@ -60,11 +76,19 @@
 }
 
 .btn-outline-secondary {
-  border: 2px solid @brand-primary-orange;
-  color: @brand-primary-orange;
+  box-shadow: inset 0px 0px 0px 2px @brand-secondary;
+  color: @brand-secondary;
+
+  &,
+  &:visited,
+  &:hover,
+  &:focus,
+  &:active {
+    color: @brand-secondary;
+  }
 
   &:hover {
-    background-color: @brand-primary-orange;
+    background-color: @brand-secondary;
     color: @white;
   }
 }
