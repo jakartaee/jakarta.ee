@@ -7,7 +7,7 @@ date: 2018-04-07T16:09:45-04:00
 layout: "single"
 hide_page_title: true
 hide_sidebar: true
-header_wrapper_class: "header-release-landing-page"
+header_wrapper_class: "header-release-landing-page header-default-bg-img"
 ---
 
 All of the Jakarta EE release versions are listed below. Check out the release page and press release for each version to see what’s new, download compatible products, or find the version specifications. Jakarta EE is an open, community-driven platform for future innovation of Java EE technologies.

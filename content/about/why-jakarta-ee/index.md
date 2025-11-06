@@ -11,7 +11,7 @@ hide_breadcrumb: true
 hide_sidebar: true
 hide_page_title: true
 headline: null
-header_wrapper_class: header-why-jakarta-ee
+header_wrapper_class: header-why-jakarta-ee header-default-bg-img
 jumbotron_class: col-lg-24
 custom_jumbotron_class: jumbotron-why-jakarta-ee
 custom_jumbotron: |
