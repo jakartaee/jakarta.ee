@@ -1,24 +1,34 @@
 main:
   # Main Navigation (Top Level)
-  - name: "Developer portal"
+  - identifier: "developer-portal"
+    name: "Developer portal"
     url: "/learn/"
     weight: 1
 
-  - name: "Specifications"
+  - identifier: "specifications"
+    name: "Specifications"
     url: "/specifications/"
     weight: 2
 
-  - name: "Compatible products"
+  - identifier: "compatible-products"
+    name: "Compatible products"
     url: "/compatibility/"
     weight: 3
 
-  - name: "Community"
+  - identifier: "community"
+    name: "Community"
     url: "/community"
     weight: 4
 
-  - name: "About"
+  - identifier: "about"
+    name: "About"
     url: "/about/"
     weight: 5
+
+  - identifier: "join-us"
+    name: "Join us"
+    url: "/membership/"
+    weight: 6
 
   # ========================================
   # Developer portal dropdown (Mega Menu)
@@ -26,179 +36,496 @@ main:
   # These column headers don't have URLs - they act as section dividers
   # in the mega menu, creating a 3-column layout structure
   
-  # Column 1: Develop with Jakarta EE
-  - name: "Develop with Jakarta EE"
+  # Column 1: Develop
+  - identifier: "develop"
+    name: "Develop"
     weight: 1
-    parent: "Developer portal"
+    parent: "developer-portal"
 
   # Column 2: Contribute to Jakarta EE
-  - name: "Contribute to Jakarta EE"
+  - identifier: "contribute-jakartaee"
+    name: "Contribute"
     weight: 2
-    parent: "Developer portal"
+    parent: "developer-portal"
 
   # Column 3: Learn
-  - name: "Learn"
+  - identifier: "learn"
+    name: "Learn"
     weight: 3
-    parent: "Developer portal"
+    parent: "developer-portal"
 
   # ========================================
   # Developer portal mega menu sub-items
   # ========================================
   
-  # Develop with Jakarta EE sub-items
-  - name: "Get started"
+  # Develop sub-items
+  - identifier: "get-started"
+    name: "Get started"
     url: "https://start.jakarta.ee/"
-    parent: "Develop with Jakarta EE"
+    parent: "develop"
     weight: 1
 
-  - name: "Learning hub"
+  - identifier: "learning-hub"
+    name: "Learning hub"
     url: "/learn/"
-    parent: "Develop with Jakarta EE"
+    parent: "develop"
     weight: 2
 
-  - name: "Insights and publications"
+  - identifier: "insights-publications"
+    name: "Insights and publications"
     url: "/resources/"
-    parent: "Develop with Jakarta EE"
+    parent: "develop"
     weight: 3
 
+  - identifier: "explore-developer-portal"
+    name: "Explore the developer portal"
+    url: "/learn/"
+    parent: "develop"
+    weight: 4
+
   # Contribute to Jakarta EE sub-items
-  - name: "How to contribute"
+  - identifier: "how-to-contribute"
+    name: "How to contribute"
     url: "/contribute/"
-    parent: "Contribute to Jakarta EE"
+    parent: "contribute-jakartaee"
     weight: 1
 
-  - name: "Mentorship program"
+  - identifier: "mentorship-program"
+    name: "Mentorship program"
     url: "/mentorship/"
-    parent: "Contribute to Jakarta EE"
+    parent: "contribute-jakartaee"
     weight: 2
 
-  - name: "Developer advocate"
+  - identifier: "developer-advocate"
+    name: "Developer advocate"
     url: "/community/developer-advocate/"
-    parent: "Contribute to Jakarta EE"
+    parent: "contribute-jakartaee"
     weight: 3
 
   # Learn sub-items
-  - name: "How to guides"
+  - identifier: "how-to-guides"
+    name: "How to guides"
     url: "/learn/starter-guides/"
-    parent: "Learn"
+    parent: "learn"
     weight: 1
 
-  - name: "Tutorial"
-    url: "/learn/specification-guides/"
-    parent: "Learn"
+  - identifier: "tutorial"
+    name: "Tutorial"
+    url: "/learn/docs/jakartaee-tutorial/current/index.html"
+    parent: "learn"
     weight: 2
 
-  - name: "Get started"
+  - identifier: "get-started-learn"
+    name: "Get started"
     url: "https://start.jakarta.ee/"
-    parent: "Learn"
+    parent: "learn"
     weight: 3
 
   # ========================================
   # End of Developer portal mega menu
   # ========================================
 
-  # Specifications dropdown
-  - name: "Explore specifications"
+  # ========================================
+  # Specifications dropdown (Mega Menu)
+  # ========================================
+  
+  # Column 1: Explore Specifications
+  - identifier: "explore-specifications"
+    name: "Explore Specifications"
+    weight: 1
+    parent: "specifications"
+
+  # Column 2: Releases
+  - identifier: "releases"
+    name: "Releases"
+    weight: 2
+    parent: "specifications"
+
+  # Column 3: Additional resources
+  - identifier: "additional-resources-specs"
+    name: "Additional resources"
+    weight: 3
+    parent: "specifications"
+
+  # Explore Specifications sub-items
+  - identifier: "all-specifications"
+    name: "All Specifications"
     url: "/specifications/"
-    weight: 1
-    parent: "Specifications"
-
-  - name: "Releases"
-    url: "/release/"
-    weight: 2
-    parent: "Specifications"
-
-  - name: "Additional resources"
-    url: "/specifications/"
-    weight: 3
-    parent: "Specifications"
-
-  # Compatible products dropdown
-  - name: "Jakarta EE compatible products"
-    url: "/compatibility/"
-    parent: "Compatible products"
+    parent: "explore-specifications"
     weight: 1
 
-  - name: "Get listed"
-    url: "/compatibility/get-listed/"
-    parent: "Compatible products"
+  - identifier: "jakarta-ee-platform"
+    name: "Jakarta EE Platform"
+    url: "/specifications/platform/"
+    parent: "explore-specifications"
     weight: 2
 
-  - name: "Product certification results"
-    url: "/compatibility/"
-    parent: "Compatible products"
+  - identifier: "jakarta-ee-web-profile"
+    name: "Jakarta EE Web Profile"
+    url: "/specifications/webprofile/"
+    parent: "explore-specifications"
     weight: 3
 
-  # Community dropdown
-  - name: "Take part"
-    url: "/community/"
-    parent: "Community"
-    weight: 1
-
-  - name: "Community content"
-    url: "/blogs/"
-    weight: 2
-    parent: "Community"
-
-  - name: "Community events"
-    url: "/community/events/"
-    parent: "Community"
-    weight: 3
-
-  - name: "Additional resources"
-    url: "/community/"
-    parent: "Community"
+  - identifier: "jakarta-ee-core-profile"
+    name: "Jakarta EE Core Profile"
+    url: "/specifications/coreprofile/"
+    parent: "explore-specifications"
     weight: 4
 
-  # About dropdown
-  - name: "Technology"
-    url: "/about/"
-    parent: "About"
+  - identifier: "browse-individual-specifications"
+    name: "Browse Individual Specifications"
+    url: "/specifications/"
+    parent: "explore-specifications"
+    weight: 5
+
+  # Releases sub-items
+  - identifier: "jakarta-ee-11"
+    name: "Jakarta EE 11"
+    url: "/release/11/"
+    parent: "releases"
     weight: 1
 
-  - name: "Governance"
-    url: "/about/working-group"
-    parent: "About"
+  - identifier: "jakarta-ee-10"
+    name: "Jakarta EE 10"
+    url: "/release/10/"
+    parent: "releases"
     weight: 2
+
+  - identifier: "jakarta-ee-9"
+    name: "Jakarta EE 9"
+    url: "/release/9/"
+    parent: "releases"
+    weight: 3
+
+  - identifier: "jakarta-ee-8"
+    name: "Jakarta EE 8"
+    url: "/release/8/"
+    parent: "releases"
+    weight: 4
+
+  - identifier: "view-all-releases"
+    name: "View all Releases"
+    url: "/release/"
+    parent: "releases"
+    weight: 5
+
+  # Additional resources sub-items
+  - identifier: "specification-process"
+    name: "Specification Process"
+    url: "/about/jesp/"
+    parent: "additional-resources-specs"
+    weight: 1
+
+  - identifier: "jesp-guide"
+    name: "JESP Guide"
+    url: "/committees/specification/guide/"
+    parent: "additional-resources-specs"
+    weight: 2
+
+  - identifier: "specification-projects"
+    name: "Specification Projects"
+    url: "/projects/"
+    parent: "additional-resources-specs"
+    weight: 3
+
+  - identifier: "xml-schemas"
+    name: "XML Schemas"
+    url: "/xml/ns/jakartaee/"
+    parent: "additional-resources-specs"
+    weight: 4
+
+  # ========================================
+  # End of Specifications mega menu
+  # ========================================
+
+  # Compatible products dropdown - keeping existing structure
+  - identifier: "compatible-products-list"
+    name: "Jakarta EE compatible products"
+    url: "/compatibility/"
+    parent: "compatible-products"
+    weight: 1
+
+  - identifier: "get-listed"
+    name: "Get listed"
+    url: "/compatibility/get-listed/"
+    parent: "compatible-products"
+    weight: 2
+
+  - identifier: "certification-results"
+    name: "Product certification results"
+    url: "/compatibility/"
+    parent: "compatible-products"
+    weight: 3
+
+  # ========================================
+  # Community dropdown (Mega Menu)
+  # ========================================
+  
+  # Column 1: Take Part
+  - identifier: "take-part"
+    name: "Take Part"
+    weight: 1
+    parent: "community"
+
+  # Column 2: Community Content
+  - identifier: "community-content"
+    name: "Community Content"
+    weight: 2
+    parent: "community"
+
+  # Column 3: Community Events
+  - identifier: "community-events"
+    name: "Community Events"
+    weight: 3
+    parent: "community"
+
+  # Column 4: Additional Resources
+  - identifier: "additional-resources-community"
+    name: "Additional Resources"
+    weight: 4
+    parent: "community"
+
+  # Take Part sub-items
+  - identifier: "how-to-get-involved"
+    name: "How to Get Involved"
+    url: "/community/get-involved/"
+    parent: "take-part"
+    weight: 1
+
+  - identifier: "stay-connected"
+    name: "Stay Connected"
+    url: "/connect/"
+    parent: "take-part"
+    weight: 2
+
+  # Community Content sub-items
+  - identifier: "blogs"
+    name: "Blogs"
+    url: "/blogs/"
+    parent: "community-content"
+    weight: 1
+
+  - identifier: "news"
+    name: "News"
+    url: "/news/"
+    parent: "community-content"
+    weight: 2
+
+  - identifier: "videos"
+    name: "Videos"
+    url: "/community/videos/"
+    parent: "community-content"
+    weight: 3
+
+  - identifier: "insights-publications-community"
+    name: "Insights and Publications"
+    url: "/resources/"
+    parent: "community-content"
+    weight: 4
+
+  - identifier: "migrate-to-jakarta-ee"
+    name: "Migrate to Jakarta EE"
+    url: "/resources/"
+    parent: "community-content"
+    weight: 5
+
+  - identifier: "presentations"
+    name: "Presentations"
+    url: "https://docs.google.com/presentation/d/1LBjjJg64j0HjmFu6m3EApN--mkavemyPFMUobIbGZds/edit#slide=id.g10a8950dfd6_0_139"
+    parent: "community-content"
+    weight: 6
+
+  - identifier: "events"
+    name: "Events"
+    url: "/community/events/"
+    parent: "community-content"
+    weight: 7
+
+  # Community Events sub-items
+  - identifier: "jakartaone"
+    name: "JakartaOne"
+    url: "https://jakartaone.jakarta.ee/"
+    parent: "community-events"
+    weight: 1
+
+  - identifier: "jakartaone-in-person"
+    name: "JakartaOne in Person"
+    url: "/community/events/"
+    parent: "community-events"
+    weight: 2
+
+  - identifier: "jakarta-tech-talks"
+    name: "Jakarta Tech Talks"
+    url: "/community/#meetups"
+    parent: "community-events"
+    weight: 3
+
+  # Additional Resources sub-items
+  - identifier: "calendar"
+    name: "Calendar"
+    url: "https://calendar.google.com/calendar/u/0/embed?src=eclipse-foundation.org_3281qms6riu4kdf354jn5idon0@group.calendar.google.com&ctz=America/Toronto"
+    parent: "additional-resources-community"
+    weight: 1
+
+  - identifier: "community-mailing-list"
+    name: "Community mailing List"
+    url: "https://accounts.eclipse.org/mailing-list/jakarta.ee-community"
+    parent: "additional-resources-community"
+    weight: 2
+
+  - identifier: "slack"
+    name: "Slack"
+    url: "/connect/"
+    parent: "additional-resources-community"
+    weight: 3
+
+  - identifier: "swag-store"
+    name: "Swag Store"
+    url: "https://eclipse-foundation.store/collections/jakarta-ee"
+    parent: "additional-resources-community"
+    weight: 4
+
+  # ========================================
+  # End of Community mega menu
+  # ========================================
+
+  # ========================================
+  # About dropdown (Mega Menu)
+  # ========================================
+  
+  # Column 1: Technology
+  - identifier: "technology"
+    name: "Technology"
+    weight: 1
+    parent: "about"
+
+  # Column 2: Governance
+  - identifier: "governance"
+    name: "Governance"
+    weight: 2
+    parent: "about"
 
   # Technology sub-items
-  - name: "What is Jakarta EE?"
+  - identifier: "what-is-jakarta-ee"
+    name: "What is Jakarta EE?"
     url: "/about/jakarta-ee"
-    parent: "Technology"
+    parent: "technology"
     weight: 1
 
-  - name: "Why Jakarta EE?"
+  - identifier: "why-jakarta-ee"
+    name: "Why Jakarta EE?"
     url: "/about/why-jakarta-ee"
-    parent: "Technology"
+    parent: "technology"
     weight: 2
 
-  - name: "Frequently asked questions"
+  - identifier: "faq"
+    name: "Frequently Asked Questions"
     url: "/about/faq/"
-    parent: "Technology"
+    parent: "technology"
     weight: 3
 
   # Governance sub-items
-  - name: "Jakarta EE working group"
-    url: "/about/working-group"
-    parent: "Governance"
+  - identifier: "working-group"
+    name: "Jakarta EE Working Group"
+    url: "/about/working-group/"
+    parent: "governance"
     weight: 1
 
-  - name: "Charter"
-    url: "https://eclipse.org/org/workinggroups/jakarta_ee_charter.php"
-    parent: "Governance"
+  - identifier: "charter"
+    name: "Charter"
+    url: "https://www.eclipse.org/org/working-groups/jakarta-ee/charter/"
+    parent: "governance"
     weight: 2
 
-  - name: "Trademark guidelines"
+  - identifier: "trademark-guidelines"
+    name: "Trademark Guidelines"
     url: "/legal/trademark_guidelines/"
-    parent: "Governance"
+    parent: "governance"
     weight: 3
 
-  - name: "Technical direction"
+  - identifier: "technical-direction"
+    name: "Technical Direction"
     url: "https://www.eclipse.org/ee4j/direction.php"
-    parent: "Governance"
+    parent: "governance"
     weight: 4
 
-  - name: "Committees"
-    url: "/committees"
-    parent: "Governance"
+  - identifier: "committees"
+    name: "Committees"
+    url: "/committees/"
+    parent: "governance"
     weight: 5
+
+  # ========================================
+  # End of About mega menu
+  # ========================================
+
+  # ========================================
+  # Join Us dropdown (Mega Menu)
+  # ========================================
+  
+  # Column 1: Membership
+  - identifier: "membership"
+    name: "Membership"
+    weight: 1
+    parent: "join-us"
+
+  # Column 2: Sponsorship
+  - identifier: "sponsorship"
+    name: "Sponsorship"
+    weight: 2
+    parent: "join-us"
+
+  # Column 3: Contribute
+  - identifier: "contribute-joinus"
+    name: "Contribute"
+    weight: 3
+    parent: "join-us"
+
+  # Membership sub-items
+  - identifier: "become-member"
+    name: "Become a member"
+    url: "/membership/"
+    parent: "membership"
+    weight: 1
+
+  - identifier: "our-members"
+    name: "Our members"
+    url: "/membership/members/"
+    parent: "membership"
+    weight: 2
+
+  # Sponsorship sub-items
+  - identifier: "become-individual-sponsor"
+    name: "Become an individual sponsor"
+    url: "/supporters/"
+    parent: "sponsorship"
+    weight: 1
+
+  - identifier: "become-corporate-sponsor"
+    name: "Become a corporate sponsor"
+    url: "/supporters/sponsor/"
+    parent: "sponsorship"
+    weight: 2
+
+  # Contribute sub-items
+  - identifier: "become-contributor"
+    name: "Become a contributor"
+    url: "/contribute/"
+    parent: "contribute-joinus"
+    weight: 1
+
+  - identifier: "mentorship-joinus"
+    name: "Mentorship"
+    url: "/mentorship/"
+    parent: "contribute-joinus"
+    weight: 2
+
+  - identifier: "meet-contributors"
+    name: "Meet the Contributors"
+    url: "/contribute/"
+    parent: "contribute-joinus"
+    weight: 3
+
+  # ========================================
+  # End of Join Us mega menu
+  # ========================================
