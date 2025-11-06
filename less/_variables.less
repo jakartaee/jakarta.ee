@@ -68,7 +68,7 @@
 
 // Backgrounds
 @bg-img-default: url('images/jumbotron-bg.webp');
-@bg-img-secondary: url('images/jumbotron-secondary.jpg');
+@bg-img-secondary: url('images/jumbotron-bg-secondary.webp');
 @bg-img-tertiary: url('images/bg-tertiary.jpg');
 
 @header-default-bg-img: @bg-img-default;
@@ -88,7 +88,7 @@
 @padding-large-vertical: 12px;
 @padding-large-horizontal: 40px;
 
-@featured-section-cta-bg:url('images/blue-shape-bg.jpg'); 
+@featured-section-cta-bg: @bg-img-secondary; 
 
 @heading-underline-border:2px solid @brand-primary-orange;
 
@@ -105,7 +105,7 @@
 @featured-footer-light-bg:url('images/mailing-list-bg.jpg');
 @featured-footer-padding:50px 0;
 
-@footer-background:@brand-primary url('images/jumbotron-secondary.jpg') no-repeat center;
+@footer-background:@brand-primary @bg-img-secondary no-repeat center;
 @footer-h2-color:@white;
 @footer-h2-font-size:14px;
 @footer-h2-font-weight:700;
@@ -113,7 +113,7 @@
 
 @footer-nav-link-padding:3px 15px;
 
-@featured-footer-light-bg-img:url('images/blue-shape-bg.jpg');
+@featured-footer-light-bg-img: @bg-img-secondary;
 @featured-footer-light-border-top:none;
 @featured-footer-light-border-bottom:none;
 @featured-footer-h2-color:@white;
@@ -182,3 +182,5 @@
 @border-radius-medium: 2rem;
 @border-radius-large: 3rem;
 @border-radius-small: 0.5rem;
+
+@breadcrumb-border-radius: 0;
