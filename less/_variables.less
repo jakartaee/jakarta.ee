@@ -12,20 +12,22 @@
 */
 
 //=Primary Brand Colors
-@brand-primary:         #1B208B;
+@brand-primary-blue:    #1B208B;
 @brand-primary-royal:   #182CB9;
-@brand-primary-light:   #182CB9;
 @brand-primary-orange:  #FF7110;
-@brand-primary-dark: #1C2085; 
+@brand-primary-dark:    #1C2085; 
 
 //= Secondary Brand Colors
-@brand-secondary-gray:        #58595B; // Dark Gray
-@brand-secondary-yellow:      #FDB940; // Yellow 
-@brand-quinary:         #f1f3f7; // Light Gray (Breadcrumbs)
-@light-grey:#f1f1f1;
+@brand-secondary-gray:  #58595B; // Dark Gray
+@brand-secondary-yellow:#FDB940; // Yellow 
+@light-grey:            #f1f1f1;
 
-//= Vars for inner styles
+//= Polyfill vars for theme styles
+@brand-primary: @brand-primary-blue;
 @brand-secondary: @brand-primary-orange;
+@brand-tertiary: @brand-primary-royal;
+@brand-quaternary: @brand-secondary-yellow;
+@brand-quinary:         #f1f3f7; // Light Gray (Breadcrumbs)
 
 
 //== Typography
