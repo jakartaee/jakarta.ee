@@ -29,7 +29,8 @@
 
   transition: all 0.3s ease;
 
-  &:has(+ .navbar-wrapper .menu-item.open) {
+  &:has(+ .navbar-wrapper .menu-item.open),
+  &:has(+ .navbar-wrapper + header .jumbotron.featured-jumbotron-dark) {
     background-color: @header-toolbar-background-color-on-open-nav;
   }
 
