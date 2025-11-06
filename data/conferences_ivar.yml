@@ -10,6 +10,12 @@ years:
     date: Jul 27-31
     upcoming: true
 
+  - name: Devnexus
+    url: https://devnexus.com/
+    location: Atlanta, GA 🇺🇸
+    date: Mar 4-6
+    upcoming: true
+
   - name: ConFoo
     url: https://confoo.ca/en/2026
     location: Montreal 🇨🇦
