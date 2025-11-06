@@ -38,12 +38,29 @@
   place-content: center;
   background-color: @brand-quinary;
 
-  h1, .h1{
+  &.featured-jumbotron-dark {
+    background-color: @brand-primary-dark;
+
+    &,
+    h1,
+    .h1,
+    h2,
+    .h2,
+    .jumbotron-title,
+    .jumbotron-tagline,
+    .jumbotron-subtitle {
+      color: @white;
+    }
+  }
+
+  h1,
+  .h1 {
     .text-medium;
     font-size: 6.5rem;
   }
 
-  h2, .h2{
+  h2,
+  .h2 {
     .text-regular;
     font-size: 2.5rem;
   }
