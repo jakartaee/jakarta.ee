@@ -4,9 +4,12 @@
     top: 0;
     z-index: 10;
 
-    // This is the height of the navbar, we set a negative margin to overlap content underneath so that the sticky navbar doesn't push content down
-    margin-bottom: calc(-7rem - @header-toolbar-height);
     margin-top: @header-toolbar-height;
+
+    &:has(+ header .jumbotron) {
+      // This is the height of the navbar, we set a negative margin to overlap content underneath so that the sticky navbar doesn't push content down
+      margin-bottom: calc(-7rem - @header-toolbar-height);
+    }
 
     transition: all 0.3s ease;
 
