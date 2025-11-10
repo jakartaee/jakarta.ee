@@ -1508,7 +1508,14 @@ other = "Sign up now"
     <p>
       Discover why Jakarta EE remains a reliable, enterprise-ready choice:
     </p>
-    <a href='/news/2025/07/31/beyond-the-hype-10-reasons-jakarta-ee-is-still-the-smartest-choice/'>Beyond the Hype: Why Jakarta EE is Still the Smartest Choice</a>
+    <ul class='list-unstyled'>
+      <li class='margin-y-30'>
+        <a href='/news/2025/11/10/10-ways-to-accelerate-your-career-with-jakarta-ee'>10 ways to accelerate your career with Jakarta EE</a>
+      </li>
+      <li class='margin-y-30'>
+        <a href='/news/2025/07/31/beyond-the-hype-10-reasons-jakarta-ee-is-still-the-smartest-choice/'>Beyond the hype: Why Jakarta EE is still the smartest choice</a>
+      </li>
+    </ul>
   """
   
 [pages-learn-index-jakarta-ee-project-title]
