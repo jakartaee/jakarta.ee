@@ -9,7 +9,13 @@ years:
     location: Kolymvari 🇬🇷
     date: Jul 27-31
     upcoming: true
-
+    
+  - name: JavaLand
+    url: https://www.javaland.eu/en/home/
+    location: Rust 🇩🇪
+    date: Mar 10-12
+    upcoming: true
+    
   - name: Devnexus
     url: https://devnexus.com/
     location: Atlanta, GA 🇺🇸
