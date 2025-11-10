@@ -21,12 +21,12 @@
     {{ if $megaMenu }}
     <!-- Mega Menu (Multi-level) -->
     <li class="menu-item dropdown mega-dropdown">
-      <a href="#" class="dropdown-toggle" data-menu-name="{{ .Name }}">
+      <a href="#" class="dropdown-toggle">
         {{ .Pre }}
         <span>{{ .Name }}</span>
       </a>
       <!-- Mobile Subpage -->
-      <div class="mega-menu-mobile-page" data-page-name="{{ .Name }}">
+      <div class="mega-menu-mobile-page">
         <div class="mega-menu-header">
           <button class="mega-menu-back-to-main" aria-label="Back to menu">
             <i class="fa fa-angle-left" aria-hidden="true"></i>
@@ -74,12 +74,12 @@
     {{ else }}
     <!-- Regular Dropdown (Single level) -->
     <li class="menu-item dropdown">
-      <a href="#" class="dropdown-toggle" data-menu-name="{{ .Name }}">
+      <a href="#" class="dropdown-toggle">
         {{ .Pre }}
         <span>{{ .Name }}</span>
       </a>
       <!-- Mobile Subpage for regular dropdown -->
-      <div class="mega-menu-mobile-page" data-page-name="{{ .Name }}">
+      <div class="mega-menu-mobile-page">
         <div class="mega-menu-header">
           <button class="mega-menu-back-to-main" aria-label="Back to menu">
             <i class="fa fa-angle-left" aria-hidden="true"></i>
@@ -95,7 +95,7 @@
             <div class="mega-menu-column">
               <ul class="mega-menu-links">
                 <li>
-                  <a href="{{.URL}}">
+                  <a href="{{ .URL }}">
                     {{ .Name }}
                     <i class="fa fa-arrow-right" aria-hidden="true"></i>
                   </a>
@@ -108,12 +108,12 @@
       </div>
     </li>
     {{ end }}
-  {{else}}
+  {{ else }}
     <li class="menu-item">
-      <a class="" href="{{.URL}}">
-      {{ .Pre }}
-      {{ .Name }}
+      <a href="{{ .URL }}">
+        {{ .Pre }}
+        {{ .Name }}
       </a>
     </li>
-  {{end}}
+  {{ end }}
 {{ end }}

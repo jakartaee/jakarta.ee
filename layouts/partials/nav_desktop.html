@@ -22,13 +22,13 @@
     {{ if $megaMenu }}
     <!-- Mega Menu (Multi-level) -->
     <li class="menu-item dropdown mega-dropdown">
-      <a href="#" data-toggle="dropdown" class="dropdown-toggle" data-menu-name="{{ .Name }}">
+      <a href="#" data-toggle="dropdown" class="dropdown-toggle">
         {{ .Pre }}
         <span>{{ .Name }}</span>
         <i class="fa fa-angle-down fa-xs" aria-hidden="true"></i>
       </a>
       <div class="mega-menu">
-        <div class="mega-menu-dropdown" data-menu="{{ .Name }}">
+        <div class="mega-menu-dropdown">
           <div class="mega-menu-content">
             {{ range .Children }}
               <div class="mega-menu-column">
