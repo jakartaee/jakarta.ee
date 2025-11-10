@@ -16,12 +16,16 @@ import List from 'list.js';
 import './video-modal';
 import eclipsefdnSpecificationBadges from './specification-badges';
 import { setupTopIntersection } from './top-intersection';
+import setupMobileMegaMenu from './mobile-mega-menu';
 
 document.addEventListener("DOMContentLoaded", function() {
     (function($, document) {
       eclipsefdnSpecificationBadges.renderAll();
 
       setupTopIntersection();
+
+      // Initialize Mobile Mega Menu
+      setupMobileMegaMenu();
 
       const matchHeightDropdownMenuItems = () => {
         $('.match-height-dropdown-menu-item').matchHeight({
