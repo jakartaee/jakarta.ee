@@ -62,8 +62,7 @@ const setupEventListeners = () => {
       if (!isMobile()) return;
       
       e.preventDefault();
-      const menuName = link.getAttribute('data-menu-name');
-      const subpage = document.querySelector(`.mega-menu-mobile-page[data-page-name="${menuName}"]`);
+      const subpage = link.parentElement.querySelector('.mega-menu-mobile-page');
       
       if (subpage) showPage(subpage);
     });
