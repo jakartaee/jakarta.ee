@@ -77,12 +77,6 @@ main:
     parent: "develop"
     weight: 3
 
-  - identifier: "explore-developer-portal"
-    name: "Explore the developer portal"
-    url: "/learn/"
-    parent: "develop"
-    weight: 4
-
   # Contribute to Jakarta EE sub-items
   - identifier: "how-to-contribute"
     name: "How to contribute"
@@ -111,15 +105,9 @@ main:
 
   - identifier: "tutorial"
     name: "Tutorial"
-    url: "/learn/docs/jakartaee-tutorial/current/index.html"
+    url: "https://jakarta.ee/learn/docs/jakartaee-tutorial/current/index.html"
     parent: "learn"
     weight: 2
-
-  - identifier: "get-started-learn"
-    name: "Get started"
-    url: "https://start.jakarta.ee/"
-    parent: "learn"
-    weight: 3
 
   # ========================================
   # End of Developer portal mega menu
@@ -253,7 +241,7 @@ main:
 
   - identifier: "certification-results"
     name: "Product certification results"
-    url: "/compatibility/"
+    url: "/compatibility/certification/11"
     parent: "compatible-products"
     weight: 3
 
@@ -323,12 +311,6 @@ main:
     parent: "community-content"
     weight: 4
 
-  - identifier: "migrate-to-jakarta-ee"
-    name: "Migrate to Jakarta EE"
-    url: "/resources/"
-    parent: "community-content"
-    weight: 5
-
   - identifier: "presentations"
     name: "Presentations"
     url: "https://docs.google.com/presentation/d/1LBjjJg64j0HjmFu6m3EApN--mkavemyPFMUobIbGZds/edit#slide=id.g10a8950dfd6_0_139"
@@ -347,12 +329,6 @@ main:
     url: "https://jakartaone.jakarta.ee/"
     parent: "community-events"
     weight: 1
-
-  - identifier: "jakartaone-in-person"
-    name: "JakartaOne in Person"
-    url: "/community/events/"
-    parent: "community-events"
-    weight: 2
 
   - identifier: "jakarta-tech-talks"
     name: "Jakarta Tech Talks"
@@ -375,7 +351,7 @@ main:
 
   - identifier: "slack"
     name: "Slack"
-    url: "/connect/"
+    url: "https://join.slack.com/t/eclipsefoundationhq/shared_invite/zt-crh7mheq-3on2tophEuvQTUGidEAWlg"
     parent: "additional-resources-community"
     weight: 3
 
@@ -495,12 +471,6 @@ main:
     weight: 2
 
   # Sponsorship sub-items
-  - identifier: "become-individual-sponsor"
-    name: "Become an individual sponsor"
-    url: "/supporters/"
-    parent: "sponsorship"
-    weight: 1
-
   - identifier: "become-corporate-sponsor"
     name: "Become a corporate sponsor"
     url: "/supporters/sponsor/"
