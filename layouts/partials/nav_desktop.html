@@ -22,7 +22,7 @@
     {{ if $megaMenu }}
     <!-- Mega Menu (Multi-level) -->
     <li class="menu-item dropdown mega-dropdown">
-      <a href="#" data-toggle="dropdown" class="dropdown-toggle">
+      <a href="#" data-toggle="dropdown" class="dropdown-toggle" data-menu-name="{{ .Name }}">
         {{ .Pre }}
         <span>{{ .Name }}</span>
         <i class="fa fa-angle-down fa-xs" aria-hidden="true"></i>
@@ -35,11 +35,15 @@
                 {{ if .Pre }}
                 <div class="mega-menu-icon">{{ .Pre | safeHTML }}</div>
                 {{ end }}
-                <h3 class="mega-menu-title">{{ .Name }}</h3>
+                <h3 class="mega-menu-title">
+                  {{ .Name }}
+                </h3>
                 {{ if .HasChildren }}
                 <ul class="mega-menu-links">
                   {{ range .Children }}
-                  <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+                  <li>
+                    <a href="{{ .URL }}">{{ .Name }}</a>
+                  </li>
                   {{ end }}
                 </ul>
                 {{ end }}
@@ -73,4 +77,3 @@
     </li>
   {{end}}
 {{ end }}
-{{ partial "nav_more.html" . }}
