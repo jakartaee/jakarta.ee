@@ -1,0 +1,41 @@
+<!-- 
+  Copyright (c) 2018 Eclipse Foundation, Inc.
+
+  This program and the accompanying materials are made available under the
+  terms of the Eclipse Public License v. 2.0 which is available at
+  http://www.eclipse.org/legal/epl-2.0.
+
+  Contributors:
+    Christopher Guindon <chris.guindon@eclipse-foundation.org>
+
+  SPDX-License-Identifier: EPL-2.0
+-->
+<div class="navbar-header">
+  {{ with .Site.Menus.main }}
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-main-menu">
+      <span class="sr-only">{{ i18n "navigation-mobile-menu-toggle" }}</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+  {{ end }}
+  <div class="wrapper-logo-mobile">
+    {{- with .Page.Params.logo | default .Site.Params.logo | default "https://www.eclipse.org/eclipse.org-common/themes/solstice/public/images/logo/eclipse-foundation-white-orange.svg" }}
+      {{ $currentPageLogo := . }}
+      {{ $currentPageLogoTitle := $.Site.Title }}
+      {{ $currentPageLogoLink := "" }}
+
+        {{ range $.Site.Data.subsites_custom_logo.items }}
+          {{ $section := $.Site.GetPage (.page_url) }}
+          {{ if or (eq ($.Section) ($section)) ( $.Page.IsDescendant $section ) }}
+            {{ $currentPageLogo = .logo }}
+            {{ $currentPageLogoTitle = .logo_title }}
+            {{ $currentPageLogoLink = .logo_url }}
+          {{ end }}
+        {{ end }}
+
+      <a class="navbar-brand visible-xs" title="{{ $currentPageLogoTitle }}" href="{{ $currentPageLogoLink | absLangURL }}">
+        <img width="{{ $.Page.Params.logo_width | default $.Site.Params.logo_width | default "140"}}" class="logo-eclipse-default-mobile img-responsive" src="{{ $currentPageLogo | relURL }}" alt="{{ $currentPageLogoTitle }}" />
+      </a>
+    {{ end }}
+  </div>
+</div>

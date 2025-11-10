@@ -14,7 +14,7 @@
 <div class="navbar-wrapper is-top top">
   <div class="container">
     <div id="header-row" class="main-menu">
-      <div class="menu-left">
+      <div class="menu-left hidden-xs">
         <div class="wrapper-logo-default">
 
             {{ with .Page.Params.logo | default .Site.Params.logo | default "https://www.eclipse.org/eclipse.org-common/themes/solstice/public/images/logo/eclipse-foundation-white-orange.svg" }}
@@ -55,14 +55,30 @@
         {{ if or (eq $normalized_cta_url .Permalink) (eq $abs_cfa .Permalink) }}
           {{ $is_cfa_page = 1 }}
         {{ end }}
-        <nav class="navigation-bar" id="navbar-main-menu">
+        <nav class="navigation-bar navbar-collapse collapse" id="navbar-main-menu">
           <ul>
-            {{ partial "nav.html" . }}
+            {{ partial "nav_desktop.html" . }}
           </ul>
         </nav>
+        <!-- Mobile Main Menu Page -->
+        <div class="mobile-main-menu-page hidden-sm hidden-md hidden-lg">
+          <div class="mobile-menu-header">
+            <div class="mobile-menu-logo">
+              <img width="140" src="{{ .Site.Params.logo }}" alt="{{ .Site.Title }}" />
+            </div>
+            <button class="mobile-menu-close" aria-label="Close menu">
+              <i class="fa fa-times" aria-hidden="true"></i>
+            </button>
+          </div>
+          <div class="mobile-menu-content">
+            <ul class="mobile-menu-items">
+              {{ partial "nav_mobile.html" . }}
+            </ul>
+          </div>
+        </div>
         {{ partial "nav_toggle.html" . }}
       </div>
-      <div class="menu-right">
+      <div class="menu-right hidden-xs hidden-sm hidden-md">
         {{ if and (eq $has_cfa 1) (not (or (eq .Site.Params.hide_cfa_same_page "true") (eq $is_cfa_page 1) (eq $hide_call_for_action true))) }}
           <div class="btn-starter">
             <a class="btn btn-secondary margin-0" href="https://start.jakarta.ee/">Starter</a>

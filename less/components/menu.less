@@ -1,22 +1,34 @@
-  .navbar-wrapper {
-    position: sticky;
-    top: 0;
-    z-index: 10;
+.navbar-wrapper {
+  position: sticky;
+  top: 0;
+  z-index: 10;
 
+  .navbar-header {
+    position: relative;
+
+    .navbar-toggle {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 0;
+    }
+  }
+}
+
+// Desktop styles
+@media (min-width: @screen-sm-min) {
+  .navbar-wrapper {
     margin-top: @header-toolbar-height;
 
     &:has(+ header .jumbotron) {
-      // This is the height of the navbar, we set a negative margin to overlap content underneath so that the sticky navbar doesn't push content down
       margin-bottom: calc(-@main-menu-height - @header-toolbar-height);
 
       & + header .jumbotron {
-        padding-top: calc(
-          @main-menu-height + @header-toolbar-height + @jumbotron-padding-top
-        );
+        padding-top: calc(@main-menu-height + @header-toolbar-height + @jumbotron-padding-top);
       }
     }
 
-    transition: all 0.3s ease;
+    transition: all 0.2s ease;
 
     &:not(.top),
     &:has(.main-menu .menu-item.open),
@@ -30,7 +42,7 @@
     display: none;
   }
 
-  // Mega Menu styles
+  // Desktop Mega Menu
   .mega-menu {
     position: absolute;
     left: 50%;
@@ -78,17 +90,6 @@
         width: 1px;
         height: 80%;
         background-color: @brand-primary;
-      }
-
-      .mega-menu-icon {
-        margin-bottom: 1.5rem;
-
-        svg,
-        img {
-          width: 3rem;
-          height: 3rem;
-          color: @brand-primary;
-        }
       }
 
       .mega-menu-title {
@@ -146,7 +147,6 @@
 
         &:hover {
           background-color: inherit;
-
           text-decoration: underline;
           color: @brand-primary-orange;
         }
@@ -158,7 +158,6 @@
       display: flex;
       align-items: center;
       gap: 1rem;
-
       flex-grow: 1;
       flex-basis: 0;
     }
@@ -169,28 +168,6 @@
 
     .menu-right {
       justify-content: flex-end;
-    }
-
-    .menu {
-      position: relative;
-    }
-
-    .dropdown-menu {
-      border-radius: 0 0 @border-radius-medium @border-radius-medium;
-      overflow: hidden;
-      margin: 0;
-      padding: 4rem 0;
-
-      & > li > a {
-        padding: 0.3rem 5rem;
-
-        &:hover {
-          background-color: inherit;
-
-          text-decoration: underline;
-          color: @brand-primary-orange;
-        }
-      }
     }
 
     .menu-item {
@@ -205,7 +182,6 @@
         align-items: center;
         height: 100%;
         gap: 0.8rem;
-
         border-top: 0.4rem solid transparent;
         border-bottom: 0.4rem solid transparent;
       }
@@ -220,8 +196,8 @@
     }
 
     .navigation-bar {
-      height: 100%;
-      display: flex;
+      height: 100% !important;
+      display: flex !important;
 
       & > ul {
         padding: 0;
@@ -236,3 +212,218 @@
       }
     }
   }
+}
+
+// Mobile styles
+@media (max-width: @screen-xs-max) {
+  .navbar-wrapper {
+    background-color: #ffffff;
+  }
+
+  .navbar-toggle {
+    margin: 0;
+
+    .icon-bar {
+      background: @brand-primary-blue;
+      height: 2px;
+    }
+  }
+
+  .main-menu {
+    color: @brand-primary-blue;
+
+    // Hide default Bootstrap navbar and desktop menus
+    .navbar-collapse,
+    .menu-item .mega-menu,
+    .menu-item .dropdown-menu,
+    .menu-item.mega-dropdown.open .mega-menu,
+    .menu-item.dropdown.open .dropdown-menu {
+      display: none !important;
+    }
+
+    // Shared styles for mobile pages
+    .mobile-main-menu-page,
+    .mega-menu-mobile-page {
+      position: fixed;
+      top: 0;
+      left: 100%;
+      width: 100%;
+      height: 100vh;
+      background: #ffffff;
+      overflow-y: auto;
+      -webkit-overflow-scrolling: touch;
+      transition: left 0.2s ease-in-out;
+
+      &.active {
+        left: 0;
+      }
+    }
+
+    // Main mobile menu page
+    .mobile-main-menu-page {
+      z-index: 9999;
+
+      .mobile-menu-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 2rem;
+        position: sticky;
+        top: 0;
+        background: #ffffff;
+        z-index: 10;
+
+        .mobile-menu-logo img {
+          max-height: 4rem;
+        }
+
+        .mobile-menu-close {
+          background: none;
+          border: none;
+          padding: 0.8rem;
+          cursor: pointer;
+          color: @brand-primary-royal;
+          font-size: 2rem;
+        }
+      }
+
+      .mobile-menu-items {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        & > .menu-item > a {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 1rem 2rem;
+          color: @brand-primary;
+          text-decoration: none;
+          font-size: 1.8rem;
+          font-weight: 600;
+
+          .fa-arrow-right {
+            color: @brand-primary-royal;
+            font-size: 1.6rem;
+          }
+        }
+      }
+    }
+
+    // Mobile subpage (mega menu and dropdowns)
+    .mega-menu-mobile-page {
+      z-index: 10000;
+
+      .mega-menu-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 2rem;
+        position: sticky;
+        top: 0;
+        background: #ffffff;
+        z-index: 10;
+
+        .mega-menu-back-to-main,
+        .mega-menu-close {
+          background: none;
+          border: none;
+          padding: 0.8rem;
+          cursor: pointer;
+          color: @brand-primary-royal;
+          font-size: 2rem;
+        }
+      }
+
+      .mega-menu-main-title {
+        font-size: 2.7rem;
+        padding: 0 2rem;
+        margin-bottom: 2rem;
+        font-weight: 600;
+        color: @brand-primary;
+      }
+
+      .mega-menu-items {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        padding: 0 2rem;
+      }
+
+      .mega-menu-column {
+        padding: 0;
+        border-bottom: 1px solid #e0e0e0;
+
+        &::after {
+          display: none;
+        }
+
+        .mega-menu-icon {
+          display: none;
+        }
+
+        // Collapsible title (for mega menu columns with children)
+        .mega-menu-title {
+          font-size: 1.8rem;
+          font-weight: 600;
+          color: @brand-primary-royal;
+          margin: 0;
+          padding: 0.7rem 0;
+          white-space: normal;
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          user-select: none;
+
+          .mega-menu-collapse-icon {
+            transition: transform 0.2s ease;
+          }
+
+          &.collapsed .mega-menu-collapse-icon {
+            transform: rotate(-90deg);
+          }
+        }
+
+        .mega-menu-links {
+          list-style: none;
+          padding: 0;
+          margin: 0;
+          overflow: hidden;
+          transition: height 0.35s ease;
+
+          // Bootstrap collapse classes
+          &.collapse {
+            display: block;
+            height: 0;
+          }
+
+          &.collapse.in {
+            height: auto;
+          }
+
+          &.collapsing {
+            position: relative;
+            height: 0;
+          }
+
+          li a {
+            color: @brand-primary-royal;
+            text-decoration: none;
+            padding: 0.6rem 0;
+            font-size: 1.6rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .fa-arrow-right {
+              color: @brand-primary-royal;
+              font-size: 1.4rem;
+              transform: rotate(-45deg);
+            }
+          }
+        }
+      }
+    }
+  }
+}

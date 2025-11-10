@@ -21,17 +21,19 @@
 }
 
 .toolbar-container-wrapper {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 15;
+  @media (min-width: @screen-sm-min) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 15;
+  }
 
   transition: all 0.3s ease;
 
   &:has(+ .navbar-wrapper .menu-item.open),
   &:has(+ .navbar-wrapper + header .jumbotron.featured-jumbotron-dark) {
-    background-color: @header-toolbar-background-color-on-open-nav;
+    background: @header-toolbar-background-color-on-open-nav;
   }
 
   .toolbar-row {

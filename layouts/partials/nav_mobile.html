@@ -1,0 +1,119 @@
+<!-- 
+  Copyright (c) 2018 Eclipse Foundation, Inc.
+
+  This program and the accompanying materials are made available under the
+  terms of the Eclipse Public License v. 2.0 which is available at
+  http://www.eclipse.org/legal/epl-2.0.
+
+  Contributors:
+    Christopher Guindon <chris.guindon@eclipse-foundation.org>
+
+  SPDX-License-Identifier: EPL-2.0
+-->
+{{ range .Site.Menus.main }}
+  {{ if .HasChildren }}
+    {{ $megaMenu := false }}
+    {{ range .Children }}
+      {{ if .HasChildren }}
+        {{ $megaMenu = true }}
+      {{ end }}
+    {{ end }}
+    {{ if $megaMenu }}
+    <!-- Mega Menu (Multi-level) -->
+    <li class="menu-item dropdown mega-dropdown">
+      <a href="#" class="dropdown-toggle" data-menu-name="{{ .Name }}">
+        {{ .Pre }}
+        <span>{{ .Name }}</span>
+      </a>
+      <!-- Mobile Subpage -->
+      <div class="mega-menu-mobile-page" data-page-name="{{ .Name }}">
+        <div class="mega-menu-header">
+          <button class="mega-menu-back-to-main" aria-label="Back to menu">
+            <i class="fa fa-angle-left" aria-hidden="true"></i>
+          </button>
+          <button class="mega-menu-close" aria-label="Close menu">
+            <i class="fa fa-times" aria-hidden="true"></i>
+          </button>
+        </div>
+        <div class="mega-menu-mobile-content">
+          <h2 class="mega-menu-main-title">{{ .Name }}</h2>
+          <div class="mega-menu-items">
+          {{ range .Children }}
+            <div class="mega-menu-column">
+              {{ if .HasChildren }}
+              <h3 class="mega-menu-title collapsed" data-toggle="collapse" data-target="#mobile-mega-menu-{{ anchorize .Identifier }}" aria-expanded="false">
+                {{ .Name }}
+                <i class="fa fa-angle-down mega-menu-collapse-icon" aria-hidden="true"></i>
+              </h3>
+              <ul class="mega-menu-links collapse" id="mobile-mega-menu-{{ anchorize .Identifier }}">
+                {{ range .Children }}
+                <li>
+                  <a href="{{ .URL }}">
+                    {{ .Name }}
+                    <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                  </a>
+                </li>
+                {{ end }}
+              </ul>
+              {{ else }}
+              <ul class="mega-menu-links">
+                <li>
+                  <a href="{{ .URL }}">
+                    {{ .Name }}
+                    <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                  </a>
+                </li>
+              </ul>
+              {{ end }}
+            </div>
+          {{ end }}
+          </div>
+        </div>
+      </div>
+    </li>
+    {{ else }}
+    <!-- Regular Dropdown (Single level) -->
+    <li class="menu-item dropdown">
+      <a href="#" class="dropdown-toggle" data-menu-name="{{ .Name }}">
+        {{ .Pre }}
+        <span>{{ .Name }}</span>
+      </a>
+      <!-- Mobile Subpage for regular dropdown -->
+      <div class="mega-menu-mobile-page" data-page-name="{{ .Name }}">
+        <div class="mega-menu-header">
+          <button class="mega-menu-back-to-main" aria-label="Back to menu">
+            <i class="fa fa-angle-left" aria-hidden="true"></i>
+          </button>
+          <button class="mega-menu-close" aria-label="Close menu">
+            <i class="fa fa-times" aria-hidden="true"></i>
+          </button>
+        </div>
+        <div class="mega-menu-mobile-content">
+          <h2 class="mega-menu-main-title">{{ .Name }}</h2>
+          <div class="mega-menu-items">
+            {{ range .Children }}
+            <div class="mega-menu-column">
+              <ul class="mega-menu-links">
+                <li>
+                  <a href="{{.URL}}">
+                    {{ .Name }}
+                    <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            {{ end }}
+          </div>
+        </div>
+      </div>
+    </li>
+    {{ end }}
+  {{else}}
+    <li class="menu-item">
+      <a class="" href="{{.URL}}">
+      {{ .Pre }}
+      {{ .Name }}
+      </a>
+    </li>
+  {{end}}
+{{ end }}
