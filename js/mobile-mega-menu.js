@@ -13,7 +13,7 @@
  * Manages mobile menu navigation including main menu and subpages
  */
 
-const isMobile = () => window.innerWidth <= 768;
+const isMobile = () => window.innerWidth <= 1200;
 
 /**
  * Shows a mobile menu page (either main menu or subpage)
