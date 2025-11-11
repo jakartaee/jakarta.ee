@@ -1,0 +1,55 @@
+{{/*
+  Copyright (c) 2025 Eclipse Foundation, Inc.
+
+  This program and the accompanying materials are made available under the
+  terms of the Eclipse Public License v. 2.0 which is available at
+  http://www.eclipse.org/legal/epl-2.0.
+
+  SPDX-License-Identifier: EPL-2.0
+
+  Call for Actions Partial
+  
+  This partial renders a list of call-to-action (CTA) buttons configured in site params.
+  
+  Configuration:
+  - [[Params.call_for_actions]] - Array of CTA button objects in config.toml
+    - text_key: i18n translation key for button text
+    - url: Button destination URL
+    - icon: Optional Font Awesome icon class
+    - classes: CSS classes for button styling
+  
+  Hiding behavior:
+  - Respects page-level hide_call_for_action parameter
+  - When hide_cfa_same_page is "true" in site params, hides CTAs on pages 
+    that match any CTA URL (prevents showing "Download" button on download page)
+  - Returns nothing if either condition triggers hiding
+*/}}
+
+{{ $hide_call_for_action := .Page.Params.hide_call_for_action }}
+{{ $is_cfa_page := false }}
+
+{{/* Check if current page matches any CTA URL when hide_cfa_same_page is enabled */}}
+{{ if eq .Site.Params.hide_cfa_same_page "true" }}
+  {{ range .Site.Params.call_for_actions }}
+    {{ $normalized_cta_url := .url }}
+    {{/* Ensure URL has trailing slash for consistent comparison */}}
+    {{ if (eq (len (findRE `(\.[^\/]{3,4}|\/)$` $normalized_cta_url)) 0) }}
+      {{ $normalized_cta_url = printf "%s/" $normalized_cta_url }}
+    {{ end }}
+    {{ $abs_cfa := printf "%s" ($normalized_cta_url | relURL) }}
+    {{ if or (eq $normalized_cta_url $.Permalink) (eq $abs_cfa $.Permalink) }}
+      {{ $is_cfa_page = true }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+
+{{/* Render CTA buttons only if not hidden by page param or same-page logic */}}
+{{ if and .Site.Params.call_for_actions (not (or $hide_call_for_action $is_cfa_page)) }}
+  {{ range .Site.Params.call_for_actions }}
+    <div class="btn-cfa-item">
+      <a class="{{ .classes | default "btn btn-huge btn-outline-primary" }}" href="{{ .url }}">
+        {{ if .icon }}<i class="fa {{ .icon }}"></i> {{ end }}{{ i18n .text_key }}
+      </a>
+    </div>
+  {{ end }}
+{{ end }}
