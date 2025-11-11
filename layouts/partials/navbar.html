@@ -14,7 +14,7 @@
 <div class="navbar-wrapper is-top top">
   <div class="container">
     <div id="header-row" class="main-menu">
-      <div class="menu-left hidden-xs">
+      <div class="menu-left hidden-xs hidden-sm hidden-md">
         <div class="wrapper-logo-default">
 
             {{ with .Page.Params.logo | default .Site.Params.logo | default "https://www.eclipse.org/eclipse.org-common/themes/solstice/public/images/logo/eclipse-foundation-white-orange.svg" }}
@@ -40,13 +40,13 @@
         </div>
       </div>
       <div class="menu" id="main-menu-wrapper">
-        <nav class="navigation-bar navbar-collapse collapse" id="navbar-main-menu">
+        <nav class="navigation-bar hidden-xs hidden-sm hidden-md hidden-lg" id="navbar-main-menu">
           <ul>
             {{ partial "nav_desktop.html" . }}
           </ul>
         </nav>
         <!-- Mobile Main Menu Page -->
-        <div class="mobile-main-menu-page hidden-sm hidden-md hidden-lg">
+        <div class="mobile-main-menu-page hidden-lg">
           <div class="mobile-menu-header">
             <div class="mobile-menu-logo">
               <img width="140" src="{{ .Site.Params.logo }}" alt="{{ .Site.Title }}" />

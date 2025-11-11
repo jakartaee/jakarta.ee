@@ -16,7 +16,7 @@
 }
 
 // Desktop styles
-@media (min-width: @screen-sm-min) {
+@media (min-width: @screen-lg-min) {
   .navbar-wrapper {
     margin-top: @header-toolbar-height;
 
@@ -24,7 +24,9 @@
       margin-bottom: calc(-@main-menu-height - @header-toolbar-height);
 
       & + header .jumbotron {
-        padding-top: calc(@main-menu-height + @header-toolbar-height + @jumbotron-padding-top);
+        padding-top: calc(
+          @main-menu-height + @header-toolbar-height + @jumbotron-padding-top
+        );
       }
     }
 
@@ -215,13 +217,18 @@
 }
 
 // Mobile styles
-@media (max-width: @screen-xs-max) {
+@media (max-width: @screen-md-max) {
   .navbar-wrapper {
     background-color: #ffffff;
   }
 
+  .navbar-header {
+    float: none;
+  }
+
   .navbar-toggle {
     margin: 0;
+    display: block;
 
     .icon-bar {
       background: @brand-primary-blue;
@@ -357,7 +364,7 @@
         }
       }
 
-      .mega-menu-mobile-content { 
+      .mega-menu-mobile-content {
         flex: 1;
       }
 

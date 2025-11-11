@@ -33,7 +33,7 @@
           {{ end }}
         {{ end }}
 
-      <a class="navbar-brand visible-xs" title="{{ $currentPageLogoTitle }}" href="{{ $currentPageLogoLink | absLangURL }}">
+      <a class="navbar-brand hidden-lg" title="{{ $currentPageLogoTitle }}" href="{{ $currentPageLogoLink | absLangURL }}">
         <img width="{{ $.Page.Params.logo_width | default $.Site.Params.logo_width | default "140"}}" class="logo-eclipse-default-mobile img-responsive" src="{{ $currentPageLogo | relURL }}" alt="{{ $currentPageLogoTitle }}" />
       </a>
     {{ end }}
