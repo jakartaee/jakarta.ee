@@ -9,10 +9,10 @@ This committee owns the overall strategy and the high level, long term roadmap s
 
 ### Committee Members
 
-* Will Lyons (**chair**)- Oracle, Ed Bratt - alternate
+* Ed Bratt (**chair**) - Oracle, Dmitry Kornilov - alternate
 * Kenji Kazumura - Fujitsu, Yuichi Kusano - alternate
 * Alasdair Nottingham - IBM, Emily Jiang - alternate
-* Steve Millidge - Payara, Steve Butler - alternate
+* Dominika Tasarz - Payara, Steve Butler - alternate
 * David Blevins - Tomitribe, Cesar Hernandez - alternate
 * Ondro Mihaly - Omnifish OU - Elected Participant Member Representative
 * Vacant - Elected Committer Member Representative
