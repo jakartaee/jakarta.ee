@@ -333,6 +333,8 @@
     // Mobile subpage (mega menu and dropdowns)
     .mega-menu-mobile-page {
       z-index: 10000;
+      display: flex;
+      flex-direction: column;
 
       .mega-menu-header {
         display: flex;
@@ -353,6 +355,14 @@
           color: @brand-primary-royal;
           font-size: 2rem;
         }
+      }
+
+      .mega-menu-mobile-content { 
+        flex: 1;
+      }
+
+      .mega-menu-mobile-footer {
+        padding: 2rem;
       }
 
       .mega-menu-main-title {
