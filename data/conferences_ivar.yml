@@ -28,6 +28,12 @@ years:
     date: Feb 24-27
     upcoming: true
 
+  - name: DeveloperWeek
+    url: https://www.developerweek.com/
+    location: San Jose, CA 🇺🇸
+    date: Feb 18-20
+    upcoming: true
+
   - name: I Code Java
     url: https://j-sa.co
     location: Johannesburg 🇿🇦
