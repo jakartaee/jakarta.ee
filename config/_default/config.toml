@@ -27,9 +27,6 @@ enableInlineShortcodes = true
   header_wrapper_class = "header-default-bg-img"
   js = "js/solstice.js?v2.3"
   show_events = true
-  call_for_action_text = "Download"
-  call_for_action_url = "/compatibility/download/"
-  call_for_action_icon = ""
   main_menu_wrapper_classes = "col-sm-19 margin-top-20"
 #   hide_cfa_same_page = "true"
   featured_content_publish_target = "jakarta_ee"
@@ -41,6 +38,19 @@ enableInlineShortcodes = true
   footer_section_useful_links_class = "col-sm-5th padding-top-20"
   footer_section_other_class = "col-sm-5th padding-top-20"
   footer_section_socials_class = "col-sm-5th footer-section-socials"
+
+[[Params.call_for_actions]]
+  text_key = "cta-download"
+  url = "/compatibility/download/"
+  icon = ""
+  classes = "btn btn-huge btn-outline-primary"
+
+[[Params.call_for_actions]]
+  text_key = "cta-join-us"
+  url = "/membership/"
+  icon = ""
+  classes = "btn btn-secondary"
+  
 
 [[Params.socials]]
   name = "Bluesky"

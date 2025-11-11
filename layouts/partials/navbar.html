@@ -39,22 +39,7 @@
 
         </div>
       </div>
-      {{ $has_cfa := 0 }}
-      {{ if (and (isset .Site.Params "call_for_action_text") (isset .Site.Params "call_for_action_url") (isset .Site.Params "call_for_action_icon")) }}
-        {{ $has_cfa = 1 }}
-      {{ end }}
       <div class="menu" id="main-menu-wrapper">
-        {{ $normalized_cta_url := .Site.Params.call_for_action_url }}
-        {{ $hide_call_for_action := .Page.Params.hide_call_for_action }}
-        {{ if (eq (len (findRE `(\.[^\/]{3,4}|\/)$` $normalized_cta_url)) 0) }}
-          {{ $normalized_cta_url = printf "%s/" $normalized_cta_url }}
-        {{ end }}
-
-        {{ $abs_cfa := printf "%s" ($normalized_cta_url | relURL) }}
-        {{ $is_cfa_page := 0 }}
-        {{ if or (eq $normalized_cta_url .Permalink) (eq $abs_cfa .Permalink) }}
-          {{ $is_cfa_page = 1 }}
-        {{ end }}
         <nav class="navigation-bar navbar-collapse collapse" id="navbar-main-menu">
           <ul>
             {{ partial "nav_desktop.html" . }}
@@ -75,16 +60,16 @@
               {{ partial "nav_mobile.html" . }}
             </ul>
           </div>
+          <div class="mobile-menu-footer">
+            <div class="call-for-action-items">
+              {{ partial "call_for_actions.html" . }}
+            </div>
+          </div>
         </div>
         {{ partial "nav_toggle.html" . }}
       </div>
       <div class="menu-right hidden-xs hidden-sm hidden-md">
-        {{ if and (eq $has_cfa 1) (not (or (eq .Site.Params.hide_cfa_same_page "true") (eq $is_cfa_page 1) (eq $hide_call_for_action true))) }}
-          <div class="btn-starter">
-            <a class="btn btn-secondary margin-0" href="https://start.jakarta.ee/">Starter</a>
-          </div>
-          <div id="btn-call-for-action"><a href="{{ .Site.Params.call_for_action_url }}" class="{{ .Site.Params.call_for_action_classes | default "btn btn-huge btn-outline-primary" }}"><i class="fa {{ .Site.Params.call_for_action_icon }}"></i> {{ .Site.Params.call_for_action_text }}</a></div>
-        {{ end }}
+        {{ partial "call_for_actions.html" . }}
       </div>
     </div>
   </div>
