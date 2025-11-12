@@ -10,18 +10,12 @@
     }
   }
   &.header-default-bg-img {
-    background-position: 90% 0;
-
-    @media (min-width: @screen-sm-min) {
-      background-position: -230px 0;
-    }
-
-    @media (min-width: 1400px) {
-      background-position: left center;
-    }
-
-    .featured-jumbotron::before {
-      background-color: @brand-quinary;
+    .featured-jumbotron {
+      background-position: center;
+      
+      &::before {
+        content: unset;
+      }
     }
   }
   &.header-secondary-bg-img {
@@ -78,7 +72,9 @@
 
     @media (max-width: @screen-md-max) {
       @mobile-header-menu-height: 50px;
-      min-height: calc(100vh - @header-toolbar-height - @mobile-header-menu-height);
+      min-height: calc(
+        100vh - @header-toolbar-height - @mobile-header-menu-height
+      );
       padding: 0;
     }
   }
