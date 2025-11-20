@@ -35,21 +35,24 @@ main:
   # ========================================
   # These column headers don't have URLs - they act as section dividers
   # in the mega menu, creating a 3-column layout structure
-  
+
   # Column 1: Develop
   - identifier: "develop"
+    pre: "static/images/icons/menu/develop.svg"
     name: "Develop"
     weight: 1
     parent: "developer-portal"
 
   # Column 2: Contribute to Jakarta EE
   - identifier: "contribute-jakartaee"
+    pre: "static/images/icons/menu/contribute.svg"
     name: "Contribute"
     weight: 2
     parent: "developer-portal"
 
   # Column 3: Learn
   - identifier: "learn"
+    pre: "static/images/icons/menu/learn.svg"
     name: "Learn"
     weight: 3
     parent: "developer-portal"
@@ -57,7 +60,7 @@ main:
   # ========================================
   # Developer portal mega menu sub-items
   # ========================================
-  
+
   # Develop sub-items
   - identifier: "get-started"
     name: "Get started"
@@ -79,7 +82,7 @@ main:
 
   # Contribute to Jakarta EE sub-items
   - identifier: "how-to-contribute"
-    name: "How to contribute"
+    name: "Contribution guide"
     url: "/contribute/"
     parent: "contribute-jakartaee"
     weight: 1
@@ -116,28 +119,31 @@ main:
   # ========================================
   # Specifications dropdown (Mega Menu)
   # ========================================
-  
+
   # Column 1: Explore Specifications
   - identifier: "explore-specifications"
+    pre: "static/images/icons/menu/explore-spec.svg"
     name: "Explore Specifications"
     weight: 1
     parent: "specifications"
 
   # Column 2: Releases
   - identifier: "releases"
+    pre: "static/images/icons/menu/releases.svg"
     name: "Releases"
     weight: 2
     parent: "specifications"
 
   # Column 3: Additional resources
   - identifier: "additional-resources-specs"
-    name: "Additional resources"
+    pre: "static/images/icons/menu/resources.svg"
+    name: "Additional Resources"
     weight: 3
     parent: "specifications"
 
   # Explore Specifications sub-items
   - identifier: "all-specifications"
-    name: "All Specifications"
+    name: "All specifications"
     url: "/specifications/"
     parent: "explore-specifications"
     weight: 1
@@ -161,7 +167,7 @@ main:
     weight: 4
 
   - identifier: "browse-individual-specifications"
-    name: "Browse Individual Specifications"
+    name: "Browse individual specifications"
     url: "/specifications/"
     parent: "explore-specifications"
     weight: 5
@@ -192,32 +198,32 @@ main:
     weight: 4
 
   - identifier: "view-all-releases"
-    name: "View all Releases"
+    name: "View all releases"
     url: "/release/"
     parent: "releases"
     weight: 5
 
   # Additional resources sub-items
   - identifier: "specification-process"
-    name: "Specification Process"
+    name: "Specification process"
     url: "/about/jesp/"
     parent: "additional-resources-specs"
     weight: 1
 
   - identifier: "jesp-guide"
-    name: "JESP Guide"
+    name: "JESP guide"
     url: "/committees/specification/guide/"
     parent: "additional-resources-specs"
     weight: 2
 
   - identifier: "specification-projects"
-    name: "Specification Projects"
+    name: "Specification projects"
     url: "/projects/"
     parent: "additional-resources-specs"
     weight: 3
 
   - identifier: "xml-schemas"
-    name: "XML Schemas"
+    name: "XML schemas"
     url: "/xml/ns/jakartaee/"
     parent: "additional-resources-specs"
     weight: 4
@@ -233,55 +239,59 @@ main:
     parent: "compatible-products"
     weight: 1
 
-  - identifier: "get-listed"
-    name: "Get listed"
-    url: "/compatibility/get-listed/"
-    parent: "compatible-products"
-    weight: 2
-
   - identifier: "certification-results"
     name: "Product certification results"
     url: "/compatibility/certification/11"
+    parent: "compatible-products"
+    weight: 2
+
+  - identifier: "get-listed"
+    name: "Get listed"
+    url: "/compatibility/get-listed/"
     parent: "compatible-products"
     weight: 3
 
   # ========================================
   # Community dropdown (Mega Menu)
   # ========================================
-  
+
   # Column 1: Take Part
   - identifier: "take-part"
+    pre: "static/images/icons/menu/take-part.svg"
     name: "Take Part"
     weight: 1
     parent: "community"
 
   # Column 2: Community Content
   - identifier: "community-content"
+    pre: "static/images/icons/menu/community.svg"
     name: "Community Content"
     weight: 2
     parent: "community"
 
   # Column 3: Community Events
   - identifier: "community-events"
+    pre: "static/images/icons/menu/events.svg"
     name: "Community Events"
     weight: 3
     parent: "community"
 
   # Column 4: Additional Resources
   - identifier: "additional-resources-community"
+    pre: "static/images/icons/menu/additional-resources.svg"
     name: "Additional Resources"
     weight: 4
     parent: "community"
 
   # Take Part sub-items
   - identifier: "how-to-get-involved"
-    name: "How to Get Involved"
+    name: "How to get involved"
     url: "/community/get-involved/"
     parent: "take-part"
     weight: 1
 
   - identifier: "stay-connected"
-    name: "Stay Connected"
+    name: "Stay connected"
     url: "/connect/"
     parent: "take-part"
     weight: 2
@@ -306,7 +316,7 @@ main:
     weight: 3
 
   - identifier: "insights-publications-community"
-    name: "Insights and Publications"
+    name: "Insights and publications"
     url: "/resources/"
     parent: "community-content"
     weight: 4
@@ -344,7 +354,7 @@ main:
     weight: 1
 
   - identifier: "community-mailing-list"
-    name: "Community mailing List"
+    name: "Community mailing list"
     url: "https://accounts.eclipse.org/mailing-list/jakarta.ee-community"
     parent: "additional-resources-community"
     weight: 2
@@ -356,7 +366,7 @@ main:
     weight: 3
 
   - identifier: "swag-store"
-    name: "Swag Store"
+    name: "Swag store"
     url: "https://eclipse-foundation.store/collections/jakarta-ee"
     parent: "additional-resources-community"
     weight: 4
@@ -368,15 +378,17 @@ main:
   # ========================================
   # About dropdown (Mega Menu)
   # ========================================
-  
+
   # Column 1: Technology
   - identifier: "technology"
+    pre: "static/images/icons/menu/technology.svg"
     name: "Technology"
     weight: 1
     parent: "about"
 
   # Column 2: Governance
   - identifier: "governance"
+    pre: "static/images/icons/menu/governance.svg"
     name: "Governance"
     weight: 2
     parent: "about"
@@ -395,7 +407,7 @@ main:
     weight: 2
 
   - identifier: "faq"
-    name: "Frequently Asked Questions"
+    name: "Frequently asked questions"
     url: "/about/faq/"
     parent: "technology"
     weight: 3
@@ -414,13 +426,13 @@ main:
     weight: 2
 
   - identifier: "trademark-guidelines"
-    name: "Trademark Guidelines"
+    name: "Trademark guidelines"
     url: "/legal/trademark_guidelines/"
     parent: "governance"
     weight: 3
 
   - identifier: "technical-direction"
-    name: "Technical Direction"
+    name: "Technical direction"
     url: "https://www.eclipse.org/ee4j/direction.php"
     parent: "governance"
     weight: 4
@@ -438,7 +450,7 @@ main:
   # ========================================
   # Join Us dropdown (Mega Menu)
   # ========================================
-  
+
   # Column 1: Membership
   - identifier: "membership"
     name: "Membership"
@@ -489,12 +501,6 @@ main:
     url: "/mentorship/"
     parent: "contribute-joinus"
     weight: 2
-
-  - identifier: "meet-contributors"
-    name: "Meet the Contributors"
-    url: "/contribute/"
-    parent: "contribute-joinus"
-    weight: 3
 
   # ========================================
   # End of Join Us mega menu
