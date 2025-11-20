@@ -8,6 +8,8 @@ googleAnalytics = "UA-910670-30"
 themesDir = "node_modules/"
 enableRobotsTXT = true
 enableInlineShortcodes = true
+## Suppress logging for now allowed raw HTML content
+ignoreLogs = ['warning-goldmark-raw-html']
 [markup.highlight]
   noClasses = false
   style = "github"

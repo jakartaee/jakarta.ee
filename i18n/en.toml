@@ -620,7 +620,7 @@ other = "Sign up now"
  other = "specifications"
 
 [jakarta-ee-version-9_1-previous-release-link]
- other = "<a id=\"text-white\" href=\"/release\" class=\"uppercase\">view all releases</a>"
+ other = "<a id=\"text-white\" href=\"/release\" class=\"uppercase vertical-align\">view all releases</a>"
 
 [jakarta-ee-version-9-section-skip-to-main-content]
  other = "Skip to main content"
@@ -638,7 +638,7 @@ other = "Sign up now"
  other = "specifications"
 
 [jakarta-ee-version-9-previous-release-link]
- other = "<a id=\"text-white\" href=\"/release\" class=\"uppercase\">view all releases</a>"
+ other = "<a id=\"text-white\" href=\"/release\" class=\"uppercase vertical-align\">view all releases</a>"
 
 [jakarta-ee-version-8-section-skip-to-main-content]
  other = "Skip to main content"
