@@ -64,12 +64,12 @@ years:
     url: https://devoxx.ma/
     location: Marrakech 🇲🇦
     date: Nov 12-14
-    upcoming: true
 
   - name: Aveiro Open Source Connect
     url: https://www.it.pt/Events/Event/5703
     location: Aveiro 🇵🇹
     date: Nov 12
+    blog: https://www.agilejava.eu/2025/11/20/aveiro-open-source-connect/
     
   - name: ChurConf
     url: https://churconf.com/
