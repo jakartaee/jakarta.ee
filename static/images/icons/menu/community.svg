@@ -1,0 +1,75 @@
+<svg
+    width="42"
+    height="41"
+    viewBox="0 0 42 41"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+>
+<path
+        d="M20.667 4.32544V25.9285"
+        stroke="currentColor"
+        stroke-width="1.5"
+        stroke-miterlimit="10"
+    />
+<path
+        d="M20.6673 5.83307C19.2931 5.83307 18.1777 4.69446 18.1777 3.29154C18.1777 1.88861 19.2931 0.75 20.6673 0.75C22.0416 0.75 23.1569 1.88861 23.1569 3.29154C23.1569 4.69446 22.0416 5.83307 20.6673 5.83307Z"
+        fill="white"
+        stroke="currentColor"
+        stroke-width="1.5"
+        stroke-miterlimit="10"
+    />
+<path
+        d="M26.8906 12.7173C26.8906 14.1202 28.006 15.2589 29.3802 15.2589C30.7545 15.2589 31.8698 14.1202 31.8698 12.7173C31.8698 11.3144 30.7545 10.1758 29.3802 10.1758C28.006 10.1758 26.8906 11.3144 26.8906 12.7173Z"
+        stroke="currentColor"
+        stroke-width="1.5"
+        stroke-miterlimit="10"
+    />
+<path
+        d="M24.5078 25.9285V20.8846L29.6292 18.8671V14.832"
+        stroke="currentColor"
+        stroke-width="1.5"
+        stroke-miterlimit="10"
+    />
+<path
+        d="M14.443 12.7173C14.443 14.1202 13.3277 15.2589 11.9535 15.2589C10.5792 15.2589 9.46387 14.1202 9.46387 12.7173C9.46387 11.3144 10.5792 10.1758 11.9535 10.1758C13.3277 10.1758 14.443 11.3144 14.443 12.7173Z"
+        stroke="currentColor"
+        stroke-width="1.5"
+        stroke-miterlimit="10"
+    />
+<path
+        d="M16.8255 25.9285V20.8846L11.7041 18.8671V14.832"
+        stroke="currentColor"
+        stroke-width="1.5"
+        stroke-miterlimit="10"
+    />
+<path
+        d="M26.8907 6.12329H40.5834V34.5786H0.75V6.12329H14.4427"
+        stroke="currentColor"
+        stroke-width="1.5"
+        stroke-miterlimit="10"
+    />
+<path
+        d="M10.708 40.0508H30.6247"
+        stroke="currentColor"
+        stroke-width="1.5"
+        stroke-miterlimit="10"
+    />
+<path
+        d="M24.4004 34.5784V40.0505"
+        stroke="currentColor"
+        stroke-width="1.5"
+        stroke-miterlimit="10"
+    />
+<path
+        d="M16.9316 34.5784V40.0505"
+        stroke="currentColor"
+        stroke-width="1.5"
+        stroke-miterlimit="10"
+    />
+<path
+        d="M0.75 29.1062H40.5834"
+        stroke="currentColor"
+        stroke-width="1.5"
+        stroke-miterlimit="10"
+    />
+</svg>
