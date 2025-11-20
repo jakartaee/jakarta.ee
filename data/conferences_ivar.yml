@@ -40,6 +40,12 @@ years:
     date: Feb 10-11
     upcoming: true
 
+  - name: Jfokus
+    url: https://jfokus.se
+    location: Stockholm 🇸🇪
+    date: Feb 2-4
+    upcoming: true
+
 - year: 2025
   conferences:
 
