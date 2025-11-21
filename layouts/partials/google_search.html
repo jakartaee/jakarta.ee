@@ -12,27 +12,35 @@
 -->
 
 {{ if .Site.Params.gcse }}
-<li class="dropdown eclipse-more hidden-xs">
-  <a data-toggle="dropdown" class="dropdown-toggle" role="button"><i class="fa fa-search"></i> <i class="fa fa-angle-down fa-xs" aria-hidden="true"></i></a>
-  <ul class="dropdown-menu">
-    <li>
-      <!-- Content container to add padding -->
-      <div class="yamm-content">
-        <div class="row">
-          <div class="col-sm-24">
-            <p>
-              <strong>{{ i18n "search-section-label" }}</strong>
-            </p>
-            <form action="https://www.eclipse.org/home/search" method="get">
-              <div class="form-group">
-                <input class="form-control margin-bottom-10" type="textfield" name="q" placeholder="Search">
-                <input class="btn btn-primary" type="submit" value="Submit">
-              </div>
-            </form>
+  <li class="dropdown eclipse-more hidden-xs">
+    <a data-toggle="dropdown" class="dropdown-toggle" role="button"
+      ><i class="fa fa-search"></i>
+      <i class="fa fa-angle-down fa-xs" aria-hidden="true"></i
+    ></a>
+    <ul class="dropdown-menu">
+      <li>
+        <!-- Content container to add padding -->
+        <div class="yamm-content">
+          <div class="row">
+            <div class="col-sm-24">
+              <p>
+                <strong>{{ i18n "search-section-label" }}</strong>
+              </p>
+              <form action="https://www.eclipse.org/home/search" method="get">
+                <div class="form-group">
+                  <input
+                    class="form-control margin-bottom-10"
+                    type="textfield"
+                    name="q"
+                    placeholder="Search"
+                  />
+                  <input class="btn btn-primary" type="submit" value="Submit" />
+                </div>
+              </form>
+            </div>
           </div>
         </div>
-      </div>
-    </li>
-  </ul>
-</li>
+      </li>
+    </ul>
+  </li>
 {{ end }}

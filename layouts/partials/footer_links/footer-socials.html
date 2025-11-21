@@ -1,12 +1,12 @@
-<section class="{{- .Params.footer_section_socials_class | default .Site.Params.footer_section_socials_class | default "col-sm-6 hidden-print"}}" id="footer-socials">
-    <h2 class="section-title"><img class="img-responsive" src={{ absURL "/images/jakarta/jakarta-ee-logo-white.svg" }} alt="Jakarta EE logo"></h2>
-    <ul class="list-inline margin-top-20">
-        {{- range .Site.Params.socials }}
-        <li>
-          <a class="social-icon" href="{{ .url }}">
-            <i class="{{ .icon }}" aria-label="{{ i18n "footer-sr-social-account" .name }}"></i>
-          </a>
-        </li>
-        {{- end }}
-      </ul>
-  </section>
+<ul class="list-inline">
+  {{- range .Site.Params.socials }}
+    <li>
+      <a class="social-icon" href="{{ .url }}">
+        <i
+          class="{{ .icon }}"
+          aria-label="{{ i18n "footer-sr-social-account" .name }}"
+        ></i>
+      </a>
+    </li>
+  {{- end }}
+</ul>
