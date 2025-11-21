@@ -1,0 +1,24 @@
+{{/* 
+  Copyright (c) 2023 Eclipse Foundation, Inc.
+  This program and the accompanying materials are made available under the
+  terms of the Eclipse Public License v. 2.0 which is available at
+  http://www.eclipse.org/legal/epl-2.0.
+
+  Contributors:
+    Olivier Goulet <olivier.goulet@eclipse-foundation.org>
+
+  SPDX-License-Identifier: EPL-2.0
+*/}}
+
+{{ $layout_style := $.Site.Params.layout_style | default "quicksilver" }}
+
+<div class="footer-copyright">
+  <div class="left">
+    <span id="copyright-text">{{ i18n "footer-copyright-text" | safeHTML}}</span>
+  </div>
+  <div class="right">
+    <a href="https://www.netlify.com" rel="noreferrer" target="_blank">
+      <img alt="Deploys by Netlify" loading="lazy" width="80" height="40" decoding="async" data-nimg="1" style="color: transparent;" src="/images/netlify-badge-light.svg" />
+    </a>
+  </div>
+</div>

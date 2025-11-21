@@ -1,0 +1,119 @@
+footer#solstice-footer {
+  .menu-heading {
+    .text-semibold;
+    margin-bottom: 1rem;
+
+    &::after,
+    &::before {
+      display: none;
+    }
+  }
+
+  section {
+    z-index: 0;
+  }
+
+  .footer-legal-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+
+    @media (max-width: @screen-sm-max) {
+      clear: both;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &::before,
+    &::after {
+      display: none;
+    }
+
+    .logo {
+      max-width: 180px;
+    }
+  }
+
+  section#footer-legal {
+    .menu-heading {
+      display: none;
+    }
+
+    ul {
+      .list-inline;
+      margin-bottom: 0;
+
+      a {
+        padding: 0;
+      }
+    }
+  }
+
+  .footer-end-newsletter {
+    padding: 3rem;
+    border: 1px solid @brand-primary-orange;
+    border-radius: 20px;
+
+    @media (max-width: @screen-sm-max) {
+      padding: 1.5rem;
+    }
+
+    .footer-end-newsletter-input-wrapper {
+      border: 1px solid @brand-primary-orange;
+      border-radius: @border-radius-medium;
+      display: flex;
+      justify-content: space-between;
+      padding-left: 1rem;
+      background-color: @white;
+
+      &:focus-within {
+        box-shadow: 0 0 0 0.4rem fadeout(@brand-primary-orange, 70%);
+      }
+
+      input {
+        flex: 1;
+        background: transparent;
+        border: none;
+        min-width: 0;
+
+        &:focus {
+          box-shadow: none;
+          outline: none;
+        }
+
+        &::placeholder {
+          text-overflow: ellipsis;
+        }
+      }
+    }
+  }
+
+  .footer-copyright {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding-top: .7rem;
+    padding-bottom:.7rem;
+
+    @media (max-width: @screen-sm-max) {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .left,
+    .right {
+      display: flex;
+      align-items: center;
+    }
+
+    .right img {
+      max-width: 80px;
+      height: auto;
+    }
+  }
+}

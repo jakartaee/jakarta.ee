@@ -18,66 +18,72 @@
       {{ end }}
     {{ end }}
     {{ if $megaMenu }}
-    <!-- Mega Menu (Multi-level) -->
-    <li class="menu-item dropdown mega-dropdown">
-      <a href="#" data-toggle="dropdown" class="dropdown-toggle">
-        {{ .Pre }}
-        <span>{{ .Name }}</span>
-        <i class="fa fa-angle-down fa-xs" aria-hidden="true"></i>
-      </a>
-      <div class="mega-menu">
-        <div class="mega-menu-dropdown">
-          <div class="mega-menu-content">
-            {{ range .Children }}
-              <div class="mega-menu-column">
-                {{ with .Pre }}
-                <div class="mega-menu-icon">
-                    {{- $svgPath := . -}}
-                    {{- $svgContent := readFile $svgPath -}}
-                    {{ $svgContent | safeHTML }}
-                </div>
-                {{ end }}
-                <div class="mega-menu-column-content">
+      <!-- Mega Menu (Multi-level) -->
+      <li class="menu-item dropdown mega-dropdown">
+        <a href="#" data-toggle="dropdown" class="dropdown-toggle">
+          {{ .Pre }}
+          <span>{{ .Name }}</span>
+          <i class="fa fa-angle-down fa-xs" aria-hidden="true"></i>
+        </a>
+        <div class="mega-menu">
+          <div class="mega-menu-dropdown">
+            <div class="mega-menu-content">
+              {{ range .Children }}
+                <div class="mega-menu-column">
+                  {{ with .Pre }}
+                    <div class="mega-menu-icon">
+                      {{- $svgPath := . -}}
+                      {{- $svgContent := readFile $svgPath -}}
+                      {{ $svgContent | safeHTML }}
+                    </div>
+                  {{ end }}
+                  <div class="mega-menu-column-content">
                     <h3 class="mega-menu-title">
                       {{ .Name }}
                     </h3>
                     {{ if .HasChildren }}
-                    <ul class="mega-menu-links">
-                      {{ range .Children }}
-                      <li>
-                        <a href="{{ .URL }}">{{ .Name }}</a>
-                      </li>
-                      {{ end }}
-                    </ul>
+                      <ul class="mega-menu-links">
+                        {{ range .Children }}
+                          <li>
+                            <a href="{{ .URL }}">{{ .Name }}</a>
+                          </li>
+                        {{ end }}
+                      </ul>
+                    {{ end }}
+                  </div>
                 </div>
-                {{ end }}
-              </div>
-            {{ end }}
+              {{ end }}
+            </div>
           </div>
         </div>
-      </div>
-    </li>
+      </li>
     {{ else }}
-    <!-- Regular Dropdown (Single level) -->
-    <li class="menu-item dropdown">
-      <a href="#" data-toggle="dropdown" class="dropdown-toggle">
-        {{ .Pre }}
-        <span>{{ .Name }}</span>
-        <i class="fa fa-angle-down fa-xs" aria-hidden="true"></i>
-      </a>
-      <ul class="dropdown-menu">
-        {{ range .Children }}
-        <li{{if $currentNode.IsMenuCurrent "main" . }} class="menu-item active"{{end}}><a href="{{.URL}}">{{ .Name }}</a></li>
-        {{ end }}
-      </ul>
-    </li>
+      <!-- Regular Dropdown (Single level) -->
+      <li class="menu-item dropdown">
+        <a href="#" data-toggle="dropdown" class="dropdown-toggle">
+          {{ .Pre }}
+          <span>{{ .Name }}</span>
+          <i class="fa fa-angle-down fa-xs" aria-hidden="true"></i>
+        </a>
+        <ul class="dropdown-menu">
+          {{ range .Children }}
+            <li
+              class="{{ if $currentNode.IsMenuCurrent "main" . }}
+                active
+              {{ end }}"
+            >
+              <a href="{{ .URL }}">{{ .Name }}</a>
+            </li>
+          {{ end }}
+        </ul>
+      </li>
     {{ end }}
-  {{else}}
+  {{ else }}
     <li class="menu-item">
-      <a class="" href="{{.URL}}">
-      {{ .Pre }}
-      {{ .Name }}
+      <a class="" href="{{ .URL }}">
+        {{ .Pre }}
+        {{ .Name }}
       </a>
     </li>
-  {{end}}
+  {{ end }}
 {{ end }}

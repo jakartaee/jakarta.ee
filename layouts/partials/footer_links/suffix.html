@@ -1,0 +1,21 @@
+<section class="col-sm-24 col-md-9 padding-top-20 social">
+  <div class="float-right">
+    {{ partial "footer_links/footer-socials.html" . }}
+  </div>
+</section>
+<section class="col-sm-24">
+  <div class="row footer-legal-wrapper">
+    <div class="logo">
+      <h2 class="section-title">
+        <img
+          class="img-responsive"
+          src="{{ absURL "/images/jakarta/jakarta-ee-logo-color.svg" }}"
+          alt="Jakarta EE logo"
+        />
+      </h2>
+    </div>
+    <div class="footer-legal-links">
+      {{ partial "footer_links/footer-legal.html" . }}
+    </div>
+  </div>
+</section>
