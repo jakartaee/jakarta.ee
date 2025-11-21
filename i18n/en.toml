@@ -365,6 +365,9 @@ other = "Sign up now"
 [footer-useful-links-marketplace-text]
   other = "Compatible Products"
 
+[footer-newsletter-sign-up-button-text]
+  other = "Subscribe"
+
 [faq-title]
  other = "Frequently Asked Questions"
 
@@ -682,7 +685,7 @@ other = "Sign up now"
       <li>
         <strong>BasicRepository</strong>: A built-in repository supertype for
         performing basic operations on entities.
-      </li>   
+      </li>
       <li>
         <strong>CrudRepository</strong>: Facilitates basic CRUD operations,
         making database interactions more straightforward and less error-prone.
@@ -762,7 +765,7 @@ other = "Sign up now"
     <ul>
       <li>
         Java SE Records can now be marked as <code>@Embeddable</code> or
-        <code>@IdClass</code> in Jakarta Persistence 3.2. 
+        <code>@IdClass</code> in Jakarta Persistence 3.2.
       </li>
       <li>
         Validation rules can be applied to Java SE Records in Jakarta
@@ -1463,42 +1466,42 @@ other = "Sign up now"
 
 [pages-specification-jakarta-ee-release-release-page]
   other = "Release Page"
-  
+
 [pages-specification-jakarta-ee-release-press-release]
   other = "Press Release"
-  
+
 [pages-learn-index-starter-guides-title]
-  other = "Starter Guides" 
-  
+  other = "Starter Guides"
+
 [pages-learn-index-starter-guides-description]
-  other = "Get started with Jakarta EE starter guides."   
-  
+  other = "Get started with Jakarta EE starter guides."
+
 [pages-learn-index-starter-guides-view]
-  other = "View the Starter Guides" 
+  other = "View the Starter Guides"
 
 [pages-learn-index-specification-guides-title]
-  other = "Specification Guides" 
-  
+  other = "Specification Guides"
+
 [pages-learn-index-specification-guides-description]
-  other = "Check out our specification guides."   
+  other = "Check out our specification guides."
 
 [pages-learn-index-specification-guides-view]
   other = "View the Specification Guides"
-  
+
 [pages-learn-index-documentation-title]
-  other = "Documentation"   
+  other = "Documentation"
 
 [pages-learn-index-documentation-description]
   other = "Check out our documentation."
 
 [pages-learn-index-documentation-tutorial]
-  other = "Jakarta EE Tutorial" 
-  
+  other = "Jakarta EE Tutorial"
+
 [pages-learn-index-documentation-first-cup]
-  other = "Jakarta EE First Cup"   
-  
+  other = "Jakarta EE First Cup"
+
 [pages-learn-index-documentation-cargotracker]
-  other = "CargoTracker Example Application" 
+  other = "CargoTracker Example Application"
 
 [pages-learn-index-why-jakarta-ee-title]
   other = "Why Jakarta EE?"
@@ -1510,9 +1513,9 @@ other = "Sign up now"
     </p>
     <a href='/news/2025/07/31/beyond-the-hype-10-reasons-jakarta-ee-is-still-the-smartest-choice/'>Beyond the Hype: Why Jakarta EE is Still the Smartest Choice</a>
   """
-  
+
 [pages-learn-index-jakarta-ee-project-title]
-  other = "Generate a Jakarta EE Project"   
+  other = "Generate a Jakarta EE Project"
 
 [pages-learn-index-starter-heading]
   other = "Try the Jakarta EE Starter"
@@ -1525,21 +1528,21 @@ other = "Sign up now"
 
 [pages-learn-index-starter-start]
   other = "Start a Project"
-  
+
 [pages-learn-index-jakarta-ee-overview-course-title]
-  other = "Jakarta EE Overview Course" 
-  
+  other = "Jakarta EE Overview Course"
+
 [pages-learn-index-jakarta-ee-overview-course-instructor]
-  other = "Instructor"   
-  
+  other = "Instructor"
+
 [pages-learn-index-jakarta-ee-overview-course-instructor-describe]
-  other = "Java Champion and Jakarta EE Developer Advocate" 
-  
+  other = "Java Champion and Jakarta EE Developer Advocate"
+
 [pages-learn-index-jakarta-ee-overview-course-describe]
-  other = "Do you need an overview of Jakarta EE as a whole? In this course, Java Champion and Jakarta EE Developer Advocate Ivar Grimstad guides you through the purpose of Jakarta EE and the specifications that you will need to understand. Ivar presents a quick overview of Jakarta EE, its specifications and implementations, the containers you will use for different component types, and the standard units for deployments. He goes into more depth on the Jakarta EE Platform, then dives into Web Profiles and Core Profiles. Packed with useful tips and practical challenges, this course can help you to decide the next steps in your Jakarta EE journey."   
-  
+  other = "Do you need an overview of Jakarta EE as a whole? In this course, Java Champion and Jakarta EE Developer Advocate Ivar Grimstad guides you through the purpose of Jakarta EE and the specifications that you will need to understand. Ivar presents a quick overview of Jakarta EE, its specifications and implementations, the containers you will use for different component types, and the standard units for deployments. He goes into more depth on the Jakarta EE Platform, then dives into Web Profiles and Core Profiles. Packed with useful tips and practical challenges, this course can help you to decide the next steps in your Jakarta EE journey."
+
 [pages-learn-index-jakarta-ee-overview-course-enroll]
-  other = "Enroll in our course today!" 
+  other = "Enroll in our course today!"
 
 [pages-learn-index-videos-title]
   other = "Videos"
@@ -1549,58 +1552,58 @@ other = "Sign up now"
 
 [pages-learn-index-videos-youtube]
   other = "Watch on YouTube"
-  
+
 [pages-learn-starter-guides-read-guide]
-  other = "Read Guide"   
-  
+  other = "Read Guide"
+
 [pages-learn-starter-guides-learn-title]
-  other = "Learn" 
-  
+  other = "Learn"
+
 [pages-learn-starter-guides-learn-describe]
-  other = "A collection of resources to learn Jakarta EE"   
-  
+  other = "A collection of resources to learn Jakarta EE"
+
 [pages-learn-starter-guides-learn-read-more]
-  other = "Read more" 
-  
+  other = "Read more"
+
 [pages-learn-starter-guides-find-release-title]
-  other = "Find the Latest Release"   
-  
+  other = "Find the Latest Release"
+
 [pages-learn-starter-guides-find-release-describe]
-  other = "See all the Jakarta EE release versions and find out what's new in the related press release." 
-  
+  other = "See all the Jakarta EE release versions and find out what's new in the related press release."
+
 [pages-learn-starter-guides-find-release-read-more]
-  other = "Read more"   
-  
+  other = "Read more"
+
 [pages-learn-starter-guides-download-products-title]
-  other = "Download Compatible Products" 
-  
+  other = "Download Compatible Products"
+
 [pages-learn-starter-guides-download-products-describe]
-  other = "See all Jakarta EE Compatible certified products to help build your cloud native application."   
-  
+  other = "See all Jakarta EE Compatible certified products to help build your cloud native application."
+
 [pages-learn-starter-guides-download-products-read-more]
-  other = "Read more"   
-  
+  other = "Read more"
+
 [pages-supporters-sponsor-header-description]
-  other = "<p class=\"fw-500\">Become a sponsor of the Jakarta EE Working Group and</p><h2 class=\"big-text uppercase text-secondary\">Empower the Future of Enterprise Java</h2><p class=\"section-featured-text text-primary\">Your organisation will play a pivotal role in shaping the future of open source enterprise Java and ensuring the continued growth and success of the global Java community.</p>"   
+  other = "<p class=\"fw-500\">Become a sponsor of the Jakarta EE Working Group and</p><h2 class=\"big-text uppercase text-secondary\">Empower the Future of Enterprise Java</h2><p class=\"section-featured-text text-primary\">Your organisation will play a pivotal role in shaping the future of open source enterprise Java and ensuring the continued growth and success of the global Java community.</p>"
 
 [pages-supporters-sponsor-by-joining-header-title]
-  other = "By joining our sponsorship program:"          
-  
+  other = "By joining our sponsorship program:"
+
 [pages-supporters-sponsor-by-joining-support]
-  other = "<h3 class=\"heading-underline\"><div class=\"small\">Your</div><div>Support</div></h3><p class=\"featured-section-cta-item-body\">will help us maintain and expand our initiatives.</p>"          
+  other = "<h3 class=\"heading-underline\"><div class=\"small\">Your</div><div>Support</div></h3><p class=\"featured-section-cta-item-body\">will help us maintain and expand our initiatives.</p>"
 
 [pages-supporters-sponsor-by-joining-contribution]
-  other = "<h3 class=\"heading-underline\"><div class=\"small\">Your</div><div>Contribution</div></h3><p class=\"featured-section-cta-item-body\">will ensure that the Jakarta EE community remains a vibrant and innovative platform for developers, enterprises, and technology enthusiasts around the world.</p>" 
+  other = "<h3 class=\"heading-underline\"><div class=\"small\">Your</div><div>Contribution</div></h3><p class=\"featured-section-cta-item-body\">will ensure that the Jakarta EE community remains a vibrant and innovative platform for developers, enterprises, and technology enthusiasts around the world.</p>"
 
 [pages-supporters-sponsor-by-joining-participation]
-  other = "<h3 class=\"heading-underline\"><div class=\"small\">Your</div><div>Participation</div></h3><p class=\"featured-section-cta-item-body\">will support a wide range of initiatives aimed at promoting Jakarta EE, including marketing and promotional efforts, events, content creation, community giveaways, and more.</p>" 
-  
+  other = "<h3 class=\"heading-underline\"><div class=\"small\">Your</div><div>Participation</div></h3><p class=\"featured-section-cta-item-body\">will support a wide range of initiatives aimed at promoting Jakarta EE, including marketing and promotional efforts, events, content creation, community giveaways, and more.</p>"
+
 [pages-supporters-sponsor-initiatives-description]
-  other = "Your contribution will support a wide range of initiatives aimed at promoting Jakarta EE, including marketing and promotional efforts, events, content creation, community giveaways, and more."  
+  other = "Your contribution will support a wide range of initiatives aimed at promoting Jakarta EE, including marketing and promotional efforts, events, content creation, community giveaways, and more."
 
 [pages-supporters-sponsor-perks]
   other = "Sponsor Perks"
-  
+
 [pages-supporters-sponsor-perks-free-ocx]
   other = "Free OCX<br class=\"hidden-xs\">Conference Pass"
 
@@ -1630,3 +1633,12 @@ other = "Sign up now"
 
 [cta-download]
   other = "Download"
+
+[footer-newsletter-stay-connected]
+  other = "Stay connected"
+
+[footer-newsletter-description]
+  other = "Be the first to hear about Jakarta EE updates, events, and new releases."
+
+[footer-newsletter-email-placeholder]
+  other = "Enter your email address"

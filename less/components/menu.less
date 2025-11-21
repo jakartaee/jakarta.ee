@@ -74,11 +74,11 @@
       gap: 1.6rem;
 
       .mega-menu-icon {
-          color: @brand-primary-royal;
+        color: @brand-primary-royal;
       }
 
       .mega-menu-column-content {
-          padding-top: 1.2rem;
+        padding-top: 1.2rem;
       }
 
       &:first-child {
@@ -202,6 +202,9 @@
 
       &.open,
       &.active,
+      &:focus,
+      &:focus-visible,
+      &:focus-within,
       &:hover {
         & > a {
           border-bottom-color: @brand-primary-orange;

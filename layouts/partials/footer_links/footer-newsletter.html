@@ -1,0 +1,37 @@
+{{ $footer_newsletter_class := .Params.footer_section_newsletter_class | default .Site.Params.footer_section_newsletter_class | default "footer-section col-sm-8" }}
+<section id="footer-newsletter" class="{{ $footer_newsletter_class }}">
+  <div class="footer-end-newsletter">
+    <form
+      id="mc-embedded-subscribe-form"
+      action="https://eclipse.us6.list-manage.com/subscribe/post?u=eaf9e1f06f194eadc66788a85&amp;id=e7538485cd&amp;f_id=00f9c2e1f0"
+      method="post"
+      novalidate
+      target="_blank"
+    >
+      <label class="footer-end-newsletter-label" for="email"
+        >{{ i18n "footer-newsletter-stay-connected" }}</label
+      >
+      <p>
+        {{ i18n "footer-newsletter-description" }}
+      </p>
+      <div class="footer-end-newsletter-input-wrapper">
+        <input
+          class="footer-end-newsletter-input"
+          type="email"
+          id="email"
+          name="EMAIL"
+          autocomplete="email"
+          placeholder="{{ i18n "footer-newsletter-email-placeholder" }}"
+        />
+        <button
+          class="footer-end-newsletter-submit btn btn-xs btn-secondary"
+          id="mc-embedded-subscribe"
+          type="submit"
+          name="subscribe"
+        >
+          {{ i18n "footer-newsletter-sign-up-button-text" }}
+        </button>
+      </div>
+    </form>
+  </div>
+</section>
