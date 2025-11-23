@@ -49,8 +49,13 @@ years:
 - year: 2025
   conferences:
 
+  - name: Open Source Experience
+    url: https://www.opensource-experience.com/en/
+    location: Paris 🇫🇷
+    date: Dec 10-11
+
   - name: Paris JUG
-    url: 
+    url: https://www.parisjug.org/events/2025/12-09-jetty-enterprise-30y-innovation/
     location: Paris 🇫🇷
     date: Dec 9
 
@@ -58,7 +63,6 @@ years:
     url: https://jakartaone.org/2025/
     location: online 🌐
     date: Dec 2
-    upcoming: true
 
   - name: Devoxx Morocco
     url: https://devoxx.ma/
