@@ -12,26 +12,27 @@
 */
 
 //=Primary Brand Colors
-@brand-primary-blue:    #1B208B;
-@brand-primary-royal:   #182CB9;
-@brand-primary-orange:  #FF7110;
-@brand-primary-dark:    #1C2085;
+@brand-primary-dark-purple: #1b208b;
+@brand-primary-royal-blue: #182cb9;
+@brand-primary-light-blue: #5ea9ff;
+@brand-primary-orange: #ff7110;
+
+@brand-primary-dark: #1c2085;
 
 //= Secondary Brand Colors
-@brand-secondary-gray:  #2F4A60; // Dark Gray
-@brand-secondary-yellow:#FDB940; // Yellow
-@light-grey:            #f1f1f1;
+@brand-secondary-gray: #2f4a60; // Dark Gray
+@brand-secondary-yellow: #fdb940; // Yellow
+@light-grey: #f1f1f1;
 
 //= Polyfill vars for theme styles
-@brand-primary: @brand-primary-blue;
+@brand-primary: @brand-primary-dark-purple;
 @brand-secondary: @brand-primary-orange;
-@brand-tertiary: @brand-primary-royal;
+@brand-tertiary: @brand-primary-royal-blue;
 @brand-quaternary: @brand-secondary-yellow;
-@brand-quinary:         #f1f3f7; // Light Gray (Breadcrumbs)
-
+@brand-quinary: #f1f3f7; // Light Gray (Breadcrumbs)
 
 //== Typography
-@font-family-sans-serif:  "Inter", sans-serif;
+@font-family-sans-serif: "Inter", sans-serif;
 @font-family-heading: "Inter", sans-serif;
 
 @font-size-h2: 26px;
@@ -46,36 +47,39 @@
 @header-toolbar-background-color-on-open-nav: darken(@white, 2%);
 @header-toolbar-height: 3.5rem;
 
-@main-menu-link-color:@brand-primary;
+@main-menu-link-color: @brand-primary;
 @main-menu-link-active-color: darken(@main-menu-link-color, 10%);
 @main-menu-link-hover-color: darken(@main-menu-link-color, 10%);
-@main-menu-link-size:13px;
-@main-menu-dropdown-menu-background:@brand-primary;
-@main-menu-dropdown-link-color:@brand-primary;
-@main-menu-dropdown-link-hover-color: darken(@main-menu-dropdown-link-color, 10%);
-@main-menu-dropdown-link-active-color:@white;
+@main-menu-link-size: 13px;
+@main-menu-dropdown-menu-background: @brand-primary;
+@main-menu-dropdown-link-color: @brand-primary;
+@main-menu-dropdown-link-hover-color: darken(
+  @main-menu-dropdown-link-color,
+  10%
+);
+@main-menu-dropdown-link-active-color: @white;
 @main-menu-height: 7rem;
 
-@mobile-menu-nav-background:@white;
-@mobile-menu-color:@text-color;
+@mobile-menu-nav-background: @white;
+@mobile-menu-color: @text-color;
 @mobile-main-menu-link-border-bottom:1px solid @light-grey;
-@mobile-menu-open-active-background:@white;
-@mobile-menu-open-active-color:@text-color;
-@mobile-menu-dropdown-menu-background:@light-grey;
-@mobile-menu-dropdown-menu-color:@mobile-menu-open-active-color;
+@mobile-menu-open-active-background: @white;
+@mobile-menu-open-active-color: @text-color;
+@mobile-menu-dropdown-menu-background: @light-grey;
+@mobile-menu-dropdown-menu-color: @mobile-menu-open-active-color;
 
-@dropdown-menu-left-panel-bg:@brand-primary;
-@dropdown-menu-right-panel-bg:darken(@dropdown-menu-left-panel-bg, 10%);
+@dropdown-menu-left-panel-bg: @brand-primary;
+@dropdown-menu-right-panel-bg:darken (@dropdown-menu-left-panel-bg, 10%);
 
 // Backgrounds
-@bg-img-default: url('images/jumbotron-bg.webp');
-@bg-img-secondary: url('images/jumbotron-bg-secondary.webp');
-@bg-img-tertiary: url('images/bg-tertiary.jpg');
+@bg-img-default: url("images/jumbotron-bg.webp");
+@bg-img-secondary: url("images/jumbotron-bg-secondary.webp");
+@bg-img-tertiary: url("images/bg-tertiary.jpg");
 
 @header-default-bg-img: @bg-img-default;
 @header-secondary-bg-img: @bg-img-secondary;
 
-@header-row-padding-bottom:20px;
+@header-row-padding-bottom: 20px;
 
 @header-toolbar-color: fade(@brand-primary-dark, 70%);
 @header-toolbar-color-hover: @brand-primary-dark;
@@ -93,26 +97,26 @@
 
 @heading-underline-border:2px solid @brand-primary-orange;
 
-@nav-tabs-active-link-hover-border-color:transparent;
-@nav-tabs-active-link-hover-bg:transparent;
+@nav-tabs-active-link-hover-border-color: transparent;
+@nav-tabs-active-link-hover-bg: transparent;
 @nav-tabs-link-hover-border-color: transparent;
-@nav-tabs-active-link-hover-color:@brand-primary;
-@nav-list-link-color:#8e8e8e;
+@nav-tabs-active-link-hover-color: @brand-primary;
+@nav-list-link-color: #8e8e8e;
 
 @default-box-shadow:-7px 7px 12px 0px rgba(0,0,0,0.2);
 
 @footer-background: @white;
 @footer-padding-top: 3.5em;
 @footer-color: @brand-secondary-gray;
-@footer-border-top: 1px solid @brand-primary-royal;
+@footer-border-top: 1px solid @brand-primary-royal-blue;
 
 @footer-link-color: @brand-secondary-gray;
-@footer-link-font-weight:400;
+@footer-link-font-weight: 400;
 
 @featured-footer-light-bg-img: @bg-img-secondary;
-@featured-footer-light-border-top:none;
-@featured-footer-light-border-bottom:none;
-@featured-footer-h2-color:@white;
+@featured-footer-light-border-top: none;
+@featured-footer-light-border-bottom: none;
+@featured-footer-h2-color: @white;
 
 // Standard tabs variables
 @solstice-tabs-background: transparent;
@@ -121,32 +125,32 @@
 @solstice-tabs-border:1px solid #f1f1f1;
 @solstice-tabs-hover: transparent;
 @solstice-tabs-active-hover: transparent;
-@solstice-tabs-active-color:@brand-primary;
+@solstice-tabs-active-color: @brand-primary;
 @solstice-tabs-hover-color: @brand-primary;
 @solstice-tabs-active-font-weight: bold;
 @solstice-tabs-border: 1px solid #ddd;
-@solstice-tabs-pane-background-color:transparent;
+@solstice-tabs-pane-background-color: transparent;
 @solstice-tabs-active-nav-border:3px solid @brand-primary;
-@solstice-tabs-text-transform:uppercase;
-@solstice-tabs-font-size:16px;
-@solstice-tabs-font-size-mobile:12px;
-@solstice-tabs-padding:20px;
+@solstice-tabs-text-transform: uppercase;
+@solstice-tabs-font-size: 16px;
+@solstice-tabs-font-size-mobile: 12px;
+@solstice-tabs-padding: 20px;
 @solstice-tabs-padding-mobile:20px 0;
 
-@solstice-tabs-content-border:none;
+@solstice-tabs-content-border: none;
 @solstice-tabs-content-padding:40px 0 0;
-
 
 @main-sidebar-bg: #f1f3f7;
 @main-sidebar-color: @text-color;
 @main-sidebar-list-border:1px solid #c7c7c7;
-@main-sidebar-heading-size:inherit;
-@main-sidebar-heading-weight:bold;
+@main-sidebar-heading-size: inherit;
+@main-sidebar-heading-weight: bold;
 
 @panel-default-heading-bg: @white;
 @panel-heading-padding: 15px 0px;
 @panel-bg: @white;
 
+@card-panel-border-radius: 50px;
 @card-panel-bordered-border: 1px solid #e1e1e1;
 @card-panel-bordered-border-radius: 5px;
 @card-panel-bordered-padding: 3rem;

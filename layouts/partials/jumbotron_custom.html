@@ -1,0 +1,21 @@
+{{ $content := .context.Page.Params.custom_jumbotron }}
+{{ $partial := .context.Page.Params.custom_jumbotron_partial }}
+{{ if eq .layout "bootstrap" }}
+  <div class="row">
+    <div class="{{- .context.Params.custom_jumbotron_class | default .context.Site.Params.custom_jumbotron_class | default "col-sm-18 col-sm-offset-3" }}">
+      {{ if $partial }}
+        {{ partial $partial . }}
+      {{ else }}
+        {{ $content | safeHTML }}
+      {{ end }}
+    </div>
+  </div>
+{{ else }}
+  <div>
+    {{ if $partial }}
+      {{ partial $partial . }}
+    {{ else }}
+      {{ $content | safeHTML }}
+    {{ end }}
+  </div>
+{{ end }}

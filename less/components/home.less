@@ -1,161 +1,255 @@
-.featured-section-cta {
-    padding-top: 50px;
-    color: @brand-primary;
-    p {
-        font-size: 18px;
-        text-align: center;
-    }
+.glow {
+  box-shadow: 0px 4px 20px -5px rgba(135, 191, 255, 0.52);
 }
 
-.featured-story {
-    background: @featured-section-cta-bg;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 50px 0 80px;
-    color:@white;
-    text-align:center;
-    z-index: auto;
-    h2 {
-        color:@white;
-    }
-    p {
-        font-size:20px;
-    }
-}
+.jumbotron-pills-home {
+  .wrapper {
+    display: flex;
+    gap: 6rem;
+    text-align: left;
+    flex-direction: column;
 
-
-
-.featured-section-members, 
-.featured-story, 
-.featured-section-videos, 
-.featured-section-testimonials,
-.featured-section-news {
-    margin-bottom:40px;
-    h2 {
-        margin-bottom:20px;
-    }
-}
-
-.featured-story, .featured-section-videos,.featured-section-testimonials {
-    h2 {
-        @media (min-width: @screen-xs-min) {
-            margin-bottom:40px;
-        }
-    }
-}
-
-.featured-section-members {
-    text-align:center;
-    padding-top:60px;
-    h2 {
-        margin-bottom:20px;
-    }
-    p {
-        margin-bottom:40px;
-    }
-}
-
-.featured-story-block, .featured-ad{
-    padding-top:30px;
-    @media (min-width: @screen-sm-min) {
-      padding-top:0px;
-      min-height:inherit;
+    @media (min-width: @screen-md-min) {
+      flex-direction: row;
     }
   }
 
-.featured-story {
-    >.container {
-        > h2 {
-            text-align:center;
-            font-weight: 700;
-        }
-    }
-    
-    .featured-story-block {
-        @media (min-width: @screen-sm-min) {
-            padding-bottom:0px;
-        }
-        h2 {
-            font-family: @font-family-sans-serif;
-            font-size: 24px;
-            margin-top: 0px; 
-            color:@brand-primary-orange;
-            font-weight: 600;
-            margin-bottom:20px;
-            &:after {
-                border-bottom: 2px solid @white;
-                content:"";
-                display:block;
-                width:100px;
-                margin: 15px auto 0;
-            }
-        }
-        p {
-            font-size: 16px;
-        }
-        .btn-primary {
-            background-color: @brand-primary-orange;
-            border-color: @brand-primary-orange;
-            padding: 10px 20px;
-        }
-    }
-    .featured-story-block-content {
-        margin-bottom:0;
-        @media (min-width: @screen-sm-min) {
-            padding-right:15px;
-        }
-        a {
-            font-weight:600;
-        }
-        &:before{
-            background-color: transparent;
-        }
-    }
-}
+  .pill {
+    flex: 1;
+    display: flex;
+    gap: 1rem;
+    position: relative;
+    color: @brand-primary-royal-blue;
 
-.featured-section-videos {
-    @media (max-width: @screen-xs-max) {
-        text-align:center;
+
+    &::after {
+      content: "";
+      position: absolute;
+      background-color: @brand-primary;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      transform: translateY(3rem);
+      opacity: 0.3;
+
+      @media (min-width: @screen-md-min) {
+        height: 100%;
+        width: 1px;
+        left: auto;
+        right: 0;
+        transform: translateX(3rem);
+      }
     }
-    h2 {
-        text-align:center;
+
+
+    &:last-child::after {
+      display: none;
     }
+
+
     h3 {
-        font-size: 24px;
-        font-weight: 600;
-        color:@brand-primary;
-        margin-bottom:20px;
-        margin-top:30px;
-        @media (max-width: @screen-xs-max) {
-            &:after {
-                margin:15px auto 0;
-            }
+      .text-semibold;
+      color: currentColor;
+      font-size: 1.7rem;
+      margin: 0;
+      margin-bottom: 1rem;
+
+      @media (min-width: @screen-md-min) {
+        font-size: 2rem;
+      }
+
+      @media (min-width: @screen-lg-min) {
+        white-space: nowrap;
+      }
+    }
+
+    p {
+      font-size: 1.2rem;
+      color: @brand-secondary-gray;
+      margin: 0;
+    }
+  }
+}
+
+.card {
+  .rounded-medium;
+  background-color: @white;
+
+  &.featured {
+    padding: 2rem;
+
+    @media (min-width: @screen-md-min) {
+      padding: 3rem;
+    }
+
+    h3 {
+      .text-semibold;
+      .text-primary;
+      font-size: 1.5rem;
+
+      @media (min-width: @screen-md-min) {
+        font-size: 2rem;
+      }
+    }
+  }
+
+  &.glow {
+    .glow;
+  }
+}
+
+section.release-cta {
+  .wrapper {
+    .card;
+    .card.glow;
+    .text-primary;
+
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+
+    @media (min-width: @screen-sm-min) {
+      padding: 6rem;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .actions {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      justify-content: center;
+
+      .btn {
+        white-space: nowrap;
+      }
+
+      @media (min-width: @screen-md-min) {
+        flex-direction: row;
+        align-items: center;
+      }
+    }
+  }
+}
+
+section.news {
+  .news-type-community_news,
+  .news-type-announcements {
+    padding: 0.3rem 1rem;
+    border: 1px solid currentColor;
+    border-radius: @border-radius-medium;
+  }
+  .news-type-community_news {
+    color: @brand-primary-light-blue;
+    &::after {
+      content: "News";
+    }
+  }
+  .news-type-announcements {
+    color: @brand-primary-orange;
+    &::after {
+      content: "Announcements";
+    }
+  }
+
+  .top {
+    padding: 2rem;
+    padding-bottom: 3rem;
+
+    .content-wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+
+      @media (min-width: @screen-md-min) {
+        gap: 3rem;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      p {
+        margin: 0;
+      }
+
+      .actions {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 1rem;
+
+        .btn {
+          white-space: nowrap;
         }
+      }
     }
-}
 
-.featured-section-testimonials {
-    h2 {
-        text-align:center;
+    @media (min-width: @screen-md-min) {
+      padding: 6rem;
+      padding-bottom: 7rem;
     }
-}
+  }
 
-.featured-section-testimonials-item {
-    background-color:@light-grey;
-    padding:20px;
-    border-radius: 10px;
-    box-shadow: @default-box-shadow;
-    margin-bottom:30px;
-}
+  .bottom {
+    padding: 2rem;
+    padding-top: 3rem;
 
-.featured-section-testimonials-item-picture {
-    border-radius:30px;
-    width:60px;
-    height:60px;
-    overflow: hidden;
-    margin-bottom:15px;
-}
+    @media (min-width: @screen-md-min) {
+      padding: 6rem;
+      padding-top: 7rem;
+    }
+  }
 
-.owl-carousel .owl-item img.featured-section-testimonials-item-logo {
-    width: 100px;
+  .news-container {
+    display: flex;
+    gap: 2rem;
+    overflow-x: scroll;
+    padding: 0 2rem;
+
+    @media (min-width: @screen-md-min) {
+      padding: 0 6rem;
+    }
+
+    article {
+      .glow;
+
+      color: @brand-secondary-gray;
+      padding: 2rem;
+      background-color: @white;
+      border-radius: @border-radius-medium;
+      flex: 1;
+      min-width: 35rem;
+
+      @media (min-width: @screen-md-min) {
+        padding: 4rem;
+        min-width: 40rem;
+      }
+
+      .article-header {
+        margin-bottom: 3.2rem;
+        display: flex;
+        gap: 1.5rem;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .article-heading {
+        .text-semibold;
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+        text-decoration: underline;
+
+        @media (min-width: @screen-md-min) {
+          font-size: 2rem;
+        }
+      }
+
+      .article-body {
+        opacity: 0.8;
+      }
+    }
+  }
 }
