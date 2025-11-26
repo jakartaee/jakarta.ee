@@ -1,0 +1,43 @@
+/**
+ * Copyright (c) 2025 Eclipse Foundation AISBL
+ *
+ * This program and the accompanying materials are made
+ * available under the terms of the Eclipse Public License 2.0
+ * which is available at https://www.eclipse.org/legal/epl-2.0/
+ *
+ * SPDX-License-Identifier: EPL-2.0
+ */
+
+.rounded-base {
+  border-radius: @border-radius-base;
+}
+
+.rounded-medium {
+  border-radius: @border-radius-medium;
+}
+
+.rounded-large {
+  border-radius: @border-radius-large;
+}
+
+.rounded-small {
+  border-radius: @border-radius-small;
+}
+
+.grid {
+  display: grid;
+}
+
+.gap-2 {
+  gap: 2rem;
+}
+
+.grid-cols-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.xs\:grid-cols-2 {
+  @media (min-width: @screen-xs-min) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

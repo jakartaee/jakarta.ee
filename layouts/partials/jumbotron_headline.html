@@ -1,0 +1,4 @@
+<h1>{{ .context.Page.Params.headline | safeHTML }}</h1>
+{{ if isset .context.Page.Params "subtitle" }}
+  <h2>{{ .context.Page.Params.subtitle | safeHTML }}</h2>
+{{ end }}

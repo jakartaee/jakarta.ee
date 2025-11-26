@@ -1,0 +1,9 @@
+{{ if eq .layout "bootstrap" }}
+  <div class="row">
+    <div class="{{- .context.Params.jumbotron_tagline_class | default .context.Site.Params.jumbotron_tagline_class | default "col-sm-18 col-sm-offset-3" }}">
+      <p>{{ .context.Page.Params.tagline | safeHTML }}</p>
+    </div>
+  </div>
+{{ else }}
+  <p>{{ .context.Page.Params.tagline | safeHTML }}</p>
+{{ end }}

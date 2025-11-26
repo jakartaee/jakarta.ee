@@ -25,7 +25,7 @@
   }
 
   &:hover {
-    background-color: rgba(0,0,0,0.3);
+    background-color: rgba(0, 0, 0, 0.3);
     border-color: #e2e2e2;
   }
 }
@@ -69,7 +69,6 @@
     color: @brand-primary;
   }
 
-
   &:hover {
     background-color: @brand-primary;
     color: @white;
@@ -78,18 +77,30 @@
 
 .btn-outline-secondary {
   box-shadow: inset 0px 0px 0px 2px @brand-secondary;
-  color: @brand-secondary;
 
   &,
   &:visited,
   &:hover,
   &:focus,
   &:active {
-    color: @brand-secondary;
+    color: @brand-primary;
   }
 
   &:hover {
     background-color: @brand-secondary;
+    color: @white;
+  }
+}
+
+.dark .btn-outline-secondary,
+.dark .btn-outline-primary {
+  color: @white;
+
+  &,
+  &:visited,
+  &:hover,
+  &:focus,
+  &:active {
     color: @white;
   }
 }

@@ -12,44 +12,45 @@
  * SPDX-License-Identifier: EPL-2.0
 */
 
-@import '~eclipsefdn-solstice-assets/less/astro/main.less';
+@import "~eclipsefdn-solstice-assets/less/astro/main.less";
 
-@import 'vendors/_syntax.less';
-@import '_variables.less';
+@import "vendors/_syntax.less";
+@import "_variables.less";
 
-@import 'components/tabs.less';
-@import 'components/_buttons.less';
-@import 'components/_commons.less';
-@import 'components/_modals.less';
-@import 'components/_sections.less';
-@import 'components/menu.less';
-@import 'components/footer.less';
-@import 'components/jumbotron.less';
-@import 'components/home.less';
-@import 'components/panels.less';
-@import 'components/blocks.less';
-@import 'components/typography.less';
-@import 'components/testimonials.less';
-@import 'components/_eclipsefdn-meeting-minutes.less';
-@import 'components/_breadcrumb.less';
+@import "components/tabs.less";
+@import "components/_buttons.less";
+@import "components/_commons.less";
+@import "components/_modals.less";
+@import "components/_sections.less";
+@import "components/menu.less";
+@import "components/footer.less";
+@import "components/jumbotron.less";
+@import "components/home.less";
+@import "components/panels.less";
+@import "components/blocks.less";
+@import "components/typography.less";
+@import "components/utilities.less";
+@import "components/testimonials.less";
+@import "components/_eclipsefdn-meeting-minutes.less";
+@import "components/_breadcrumb.less";
 
-@import 'layout/_header.less';
+@import "layout/_header.less";
 
-@import 'transient.less';
-@import 'release-8.less';
-@import 'release-9.less';
-@import 'release-10.less';
-@import 'release-11.less';
+@import "transient.less";
+@import "release-8.less";
+@import "release-9.less";
+@import "release-10.less";
+@import "release-11.less";
 
-@import 'news.less';
-@import 'compatibility.less';
-@import 'featured_content.less';
-@import 'specifications';
-@import 'members.less';
+@import "news.less";
+@import "compatibility.less";
+@import "featured_content.less";
+@import "specifications";
+@import "members.less";
 
 //= Google Fonts
 // Inter font for body text
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
 // Commenting this out but keeping it in case we need stuff in there
 //@import 'redesign.less';
@@ -63,7 +64,7 @@ html {
 }
 
 .jakarta-ee-hr {
- border-top: 5px solid @brand-primary;
+  border-top: 5px solid @brand-primary;
 }
 
 .font-100 {
@@ -71,8 +72,8 @@ html {
 }
 
 .jakarta-download-delivers {
-  text-align:center;
-  padding:30px 0 60px 0;
+  text-align: center;
+  padding: 30px 0 60px 0;
 }
 
 .text-blue {
@@ -80,17 +81,17 @@ html {
 }
 
 .heading-underline {
-  text-transform:none;
+  text-transform: none;
 }
 
 .jakarta-download-participation {
-  background-image:url("images/release/donate.jpg");
-  background-repeat:no-repeat;
-  background-size:cover;
-  padding:40px 0;
-  text-align:center;
+  background-image: url("images/release/donate.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 40px 0;
+  text-align: center;
   .heading-underline:after {
-    margin:15px auto 0;
+    margin: 15px auto 0;
   }
   .featured-donate-icon {
     background-color: @white;
@@ -100,15 +101,15 @@ html {
     display: block;
     padding: 40px;
     padding-left: 58px;
-    margin:30px auto 0;
+    margin: 30px auto 0;
     @media (min-width: @screen-sm-min) {
-      margin:0;
+      margin: 0;
     }
   }
   @media (min-width: @screen-sm-min) {
-    text-align:left;
+    text-align: left;
     .heading-underline:after {
-      margin:15px 0 0;
+      margin: 15px 0 0;
     }
   }
 }
@@ -129,21 +130,26 @@ html {
   }
 }
 .jumbotron {
-	h1, h2, h3, h4, h5, h6 {
-		& > sup {
-		  font-size: 0.66em;
-		  position: relative;
-		  top: -0.34em;
-		}
-	}
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    & > sup {
+      font-size: 0.66em;
+      position: relative;
+      top: -0.34em;
+    }
+  }
 }
 
 .product-list .icon-container {
   font-size: 6em;
 }
 
-.adopter-logo{
-  max-width:200px;
+.adopter-logo {
+  max-width: 200px;
   margin-bottom: 20px;
 }
 
@@ -157,7 +163,7 @@ ul.dual-col {
 
 .specifications-news-list {
   .media {
-    background-color: #F2F3F7;
+    background-color: #f2f3f7;
   }
   .flex-column {
     height: 100%;
@@ -197,9 +203,9 @@ ul.dual-col {
     h1 {
       font-size: 86px;
       line-height: 70px;
-      .release-versions{
+      .release-versions {
         font-size: 32px;
-        color: #F98200;
+        color: #f98200;
         font-weight: 700;
       }
     }
@@ -247,10 +253,10 @@ div.card-panel.panel div.panel-body.panel-body-with-img {
       }
     }
   }
-
 }
 
-.get-involved-blocks, .get-involved-why {
+.get-involved-blocks,
+.get-involved-why {
   margin-bottom: 60px;
 }
 
@@ -322,7 +328,7 @@ div.card-panel.panel div.panel-body.panel-body-with-img {
 // Resources
 .newsroom-resources h2 {
   font-size: 18px;
-  color: #F98200;
+  color: #f98200;
   font-weight: 700;
   margin-top: 10px;
 }

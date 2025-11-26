@@ -12,7 +12,7 @@
   &.header-default-bg-img {
     .featured-jumbotron {
       background-position: center;
-      
+
       &::before {
         content: unset;
       }
@@ -28,8 +28,6 @@
 
 .featured-jumbotron {
   color: @brand-primary-dark;
-  display: grid;
-  place-content: center;
   background-color: @brand-quinary;
 
   &.featured-jumbotron-dark {
@@ -51,12 +49,20 @@
   .h1 {
     .text-medium;
     font-size: 6.5rem;
+
+    @media (max-width: @screen-xs-max) {
+      font-size: 4.5rem;
+    }
   }
 
   h2,
   .h2 {
     .text-regular;
     font-size: 2.5rem;
+
+    @media (max-width: @screen-xs-max) {
+      font-size: 1.8rem;
+    }
   }
 
   .jumbotron-title {
@@ -68,14 +74,34 @@
   }
 
   &:has(.jumbotron-h-screen) {
-    min-height: 100vh;
+    @mobile-header-menu-height: 50px;
+    min-height: calc(
+      100vh - @header-toolbar-height - @mobile-header-menu-height
+    );
+    padding: 10rem 2rem;
+    display: grid;
 
-    @media (max-width: @screen-md-max) {
-      @mobile-header-menu-height: 50px;
-      min-height: calc(
-        100vh - @header-toolbar-height - @mobile-header-menu-height
-      );
-      padding: 0;
+    @media (min-width: @screen-lg-min) {
+      min-height: 100vh;
+    }
+
+    .jumbotron-h-screen {
+      display: flex;
+      flex-direction: column;
+      gap: 3rem;
+
+      .top {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        align-items: center;
+        justify-content: center;
+
+        .jumbotron-links {
+          margin-top: 4rem;
+        }
+      }
     }
   }
 }
