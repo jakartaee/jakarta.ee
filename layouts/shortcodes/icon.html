@@ -1,0 +1,5 @@
+{{ $path := .Get "path" }}
+{{ if $path }}
+  {{- $svgContent := readFile $path -}}
+  {{ $svgContent | safeHTML }}
+{{ end }}

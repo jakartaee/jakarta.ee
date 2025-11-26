@@ -1,0 +1,16 @@
+{{- with .context.Params.jumbotron_btn_class | default .context.Site.Params.jumbotron_btn_class | default "btn btn-primary" }}
+  {{ $.Scratch.Set "jumbotron_btn" . }}
+{{ end }}
+<ul class="jumbotron-links list-inline">
+  {{ range $key,$val := index .context.Page.Params.links }}
+    {{- $linkClass := (index $val 2).class | default ($.Scratch.Get "jumbotron_btn") -}}
+    {{- $linkIcon := (index $val 3).icon -}}
+    <li>
+      <a class="{{ $linkClass }}" href="{{ (index $val 0).href }}"
+        >{{ (index $val 1).text }}{{- if $linkIcon -}}
+          &ThickSpace;<i class="{{ $linkIcon }}"></i>
+        {{- end -}}</a
+      >
+    </li>
+  {{ end }}
+</ul>
