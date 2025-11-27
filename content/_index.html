@@ -1,10 +1,13 @@
 ---
 title: "Home"
 seo_title: "Jakarta EE"
-seo_title_suffix: " | Cloud Native Enterprise Java | Java EE | The Eclipse Foundation"
+seo_title_suffix:
+  " | Cloud Native Enterprise Java | Java EE | The Eclipse Foundation"
 headline: |
   Jakarta EE powers the future of <span class="text-primary-orange">enterprise</span> Java.
-subtitle: Develop, run, and scale enterprise Java apps in the cloud,<br> with the flexibility of open source technology.
+subtitle:
+  Develop, run, and scale enterprise Java apps in the cloud,<br> with the
+  flexibility of open source technology.
 jumbotron_btn_class: btn btn-secondary
 jumbotron_class: text-center
 custom_jumbotron_class: col-sm-18 col-sm-offset-3 margin-top-60
@@ -26,7 +29,10 @@ links:
     ],
   ]
 links_position: "before_custom_jumbotron"
-description: "Jakarta Enterprise Edition (EE) is the open source future of cloud native enterprise Java. Protect your investments in Java EE and modernize your enterprise applications."
+description:
+  "Jakarta Enterprise Edition (EE) is the open source future of cloud native
+  enterprise Java. Protect your investments in Java EE and modernize your
+  enterprise applications."
 date: 2018-04-05T15:50:25-04:00
 hide_page_title: true
 hide_sidebar: true
@@ -36,7 +42,8 @@ show_featured_footer: false
 container: "container-fluid"
 ---
 
-<section class="row padding-y-60">
+<!-- Why choose Jakarta EE section -->
+<section id="why-choose-jakarta-ee" class="row padding-y-60">
   <div class="container">
     <div class="row">
       <div class="col-md-10 margin-bottom-30">
@@ -159,13 +166,10 @@ container: "container-fluid"
   </div>
 </section>
 
+<!-- Community-powered innovation section -->
 <section
-  class="row padding-y-60"
-  style="
-    background: linear-gradient(135deg, #1e3a8a 0%, #4169e1 100%);
-    position: relative;
-    overflow: hidden;
-  "
+  id="community-powered-innovation"
+  class="row padding-y-huge bg-blue-image-2"
 >
   <div class="container">
     <div class="row">
@@ -190,7 +194,12 @@ container: "container-fluid"
   </div>
 </section>
 
-<section class="row release-cta" style="padding: 80px 0; background: white">
+<!-- Jakarta EE 11 release section -->
+<section
+  id="jakarta-ee-11-release"
+  class="row release-cta"
+  style="padding: 80px 0; background: white"
+>
   <div class="container">
     <div class="wrapper">
       <div class="content">
@@ -214,15 +223,10 @@ container: "container-fluid"
   </div>
 </section>
 
-<section class="news row">
+<!-- News and announcements section -->
+<section id="news-announcements" class="news row">
   <div class="container">
-    <div
-      class="wrapper rounded-medium"
-      style="
-        background: linear-gradient(135deg, #1e3a8a 0%, #4169e1 100%);
-        position: relative;
-      "
-    >
+    <div class="wrapper rounded-medium bg-blue-image">
       <div class="row top dark">
         <div class="col-xs-24">
           <h2>News & announcements</h2>
@@ -246,15 +250,10 @@ container: "container-fluid"
 
       <div class="row">
         <div class="col-xs-24">
-          {{< newsroom/news
-            id="announcements_news_lists"
-            publishTarget="jakarta_ee"
-            type="announcements,community_news"
-            count="8"
-            class="news-list"
-            templateId="custom-announcement-template"
-            templatePath="/js/templates/news-home.mustache"
-          >}}
+          {{< newsroom/news id="announcements_news_lists"
+          publishTarget="jakarta_ee" type="announcements,community_news"
+          count="8" class="news-list" templateId="custom-announcement-template"
+          templatePath="/js/templates/news-home.mustache" >}}
         </div>
       </div>
       <div class="row bottom dark">
@@ -266,6 +265,20 @@ container: "container-fluid"
           <a href="#" class="btn btn-secondary">Read announcements</a>
         </div>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- Events section -->
+<section id="events" class="row padding-y-60">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-24">
+        <h2 class="text-center text-primary margin-bottom-30">Events</h2>
+      </div>
+      {{< newsroom/events id="events_lists" upcoming="1"
+      templateId="custom-events-template"
+      templatePath="/js/templates/events-home.mustache" count="2" >}}
     </div>
   </div>
 </section>
