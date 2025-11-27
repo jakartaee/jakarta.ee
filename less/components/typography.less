@@ -19,29 +19,27 @@
 }
 
 .word-break {
-    word-spacing: 100vw;
+  word-spacing: 100vw;
 }
 
 .text-secondary {
+  color: @brand-primary-orange;
+  a {
     color: @brand-primary-orange;
-    a {
-        color: @brand-primary-orange;
-        &:hover {
-            color: @brand-primary-orange;
-        }
+    &:hover {
+      color: @brand-primary-orange;
     }
+  }
 }
 
-.text-quaternary {
-  color: @brand-secondary-yellow;
-}
-
+.text-quaternary,
 .dark .text-quaternary {
   color: @brand-secondary-yellow;
 }
 
-.text-primary-orange {
-    color: @brand-primary-orange;
+.text-primary-orange,
+.dark .text-primary-orange {
+  color: @brand-primary-orange;
 }
 
 // ========================================
@@ -49,38 +47,44 @@
 // ========================================
 
 // Heading overrides
-h1, .h1 {
+h1,
+.h1 {
   font-size: 4.8rem;
   letter-spacing: normal;
 }
 
-h2, .h2 {
+h2,
+.h2 {
   font-size: 3.6rem;
   letter-spacing: normal;
 }
 
-h3, .h3 {
+h3,
+.h3 {
   font-size: 2.8rem;
   letter-spacing: normal;
 }
 
-h4, .h4 {
+h4,
+.h4 {
   font-size: 2.2rem;
   letter-spacing: normal;
 }
 
-h5, .h5 {
+h5,
+.h5 {
   font-size: 1.8rem;
   letter-spacing: normal;
 }
 
-h6, .h6 {
+h6,
+.h6 {
   font-size: 1.4rem;
   letter-spacing: normal;
 }
 
 .btn.btn-lg {
-    font-size: 16px;
+  font-size: 16px;
 }
 
 .featured-text {
@@ -88,42 +92,42 @@ h6, .h6 {
   .text-medium;
 }
 
-.big-text, .big-text-secondary {
-    .featured-text;
-    .text-semibold;
+.big-text,
+.big-text-secondary {
+  .featured-text;
+  .text-semibold;
+  color: @brand-primary;
+  a {
     color: @brand-primary;
-    a {
-        color: @brand-primary;
-        &:hover {
-            color: darken(@brand-primary, 15%);
-        }
-        &.white {
-            color:@white;
-            &:hover {
-                color: @white;
-            }
-        }
+    &:hover {
+      color: darken(@brand-primary, 15%);
     }
-    &.italic {
-        font-style: italic;
+    &.white {
+      color: @white;
+      &:hover {
+        color: @white;
+      }
     }
-    &.uppercase {
-        text-transform: uppercase;
-    }
+  }
+  &.italic {
+    font-style: italic;
+  }
+  &.uppercase {
+    text-transform: uppercase;
+  }
 }
 
 .big-text-secondary {
+  color: @brand-primary-orange;
+  a {
     color: @brand-primary-orange;
-    a {
-        color: @brand-primary-orange;
-        &:hover {
-            color: darken(@brand-primary-orange, 15%);
-        }
+    &:hover {
+      color: darken(@brand-primary-orange, 15%);
     }
+  }
 }
 
 .featured-text-sm {
   .big-text;
   font-size: 12px;
 }
-
