@@ -50,7 +50,6 @@
   font-size: @btn-font-size;
   padding: 0.5rem 2rem;
   transition: transform 0.2s cubic-bezier(0.39, -0.35, 0.54, 2.04);
-  text-wrap: auto;
 
   &:active {
     transform: scale(0.95);
@@ -72,6 +71,24 @@
   &:hover {
     background-color: @brand-primary;
     color: @white;
+  }
+}
+
+.btn-outline-white {
+  box-shadow: inset 0px 0px 0px 2px @white;
+  color: @white;
+
+  &,
+  &:visited,
+  &:hover,
+  &:focus,
+  &:active {
+    color: @white;
+  }
+
+  &:hover {
+    background-color: @white;
+    color: @brand-primary-dark;
   }
 }
 
