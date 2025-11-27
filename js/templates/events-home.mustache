@@ -1,25 +1,32 @@
-<div class="eclipsefdn-event-list-teaser row">
+<div class="eclipsefdn-event-list-teaser">
 {{#events}}
-  <div class="col-sm-12">
-    <div class="eclipsefdn-event-list-teaser-content block-summary-item match-height-item-by-row">
+  <div class="card glow event-card">
+    <div class="image">
+      {{#image}}
+        <a href="{{image}}">
+          <img src="{{image}}" alt="{{title}}">
+        </a>
+      {{/image}}
+
+      {{^image}}
+        <img src="/images/events/event-placeholder.webp" alt="{{title}}">
+      {{/image}}
+    </div>
+    <div class="content">
+      {{#date}}
+        <p class="eclipsefdn-event-list-teaser-date">{{ date }}{{#end-date}} - {{ end-date }}{{/end-date}}</p>
+      {{/date}}
       {{#infoLink}}
-        <h4><a href="{{infoLink}}">{{ title }}</a></h4>
+        <h3><a href="{{infoLink}}">{{ title }}</a></h3>
       {{/infoLink}}
 
       {{^infoLink}}
         <h4>{{ title }}</h4>
       {{/infoLink}}
 
-      {{#locationName}}
-        <p class="eclipsefdn-event-list-teaser-location"><span class="fw-700">Location:</span> {{ locationName }}</p>
-      {{/locationName}}
-
-      {{#date}}
-        <p class="eclipsefdn-event-list-teaser-date">{{ date }}{{#end-date}} - {{ end-date }}{{/end-date}}</p>
-      {{/date}}
-      {{#registration}}
-        <p class="eclipsefdn-event-list-teaser-registation"><a href="{{registration}}" class="btn btn-primary btn-sm">Register</a></p>
-      {{/registration}}   
+      {{#description}}
+        <p class="eclipsefdn-event-list-teaser-description">{{ description }}</p>
+      {{/description}}
     </div>
   </div>
 {{/events}}
