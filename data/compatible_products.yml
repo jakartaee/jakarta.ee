@@ -825,6 +825,15 @@ sets:
         - version: 10-EE9
           compatibility: 'https://www.apusic.com/about/aas_v10_ee9_full.html'
           download_url: 'https://www.apusic.com/list-117.html'
+      - name: "TongWeb Application Server"
+        vendor: "Beijing TongTech Co., Ltd."
+        image: "/images/compatible_products/tongweb.svg"
+        image_width: 180
+        download: 'https://www.tongtech.com/dft/pctype/25.html'
+        versions:
+        - version: 7
+          compatibility: 'https://www.tongtech.com/tongweb/tck790.html'
+          download_url: 'https://www.tongtech.com/service.html'
 
     - title: Jakarta EE 9 Web Profile
       items:
