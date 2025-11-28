@@ -64,15 +64,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     $(document).ready(function () {
-      $(".testimonial-container").html(
-        $(".testimonial-item")
-          .sort(function () {
-            return 0.5 - Math.random();
-          })
-          .slice(0, 3)
-          .slideDown("slow")
-      );
-
       $(".features-and-benefits-btn").on("click", function () {
         const parent = $(this).parent().parent();
         $(parent)

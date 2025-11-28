@@ -50,6 +50,7 @@
   font-size: @btn-font-size;
   padding: 0.5rem 2rem;
   transition: transform 0.2s cubic-bezier(0.39, -0.35, 0.54, 2.04);
+  border: 2px solid transparent;
 
   &:active {
     transform: scale(0.95);
@@ -57,7 +58,7 @@
 }
 
 .btn-outline-primary {
-  box-shadow: inset 0px 0px 0px 2px @brand-primary;
+  border-color: @brand-primary;
   color: @brand-primary;
 
   &,
@@ -75,8 +76,8 @@
 }
 
 .btn-outline-white {
-  box-shadow: inset 0px 0px 0px 2px @white;
   color: @white;
+  border-color: @white;
 
   &,
   &:visited,
@@ -93,7 +94,7 @@
 }
 
 .btn-outline-secondary {
-  box-shadow: inset 0px 0px 0px 2px @brand-secondary;
+  border-color: @brand-secondary;
 
   &,
   &:visited,

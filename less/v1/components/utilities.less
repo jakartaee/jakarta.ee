@@ -8,6 +8,10 @@
  * SPDX-License-Identifier: EPL-2.0
  */
 
+.bg-primary-royal-blue {
+  background-color: @brand-primary-royal-blue;
+}
+
 .rounded-base {
   border-radius: @border-radius-base;
 }
@@ -38,7 +42,56 @@
 
 .xs\:grid-cols-2 {
   @media (min-width: @screen-xs-min) {
-    grid-template-columns: repeat(2, 1fr);
+    .grid-cols-2;
+  }
+}
+
+.md\:grid-cols-2 {
+  @media (min-width: @screen-md-min) {
+    .grid-cols-2;
+  }
+}
+
+.gap-x-line-4 {
+  gap: 4rem;
+
+  & > *:not(:last-child) {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: -2rem;
+      top: 0;
+      left: auto;
+      width: 1px;
+      height: 100%;
+      background-color: @brand-primary;
+    }
+  }
+}
+
+.gap-y-line-4 {
+  gap: 4rem;
+
+  & > *:not(:last-child) {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -2rem;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background-color: @brand-primary;
+    }
+  }
+}
+
+.md\:gap-x-line-4 {
+  @media (min-width: @screen-md-min) {
+    .gap-x-line-4;
   }
 }
 
@@ -49,5 +102,19 @@
   @media (min-width: @screen-md-min) {
     padding-top: 20rem;
     padding-bottom: 20rem;
+  }
+}
+
+.padding-bottom-huge {
+  padding-bottom: 10rem;
+
+  @media (min-width: @screen-md-min) {
+    padding-bottom: 20rem;
+  }
+}
+
+.md\:padding-60 {
+  @media (min-width: @screen-md-min) {
+    padding: 6rem;
   }
 }
