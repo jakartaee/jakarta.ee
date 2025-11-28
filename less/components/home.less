@@ -374,6 +374,22 @@ section#community-powered-innovation {
   position: relative;
   overflow: hidden;
 
+  @keyframes float-bubble {
+    0%,
+    100% {
+      transform: translate(0, 0) rotate(0deg);
+    }
+    25% {
+      transform: translate(5px, -8px) rotate(2deg);
+    }
+    50% {
+      transform: translate(-3px, -12px) rotate(-1deg);
+    }
+    75% {
+      transform: translate(-7px, -5px) rotate(1deg);
+    }
+  }
+
   .contributor-bubbles-wrapper {
     position: relative;
     min-height: 500px;
@@ -412,46 +428,45 @@ section#community-powered-innovation {
       pointer-events: all;
       width: 100px;
       height: 100px;
-      transform: scale(0.5);
 
       &:nth-child(1) {
         top: 12%;
         left: 2%;
+        animation: float-bubble 4.2s ease-in-out infinite;
       }
       &:nth-child(2) {
         top: 5%;
         left: 32%;
         width: 75px;
         height: 75px;
+        animation: float-bubble 5.8s ease-in-out infinite 0.5s;
       }
       &:nth-child(3) {
         bottom: 30%;
         left: 3%;
+        animation: float-bubble 3.6s ease-in-out infinite 1.2s;
       }
       &:nth-child(4) {
         top: 10%;
         right: 12%;
+        animation: float-bubble 4.8s ease-in-out infinite 0.8s;
       }
       &:nth-child(5) {
         top: 48%;
         right: 6%;
         width: 80px;
         height: 80px;
+        animation: float-bubble 5.2s ease-in-out infinite 1.8s;
       }
       &:nth-child(6) {
         bottom: 5%;
         right: 28%;
         width: 70px;
         height: 70px;
-      }
-
-      @media (min-width: @screen-md-min) {
-        transform: scale(@bubble-scale-md);
+        animation: float-bubble 4.5s ease-in-out infinite 0.3s;
       }
 
       @media (min-width: @screen-lg-min) {
-        transform: scale(@bubble-scale-lg);
-
         &:nth-child(1) {
           left: 5%;
           top: 30%;
@@ -462,6 +477,7 @@ section#community-powered-innovation {
         }
         &:nth-child(3) {
           left: 12%;
+          bottom: 12%;
         }
         &:nth-child(4) {
           right: 20%;
@@ -479,23 +495,51 @@ section#community-powered-innovation {
     }
 
     .contributor-card {
+      @bubble-scale-md: 1.4;
+      @bubble-scale-lg: 1.6;
+
       width: 100%;
       height: 100%;
       border-radius: 50%;
       opacity: 0;
+      transform: scale(0.5);
       transition: opacity 1s ease, transform 0.3s ease;
       border: none;
       overflow: hidden;
       box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 
+      &:not(.active) {
+        pointer-events: none;
+        transform: scale(0);
+      }
+
       &.active {
         opacity: 1;
+        transform: scale(0.5);
       }
 
       &:hover {
-        transform: scale(1.15);
+        transform: scale(0.575);
         box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
         z-index: 20;
+      }
+
+      @media (min-width: @screen-md-min) {
+        &.active {
+          transform: scale(@bubble-scale-md);
+        }
+        &:hover {
+          transform: scale(calc(@bubble-scale-md * 1.15));
+        }
+      }
+
+      @media (min-width: @screen-lg-min) {
+        &.active {
+          transform: scale(@bubble-scale-lg);
+        }
+        &:hover {
+          transform: scale(calc(@bubble-scale-lg * 1.15));
+        }
       }
 
       .contributor-image {
