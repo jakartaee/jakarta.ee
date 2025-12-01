@@ -17,12 +17,19 @@ import "./video-modal";
 import eclipsefdnSpecificationBadges from "./specification-badges";
 import { setupTopIntersection } from "./top-intersection";
 import setupMobileMegaMenu from "./mobile-mega-menu";
+import scrollSnapCarousel from "./scroll-snap-carousel";
 
 document.addEventListener("DOMContentLoaded", function () {
   (function ($, document) {
     eclipsefdnSpecificationBadges.renderAll();
 
     setupTopIntersection();
+
+    // Initialize scroll snap carousels for home
+    scrollSnapCarousel(".testimonial-container", ".testimonial-item");
+    scrollSnapCarousel(".news-container", "article", {
+      useMutationObserver: true,
+    });
 
     // Initialize Mobile Mega Menu
     setupMobileMegaMenu();
