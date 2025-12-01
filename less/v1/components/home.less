@@ -143,6 +143,38 @@ section.release-cta {
 }
 
 section.news {
+  .news-list:not(:hover) {
+    .scroll-snap-controls {
+      opacity: 0;
+    }
+  }
+
+  .scroll-snap-controls {
+    gap: 1rem;
+    padding: 0 6rem;
+    justify-content: space-between;
+    display: flex;
+    visibility: hidden;
+    transition: opacity 0.3s ease-out;
+
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    z-index: 1;
+
+    @media (min-width: @screen-md-min) {
+      visibility: visible;
+    }
+
+    pointer-events: none;
+
+    button {
+      pointer-events: all;
+    }
+  }
+
   .news-type-community_news,
   .news-type-announcements {
     padding: 0.3rem 1rem;
@@ -574,29 +606,65 @@ section#community-powered-innovation {
   }
 }
 
-.testimonial-container {
-  display: flex;
-  gap: 2rem;
-  padding: 1.5rem;
-  overflow-y: scroll;
-  scroll-snap-type: x mandatory;
+.featured-section-testimonials {
+  position: relative;
 
-  @media (min-width: @screen-md-min) {
-    padding: 3rem;
+  &:not(:hover) {
+    .scroll-snap-controls {
+      opacity: 0;
+    }
   }
 
-  scrollbar-width: none; // Firefox
-  &::-webkit-scrollbar {
-    display: none; // Chrome, Safari, Opera
-  }
-
-  .testimonial-item {
-    scroll-snap-align: center;
-    flex: 1 0 80vw;
+  .scroll-snap-controls {
+    gap: 1rem;
+    padding: 0 3rem;
+    justify-content: space-between;
     display: flex;
+    visibility: hidden;
+    transition: opacity 0.3s ease-out;
+
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    z-index: 1;
 
     @media (min-width: @screen-md-min) {
-      flex: 1 0 60rem;
+      visibility: visible;
+    }
+
+    pointer-events: none;
+
+    button {
+      pointer-events: all;
+    }
+  }
+
+  .testimonial-container {
+    display: flex;
+    gap: 2rem;
+    padding: 1.5rem;
+    overflow-y: scroll;
+    scroll-snap-type: x mandatory;
+
+    @media (min-width: @screen-md-min) {
+      padding: 3rem;
+    }
+
+    scrollbar-width: none; // Firefox
+    &::-webkit-scrollbar {
+      display: none; // Chrome, Safari, Opera
+    }
+
+    .testimonial-item {
+      scroll-snap-align: center;
+      flex: 1 0 80vw;
+      display: flex;
+
+      @media (min-width: @screen-md-min) {
+        flex: 1 0 60rem;
+      }
     }
   }
 }
