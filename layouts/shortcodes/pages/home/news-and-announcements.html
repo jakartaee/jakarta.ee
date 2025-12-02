@@ -1,0 +1,59 @@
+<!-- News and announcements section -->
+<section
+  id="news-announcements"
+  class="news row"
+  aria-labelledby="news-announcements-heading"
+>
+  <div class="container">
+    <div class="wrapper rounded-medium bg-blue-image">
+      <div class="row top dark">
+        <div class="col-xs-24">
+          <h2 id="news-announcements-heading">
+            {{ i18n "home-news-heading" }}
+          </h2>
+        </div>
+        <div class="col-xs-24">
+          <div class="content-wrapper">
+            <div class="content">
+              <h3 class="text-semibold h5">
+                {{ i18n "home-news-subheading" }}
+              </h3>
+              <p class="margin-bottom-30">
+                {{ i18n "home-news-paragraph" | markdownify }}
+              </p>
+            </div>
+            <div class="actions">
+              <a href="/news" class="btn btn-outline-primary"
+                >{{ i18n "home-news-submit-news" }}</a
+              >
+              <a href="/news" class="btn btn-primary"
+                >{{ i18n "home-news-subscribe" }}</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-24">
+          {{ .Inner }}
+        </div>
+      </div>
+      <div class="bottom dark">
+        <a
+          href="/news"
+          class="btn btn-outline-secondary"
+          aria-label="{{ i18n "home-news-read-all-news-aria" }}"
+          >{{ i18n "home-news-read-all-news" }}
+          <i class="fa fa-xs fa-chevron-right" aria-hidden="true"></i
+        ></a>
+        <a
+          href="/news"
+          class="btn btn-secondary"
+          aria-label="{{ i18n "home-news-read-announcements-aria" }}"
+          >{{ i18n "home-news-read-announcements" }}</a
+        >
+      </div>
+    </div>
+  </div>
+</section>

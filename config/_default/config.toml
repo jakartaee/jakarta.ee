@@ -19,96 +19,107 @@ enableInlineShortcodes = true
 ## Suppress logging for now allowed raw HTML content
 ignoreLogs = ['warning-goldmark-raw-html']
 [markup.highlight]
-  noClasses = false
-  style = "github"
+noClasses = false
+style = "github"
 
 [Params]
-  layout_style = "astro"
-  google_tag_manager = "GTM-5WLCZXC"
-  description = "Jakarta® Enterprise Edition (EE) is the future of cloud native Java. Jakarta® EE open source software drives cloud native innovation, modernizes enterprise applications and protects investments in Java EE."
-  subtitle = "The New Home of Cloud Native Java"
-  seo_title_suffix = " | Jakarta EE | The Eclipse Foundation"
-  keywords = ["Jakarta EE software", "Java EE", "cloud", "microservices", "enterprise", "open source", "innovation"]
-  logo = "images/jakarta/jakarta-ee-logo-color.svg"
-  styles = "css/styles.css?v2.3"
-  favicon = "images/jakarta/favicon.ico"
-  share_img = "images/jakarta/jakarta_ee_400x400.png"
-  gcse = "011805775785170369411:p3ec0igo0qq"
-  header_wrapper_class = "header-default-bg-img"
-  js = "js/solstice.js?v2.3"
-  show_events = true
-  main_menu_wrapper_classes = "col-sm-19 margin-top-20"
-  hide_cfa_same_page = true
-  featured_content_publish_target = "jakarta_ee"
-  logo_width = "200"
-  jumbotron_class = "col-md-24 col-sm-18 "
-  jumbotron_tagline_class = "col-sm-24"
-  footer_section_eclipse_foundation_class = "col-sm-8 col-md-5 padding-top-20"
-  footer_section_useful_links_class = "col-sm-8 col-md-5 padding-top-20"
-  footer_section_other_class = "col-sm-8 col-md-5 padding-top-20"
-  footer_section_newsletter_class = "col-sm-24 col-md-9 footer-section-socials"
-  footer_section_legal_class = " "
+layout_style = "astro"
+google_tag_manager = "GTM-5WLCZXC"
+description = "Jakarta® Enterprise Edition (EE) is the future of cloud native Java. Jakarta® EE open source software drives cloud native innovation, modernizes enterprise applications and protects investments in Java EE."
+subtitle = "The New Home of Cloud Native Java"
+seo_title_suffix = " | Jakarta EE | The Eclipse Foundation"
+keywords = [
+  "Jakarta EE software",
+  "Java EE",
+  "cloud",
+  "microservices",
+  "enterprise",
+  "open source",
+  "innovation",
+]
+logo = "/images/jakarta/jakarta-ee-logo-color.svg"
+styles = "css/styles.css?v2.3"
+favicon = "images/jakarta/favicon.ico"
+share_img = "images/jakarta/jakarta_ee_400x400.png"
+gcse = "011805775785170369411:p3ec0igo0qq"
+header_wrapper_class = "header-default-bg-img"
+js = "js/solstice.js?v2.3"
+show_events = true
+main_menu_wrapper_classes = "col-sm-19 margin-top-20"
+hide_cfa_same_page = true
+featured_content_publish_target = "jakarta_ee"
+logo_width = "200"
+jumbotron_class = "col-md-24 col-sm-18 "
+jumbotron_tagline_class = "col-sm-24"
+footer_section_eclipse_foundation_class = "col-sm-8 col-md-5 padding-top-20"
+footer_section_useful_links_class = "col-sm-8 col-md-5 padding-top-20"
+footer_section_other_class = "col-sm-8 col-md-5 padding-top-20"
+footer_section_newsletter_class = "col-sm-24 col-md-9 footer-section-socials"
+footer_section_legal_class = " "
 
 [[Params.call_for_actions]]
-  text_key = "cta-download"
-  url = "/compatibility/download/"
-  icon = ""
-  classes = "btn btn-huge btn-outline-primary"
+text_key = "cta-download"
+url = "/compatibility/download/"
+icon = ""
+classes = "btn btn-huge btn-outline-primary"
 
 [[Params.call_for_actions]]
-  text_key = "cta-join-us"
-  url = "/membership/"
-  icon = ""
-  classes = "btn btn-secondary"
+text_key = "cta-join-us"
+url = "/membership/"
+icon = ""
+classes = "btn btn-secondary"
 
 [[Params.socials]]
-  name = "Bluesky"
-  icon = "fa-brands fa-bluesky"
-  url = "https://bsky.app/profile/jakarta.ee"
+name = "Bluesky"
+icon = "fa-brands fa-bluesky"
+url = "https://bsky.app/profile/jakarta.ee"
 
 [[Params.socials]]
-  name = "Facebook"
-  icon = "fa-brands fa-facebook"
-  url = "https://www.facebook.com/JakartaEE/"
+name = "Facebook"
+icon = "fa-brands fa-facebook"
+url = "https://www.facebook.com/JakartaEE/"
 
 [[Params.socials]]
-  name = "LinkedIn"
-  icon = "fa-brands fa-linkedin"
-  url = "https://ca.linkedin.com/showcase/jakartaee"
+name = "LinkedIn"
+icon = "fa-brands fa-linkedin"
+url = "https://ca.linkedin.com/showcase/jakartaee"
 
 [[Params.socials]]
-  name = "Mastodon"
-  icon = "fa-brands fa-mastodon"
-  url = "https://mastodon.social/@jakartaee"
+name = "Mastodon"
+icon = "fa-brands fa-mastodon"
+url = "https://mastodon.social/@jakartaee"
 
 [[Params.socials]]
-  name = "Twitter"
-  icon = "fa-brands fa-x-twitter"
-  url = "https://twitter.com/JakartaEE"
+name = "Twitter"
+icon = "fa-brands fa-x-twitter"
+url = "https://twitter.com/JakartaEE"
 
 [[Params.socials]]
-  name = "YouTube"
-  icon = "fa-brands fa-youtube"
-  url = "https://www.youtube.com/c/JakartaEE"
+name = "YouTube"
+icon = "fa-brands fa-youtube"
+url = "https://www.youtube.com/c/JakartaEE"
 
 [taxonomies]
-  category = "categories"
-  tag = "tags"
-  news_tags = "news/tags"
+category = "categories"
+tag = "tags"
+news_tags = "news/tags"
 
 [Author]
-  name = "Eclipse Foundation"
-  website = "https://www.eclipse.org"
-  email = "webdev@eclipse-foundation.org"
-  facebook = "eclipse.org"
-  twitter = "EclipseFdn"
-  youtube = "EclipseFdn"
-  googleplus = "+Eclipse"
-  linkedin = "company/eclipse-foundation/"
+name = "Eclipse Foundation"
+website = "https://www.eclipse.org"
+email = "webdev@eclipse-foundation.org"
+facebook = "eclipse.org"
+twitter = "EclipseFdn"
+youtube = "EclipseFdn"
+googleplus = "+Eclipse"
+linkedin = "company/eclipse-foundation/"
 
 [permalinks]
-  news = "/:sections/:year/:month/:day/:slug/"
+news = "/:sections/:year/:month/:day/:slug/"
 
 [blackfriday]
-  plainIDAnchors = true
-  hrefTargetBlank = true
+plainIDAnchors = true
+hrefTargetBlank = true
+
+[markup.goldmark.renderer]
+hardWraps = true

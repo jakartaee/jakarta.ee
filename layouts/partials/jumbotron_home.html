@@ -12,38 +12,42 @@
   <div class="card wrapper glow">
     <div class="pill">
       <div class="left">
-        {{ partial "svg.html" (dict "path" "static/images/icons/home/mentorship.svg") }}
+        {{ partial "svg.html" (dict "path"
+        "static/images/icons/home/mentorship.svg") }}
       </div>
       <div class="right">
-        <h3>Mentorship</h3>
-        <p>Contribute with guidance from community experts</p>
+        <h3>{{ i18n "home-jumbotron-mentorship-title" }}</h3>
+        <p>{{ i18n "home-jumbotron-mentorship-desc" }}</p>
       </div>
     </div>
     <div class="pill">
       <div class="left">
-        {{ partial "svg.html" (dict "path" "static/images/icons/home/learn.svg") }}
+        {{ partial "svg.html" (dict "path" "static/images/icons/home/learn.svg")
+        }}
       </div>
       <div class="right">
-        <h3>Learning hub</h3>
-        <p>Guides and tutorials to get started</p>
+        <h3>{{ i18n "home-jumbotron-learning-hub-title" }}</h3>
+        <p>{{ i18n "home-jumbotron-learning-hub-desc" }}</p>
       </div>
     </div>
     <div class="pill">
       <div class="left">
-        {{ partial "svg.html" (dict "path" "static/images/icons/home/oss.svg") }}
+        {{ partial "svg.html" (dict "path" "static/images/icons/home/oss.svg")
+        }}
       </div>
       <div class="right">
-        <h3>Open source</h3>
-        <p>Collaborative & vendor-neutral</p>
+        <h3>{{ i18n "home-jumbotron-open-source-title" }}</h3>
+        <p>{{ i18n "home-jumbotron-open-source-desc" }}</p>
       </div>
     </div>
     <div class="pill">
       <div class="left">
-        {{ partial "svg.html" (dict "path" "static/images/icons/home/community.svg") }}
+        {{ partial "svg.html" (dict "path"
+        "static/images/icons/home/community.svg") }}
       </div>
       <div class="right">
-        <h3>Community innovation</h3>
-        <p>Shaped by contributors worldwide</p>
+        <h3>{{ i18n "home-jumbotron-community-innovation-title" }}</h3>
+        <p>{{ i18n "home-jumbotron-community-innovation-desc" }}</p>
       </div>
     </div>
   </div>
