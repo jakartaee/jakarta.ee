@@ -1,0 +1,61 @@
+{{- $heading := i18n "home-members-heading" -}}
+{{- $paragraph := i18n
+  "home-members-paragraph" | markdownify
+-}}
+{{- $companiesAria := i18n
+  "home-members-companies-aria"
+-}}
+{{- $fujitsuAlt := i18n
+  "home-members-fujitsu-alt"
+-}}
+{{- $ibmAlt := i18n "home-members-ibm-alt" -}}
+{{- $oracleAlt := i18n "home-members-oracle-alt" -}}
+{{- $payaraAlt := i18n
+  "home-members-payara-alt"
+-}}
+{{- $tomitribeAlt := i18n
+  "home-members-tomitribe-alt"
+-}}
+{{- $viewAll := i18n "home-members-view-all" -}}
+{{- $viewAllAria := i18n "home-members-view-all-aria" -}}
+<section
+  id="members"
+  class="members row padding-top-60 padding-bottom-huge"
+  aria-labelledby="members-heading"
+>
+  <div class="container">
+    <div
+      class="rounded-medium bg-blue-image-3 text-center dark padding-30 md:padding-60"
+    >
+      <h2 id="members-heading" class="text-primary-orange margin-bottom-50">
+        {{ $heading }}
+      </h2>
+      <p>{{ $paragraph }}</p>
+      <ul class="list-inline" aria-label="{{ $companiesAria }}">
+        <li>
+          <img src="images/home/logos/fujitsu.svg" alt="{{ $fujitsuAlt }}" />
+        </li>
+        <li><img src="images/home/logos/ibm.svg" alt="{{ $ibmAlt }}" /></li>
+        <li>
+          <img src="images/home/logos/oracle.svg" alt="{{ $oracleAlt }}" />
+        </li>
+        <li>
+          <img src="images/home/logos/payara.svg" alt="{{ $payaraAlt }}" />
+        </li>
+        <li>
+          <img
+            src="images/home/logos/tomitribe.svg"
+            alt="{{ $tomitribeAlt }}"
+          />
+        </li>
+      </ul>
+      <a
+        href="/membership"
+        class="btn btn-outline-white"
+        aria-label="{{ $viewAllAria }}"
+      >
+        {{ $viewAll }}
+      </a>
+    </div>
+  </div>
+</section>
