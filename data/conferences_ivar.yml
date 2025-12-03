@@ -46,6 +46,12 @@ years:
     date: Feb 2-4
     upcoming: true
 
+  - name: Valencia JUG
+    url: 
+    location: Valencia 🇪🇸
+    date: Jan 20
+    upcoming: true
+
 - year: 2025
   conferences:
 
