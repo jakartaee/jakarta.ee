@@ -11,44 +11,36 @@
 <div class="jumbotron-pills-home container">
   <div class="card wrapper glow">
     <div class="pill">
-      <div class="left">
-        {{ partial "svg.html" (dict "path"
-        "static/images/icons/home/mentorship.svg") }}
-      </div>
-      <div class="right">
+      <a href="/mentorship/">
+        <div>
+          {{ partial "svg.html" (dict "path"
+          "static/images/icons/home/mentorship.svg") }}
+        </div>
         <h3>{{ i18n "home-jumbotron-mentorship-title" }}</h3>
         <p>{{ i18n "home-jumbotron-mentorship-desc" }}</p>
-      </div>
+
+      </a>
     </div>
     <div class="pill">
-      <div class="left">
-        {{ partial "svg.html" (dict "path" "static/images/icons/home/learn.svg")
-        }}
-      </div>
-      <div class="right">
+
+      <a href="/learn/">
+        <div>
+          {{ partial "svg.html" (dict "path" "static/images/icons/home/learn.svg")
+          }}
+        </div>
         <h3>{{ i18n "home-jumbotron-learning-hub-title" }}</h3>
         <p>{{ i18n "home-jumbotron-learning-hub-desc" }}</p>
-      </div>
+      </a>
     </div>
     <div class="pill">
-      <div class="left">
-        {{ partial "svg.html" (dict "path" "static/images/icons/home/oss.svg")
-        }}
-      </div>
-      <div class="right">
-        <h3>{{ i18n "home-jumbotron-open-source-title" }}</h3>
-        <p>{{ i18n "home-jumbotron-open-source-desc" }}</p>
-      </div>
-    </div>
-    <div class="pill">
-      <div class="left">
-        {{ partial "svg.html" (dict "path"
-        "static/images/icons/home/community.svg") }}
-      </div>
-      <div class="right">
-        <h3>{{ i18n "home-jumbotron-community-innovation-title" }}</h3>
-        <p>{{ i18n "home-jumbotron-community-innovation-desc" }}</p>
-      </div>
+      <a href="https://start.jakarta.ee/">
+        <div>
+          {{ partial "svg.html" (dict "path" "static/images/icons/home/rocket.svg")
+          }}
+        </div>
+        <h3>{{ i18n "home-jumbotron-get-started-title" }}</h3>
+        <p>{{ i18n "home-jumbotron-get-started-desc" }}</p>
+      </a>
     </div>
   </div>
 </div>
