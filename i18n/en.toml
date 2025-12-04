@@ -192,7 +192,7 @@ other = "Submit news"
 other = "Subscribe"
 
 [home-news-read-all-news]
-other = "Read all news"
+other = "Read all news & announcements"
 
 [home-news-read-announcements]
 other = "Read announcements"
@@ -297,28 +297,22 @@ other = "View all members"
 other = "View all Jakarta EE member companies"
 
 [home-jumbotron-mentorship-title]
-other = "Mentorship"
+other = "Learn about mentorship"
 
 [home-jumbotron-mentorship-desc]
 other = "Contribute with guidance from community experts"
 
 [home-jumbotron-learning-hub-title]
-other = "Learning hub"
+other = "Explore the learning hub"
 
 [home-jumbotron-learning-hub-desc]
 other = "Guides and tutorials to get started"
 
-[home-jumbotron-open-source-title]
-other = "Open source"
+[home-jumbotron-get-started-title]
+other = "Get started"
 
-[home-jumbotron-open-source-desc]
-other = "Collaborative & vendor-neutral"
-
-[home-jumbotron-community-innovation-title]
-other = "Community innovation"
-
-[home-jumbotron-community-innovation-desc]
-other = "Shaped by contributors worldwide"
+[home-jumbotron-get-started-desc]
+other = "Generate a Jakarta EE project template"
 
 [compatibility-intro-text]
 other = "The success of Jakarta EE technology relies on compatibility to ensure application portability, security, stability, and resiliency. Compatibility will allow more technology providers to leverage and strengthen the Jakarta EE brand in the enterprise Java community. If you are interested in featuring your product here, follow the steps on the <a href=\"/compatibility/get-listed\">Get Listed</a> page."
