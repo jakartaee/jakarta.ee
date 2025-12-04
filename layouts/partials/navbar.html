@@ -1,23 +1,22 @@
-{{/*
-  Copyright (c) 2023 Eclipse Foundation, Inc.
+{{/* Copyright (c) 2023 Eclipse Foundation, Inc.
 
   This program and the accompanying materials are made available under the
   terms of the Eclipse Public License v. 2.0 which is available at
   http://www.eclipse.org/legal/epl-2.0.
 
   Contributors:
-    Olivier Goulet <olivier.goulet@eclipse-foundation.org>
+  Olivier Goulet <olivier.goulet@eclipse-foundation.org>
 
   SPDX-License-Identifier: EPL-2.0
 */}}
+
 
 <div class="navbar-wrapper is-top top">
   <div class="container">
     <div id="header-row" class="main-menu">
       <div class="menu-left hidden-xs hidden-sm hidden-md">
         <div class="wrapper-logo-default">
-
-            {{ with .Page.Params.logo | default .Site.Params.logo | default "https://www.eclipse.org/eclipse.org-common/themes/solstice/public/images/logo/eclipse-foundation-white-orange.svg" }}
+          {{ with .Page.Params.logo | default .Site.Params.logo | default "https://www.eclipse.org/eclipse.org-common/themes/solstice/public/images/logo/eclipse-foundation-white-orange.svg" }}
 
             {{ $currentPageLogo := absURL . }}
             {{ $currentPageLogoTitle := $.Site.Title }}
@@ -32,15 +31,27 @@
               {{ end }}
             {{ end }}
 
-            <a title="{{ $currentPageLogoTitle }}" href="{{ $currentPageLogoLink | absLangURL }}">
-              <img width="{{ $.Page.Params.logo_width | default $.Site.Params.logo_width | default "140"}}" class="logo-eclipse-default img-responsive hidden-xs" src="{{ $currentPageLogo }}" alt="{{ $currentPageLogoTitle }}" />
+
+            <a
+              title="{{ $currentPageLogoTitle }}"
+              href="{{ $currentPageLogoLink | absLangURL }}"
+            >
+              <img
+                width="{{ $.Page.Params.logo_width | default $.Site.Params.logo_width | default "140" }}"
+                class="logo-eclipse-default img-responsive hidden-xs"
+                src="{{ $currentPageLogo }}"
+                alt="{{ $currentPageLogoTitle }}"
+              />
             </a>
-            {{ end }}
+          {{ end }}
 
         </div>
       </div>
       <div class="menu" id="main-menu-wrapper">
-        <nav class="navigation-bar hidden-xs hidden-sm hidden-md hidden-lg" id="navbar-main-menu">
+        <nav
+          class="navigation-bar hidden-xs hidden-sm hidden-md hidden-lg"
+          id="navbar-main-menu"
+        >
           <ul>
             {{ partial "nav_desktop.html" . }}
           </ul>
@@ -49,7 +60,11 @@
         <div class="mobile-main-menu-page hidden-lg">
           <div class="mobile-menu-header">
             <div class="mobile-menu-logo">
-              <img width="140" src="{{ .Site.Params.logo }}" alt="{{ .Site.Title }}" />
+              <img
+                width="140"
+                src="{{ .Site.Params.logo }}"
+                alt="{{ .Site.Title }}"
+              />
             </div>
             <button class="mobile-menu-close" aria-label="Close menu">
               <i class="fa fa-times" aria-hidden="true"></i>
@@ -61,6 +76,9 @@
             </ul>
           </div>
           <div class="mobile-menu-footer">
+            <ul class="secondary-menu list-inline">
+              {{ partial "menu_secondary.html" }}
+            </ul>
             <div class="call-for-action-items">
               {{ partial "call_for_actions.html" . }}
             </div>
@@ -74,4 +92,3 @@
     </div>
   </div>
 </div>
-

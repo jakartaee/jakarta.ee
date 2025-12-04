@@ -63,12 +63,6 @@ url = "/compatibility/download/"
 icon = ""
 classes = "btn btn-huge btn-outline-primary"
 
-[[Params.call_for_actions]]
-text_key = "cta-join-us"
-url = "/membership/"
-icon = ""
-classes = "btn btn-secondary"
-
 [[Params.socials]]
 name = "Bluesky"
 icon = "fa-brands fa-bluesky"
