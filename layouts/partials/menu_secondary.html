@@ -3,7 +3,7 @@
   {{ $class = .class }}
 {{ end }}
 {{ range site.Menus.secondary }}
-  <li class="toolbar-menu-item{{ if $class }}{{ $class }}{{ end }}">
+  <li class="toolbar-menu-item {{ if $class }}{{ $class }}{{ end }}">
     <a href="{{ .URL }}" class="toolbar-menu-link">
       {{ .Pre }}
       <span>{{ .Name }}</span>
