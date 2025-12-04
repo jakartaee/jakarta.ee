@@ -1,3 +1,8 @@
 .breadcrumb {
   border-radius: @breadcrumb-border-radius;
 }
+
+// For pages without a breadcrumb, add margin to the header.
+header:not(:has(+ main #breadcrumb)) {
+  margin-bottom: 6rem;
+}
