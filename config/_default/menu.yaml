@@ -7,10 +7,10 @@
 # SPDX-License-Identifier: EPL-2.0
 
 # Toolbar Navigation
-toolbar:
+secondary:
   - identifier: "blog"
     name: "Blog"
-    url: "/blog/"
+    url: "/blogs/"
     weight: 1
 
   - identifier: "news"
