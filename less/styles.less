@@ -447,3 +447,8 @@ p:empty {
 .font-italic {
   font-style: italic;
 }
+
+// This was producing some issues for rendering the sidebar on specification pages.
+#main-sidebar::before {
+  display: none;
+}

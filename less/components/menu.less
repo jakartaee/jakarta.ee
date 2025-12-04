@@ -60,6 +60,11 @@
     left: 50%;
     transform: translateX(-50%);
 
+    .mega-menu-bottom-link {
+      text-align: center;
+      padding: 3rem;
+    }
+
     .mega-menu-dropdown {
       width: 100%;
       border-radius: 0 0 @border-radius-medium @border-radius-medium;
@@ -67,6 +72,10 @@
       padding-top: 3rem;
       background-color: #ffffff;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+      &:has(.mega-menu-bottom-link) {
+        padding-bottom: 0rem;
+      }
     }
 
     .mega-menu-content {

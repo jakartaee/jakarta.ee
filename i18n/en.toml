@@ -1872,3 +1872,6 @@ other = "Be the first to hear about Jakarta EE updates, events, and new releases
 
 [footer-newsletter-email-placeholder]
 other = "Enter your email address"
+
+[navbar-edit-acccount-label]
+other= "My Account"
