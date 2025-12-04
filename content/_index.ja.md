@@ -1,13 +1,11 @@
 ---
 title: "Home"
-seo_title: "Jakarta EE"
-seo_title_suffix: " | Cloud Native Enterprise Java | Java EE | The Eclipse Foundation"
+seo_title: "Jakarta® EE | クラウドネイティブエンタープライズJava |Java EE |Eclipse Foundation"
 headline: |
   Jakarta EE powers the future of <span class="text-primary-orange">enterprise</span> Java.
 subtitle:
   Develop, run, and scale enterprise Java apps in the cloud,<br> with the
   flexibility of open source technology.
-jumbotron_btn_class: btn btn-secondary
 jumbotron_class: text-center
 custom_jumbotron_class: col-sm-18 col-sm-offset-3 margin-top-60
 jumbotron_layout_style: full-height
@@ -28,10 +26,7 @@ links:
     ],
   ]
 links_position: "before_custom_jumbotron"
-description:
-  "Jakarta Enterprise Edition (EE) is the open source future of cloud native
-  enterprise Java. Protect your investments in Java EE and modernize your
-  enterprise applications."
+description: "Jakarta Enterprise Edition (EE)は、クラウドネイティブエンタープライズJavaのオープンソースの未来です。Java EEに対する投資を保護して、エンタープライズアプリケーションをモダナイズしましょう。"
 hide_page_title: true
 hide_sidebar: true
 hide_breadcrumb: true
