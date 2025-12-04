@@ -16,22 +16,38 @@
     <div class="text-right toolbar-row row hidden-print">
       <div class="col-md-24 row-toolbar-col">
         <ul class="list-inline">
-          <li><a href="https://accounts.eclipse.org/user/edit" class="" data-tab-destination="tab-profile">{{ i18n "navbar-edit-acccount-label" }}</a></li>
-          <li><a class="toolbar-link toolbar-manage-cookies dropdown-toggle">{{ i18n "navbar-manage-cookies-label" }}</a></li>
-          {{ if gt (len .AllTranslations) 1 }}
-          <li class="language-selector dropdown">
-            <a href="#" data-toggle="dropdown" class="dropdown-toggle">
-              <span> {{ .Language.LanguageName }}</span>
-              <i class="fa fa-angle-down fa-xs" aria-hidden="true"></i>
-            </a>
-            <ul class="dropdown-menu">
-              {{ range .AllTranslations }}
-              <li><a href="{{ .Permalink }}">{{ .Language.LanguageName }}</a></li>
-              {{ end }}
-            </ul>
+          {{ partial "menu_secondary.html" (dict "class" "hidden-xs hidden-sm hidden-md") }}
+          <li class="margin-right-10">
+            <a class="toolbar-link toolbar-manage-cookies dropdown-toggle"
+              >{{ i18n "navbar-manage-cookies-label" }}</a
+            >
           </li>
+          {{ if gt (len .AllTranslations) 1 }}
+            <li class="language-selector dropdown">
+              <a href="#" data-toggle="dropdown" class="dropdown-toggle">
+                <i class="fa fa-globe" aria-hidden="true"></i>
+                <span> {{ .Language.LanguageName }}</span>
+                <i class="fa fa-angle-down fa-xs" aria-hidden="true"></i>
+              </a>
+              <ul class="dropdown-menu">
+                {{ range .AllTranslations }}
+                  <li>
+                    <a href="{{ .Permalink }}">{{ .Language.LanguageName }}</a>
+                  </li>
+                {{ end }}
+              </ul>
+            </li>
           {{ end }}
-          {{ partial "google_search.html" . }}
+          <li>
+            <a
+              href="https://accounts.eclipse.org/user/edit"
+              class=""
+              data-tab-destination="tab-profile"
+            >
+              <i class="fa fa fa-user-circle-o" aria-hidden="true"></i>
+              {{ i18n "navbar-edit-acccount-label" }}</a
+            >
+          </li>
         </ul>
       </div>
     </div>

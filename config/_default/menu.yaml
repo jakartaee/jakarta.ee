@@ -6,11 +6,34 @@
 #
 # SPDX-License-Identifier: EPL-2.0
 
+# Toolbar Navigation
+toolbar:
+  - identifier: "blog"
+    name: "Blog"
+    url: "/blog/"
+    weight: 1
+
+  - identifier: "news"
+    name: "News"
+    url: "/news/"
+    weight: 2
+
+  - identifier: "events"
+    name: "Events"
+    url: "/community/events/"
+    weight: 3
+
+  - identifier: "jakartaone"
+    name: "JakartaOne"
+    url: "https://jakartaone.jakarta.ee/"
+    weight: 4
+
 main:
   # Main Navigation (Top Level)
   - identifier: "developer-portal"
     name: "Developer portal"
     url: "/learn/"
+    post: "<div class='mega-menu-bottom-link'><a href='#'>Developer portal overview <i class='fa fa-arrow-right' aria-hidden></i></a></div>"
     weight: 1
 
   - identifier: "specifications"
@@ -28,14 +51,14 @@ main:
     url: "/community"
     weight: 4
 
-  - identifier: "about"
-    name: "About"
-    url: "/about/"
-    weight: 5
-
   - identifier: "join-us"
     name: "Join us"
     url: "/membership/"
+    weight: 5
+
+  - identifier: "about"
+    name: "About"
+    url: "/about/"
     weight: 6
 
   # ========================================
@@ -461,18 +484,21 @@ main:
 
   # Column 1: Membership
   - identifier: "membership"
+    pre: "static/images/icons/menu/membership.svg"
     name: "Membership"
     weight: 1
     parent: "join-us"
 
   # Column 2: Sponsorship
   - identifier: "sponsorship"
+    pre: "static/images/icons/menu/sponsorship.svg"
     name: "Sponsorship"
     weight: 2
     parent: "join-us"
 
   # Column 3: Contribute
   - identifier: "contribute-joinus"
+    pre: "static/images/icons/menu/join-us-contribute.svg"
     name: "Contribute"
     weight: 3
     parent: "join-us"
