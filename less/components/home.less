@@ -12,7 +12,7 @@
   box-shadow: 0px 4px 20px -5px rgba(135, 191, 255, 0.52);
 }
 
-.jumbotron-pills-home {
+div.jumbotron .jumbotron-pills-home {
   .wrapper {
     display: flex;
     gap: 6rem;
@@ -27,9 +27,9 @@
   .pill {
     flex: 1;
     display: flex;
-    gap: 1rem;
+    flex-direction: column;
     position: relative;
-    color: @brand-primary-royal-blue;
+    text-align: center;
 
     &::after {
       content: "";
@@ -55,16 +55,18 @@
       display: none;
     }
 
+    a, a:visited {
+      color: @brand-primary;
+    }
+    a:hover {
+      color: darken(@brand-primary, 20);
+    }
+
     h3 {
       .text-semibold;
       color: currentColor;
-      font-size: 1.7rem;
-      margin: 0;
-      margin-bottom: 1rem;
-
-      @media (min-width: @screen-md-min) {
-        font-size: 2rem;
-      }
+      font-size: 2.4rem;
+      margin: 0.5rem;
 
       @media (min-width: @screen-lg-min) {
         white-space: nowrap;
@@ -72,8 +74,8 @@
     }
 
     p {
-      font-size: 1.2rem;
-      color: @brand-secondary-gray;
+      font-size: 1.4rem;
+      color: currentColor;
       margin: 0;
     }
   }
