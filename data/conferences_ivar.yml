@@ -46,10 +46,16 @@ years:
     date: Feb 2-4
     upcoming: true
 
+  - name: FOSDEM
+    url: https://fosdem.org/2026/
+    location: Brussels 🇧🇪
+    date: Jan 20-Feb 1
+    upcoming: true
+
   - name: Valencia JUG
     url: 
     location: Valencia 🇪🇸
-    date: Jan 20
+    date: Jan 31
     upcoming: true
 
 - year: 2025
