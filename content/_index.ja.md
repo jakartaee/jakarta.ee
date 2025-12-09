@@ -1,8 +1,10 @@
 ---
 title: "Home"
-seo_title: "Jakarta® EE | クラウドネイティブエンタープライズJava |Java EE |Eclipse Foundation"
+seo_title:
+  "Jakarta® EE | クラウドネイティブエンタープライズJava |Java EE |Eclipse
+  Foundation"
 headline: |
-  Jakarta EE powers the future of <span class="text-primary-orange">enterprise</span> Java
+  Jakarta EE powers the future of <br><span class="text-primary-orange rotating-text"><span>enterprise</span><span>cloud native</span><span>vendor neutral</span><span>scalable</span></span> Java
 subtitle:
   Develop, run, and scale enterprise Java apps in the cloud,<br> with the
   flexibility of open source technology.
@@ -19,14 +21,16 @@ links:
       icon: "fa fa-download",
     ],
     [
-      href: "/membership",
+      href: "/membership/",
       text: "Join us",
       class: "btn btn-primary",
       icon: "fa fa-chevron-right",
     ],
   ]
 links_position: "before_custom_jumbotron"
-description: "Jakarta Enterprise Edition (EE)は、クラウドネイティブエンタープライズJavaのオープンソースの未来です。Java EEに対する投資を保護して、エンタープライズアプリケーションをモダナイズしましょう。"
+description: "Jakarta Enterprise Edition
+  (EE)は、クラウドネイティブエンタープライズJavaのオープンソースの未来です。Java
+  EEに対する投資を保護して、エンタープライズアプリケーションをモダナイズしましょう。"
 hide_page_title: true
 hide_sidebar: true
 hide_breadcrumb: true
@@ -42,9 +46,9 @@ container: "container-fluid"
 
 {{< pages/home/news-and-announcements >}}
 
-{{< newsroom/news id="announcements_news_lists"
-  publishTarget="jakarta_ee" type="announcements,community_news"
-  count="8" class="news-list" templateId="custom-announcement-template"
+{{< newsroom/news id="announcements_news_lists" publishTarget="jakarta_ee"
+  type="announcements,community_news" count="8" class="news-list"
+  templateId="custom-announcement-template"
   templatePath="/js/templates/news-home.mustache"
 >}}
 
@@ -52,8 +56,8 @@ container: "container-fluid"
 
 {{< pages/home/events >}}
 
-{{< newsroom/events id="events_lists" upcoming="1"
-  publishTarget="jakarta_ee" templateId="custom-events-template"
+{{< newsroom/events id="events_lists" upcoming="1" publishTarget="jakarta_ee"
+  templateId="custom-events-template"
   templatePath="/js/templates/events-home.mustache" count="2"
 >}}
 
