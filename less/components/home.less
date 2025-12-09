@@ -55,7 +55,8 @@ div.jumbotron .jumbotron-pills-home {
       display: none;
     }
 
-    a, a:visited {
+    a,
+    a:visited {
       color: @brand-primary;
     }
     a:hover {
@@ -331,8 +332,10 @@ section.members {
 }
 
 #why-jakarta-ee-left {
-  position: sticky;
-  top: 100px;
+  @media (min-width: @screen-md-min) {
+    position: sticky;
+    top: 100px;
+  }
 }
 
 .eclipsefdn-event-list-teaser {
