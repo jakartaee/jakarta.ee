@@ -111,7 +111,7 @@
     text-align: center;
     font-size: 1.3rem;
     text-decoration: none;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
 
     @media (min-width: @screen-md-min) {
       font-size: 1.4rem;
@@ -119,7 +119,6 @@
     }
 
     span {
-      color: @white;
       font-weight: 500;
     }
 
@@ -128,40 +127,7 @@
       transform: translateY(-2px);
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
       text-decoration: none;
-    }
-
-    // Updated specs (dark blue)
-    &.spec-updated {
-      background-color: @brand-primary;
-      
-      &:hover,
-      &:focus {
-        background-color: darken(@brand-primary, 5%);
-      }
-    }
-
-    // Not updated specs (light gray-blue)
-    &.spec-not-updated {
-      background-color: #C9D6DD;
-
-      span {
-        color: @black;
-      }
-      
-      &:hover,
-      &:focus {
-        background-color: darken(#C9D6DD, 5%);
-      }
-    }
-
-    // New specs (orange)
-    &.spec-new {
-      background-color: @brand-primary-orange;
-      
-      &:hover,
-      &:focus {
-        background-color: darken(@brand-primary-orange, 5%);
-      }
+      filter: brightness(0.9);
     }
   }
 
@@ -171,7 +137,6 @@
     gap: 2rem;
     flex-wrap: wrap;
     padding-top: 1.5rem;
-    border-top: 1px solid @brand-secondary;
 
     @media (min-width: @screen-md-min) {
       gap: 3rem;
@@ -200,18 +165,6 @@
     @media (min-width: @screen-md-min) {
       width: 1.8rem;
       height: 1.8rem;
-    }
-
-    &.legend-updated {
-      background-color: @brand-primary;
-    }
-
-    &.legend-not-updated {
-      background-color: #C9D6DD;
-    }
-
-    &.legend-new {
-      background-color: @brand-primary-orange;
     }
   }
 }

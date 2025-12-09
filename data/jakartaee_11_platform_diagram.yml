@@ -6,10 +6,6 @@
 #
 # SPDX-License-Identifier: EPL-2.0
 
-# Jakarta EE Platform Diagram Configuration
-# This file defines the structure and content of the Jakarta EE platform diagram
-# shown on the home page
-
 title: "Jakarta EE 11 Platform"
 
 # Columns define the main sections of the platform
@@ -17,7 +13,7 @@ title: "Jakarta EE 11 Platform"
 columns:
   # Left Column - Platform specifications
   - title: ""
-    width: 1 # Grid column span (1-4)
+    width: "single" # Options: single, double
     specs:
       - name: "Authorization 3.0"
         status: "updated" # Options: updated, not-updated, new
@@ -43,7 +39,7 @@ columns:
 
   # Center Column - Web Profile (wider, two-column layout)
   - title: "Jakarta EE 11 <strong>Web Profile</strong>"
-    width: 2 # Spans 2 columns
+    width: "double" # Spans 2 columns
     grid: true # Enable two-column grid layout for specs
     specs:
       - name: "Authentication 3.1"
@@ -97,7 +93,7 @@ columns:
 
   # Right Column - Core Profile
   - title: "Jakarta EE 11 <strong>Core Profile</strong>"
-    width: 1
+    width: "single"
     specs:
       - name: "RESTful Web Services 4.0"
         status: "updated"
@@ -125,7 +121,13 @@ columns:
 legend:
   - status: "updated"
     label: "Updated"
+    box_class: "bg-primary-dark-purple"
+    text_class: "text-white"
   - status: "not-updated"
     label: "Not Updated"
+    box_class: "bg-blue-ish-grey"
+    text_class: "text-black"
   - status: "new"
     label: "New"
+    box_class: "bg-primary-orange"
+    text_class: "text-white"

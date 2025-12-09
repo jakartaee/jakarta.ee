@@ -11,6 +11,11 @@
 {{- $dataFile := .Get "src" | default "jakartaee_platform_diagram" -}}
 {{- $diagram := index site.Data $dataFile -}}
 
+{{- /* Build a map of status to classes from legend */ -}}
+{{- $statusClasses := dict -}}
+{{- range $diagram.legend -}}
+  {{- $statusClasses = merge $statusClasses (dict .status (dict "box_class" .box_class "text_class" .text_class)) -}}
+{{- end -}}
 
 <div class="jakarta-ee-platform-diagram">
   <h3 class="platform-title">{{ $diagram.title }}</h3>
@@ -18,7 +23,7 @@
   <div class="platform-columns">
     {{- range $diagram.columns -}}
       <div
-        class="platform-column {{ if eq .width 2 }}
+        class="platform-column {{ if eq .width "double" }}
           platform-column-wide
         {{ end }}"
       >
@@ -29,23 +34,25 @@
         {{- if .grid -}}
           <div class="spec-grid">
             {{- range .specs -}}
+              {{- $classes := index $statusClasses .status -}}
               <a
                 href="{{ .url }}"
-                class="spec-box spec-{{ .status }}"
+                class="spec-box {{ $classes.box_class }}"
                 aria-label="{{ .name }}"
               >
-                <span>{{ .name }}</span>
+                <span class="{{ $classes.text_class }}">{{ .name }}</span>
               </a>
             {{- end -}}
           </div>
         {{- else -}}
           {{- range .specs -}}
+            {{- $classes := index $statusClasses .status -}}
             <a
               href="{{ .url }}"
-              class="spec-box spec-{{ .status }}"
+              class="spec-box {{ $classes.box_class }}"
               aria-label="{{ .name }}"
             >
-              <span>{{ .name }}</span>
+              <span class="{{ $classes.text_class }}">{{ .name }}</span>
             </a>
           {{- end -}}
         {{- end -}}
@@ -56,7 +63,7 @@
   <div class="platform-legend">
     {{- range $diagram.legend -}}
       <div class="legend-item">
-        <span class="legend-dot legend-{{ .status }}"></span>
+        <span class="legend-dot {{ .box_class }}"></span>
         <span>{{ .label }}</span>
       </div>
     {{- end -}}
