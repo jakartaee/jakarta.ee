@@ -20,8 +20,8 @@ links:
       icon: "fa fa-download",
     ],
     [
-      href: "/about",
-      text: "Get started",
+      href: "/membership",
+      text: "Join us",
       class: "btn btn-primary",
       icon: "fa fa-chevron-right",
     ],
