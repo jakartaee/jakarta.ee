@@ -67,7 +67,7 @@ columns:
         url: "/specifications/faces/4.1/"
       - name: "Validation 3.1"
         status: "updated"
-        url: "/specifications/validation/3.1/"
+        url: "/specifications/bean-validation/3.1/"
       - name: "Security 4.0"
         status: "updated"
         url: "/specifications/security/4.0/"
