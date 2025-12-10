@@ -9,6 +9,12 @@ years:
     location: Kolymvari 🇬🇷
     date: Jul 27-31
     upcoming: true
+
+  - name: Open Community Experience
+    url: https://www.ocxconf.org
+    location: Brussels 🇧🇪
+    date: Apr 20-23
+    upcoming: true
     
   - name: JavaLand
     url: https://www.javaland.eu/en/home/
