@@ -684,13 +684,14 @@ section#community-powered-innovation {
   overflow: visible;
   justify-items: start;
   width: fit-content;
-  animation: rotate-text-width 16s infinite;
+  overflow: hidden;
+  animation: rotate-text-width 20s ease-in-out infinite;
 
   span {
     grid-area: stack;
     opacity: 0;
     transform-origin: 50% 50% -0.5em;
-    animation: rotate-text 16s infinite;
+    animation: rotate-text 20s infinite;
     backface-visibility: hidden;
     white-space: nowrap;
 
@@ -698,41 +699,37 @@ section#community-powered-innovation {
       animation-delay: 0s;
     }
     &:nth-child(2) {
-      animation-delay: 4s;
+      animation-delay: 5s;
     }
     &:nth-child(3) {
-      animation-delay: 8s;
+      animation-delay: 10s;
     }
     &:nth-child(4) {
-      animation-delay: 12s;
+      animation-delay: 15s;
     }
   }
 }
 
 @keyframes rotate-text {
   0% {
-    opacity: 1;
-    transform: rotateX(90deg);
+    opacity: 0;
+    transform: translateX(30%);
   }
-  2.5% {
+  1.5% {
     opacity: 1;
-    transform: rotateX(0deg);
+    transform: translateX(0);
   }
-  22.5% {
+  23.5% {
     opacity: 1;
-    transform: rotateX(0deg);
+    transform: translateX(0);
   }
   25% {
-    opacity: 1;
-    transform: rotateX(-90deg);
-  }
-  25.5% {
     opacity: 0;
-    transform: rotateX(-90deg);
+    transform: translateX(0);
   }
   100% {
     opacity: 0;
-    transform: rotateX(-90deg);
+    transform: translateX(0);
   }
 }
 
@@ -742,20 +739,32 @@ section#community-powered-innovation {
 
 @keyframes rotate-text-width {
   0%,
-  24% {
+  22% {
     .width-by-character(10) //  enterprise;
   }
-  25%,
-  49% {
+  24.5% {
+    width: 0;
+  }
+  28%,
+  47% {
     .width-by-character(12) //  cloud native;
   }
-  50%,
-  74% {
+  49.5% {
+    width: 0;
+  }
+  53%,
+  72% {
     .width-by-character(14) //  vendor neutral;
   }
-  75%,
-  99% {
+  74.5% {
+    width: 0;
+  }
+  78%,
+  97% {
     .width-by-character(8) //  scalable;
+  }
+  99.5% {
+    width: 0;
   }
   100% {
     .width-by-character(10) //  enterprise;
