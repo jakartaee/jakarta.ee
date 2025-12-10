@@ -6,28 +6,6 @@
 #
 # SPDX-License-Identifier: EPL-2.0
 
-# Toolbar Navigation
-secondary:
-  - identifier: "blog"
-    name: "Blog"
-    pageRef: "/blogs/"
-    weight: 1
-
-  - identifier: "news"
-    name: "News"
-    pageRef: "/news/"
-    weight: 2
-
-  - identifier: "events"
-    name: "Events"
-    pageRef: "/community/events/"
-    weight: 3
-
-  - identifier: "jakartaone"
-    name: "JakartaOne"
-    url: "https://jakartaone.jakarta.ee/"
-    weight: 4
-
 main:
   # Main Navigation (Top Level)
 
