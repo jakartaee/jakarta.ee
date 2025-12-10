@@ -39,7 +39,9 @@ container: "container-fluid"
 {{< pages/home/why-choose-jakarta-ee >}}
 {{< pages/home/community-powered-innovation >}}
 
-{{< pages/home/jakarta-ee-11-release >}}
+{{< pages/home/latest-release-banner >}}
+{{< platform-diagram src="jakartaee_11_platform_diagram" >}}
+{{< /pages/home/latest-release-banner >}}
 
 {{< pages/home/news-and-announcements >}}
 

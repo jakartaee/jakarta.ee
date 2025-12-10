@@ -122,9 +122,19 @@ section.release-cta {
 
     @media (min-width: @screen-sm-min) {
       padding: 6rem;
-      flex-direction: row;
-      align-items: center;
-      justify-content: space-between;
+      gap: 7rem;
+    }
+
+    .top {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+
+      @media (min-width: @screen-md-min) {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+      }
     }
 
     .actions {
@@ -322,8 +332,10 @@ section.members {
 }
 
 #why-jakarta-ee-left {
-  position: sticky;
-  top: 100px;
+  @media (min-width: @screen-md-min) {
+    position: sticky;
+    top: 100px;
+  }
 }
 
 .eclipsefdn-event-list-teaser {
@@ -552,7 +564,9 @@ section#community-powered-innovation {
       border-radius: 50%;
       opacity: 0;
       transform: scale(0.5);
-      transition: opacity 1s ease, transform 0.3s ease;
+      transition:
+        opacity 1s ease,
+        transform 0.3s ease;
       border: none;
       overflow: hidden;
       box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
