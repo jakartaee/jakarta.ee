@@ -1865,3 +1865,9 @@ other = "Enter your email address"
 
 [navbar-edit-acccount-label]
 other= "My Account"
+
+[toolbar-edit-my-account]
+other= "Edit My Account"
+
+[toolbar-view-my-account]
+other= "View My Account"
