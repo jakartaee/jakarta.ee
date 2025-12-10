@@ -15,6 +15,12 @@ years:
     location: Brussels 🇧🇪
     date: Apr 20-23
     upcoming: true
+
+  - name: JavaOne
+    url: https://www.oracle.com/javaone
+    location: Redwood Shores, CA 🇺🇸
+    date: Mar 17-19
+    upcoming: true
     
   - name: JavaLand
     url: https://www.javaland.eu/en/home/
