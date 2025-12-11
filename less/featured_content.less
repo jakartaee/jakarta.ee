@@ -61,7 +61,9 @@
 }
 
 .featured-story {
-  background-color: @brand-primary-light-blue;
+  background-color: @brand-primary-lighter-blue;
+  border: 1px solid @brand-primary-light-blue;
+
   position: sticky;
   bottom: 0;
   border-radius: 3rem 3rem 0 0;
@@ -111,7 +113,7 @@
     display: block;
     min-width: 0;
     width: fit-content;
-    padding: 2rem;
+    padding: 4rem;
     margin-left: auto;
     margin-right: 7rem;
 
@@ -132,7 +134,8 @@
 
   &:not(:hover):not(:focus-within) {
     cursor: pointer;
-    padding-bottom: 3rem;
+    padding-bottom: 4rem;
+    padding: 2rem 3rem;
     transform: translateY(1rem);
 
     &:hover {
