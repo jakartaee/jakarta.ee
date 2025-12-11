@@ -14,12 +14,68 @@
 {{ $show_featured_story := .Page.Params.show_featured_story }}
 {{ if $show_featured_story }}
   <div
-    class="eclipsefdn-featured-story featured-story"
+    class="eclipsefdn-featured-story featured-story collapsed"
     id="featured-story"
+    tabindex="0"
     data-publish-target="{{ .Page.Params.featured_content_publish_target | default .Site.Params.featured_content_publish_target | default "eclipse_org" }}"
   >
     <div class="featured-container"></div>
   </div>
+  <!--
+    Placing this small script inline allows us to only load it when the page has the featured story enabled.
+  -->
+  <script>
+    (function () {
+      const fs = document.getElementById("featured-story");
+      let isOpen = false;
+
+      function toggleFeaturedStory() {
+        if (fs.classList.contains("collapsed")) {
+          fs.classList.remove("collapsed");
+          isOpen = true;
+        }
+      }
+
+      function closeFeaturedStory() {
+        fs.classList.add("collapsed");
+        isOpen = false;
+      }
+
+      fs.addEventListener("click", function (e) {
+        if (fs.classList.contains("collapsed")) {
+          toggleFeaturedStory();
+        } else {
+          // Prevent closing when clicking inside
+          e.stopPropagation();
+        }
+      });
+
+      fs.addEventListener("keydown", function (e) {
+        if (e.key === "Enter" || e.key === " ") {
+          e.preventDefault();
+          if (fs.classList.contains("collapsed")) {
+            toggleFeaturedStory();
+          }
+        } else if (e.key === "Escape" && isOpen) {
+          closeFeaturedStory();
+        }
+      });
+
+      // Close when clicking outside
+      document.addEventListener("click", function (e) {
+        if (isOpen && !fs.contains(e.target)) {
+          closeFeaturedStory();
+        }
+      });
+
+      // Close when scrolling
+      window.addEventListener("scroll", function () {
+        if (isOpen) {
+          closeFeaturedStory();
+        }
+      });
+    })();
+  </script>
 {{ end }}
 
 
