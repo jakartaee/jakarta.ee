@@ -13,7 +13,7 @@ custom_jumbotron_partial: jumbotron_home.html
 links:
   [
     [
-      href: "/compatibility/download/",
+      href: "/release/11/",
       text: "Latest release",
       class: "btn btn-outline-primary",
       icon: "fa fa-download",
