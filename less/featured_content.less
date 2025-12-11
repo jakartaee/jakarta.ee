@@ -1,66 +1,162 @@
-
 /*!
  * Copyright (c) 2020 Eclipse Foundation, Inc.
- * 
+ *
  * This program and the accompanying materials are made available under the
  * terms of the Eclipse Public License v. 2.0 which is available at
  * http://www.eclipse.org/legal/epl-2.0.
- * 
+ *
  * Contributors:
  *   Eric Poirier <eric.poirier@eclipse-foundation.org>
  *   Martin Lowe <martin.lowe@eclipse-foundation.org>
- * 
+ *
  * SPDX-License-Identifier: EPL-2.0
 */
 .featured-story.jakarta-ee-banner .featured-story-block-content {
-    &::before {
-      background-position: 50%;
-    }
+  &::before {
+    background-position: 50%;
   }
-  .featured-footer.jakarta-ee-banner {
-    p {
-      font-size: 21px;
-      font-weight: 400;
-    }
-    p, h2 {
-      margin-bottom: 20px;
-    }
-    & {
-      background-position: 50%;
-    }
+}
+.featured-footer.jakarta-ee-banner {
+  p {
+    font-size: 21px;
+    font-weight: 400;
   }
-  
-  .featured-footer.featured-newsletter {
-    h2 {
-      font-weight: 300;
-    }
+  p,
+  h2 {
+    margin-bottom: 20px;
   }
-  
-  .featured-footer, .featured-story {
-    background-color: #000;
+  & {
+    background-position: 50%;
+  }
+}
 
-    &.featured-story-light {
-      background-position: center;
-      background-size: cover;
+.featured-footer.featured-newsletter {
+  h2 {
+    font-weight: 300;
+  }
+}
+
+.featured-side-content-jakarta p,
+.featured-side-content-jakarta .feather {
+  margin-bottom: 0px;
+  color: #fff;
+}
+.featured-side:after,
+.featured-side:before,
+.featured-side {
+  background-color: #6b747b;
+}
+.featured-alternate .featured-story-block h2,
+.featured-alternate .featured-story-block .h2 {
+  margin-top: 10px;
+  font-weight: 700;
+}
+
+.featured-story-block-content h2 {
+  color: #333;
+}
+.featured-story-block-content a {
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.featured-story {
+  background-color: @brand-primary-light-blue;
+  position: sticky;
+  bottom: 0;
+  border-radius: 3rem 3rem 0 0;
+  padding: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  transition: all 0.5s ease-in-out;
+  display: none;
+  color: @brand-primary;
+  z-index: 5;
+
+  h2 {
+    .fw-500;
+    color: @brand-primary;
+    margin: 0;
+    font-size: 4rem;
+
+    transition: all 0.5s ease-in-out;
+  }
+
+  p {
+    margin-top: 2rem;
+    overflow: hidden;
+    max-height: 20rem;
+
+    transition: all 0.5s ease-in-out;
+  }
+
+  ul {
+    margin-top: 2rem;
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow: hidden;
+    max-height: 20rem;
+    transform-origin: left center;
+
+    transition: all 0.3s ease-in-out;
+  }
+
+  &:not(:has(.featured-container > *)) {
+    display: none;
+  }
+
+  @media (min-width: @screen-sm-min) {
+    display: block;
+    min-width: 0;
+    width: fit-content;
+    padding: 2rem;
+    margin-left: auto;
+    margin-right: 7rem;
+
+    .featured-container {
+      h2 {
+        max-width: 40rem;
+      }
+
+      p {
+        max-width: 40rem;
+      }
+
+      ul {
+        justify-content: flex-start;
+      }
     }
   }
 
-  .featured-side-content-jakarta p, .featured-side-content-jakarta .feather {
-    margin-bottom:0px;
-    color:#fff;
+  &.collapsed {
+    cursor: pointer;
+    padding-bottom: 3rem;
+    transform: translateY(1rem);
+
+    &:hover {
+      transform: translateY(0);
+    }
+
+    .featured-container {
+      p {
+        max-height: 0;
+        opacity: 0;
+        margin: 0;
+        filter: blur(3px) saturate(1.3);
+      }
+      ul {
+        max-height: 0;
+        opacity: 0;
+        margin: 0;
+        filter: blur(3px) saturate(1.3);
+        transform: scale(0.6);
+      }
+
+      h2 {
+        font-size: 2.5rem;
+      }
+    }
   }
-  .featured-side:after, .featured-side:before, .featured-side {
-    background-color: #6b747b;
-  }
-  .featured-alternate .featured-story-block h2,  .featured-alternate .featured-story-block .h2 {
-    margin-top:10px;
-    font-weight: 700;
-  }
-  
-  .featured-story-block-content h2 {
-    color:#333;
-  }
-  .featured-story-block-content a {
-    font-weight: 700;
-    letter-spacing: 1px;
-  }
+}
