@@ -31,7 +31,7 @@ description: "Jakarta Enterprise Edition（EE）是云原生企业Java的开源�
 hide_page_title: true
 hide_sidebar: true
 hide_breadcrumb: true
-show_featured_story: false
+show_featured_story: true 
 show_featured_footer: false
 container: "container-fluid"
 ---
