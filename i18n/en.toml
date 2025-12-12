@@ -204,7 +204,10 @@ other = "Read all Jakarta EE news articles"
 other = "Read Jakarta EE announcements"
 
 [home-events-heading]
-other = "Events"
+other = "Upcoming Events"
+
+[home-events-paragraph]
+other = "**Join developers, contributors, and Jakarta EE enthusiasts** from around the globe as we gather — online and in person — for a series of upcoming events, meet-ups, and livestreams."
 
 [home-events-view-all-events]
 other = "View all events"
