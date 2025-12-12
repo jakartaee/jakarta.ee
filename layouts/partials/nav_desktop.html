@@ -45,7 +45,7 @@
                       <ul class="mega-menu-links">
                         {{ range .Children }}
                           <li>
-                            <a href="{{ .URL }}">{{ .Name }}</a>
+                            {{ partial "menu_link.html" (dict "url" .URL "name" .Name "context" $) }}
                           </li>
                         {{ end }}
                       </ul>
@@ -73,7 +73,7 @@
                 active
               {{ end }}"
             >
-              <a href="{{ .URL }}">{{ .Name }}</a>
+              {{ partial "menu_link.html" (dict "url" .URL "name" .Name "context" $) }}
             </li>
           {{ end }}
         </ul>
@@ -81,10 +81,8 @@
     {{ end }}
   {{ else }}
     <li class="menu-item">
-      <a class="" href="{{ .URL }}">
-        {{ .Pre }}
-        {{ .Name }}
-      </a>
+      {{ $menuItemContent := printf "%s%s" (.Pre | default "") .Name }}
+      {{ partial "menu_link.html" (dict "url" .URL "name" ($menuItemContent | safeHTML) "context" $) }}
     </li>
   {{ end }}
 {{ end }}
