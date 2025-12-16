@@ -40,8 +40,6 @@ Helidon, the open-source Java microservices framework, is experimenting with AI 
 
 Payara is exploring AI-powered monitoring, anomaly detection, and integration with external AI services. The goal is to enhance operational intelligence for Jakarta EE apps and share learnings with the Jakarta EE community.
 
-For more on how these frameworks are evolving, check out ["Jakarta EE and AI: The Next Frontier" by Tanja Obradovic](https://jakarta.ee/blogs/jakarta-ee-and-ai-the-next-frontier/).
-
 ## Vendor Implementations: Tactical Response to AI Demand
 
 Vendors are moving quickly to support AI integration—connectors for LLMs, vector databases, and observability tools. Jakarta EE's long-term approach ensures that standardized features will work consistently across all implementations. 
@@ -88,8 +86,6 @@ Many of the vendors mentioned above are members of the Jakarta EE working group.
 Jakarta EE is adopting a measured approach to AI integration, ensuring the existing standard-based platform remains robust, interoperable, and future-ready. The community is invited to participate in shaping the future—whether by experimenting with frameworks like LangChain4j and Spring AI, contributing to langchain4j-cdi, or joining the Jakarta EE Marketing Committee's AI initiatives.
 
 **Jakarta EE Futures Call:** Join the conversation! Attend the next Jakarta EE community call, contribute to the AI working group, and help define the future of open standard enterprise Java and AI. Make your voice heard on this important issue in the MCP Java SDK: [Join the discussion](https://github.com/orgs/modelcontextprotocol/discussions/246). We need the official MCP Java SDK to be usable in Quarkus, Spring, and whatever else may come along.
-
-For more perspectives, see ["Jakarta EE: The Standard for Cloud Native Java" by Ivar Grimstad](https://jakarta.ee/blogs/jakarta-ee-the-standard-for-cloud-native-java/) and ["Jakarta Data: The Next Step" by Otavio Santana](https://jakarta.ee/blogs/jakarta-data-the-next-step/).
 
 We can see from the continued success of the packet core Internet that open-interopable standards are the best way to empower creators to create value. This historically proven fact is more true now than ever in the extremely frothy market of ideas in our present age of AI. Let's not forget this timeless lesson (again) by ignoring the role open standards.
 
