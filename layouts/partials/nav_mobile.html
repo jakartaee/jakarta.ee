@@ -46,20 +46,16 @@
               <ul class="mega-menu-links collapse" id="mobile-mega-menu-{{ anchorize .Identifier }}">
                 {{ range .Children }}
                 <li>
-                  <a href="{{ .URL }}">
-                    {{ .Name }}
-                    <i class="fa fa-arrow-right" aria-hidden="true"></i>
-                  </a>
+                  {{ $linkContent := printf "%s<i class='fa fa-arrow-right' aria-hidden='true'></i>" .Name }}
+                  {{ partial "menu_link.html" (dict "url" .URL "name" ($linkContent | safeHTML) "context" $) }}
                 </li>
                 {{ end }}
               </ul>
               {{ else }}
               <ul class="mega-menu-links">
                 <li>
-                  <a href="{{ .URL }}">
-                    {{ .Name }}
-                    <i class="fa fa-arrow-right" aria-hidden="true"></i>
-                  </a>
+                  {{ $linkContent := printf "%s<i class='fa fa-arrow-right' aria-hidden='true'></i>" .Name }}
+                  {{ partial "menu_link.html" (dict "url" .URL "name" ($linkContent | safeHTML) "context" $) }}
                 </li>
               </ul>
               {{ end }}
@@ -98,10 +94,8 @@
             <div class="mega-menu-column">
               <ul class="mega-menu-links">
                 <li>
-                  <a href="{{ .URL }}">
-                    {{ .Name }}
-                    <i class="fa fa-arrow-right" aria-hidden="true"></i>
-                  </a>
+                  {{ $linkContent := printf "%s<i class='fa fa-arrow-right' aria-hidden='true'></i>" .Name }}
+                  {{ partial "menu_link.html" (dict "url" .URL "name" ($linkContent | safeHTML) "context" $) }}
                 </li>
               </ul>
             </div>
@@ -113,10 +107,8 @@
     {{ end }}
   {{ else }}
     <li class="menu-item">
-      <a href="{{ .URL }}">
-        {{ .Pre }}
-        {{ .Name }}
-      </a>
+      {{ $menuItemContent := printf "%s%s" (.Pre | default "") .Name }}
+      {{ partial "menu_link.html" (dict "url" .URL "name" ($menuItemContent | safeHTML) "context" $) }}
     </li>
   {{ end }}
 {{ end }}

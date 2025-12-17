@@ -1,0 +1,30 @@
+<!--
+ Copyright (c) 2025 Eclipse Foundation AISBL
+
+ This program and the accompanying materials are made
+ available under the terms of the Eclipse Public License 2.0
+ which is available at https://www.eclipse.org/legal/epl-2.0/
+
+ SPDX-License-Identifier: EPL-2.0
+-->
+
+{{/*
+  Renders a menu link with external link detection
+  Usage: {{ partial "menu_link.html" (dict "url" .URL "name" .Name "context" $) }}
+*/}}
+
+{{- $url := .url -}}
+{{- $name := .name -}}
+{{- $isExternal := false -}}
+
+{{- if hasPrefix $url "http://" -}}
+  {{- $isExternal = true -}}
+{{- else if hasPrefix $url "https://" -}}
+  {{- $isExternal = true -}}
+{{- else if hasPrefix $url "//" -}}
+  {{- $isExternal = true -}}
+{{- end -}}
+
+<a href="{{ $url }}"{{ if $isExternal }} target="_blank" rel="noopener noreferrer"{{ end }}>
+  {{- $name -}}
+</a>
