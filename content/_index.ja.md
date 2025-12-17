@@ -32,8 +32,6 @@ description: "Jakarta Enterprise Edition
 hide_page_title: true
 hide_sidebar: true
 hide_breadcrumb: true
-show_featured_story: true 
-show_featured_footer: false
 container: "container-fluid"
 ---
 
