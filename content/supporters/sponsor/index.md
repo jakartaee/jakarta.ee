@@ -6,7 +6,7 @@ tagline: "in our mission to drive innovation and faster evolution of cloud nativ
 custom_jumbotron: |
   <div class="text-center">
     <a class="btn btn-secondary btn-lg" href="https://www.eclipse.org/org/workinggroups/sponsorship/working-group-sponsorship-agreement.pdf">
-      Become a Sponsor
+      Become a sponsor
     </a>
   </div>
 tags: ["support", "sponsor", "sponsorship", "benefits", "ocx", "open code experience", "jakarta ee", "working group"]

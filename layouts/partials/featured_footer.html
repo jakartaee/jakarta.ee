@@ -16,6 +16,9 @@
     tabindex="0"
     data-publish-target="{{ .Page.Params.featured_content_publish_target | default .Site.Params.featured_content_publish_target | default "eclipse_org" }}"
   >
+    <button class="close" type="button">
+      <i class="fa fa-times"></i><span class="sr-only">Close</span>
+    </button>
     <div class="featured-container"></div>
   </div>
   <!--
@@ -24,7 +27,10 @@
   <script>
     (function () {
       const fs = document.getElementById("featured-story");
+      const closeBtn = fs.querySelector("button.close");
+
       let isOpen = false;
+      let hasOpenedAutomatically = false;
 
       function toggleFeaturedStory() {
         if (fs.classList.contains("collapsed")) {
@@ -36,6 +42,13 @@
       function closeFeaturedStory() {
         fs.classList.add("collapsed");
         isOpen = false;
+      }
+
+      function openFeaturedStory() {
+        if (fs.classList.contains("collapsed")) {
+          fs.classList.remove("collapsed");
+          isOpen = true;
+        }
       }
 
       fs.addEventListener("click", function (e) {
@@ -65,11 +78,23 @@
         }
       });
 
-      // Close when scrolling
       window.addEventListener("scroll", function () {
-        if (isOpen) {
-          closeFeaturedStory();
+        if (!hasOpenedAutomatically) {
+          // Open automatically once when the user scrolls down 25% of the above-the-fold content
+          const scrollPosition = window.scrollY;
+          const threshold = window.innerHeight * 0.25;
+          if (scrollPosition > threshold) {
+            openFeaturedStory();
+            hasOpenedAutomatically = true;
+          }
         }
+      });
+
+      // Close when clicking the close button
+      // Also stops propagation to prevent re-opening
+      closeBtn.addEventListener("click", function (e) {
+        e.stopPropagation();
+        closeFeaturedStory();
       });
     })();
   </script>
