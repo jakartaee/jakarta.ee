@@ -79,16 +79,19 @@
     }
 
     .mega-menu-content {
-      display: flex;
+      display: grid;
+      grid-auto-flow: column;
+      grid-auto-columns: 1fr;
       justify-content: center;
+      width: max-content;
+      gap: 10rem;
+
       max-width: 1200px;
       margin: 0 auto;
     }
 
     .mega-menu-column {
-      flex: 1;
       position: relative;
-      padding: 0 5rem;
       display: flex;
       gap: 1.6rem;
 
@@ -100,13 +103,7 @@
         padding-top: 1.2rem;
       }
 
-      &:first-child {
-        padding-left: 0;
-      }
-
       &:last-child {
-        padding-right: 0;
-
         &::after {
           display: none;
         }
@@ -117,7 +114,8 @@
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
-        right: 0;
+        // this 5rem are tied to the gap of the .mega-menu-content so we want to position in the middle of that gap
+        right: -5rem;
         width: 1px;
         height: 100%;
         background-color: @brand-primary;
