@@ -11,61 +11,49 @@
  * SPDX-License-Identifier: EPL-2.0
  */
 
+import $ from 'jquery';
+window.$ = window.jQuery = $;
+
 /**
  * Sets the video state of a YouTube embed
- * @param {HTMLElement} videoElem 
- * @param {'play' | 'pause' | 'stop' } state 
+ * @param {HTMLElement} videoElem
+ * @param {'play' | 'pause' | 'stop'} state
  */
 const setVideoState = (videoElem, state) => {
-    const videoPlayer = videoElem.querySelector('iframe');
+  const playerWindow = videoElem.querySelector('iframe')?.contentWindow;
 
-    if (!videoPlayer) return;
+  if (!playerWindow) return;
 
-    let func;
+  const commands = {
+    play: 'playVideo',
+    pause: 'pauseVideo',
+    stop: 'stopVideo',
+  };
 
-    switch (state) {
-        case 'play':
-            func = 'playVideo';
-            break;
-        case 'pause':
-            func = 'pauseVideo';
-            break;
-        case 'stop':
-            func = 'stopVideo';
-            break;
-        default:
-            return;
-    };
+  const func = commands[state];
 
-    videoPlayer.contentWindow.postMessage(
-        JSON.stringify({
-            event: "command",
-            func,
-        }), 
-    '*');
+  if (!func) return;
 
-    return;
+  playerWindow.postMessage(
+    JSON.stringify({ event: 'command', func, args: [] }),
+    '*'
+  );
 };
 
 export const VideoModal = (() => {
-    const videoModal = document.querySelector('.video-modal');
+  const videoModal = document.querySelector('.video-modal');
+  if (!videoModal) return;
 
-    $(videoModal).on('hidden.bs.modal', () => {
-        const videoElem = videoModal.querySelector('.eclipsefdn-video');
+  $(videoModal).on('hidden.bs.modal', () => {
+    const videoElem = videoModal.querySelector('.eclipsefdn-video');
+    if (videoElem) setVideoState(videoElem, 'pause');
+  });
 
-        if (!videoElem) return;
+  $(videoModal).on('shown.bs.modal', () => {
+    const videoElem = videoModal.querySelector('.eclipsefdn-video');
+    if (!videoElem) return;
 
-        setVideoState(videoElem, 'pause');
-    });
-
-    $(videoModal).on('shown.bs.modal', () => {
-        const videoElem = videoModal.querySelector('.eclipsefdn-video');
-        videoElem.focus();
-
-        if (!videoElem) return;
-
-        setVideoState(videoElem, 'play');
-    });
-
-    return;
+    videoElem.focus();
+    setVideoState(videoElem, 'play');
+  });
 })();
