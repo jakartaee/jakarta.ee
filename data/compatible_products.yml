@@ -44,6 +44,9 @@ sets:
           image_width: 180
           download: 'https://www.tongtech.com/dft/pctype/25.html'
           versions:
+          - version: 8
+            compatibility: 'https://www.tongtech.com/tongweb/tck811.html'
+            download_url: 'https://www.tongtech.com/service.html'
           - version: 7
             compatibility: 'https://www.tongtech.com/tongweb/tck711.html'
             download_url: 'https://www.tongtech.com/service.html'
