@@ -42,7 +42,7 @@ sets:
           vendor: Beijing TongTech Co., Ltd.
           image: '/images/compatible_products/tongweb.svg'
           image_width: 180
-          download: 'https://www.tongtech.com/dft/pctype/25.html'
+          download: 'https://www.tongtech.com/service.html'
           versions:
           - version: 8
             compatibility: 'https://www.tongtech.com/tongweb/tck811.html'
@@ -269,7 +269,7 @@ sets:
           vendor: Beijing TongTech Co., Ltd.
           image: '/images/compatible_products/tongweb.svg'
           image_width: 180
-          download: 'https://www.tongtech.com/dft/pctype/25.html'
+          download: 'https://www.tongtech.com/service.html'
           versions:
           - version: 8
             compatibility: 'https://www.tongtech.com/tongweb/tck810.html'
@@ -670,7 +670,7 @@ sets:
         vendor: Beijing TongTech Co., Ltd.
         image: '/images/compatible_products/tongweb.svg'
         image_width: 180
-        download: 'https://www.tongtech.com/dft/pctype/25.html'
+        download: 'https://www.tongtech.com/service.html'
         versions:
         - version: 9
           compatibility: 'http://www.tongtech.com/tw9.jakarta-full-platform-9.1.html'
@@ -841,7 +841,7 @@ sets:
         vendor: 'Beijing TongTech Co., Ltd.'
         image: '/images/compatible_products/tongweb.svg'
         image_width: 180
-        download: 'https://www.tongtech.com/dft/pctype/25.html'
+        download: 'https://www.tongtech.com/service.html'
         versions:
         - version: 8
           compatibility: 'https://www.tongtech.com/tongweb/tck890.html'
@@ -1099,7 +1099,7 @@ sets:
         vendor: Beijing TongTech Co., Ltd.
         image: '/images/compatible_products/tongweb.svg'
         image_width: 180
-        download: "https://www.tongtech.com/dft/pctype/25.html"
+        download: "https://www.tongtech.com/service.html"
         versions:
         - version: 8
           compatibility: 'http://www.tongtech.com/tw8.jakarta-full-platform-8.html'
