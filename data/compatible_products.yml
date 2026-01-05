@@ -247,6 +247,15 @@ sets:
             - version: 6.4.0
               compatibility: 'https://docs.payara.fish/enterprise/docs/Jakarta%20EE%20Certification/6.4.0/6.4.0%20Platform%20TCK%20Results.html'
               download_url: 'https://www.payara.fish/page/payara-enterprise-downloads/'
+        - name: Primeton AppServer
+          vendor: Primeton
+          image: '/images/compatible_products/primeton_appserver_logo.png'
+          image_width: 195
+          download: 'https://primeton.com/products/pas/'
+          versions:
+            - version: 8.0 
+              compatibility: 'https://www.primeton.com/products/pas/8.0/tck_results/JakartaEE10TCK.html'
+              download_url: 'https://www.primeton.com/products/pas/8.0/download/pas8.zip'
         - name: JBoss Enterprise Application Platform
           vendor: Red Hat
           image: '/images/compatible_products/red-hat-jboss-logo.png'
