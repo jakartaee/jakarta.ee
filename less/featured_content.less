@@ -71,6 +71,16 @@
   color: @brand-primary;
   z-index: 5;
 
+  .close {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    font-size: 2rem;
+    color: @brand-primary;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+  }
+
   h2 {
     .fw-500;
     color: @brand-primary;
@@ -140,6 +150,10 @@
       padding-bottom: 4rem;
       padding: 2rem 3rem;
       transform: translateY(1rem);
+
+      button.close {
+        display: none;
+      }
 
       &:hover {
         transform: translateY(0);
