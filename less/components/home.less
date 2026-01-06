@@ -700,13 +700,13 @@ section#community-powered-innovation {
   justify-items: start;
   width: fit-content;
   overflow: hidden;
-  animation: rotate-text-width 16s ease-in-out infinite;
+  animation: rotate-text-width 12s ease-in-out infinite;
 
   span {
     grid-area: stack;
     opacity: 0;
     transform-origin: 50% 50% -0.5em;
-    animation: rotate-text 16s infinite;
+    animation: rotate-text 12s ease-in-out infinite;
     backface-visibility: hidden;
     white-space: nowrap;
 
@@ -719,9 +719,6 @@ section#community-powered-innovation {
     &:nth-child(3) {
       animation-delay: 8s;
     }
-    &:nth-child(4) {
-      animation-delay: 12s;
-    }
   }
 }
 
@@ -730,15 +727,15 @@ section#community-powered-innovation {
     opacity: 0;
     transform: translateX(30%);
   }
-  1.5% {
+  2% {
     opacity: 1;
     transform: translateX(0);
   }
-  23.5% {
+  31.3% {
     opacity: 1;
     transform: translateX(0);
   }
-  25% {
+  33.3% {
     opacity: 0;
     transform: translateX(0);
   }
@@ -754,34 +751,27 @@ section#community-powered-innovation {
 
 @keyframes rotate-text-width {
   0%,
-  22% {
-    .width-by-character(10) //  enterprise;
-  }
-  24.5% {
-    width: 0;
-  }
-  28%,
-  47% {
+  29.3% {
     .width-by-character(12) //  cloud native;
   }
-  49.5% {
+  32.3% {
     width: 0;
   }
-  53%,
-  72% {
+  35.3%,
+  62.6% {
     .width-by-character(14) //  vendor neutral;
   }
-  74.5% {
+  65.6% {
     width: 0;
   }
-  78%,
-  97% {
+  68.6%,
+  96% {
     .width-by-character(8) //  scalable;
   }
-  99.5% {
+  99% {
     width: 0;
   }
   100% {
-    .width-by-character(10) //  enterprise;
+    .width-by-character(12) //  cloud native;
   }
 }

@@ -8,6 +8,7 @@
 
 main:
   # Main Navigation (Top Level)
+
   - identifier: "specifications"
     name: "Specifications"
     pageRef: "/specifications/"
@@ -32,7 +33,6 @@ main:
     name: "About"
     pageRef: "/about/"
     weight: 6
-
 
   # ========================================
   # Specifications dropdown (Mega Menu)
@@ -150,24 +150,81 @@ main:
   # End of Specifications mega menu
   # ========================================
 
-  # Compatible products dropdown - keeping existing structure
-  - identifier: "compatible-products-list"
-    name: "Jakarta EE compatible products"
-    pageRef: "/compatibility/"
-    parent: "compatible-products"
-    weight: 1
+  # ========================================
+  # Compatible products dropdown (Mega Menu)
+  # ========================================
 
-  - identifier: "certification-results"
-    name: "Product certification results"
-    pageRef: "/compatibility/certification/11"
+  # Column 1: Products
+  - identifier: "products-column"
+    pre: "static/images/icons/menu/products.svg"
+    name: "Products"
+    weight: 1
     parent: "compatible-products"
+
+  # Column 2: Product certification results
+  - identifier: "certification-column"
+    pre: "static/images/icons/menu/certification.svg"
+    name: "Product certification results"
+    weight: 2
+    parent: "compatible-products"
+
+  # Column 3: Get listed
+  - identifier: "get-listed-column"
+    pre: "static/images/icons/menu/listed.svg"
+    name: "Get listed"
+    weight: 3
+    parent: "compatible-products"
+
+  # Products sub-items
+  - identifier: "compatible-products-list"
+    name: "View all compatible products"
+    pageRef: "/compatibility/"
+    parent: "products-column"
+    weight: 1
+  - identifier: "compatible-products-download"
+    name: "Download compatible products"
+    pageRef: "/compatibility/download/"
+    parent: "products-column"
     weight: 2
 
-  - identifier: "get-listed"
-    name: "Get listed"
-    pageRef: "/compatibility/get-listed/"
-    parent: "compatible-products"
+  # Product certification results sub-items
+  - identifier: "certification-results-11"
+    name: "Jakarta EE 11"
+    pageRef: "/compatibility/certification/11"
+    parent: "certification-column"
+    weight: 1
+  - identifier: "certification-results-10"
+    name: "Jakarta EE 10"
+    pageRef: "/compatibility/certification/10"
+    parent: "certification-column"
+    weight: 2
+  - identifier: "certification-results-9.1"
+    name: "Jakarta EE 9.1"
+    pageRef: "/compatibility/certification/9.1"
+    parent: "certification-column"
     weight: 3
+  - identifier: "certification-results-9"
+    name: "Jakarta EE 9"
+    pageRef: "/compatibility/certification/9"
+    parent: "certification-column"
+    weight: 4
+  - identifier: "certification-results-8"
+    name: "Jakarta EE 8"
+    pageRef: "/compatibility/certification/8"
+    parent: "certification-column"
+    weight: 5
+  - identifier: "view-all-certification-results"
+    name: "View all results"
+    pageRef: "/compatibility/"
+    parent: "certification-column"
+    weight: 6
+
+  # Get listed sub-items
+  - identifier: "get-listed-item"
+    name: "How to get listed"
+    pageRef: "/compatibility/get-listed/"
+    parent: "get-listed-column"
+    weight: 1
 
   # ========================================
   # Community dropdown (Mega Menu)
@@ -265,29 +322,34 @@ main:
     weight: 3
 
   # Additional Resources sub-items
+  - identifier: "developer-advocate"
+    name: "Developer Advocate"
+    url: "/community/developer-advocate/"
+    parent: "additional-resources-community"
+    weight: 1
   - identifier: "calendar"
     name: "Calendar"
     url: "https://calendar.google.com/calendar/u/0/embed?src=eclipse-foundation.org_3281qms6riu4kdf354jn5idon0@group.calendar.google.com&ctz=America/Toronto"
     parent: "additional-resources-community"
-    weight: 1
+    weight: 2
 
   - identifier: "community-mailing-list"
     name: "Community mailing list"
     url: "https://accounts.eclipse.org/mailing-list/jakarta.ee-community"
     parent: "additional-resources-community"
-    weight: 2
+    weight: 3
 
   - identifier: "slack"
     name: "Slack"
     url: "https://join.slack.com/t/eclipsefoundationhq/shared_invite/zt-crh7mheq-3on2tophEuvQTUGidEAWlg"
     parent: "additional-resources-community"
-    weight: 3
+    weight: 4
 
   - identifier: "swag-store"
     name: "Swag store"
     url: "https://eclipse-foundation.store/collections/jakarta-ee"
     parent: "additional-resources-community"
-    weight: 4
+    weight: 5
 
   # ========================================
   # End of Community mega menu

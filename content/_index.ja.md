@@ -4,7 +4,7 @@ seo_title:
   "Jakarta® EE | クラウドネイティブエンタープライズJava |Java EE |Eclipse
   Foundation"
 headline: |
-  Jakarta EE powers the future of <br><span class="text-primary-orange rotating-text"><span>enterprise</span><span>cloud native</span><span>vendor neutral</span><span>scalable</span></span> Java
+  Jakarta EE powers the future of <br><span class="text-primary-orange rotating-text"><span>cloud native</span><span>vendor neutral</span><span>scalable</span></span> enterprise Java
 subtitle: Develop, run, and scale enterprise Java apps anywhere,<br/> with the flexibility of open source technology
 jumbotron_class: text-center
 custom_jumbotron_class: col-sm-18 col-sm-offset-3 margin-top-60
