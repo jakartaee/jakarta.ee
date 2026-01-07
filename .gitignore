@@ -3,6 +3,7 @@
 /static/fonts/vendor/
 /static/js/
 /static/css/
+!/static/css/legacy-styles.css
 /public/
 /content/specifications/*
 !/content/specifications/_index.md
