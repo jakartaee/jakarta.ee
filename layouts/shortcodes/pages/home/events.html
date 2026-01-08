@@ -2,18 +2,30 @@
 <section id="events" class="row padding-y-60" aria-labelledby="events-heading">
   <div class="container">
     <div class="row">
-      <div class="col-xs-24 padding-30">
-      <div class="grid md:grid-cols-2 gap-y-line-4 md:gap-x-line-4 align-items-center">
-        <div class="text-center">
-          <h2 id="events-heading" class="text-primary featured-heading margin-top-0">
-            {{ i18n "home-events-heading" }}
-          </h2>
-          <a href="/community/events/" class="btn btn-secondary" aria-label="{{ i18n "home-news-read-all-news-aria" }}" target="_blank" rel="noopener noreferrer">{{ i18n "home-events-view-all-events" }}</a>
+      <div class="col-xs-24 margin-bottom-60 margin-top-40">
+        <div
+          class="grid md:grid-cols-2 gap-y-line-4 md:gap-x-line-4 align-items-center"
+        >
+          <div class="text-center">
+            <h2
+              id="events-heading"
+              class="text-primary featured-heading margin-top-0"
+            >
+              {{ i18n "home-events-heading" }}
+            </h2>
+            <a
+              href="/community/events/"
+              class="btn btn-secondary"
+              aria-label="{{ i18n "home-news-read-all-news-aria" }}"
+              target="_blank"
+              rel="noopener noreferrer"
+              >{{ i18n "home-events-view-all-events" }}</a
+            >
+          </div>
+          <p class="text-primary">
+            {{ i18n "home-events-paragraph" | markdownify }}
+          </p>
         </div>
-        <p class="text-primary">
-          {{ i18n "home-events-paragraph" | markdownify }}
-        </p>
-      </div>
       </div>
       {{ .Inner }}
     </div>
