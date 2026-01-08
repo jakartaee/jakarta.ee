@@ -16,6 +16,12 @@ years:
     date: Apr 20-23
     upcoming: true
 
+  - name: IntelliJ IDEA Conf 2026
+    url: https://www.oracle.com/javaone
+    location: Paphos 🇨🇾 + 🌐
+    date: Mar 26-27
+    upcoming: true    
+
   - name: JavaOne
     url: https://www.oracle.com/javaone
     location: Redwood Shores, CA 🇺🇸
@@ -65,10 +71,9 @@ years:
     upcoming: true
 
   - name: Valencia JUG
-    url: 
+    url: https://www.meetup.com/valenciajug/events/312774322/
     location: Valencia 🇪🇸
     date: Jan 20
-    upcoming: true
 
 - year: 2025
   conferences:
