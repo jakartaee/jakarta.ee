@@ -1,0 +1,409 @@
+/*!
+ * Copyright (c) 2019, 2023 Eclipse Foundation, Inc.
+ *
+ * This program and the accompanying materials are made available under the
+ * terms of the Eclipse Public License v. 2.0 which is available at
+ * http://www.eclipse.org/legal/epl-2.0.
+ *
+ * Contributors:
+ *   Eric Poirier <eric.poirier@eclipse-foundation.org>
+ *   Olivier Goulet <olivier.goulet@eclipse-foundation.org>
+ *
+ * SPDX-License-Identifier: EPL-2.0
+*/
+
+@import '~eclipsefdn-solstice-assets/less/quicksilver/jakarta/styles.less';
+
+@import 'vendors/_syntax.less';
+@import '_variables.less';
+
+@import 'components/tabs.less';
+@import 'components/_buttons.less';
+@import 'components/_commons.less';
+@import 'components/_modals.less';
+@import 'components/_sections.less';
+@import 'components/menu.less';
+@import 'components/jumbotron.less';
+@import 'components/home.less';
+@import 'components/panels.less';
+@import 'components/blocks.less';
+@import 'components/typography.less';
+@import 'components/testimonials.less';
+@import 'components/_eclipsefdn-meeting-minutes.less';
+
+@import 'layout/_header.less';
+
+@import 'transient.less';
+@import 'release-8.less';
+@import 'release-9.less';
+@import 'release-10.less';
+@import 'release-11.less';
+
+@import 'news.less';
+@import 'compatibility.less';
+@import 'featured_content.less';
+@import 'specifications';
+@import 'members.less';
+
+// Commenting this out but keeping it in case we need stuff in there
+//@import 'redesign.less';
+
+html {
+  scroll-behavior: smooth;
+}
+
+.br {
+  display: block;
+}
+
+.jakarta-ee-hr {
+ border-top: 5px solid @brand-primary;
+}
+
+.font-100 {
+  font-size: 100px;
+}
+
+.jakarta-download-delivers {
+  text-align:center;
+  padding:30px 0 60px 0;
+}
+
+.text-blue {
+  color: @brand-primary;
+}
+
+.heading-underline {
+  text-transform:none;
+}
+
+.jakarta-download-participation {
+  background-image:url("images/release/donate.jpg");
+  background-repeat:no-repeat;
+  background-size:cover;
+  padding:40px 0;
+  text-align:center;
+  .heading-underline:after {
+    margin:15px auto 0;
+  }
+  .featured-donate-icon {
+    background-color: @white;
+    border-radius: 200px;
+    height: 300px;
+    width: 300px;
+    display: block;
+    padding: 40px;
+    padding-left: 58px;
+    margin:30px auto 0;
+    @media (min-width: @screen-sm-min) {
+      margin:0;
+    }
+  }
+  @media (min-width: @screen-sm-min) {
+    text-align:left;
+    .heading-underline:after {
+      margin:15px 0 0;
+    }
+  }
+}
+
+.compatible-logo {
+  padding: 0 20px;
+  margin: 0 auto;
+  max-width: 350px;
+  width: 60%;
+
+  @media (min-width: @screen-md-min) {
+    max-width: 100%;
+    width: 100%;
+    padding: 0;
+    height: 100px;
+    object-fit: cover;
+    object-position: 0 -45px;
+  }
+}
+.jumbotron {
+	h1, h2, h3, h4, h5, h6 {
+		& > sup {
+		  font-size: 0.66em;
+		  position: relative;
+		  top: -0.34em;
+		}
+	}
+}
+
+.product-list .icon-container {
+  font-size: 6em;
+}
+
+.adopter-logo{
+  max-width:200px;
+  margin-bottom: 20px;
+}
+
+ul.tri-col {
+  column-count: 3;
+}
+
+ul.dual-col {
+  column-count: 2;
+}
+
+.specifications-news-list {
+  .media {
+    background-color: #F2F3F7;
+  }
+  .flex-column {
+    height: 100%;
+  }
+  .media-link {
+    padding: 20px;
+    text-align: center;
+    border-radius: 25px;
+    margin-bottom: 30px;
+  }
+}
+
+.news-list {
+  .header-underline {
+    margin-top: 20px;
+  }
+}
+
+@media (min-width: @screen-md-min) {
+  .product-list .center-block {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+.bg-tertiary {
+  background: @bg-img-tertiary;
+  background-repeat: none;
+  background-size: cover;
+  background-position: center;
+}
+
+.header-wrapper.header-secondary-bg-img.header-release-landing-page .featured-jumbotron {
+  padding-top: 130px;
+}
+
+.header-release-landing-page {
+  .featured-jumbotron {
+    text-align: center;
+    padding-bottom: 110px;
+    h1 {
+      font-size: 86px;
+      line-height: 70px;
+      .release-versions{
+        font-size: 32px;
+        color: #F98200;
+        font-weight: 700;
+      }
+    }
+    p {
+      font-size: 32px;
+      text-transform: uppercase;
+      color: @brand-secondary;
+      font-weight: 700;
+    }
+  }
+}
+
+div.card-panel.panel div.panel-body.panel-body-with-img {
+  h2,
+  h3,
+  p {
+    margin: 0;
+  }
+  h3 {
+    margin-bottom: 10px;
+  }
+  padding: 30px;
+}
+
+.get-involved-content-prefix {
+  padding: 50px 0 120px;
+  margin-bottom: -70px;
+  background-image: url(images/get-involved/get-involved-content-prefix-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  @media (min-width: @screen-md-min) {
+    .container {
+      position: relative;
+      &:before {
+        display: block;
+        content: "";
+        width: 320px;
+        height: 300px;
+        background-image: url(images/get-involved/jakarta-ee-logo.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: -190px;
+        right: 0;
+      }
+    }
+  }
+  
+}
+
+.get-involved-blocks, .get-involved-why {
+  margin-bottom: 60px;
+}
+
+.get-involved-blocks {
+  background-color: transparent;
+  .panel {
+    background-color: #f1f1f1;
+  }
+}
+
+.get-involved-contributors {
+  padding-top: 60px;
+  background-color: #f1f1f1;
+  padding-bottom: 60px;
+  margin-bottom: -30px;
+  h2 {
+    margin-bottom: 30px;
+  }
+}
+
+.get-involved-orange-icon {
+  width: 45px;
+  margin-right: 15px;
+}
+
+.get-involved-testimonials {
+  background-image: url(images/get-involved/testimonials-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.testimonials-alternate-img {
+  border-radius: 100px;
+  overflow: hidden;
+}
+
+.eclipsefdn-contributor {
+  margin-bottom: 30px;
+  background-color: @white;
+  box-shadow: 4px 4px 16px 0 #888888;
+  overflow: hidden;
+  h3 {
+    margin-bottom: 0;
+  }
+}
+
+.eclipsefdn-contributor-description {
+  padding: 20px;
+}
+
+.eclipsefdn-contributor-img {
+  position: relative;
+  right: -1px;
+}
+
+.column-section {
+  display: flex;
+  flex-direction: column;
+
+  &-even > * {
+    flex-basis: 100%;
+  }
+
+  @media (min-width: @screen-md-min) {
+    flex-direction: row;
+  }
+}
+
+// Resources
+.newsroom-resources h2 {
+  font-size: 18px;
+  color: #F98200;
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+// Hotfixes
+.project-summary {
+  .btn-sm {
+    .btn;
+    
+    &:hover {
+      color: @white;
+    }
+  }
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+// Add padding to container pages.
+main > div.container {
+  padding-bottom: 30px;
+}
+
+// Hide empty paragraph tags that may of been rendered
+// unintentionally by Hugo.
+p:empty {
+  display: none;
+}
+.bordered-section-top {
+  border-top: 3px solid @brand-secondary;
+}
+
+.bordered-section-bottom {
+  border-bottom: 3px solid @brand-secondary;
+}
+
+.bordered-section-y {
+  .bordered-section-top;
+  .bordered-section-bottom;
+}
+
+.border-hidden-xs {
+  @media (max-width: @screen-sm-max) {
+    border: transparent;
+  }
+}
+
+.eclipsefdn-video-list {
+  .video-list-item {
+    padding: unset;
+  }
+
+  .video-list-item-details {
+    margin-left: 3rem;
+  }
+
+  .video-details-title {
+    .big-text;
+    font-size: 2rem;
+  }
+
+  .video-details-button-container {
+    margin-bottom: 6rem;
+
+    @media (min-width: @screen-sm-min) {
+      justify-content: flex-start;
+    }
+  }
+
+  .eclipsefdn-video {
+    min-width: 48rem;
+    max-width: unset;
+  }
+}
+
+// This workaround was introduced to style a video list without the need of
+// using its JS. Should be removed once the learn page can use the video list
+// widget to fetch latest videos.
+.video-list-container {
+  .eclipsefdn-video-list;
+}
+
+.font-italic {
+  font-style: italic;
+}

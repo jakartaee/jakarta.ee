@@ -1,10 +1,18 @@
 {
+    "/js/solstice.v2.js": "/js/solstice.v2.js",
+    "/js/release-page-cards.v2.js": "/js/release-page-cards.v2.js",
     "/js/solstice.js": "/js/solstice.js",
     "/js/release-page-cards.js": "/js/release-page-cards.js",
+    "/css/styles.v2.css": "/css/styles.v2.css",
     "/css/styles.css": "/css/styles.css",
-    "/css/learn.css": "/css/learn.css",
-    "/css/why-jakarta-ee-styles.css": "/css/why-jakarta-ee-styles.css",
+    "/css/learn.v2.css": "/css/learn.v2.css",
+    "/css/why-jakarta-ee-styles.v2.css": "/css/why-jakarta-ee-styles.v2.css",
     "/css/mentorship.css": "/css/mentorship.css",
     "/css/contribute.css": "/css/contribute.css",
-    "/css/sponsor.css": "/css/sponsor.css"
+    "/css/sponsor.css": "/css/sponsor.css",
+    "/css/learn.css": "/css/learn.css",
+    "/css/why-jakarta-ee-styles.css": "/css/why-jakarta-ee-styles.css",
+    "/css/mentorship.v2.css": "/css/mentorship.v2.css",
+    "/css/contribute.v2.css": "/css/contribute.v2.css",
+    "/css/sponsor.v2.css": "/css/sponsor.v2.css"
 }

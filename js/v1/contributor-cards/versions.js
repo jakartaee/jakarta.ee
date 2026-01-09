@@ -8,10 +8,10 @@
  * SPDX-License-Identifier: EPL-2.0
  */
 
-import v9 from '../../data/contributors/jakarta-ee-9.json';
-import v9_1 from '../../data/contributors/jakarta-ee-9.1.json';
-import v10 from '../../data/contributors/jakarta-ee-10.json';
-import v11 from '../../data/contributors/jakarta-ee-11.json';
+import v9 from '../../../data/contributors/jakarta-ee-9.json';
+import v9_1 from '../../../data/contributors/jakarta-ee-9.1.json';
+import v10 from '../../../data/contributors/jakarta-ee-10.json';
+import v11 from '../../../data/contributors/jakarta-ee-11.json';
 
 export default {
   '9': v9,

@@ -1,0 +1,90 @@
+.btn.btn-lg {
+    font-size: 16px;
+}
+
+.featured-text {
+  font-family: @font-family-heading;
+  font-weight: 700;
+}
+
+.big-text, .big-text-secondary {
+    .featured-text;
+    color: @brand-primary;
+    a {
+        color: @brand-primary;
+        &:hover {
+            color: darken(@brand-primary, 15%);
+        }
+        &.white {
+            color:@white;
+            &:hover {
+                color: @white;
+            }
+        }
+    }
+    &.italic {
+        font-style: italic;
+    }
+    &.uppercase {
+        text-transform: uppercase;
+    }
+}
+
+.big-text-secondary {
+    font-style: italic;
+    text-transform: uppercase;
+    color: @brand-secondary;
+    a {
+        color: @brand-secondary;
+        &:hover {
+            color: darken(@brand-secondary, 15%);
+        }
+    }
+}
+
+.text-secondary {
+    color: @brand-secondary;
+    &:hover {
+        color: @brand-secondary;
+    }
+    a {
+        color: @brand-secondary;
+        &:hover {
+            color: @brand-secondary;
+        }
+    }
+}
+
+main h3 {
+    font-size: 22px;
+    margin-top: 0;
+}
+
+.featured-text-sm {
+  .big-text;
+  font-size: 12px;
+}
+
+.word-break {
+    word-spacing: 100vw;
+}
+
+.fw-500 {
+  font-weight: 500;
+}
+
+.text-quaternary {
+  color: @brand-quaternary;
+}
+
+.dark .text-quaternary {
+  color: @brand-quaternary;
+}
+
+.text-semibold {
+  font-weight: 600;
+}
+
+.text-medium {
+  font-weight: 500;
+}

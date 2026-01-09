@@ -38,12 +38,12 @@ keywords = [
   "innovation",
 ]
 logo = "/images/jakarta/jakarta-ee-logo-color.svg"
-styles = "css/styles.css?v2.3"
+styles = "css/styles.v2.css"
 favicon = "images/jakarta/favicon.ico"
 share_img = "images/og-image.webp"
 gcse = "011805775785170369411:p3ec0igo0qq"
 header_wrapper_class = "header-default-bg-img"
-js = "js/solstice.js?v2.3"
+js = "js/solstice.v2.js"
 show_events = true
 main_menu_wrapper_classes = "col-sm-19 margin-top-20"
 hide_cfa_same_page = true

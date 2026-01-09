@@ -1,0 +1,384 @@
+.jakartaee-9-jumbotron-wrapper {
+  overflow: hidden;
+  position: relative;
+}
+
+/** Animations **/
+@keyframes jakartaee-9-jumbotron-slidein-down {
+  from {
+    margin-top: -100%;
+  }
+
+  to {
+    margin-bottom: 0%;
+  }
+}
+
+@keyframes jakartaee-9-jumbotron-zoomin {
+  from {
+    transform: scale(0);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
+/** Animations ends **/
+
+#jakartaee-9-video-background {
+  position: absolute;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.jakartaee-9-jumbotron-button-container {
+
+  a#text-white {
+    color: @white;
+    font-size: 20px;
+  }
+
+  position: relative;
+  animation-name: jakartaee-9-jumbotron-zoomin;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  @media (min-width: @screen-sm-min) {  // 768px
+    width: 700px;
+
+  }
+}
+
+.jumbotron {
+  .jakartaee-9-flex-grow-container {
+    animation-name: jakartaee-9-jumbotron-slidein-down;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    .release-version-tag{
+      font-size: 21px;
+      margin-bottom: 15px;
+    }
+    @media (min-width: @screen-sm-min) {  // 768px
+      flex-grow: 1;
+    }
+  }
+}
+
+.font-exo {
+  font-family: 'Exo', sans-serif;
+}
+
+.header-release-9 {
+  .row-toolbar-col {
+    a {
+      color: @brand-secondary;
+    }
+  }
+
+  #main-menu {
+    @media (min-width: @screen-sm-min) {  // 768px
+      a {
+        color: @brand-primary;
+      }
+
+      a:hover {
+        color: @brand-primary;
+        text-decoration: none;
+      }
+
+      .dropdown-menu {
+        a:hover {
+          border-bottom: none;
+          text-decoration: underline;
+        }
+      }
+    }
+  } 
+
+  background-color: @white;
+
+  h1 {
+    font-size: 40px;
+    font-weight: 400;
+    font-stretch: condensed;
+    text-align:center;
+    @media (min-width: 570px) {
+      font-size: 50px;
+    }
+    @media (min-width: 650px) {
+      font-size: 55px;
+    }
+    @media (min-width: @screen-sm-min) {
+      text-align:left;
+      font-size: 70px;
+    }
+    @media (min-width: @screen-md-min) {
+      font-size: 90px;
+    }
+    @media (min-width: @screen-lg-min) {
+      font-size: 110px;
+    }
+    text-transform: uppercase;
+    line-height: 1;
+    margin-bottom: 0;
+    &:after {
+      border-bottom:none;
+    }
+  }
+
+  p, p span {
+    font-weight: 400;
+    text-transform: uppercase;
+    font-stretch: condensed;
+  }
+
+  .jumbotron.featured-jumbotron-download {
+    min-height: 650px;
+    background-image:url("images/release/jakarta9-header.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+
+    .btn-primary {
+      color: @white;
+      background-color: transparent;
+      border-color: @white;
+      min-height: 70px;
+      text-transform: uppercase;
+    }
+    .btn-primary:hover {
+      color: @brand-secondary;
+    }
+  }
+
+  .jumbotron-right-content {
+    font-family: 'Exo', sans-serif;
+    font-size: 130px;
+    @media (min-width: @screen-sm-min) {
+      font-size: 250px;
+    }
+    @media (min-width: @screen-md-min) {
+      font-size: 250px;
+    }
+    @media (min-width: @screen-lg-min) {
+      font-size: 250px;
+    }
+    line-height: 1;
+    font-weight: 400;
+  }
+  ul.buttons {
+    li {
+      width:100%;
+      @media (min-width: @screen-md-min) {
+        width:49%;
+      }
+    }
+  }
+  .btn {
+    width:100%;
+    @media (max-width: @screen-sm-max) {
+      margin-bottom:15px;
+    }
+  }
+}
+
+.jakartaee-9-features-and-benefits {
+    padding:30px 0 50px 0;
+    .jakartaee-9-platform-img-container {
+      & {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+      }
+      .jakartaee-platform-img {
+        max-width: 700px;
+        width: 100%;
+      }
+    }
+    .feature-box {
+        background-color: #eeeded;
+        margin: 10px;
+        padding: 0 25px;
+        -webkit-box-shadow: 0 8px 15px 0px rgba(156,156,156,1);
+        -moz-box-shadow: 0 8px 15px 0px  rgba(156,156,156,1);
+        box-shadow: 0 8px 15px 0px rgba(156,156,156,1);
+        border: 1px solid lighten(@brand-info-light, 25%);
+        width: 100%;
+
+        h3 {
+            padding-right: 70px;
+            word-break: break-all;
+            word-break: break-word;
+            br {
+              @media (max-width: @screen-sm-max) {
+                display: none;
+              }
+            }
+            hr {
+              margin-left: 0;
+            }
+        }
+
+        p {
+            padding-bottom: 15px;
+        }
+
+        hr {
+            max-width: 150px;
+            border-top: 5px solid @brand-primary;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 10px;
+        }
+
+    }
+
+    .polygons {
+        background: @brand-secondary;
+        height: 75px;
+        position: relative;
+        width: 70px;
+
+    }
+
+    .polygons:after {
+        border-top: 10px solid @brand-secondary;
+        border-left: 35px solid transparent;
+        border-right: 35px solid transparent;
+        content: "";
+        height: 0;
+        left: 0;
+        position: absolute;
+        top: 75px;
+        width: 0;
+    }
+
+    .polygons-right {
+        float: right;
+        margin-top: -10px;
+    }
+
+}
+
+.jakartaee-9-white-paper-bg {
+  //* background *//
+  position: relative;
+  overflow: hidden;
+
+  @media (min-width: @screen-sm-min) {
+    // 768px
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+
+  @media (min-width: @screen-sm-min) and (-ms-high-contrast: none) {
+    justify-content: flex-start;
+  }
+
+  .jakartaee-9-white-paper-bg-front-layer {
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: -10;
+    background-image: url('images/release/release-9-download-mobile-bg.jpg');
+    @media (min-width: @screen-sm-min) {
+      // 768px
+      background-image: url('images/release/jakarta9-image.png');
+    }
+    @media (min-width: 1700px) {
+      background-size: contain;
+      background-position: center;
+    }
+  }
+  .jakartaee-9-white-paper-bg-back-layer-ctn {
+    position: absolute;
+    top: 131px;
+    bottom: 142px;
+    overflow: hidden;
+    z-index: -100;
+    display: none;
+    @media (min-width: 1700px) {
+      display: block;
+    }
+    .jakartaee-9-white-paper-bg-back-layer {
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-image: url('images/release/release-9-download-mobile-bg.jpg');
+      filter: blur(10px) opacity(0.6);
+      width: 110vw;
+      height: 110%;
+    }
+  }
+  //* background *//
+
+  .btn-blue {
+    background-color: @white;
+    color: @brand-secondary;
+  }
+  .btn-blue:hover {
+    background-color: @brand-secondary;
+    color: @white;
+  }
+}
+
+.jakartaee-9-white-paper-download {
+  background-color: rgba(255, 165, 0, 0.8);
+  padding-top: 100px;
+  padding-bottom: 100px;
+  @media (min-width: @screen-sm-min) {
+    // 768px
+    background: none;
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+  @media (min-width: 1700px) {
+    width: 1200px;
+  }
+  .text-center {
+    width: 100%;
+    min-width: 400px;
+    @media (min-width: @screen-sm-min) {
+      width: 440px;
+    }
+    @media (min-width: @screen-sm-min) and (-ms-high-contrast: none) {
+      width: 900px;
+    }
+    h2 {
+      text-shadow: 0 0 20px rgba(250, 250, 250, 0.5);
+    }
+    .download-text{
+      padding: 20px 0 0 66px;
+    }
+  }
+}
+
+.jakartaee-9-jakarta-download-social {
+  text-align:center;
+  padding:30px 0 50px;
+  .fa-stack {
+    color:@brand-primary;
+    &:hover {
+      color:@brand-secondary;
+    }
+  }
+}
+
+footer#solstice-footer.footer-release-9 {
+  background: url("images/release/jakarta9-footer.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: @white;
+
+  h2, a, a.social-media-link {
+    color: @white;
+  }
+
+  a:hover, a.social-media-link:hover {
+    color: #bfbebe;
+  }
+}

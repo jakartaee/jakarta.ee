@@ -49,7 +49,7 @@ container: "container-fluid"
 {{< newsroom/news id="announcements_news_lists"
   publishTarget="jakarta_ee" type="announcements,community_news"
   count="8" class="news-list" templateId="custom-announcement-template"
-  templatePath="/js/templates/news-home.mustache"
+  templatePath="/js/v2/templates/news-home.mustache"
 >}}
 
 {{< /pages/home/news-and-announcements >}}
@@ -58,7 +58,7 @@ container: "container-fluid"
 
 {{< newsroom/events id="events_lists" upcoming="1"
   publishTarget="jakarta_ee" templateId="custom-events-template"
-  templatePath="/js/templates/events-home.mustache" count="2"
+  templatePath="/js/v2/templates/events-home.mustache" count="2"
 >}}
 
 {{< /pages/home/events >}}

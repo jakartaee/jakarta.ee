@@ -14,7 +14,7 @@ hide_breadcrumb: true
 hide_page_title: true
 hide_sidebar: true
 container: "container-fluid"
-page_css_file: "/css/sponsor.css"
+page_css_file: "/css/sponsor.v2.css"
 ---
 
 {{< pages/supporters/sponsor >}}
