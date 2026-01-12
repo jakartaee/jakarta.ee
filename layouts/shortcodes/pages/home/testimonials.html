@@ -26,9 +26,9 @@ $scratch.GetSortedMapValues "testimonials" }} {{ if $testimonials }}
             {{ if .picture }}
             <div class="featured-section-testimonials-item-picture">
               <img
-                class="img rounded-large"
+                class="img rounded-full"
                 src="{{ .picture }}"
-                width="{{ .picture_width | default 60 }}"
+                width="{{ .picture_width | default 80 }}"
                 alt="{{ .name }}'s picture"
               />
             </div>
@@ -46,7 +46,7 @@ $scratch.GetSortedMapValues "testimonials" }} {{ if $testimonials }}
             </p>
           </div>
           <div class="col-md-14">
-            <p class="featured-section-testimonials-item-content">
+            <p class="featured-section-testimonials-item-content font-light text-secondary-gray">
               {{ .text }}
             </p>
           </div>

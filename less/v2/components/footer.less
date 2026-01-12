@@ -14,13 +14,20 @@ footer#solstice-footer {
   background-color: @white;
 
   .menu-heading {
-    .text-semibold;
+    .font-semibold;
     margin-bottom: 1rem;
 
     &::after,
     &::before {
       display: none;
     }
+  }
+
+  a:link,
+  a:active,
+  a:visited,
+  a:focus {
+    .font-light;
   }
 
   section {
@@ -75,6 +82,10 @@ footer#solstice-footer {
       padding: 3rem;
     }
 
+    .footer-end-newsletter-label {
+      font-size: 2rem;
+    }
+
     .footer-end-newsletter-input-wrapper {
       border: 1px solid @brand-primary-orange;
       border-radius: @border-radius-medium;
@@ -110,8 +121,8 @@ footer#solstice-footer {
     align-items: center;
     justify-content: space-between;
     gap: 1rem;
-    padding-top: .7rem;
-    padding-bottom:.7rem;
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
 
     @media (max-width: @screen-sm-max) {
       flex-direction: column;

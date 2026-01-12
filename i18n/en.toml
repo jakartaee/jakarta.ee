@@ -1814,7 +1814,7 @@ other = "See all Jakarta EE Compatible certified products to help build your clo
 other = "Read more"
 
 [pages-supporters-sponsor-header-description]
-other = "<p class=\"fw-500\">Become a sponsor of the Jakarta EE Working Group and</p><h2 class=\"big-text uppercase text-secondary\">Empower the Future of Enterprise Java</h2><p class=\"section-featured-text text-primary\">Your organisation will play a pivotal role in shaping the future of open source enterprise Java and ensuring the continued growth and success of the global Java community.</p>"
+other = "<p class=\"font-medium\">Become a sponsor of the Jakarta EE Working Group and</p><h2 class=\"big-text uppercase text-secondary\">Empower the Future of Enterprise Java</h2><p class=\"section-featured-text text-primary\">Your organisation will play a pivotal role in shaping the future of open source enterprise Java and ensuring the continued growth and success of the global Java community.</p>"
 
 [pages-supporters-sponsor-by-joining-header-title]
 other = "By joining our sponsorship program:"

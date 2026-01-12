@@ -79,10 +79,11 @@
     color: @brand-primary;
     cursor: pointer;
     transition: color 0.3s ease-in-out;
+    display: none;
   }
 
   h2 {
-    .fw-500;
+    .font-medium;
     color: @brand-primary;
     margin: 0;
     font-size: 3rem;
@@ -142,6 +143,12 @@
 
       ul {
         justify-content: flex-start;
+      }
+    }
+
+    &:not(.collapsed) {
+      .close {
+        display: block;
       }
     }
 
