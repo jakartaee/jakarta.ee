@@ -1,0 +1,56 @@
+/*
+ * Copyright (c) 2022, 2023 Eclipse Foundation, Inc.
+ *
+ * This program and the accompanying materials are made available under the
+ * terms of the Eclipse Public License v. 2.0 which is available at
+ * http://www.eclipse.org/legal/epl-2.0.
+ *
+ * Contributors:
+ *   Olivier Goulet <olivier.goulet@eclipse-foundation.org>
+ *
+ * SPDX-License-Identifier: EPL-2.0
+*/
+
+// Expand container size for navbar and toolbar
+.navbar-wrapper,
+.toolbar-container-wrapper {
+  & > .container {
+    width: 100%;
+    max-width: 1920px;
+  }
+}
+
+.toolbar-container-wrapper {
+  @media (min-width: @screen-lg-min) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 15;
+  }
+
+  transition: all 0.3s ease;
+
+  &:has(+ .navbar-wrapper .menu-item.open),
+  &:has(+ .navbar-wrapper + header .jumbotron.featured-jumbotron-dark) {
+    background: @header-toolbar-background-color-on-open-nav;
+  }
+
+  .toolbar-row {
+    height: @header-toolbar-height;
+    display: flex;
+    align-items: center;
+  }
+
+  .dropdown-toggle:focus,
+  .toolbar-menu-link:focus,
+  .toolbar-link:focus {
+    outline: auto !important;
+  }
+}
+
+@media (max-width: @screen-md-max) {
+  #btn-call-for-action {
+    margin-top: 0;
+  }
+}

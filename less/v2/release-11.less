@@ -1,0 +1,278 @@
+/**
+ * Copyright (c) 2025 Eclipse Foundation AISBL
+ *
+ * This program and the accompanying materials are made
+ * available under the terms of the Eclipse Public License 2.0
+ * which is available at https://www.eclipse.org/legal/epl-2.0/
+ *
+ * SPDX-License-Identifier: EPL-2.0
+ */
+
+.header-release-11 {
+  font-family: Open Sans; // required to retain spacing + look and feel of header
+  video {
+    position: absolute;
+    min-width: 100%;
+    min-height: 100%;
+  }
+
+  .featured-jumbotron {
+    text-align: center;
+    padding-top: 10rem;
+    padding-bottom: 5rem;
+
+    @media (min-width: @screen-md-min) {
+      text-align: left;
+    }
+
+    &-title-prefix {
+      font-size: 1.75rem;
+      font-weight: 600;
+    }
+
+    &-title {
+      position: relative;
+      margin-bottom: 3rem;
+      font-size: 4rem;
+
+      // Hide the underline on mobile.
+      .underlined {
+        text-decoration: none;
+
+        @media (min-width: @screen-md-min) {
+          text-decoration: underline;
+          text-underline-offset: 3rem;
+          text-decoration-thickness: 1px;
+        }
+      }
+
+      @media (min-width: @screen-md-min) {
+        font-size: 7.5rem;
+      }
+    }
+
+    &-subtitle {
+      font-size: 1.75rem;
+      font-weight: 700;
+      margin-bottom: 4rem;
+    }
+
+    &-tagline {
+      font-size: 2rem;
+      font-style: italic;
+
+      @media (min-width: @screen-md-min) {
+        font-size: 3rem;
+      }
+    }
+
+    .additional-links {
+      margin-top: 1.5rem;
+      font-size: 1.25rem;
+
+      a {
+        font-weight: 600;
+      }
+    }
+
+    .btn-contained {
+      display: block;
+      width: 100%;
+      padding: 1rem;
+      border-color: white;
+    }
+
+    @media (min-width: @screen-md-min) {
+      &-links {
+        display: flex;
+        gap: 2rem;
+      }
+
+      .btn-contained {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        white-space: break-spaces;
+        min-height: 7.5rem;
+      }
+    }
+  }
+
+  .release-number {
+    display: block;
+    font-size: 8rem;
+    font-style: italic;
+    letter-spacing: -0.2ch;
+
+    @media (min-width: @screen-md-min) {
+      display: inline;
+      position: absolute;
+      top: -3rem;
+      font-size: 16rem;
+    }
+  }
+}
+
+// Specification Graphic
+.specification-graphic {
+  .wrapper {
+    max-width: 1060px;
+    margin: 0 auto;
+  }
+  .container {
+    max-width: 1060px;
+    margin: auto;
+    background: #EFEFEF;
+    border-top: 2px dotted #BBBBBB;
+    border-left: 2px dotted #BBBBBB;
+    overflow: hidden;
+    box-sizing: border-box; /* Ensure padding is included in total width */
+  }
+  
+  h1,
+  .h1 {
+    text-align: center;
+    font-size: 28px;
+    margin: 40px 0;
+    font-family: 'Open Sans';
+    font-weight: bold;
+  }
+  h2,
+  .h2 {
+    font-weight: 600;
+  }
+  .thinner { font-weight: 400;}
+  .legend {
+    display: flex;
+    justify-content: right;
+    gap: 30px;
+    margin-bottom: 20px;
+    padding: 25px 0;
+    font-family: 'Open Sans';
+    font-weight: bold;
+  }
+  .legend span {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 12px;
+  }
+  .legend .circle {
+    width: 18px;
+    height: 18px;
+    border-radius: 7px;
+  }
+  .updated {
+    background-color: #001f77;
+  }
+  .not-updated {
+    background-color: #888;
+  }
+  .new {
+    background-color: #ff8000;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+  .section {
+    padding: 40px;
+  }
+  .fullplatform {
+    display: flex;
+  }
+
+  .box2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    background-color: #E8E8E8;
+    border-top: 2px dotted #BBBBBB;
+    border-left: 2px dotted #BBBBBB;
+    box-sizing: border-box;
+  }
+
+
+  .coreprofile {
+    background-color: #E1E1E1;
+    border-top: 2px dotted #BBBBBB;
+    border-left: 2px dotted #BBBBBB;
+    margin-top: 50px;
+    padding-top: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  .section h2,
+  .section .h2 {
+    font-size: 18px;
+    margin-bottom: 22px;
+    font-family: 'Open Sans';
+  }
+  .items, .web-profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Align items to the bottom */
+    gap: 8px 15px;
+  }
+
+  .item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 45px; /* Set a consistent height */
+    padding: 8px 12px;
+    border-radius: 16px;
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+    box-sizing: border-box;
+    width: 200px;
+    justify-content:center;
+    font-family: 'Open Sans';
+  }
+
+  .item.updated {
+    background-color: #001f77;
+  }
+  .item.not-updated {
+    background-color: #888;
+  }
+  .item.new {
+    background-color: #ff8000;
+  }
+  .item a { color: white; text-decoration: none;}
+  .item a:hover { text-decoration: underline;}
+
+  /* Web Profile Styling for Two Columns */
+  .web-profile {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px 15px;
+    justify-items: center;
+  }
+  h2,
+  .h2 { 
+    text-align: left;
+  }
+  .webprofile { 
+    padding-top: 10px;
+    justify-content: flex-end;
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media (max-width:1059px) {
+    .section { padding: 20px;}
+    h1, .h1 { margin: 22px 0;}
+    .grid, .box2 { grid-template-columns: 1fr; padding-left:5%;}
+    .section { justify-content: center;}
+    h2, .h2 { text-align: center;}
+    .webprofile { padding-right: 10%;}
+    .coreprofile { margin-top: 0; padding-right: 10%;}
+    .coreprofile .items { align-items: center;}
+  }
+  @media (max-width: 630px) {
+    .web-profile { grid-template-columns: 1fr;}
+  }
+    
+}

@@ -1,4 +1,4 @@
-<!-- 
+<!--
   Copyright (c) 2018 Eclipse Foundation, Inc.
 
   This program and the accompanying materials are made available under the
@@ -10,11 +10,14 @@
 
   SPDX-License-Identifier: EPL-2.0
 -->
-<p id="back-to-top">
-  <a class="visible-xs" href="#top">{{ i18n "navigation-back-to-top" }}</a>
-</p>
-<footer id="{{- .Params.footer_id | default .Site.Params.footer_id | default "solstice-footer"}}" class="{{- .Params.footer_class | default .Site.Params.footer_class | default ""}}">
-  <div class="{{- .Params.footer_container_class | default .Site.Params.footer_container_class | default "container"}}">
+
+<footer
+  id="{{- .Params.footer_id | default .Site.Params.footer_id | default "solstice-footer" }}"
+  class="{{- .Params.footer_class | default .Site.Params.footer_class | default "" }}"
+>
+  <div
+    class="{{- .Params.footer_container_class | default .Site.Params.footer_container_class | default "container" }}"
+  >
     <div class="row">
       {{ partial "footer_links/prefix.html" . }}
       {{ partial "footer_links/links.html" . }}
@@ -27,6 +30,4 @@
       {{ partial "footer_links/footer-copyright.html" . }}
     </div>
   </div>
-  
-  
 </footer>

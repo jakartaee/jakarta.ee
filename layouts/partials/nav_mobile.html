@@ -1,0 +1,137 @@
+<!--
+ Copyright (c) 2018 Eclipse Foundation AISBL
+
+ This program and the accompanying materials are made
+ available under the terms of the Eclipse Public License 2.0
+ which is available at https://www.eclipse.org/legal/epl-2.0/
+
+ SPDX-License-Identifier: EPL-2.0
+-->
+
+{{ range .Site.Menus.main }}
+  {{ if .HasChildren }}
+    {{ $megaMenu := false }}
+    {{ range .Children }}
+      {{ if .HasChildren }}
+        {{ $megaMenu = true }}
+      {{ end }}
+    {{ end }}
+    {{ if $megaMenu }}
+      <!-- Mega Menu (Multi-level) -->
+      <li class="menu-item dropdown mega-dropdown">
+        <a href="#" class="dropdown-toggle">
+          {{ .Pre }}
+          <span>{{ .Name }}</span>
+          <i
+            class="fa fa-angle-right mega-menu-collapse-icon"
+            aria-hidden="true"
+          ></i>
+        </a>
+        <!-- Mobile Subpage -->
+        <div class="mega-menu-mobile-page">
+          <div class="mega-menu-header">
+            <button class="mega-menu-back-to-main" aria-label="Back to menu">
+              <i class="fa fa-angle-left" aria-hidden="true"></i>
+            </button>
+            <button class="mega-menu-close" aria-label="Close menu">
+              <i class="fa fa-times" aria-hidden="true"></i>
+            </button>
+          </div>
+          <div class="mega-menu-mobile-content">
+            <h2 class="mega-menu-main-title">{{ .Name }}</h2>
+            <div class="mega-menu-items">
+              {{ range .Children }}
+                <div class="mega-menu-column">
+                  {{ if .HasChildren }}
+                    <h3
+                      class="mega-menu-title collapsed"
+                      data-toggle="collapse"
+                      data-target="#mobile-mega-menu-{{ anchorize .Identifier }}"
+                      aria-expanded="false"
+                    >
+                      {{ .Name }}
+                      <i
+                        class="fa fa-angle-down mega-menu-collapse-icon"
+                        aria-hidden="true"
+                      ></i>
+                    </h3>
+                    <ul
+                      class="mega-menu-links collapse"
+                      id="mobile-mega-menu-{{ anchorize .Identifier }}"
+                    >
+                      {{ range .Children }}
+                        <li>
+                          {{ $linkContent := printf "%s<i class='fa fa-arrow-right' aria-hidden='true'></i>" .Name }}
+                          {{ partial "menu_link.html" (dict "url" .URL "name" ($linkContent | safeHTML) "context" $) }}
+                        </li>
+                      {{ end }}
+                    </ul>
+                  {{ else }}
+                    <ul class="mega-menu-links">
+                      <li>
+                        {{ $linkContent := printf "%s<i class='fa fa-arrow-right' aria-hidden='true'></i>" .Name }}
+                        {{ partial "menu_link.html" (dict "url" .URL "name" ($linkContent | safeHTML) "context" $) }}
+                      </li>
+                    </ul>
+                  {{ end }}
+                </div>
+              {{ end }}
+            </div>
+          </div>
+          <div class="mega-menu-mobile-footer">
+            <div class="mobile-menu-logo logo-left-corner">
+              <img
+                width="140"
+                src="{{ $.Site.Params.logo }}"
+                alt="{{ $.Site.Title }}"
+              />
+            </div>
+          </div>
+        </div>
+      </li>
+    {{ else }}
+      <!-- Regular Dropdown (Single level) -->
+      <li class="menu-item dropdown">
+        <a href="#" class="dropdown-toggle">
+          {{ .Pre }}
+          <span>{{ .Name }}</span>
+          <i
+            class="fa fa-angle-right mega-menu-collapse-icon"
+            aria-hidden="true"
+          ></i>
+        </a>
+        <!-- Mobile Subpage for regular dropdown -->
+        <div class="mega-menu-mobile-page">
+          <div class="mega-menu-header">
+            <button class="mega-menu-back-to-main" aria-label="Back to menu">
+              <i class="fa fa-angle-left" aria-hidden="true"></i>
+            </button>
+            <button class="mega-menu-close" aria-label="Close menu">
+              <i class="fa fa-times" aria-hidden="true"></i>
+            </button>
+          </div>
+          <div class="mega-menu-mobile-content">
+            <h2 class="mega-menu-main-title">{{ .Name }}</h2>
+            <div class="mega-menu-items">
+              {{ range .Children }}
+                <div class="mega-menu-column">
+                  <ul class="mega-menu-links">
+                    <li>
+                      {{ $linkContent := printf "%s<i class='fa fa-arrow-right' aria-hidden='true'></i>" .Name }}
+                      {{ partial "menu_link.html" (dict "url" .URL "name" ($linkContent | safeHTML) "context" $) }}
+                    </li>
+                  </ul>
+                </div>
+              {{ end }}
+            </div>
+          </div>
+        </div>
+      </li>
+    {{ end }}
+  {{ else }}
+    <li class="menu-item">
+      {{ $menuItemContent := printf "%s%s" (.Pre | default "") .Name }}
+      {{ partial "menu_link.html" (dict "url" .URL "name" ($menuItemContent | safeHTML) "context" $) }}
+    </li>
+  {{ end }}
+{{ end }}

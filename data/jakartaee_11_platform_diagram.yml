@@ -1,0 +1,133 @@
+# Copyright (c) 2025 Eclipse Foundation AISBL
+#
+# This program and the accompanying materials are made
+# available under the terms of the Eclipse Public License 2.0
+# which is available at https://www.eclipse.org/legal/epl-2.0/
+#
+# SPDX-License-Identifier: EPL-2.0
+
+title: "Jakarta EE 11 Platform"
+
+# Columns define the main sections of the platform
+# Each column can have a title, specifications, and display properties
+columns:
+  # Left Column - Platform specifications
+  - title: ""
+    width: "single" # Options: single, double
+    specs:
+      - name: "Authorization 3.0"
+        status: "updated" # Options: updated, not-updated, new
+        url: "/specifications/authorization/3.0/"
+      - name: "Activation 2.1"
+        status: "not-updated"
+        url: "/specifications/activation/2.1/"
+      - name: "Batch 2.1"
+        status: "not-updated"
+        url: "/specifications/batch/2.1/"
+      - name: "Connectors 2.1"
+        status: "not-updated"
+        url: "/specifications/connectors/2.1/"
+      - name: "Mail 2.1"
+        status: "not-updated"
+        url: "/specifications/mail/2.1/"
+      - name: "Messaging 3.1"
+        status: "not-updated"
+        url: "/specifications/messaging/3.1/"
+      - name: "Enterprise Beans 4.0"
+        status: "not-updated"
+        url: "/specifications/enterprise-beans/4.0/"
+
+  # Center Column - Web Profile (wider, two-column layout)
+  - title: "Jakarta EE 11 <strong>Web Profile</strong>"
+    width: "double" # Spans 2 columns
+    grid: true # Enable two-column grid layout for specs
+    specs:
+      - name: "Authentication 3.1"
+        status: "updated"
+        url: "/specifications/authentication/3.1/"
+      - name: "Data 1.0"
+        status: "new"
+        url: "/specifications/data/1.0/"
+      - name: "Concurrency 3.1"
+        status: "updated"
+        url: "/specifications/concurrency/3.1/"
+      - name: "Persistence 3.2"
+        status: "updated"
+        url: "/specifications/persistence/3.2/"
+      - name: "CDI 4.1"
+        status: "updated"
+        url: "/specifications/cdi/4.1/"
+      - name: "Pages 4.0"
+        status: "updated"
+        url: "/specifications/pages/4.0/"
+      - name: "Expression Language 6.0"
+        status: "updated"
+        url: "/specifications/expression-language/6.0/"
+      - name: "WebSocket 2.2"
+        status: "updated"
+        url: "/specifications/websocket/2.2/"
+      - name: "Faces 4.1"
+        status: "updated"
+        url: "/specifications/faces/4.1/"
+      - name: "Validation 3.1"
+        status: "updated"
+        url: "/specifications/bean-validation/3.1/"
+      - name: "Security 4.0"
+        status: "updated"
+        url: "/specifications/security/4.0/"
+      - name: "Debugging Support 2.0"
+        status: "not-updated"
+        url: "/specifications/debugging/2.0/"
+      - name: "Servlet 6.1"
+        status: "updated"
+        url: "/specifications/servlet/6.1/"
+      - name: "Enterprise Beans Lite 4.0"
+        status: "not-updated"
+        url: "/specifications/enterprise-beans/4.0/"
+      - name: "Standard Tag Library 3.0"
+        status: "not-updated"
+        url: "/specifications/tags/3.0/"
+      - name: "Transactions 2.0"
+        status: "not-updated"
+        url: "/specifications/transactions/2.0/"
+
+  # Right Column - Core Profile
+  - title: "Jakarta EE 11 <strong>Core Profile</strong>"
+    width: "single"
+    specs:
+      - name: "RESTful Web Services 4.0"
+        status: "updated"
+        url: "/specifications/restful-ws/4.0/"
+      - name: "JSON Processing 2.1"
+        status: "not-updated"
+        url: "/specifications/jsonp/2.1/"
+      - name: "JSON Binding 3.0"
+        status: "not-updated"
+        url: "/specifications/jsonb/3.0/"
+      - name: "Annotations 3.0"
+        status: "updated"
+        url: "/specifications/annotations/3.0/"
+      - name: "Interceptors 2.2"
+        status: "updated"
+        url: "/specifications/interceptors/2.2/"
+      - name: "Dependency Injection 2.0"
+        status: "not-updated"
+        url: "/specifications/dependency-injection/2.0/"
+      - name: "CDI Lite 4.1"
+        status: "updated"
+        url: "/specifications/cdi/4.1/"
+
+# Legend configuration
+legend:
+  - status: "updated"
+    label: "Updated"
+    box_class: "bg-primary-dark-purple"
+    text_class: "text-white"
+  - status: "not-updated"
+    label: "Not Updated"
+    box_class: "bg-blue-ish-grey"
+    text_class: "text-black"
+  - status: "new"
+    label: "New"
+    box_class: "bg-primary-orange"
+    text_class: "text-white"

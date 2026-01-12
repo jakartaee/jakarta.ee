@@ -1,0 +1,192 @@
+/*
+ * Copyright (c) 2021 Eclipse Foundation, Inc.
+ *
+ * This program and the accompanying materials are made available under the
+ * terms of the Eclipse Public License v. 2.0 which is available at
+ * http://www.eclipse.org/legal/epl-2.0.
+ *
+ * Contributors:
+ *   Eric Poirier <eric.poirier@eclipse-foundation.org>
+ *
+ * SPDX-License-Identifier: EPL-2.0
+*/
+
+//=Primary Brand Colors
+@brand-primary-dark-purple: #1b208b;
+@brand-primary-royal-blue: #182cb9;
+@brand-primary-light-blue: #5ea9ff;
+@brand-primary-lighter-blue: #87bfff;
+@brand-primary-orange: #ff7110;
+
+@brand-primary-dark: #1c2085;
+
+//= Secondary Brand Colors
+@brand-secondary-gray: #2f4a60; // Dark Gray
+@brand-secondary-yellow: #fdb940; // Yellow
+@light-grey: #f1f1f1;
+@blue-ish-grey: #c9d6dd;
+
+//= Polyfill vars for theme styles
+@brand-primary: @brand-primary-dark-purple;
+@brand-secondary: @brand-primary-orange;
+@brand-tertiary: @brand-primary-royal-blue;
+@brand-quaternary: @brand-secondary-yellow;
+@brand-quinary: #f1f3f7; // Light Gray (Breadcrumbs)
+
+//== Typography
+@font-family-sans-serif: "Inter", sans-serif;
+@font-family-heading: "Inter", sans-serif;
+@headings-letter-spacing: -0.03em;
+@letter-spacing-h1: @headings-letter-spacing;
+@letter-spacing-h2: @headings-letter-spacing;
+
+@font-size-h2: 26px;
+
+//== Buttons
+@padding-base-vertical: 0.8rem;
+@padding-base-horizontal: 1.5rem;
+@padding-xs-vertical: 0.1rem;
+@padding-xs-horizontal: 0.5rem;
+
+@header-toolbar-background-color: transparent;
+@header-toolbar-background-color-on-open-nav: darken(@white, 2%);
+@header-toolbar-height: 3.5rem;
+
+@main-menu-link-color: @brand-primary;
+@main-menu-link-active-color: darken(@main-menu-link-color, 10%);
+@main-menu-link-hover-color: darken(@main-menu-link-color, 10%);
+@main-menu-link-size: 13px;
+@main-menu-dropdown-menu-background: @brand-primary;
+@main-menu-dropdown-link-color: @brand-primary;
+@main-menu-dropdown-link-hover-color: darken(
+  @main-menu-dropdown-link-color,
+  10%
+);
+@main-menu-dropdown-link-active-color: @white;
+@main-menu-height: 7rem;
+
+@mobile-menu-nav-background: @white;
+@mobile-menu-color: @text-color;
+@mobile-main-menu-link-border-bottom: 1pxsolid @light-grey;
+@mobile-menu-open-active-background: @white;
+@mobile-menu-open-active-color: @text-color;
+@mobile-menu-dropdown-menu-background: @light-grey;
+@mobile-menu-dropdown-menu-color: @mobile-menu-open-active-color;
+
+@dropdown-menu-left-panel-bg: @brand-primary;
+@dropdown-menu-right-panel-bg: darken(@dropdown-menu-left-panel-bg, 10%);
+
+// Backgrounds
+@bg-img-default: url("images/jumbotron-bg.webp");
+@bg-img-secondary: url("images/jumbotron-bg-secondary.webp");
+@bg-img-tertiary: url("images/bg-tertiary.jpg");
+
+@header-default-bg-img: @bg-img-default;
+@header-secondary-bg-img: @bg-img-secondary;
+
+@header-row-padding-bottom: 20px;
+
+@header-toolbar-color: fade(@brand-primary-dark, 70%);
+@header-toolbar-color-hover: @brand-primary-dark;
+
+@btn-font-size: 1.6rem;
+@btn-font-weight: 500;
+@btn-border-radius: @border-radius-large;
+
+@padding-base-vertical: 8px;
+@padding-base-horizontal: 20px;
+@padding-large-vertical: 12px;
+@padding-large-horizontal: 40px;
+
+@featured-section-cta-bg: @bg-img-secondary;
+
+@heading-underline-border: 2pxsolid @brand-primary-orange;
+
+@nav-tabs-active-link-hover-border-color: transparent;
+@nav-tabs-active-link-hover-bg: transparent;
+@nav-tabs-link-hover-border-color: transparent;
+@nav-tabs-active-link-hover-color: @brand-primary;
+@nav-list-link-color: #8e8e8e;
+
+@default-box-shadow: -7px7px 12px 0px rgba(0, 0, 0, 0.2);
+
+@footer-background: @white;
+@footer-padding-top: 3.5em;
+@footer-color: @brand-secondary-gray;
+@footer-border-top: 1px solid @brand-primary-royal-blue;
+
+@footer-link-color: @brand-secondary-gray;
+@footer-link-font-weight: 400;
+
+@featured-footer-light-bg-img: @bg-img-secondary;
+@featured-footer-light-border-top: none;
+@featured-footer-light-border-bottom: none;
+@featured-footer-h2-color: @white;
+
+// Standard tabs variables
+@solstice-tabs-background: transparent;
+@solstice-tabs-color: #8e8e8e;
+@solstice-tabs-font-weight: bold;
+@solstice-tabs-border: 1pxsolid #f1f1f1;
+@solstice-tabs-hover: transparent;
+@solstice-tabs-active-hover: transparent;
+@solstice-tabs-active-color: @brand-primary;
+@solstice-tabs-hover-color: @brand-primary;
+@solstice-tabs-active-font-weight: bold;
+@solstice-tabs-border: 1px solid #ddd;
+@solstice-tabs-pane-background-color: transparent;
+@solstice-tabs-active-nav-border: 3pxsolid @brand-primary;
+@solstice-tabs-text-transform: uppercase;
+@solstice-tabs-font-size: 16px;
+@solstice-tabs-font-size-mobile: 12px;
+@solstice-tabs-padding: 20px;
+@solstice-tabs-padding-mobile: 20px0;
+
+@solstice-tabs-content-border: none;
+@solstice-tabs-content-padding: 40px0 0;
+
+@main-sidebar-bg: #f1f3f7;
+@main-sidebar-color: @text-color;
+@main-sidebar-list-border: 1pxsolid #c7c7c7;
+@main-sidebar-heading-size: inherit;
+@main-sidebar-heading-weight: bold;
+
+@panel-default-heading-bg: @white;
+@panel-heading-padding: 15px 0px;
+@panel-bg: @white;
+
+@card-panel-border-radius: 50px;
+@card-panel-bordered-border: 1px solid #e1e1e1;
+@card-panel-bordered-border-radius: 5px;
+@card-panel-bordered-padding: 3rem;
+@card-panel-bordered-h3-font-family: @font-family-heading;
+@card-panel-bordered-h3-font-size: 22px;
+@card-panel-bordered-h3-font-weight: 600;
+@card-panel-bordered-h3-color: @brand-primary;
+
+@card-panel-bordered-link-color: @brand-primary-orange;
+@card-panel-bordered-link-font-family: @font-family-heading;
+@card-panel-bordered-link-text-transform: uppercase;
+@card-panel-bordered-link-font-weight: 600;
+@card-panel-bordered-link-font-size: 12px;
+@card-image-max-height: 190px;
+
+@glyph-highlight-background-color: @brand-primary-orange;
+
+@heading-underline-font-size: @font-size-h2;
+
+@padding-base-vertical: 8px;
+@padding-base-horizontal: 8px;
+
+@table-bg-accent: #f1f1f1;
+@table-border-color: darken(#f1f1f1, 15%);
+
+// Border radius
+@border-radius-base: 1rem;
+@border-radius-medium: 2rem;
+@border-radius-large: 3rem;
+@border-radius-small: 0.5rem;
+
+@breadcrumb-border-radius: 0;
+
+@jumbotron-padding-top: 10rem;

@@ -1,81 +1,72 @@
 ---
 title: "Home"
-seo_title: "Jakarta® EE | クラウドネイティブエンタープライズJava |Java EE |Eclipse Foundation"
-headline: "<img class='jumbotron-title' src='/images/jakarta/jakarta-ee-text.svg' alt='Jakarta EE'/><br/>クラウドネイティブエンタープライズJavaのオープンソースエコシステムの構築"
-description: "Jakarta Enterprise Edition (EE)は、クラウドネイティブエンタープライズJavaのオープンソースの未来です。Java EEに対する投資を保護して、エンタープライズアプリケーションをモダナイズしましょう。"
-date: 2018-04-05T15:50:25-04:00
-jumbotron_class: "col-xs-24"
-jumbotron_btn_class: "btn btn-secondary"
-custom_jumbotron_class: "col-xs-24"
-custom_jumbotron: |
-  <p>Latest Release: Jakarta EE 11 now available</p>
-links: [[href: "/ja/release/11", text: "Learn More"]]
+seo_title:
+  "Jakarta® EE | クラウドネイティブエンタープライズJava |Java EE |Eclipse
+  Foundation"
+headline: |
+  Jakarta EE powers the future of <br><span class="text-primary-orange rotating-text"><span>cloud native</span><span>vendor neutral</span><span>scalable</span></span> enterprise Java
+subtitle: Develop, run, and scale enterprise Java apps anywhere,<br/> with the flexibility of open source technology
+jumbotron_class: text-center
+custom_jumbotron_class: col-sm-18 col-sm-offset-3 margin-top-60
+jumbotron_layout_style: full-height
+custom_jumbotron_partial: jumbotron_home.html
+links:
+  [
+    [
+      href: "/release/11/",
+      text: "Latest release",
+      class: "btn btn-outline-primary",
+      icon: "fa fa-download",
+    ],
+    [
+      href: "/membership/",
+      text: "Join us",
+      class: "btn btn-primary",
+      icon: "fa fa-chevron-right",
+    ],
+  ]
+links_position: "before_custom_jumbotron"
+description: "Jakarta Enterprise Edition
+  (EE)は、クラウドネイティブエンタープライズJavaのオープンソースの未来です。Java
+  EEに対する投資を保護して、エンタープライズアプリケーションをモダナイズしましょう。"
 hide_page_title: true
 hide_sidebar: true
 hide_breadcrumb: true
-show_featured_story: false
-show_featured_footer: false
 container: "container-fluid"
 ---
 
-{{< home/featured-story
-    id="featured-story-container"
-    publishTarget="jakarta_ee"
-    templateId="featured-story-custom"
-    count="5"
-    templatePath="/js/templates/featured-story-custom.mustache" >}}
+{{< pages/home/why-choose-jakarta-ee >}}
+{{< pages/home/community-powered-innovation >}}
 
-{{< home/call-to-actions >}}
+{{< pages/home/latest-release-banner >}}
+{{< platform-diagram src="jakartaee_11_platform_diagram" >}}
+{{< /pages/home/latest-release-banner >}}
 
-{{< home/members >}}
+{{< pages/home/news-and-announcements >}}
 
-{{< home/whats-new >}}
+{{< newsroom/news id="announcements_news_lists" publishTarget="jakarta_ee"
+  type="announcements,community_news" count="8" class="news-list"
+  templateId="custom-announcement-template"
+  templatePath="/js/v2/templates/news-home.mustache"
+>}}
 
-{{< grid/section-container >}}
-  
-    {{< grid/div class="featured-section-news tab-content tab-content-home" isMarkdown="false" >}}
+{{< /pages/home/news-and-announcements >}}
 
-      {{< grid/div role="tabpanel" class="tab-pane active" id="whats-new-announcements" isMarkdown="false" >}}
-        {{< newsroom/news
-          id="announcements_news_lists" 
-          publishTarget="jakarta_ee"
-          type="announcements"
-          count="5"
-          includeList="true"
-          class="news-list"
-          templateId="custom-announcement-template"
-          templatePath="/js/templates/news-home.mustache" >}}
-      {{</ grid/div >}}
+{{< pages/home/events >}}
 
-      {{< grid/div role="tabpanel" class="tab-pane fade" id="whats-new-news" isMarkdown="false" >}}
-          {{< newsroom/news
-          id="community_news_lists" 
-          publishTarget="jakarta_ee"
-          type="community_news"
-          count="5"
-          includeList="true"
-          class="news-list"
-          templateId="custom-news-template"
-          templatePath="/js/templates/news-home.mustache" >}}
-      {{</ grid/div >}}
+{{< newsroom/events id="events_lists" upcoming="1" publishTarget="jakarta_ee"
+  templateId="custom-events-template"
+  templatePath="/js/v2/templates/events-home.mustache" count="2"
+>}}
 
-      {{< grid/div role="tabpanel" class="tab-pane fade" id="whats-new-events" isMarkdown="false" >}}
-        {{< events >}}    
-          {{< newsroom/events
-              id="events_lists" 
-              containerClass="news-items clearfix"
-              publishTarget="jakarta_ee"
-              upcoming="1"
-              templateId="custom-events-template"
-              templatePath="/js/templates/events-home.mustache"
-              count="4" >}}
-        {{</ events >}}
-      {{</ grid/div >}}
+{{< /pages/home/events >}}
 
-    {{</ grid/div >}}
-  
-{{</ grid/section-container >}}
+{{< pages/home/youtube >}}
 
-{{< home/videos >}}
+{{< pages/home/join-us >}}
 
-{{< home/testimonials >}}
+{{< pages/home/testimonials >}}
+
+{{< /pages/home/join-us >}}
+
+{{< pages/home/members >}}

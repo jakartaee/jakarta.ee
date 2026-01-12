@@ -1,0 +1,128 @@
+/**
+ * Copyright (c) 2021 Eclipse Foundation AISBL
+ *
+ * This program and the accompanying materials are made
+ * available under the terms of the Eclipse Public License 2.0
+ * which is available at https://www.eclipse.org/legal/epl-2.0/
+ *
+ * SPDX-License-Identifier: EPL-2.0
+ */
+
+.header-wrapper {
+  background-position: left;
+  .featured-jumbotron-default {
+    min-height: 400px;
+    padding-top: 16.4rem;
+    padding-bottom: 3rem;
+
+    .btn {
+      min-width: unset;
+    }
+  }
+  &.header-default-bg-img {
+    .featured-jumbotron {
+      background-position: center;
+
+      &::before {
+        content: unset;
+      }
+    }
+  }
+  &.header-secondary-bg-img {
+    .featured-jumbotron {
+      min-height: 300px;
+      padding-top: 200px;
+    }
+  }
+}
+
+.featured-jumbotron {
+  color: @brand-primary-dark;
+  background-color: @brand-quinary;
+
+  .btn {
+    border-radius: @btn-border-radius;
+  }
+
+  &.featured-jumbotron-dark {
+    background-color: @brand-primary-dark;
+
+    &,
+    h1,
+    .h1,
+    h2,
+    .h2,
+    .jumbotron-title,
+    .jumbotron-tagline,
+    .jumbotron-subtitle {
+      color: @white;
+    }
+  }
+
+  h1,
+  .h1 {
+    .font-normal;
+    font-size: 6.5rem;
+    letter-spacing: @headings-letter-spacing;
+
+    @media (max-width: @screen-xs-max) {
+      font-size: 4.5rem;
+    }
+  }
+
+  h2,
+  .h2 {
+    .text-regular;
+    font-size: 2.5rem;
+
+    @media (max-width: @screen-xs-max) {
+      font-size: 1.8rem;
+    }
+  }
+
+  .jumbotron-title {
+    width: 350px;
+    margin-bottom: 20px;
+    @media (max-width: @screen-xs-max) {
+      width: 250px;
+    }
+  }
+
+  &:has(.jumbotron-h-screen) {
+    @mobile-header-menu-height: 50px;
+    min-height: calc(
+      100vh - @header-toolbar-height - @mobile-header-menu-height
+    );
+    padding: 10rem 2rem;
+    display: grid;
+
+    @media (min-width: @screen-lg-min) {
+      min-height: 100vh;
+    }
+
+    .jumbotron-h-screen {
+      display: flex;
+      flex-direction: column;
+      gap: 3rem;
+
+      .top {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        align-items: center;
+        justify-content: center;
+
+        .jumbotron-links {
+          margin-top: 4rem;
+        }
+      }
+    }
+  }
+}
+
+.max-content {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
