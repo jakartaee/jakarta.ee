@@ -41,7 +41,7 @@ main:
   # Column 1: Explore Specifications
   - identifier: "explore-specifications"
     pre: "static/images/icons/menu/explore-spec.svg"
-    name: "Explore Specifications"
+    name: "Explore specifications"
     weight: 1
     parent: "specifications"
 
@@ -55,7 +55,7 @@ main:
   # Column 3: Additional resources
   - identifier: "additional-resources-specs"
     pre: "static/images/icons/menu/resources.svg"
-    name: "Additional Resources"
+    name: "Additional resources"
     weight: 3
     parent: "specifications"
 
@@ -233,28 +233,28 @@ main:
   # Column 1: Take Part
   - identifier: "take-part"
     pre: "static/images/icons/menu/take-part.svg"
-    name: "Take Part"
+    name: "Take part"
     weight: 1
     parent: "community"
 
   # Column 2: Community Content
   - identifier: "community-content"
     pre: "static/images/icons/menu/community.svg"
-    name: "Community Content"
+    name: "Community content"
     weight: 2
     parent: "community"
 
   # Column 3: Community Events
   - identifier: "community-events"
     pre: "static/images/icons/menu/events.svg"
-    name: "Community Events"
+    name: "Community events"
     weight: 3
     parent: "community"
 
   # Column 4: Additional Resources
   - identifier: "additional-resources-community"
     pre: "static/images/icons/menu/additional-resources.svg"
-    name: "Additional Resources"
+    name: "Additional resources"
     weight: 4
     parent: "community"
 
@@ -323,7 +323,7 @@ main:
 
   # Additional Resources sub-items
   - identifier: "developer-advocate"
-    name: "Developer Advocate"
+    name: "Developer advocate"
     url: "/community/developer-advocate/"
     parent: "additional-resources-community"
     weight: 1
