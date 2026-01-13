@@ -38,14 +38,14 @@ export function setupRotatingText() {
     // Extract words and trim whitespace
     const words = Array.from(spans, (span) => span.textContent.trim());
     // Pre-calculate widths for each word to avoid repeated DOM measurements
-    const wordWidths = words.map((word) => getWordWidth(word, container));
+    const wordDimensions = words.map((word) => getDimensions(word, container));
 
     // Track current word index and visible element
     let wordIndex = 0;
     let currentElement = null;
 
     // Helper: Calculate the rendered width of a word using the container's font styles
-    function getWordWidth(word, container) {
+    function getDimensions(word, container) {
       const temp = document.createElement("span");
       temp.textContent = word;
       temp.style.position = "absolute";
@@ -57,11 +57,16 @@ export function setupRotatingText() {
         fontSize: getComputedStyle(container).fontSize,
         fontWeight: getComputedStyle(container).fontWeight,
         letterSpacing: getComputedStyle(container).letterSpacing,
+        lineHeight: getComputedStyle(container).lineHeight,
       });
       document.body.appendChild(temp);
       const width = temp.offsetWidth + 1; // Adding 1px as safety margin
+      const height = temp.offsetHeight;
       temp.remove();
-      return width;
+      return {
+        width,
+        height,
+      };
     }
 
     // Helper: Create a new span element for a word
@@ -92,7 +97,7 @@ export function setupRotatingText() {
     function cycle() {
       const nextIndex = (wordIndex + 1) % words.length;
       const nextWord = words[nextIndex];
-      const nextWidth = wordWidths[nextIndex];
+      const nextDimension = wordDimensions[nextIndex];
       // Create the next element
       const nextElement = createElement(nextWord);
 
@@ -105,14 +110,14 @@ export function setupRotatingText() {
         // I don't really know why two frames are needed, but it seems that the fade in animation only works reliably this way.
         requestAnimationFrame(() =>
           requestAnimationFrame(() => {
-            animate(nextElement, nextWidth);
+            animate(nextElement, nextDimension.width);
           })
         );
       } else {
         // First word: show instantly without animation
         nextElement.style.opacity = 1;
         nextElement.style.transform = "translateX(0)";
-        container.style.width = `${nextWidth}px`;
+        container.style.width = `${nextDimension.width}px`;
         container.appendChild(nextElement);
       }
 
@@ -129,7 +134,11 @@ export function setupRotatingText() {
     document.fonts.ready.then(() => {
       wordIndex = words.length - 1; // Start with last word as "current"
       cycle(); // Initial cycle
-      container.intervalId = setInterval(cycle, 3000); // Repeat every 3 seconds
+      // we need to set the height of the container to match the text height
+      const firstDimension = wordDimensions[0];
+      container.style.height = `${firstDimension.height}px`;
+      // Set interval for cycling through words
+      container.intervalId = setInterval(cycle, 2000); // Repeat every 3 seconds
     });
   }
 

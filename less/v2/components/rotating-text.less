@@ -1,9 +1,9 @@
 .rotating-text-container {
-  display: inline flow-root list-item;
+  display: inline-block;
   vertical-align: bottom;
   overflow: hidden;
   position: relative;
-  transition: width 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: width 0.6s cubic-bezier(0.18, 0.89, 0.3, 1.03);
 }
 
 .rotating-text-items {
@@ -21,12 +21,12 @@
 }
 
 .rotating-text {
-  display: block;
+  display: inline;
   white-space: nowrap;
   position: absolute;
   left: 0;
-  top: 0;
+  bottom: 0;
   transition:
-    transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+    transform 0.6s cubic-bezier(0.18, 0.89, 0.3, 1.03),
     opacity 0.6s ease;
 }
