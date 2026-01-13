@@ -1,9 +1,32 @@
+/**
+ * Creates a debounced version of the provided function that delays invoking the function
+ * until after a specified number of milliseconds have elapsed since the last time the
+ * debounced function was invoked. This is useful for limiting the rate at which a function
+ * can fire, such as in event handlers for user input.
+ *
+ * @param {Function} func - The function to debounce.
+ * @param {number} wait - The number of milliseconds to delay execution.
+ * @returns {Function} A debounced version of the input function that can be called with any arguments.
+ */
+function debounce(func, wait) {
+  let timeout;
+  return function executedFunction(...args) {
+    const later = () => {
+      clearTimeout(timeout);
+      func(...args);
+    };
+    clearTimeout(timeout);
+    timeout = setTimeout(later, wait);
+  };
+}
+
 export function setupRotatingText() {
   // Find all containers with rotating text
   const containers = document.querySelectorAll(".rotating-text-container");
   if (!containers.length) return;
 
-  containers.forEach((container) => {
+  // Function to set up rotating text for a single container
+  function setupContainer(container) {
     // Get the container holding the words
     const itemsContainer = container.querySelector(".rotating-text-items");
     if (!itemsContainer) return;
@@ -36,7 +59,7 @@ export function setupRotatingText() {
         letterSpacing: getComputedStyle(container).letterSpacing,
       });
       document.body.appendChild(temp);
-      const width = temp.offsetWidth;
+      const width = temp.offsetWidth + 1; // Adding 1px as safety margin
       temp.remove();
       return width;
     }
@@ -106,7 +129,32 @@ export function setupRotatingText() {
     document.fonts.ready.then(() => {
       wordIndex = words.length - 1; // Start with last word as "current"
       cycle(); // Initial cycle
-      setInterval(cycle, 3000); // Repeat every 3 seconds
+      container.intervalId = setInterval(cycle, 3000); // Repeat every 3 seconds
     });
-  });
+  }
+
+  // Set up each container
+  containers.forEach(setupContainer);
+
+  // Handle window resize: re-create rotating text
+  const debouncedResize = debounce(() => {
+    containers.forEach(container => {
+      // Clear existing interval
+      if (container.intervalId) {
+        clearInterval(container.intervalId);
+        container.intervalId = null;
+      }
+      // Remove existing rotating text elements
+      const itemsContainer = container.querySelector(".rotating-text-items");
+      if (itemsContainer) {
+        const rotatingTexts = container.querySelectorAll(".rotating-text");
+        rotatingTexts.forEach(el => el.remove());
+        container.style.width = ''; // Reset width
+      }
+      // Re-setup the container
+      setupContainer(container);
+    });
+  }, 250); // Debounce for 250ms
+
+  window.addEventListener('resize', debouncedResize);
 }
