@@ -138,7 +138,7 @@ export function setupRotatingText() {
       const firstDimension = wordDimensions[0];
       container.style.height = `${firstDimension.height}px`;
       // Set interval for cycling through words
-      container.intervalId = setInterval(cycle, 2000); // Repeat every 3 seconds
+      container.intervalId = setInterval(cycle, 3500); // Repeat every 3 seconds
     });
   }
 
