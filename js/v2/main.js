@@ -18,12 +18,14 @@ import eclipsefdnSpecificationBadges from "./specification-badges";
 import { setupTopIntersection } from "./top-intersection";
 import setupMobileMegaMenu from "./mobile-mega-menu";
 import scrollSnapCarousel from "./scroll-snap-carousel";
+import { setupRotatingText } from "./rotating-text";
 
 document.addEventListener("DOMContentLoaded", function () {
   (function ($, document) {
     eclipsefdnSpecificationBadges.renderAll();
 
     setupTopIntersection();
+    setupRotatingText();
 
     // Initialize scroll snap carousels for home
     scrollSnapCarousel(".testimonial-container", ".testimonial-item");

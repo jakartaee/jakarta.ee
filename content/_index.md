@@ -3,7 +3,14 @@ title: "Home"
 seo_title: "Jakarta EE"
 seo_title_suffix: " | Cloud Native Enterprise Java | Java EE | The Eclipse Foundation"
 headline: |
-  Jakarta EE powers the future of <br><span class="text-primary-orange rotating-text"><span>cloud native</span><span>vendor neutral</span><span>scalable</span></span> enterprise Java
+  <span aria-hidden="true">Jakarta EE powers the future of <br><span class="text-primary-orange rotating-text-container">
+  <span class="rotating-text-items">
+    <span>cloud native</span>
+    <span>vendor neutral</span>
+    <span>scalable</span>
+  </span>
+  </span> enterprise Java</span>
+  <span class="sr-only">Jakarta EE powers the future of cloud native, vendor neutral, scalable enterprise Java</span>
 subtitle:
   Develop, run, and scale enterprise Java apps anywhere,<br/> with the flexibility of open source technology
 jumbotron_btn_class: btn btn-secondary
