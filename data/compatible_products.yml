@@ -257,11 +257,11 @@ sets:
           vendor: Beijing Thunisoft Information Technology Co.,Ltd
           image: '/images/compatible_products/tas-logo.png'
           image_width: 200
-          download: 'https://thunisoft.com/tasyyzjj/index.html'
+          download: 'https://www.thunisoft.com/tasyyzjj/index.html'
           versions:
           - version: 3.1
             compatibility: 'https://www.thunisoft.com/tastckresults10/index.jhtml'
-            download_url: 'https://thunisoft.com/tasyyzjj/index.html'
+            download_url: 'https://www.thunisoft.com/tasyyzjj/index.html'
         - name: TongWeb Application Server
           vendor: Beijing TongTech Co., Ltd.
           image: '/images/compatible_products/tongweb.svg'
@@ -658,11 +658,11 @@ sets:
         vendor: Beijing Thunisoft Information Technology Co.,Ltd
         image: '/images/compatible_products/tas-logo.png'
         image_width: 200
-        download: 'https://thunisoft.com/tasyyzjj/index.html'
+        download: 'https://www.thunisoft.com/tasyyzjj/index.html'
         versions:
         - version: 3.0
           compatibility: 'https://www.thunisoft.com/tastckresults91/index.jhtml'
-          download_url: 'https://thunisoft.com/tasyyzjj/index.html'
+          download_url: 'https://www.thunisoft.com/tasyyzjj/index.html'
       - name: TongWeb Application Server
         vendor: Beijing TongTech Co., Ltd.
         image: '/images/compatible_products/tongweb.svg'
@@ -1053,11 +1053,11 @@ sets:
         vendor: Beijing Thunisoft Information Technology Co.,Ltd
         image: '/images/compatible_products/tas-logo.png'
         image_width: 200
-        download: 'https://thunisoft.com/tasyyzjj/index.html'
+        download: 'https://www.thunisoft.com/tasyyzjj/index.html'
         versions:
         - version: 2.8
-          compatibility: 'http://www.thunisoft.com/tastckresults/index.jhtml'
-          download_url: 'https://thunisoft.com/tasyyzjj/index.html'
+          compatibility: 'https://www.thunisoft.com/tastckresults/index.jhtml'
+          download_url: 'https://www.thunisoft.com/tasyyzjj/index.html'
 
       - name: Oracle WebLogic Server
         vendor: Oracle Corporation
