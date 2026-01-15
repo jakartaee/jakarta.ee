@@ -642,6 +642,9 @@ items:
       year: 2018
 
   specification_committee:
+    - url: specification_committee/minutes-specification-december-10-2025.pdf
+      title: 10 December 2025 (pdf)
+      year: 2025
     - url: specification_committee/minutes-specification-november-12-2025.pdf
       title: 12 November 2025 (pdf)
       year: 2025
