@@ -10,6 +10,12 @@ years:
     date: Jul 27-31
     upcoming: true
 
+  - name: Cluj Innovation Days
+    url: https://clujinnovationdays.com
+    location: Cluj 🇷🇴
+    date: May 27-31
+    upcoming: true
+
   - name: University of York (Guest Lecturer)
     url: https://www.york.ac.uk
     location: York 🇬🇧
@@ -22,7 +28,7 @@ years:
     date: Apr 20-23
     upcoming: true
 
-  - name: IntelliJ IDEA Conf 2026
+  - name: IntelliJ IDEA Conf
     url: https://www.oracle.com/javaone
     location: Paphos 🇨🇾 + 🌐
     date: Mar 26-27
