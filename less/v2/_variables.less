@@ -78,11 +78,15 @@
 
 // Backgrounds
 @bg-img-default: url("images/jumbotron-bg.webp");
-@bg-img-secondary: url("images/jumbotron-bg-secondary.webp");
+@bg-img-secondary: url("images/bg-secondary.webp");
 @bg-img-tertiary: url("images/bg-tertiary.jpg");
 
-@header-default-bg-img: @bg-img-default;
-@header-secondary-bg-img: @bg-img-secondary;
+@bg-jumbotron-default: url("images/jumbotron-bg-default.webp");
+@bg-jumbotron-secondary: @bg-img-default;
+
+@header-default-bg-img: @bg-jumbotron-default;
+@header-secondary-bg-img: @bg-jumbotron-secondary;
+@header-home-bg-img: @bg-jumbotron-secondary;
 
 @header-row-padding-bottom: 20px;
 
@@ -189,4 +193,4 @@
 
 @breadcrumb-border-radius: 0;
 
-@jumbotron-padding-top: 10rem;
+@jumbotron-padding-y: 5rem;
