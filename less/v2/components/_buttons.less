@@ -1,0 +1,143 @@
+/*!
+ * Copyright (c) 2023 Eclipse Foundation, Inc.
+ *
+ * This program and the accompanying materials are made available under the
+ * terms of the Eclipse Public License v. 2.0 which is available at
+ * http://www.eclipse.org/legal/epl-2.0.
+ *
+ * Contributors:
+ *   Olivier Goulet <olivier.goulet@eclipse-foundation.org>
+ *
+ * SPDX-License-Identifier: EPL-2.0
+*/
+
+//== Contained button variant
+.btn-contained {
+  border: 1px solid #fff;
+  background-color: transparent;
+
+  &,
+  &:visited,
+  &:hover,
+  &:focus,
+  &:active {
+    color: @white;
+  }
+
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-color: #e2e2e2;
+  }
+}
+
+.btn-contained.btn-primary {
+  border-color: @brand-primary;
+  &:hover {
+    border-color: darken(@brand-primary, 10%);
+  }
+}
+
+.btn-contained.btn-secondary {
+  border-color: @brand-secondary;
+  &:hover {
+    border-color: darken(@brand-secondary, 10%);
+  }
+}
+
+.btn {
+  border-radius: @btn-border-radius;
+  font-weight: @btn-font-weight;
+  font-size: @btn-font-size;
+  padding: 0.5rem 2rem;
+  transition: transform 0.2s cubic-bezier(0.39, -0.35, 0.54, 2.04);
+  border: 2px solid transparent;
+
+  &:active {
+    transform: scale(0.95);
+  }
+}
+
+.btn-outline-primary {
+  border-color: @brand-primary;
+  color: @brand-primary;
+
+  &,
+  &:visited,
+  &:hover,
+  &:focus,
+  &:active {
+    color: @brand-primary;
+  }
+
+  &:hover {
+    background-color: @brand-primary;
+    color: @white;
+  }
+}
+
+.btn-outline-white {
+  color: @white;
+  border-color: @white;
+
+  &,
+  &:visited,
+  &:hover,
+  &:focus,
+  &:active {
+    color: @white;
+  }
+
+  &:hover {
+    background-color: @white;
+    color: @brand-primary-dark;
+  }
+}
+
+.btn-outline-secondary {
+  border-color: @brand-secondary;
+  background-color: transparent;
+
+  &,
+  &:visited,
+  &:hover,
+  &:focus,
+  &:active {
+    color: @brand-primary;
+  }
+
+  &:hover {
+    background-color: @brand-secondary;
+    color: @white;
+  }
+}
+
+.dark .btn-outline-secondary,
+.dark .btn-outline-primary {
+  color: @white;
+
+  &,
+  &:visited,
+  &:hover,
+  &:focus,
+  &:active {
+    color: @white;
+  }
+}
+
+.btn-square {
+  aspect-ratio: 1 / 1;
+}
+
+.btn-clear {
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(5px) saturate(150%);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+  &,
+  &:visited,
+  &:hover,
+  &:focus,
+  &:active {
+    color: @brand-primary;
+  }
+}

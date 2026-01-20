@@ -18,14 +18,23 @@ mix.EclipseFdnSolsticeAssets();
 mix.setPublicPath('static');
 mix.setResourceRoot('../');
 
-mix.less('./less/styles.less', 'static/css/styles.css');
-mix.less('./less/pages/about/why-jakarta-ee/styles.less', 'static/css/why-jakarta-ee-styles.css');
-mix.less('./less/pages/learn.less', 'static/css/learn.css');
-mix.less('./less/pages/sponsor.less', 'static/css/sponsor.css');
-mix.less('./less/pages/contribute.less', 'static/css/contribute.css');
-mix.less('./less/pages/mentorship.less', 'static/css/mentorship.css');
+// V2 Assets (redesign)
+mix.less('./less/v2/styles.less', 'static/css/styles.v2.css');
+mix.less('./less/v2/pages/about/why-jakarta-ee/styles.less', 'static/css/why-jakarta-ee-styles.v2.css');
+mix.less('./less/v2/pages/learn.less', 'static/css/learn.v2.css');
+mix.less('./less/v2/pages/sponsor.less', 'static/css/sponsor.v2.css');
+mix.less('./less/v2/pages/contribute.less', 'static/css/contribute.v2.css');
+mix.less('./less/v2/pages/mentorship.less', 'static/css/mentorship.v2.css');
+mix.js('js/v2/main.js', './static/js/solstice.v2.js');
+mix.js('./js/v2/contributor-cards/index.js', './static/js/release-page-cards.v2.js');
 
-mix.js('js/main.js', './static/js/solstice.js');
-
-mix.js('./js/contributor-cards/index.js', './static/js/release-page-cards.js');
+// V1 Assets (legacy)
+mix.less('./less/v1/styles.less', 'static/css/styles.css');
+mix.less('./less/v1/pages/about/why-jakarta-ee/styles.less', 'static/css/why-jakarta-ee-styles.css');
+mix.less('./less/v1/pages/learn.less', 'static/css/learn.css');
+mix.less('./less/v1/pages/sponsor.less', 'static/css/sponsor.css');
+mix.less('./less/v1/pages/contribute.less', 'static/css/contribute.css');
+mix.less('./less/v1/pages/mentorship.less', 'static/css/mentorship.css');
+mix.js('js/v1/main.js', './static/js/solstice.js');
+mix.js('./js/v1/contributor-cards/index.js', './static/js/release-page-cards.js');
 

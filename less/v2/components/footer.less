@@ -1,0 +1,145 @@
+/**
+ * Copyright (c) 2025 Eclipse Foundation AISBL
+ *
+ * This program and the accompanying materials are made
+ * available under the terms of the Eclipse Public License 2.0
+ * which is available at https://www.eclipse.org/legal/epl-2.0/
+ *
+ * SPDX-License-Identifier: EPL-2.0
+ */
+
+footer#solstice-footer {
+  z-index: 10;
+  position: relative;
+  background-color: @white;
+
+  .menu-heading {
+    .font-semibold;
+    margin-bottom: 1rem;
+
+    &::after,
+    &::before {
+      display: none;
+    }
+  }
+
+  a:link,
+  a:active,
+  a:visited,
+  a:focus {
+    .font-light;
+  }
+
+  section {
+    z-index: 0;
+  }
+
+  .footer-legal-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    clear: both;
+    flex-direction: column;
+
+    @media (min-width: @screen-sm-min) {
+      clear: none;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    &::before,
+    &::after {
+      display: none;
+    }
+
+    .logo {
+      max-width: 180px;
+    }
+  }
+
+  section#footer-legal {
+    .menu-heading {
+      display: none;
+    }
+
+    ul {
+      .list-inline;
+      margin-bottom: 0;
+
+      a {
+        padding: 0;
+      }
+    }
+  }
+
+  .footer-end-newsletter {
+    padding: 1.5rem;
+    border: 1px solid @brand-primary-orange;
+    border-radius: 20px;
+
+    @media (min-width: @screen-sm-min) {
+      padding: 3rem;
+    }
+
+    .footer-end-newsletter-label {
+      font-size: 2rem;
+    }
+
+    .footer-end-newsletter-input-wrapper {
+      border: 1px solid @brand-primary-orange;
+      border-radius: @border-radius-medium;
+      display: flex;
+      justify-content: space-between;
+      padding-left: 1rem;
+      background-color: @white;
+
+      &:focus-within {
+        box-shadow: 0 0 0 0.4rem fadeout(@brand-primary-orange, 70%);
+      }
+
+      input {
+        flex: 1;
+        background: transparent;
+        border: none;
+        min-width: 0;
+
+        &:focus {
+          box-shadow: none;
+          outline: none;
+        }
+
+        &::placeholder {
+          text-overflow: ellipsis;
+        }
+      }
+    }
+  }
+
+  .footer-copyright {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+
+    @media (max-width: @screen-sm-max) {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .left,
+    .right {
+      display: flex;
+      align-items: center;
+    }
+
+    .right img {
+      max-width: 80px;
+      height: auto;
+    }
+  }
+}

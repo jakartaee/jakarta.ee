@@ -1,0 +1,59 @@
+<!--
+ Copyright (c) 2025 Eclipse Foundation AISBL
+
+ This program and the accompanying materials are made
+ available under the terms of the Eclipse Public License 2.0
+ which is available at https://www.eclipse.org/legal/epl-2.0/
+
+ SPDX-License-Identifier: EPL-2.0
+-->
+
+{{ $lang := .Page.Lang }} {{$langBase:=index .Site.Data $lang}} {{ $scratch :=
+newScratch }} {{ range $langBase.testimonials.categories }} {{ if .title }} {{
+$scratch.Set "category_title" (.title | urlize) }} {{ $scratch.SetInMap
+"categories" (.title | urlize) . }} {{ end }} {{ range $index, $testimonial :=
+.testimonials }} {{ $category := dict "category" ($scratch.Get "category_title")
+}} {{ $testimonial = merge . ($category) }} {{ $scratch.SetInMap "testimonials"
+(.name | urlize) $testimonial }} {{ end }} {{ end }} {{ $testimonials :=
+$scratch.GetSortedMapValues "testimonials" }} {{ if $testimonials }}
+<div class="featured-section-testimonials">
+  <div class="testimonial-container">
+    {{ range $testimonials }} {{ if eq .category "common"}}
+    <div class="testimonial-item">
+      <div class="card glow">
+        <div class="row">
+          <div class="col-md-10">
+            {{ if .picture }}
+            <div class="featured-section-testimonials-item-picture">
+              <img
+                class="img rounded-full"
+                src="{{ .picture }}"
+                width="{{ .picture_width | default 80 }}"
+                alt="{{ .name }}'s picture"
+              />
+            </div>
+            <p class="margin-top-20">
+              <strong>{{ .name }},</strong> <em>{{ .company }}</em>
+            </p>
+            {{ end }}
+            <p>
+              <img
+                class="featured-section-testimonials-item-logo img img-responsive"
+                src="{{ .logo }}"
+                width="{{ .logo_width | default 60 }}"
+                alt="{{ .company }}'s logo"
+              />
+            </p>
+          </div>
+          <div class="col-md-14">
+            <p class="featured-section-testimonials-item-content font-light text-secondary-gray">
+              {{ .text }}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    {{ end }} {{ end }}
+  </div>
+</div>
+{{ end }}

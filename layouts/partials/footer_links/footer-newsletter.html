@@ -1,0 +1,46 @@
+<!--
+ Copyright (c) 2025 Eclipse Foundation AISBL
+
+ This program and the accompanying materials are made
+ available under the terms of the Eclipse Public License 2.0
+ which is available at https://www.eclipse.org/legal/epl-2.0/
+
+ SPDX-License-Identifier: EPL-2.0
+-->
+
+{{ $footer_newsletter_class := .Params.footer_section_newsletter_class | default .Site.Params.footer_section_newsletter_class | default "footer-section col-sm-8" }}
+<section id="footer-newsletter" class="{{ $footer_newsletter_class }}">
+  <div class="footer-end-newsletter">
+    <form
+      id="mc-embedded-subscribe-form"
+      action="https://share.hsforms.com/1Vn5cobvWQ2CdrC65FEia_A38167"
+      novalidate
+      target="_blank"
+    >
+      <label class="footer-end-newsletter-label font-semibold" for="email"
+        >{{ i18n "footer-newsletter-stay-connected" }}</label
+      >
+      <p class="font-light">
+        {{ i18n "footer-newsletter-description" }}
+      </p>
+      <div class="footer-end-newsletter-input-wrapper">
+        <input
+          class="footer-end-newsletter-input"
+          type="email"
+          id="email"
+          name="email"
+          autocomplete="email"
+          placeholder="{{ i18n "footer-newsletter-email-placeholder" }}"
+        />
+        <button
+          class="footer-end-newsletter-submit btn btn-xs btn-secondary"
+          id="mc-embedded-subscribe"
+          type="submit"
+          name="subscribe"
+        >
+          {{ i18n "footer-newsletter-sign-up-button-text" }}
+        </button>
+      </div>
+    </form>
+  </div>
+</section>

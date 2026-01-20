@@ -1282,7 +1282,7 @@ other = "注册"
   other = "了解更多"   
   
 [pages-supporters-sponsor-header-description]
-  other = "<p class=\"fw-500\">成为 Jakarta EE 工作组的赞助商，</p><h2 class=\"big-text uppercase text-secondary\">推动未来企业级Java的发展</h2><p class=\"section-featured-text text-primary\">您的组织将在塑造开源企业级Java的未来以及确保全球Java社区持续增长和成功方面发挥关键作用。</p>"
+  other = "<p class=\"font-medium\">成为 Jakarta EE 工作组的赞助商，</p><h2 class=\"big-text uppercase text-secondary\">推动未来企业级Java的发展</h2><p class=\"section-featured-text text-primary\">您的组织将在塑造开源企业级Java的未来以及确保全球Java社区持续增长和成功方面发挥关键作用。</p>"
 
 [pages-supporters-sponsor-by-joining-header-title]
   other = "加入我们的赞助计划："

@@ -1,0 +1,149 @@
+/**
+ * Copyright (c) 2025 Eclipse Foundation AISBL
+ *
+ * This program and the accompanying materials are made
+ * available under the terms of the Eclipse Public License 2.0
+ * which is available at https://www.eclipse.org/legal/epl-2.0/
+ *
+ * SPDX-License-Identifier: EPL-2.0
+ */
+
+.bg-primary-royal-blue {
+  background-color: @brand-primary-royal-blue;
+}
+
+.bg-primary-dark-purple {
+  background-color: @brand-primary-dark-purple;
+}
+
+.bg-primary-orange {
+  background-color: @brand-primary-orange;
+}
+
+.bg-blue-ish-grey {
+  background-color: @blue-ish-grey;
+}
+
+.rounded-base {
+  border-radius: @border-radius-base;
+}
+
+.rounded-medium {
+  border-radius: @border-radius-medium;
+}
+
+.rounded-large {
+  border-radius: @border-radius-large;
+}
+
+.rounded-full {
+  border-radius: 9999px;
+}
+
+.rounded-small {
+  border-radius: @border-radius-small;
+}
+
+.grid {
+  display: grid;
+}
+
+.gap-2 {
+  gap: 2rem;
+}
+
+.grid-cols-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.xs\:grid-cols-2 {
+  @media (min-width: @screen-xs-min) {
+    .grid-cols-2;
+  }
+}
+
+.md\:grid-cols-2 {
+  @media (min-width: @screen-md-min) {
+    .grid-cols-2;
+  }
+}
+
+.gap-x-line-4 {
+  gap: 6rem;
+
+  & > *:not(:last-child) {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: -3rem;
+      top: 0;
+      left: auto;
+      width: 1px;
+      height: 100%;
+      background-color: @brand-primary;
+    }
+  }
+}
+
+.gap-y-line-4 {
+  gap: 6rem;
+
+  & > *:not(:last-child) {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -3rem;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background-color: @brand-primary;
+    }
+  }
+}
+
+.md\:gap-x-line-4 {
+  @media (min-width: @screen-md-min) {
+    .gap-x-line-4;
+  }
+}
+
+.padding-y-huge {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+
+  @media (min-width: @screen-md-min) {
+    padding-top: 20rem;
+    padding-bottom: 20rem;
+  }
+}
+
+.margin-x-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.max-w-80 {
+  max-width: 80rem;
+}
+
+.max-w-50 {
+  max-width: 50rem;
+}
+
+.padding-bottom-huge {
+  padding-bottom: 10rem;
+
+  @media (min-width: @screen-md-min) {
+    padding-bottom: 20rem;
+  }
+}
+
+.md\:padding-60 {
+  @media (min-width: @screen-md-min) {
+    padding: 6rem;
+  }
+}

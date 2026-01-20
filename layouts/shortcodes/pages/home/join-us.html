@@ -1,0 +1,32 @@
+<!-- Join us section -->
+<section
+  id="join-us"
+  class="join-us row padding-y-60"
+  aria-labelledby="join-us-heading"
+>
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-24">
+        <div class="heading">
+          <div class="text-center">
+            <h2 id="join-us-heading" class="text-primary featured-heading margin-top-10">
+              {{ i18n "home-join-us-heading" }}
+            </h2>
+          </div>
+          <div class="right">
+            <p class="text-primary font-light">
+              {{ i18n "home-join-us-paragraph" | markdownify }}
+            </p>
+            <a
+              href="/membership"
+              class="btn btn-primary"
+              aria-label="{{ i18n "home-join-us-become-member-aria" }}"
+              >{{ i18n "home-join-us-become-member" }}</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="margin-top-60">{{ .Inner }}</div>
+</section>

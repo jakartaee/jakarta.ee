@@ -1,112 +1,173 @@
+<h2 id="contact-us" class="big-text-secondary">
+  {{ i18n "pages-membership-title" }}
+</h2>
 
-<div class="container">
-  <h2 id="contact-us" class="big-text-secondary">{{ i18n "pages-membership-title" }}</h2>
+{{ i18n "pages-membership-text" | safeHTML }}
+<ul class="list-inline margin-y-30 text-center">
+  <li>
+    <a class="btn btn-primary btn-lg" href="/membership/join-us/">
+      {{ i18n "pages-membership-contact-cta" | safeHTML }}
+    </a>
+  </li>
+  <li>
+    <a
+      class="btn btn-secondary btn-lg"
+      href="https://membership.eclipse.org/application/ready-to-join"
+    >
+      {{ i18n "pages-membership-join-cta" | safeHTML }}
+    </a>
+  </li>
+</ul>
 
-  {{ i18n "pages-membership-text" | safeHTML }}
-  <ul class="list-inline margin-y-30 text-center">
-    <li>
-      <a class="btn btn-primary btn-lg" href="/membership/join-us/">
-        {{ i18n "pages-membership-contact-cta" | safeHTML }}
-      </a>
-    </li>
-    <li>
-      <a class="btn btn-secondary btn-lg" href="https://membership.eclipse.org/application/ready-to-join">
-        {{ i18n "pages-membership-join-cta" | safeHTML }}
-      </a>
-    </li>
-  </ul>
+<h3 id="benefits" class="big-text text-secondary margin-top-60">
+  {{ i18n "pages-membership-benefits-title" }}
+</h3>
 
-  <h3 id="benefits" class="big-text text-secondary margin-top-60">{{ i18n "pages-membership-benefits-title" }}</h3>
+{{ i18n "pages-membership-benefits-text" | safeHTML }}
 
-  {{ i18n "pages-membership-benefits-text" | safeHTML }}
 
 <div class="row card-container text-center margin-top-60 margin-bottom-60">
   <div class="col-sm-8">
-    <div class="card-panel panel panel-default">
-      <div class="panel-heading" aria-hidden="true"><img class="img cover-image" src="/images/membership/download-membership-prospectus.jpg" alt=""></div>
+    <div class="card-panel panel panel-default match-height-item-by-row">
+      <div class="panel-heading" aria-hidden="true">
+        <img
+          class="img cover-image"
+          src="/images/membership/download-membership-prospectus.jpg"
+          alt=""
+        />
+      </div>
       <div class="panel-body">
-        <p><a class="big-text text-secondary h3" href="/documents/membership/jakarta-ee-membership-prospectus.pdf?v=2025-09">{{ i18n "pages-membership-download-prospectus" }}</a></p>
+        <p>
+          <a
+            class="big-text text-secondary h3"
+            href="/documents/membership/jakarta-ee-membership-prospectus.pdf?v=2025-09"
+            >{{ i18n "pages-membership-download-prospectus" }}</a
+          >
+        </p>
       </div>
     </div>
   </div>
 
   <div class="col-sm-8">
-    <div class="card-panel panel panel-default">
-      <div class="panel-heading" aria-hidden="true"><img class="img cover-image" src="/images/membership/download-membership-flyer.jpg" alt=""></div>
+    <div class="card-panel panel panel-default match-height-item-by-row">
+      <div class="panel-heading" aria-hidden="true">
+        <img
+          class="img cover-image"
+          src="/images/membership/download-membership-flyer.jpg"
+          alt=""
+        />
+      </div>
       <div class="panel-body">
-        <p><a class="big-text text-secondary h3" href="/documents/membership/jakarta-ee-membership-flyer.pdf">{{ i18n "pages-membership-download-flyer" }}</a></p>
+        <p>
+          <a
+            class="big-text text-secondary h3"
+            href="/documents/membership/jakarta-ee-membership-flyer.pdf"
+            >{{ i18n "pages-membership-download-flyer" }}</a
+          >
+        </p>
       </div>
     </div>
   </div>
 
   <div class="col-sm-8">
-    <div class="card-panel panel panel-default">
-      <div class="panel-heading" aria-hidden="true"><img class="img cover-image" src="/images/membership/contact-us-membership.jpg" alt=""></div>
+    <div class="card-panel panel panel-default match-height-item-by-row">
+      <div class="panel-heading" aria-hidden="true">
+        <img
+          class="img cover-image"
+          src="/images/membership/contact-us-membership.jpg"
+          alt=""
+        />
+      </div>
       <div class="panel-body">
-        <p><a class="big-text text-secondary h3" href="/membership/join-us">{{ i18n "pages-membership-contact" }}</a></p>
+        <p>
+          <a class="big-text text-secondary h3" href="/membership/join-us"
+            >{{ i18n "pages-membership-contact" }}</a
+          >
+        </p>
       </div>
     </div>
   </div>
 </div>
 
-<h2 class="big-text-secondary text-center margin-bottom-60">{{ i18n "pages-membership-testimonials" }}</h2>
+<h2 class="big-text-secondary text-center margin-bottom-60">
+  {{ i18n "pages-membership-testimonials" }}
+</h2>
 
-</div>
 {{ $lang := .Page.Lang }}
-{{$langBase:=index .Site.Data $lang}}
+{{ $langBase:=index .Site.Data $lang }}
 
 {{ $scratch := newScratch }}
 {{ range $langBase.testimonials.categories }}
-    {{ if .title }}
-        {{ $scratch.Set "category_title" (.title | urlize) }}
-        {{ $scratch.SetInMap "categories" (.title | urlize) . }}
-    {{ end }}
-    {{ range $index, $testimonial := .testimonials }}
-        {{ $category := dict "category" ($scratch.Get "category_title") }}
-        {{ $testimonial = merge . ($category) }}
-        {{ $scratch.SetInMap "testimonials" (.name | urlize) $testimonial }}
-    {{ end }}
+  {{ if .title }}
+    {{ $scratch.Set "category_title" (.title | urlize) }}
+    {{ $scratch.SetInMap "categories" (.title | urlize) . }}
+  {{ end }}
+  {{ range $index, $testimonial := .testimonials }}
+    {{ $category := dict "category" ($scratch.Get "category_title") }}
+    {{ $testimonial = merge . ($category) }}
+    {{ $scratch.SetInMap "testimonials" (.name | urlize) $testimonial }}
+  {{ end }}
 {{ end }}
 
 {{ $testimonials := $scratch.GetSortedMapValues "testimonials" }}
 
 {{ if $testimonials }}
-<div class="owl-carousel owl-theme solstice-slider" data-slider-lg-count="1" data-slider-md-count="1" data-slider-sm-count="1">
-  {{ range $testimonials }}
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-18 col-sm-offset-3">
-          <div class="item featured-section-testimonials-item">
-            <div class="row">
-                <div class="col-sm-8 match-height-item-by-row vertical-align-container">
-
+  <div
+    class="owl-carousel owl-theme solstice-slider"
+    data-slider-lg-count="1"
+    data-slider-md-count="1"
+    data-slider-sm-count="1"
+  >
+    {{ range $testimonials }}
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-18 col-sm-offset-3">
+            <div class="item featured-section-testimonials-item">
+              <div class="row">
+                <div
+                  class="col-sm-8 match-height-item-by-row vertical-align-container"
+                >
                   <div class="row">
                     <div class="col-sm-8">
                       {{ if .picture }}
-                      <div class="featured-section-testimonials-item-picture"><img class="img" src="{{ .picture }}" width="{{ .picture_width | default 60 }}" alt="{{ .name }}'s picture"></div>
+                        <div class="featured-section-testimonials-item-picture">
+                          <img
+                            class="img"
+                            src="{{ .picture }}"
+                            width="{{ .picture_width | default 60 }}"
+                            alt="{{ .name }}'s picture"
+                          />
+                        </div>
                       {{ end }}
                     </div>
                     <div class="col-sm-16">
-                      <p class="top-border-secondary"><strong>{{ .name }},</strong><br>
-                        <em>{{ .company }}</em></p>
-                        {{ if .logo }}
-                        <p><img class="featured-section-testimonials-item-logo" src="{{ .logo }}" width="{{ .logo_width | default 60 }}" alt="{{ .company }}'s logo"></p>
-                        {{ end }}
+                      <p class="top-border-secondary">
+                        <strong>{{ .name }},</strong><br />
+                        <em>{{ .company }}</em>
+                      </p>
+                      {{ if .logo }}
+                        <p>
+                          <img
+                            class="featured-section-testimonials-item-logo"
+                            src="{{ .logo }}"
+                            width="{{ .logo_width | default 60 }}"
+                            alt="{{ .company }}'s logo"
+                          />
+                        </p>
+                      {{ end }}
                     </div>
                   </div>
-
-
                 </div>
-                <div class="col-sm-16 match-height-item-by-row vertical-align-container">
+                <div
+                  class="col-sm-16 match-height-item-by-row vertical-align-container"
+                >
                   <p>"{{ .text }}"</p>
                 </div>
               </div>
+            </div>
           </div>
         </div>
       </div>
-
-    </div>
-  {{ end }}
-</div>
-
+    {{ end }}
+  </div>
 {{ end }}

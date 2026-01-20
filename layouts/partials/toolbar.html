@@ -11,27 +11,78 @@
   SPDX-License-Identifier: EPL-2.0
 -->
 
-<div class="clearfix toolbar-container-wrapper">
+<div class="toolbar-container-wrapper">
   <div class="container">
     <div class="text-right toolbar-row row hidden-print">
       <div class="col-md-24 row-toolbar-col">
         <ul class="list-inline">
-          <li><a href="https://accounts.eclipse.org/user/edit" class="" data-tab-destination="tab-profile">{{ i18n "navbar-edit-acccount-label" }}</a></li>
-          <li><a class="toolbar-link toolbar-manage-cookies dropdown-toggle">{{ i18n "navbar-manage-cookies-label" }}</a></li>
           {{ if gt (len .AllTranslations) 1 }}
           <li class="language-selector dropdown">
             <a href="#" data-toggle="dropdown" class="dropdown-toggle">
+              <i class="fa fa-globe" aria-hidden="true"></i>
               <span> {{ .Language.LanguageName }}</span>
-              <b class="caret"></b>
+              <i class="fa fa-angle-down fa-xs" aria-hidden="true"></i>
             </a>
             <ul class="dropdown-menu">
               {{ range .AllTranslations }}
-              <li><a href="{{ .Permalink }}">{{ .Language.LanguageName }}</a></li>
+              <li>
+                <a href="{{ .Permalink }}">{{ .Language.LanguageName }}</a>
+              </li>
               {{ end }}
             </ul>
           </li>
           {{ end }}
-          {{ partial "google_search.html" . }}
+          <li class="dropdown">
+            <a
+              class="dropdown-toggle focus-highlight"
+              id="user-menu"
+              href="#"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+              tabindex="0"
+            >
+              <i class="fa fa fa-user-circle-o" aria-hidden="true"></i>
+              {{ i18n "navbar-edit-acccount-label" }}
+            </a>
+            <ul
+              class="dropdown-menu dropdown-menu-right"
+              aria-labelledby="user-menu"
+            >
+              <li>
+                <a href="https://accounts.eclipse.org/user">
+                  <i
+                    class="fa-solid fa-user margin-right-10"
+                    aria-hidden="true"
+                  ></i>
+                  {{ i18n "toolbar-view-my-account" }}
+                </a>
+              </li>
+              <li>
+                <a href="https://accounts.eclipse.org/user/edit">
+                  <i
+                    class="fa-solid fa-edit margin-right-10"
+                    aria-hidden="true"
+                  ></i>
+                  {{ i18n "toolbar-edit-my-account" }}
+                </a>
+              </li>
+              <li>
+                <a
+                  role="link"
+                  class="toolbar-manage-cookies"
+                  href="#"
+                  tabindex="0"
+                >
+                  <i
+                    class="fa-solid fa-wrench margin-right-10"
+                    aria-hidden="true"
+                  ></i>
+                  {{ i18n "navbar-manage-cookies-label" }}
+                </a>
+              </li>
+            </ul>
+          </li>
         </ul>
       </div>
     </div>

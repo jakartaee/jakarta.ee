@@ -1,0 +1,36 @@
+{{#items}}
+<div class="row">
+  <div class="col-md-24">
+    <div class="news-content">
+        <div class="content-meta">
+            <div class="date">
+                <span class="month">{{#formatDate}}MMMM{{/formatDate}}</span>
+                <span class="day">{{#formatDate}}dd{{/formatDate}}</span>
+                <span class="year">{{#formatDate}}yyyy{{/formatDate}}</span>
+            </div>
+        </div>
+      <div class="content-inner">
+          <span class="flex-column" style="height: 100%;">
+            <h4 class="content-title">
+                <a href="{{ link }}" class="content-link">
+                    {{ title }}
+                </a>
+            </h4>
+            <p class="content-text">{{summary}}</p>
+            <p class="news-footer">
+                <a href="{{ link }}" class="content-link read-more">
+                    Continue reading
+                </a>
+                <span class="summary-icons">
+                    | 
+                    <a class="nav-item" href="https://www.facebook.com/sharer/sharer.php?u={{ link }}" title="Share on Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    <a class="nav-item" href="https://www.linkedin.com/shareArticle?mini=true&amp;url={{ link }}" title="Share on LinkedIn"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                    <a class="nav-item" href="https://twitter.com/home?status={{ link }}" title="Tweet this"><i class="fa fa-twitter"></i></a>
+                </span>
+            </p>
+          </span>
+      </div>
+    </div>
+  </div>
+</div>
+{{/items}}
