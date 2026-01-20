@@ -47,7 +47,7 @@
   other = "成员"
 
 [home-members-title]
-  other = "全球企业级Java生态的领导者，包括 Fujitsu、IBM、Oracle、Red Hat 和 Tomitribe ，正共同努力，推动 Java EE 和 Jakarta EE 对关键应用和负载向云端迁移的支持。"
+  other = "全球企业级Java生态的领导者，包括 Fujitsu、IBM、Oracle、Payara 和 Tomitribe ，正共同努力，推动 Java EE 和 Jakarta EE 对关键应用和负载向云端迁移的支持。"
 
 [home-members-explore]
   other = "浏览全部成员"
@@ -634,7 +634,7 @@ other = "注册"
  other = "塑造云原生、开源Java的未来"
 
 [pages-membership-text]
- other = "<p>全球企业级Java生态的领导者，包括 Fujitsu、IBM、Oracle、Red Hat 和 Tomitribe ，正共同努力，推动 Java EE 和 Jakarta EE 对关键应用和负载向云端迁移的支持。 </p><p>加入 Jakarta EE 工作组表明您不仅致力于 Jakarta EE 的发展和可持续性，而且还致力于确保一个治理良好、供应商中立的开源生态系统的增长和发展，这将使所有人受益。</p>"
+ other = "<p>全球企业级Java生态的领导者，包括 Fujitsu、IBM、Oracle、Payara 和 Tomitribe ，正共同努力，推动 Java EE 和 Jakarta EE 对关键应用和负载向云端迁移的支持。 </p><p>加入 Jakarta EE 工作组表明您不仅致力于 Jakarta EE 的发展和可持续性，而且还致力于确保一个治理良好、供应商中立的开源生态系统的增长和发展，这将使所有人受益。</p>"
 
 [pages-membership-benefits-title]
  other = "收益"
