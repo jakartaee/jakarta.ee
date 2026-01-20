@@ -17,7 +17,6 @@ date: 2020-02-19T15:00:25-08:00
 * Ivar Grimstad - PMC代表
 * Marcelo Ancelmo - ロンドンJavaコミュニティ - 選出されたParticipantメンバー代表、Abraham Marin-Perez - 代理
 * Werner Keil - 選出されたCommitterメンバー代表
-* Scott Stark - Red Hat - 選出されたEnterpriseメンバー代表、Scott Marlow - 代理
 * Zhai Luchao - Shandong Cvicse Middleware Co. - 選出されたEnterpriseメンバー代表
 
 {{< meeting-minutes-single "specification_committee" >}}
