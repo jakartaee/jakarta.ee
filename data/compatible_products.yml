@@ -257,11 +257,11 @@ sets:
           vendor: Beijing Thunisoft Information Technology Co.,Ltd
           image: '/images/compatible_products/tas-logo.png'
           image_width: 200
-          download: 'https://www.thunisoft.com/tasyyzjj/index.html'
+          download: 'https://www.thunisoft.com/tasyyzjj/index.jhtml'
           versions:
           - version: 3.1
             compatibility: 'https://www.thunisoft.com/tastckresults10/index.jhtml'
-            download_url: 'https://www.thunisoft.com/tasyyzjj/index.html'
+            download_url: 'https://www.thunisoft.com/tasyyzjj/index.jhtml'
         - name: TongWeb Application Server
           vendor: Beijing TongTech Co., Ltd.
           image: '/images/compatible_products/tongweb.svg'
@@ -658,11 +658,11 @@ sets:
         vendor: Beijing Thunisoft Information Technology Co.,Ltd
         image: '/images/compatible_products/tas-logo.png'
         image_width: 200
-        download: 'https://www.thunisoft.com/tasyyzjj/index.html'
+        download: 'https://www.thunisoft.com/tasyyzjj/index.jhtml'
         versions:
         - version: 3.0
           compatibility: 'https://www.thunisoft.com/tastckresults91/index.jhtml'
-          download_url: 'https://www.thunisoft.com/tasyyzjj/index.html'
+          download_url: 'https://www.thunisoft.com/tasyyzjj/index.jhtml'
       - name: TongWeb Application Server
         vendor: Beijing TongTech Co., Ltd.
         image: '/images/compatible_products/tongweb.svg'
@@ -1053,11 +1053,11 @@ sets:
         vendor: Beijing Thunisoft Information Technology Co.,Ltd
         image: '/images/compatible_products/tas-logo.png'
         image_width: 200
-        download: 'https://www.thunisoft.com/tasyyzjj/index.html'
+        download: 'https://www.thunisoft.com/tasyyzjj/index.jhtml'
         versions:
         - version: 2.8
           compatibility: 'https://www.thunisoft.com/tastckresults/index.jhtml'
-          download_url: 'https://www.thunisoft.com/tasyyzjj/index.html'
+          download_url: 'https://www.thunisoft.com/tasyyzjj/index.jhtml'
 
       - name: Oracle WebLogic Server
         vendor: Oracle Corporation
