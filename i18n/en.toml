@@ -72,7 +72,7 @@ other = "Featured"
 other = "Members"
 
 [home-members-title]
-other = "Working together, the world’s enterprise Java ecosystem leaders, including Fujitsu, IBM, Oracle, Red Hat, and Tomitribe, are advancing Java EE and Jakarta EE to support moving mission-critical applications and workloads to the cloud."
+other = "Working together, the world’s enterprise Java ecosystem leaders, including Fujitsu, IBM, Oracle, Payara, and Tomitribe, are advancing Java EE and Jakarta EE to support moving mission-critical applications and workloads to the cloud."
 
 [home-members-explore]
 other = "Explore All Members"
@@ -243,7 +243,7 @@ other = "Person smiling"
 other = "Join us"
 
 [home-join-us-paragraph]
-other = "Join leaders like **Fujitsu**, **IBM**, **Oracle**, **Red Hat**, and **Tomitribe** in driving the evolution of Jakarta EE and building a vendor-neutral, cloud-ready Java ecosystem."
+other = "Join leaders like **Fujitsu**, **IBM**, **Oracle**, **Payara**, and **Tomitribe** in driving the evolution of Jakarta EE and building a vendor-neutral, cloud-ready Java ecosystem."
 
 [home-join-us-get-involved]
 other = "Get involved"
@@ -276,7 +276,7 @@ other = "View Jakarta EE 11 specifications"
 other = "Members"
 
 [home-members-paragraph]
-other = "Enterprise Java leaders—**Fujitsu**, **IBM**, **Oracle**, **Red Hat**, and **Tomitribe**—are advancing Java EE \n and Jakarta EE to support moving mission-critical applications and workloads to the cloud."
+other = "Enterprise Java leaders—**Fujitsu**, **IBM**, **Oracle**, **Payara**, and **Tomitribe**—are advancing Java EE \n and Jakarta EE to support moving mission-critical applications and workloads to the cloud."
 
 [home-members-companies-aria]
 other = "Jakarta EE member companies"
@@ -1136,7 +1136,7 @@ other = "Find Videos Guides, Courses, and Documentation to help you get started 
 other = "Shape the future of Cloud Native, Open Source Java"
 
 [pages-membership-text]
-other = "<p>Working together, the world’s Java ecosystem leaders, including Fujitsu, IBM, Oracle, Red Hat, and Tomitribe, are advancing Java EE and Jakarta EE to support moving mission-critical applications and workloads to the cloud. </p><p>Joining the Jakarta EE Working Group demonstrates your commitment not only to the evolution and sustainability of Jakarta EE, but also to ensuring the growth and development of a well-governed, vendor-neutral open source ecosystem which benefits all. </p>"
+other = "<p>Working together, the world’s Java ecosystem leaders, including Fujitsu, IBM, Oracle, Payara, and Tomitribe, are advancing Java EE and Jakarta EE to support moving mission-critical applications and workloads to the cloud. </p><p>Joining the Jakarta EE Working Group demonstrates your commitment not only to the evolution and sustainability of Jakarta EE, but also to ensuring the growth and development of a well-governed, vendor-neutral open source ecosystem which benefits all. </p>"
 
 [pages-membership-join-cta]
 other = "My Organisation is <br> Ready to Join Now"
