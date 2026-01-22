@@ -25,12 +25,6 @@ categories:
         picture: /images/testimonials/jesse-mcconnell.jpg
         link: ""
         text: Jakarta EE's specifications are fundamental to the core Java experience. Webtide LLC, through its developers of Eclipse Jetty, has contributed to many specifications since their inception and is pleased to continue doing so as a part of Jakarta EE.
-      - company: VP of Red Hat Software Engineering
-        name: Mark Little
-        logo: /images/members/jakarta-member-redhat.svg
-        picture: /images/silhouette.jpg
-        link: ""
-        text: Red Hat reaffirms its support for the development of Jakarta EE. We look forward to working with the Eclipse Foundation and the broader Java community to align efforts to drive Enterprise Java forward. The breadth of participation in combination with community governance will help accelerate the evolution of Jakarta EE. We believe that Jakarta EE represents one of the most significant events to have happened to the open source enterprise Java ecosystem since OpenJDK was released.
       - company: Founder and Director of Payara® Services, LTD and the Payara Foundation
         name: Stephen Millidge
         logo: /images/members/jakarta-member-payara.svg
