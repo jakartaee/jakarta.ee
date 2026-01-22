@@ -10,9 +10,9 @@ The focus of this committee is on marketing, branding and community awareness an
 ### Committee Members
 
 * Kenji Kazumura - Fujitsu, Yuichi Kusano - alternate
-* Neil Patterson (**chair**) - IBM
+* Neil Patterson - IBM, Emily Jiang - alternate
 * Ed Bratt - Oracle
-* Dominika Tasarz - Payara, Stallone Anandan - alternate
+* Dominika Tasarz (**chair**) - Payara, Stallone Anandan - alternate
 * Jonathan Gallimore - Tomitribe, Cesar Hernandez - alternate
 * Eric (QingYu) Meng - Primeton - Elected Enterprise Representative
 * Jadon Ortlepp - Omnifish OU - Participant Representative
