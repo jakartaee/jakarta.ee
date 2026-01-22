@@ -10,9 +10,9 @@ date: 2020-01-05T15:50:25-04:00
 ### 委员会成员
 
 * Kenji Kazumura - Fujitsu, Yuichi Kusano - alternate
-* Neil Patterson (**chair**) - IBM
+* Neil Patterson - IBM, Emily Jiang - alternate
 * Ed Bratt - Oracle, Melissa Jacobus - alternate
-* Dominika Tasarz - Payara, Jadon Ortlepp - alternate
+* Dominika Tasarz (**chair**) - Payara, Jadon Ortlepp - alternate
 * Jonathan Gallimore - Tomitribe, Cesar Hernandez - alternate
 * Eric (QingYu) Meng - Primeton - Elected Enterprise Representative
 * Sonja Gu - Microsoft - Elected Enterprise Representative
