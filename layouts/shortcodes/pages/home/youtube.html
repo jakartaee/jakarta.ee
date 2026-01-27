@@ -1,0 +1,85 @@
+<!--
+ Copyright (c) 2025 Eclipse Foundation AISBL
+
+ This program and the accompanying materials are made
+ available under the terms of the Eclipse Public License 2.0
+ which is available at https://www.eclipse.org/legal/epl-2.0/
+
+ SPDX-License-Identifier: EPL-2.0
+-->
+
+<!-- See us on youtube section -->
+<section
+  id="youtube"
+  class="youtube row padding-y-60"
+  aria-labelledby="youtube-heading"
+>
+  <div class="container">
+    <div class="rounded-medium bg-blue-image-4 padding-30 md:padding-60">
+      <div
+        class="grid md:grid-cols-2 gap-y-line-4 md:gap-x-line-4 align-items-center margin-x-auto max-w-80"
+      >
+        <div class="text-center">
+          <h2
+            id="youtube-heading"
+            class="text-primary featured-heading margin-top-10"
+          >
+            {{ i18n "home-youtube-heading" }}
+          </h2>
+          <a
+            href="https://www.youtube.com/@JakartaEE"
+            class="btn btn-secondary"
+            aria-label="{{ i18n "home-youtube-subscribe-aria" }}"
+            target="_blank"
+            rel="noopener noreferrer"
+            >{{ i18n "home-youtube-subscribe" }}</a
+          >
+        </div>
+        <p class="text-primary font-light">
+          {{ i18n "home-youtube-paragraph" | markdownify }}
+        </p>
+      </div>
+
+      <div class="banner d-flex justify-content-center margin-top-60">
+        <div class="left hidden-xs hidden-sm">
+          <img
+            src="/images/home/youtube/left.webp"
+            class="rounded-medium"
+            alt="{{ i18n "home-youtube-alt-left" }}"
+          />
+        </div>
+        <div
+          class="center d-flex flex-column justify-content-between align-items-center bg-primary-royal-blue dark rounded-medium padding-30 text-center"
+        >
+          <img
+            src="/images/home/youtube/laptop.webp"
+            width="220"
+            alt="{{ i18n "home-youtube-alt-laptop" }}"
+          />
+          <a
+            href="https://www.youtube.com/@JakartaEE"
+            aria-label="{{ i18n "home-youtube-play-aria" }}"
+            role="button"
+          >
+            <img
+              src="/images/home/youtube/play.svg"
+              width="80"
+              alt=""
+              aria-hidden="true"
+            />
+          </a>
+          <h3 class="h4 uppercase font-semibold font-italic">
+            {{ i18n "home-youtube-video-title" }}
+          </h3>
+        </div>
+        <div class="right hidden-xs hidden-sm">
+          <img
+            src="/images/home/youtube/right.webp"
+            class="rounded-medium"
+            alt="{{ i18n "home-youtube-alt-right" }}"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

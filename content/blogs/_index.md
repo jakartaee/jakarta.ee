@@ -12,4 +12,4 @@ layout: "single"
 
 {{< solstice_rss_blog_list urls="/blogs/jakartablogs.xml,/blogs/index.xml" template-id="mustache-blogs-page">}}
 
-{{< mustache_js template-id="mustache-blogs-page" path="/js/templates/blogs-page.mustache">}}
+{{< mustache_js template-id="mustache-blogs-page" path="/js/v2/templates/blogs-page.mustache">}}

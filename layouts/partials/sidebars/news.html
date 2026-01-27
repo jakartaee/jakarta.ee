@@ -1,6 +1,6 @@
 {{ $id := "news-list-sidebar" }}
 {{ $templateId := "custom-announcement-template-sidebar" }}
-{{ $templatePath := "/js/templates/news-sidebar.mustache" }}
+{{ $templatePath := "/js/v2/templates/news-sidebar.mustache" }}
 {{ if not (in (.Page.Scratch.Get "news-container-ids") $id) }}
   {{ .Page.Scratch.Add "news-container-ids" (slice $id) }}
 {{ end }}

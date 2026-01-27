@@ -1,17 +1,22 @@
-<section class="{{- .Params.footer_section_socials_class | default .Site.Params.footer_section_socials_class | default "col-sm-6 hidden-print"}}" id="footer-socials">
-  <h2 class="section-title"><img class="img-responsive" src={{ absURL "/images/jakarta/jakarta-ee-logo-white.svg" }} alt="Jakarta EE logo"></h2>
-  <ul class="list-inline margin-top-20">
-    {{- range .Site.Params.socials }}
+<!--
+ Copyright (c) 2021 Eclipse Foundation AISBL
+
+ This program and the accompanying materials are made
+ available under the terms of the Eclipse Public License 2.0
+ which is available at https://www.eclipse.org/legal/epl-2.0/
+
+ SPDX-License-Identifier: EPL-2.0
+-->
+
+<ul class="list-inline">
+  {{- range .Site.Params.socials }}
     <li>
       <a class="social-icon" href="{{ .url }}">
-        <i class="{{ .icon }}" aria-label="{{ i18n " footer-sr-social-account" .name }}"></i>
+        <i
+          class="{{ .icon }}"
+          aria-label="{{ i18n "footer-sr-social-account" .name }}"
+        ></i>
       </a>
     </li>
-    {{- end }}
-  </ul>
-  <div class="margin-top-30 text-center">
-    <a href="https://www.netlify.com" rel="noreferrer" target="_blank">
-      <img alt="Deploys by Netlify" loading="lazy" width="120" height="60" decoding="async" data-nimg="1" style="color: transparent;" src="/images/netlify-badge-light.svg" />
-    </a>
-  </div>
-</section>
+  {{- end }}
+</ul>

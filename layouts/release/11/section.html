@@ -1,4 +1,3 @@
-
 {{ define "header"}}
   <a class="sr-only" href="#content">{{ i18n "jakarta-ee-version-10-section-skip-to-main-content" }}</a>
   {{ partial "toolbar.html" . }}
@@ -13,7 +12,7 @@
       <video autoplay muted loop id="jakartaee-9-video-background">
         <source src="/release/9/videos/header-video.mp4" type="video/mp4">
       </video>
-      <div class="jumbotron featured-jumbotron padding-bottom-0">
+      <div class="jumbotron featured-jumbotron featured-jumbotron-dark padding-bottom-0">
         <div class="container header-release-10-container">
           <div class="row jakartaee-9-flex-grow-container">
             <div class="col-md-10">
@@ -36,7 +35,7 @@
                 </div>
               </div>
               <div class="additional-links">
-                <a class="uppercase" href="{{ relLangURL "/release" }}">View All Releases</a>
+                <a class="uppercase vertical-align" href="{{ relLangURL "/release" }}">View All Releases</a>
               </div>
             </div>
             <div class="col-md-13 col-md-offset-1 hidden-xs hidden-sm">
@@ -52,5 +51,5 @@
 {{ end }}
 
 {{ define "footer-suffix"}}
-  <script src="{{ "/js/release-page-cards.js" | absURL }}"></script>
+  <script src="{{ "/js/release-page-cards.v2.js" | absURL }}"></script>
 {{ end }}

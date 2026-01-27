@@ -1,0 +1,37 @@
+<div class="eclipsefdn-event-list-teaser">
+{{#events}}
+  <div class="card glow event-card">
+    <div class="image">
+      {{#image}}
+        <a href="{{image}}">
+          <img src="{{image}}" alt="{{title}}">
+        </a>
+      {{/image}}
+
+      {{^image}}
+        <img src="/images/events/event-placeholder.webp" alt="{{title}}">
+      {{/image}}
+    </div>
+    <div class="content">
+      {{#date}}
+        <p class="eclipsefdn-event-list-teaser-date">{{ date }}{{#end-date}} - {{ end-date }}{{/end-date}}</p>
+      {{/date}}
+      {{#infoLink}}
+        <h3><a href="{{infoLink}}">{{ title }}</a></h3>
+      {{/infoLink}}
+
+      {{^infoLink}}
+        <h4>{{ title }}</h4>
+      {{/infoLink}}
+
+      {{#description}}
+        <p class="eclipsefdn-event-list-teaser-description">{{ description }}</p>
+      {{/description}}
+
+      {{#registration}}
+        <a class="btn btn-primary margin-top-10" href="{{registration}}">Register</a>
+      {{/registration}}
+    </div>
+  </div>
+{{/events}}
+</div>

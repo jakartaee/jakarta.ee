@@ -1,0 +1,32 @@
+.rotating-text-container {
+  display: inline-block;
+  vertical-align: bottom;
+  overflow: hidden;
+  position: relative;
+  transition: width 0.6s cubic-bezier(0.18, 0.89, 0.3, 1.03);
+}
+
+.rotating-text-items {
+  &:has(+ .rotating-text) {
+    display: none;
+  }
+
+  span {
+    display: none;
+  }
+
+  span:first-child {
+    display: inline;
+  }
+}
+
+.rotating-text {
+  display: inline;
+  white-space: nowrap;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transition:
+    transform 0.6s cubic-bezier(0.18, 0.89, 0.3, 1.03),
+    opacity 0.6s ease;
+}

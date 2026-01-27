@@ -1,0 +1,506 @@
+/**
+ * Copyright (c) 2021 Eclipse Foundation AISBL
+ *
+ * This program and the accompanying materials are made
+ * available under the terms of the Eclipse Public License 2.0
+ * which is available at https://www.eclipse.org/legal/epl-2.0/
+ *
+ * SPDX-License-Identifier: EPL-2.0
+ */
+
+.navbar-wrapper {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+
+  .navbar-header {
+    position: relative;
+
+    .navbar-toggle {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 0;
+    }
+  }
+}
+
+// Desktop styles
+@media (min-width: @screen-lg-min) {
+  .navbar-wrapper {
+    margin-top: @header-toolbar-height;
+
+    &:has(+ header .jumbotron) {
+      margin-bottom: calc(-@main-menu-height - @header-toolbar-height);
+
+      & + header .jumbotron {
+        padding-top: calc(
+          @main-menu-height + @header-toolbar-height + @jumbotron-padding-top
+        );
+      }
+    }
+
+    transition: all 0.2s ease;
+
+    &:not(.top),
+    &:has(.main-menu .menu-item.open),
+    &:has(+ header .jumbotron.featured-jumbotron-dark) {
+      background-color: #ffffff;
+      box-shadow: 0 6px 30px rgba(0, 0, 0, 0.155);
+    }
+  }
+
+  .dropdown:not(.open):has(.mega-menu) .mega-menu {
+    display: none;
+  }
+
+  // Desktop Mega Menu
+  .mega-menu {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+    .mega-menu-bottom-link {
+      text-align: center;
+      padding: 3rem;
+    }
+
+    .mega-menu-dropdown {
+      width: 100%;
+      border-radius: 0 0 @border-radius-medium @border-radius-medium;
+      padding: 6rem;
+      padding-top: 5rem;
+      background-color: #ffffff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+      &:has(.mega-menu-bottom-link) {
+        padding-bottom: 0rem;
+      }
+    }
+
+    .mega-menu-content {
+      display: grid;
+      grid-auto-flow: column;
+      grid-auto-columns: 1fr;
+      justify-content: center;
+      width: max-content;
+      gap: 10rem;
+
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .mega-menu-column {
+      position: relative;
+      display: flex;
+      gap: 1.6rem;
+
+      .mega-menu-icon {
+        color: @brand-primary-royal-blue;
+      }
+
+      .mega-menu-column-content {
+        padding-top: 1.2rem;
+      }
+
+      &:last-child {
+        &::after {
+          display: none;
+        }
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        // this 5rem are tied to the gap of the .mega-menu-content so we want to position in the middle of that gap
+        right: -5rem;
+        width: 1px;
+        height: 100%;
+        background-color: @brand-primary;
+      }
+
+      .mega-menu-title {
+        font-size: 1.8rem;
+        font-weight: 600;
+        color: @brand-primary-royal-blue;
+        margin-bottom: 2rem;
+        margin-top: 0;
+        white-space: nowrap;
+      }
+
+      .mega-menu-links {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        li {
+          margin-bottom: 1rem;
+
+          a {
+            color: @brand-primary-dark;
+            text-decoration: none;
+            font-size: 1.4rem;
+            white-space: nowrap;
+
+            &:hover {
+              color: @brand-primary-orange;
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .main-menu {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    gap: 3rem;
+    color: @brand-primary-dark;
+    min-height: @main-menu-height;
+
+    .dropdown.mega-dropdown {
+      position: unset;
+    }
+
+    .dropdown-menu {
+      border-radius: 0 0 @border-radius-medium @border-radius-medium;
+      overflow: hidden;
+      margin: 0;
+      padding: 4rem 0;
+
+      & > .active a {
+        background-color: transparent;
+      }
+
+      & > li > a {
+        padding: 0.3rem 5rem;
+
+        &:hover,
+        &:focus {
+          background-color: transparent;
+          text-decoration: underline;
+          color: @brand-primary-orange;
+        }
+      }
+    }
+
+    .menu-left,
+    .menu-right {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      flex-grow: 1;
+      flex-basis: 0;
+    }
+
+    .menu-left {
+      justify-content: flex-start;
+    }
+
+    .menu-right {
+      justify-content: flex-end;
+    }
+
+    .menu-item {
+      .font-normal;
+
+      a {
+        .link-unstyled();
+      }
+
+      & > a {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        gap: 0.8rem;
+        border-top: 0.4rem solid transparent;
+        border-bottom: 0.4rem solid transparent;
+        padding-top: 1.6rem;
+      }
+
+      &.open,
+      &.active,
+      &:focus,
+      &:focus-visible,
+      &:focus-within,
+      &:hover {
+        & > a {
+          border-bottom-color: @brand-primary-orange;
+        }
+      }
+    }
+
+    .navigation-bar {
+      height: 100% !important;
+      display: flex !important;
+
+      & > ul {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        gap: 2.5rem;
+        list-style: none;
+
+        & > li {
+          height: 100%;
+        }
+      }
+    }
+  }
+}
+
+// Mobile styles
+@media (max-width: @screen-md-max) {
+  .navbar-wrapper {
+    background-color: #ffffff;
+  }
+
+  .navbar-header {
+    float: none;
+  }
+
+  .navbar-toggle {
+    margin: 0;
+    display: block;
+
+    .icon-bar {
+      background: @brand-primary-dark-purple;
+      height: 2px;
+    }
+  }
+
+  .main-menu {
+    color: @brand-primary-dark-purple;
+
+    // Hide default Bootstrap navbar and desktop menus
+    .navbar-collapse,
+    .menu-item .mega-menu,
+    .menu-item .dropdown-menu,
+    .menu-item.mega-dropdown.open .mega-menu,
+    .menu-item.dropdown.open .dropdown-menu {
+      display: none !important;
+    }
+
+    // Shared styles for mobile pages
+    .mobile-main-menu-page,
+    .mega-menu-mobile-page {
+      position: fixed;
+      top: 0;
+      left: 100%;
+      width: 100%;
+      height: 100vh;
+      background: #ffffff;
+      overflow-y: auto;
+      -webkit-overflow-scrolling: touch;
+      transition: left 0.2s ease-in-out;
+
+      &.active {
+        left: 0;
+      }
+    }
+
+    // Main mobile menu page
+    .mobile-main-menu-page {
+      z-index: 9999;
+      display: flex;
+      flex-direction: column;
+
+      .mobile-menu-content {
+        flex: 1;
+      }
+
+      .mobile-menu-footer {
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+        justify-content: center;
+
+        .call-for-action-items {
+          display: flex;
+          gap: 1rem;
+        }
+      }
+
+      .mobile-menu-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 2rem;
+        position: sticky;
+        top: 0;
+        background: #ffffff;
+        z-index: 10;
+
+        .mobile-menu-logo img {
+          max-height: 4rem;
+        }
+
+        .mobile-menu-close {
+          background: none;
+          border: none;
+          padding: 0.8rem;
+          cursor: pointer;
+          color: @brand-primary-royal-blue;
+          font-size: 2rem;
+        }
+      }
+
+      .mobile-menu-items {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        & > .menu-item > a {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 1rem 2rem;
+          padding-right: calc(2rem + 0.8rem);
+          color: @brand-primary;
+          text-decoration: none;
+          font-size: 1.8rem;
+          font-weight: 600;
+
+          .fa-arrow-right {
+            color: @brand-primary-royal-blue;
+            font-size: 1.6rem;
+          }
+        }
+      }
+    }
+
+    // Mobile subpage (mega menu and dropdowns)
+    .mega-menu-mobile-page {
+      z-index: 10000;
+      display: flex;
+      flex-direction: column;
+
+      .mega-menu-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 2rem;
+        position: sticky;
+        top: 0;
+        background: #ffffff;
+        z-index: 10;
+
+        .mega-menu-back-to-main,
+        .mega-menu-close {
+          background: none;
+          border: none;
+          padding: 0.8rem;
+          cursor: pointer;
+          color: @brand-primary-royal-blue;
+          font-size: 2rem;
+        }
+      }
+
+      .mega-menu-mobile-content {
+        flex: 1;
+      }
+
+      .mega-menu-mobile-footer {
+        padding: 2rem;
+      }
+
+      .mega-menu-main-title {
+        font-size: 2.7rem;
+        padding: 0 2rem;
+        margin-bottom: 2rem;
+        font-weight: 600;
+        color: @brand-primary;
+      }
+
+      .mega-menu-items {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        padding: 0 2rem;
+      }
+
+      .mega-menu-column {
+        padding: 0;
+        border-bottom: 1px solid #e0e0e0;
+
+        &::after {
+          display: none;
+        }
+
+        .mega-menu-icon {
+          display: none;
+        }
+
+        // Collapsible title (for mega menu columns with children)
+        .mega-menu-title {
+          font-size: 1.8rem;
+          font-weight: 600;
+          color: @brand-primary-royal-blue;
+          margin: 0;
+          padding: 0.7rem 0;
+          padding-right: 0.8rem;
+          white-space: normal;
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          user-select: none;
+
+          .mega-menu-collapse-icon {
+            transition: transform 0.2s ease;
+          }
+
+          &.collapsed .mega-menu-collapse-icon {
+            transform: rotate(-90deg);
+          }
+        }
+
+        .mega-menu-links {
+          list-style: none;
+          padding: 0;
+          margin: 0;
+          overflow: hidden;
+          transition: height 0.35s ease;
+
+          // Bootstrap collapse classes
+          &.collapse {
+            display: block;
+            height: 0;
+          }
+
+          &.collapse.in {
+            height: auto;
+          }
+
+          &.collapsing {
+            position: relative;
+            height: 0;
+          }
+
+          li a {
+            color: @brand-primary-royal-blue;
+            text-decoration: none;
+            padding: 0.6rem 0;
+            padding-right: 0.8rem;
+            font-size: 1.6rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .fa-arrow-right {
+              color: @brand-primary-royal-blue;
+              font-size: 1.4rem;
+              transform: rotate(-45deg);
+            }
+          }
+        }
+      }
+    }
+  }
+}

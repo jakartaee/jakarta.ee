@@ -1,4 +1,4 @@
-<!-- 
+<!--
   Copyright (c) 2018 Eclipse Foundation, Inc.
 
   This program and the accompanying materials are made available under the
@@ -11,42 +11,59 @@
   SPDX-License-Identifier: EPL-2.0
 -->
 
+{{ $layout := .Params.jumbotron_layout_style | default "bootstrap" }}
 {{ if isset .Page.Params "headline" }}
-<div class="jumbotron featured-jumbotron featured-jumbotron-default margin-bottom-0">
-  <div class="container">
-    <div class="row">
-      <div class="{{- .Params.jumbotron_class | default .Site.Params.jumbotron_class | default "col-md-20 col-md-offset-2 col-sm-18 col-sm-offset-3"}}">
-        <h1>{{ .Page.Params.headline | safeHTML }}</h1>
-         {{ if isset .Page.Params "subtitle" }}
-        <h2>{{ .Page.Params.subtitle  | safeHTML }}</h2>
-         {{end}} 
-         
-         {{ if isset .Page.Params "tagline" }}
+  <div
+    class="jumbotron featured-jumbotron featured-jumbotron-default margin-bottom-0"
+  >
+    {{ if eq $layout "bootstrap" }}
+      <div class="container">
         <div class="row">
-          <div class="{{- .Params.jumbotron_tagline_class | default .Site.Params.jumbotron_tagline_class | default "col-sm-18 col-sm-offset-3"}}">
-            <p>{{ .Page.Params.tagline | safeHTML }}</p>
+          <div
+            class="{{- .Params.jumbotron_class | default .Site.Params.jumbotron_class | default "col-md-20 col-md-offset-2 col-sm-18 col-sm-offset-3" }}"
+          >
+            {{ partial "jumbotron_headline.html" (dict "context" .) }}
+            {{ if isset .Page.Params "tagline" }}
+              {{ partial "jumbotron_tagline.html" (dict "context" . "layout" $layout) }}
+            {{ end }}
+            {{ if and (isset .Page.Params "links") (eq (.Params.links_position | default "after_custom_jumbotron") "before_custom_jumbotron") }}
+              {{ partial "jumbotron_links.html" (dict "context" .) }}
+            {{ end }}
+            {{ if or (isset .Page.Params "custom_jumbotron") (isset .Page.Params "custom_jumbotron_partial") }}
+              {{ partial "jumbotron_custom.html" (dict "context" . "layout" $layout) }}
+            {{ end }}
+            {{ if and (isset .Page.Params "links") (ne (.Params.links_position | default "after_custom_jumbotron") "before_custom_jumbotron") }}
+              {{ partial "jumbotron_links.html" (dict "context" .) }}
+            {{ end }}
           </div>
         </div>
-        {{end}} 
-
-         {{ if isset .Page.Params "custom_jumbotron" }}
-        <div class="row">
-          <div class="{{- .Params.custom_jumbotron_class | default .Site.Params.custom_jumbotron_class | default "col-sm-18 col-sm-offset-3"}}">
-            {{ .Page.Params.custom_jumbotron | safeHTML }}
-          </div>
-        </div>
-        {{end}} 
-
-        {{ if isset .Page.Params "links" }}
-        {{- with .Params.jumbotron_btn_class | default .Site.Params.jumbotron_btn_class | default "btn btn-primary"}}{{ $.Scratch.Set "jumbotron_btn" . }}{{end}}
-        <ul class="list-inline">
-          {{range $key,$val := index .Page.Params.links}}
-            <li><a class="{{ $.Scratch.Get "jumbotron_btn" }}" href="{{ (index $val 0).href}}">{{ (index $val 1).text}}</a></li>
-          {{end}} 
-        </ul>
-         {{end}} 
       </div>
-    </div>
+    {{ else if eq $layout "full-height" }}
+      <div
+        class="{{- .Params.jumbotron_class | default .Site.Params.jumbotron_class | default "col-md-20 col-md-offset-2 col-sm-18 col-sm-offset-3" }} jumbotron-h-screen"
+      >
+        <div class="top">
+          <div class="container">
+            <div class="row">
+              {{ partial "jumbotron_headline.html" (dict "context" .) }}
+              {{ if isset .Page.Params "tagline" }}
+                {{ partial "jumbotron_tagline.html" (dict "context" . "layout" $layout) }}
+              {{ end }}
+              {{ if and (isset .Page.Params "links") (eq (.Params.links_position | default "after_custom_jumbotron") "before_custom_jumbotron") }}
+                {{ partial "jumbotron_links.html" (dict "context" .) }}
+              {{ end }}
+            </div>
+          </div>
+        </div>
+        <div class="bottom">
+          {{ if or (isset .Page.Params "custom_jumbotron") (isset .Page.Params "custom_jumbotron_partial") }}
+            {{ partial "jumbotron_custom.html" (dict "context" . "layout" $layout) }}
+          {{ end }}
+          {{ if and (isset .Page.Params "links") (ne (.Params.links_position | default "after_custom_jumbotron") "before_custom_jumbotron") }}
+            {{ partial "jumbotron_links.html" (dict "context" .) }}
+          {{ end }}
+        </div>
+      </div>
+    {{ end }}
   </div>
-</div>
 {{ end }}

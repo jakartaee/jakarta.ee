@@ -8,7 +8,7 @@ hide_sidebar: true
 hide_page_title: true
 draft: false
 layout: "single"
-container: "container margin-top-60"
+container: "container"
 ---
 
 {{< pages/compatibility/navigation active="latest" >}}

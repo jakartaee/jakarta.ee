@@ -20,7 +20,7 @@ section: "events"
       paginate="true"
       upcoming="true"
       templateId="custom-events-template"
-      templatePath="/js/templates/events-page.mustache" >}}
+      templatePath="/js/v2/templates/events-page.mustache" >}}
 
 {{< newsroom/events
       id="events_archive"
@@ -35,4 +35,4 @@ section: "events"
       upcoming="false"
       paginate="true"
       templateId="custom-events-template"
-      templatePath="/js/templates/events-page.mustache" >}}
+      templatePath="/js/v2/templates/events-page.mustache" >}}

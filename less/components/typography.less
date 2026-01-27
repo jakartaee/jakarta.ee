@@ -1,90 +1,142 @@
+/**
+ * Copyright (c) 2021 Eclipse Foundation AISBL
+ *
+ * This program and the accompanying materials are made
+ * available under the terms of the Eclipse Public License 2.0
+ * which is available at https://www.eclipse.org/legal/epl-2.0/
+ *
+ * SPDX-License-Identifier: EPL-2.0
+ */
+
+// ========================================
+// Utility Classes
+// ========================================
+
+.font-medium {
+  font-weight: 500;
+}
+
+.font-semibold {
+  font-weight: 600;
+}
+
+.font-normal {
+  font-weight: 400;
+}
+
+.text-regular {
+  font-weight: 300;
+}
+
+.word-break {
+  word-spacing: 100vw;
+}
+
+.text-secondary {
+  color: @brand-primary-orange;
+  a {
+    color: @brand-primary-orange;
+    &:hover {
+      color: @brand-primary-orange;
+    }
+  }
+}
+
+.text-quaternary,
+.dark .text-quaternary {
+  color: @brand-secondary-yellow;
+}
+
+.text-primary-orange,
+.dark .text-primary-orange {
+  color: @brand-primary-orange;
+}
+
+// ========================================
+// Component-Specific Classes
+// ========================================
+
+// Heading overrides
+h1,
+.h1 {
+  font-size: 3.8rem;
+}
+
+h2,
+.h2 {
+  font-size: 2.8rem;
+}
+
+h3,
+.h3 {
+  font-size: 2.4rem;
+}
+
+h4,
+.h4 {
+  font-size: 2rem;
+}
+
+h5,
+.h5 {
+  font-size: 1.8rem;
+}
+
+h6,
+.h6 {
+  font-size: 1.4rem;
+}
+
 .btn.btn-lg {
-    font-size: 16px;
+  font-size: 16px;
 }
 
 .featured-text {
   font-family: @font-family-heading;
-  font-weight: 700;
+  .font-normal;
 }
 
-.big-text, .big-text-secondary {
-    .featured-text;
+.featured-heading {
+  .font-medium;
+  font-size: 4.5rem;
+}
+
+.big-text,
+.big-text-secondary {
+  .featured-text;
+  .font-semibold;
+  color: @brand-primary;
+  a {
     color: @brand-primary;
-    a {
-        color: @brand-primary;
-        &:hover {
-            color: darken(@brand-primary, 15%);
-        }
-        &.white {
-            color:@white;
-            &:hover {
-                color: @white;
-            }
-        }
+    &:hover {
+      color: darken(@brand-primary, 15%);
     }
-    &.italic {
-        font-style: italic;
+    &.white {
+      color: @white;
+      &:hover {
+        color: @white;
+      }
     }
-    &.uppercase {
-        text-transform: uppercase;
-    }
+  }
+  &.italic {
+    font-style: italic;
+  }
+  &.uppercase {
+    text-transform: uppercase;
+  }
 }
 
 .big-text-secondary {
-    font-style: italic;
-    text-transform: uppercase;
-    color: @brand-secondary;
-    a {
-        color: @brand-secondary;
-        &:hover {
-            color: darken(@brand-secondary, 15%);
-        }
-    }
-}
-
-.text-secondary {
-    color: @brand-secondary;
+  color: @brand-primary-orange;
+  a {
+    color: @brand-primary-orange;
     &:hover {
-        color: @brand-secondary;
+      color: darken(@brand-primary-orange, 15%);
     }
-    a {
-        color: @brand-secondary;
-        &:hover {
-            color: @brand-secondary;
-        }
-    }
-}
-
-main h3 {
-    font-size: 22px;
-    margin-top: 0;
+  }
 }
 
 .featured-text-sm {
   .big-text;
   font-size: 12px;
-}
-
-.word-break {
-    word-spacing: 100vw;
-}
-
-.fw-500 {
-  font-weight: 500;
-}
-
-.text-quaternary {
-  color: @brand-quaternary;
-}
-
-.dark .text-quaternary {
-  color: @brand-quaternary;
-}
-
-.text-semibold {
-  font-weight: 600;
-}
-
-.text-medium {
-  font-weight: 500;
 }

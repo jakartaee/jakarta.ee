@@ -10,11 +10,29 @@ years:
     date: Jul 27-31
     upcoming: true
 
+  - name: Cluj Innovation Days + SKILLAB
+    url: https://clujinnovationdays.com
+    location: Cluj 🇷🇴
+    date: May 28-31
+    upcoming: true
+
+  - name: University of York (Guest Lecture)
+    url: https://www.york.ac.uk
+    location: York 🇬🇧
+    date: May 5
+    upcoming: true
+
   - name: Open Community Experience
     url: https://www.ocxconf.org
     location: Brussels 🇧🇪
     date: Apr 20-23
     upcoming: true
+
+  - name: IntelliJ IDEA Conf
+    url: https://lp.jetbrains.com/intellij-idea-conf-2026/
+    location: Paphos 🇨🇾 + 🌐
+    date: Mar 26-27
+    upcoming: true    
 
   - name: JavaOne
     url: https://www.oracle.com/javaone
@@ -46,29 +64,27 @@ years:
     date: Feb 18-20
     upcoming: true
 
-  - name: I Code Java
-    url: https://j-sa.co
+  - name: JakartaOne by Jozi-JUG
+    url: https://www.meetup.com/jozi-jug/events/312880317/
     location: Johannesburg 🇿🇦
-    date: Feb 10-11
+    date: Feb 11
     upcoming: true
 
   - name: Jfokus
     url: https://jfokus.se
     location: Stockholm 🇸🇪
     date: Feb 2-4
-    upcoming: true
 
   - name: FOSDEM
     url: https://fosdem.org/2026/
     location: Brussels 🇧🇪
-    date: Jan 20-Feb 1
-    upcoming: true
+    date: Jan 31-Feb 1
 
   - name: Valencia JUG
-    url: 
+    url: https://www.meetup.com/valenciajug/events/312774322/
     location: Valencia 🇪🇸
     date: Jan 20
-    upcoming: true
+    blog: https://www.agilejava.eu/2026/01/21/valencia-jug-2026/
 
 - year: 2025
   conferences:

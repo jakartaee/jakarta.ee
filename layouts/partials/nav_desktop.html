@@ -1,0 +1,88 @@
+<!--
+ Copyright (c) 2018 Eclipse Foundation AISBL
+
+ This program and the accompanying materials are made
+ available under the terms of the Eclipse Public License 2.0
+ which is available at https://www.eclipse.org/legal/epl-2.0/
+
+ SPDX-License-Identifier: EPL-2.0
+-->
+
+{{ $currentNode := . }}
+{{ range .Site.Menus.main }}
+  {{ if .HasChildren }}
+    {{ $megaMenu := false }}
+    {{ range .Children }}
+      {{ if .HasChildren }}
+        {{ $megaMenu = true }}
+      {{ end }}
+    {{ end }}
+    {{ if $megaMenu }}
+      <!-- Mega Menu (Multi-level) -->
+      <li class="menu-item dropdown mega-dropdown">
+        <a href="#" data-toggle="dropdown" class="dropdown-toggle">
+          {{ .Pre }}
+          <span>{{ .Name }}</span>
+          <i class="fa fa-angle-down fa-xs" aria-hidden="true"></i>
+        </a>
+        <div class="mega-menu">
+          <div class="mega-menu-dropdown">
+            <div class="mega-menu-content">
+              {{ range .Children }}
+                <div class="mega-menu-column">
+                  {{ with .Pre }}
+                    <div class="mega-menu-icon">
+                      {{- $svgPath := . -}}
+                      {{- $svgContent := readFile $svgPath -}}
+                      {{ $svgContent | safeHTML }}
+                    </div>
+                  {{ end }}
+                  <div class="mega-menu-column-content">
+                    <h3 class="mega-menu-title">
+                      {{ .Name }}
+                    </h3>
+                    {{ if .HasChildren }}
+                      <ul class="mega-menu-links">
+                        {{ range .Children }}
+                          <li>
+                            {{ partial "menu_link.html" (dict "url" .URL "name" .Name "context" $) }}
+                          </li>
+                        {{ end }}
+                      </ul>
+                    {{ end }}
+                  </div>
+                </div>
+              {{ end }}
+            </div>
+            {{ .Post }}
+          </div>
+        </div>
+      </li>
+    {{ else }}
+      <!-- Regular Dropdown (Single level) -->
+      <li class="menu-item dropdown">
+        <a href="#" data-toggle="dropdown" class="dropdown-toggle">
+          {{ .Pre }}
+          <span>{{ .Name }}</span>
+          <i class="fa fa-angle-down fa-xs" aria-hidden="true"></i>
+        </a>
+        <ul class="dropdown-menu">
+          {{ range .Children }}
+            <li
+              class="{{ if $currentNode.IsMenuCurrent "main" . }}
+                active
+              {{ end }}"
+            >
+              {{ partial "menu_link.html" (dict "url" .URL "name" .Name "context" $) }}
+            </li>
+          {{ end }}
+        </ul>
+      </li>
+    {{ end }}
+  {{ else }}
+    <li class="menu-item">
+      {{ $menuItemContent := printf "%s%s" (.Pre | default "") .Name }}
+      {{ partial "menu_link.html" (dict "url" .URL "name" ($menuItemContent | safeHTML) "context" $) }}
+    </li>
+  {{ end }}
+{{ end }}

@@ -47,7 +47,7 @@
   other = "Members"
 
 [home-members-title]
-  other = "Working together, the world’s enterprise Java ecosystem leaders, including Fujitsu, IBM, Oracle, Red Hat, and Tomitribe, are advancing Java EE and Jakarta EE to support moving mission-critical applications and workloads to the cloud."
+  other = "Working together, the world’s enterprise Java ecosystem leaders, including Fujitsu, IBM, Oracle, Payara, and Tomitribe, are advancing Java EE and Jakarta EE to support moving mission-critical applications and workloads to the cloud."
 
 [home-members-explore]
   other = "Explore All Members"
@@ -633,7 +633,7 @@ other = "Sign up now"
  other = "Shape the future of Cloud Native, Open Source Java"
 
 [pages-membership-text]
- other = "<p>Working together, the world’s Java ecosystem leaders, including Fujitsu, IBM, Oracle, Red Hat, and Tomitribe, are advancing Java EE and Jakarta EE to support moving mission-critical applications and workloads to the cloud. </p><p>Joining the Jakarta EE Working Group demonstrates your commitment not only to the evolution and sustainability of Jakarta EE, but also to ensuring the growth and development of a well-governed, vendor-neutral open source ecosystem which benefits all. </p>"
+ other = "<p>Working together, the world’s Java ecosystem leaders, including Fujitsu, IBM, Oracle, Payara, and Tomitribe, are advancing Java EE and Jakarta EE to support moving mission-critical applications and workloads to the cloud. </p><p>Joining the Jakarta EE Working Group demonstrates your commitment not only to the evolution and sustainability of Jakarta EE, but also to ensuring the growth and development of a well-governed, vendor-neutral open source ecosystem which benefits all. </p>"
 
 [pages-membership-benefits-title]
  other = "Benefits"
