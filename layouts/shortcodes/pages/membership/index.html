@@ -96,29 +96,22 @@
 {{ $lang := .Page.Lang }}
 {{ $langBase:=index .Site.Data $lang }}
 
-{{ $scratch := newScratch }}
-{{ range $langBase.testimonials.categories }}
-  {{ if .title }}
-    {{ $scratch.Set "category_title" (.title | urlize) }}
-    {{ $scratch.SetInMap "categories" (.title | urlize) . }}
-  {{ end }}
-  {{ range $index, $testimonial := .testimonials }}
-    {{ $category := dict "category" ($scratch.Get "category_title") }}
-    {{ $testimonial = merge . ($category) }}
-    {{ $scratch.SetInMap "testimonials" (.name | urlize) $testimonial }}
+{{ $allTestimonials := slice }}
+{{ range $categoryName, $categoryData := $langBase.testimonials.categories }}
+  {{ range $categoryData.testimonials }}
+    {{ $allTestimonials = $allTestimonials | append . }}
   {{ end }}
 {{ end }}
+{{ $allTestimonials = sort $allTestimonials "name" }}
 
-{{ $testimonials := $scratch.GetSortedMapValues "testimonials" }}
-
-{{ if $testimonials }}
+{{ if $allTestimonials }}
   <div
     class="owl-carousel owl-theme solstice-slider"
     data-slider-lg-count="1"
     data-slider-md-count="1"
     data-slider-sm-count="1"
   >
-    {{ range $testimonials }}
+    {{ range $allTestimonials }}
       <div class="container">
         <div class="row">
           <div class="col-sm-18 col-sm-offset-3">
@@ -135,7 +128,7 @@
                             class="img"
                             src="{{ .picture }}"
                             width="{{ .picture_width | default 60 }}"
-                            alt="{{ .name }}'s picture"
+                            alt="{{ .name }}"
                           />
                         </div>
                       {{ end }}

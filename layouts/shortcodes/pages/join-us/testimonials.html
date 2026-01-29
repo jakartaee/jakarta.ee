@@ -1,19 +1,19 @@
-<!--
- Copyright (c) 2025 Eclipse Foundation AISBL
-
- This program and the accompanying materials are made
- available under the terms of the Eclipse Public License 2.0
- which is available at https://www.eclipse.org/legal/epl-2.0/
-
- SPDX-License-Identifier: EPL-2.0
--->
 
 {{ $lang := .Page.Lang }}
 {{ $langBase:=index .Site.Data $lang }}
-{{ if $langBase.testimonials.categories.common.testimonials }}
+
+{{ $allTestimonials := slice }}
+{{ range $categoryName, $categoryData := $langBase.testimonials.categories }}
+  {{ range $categoryData.testimonials }}
+    {{ $allTestimonials = $allTestimonials | append . }}
+  {{ end }}
+{{ end }}
+{{ $allTestimonials = sort $allTestimonials "name" }}
+
+{{ if $allTestimonials }}
   <div class="featured-section-testimonials">
-    <div class="testimonial-container">
-      {{ range $langBase.testimonials.categories.common.testimonials }}
+    <div class="testimonial-container join-us-page-testimonials">
+      {{ range $allTestimonials }}
         <div class="testimonial-item">
           <div class="card glow">
             <div class="row">
@@ -24,7 +24,7 @@
                       class="img rounded-full"
                       src="{{ .picture }}"
                       width="{{ .picture_width | default 80 }}"
-                      alt="{{ .name }}'s picture"
+                      alt="{{ .name }}'s headshot"
                     />
                   </div>
                   <p class="margin-top-20">

@@ -68,6 +68,18 @@
   }
 }
 
+.md\:grid-cols-3 {
+  @media (min-width: @screen-md-min) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.sm\:grid-cols-3 {
+  @media (min-width: @screen-sm-min) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
 .gap-x-line-4 {
   gap: 6rem;
 
