@@ -10,19 +10,21 @@
 
 .header-wrapper {
   background-position: left;
-  .featured-jumbotron-default:not(:has(.jumbotron-h-screen)) {
-    min-height: 300px;
-    padding-bottom: 10rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    @media (min-width: @screen-sm-min) {
-      min-height: 400px;
-    }
-
+  .featured-jumbotron-default {
     .btn {
       min-width: unset;
+    }
+
+    &:not(:has(.jumbotron-h-screen)) {
+      min-height: 300px;
+      padding-bottom: 10rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      @media (min-width: @screen-sm-min) {
+        min-height: 400px;
+      }
     }
   }
   &.header-default-bg-img {

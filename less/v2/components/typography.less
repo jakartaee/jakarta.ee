@@ -68,6 +68,10 @@
   color: @brand-primary-orange;
 }
 
+.text-current {
+  color: currentColor;
+}
+
 // ========================================
 // Component-Specific Classes
 // ========================================
@@ -155,4 +159,15 @@ h6,
 .featured-text-sm {
   .big-text;
   font-size: 12px;
+}
+
+blockquote {
+  .font-semibold;
+  color: @brand-primary;
+  font-size: 1.6rem;
+  border-left: 4px solid currentColor;
+  padding-left: 1.5rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-left: 0;
 }
