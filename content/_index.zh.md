@@ -25,7 +25,7 @@ links:
       icon: "fa fa-download",
     ],
     [
-      href: "/membership/",
+      href: "/join-us/",
       text: "Join us",
       class: "btn btn-primary",
       icon: "fa fa-chevron-right",

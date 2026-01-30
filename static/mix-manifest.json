@@ -15,7 +15,7 @@
     "/fonts/vendor/@fortawesome/fontawesome-free/webfa-solid-900.ttf?2582b0e4bcf85eceead0de3fd9035c90": "/fonts/vendor/@fortawesome/fontawesome-free/webfa-solid-900.ttf?2582b0e4bcf85eceead0de3fd9035c90",
     "/fonts/vendor/@fortawesome/fontawesome-free/webfa-brands-400.woff2?c210719e60948b211a1260f79812efe5": "/fonts/vendor/@fortawesome/fontawesome-free/webfa-brands-400.woff2?c210719e60948b211a1260f79812efe5",
     "/fonts/vendor/@fortawesome/fontawesome-free/webfa-brands-400.ttf?1815e00441357e01619e5793e1caa78a": "/fonts/vendor/@fortawesome/fontawesome-free/webfa-brands-400.ttf?1815e00441357e01619e5793e1caa78a",
-    "/images/bg-secondary.webp?956c3fcd5e328800fc18a280fd2b8e7a": "/images/bg-secondary.webp?956c3fcd5e328800fc18a280fd2b8e7a",
+    "/images/bg-secondary.webp?0820cbda5c0ab4dab359b9fe4bc6a747": "/images/bg-secondary.webp?0820cbda5c0ab4dab359b9fe4bc6a747",
     "/images/jumbotron-bg-default.webp?11e7e245a4f2f809a55a025f641f3da2": "/images/jumbotron-bg-default.webp?11e7e245a4f2f809a55a025f641f3da2",
     "/images/jumbotron-bg.webp?5ea7ba533a1286edb8f0b40bc8610938": "/images/jumbotron-bg.webp?5ea7ba533a1286edb8f0b40bc8610938",
     "/images/bg-tertiary.jpg?0d270672204e57da32cb92a1450e097f": "/images/bg-tertiary.jpg?0d270672204e57da32cb92a1450e097f",
@@ -65,6 +65,5 @@
     "/css/why-jakarta-ee-styles.css": "/css/why-jakarta-ee-styles.css",
     "/css/mentorship.v2.css": "/css/mentorship.v2.css",
     "/css/contribute.v2.css": "/css/contribute.v2.css",
-    "/css/sponsor.v2.css": "/css/sponsor.v2.css",
-    "/images/bg-secondary.webp?0820cbda5c0ab4dab359b9fe4bc6a747": "/images/bg-secondary.webp?0820cbda5c0ab4dab359b9fe4bc6a747"
+    "/css/sponsor.v2.css": "/css/sponsor.v2.css"
 }
