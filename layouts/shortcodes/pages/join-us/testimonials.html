@@ -1,4 +1,12 @@
 
+<section class="row padding-y-60">
+  <div class="container text-center">
+    <h2 class="featured-heading text-primary">{{ i18n "testimonials-heading" }}</h2>
+    <h3 class="h4 text-primary">
+      {{ i18n "testimonials-subtitle" }}
+    </h3>
+  </div>
+
 {{ $lang := .Page.Lang }}
 {{ $langBase:=index .Site.Data $lang }}
 
@@ -54,3 +62,5 @@
     </div>
   </div>
 {{ end }}
+
+</section>

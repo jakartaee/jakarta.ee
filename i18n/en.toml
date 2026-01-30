@@ -2048,3 +2048,10 @@ other = "Your support helps sustain Jakarta EE's development, events, and commun
 
 [join-us-explore-sponsorship-button]
 other = "Explore sponsorship"
+
+# Testimonials translations
+[testimonials-heading]
+other = "Testimonials"
+
+[testimonials-subtitle]
+other = "Behind every Jakarta EE milestone is a global community of contributors, members, and sponsors driving its evolution forward."
