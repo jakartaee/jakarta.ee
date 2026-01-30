@@ -10,10 +10,15 @@
 
 {{ $lang := .Page.Lang }}
 {{ $langBase:=index .Site.Data $lang }}
-{{ if $langBase.testimonials.categories.common.testimonials }}
+{{ $enBase:=index .Site.Data "en" }}
+{{ $testimonials := $langBase.testimonials.categories.common.testimonials }}
+{{ if not $testimonials }}
+  {{ $testimonials = $enBase.testimonials.categories.common.testimonials }}
+{{ end }}
+{{ if $testimonials }}
   <div class="featured-section-testimonials">
     <div class="testimonial-container">
-      {{ range $langBase.testimonials.categories.common.testimonials }}
+      {{ range $testimonials }}
         <div class="testimonial-item">
           <div class="card glow">
             <div class="row">
@@ -24,7 +29,7 @@
                       class="img rounded-full"
                       src="{{ .picture }}"
                       width="{{ .picture_width | default 80 }}"
-                      alt="{{ .name }}'s picture"
+                      alt="{{ .name }}'s headshot"
                     />
                   </div>
                   <p class="margin-top-20">

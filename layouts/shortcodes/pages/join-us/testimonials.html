@@ -9,13 +9,26 @@
 
 {{ $lang := .Page.Lang }}
 {{ $langBase:=index .Site.Data $lang }}
+{{ $enBase:=index .Site.Data "en" }}
 
 {{ $allTestimonials := slice }}
+{{ $sourceBase := $langBase }}
 {{ range $categoryName, $categoryData := $langBase.testimonials.categories }}
   {{ range $categoryData.testimonials }}
     {{ $allTestimonials = $allTestimonials | append . }}
   {{ end }}
 {{ end }}
+
+{{ if not $allTestimonials }}
+  {{ $sourceBase = $enBase }}
+  {{ $allTestimonials = slice }}
+  {{ range $categoryName, $categoryData := $enBase.testimonials.categories }}
+    {{ range $categoryData.testimonials }}
+      {{ $allTestimonials = $allTestimonials | append . }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+
 {{ $allTestimonials = sort $allTestimonials "name" }}
 
 {{ if $allTestimonials }}

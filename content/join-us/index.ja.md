@@ -22,6 +22,6 @@ container: "container-fluid"
 
 {{< pages/join-us/testimonials >}}
 
-{{< release/latest-release-banner class="bg-secondary-img" >}}
+{{< release/latest-release-banner class="bg-secondary-img margin-bottom-30" >}}
 {{< platform-diagram src="jakartaee_11_platform_diagram" >}}
 {{< /release/latest-release-banner >}}

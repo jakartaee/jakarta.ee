@@ -1,13 +1,19 @@
 {{ $lang := .Page.Lang }}
 {{$langBase:=index .Site.Data $lang}}
+{{$enBase:=index .Site.Data "en"}}
 
-{{ if (index $langBase.testimonials.categories "get-involved").testimonials }}
+{{ $testimonials := (index $langBase.testimonials.categories "get-involved").testimonials }}
+{{ if not $testimonials }}
+  {{ $testimonials = (index $enBase.testimonials.categories "get-involved").testimonials }}
+{{ end }}
+
+{{ if $testimonials }}
 <div class="get-involved-testimonials testimonials-alternate row">
     
         <h2 class="big-text-secondary text-center margin-bottom-40">{{ i18n "home-testimonials" }}</h2>
         
             <div class="solstice-slider owl-carousel owl-theme list-inline" data-slider-lg-count="1" data-slider-md-count="1" data-slider-sm-count="1">
-                {{ range (index $langBase.testimonials.categories "get-involved").testimonials }}
+                {{ range $testimonials }}
                         <div class="container">
                             <div class="row">
                                 <div class="col-sm-16 col-sm-offset-4">
