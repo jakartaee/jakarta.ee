@@ -18,7 +18,7 @@ hide_breadcrumb: true
 container: "container-fluid"
 ---
 
-<div class="row">
+<section class="row">
   <div class="container">
     <div class="grid sm:grid-cols-3 gap-2">
       <div class="card">
@@ -83,9 +83,9 @@ container: "container-fluid"
       </div>
     </div>
   </div>
-</div>
+</section>
 
-<div class="row padding-y-60">
+<section class="row padding-y-60">
   <div class="container text-center">
     <h2 class="featured-heading text-primary">Testimonials</h2>
     <h3 class="h4 text-primary">
@@ -94,12 +94,8 @@ container: "container-fluid"
     </h3>
   </div>
   {{< pages/join-us/testimonials >}}
-</div>
+</section>
 
-<div class="row padding-y-60">
-  <div class="bg-secondary-img">
-    {{< release/latest-release-banner >}}
-    {{< platform-diagram src="jakartaee_11_platform_diagram" >}}
-    {{< /release/latest-release-banner >}}
-  </div>
-</div>
+{{< release/latest-release-banner class="bg-secondary-img" >}}
+{{< platform-diagram src="jakartaee_11_platform_diagram" >}}
+{{< /release/latest-release-banner >}}
