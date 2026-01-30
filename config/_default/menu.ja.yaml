@@ -8,6 +8,11 @@
 
 main:
   # Main Navigation (Top Level)
+  - identifier: "developer-portal"
+    name: "Developer portal"
+    pageRef: "/learn/"
+    post: "<div class='mega-menu-bottom-link'><a href='#'>Developer portal overview <i class='fa fa-arrow-right' aria-hidden></i></a></div>"
+    weight: 1
 
   - identifier: "specifications"
     name: "Specifications"
@@ -33,6 +38,92 @@ main:
     name: "About"
     pageRef: "/about/"
     weight: 6
+
+  # ========================================
+  # Developer portal dropdown (Mega Menu)
+  # ========================================
+  # These column headers don't have URLs - they act as section dividers
+  # in the mega menu, creating a 3-column layout structure
+
+  # Column 1: Develop
+  - identifier: "develop"
+    pre: "static/images/icons/menu/develop.svg"
+    name: "Develop"
+    weight: 1
+    parent: "developer-portal"
+
+  # Column 2: Contribute to Jakarta EE
+  - identifier: "contribute-jakartaee"
+    pre: "static/images/icons/menu/contribute.svg"
+    name: "Contribute"
+    weight: 2
+    parent: "developer-portal"
+
+  # Column 3: Learn
+  - identifier: "learn"
+    pre: "static/images/icons/menu/learn.svg"
+    name: "Learn"
+    weight: 3
+    parent: "developer-portal"
+
+  # ========================================
+  # Developer portal mega menu sub-items
+  # ========================================
+
+  # Develop sub-items
+  - identifier: "get-started"
+    name: "Get started"
+    url: "https://start.jakarta.ee/"
+    parent: "develop"
+    weight: 1
+
+  - identifier: "learning-hub"
+    name: "Learning hub"
+    pageRef: "/learn/"
+    parent: "develop"
+    weight: 2
+
+  - identifier: "insights-publications"
+    name: "Insights and publications"
+    pageRef: "/resources/"
+    parent: "develop"
+    weight: 3
+
+  # Contribute to Jakarta EE sub-items
+  - identifier: "how-to-contribute"
+    name: "Contribution guide"
+    pageRef: "/contribute/"
+    parent: "contribute-jakartaee"
+    weight: 1
+
+  - identifier: "mentorship-program"
+    name: "Mentorship program"
+    pageRef: "/mentorship/"
+    parent: "contribute-jakartaee"
+    weight: 2
+
+  - identifier: "developer-advocate"
+    name: "Developer advocate"
+    pageRef: "/community/developer-advocate/"
+    parent: "contribute-jakartaee"
+    weight: 3
+
+  # Learn sub-items
+  - identifier: "how-to-guides"
+    name: "How to guides"
+    pageRef: "/learn/starter-guides/"
+    parent: "learn"
+    weight: 1
+
+  - identifier: "tutorial"
+    name: "Tutorial"
+    url: "https://jakarta.ee/learn/docs/jakartaee-tutorial/current/index.html"
+    parent: "learn"
+    weight: 2
+
+  # ========================================
+  # End of Developer portal mega menu
+  # ========================================
 
   # ========================================
   # Specifications dropdown (Mega Menu)
