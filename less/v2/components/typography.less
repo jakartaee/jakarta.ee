@@ -118,7 +118,11 @@ h6,
 
 .featured-heading {
   .font-medium;
-  font-size: 4.5rem;
+  font-size: 3.6rem;
+
+  @media (min-width: @screen-sm-min) {
+    font-size: 4.5rem;
+  }
 }
 
 .big-text,
@@ -170,4 +174,11 @@ blockquote {
   padding-top: 0;
   padding-bottom: 0;
   margin-left: 0;
+}
+
+// TODO: Remove once Bootstrap 4 is fully implemented
+.text-md-right {
+  @media (min-width: @screen-md) {
+    text-align: right;
+  }
 }
