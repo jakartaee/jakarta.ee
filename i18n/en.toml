@@ -1678,6 +1678,15 @@ other = "This document provides a short summary of the roles and responsibilitie
 [pages-committees-document-download]
 other = "Download Document"
 
+[pages-committees-meeting-minutes-title]
+other = "Jakarta EE Committee Meeting Minutes"
+
+[pages-committees-meeting-minutes-text]
+other = "Access the published meeting minutes from Jakarta EE committees to stay informed about discussions, decisions, and ongoing work across the Jakarta EE ecosystem."
+
+[pages-committees-meeting-minutes-cta]
+other = "View meeting minutes"
+
 [pages-committees-website-guidelines-title]
 other = "Guidelines for jakarta.ee website maintainer"
 
