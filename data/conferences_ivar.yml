@@ -29,7 +29,7 @@ years:
     upcoming: true
 
   - name: IntelliJ IDEA Conf
-    url: https://www.oracle.com/javaone
+    url: https://lp.jetbrains.com/intellij-idea-conf-2026/
     location: Paphos 🇨🇾 + 🌐
     date: Mar 26-27
     upcoming: true    
@@ -74,18 +74,17 @@ years:
     url: https://jfokus.se
     location: Stockholm 🇸🇪
     date: Feb 2-4
-    upcoming: true
 
   - name: FOSDEM
     url: https://fosdem.org/2026/
     location: Brussels 🇧🇪
-    date: Jan 20-Feb 1
-    upcoming: true
+    date: Jan 31-Feb 1
 
   - name: Valencia JUG
     url: https://www.meetup.com/valenciajug/events/312774322/
     location: Valencia 🇪🇸
     date: Jan 20
+    blog: https://www.agilejava.eu/2026/01/21/valencia-jug-2026/
 
 - year: 2025
   conferences:
