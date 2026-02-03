@@ -37,12 +37,11 @@ export function setupRotatingText() {
 
     // Extract words and trim whitespace
     const words = Array.from(spans, (span) => span.textContent.trim());
-    // Pre-calculate widths for each word to avoid repeated DOM measurements
-    const wordDimensions = words.map((word) => getDimensions(word, container));
 
     // Track current word index and visible element
     let wordIndex = 0;
     let currentElement = null;
+    let wordDimensions = []; // Will be calculated after fonts load
 
     // Helper: Calculate the rendered width of a word using the container's font styles
     function getDimensions(word, container) {
@@ -130,8 +129,11 @@ export function setupRotatingText() {
       }, cleanupDelay);
     }
 
-    // Wait for fonts to load, then start cycling
+    // Wait for fonts to load, then calculate dimensions and start cycling
     document.fonts.ready.then(() => {
+      // Pre-calculate widths for each word after fonts are loaded
+      wordDimensions = words.map((word) => getDimensions(word, container));
+      
       wordIndex = words.length - 1; // Start with last word as "current"
       cycle(); // Initial cycle
       // we need to set the height of the container to match the text height
