@@ -2012,6 +2012,42 @@ other = "Get latest updates, join conversations, and plug into all things Jakart
 [developer-portal-connect-now-button]
 other = "Connect now"
 
+[developer-portal-get-involved-title]
+other = "Get Involved"
+
+[developer-portal-get-involved-description]
+other = "Ways to join and participate in the community."
+
+[developer-portal-how-to-contribute-title]
+other = "How to Contribute"
+
+[developer-portal-how-to-contribute-description]
+other = "Join as an individual or company, make an impact, and grow your career."
+
+[developer-portal-mentorship-title]
+other = "Jakarta EE mentorship"
+
+[developer-portal-mentorship-description]
+other = "Get paired with an experienced contributor to guide your first steps and accelerate your impact"
+
+[developer-portal-spec-process-docs-title]
+other = "Spec Process Docs"
+
+[developer-portal-spec-process-docs-description]
+other = "Understand the specification process end to end."
+
+[developer-portal-explore-specifications-title]
+other = "Explore Specifications"
+
+[developer-portal-explore-specifications-description]
+other = "Browse and learn about all Jakarta EE specifications"
+
+[developer-portal-developer-advocate-title]
+other = "Developer advocate"
+
+[developer-portal-developer-advocate-description]
+other = "Promote Jakarta EE and connect with the developer community"
+
 # Join Us translations
 [join-us-become-member-title]
 other = "Become a member"
