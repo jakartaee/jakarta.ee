@@ -102,16 +102,11 @@ main:
     parent: "contribute-jakartaee"
     weight: 2
 
-  - identifier: "developer-advocate"
-    name: "Developer advocate"
-    pageRef: "/community/developer-advocate/"
-    parent: "contribute-jakartaee"
-    weight: 3
 
   # Learn sub-items
   - identifier: "how-to-guides"
     name: "How to guides"
-    pageRef: "/learn/starter-guides/"
+    pageRef: "/learn/how-to-guides/"
     parent: "learn"
     weight: 1
 

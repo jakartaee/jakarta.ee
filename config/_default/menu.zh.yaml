@@ -111,7 +111,7 @@ main:
   # Learn sub-items
   - identifier: "how-to-guides"
     name: "How to guides"
-    pageRef: "/learn/starter-guides/"
+    pageRef: "/learn/how-to-guides/"
     parent: "learn"
     weight: 1
 
