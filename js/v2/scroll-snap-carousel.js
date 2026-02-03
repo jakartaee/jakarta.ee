@@ -156,6 +156,10 @@ function createScrollSnapCarousel(container, options = {}) {
   document.addEventListener("keydown", (e) => handleGlobalKeydown(e));
   container.addEventListener("mouseenter", () => (isHovering = true));
   container.addEventListener("mouseleave", () => (isHovering = false));
+  container.addEventListener("focusin", () => (isHovering = true));
+  container.addEventListener("focusout", () => (isHovering = false));
+  container.addEventListener("touchstart", () => (isHovering = true));
+  container.addEventListener("touchend", () => (isHovering = false));
 
   // Start auto-rotate if enabled
   if (options.autoRotate) {
@@ -163,7 +167,7 @@ function createScrollSnapCarousel(container, options = {}) {
       if (!isHovering) {
         move(1);
       }
-    }, options.autoRotateInterval || 3000);
+    }, options.autoRotateInterval || 6000);
   }
 
   // Return public methods

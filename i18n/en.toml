@@ -2042,12 +2042,6 @@ other = "Explore Specifications"
 [developer-portal-explore-specifications-description]
 other = "Browse and learn about all Jakarta EE specifications"
 
-[developer-portal-developer-advocate-title]
-other = "Developer advocate"
-
-[developer-portal-developer-advocate-description]
-other = "Promote Jakarta EE and connect with the developer community"
-
 # Join Us translations
 [join-us-become-member-title]
 other = "Become a member"
