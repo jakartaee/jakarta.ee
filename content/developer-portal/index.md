@@ -9,7 +9,9 @@ hide_breadcrumb: true
 container: "container-fluid"
 ---
 
-{{< pages/developer-portal/tabs >}}
+{{< pages/developer-portal/develop >}}
+
+{{< pages/developer-portal/contribute >}}
 
 {{< pages/developer-portal/events >}}
 
