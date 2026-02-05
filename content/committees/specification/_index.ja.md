@@ -12,7 +12,7 @@ date: 2020-02-19T15:00:25-08:00
 * Kenji Kazumura - 富士通、Takahiro Nagao - 代理
 * Tom Watson - IBM、Emily Jiang - 代理
 * Ed Bratt - Oracle、Dmitry Kornilov - 代理
-* Andrew Pielage (**chair**) - Payara、Petr Aubrecht - 代理
+* Andrew Pielage (**chair**) - Payara
 * David Blevins - Tomitribe、Jean-Louis Monterio - 代理
 * Ivar Grimstad - PMC代表
 * Marcelo Ancelmo - ロンドンJavaコミュニティ - 選出されたParticipantメンバー代表、Abraham Marin-Perez - 代理

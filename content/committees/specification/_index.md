@@ -16,7 +16,7 @@ The Specification Committee is responsible for implementing the ​[Jakarta EE S
 * Kenji Kazumura - Fujitsu, Takahiro Nagao - alternate
 * Emily Jiang - IBM, Tom Watson - alternate
 * Ed Bratt - Oracle, Dmitry Kornilov - alternate
-* Andrew Pielage (**chair**) - Payara, Petr Aubrecht - alternate
+* Andrew Pielage (**chair**) - Payara
 * David Blevins - Tomitribe, Jean-Louis Monterio - alternate
 * Ivar Grimstad - PMC Representative
 * Arjan Tijms  - Omnifish OU - Elected Participant Member Representative
