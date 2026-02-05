@@ -1892,12 +1892,6 @@ other= "Edit My Account"
 other= "View My Account"
 
 # Developer Portal translations
-[developer-portal-tab-develop]
-other = "Develop with Jakarta EE"
-
-[developer-portal-tab-contribute]
-other = "Contribute to Jakarta EE"
-
 [developer-portal-develop-heading]
 other = "Develop"
 
@@ -1959,7 +1953,7 @@ other = "to Jakarta EE"
 other = "Join the community driving Jakarta EE open standards."
 
 [developer-portal-events-heading]
-other = "JakartaOne Events"
+other = "JakartaOne events"
 
 [developer-portal-upcoming-events-title]
 other = "Upcoming events"
@@ -1995,7 +1989,7 @@ other = "Host a talk"
 other = "Sign up to host a talk"
 
 [developer-portal-community-presentation-title]
-other = "Community Presentation"
+other = "Community presentation"
 
 [developer-portal-community-presentation-description]
 other = "Explore how the Jakarta EE community is driving enterprise Java forward"
@@ -2004,7 +1998,7 @@ other = "Explore how the Jakarta EE community is driving enterprise Java forward
 other = "View the presentation"
 
 [developer-portal-stay-connected-title]
-other = "Stay Connected"
+other = "Stay connected"
 
 [developer-portal-stay-connected-description]
 other = "Get latest updates, join conversations, and plug into all things Jakarta EE"
@@ -2013,13 +2007,13 @@ other = "Get latest updates, join conversations, and plug into all things Jakart
 other = "Connect now"
 
 [developer-portal-get-involved-title]
-other = "Get Involved"
+other = "Get involved"
 
 [developer-portal-get-involved-description]
 other = "Ways to join and participate in the community."
 
 [developer-portal-how-to-contribute-title]
-other = "How to Contribute"
+other = "How to contribute"
 
 [developer-portal-how-to-contribute-description]
 other = "Join as an individual or company, make an impact, and grow your career."
@@ -2031,13 +2025,13 @@ other = "Jakarta EE mentorship"
 other = "Get paired with an experienced contributor to guide your first steps and accelerate your impact"
 
 [developer-portal-spec-process-docs-title]
-other = "Spec Process Docs"
+other = "Spec process docs"
 
 [developer-portal-spec-process-docs-description]
 other = "Understand the specification process end to end."
 
 [developer-portal-explore-specifications-title]
-other = "Explore Specifications"
+other = "Explore specifications"
 
 [developer-portal-explore-specifications-description]
 other = "Browse and learn about all Jakarta EE specifications"
