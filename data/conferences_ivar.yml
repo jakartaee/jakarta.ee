@@ -68,12 +68,12 @@ years:
     url: https://www.meetup.com/jozi-jug/events/312880317/
     location: Johannesburg 🇿🇦
     date: Feb 11
-    upcoming: true
 
   - name: Jfokus
     url: https://jfokus.se
     location: Stockholm 🇸🇪
     date: Feb 2-4
+    blog: https://www.agilejava.eu/2026/02/04/jfokus-2026/
 
   - name: FOSDEM
     url: https://fosdem.org/2026/
