@@ -1,20 +1,11 @@
 {{ $lang := .Page.Lang }}
 {{$langBase:=index .Site.Data $lang}}
+{{$enBase:=index .Site.Data "en"}}
 
-{{ $scratch := newScratch }}
-{{ range $langBase.testimonials.categories }}
-    {{ if .title }}
-        {{ $scratch.Set "category_title" (.title | urlize) }}
-        {{ $scratch.SetInMap "categories" (.title | urlize) . }}
-    {{ end }}
-    {{ range $index, $testimonial := .testimonials }}
-        {{ $category := dict "category" ($scratch.Get "category_title") }}
-        {{ $testimonial = merge . ($category) }}
-        {{ $scratch.SetInMap "testimonials" (.name | urlize) $testimonial }}
-    {{ end }}
+{{ $testimonials := (index $langBase.testimonials.categories "get-involved").testimonials }}
+{{ if not $testimonials }}
+  {{ $testimonials = (index $enBase.testimonials.categories "get-involved").testimonials }}
 {{ end }}
-
-{{ $testimonials := $scratch.GetSortedMapValues "testimonials" }}
 
 {{ if $testimonials }}
 <div class="get-involved-testimonials testimonials-alternate row">
@@ -23,7 +14,6 @@
         
             <div class="solstice-slider owl-carousel owl-theme list-inline" data-slider-lg-count="1" data-slider-md-count="1" data-slider-sm-count="1">
                 {{ range $testimonials }}
-                    {{ if eq .category "get-involved"}}
                         <div class="container">
                             <div class="row">
                                 <div class="col-sm-16 col-sm-offset-4">
@@ -39,7 +29,6 @@
                             </div>
                             </div>
                         </div>
-                    {{ end }}
                 {{ end }}
                     </div>
         

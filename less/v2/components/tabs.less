@@ -14,42 +14,43 @@
 
 // Drupal Tab styles
 
-.nav-tabs.solstice-tabs{
-  margin-bottom:0;
-  border-bottom:@solstice-tabs-border;
+.nav-tabs.solstice-tabs {
+  margin-bottom: 0;
+  border-bottom: @solstice-tabs-border;
   background-color: @solstice-tabs-background;
   &.solstice-tabs-center {
     > li {
       width: 33%;
       text-align: center;
       &:last-child {
-          width: 34%;
-          > a {
-              margin-right:0;
-          }
+        width: 34%;
+        > a {
+          margin-right: 0;
+        }
       }
     }
   }
   + .region-content {
     padding: 20px;
     border: @solstice-tabs-border;
-    border-top:none;
-    background-color:@solstice-tabs-pane-background-color;
+    border-top: none;
+    background-color: @solstice-tabs-pane-background-color;
   }
   li {
     margin-bottom: 0px;
-    strong{
+    strong {
       font-weight: @solstice-tabs-font-weight;
     }
     .solstice-tabs-item {
-      display:block;
+      display: block;
     }
-    a, .solstice-tabs-item {
-      position:relative;
+    a,
+    .solstice-tabs-item {
+      position: relative;
       border: none;
-      border-right:none;
-      border-top:none;
-      border-left:none;
+      border-right: none;
+      border-top: none;
+      border-left: none;
       margin: 0px;
       padding: @solstice-tabs-padding-mobile;
       border-radius: 0;
@@ -57,54 +58,54 @@
       color: @solstice-tabs-color;
       background-color: @solstice-tabs-background;
       text-transform: @solstice-tabs-text-transform;
-      font-size:@solstice-tabs-font-size-mobile;
+      font-size: @solstice-tabs-font-size-mobile;
       cursor: pointer;
       @media (min-width: @screen-xs-min) {
         padding: @solstice-tabs-padding;
-        font-size:@solstice-tabs-font-size;
+        font-size: @solstice-tabs-font-size;
       }
     }
     a:hover {
       border: @solstice-tabs-active-nav-border;
-      border-right:none;
-      border-top:none;
-      border-left:none;
-      color:  @solstice-tabs-hover-color;
+      border-right: none;
+      border-top: none;
+      border-left: none;
+      color: @solstice-tabs-hover-color;
       background-color: @solstice-tabs-hover;
     }
     &.active > a,
     &.selected a,
     a.active,
-    a.active:hover{
+    a.active:hover {
       border: @solstice-tabs-active-nav-border;
-      border-right:none;
-      border-top:none;
-      border-left:none;
+      border-right: none;
+      border-top: none;
+      border-left: none;
       font-weight: @solstice-tabs-active-font-weight;
       color: @solstice-tabs-active-color;
       background-color: @solstice-tabs-active-hover;
-      strong{
+      strong {
         font-weight: @solstice-tabs-active-font-weight;
       }
     }
     a:focus {
       border: @solstice-tabs-active-nav-border;
-      border-right:none;
-      border-top:none;
-      border-left:none;
+      border-right: none;
+      border-top: none;
+      border-left: none;
       color: @solstice-tabs-hover-color;
       background-color: @solstice-tabs-active-hover;
     }
   }
-  
-  &.tabs--secondary{
+
+  &.tabs--secondary {
     background-color: darken(@solstice-tabs-background, 10%);
-    position:relative;
-    z-index:9;
+    position: relative;
+    z-index: 9;
     li {
-      a{
+      a {
         border: 1px solid darken(@solstice-tabs-background, 10%);
-        border-right:none;
+        border-right: none;
         background-color: darken(@solstice-tabs-background, 10%);
         &:hover {
           background-color: @solstice-tabs-background;
@@ -113,62 +114,62 @@
       &.active > a,
       &.selected a,
       a.active,
-      a.active:hover{
+      a.active:hover {
         border: 1px solid darken(@solstice-tabs-background, 10%);
-        border-right:none;
+        border-right: none;
         font-weight: @solstice-tabs-active-font-weight;
         color: @solstice-tabs-active-color;
         background-color: @solstice-tabs-active-hover;
-        strong{
+        strong {
           font-weight: @solstice-tabs-active-font-weight;
         }
       }
       a:focus {
         border: 1px solid darken(@solstice-tabs-background, 10%);
-        border-right:none;
+        border-right: none;
         color: @solstice-tabs-hover-color;
         background-color: @solstice-tabs-active-hover;
       }
     }
   }
-  
+
   &.solstice-tabs-dark {
     background-color: @solstice-tabs-dark-background;
     + .region-content {
       border: @solstice-tabs-dark-border;
-      border-top:none;
-      background-color:@solstice-tabs-dark-pane-background-color;
+      border-top: none;
+      background-color: @solstice-tabs-dark-pane-background-color;
     }
     li {
       a {
         border: 1px solid @solstice-tabs-dark-background;
-        border-right:none;
+        border-right: none;
         font-weight: @solstice-tabs-font-weight;
         color: @solstice-tabs-color;
         background-color: @solstice-tabs-dark-background;
         &:hover {
           border: 1px solid @solstice-tabs-dark-background;
-          border-right:none;
-          color:  @solstice-tabs-hover-color;
+          border-right: none;
+          color: @solstice-tabs-hover-color;
           background-color: @solstice-tabs-dark-hover;
         }
       }
       &.active > a,
       &.selected a,
       a.active,
-      a.active:hover{
+      a.active:hover {
         border: 1px solid @solstice-tabs-dark-background;
-        border-right:none;
+        border-right: none;
         font-weight: @solstice-tabs-active-font-weight;
         color: @solstice-tabs-active-color;
         background-color: @solstice-tabs-active-hover;
-        strong{
+        strong {
           font-weight: @solstice-tabs-active-font-weight;
         }
       }
       a:focus {
         border: 1px solid @solstice-tabs-dark-background;
-        border-right:none;
+        border-right: none;
         color: @solstice-tabs-hover-color;
         background-color: @solstice-tabs-active-hover;
       }
@@ -176,8 +177,7 @@
   }
 }
 
-
 .tab-content {
-  border:@solstice-tabs-content-border;
-  padding:@solstice-tabs-content-padding;
+  border: @solstice-tabs-content-border;
+  padding: @solstice-tabs-content-padding;
 }

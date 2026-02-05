@@ -25,7 +25,7 @@ links:
       icon: "fa fa-download",
     ],
     [
-      href: "/membership/",
+      href: "/join-us/",
       text: "Join us",
       class: "btn btn-primary",
       icon: "fa fa-chevron-right",
@@ -42,9 +42,9 @@ container: "container-fluid"
 {{< pages/home/why-choose-jakarta-ee >}}
 {{< pages/home/community-powered-innovation >}}
 
-{{< pages/home/latest-release-banner >}}
+{{< release/latest-release-banner >}}
 {{< platform-diagram src="jakartaee_11_platform_diagram" >}}
-{{< /pages/home/latest-release-banner >}}
+{{< /release/latest-release-banner >}}
 
 {{< pages/home/news-and-announcements >}}
 

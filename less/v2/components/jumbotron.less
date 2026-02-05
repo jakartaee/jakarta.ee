@@ -11,17 +11,26 @@
 .header-wrapper {
   background-position: left;
   .featured-jumbotron-default {
-    min-height: 400px;
-    padding-top: 16.4rem;
-    padding-bottom: 3rem;
-
     .btn {
       min-width: unset;
+    }
+
+    &:not(:has(.jumbotron-h-screen)) {
+      min-height: 300px;
+      padding-bottom: 10rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      @media (min-width: @screen-sm-min) {
+        min-height: 400px;
+      }
     }
   }
   &.header-default-bg-img {
     .featured-jumbotron {
-      background-position: center;
+      background-position: bottom center;
+      background-size: cover;
 
       &::before {
         content: unset;
@@ -30,8 +39,42 @@
   }
   &.header-secondary-bg-img {
     .featured-jumbotron {
-      min-height: 300px;
-      padding-top: 200px;
+      background-position: center;
+      background-size: cover;
+
+      &::before {
+        content: unset;
+      }
+    }
+  }
+  &.header-home-bg-img {
+    .featured-jumbotron {
+      background-position: center;
+      background-size: cover;
+      background-image: @bg-jumbotron-secondary;
+
+      &::before {
+        content: unset;
+      }
+
+      h1,
+      .h1 {
+        font-size: 6.5rem;
+        letter-spacing: @headings-letter-spacing;
+
+        @media (max-width: @screen-xs-max) {
+          font-size: 4.5rem;
+        }
+      }
+
+      h2,
+      .h2 {
+        font-size: 2.5rem;
+
+        @media (max-width: @screen-xs-max) {
+          font-size: 1.8rem;
+        }
+      }
     }
   }
 }
@@ -39,6 +82,7 @@
 .featured-jumbotron {
   color: @brand-primary-dark;
   background-color: @brand-quinary;
+  text-align: center;
 
   .btn {
     border-radius: @btn-border-radius;
@@ -61,9 +105,8 @@
 
   h1,
   .h1 {
-    .font-normal;
-    font-size: 6.5rem;
-    letter-spacing: @headings-letter-spacing;
+    .font-medium;
+    font-size: 5.5rem;
 
     @media (max-width: @screen-xs-max) {
       font-size: 4.5rem;
@@ -72,12 +115,16 @@
 
   h2,
   .h2 {
-    .text-regular;
-    font-size: 2.5rem;
+    .font-light;
+    font-size: 2rem;
+  }
 
-    @media (max-width: @screen-xs-max) {
-      font-size: 1.8rem;
-    }
+  .eyebrow {
+    .font-semibold;
+    .text-primary;
+    display: block;
+    font-size: 2.1rem;
+    margin-bottom: 2rem;
   }
 
   .jumbotron-title {

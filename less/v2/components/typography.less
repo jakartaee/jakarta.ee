@@ -54,6 +54,10 @@
   color: @brand-secondary-gray;
 }
 
+.text-secondary-lighter-gray {
+  color: @brand-secondary-lighter-gray;
+}
+
 .text-quaternary,
 .dark .text-quaternary {
   color: @brand-secondary-yellow;
@@ -62,6 +66,10 @@
 .text-primary-orange,
 .dark .text-primary-orange {
   color: @brand-primary-orange;
+}
+
+.text-current {
+  color: currentColor;
 }
 
 // ========================================
@@ -110,7 +118,11 @@ h6,
 
 .featured-heading {
   .font-medium;
-  font-size: 4.5rem;
+  font-size: 3.6rem;
+
+  @media (min-width: @screen-sm-min) {
+    font-size: 4.5rem;
+  }
 }
 
 .big-text,
@@ -151,4 +163,22 @@ h6,
 .featured-text-sm {
   .big-text;
   font-size: 12px;
+}
+
+blockquote {
+  .font-semibold;
+  color: @brand-primary;
+  font-size: 1.6rem;
+  border-left: 4px solid currentColor;
+  padding-left: 1.5rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-left: 0;
+}
+
+// TODO: Remove once Bootstrap 4 is fully implemented
+.text-md-right {
+  @media (min-width: @screen-md) {
+    text-align: right;
+  }
 }
