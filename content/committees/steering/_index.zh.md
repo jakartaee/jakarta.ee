@@ -10,7 +10,7 @@ date: 2020-01-05T15:50:25-04:00
 ### 委员会成员
 
 * Ed Bratt (**chair**) - Oracle, Dmitry Kornilov - alternate
-* Kenji Kazumura - Fujitsu, Yuichi Kusano - alternate
+* Kenji Kazumura - Fujitsu, Takahiro Nagao - alternate
 * Alasdair Nottingham - IBM, Emily Jiang - alternate
 * Dominika Tasarz - Payara, Steve Butler - alternate
 * David Blevins - Tomitribe, Cesar Hernandez - alternate
