@@ -1,0 +1,96 @@
+<!--
+ Copyright (c) 2026 Eclipse Foundation AISBL
+
+ This program and the accompanying materials are made
+ available under the terms of the Eclipse Public License 2.0
+ which is available at https://www.eclipse.org/legal/epl-2.0/
+
+ SPDX-License-Identifier: EPL-2.0
+-->
+
+<section class="row padding-y-60">
+  <div class="container text-center">
+    <h2 class="featured-heading text-primary">
+      {{ i18n "testimonials-heading" }}
+    </h2>
+    <h3 class="h4 text-primary">
+      {{ i18n "testimonials-subtitle" }}
+    </h3>
+  </div>
+
+  {{ $lang := .Page.Lang }}
+  {{ $langBase:=index .Site.Data $lang }}
+  {{ $enBase:=index .Site.Data "en" }}
+
+  {{ $allTestimonials := slice }}
+  {{ $sourceBase := $langBase }}
+  {{ range $categoryName, $categoryData := $langBase.testimonials.categories }}
+    {{ range $categoryData.testimonials }}
+      {{ $allTestimonials = $allTestimonials | append . }}
+    {{ end }}
+  {{ end }}
+
+  {{ if not $allTestimonials }}
+    {{ $sourceBase = $enBase }}
+    {{ $allTestimonials = slice }}
+    {{ range $categoryName, $categoryData := $enBase.testimonials.categories }}
+      {{ range $categoryData.testimonials }}
+        {{ $allTestimonials = $allTestimonials | append . }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+
+  {{ $allTestimonials = sort $allTestimonials "name" }}
+
+  {{ if $allTestimonials }}
+    <div class="featured-section-testimonials">
+      <div class="testimonial-container join-us-page-testimonials">
+        {{ range $allTestimonials }}
+          <div class="testimonial-item">
+            <div class="card glow">
+              <div class="row">
+                <div class="col-md-10">
+                  {{ if .picture }}
+                    <div class="featured-section-testimonials-item-picture">
+                      <img
+                        class="img rounded-full"
+                        src="{{ .picture }}"
+                        width="{{ .picture_width | default 80 }}"
+                        alt="{{ .name }}'s headshot"
+                      />
+                    </div>
+                    <p class="margin-top-20">
+                      <strong>{{ .name }},</strong> <em>{{ .company }}</em>
+                    </p>
+                  {{ end }}
+                  {{ if .logo }}
+                    <p>
+                      <img
+                        class="featured-section-testimonials-item-logo"
+                        src="{{ .logo }}"
+                        width="{{ .logo_width | default 80 }}"
+                        alt="{{ .company }}"
+                      />
+                    </p>
+                  {{ else }}
+                    <p>
+                      <strong>{{ .company }}</strong>
+                    </p>
+                  {{ end }}
+                </div>
+                <div class="col-md-14">
+                  <p
+                    class="featured-section-testimonials-item-content font-light text-secondary-gray"
+                  >
+                    {{ .text | safeHTML }}
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        {{ end }}
+      </div>
+    </div>
+  {{ end }}
+
+</section>

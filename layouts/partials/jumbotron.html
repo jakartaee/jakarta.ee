@@ -20,8 +20,9 @@
       <div class="container">
         <div class="row">
           <div
-            class="{{- .Params.jumbotron_class | default .Site.Params.jumbotron_class | default "col-md-20 col-md-offset-2 col-sm-18 col-sm-offset-3" }}"
+            class="{{- .Params.jumbotron_class | default .Site.Params.jumbotron_class | default "col-md-14 col-md-offset-5 col-sm-18 col-sm-offset-3" }}"
           >
+            {{ partial "jumbotron_eyebrow.html" (dict "context" .) }}
             {{ partial "jumbotron_headline.html" (dict "context" .) }}
             {{ if isset .Page.Params "tagline" }}
               {{ partial "jumbotron_tagline.html" (dict "context" . "layout" $layout) }}
@@ -45,6 +46,7 @@
         <div class="top">
           <div class="container">
             <div class="row">
+              {{ partial "jumbotron_eyebrow.html" (dict "context" .) }}
               {{ partial "jumbotron_headline.html" (dict "context" .) }}
               {{ if isset .Page.Params "tagline" }}
                 {{ partial "jumbotron_tagline.html" (dict "context" . "layout" $layout) }}

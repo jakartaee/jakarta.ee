@@ -8,16 +8,15 @@
  SPDX-License-Identifier: EPL-2.0
 -->
 
+{{ $class := .Get "class" | default "" }}
 {{- $heading := i18n "home-jakarta-ee-11-release-heading" | safeHTML -}}
 {{- $paragraph := i18n "home-jakarta-ee-11-release-paragraph" -}}
 {{- $viewAllReleases := i18n "home-jakarta-ee-11-release-view-all-releases" -}}
 {{- $viewSpecifications := i18n "home-jakarta-ee-11-release-view-specifications" -}}
-{{- $viewSpecificationsAria := i18n
-  "home-jakarta-ee-11-release-view-specifications-aria"
--}}
+{{- $viewSpecificationsAria := i18n "home-jakarta-ee-11-release-view-specifications-aria" -}}
 <section
   id="jakarta-ee-latest-release"
-  class="row release-cta padding-y-60"
+  class="row release-cta padding-y-60 {{ $class }}"
   aria-labelledby="jakarta-ee-banner-heading"
 >
   <div class="container">

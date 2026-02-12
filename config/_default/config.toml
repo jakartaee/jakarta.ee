@@ -49,7 +49,6 @@ main_menu_wrapper_classes = "col-sm-19 margin-top-20"
 hide_cfa_same_page = true
 featured_content_publish_target = "jakarta_ee"
 logo_width = "200"
-jumbotron_class = "col-md-24 col-sm-18 "
 jumbotron_tagline_class = "col-sm-24"
 footer_section_eclipse_foundation_class = "col-sm-8 col-md-5 padding-top-20"
 footer_section_useful_links_class = "col-sm-8 col-md-5 padding-top-20"

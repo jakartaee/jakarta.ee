@@ -157,36 +157,8 @@ section.release-cta {
 }
 
 section.news {
-  .news-list:not(:hover) {
-    .scroll-snap-controls {
-      opacity: 0;
-    }
-  }
-
   .scroll-snap-controls {
-    gap: 1rem;
     padding: 0 6rem;
-    justify-content: space-between;
-    display: flex;
-    visibility: hidden;
-    transition: opacity 0.3s ease-out;
-
-    position: absolute;
-    top: 50%;
-    left: 0;
-    right: 0;
-    transform: translateY(-50%);
-    z-index: 1;
-
-    @media (min-width: @screen-md-min) {
-      visibility: visible;
-    }
-
-    pointer-events: none;
-
-    button {
-      pointer-events: all;
-    }
   }
 
   .news-type-community_news,
@@ -631,38 +603,6 @@ section#community-powered-innovation {
 
 .featured-section-testimonials {
   position: relative;
-
-  &:not(:hover) {
-    .scroll-snap-controls {
-      opacity: 0;
-    }
-  }
-
-  .scroll-snap-controls {
-    gap: 1rem;
-    padding: 0 3rem;
-    justify-content: space-between;
-    display: flex;
-    visibility: hidden;
-    transition: opacity 0.3s ease-out;
-
-    position: absolute;
-    top: 50%;
-    left: 0;
-    right: 0;
-    transform: translateY(-50%);
-    z-index: 1;
-
-    @media (min-width: @screen-md-min) {
-      visibility: visible;
-    }
-
-    pointer-events: none;
-
-    button {
-      pointer-events: all;
-    }
-  }
 
   .testimonial-container {
     display: flex;

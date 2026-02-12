@@ -1678,6 +1678,15 @@ other = "This document provides a short summary of the roles and responsibilitie
 [pages-committees-document-download]
 other = "Download Document"
 
+[pages-committees-meeting-minutes-title]
+other = "Jakarta EE Committee Meeting Minutes"
+
+[pages-committees-meeting-minutes-text]
+other = "Access the published meeting minutes from Jakarta EE committees to stay informed about discussions, decisions, and ongoing work across the Jakarta EE ecosystem."
+
+[pages-committees-meeting-minutes-cta]
+other = "View meeting minutes"
+
 [pages-committees-website-guidelines-title]
 other = "Guidelines for jakarta.ee website maintainer"
 
@@ -1881,3 +1890,192 @@ other= "Edit My Account"
 
 [toolbar-view-my-account]
 other= "View My Account"
+
+# Developer Portal translations
+[developer-portal-develop-heading]
+other = "Develop"
+
+[developer-portal-develop-heading-suffix]
+other = "with Jakarta EE"
+
+[developer-portal-develop-description]
+other = "Build secure, portable, scalable, cloud native apps using Jakarta EE APIs."
+
+[developer-portal-get-started-title]
+other = "Get started"
+
+[developer-portal-get-started-description]
+other = "Generate a Jakarta EE project template and begin building right away."
+
+[developer-portal-insights-title]
+other = "Insights & publications"
+
+[developer-portal-insights-description]
+other = "Surveys, case studies, and reports on Jakarta EE adoption and community growth."
+
+[developer-portal-how-to-guide-title]
+other = "How to guides"
+
+[developer-portal-how-to-guide-description]
+other = "Practical guides to build and secure Jakarta EE applications."
+
+[developer-portal-learning-hub-title]
+other = "Learning hub"
+
+[developer-portal-learning-hub-description]
+other = "Your all-in-one space to dive into Jakarta EE through hands-on resources, tutorials, and sample projects."
+
+[developer-portal-compatible-products-title]
+other = "Compatible products"
+
+[developer-portal-compatible-products-description]
+other = "Browse all Jakarta EE compatible products and learn how to get listed."
+
+[developer-portal-release-plan-title]
+other = "Release plan"
+
+[developer-portal-release-plan-description]
+other = "See what's coming next for Jakarta EE."
+
+[developer-portal-all-releases-title]
+other = "All releases"
+
+[developer-portal-all-releases-description]
+other = "Access all Jakarta EE releases and details."
+
+[developer-portal-contribute-heading]
+other = "Contribute"
+
+[developer-portal-contribute-heading-suffix]
+other = "to Jakarta EE"
+
+[developer-portal-contribute-description]
+other = "Join the community driving Jakarta EE open standards."
+
+[developer-portal-events-heading]
+other = "JakartaOne events"
+
+[developer-portal-upcoming-events-title]
+other = "Upcoming events"
+
+[developer-portal-upcoming-events-description]
+other = "Attend the upcoming JakartaOne events"
+
+[developer-portal-register-button]
+other = "Register"
+
+[developer-portal-host-event-title]
+other = "Host an event"
+
+[developer-portal-host-event-description]
+other = "Host a JakartaOne event"
+
+[developer-portal-read-more-button]
+other = "Read more"
+
+[developer-portal-tech-talks-heading]
+other = "Jakarta Tech Talks"
+
+[developer-portal-latest-talk-title]
+other = "Latest talk"
+
+[developer-portal-latest-talk-description]
+other = "Find the latest Jakarta Tech Talk"
+
+[developer-portal-host-talk-title]
+other = "Host a talk"
+
+[developer-portal-host-talk-description]
+other = "Sign up to host a talk"
+
+[developer-portal-community-presentation-title]
+other = "Community presentation"
+
+[developer-portal-community-presentation-description]
+other = "Explore how the Jakarta EE community is driving enterprise Java forward"
+
+[developer-portal-view-presentation-button]
+other = "View the presentation"
+
+[developer-portal-stay-connected-title]
+other = "Stay connected"
+
+[developer-portal-stay-connected-description]
+other = "Get latest updates, join conversations, and plug into all things Jakarta EE"
+
+[developer-portal-connect-now-button]
+other = "Connect now"
+
+[developer-portal-get-involved-title]
+other = "Get involved"
+
+[developer-portal-get-involved-description]
+other = "Ways to join and participate in the community."
+
+[developer-portal-how-to-contribute-title]
+other = "How to contribute"
+
+[developer-portal-how-to-contribute-description]
+other = "Join as an individual or company, make an impact, and grow your career."
+
+[developer-portal-mentorship-title]
+other = "Jakarta EE mentorship"
+
+[developer-portal-mentorship-description]
+other = "Get paired with an experienced contributor to guide your first steps and accelerate your impact"
+
+[developer-portal-spec-process-docs-title]
+other = "Spec process docs"
+
+[developer-portal-spec-process-docs-description]
+other = "Understand the specification process end to end."
+
+[developer-portal-explore-specifications-title]
+other = "Explore specifications"
+
+[developer-portal-explore-specifications-description]
+other = "Browse and learn about all Jakarta EE specifications"
+
+# Join Us translations
+[join-us-become-member-title]
+other = "Become a member"
+
+[join-us-become-member-subtitle]
+other = "Shape the future of enterprise Java"
+
+[join-us-become-member-description]
+other = "Join industry leaders and innovators driving Jakarta EE forward. As a member, you'll help guide the technology's evolution, influence key decisions, and gain visibility as part of the open enterprise Java ecosystem."
+
+[join-us-learn-membership-button]
+other = "Learn about membership"
+
+[join-us-contribute-projects-title]
+other = "Contribute to projects"
+
+[join-us-contribute-projects-subtitle]
+other = "Turn your expertise into impact."
+
+[join-us-contribute-projects-description]
+other = "Join our global community of developers and make your mark on the Jakarta EE platform. From code to documentation, every contribution helps strengthen open, cloud-native enterprise Java."
+
+[join-us-start-contributing-button]
+other = "Start contributing"
+
+[join-us-sponsor-title]
+other = "Sponsor Jakarta EE"
+
+[join-us-sponsor-subtitle]
+other = "Power the future of open enterprise Java."
+
+[join-us-sponsor-description]
+other = "Your support helps sustain Jakarta EE's development, events, and community growth. Sponsor to help keep enterprise Java open, secure, and thriving for everyone."
+
+[join-us-explore-sponsorship-button]
+other = "Explore sponsorship"
+
+# Testimonials translations
+[testimonials-heading]
+other = "Testimonials"
+
+[testimonials-subtitle]
+other = "Behind every Jakarta EE milestone is a global community of contributors, members, and sponsors driving its evolution forward."

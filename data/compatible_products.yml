@@ -38,6 +38,18 @@ sets:
             - version: 7.2025.1.Beta1
               compatibility: 'https://docs.payara.fish/community/docs/Jakarta%20EE%20Certification/7.2025.1.Beta1/7.2025.1.Beta1%20Platform%20TCK%20Results.html'
               download_url: 'https://www.payara.fish/downloads/payara-platform-community-edition/' 
+        - name: TongWeb Application Server
+          vendor: Beijing TongTech Co., Ltd.
+          image: '/images/compatible_products/tongweb.svg'
+          image_width: 180
+          download: 'https://www.tongtech.com/service.html'
+          versions:
+          - version: 8
+            compatibility: 'https://www.tongtech.com/tongweb/tck811.html'
+            download_url: 'https://www.tongtech.com/service.html'
+          - version: 7
+            compatibility: 'https://www.tongtech.com/tongweb/tck711.html'
+            download_url: 'https://www.tongtech.com/service.html'
 
     - title: Jakarta EE 11 Web Profile
       release: "release/11"
@@ -266,7 +278,7 @@ sets:
           vendor: Beijing TongTech Co., Ltd.
           image: '/images/compatible_products/tongweb.svg'
           image_width: 180
-          download: 'https://www.tongtech.com/dft/pctype/25.html'
+          download: 'https://www.tongtech.com/service.html'
           versions:
           - version: 8
             compatibility: 'https://www.tongtech.com/tongweb/tck810.html'
@@ -667,7 +679,7 @@ sets:
         vendor: Beijing TongTech Co., Ltd.
         image: '/images/compatible_products/tongweb.svg'
         image_width: 180
-        download: 'https://www.tongtech.com/dft/pctype/25.html'
+        download: 'https://www.tongtech.com/service.html'
         versions:
         - version: 9
           compatibility: 'http://www.tongtech.com/tw9.jakarta-full-platform-9.1.html'
@@ -838,7 +850,7 @@ sets:
         vendor: 'Beijing TongTech Co., Ltd.'
         image: '/images/compatible_products/tongweb.svg'
         image_width: 180
-        download: 'https://www.tongtech.com/dft/pctype/25.html'
+        download: 'https://www.tongtech.com/service.html'
         versions:
         - version: 8
           compatibility: 'https://www.tongtech.com/tongweb/tck890.html'
@@ -1096,7 +1108,7 @@ sets:
         vendor: Beijing TongTech Co., Ltd.
         image: '/images/compatible_products/tongweb.svg'
         image_width: 180
-        download: "https://www.tongtech.com/dft/pctype/25.html"
+        download: "https://www.tongtech.com/service.html"
         versions:
         - version: 8
           compatibility: 'http://www.tongtech.com/tw8.jakarta-full-platform-8.html'

@@ -1,0 +1,96 @@
+<!--
+ Copyright (c) 2026 Eclipse Foundation AISBL
+
+ This program and the accompanying materials are made
+ available under the terms of the Eclipse Public License 2.0
+ which is available at https://www.eclipse.org/legal/epl-2.0/
+
+ SPDX-License-Identifier: EPL-2.0
+-->
+
+<section class="row position-relative padding-y-60">
+  <div class="container">
+    <div class="row margin-bottom-60">
+      <img
+        class="w-15 md:w-30 absolute-bottom-right"
+        src="/developer-portal/images/develop/corner-image.webp"
+        alt="person coding"
+      />
+      <div class="col-md-16">
+        <h2
+          class="featured-heading text-primary margin-bottom-30 margin-top-10"
+        >
+          <span class="text-secondary">{{ i18n "developer-portal-develop-heading" }}</span> {{ i18n "developer-portal-develop-heading-suffix" }}
+        </h2>
+        <blockquote class="margin-bottom-40 hidden-md hidden-lg">
+          {{ i18n "developer-portal-develop-description" }}
+        </blockquote>
+        <div class="grid grid-cols-2 gap-2">
+          <a href="https://start.jakarta.ee/" class="icon-box text-current link-unstyled">
+            <i class="fa fa-arrow-right" aria-hidden="true"></i>
+            <span class="text-primary inline-icon">
+              {{ partial "svg.html" (dict "path" "/developer-portal/images/develop/get-started-icon.svg") }}
+            </span>
+            <h4 class="text-primary font-semibold">{{ i18n "developer-portal-get-started-title" }}</h4>
+            <p>
+              {{ i18n "developer-portal-get-started-description" }}
+            </p>
+          </a>
+          <a href="/resources/" class="icon-box text-current link-unstyled">
+            <i class="fa fa-arrow-right" aria-hidden="true"></i>
+            <span class="text-primary inline-icon">{{ partial "svg.html" (dict "path" "/developer-portal/images/develop/insights-and-publications-icon.svg") }}</span>
+            <h4 class="text-primary font-semibold">
+              {{ i18n "developer-portal-insights-title" }}
+            </h4>
+            <p>
+              {{ i18n "developer-portal-insights-description" }}
+            </p>
+          </a>
+          <a href="/learn/how-to-guides/" class="icon-box text-current link-unstyled">
+            <i class="fa fa-arrow-right" aria-hidden="true"></i>
+            <span class="text-primary inline-icon">{{ partial "svg.html" (dict "path" "/developer-portal/images/develop/how-to-guide-icon.svg") }}</span>
+            <h4 class="text-primary font-semibold">{{ i18n "developer-portal-how-to-guide-title" }}</h4>
+            <p>
+              {{ i18n "developer-portal-how-to-guide-description" }}
+            </p>
+          </a>
+          <a href="/learn/" class="icon-box text-current link-unstyled">
+            <i class="fa fa-arrow-right" aria-hidden="true"></i>
+            <span class="text-primary inline-icon">{{ partial "svg.html" (dict "path" "/developer-portal/images/develop/learning-hub-icon.svg") }}</span>
+            <h4 class="text-primary font-semibold">{{ i18n "developer-portal-learning-hub-title" }}</h4>
+            <p>
+              {{ i18n "developer-portal-learning-hub-description" }}
+            </p>
+          </a>
+          <a href="/compatibility/" class="icon-box text-current link-unstyled">
+            <i class="fa fa-arrow-right" aria-hidden="true"></i>
+            <span class="text-primary inline-icon">{{ partial "svg.html" (dict "path" "/developer-portal/images/develop/compatible-products-icon.svg") }}</span>
+            <h4 class="text-primary font-semibold">
+              {{ i18n "developer-portal-compatible-products-title" }}
+            </h4>
+            <p>
+              {{ i18n "developer-portal-compatible-products-description" }}
+            </p>
+          </a>
+          <a href="https://jakartaee.github.io/platform/jakartaee12/JakartaEE12ReleasePlan" class="icon-box text-current link-unstyled">
+            <i class="fa fa-arrow-right" aria-hidden="true"></i>
+            <span class="text-primary inline-icon">{{ partial "svg.html" (dict "path" "/developer-portal/images/develop/release-plan-icon.svg") }}</span>
+            <h4 class="text-primary font-semibold">{{ i18n "developer-portal-release-plan-title" }}</h4>
+            <p>{{ i18n "developer-portal-release-plan-description" }}</p>
+          </a>
+          <a href="/release/" class="icon-box text-current link-unstyled">
+            <i class="fa fa-arrow-right" aria-hidden="true"></i>
+            <span class="text-primary inline-icon">{{ partial "svg.html" (dict "path" "/developer-portal/images/develop/all-releases-icon.svg") }}</span>
+            <h4 class="text-primary font-semibold">{{ i18n "developer-portal-all-releases-title" }}</h4>
+            <p>{{ i18n "developer-portal-all-releases-description" }}</p>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-8 visible-md visible-lg position-initial">
+        <blockquote class="margin-top-10">
+          {{ i18n "developer-portal-develop-description" }}
+        </blockquote>
+      </div>
+    </div>
+  </div>
+</section>

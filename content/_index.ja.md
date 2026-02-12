@@ -13,9 +13,11 @@ headline: |
   </span> enterprise Java</span>
   <span class="sr-only">Jakarta EE powers the future of cloud native, vendor neutral, scalable enterprise Java</span>
 subtitle: Develop, run, and scale enterprise Java apps anywhere,<br/> with the flexibility of open source technology
+jumbotron_btn_class: btn btn-secondary
 jumbotron_class: text-center
 custom_jumbotron_class: col-sm-18 col-sm-offset-3 margin-top-60
 jumbotron_layout_style: full-height
+header_wrapper_class: header-home-bg-img
 custom_jumbotron_partial: jumbotron_home.html
 links:
   [
@@ -26,7 +28,7 @@ links:
       icon: "fa fa-download",
     ],
     [
-      href: "/membership/",
+      href: "/join-us/",
       text: "Join us",
       class: "btn btn-primary",
       icon: "fa fa-chevron-right",
@@ -45,9 +47,9 @@ container: "container-fluid"
 {{< pages/home/why-choose-jakarta-ee >}}
 {{< pages/home/community-powered-innovation >}}
 
-{{< pages/home/latest-release-banner >}}
+{{< release/latest-release-banner >}}
 {{< platform-diagram src="jakartaee_11_platform_diagram" >}}
-{{< /pages/home/latest-release-banner >}}
+{{< /release/latest-release-banner >}}
 
 {{< pages/home/news-and-announcements >}}
 
