@@ -16,6 +16,12 @@ years:
     date: May 28-31
     upcoming: true
 
+  - name: GeeCON
+    url: hhttps://2026.geecon.org
+    location: Kraków 🇵🇱
+    date: May 14-15
+    upcoming: true
+
   - name: University of York (Guest Lecture)
     url: https://www.york.ac.uk
     location: York 🇬🇧
