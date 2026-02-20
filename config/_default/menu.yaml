@@ -402,6 +402,7 @@ main:
 
   - identifier: "jakarta-tech-talks"
     name: "Jakarta Tech Talks"
+    url: "/community/#meetups"
     pageRef: "/community/#meetups"
     parent: "community-events"
     weight: 3
