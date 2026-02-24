@@ -1,4 +1,5 @@
 years:
+  - 2026
   - 2025
   - 2024
   - 2023
@@ -1383,6 +1384,42 @@ items:
       year: 2018
 
   steering_committee:
+    - url: steering_committee/minutes-january-13-2026.pdf
+      title: 13 January 2026 (pdf)
+      year: 2026
+    - url: steering_committee/minutes-december-16-2025.pdf
+      title: 16 December 2025 (pdf)
+      year: 2025
+    - url: steering_committee/minutes-december-9-2025.pdf
+      title: 9 December 2025 (pdf)
+      year: 2025
+    - url: steering_committee/minutes-november-18-2025.pdf
+      title: 18 November 2025 (pdf)
+      year: 2025
+    - url: steering_committee/minutes-november-4-2025.pdf
+      title: 4 November 2025 (pdf)
+      year: 2025
+    - url: steering_committee/minutes-october-21-2025.pdf
+      title: 21 October 2025 (pdf)
+      year: 2025
+    - url: steering_committee/minutes-october-7-2025.pdf
+      title: 7 October 2025 (pdf)
+      year: 2025
+    - url: steering_committee/minutes-september-23-2025.pdf
+      title: 23 September 2025 (pdf)
+      year: 2025
+    - url: steering_committee/minutes-september-9-2025.pdf
+      title: 9 September 2025 (pdf)
+      year: 2025
+    - url: steering_committee/minutes-august-26-2025.pdf
+      title: 26 August 2025 (pdf)
+      year: 2025
+    - url: steering_committee/minutes-august-12-2025.pdf
+      title: 12 August 2025 (pdf)
+      year: 2025
+    - url: steering_committee/minutes-july-22-2025.pdf
+      title: 22 July 2025 (pdf)
+      year: 2025
     - url: steering_committee/minutes-july-8-2025.pdf
       title: 8 July 2025 (pdf)
       year: 2025
