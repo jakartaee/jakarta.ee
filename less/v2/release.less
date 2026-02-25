@@ -1,0 +1,56 @@
+.release-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+
+  .title {
+    .font-medium;
+    font-size: 4rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .underline-text {
+    .font-medium;
+    font-size: 1.25rem;
+    font-style: italic;
+    color: @brand-primary-orange;
+    letter-spacing: normal;
+    text-transform: uppercase;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    .line {
+      border-top: 1px solid @brand-primary-orange;
+      flex: 1;
+    }
+  }
+
+  .number {
+    .font-bold;
+    font-size: 6rem;
+    letter-spacing: normal;
+    font-style: italic;
+    color: @brand-primary-orange;
+  }
+
+  @media (min-width: @screen-sm-min) {
+    gap: 2rem;
+
+    .title {
+      font-size: 7rem;
+    }
+
+    .underline-text {
+      font-size: 1.3rem;
+      letter-spacing: 8%;
+    }
+
+    .number {
+      font-size: 12rem;
+    }
+  }
+}

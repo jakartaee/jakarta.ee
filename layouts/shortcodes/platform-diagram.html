@@ -19,47 +19,69 @@
   {{- $statusClasses = merge $statusClasses (dict .status (dict "box_class" .box_class "text_class" .text_class)) -}}
 {{- end -}}
 
+{{- /* Helper: render spec list or grid for a column */ -}}
+{{- define "platform-specs" -}}
+  {{- $statusClasses := .statusClasses -}}
+  {{- $col := .col -}}
+  {{- range $col.specs -}}
+    {{- $classes := index $statusClasses .status -}}
+    <a
+      href="{{ .url }}"
+      class="spec-box {{ $classes.box_class }}"
+      aria-label="{{ .name }}"
+    >
+      <span class="{{ $classes.text_class }}">{{ .name }}</span>
+    </a>
+  {{- end -}}
+{{- end -}}
+
+{{- /* Recursive helper: render columns[1..N] as nested frames */ -}}
+{{- define "platform-nested-columns" -}}
+  {{- $statusClasses := .statusClasses -}}
+  {{- $columns := .columns -}}
+  {{- $col := index $columns 0 -}}
+  {{- $rest := after 1 $columns -}}
+  <div class="platform-frame">
+    {{- if $col.title -}}
+      <h4 class="column-title">{{ $col.title | safeHTML }}</h4>
+    {{- end -}}
+    <div class="platform-frame-row">
+      <div class="platform-frame-specs{{ if $col.grid }} spec-grid{{ end }}">
+        {{- template "platform-specs" (dict "col" $col "statusClasses" $statusClasses) -}}
+      </div>
+      {{- if $rest -}}
+        {{- template "platform-nested-columns" (dict "columns" $rest "statusClasses" $statusClasses) -}}
+      {{- end -}}
+    </div>
+  </div>
+{{- end -}}
+
+{{- $col0 := index $diagram.columns 0 -}}
+{{- $nestedCols := after 1 $diagram.columns -}}
+
 <div class="jakarta-ee-platform-diagram">
   <h3 class="platform-title">{{ $diagram.title }}</h3>
 
-  <div class="platform-columns">
-    {{- range $diagram.columns -}}
-      <div
-        class="platform-column {{ if eq .width "double" }}
-          platform-column-wide
-        {{ end }}"
-      >
-        {{- if .title -}}
-          <h4 class="column-title">{{ .title | safeHTML }}</h4>
-        {{- end -}}
+  {{- /* Outermost frame — wraps all columns */ -}}
+  <div class="platform-frame">
+    <div class="platform-frame-row">
 
-        {{- if .grid -}}
-          <div class="spec-grid">
-            {{- range .specs -}}
-              {{- $classes := index $statusClasses .status -}}
-              <a
-                href="{{ .url }}"
-                class="spec-box {{ $classes.box_class }}"
-                aria-label="{{ .name }}"
-              >
-                <span class="{{ $classes.text_class }}">{{ .name }}</span>
-              </a>
-            {{- end -}}
-          </div>
-        {{- else -}}
-          {{- range .specs -}}
-            {{- $classes := index $statusClasses .status -}}
-            <a
-              href="{{ .url }}"
-              class="spec-box {{ $classes.box_class }}"
-              aria-label="{{ .name }}"
-            >
-              <span class="{{ $classes.text_class }}">{{ .name }}</span>
-            </a>
+      {{- /* Column 0: standalone specs on the left side of the outer frame */ -}}
+      {{- if $col0 -}}
+        <div class="platform-frame-specs">
+          {{- if $col0.title -}}
+            <h4 class="column-title">{{ $col0.title | safeHTML }}</h4>
           {{- end -}}
-        {{- end -}}
-      </div>
-    {{- end -}}
+          {{- template "platform-specs" (dict "col" $col0 "statusClasses" $statusClasses) -}}
+        </div>
+      {{- end -}}
+
+      {{- /* Remaining columns: each nested inside the previous as a frame */ -}}
+      {{- if $nestedCols -}}
+        {{- template "platform-nested-columns" (dict "columns" $nestedCols "statusClasses" $statusClasses) -}}
+      {{- end -}}
+
+    </div>
   </div>
 
   <div class="platform-legend">

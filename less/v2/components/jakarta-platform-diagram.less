@@ -10,8 +10,6 @@
 
 // Jakarta EE Platform Diagram Styles
 .jakarta-ee-platform-diagram {
-  background-color: @light-grey;
-  border-radius: @border-radius-base;
   padding: 2rem 1rem;
 
   @media (min-width: @screen-md-min) {
@@ -29,69 +27,95 @@
     }
   }
 
-  .platform-columns {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 2rem;
+  .platform-frame {
+    border: 1px solid @brand-secondary;
+    border-radius: @border-radius-large;
+    padding: 1.5rem;
     margin-bottom: 2rem;
 
     @media (min-width: @screen-md-min) {
-      grid-template-columns: repeat(4, 1fr);
-      gap: 3rem;
+      border-right: none;
+      border-bottom: none;
+      border-radius: 0;
+      border-top-left-radius: @border-radius-large;
+      padding: 2rem 0 0 2rem;
+    }
+
+    .platform-frame {
+      margin-bottom: 0;
     }
   }
 
-  .platform-column-wide {
-    @media (min-width: @screen-md-min) {
-      grid-column: span 2;
-    }
-  }
-
-  .platform-column {
+  // Horizontal row inside a frame: specs on the left, nested frame on the right
+  .platform-frame-row {
     display: flex;
-    justify-content: flex-end;
     flex-direction: column;
-    gap: 1rem;
-    position: relative;
+    gap: 2rem;
 
-    // Add vertical divider between columns on desktop
-    &:not(:last-child)::after {
-      @media (min-width: @screen-md-min) {
-        content: "";
-        position: absolute;
-        right: -1.5rem;
-        top: 0;
-        bottom: 0;
-        width: 1px;
-        background-color: @brand-secondary;
+    @media (min-width: @screen-md-min) {
+      flex-direction: row;
+      gap: 2rem;
+      align-items: stretch;
+
+      // Nested frame fills remaining horizontal space
+      > .platform-frame {
+        flex: 1;
+        min-width: 0;
       }
-    }
 
-    // Add horizontal divider between columns on mobile
-    &:not(:last-child) {
-      @media (max-width: @screen-sm-max) {
-        padding-bottom: 2rem;
-        border-bottom: 1px solid @brand-secondary;
+      // Inside a nested row (e.g. Web Profile), the spec grid absorbs
+      // remaining space; the deepest frame stays at its natural content width
+      .platform-frame-row {
+        > .platform-frame-specs {
+          flex: 1;
+          min-width: 0;
+        }
+
+        > .platform-frame {
+          flex: 0 1 auto;
+        }
       }
     }
   }
 
-  // Two-column grid for Web Profile specifications
-  .spec-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+  // Vertical stack of spec-boxes within a frame section
+  .platform-frame-specs {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
     gap: 1rem;
+    flex-shrink: 0;
+
+    @media (min-width: @screen-md-min) {
+      min-width: 16rem;
+    }
+
+    // Two-column grid variant (Web Profile)
+    &.spec-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+      align-content: end;
+    }
+
+    // When the spec list is a direct child of a frame (innermost column),
+    // stretch it to fill the full frame width
+    .platform-frame > & {
+      @media (min-width: @screen-md-min) {
+        flex: 1;
+        min-width: 0;
+      }
+    }
   }
 
   .column-title {
     .text-primary;
     font-size: 1.6rem;
-    margin: 0 0 1rem 0;
+    margin: 0 0 1.5rem 0;
     font-weight: normal;
 
     @media (min-width: @screen-md-min) {
       font-size: 1.8rem;
-      margin-bottom: 1.5rem;
     }
 
     strong {
