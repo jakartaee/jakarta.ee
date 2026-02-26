@@ -13,6 +13,7 @@
   .platform-title {
     .text-primary;
     .font-semibold;
+    .text-center;
     margin: 0 0 2rem 0;
 
     @media (min-width: @screen-md-min) {
@@ -51,23 +52,29 @@
       gap: 2rem;
       align-items: stretch;
 
-      // Nested frame fills remaining horizontal space
-      > .platform-frame {
-        flex: 1;
+      // Proportional column sizing via CSS custom properties.
+      // Hugo sets: --spec-cols, --frame-cols (column unit counts),
+      //            --depth (nesting levels), --grids (inner grid count).
+      > .platform-frame-specs {
+        flex: var(--spec-cols, 1);
         min-width: 0;
+
+        // Grid specs pre-allocate their column gap so it doesn't
+        // eat into the proportional flex distribution
+        &.spec-grid {
+          flex-basis: 1rem;
+        }
       }
 
-      // Inside a nested row (e.g. Web Profile), the spec grid absorbs
-      // remaining space; the deepest frame stays at its natural content width
-      .platform-frame-row {
-        > .platform-frame-specs {
-          flex: 1;
-          min-width: 0;
-        }
-
-        > .platform-frame {
-          flex: 0 1 auto;
-        }
+      > .platform-frame {
+        flex-grow: var(--frame-cols, 1);
+        flex-shrink: 1;
+        // Compensate for fixed overhead inside the frame:
+        //   2rem       = own left padding
+        //   4rem/depth = gap(2rem) + padding(2rem) per nesting level
+        //   1rem/grid  = column-gap per inner spec-grid
+        flex-basis: calc(2rem + var(--depth, 0) * 4rem + var(--grids, 0) * 1rem);
+        min-width: 0;
       }
     }
   }

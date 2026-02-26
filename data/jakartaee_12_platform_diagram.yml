@@ -41,7 +41,7 @@ columns:
         url: "/specifications/enterprise-beans/4.1/"
 
   # Center Column - Web Profile (wider, two-column layout)
-  - title: "Jakarta EE 11 <strong>Web Profile</strong>"
+  - title: "Jakarta EE 12 <strong>Web Profile</strong>"
     width: "double" # Spans 2 columns
     grid: true # Enable two-column grid layout for specs
     specs:
@@ -98,7 +98,7 @@ columns:
         url: "/specifications/transactions/2.1/"
 
   # Right Column - Core Profile
-  - title: "Jakarta EE 11 <strong>Core Profile</strong>"
+  - title: "Jakarta EE 12 <strong>Core Profile</strong>"
     width: "single"
     specs:
       - name: "RESTful Web Services 5.0"

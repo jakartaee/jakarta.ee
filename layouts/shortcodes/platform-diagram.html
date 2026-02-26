@@ -41,11 +41,27 @@
   {{- $columns := .columns -}}
   {{- $col := index $columns 0 -}}
   {{- $rest := after 1 $columns -}}
+  {{- /* Column unit counts (single=1, double=2) */ -}}
+  {{- $specCols := 1 -}}
+  {{- if eq $col.width "double" -}}{{- $specCols = 2 -}}{{- end -}}
+  {{- $frameCols := 0 -}}
+  {{- range $rest -}}
+    {{- if eq .width "double" -}}{{- $frameCols = add $frameCols 2 -}}{{- else -}}{{- $frameCols = add $frameCols 1 -}}{{- end -}}
+  {{- end -}}
+  {{- /* Nesting depth and inner-grid count for CSS flex-basis calc */ -}}
+  {{- $depth := 0 -}}
+  {{- $grids := 0 -}}
+  {{- if gt (len $rest) 1 -}}
+    {{- $depth = sub (len $rest) 1 -}}
+    {{- range first $depth $rest -}}
+      {{- if .grid -}}{{- $grids = add $grids 1 -}}{{- end -}}
+    {{- end -}}
+  {{- end -}}
   <div class="platform-frame">
     {{- if $col.title -}}
       <h4 class="column-title">{{ $col.title | safeHTML }}</h4>
     {{- end -}}
-    <div class="platform-frame-row">
+    <div class="platform-frame-row"{{ if $rest }} style="--spec-cols: {{ $specCols }}; --frame-cols: {{ $frameCols }}; --depth: {{ $depth }}; --grids: {{ $grids }};"{{ end }}>
       <div class="platform-frame-specs{{ if $col.grid }} spec-grid{{ end }}">
         {{- template "platform-specs" (dict "col" $col "statusClasses" $statusClasses) -}}
       </div>
@@ -59,12 +75,28 @@
 {{- $col0 := index $diagram.columns 0 -}}
 {{- $nestedCols := after 1 $diagram.columns -}}
 
+{{- /* Column unit counts for outermost row */ -}}
+{{- $specCols := 1 -}}
+{{- if eq $col0.width "double" -}}{{- $specCols = 2 -}}{{- end -}}
+{{- $frameCols := 0 -}}
+{{- range $nestedCols -}}
+  {{- if eq .width "double" -}}{{- $frameCols = add $frameCols 2 -}}{{- else -}}{{- $frameCols = add $frameCols 1 -}}{{- end -}}
+{{- end -}}
+{{- $depth := 0 -}}
+{{- $grids := 0 -}}
+{{- if gt (len $nestedCols) 1 -}}
+  {{- $depth = sub (len $nestedCols) 1 -}}
+  {{- range first $depth $nestedCols -}}
+    {{- if .grid -}}{{- $grids = add $grids 1 -}}{{- end -}}
+  {{- end -}}
+{{- end -}}
+
 <div class="jakarta-ee-platform-diagram">
   <h3 class="platform-title">{{ $diagram.title }}</h3>
 
   {{- /* Outermost frame — wraps all columns */ -}}
   <div class="platform-frame">
-    <div class="platform-frame-row">
+    <div class="platform-frame-row"{{ if $nestedCols }} style="--spec-cols: {{ $specCols }}; --frame-cols: {{ $frameCols }}; --depth: {{ $depth }}; --grids: {{ $grids }};"{{ end }}>
 
       {{- /* Column 0: standalone specs on the left side of the outer frame */ -}}
       {{- if $col0 -}}
