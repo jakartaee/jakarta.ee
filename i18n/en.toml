@@ -1702,6 +1702,9 @@ other = "Release Page"
 [pages-specification-jakarta-ee-release-press-release]
 other = "Press Release"
 
+[pages-specification-jakarta-ee-release-under-development]
+other = "Under development"
+
 [pages-learn-index-starter-guides-title]
 other = "Starter Guides"
 
