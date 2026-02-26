@@ -161,11 +161,9 @@
     justify-content: center;
     gap: 2rem;
     flex-wrap: wrap;
-    padding-top: 1.5rem;
 
     @media (min-width: @screen-md-min) {
       gap: 3rem;
-      padding-top: 2rem;
     }
   }
 
@@ -191,5 +189,40 @@
       width: 1.8rem;
       height: 1.8rem;
     }
+  }
+  // Legend and footnotes row
+  .platform-legend-footnotes-row {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: stretch;
+    padding-top: 1.5rem;
+
+    @media (min-width: @screen-md-min) {
+      flex-direction: row;
+      align-items: center;
+      gap: 3rem;
+      justify-content: space-around;
+      padding-top: 2rem;
+    }
+  }
+
+  .platform-footnotes {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    font-size: 1.2rem;
+    color: @brand-secondary-gray;
+    max-width: 38rem;
+
+    @media (min-width: @screen-md-min) {
+      margin-top: 0;
+      align-items: flex-start;
+    }
+  }
+
+  .platform-footnote {
+    margin: 0;
+    word-break: break-word;
   }
 }

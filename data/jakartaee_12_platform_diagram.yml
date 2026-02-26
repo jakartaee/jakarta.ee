@@ -137,3 +137,6 @@ legend:
     label: "New"
     box_class: "bg-primary-orange"
     text_class: "text-white"
+footnotes:
+  - "* Candidate for inclusion."
+  - "**May or may not be updated as a part of Security 5.0."

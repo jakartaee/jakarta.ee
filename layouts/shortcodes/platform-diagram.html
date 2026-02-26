@@ -116,11 +116,20 @@
     </div>
   </div>
 
-  <div class="platform-legend">
-    {{- range $diagram.legend -}}
-      <div class="legend-item">
-        <span class="legend-dot {{ .box_class }}"></span>
-        <span>{{ .label }}</span>
+  <div class="platform-legend-footnotes-row">
+    <div class="platform-legend">
+      {{- range $diagram.legend -}}
+        <div class="legend-item">
+          <span class="legend-dot {{ .box_class }}"></span>
+          <span>{{ .label }}</span>
+        </div>
+      {{- end -}}
+    </div>
+    {{- if $diagram.footnotes -}}
+      <div class="platform-footnotes">
+        {{- range $diagram.footnotes -}}
+          <p class="platform-footnote">{{ . | safeHTML }}</p>
+        {{- end -}}
       </div>
     {{- end -}}
   </div>
