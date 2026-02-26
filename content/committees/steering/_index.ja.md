@@ -10,7 +10,7 @@ date: 2020-01-05T15:50:25-04:00
 ### 委員会メンバー
 
 * Ed Bratt (**委員長**)- Oracle、Dmitry Kornilov - 代理
-* Kenji Kazumura - 富士通、Yuichi Kusano - 代理
+* Kenji Kazumura - 富士通、Takahiro Nagao - 代理
 * Alasdair Nottingham - IBM、Emily Jiang - 代理
 * Dominika Tasarz - Payara、Steve Butler  – 代理
 * David Blevins - Tomitribe、Cesar Hernandez - 代理
