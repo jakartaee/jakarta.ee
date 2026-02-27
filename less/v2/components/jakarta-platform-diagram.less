@@ -24,15 +24,14 @@
 
   .platform-frame {
     border: 1px solid @brand-secondary;
-    border-radius: @border-radius-large;
-    padding: 1.5rem;
+    padding: 1.5rem 0 0 1.5rem;
     margin-bottom: 2rem;
+    border-right: none;
+    border-bottom: none;
+    border-radius: 0;
+    border-top-left-radius: @border-radius-large;
 
     @media (min-width: @screen-md-min) {
-      border-right: none;
-      border-bottom: none;
-      border-radius: 0;
-      border-top-left-radius: @border-radius-large;
       padding: 2rem 0 0 2rem;
     }
 
@@ -73,7 +72,9 @@
         //   2rem       = own left padding
         //   4rem/depth = gap(2rem) + padding(2rem) per nesting level
         //   1rem/grid  = column-gap per inner spec-grid
-        flex-basis: calc(2rem + var(--depth, 0) * 4rem + var(--grids, 0) * 1rem);
+        flex-basis: calc(
+          2rem + var(--depth, 0) * 4rem + var(--grids, 0) * 1rem
+        );
         min-width: 0;
       }
     }
@@ -94,9 +95,13 @@
     // Two-column grid variant (Web Profile)
     &.spec-grid {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
       gap: 1rem;
       align-content: end;
+      justify-content: stretch;
+
+      @media (min-width: @screen-md-min) {
+        grid-template-columns: repeat(2, 1fr);
+      }
     }
 
     // When the spec list is a direct child of a frame (innermost column),
@@ -136,7 +141,10 @@
     text-align: center;
     font-size: 1.3rem;
     text-decoration: none;
-    transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
+    transition:
+      transform 0.2s ease,
+      box-shadow 0.2s ease,
+      filter 0.2s ease;
 
     @media (min-width: @screen-md-min) {
       font-size: 1.4rem;
