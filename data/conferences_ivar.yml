@@ -56,14 +56,13 @@ years:
     url: https://devnexus.com/
     location: Atlanta, GA 🇺🇸
     date: Mar 4-6
-    upcoming: true
-
+    
   - name: ConFoo
     url: https://confoo.ca/en/2026
     location: Montreal 🇨🇦
     date: Feb 24-27
-    upcoming: true
-
+    blog: https://www.agilejava.eu/2026/02/28/confoo-2026/
+    
   - name: DeveloperWeek
     url: https://www.developerweek.com/
     location: San Jose, CA 🇺🇸
