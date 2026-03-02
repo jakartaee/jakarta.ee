@@ -10,17 +10,10 @@
 
 // Jakarta EE Platform Diagram Styles
 .jakarta-ee-platform-diagram {
-  background-color: @light-grey;
-  border-radius: @border-radius-base;
-  padding: 2rem 1rem;
-
-  @media (min-width: @screen-md-min) {
-    padding: 3rem 2rem;
-  }
-
   .platform-title {
     .text-primary;
     .font-semibold;
+    .text-center;
     margin: 0 0 2rem 0;
 
     @media (min-width: @screen-md-min) {
@@ -29,69 +22,106 @@
     }
   }
 
-  .platform-columns {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 2rem;
+  .platform-frame {
+    border: 1px solid @brand-secondary;
+    padding: 1.5rem 0 0 1.5rem;
     margin-bottom: 2rem;
+    border-right: none;
+    border-bottom: none;
+    border-radius: 0;
+    border-top-left-radius: @border-radius-large;
 
     @media (min-width: @screen-md-min) {
-      grid-template-columns: repeat(4, 1fr);
-      gap: 3rem;
+      padding: 2rem 0 0 2rem;
+    }
+
+    .platform-frame {
+      margin-bottom: 0;
     }
   }
 
-  .platform-column-wide {
-    @media (min-width: @screen-md-min) {
-      grid-column: span 2;
-    }
-  }
-
-  .platform-column {
+  // Horizontal row inside a frame: specs on the left, nested frame on the right
+  .platform-frame-row {
     display: flex;
-    justify-content: flex-end;
     flex-direction: column;
-    gap: 1rem;
-    position: relative;
+    gap: 2rem;
 
-    // Add vertical divider between columns on desktop
-    &:not(:last-child)::after {
-      @media (min-width: @screen-md-min) {
-        content: "";
-        position: absolute;
-        right: -1.5rem;
-        top: 0;
-        bottom: 0;
-        width: 1px;
-        background-color: @brand-secondary;
+    @media (min-width: @screen-md-min) {
+      flex-direction: row;
+      gap: 2rem;
+      align-items: stretch;
+
+      // Proportional column sizing via CSS custom properties.
+      // Hugo sets: --spec-cols, --frame-cols (column unit counts),
+      //            --depth (nesting levels), --grids (inner grid count).
+      > .platform-frame-specs {
+        flex: var(--spec-cols, 1);
+        min-width: 0;
+
+        // Grid specs pre-allocate their column gap so it doesn't
+        // eat into the proportional flex distribution
+        &.spec-grid {
+          flex-basis: 1rem;
+        }
       }
-    }
 
-    // Add horizontal divider between columns on mobile
-    &:not(:last-child) {
-      @media (max-width: @screen-sm-max) {
-        padding-bottom: 2rem;
-        border-bottom: 1px solid @brand-secondary;
+      > .platform-frame {
+        flex-grow: var(--frame-cols, 1);
+        flex-shrink: 1;
+        // Compensate for fixed overhead inside the frame:
+        //   2rem       = own left padding
+        //   4rem/depth = gap(2rem) + padding(2rem) per nesting level
+        //   1rem/grid  = column-gap per inner spec-grid
+        flex-basis: calc(
+          2rem + var(--depth, 0) * 4rem + var(--grids, 0) * 1rem
+        );
+        min-width: 0;
       }
     }
   }
 
-  // Two-column grid for Web Profile specifications
-  .spec-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+  // Vertical stack of spec-boxes within a frame section
+  .platform-frame-specs {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
     gap: 1rem;
+    flex-shrink: 0;
+
+    @media (min-width: @screen-md-min) {
+      min-width: 16rem;
+    }
+
+    // Two-column grid variant (Web Profile)
+    &.spec-grid {
+      display: grid;
+      gap: 1rem;
+      align-content: end;
+      justify-content: stretch;
+
+      @media (min-width: @screen-md-min) {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    // When the spec list is a direct child of a frame (innermost column),
+    // stretch it to fill the full frame width
+    .platform-frame > & {
+      @media (min-width: @screen-md-min) {
+        flex: 1;
+        min-width: 0;
+      }
+    }
   }
 
   .column-title {
     .text-primary;
     font-size: 1.6rem;
-    margin: 0 0 1rem 0;
+    margin: 0 0 1.5rem 0;
     font-weight: normal;
 
     @media (min-width: @screen-md-min) {
       font-size: 1.8rem;
-      margin-bottom: 1.5rem;
     }
 
     strong {
@@ -111,7 +141,10 @@
     text-align: center;
     font-size: 1.3rem;
     text-decoration: none;
-    transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
+    transition:
+      transform 0.2s ease,
+      box-shadow 0.2s ease,
+      filter 0.2s ease;
 
     @media (min-width: @screen-md-min) {
       font-size: 1.4rem;
@@ -136,11 +169,9 @@
     justify-content: center;
     gap: 2rem;
     flex-wrap: wrap;
-    padding-top: 1.5rem;
 
     @media (min-width: @screen-md-min) {
       gap: 3rem;
-      padding-top: 2rem;
     }
   }
 
@@ -166,5 +197,40 @@
       width: 1.8rem;
       height: 1.8rem;
     }
+  }
+  // Legend and footnotes row
+  .platform-legend-footnotes-row {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: stretch;
+    padding-top: 1.5rem;
+
+    @media (min-width: @screen-md-min) {
+      flex-direction: row;
+      align-items: center;
+      gap: 4rem;
+      justify-content: center;
+      padding-top: 2rem;
+    }
+  }
+
+  .platform-footnotes {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    font-size: 1.2rem;
+    color: @brand-secondary-gray;
+    max-width: 38rem;
+
+    @media (min-width: @screen-md-min) {
+      margin-top: 0;
+      align-items: flex-start;
+    }
+  }
+
+  .platform-footnote {
+    margin: 0;
+    word-break: break-word;
   }
 }

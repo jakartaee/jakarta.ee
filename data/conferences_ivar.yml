@@ -28,6 +28,12 @@ years:
     date: May 5
     upcoming: true
 
+  - name: ShiftAPPens
+    url: https://shiftappens.com/
+    location: Coimbra 🇵🇹
+    date: May 1-3
+    upcoming: true
+
   - name: Open Community Experience
     url: https://www.ocxconf.org
     location: Brussels 🇧🇪
@@ -56,14 +62,13 @@ years:
     url: https://devnexus.com/
     location: Atlanta, GA 🇺🇸
     date: Mar 4-6
-    upcoming: true
-
+    
   - name: ConFoo
     url: https://confoo.ca/en/2026
     location: Montreal 🇨🇦
     date: Feb 24-27
-    upcoming: true
-
+    blog: https://www.agilejava.eu/2026/02/28/confoo-2026/
+    
   - name: DeveloperWeek
     url: https://www.developerweek.com/
     location: San Jose, CA 🇺🇸
