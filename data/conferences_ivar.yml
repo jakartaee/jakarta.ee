@@ -56,18 +56,17 @@ years:
     url: https://www.oracle.com/javaone
     location: Redwood Shores, CA 🇺🇸
     date: Mar 17-19
-    upcoming: true
-    
+   
   - name: JavaLand
     url: https://www.javaland.eu/en/home/
     location: Rust 🇩🇪
     date: Mar 10-12
-    upcoming: true
     
   - name: Devnexus
     url: https://devnexus.com/
     location: Atlanta, GA 🇺🇸
     date: Mar 4-6
+    blog: https://www.agilejava.eu/2026/03/11/devnexus-2026/
     
   - name: ConFoo
     url: https://confoo.ca/en/2026
