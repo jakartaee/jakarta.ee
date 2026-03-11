@@ -28,13 +28,25 @@ document.addEventListener("DOMContentLoaded", function () {
     setupRotatingText();
 
     // Initialize scroll snap carousels for home
-    scrollSnapCarousel(".testimonial-container:not(.join-us-page-testimonials)", ".testimonial-item");
+    scrollSnapCarousel(
+      ".testimonial-container:not(.join-us-page-testimonials)",
+      ".testimonial-item",
+    );
     scrollSnapCarousel(".news-container", "article", {
       useMutationObserver: true,
     });
-    scrollSnapCarousel(".testimonial-container.join-us-page-testimonials", ".testimonial-item", {
+    scrollSnapCarousel(
+      ".testimonial-container.join-us-page-testimonials",
+      ".testimonial-item",
+      {
+        autoRotate: true,
+        autoRotateInterval: 3000,
+      },
+    );
+    scrollSnapCarousel(".scroll-image-carousel", ".scroll-image", {
       autoRotate: true,
-      autoRotateInterval: 3000,
+      autoRotateInterval: 2000,
+      controls: false,
     });
 
     // Initialize Mobile Mega Menu

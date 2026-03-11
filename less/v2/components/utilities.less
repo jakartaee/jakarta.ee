@@ -76,7 +76,7 @@
   @media (min-width: @screen-md-min) {
     .col-span-6;
   }
-} 
+}
 
 .md\:col-span-7 {
   @media (min-width: @screen-md-min) {
@@ -238,6 +238,16 @@
   flex-direction: column;
 }
 
+.flex-30 {
+  flex: 0 0 30rem;
+}
+
+.md\:flex-50 {
+  @media (min-width: @screen-md-min) {
+    flex: 0 0 50rem;
+  }
+}
+
 .margin-x-auto {
   margin-left: auto;
   margin-right: auto;
@@ -281,6 +291,10 @@
   position: absolute;
   bottom: 0;
   right: 0;
+}
+
+.w-160 {
+  width: 160rem;
 }
 
 .w-30 {

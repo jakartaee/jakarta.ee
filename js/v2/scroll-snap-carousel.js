@@ -35,7 +35,7 @@ function createScrollSnapCarousel(container, options = {}) {
 
   // Duplicate items for infinite scroll if autoRotate
   if (options.autoRotate) {
-    items.forEach(item => {
+    items.forEach((item) => {
       const clone = item.cloneNode(true);
       container.appendChild(clone);
     });
@@ -133,7 +133,8 @@ function createScrollSnapCarousel(container, options = {}) {
     } else {
       // Hide/disable Next if at end (with slight tolerance for fractional pixels)
       const isAtEnd =
-        Math.ceil(scrollLeft + clientWidth) >= Math.floor(container.scrollWidth);
+        Math.ceil(scrollLeft + clientWidth) >=
+        Math.floor(container.scrollWidth);
       nextBtn.style.visibility = isAtEnd ? "hidden" : "visible";
       nextBtn.disabled = isAtEnd;
       nextBtn.setAttribute("aria-disabled", isAtEnd.toString());
@@ -141,16 +142,22 @@ function createScrollSnapCarousel(container, options = {}) {
   }
 
   // Initialize
-  createControls();
-  updateButtons();
+  if (options.controls) {
+    createControls();
+    updateButtons();
+  }
 
   // Handle scroll for infinite loop and button updates
-  container.addEventListener("scroll", () => {
-    if (options.autoRotate && container.scrollLeft >= originalWidth) {
-      container.scrollLeft -= originalWidth;
-    }
-    updateButtons();
-  }, { passive: true });
+  container.addEventListener(
+    "scroll",
+    () => {
+      if (options.autoRotate && container.scrollLeft >= originalWidth) {
+        container.scrollLeft -= originalWidth;
+      }
+      if (options.controls) updateButtons();
+    },
+    { passive: true },
+  );
 
   container.addEventListener("keydown", (e) => handleKeydown(e));
   document.addEventListener("keydown", (e) => handleGlobalKeydown(e));
@@ -225,7 +232,8 @@ function initWithObserver(selector, itemSelector, options = {}) {
             const hasItems = Array.from(mutation.addedNodes).some(
               (node) =>
                 node.nodeType === Node.ELEMENT_NODE &&
-                (node.matches(itemSelector) || node.querySelector(itemSelector))
+                (node.matches(itemSelector) ||
+                  node.querySelector(itemSelector)),
             );
             if (hasItems) {
               createScrollSnapCarousel(container, { itemSelector, ...options });
@@ -251,6 +259,7 @@ function initWithObserver(selector, itemSelector, options = {}) {
  * @param {boolean} [options.useMutationObserver] - Whether to use mutation observer for deferred initialization
  * @param {boolean} [options.autoRotate] - Whether to enable auto-rotation (passed to createScrollSnapCarousel)
  * @param {number} [options.autoRotateInterval] - Auto-rotation interval (passed to createScrollSnapCarousel)
+ * @param {number} [options.controls] - Whether to show navigation controls (passed to createScrollSnapCarousel)
  * @returns {void}
  */
 const scrollSnapCarousel = (selector, itemSelector, options = {}) => {
