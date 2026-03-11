@@ -4,6 +4,12 @@ years:
 - year: 2026
   conferences:
 
+  - name: IntelliJ IDEA Conf
+    url: https://lp.jetbrains.com/intellij-idea-conf-2026/
+    location: TBD
+    date: TBD
+    upcoming: true    
+
   - name: JCrete
     url: https://www.jcrete.org
     location: Kolymvari 🇬🇷
@@ -40,11 +46,11 @@ years:
     date: Apr 20-23
     upcoming: true
 
-  - name: IntelliJ IDEA Conf
-    url: https://lp.jetbrains.com/intellij-idea-conf-2026/
-    location: Paphos 🇨🇾 + 🌐
-    date: Mar 26-27
-    upcoming: true    
+  - name: Voxxed Days Amsterdam
+    url: https://amsterdam.voxxeddays.com
+    location: Amsterdam 🇳🇱
+    date: Apr 1-2
+    upcoming: true
 
   - name: JavaOne
     url: https://www.oracle.com/javaone
