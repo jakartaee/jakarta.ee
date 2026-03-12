@@ -97,7 +97,7 @@ categories:
       - label: "Amplification of your Jakarta EE-related news and announcements across Jakarta EE channels"
         strategic: true
         enterprise: true
-        participant: false
+        participant: true
         guest: true
       - label: "Ongoing promotion of members’ Jakarta EE-compatible products across Jakarta EE channels"
         strategic: true
@@ -135,7 +135,7 @@ categories:
       - label: "Opportunity to host community meetups or JakartaOne events"
         strategic: true
         enterprise: true
-        participant: false
+        participant: true
         guest: true
       - label: "Discounts on Jakarta EE-hosted event sponsorships"
         strategic: "20% discount"

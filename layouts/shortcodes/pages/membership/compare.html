@@ -44,6 +44,9 @@
                       class="fa fa-check-circle compare-check"
                       aria-hidden="true"
                     ></i>
+                    <span class="sr-only">
+                      {{ .name }} members are eligible</span
+                    >
                   </td>
                 {{ else }}
                   <td>
@@ -51,6 +54,9 @@
                       class="fa fa-times-circle-o compare-cross"
                       aria-hidden="true"
                     ></i>
+                    <span class="sr-only">
+                      {{ .name }} members are not eligible</span
+                    >
                   </td>
                 {{ end }}
               {{ else }}
