@@ -196,6 +196,14 @@ sets:
           - version: 10.0.10
             compatibility: 'http://www.inforbus.com/InforsuiteAS/platform-tckresults/FullPlatform10/index.html'
             download_url: 'http://www.inforbus.com/as.html'
+        - name: LENA
+          vendor: LG CNS Co., Ltd.
+          image: '/images/compatible_products/lena-logo.svg'
+          download: 'https://solution.lgcns.com/en/solution/lena'
+          versions:
+            - version: 1.3
+              compatibility: 'https://docs.lenalab.org/resources/certifications/LENA-1.3_tck-results.html'
+              download_url: 'https://solution.lgcns.com/en/solution/lena'
         - name: Open Liberty
           vendor: IBM Corporation
           image: '/images/compatible_products/ibm-open-liberty-logo.svg'
