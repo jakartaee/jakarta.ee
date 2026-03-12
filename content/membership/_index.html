@@ -13,6 +13,7 @@ links:
 hide_page_title: true
 hide_sidebar: true
 hide_breadcrumb: true
+page_css_file: css/membership.css
 container: container-fluid
 ---
 
@@ -257,12 +258,28 @@ container: container-fluid
   </div>
 </section>
 
+<section class="row padding-y-large" id="compare">
+  <div class="container">
+    <h2
+      class="featured-heading text-primary text-md-center margin-bottom-large"
+    >
+      Compare
+    </h2>
+    {{< pages/membership/compare >}}
+    <div
+      class="margin-top-60 links d-flex flex-wrap justify-content-center gap-2"
+    >
+      <a class="btn btn-primary"> Conatact us about membership </a>
+    </div>
+  </div>
+</section>
+
 {{< testimonials title="false" >}}
 
 {{< members >}}
 
 
-<section id="membership-level" class="row padding-y-large">
+<section id="contact" class="row padding-y-large">
   <div class="container">
     <div class="rounded-medium bg-blue-image-5 padding-20 md:padding-60">
       <div class="max-w-80 text-md-center margin-x-auto text-primary">

@@ -1,0 +1,144 @@
+# Membership comparison table data
+# Values: true = check, false = cross, or a string for text values
+
+levels:
+  - id: strategic
+    name: Strategic
+    mobile: true
+  - id: enterprise
+    name: Enterprise
+    mobile: true
+  - id: participant
+    name: Participant
+    mobile: true
+  - id: guest
+    name: Guest
+    mobile: false
+
+categories:
+  - name: Governance
+    items:
+      - label: "**One guaranteed seat** & one alternate representative on each of the Jakarta EE Steering, Specification & Marketing Committees"
+        strategic: true
+        enterprise: false
+        participant: false
+        guest: false
+      - label: "**Eligible to participate in elections for 2 member-level seats** on each of Jakarta EE's Steering, Specification and Marketing Committees"
+        strategic: false
+        enterprise: true
+        participant: false
+        guest: false
+      - label: "**Eligible to participate in elections for 1 member-level seat** on each of Jakarta EE's Steering, Specification and Marketing Committees"
+        strategic: false
+        enterprise: false
+        participant: true
+        guest: false
+
+  - name: Visibility
+    items:
+      - label: "Opportunity to provide a testimonial featured on the Jakarta EE homepage"
+        strategic: true
+        enterprise: false
+        participant: false
+        guest: false
+      - label: "Premium logo placement on homepage & key campaigns"
+        strategic: true
+        enterprise: false
+        participant: false
+        guest: false
+      - label: "Product listing on the Jakarta EE Compatible Products page"
+        strategic: true
+        enterprise: true
+        participant: true
+        guest: true
+      - label: "Logo placement on Jakarta EE members’ page"
+        strategic: true
+        enterprise: true
+        participant: true
+        guest: true
+      - label: "Use of Jakarta EE Working Group member logo"
+        strategic: true
+        enterprise: true
+        participant: true
+        guest: true
+      - label: "Mention in Jakarta EE press releases"
+        strategic: true
+        enterprise: false
+        participant: false
+        guest: false
+      - label: "Featured quote in all Jakarta EE press releases"
+        strategic: true
+        enterprise: false
+        participant: false
+        guest: false
+
+  - name: "Content & thought leadership"
+    items:
+      - label: "Option to issue a joint press release upon joining"
+        strategic: true
+        enterprise: false
+        participant: false
+        guest: false
+      - label: "Opportunity to appoint a spokesperson to participate in analyst briefings and media outreach"
+        strategic: true
+        enterprise: false
+        participant: false
+        guest: false
+      - label: "Featured participation in success stories, case studies, or blog series"
+        strategic: true
+        enterprise: true
+        participant: true
+        guest: true
+      - label: "Submit content to Jakarta EE blog & community news"
+        strategic: true
+        enterprise: true
+        participant: true
+        guest: true
+      - label: "Amplification of your Jakarta EE-related news and announcements across Jakarta EE channels"
+        strategic: true
+        enterprise: true
+        participant: false
+        guest: true
+      - label: "Ongoing promotion of members’ Jakarta EE-compatible products across Jakarta EE channels"
+        strategic: true
+        enterprise: true
+        participant: true
+        guest: true
+
+  - name: "Events & speaking opportunities"
+    items:
+      - label: "Co-branded marketing materials in the community booths at industry events or digital assets at virtual events"
+        strategic: true
+        enterprise: false
+        participant: false
+        guest: false
+      - label: "Priority keynote session at JakartaOne livestream events"
+        strategic: true
+        enterprise: false
+        participant: false
+        guest: false
+      - label: "Featured member video interviews at the OCX event, showcasing leadership in the Jakarta EE community"
+        strategic: true
+        enterprise: true
+        participant: false
+        guest: false
+      - label: "Amplification of your Jakarta EE-related events across Jakarta EE channels"
+        strategic: true
+        enterprise: true
+        participant: true
+        guest: true
+      - label: "Participation in Jakarta EE or EF community booths at industry events"
+        strategic: true
+        enterprise: true
+        participant: true
+        guest: true
+      - label: "Opportunity to host community meetups or JakartaOne events"
+        strategic: true
+        enterprise: true
+        participant: false
+        guest: true
+      - label: "Discounts on Jakarta EE-hosted event sponsorships"
+        strategic: "20% discount"
+        enterprise: "15% discount"
+        participant: "10% discount"
+        guest: false

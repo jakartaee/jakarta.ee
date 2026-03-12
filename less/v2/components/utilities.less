@@ -48,52 +48,44 @@
   display: grid;
 }
 
-.col-span-2 {
-  grid-column: span 2 / span 2;
+.generate-col-span(@n, @i: 1) when (@i =< @n) {
+  .col-span-@{i} {
+    grid-column: span @i / span @i;
+  }
+  .md\:col-span-@{i} {
+    @media (min-width: @screen-md-min) {
+      grid-column: span @i / span @i;
+    }
+  }
+  .lg\:col-span-@{i} {
+    @media (min-width: @screen-lg-min) {
+      grid-column: span @i / span @i;
+    }
+  }
+  .generate-col-span(@n, (@i + 1));
 }
+.generate-col-span(12);
 
-.col-span-6 {
-  grid-column: span 6 / span 6;
+.generate-col-start(@n, @i: 1) when (@i =< @n) {
+  .col-start-@{i} {
+    grid-column-start: @i;
+  }
+  .md\:col-start-@{i} {
+    @media (min-width: @screen-md-min) {
+      grid-column-start: @i;
+    }
+  }
+  .lg\:col-start-@{i} {
+    @media (min-width: @screen-lg-min) {
+      grid-column-start: @i;
+    }
+  }
+  .generate-col-start(@n, (@i + 1));
 }
-
-.col-span-7 {
-  grid-column: span 7 / span 7;
-}
-
-.col-start-8 {
-  grid-column-start: 8;
-}
-
-.col-start-1 {
-  grid-column-start: 1;
-}
+.generate-col-start(12);
 
 .row-start-1 {
   grid-row-start: 1;
-}
-
-.md\:col-span-6 {
-  @media (min-width: @screen-md-min) {
-    .col-span-6;
-  }
-}
-
-.md\:col-span-7 {
-  @media (min-width: @screen-md-min) {
-    .col-span-7;
-  }
-}
-
-.md\:col-start-8 {
-  @media (min-width: @screen-md-min) {
-    .col-start-8;
-  }
-}
-
-.md\:col-start-1 {
-  @media (min-width: @screen-md-min) {
-    .col-start-1;
-  }
 }
 
 .md\:row-start-1 {
@@ -122,6 +114,12 @@
 
 .grid-cols-13 {
   grid-template-columns: repeat(13, 1fr);
+}
+
+.lg\:grid-cols-12 {
+  @media (min-width: @screen-lg-min) {
+    grid-template-columns: repeat(12, 1fr);
+  }
 }
 
 .xs\:grid-cols-2 {
@@ -222,6 +220,27 @@
 .padding-y-large {
   .padding-top-large;
   .padding-bottom-large;
+}
+
+.margin-bottom-large {
+  margin-bottom: 2rem;
+
+  @media (min-width: @screen-md-min) {
+    margin-bottom: 6rem;
+  }
+}
+
+.margin-top-large {
+  margin-top: 2rem;
+
+  @media (min-width: @screen-md-min) {
+    margin-top: 6rem;
+  }
+}
+
+.margin-y-large {
+  .margin-top-large;
+  .margin-bottom-large;
 }
 
 .padding-y-huge {

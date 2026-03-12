@@ -1,0 +1,153 @@
+@import (reference) "../styles.less";
+
+// Membership Compare
+.compare-check {
+  color: @brand-primary-royal-blue;
+  font-size: 1.5em;
+}
+
+.compare-cross {
+  color: fade(@brand-secondary-gray, 50%);
+  font-size: 1.5em;
+}
+
+.compare-text-value {
+  font-size: 1.3rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+// Desktop Compare Table
+.membership-compare-table {
+  width: 100%;
+  border-collapse: collapse;
+
+  thead th {
+    padding: 1.5rem 1rem;
+    text-align: center;
+    font-weight: 600;
+    color: @brand-primary;
+
+    &:first-child {
+      text-align: left;
+    }
+  }
+
+  tbody td {
+    padding: 1.2rem 1rem;
+    border-bottom: 1px solid @light-grey;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 1.4rem;
+
+    &:first-child {
+      text-align: left;
+      width: 50%;
+    }
+  }
+
+  .compare-category-row:first-child td {
+    padding-top: 0;
+  }
+
+  .compare-category-row td {
+    border-bottom: none;
+    padding-top: 3rem;
+    padding-bottom: 0.5rem;
+
+    h3 {
+      margin: 0;
+      font-size: 2.5rem;
+      font-weight: 500;
+      color: @brand-primary;
+    }
+  }
+}
+
+// Mobile Compare
+.membership-compare-mobile {
+  .tab-content {
+    padding-top: 0;
+  }
+
+  .membership-compare-tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2.5rem;
+    border: none;
+
+    > li {
+      > a {
+        .btn;
+        .btn-outline-primary;
+        margin: 0 0.3rem;
+      }
+
+      &.active > a {
+        .btn;
+        .btn-primary;
+
+        &:hover,
+        &:focus {
+          .btn-primary;
+        }
+      }
+    }
+  }
+
+  .compare-category-group {
+    display: flex;
+    margin-bottom: 1rem;
+    border-left: 0.3rem solid @brand-primary;
+  }
+
+  .compare-category-label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 3rem;
+    padding: 0.5rem;
+
+    span {
+      writing-mode: vertical-rl;
+      transform: rotate(180deg);
+      font-weight: 700;
+      font-size: 1.2rem;
+      color: @brand-primary;
+      white-space: nowrap;
+      text-transform: uppercase;
+      letter-spacing: 0.05rem;
+    }
+  }
+
+  .compare-category-items {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .compare-item {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 1rem 1.2rem;
+    border-bottom: 1px solid @light-grey;
+    gap: 1rem;
+
+    &:last-child {
+      border-bottom: none;
+    }
+
+    p {
+      margin: 0;
+      font-size: 1.3rem;
+      flex: 1;
+    }
+
+    .compare-check,
+    .compare-cross,
+    .compare-text-value {
+      flex-shrink: 0;
+      margin-top: 0.2rem;
+    }
+  }
+}

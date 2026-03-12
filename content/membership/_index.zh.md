@@ -8,4 +8,3 @@ hide_page_title: true
 hide_sidebar: true
 ---
 
-{{< pages/membership/index >}}
