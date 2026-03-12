@@ -4,6 +4,12 @@ years:
 - year: 2026
   conferences:
 
+  - name: Vaadin Create
+    url: https://vaadin.com/vaadin-create-2026
+    location: Barcelona 🇪🇸
+    date: Oct 27-28
+    upcoming: true    
+
   - name: IntelliJ IDEA Conf
     url: https://lp.jetbrains.com/intellij-idea-conf-2026/
     location: TBD
