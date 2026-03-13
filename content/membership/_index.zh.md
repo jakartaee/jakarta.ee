@@ -7,8 +7,8 @@ date: 2018-04-05T16:09:45-04:00
 header_wrapper_class: header-tertiary-bg-img
 links:
   [
-    [href: "#", text: "Become a member", class: "btn btn-primary"],
-    [href: "#", text: "Our members", class: "btn btn-outline-primary"],
+    [href: "#contact", text: "Contact us about membership", class: "btn btn-primary"],
+    [href: "/membership/members", text: "Our members", class: "btn btn-outline-primary"],
   ]
 hide_page_title: true
 hide_sidebar: true
