@@ -21,15 +21,18 @@
     class="scroll-image-carousel d-flex gap-2 overflow-x-scroll snap-type-x-mandatory scrollbar-hidden padding-x-20"
   >
     {{ range $images }}
+      {{ $resource := $.Page.Resources.GetMatch .src }}
+      {{ if $resource }}
       <div class="scroll-image snap-center flex-30 md:flex-50">
         <img
-          src="{{ .src }}"
+          src="{{ $resource.RelPermalink }}"
           alt="{{ i18n .altKey }}"
           height="350"
           width="521"
           class="img-responsive rounded-medium"
         />
       </div>
+      {{ end }}
     {{ end }}
   </div>
 </section>
