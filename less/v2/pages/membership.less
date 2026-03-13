@@ -64,6 +64,49 @@
   }
 }
 
+// Fees Table (desktop)
+.membership-fees-table {
+  width: 100%;
+  border-collapse: collapse;
+
+  thead th {
+    padding: 1.2rem 1.5rem;
+    text-align: left;
+    font-weight: 600;
+    color: @brand-primary;
+    white-space: nowrap;
+
+    &:not(:first-child) {
+      text-align: center;
+    }
+  }
+
+  tbody td {
+    padding: 1.2rem 1.5rem;
+    border-bottom: 1px solid @light-grey;
+    color: @brand-primary;
+    .font-light;
+
+    &:not(:first-child) {
+      text-align: center;
+    }
+  }
+}
+
+// Fees Table (mobile)
+.membership-fees-row {
+  padding: 1.5rem 0;
+  border-bottom: 1px solid @light-grey;
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.membership-fees-values {
+  grid-template-columns: repeat(3, 1fr);
+}
+
 // Mobile Compare
 .membership-compare-mobile {
   .tab-content {

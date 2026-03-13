@@ -1,0 +1,27 @@
+<!--
+ Copyright (c) 2026 Eclipse Foundation AISBL
+
+ This program and the accompanying materials are made
+ available under the terms of the Eclipse Public License 2.0
+ which is available at https://www.eclipse.org/legal/epl-2.0/
+
+ SPDX-License-Identifier: EPL-2.0
+-->
+
+{{- $heading := i18n "membership-contact-heading" -}}
+{{- $paragraph := i18n "membership-contact-paragraph" -}}
+
+<section id="contact" class="row padding-y-large">
+  <div class="container">
+    <div class="rounded-medium bg-blue-image-5 padding-20 md:padding-60">
+      <div class="max-w-80 text-md-center margin-x-auto text-primary">
+        <h2 class="featured-heading text-primary">{{ $heading }}</h2>
+        <p>{{ $paragraph }}</p>
+
+        <div class="card margin-top-large">
+          {{ .Inner }}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

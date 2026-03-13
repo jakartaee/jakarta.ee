@@ -1,0 +1,35 @@
+<!--
+ Copyright (c) 2026 Eclipse Foundation AISBL
+
+ This program and the accompanying materials are made
+ available under the terms of the Eclipse Public License 2.0
+ which is available at https://www.eclipse.org/legal/epl-2.0/
+
+ SPDX-License-Identifier: EPL-2.0
+-->
+
+{{- $images := slice
+  (dict "src" "images/1.webp" "altKey" "membership-carousel-alt-1")
+  (dict "src" "images/2.webp" "altKey" "membership-carousel-alt-2")
+  (dict "src" "images/3.webp" "altKey" "membership-carousel-alt-3")
+  (dict "src" "images/4.webp" "altKey" "membership-carousel-alt-4")
+  (dict "src" "images/5.webp" "altKey" "membership-carousel-alt-5")
+-}}
+
+<section class="row padding-y-large" id="image-carousel">
+  <div
+    class="scroll-image-carousel d-flex gap-2 overflow-x-scroll snap-type-x-mandatory scrollbar-hidden padding-x-20"
+  >
+    {{ range $images }}
+      <div class="scroll-image snap-center flex-30 md:flex-50">
+        <img
+          src="{{ .src }}"
+          alt="{{ i18n .altKey }}"
+          height="350"
+          width="521"
+          class="img-responsive rounded-medium"
+        />
+      </div>
+    {{ end }}
+  </div>
+</section>

@@ -1,5 +1,5 @@
 ---
-title: "成员单位"
+title: "Membership"
 seo_title: "Join the Jakarta EE Working Group | Shape the future of cloud native enterprise Java"
 headline: "Where enterprise innovation meets open collaboration"
 subtitle: "Join the Jakarta EE Working Group and shape the future of cloud native enterprise Java"
@@ -32,4 +32,3 @@ container: container-fluid
 {{< pages/membership/contact >}}
   {{< hubspot_contact_form portalId="5413615" formId="92df565f-cf45-49dc-8f2d-f59ebe148d13" >}}
 {{< /pages/membership/contact >}}
-
