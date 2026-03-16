@@ -19,6 +19,9 @@ import { setupTopIntersection } from "./top-intersection";
 import setupMobileMegaMenu from "./mobile-mega-menu";
 import scrollSnapCarousel from "./scroll-snap-carousel";
 import { setupRotatingText } from "./rotating-text";
+import { FeaturedStoryPopup } from "@eclipsefdn/solstice-components";
+
+FeaturedStoryPopup.register();
 
 document.addEventListener("DOMContentLoaded", function () {
   (function ($, document) {

@@ -25,7 +25,8 @@
     "optimize_news_images": "bash ./optimize_images.sh content/news"
   },
   "dependencies": {
-    "eclipsefdn-hugo-solstice-theme": "0.2.2",
+    "@eclipsefdn/solstice-components": "0.8.0",
+    "eclipsefdn-hugo-solstice-theme": "0.3.2",
     "list.js": "^2.3.1",
     "lodash-es": "^4.17.22"
   },

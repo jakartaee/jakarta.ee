@@ -1,0 +1,6 @@
+{{ if .Page.Params.show_featured_story_popup | default .Site.Params.show_featured_story_popup | default true }}
+  <efsc-featured-story-popup
+    autoopen='{"xs":false,"md":true}'
+    publishtarget="jakarta_ee"
+  ></efsc-featured-story-popup>
+{{ end }}
