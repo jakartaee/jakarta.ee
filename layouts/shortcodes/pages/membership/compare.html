@@ -18,9 +18,9 @@
   <table class="membership-compare-table">
     <thead>
       <tr>
-        <th></th>
+        <td></td>
         {{ range $levels }}
-          <th>{{ .name }}</th>
+          <th id="{{ .id }}">{{ .name }}</th>
         {{ end }}
       </tr>
     </thead>

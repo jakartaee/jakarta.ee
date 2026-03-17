@@ -11,18 +11,19 @@
 {{- $annualRevenue := i18n "membership-fees-annual-revenue" -}}
 {{- $participationFees := i18n "membership-fees-participation-fees" -}}
 
+
 <div class="card">
   <table class="membership-fees-table hidden-xs hidden-sm">
     <thead>
       <tr>
-        <th>{{ $annualRevenue }}</th>
-        <th colspan="3">{{ $participationFees }}</th>
+        <th id="annual-revenue">{{ $annualRevenue }}</th>
+        <th id="participation-fees" colspan="3">{{ $participationFees }}</th>
       </tr>
       <tr>
-        <th></th>
-        <th>Strategic*</th>
-        <th>Enterprise**</th>
-        <th>Participant***</th>
+        <td></td>
+        <th id="strategic">Strategic*</th>
+        <th id="enterprise">Enterprise**</th>
+        <th id="participant">Participant***</th>
       </tr>
     </thead>
     <tbody>
@@ -65,105 +66,157 @@
     </tbody>
   </table>
   <div class="membership-fees-mobile visible-xs visible-sm">
-    <h3 class="text-md font-semibold text-primary margin-top-0 margin-bottom-20">{{ $annualRevenue }}</h3>
+    <h3
+      class="text-md font-semibold text-primary margin-top-0 margin-bottom-20"
+    >
+      {{ $annualRevenue }}
+    </h3>
     <div class="membership-fees-row">
-      <p class="font-semibold text-base text-primary margin-bottom-10">> 1$ billion</p>
+      <p class="font-semibold text-base text-primary margin-bottom-10">
+        > 1$ billion
+      </p>
       <div class="membership-fees-values grid gap-2">
         <div class="d-flex flex-col">
-          <span class="text-xs font-semibold text-primary text-uppercase">Strategic*</span>
+          <span class="text-xs font-semibold text-primary text-uppercase"
+            >Strategic*</span
+          >
           <span class="text-sm font-semibold">$300,000</span>
         </div>
         <div class="d-flex flex-col">
-          <span class="text-xs font-semibold text-primary text-uppercase">Enterprise**</span>
+          <span class="text-xs font-semibold text-primary text-uppercase"
+            >Enterprise**</span
+          >
           <span class="text-sm font-semibold">$50,000</span>
         </div>
         <div class="d-flex flex-col">
-          <span class="text-xs font-semibold text-primary text-uppercase">Participant***</span>
+          <span class="text-xs font-semibold text-primary text-uppercase"
+            >Participant***</span
+          >
           <span class="text-sm font-semibold">$20,000</span>
         </div>
       </div>
     </div>
     <div class="membership-fees-row">
-      <p class="font-semibold text-base text-primary margin-bottom-10">$500 million - 1$ billion</p>
+      <p class="font-semibold text-base text-primary margin-bottom-10">
+        $500 million - 1$ billion
+      </p>
       <div class="membership-fees-values grid gap-2">
         <div class="d-flex flex-col">
-          <span class="text-xs font-semibold text-primary text-uppercase">Strategic*</span>
+          <span class="text-xs font-semibold text-primary text-uppercase"
+            >Strategic*</span
+          >
           <span class="text-sm font-semibold">$200,000</span>
         </div>
         <div class="d-flex flex-col">
-          <span class="text-xs font-semibold text-primary text-uppercase">Enterprise**</span>
+          <span class="text-xs font-semibold text-primary text-uppercase"
+            >Enterprise**</span
+          >
           <span class="text-sm font-semibold">$35,000</span>
         </div>
         <div class="d-flex flex-col">
-          <span class="text-xs font-semibold text-primary text-uppercase">Participant***</span>
+          <span class="text-xs font-semibold text-primary text-uppercase"
+            >Participant***</span
+          >
           <span class="text-sm font-semibold">$15,000</span>
         </div>
       </div>
     </div>
     <div class="membership-fees-row">
-      <p class="font-semibold text-base text-primary margin-bottom-10">$100 million - $500 million</p>
+      <p class="font-semibold text-base text-primary margin-bottom-10">
+        $100 million - $500 million
+      </p>
       <div class="membership-fees-values grid gap-2">
         <div class="d-flex flex-col">
-          <span class="text-xs font-semibold text-primary text-uppercase">Strategic*</span>
+          <span class="text-xs font-semibold text-primary text-uppercase"
+            >Strategic*</span
+          >
           <span class="text-sm font-semibold">$100,000</span>
         </div>
         <div class="d-flex flex-col">
-          <span class="text-xs font-semibold text-primary text-uppercase">Enterprise**</span>
+          <span class="text-xs font-semibold text-primary text-uppercase"
+            >Enterprise**</span
+          >
           <span class="text-sm font-semibold">$20,000</span>
         </div>
         <div class="d-flex flex-col">
-          <span class="text-xs font-semibold text-primary text-uppercase">Participant***</span>
+          <span class="text-xs font-semibold text-primary text-uppercase"
+            >Participant***</span
+          >
           <span class="text-sm font-semibold">$10,000</span>
         </div>
       </div>
     </div>
     <div class="membership-fees-row">
-      <p class="font-semibold text-base text-primary margin-bottom-10">$10 million - $100 million</p>
+      <p class="font-semibold text-base text-primary margin-bottom-10">
+        $10 million - $100 million
+      </p>
       <div class="membership-fees-values grid gap-2">
         <div class="d-flex flex-col">
-          <span class="text-xs font-semibold text-primary text-uppercase">Strategic*</span>
+          <span class="text-xs font-semibold text-primary text-uppercase"
+            >Strategic*</span
+          >
           <span class="text-sm font-semibold">$50,000</span>
         </div>
         <div class="d-flex flex-col">
-          <span class="text-xs font-semibold text-primary text-uppercase">Enterprise**</span>
+          <span class="text-xs font-semibold text-primary text-uppercase"
+            >Enterprise**</span
+          >
           <span class="text-sm font-semibold">$10,000</span>
         </div>
         <div class="d-flex flex-col">
-          <span class="text-xs font-semibold text-primary text-uppercase">Participant***</span>
+          <span class="text-xs font-semibold text-primary text-uppercase"
+            >Participant***</span
+          >
           <span class="text-sm font-semibold">$7,500</span>
         </div>
       </div>
     </div>
     <div class="membership-fees-row">
-      <p class="font-semibold text-base text-primary margin-bottom-10">&lt; $10 million</p>
+      <p class="font-semibold text-base text-primary margin-bottom-10">
+        &lt; $10 million
+      </p>
       <div class="membership-fees-values grid gap-2">
         <div class="d-flex flex-col">
-          <span class="text-xs font-semibold text-primary text-uppercase">Strategic*</span>
+          <span class="text-xs font-semibold text-primary text-uppercase"
+            >Strategic*</span
+          >
           <span class="text-sm font-semibold">$25,000</span>
         </div>
         <div class="d-flex flex-col">
-          <span class="text-xs font-semibold text-primary text-uppercase">Enterprise**</span>
+          <span class="text-xs font-semibold text-primary text-uppercase"
+            >Enterprise**</span
+          >
           <span class="text-sm font-semibold">$10,000</span>
         </div>
         <div class="d-flex flex-col">
-          <span class="text-xs font-semibold text-primary text-uppercase">Participant***</span>
+          <span class="text-xs font-semibold text-primary text-uppercase"
+            >Participant***</span
+          >
           <span class="text-sm font-semibold">$5,000</span>
         </div>
       </div>
     </div>
     <div class="membership-fees-row">
-      <p class="font-semibold text-base text-primary margin-bottom-10">&lt; $1 million and &lt; 10 employees, and Java user groups</p>
+      <p class="font-semibold text-base text-primary margin-bottom-10">
+        &lt; $1 million and &lt; 10 employees, and Java user groups
+      </p>
       <div class="membership-fees-values grid gap-2">
         <div class="d-flex flex-col">
-          <span class="text-xs font-semibold text-primary text-uppercase">Strategic*</span>
+          <span class="text-xs font-semibold text-primary text-uppercase"
+            >Strategic*</span
+          >
           <span class="text-sm font-semibold">N/A</span>
         </div>
         <div class="d-flex flex-col">
-          <span class="text-xs font-semibold text-primary text-uppercase">Enterprise**</span>
+          <span class="text-xs font-semibold text-primary text-uppercase"
+            >Enterprise**</span
+          >
           <span class="text-sm font-semibold">N/A</span>
         </div>
         <div class="d-flex flex-col">
-          <span class="text-xs font-semibold text-primary text-uppercase">Participant***</span>
+          <span class="text-xs font-semibold text-primary text-uppercase"
+            >Participant***</span
+          >
           <span class="text-sm font-semibold">$0</span>
         </div>
       </div>
