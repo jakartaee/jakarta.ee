@@ -57,16 +57,15 @@ footer_section_newsletter_class = "col-sm-24 col-md-9 footer-section-socials"
 footer_section_legal_class = " "
 
 [[Params.call_for_actions]]
+text_key = "cta-become-a-member"
+url = "/membership/"
+icon = ""
+classes = "btn btn-huge btn-secondary"
+[[Params.call_for_actions]]
 text_key = "cta-download"
 url = "/compatibility/download/"
 icon = ""
 classes = "btn btn-huge btn-outline-primary"
-
-[[Params.call_for_actions]]
-text_key = "cta-join-us"
-url = "/membership/"
-icon = ""
-classes = "btn btn-huge btn-secondary"
 
 [[Params.socials]]
 name = "Bluesky"
