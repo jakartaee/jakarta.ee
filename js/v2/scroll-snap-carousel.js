@@ -29,13 +29,15 @@ function createScrollSnapCarousel(container, options = {}) {
   container.setAttribute("tabindex", "0");
 
   let prevBtn, nextBtn;
-  let isHovering = false;
+  let isInteracting = false;
   let autoRotateTimer;
   let originalWidth = container.scrollWidth;
+  let touchEndTimeout;
+  let scrollEndTimeout;
 
   // Duplicate items for infinite scroll if autoRotate
   if (options.autoRotate) {
-    items.forEach(item => {
+    items.forEach((item) => {
       const clone = item.cloneNode(true);
       container.appendChild(clone);
     });
@@ -69,8 +71,8 @@ function createScrollSnapCarousel(container, options = {}) {
     container.before(wrapper);
 
     // Add hover tracking for controls as well
-    wrapper.addEventListener("mouseenter", () => (isHovering = true));
-    wrapper.addEventListener("mouseleave", () => (isHovering = false));
+    wrapper.addEventListener("mouseenter", () => (isInteracting = true));
+    wrapper.addEventListener("mouseleave", () => (isInteracting = false));
   }
 
   /**
@@ -108,7 +110,7 @@ function createScrollSnapCarousel(container, options = {}) {
    */
   function handleGlobalKeydown(e) {
     // Only handle global keydown when hovering over the carousel
-    if (isHovering) {
+    if (isInteracting) {
       handleKeydown(e);
     }
   }
@@ -133,7 +135,8 @@ function createScrollSnapCarousel(container, options = {}) {
     } else {
       // Hide/disable Next if at end (with slight tolerance for fractional pixels)
       const isAtEnd =
-        Math.ceil(scrollLeft + clientWidth) >= Math.floor(container.scrollWidth);
+        Math.ceil(scrollLeft + clientWidth) >=
+        Math.floor(container.scrollWidth);
       nextBtn.style.visibility = isAtEnd ? "hidden" : "visible";
       nextBtn.disabled = isAtEnd;
       nextBtn.setAttribute("aria-disabled", isAtEnd.toString());
@@ -141,30 +144,57 @@ function createScrollSnapCarousel(container, options = {}) {
   }
 
   // Initialize
-  createControls();
-  updateButtons();
+  if (options.controls) {
+    createControls();
+    updateButtons();
+  }
 
   // Handle scroll for infinite loop and button updates
-  container.addEventListener("scroll", () => {
-    if (options.autoRotate && container.scrollLeft >= originalWidth) {
-      container.scrollLeft -= originalWidth;
-    }
-    updateButtons();
-  }, { passive: true });
+  container.addEventListener(
+    "scroll",
+    () => {
+      if (options.autoRotate && container.scrollLeft >= originalWidth) {
+        container.scrollLeft -= originalWidth;
+      }
+      if (options.controls) updateButtons();
+      // If user is interacting, reset scrollEndTimeout
+      if (isInteracting) {
+        if (scrollEndTimeout) clearTimeout(scrollEndTimeout);
+        scrollEndTimeout = setTimeout(() => {
+          isInteracting = false;
+        }, 200); // Wait for scroll momentum to finish
+      }
+    },
+    { passive: true },
+  );
 
   container.addEventListener("keydown", (e) => handleKeydown(e));
   document.addEventListener("keydown", (e) => handleGlobalKeydown(e));
-  container.addEventListener("mouseenter", () => (isHovering = true));
-  container.addEventListener("mouseleave", () => (isHovering = false));
-  container.addEventListener("focusin", () => (isHovering = true));
-  container.addEventListener("focusout", () => (isHovering = false));
-  container.addEventListener("touchstart", () => (isHovering = true));
-  container.addEventListener("touchend", () => (isHovering = false));
+
+  container.addEventListener("mouseenter", () => (isInteracting = true));
+  container.addEventListener("mouseleave", () => (isInteracting = false));
+  container.addEventListener("focusin", () => (isInteracting = true));
+  container.addEventListener("focusout", () => (isInteracting = false));
+  container.addEventListener("touchstart", () => {
+    isInteracting = true;
+    if (touchEndTimeout) clearTimeout(touchEndTimeout);
+    if (scrollEndTimeout) clearTimeout(scrollEndTimeout);
+  });
+  container.addEventListener("touchend", () => {
+    // Wait for scroll to finish after touchend
+    if (touchEndTimeout) clearTimeout(touchEndTimeout);
+    touchEndTimeout = setTimeout(() => {
+      // If not scrolling, allow auto-rotation
+      scrollEndTimeout = setTimeout(() => {
+        isInteracting = false;
+      }, 400); // Wait for scroll momentum to finish
+    }, 800); // Wait after touch end before allowing auto-rotation
+  });
 
   // Start auto-rotate if enabled
   if (options.autoRotate) {
     autoRotateTimer = setInterval(() => {
-      if (!isHovering) {
+      if (!isInteracting) {
         move(1);
       }
     }, options.autoRotateInterval || 6000);
@@ -225,7 +255,8 @@ function initWithObserver(selector, itemSelector, options = {}) {
             const hasItems = Array.from(mutation.addedNodes).some(
               (node) =>
                 node.nodeType === Node.ELEMENT_NODE &&
-                (node.matches(itemSelector) || node.querySelector(itemSelector))
+                (node.matches(itemSelector) ||
+                  node.querySelector(itemSelector)),
             );
             if (hasItems) {
               createScrollSnapCarousel(container, { itemSelector, ...options });
@@ -251,6 +282,7 @@ function initWithObserver(selector, itemSelector, options = {}) {
  * @param {boolean} [options.useMutationObserver] - Whether to use mutation observer for deferred initialization
  * @param {boolean} [options.autoRotate] - Whether to enable auto-rotation (passed to createScrollSnapCarousel)
  * @param {number} [options.autoRotateInterval] - Auto-rotation interval (passed to createScrollSnapCarousel)
+ * @param {number} [options.controls] - Whether to show navigation controls (passed to createScrollSnapCarousel)
  * @returns {void}
  */
 const scrollSnapCarousel = (selector, itemSelector, options = {}) => {

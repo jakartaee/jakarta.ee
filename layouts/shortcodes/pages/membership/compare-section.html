@@ -1,0 +1,138 @@
+<!--
+ Copyright (c) 2026 Eclipse Foundation AISBL
+
+ This program and the accompanying materials are made
+ available under the terms of the Eclipse Public License 2.0
+ which is available at https://www.eclipse.org/legal/epl-2.0/
+
+ SPDX-License-Identifier: EPL-2.0
+-->
+
+{{- $heading := i18n "membership-compare-heading" -}}
+{{- $contactUs := i18n "membership-contact-us" -}}
+
+{{- $dataKey := .Get "data" | default "membership_compare" -}}
+{{ $data := index .Page.Site.Data $dataKey }}
+{{ $levels := $data.levels }}
+{{ $categories := $data.categories }}
+
+{{ $mobileLevels := slice }}
+{{ range $levels }}
+  {{ if .mobile }}
+    {{ $mobileLevels = $mobileLevels | append . }}
+  {{ end }}
+{{ end }}
+
+{{ define "compare-icon" }}
+  {{ if .val }}
+    <i class="fa fa-check-circle compare-check" aria-hidden="true"></i>
+    <span class="sr-only">{{ i18n "membership-compare-eligible" (dict "Name" .name) }}</span>
+  {{ else }}
+    <i class="fa fa-times-circle-o compare-cross" aria-hidden="true"></i>
+    <span class="sr-only">{{ i18n "membership-compare-not-eligible" (dict "Name" .name) }}</span>
+  {{ end }}
+{{ end }}
+
+<section class="row padding-y-large" id="compare">
+  <div class="container">
+    <h2
+      class="featured-heading text-primary text-md-center margin-top-0 margin-bottom-large"
+    >
+      {{ $heading }}
+    </h2>
+    <!-- Desktop Compare Table -->
+    <div class="membership-compare hidden-xs hidden-sm">
+      <table class="membership-compare-table">
+        <thead>
+          <tr>
+            <th></th>
+            {{ range $levels }}
+              <th>{{ .name }}</th>
+            {{ end }}
+          </tr>
+        </thead>
+        <tbody>
+          {{ range $categories }}
+            <tr class="compare-category-row">
+              <td colspan="{{ add (len $levels) 1 }}">
+                <h3>{{ .name | markdownify }}</h3>
+              </td>
+            </tr>
+            {{ range .items }}
+              {{ $item := . }}
+              <tr>
+                <td>{{ .label | markdownify }}</td>
+                {{ range $levels }}
+                  {{ $val := index $item .id }}
+                  {{ if eq (printf "%T" $val) "bool" }}
+                    <td>
+                      {{ template "compare-icon" (dict "val" $val "name" .name) }}
+                    </td>
+                  {{ else }}
+                    <td class="compare-text-value">{{ $val }}</td>
+                  {{ end }}
+                {{ end }}
+              </tr>
+            {{ end }}
+          {{ end }}
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Mobile Compare (tabs showing one level at a time) -->
+    <div class="membership-compare-mobile hidden-md hidden-lg">
+      <p class="margin-bottom-20">
+        {{ i18n "membership-compare-mobile-instructions" }}
+      </p>
+      <ul class="nav nav-pills membership-compare-tabs" role="tablist">
+        {{ range $i, $level := $mobileLevels }}
+          <li role="presentation" {{ if eq $i 0 }}class="active"{{ end }}>
+            <a
+              href="#compare-{{ $level.id }}"
+              aria-controls="compare-{{ $level.id }}"
+              role="tab"
+              data-toggle="tab"
+              >{{ $level.name }}</a
+            >
+          </li>
+        {{ end }}
+      </ul>
+      <div class="tab-content">
+        {{ range $i, $level := $mobileLevels }}
+          <div
+            role="tabpanel"
+            class="tab-pane padding-0 {{ if eq $i 0 }}active{{ end }}"
+            id="compare-{{ $level.id }}"
+          >
+            {{ range $categories }}
+              <div class="compare-category-group">
+                <div class="compare-category-label">
+                  <span>{{ .name | markdownify }}</span>
+                </div>
+                <div class="compare-category-items">
+                  {{ range .items }}
+                    {{ $val := index . $level.id }}
+                    <div class="compare-item">
+                      <p>{{ .label | markdownify }}</p>
+                      {{ if eq (printf "%T" $val) "bool" }}
+                        {{ template "compare-icon" (dict "val" $val "name" $level.name) }}
+                      {{ else }}
+                        <span class="compare-text-value">{{ $val }}</span>
+                      {{ end }}
+                    </div>
+                  {{ end }}
+                </div>
+              </div>
+            {{ end }}
+          </div>
+        {{ end }}
+      </div>
+    </div>
+
+    <div
+      class="margin-top-large links d-flex flex-wrap justify-content-center gap-2"
+    >
+      <a href="#contact" class="btn btn-primary">{{ $contactUs }}</a>
+    </div>
+  </div>
+</section>

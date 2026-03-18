@@ -41,39 +41,37 @@
     .featured-jumbotron {
       background-position: center;
       background-size: cover;
-
-      &::before {
-        content: unset;
-      }
+      background-image: @bg-jumbotron-secondary;
     }
   }
-  &.header-home-bg-img {
+  &.header-tertiary-bg-img {
     .featured-jumbotron {
       background-position: center;
       background-size: cover;
-      background-image: @bg-jumbotron-secondary;
+      background-image: @bg-jumbotron-tertiary;
+    }
+  }
+  &.header-home {
+    &::before {
+      content: unset;
+    }
 
-      &::before {
-        content: unset;
+    h1,
+    .h1 {
+      font-size: 6.5rem;
+      letter-spacing: @headings-letter-spacing;
+
+      @media (max-width: @screen-xs-max) {
+        font-size: 4.5rem;
       }
+    }
 
-      h1,
-      .h1 {
-        font-size: 6.5rem;
-        letter-spacing: @headings-letter-spacing;
+    h2,
+    .h2 {
+      font-size: 2.5rem;
 
-        @media (max-width: @screen-xs-max) {
-          font-size: 4.5rem;
-        }
-      }
-
-      h2,
-      .h2 {
-        font-size: 2.5rem;
-
-        @media (max-width: @screen-xs-max) {
-          font-size: 1.8rem;
-        }
+      @media (max-width: @screen-xs-max) {
+        font-size: 1.8rem;
       }
     }
   }

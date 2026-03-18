@@ -1,0 +1,67 @@
+<!--
+ Copyright (c) 2025 Eclipse Foundation AISBL
+
+ This program and the accompanying materials are made
+ available under the terms of the Eclipse Public License 2.0
+ which is available at https://www.eclipse.org/legal/epl-2.0/
+
+ SPDX-License-Identifier: EPL-2.0
+-->
+
+{{- $eyebrow := i18n "membership-why-join-eyebrow" -}}
+{{- $heading := i18n "membership-why-join-heading" -}}
+
+{{- $cards := slice
+  (dict "icon" "static/images/icons/home/accelerate.svg" "titleKey" "membership-why-join-card1-title" "descKey" "membership-why-join-card1-desc")
+  (dict "icon" "static/images/icons/home/experience.svg" "titleKey" "membership-why-join-card2-title" "descKey" "membership-why-join-card2-desc")
+  (dict "icon" "static/images/icons/home/scale.svg" "titleKey" "membership-why-join-card3-title" "descKey" "membership-why-join-card3-desc")
+  (dict "icon" "static/images/icons/home/mobile.svg" "titleKey" "membership-why-join-card4-title" "descKey" "membership-why-join-card4-desc")
+  (dict "icon" "static/images/icons/home/security.svg" "titleKey" "membership-why-join-card5-title" "descKey" "membership-why-join-card5-desc")
+  (dict "icon" "static/images/icons/home/evolve.svg" "titleKey" "membership-why-join-card6-title" "descKey" "membership-why-join-card6-desc")
+-}}
+
+
+<section
+  id="why-join"
+  class="row padding-bottom-large"
+  aria-labelledby="why-jakarta-ee-heading"
+>
+  <div class="container">
+    <div class="row">
+      <div id="why-jakarta-ee-left" class="col-md-10 margin-bottom-30">
+        <h2 class="h6 uppercase font-semibold text-primary">
+          {{ $eyebrow }}
+        </h2>
+        <h3
+          id="why-jakarta-ee-heading"
+          class="text-primary featured-heading margin-bottom-20"
+        >
+          {{ $heading }}
+        </h3>
+        <a
+          href="https://membership.eclipse.org/application/sign-in"
+          target="_blank"
+          class="btn btn-outline-secondary"
+        >
+          {{ i18n "membership-why-join-cta" }}
+          <i class="fa fa-xs fa-chevron-right" aria-hidden="true"></i>
+        </a>
+      </div>
+      <div class="col-md-14">
+        <div class="grid xs:grid-cols-2 gap-2 text-primary">
+          {{ range $cards }}
+            <div class="card featured glow">
+              <div class="icon text-secondary">
+                {{ readFile .icon | safeHTML }}
+              </div>
+              <div>
+                <h3>{{ i18n .titleKey }}</h3>
+                <p>{{ i18n .descKey }}</p>
+              </div>
+            </div>
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
