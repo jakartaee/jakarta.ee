@@ -2574,10 +2574,9 @@ dunder-proto@^1.0.0, dunder-proto@^1.0.1:
     es-errors "^1.3.0"
     gopd "^1.2.0"
 
-eclipsefdn-hugo-solstice-theme@0.3.2:
+"eclipsefdn-hugo-solstice-theme@https://gitlab.eclipse.org/eclipsefdn/software-dev/frameworks-and-tools/hugo-solstice-theme.git#40a389da13a49b9d8b2aac5263c5c28c56437ade":
   version "0.3.2"
-  resolved "https://registry.npmjs.org/eclipsefdn-hugo-solstice-theme/-/eclipsefdn-hugo-solstice-theme-0.3.2.tgz#e0328daa3d6d27cc19c02583908768264439dc46"
-  integrity sha512-DP+ZDONm/ez+vkjPr0I5GGbZdobu66odjqs18xGi1dD1PpyacVyMkMQPeNd36GJ2Qw9ycv7y0XvYe+KuTp/Jvg==
+  resolved "https://gitlab.eclipse.org/eclipsefdn/software-dev/frameworks-and-tools/hugo-solstice-theme.git#40a389da13a49b9d8b2aac5263c5c28c56437ade"
   dependencies:
     eclipsefdn-solstice-assets "0.2.7"
     json2yaml "^1.1.0"
