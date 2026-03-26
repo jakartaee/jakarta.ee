@@ -836,7 +836,7 @@ sets:
       - name: JEUS
         vendor: TmaxSoft Co., Ltd
         image: '/images/compatible_products/jeus-logo.svg'
-        image_width: 110
+        image_width: 80
         download: 'https://www.tmaxsoft.com/en/solution/view?solutionSeq=27'
         versions:
           - version: 9
