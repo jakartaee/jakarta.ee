@@ -10,101 +10,46 @@
 
 <section class="row position-relative padding-y-large">
   <div class="container">
-    <div class="row">
-      <img
-        class="w-15 md:w-30 absolute-bottom-right"
-        src="/developer-portal/images/contribute/corner-image.webp"
-        alt="person speaking at a conference"
-      />
-      <div class="col-md-16">
-        <h2
-          class="featured-heading text-primary margin-bottom-30 margin-top-10"
-        >
-          <span class="text-secondary"
-            >{{ i18n "developer-portal-contribute-heading" }}</span
-          >
-          {{ i18n "developer-portal-contribute-heading-suffix" }}
-        </h2>
-        <blockquote class="margin-bottom-40 hidden-md hidden-lg">
-          {{ i18n "developer-portal-contribute-description" }}
-        </blockquote>
-        <div class="grid grid-cols-2 gap-2">
-          <a
-            href="/community/get-involved/"
-            class="icon-box text-current link-unstyled"
-          >
-            <i class="fa fa-arrow-right" aria-hidden="true"></i>
-            <span class="text-primary inline-icon"
-              >{{ partial "svg.html" (dict "path" "/developer-portal/images/contribute/how-to-contribute-icon.svg") }}</span
-            >
-            <h4 class="text-primary font-semibold">
-              {{ i18n "developer-portal-get-involved-title" }}
-            </h4>
-            <p>
-              {{ i18n "developer-portal-get-involved-description" }}
-            </p>
-          </a>
-          <a href="/contribute/" class="icon-box text-current link-unstyled">
-            <i class="fa fa-arrow-right" aria-hidden="true"></i>
-            <span class="text-primary inline-icon"
-              >{{ partial "svg.html" (dict "path" "/developer-portal/images/contribute/spec-process-docs-icon.svg") }}</span
-            >
-            <h4 class="text-primary font-semibold">
-              {{ i18n "developer-portal-how-to-contribute-title" }}
-            </h4>
-            <p>
-              {{ i18n "developer-portal-how-to-contribute-description" }}
-            </p>
-          </a>
-          <a href="/mentorship/" class="icon-box text-current link-unstyled">
-            <i class="fa fa-arrow-right" aria-hidden="true"></i>
-            <span class="text-primary inline-icon"
-              >{{ partial "svg.html" (dict "path" "/developer-portal/images/contribute/mentorship-icon.svg") }}</span
-            >
-            <h4 class="text-primary font-semibold">
-              {{ i18n "developer-portal-mentorship-title" }}
-            </h4>
-            <p>
-              {{ i18n "developer-portal-mentorship-description" }}
-            </p>
-          </a>
-          <a
-            href="/committees/specification/guide/"
-            class="icon-box text-current link-unstyled"
-          >
-            <i class="fa fa-arrow-right" aria-hidden="true"></i>
-            <span class="text-primary inline-icon"
-              >{{ partial "svg.html" (dict "path" "/developer-portal/images/contribute/developer-advocate-icon.svg") }}</span
-            >
-            <h4 class="text-primary font-semibold">
-              {{ i18n "developer-portal-spec-process-docs-title" }}
-            </h4>
-            <p>
-              {{ i18n "developer-portal-spec-process-docs-description" }}
-            </p>
-          </a>
-          <a
-            href="/specifications/"
-            class="icon-box text-current link-unstyled"
-          >
-            <i class="fa fa-arrow-right" aria-hidden="true"></i>
-            <span class="text-primary inline-icon"
-              >{{ partial "svg.html" (dict "path" "/developer-portal/images/contribute/explore-specifications-icon.svg") }}</span
-            >
-            <h4 class="text-primary font-semibold">
-              {{ i18n "developer-portal-explore-specifications-title" }}
-            </h4>
-            <p>
-              {{ i18n "developer-portal-explore-specifications-description" }}
-            </p>
-          </a>
-        </div>
-      </div>
-      <div class="col-md-8 visible-md visible-lg">
-        <blockquote class="margin-top-10">
-          {{ i18n "developer-portal-contribute-description" }}
-        </blockquote>
-      </div>
-    </div>
+    {{ partial "developer-portal/icon-grid-section" (dict
+  "heading" (i18n "developer-portal-contribute-heading")
+  "headingSuffix" (i18n "developer-portal-contribute-heading-suffix")
+  "description" (i18n "developer-portal-contribute-description")
+  "cornerImage" (dict
+    "src" "/developer-portal/images/contribute/corner-image.webp"
+    "alt" "person speaking at a conference"
+  )
+  "items" (slice
+    (dict
+      "href" "/community/get-involved/"
+      "iconPath" "/developer-portal/images/contribute/how-to-contribute-icon.svg"
+      "title" (i18n "developer-portal-get-involved-title")
+      "description" (i18n "developer-portal-get-involved-description")
+    )
+    (dict
+      "href" "/contribute/"
+      "iconPath" "/developer-portal/images/contribute/spec-process-docs-icon.svg"
+      "title" (i18n "developer-portal-how-to-contribute-title")
+      "description" (i18n "developer-portal-how-to-contribute-description")
+    )
+    (dict
+      "href" "/mentorship/"
+      "iconPath" "/developer-portal/images/contribute/mentorship-icon.svg"
+      "title" (i18n "developer-portal-mentorship-title")
+      "description" (i18n "developer-portal-mentorship-description")
+    )
+    (dict
+      "href" "/committees/specification/guide/"
+      "iconPath" "/developer-portal/images/contribute/developer-advocate-icon.svg"
+      "title" (i18n "developer-portal-spec-process-docs-title")
+      "description" (i18n "developer-portal-spec-process-docs-description")
+    )
+    (dict
+      "href" "/specifications/"
+      "iconPath" "/developer-portal/images/contribute/explore-specifications-icon.svg"
+      "title" (i18n "developer-portal-explore-specifications-title")
+      "description" (i18n "developer-portal-explore-specifications-description")
+    )
+  )
+) }}
   </div>
 </section>

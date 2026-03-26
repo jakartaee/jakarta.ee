@@ -10,87 +10,59 @@
 
 <section class="row position-relative padding-y-large">
   <div class="container">
-    <div class="row margin-bottom-60">
-      <img
-        class="w-15 md:w-30 absolute-bottom-right"
-        src="/developer-portal/images/develop/corner-image.webp"
-        alt="person coding"
-      />
-      <div class="col-md-16">
-        <h2
-          class="featured-heading text-primary margin-bottom-30 margin-top-10"
-        >
-          <span class="text-secondary">{{ i18n "developer-portal-develop-heading" }}</span> {{ i18n "developer-portal-develop-heading-suffix" }}
-        </h2>
-        <blockquote class="margin-bottom-40 hidden-md hidden-lg">
-          {{ i18n "developer-portal-develop-description" }}
-        </blockquote>
-        <div class="grid grid-cols-2 gap-2">
-          <a href="https://start.jakarta.ee/" class="icon-box text-current link-unstyled">
-            <i class="fa fa-arrow-right" aria-hidden="true"></i>
-            <span class="text-primary inline-icon">
-              {{ partial "svg.html" (dict "path" "/developer-portal/images/develop/get-started-icon.svg") }}
-            </span>
-            <h4 class="text-primary font-semibold">{{ i18n "developer-portal-get-started-title" }}</h4>
-            <p>
-              {{ i18n "developer-portal-get-started-description" }}
-            </p>
-          </a>
-          <a href="/resources/" class="icon-box text-current link-unstyled">
-            <i class="fa fa-arrow-right" aria-hidden="true"></i>
-            <span class="text-primary inline-icon">{{ partial "svg.html" (dict "path" "/developer-portal/images/develop/insights-and-publications-icon.svg") }}</span>
-            <h4 class="text-primary font-semibold">
-              {{ i18n "developer-portal-insights-title" }}
-            </h4>
-            <p>
-              {{ i18n "developer-portal-insights-description" }}
-            </p>
-          </a>
-          <a href="/learn/how-to-guides/" class="icon-box text-current link-unstyled">
-            <i class="fa fa-arrow-right" aria-hidden="true"></i>
-            <span class="text-primary inline-icon">{{ partial "svg.html" (dict "path" "/developer-portal/images/develop/how-to-guide-icon.svg") }}</span>
-            <h4 class="text-primary font-semibold">{{ i18n "developer-portal-how-to-guide-title" }}</h4>
-            <p>
-              {{ i18n "developer-portal-how-to-guide-description" }}
-            </p>
-          </a>
-          <a href="/learn/" class="icon-box text-current link-unstyled">
-            <i class="fa fa-arrow-right" aria-hidden="true"></i>
-            <span class="text-primary inline-icon">{{ partial "svg.html" (dict "path" "/developer-portal/images/develop/learning-hub-icon.svg") }}</span>
-            <h4 class="text-primary font-semibold">{{ i18n "developer-portal-learning-hub-title" }}</h4>
-            <p>
-              {{ i18n "developer-portal-learning-hub-description" }}
-            </p>
-          </a>
-          <a href="/compatibility/" class="icon-box text-current link-unstyled">
-            <i class="fa fa-arrow-right" aria-hidden="true"></i>
-            <span class="text-primary inline-icon">{{ partial "svg.html" (dict "path" "/developer-portal/images/develop/compatible-products-icon.svg") }}</span>
-            <h4 class="text-primary font-semibold">
-              {{ i18n "developer-portal-compatible-products-title" }}
-            </h4>
-            <p>
-              {{ i18n "developer-portal-compatible-products-description" }}
-            </p>
-          </a>
-          <a href="https://jakartaee.github.io/platform/jakartaee12/JakartaEE12ReleasePlan" class="icon-box text-current link-unstyled">
-            <i class="fa fa-arrow-right" aria-hidden="true"></i>
-            <span class="text-primary inline-icon">{{ partial "svg.html" (dict "path" "/developer-portal/images/develop/release-plan-icon.svg") }}</span>
-            <h4 class="text-primary font-semibold">{{ i18n "developer-portal-release-plan-title" }}</h4>
-            <p>{{ i18n "developer-portal-release-plan-description" }}</p>
-          </a>
-          <a href="/release/" class="icon-box text-current link-unstyled">
-            <i class="fa fa-arrow-right" aria-hidden="true"></i>
-            <span class="text-primary inline-icon">{{ partial "svg.html" (dict "path" "/developer-portal/images/develop/all-releases-icon.svg") }}</span>
-            <h4 class="text-primary font-semibold">{{ i18n "developer-portal-all-releases-title" }}</h4>
-            <p>{{ i18n "developer-portal-all-releases-description" }}</p>
-          </a>
-        </div>
-      </div>
-      <div class="col-md-8 visible-md visible-lg position-initial">
-        <blockquote class="margin-top-10">
-          {{ i18n "developer-portal-develop-description" }}
-        </blockquote>
-      </div>
-    </div>
+    {{ partial "developer-portal/icon-grid-section" (dict
+  "heading" (i18n "developer-portal-develop-heading")
+  "headingSuffix" (i18n "developer-portal-develop-heading-suffix")
+  "description" (i18n "developer-portal-develop-description")
+  "cornerImage" (dict
+    "src" "/developer-portal/images/develop/corner-image.webp"
+    "alt" "person coding"
+  )
+  "marginClass" "margin-bottom-60"
+  "items" (slice
+    (dict
+      "href" "https://start.jakarta.ee/"
+      "iconPath" "/developer-portal/images/develop/get-started-icon.svg"
+      "title" (i18n "developer-portal-get-started-title")
+      "description" (i18n "developer-portal-get-started-description")
+    )
+    (dict
+      "href" "/resources/"
+      "iconPath" "/developer-portal/images/develop/insights-and-publications-icon.svg"
+      "title" (i18n "developer-portal-insights-title")
+      "description" (i18n "developer-portal-insights-description")
+    )
+    (dict
+      "href" "/learn/how-to-guides/"
+      "iconPath" "/developer-portal/images/develop/how-to-guide-icon.svg"
+      "title" (i18n "developer-portal-how-to-guide-title")
+      "description" (i18n "developer-portal-how-to-guide-description")
+    )
+    (dict
+      "href" "/learn/"
+      "iconPath" "/developer-portal/images/develop/learning-hub-icon.svg"
+      "title" (i18n "developer-portal-learning-hub-title")
+      "description" (i18n "developer-portal-learning-hub-description")
+    )
+    (dict
+      "href" "/compatibility/"
+      "iconPath" "/developer-portal/images/develop/compatible-products-icon.svg"
+      "title" (i18n "developer-portal-compatible-products-title")
+      "description" (i18n "developer-portal-compatible-products-description")
+    )
+    (dict
+      "href" "https://jakartaee.github.io/platform/jakartaee12/JakartaEE12ReleasePlan"
+      "iconPath" "/developer-portal/images/develop/release-plan-icon.svg"
+      "title" (i18n "developer-portal-release-plan-title")
+      "description" (i18n "developer-portal-release-plan-description")
+    )
+    (dict
+      "href" "/release/"
+      "iconPath" "/developer-portal/images/develop/all-releases-icon.svg"
+      "title" (i18n "developer-portal-all-releases-title")
+      "description" (i18n "developer-portal-all-releases-description")
+    )
+  )
+) }}
   </div>
 </section>

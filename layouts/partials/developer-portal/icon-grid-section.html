@@ -1,0 +1,85 @@
+<!--
+ Copyright (c) 2026 Eclipse Foundation AISBL
+
+ This program and the accompanying materials are made
+ available under the terms of the Eclipse Public License 2.0
+ which is available at https://www.eclipse.org/legal/epl-2.0/
+
+ SPDX-License-Identifier: EPL-2.0
+-->
+
+{{- $heading := .heading -}}
+{{- $headingSuffix := .headingSuffix -}}
+{{- $description := .description -}}
+{{- $cornerImage := .cornerImage -}}
+{{- $items := .items -}}
+{{- $marginClass := .marginClass | default "" -}}
+
+<div class="row{{ if $marginClass }} {{ $marginClass }}{{ end }}">
+  {{- if $cornerImage }}
+  <img
+    class="w-15 md:w-30 absolute-bottom-right visible-md visible-lg"
+    src="{{ $cornerImage.src }}"
+    alt="{{ $cornerImage.alt }}"
+  />
+  {{- end }}
+  <div class="col-md-16">
+    <h2
+      class="featured-heading text-primary margin-bottom-30 margin-top-10"
+    >
+      {{- if $heading }}
+        {{- if $headingSuffix }}
+          {{ $heading | safeHTML }} {{ $headingSuffix | safeHTML }}
+        {{- else }}
+          {{ $heading | safeHTML }}
+        {{- end }}
+      {{- end }}
+    </h2>
+    {{- if $description }}
+    <blockquote class="margin-bottom-40 hidden-md hidden-lg">
+      {{ $description | safeHTML }}
+    </blockquote>
+    {{- end }}
+    <div class="grid grid-cols-2 gap-2">
+      {{- range $items }}
+      {{- if .href }}
+      <a href="{{ .href }}" class="icon-box text-current link-unstyled">
+        <i class="fa fa-arrow-right" aria-hidden="true"></i>
+        {{- if .iconPath }}
+        <span class="text-primary inline-icon"
+          >{{ partial "svg.html" (dict "path" .iconPath) }}</span
+        >
+        {{- end }}
+        <h4 class="text-primary font-semibold">
+          {{ .title | safeHTML }}
+        </h4>
+        <p>
+          {{ .description | safeHTML }}
+        </p>
+      </a>
+      {{- else }}
+      <div class="icon-box text-current">
+        {{- if .iconPath }}
+        <span class="text-primary inline-icon"
+          >{{ partial "svg.html" (dict "path" .iconPath) }}</span
+        >
+        {{- end }}
+        <h4 class="text-primary font-semibold">
+          {{ .title | safeHTML }}
+        </h4>
+        <p>
+          {{ .description | safeHTML }}
+        </p>
+      </div>
+      {{- end }}
+      {{- end }}
+    </div>
+  </div>
+  <div class="col-md-8 visible-md visible-lg{{ if eq $marginClass "margin-bottom-60" }} position-initial{{ end }}">
+    {{- if $description }}
+    <blockquote class="margin-top-10">
+      {{ $description | safeHTML }}
+    </blockquote>
+    {{- end }}
+  </div>
+</div>
