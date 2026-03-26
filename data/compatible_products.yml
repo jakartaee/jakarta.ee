@@ -29,6 +29,15 @@ sets:
             - version: 8.0.0-JDK17-M12
               compatibility: 'https://glassfish.org/certifications/jakarta-platform/11/TCK-Results-8.0.0-M12'
               download_url: 'https://download.eclipse.org/ee4j/glassfish/glassfish-8.0.0-JDK17-M12.zip'
+        - name: JEUS
+          vendor: TmaxSoft Co., Ltd
+          image: '/images/compatible_products/jeus-logo.svg'
+          image_width: 110
+          download: 'https://www.tmaxsoft.com/en/solution/view?solutionSeq=27'
+          versions:
+            - version: 11
+              compatibility: 'https://www.tmaxsoft.com/upload/doc/JEUS11_JakartaEE11_Certification_Summary.html'
+              download_url: 'https://www.tmaxsoft.com/en/solution/view?solutionSeq=27' 
         - name: Payara Server Community
           vendor: Payara Services Limited
           image: '/images/compatible_products/payara-server-community-logo.svg'
