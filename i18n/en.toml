@@ -1219,6 +1219,126 @@ other = "Discover the Jakarta EE Working Group"
 [pages-about-jakarta-ee-learn-more-connect-community]
 other = "Connect with the Jakarta EE community"
 
+[pages-about-jakarta-ee-v2-what-is-title]
+other = "What is <span class=\"text-secondary\">Jakarta EE?</span>"
+
+[pages-about-jakarta-ee-v2-what-is-description]
+other = "Jakarta EE is an open, vendor-neutral standard for building reliable, cloud-native enterprise Java applications. It defines core technologies that modern Java applications rely on, even across different frameworks. Each Jakarta EE technology is defined by a specification, a set of rules that describe how it should behave, ensuring applications remain portable, predictable, and consistent across platforms, without vendor lock-in."
+
+[pages-about-jakarta-ee-v2-final-spec-prelude]
+other = "To ensure consistent behavior across platforms, Jakarta EE defines specifications rules that describe how each technology should behave. These are supported by three key elements:"
+
+[pages-about-jakarta-ee-v2-final-spec-title]
+other = "Final Specification"
+
+[pages-about-jakarta-ee-v2-spec-doc-label]
+other = "Specification Document"
+
+[pages-about-jakarta-ee-v2-api-label]
+other = "API"
+
+[pages-about-jakarta-ee-v2-tck-label]
+other = "TCK"
+
+[pages-about-jakarta-ee-v2-compatible-implementations-label]
+other = "Compatible Implementation(s)"
+
+[pages-about-jakarta-ee-v2-spec-includes-title]
+other = "Every Jakarta EE specification includes:"
+
+[pages-about-jakarta-ee-v2-spec-doc-card-title]
+other = "A Specification Document"
+
+[pages-about-jakarta-ee-v2-spec-doc-card-description]
+other = "A human-readable description of the technology"
+
+[pages-about-jakarta-ee-v2-api-card-title]
+other = "An API"
+
+[pages-about-jakarta-ee-v2-api-card-description]
+other = "The programming interface developers use in their applications."
+
+[pages-about-jakarta-ee-v2-tck-card-title]
+other = "A TCK (Technology Compatibility Kit)"
+
+[pages-about-jakarta-ee-v2-tck-card-description]
+other = "The test suite used to verify that an implementation fulfils the requirements of the specification"
+
+[pages-about-jakarta-ee-v2-compatible-implementation-note]
+other = "An implementation that passes the TCK becomes a Compatible Implementation, a guarantee for consistent behaviour across platforms."
+
+[pages-about-jakarta-ee-v2-why-it-matters-heading]
+other = "<span class='text-secondary'>Why</span> it matters"
+
+[pages-about-jakarta-ee-v2-why-it-matters-description]
+other = "Jakarta EE combines proven enterprise reliability with modern cloud native flexibility. No other Java framework offers the same depth of maturity and adaptability:"
+
+[pages-about-jakarta-ee-v2-why-it-matters-corner-image-alt]
+other = "person coding"
+
+[pages-about-jakarta-ee-v2-why-it-matters-item1-title]
+other = "Proven stability"
+
+[pages-about-jakarta-ee-v2-why-it-matters-item1-description]
+other = "Decades of enterprise use ensure reliability, maturity, and strong backward compatibility"
+
+[pages-about-jakarta-ee-v2-why-it-matters-item2-title]
+other = "Developer efficiency"
+
+[pages-about-jakarta-ee-v2-why-it-matters-item2-description]
+other = "Java developers can concentrate on implementing business logic instead of recreating the common infrastructure code that all enterprise applications require."
+
+[pages-about-jakarta-ee-v2-why-it-matters-item3-title]
+other = "Architectural flexibility"
+
+[pages-about-jakarta-ee-v2-why-it-matters-item3-description]
+other = "Whether your applications are monolithic or microservice-based, Jakarta EE supports a range of deployment models and design choices, all while maintaining cross-vendor compatibility."
+
+[pages-about-jakarta-ee-v2-why-it-matters-item4-title]
+other = "Future-ready design"
+
+[pages-about-jakarta-ee-v2-why-it-matters-item4-description]
+other = "Seamlessly evolve your applications by switching underlying technologies to meet new performance and scalability demands"
+
+[pages-about-jakarta-ee-v2-from-spec-title]
+other = "<span class=\"text-secondary\">From specification</span> to implementation"
+
+[pages-about-jakarta-ee-v2-from-spec-quote]
+other = "How a Jakarta EE Specification Comes to Life"
+
+[pages-about-jakarta-ee-v2-from-spec-description]
+other = "To be officially recognized as a Jakarta EE Specification, there must be at least one open source Compatible Implementation that passes all required TCK tests."
+
+[pages-about-jakarta-ee-v2-from-spec-cta]
+other = "Explore the compatible Products"
+
+[pages-about-jakarta-ee-v2-power-of-compatibility-title]
+other = "<span class=\"text-secondary\">The power</span> of compatibility"
+
+[pages-about-jakarta-ee-v2-power-of-compatibility-description]
+other = "Jakarta EE's compatibility model ensures that developers and organisations can rely on consistent behavior, regardless of vendor or deployment environment. This is what makes Jakarta EE the trusted standard for enterprise Java worldwide."
+
+[pages-about-jakarta-ee-v2-power-of-compatibility-cta]
+other = "Get your product listed as compatible"
+
+[pages-about-jakarta-ee-v2-learn-more-title]
+other = "<span class=\"text-secondary\">Learn more</span> / get involved"
+
+[pages-about-jakarta-ee-v2-learn-more-quote]
+other = "Join the global Jakarta EE community"
+
+[pages-about-jakarta-ee-v2-learn-more-description]
+other = "Jakarta EE thrives through collaboration from specification authors and implementers to developers building on the platform. Get involved to shape the future of enterprise Java."
+
+[pages-about-jakarta-ee-v2-learn-more-cta-get-involved]
+other = "Get Involved with Jakarta EE"
+
+[pages-about-jakarta-ee-v2-learn-more-cta-connect]
+other = "Connect with the community"
+
+[pages-about-jakarta-ee-v2-learn-more-cta-contribute]
+other = "Contribute to Jakarta EE"
+
 [pages-about-working-group-overview-title]
 other = "Influence the Future of Cloud Native Java"
 
