@@ -1223,7 +1223,7 @@ other = "Connect with the Jakarta EE community"
 other = "What is <span class=\"text-secondary\">Jakarta EE?</span>"
 
 [pages-about-jakarta-ee-v2-what-is-description]
-other = "Jakarta EE is an open, vendor-neutral standard for building reliable, cloud-native enterprise Java applications. It defines core technologies that modern Java applications rely on, even across different frameworks. Each Jakarta EE technology is defined by a specification, a set of rules that describe how it should behave, ensuring applications remain portable, predictable, and consistent across platforms, without vendor lock-in."
+other ="Jakarta EE is an open, vendor-neutral standard for building reliable, cloud native enterprise Java applications. It defines core technologies that modern Java applications rely on, even across different frameworks. Each Jakarta EE technology is defined by a specification, a set of rules that describe how it should behave, ensuring applications remain portable, predictable, and consistent across platforms, without vendor lock-in."
 
 [pages-about-jakarta-ee-v2-final-spec-prelude]
 other = "To ensure consistent behavior across platforms, Jakarta EE defines specifications rules that describe how each technology should behave. These are supported by three key elements:"
@@ -1310,7 +1310,7 @@ other = "How a Jakarta EE specification comes to life"
 other = "To be officially recognized as a Jakarta EE Specification, there must be at least one open source Compatible Implementation that passes all required TCK tests."
 
 [pages-about-jakarta-ee-v2-from-spec-cta]
-other = "Explore the compatible Products"
+other = "Explore the compatible products"
 
 [pages-about-jakarta-ee-v2-power-of-compatibility-title]
 other = "<span class=\"text-secondary\">The power</span> of compatibility"
@@ -2179,7 +2179,7 @@ other = "Contribute to projects"
 other = "Turn your expertise into impact."
 
 [join-us-contribute-projects-description]
-other = "Join our global community of developers and make your mark on the Jakarta EE platform. From code to documentation, every contribution helps strengthen open, cloud-native enterprise Java."
+other ="Join our global community of developers and make your mark on the Jakarta EE platform. From code to documentation, every contribution helps strengthen open, cloud native enterprise Java."
 
 [join-us-start-contributing-button]
 other = "Start contributing"
