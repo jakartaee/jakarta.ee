@@ -360,3 +360,39 @@
 .border-primary {
   border: 0.2rem solid @brand-primary;
 }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+:root {
+  --fade-in-delay: 0s;
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 0.5s ease-in-out;
+  animation-fill-mode: forwards;
+  animation-delay: var(--fade-in-delay);
+}
+
+.delay-1 {
+  --fade-in-delay: 0.5s;
+}
+
+.delay-2 {
+  --fade-in-delay: 1s;
+}
+
+.delay-3 {
+  --fade-in-delay: 1.5s;
+}
+
+.delay-4 {
+  --fade-in-delay: 2s;
+}

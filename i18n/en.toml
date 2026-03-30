@@ -1304,7 +1304,7 @@ other = "Seamlessly evolve your applications by switching underlying technologie
 other = "<span class=\"text-secondary\">From specification</span> to implementation"
 
 [pages-about-jakarta-ee-v2-from-spec-quote]
-other = "How a Jakarta EE Specification Comes to Life"
+other = "How a Jakarta EE specification comes to life"
 
 [pages-about-jakarta-ee-v2-from-spec-description]
 other = "To be officially recognized as a Jakarta EE Specification, there must be at least one open source Compatible Implementation that passes all required TCK tests."
