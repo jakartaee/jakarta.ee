@@ -12,36 +12,29 @@
   <div class="container">
     <div class="row">
       <img
-        class="w-15 md:w-30 absolute-bottom-right"
+        class="w-15 md:w-30 absolute-bottom-right visible-md visible-lg"
         src="/developer-portal/images/contribute/corner-image.webp"
         alt="person speaking at a conference"
       />
       <div class="col-md-16">
-        <h2
-          class="featured-heading text-primary margin-bottom-30 margin-top-10"
-        >
-          <span class="text-secondary"
-            >{{ i18n "developer-portal-contribute-heading" }}</span
-          >
-          {{ i18n "developer-portal-contribute-heading-suffix" }}
+        <h2 class="featured-heading text-primary margin-bottom-30 margin-top-10">
+          {{ i18n "developer-portal-contribute-heading" | safeHTML }}
+          {{ i18n "developer-portal-contribute-heading-suffix" | safeHTML }}
         </h2>
         <blockquote class="margin-bottom-40 hidden-md hidden-lg">
-          {{ i18n "developer-portal-contribute-description" }}
+          {{ i18n "developer-portal-contribute-description" | safeHTML }}
         </blockquote>
         <div class="grid grid-cols-2 gap-2">
-          <a
-            href="/community/get-involved/"
-            class="icon-box text-current link-unstyled"
-          >
+          <a href="/community/get-involved/" class="icon-box text-current link-unstyled">
             <i class="fa fa-arrow-right" aria-hidden="true"></i>
             <span class="text-primary inline-icon"
               >{{ partial "svg.html" (dict "path" "/developer-portal/images/contribute/how-to-contribute-icon.svg") }}</span
             >
             <h4 class="text-primary font-semibold">
-              {{ i18n "developer-portal-get-involved-title" }}
+              {{ i18n "developer-portal-get-involved-title" | safeHTML }}
             </h4>
             <p>
-              {{ i18n "developer-portal-get-involved-description" }}
+              {{ i18n "developer-portal-get-involved-description" | safeHTML }}
             </p>
           </a>
           <a href="/contribute/" class="icon-box text-current link-unstyled">
@@ -50,10 +43,10 @@
               >{{ partial "svg.html" (dict "path" "/developer-portal/images/contribute/spec-process-docs-icon.svg") }}</span
             >
             <h4 class="text-primary font-semibold">
-              {{ i18n "developer-portal-how-to-contribute-title" }}
+              {{ i18n "developer-portal-how-to-contribute-title" | safeHTML }}
             </h4>
             <p>
-              {{ i18n "developer-portal-how-to-contribute-description" }}
+              {{ i18n "developer-portal-how-to-contribute-description" | safeHTML }}
             </p>
           </a>
           <a href="/mentorship/" class="icon-box text-current link-unstyled">
@@ -62,47 +55,41 @@
               >{{ partial "svg.html" (dict "path" "/developer-portal/images/contribute/mentorship-icon.svg") }}</span
             >
             <h4 class="text-primary font-semibold">
-              {{ i18n "developer-portal-mentorship-title" }}
+              {{ i18n "developer-portal-mentorship-title" | safeHTML }}
             </h4>
             <p>
-              {{ i18n "developer-portal-mentorship-description" }}
+              {{ i18n "developer-portal-mentorship-description" | safeHTML }}
             </p>
           </a>
-          <a
-            href="/committees/specification/guide/"
-            class="icon-box text-current link-unstyled"
-          >
+          <a href="/committees/specification/guide/" class="icon-box text-current link-unstyled">
             <i class="fa fa-arrow-right" aria-hidden="true"></i>
             <span class="text-primary inline-icon"
               >{{ partial "svg.html" (dict "path" "/developer-portal/images/contribute/developer-advocate-icon.svg") }}</span
             >
             <h4 class="text-primary font-semibold">
-              {{ i18n "developer-portal-spec-process-docs-title" }}
+              {{ i18n "developer-portal-spec-process-docs-title" | safeHTML }}
             </h4>
             <p>
-              {{ i18n "developer-portal-spec-process-docs-description" }}
+              {{ i18n "developer-portal-spec-process-docs-description" | safeHTML }}
             </p>
           </a>
-          <a
-            href="/specifications/"
-            class="icon-box text-current link-unstyled"
-          >
+          <a href="/specifications/" class="icon-box text-current link-unstyled">
             <i class="fa fa-arrow-right" aria-hidden="true"></i>
             <span class="text-primary inline-icon"
               >{{ partial "svg.html" (dict "path" "/developer-portal/images/contribute/explore-specifications-icon.svg") }}</span
             >
             <h4 class="text-primary font-semibold">
-              {{ i18n "developer-portal-explore-specifications-title" }}
+              {{ i18n "developer-portal-explore-specifications-title" | safeHTML }}
             </h4>
             <p>
-              {{ i18n "developer-portal-explore-specifications-description" }}
+              {{ i18n "developer-portal-explore-specifications-description" | safeHTML }}
             </p>
           </a>
         </div>
       </div>
       <div class="col-md-8 visible-md visible-lg">
         <blockquote class="margin-top-10">
-          {{ i18n "developer-portal-contribute-description" }}
+          {{ i18n "developer-portal-contribute-description" | safeHTML }}
         </blockquote>
       </div>
     </div>

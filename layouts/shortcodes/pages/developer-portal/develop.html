@@ -12,83 +12,108 @@
   <div class="container">
     <div class="row margin-bottom-60">
       <img
-        class="w-15 md:w-30 absolute-bottom-right"
+        class="w-15 md:w-30 absolute-bottom-right visible-md visible-lg"
         src="/developer-portal/images/develop/corner-image.webp"
         alt="person coding"
       />
       <div class="col-md-16">
-        <h2
-          class="featured-heading text-primary margin-bottom-30 margin-top-10"
-        >
-          <span class="text-secondary">{{ i18n "developer-portal-develop-heading" }}</span> {{ i18n "developer-portal-develop-heading-suffix" }}
+        <h2 class="featured-heading text-primary margin-bottom-30 margin-top-10">
+          {{ i18n "developer-portal-develop-heading" | safeHTML }}
+          {{ i18n "developer-portal-develop-heading-suffix" | safeHTML }}
         </h2>
         <blockquote class="margin-bottom-40 hidden-md hidden-lg">
-          {{ i18n "developer-portal-develop-description" }}
+          {{ i18n "developer-portal-develop-description" | safeHTML }}
         </blockquote>
         <div class="grid grid-cols-2 gap-2">
           <a href="https://start.jakarta.ee/" class="icon-box text-current link-unstyled">
             <i class="fa fa-arrow-right" aria-hidden="true"></i>
-            <span class="text-primary inline-icon">
-              {{ partial "svg.html" (dict "path" "/developer-portal/images/develop/get-started-icon.svg") }}
-            </span>
-            <h4 class="text-primary font-semibold">{{ i18n "developer-portal-get-started-title" }}</h4>
+            <span class="text-primary inline-icon"
+              >{{ partial "svg.html" (dict "path" "/developer-portal/images/develop/get-started-icon.svg") }}</span
+            >
+            <h4 class="text-primary font-semibold">
+              {{ i18n "developer-portal-get-started-title" | safeHTML }}
+            </h4>
             <p>
-              {{ i18n "developer-portal-get-started-description" }}
+              {{ i18n "developer-portal-get-started-description" | safeHTML }}
             </p>
           </a>
           <a href="/resources/" class="icon-box text-current link-unstyled">
             <i class="fa fa-arrow-right" aria-hidden="true"></i>
-            <span class="text-primary inline-icon">{{ partial "svg.html" (dict "path" "/developer-portal/images/develop/insights-and-publications-icon.svg") }}</span>
+            <span class="text-primary inline-icon"
+              >{{ partial "svg.html" (dict "path" "/developer-portal/images/develop/insights-and-publications-icon.svg") }}</span
+            >
             <h4 class="text-primary font-semibold">
-              {{ i18n "developer-portal-insights-title" }}
+              {{ i18n "developer-portal-insights-title" | safeHTML }}
             </h4>
             <p>
-              {{ i18n "developer-portal-insights-description" }}
+              {{ i18n "developer-portal-insights-description" | safeHTML }}
             </p>
           </a>
           <a href="/learn/how-to-guides/" class="icon-box text-current link-unstyled">
             <i class="fa fa-arrow-right" aria-hidden="true"></i>
-            <span class="text-primary inline-icon">{{ partial "svg.html" (dict "path" "/developer-portal/images/develop/how-to-guide-icon.svg") }}</span>
-            <h4 class="text-primary font-semibold">{{ i18n "developer-portal-how-to-guide-title" }}</h4>
+            <span class="text-primary inline-icon"
+              >{{ partial "svg.html" (dict "path" "/developer-portal/images/develop/how-to-guide-icon.svg") }}</span
+            >
+            <h4 class="text-primary font-semibold">
+              {{ i18n "developer-portal-how-to-guide-title" | safeHTML }}
+            </h4>
             <p>
-              {{ i18n "developer-portal-how-to-guide-description" }}
+              {{ i18n "developer-portal-how-to-guide-description" | safeHTML }}
             </p>
           </a>
           <a href="/learn/" class="icon-box text-current link-unstyled">
             <i class="fa fa-arrow-right" aria-hidden="true"></i>
-            <span class="text-primary inline-icon">{{ partial "svg.html" (dict "path" "/developer-portal/images/develop/learning-hub-icon.svg") }}</span>
-            <h4 class="text-primary font-semibold">{{ i18n "developer-portal-learning-hub-title" }}</h4>
+            <span class="text-primary inline-icon"
+              >{{ partial "svg.html" (dict "path" "/developer-portal/images/develop/learning-hub-icon.svg") }}</span
+            >
+            <h4 class="text-primary font-semibold">
+              {{ i18n "developer-portal-learning-hub-title" | safeHTML }}
+            </h4>
             <p>
-              {{ i18n "developer-portal-learning-hub-description" }}
+              {{ i18n "developer-portal-learning-hub-description" | safeHTML }}
             </p>
           </a>
           <a href="/compatibility/" class="icon-box text-current link-unstyled">
             <i class="fa fa-arrow-right" aria-hidden="true"></i>
-            <span class="text-primary inline-icon">{{ partial "svg.html" (dict "path" "/developer-portal/images/develop/compatible-products-icon.svg") }}</span>
+            <span class="text-primary inline-icon"
+              >{{ partial "svg.html" (dict "path" "/developer-portal/images/develop/compatible-products-icon.svg") }}</span
+            >
             <h4 class="text-primary font-semibold">
-              {{ i18n "developer-portal-compatible-products-title" }}
+              {{ i18n "developer-portal-compatible-products-title" | safeHTML }}
             </h4>
             <p>
-              {{ i18n "developer-portal-compatible-products-description" }}
+              {{ i18n "developer-portal-compatible-products-description" | safeHTML }}
             </p>
           </a>
           <a href="https://jakartaee.github.io/platform/jakartaee12/JakartaEE12ReleasePlan" class="icon-box text-current link-unstyled">
             <i class="fa fa-arrow-right" aria-hidden="true"></i>
-            <span class="text-primary inline-icon">{{ partial "svg.html" (dict "path" "/developer-portal/images/develop/release-plan-icon.svg") }}</span>
-            <h4 class="text-primary font-semibold">{{ i18n "developer-portal-release-plan-title" }}</h4>
-            <p>{{ i18n "developer-portal-release-plan-description" }}</p>
+            <span class="text-primary inline-icon"
+              >{{ partial "svg.html" (dict "path" "/developer-portal/images/develop/release-plan-icon.svg") }}</span
+            >
+            <h4 class="text-primary font-semibold">
+              {{ i18n "developer-portal-release-plan-title" | safeHTML }}
+            </h4>
+            <p>
+              {{ i18n "developer-portal-release-plan-description" | safeHTML }}
+            </p>
           </a>
           <a href="/release/" class="icon-box text-current link-unstyled">
             <i class="fa fa-arrow-right" aria-hidden="true"></i>
-            <span class="text-primary inline-icon">{{ partial "svg.html" (dict "path" "/developer-portal/images/develop/all-releases-icon.svg") }}</span>
-            <h4 class="text-primary font-semibold">{{ i18n "developer-portal-all-releases-title" }}</h4>
-            <p>{{ i18n "developer-portal-all-releases-description" }}</p>
+            <span class="text-primary inline-icon"
+              >{{ partial "svg.html" (dict "path" "/developer-portal/images/develop/all-releases-icon.svg") }}</span
+            >
+            <h4 class="text-primary font-semibold">
+              {{ i18n "developer-portal-all-releases-title" | safeHTML }}
+            </h4>
+            <p>
+              {{ i18n "developer-portal-all-releases-description" | safeHTML }}
+            </p>
           </a>
         </div>
       </div>
       <div class="col-md-8 visible-md visible-lg position-initial">
         <blockquote class="margin-top-10">
-          {{ i18n "developer-portal-develop-description" }}
+          {{ i18n "developer-portal-develop-description" | safeHTML }}
         </blockquote>
       </div>
     </div>

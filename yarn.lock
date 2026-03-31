@@ -851,10 +851,10 @@
   resolved "https://registry.npmjs.org/@discoveryjs/json-ext/-/json-ext-0.5.7.tgz#1d572bfbbe14b7704e0ba0f39b74815b84870d70"
   integrity sha512-dBVuXR082gk3jsFp7Rd/JI4kytwGHecnCoTtXFb7DB6CNHp4rg5k1bhg0nWdLGLnOV71lmDzGQaLMy8iPLY0pw==
 
-"@eclipsefdn/solstice-components@0.8.1":
-  version "0.8.1"
-  resolved "https://registry.npmjs.org/@eclipsefdn/solstice-components/-/solstice-components-0.8.1.tgz#38526ef13cbb0ae065ebbabfb3e1b09e2a369d22"
-  integrity sha512-+m/+V/Kko4+7h+qwUPVJt76aIOA0SjVBMxKecU9RfGOZt081BUZN/RbQRkJ5YjFCJFqvIG1oFYA4t+Bse4dR0w==
+"@eclipsefdn/solstice-components@0.8.2":
+  version "0.8.2"
+  resolved "https://registry.npmjs.org/@eclipsefdn/solstice-components/-/solstice-components-0.8.2.tgz#1ef0ab1927eaa55cc3efe6282c74022e17708e96"
+  integrity sha512-GvO3jIbj/M5db9ms1vetG/ekF0FQ1wa/MWnuGFpzzv6+zYaJ/KutKu16yxHMqMwA+ciOcEcVXswY/WRGSnELsg==
   dependencies:
     "@fortawesome/fontawesome-free" "^6.5.2"
     "@lit/context" "^1.1.6"

@@ -20,12 +20,15 @@ import setupMobileMegaMenu from "./mobile-mega-menu";
 import scrollSnapCarousel from "./scroll-snap-carousel";
 import { setupRotatingText } from "./rotating-text";
 import { FeaturedStoryPopup } from "@eclipsefdn/solstice-components";
+import fadeGroup from 'eclipsefdn-solstice-assets/js/animations/fade-group';
 
 FeaturedStoryPopup.register();
 
 document.addEventListener("DOMContentLoaded", function () {
   (function ($, document) {
     eclipsefdnSpecificationBadges.renderAll();
+
+    fadeGroup.init();
 
     setupTopIntersection();
     setupRotatingText();
