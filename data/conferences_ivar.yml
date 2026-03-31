@@ -22,6 +22,12 @@ years:
     date: Jul 27-31
     upcoming: true
 
+  - name: JConf Dominicana
+    url: https://jconfdominicana.org
+    location: Santiago 🇩🇴
+    date: Jul 17-18
+    upcoming: true    
+
   - name: Cluj Innovation Days + SKILLAB
     url: https://clujinnovationdays.com
     location: Cluj 🇷🇴
@@ -229,7 +235,7 @@ years:
     date: Aug 4-8
     blog: https://www.agilejava.eu/2025/08/21/jcrete-2025/
 
-  - name: JConfDominica
+  - name: JConf Dominicana
     url: https://jconfdominicana.org/
     location: Santo Domingo 🇩🇴
     date: Jul 18-19
@@ -460,7 +466,7 @@ years:
     date: Jul 22-26
     blog: https://www.agilejava.eu/2024/08/03/jcrete-2024/
     
-  - name: JConfDominica
+  - name: JConf Dominicana
     url: https://jconfdominicana.org/
     location: Santiago de los Caballeros 🇩🇴
     date: Jul 19-20
