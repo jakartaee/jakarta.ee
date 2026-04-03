@@ -35,9 +35,15 @@ years:
     upcoming: true
 
   - name: GeeCON
-    url: hhttps://2026.geecon.org
+    url: https://2026.geecon.org
     location: Kraków 🇵🇱
     date: May 14-15
+    upcoming: true
+
+  - name: JavaConnect KE
+    url: https://zenlipa.co.ke/events/js61T1
+    location: Nairobi 🇰🇪
+    date: May 9
     upcoming: true
 
   - name: University of York (Guest Lecture)
@@ -56,13 +62,11 @@ years:
     url: https://www.ocxconf.org
     location: Brussels 🇧🇪
     date: Apr 20-23
-    upcoming: true
 
   - name: Voxxed Days Amsterdam
     url: https://amsterdam.voxxeddays.com
     location: Amsterdam 🇳🇱
     date: Apr 1-2
-    upcoming: true
 
   - name: JavaOne
     url: https://www.oracle.com/javaone
