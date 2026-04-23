@@ -202,7 +202,7 @@ sets:
           image_width: 195
           download: 'http://www.inforbus.com/as.html'
           versions:
-          - version: 10.0.10
+          - version: 10
             compatibility: 'http://www.inforbus.com/InforsuiteAS/platform-tckresults/FullPlatform10/index.html'
             download_url: 'http://www.inforbus.com/as.html'
         - name: LENA
