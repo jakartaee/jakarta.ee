@@ -177,35 +177,41 @@ main:
     weight: 5
 
   # Releases sub-items
+  - identifier: "jakarta-ee-12"
+    name: "Jakarta EE 12 (WIP)"
+    pageRef: "/release/12/"
+    parent: "releases"
+    weight: 1
+
   - identifier: "jakarta-ee-11"
     name: "Jakarta EE 11"
     pageRef: "/release/11/"
     parent: "releases"
-    weight: 1
+    weight: 2
 
   - identifier: "jakarta-ee-10"
     name: "Jakarta EE 10"
     pageRef: "/release/10/"
     parent: "releases"
-    weight: 2
+    weight: 3
 
   - identifier: "jakarta-ee-9"
     name: "Jakarta EE 9"
     pageRef: "/release/9/"
     parent: "releases"
-    weight: 3
+    weight: 4
 
   - identifier: "jakarta-ee-8"
     name: "Jakarta EE 8"
     pageRef: "/release/8/"
     parent: "releases"
-    weight: 4
+    weight: 5
 
   - identifier: "view-all-releases"
     name: "View all releases"
     pageRef: "/release/"
     parent: "releases"
-    weight: 5
+    weight: 6
 
   # Additional resources sub-items
   - identifier: "specification-process"

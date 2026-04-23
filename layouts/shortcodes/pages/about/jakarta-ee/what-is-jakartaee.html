@@ -1,0 +1,135 @@
+<section id="what-is-jakartaee" class="row padding-bottom-large">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-24">
+        <div class="text-sm-center text-primary">
+          <h2 class="featured-heading text-primary">
+            {{ i18n "pages-about-jakarta-ee-v2-what-is-title" | safeHTML }}
+          </h2>
+          <p class="margin-top-20">
+            {{ i18n "pages-about-jakarta-ee-v2-what-is-description" }}
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="row text-primary margin-top-40 fade-group">
+      <div class="col-md-8 col-md-offset-2 margin-bottom-40">
+        <p class="text-center">
+          <strong
+            >{{ i18n "pages-about-jakarta-ee-v2-final-spec-prelude" }}</strong
+          >
+        </p>
+
+        <div class="card border-primary margin-top-30 text-center">
+          <div class="card-body">
+            <h4 class="card-title featured-heading text-primary margin-top-10">
+              {{ i18n "pages-about-jakarta-ee-v2-final-spec-title" }}
+            </h4>
+            <div class="margin-top-30 margin-bottom-20">
+              <div
+                class="fade-item bg-primary-royal-blue rounded-base padding-y-10 padding-x-20 margin-bottom-15"
+                data-fade-direction="bottom" data-fade-distance="25" data-fade-duration="0.5"
+              >
+                <strong class="text-white"
+                  >{{ i18n "pages-about-jakarta-ee-v2-spec-doc-label" }}</strong
+                >
+              </div>
+              <div
+                class="fade-item bg-primary-royal-blue rounded-base padding-y-10 padding-x-20 margin-bottom-15"
+                data-fade-direction="bottom" data-fade-distance="25" data-fade-duration="0.5"
+              >
+                <strong class="text-white"
+                  >{{ i18n "pages-about-jakarta-ee-v2-api-label" }}</strong
+                >
+              </div>
+              <div
+                class="fade-item bg-primary-royal-blue rounded-base padding-y-10 padding-x-20 margin-bottom-15"
+                data-fade-direction="bottom" data-fade-distance="25" data-fade-duration="0.5"
+              >
+                <strong class="text-white"
+                  >{{ i18n "pages-about-jakarta-ee-v2-tck-label" }}</strong
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="fade-item border-primary rounded-base padding-y-10 padding-x-20 margin-top-20 text-center"
+          data-fade-direction="bottom" data-fade-distance="25" data-fade-duration="0.5"
+        >
+          <strong class="text-primary"
+            >{{ i18n "pages-about-jakarta-ee-v2-compatible-implementations-label" }}</strong
+          >
+        </div>
+      </div>
+      <div class="col-md-12 col-md-offset-2">
+        <p class="text-center margin-bottom-40">
+          <strong
+            >{{ i18n "pages-about-jakarta-ee-v2-spec-includes-title" }}</strong
+          >
+        </p>
+        <div class="d-flex flex-col gap-2">
+          <div class="card glow">
+            <div class="card-body">
+              <div class="d-flex gap-2 align-items-center">
+                <div class="text-primary">
+                  {{ partial "svg.html" (dict "path" "/about/jakarta-ee/images/document-icon.svg") }}
+                </div>
+                <div>
+                  <h5 class="card-title">
+                    {{ i18n "pages-about-jakarta-ee-v2-spec-doc-card-title" }}
+                  </h5>
+                  <p class="card-text">
+                    {{ i18n "pages-about-jakarta-ee-v2-spec-doc-card-description" }}
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card glow">
+            <div class="card-body">
+              <div class="d-flex gap-2 align-items-center">
+                <div class="text-primary">
+                  {{ partial "svg.html" (dict "path" "/about/jakarta-ee/images/document-icon.svg") }}
+                </div>
+                <div>
+                  <h5 class="card-title">
+                    {{ i18n "pages-about-jakarta-ee-v2-api-card-title" }}
+                  </h5>
+                  <p class="card-text">
+                    {{ i18n "pages-about-jakarta-ee-v2-api-card-description" }}
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card glow">
+            <div class="card-body">
+              <div class="d-flex gap-2 align-items-center">
+                <div class="text-primary">
+                  {{ partial "svg.html" (dict "path" "/about/jakarta-ee/images/document-icon.svg") }}
+                </div>
+                <div>
+                  <h5 class="card-title">
+                    {{ i18n "pages-about-jakarta-ee-v2-tck-card-title" }}
+                  </h5>
+                  <p class="card-text">
+                    {{ i18n "pages-about-jakarta-ee-v2-tck-card-description" }}
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row margin-top-40">
+      <div class="col-sm-24">
+        <div class="card glow text-center text-primary">
+          {{ i18n "pages-about-jakarta-ee-v2-compatible-implementation-note" }}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

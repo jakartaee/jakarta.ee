@@ -37,3 +37,23 @@
 *:has(> .scroll-snap-controls):not(:hover) > .scroll-snap-controls {
   opacity: 0;
 }
+
+.overflow-x-scroll {
+  overflow-x: scroll;
+}
+
+.scrollbar-hidden {
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.snap-type-x-mandatory {
+  scroll-snap-type: x mandatory;
+}
+
+.snap-center {
+  scroll-snap-align: center;
+}

@@ -17,7 +17,7 @@ jumbotron_btn_class: btn btn-secondary
 jumbotron_class: text-center
 custom_jumbotron_class: col-sm-18 col-sm-offset-3 margin-top-60
 jumbotron_layout_style: full-height
-header_wrapper_class: header-home-bg-img
+header_wrapper_class: header-home header-secondary-bg-img
 custom_jumbotron_partial: jumbotron_home.html
 links:
   [
@@ -79,4 +79,4 @@ container: "container-fluid"
 
 {{< /pages/home/join-us >}}
 
-{{< pages/home/members >}}
+{{< members >}}

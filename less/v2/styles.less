@@ -12,6 +12,7 @@
  * SPDX-License-Identifier: EPL-2.0
 */
 
+@import (css) "@eclipsefdn/solstice-components/themes/compatibility/default-light";
 @import "~eclipsefdn-solstice-assets/less/astro/main.less";
 
 @import "vendors/_syntax.less";
@@ -44,6 +45,7 @@
 @import "release-9.less";
 @import "release-10.less";
 @import "release-11.less";
+@import "release.less";
 
 @import "news.less";
 @import "compatibility.less";
@@ -247,11 +249,20 @@ ul.dual-col {
 
 .bg-blue-image-4 {
   background:
-    url(./images/bg-blue-image-4.svg),
+    url(./images/bg-blue-image-4.webp),
     linear-gradient(112.22deg, #81bbff 12.01%, #f2f8ff 76.41%);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: top;
+}
+
+.bg-blue-image-5 {
+  background:
+    url(./images/bg-blue-image-5.webp),
+    linear-gradient(112.22deg, #81bbff 12.01%, #f2f8ff 76.41%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
 }
 
 .header-release-landing-page {
@@ -517,7 +528,7 @@ p:empty {
     .show-arrow;
   }
 
-  &:hover {
+  &:is(a):hover {
     .show-arrow;
   }
 }

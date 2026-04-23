@@ -20,7 +20,7 @@ container: "container-fluid"
 
 {{< pages/join-us/cards >}}
 
-{{< pages/join-us/testimonials >}}
+{{< testimonials >}}
 
 {{< release/latest-release-banner class="bg-secondary-img margin-bottom-30" >}}
 {{< platform-diagram src="jakartaee_11_platform_diagram" >}}

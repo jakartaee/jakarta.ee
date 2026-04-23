@@ -4,11 +4,41 @@ years:
 - year: 2026
   conferences:
 
+  - name: Vaadin Create
+    url: https://vaadin.com/vaadin-create-2026
+    location: Barcelona 🇪🇸
+    date: Oct 27-28
+    upcoming: true    
+
+  - name: IntelliJ IDEA Conf
+    url: https://lp.jetbrains.com/intellij-idea-conf-2026/
+    location: TBD
+    date: Sep 7-8
+    upcoming: true    
+
   - name: JCrete
     url: https://www.jcrete.org
     location: Kolymvari 🇬🇷
     date: Jul 27-31
     upcoming: true
+
+  - name: JConf Dominicana
+    url: https://jconfdominicana.org
+    location: Santiago 🇩🇴
+    date: Jul 17-18
+    upcoming: true    
+
+  - name: JakartaOne Dominican Republic
+    url: 
+    location: Santiago 🇩🇴
+    date: Jul 16
+    upcoming: true    
+
+  - name: Code the continuum
+    url: https://ceisphere.eu/events/code-continuum
+    location: Cagliari 🇮🇹
+    date: Jun 31-Jul 1
+    upcoming: true    
 
   - name: Cluj Innovation Days + SKILLAB
     url: https://clujinnovationdays.com
@@ -17,9 +47,15 @@ years:
     upcoming: true
 
   - name: GeeCON
-    url: hhttps://2026.geecon.org
+    url: https://2026.geecon.org
     location: Kraków 🇵🇱
     date: May 14-15
+    upcoming: true
+
+  - name: JavaConnect KE
+    url: https://zenlipa.co.ke/events/js61T1
+    location: Nairobi 🇰🇪
+    date: May 9
     upcoming: true
 
   - name: University of York (Guest Lecture)
@@ -28,42 +64,47 @@ years:
     date: May 5
     upcoming: true
 
-  - name: Open Community Experience
+  - name: ShiftAPPens
+    url: https://www.shiftappens.com
+    location: Coimbra 🇵🇹
+    date: May 1-3
+    upcoming: true
+
+  - name: Open Community eXperience
     url: https://www.ocxconf.org
     location: Brussels 🇧🇪
     date: Apr 20-23
-    upcoming: true
 
-  - name: IntelliJ IDEA Conf
-    url: https://lp.jetbrains.com/intellij-idea-conf-2026/
-    location: Paphos 🇨🇾 + 🌐
-    date: Mar 26-27
-    upcoming: true    
+  - name: Voxxed Days Amsterdam
+    url: https://amsterdam.voxxeddays.com
+    location: Amsterdam 🇳🇱
+    date: Apr 1-2
+    blog: https://www.agilejava.eu/2026/04/04/voxxed-days-amsterdam-2026/
 
   - name: JavaOne
     url: https://www.oracle.com/javaone
     location: Redwood Shores, CA 🇺🇸
     date: Mar 17-19
-    upcoming: true
-    
+    blog: https://www.agilejava.eu/2026/03/21/javaone-2026/
+   
   - name: JavaLand
     url: https://www.javaland.eu/en/home/
     location: Rust 🇩🇪
     date: Mar 10-12
-    upcoming: true
+    blog: https://www.agilejava.eu/2026/03/12/javaland-2026/
     
   - name: Devnexus
     url: https://devnexus.com/
     location: Atlanta, GA 🇺🇸
     date: Mar 4-6
-    upcoming: true
-
+    blog: https://www.agilejava.eu/2026/03/11/devnexus-2026/
+    
   - name: ConFoo
     url: https://confoo.ca/en/2026
     location: Montreal 🇨🇦
     date: Feb 24-27
-    upcoming: true
-
+    blog: https://www.agilejava.eu/2026/02/28/confoo-2026/
+    
   - name: DeveloperWeek
     url: https://www.developerweek.com/
     location: San Jose, CA 🇺🇸
@@ -211,7 +252,7 @@ years:
     date: Aug 4-8
     blog: https://www.agilejava.eu/2025/08/21/jcrete-2025/
 
-  - name: JConfDominica
+  - name: JConf Dominicana
     url: https://jconfdominicana.org/
     location: Santo Domingo 🇩🇴
     date: Jul 18-19
@@ -442,7 +483,7 @@ years:
     date: Jul 22-26
     blog: https://www.agilejava.eu/2024/08/03/jcrete-2024/
     
-  - name: JConfDominica
+  - name: JConf Dominicana
     url: https://jconfdominicana.org/
     location: Santiago de los Caballeros 🇩🇴
     date: Jul 19-20

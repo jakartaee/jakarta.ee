@@ -19,22 +19,40 @@ import { setupTopIntersection } from "./top-intersection";
 import setupMobileMegaMenu from "./mobile-mega-menu";
 import scrollSnapCarousel from "./scroll-snap-carousel";
 import { setupRotatingText } from "./rotating-text";
+import { FeaturedStoryPopup } from "@eclipsefdn/solstice-components";
+import fadeGroup from 'eclipsefdn-solstice-assets/js/animations/fade-group';
+
+FeaturedStoryPopup.register();
 
 document.addEventListener("DOMContentLoaded", function () {
   (function ($, document) {
     eclipsefdnSpecificationBadges.renderAll();
 
+    fadeGroup.init();
+
     setupTopIntersection();
     setupRotatingText();
 
     // Initialize scroll snap carousels for home
-    scrollSnapCarousel(".testimonial-container:not(.join-us-page-testimonials)", ".testimonial-item");
+    scrollSnapCarousel(
+      ".testimonial-container:not(.join-us-page-testimonials)",
+      ".testimonial-item",
+    );
     scrollSnapCarousel(".news-container", "article", {
       useMutationObserver: true,
     });
-    scrollSnapCarousel(".testimonial-container.join-us-page-testimonials", ".testimonial-item", {
+    scrollSnapCarousel(
+      ".testimonial-container.join-us-page-testimonials",
+      ".testimonial-item",
+      {
+        autoRotate: true,
+        autoRotateInterval: 3000,
+      },
+    );
+    scrollSnapCarousel(".scroll-image-carousel", ".scroll-image", {
       autoRotate: true,
-      autoRotateInterval: 3000,
+      autoRotateInterval: 2000,
+      controls: false,
     });
 
     // Initialize Mobile Mega Menu

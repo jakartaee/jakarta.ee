@@ -1219,6 +1219,126 @@ other = "Discover the Jakarta EE Working Group"
 [pages-about-jakarta-ee-learn-more-connect-community]
 other = "Connect with the Jakarta EE community"
 
+[pages-about-jakarta-ee-v2-what-is-title]
+other = "What is <span class=\"text-secondary\">Jakarta EE?</span>"
+
+[pages-about-jakarta-ee-v2-what-is-description]
+other ="Jakarta EE is an open, vendor-neutral standard for building reliable, cloud native enterprise Java applications. It defines core technologies that modern Java applications rely on, even across different frameworks. Each Jakarta EE technology is defined by a specification, a set of rules that describe how it should behave, ensuring applications remain portable, predictable, and consistent across platforms, without vendor lock-in."
+
+[pages-about-jakarta-ee-v2-final-spec-prelude]
+other = "To ensure consistent behavior across platforms, Jakarta EE defines specifications rules that describe how each technology should behave. These are supported by three key elements:"
+
+[pages-about-jakarta-ee-v2-final-spec-title]
+other = "Final Specification"
+
+[pages-about-jakarta-ee-v2-spec-doc-label]
+other = "Specification Document"
+
+[pages-about-jakarta-ee-v2-api-label]
+other = "API"
+
+[pages-about-jakarta-ee-v2-tck-label]
+other = "TCK"
+
+[pages-about-jakarta-ee-v2-compatible-implementations-label]
+other = "Compatible Implementation(s)"
+
+[pages-about-jakarta-ee-v2-spec-includes-title]
+other = "Every Jakarta EE specification includes:"
+
+[pages-about-jakarta-ee-v2-spec-doc-card-title]
+other = "A Specification Document"
+
+[pages-about-jakarta-ee-v2-spec-doc-card-description]
+other = "A human-readable description of the technology"
+
+[pages-about-jakarta-ee-v2-api-card-title]
+other = "An API"
+
+[pages-about-jakarta-ee-v2-api-card-description]
+other = "The programming interface developers use in their applications."
+
+[pages-about-jakarta-ee-v2-tck-card-title]
+other = "A TCK (Technology Compatibility Kit)"
+
+[pages-about-jakarta-ee-v2-tck-card-description]
+other = "The test suite used to verify that an implementation fulfils the requirements of the specification"
+
+[pages-about-jakarta-ee-v2-compatible-implementation-note]
+other = "An implementation that passes the TCK becomes a Compatible Implementation, a guarantee for consistent behaviour across platforms."
+
+[pages-about-jakarta-ee-v2-why-it-matters-heading]
+other = "<span class='text-secondary'>Why</span> it matters"
+
+[pages-about-jakarta-ee-v2-why-it-matters-description]
+other = "Jakarta EE combines proven enterprise reliability with modern cloud native flexibility. No other Java framework offers the same depth of maturity and adaptability:"
+
+[pages-about-jakarta-ee-v2-why-it-matters-corner-image-alt]
+other = "person coding"
+
+[pages-about-jakarta-ee-v2-why-it-matters-item1-title]
+other = "Proven stability"
+
+[pages-about-jakarta-ee-v2-why-it-matters-item1-description]
+other = "Decades of enterprise use ensure reliability, maturity, and strong backward compatibility"
+
+[pages-about-jakarta-ee-v2-why-it-matters-item2-title]
+other = "Developer efficiency"
+
+[pages-about-jakarta-ee-v2-why-it-matters-item2-description]
+other = "Java developers can concentrate on implementing business logic instead of recreating the common infrastructure code that all enterprise applications require."
+
+[pages-about-jakarta-ee-v2-why-it-matters-item3-title]
+other = "Architectural flexibility"
+
+[pages-about-jakarta-ee-v2-why-it-matters-item3-description]
+other = "Whether your applications are monolithic or microservice-based, Jakarta EE supports a range of deployment models and design choices, all while maintaining cross-vendor compatibility."
+
+[pages-about-jakarta-ee-v2-why-it-matters-item4-title]
+other = "Future-ready design"
+
+[pages-about-jakarta-ee-v2-why-it-matters-item4-description]
+other = "Seamlessly evolve your applications by switching underlying technologies to meet new performance and scalability demands"
+
+[pages-about-jakarta-ee-v2-from-spec-title]
+other = "<span class=\"text-secondary\">From specification</span> to implementation"
+
+[pages-about-jakarta-ee-v2-from-spec-quote]
+other = "How a Jakarta EE specification comes to life"
+
+[pages-about-jakarta-ee-v2-from-spec-description]
+other = "To be officially recognized as a Jakarta EE Specification, there must be at least one open source Compatible Implementation that passes all required TCK tests."
+
+[pages-about-jakarta-ee-v2-from-spec-cta]
+other = "Explore the compatible products"
+
+[pages-about-jakarta-ee-v2-power-of-compatibility-title]
+other = "<span class=\"text-secondary\">The power</span> of compatibility"
+
+[pages-about-jakarta-ee-v2-power-of-compatibility-description]
+other = "Jakarta EE's compatibility model ensures that developers and organisations can rely on consistent behavior, regardless of vendor or deployment environment. This is what makes Jakarta EE the trusted standard for enterprise Java worldwide."
+
+[pages-about-jakarta-ee-v2-power-of-compatibility-cta]
+other = "Get your product listed as compatible"
+
+[pages-about-jakarta-ee-v2-learn-more-title]
+other = "<span class=\"text-secondary\">Learn more</span> / get involved"
+
+[pages-about-jakarta-ee-v2-learn-more-quote]
+other = "Join the global Jakarta EE community"
+
+[pages-about-jakarta-ee-v2-learn-more-description]
+other = "Jakarta EE thrives through collaboration from specification authors and implementers to developers building on the platform. Get involved to shape the future of enterprise Java."
+
+[pages-about-jakarta-ee-v2-learn-more-cta-get-involved]
+other = "Get Involved with Jakarta EE"
+
+[pages-about-jakarta-ee-v2-learn-more-cta-connect]
+other = "Connect with the community"
+
+[pages-about-jakarta-ee-v2-learn-more-cta-contribute]
+other = "Contribute to Jakarta EE"
+
 [pages-about-working-group-overview-title]
 other = "Influence the Future of Cloud Native Java"
 
@@ -1702,6 +1822,9 @@ other = "Release Page"
 [pages-specification-jakarta-ee-release-press-release]
 other = "Press Release"
 
+[pages-specification-jakarta-ee-release-under-development]
+other = "Under development"
+
 [pages-learn-index-starter-guides-title]
 other = "Starter Guides"
 
@@ -1867,8 +1990,8 @@ other = "Thank You!"
 [pages-supporters-sponsor-usage-description]
 other = "The Jakarta EE Member logo may be used by Strategic, Enterprise, Participant, and Individual Committer Members that are current members of the Working Group to identify their participation and show their support for the initiative. Use of the Jakarta EE Member logo is subject to the Jakarta EE Trademark Guidelines."
 
-[cta-join-us]
-other = "Join us"
+[cta-become-a-member]
+other = "Become a member"
 
 [cta-download]
 other = "Download"
@@ -2056,7 +2179,7 @@ other = "Contribute to projects"
 other = "Turn your expertise into impact."
 
 [join-us-contribute-projects-description]
-other = "Join our global community of developers and make your mark on the Jakarta EE platform. From code to documentation, every contribution helps strengthen open, cloud-native enterprise Java."
+other ="Join our global community of developers and make your mark on the Jakarta EE platform. From code to documentation, every contribution helps strengthen open, cloud native enterprise Java."
 
 [join-us-start-contributing-button]
 other = "Start contributing"
@@ -2079,3 +2202,124 @@ other = "Testimonials"
 
 [testimonials-subtitle]
 other = "Behind every Jakarta EE milestone is a global community of contributors, members, and sponsors driving its evolution forward."
+
+# Membership page translations
+[membership-why-join-eyebrow]
+other = "Why join Jakarta EE?"
+
+[membership-why-join-heading]
+other = "Shape the future. Lead the enterprise. Power innovation."
+
+[membership-why-join-card1-title]
+other = "Influence and lead the strategic direction of Jakarta EE"
+
+[membership-why-join-card1-desc]
+other = "Participate in governance bodies that establish requirements, set strategic themes and priorities across the platform."
+
+[membership-why-join-card2-title]
+other = "Foster a stable, open, and compatible Java ecosystem"
+
+[membership-why-join-card2-desc]
+other = "Invest in a vendor-neutral environment that enables interoperable implementations. This promotes choice, stability, and long-term sustainability for enterprise Java."
+
+[membership-why-join-card3-title]
+other = "Amplify your brand and thought leadership"
+
+[membership-why-join-card3-desc]
+other = "Increase your visibility through marketing programs and other opportunities that raise your profile as a leader in the global Java ecosystem."
+
+[membership-why-join-card4-title]
+other = "Gain strategic market Insight"
+
+[membership-why-join-card4-desc]
+other = "Engage directly with leading stakeholders across the Java ecosystem. Gain early awareness of trends, requirements, and roadmap shifts that influence your own business and product strategies"
+
+[membership-why-join-card5-title]
+other = "Protect your strategic investment in enterprise Java"
+
+[membership-why-join-card5-desc]
+other = "Ensure the continued relevance of your technology stack and the ongoing development of your team's skills as enterprise Java evolves."
+
+[membership-why-join-card6-title]
+other = "Strengthen your leadership in the enterprise Java market"
+
+[membership-why-join-card6-desc]
+other = "Demonstrate long-term commitment and reliability by contributing to a platform that powers mission-critical systems used worldwide."
+
+[membership-why-join-cta]
+other = "Start membership"
+
+[membership-carousel-alt-1]
+other = "people collaborating at an event"
+
+[membership-carousel-alt-2]
+other = "two people networking at an event"
+
+[membership-carousel-alt-3]
+other = "a group of people attending a conference session"
+
+[membership-carousel-alt-4]
+other = "organizers behind a booth at an event"
+
+[membership-carousel-alt-5]
+other = "speakers presenting on stage at an event"
+
+[membership-level-heading]
+other = "Choose the membership level that fits your mission"
+
+[membership-level-paragraph-1]
+other = "Whether your organisation builds on enterprise Java, contributes to its evolution, or leads its strategic direction, Jakarta EE offers membership levels designed to match your goals and level of engagement."
+
+[membership-level-paragraph-2]
+other = "Each tier provides unique opportunities for influence, visibility, and participation in shaping the future of open, cloud native enterprise Java."
+
+[membership-level-strategic-title]
+other = "Strategic"
+
+[membership-level-strategic-desc]
+other = "For organisations where enterprise Java is strategic and who want to shape Jakarta EE's long-term direction."
+
+[membership-level-enterprise-title]
+other = "Enterprise"
+
+[membership-level-enterprise-desc]
+other = "For organisations where Java is critical and who want to actively support and evolve Jakarta EE."
+
+[membership-level-participant-title]
+other = "Participant"
+
+[membership-level-participant-desc]
+other = "For organisations using or building on Jakarta EE and staying engaged in the ecosystem."
+
+[membership-level-price-basis]
+other = "based on annual revenue"
+
+[membership-contact-us]
+other = "Contact us about membership"
+
+[membership-explore-fees]
+other = "Explore fees here"
+
+[membership-compare-heading]
+other = "Compare"
+
+[membership-fees-annual-revenue]
+other = "Annual corporate revenue"
+
+[membership-fees-participation-fees]
+other = "Jakarta EE annual participation fees"
+
+[membership-compare-eligible]
+other = "{{ .Name }} members are eligible"
+
+[membership-compare-not-eligible]
+other = "{{ .Name }} members are not eligible"
+
+[membership-compare-mobile-instructions]
+other = "Navigate through the tabs to compare what each membership option includes."
+
+[membership-contact-heading]
+other = "Join us"
+
+[membership-contact-paragraph]
+other = "Take the first step in joining this Eclipse Foundation working group by reaching out to our membership team."

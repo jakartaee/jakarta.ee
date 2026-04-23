@@ -80,14 +80,15 @@
 // Backgrounds
 @bg-img-default: url("images/jumbotron-bg.webp");
 @bg-img-secondary: url("images/bg-secondary.webp");
-@bg-img-tertiary: url("images/bg-tertiary.jpg");
+@bg-img-tertiary: url("images/bg-tertiary.webp");
 
 @bg-jumbotron-default: url("images/jumbotron-bg-default.webp");
 @bg-jumbotron-secondary: @bg-img-default;
+@bg-jumbotron-tertiary: @bg-img-tertiary;
 
 @header-default-bg-img: @bg-jumbotron-default;
 @header-secondary-bg-img: @bg-jumbotron-secondary;
-@header-home-bg-img: @bg-jumbotron-secondary;
+@header-secondary-bg-img: @bg-jumbotron-secondary;
 
 @header-row-padding-bottom: 20px;
 
@@ -198,3 +199,29 @@
 
 @card-padding: 2rem;
 @card-border-radius: @border-radius-medium;
+
+:root {
+    /* Customizing the default popup */
+  --efsc-popup-background: @brand-primary-lighter-blue;
+  --efsc-popup-border-color: @brand-primary-light-blue;
+  --efsc-popup-color: @brand-primary;
+
+  /* Customizing the close button */
+  --efsc-popup-close-color: var(--efsc-color-gray-600);
+  --efsc-popup-close-hover-color: var(--efsc-color-gray-900);
+
+  /* Customizing the primary button */
+  --efsc-button-primary-background: @brand-primary padding-box;
+  --efsc-button-primary-color: @white;
+  --efsc-button-primary-border: 1px solid @brand-primary;
+  --efsc-button-primary-hover-background: darken(@brand-primary, 10%) padding-box;
+
+  --efsc-button-md-padding-y: 0.5rem;
+  --efsc-button-md-padding-x: 2rem;
+  --efsc-button-md-font-size: @btn-font-size;
+
+  --efsc-button-sm-padding-y: 0.3rem;
+  --efsc-button-sm-padding-x: 1.8rem;
+  --efsc-button-sm-font-size: 1.4rem;
+
+}
