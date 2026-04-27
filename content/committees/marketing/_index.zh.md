@@ -11,11 +11,12 @@ date: 2020-01-05T15:50:25-04:00
 
 * Kenji Kazumura - Fujitsu, Yuichi Kusano - alternate
 * Neil Patterson - IBM, Emily Jiang - alternate
-* Ed Bratt - Oracle, Melissa Jacobus - alternate
-* Dominika Tasarz (**chair**) - Payara, Jadon Ortlepp - alternate
+* Dmitry Kornilov - Oracle, Robert Patrick - alternate
+* Dominika Tasarz (**chair**) - Payara, Stallone Anandan - alternate
 * Jonathan Gallimore - Tomitribe, Cesar Hernandez - alternate
 * Eric (QingYu) Meng - Primeton - Elected Enterprise Representative
-* Sonja Gu - Microsoft - Elected Enterprise Representative
+* Jadon Ortlepp - Omnifish OU - Participant Representative
 * Otavio Santana - Elected Committer Member Representative
+* Zhao Xin - Shandong Cvicse Middleware Co - Elected Enterprise Representative
 
 {{< meeting-minutes-single "marketing_committee" >}}

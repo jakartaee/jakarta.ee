@@ -10,13 +10,14 @@ date: 2020-02-19T15:00:25-08:00
 ### 委員会メンバー
 
 * Kenji Kazumura - 富士通、Takahiro Nagao - 代理
-* Tom Watson - IBM、Emily Jiang - 代理
-* Ed Bratt - Oracle、Dmitry Kornilov - 代理
-* Andrew Pielage (**chair**) - Payara
+* Emily Jiang - IBM、Tom Watson - 代理
+* Dmitry Kornilov - Oracle、Robert Patrick - 代理
+* Andrew Pielage (**委員長**) - Payara
 * David Blevins - Tomitribe、Jean-Louis Monterio - 代理
 * Ivar Grimstad - PMC代表
-* Marcelo Ancelmo - ロンドンJavaコミュニティ - 選出されたParticipantメンバー代表、Abraham Marin-Perez - 代理
+* Arjan Tijms - Omnifish OU - 選出されたParticipantメンバー代表
 * Werner Keil - 選出されたCommitterメンバー代表
+* Jun Qian - Primeton Information Technologies - 選出されたEnterpriseメンバー代表
 * Zhai Luchao - Shandong Cvicse Middleware Co. - 選出されたEnterpriseメンバー代表
 
 {{< meeting-minutes-single "specification_committee" >}}

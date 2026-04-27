@@ -11,11 +11,11 @@ date: 2020-02-19T15:00:25-08:00
 
 * Kenji Kazumura - Fujitsu, Takahiro Nagao - alternate
 * Emily Jiang - IBM, Tom Watson - alternate
-* Ed Bratt - Oracle, Dmitry Kornilov - alternate
-* Andrew Pielage (**chair**)
+* Dmitry Kornilov - Oracle, Robert Patrick - alternate
+* Andrew Pielage (**chair**) - Payara
 * David Blevins - Tomitribe, Jean-Louis Monterio - alternate
 * Ivar Grimstad - PMC Representative
-* Marcelo Ancelmo - London Java Community - Elected Participant Member Representative, Abraham Marin-Perez - alternate
+* Arjan Tijms  - Omnifish OU - Elected Participant Member Representative
 * Werner Keil - Elected Committer Member Representative
 * Jun Qian - Primeton Information Technologies - Elected Enterprise Representative
 * Zhai Luchao - Shandong Cvicse Middleware Co. - Elected Enterprise Representative
