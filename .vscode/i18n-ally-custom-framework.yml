@@ -1,0 +1,10 @@
+languageIds:
+  - html
+  - gohtml
+  - gotmpl
+  - markdown
+usageMatchRegex:
+  - '[^\w\d](?:i18n|T)\s+["''`](.+?)["''`]'
+refactorTemplates:
+  - '{{ i18n "$1" }}'
+monopoly: true
