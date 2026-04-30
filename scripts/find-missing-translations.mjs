@@ -16,20 +16,24 @@
  *   node scripts/find-missing-translations.mjs --missing-only ja
  *   node scripts/find-missing-translations.mjs --json
  *   node scripts/find-missing-translations.mjs --exclude templates,xml
+ *
+ * Scoping:
+ *   --section blogs              Only scan content/blogs/
+ *   --section blogs,news,learn   Comma-separated list of sections
+ *   --path learn/starter-guides  Only pages whose key starts with this prefix
+ *   --limit 10                   Cap output to first N results
  */
 
-import { readdir, stat } from 'node:fs/promises';
-import { join, basename, dirname, extname } from 'node:path';
+import { extname } from 'node:path';
+import {
+  CONTENT_DIR, DEFAULT_EXCLUDES,
+  walk, toBaseKey, extractLang,
+} from './lib/hugo-content.mjs';
 
 // ── Configuration ──────────────────────────────────────────────────────────
 
-const CONTENT_DIR = 'content';
-
 /** Language codes to check against the English source. */
 const ALL_LANGS = ['ja', 'zh'];
-
-/** Directories under content/ that contain no translatable pages. */
-const DEFAULT_EXCLUDES = new Set(['templates', 'xml', 'schemas', 'images', 'documents']);
 
 // ── CLI args ───────────────────────────────────────────────────────────────
 
@@ -43,63 +47,21 @@ function getFlag(flag) {
 const langsArg = getFlag('--langs');
 const targetLangs = langsArg ? langsArg.split(',').map(l => l.trim()) : ALL_LANGS;
 
-const missingOnlyArg = getFlag('--missing-only'); // e.g. --missing-only ja
+const missingOnlyArg = getFlag('--missing-only');
 const jsonOutput = args.includes('--json');
 
 const excludeArg = getFlag('--exclude');
 const extraExcludes = excludeArg ? excludeArg.split(',').map(e => e.trim()) : [];
 const EXCLUDES = new Set([...DEFAULT_EXCLUDES, ...extraExcludes]);
 
-// ── File collection ────────────────────────────────────────────────────────
+// Scoping flags
+const sectionArg = getFlag('--section');
+const sections = sectionArg ? new Set(sectionArg.split(',').map(s => s.trim())) : null;
 
-/**
- * Recursively walk a directory and yield all file paths.
- * @param {string} dir
- * @returns {AsyncGenerator<string>}
- */
-async function* walk(dir) {
-  const entries = await readdir(dir, { withFileTypes: true });
-  for (const entry of entries) {
-    if (entry.name.startsWith('.')) continue;
-    const fullPath = join(dir, entry.name);
-    if (entry.isDirectory()) {
-      // Skip excluded top-level dirs
-      const rel = fullPath.replace(CONTENT_DIR + '/', '');
-      const topLevel = rel.split('/')[0];
-      if (EXCLUDES.has(topLevel)) continue;
-      yield* walk(fullPath);
-    } else {
-      yield fullPath;
-    }
-  }
-}
+const pathPrefix = getFlag('--path');
 
-/**
- * Given a file path, return the "base key" — the path without language suffix
- * and without extension, used to group translations together.
- *
- * Examples:
- *   content/about/faq/index.md      → content/about/faq/index
- *   content/about/faq/index.ja.md   → content/about/faq/index  (same key)
- *   content/_index.zh.html          → content/_index
- *   content/specs/xml-binding/3.0/changelog.ja.md → ...changelog
- */
-function toBaseKey(filePath) {
-  const ext = extname(filePath);                     // .md or .html
-  const withoutExt = filePath.slice(0, -ext.length); // strip .md/.html
-  // Strip optional language suffix: .ja .zh etc.
-  return withoutExt.replace(/\.(ja|zh)$/, '');
-}
-
-/**
- * Extract the language code from a file path, or 'en' for English sources.
- */
-function extractLang(filePath) {
-  const ext = extname(filePath);
-  const withoutExt = filePath.slice(0, -ext.length);
-  const match = withoutExt.match(/\.(ja|zh)$/);
-  return match ? match[1] : 'en';
-}
+const limitArg = getFlag('--limit');
+const limit = limitArg ? parseInt(limitArg, 10) : Infinity;
 
 // ── Main ───────────────────────────────────────────────────────────────────
 
@@ -107,9 +69,16 @@ async function main() {
   /** @type {Map<string, Set<string>>} baseKey → Set of present languages */
   const pageMap = new Map();
 
-  for await (const filePath of walk(CONTENT_DIR)) {
+  for await (const filePath of walk(CONTENT_DIR, EXCLUDES)) {
     const ext = extname(filePath);
     if (ext !== '.md' && ext !== '.html') continue;
+
+    // Section filter: compare the first path segment under content/
+    if (sections) {
+      const rel = filePath.replace(CONTENT_DIR + '/', '');
+      const topSection = rel.split('/')[0];
+      if (!sections.has(topSection)) continue;
+    }
 
     const key = toBaseKey(filePath);
     const lang = extractLang(filePath);
@@ -119,27 +88,36 @@ async function main() {
   }
 
   // Build report: only pages that have an English source
-  const results = [];
+  let results = [];
 
   for (const [key, langs] of pageMap.entries()) {
-    if (!langs.has('en')) continue; // skip orphaned translations without English source
+    if (!langs.has('en')) continue;
+
+    const pageRelative = key.replace(CONTENT_DIR + '/', '');
+
+    // Path-prefix filter
+    if (pathPrefix && !pageRelative.startsWith(pathPrefix)) continue;
 
     const missing = targetLangs.filter(l => !langs.has(l));
 
     if (missingOnlyArg) {
-      // Only report pages missing the specific language
       if (!langs.has(missingOnlyArg)) {
-        results.push({ page: key.replace(CONTENT_DIR + '/', ''), missing: [missingOnlyArg], present: [...langs] });
+        results.push({ page: pageRelative, missing: [missingOnlyArg], present: [...langs] });
       }
     } else {
       if (missing.length > 0) {
-        results.push({ page: key.replace(CONTENT_DIR + '/', ''), missing, present: [...langs] });
+        results.push({ page: pageRelative, missing, present: [...langs] });
       }
     }
   }
 
   // Sort by page path
   results.sort((a, b) => a.page.localeCompare(b.page));
+
+  // Apply limit
+  if (results.length > limit) {
+    results = results.slice(0, limit);
+  }
 
   if (jsonOutput) {
     process.stdout.write(JSON.stringify(results, null, 2) + '\n');
