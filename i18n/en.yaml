@@ -564,3 +564,244 @@ footer-newsletter-stay-connected: Stay connected
 footer-newsletter-description: Be the first to hear about Jakarta EE updates, events, and new releases.
 footer-newsletter-email-placeholder: Enter your email address
 navbar-edit-acccount-label: My Account
+
+# ── Keys migrated from en.toml ──────────────────────────────────────────────
+home-events-paragraph: '**Join developers, contributors, and Jakarta EE enthusiasts** from around the globe as we gather — online and in person — for a series of upcoming events, meet-ups, and livestreams.'
+home-events-view-all-events: View all events
+home-jumbotron-get-started-title: Get started
+home-jumbotron-get-started-desc: Generate a Jakarta EE project template
+pages-about-jakarta-ee-v2-what-is-title: 'What is <span class="text-secondary">Jakarta EE?</span>'
+pages-about-jakarta-ee-v2-what-is-description: Jakarta EE is an open, vendor-neutral standard for building reliable, cloud native enterprise Java applications. It defines core technologies that modern Java applications rely on, even across different frameworks. Each Jakarta EE technology is defined by a specification, a set of rules that describe how it should behave, ensuring applications remain portable, predictable, and consistent across platforms, without vendor lock-in.
+pages-about-jakarta-ee-v2-final-spec-prelude: 'To ensure consistent behavior across platforms, Jakarta EE defines specifications rules that describe how each technology should behave. These are supported by three key elements:'
+pages-about-jakarta-ee-v2-final-spec-title: Final Specification
+pages-about-jakarta-ee-v2-spec-doc-label: Specification Document
+pages-about-jakarta-ee-v2-api-label: API
+pages-about-jakarta-ee-v2-tck-label: TCK
+pages-about-jakarta-ee-v2-compatible-implementations-label: Compatible Implementation(s)
+pages-about-jakarta-ee-v2-spec-includes-title: 'Every Jakarta EE specification includes:'
+pages-about-jakarta-ee-v2-spec-doc-card-title: A Specification Document
+pages-about-jakarta-ee-v2-spec-doc-card-description: A human-readable description of the technology
+pages-about-jakarta-ee-v2-api-card-title: An API
+pages-about-jakarta-ee-v2-api-card-description: The programming interface developers use in their applications.
+pages-about-jakarta-ee-v2-tck-card-title: A TCK (Technology Compatibility Kit)
+pages-about-jakarta-ee-v2-tck-card-description: The test suite used to verify that an implementation fulfils the requirements of the specification
+pages-about-jakarta-ee-v2-compatible-implementation-note: An implementation that passes the TCK becomes a Compatible Implementation, a guarantee for consistent behaviour across platforms.
+pages-about-jakarta-ee-v2-why-it-matters-heading: '<span class=''text-secondary''>Why</span> it matters'
+pages-about-jakarta-ee-v2-why-it-matters-description: 'Jakarta EE combines proven enterprise reliability with modern cloud native flexibility. No other Java framework offers the same depth of maturity and adaptability:'
+pages-about-jakarta-ee-v2-why-it-matters-corner-image-alt: person coding
+pages-about-jakarta-ee-v2-why-it-matters-item1-title: Proven stability
+pages-about-jakarta-ee-v2-why-it-matters-item1-description: Decades of enterprise use ensure reliability, maturity, and strong backward compatibility
+pages-about-jakarta-ee-v2-why-it-matters-item2-title: Developer efficiency
+pages-about-jakarta-ee-v2-why-it-matters-item2-description: Java developers can concentrate on implementing business logic instead of recreating the common infrastructure code that all enterprise applications require.
+pages-about-jakarta-ee-v2-why-it-matters-item3-title: Architectural flexibility
+pages-about-jakarta-ee-v2-why-it-matters-item3-description: Whether your applications are monolithic or microservice-based, Jakarta EE supports a range of deployment models and design choices, all while maintaining cross-vendor compatibility.
+pages-about-jakarta-ee-v2-why-it-matters-item4-title: Future-ready design
+pages-about-jakarta-ee-v2-why-it-matters-item4-description: Seamlessly evolve your applications by switching underlying technologies to meet new performance and scalability demands
+pages-about-jakarta-ee-v2-from-spec-title: '<span class="text-secondary">From specification</span> to implementation'
+pages-about-jakarta-ee-v2-from-spec-quote: How a Jakarta EE specification comes to life
+pages-about-jakarta-ee-v2-from-spec-description: To be officially recognized as a Jakarta EE Specification, there must be at least one open source Compatible Implementation that passes all required TCK tests.
+pages-about-jakarta-ee-v2-from-spec-cta: Explore the compatible products
+pages-about-jakarta-ee-v2-power-of-compatibility-title: '<span class="text-secondary">The power</span> of compatibility'
+pages-about-jakarta-ee-v2-power-of-compatibility-description: 'Jakarta EE''s compatibility model ensures that developers and organisations can rely on consistent behavior, regardless of vendor or deployment environment. This is what makes Jakarta EE the trusted standard for enterprise Java worldwide.'
+pages-about-jakarta-ee-v2-power-of-compatibility-cta: Get your product listed as compatible
+pages-about-jakarta-ee-v2-learn-more-title: '<span class="text-secondary">Learn more</span> / get involved'
+pages-about-jakarta-ee-v2-learn-more-quote: Join the global Jakarta EE community
+pages-about-jakarta-ee-v2-learn-more-description: Jakarta EE thrives through collaboration from specification authors and implementers to developers building on the platform. Get involved to shape the future of enterprise Java.
+pages-about-jakarta-ee-v2-learn-more-cta-get-involved: Get Involved with Jakarta EE
+pages-about-jakarta-ee-v2-learn-more-cta-connect: Connect with the community
+pages-about-jakarta-ee-v2-learn-more-cta-contribute: Contribute to Jakarta EE
+pages-committees-meeting-minutes-title: Jakarta EE Committee Meeting Minutes
+pages-committees-meeting-minutes-text: Access the published meeting minutes from Jakarta EE committees to stay informed about discussions, decisions, and ongoing work across the Jakarta EE ecosystem.
+pages-committees-meeting-minutes-cta: View meeting minutes
+pages-specification-jakarta-ee-release-under-development: Under development
+cta-become-a-member: Become a member
+toolbar-edit-my-account: Edit My Account
+toolbar-view-my-account: View My Account
+developer-portal-develop-heading: Develop
+developer-portal-develop-heading-suffix: with Jakarta EE
+developer-portal-develop-description: Build secure, portable, scalable, cloud native apps using Jakarta EE APIs.
+developer-portal-get-started-title: Get started
+developer-portal-get-started-description: Generate a Jakarta EE project template and begin building right away.
+developer-portal-insights-title: 'Insights & publications'
+developer-portal-insights-description: Surveys, case studies, and reports on Jakarta EE adoption and community growth.
+developer-portal-how-to-guide-title: How to guides
+developer-portal-how-to-guide-description: Practical guides to build and secure Jakarta EE applications.
+developer-portal-learning-hub-title: Learning hub
+developer-portal-learning-hub-description: Your all-in-one space to dive into Jakarta EE through hands-on resources, tutorials, and sample projects.
+developer-portal-compatible-products-title: Compatible products
+developer-portal-compatible-products-description: Browse all Jakarta EE compatible products and learn how to get listed.
+developer-portal-release-plan-title: Release plan
+developer-portal-release-plan-description: 'See what''s coming next for Jakarta EE.'
+developer-portal-all-releases-title: All releases
+developer-portal-all-releases-description: Access all Jakarta EE releases and details.
+developer-portal-contribute-heading: Contribute
+developer-portal-contribute-heading-suffix: to Jakarta EE
+developer-portal-contribute-description: Join the community driving Jakarta EE open standards.
+developer-portal-events-heading: JakartaOne events
+developer-portal-upcoming-events-title: Upcoming events
+developer-portal-upcoming-events-description: Attend the upcoming JakartaOne events
+developer-portal-register-button: Register
+developer-portal-host-event-title: Host an event
+developer-portal-host-event-description: Host a JakartaOne event
+developer-portal-read-more-button: Read more
+developer-portal-tech-talks-heading: Jakarta Tech Talks
+developer-portal-latest-talk-title: Latest talk
+developer-portal-latest-talk-description: Find the latest Jakarta Tech Talk
+developer-portal-host-talk-title: Host a talk
+developer-portal-host-talk-description: Sign up to host a talk
+developer-portal-community-presentation-title: Community presentation
+developer-portal-community-presentation-description: Explore how the Jakarta EE community is driving enterprise Java forward
+developer-portal-view-presentation-button: View the presentation
+developer-portal-stay-connected-title: Stay connected
+developer-portal-stay-connected-description: Get latest updates, join conversations, and plug into all things Jakarta EE
+developer-portal-connect-now-button: Connect now
+developer-portal-get-involved-title: Get involved
+developer-portal-get-involved-description: Ways to join and participate in the community.
+developer-portal-how-to-contribute-title: How to contribute
+developer-portal-how-to-contribute-description: Join as an individual or company, make an impact, and grow your career.
+developer-portal-mentorship-title: Jakarta EE mentorship
+developer-portal-mentorship-description: Get paired with an experienced contributor to guide your first steps and accelerate your impact
+developer-portal-spec-process-docs-title: Spec process docs
+developer-portal-spec-process-docs-description: Understand the specification process end to end.
+developer-portal-explore-specifications-title: Explore specifications
+developer-portal-explore-specifications-description: Browse and learn about all Jakarta EE specifications
+join-us-become-member-title: Become a member
+join-us-become-member-subtitle: Shape the future of enterprise Java
+join-us-become-member-description: 'Join industry leaders and innovators driving Jakarta EE forward. As a member, you''ll help guide the technology''s evolution, influence key decisions, and gain visibility as part of the open enterprise Java ecosystem.'
+join-us-learn-membership-button: Learn about membership
+join-us-contribute-projects-title: Contribute to projects
+join-us-contribute-projects-subtitle: Turn your expertise into impact.
+join-us-contribute-projects-description: Join our global community of developers and make your mark on the Jakarta EE platform. From code to documentation, every contribution helps strengthen open, cloud native enterprise Java.
+join-us-start-contributing-button: Start contributing
+join-us-sponsor-title: Sponsor Jakarta EE
+join-us-sponsor-subtitle: Power the future of open enterprise Java.
+join-us-sponsor-description: 'Your support helps sustain Jakarta EE''s development, events, and community growth. Sponsor to help keep enterprise Java open, secure, and thriving for everyone.'
+join-us-explore-sponsorship-button: Explore sponsorship
+testimonials-heading: Testimonials
+testimonials-subtitle: Behind every Jakarta EE milestone is a global community of contributors, members, and sponsors driving its evolution forward.
+membership-why-join-eyebrow: Why join Jakarta EE?
+membership-why-join-heading: Shape the future. Lead the enterprise. Power innovation.
+membership-why-join-card1-title: Influence and lead the strategic direction of Jakarta EE
+membership-why-join-card1-desc: Participate in governance bodies that establish requirements, set strategic themes and priorities across the platform.
+membership-why-join-card2-title: Foster a stable, open, and compatible Java ecosystem
+membership-why-join-card2-desc: Invest in a vendor-neutral environment that enables interoperable implementations. This promotes choice, stability, and long-term sustainability for enterprise Java.
+membership-why-join-card3-title: Amplify your brand and thought leadership
+membership-why-join-card3-desc: Increase your visibility through marketing programs and other opportunities that raise your profile as a leader in the global Java ecosystem.
+membership-why-join-card4-title: Gain strategic market Insight
+membership-why-join-card4-desc: Engage directly with leading stakeholders across the Java ecosystem. Gain early awareness of trends, requirements, and roadmap shifts that influence your own business and product strategies
+membership-why-join-card5-title: Protect your strategic investment in enterprise Java
+membership-why-join-card5-desc: 'Ensure the continued relevance of your technology stack and the ongoing development of your team''s skills as enterprise Java evolves.'
+membership-why-join-card6-title: Strengthen your leadership in the enterprise Java market
+membership-why-join-card6-desc: Demonstrate long-term commitment and reliability by contributing to a platform that powers mission-critical systems used worldwide.
+membership-why-join-cta: Start membership
+membership-carousel-alt-1: people collaborating at an event
+membership-carousel-alt-2: two people networking at an event
+membership-carousel-alt-3: a group of people attending a conference session
+membership-carousel-alt-4: organizers behind a booth at an event
+membership-carousel-alt-5: speakers presenting on stage at an event
+membership-level-heading: Choose the membership level that fits your mission
+membership-level-paragraph-1: Whether your organisation builds on enterprise Java, contributes to its evolution, or leads its strategic direction, Jakarta EE offers membership levels designed to match your goals and level of engagement.
+membership-level-paragraph-2: Each tier provides unique opportunities for influence, visibility, and participation in shaping the future of open, cloud native enterprise Java.
+membership-level-strategic-title: Strategic
+membership-level-strategic-desc: 'For organisations where enterprise Java is strategic and who want to shape Jakarta EE''s long-term direction.'
+membership-level-enterprise-title: Enterprise
+membership-level-enterprise-desc: For organisations where Java is critical and who want to actively support and evolve Jakarta EE.
+membership-level-participant-title: Participant
+membership-level-participant-desc: For organisations using or building on Jakarta EE and staying engaged in the ecosystem.
+membership-level-price-basis: based on annual revenue
+membership-contact-us: Contact us about membership
+membership-explore-fees: Explore fees here
+membership-compare-heading: Compare
+membership-fees-annual-revenue: Annual corporate revenue
+membership-fees-participation-fees: Jakarta EE annual participation fees
+membership-compare-eligible: '{{ .Name }} members are eligible'
+membership-compare-not-eligible: '{{ .Name }} members are not eligible'
+membership-compare-mobile-instructions: Navigate through the tabs to compare what each membership option includes.
+membership-contact-heading: Join us
+membership-contact-paragraph: Take the first step in joining this Eclipse Foundation working group by reaching out to our membership team.
+
+# ── Menu translations ────────────────────────────────────────────────────────
+menu-developer-portal: Developer portal
+menu-developer-portal-post: '<div class=''mega-menu-bottom-link''><a href=''/developer-portal/''>Developer portal overview <i class=''fa fa-arrow-right'' aria-hidden></i></a></div>'
+menu-specifications: Specifications
+menu-compatible-products: Compatible products
+menu-community: Community
+menu-join-us: Join us
+menu-about: About
+menu-develop: Develop
+menu-contribute-jakartaee: Contribute
+menu-learn: Learn
+menu-get-started: Get started
+menu-learning-hub: Learning hub
+menu-insights-publications: Insights and publications
+menu-how-to-contribute: Contribution guide
+menu-mentorship-program: Mentorship program
+menu-how-to-guides: How to guides
+menu-tutorial: Tutorial
+menu-explore-specifications: Explore specifications
+menu-releases: Releases
+menu-additional-resources-specs: Additional resources
+menu-all-specifications: All specifications
+menu-jakarta-ee-platform: Jakarta EE Platform
+menu-jakarta-ee-web-profile: Jakarta EE Web Profile
+menu-jakarta-ee-core-profile: Jakarta EE Core Profile
+menu-browse-individual-specifications: Browse individual specifications
+menu-jakarta-ee-12: Jakarta EE 12 (WIP)
+menu-jakarta-ee-11: Jakarta EE 11
+menu-jakarta-ee-10: Jakarta EE 10
+menu-jakarta-ee-9: Jakarta EE 9
+menu-jakarta-ee-8: Jakarta EE 8
+menu-view-all-releases: View all releases
+menu-specification-process: Specification process
+menu-jesp-guide: JESP guide
+menu-specification-projects: Specification projects
+menu-xml-schemas: XML schemas
+menu-products-column: Products
+menu-certification-column: Product certification results
+menu-get-listed-column: Get listed
+menu-compatible-products-list: View all compatible products
+menu-compatible-products-download: Download compatible products
+menu-certification-results-11: Jakarta EE 11
+menu-certification-results-10: Jakarta EE 10
+menu-certification-results-9.1: Jakarta EE 9.1
+menu-certification-results-9: Jakarta EE 9
+menu-certification-results-8: Jakarta EE 8
+menu-view-all-certification-results: View all results
+menu-get-listed-item: How to get listed
+menu-take-part: Take part
+menu-community-content: Community content
+menu-community-events: Community events
+menu-additional-resources-community: Additional resources
+menu-how-to-get-involved: How to get involved
+menu-stay-connected: Stay connected
+menu-blogs: Blogs
+menu-news: News
+menu-videos: Videos
+menu-insights-publications-community: Insights and publications
+menu-presentations: Presentations
+menu-events: Events
+menu-jakartaone: JakartaOne
+menu-jakarta-tech-talks: Jakarta Tech Talks
+menu-developer-advocate: Developer advocate
+menu-calendar: Calendar
+menu-community-mailing-list: Community mailing list
+menu-slack: Slack
+menu-swag-store: Swag store
+menu-technology: Technology
+menu-governance: Governance
+menu-what-is-jakarta-ee: 'What is Jakarta EE?'
+menu-why-jakarta-ee: 'Why Jakarta EE?'
+menu-faq: Frequently asked questions
+menu-working-group: Jakarta EE Working Group
+menu-charter: Charter
+menu-trademark-guidelines: Trademark guidelines
+menu-technical-direction: Technical direction
+menu-committees: Committees
+menu-membership: Membership
+menu-sponsorship: Sponsorship
+menu-contribute-joinus: Contribute
+menu-become-member: Become a member
+menu-our-members: Our members
+menu-become-corporate-sponsor: Become a corporate sponsor
+menu-become-contributor: Become a contributor
+menu-mentorship-joinus: Mentorship
