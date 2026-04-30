@@ -15,9 +15,9 @@ import "eclipsefdn-solstice-assets";
 import List from "list.js";
 import "./video-modal";
 import eclipsefdnSpecificationBadges from "./specification-badges";
-import { setupTopIntersection } from "./top-intersection";
-import setupMobileMegaMenu from "./mobile-mega-menu";
-import scrollSnapCarousel from "./scroll-snap-carousel";
+import { setupTopIntersection } from "../top-intersection";
+import setupMobileMegaMenu from "../mobile-mega-menu";
+import scrollSnapCarousel from "../scroll-snap-carousel";
 
 document.addEventListener("DOMContentLoaded", function () {
   (function ($, document) {
