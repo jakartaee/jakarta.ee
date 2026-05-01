@@ -47,6 +47,15 @@ sets:
             - version: 7.2025.1.Beta1
               compatibility: 'https://docs.payara.fish/community/docs/Jakarta%20EE%20Certification/7.2025.1.Beta1/7.2025.1.Beta1%20Platform%20TCK%20Results.html'
               download_url: 'https://www.payara.fish/downloads/payara-platform-community-edition/' 
+        - name: InforSuite Application Server
+          vendor: Shandong Cvicse Middleware Co.,Ltd.
+          image: '/images/compatible_products/inforsuite_logo.svg'
+          image_width: 195
+          download: 'http://www.inforbus.com/as.html'
+          versions:
+            - version: 10
+              compatibility: 'http://www.inforbus.com/InforsuiteAS/platform-tckresults/FullPlatform11/indexV10.html'
+              download_url: 'http://www.inforbus.com/as.html'
         - name: TongWeb Application Server
           vendor: Beijing TongTech Co., Ltd.
           image: '/images/compatible_products/tongweb.svg'
