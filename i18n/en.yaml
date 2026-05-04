@@ -721,87 +721,87 @@ membership-contact-heading: Join us
 membership-contact-paragraph: Take the first step in joining this Eclipse Foundation working group by reaching out to our membership team.
 
 # ── Menu translations ────────────────────────────────────────────────────────
-menu-developer-portal: Developer portal
-menu-developer-portal-post: '<div class=''mega-menu-bottom-link''><a href=''/developer-portal/''>Developer portal overview <i class=''fa fa-arrow-right'' aria-hidden></i></a></div>'
-menu-specifications: Specifications
-menu-compatible-products: Compatible products
-menu-community: Community
-menu-join-us: Join us
-menu-about: About
-menu-develop: Develop
-menu-contribute-jakartaee: Contribute
-menu-learn: Learn
-menu-get-started: Get started
-menu-learning-hub: Learning hub
-menu-insights-publications: Insights and publications
-menu-how-to-contribute: Contribution guide
-menu-mentorship-program: Mentorship program
-menu-how-to-guides: How to guides
-menu-tutorial: Tutorial
-menu-explore-specifications: Explore specifications
-menu-releases: Releases
-menu-additional-resources-specs: Additional resources
-menu-all-specifications: All specifications
-menu-jakarta-ee-platform: Jakarta EE Platform
-menu-jakarta-ee-web-profile: Jakarta EE Web Profile
-menu-jakarta-ee-core-profile: Jakarta EE Core Profile
-menu-browse-individual-specifications: Browse individual specifications
-menu-jakarta-ee-12: Jakarta EE 12 (WIP)
-menu-jakarta-ee-11: Jakarta EE 11
-menu-jakarta-ee-10: Jakarta EE 10
-menu-jakarta-ee-9: Jakarta EE 9
-menu-jakarta-ee-8: Jakarta EE 8
-menu-view-all-releases: View all releases
-menu-specification-process: Specification process
-menu-jesp-guide: JESP guide
-menu-specification-projects: Specification projects
-menu-xml-schemas: XML schemas
-menu-products-column: Products
-menu-certification-column: Product certification results
-menu-get-listed-column: Get listed
-menu-compatible-products-list: View all compatible products
-menu-compatible-products-download: Download compatible products
-menu-certification-results-11: Jakarta EE 11
-menu-certification-results-10: Jakarta EE 10
-menu-certification-results-9.1: Jakarta EE 9.1
-menu-certification-results-9: Jakarta EE 9
-menu-certification-results-8: Jakarta EE 8
-menu-view-all-certification-results: View all results
-menu-get-listed-item: How to get listed
-menu-take-part: Take part
-menu-community-content: Community content
-menu-community-events: Community events
-menu-additional-resources-community: Additional resources
-menu-how-to-get-involved: How to get involved
-menu-stay-connected: Stay connected
-menu-blogs: Blogs
-menu-news: News
-menu-videos: Videos
-menu-insights-publications-community: Insights and publications
-menu-presentations: Presentations
-menu-events: Events
-menu-jakartaone: JakartaOne
-menu-jakarta-tech-talks: Jakarta Tech Talks
-menu-developer-advocate: Developer advocate
-menu-calendar: Calendar
-menu-community-mailing-list: Community mailing list
-menu-slack: Slack
-menu-swag-store: Swag store
-menu-technology: Technology
-menu-governance: Governance
-menu-what-is-jakarta-ee: 'What is Jakarta EE?'
-menu-why-jakarta-ee: 'Why Jakarta EE?'
-menu-faq: Frequently asked questions
-menu-working-group: Jakarta EE Working Group
-menu-charter: Charter
-menu-trademark-guidelines: Trademark guidelines
-menu-technical-direction: Technical direction
-menu-committees: Committees
-menu-membership: Membership
-menu-sponsorship: Sponsorship
-menu-contribute-joinus: Contribute
-menu-become-member: Become a member
-menu-our-members: Our members
-menu-become-corporate-sponsor: Become a corporate sponsor
-menu-become-contributor: Become a contributor
-menu-mentorship-joinus: Mentorship
+developer-portal: Developer portal
+developer-portal-post: '<div class=''mega-menu-bottom-link''><a href=''/developer-portal/''>Developer portal overview <i class=''fa fa-arrow-right'' aria-hidden></i></a></div>'
+specifications: Specifications
+compatible-products: Compatible products
+community: Community
+join-us: Join us
+about: About
+develop: Develop
+contribute-jakartaee: Contribute
+learn: Learn
+get-started: Get started
+learning-hub: Learning hub
+insights-publications: Insights and publications
+how-to-contribute: Contribution guide
+mentorship-program: Mentorship program
+how-to-guides: How to guides
+tutorial: Tutorial
+explore-specifications: Explore specifications
+releases: Releases
+additional-resources-specs: Additional resources
+all-specifications: All specifications
+jakarta-ee-platform: Jakarta EE Platform
+jakarta-ee-web-profile: Jakarta EE Web Profile
+jakarta-ee-core-profile: Jakarta EE Core Profile
+browse-individual-specifications: Browse individual specifications
+jakarta-ee-12: Jakarta EE 12 (WIP)
+jakarta-ee-11: Jakarta EE 11
+jakarta-ee-10: Jakarta EE 10
+jakarta-ee-9: Jakarta EE 9
+jakarta-ee-8: Jakarta EE 8
+view-all-releases: View all releases
+specification-process: Specification process
+jesp-guide: JESP guide
+specification-projects: Specification projects
+xml-schemas: XML schemas
+products-column: Products
+certification-column: Product certification results
+get-listed-column: Get listed
+compatible-products-list: View all compatible products
+compatible-products-download: Download compatible products
+certification-results-11: Jakarta EE 11
+certification-results-10: Jakarta EE 10
+certification-results-9.1: Jakarta EE 9.1
+certification-results-9: Jakarta EE 9
+certification-results-8: Jakarta EE 8
+view-all-certification-results: View all results
+get-listed-item: How to get listed
+take-part: Take part
+community-content: Community content
+community-events: Community events
+additional-resources-community: Additional resources
+how-to-get-involved: How to get involved
+stay-connected: Stay connected
+blogs: Blogs
+news: News
+videos: Videos
+insights-publications-community: Insights and publications
+presentations: Presentations
+events: Events
+jakartaone: JakartaOne
+jakarta-tech-talks: Jakarta Tech Talks
+developer-advocate: Developer advocate
+calendar: Calendar
+community-mailing-list: Community mailing list
+slack: Slack
+swag-store: Swag store
+technology: Technology
+governance: Governance
+what-is-jakarta-ee: 'What is Jakarta EE?'
+why-jakarta-ee: 'Why Jakarta EE?'
+faq: Frequently asked questions
+working-group: Jakarta EE Working Group
+charter: Charter
+trademark-guidelines: Trademark guidelines
+technical-direction: Technical direction
+committees: Committees
+membership: Membership
+sponsorship: Sponsorship
+contribute-joinus: Contribute
+become-member: Become a member
+our-members: Our members
+become-corporate-sponsor: Become a corporate sponsor
+become-contributor: Become a contributor
+mentorship-joinus: Mentorship

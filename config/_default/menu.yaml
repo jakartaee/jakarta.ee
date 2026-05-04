@@ -9,33 +9,33 @@
 main:
   # Main Navigation (Top Level)
   - identifier: "developer-portal"
-    name: "menu-developer-portal"
+    name: "Developer portal"
     pageRef: "/learn/"
-    post: "menu-developer-portal-post"
+    post: "developer-portal-post"
     weight: 1
 
   - identifier: "specifications"
-    name: "menu-specifications"
+    name: "Specifications"
     pageRef: "/specifications/"
     weight: 2
 
   - identifier: "compatible-products"
-    name: "menu-compatible-products"
+    name: "Compatible products"
     pageRef: "/compatibility/"
     weight: 3
 
   - identifier: "community"
-    name: "menu-community"
+    name: "Community"
     pageRef: "/community"
     weight: 4
 
   - identifier: "join-us"
-    name: "menu-join-us"
+    name: "Join us"
     pageRef: "/membership/"
     weight: 5
 
   - identifier: "about"
-    name: "menu-about"
+    name: "About"
     pageRef: "/about/"
     weight: 6
 
@@ -48,21 +48,21 @@ main:
   # Column 1: Develop
   - identifier: "develop"
     pre: "static/images/icons/menu/develop.svg"
-    name: "menu-develop"
+    name: "Develop"
     weight: 1
     parent: "developer-portal"
 
   # Column 2: Contribute to Jakarta EE
   - identifier: "contribute-jakartaee"
     pre: "static/images/icons/menu/contribute.svg"
-    name: "menu-contribute-jakartaee"
+    name: "Contribute"
     weight: 2
     parent: "developer-portal"
 
   # Column 3: Learn
   - identifier: "learn"
     pre: "static/images/icons/menu/learn.svg"
-    name: "menu-learn"
+    name: "Learn"
     weight: 3
     parent: "developer-portal"
 
@@ -72,45 +72,45 @@ main:
 
   # Develop sub-items
   - identifier: "get-started"
-    name: "menu-get-started"
+    name: "Get started"
     url: "https://start.jakarta.ee/"
     parent: "develop"
     weight: 1
 
   - identifier: "learning-hub"
-    name: "menu-learning-hub"
+    name: "Learning hub"
     pageRef: "/learn/"
     parent: "develop"
     weight: 2
 
   - identifier: "insights-publications"
-    name: "menu-insights-publications"
+    name: "Insights and publications"
     pageRef: "/resources/"
     parent: "develop"
     weight: 3
 
   # Contribute to Jakarta EE sub-items
   - identifier: "how-to-contribute"
-    name: "menu-how-to-contribute"
+    name: "Contribution guide"
     pageRef: "/contribute/"
     parent: "contribute-jakartaee"
     weight: 1
 
   - identifier: "mentorship-program"
-    name: "menu-mentorship-program"
+    name: "Mentorship program"
     pageRef: "/mentorship/"
     parent: "contribute-jakartaee"
     weight: 2
 
   # Learn sub-items
   - identifier: "how-to-guides"
-    name: "menu-how-to-guides"
+    name: "How to guides"
     pageRef: "/learn/how-to-guides/"
     parent: "learn"
     weight: 1
 
   - identifier: "tutorial"
-    name: "menu-tutorial"
+    name: "Tutorial"
     url: "https://jakarta.ee/learn/docs/jakartaee-tutorial/current/index.html"
     parent: "learn"
     weight: 2
@@ -126,113 +126,113 @@ main:
   # Column 1: Explore Specifications
   - identifier: "explore-specifications"
     pre: "static/images/icons/menu/explore-spec.svg"
-    name: "menu-explore-specifications"
+    name: "Explore specifications"
     weight: 1
     parent: "specifications"
 
   # Column 2: Releases
   - identifier: "releases"
     pre: "static/images/icons/menu/releases.svg"
-    name: "menu-releases"
+    name: "Releases"
     weight: 2
     parent: "specifications"
 
   # Column 3: Additional resources
   - identifier: "additional-resources-specs"
     pre: "static/images/icons/menu/resources.svg"
-    name: "menu-additional-resources-specs"
+    name: "Additional resources"
     weight: 3
     parent: "specifications"
 
   # Explore Specifications sub-items
   - identifier: "all-specifications"
-    name: "menu-all-specifications"
+    name: "All specifications"
     pageRef: "/specifications/"
     parent: "explore-specifications"
     weight: 1
 
   - identifier: "jakarta-ee-platform"
-    name: "menu-jakarta-ee-platform"
+    name: "Jakarta EE Platform"
     pageRef: "/specifications/platform/"
     parent: "explore-specifications"
     weight: 2
 
   - identifier: "jakarta-ee-web-profile"
-    name: "menu-jakarta-ee-web-profile"
+    name: "Jakarta EE Web Profile"
     pageRef: "/specifications/webprofile/"
     parent: "explore-specifications"
     weight: 3
 
   - identifier: "jakarta-ee-core-profile"
-    name: "menu-jakarta-ee-core-profile"
+    name: "Jakarta EE Core Profile"
     pageRef: "/specifications/coreprofile/"
     parent: "explore-specifications"
     weight: 4
 
   - identifier: "browse-individual-specifications"
-    name: "menu-browse-individual-specifications"
+    name: "Browse individual specifications"
     pageRef: "/specifications/"
     parent: "explore-specifications"
     weight: 5
 
   # Releases sub-items
   - identifier: "jakarta-ee-12"
-    name: "menu-jakarta-ee-12"
+    name: "Jakarta EE 12 (WIP)"
     pageRef: "/release/12/"
     parent: "releases"
     weight: 1
 
   - identifier: "jakarta-ee-11"
-    name: "menu-jakarta-ee-11"
+    name: "Jakarta EE 11"
     pageRef: "/release/11/"
     parent: "releases"
     weight: 2
 
   - identifier: "jakarta-ee-10"
-    name: "menu-jakarta-ee-10"
+    name: "Jakarta EE 10"
     pageRef: "/release/10/"
     parent: "releases"
     weight: 3
 
   - identifier: "jakarta-ee-9"
-    name: "menu-jakarta-ee-9"
+    name: "Jakarta EE 9"
     pageRef: "/release/9/"
     parent: "releases"
     weight: 4
 
   - identifier: "jakarta-ee-8"
-    name: "menu-jakarta-ee-8"
+    name: "Jakarta EE 8"
     pageRef: "/release/8/"
     parent: "releases"
     weight: 5
 
   - identifier: "view-all-releases"
-    name: "menu-view-all-releases"
+    name: "View all releases"
     pageRef: "/release/"
     parent: "releases"
     weight: 6
 
   # Additional resources sub-items
   - identifier: "specification-process"
-    name: "menu-specification-process"
+    name: "Specification process"
     pageRef: "/about/jesp/"
     parent: "additional-resources-specs"
     weight: 1
 
   - identifier: "jesp-guide"
-    name: "menu-jesp-guide"
+    name: "JESP guide"
     pageRef: "/committees/specification/guide/"
     parent: "additional-resources-specs"
     weight: 2
 
   - identifier: "specification-projects"
-    name: "menu-specification-projects"
+    name: "Specification projects"
     pageRef: "/projects/"
     parent: "additional-resources-specs"
     weight: 3
 
   - identifier: "xml-schemas"
-    name: "menu-xml-schemas"
+    name: "XML schemas"
     pageRef: "/xml/ns/jakartaee/"
     parent: "additional-resources-specs"
     weight: 4
@@ -248,71 +248,71 @@ main:
   # Column 1: Products
   - identifier: "products-column"
     pre: "static/images/icons/menu/products.svg"
-    name: "menu-products-column"
+    name: "Products"
     weight: 1
     parent: "compatible-products"
 
   # Column 2: Product certification results
   - identifier: "certification-column"
     pre: "static/images/icons/menu/certification.svg"
-    name: "menu-certification-column"
+    name: "Product certification results"
     weight: 2
     parent: "compatible-products"
 
   # Column 3: Get listed
   - identifier: "get-listed-column"
     pre: "static/images/icons/menu/listed.svg"
-    name: "menu-get-listed-column"
+    name: "Get listed"
     weight: 3
     parent: "compatible-products"
 
   # Products sub-items
   - identifier: "compatible-products-list"
-    name: "menu-compatible-products-list"
+    name: "View all compatible products"
     pageRef: "/compatibility/"
     parent: "products-column"
     weight: 1
   - identifier: "compatible-products-download"
-    name: "menu-compatible-products-download"
+    name: "Download compatible products"
     pageRef: "/compatibility/download/"
     parent: "products-column"
     weight: 2
 
   # Product certification results sub-items
   - identifier: "certification-results-11"
-    name: "menu-certification-results-11"
+    name: "Jakarta EE 11"
     pageRef: "/compatibility/certification/11"
     parent: "certification-column"
     weight: 1
   - identifier: "certification-results-10"
-    name: "menu-certification-results-10"
+    name: "Jakarta EE 10"
     pageRef: "/compatibility/certification/10"
     parent: "certification-column"
     weight: 2
   - identifier: "certification-results-9.1"
-    name: "menu-certification-results-9.1"
+    name: "Jakarta EE 9.1"
     pageRef: "/compatibility/certification/9.1"
     parent: "certification-column"
     weight: 3
   - identifier: "certification-results-9"
-    name: "menu-certification-results-9"
+    name: "Jakarta EE 9"
     pageRef: "/compatibility/certification/9"
     parent: "certification-column"
     weight: 4
   - identifier: "certification-results-8"
-    name: "menu-certification-results-8"
+    name: "Jakarta EE 8"
     pageRef: "/compatibility/certification/8"
     parent: "certification-column"
     weight: 5
   - identifier: "view-all-certification-results"
-    name: "menu-view-all-certification-results"
+    name: "View all results"
     pageRef: "/compatibility/"
     parent: "certification-column"
     weight: 6
 
   # Get listed sub-items
   - identifier: "get-listed-item"
-    name: "menu-get-listed-item"
+    name: "How to get listed"
     pageRef: "/compatibility/get-listed/"
     parent: "get-listed-column"
     weight: 1
@@ -324,90 +324,90 @@ main:
   # Column 1: Take Part
   - identifier: "take-part"
     pre: "static/images/icons/menu/take-part.svg"
-    name: "menu-take-part"
+    name: "Take part"
     weight: 1
     parent: "community"
 
   # Column 2: Community Content
   - identifier: "community-content"
     pre: "static/images/icons/menu/community.svg"
-    name: "menu-community-content"
+    name: "Community content"
     weight: 2
     parent: "community"
 
   # Column 3: Community Events
   - identifier: "community-events"
     pre: "static/images/icons/menu/events.svg"
-    name: "menu-community-events"
+    name: "Community events"
     weight: 3
     parent: "community"
 
   # Column 4: Additional Resources
   - identifier: "additional-resources-community"
     pre: "static/images/icons/menu/additional-resources.svg"
-    name: "menu-additional-resources-community"
+    name: "Additional resources"
     weight: 4
     parent: "community"
 
   # Take Part sub-items
   - identifier: "how-to-get-involved"
-    name: "menu-how-to-get-involved"
+    name: "How to get involved"
     pageRef: "/community/get-involved/"
     parent: "take-part"
     weight: 1
 
   - identifier: "stay-connected"
-    name: "menu-stay-connected"
+    name: "Stay connected"
     pageRef: "/connect/"
     parent: "take-part"
     weight: 2
 
   # Community Content sub-items
   - identifier: "blogs"
-    name: "menu-blogs"
+    name: "Blogs"
     pageRef: "/blogs/"
     parent: "community-content"
     weight: 1
 
   - identifier: "news"
-    name: "menu-news"
+    name: "News"
     pageRef: "/news/"
     parent: "community-content"
     weight: 2
 
   - identifier: "videos"
-    name: "menu-videos"
+    name: "Videos"
     pageRef: "/community/videos/"
     parent: "community-content"
     weight: 3
 
   - identifier: "insights-publications-community"
-    name: "menu-insights-publications-community"
+    name: "Insights and publications"
     pageRef: "/resources/"
     parent: "community-content"
     weight: 4
 
   - identifier: "presentations"
-    name: "menu-presentations"
+    name: "Presentations"
     url: "https://docs.google.com/presentation/d/1LBjjJg64j0HjmFu6m3EApN--mkavemyPFMUobIbGZds/edit#slide=id.g10a8950dfd6_0_139"
     parent: "community-content"
     weight: 6
 
   - identifier: "events"
-    name: "menu-events"
+    name: "Events"
     pageRef: "/community/events/"
     parent: "community-content"
     weight: 7
 
   # Community Events sub-items
   - identifier: "jakartaone"
-    name: "menu-jakartaone"
+    name: "JakartaOne"
     url: "https://jakartaone.jakarta.ee/"
     parent: "community-events"
     weight: 1
 
   - identifier: "jakarta-tech-talks"
-    name: "menu-jakarta-tech-talks"
+    name: "Jakarta Tech Talks"
     url: "/community/#meetups"
     pageRef: "/community/#meetups"
     parent: "community-events"
@@ -415,30 +415,30 @@ main:
 
   # Additional Resources sub-items
   - identifier: "developer-advocate"
-    name: "menu-developer-advocate"
+    name: "Developer advocate"
     url: "/community/developer-advocate/"
     parent: "additional-resources-community"
     weight: 1
   - identifier: "calendar"
-    name: "menu-calendar"
+    name: "Calendar"
     url: "https://calendar.google.com/calendar/u/0/embed?src=eclipse-foundation.org_3281qms6riu4kdf354jn5idon0@group.calendar.google.com&ctz=America/Toronto"
     parent: "additional-resources-community"
     weight: 2
 
   - identifier: "community-mailing-list"
-    name: "menu-community-mailing-list"
+    name: "Community mailing list"
     url: "https://accounts.eclipse.org/mailing-list/jakarta.ee-community"
     parent: "additional-resources-community"
     weight: 3
 
   - identifier: "slack"
-    name: "menu-slack"
+    name: "Slack"
     url: "https://join.slack.com/t/eclipsefoundationhq/shared_invite/zt-crh7mheq-3on2tophEuvQTUGidEAWlg"
     parent: "additional-resources-community"
     weight: 4
 
   - identifier: "swag-store"
-    name: "menu-swag-store"
+    name: "Swag store"
     url: "https://eclipse-foundation.store/collections/jakarta-ee"
     parent: "additional-resources-community"
     weight: 5
@@ -454,63 +454,63 @@ main:
   # Column 1: Technology
   - identifier: "technology"
     pre: "static/images/icons/menu/technology.svg"
-    name: "menu-technology"
+    name: "Technology"
     weight: 1
     parent: "about"
 
   # Column 2: Governance
   - identifier: "governance"
     pre: "static/images/icons/menu/governance.svg"
-    name: "menu-governance"
+    name: "Governance"
     weight: 2
     parent: "about"
 
   # Technology sub-items
   - identifier: "what-is-jakarta-ee"
-    name: "menu-what-is-jakarta-ee"
+    name: "What is Jakarta EE?"
     pageRef: "/about/jakarta-ee"
     parent: "technology"
     weight: 1
 
   - identifier: "why-jakarta-ee"
-    name: "menu-why-jakarta-ee"
+    name: "Why Jakarta EE?"
     pageRef: "/about/why-jakarta-ee"
     parent: "technology"
     weight: 2
 
   - identifier: "faq"
-    name: "menu-faq"
+    name: "Frequently asked questions"
     pageRef: "/about/faq/"
     parent: "technology"
     weight: 3
 
   # Governance sub-items
   - identifier: "working-group"
-    name: "menu-working-group"
+    name: "Jakarta EE Working Group"
     pageRef: "/about/working-group/"
     parent: "governance"
     weight: 1
 
   - identifier: "charter"
-    name: "menu-charter"
+    name: "Charter"
     url: "https://www.eclipse.org/org/working-groups/jakarta-ee/charter/"
     parent: "governance"
     weight: 2
 
   - identifier: "trademark-guidelines"
-    name: "menu-trademark-guidelines"
+    name: "Trademark guidelines"
     pageRef: "/legal/trademark_guidelines/"
     parent: "governance"
     weight: 3
 
   - identifier: "technical-direction"
-    name: "menu-technical-direction"
+    name: "Technical direction"
     url: "https://www.eclipse.org/ee4j/direction.php"
     parent: "governance"
     weight: 4
 
   - identifier: "committees"
-    name: "menu-committees"
+    name: "Committees"
     pageRef: "/committees/"
     parent: "governance"
     weight: 5
@@ -526,53 +526,53 @@ main:
   # Column 1: Membership
   - identifier: "membership"
     pre: "static/images/icons/menu/membership.svg"
-    name: "menu-membership"
+    name: "Membership"
     weight: 1
     parent: "join-us"
 
   # Column 2: Sponsorship
   - identifier: "sponsorship"
     pre: "static/images/icons/menu/sponsorship.svg"
-    name: "menu-sponsorship"
+    name: "Sponsorship"
     weight: 2
     parent: "join-us"
 
   # Column 3: Contribute
   - identifier: "contribute-joinus"
     pre: "static/images/icons/menu/join-us-contribute.svg"
-    name: "menu-contribute-joinus"
+    name: "Contribute"
     weight: 3
     parent: "join-us"
 
   # Membership sub-items
   - identifier: "become-member"
-    name: "menu-become-member"
+    name: "Become a member"
     pageRef: "/membership/"
     parent: "membership"
     weight: 1
 
   - identifier: "our-members"
-    name: "menu-our-members"
+    name: "Our members"
     pageRef: "/membership/members/"
     parent: "membership"
     weight: 2
 
   # Sponsorship sub-items
   - identifier: "become-corporate-sponsor"
-    name: "menu-become-corporate-sponsor"
+    name: "Become a corporate sponsor"
     pageRef: "/supporters/sponsor/"
     parent: "sponsorship"
     weight: 2
 
   # Contribute sub-items
   - identifier: "become-contributor"
-    name: "menu-become-contributor"
+    name: "Become a contributor"
     pageRef: "/contribute/"
     parent: "contribute-joinus"
     weight: 1
 
   - identifier: "mentorship-joinus"
-    name: "menu-mentorship-joinus"
+    name: "Mentorship"
     pageRef: "/mentorship/"
     parent: "contribute-joinus"
     weight: 2
