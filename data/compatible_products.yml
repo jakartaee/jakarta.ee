@@ -23,7 +23,7 @@ sets:
           image_width: 100
           download: 'https://www.bessystem.com/product/0ad9b8c4d6af462b8d15723a5f25a87d/info?p=101#page-2'
           versions:
-            - version: v11.0.0
+            - version: v11.0
               compatibility: https://www.bessystem.com/certifications/jakartaee/platform11.0/11.0-TCKResults.html 
               download_url: https://www.bessystem.com/
         - name: Eclipse GlassFish
