@@ -1,0 +1,9 @@
+{
+  "i18n-ally.localesPaths": [
+    "i18n",
+  ],
+  "i18n-ally.keystyle": "flat",
+  "i18n-ally.sourceLanguage": "en",
+  "i18n-ally.pathMatcher": "{locale}.{ext}",
+  "i18n-ally.enabledParsers": ["yaml"]
+}

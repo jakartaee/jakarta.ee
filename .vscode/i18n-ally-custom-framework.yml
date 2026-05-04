@@ -1,0 +1,13 @@
+languageIds:
+  - html
+  - gohtml
+  - gotmpl
+  - markdown
+usageMatchRegex:
+  # {{ i18n "key" }} and {{ i18n "key" . }}
+  - '[^\w\d](?:i18n|T)\s+["''`](.+?)["''`]'
+  # (i18n "key") in Go template pipes
+  - '\((?:i18n|T)\s+["''`](.+?)["''`]\)'
+refactorTemplates:
+  - '{{ i18n "$1" }}'
+monopoly: true
