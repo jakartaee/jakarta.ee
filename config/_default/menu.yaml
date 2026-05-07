@@ -11,7 +11,7 @@ main:
   - identifier: "developer-portal"
     name: "Developer portal"
     pageRef: "/learn/"
-    post: "<div class='mega-menu-bottom-link'><a href='/developer-portal/'>Developer portal overview <i class='fa fa-arrow-right' aria-hidden></i></a></div>"
+    post: "developer-portal-post"
     weight: 1
 
   - identifier: "specifications"
