@@ -29,3 +29,6 @@ http://mail.jakarta.ee/* https://eclipse-ee4j.github.io/mail/:splat 200!
 
 # redirect get involved page from old to new location
 /getinvolved /community/get-involved 301!
+
+# remove .html extension — avoids duplicate content indexing
+/*.html /:splat 301!
