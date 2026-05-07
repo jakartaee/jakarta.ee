@@ -38,12 +38,12 @@
             </button>
           </div>
           <div class="mega-menu-mobile-content">
-            <h2 class="mega-menu-main-title">{{ i18n .Identifier | default .Name }}</h2>
+            <p class="mega-menu-main-title">{{ i18n .Identifier | default .Name }}</p>
             <div class="mega-menu-items">
               {{ range .Children }}
                 <div class="mega-menu-column">
                   {{ if .HasChildren }}
-                    <h3
+                    <div
                       class="mega-menu-title collapsed"
                       data-toggle="collapse"
                       data-target="#mobile-mega-menu-{{ anchorize .Identifier }}"
@@ -54,7 +54,7 @@
                         class="fa fa-angle-down mega-menu-collapse-icon"
                         aria-hidden="true"
                       ></i>
-                    </h3>
+                    </div>
                     <ul
                       class="mega-menu-links collapse"
                       id="mobile-mega-menu-{{ anchorize .Identifier }}"
@@ -111,7 +111,7 @@
             </button>
           </div>
           <div class="mega-menu-mobile-content">
-            <h2 class="mega-menu-main-title">{{ i18n .Identifier | default .Name }}</h2>
+            <p class="mega-menu-main-title">{{ i18n .Identifier | default .Name }}</p>
             <div class="mega-menu-items">
               {{ range .Children }}
                 <div class="mega-menu-column">
