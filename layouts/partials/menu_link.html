@@ -25,6 +25,23 @@
   {{- $isExternal = true -}}
 {{- end -}}
 
+{{- if not $isExternal -}}
+  {{- with .page -}}
+    {{/*
+      Hugo resolves pageRef against the default language in a shared menu config,
+      so .RelPermalink here is typically the English URL. We use it as the fallback,
+      then check .Translations for the current rendering language.
+    */}}
+    {{- $currentLang := $.context.Lang -}}
+    {{- $url = .RelPermalink -}}
+    {{- range .Translations -}}
+      {{- if eq .Lang $currentLang -}}
+        {{- $url = .RelPermalink -}}
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+
 <a href="{{ $url }}"{{ if $isExternal }} target="_blank" rel="noopener noreferrer"{{ end }}>
   {{- $name -}}
 </a>
