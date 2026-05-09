@@ -10,6 +10,12 @@ years:
     date: Oct 27-28
     upcoming: true    
 
+  - name: dev2next
+    url: https://www.dev2next.com/
+    location: Lone Tree, CO 🇺🇸
+    date: Oct 12-15
+    upcoming: true    
+
   - name: IntelliJ IDEA Conf
     url: https://lp.jetbrains.com/intellij-idea-conf-2026/
     location: TBD
