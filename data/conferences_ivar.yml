@@ -52,11 +52,15 @@ years:
     date: May 28-31
     upcoming: true
 
+  - name: Javaforum Malmö
+    url: https://javaforum-malmo.github.io/events/#javaforum-malmö---augmenting-ai-with-the-power-of-jakarta-ee
+    location: Malmö 🇸🇪
+    date: May 2+
+
   - name: GeeCON
     url: https://2026.geecon.org
     location: Kraków 🇵🇱
     date: May 14-15
-    upcoming: true
 
   - name: JavaConnect KE
     url: https://zenlipa.co.ke/events/js61T1
@@ -295,8 +299,8 @@ years:
     date: May 12-15
     blog: https://www.agilejava.eu/2025/05/16/jcon-europe-2025/
 
-  - name: Javaforum Malmø
-    url: https://foocafe.org/event/jvm-age-ai
+  - name: Javaforum Malmö
+    url: https://javaforum-malmo.github.io/events/#javaforum-malmö---jvm-in-the-age-of-ai
     location: Malmö 🇸🇪
     date: May 5
     blog: https://www.agilejava.eu/2025/05/07/javaforum-malmo-may-2025/
@@ -349,8 +353,8 @@ years:
     date: Feb 18
     blog: https://www.agilejava.eu/2025/02/19/madrid-jug-2025/
 
-  - name: Javaforum Malmø
-    url: https://foocafe.org/event/sound-scheduling-writing-linux-schedulers-java-ebpf
+  - name: Javaforum Malmö
+    url: https://javaforum-malmo.github.io/events/#javaforum-malmö---the-sound-of-scheduling-writing-linux-schedulers-in-java-with-ebpf
     location: Malmö 🇸🇪
     date: Jan 20
     blog: https://www.agilejava.eu/2025/01/21/javaforum-malmo-2025/
@@ -568,8 +572,8 @@ years:
     date: Mar 19
     blog: https://www.agilejava.eu/2024/03/20/belgian-jug-2024/
 
-  - name: Javaforum Malmø
-    url: https://www.meetup.com/javaforum-malmo/
+  - name: Javaforum Malmö
+    url: https://javaforum-malmo.github.io/events/#javaforum-malmö---continuous-delivery-patterns-and-25-years-of-the-jcp
     location: Malmö 🇸🇪
     date: Feb 29
     blog: https://www.agilejava.eu/2024/03/01/javaforum-malmo-february-2024/
@@ -644,7 +648,7 @@ years:
     blog: https://www.agilejava.eu/2023/11/24/jcon-world-online-2023/
 
   - name: Javaforum Malmø
-    url: https://www.meetup.com/javaforum-malmo/
+    url: https://javaforum-malmo.github.io/events/#javaforum-malmö---war-games---java-vulnerabilities-and-why-you-should-care
     location: Malmö 🇸🇪
     date: Nov 22
     blog: https://www.agilejava.eu/2023/11/23/javaforum-malmo/
@@ -993,8 +997,8 @@ years:
     location: Gothenburg 🇸🇪
     date: Nov 17
 
-  - name: Javaforum Malmø
-    url: https://www.meetup.com/javaforum-malmo/events/281222065/
+  - name: Javaforum Malmö
+    url: https://javaforum-malmo.github.io/events/#javaforum-malmö---promising-future-with-java-17-openjdk-and-the-cloud
     location: Malmö 🇸🇪
     date: Nov 16
     
