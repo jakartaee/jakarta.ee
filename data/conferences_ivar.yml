@@ -22,6 +22,11 @@ years:
     date: Sep 7-8
     upcoming: true    
 
+  - name: JavaZone
+    url: https://2026.javazone.no
+    location: Lillestrøm 🇳🇴
+    date: Sep 2-3
+
   - name: JCrete
     url: https://www.jcrete.org
     location: Kolymvari 🇬🇷
