@@ -16,6 +16,12 @@ years:
     date: Oct 12-15
     upcoming: true    
 
+  - name: Community over Code
+    url: https://communityovercode.org
+    location: Glasgow 🏴󠁧󠁢󠁳󠁣󠁴󠁿
+    date: Oct 11-14
+    upcoming: true    
+
   - name: IntelliJ IDEA Conf
     url: https://lp.jetbrains.com/intellij-idea-conf-2026/
     location: TBD
@@ -75,7 +81,7 @@ years:
 
   - name: University of York (Guest Lecture)
     url: https://www.york.ac.uk
-    location: York 🇬🇧
+    location: York 🏴󠁧󠁢󠁥󠁮󠁧󠁿
     date: May 5
     upcoming: true
 
