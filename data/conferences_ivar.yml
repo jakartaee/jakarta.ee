@@ -77,19 +77,17 @@ years:
     url: https://zenlipa.co.ke/events/js61T1
     location: Nairobi 🇰🇪
     date: May 9
-    upcoming: true
 
   - name: University of York (Guest Lecture)
     url: https://www.york.ac.uk
     location: York 🏴󠁧󠁢󠁥󠁮󠁧󠁿
     date: May 5
-    upcoming: true
 
   - name: ShiftAPPens
     url: https://www.shiftappens.com
     location: Coimbra 🇵🇹
     date: May 1-3
-    upcoming: true
+    blog: https://www.agilejava.eu/2026/05/11/shiftappens-2026/
 
   - name: Open Community eXperience
     url: https://www.ocxconf.org
