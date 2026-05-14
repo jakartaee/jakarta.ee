@@ -9,12 +9,12 @@ date: 2020-01-05T15:50:25-04:00
 
 ### 委员会成员
 
-* Ed Bratt (**chair**) - Oracle, Dmitry Kornilov - alternate
+* Dmitry Kornilov - Oracle, Robert Patrick - alternate
 * Kenji Kazumura - Fujitsu, Takahiro Nagao - alternate
 * Alasdair Nottingham - IBM, Emily Jiang - alternate
 * Dominika Tasarz - Payara, Steve Butler - alternate
 * David Blevins - Tomitribe, Cesar Hernandez - alternate
-* Marcin Kruglik - London Jamocha Community - Elected Participant Member Representative - Abraham Marin-Perez - alternate
+* Ondro Mihaly - Omnifish OU - Elected Participant Member Representative
 * Vacant - Elected Committer Member Representative
 * Dr. Jun Qian - Primeton - Elected Enterprise Representative
 * Zhao Xin - Shandong Cvicse Middleware Co - Elected Enterprise Representative

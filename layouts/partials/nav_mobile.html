@@ -21,7 +21,7 @@
       <li class="menu-item dropdown mega-dropdown">
         <a href="#" class="dropdown-toggle">
           {{ .Pre }}
-          <span>{{ .Name }}</span>
+          <span>{{ i18n .Identifier | default .Name }}</span>
           <i
             class="fa fa-angle-right mega-menu-collapse-icon"
             aria-hidden="true"
@@ -38,7 +38,7 @@
             </button>
           </div>
           <div class="mega-menu-mobile-content">
-            <h2 class="mega-menu-main-title">{{ .Name }}</h2>
+            <h2 class="mega-menu-main-title">{{ i18n .Identifier | default .Name }}</h2>
             <div class="mega-menu-items">
               {{ range .Children }}
                 <div class="mega-menu-column">
@@ -49,7 +49,7 @@
                       data-target="#mobile-mega-menu-{{ anchorize .Identifier }}"
                       aria-expanded="false"
                     >
-                      {{ .Name }}
+                      {{ i18n .Identifier | default .Name }}
                       <i
                         class="fa fa-angle-down mega-menu-collapse-icon"
                         aria-hidden="true"
@@ -61,16 +61,16 @@
                     >
                       {{ range .Children }}
                         <li>
-                          {{ $linkContent := printf "%s<i class='fa fa-arrow-right' aria-hidden='true'></i>" .Name }}
-                          {{ partial "menu_link.html" (dict "url" .URL "name" ($linkContent | safeHTML) "context" $) }}
+                          {{ $linkContent := printf "%s<i class='fa fa-arrow-right' aria-hidden='true'></i>" (i18n .Identifier | default .Name) }}
+                          {{ partial "menu_link.html" (dict "url" .URL "page" .Page "name" ($linkContent | safeHTML) "context" $) }}
                         </li>
                       {{ end }}
                     </ul>
                   {{ else }}
                     <ul class="mega-menu-links">
                       <li>
-                        {{ $linkContent := printf "%s<i class='fa fa-arrow-right' aria-hidden='true'></i>" .Name }}
-                        {{ partial "menu_link.html" (dict "url" .URL "name" ($linkContent | safeHTML) "context" $) }}
+                        {{ $linkContent := printf "%s<i class='fa fa-arrow-right' aria-hidden='true'></i>" (i18n .Identifier | default .Name) }}
+                        {{ partial "menu_link.html" (dict "url" .URL "page" .Page "name" ($linkContent | safeHTML) "context" $) }}
                       </li>
                     </ul>
                   {{ end }}
@@ -94,7 +94,7 @@
       <li class="menu-item dropdown">
         <a href="#" class="dropdown-toggle">
           {{ .Pre }}
-          <span>{{ .Name }}</span>
+          <span>{{ i18n .Identifier | default .Name }}</span>
           <i
             class="fa fa-angle-right mega-menu-collapse-icon"
             aria-hidden="true"
@@ -111,14 +111,14 @@
             </button>
           </div>
           <div class="mega-menu-mobile-content">
-            <h2 class="mega-menu-main-title">{{ .Name }}</h2>
+            <h2 class="mega-menu-main-title">{{ i18n .Identifier | default .Name }}</h2>
             <div class="mega-menu-items">
               {{ range .Children }}
                 <div class="mega-menu-column">
                   <ul class="mega-menu-links">
                     <li>
-                      {{ $linkContent := printf "%s<i class='fa fa-arrow-right' aria-hidden='true'></i>" .Name }}
-                      {{ partial "menu_link.html" (dict "url" .URL "name" ($linkContent | safeHTML) "context" $) }}
+                      {{ $linkContent := printf "%s<i class='fa fa-arrow-right' aria-hidden='true'></i>" (i18n .Identifier | default .Name) }}
+                      {{ partial "menu_link.html" (dict "url" .URL "page" .Page "name" ($linkContent | safeHTML) "context" $) }}
                     </li>
                   </ul>
                 </div>
@@ -130,8 +130,8 @@
     {{ end }}
   {{ else }}
     <li class="menu-item">
-      {{ $menuItemContent := printf "%s%s" (.Pre | default "") .Name }}
-      {{ partial "menu_link.html" (dict "url" .URL "name" ($menuItemContent | safeHTML) "context" $) }}
+      {{ $menuItemContent := printf "%s%s" (.Pre | default "") (i18n .Identifier | default .Name) }}
+      {{ partial "menu_link.html" (dict "url" .URL "page" .Page "name" ($menuItemContent | safeHTML) "context" $) }}
     </li>
   {{ end }}
 {{ end }}

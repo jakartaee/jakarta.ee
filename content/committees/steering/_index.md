@@ -9,7 +9,7 @@ This committee owns the overall strategy and the high level, long term roadmap s
 
 ### Committee Members
 
-* Ed Bratt (**chair**) - Oracle, Dmitry Kornilov - alternate
+* Dmitry Kornilov - Oracle, Robert Patrick - alternate
 * Kenji Kazumura - Fujitsu, Takahiro Nagao - alternate
 * Alasdair Nottingham - IBM, Emily Jiang - alternate
 * Dominika Tasarz - Payara, Steve Butler - alternate
