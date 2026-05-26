@@ -1,6 +1,6 @@
 ---
-title: "Jakarta EE TCK Process 1.4.1"
-date: "2022-02-07T00:00:00+00:00"
+title: "Jakarta EE TCK Process 1.4.2"
+date: "2026-04-15T00:00:00+00:00"
 aliases:
     - committees/specification/TCKProcess/
 ---
@@ -254,8 +254,8 @@ tests and address the dispute in a future revision of the specification.
 
 A consensus that a test produces invalid results will result in the
 exclusion of that test from certification requirements, and an immediate
-update and release of an official distribution of the TCK including the
-new exclude list. The associated `challenge` issue MUST be closed with
+update and release of an official distribution of the TCK with the
+test excluded. The associated `challenge` issue MUST be closed with
 an `accepted` label to indicate it has been resolved.
 
 The specification project may approve (user) workarounds for an `accepted` TCK challenge (as an alternative to excluding TCK tests).
@@ -309,7 +309,7 @@ updated, the affected tests are automatically removed from the test
 suite.
 
 ###  Adding excluded tests
-Excluded tests should be added back in for every major Jakarta EE release by emptying the test exclude list for every Specification developed in the respective major EE release.   
+Excluded tests should be reactivated for every major Jakarta EE release for every Specification developed in the respective major EE release.   
 
 ## Improvement {#_improvement}
 
