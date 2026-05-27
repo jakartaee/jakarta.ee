@@ -406,12 +406,23 @@ main:
     parent: "community-events"
     weight: 1
 
-  - identifier: "jakarta-tech-talks"
-    name: "Jakarta Tech Talks"
-    url: "/community/#meetups"
-    pageRef: "/community/#meetups"
+  - identifier: "jakartaone-tech-talk"
+    name: "JakartaOne Tech Talk"
+    url: "https://jakartaone.jakarta.ee/tech-talk/"
     parent: "community-events"
     weight: 3
+
+  - identifier: "jakartaone-livestreams"
+    name: "JakartaOne Livestreams"
+    url: "https://jakartaone.jakarta.ee/livestream/"
+    parent: "community-events"
+    weight: 4
+
+  - identifier: "jakartaone-in-person"
+    name: "JakartaOne In-person"
+    url: "https://jakartaone.jakarta.ee/in-person-events/"
+    parent: "community-events"
+    weight: 5
 
   # Additional Resources sub-items
   - identifier: "developer-advocate"
