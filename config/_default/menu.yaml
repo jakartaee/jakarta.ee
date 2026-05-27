@@ -430,29 +430,36 @@ main:
     url: "/community/developer-advocate/"
     parent: "additional-resources-community"
     weight: 1
+
+  - identifier: "collateral-repository"
+    name: "Collateral repository"
+    url: "https://github.com/jakartaee/collateral"
+    parent: "additional-resources-community"
+    weight: 2
+
   - identifier: "calendar"
     name: "Calendar"
     url: "https://calendar.google.com/calendar/u/0/embed?src=eclipse-foundation.org_3281qms6riu4kdf354jn5idon0@group.calendar.google.com&ctz=America/Toronto"
     parent: "additional-resources-community"
-    weight: 2
+    weight: 3
 
   - identifier: "community-mailing-list"
     name: "Community mailing list"
     url: "https://accounts.eclipse.org/mailing-list/jakarta.ee-community"
     parent: "additional-resources-community"
-    weight: 3
+    weight: 4
 
   - identifier: "slack"
     name: "Slack"
     url: "https://join.slack.com/t/eclipsefoundationhq/shared_invite/zt-crh7mheq-3on2tophEuvQTUGidEAWlg"
     parent: "additional-resources-community"
-    weight: 4
+    weight: 5
 
   - identifier: "swag-store"
     name: "Swag store"
     url: "https://eclipse-foundation.store/collections/jakarta-ee"
     parent: "additional-resources-community"
-    weight: 5
+    weight: 6
 
   # ========================================
   # End of Community mega menu
