@@ -412,8 +412,8 @@ main:
     parent: "community-events"
     weight: 3
 
-  - identifier: "jakartaone-livestreams"
-    name: "JakartaOne Livestreams"
+  - identifier: "jakartaone-livestream"
+    name: "JakartaOne Livestream"
     url: "https://jakartaone.jakarta.ee/livestream/"
     parent: "community-events"
     weight: 4
