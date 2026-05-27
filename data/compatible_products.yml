@@ -24,7 +24,7 @@ sets:
           download: 'https://www.apusic.com/list-117.html'
           versions:
             - version: '10'
-              compatibility: 'https://github.com/jakartaee/platform/issues/1286'
+              compatibility: 'https://www.apusic.com/list-539.html'
               download_url: 'https://www.apusic.com/list-117.html'
         - name: BES Application Server
           vendor: Beijing Baolande Software Corporation
