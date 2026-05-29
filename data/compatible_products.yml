@@ -35,7 +35,7 @@ sets:
             - version: v11.0
               compatibility: https://www.bessystem.com/certifications/jakartaee/platform11.0/11.0-TCKResults.html
               download_url: https://www.bessystem.com/
-            - version: '9.5'
+            - version: 'v9.5'
               compatibility: 'https://www.bessystem.com/certifications/jakartaee/platform11.0/9.5-TCKResults.html'
               download_url: 'https://www.bessystem.com/product/0ad9b8c4d6af462b8d15723a5f25a87d/info?p=101#page-2'
         - name: Eclipse GlassFish
@@ -193,7 +193,7 @@ sets:
             - version: v11.0.0
               compatibility: https://www.bessystem.com/certifications/jakartaee/platform10.0/11.0.0-TCKResults.html
               download_url: https://www.bessystem.com/
-            - version: '9.5'
+            - version: 'v9.5'
               compatibility: 'https://www.bessystem.com/certifications/jakartaee/platform10.0/9.5-TCKResults.html'
               download_url: 'https://www.bessystem.com/product/0ad9b8c4d6af462b8d15723a5f25a87d/info?p=101#page-2'
         - name: Eclipse GlassFish
@@ -647,7 +647,7 @@ sets:
           - version: v10.0.0
             compatibility: https://www.bessystem.com/certifications/jakartaee/platform9.1/10.0.0-TCKResults.html
             download_url: https://www.bessystem.com/product/0ad9b8c4d6af462b8d15723a5f25a87d/info?p=101#page-2
-          - version: '9.5'
+          - version: 'v9.5'
             compatibility: 'https://www.bessystem.com/certifications/jakartaee/platform9.1/9.5-TCKResults.html'
             download_url: 'https://www.bessystem.com/product/0ad9b8c4d6af462b8d15723a5f25a87d/info?p=101#page-2'
       - name: Eclipse GlassFish
@@ -905,7 +905,7 @@ sets:
         - version: v10.0.0
           compatibility: 'https://www.bessystem.com/certifications/jakartaee/platform9/10.0.0-TCKResults.html'
           download_url: 'https://www.bessystem.com/product/0ad9b8c4d6af462b8d15723a5f25a87d/info?p=101#page-2'
-        - version: '9.5'
+        - version: 'v9.5'
           compatibility: 'https://www.bessystem.com/certifications/jakartaee/platform9/9.5-TCKResults.html'
           download_url: 'https://www.bessystem.com/product/0ad9b8c4d6af462b8d15723a5f25a87d/info?p=101#page-2'
       - name: Apusic AAS
@@ -989,7 +989,7 @@ sets:
         image_width: 100
         download: 'https://www.bessystem.com/product/0ad9b8c4d6af462b8d15723a5f25a87d/info?p=101#page-2'
         versions:
-          - version: '9.5'
+          - version: 'v9.5'
             compatibility: 'https://www.bessystem.com/certifications/jakartaee/platform8/9.5-TCKResults.html'
             download_url: https://www.bessystem.com/
       - name: Payara Server Enterprise
