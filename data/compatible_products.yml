@@ -59,6 +59,18 @@ sets:
             - version: 11
               compatibility: 'https://www.tmaxsoft.com/upload/doc/JEUS11_JakartaEE11_Certification_Summary.html'
               download_url: 'https://www.tmaxsoft.com/en/solution/view?solutionSeq=27'
+        - name: Open Liberty
+          vendor: IBM Corporation
+          image: '/images/compatible_products/ibm-open-liberty-logo.svg'
+          image_width: 160
+          download: 'https://openliberty.io/start/#runtime_betas'
+          versions:
+            - version: 26.0.0.5 Java 21
+              compatibility: 'https://openliberty.io/certifications/jakartaee/11/platform/26.0.0.5-Java21-TCKResults.html'
+              download_url: 'https://public.dhe.ibm.com/ibmdl/export/pub/software/openliberty/runtime/release/26.0.0.5/openliberty-jakartaee11-26.0.0.5.zip'
+            - version: 26.0.0.5 Java 17
+              compatibility: 'https://openliberty.io/certifications/jakartaee/11/platform/26.0.0.5-Java17-TCKResults.html'
+              download_url: 'https://public.dhe.ibm.com/ibmdl/export/pub/software/openliberty/runtime/release/26.0.0.5/openliberty-jakartaee11-26.0.0.5.zip'
         - name: Payara Server Community
           vendor: Payara Services Limited
           image: '/images/compatible_products/payara-server-community-logo.svg'
@@ -105,6 +117,18 @@ sets:
             - version: 8.0.0-JDK17-M10
               compatibility: 'https://glassfish.org/certifications/jakarta-web-profile/11/TCK-Results-8.0.0-M10'
               download_url: 'https://download.eclipse.org/ee4j/glassfish/web-8.0.0-JDK17-M10.zip'
+        - name: Open Liberty
+          vendor: IBM Corporation
+          image: '/images/compatible_products/ibm-open-liberty-logo.svg'
+          image_width: 160
+          download: 'https://openliberty.io/start/#runtime_betas'
+          versions:
+            - version: 26.0.0.5 Java 21
+              compatibility: 'https://openliberty.io/certifications/jakartaee/11/webprofile/26.0.0.5-Java21-TCKResults.html'
+              download_url: 'https://public.dhe.ibm.com/ibmdl/export/pub/software/openliberty/runtime/release/26.0.0.5/openliberty-webProfile11-26.0.0.5.zip'
+            - version: 26.0.0.5 Java 17
+              compatibility: 'https://openliberty.io/certifications/jakartaee/11/webprofile/26.0.0.5-Java17-TCKResults.html'
+              download_url: 'https://public.dhe.ibm.com/ibmdl/export/pub/software/openliberty/runtime/release/26.0.0.5/openliberty-webProfile11-26.0.0.5.zip'
         - name: Payara Server Community
           vendor: Payara Services Limited
           image: '/images/compatible_products/payara-server-community-logo.svg'
@@ -124,12 +148,18 @@ sets:
           image_width: 160
           download: 'https://openliberty.io/start/#runtime_betas'
           versions:
-          - version: 24.0.0.11-beta Java 21
-            compatibility: 'https://openliberty.io/certifications/jakartaee/11/coreprofile/24.0.0.11-beta-Java21-TCKResults.html'
-            download_url: 'https://public.dhe.ibm.com/ibmdl/export/pub/software/openliberty/runtime/beta/24.0.0.11-beta/openliberty-24.0.0.11-beta.zip'
-          - version: 24.0.0.11-beta, Java 17
-            compatibility: 'https://openliberty.io/certifications/jakartaee/11/coreprofile/24.0.0.11-beta-Java17-TCKResults.html'
-            download_url: 'https://public.dhe.ibm.com/ibmdl/export/pub/software/openliberty/runtime/beta/24.0.0.11-beta/openliberty-24.0.0.11-beta.zip'
+            - version: 26.0.0.5 Java 21
+              compatibility: 'https://openliberty.io/certifications/jakartaee/11/coreprofile/26.0.0.5-Java21-TCKResults.html'
+              download_url: 'https://public.dhe.ibm.com/ibmdl/export/pub/software/openliberty/runtime/release/26.0.0.5/openliberty-webProfile11-26.0.0.5.zip'
+            - version: 26.0.0.5 Java 17
+              compatibility: 'https://openliberty.io/certifications/jakartaee/11/coreprofile/26.0.0.5-Java17-TCKResults.html'
+              download_url: 'https://public.dhe.ibm.com/ibmdl/export/pub/software/openliberty/runtime/release/26.0.0.5/openliberty-webProfile11-26.0.0.5.zip'
+            - version: 24.0.0.11-beta Java 21
+              compatibility: 'https://openliberty.io/certifications/jakartaee/11/coreprofile/24.0.0.11-beta-Java21-TCKResults.html'
+              download_url: 'https://public.dhe.ibm.com/ibmdl/export/pub/software/openliberty/runtime/beta/24.0.0.11-beta/openliberty-24.0.0.11-beta.zip'
+            - version: 24.0.0.11-beta, Java 17
+              compatibility: 'https://openliberty.io/certifications/jakartaee/11/coreprofile/24.0.0.11-beta-Java17-TCKResults.html'
+              download_url: 'https://public.dhe.ibm.com/ibmdl/export/pub/software/openliberty/runtime/beta/24.0.0.11-beta/openliberty-24.0.0.11-beta.zip'
         - name: WildFly
           vendor: Red Hat
           image: '/images/compatible_products/red-hat-wildfly-logo.png'
