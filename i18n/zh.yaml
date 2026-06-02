@@ -366,6 +366,7 @@ pages-get-involved-BecomeACommitter-title: 成为提交者
 pages-get-involved-BecomeACommitter-content: <p>Jakarta EE 贡献者有资格成为提交者。可以通过以下几种方式成为提交者：1）对于现有的 Jakarta EE 项目，通过选举实现！在您做出了表明您了解开源项目工作原理的贡献之后，该项目的当前提交人将发起一次选举。现任委员必须在选举中投票；因此，创建一个高质量贡献的公共记录以便提交者（和社区）可以审查，是整个过程中最重要的部分。2） 另一种选择是通过做出初步贡献，成为新的 Jakarta EE 规范项目的提交人。项目的相应项目管理委员会（PMC）提名一组初始提交人，供执行董事（或其代表）批准</p> 如果您所在的机构是 Jakarta EE 工作组的成员，则相关机构已经签署了必要的文件，你没什么需要做的</p> 如果您所在的机构不是 Jakarta EE 工作组的成员，则您需要填写以下表格：</p>
 pages-get-involved-BecomeACommitter-IndividualAgreement: Jakarta EE 工作组个人参与协议
 pages-get-involved-BecomeACommitter-EmployerAgreement: Eclipse Foundation 规范项目员工知情协议
+pages-get-involved-BecomeACommitter-Handbook: '有关提交者角色和 Eclipse Foundation 开发流程的更多详细信息，请参阅 <a href="https://www.eclipse.org/projects/handbook/" target="_blank" rel="noopener noreferrer">Eclipse Foundation 项目手册</a>。'
 pages-get-involved-JoinWG-title: 加入 Jakarta EE 工作组
 pages-get-involved-JoinWG-content: <p>对推进 Jakarta EE 感兴趣的机构或者个人都可以加入 Jakarta EE 工作组</p> <p><img class="get-involved-orange-icon" src="/images/get-involved/icons/reward.svg" alt="Reward icon">了解 <a href="https://www.eclipse.org/org/workinggroups/jakarta_ee_charter.php">Jakarta EE 工作组章程</a>，<em class="margin-right-10">然后</em> <img class="get-involved-orange-icon" src="/images/get-involved/icons/envelope.svg" alt="Envelope icon"><a href="https://accounts.eclipse.org/contact/membership/jakarta-ee">与我们联系</a>。</p><p>访问 <a href="https://jakarta.ee/">Jakarta EE 官网</a> 了解更多。</p>
 pages-get-involved-WhyDevelopersInvolved-title: 为什么我们鼓励更多开发者加入我们
