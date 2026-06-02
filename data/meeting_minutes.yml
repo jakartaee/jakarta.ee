@@ -681,8 +681,10 @@ items:
   specification_committee:
     - url: specification_committee/minutes-specification-may-13-2026.pdf
       title: 13 May 2026 (pdf)
+      year: 2026
     - url: specification_committee/minutes-specification-april-1-2026.pdf
       title: 1 April 2026 (pdf)
+      year: 2026
     - url: specification_committee/minutes-specification-march-18-2026.pdf
       title: 18 March 2026 (pdf)
       year: 2026
