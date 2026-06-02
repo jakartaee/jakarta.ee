@@ -309,7 +309,7 @@ updated, the affected tests are automatically removed from the test
 suite.
 
 ###  Adding excluded tests
-Excluded tests should be reactivated for every major Jakarta EE release for every Specification developed in the respective major EE release.   
+Excluded tests should be reconsidered for every major Jakarta EE release for every Specification developed in the respective major EE release.   
 
 ## Improvement {#_improvement}
 
