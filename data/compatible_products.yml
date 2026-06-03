@@ -50,6 +50,18 @@ sets:
             - version: 8.0.0-JDK17-M12
               compatibility: 'https://glassfish.org/certifications/jakarta-platform/11/TCK-Results-8.0.0-M12'
               download_url: 'https://download.eclipse.org/ee4j/glassfish/glassfish-8.0.0-JDK17-M12.zip'
+        - name: IBM WebSphere Liberty
+          vendor: IBM Corporation
+          image: '/images/compatible_products/ibm-websphere-liberty-logo.svg'
+          image_width: 120
+          download: 'https://www.ibm.com/support/pages/node/6250961#asset/runtimes-wlp-javaee8'
+          versions:
+            - version: 26.0.0.5, Java 21
+              compatibility: 'https://www.ibm.com/support/pages/ibm-websphere-liberty-26005-jakarta-ee-platform-11-using-java-21-certification-summary'
+              download_url: 'https://public.dhe.ibm.com/ibmdl/export/pub/software/websphere/wasdev/downloads/wlp/26.0.0.5/wlp-jakartaee11-26.0.0.5.zip'
+            - version: 26.0.0.5, Java 17
+              compatibility: 'https://www.ibm.com/support/pages/ibm-websphere-liberty-26005-jakarta-ee-platform-11-using-java-17-certification-summary'
+              download_url: 'https://public.dhe.ibm.com/ibmdl/export/pub/software/websphere/wasdev/downloads/wlp/26.0.0.5/wlp-jakartaee11-26.0.0.5.zip'
         - name: JEUS
           vendor: TmaxSoft Co., Ltd
           image: '/images/compatible_products/jeus-logo.svg'
@@ -117,6 +129,18 @@ sets:
             - version: 8.0.0-JDK17-M10
               compatibility: 'https://glassfish.org/certifications/jakarta-web-profile/11/TCK-Results-8.0.0-M10'
               download_url: 'https://download.eclipse.org/ee4j/glassfish/web-8.0.0-JDK17-M10.zip'
+        - name: IBM WebSphere Liberty
+          vendor: IBM Corporation
+          image: '/images/compatible_products/ibm-websphere-liberty-logo.svg'
+          image_width: 120
+          download: 'https://www.ibm.com/support/pages/node/6250961#asset/runtimes-wlp-javaee8'
+          versions:
+            - version: 26.0.0.5, Java 21
+              compatibility: 'https://www.ibm.com/support/pages/ibm-websphere-liberty-26005-jakarta-ee-web-profile-11-using-java-21-certification-summary'
+              download_url: 'https://public.dhe.ibm.com/ibmdl/export/pub/software/websphere/wasdev/downloads/wlp/26.0.0.5/wlp-webProfile11-26.0.0.5.zip'
+            - version: 26.0.0.5, Java 17
+              compatibility: 'https://www.ibm.com/support/pages/ibm-websphere-liberty-26005-jakarta-ee-web-profile-11-using-java-17-certification-summary'
+              download_url: 'https://public.dhe.ibm.com/ibmdl/export/pub/software/websphere/wasdev/downloads/wlp/26.0.0.5/wlp-webProfile11-26.0.0.5.zip'
         - name: Open Liberty
           vendor: IBM Corporation
           image: '/images/compatible_products/ibm-open-liberty-logo.svg'
@@ -142,6 +166,18 @@ sets:
     - title: Jakarta EE 11 Core Profile
       release: "release/11"
       items:
+        - name: IBM WebSphere Liberty
+          vendor: IBM Corporation
+          image: '/images/compatible_products/ibm-websphere-liberty-logo.svg'
+          image_width: 120
+          download: 'https://www.ibm.com/support/pages/node/6250961#asset/runtimes-wlp-javaee8'
+          versions:
+            - version: 26.0.0.5, Java 21
+              compatibility: 'https://www.ibm.com/support/pages/ibm-websphere-liberty-26005-jakarta-ee-core-profile-11-using-java-21-certification-summary'
+              download_url: 'https://public.dhe.ibm.com/ibmdl/export/pub/software/websphere/wasdev/downloads/wlp/26.0.0.5/wlp-webProfile11-26.0.0.5.zip'
+            - version: 26.0.0.5, Java 17
+              compatibility: 'https://www.ibm.com/support/pages/ibm-websphere-liberty-26005-jakarta-ee-core-profile-11-using-java-17-certification-summary'
+              download_url: 'https://public.dhe.ibm.com/ibmdl/export/pub/software/websphere/wasdev/downloads/wlp/26.0.0.5/wlp-webProfile11-26.0.0.5.zip'
         - name: Open Liberty
           vendor: IBM Corporation
           image: '/images/compatible_products/ibm-open-liberty-logo.svg'
