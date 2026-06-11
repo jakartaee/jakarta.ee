@@ -4,6 +4,11 @@ years:
 - year: 2026
   conferences:
 
+  - name: JakartaOne Livestream
+    url: https://jakartaone.jakarta.ee/jakartaone-livestream-2026/
+    location: online 🌐
+    date: Dec 1
+
   - name: Vaadin Create
     url: https://vaadin.com/vaadin-create-2026
     location: Barcelona 🇪🇸
@@ -14,12 +19,6 @@ years:
     url: https://www.dev2next.com/
     location: Lone Tree, CO 🇺🇸
     date: Oct 12-15
-    upcoming: true    
-
-  - name: Community over Code
-    url: https://communityovercode.org
-    location: Glasgow 🏴󠁧󠁢󠁳󠁣󠁴󠁿
-    date: Oct 11-14
     upcoming: true    
 
   - name: IntelliJ IDEA Conf
@@ -37,7 +36,6 @@ years:
     url: https://www.jcrete.org
     location: Kolymvari 🇬🇷
     date: Jul 27-31
-    upcoming: true
 
   - name: JConf Dominicana
     url: https://jconfdominicana.org
@@ -61,7 +59,7 @@ years:
     url: https://clujinnovationdays.com
     location: Cluj 🇷🇴
     date: May 28-31
-    upcoming: true
+    blog: https://www.agilejava.eu/2026/06/11/cluj-innovation-days-2026/
 
   - name: Javaforum Malmö
     url: https://javaforum-malmo.github.io/events/#javaforum-malmö---augmenting-ai-with-the-power-of-jakarta-ee
