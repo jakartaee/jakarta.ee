@@ -21,12 +21,6 @@ years:
     date: Oct 12-15
     upcoming: true    
 
-  - name: IntelliJ IDEA Conf
-    url: https://lp.jetbrains.com/intellij-idea-conf-2026/
-    location: TBD
-    date: Sep 8-9
-    upcoming: true
-    
   - name: New York Java SIG
     url: https://www.javasig.com
     location: New York, NY 🇺🇸
@@ -42,6 +36,12 @@ years:
     location: Philadelphia, PA 🇺🇸
     date: Sep 15
 
+  - name: IntelliJ IDEA Conf
+    url: https://lp.jetbrains.com/intellij-idea-conf-2026/
+    location: online 🌐
+    date: Sep 8-9
+    upcoming: true
+    
   - name: JavaZone
     url: https://2026.javazone.no
     location: Lillestrøm 🇳🇴
