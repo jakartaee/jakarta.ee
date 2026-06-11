@@ -25,7 +25,22 @@ years:
     url: https://lp.jetbrains.com/intellij-idea-conf-2026/
     location: TBD
     date: Sep 8-9
-    upcoming: true    
+    upcoming: true
+    
+  - name: New York Java SIG
+    url: https://www.javasig.com
+    location: New York, NY 🇺🇸
+    date: Sep 17
+
+  - name: Garden State JUG
+    url: https://gsjug.org
+    location: New Jersey, NJ 🇺🇸
+    date: Sep 16
+
+  - name: Philly JUG
+    url: https://www.meetup.com/phillyjug/
+    location: Philadelphia, PA 🇺🇸
+    date: Sep 15
 
   - name: JavaZone
     url: https://2026.javazone.no
