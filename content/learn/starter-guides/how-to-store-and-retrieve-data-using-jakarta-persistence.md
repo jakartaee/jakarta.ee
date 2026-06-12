@@ -8,6 +8,15 @@ description: >-
 hide_page_title: true
 weight: 2
 categories: ["Starter Guides"]
+related_specifications:
+  - name: "Jakarta Persistence"
+    href: "/specifications/persistence/"
+  - name: "Jakarta RESTful Web Services"
+    href: "/specifications/restful-ws/"
+  - name: "Jakarta JSON Binding"
+    href: "/specifications/jsonb/"
+  - name: "Jakarta Contexts and Dependency Injection"
+    href: "/specifications/cdi/"
 ---
 
 This guide shows you how to store and retrieve data using 

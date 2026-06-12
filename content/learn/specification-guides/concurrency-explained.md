@@ -9,6 +9,17 @@ description: >-
 keywords: ["spec", "specification", "guide", "concurrency", "explained", "tutorial"]
 hide_page_title: true
 categories: ["Specification Guides"]
+related_specifications:
+  - name: "Jakarta Concurrency"
+    href: "/specifications/concurrency/"
+  - name: "Jakarta Contexts and Dependency Injection"
+    href: "/specifications/cdi/"
+  - name: "Jakarta RESTful Web Services"
+    href: "/specifications/restful-ws/"
+  - name: "Jakarta Transactions"
+    href: "/specifications/transactions/"
+  - name: "Jakarta Security"
+    href: "/specifications/security/"
 ---
 
 Application performance can make or break a user’s experience.

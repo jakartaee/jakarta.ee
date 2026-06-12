@@ -1,0 +1,63 @@
+{{/*
+  Copyright (c) 2026 Eclipse Foundation, Inc.
+  This program and the accompanying materials are made available under the
+  terms of the Eclipse Public License v. 2.0 which is available at
+  http://www.eclipse.org/legal/epl-2.0.
+
+  Contributors:
+    Olivier Goulet <olivier.goulet@eclipse-foundation.org>
+
+  SPDX-License-Identifier: EPL-2.0
+*/}}
+
+<aside id="learn-sidebar">
+  {{ with .Params.related_specifications }}
+    <section class="card featured glow margin-bottom-30">
+      <h3>{{ i18n "sidebar-learn-related-specifications" }}</h3>
+      <ul class="arrow-list">
+        {{ range . }}
+          <li>
+            <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+            <a href="{{ .href }}">{{ .name }}</a>
+          </li>
+        {{ end }}
+      </ul>
+    </section>
+  {{ end }}
+
+  <section class="card featured glow margin-bottom-30">
+    <h3>{{ i18n "sidebar-learn-get-started" }}</h3>
+    <ul class="arrow-list">
+      <li>
+        <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+        <a href="/learn/docs/jakartaee-tutorial/current/index.html">Jakarta EE Official Tutorial</a>
+      </li>
+      <li>
+        <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+        <a href="https://start.jakarta.ee/">Jakarta EE Starter</a>
+      </li>
+    </ul>
+  </section>
+
+  <section class="card featured glow margin-bottom-30">
+    <h3>{{ i18n "sidebar-learn-starter-guides" }}</h3>
+    <ul class="arrow-list">
+      <li>
+        <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+        <a href="/learn/starter-guides/how-to-build-a-restful-web-service/">How to build a RESTful Web Service using Jakarta EE</a>
+      </li>
+      <li>
+        <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+        <a href="/learn/starter-guides/how-to-secure-a-restful-web-service/">How to secure a RESTful Web Service using Jakarta EE</a>
+      </li>
+      <li>
+        <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+        <a href="/learn/starter-guides/how-to-store-and-retrieve-data-using-jakarta-persistence/">How to store and retrieve data using Jakarta Persistence of Jakarta EE</a>
+      </li>
+      <li>
+        <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+        <a href="/learn/starter-guides/how-to-start-with-servlets/">How to start with servlets using Jakarta EE 10</a>
+      </li>
+    </ul>
+  </section>
+</aside>

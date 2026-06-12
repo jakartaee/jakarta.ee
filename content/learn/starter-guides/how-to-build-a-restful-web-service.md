@@ -7,6 +7,13 @@ description: >-
 hide_page_title: true
 weight: 1
 categories: ["Starter Guides"]
+related_specifications:
+  - name: "Jakarta RESTful Web Services"
+    href: "/specifications/restful-ws/"
+  - name: "Jakarta JSON Binding"
+    href: "/specifications/jsonb/"
+  - name: "Jakarta JSON Processing"
+    href: "/specifications/jsonp/"
 ---
 
 This guide shows you how to use Jakarta EE to make a 

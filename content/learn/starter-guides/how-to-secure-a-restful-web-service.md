@@ -10,6 +10,17 @@ tags: ['rest', 'api', 'service', 'starter', 'authentication', 'auth', 'security'
 hide_page_title: true
 weight: 2
 categories: ["Starter Guides"]
+related_specifications:
+  - name: "Jakarta RESTful Web Services"
+    href: "/specifications/restful-ws/"
+  - name: "Jakarta Security"
+    href: "/specifications/security/"
+  - name: "Jakarta Authentication"
+    href: "/specifications/authentication/"
+  - name: "Jakarta Authorization"
+    href: "/specifications/authorization/"
+  - name: "Jakarta Contexts and Dependency Injection"
+    href: "/specifications/cdi/"
 ---
 
 This guide shows you how to secure a rest endpoint using 
