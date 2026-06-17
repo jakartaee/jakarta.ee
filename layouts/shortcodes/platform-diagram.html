@@ -19,10 +19,20 @@
   {{- $statusClasses = merge $statusClasses (dict .status (dict "box_class" .box_class "text_class" .text_class)) -}}
 {{- end -}}
 
-{{- /* Helper: resolve a spec entry to its display name and URL from /specifications content. */ -}}
+{{- /* Map group id → profile heading shown inside the popover */ -}}
+{{- $profileNames := dict
+  "full_platform" "Jakarta EE Platform"
+  "web_profile" "Jakarta EE Web Profile"
+  "core_profile" "Jakarta EE Core Profile"
+-}}
+
+{{- /* Helper: render a single spec as a popover trigger + popover content. */ -}}
 {{- define "platform-spec-box" -}}
   {{- $spec := .spec -}}
   {{- $statusClasses := .statusClasses -}}
+  {{- $dataFile := .dataFile -}}
+  {{- $groupId := .groupId -}}
+  {{- $profileName := .profileName -}}
   {{- $page := site.GetPage (printf "/specifications/%s" $spec.path) -}}
   {{- $url := printf "/specifications/%s/" $spec.path -}}
   {{- $name := $spec.name -}}
@@ -38,26 +48,133 @@
   {{- end -}}
   {{- if not $name -}}{{- $name = $spec.path -}}{{- end -}}
   {{- $classes := index $statusClasses $spec.status -}}
-  <a
-    href="{{ $url }}"
+
+  {{- /* Resolve section page for the spec slug to source popover metadata. */ -}}
+  {{- $specSlug := index (split $spec.path "/") 0 -}}
+  {{- $section := site.GetPage (printf "/specifications/%s" $specSlug) -}}
+
+  {{- /* Stable, unique id per trigger/popover pair. */ -}}
+  {{- $pathSlug := $spec.path | replaceRE "[^A-Za-z0-9]+" "-" -}}
+  {{- $triggerId := printf "spec-%s-%s-%s" $dataFile $groupId $pathSlug -}}
+  {{- $popoverId := printf "%s-popover" $triggerId -}}
+
+  <button
+    type="button"
+    id="{{ $triggerId }}"
     class="spec-box {{ $classes.box_class }}"
     aria-label="{{ $name }}"
   >
     <span class="{{ $classes.text_class }}">{{ $name }}</span>
-  </a>
+  </button>
+  <jee-popover
+    id="{{ $popoverId }}"
+    for="{{ $triggerId }}"
+    placement="bottom"
+    offset="12"
+    class="spec-popover"
+  >
+    <div class="spec-popover-card">
+      <button
+        type="button"
+        class="spec-popover-close"
+        data-popover-close
+        aria-label="Close"
+      >
+        <i class="fa fa-times" aria-hidden="true"></i>
+      </button>
+      <div class="spec-popover-chips">
+        {{- with $section -}}
+          {{- with .Params.project_id -}}
+            <a
+              class="badge badge-orange"
+              href="https://projects.eclipse.org/projects/{{ . }}"
+              target="_blank"
+              rel="noopener"
+            >
+              <i class="fa fa-folder-o" aria-hidden="true"></i>
+              <span>Project</span>
+            </a>
+          {{- end -}}
+          <a
+            class="badge badge-royal-blue"
+            href="{{ .RelPermalink }}"
+          >
+            <i class="fa fa-globe" aria-hidden="true"></i>
+            <span>Website</span>
+          </a>
+          {{- with .Params.video_guide -}}
+            <a
+              class="badge badge-light-blue"
+              href="{{ . }}"
+              target="_blank"
+              rel="noopener"
+            >
+              <i class="fa fa-play-circle-o" aria-hidden="true"></i>
+              <span>Video Guide</span>
+            </a>
+          {{- end -}}
+        {{- end -}}
+      </div>
+
+      <h4 class="spec-popover-title">{{ $profileName }}</h4>
+
+      {{- with $section -}}
+        {{- $description := .Params.summary_sixty_char | default .Params.summary -}}
+        {{- with $description -}}
+          <p class="spec-popover-description">{{ . }}</p>
+        {{- end -}}
+      {{- end -}}
+
+      {{- with $section -}}
+        {{- /* Sort sibling versions by date descending so newest is on top. */ -}}
+        {{- $versions := .Pages.ByDate.Reverse -}}
+        {{- if $versions -}}
+          <ul class="spec-popover-versions">
+            {{- range $versions -}}
+              <li>
+                <a href="{{ .RelPermalink }}">
+                  <span>{{ .Title }}</span>
+                  <i class="fa fa-external-link" aria-hidden="true"></i>
+                </a>
+              </li>
+            {{- end -}}
+          </ul>
+        {{- end -}}
+      {{- end -}}
+
+      <a
+        class="spec-popover-button"
+        href="{{ with $section }}{{ .RelPermalink }}{{ else }}{{ $url }}{{ end }}"
+      >
+        <span>View More</span>
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+    </div>
+  </jee-popover>
 {{- end -}}
 
 {{- /* Helper: render a group's spec list */ -}}
 {{- define "platform-specs" -}}
   {{- $statusClasses := .statusClasses -}}
+  {{- $dataFile := .dataFile -}}
+  {{- $groupId := .group.id -}}
+  {{- $profileName := .profileName -}}
   {{- range .group.specs -}}
-    {{- template "platform-spec-box" (dict "spec" . "statusClasses" $statusClasses) -}}
+    {{- template "platform-spec-box" (dict
+      "spec" .
+      "statusClasses" $statusClasses
+      "dataFile" $dataFile
+      "groupId" $groupId
+      "profileName" $profileName
+    ) -}}
   {{- end -}}
 {{- end -}}
 
 {{- /* Recursive helper: render groups[1..N] as nested frames */ -}}
 {{- define "platform-nested-groups" -}}
   {{- $statusClasses := .statusClasses -}}
+  {{- $dataFile := .dataFile -}}
+  {{- $profileNames := .profileNames -}}
   {{- $groups := .groups -}}
   {{- $group := index $groups 0 -}}
   {{- $rest := after 1 $groups -}}
@@ -77,16 +194,27 @@
       {{- if .grid -}}{{- $grids = add $grids 1 -}}{{- end -}}
     {{- end -}}
   {{- end -}}
+  {{- $profileName := index $profileNames $group.id | default "" -}}
   <div class="platform-frame">
     {{- if $group.title -}}
       <h4 class="column-title">{{ $group.title | safeHTML }}</h4>
     {{- end -}}
     <div class="platform-frame-row"{{ if $rest }} style="--spec-cols: {{ $specCols }}; --frame-cols: {{ $frameCols }}; --depth: {{ $depth }}; --grids: {{ $grids }};"{{ end }}>
       <div class="platform-frame-specs{{ if $group.grid }} spec-grid{{ end }}">
-        {{- template "platform-specs" (dict "group" $group "statusClasses" $statusClasses) -}}
+        {{- template "platform-specs" (dict
+          "group" $group
+          "statusClasses" $statusClasses
+          "dataFile" $dataFile
+          "profileName" $profileName
+        ) -}}
       </div>
       {{- if $rest -}}
-        {{- template "platform-nested-groups" (dict "groups" $rest "statusClasses" $statusClasses) -}}
+        {{- template "platform-nested-groups" (dict
+          "groups" $rest
+          "statusClasses" $statusClasses
+          "dataFile" $dataFile
+          "profileNames" $profileNames
+        ) -}}
       {{- end -}}
     </div>
   </div>
@@ -111,6 +239,8 @@
   {{- end -}}
 {{- end -}}
 
+{{- $group0ProfileName := index $profileNames $group0.id | default "" -}}
+
 <div class="jakarta-ee-platform-diagram">
   <h3 class="platform-title">{{ $diagram.title }}</h3>
 
@@ -124,13 +254,23 @@
           {{- if $group0.title -}}
             <h4 class="column-title">{{ $group0.title | safeHTML }}</h4>
           {{- end -}}
-          {{- template "platform-specs" (dict "group" $group0 "statusClasses" $statusClasses) -}}
+          {{- template "platform-specs" (dict
+            "group" $group0
+            "statusClasses" $statusClasses
+            "dataFile" $dataFile
+            "profileName" $group0ProfileName
+          ) -}}
         </div>
       {{- end -}}
 
       {{- /* Remaining groups: each nested inside the previous as a frame */ -}}
       {{- if $nestedGroups -}}
-        {{- template "platform-nested-groups" (dict "groups" $nestedGroups "statusClasses" $statusClasses) -}}
+        {{- template "platform-nested-groups" (dict
+          "groups" $nestedGroups
+          "statusClasses" $statusClasses
+          "dataFile" $dataFile
+          "profileNames" $profileNames
+        ) -}}
       {{- end -}}
 
     </div>

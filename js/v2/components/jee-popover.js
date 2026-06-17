@@ -79,6 +79,7 @@ export class Popover extends LitElement {
     this._onDocumentPointerDown = this._onDocumentPointerDown.bind(this);
     this._onKeyDown = this._onKeyDown.bind(this);
     this._onViewportChange = this._onViewportChange.bind(this);
+    this._onFocusOut = this._onFocusOut.bind(this);
   }
 
   connectedCallback() {
@@ -115,10 +116,21 @@ export class Popover extends LitElement {
         role="dialog"
         ?hidden=${!this.open}
         @keydown=${this._onKeyDown}
+        @click=${this._onContentClick}
       >
         <slot></slot>
       </div>
     `;
+  }
+
+  _onContentClick(event) {
+    const closer = event.composedPath().find(
+      (node) => node.nodeType === 1 && node.hasAttribute && node.hasAttribute("data-popover-close"),
+    );
+    if (closer) {
+      event.preventDefault();
+      this.hide();
+    }
   }
 
   show() {
@@ -185,6 +197,10 @@ export class Popover extends LitElement {
 
   _onTriggerClick(event) {
     event.preventDefault();
+    // `event.detail === 0` means the click came from a keyboard activation
+    // (Enter/Space). Anything else is a pointer click — in that case we leave
+    // focus on the trigger so the user isn't yanked into the popover.
+    this._skipInitialFocus = event.detail > 0;
     this.toggle();
   }
 
@@ -196,7 +212,10 @@ export class Popover extends LitElement {
     this._addGlobalListeners();
     this.updateComplete.then(() => {
       this._reposition();
-      this._focusInitial();
+      if (!this._skipInitialFocus) {
+        this._focusInitial();
+      }
+      this._skipInitialFocus = false;
       this.dispatchEvent(
         new CustomEvent("popover-open", { bubbles: true, composed: true }),
       );
@@ -221,6 +240,7 @@ export class Popover extends LitElement {
     document.addEventListener("keydown", this._onKeyDown);
     window.addEventListener("resize", this._onViewportChange);
     window.addEventListener("scroll", this._onViewportChange, true);
+    this.addEventListener("focusout", this._onFocusOut);
   }
 
   _removeGlobalListeners() {
@@ -228,6 +248,16 @@ export class Popover extends LitElement {
     document.removeEventListener("keydown", this._onKeyDown);
     window.removeEventListener("resize", this._onViewportChange);
     window.removeEventListener("scroll", this._onViewportChange, true);
+    this.removeEventListener("focusout", this._onFocusOut);
+  }
+
+  _onFocusOut(event) {
+    if (!this.open) return;
+    const next = event.relatedTarget;
+    if (!next) return; // window blur / focus lost — leave popover alone
+    if (next === this._triggerElement) return;
+    if (this.contains(next)) return;
+    this.hide();
   }
 
   _onDocumentPointerDown(event) {
@@ -244,10 +274,6 @@ export class Popover extends LitElement {
     if (event.key === "Escape") {
       event.stopPropagation();
       this.hide();
-      return;
-    }
-    if (event.key === "Tab") {
-      this._trapFocus(event);
     }
   }
 
@@ -274,7 +300,7 @@ export class Popover extends LitElement {
       }
     }
     return focusable.filter(
-      (el) => !el.hasAttribute("disabled") && el.offsetParent !== null,
+      (el) => !el.hasAttribute("disabled") && el.getClientRects().length > 0,
     );
   }
 
@@ -291,27 +317,16 @@ export class Popover extends LitElement {
     }
   }
 
-  _trapFocus(event) {
-    const focusable = this._getFocusableElements();
-    if (focusable.length === 0) {
-      event.preventDefault();
-      return;
-    }
-    const first = focusable[0];
-    const last = focusable[focusable.length - 1];
-    const active = this._getActiveElement();
-    if (event.shiftKey && active === first) {
-      event.preventDefault();
-      last.focus();
-    } else if (!event.shiftKey && active === last) {
-      event.preventDefault();
-      first.focus();
-    }
-  }
-
   _restoreFocus() {
     const target = this._previouslyFocused;
     this._previouslyFocused = null;
+    // Only return focus when nothing else has grabbed it (e.g., a closing
+    // X-button or Escape leaves the active element on <body>). If the user
+    // tabbed or clicked away, leave focus wherever it already moved to.
+    const active = this._getActiveElement();
+    if (active && active !== document.body && active !== document.documentElement) {
+      return;
+    }
     if (target && typeof target.focus === "function" && target.isConnected) {
       target.focus();
     } else if (this._triggerElement) {
@@ -336,8 +351,32 @@ export class Popover extends LitElement {
     const triggerRect = trigger.getBoundingClientRect();
     const popoverRect = popover.getBoundingClientRect();
     const offset = Number.isFinite(this.offset) ? this.offset : 0;
+    const viewportWidth = window.innerWidth;
+    const viewportHeight = window.innerHeight;
+    const edgePadding = 8;
 
-    const [side, alignment = "center"] = placement.split("-");
+    let [side, alignment = "center"] = placement.split("-");
+
+    // Flip to the opposite side when the preferred one doesn't fit and the
+    // opposite has more room.
+    if (side === "bottom" || side === "top") {
+      const spaceBelow = viewportHeight - triggerRect.bottom - offset;
+      const spaceAbove = triggerRect.top - offset;
+      if (side === "bottom" && spaceBelow < popoverRect.height && spaceAbove > spaceBelow) {
+        side = "top";
+      } else if (side === "top" && spaceAbove < popoverRect.height && spaceBelow > spaceAbove) {
+        side = "bottom";
+      }
+    } else {
+      const spaceRight = viewportWidth - triggerRect.right - offset;
+      const spaceLeft = triggerRect.left - offset;
+      if (side === "right" && spaceRight < popoverRect.width && spaceLeft > spaceRight) {
+        side = "left";
+      } else if (side === "left" && spaceLeft < popoverRect.width && spaceRight > spaceLeft) {
+        side = "right";
+      }
+    }
+
     let top = 0;
     let left = 0;
 
@@ -359,6 +398,12 @@ export class Popover extends LitElement {
         top = this._alignVertical(triggerRect, popoverRect, alignment);
         break;
     }
+
+    // Clamp inside the viewport so the popover never spills past the edges.
+    const maxLeft = Math.max(edgePadding, viewportWidth - popoverRect.width - edgePadding);
+    const maxTop = Math.max(edgePadding, viewportHeight - popoverRect.height - edgePadding);
+    left = Math.max(edgePadding, Math.min(left, maxLeft));
+    top = Math.max(edgePadding, Math.min(top, maxTop));
 
     popover.style.top = `${Math.round(top)}px`;
     popover.style.left = `${Math.round(left)}px`;
