@@ -116,7 +116,9 @@
         {{- end -}}
       </div>
 
-      <h4 class="spec-popover-title">{{ $profileName }}</h4>
+      <h4 class="spec-popover-title">
+        {{- with $section -}}{{ .Title }}{{- else -}}{{ $name }}{{- end -}}
+      </h4>
 
       {{- with $section -}}
         {{- $description := .Params.summary_sixty_char | default .Params.summary -}}
