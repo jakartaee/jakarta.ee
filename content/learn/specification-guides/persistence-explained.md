@@ -9,6 +9,17 @@ description: >-
 keywords: ["spec", "specification", "guide", "tutorial", "persistence", "database", "sql", "query", "named", "typed", "data"]
 hide_page_title: true
 categories: ["Specification Guides"]
+related_specifications:
+  - name: "Jakarta Persistence"
+    href: "/specifications/persistence/"
+  - name: "Jakarta Transactions"
+    href: "/specifications/transactions/"
+  - name: "Jakarta Contexts and Dependency Injection"
+    href: "/specifications/cdi/"
+  - name: "Jakarta RESTful Web Services"
+    href: "/specifications/restful-ws/"
+  - name: "Jakarta JSON Binding"
+    href: "/specifications/jsonb/"
 ---
 
 Enterprise applications typically require persistence for data storage. The

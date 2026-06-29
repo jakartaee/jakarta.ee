@@ -8,6 +8,17 @@ description: >-
 keywords: ["spec", "specification", "guide", "rest", "restful", "api", "web services", "http"]
 hide_page_title: true
 categories: ["Specification Guides"]
+related_specifications:
+  - name: "Jakarta RESTful Web Services"
+    href: "/specifications/restful-ws/"
+  - name: "Jakarta JSON Binding"
+    href: "/specifications/jsonb/"
+  - name: "Jakarta JSON Processing"
+    href: "/specifications/jsonp/"
+  - name: "Jakarta Contexts and Dependency Injection"
+    href: "/specifications/cdi/"
+  - name: "Jakarta Security"
+    href: "/specifications/security/"
 ---
 
 Jakarta REST is the solution for development of building Representational State

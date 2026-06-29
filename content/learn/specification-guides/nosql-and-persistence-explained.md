@@ -8,6 +8,13 @@ description: >-
 keywords: ["spec", "specification", "guide", "nosql", "database", "persistence", "data", "store"]
 hide_page_title: true
 categories: ["Specification Guides"]
+related_specifications:
+  - name: "Jakarta Persistence"
+    href: "/specifications/persistence/"
+  - name: "Jakarta NoSQL"
+    href: "/specifications/nosql/"
+  - name: "Jakarta Data"
+    href: "/specifications/data/"
 ---
 
 ## Abstract

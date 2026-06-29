@@ -9,6 +9,13 @@ description: >-
 keywords: ["spec", "specification", "guide", "platform"]
 hide_page_title: true
 categories: ["Specification Guides"]
+related_specifications:
+  - name: "Jakarta EE Platform"
+    href: "/specifications/platform/"
+  - name: "Jakarta EE Web Profile"
+    href: "/specifications/webprofile/"
+  - name: "Jakarta EE Core Profile"
+    href: "/specifications/coreprofile/"
 ---
 
 **The Jakarta EE Platform enables developers to produce

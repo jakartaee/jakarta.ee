@@ -8,6 +8,11 @@ description: >-
 keywords: ['servlet', 'tutorial', 'guide', 'application', 'wildfly']
 hide_page_title: true
 categories: ["Starter Guides"]
+related_specifications:
+  - name: "Jakarta Servlet"
+    href: "/specifications/servlet/"
+  - name: "Jakarta Contexts and Dependency Injection"
+    href: "/specifications/cdi/"
 ---
 
 This guide aims to walk you through the process of building a simple Servlet
