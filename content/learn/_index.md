@@ -27,3 +27,5 @@ page_css_file: "/css/learn.v2.css"
 ---
 
 {{< pages/learn/index >}}
+
+{{< pages/learn/why_jakarta_ee >}}

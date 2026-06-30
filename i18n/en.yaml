@@ -521,6 +521,9 @@ pages-learn-index-badge-starter: Starter
 pages-learn-index-badge-specs: Specs
 pages-learn-index-no-results-title: No guides match your filters
 pages-learn-index-no-results-message: Try removing a filter or clearing your search.
+pages-learn-why-heading-prefix: "Why choose"
+pages-learn-why-subtitle: "Discover why Jakarta EE remains a reliable, enterprise-ready choice."
+pages-learn-why-card-cta: "Read more"
 pages-learn-starter-guides-read-guide: Read Guide
 pages-learn-starter-guides-learn-title: Learn
 pages-learn-starter-guides-learn-describe: A collection of resources to learn Jakarta EE

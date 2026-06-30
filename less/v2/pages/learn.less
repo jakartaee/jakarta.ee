@@ -274,3 +274,86 @@ jee-callout {
     font-weight: 400;
   }
 }
+
+.learn-why-section {
+  background-color: @brand-primary-dark;
+  background-image: url("../images/learn/bg-why-choose.webp");
+  background-size: cover;
+  background-position: center;
+  border-radius: 3rem;
+  padding: 3rem 2rem;
+
+  @media (min-width: @screen-md-min) {
+    padding: 6rem 12rem;
+  }
+  margin-top: 5rem;
+  margin-bottom: 4rem;
+}
+
+.learn-why-heading {
+  font-family: @font-family-heading;
+  font-size: 4.5rem;
+  font-weight: 500;
+  letter-spacing: -0.05em;
+  line-height: 6.5rem;
+  color: @white;
+  margin: 0 0 1rem;
+
+  .learn-why-heading-brand {
+    color: #ff7110;
+  }
+}
+
+.learn-why-subtitle {
+  font-family: @font-family-heading;
+  font-size: 2.6rem;
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  color: @white;
+  margin: 0 0 3.5rem;
+}
+
+.learn-why-cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+
+  @media (min-width: @screen-sm-min) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.learn-why-card {
+  background-color: @white;
+  border-radius: 3rem;
+  box-shadow: 0 4px 37.4px -5px rgba(135, 191, 255, 0.52);
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+
+  .learn-why-card-excerpt {
+    font-family: @font-family-heading;
+    font-size: 2rem;
+    font-weight: 300;
+    letter-spacing: -0.02em;
+    color: #2f4a60;
+    line-height: 3rem;
+    margin: 0 0 3rem;
+    flex: 1;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .learn-why-card-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 1rem;
+    align-self: flex-start;
+
+    svg {
+      flex-shrink: 0;
+    }
+  }
+}
