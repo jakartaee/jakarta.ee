@@ -6,7 +6,7 @@ seo_title: How to Secure a RESTful Web Service Using Jakarta EE | Jakarta EE
 description: >-
   This guide shows you how to secure a rest endpoint using Jakarta
   Authentication. 
-tags: ['rest', 'api', 'service', 'starter', 'authentication', 'auth', 'security']
+guide_topics: ["restful-web-services", "security", "authentication"]
 hide_page_title: true
 weight: 2
 categories: ["Starter Guides"]

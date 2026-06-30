@@ -1,0 +1,37 @@
+{{/*
+  Copyright (c) 2026 Eclipse Foundation AISBL
+  This program and the accompanying materials are made available under the
+  terms of the Eclipse Public License v. 2.0 which is available at
+  http://www.eclipse.org/legal/epl-2.0.
+
+  Contributors:
+    Olivier Goulet <olivier.goulet@eclipse-foundation.org>
+
+  SPDX-License-Identifier: EPL-2.0
+
+  Renders a single guide card on the Learning Hub.
+
+  Params:
+    page  — the Page object for the guide.
+    badge — "starter" or "specs". Drives the visible label and which brand
+            badge variant the pill uses.
+*/}}
+
+{{ $page := .page }}
+{{ $badge := .badge }}
+{{ $badge_label := i18n (printf "pages-learn-index-badge-%s" $badge) }}
+{{/* Map the semantic guide type to a brand badge variant. */}}
+{{ $badge_variants := dict "starter" "tertiary" "specs" "secondary" }}
+{{ $badge_variant := index $badge_variants $badge }}
+
+{{/* `guide_topics` is the section-scoped taxonomy declared in config.toml. */}}
+{{ $topics := $page.Params.guide_topics | default (slice) }}
+{{ $tag_slugs := slice }}
+{{ range $topics }}{{ $tag_slugs = $tag_slugs | append (. | urlize) }}{{ end }}
+{{ $data_tags := delimit ($tag_slugs | uniq) " " }}
+
+<a href="{{ $page.Permalink }}" class="learn-guide-card" data-tags="{{ $data_tags }}">
+  <h3 class="learn-guide-card-title">{{ $page.Title }}</h3>
+  <p class="learn-guide-card-description">{{ $page.Params.description }}</p>
+  <span class="badge badge-{{ $badge_variant }}">{{ $badge_label }}</span>
+</a>

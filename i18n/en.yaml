@@ -512,31 +512,15 @@ pages-committees-website-guidelines-text: This document provides a short summary
 pages-committees-website-guidelines-download: Download Document
 pages-specification-jakarta-ee-release-release-page: Release Page
 pages-specification-jakarta-ee-release-press-release: Press Release
-pages-learn-index-starter-guides-title: Starter Guides
-pages-learn-index-starter-guides-description: Get started with Jakarta EE starter guides.
-pages-learn-index-starter-guides-view: View the Starter Guides
-pages-learn-index-specification-guides-title: Specification Guides
-pages-learn-index-specification-guides-description: Check out our specification guides.
-pages-learn-index-specification-guides-view: View the Specification Guides
-pages-learn-index-documentation-title: Documentation
-pages-learn-index-documentation-description: Check out our documentation.
-pages-learn-index-documentation-tutorial: Jakarta EE Tutorial
-pages-learn-index-documentation-first-cup: Jakarta EE First Cup
-pages-learn-index-documentation-cargotracker: CargoTracker Example Application
-pages-learn-index-why-jakarta-ee-title: Why Jakarta EE?
-pages-learn-index-why-jakarta-ee-description: "    <p>\n      Discover why Jakarta EE remains a reliable, enterprise-ready choice:\n    </p>\n    <a href='/news/2025/07/31/beyond-the-hype-10-reasons-jakarta-ee-is-still-the-smartest-choice/'>Beyond the Hype: Why Jakarta EE is Still the Smartest Choice</a>\n  "
-pages-learn-index-jakarta-ee-project-title: Generate a Jakarta EE Project
-pages-learn-index-starter-heading: Try the Jakarta EE Starter
-pages-learn-index-starter-description: "    Use the Jakarta EE Starter to quickly generate sample code for simple\n    microservices projects and kickstart your learning.\n  "
-pages-learn-index-starter-start: Start a Project
-pages-learn-index-jakarta-ee-overview-course-title: Jakarta EE Overview Course
-pages-learn-index-jakarta-ee-overview-course-instructor: Instructor
-pages-learn-index-jakarta-ee-overview-course-instructor-describe: Java Champion and Jakarta EE Developer Advocate
-pages-learn-index-jakarta-ee-overview-course-describe: Do you need an overview of Jakarta EE as a whole? In this course, Java Champion and Jakarta EE Developer Advocate Ivar Grimstad guides you through the purpose of Jakarta EE and the specifications that you will need to understand. Ivar presents a quick overview of Jakarta EE, its specifications and implementations, the containers you will use for different component types, and the standard units for deployments. He goes into more depth on the Jakarta EE Platform, then dives into Web Profiles and Core Profiles. Packed with useful tips and practical challenges, this course can help you to decide the next steps in your Jakarta EE journey.
-pages-learn-index-jakarta-ee-overview-course-enroll: Enroll in our course today!
-pages-learn-index-videos-title: Videos
-pages-learn-index-videos-view-more: View More Videos
-pages-learn-index-videos-youtube: Watch on YouTube
+pages-learn-index-guides-heading: Guides
+pages-learn-index-search-placeholder: Find a guide
+pages-learn-index-search-label: Search guides
+pages-learn-index-callout-message: Generate a Jakarta EE project template and begin building right away.
+pages-learn-index-callout-cta: Get started
+pages-learn-index-badge-starter: Starter
+pages-learn-index-badge-specs: Specs
+pages-learn-index-no-results-title: No guides match your filters
+pages-learn-index-no-results-message: Try removing a filter or clearing your search.
 pages-learn-starter-guides-read-guide: Read Guide
 pages-learn-starter-guides-learn-title: Learn
 pages-learn-starter-guides-learn-describe: A collection of resources to learn Jakarta EE

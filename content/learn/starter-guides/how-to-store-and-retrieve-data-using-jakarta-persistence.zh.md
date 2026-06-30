@@ -7,6 +7,7 @@ description: >-
 hide_page_title: true
 weight: 2
 categories: ["Starter Guides"]
+guide_topics: ["persistence", "data"]
 ---
 
 本指南向您展示如何使用[Jakarta Persistence](/specifications/persistence/)来存储和检索数据。

@@ -6,7 +6,7 @@ description: >-
   The Jakarta Persistence specification, also known as Jakarta Persistence API
   (JPA), encompasses a number of APIs that facilitate the creation, reading,
   updating, and deletion of data within data stores.
-keywords: ["spec", "specification", "guide", "tutorial", "persistence", "database", "sql", "query", "named", "typed", "data"]
+guide_topics: ["persistence", "data"]
 hide_page_title: true
 categories: ["Specification Guides"]
 related_specifications:

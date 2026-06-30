@@ -5,7 +5,7 @@ headline: "Jakarta Servlet, Jakarta Faces and Jakarta Server Pages Explained"
 description: >-
   The Jakarta EE Platform offers a number of APIs that can be used to create
   web based user interfaces. 
-keywords: ["tutorial", "guide", "specification", "spec", "servlet", "faces", "server pages", "jsp", "views", "html"]
+guide_topics: ["servlets", "faces", "server-pages"]
 hide_page_title: true
 categories: ["Specification Guides"]
 related_specifications:

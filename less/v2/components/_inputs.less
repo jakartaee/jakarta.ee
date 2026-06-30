@@ -1,0 +1,110 @@
+/*!
+ * Copyright (c) 2026 Eclipse Foundation AISBL
+ *
+ * This program and the accompanying materials are made available under the
+ * terms of the Eclipse Public License v. 2.0 which is available at
+ * http://www.eclipse.org/legal/epl-2.0.
+ *
+ * Contributors:
+ *   Olivier Goulet <olivier.goulet@eclipse-foundation.org>
+ *
+ * SPDX-License-Identifier: EPL-2.0
+*/
+
+@import (reference) '../_variables.less';
+
+@input-bg: @white;
+@input-color: @brand-primary-dark;
+@input-radius: 1rem;
+@input-height: 4.4rem;
+@input-padding-x: 2rem;
+@input-shadow: 0 4px 37.4px -5px rgba(135, 191, 255, 0.52);
+
+// Override Bootstrap 3's .form-control so any BS3 input picks up the new
+// look without per-page tweaks.
+.form-control {
+  background-color: @input-bg;
+  border: 1px solid transparent;
+  border-radius: @input-radius;
+  box-shadow: @input-shadow;
+  color: @input-color;
+  height: @input-height;
+  padding: 0 @input-padding-x;
+  font-family: @font-family-heading;
+  font-size: 1.6rem;
+  font-weight: 500;
+
+  &::placeholder {
+    color: @input-color;
+    // Browsers dim placeholders to ~54% — we want full brand colour here.
+    opacity: 1;
+  }
+
+  &:focus {
+    border-color: @input-color;
+    box-shadow: @input-shadow;
+    outline: 0;
+  }
+}
+
+// Base checkbox style: hollow square outline, no native chrome. Color is
+// inherited from `currentColor` so each context (sidebar, form, etc.) can
+// drive it via the surrounding text colour.
+input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 1.6rem;
+  height: 1.6rem;
+  margin: 0;
+  border: 1px solid currentColor;
+  border-radius: 2px;
+  background-color: transparent;
+  cursor: pointer;
+  vertical-align: middle;
+  position: relative;
+  flex-shrink: 0;
+
+  &:checked {
+    background-color: currentColor;
+
+    // Inset check mark drawn with two borders rotated to form a tick.
+    // White stroke contrasts the filled background regardless of inherited
+    // colour.
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0.45rem;
+      top: 0.1rem;
+      width: 0.4rem;
+      height: 0.8rem;
+      border: solid @white;
+      border-width: 0 2px 2px 0;
+      transform: rotate(45deg);
+    }
+  }
+
+  &:focus-visible {
+    outline: 2px solid currentColor;
+    outline-offset: 2px;
+  }
+}
+
+// When .form-control sits inside an .input-group (e.g. with a search icon
+// addon), the wrapper carries the visual chrome so the input + addon read as
+// a single rounded card.
+.input-group {
+  background-color: @input-bg;
+  border-radius: @input-radius;
+  box-shadow: @input-shadow;
+
+  .form-control,
+  .input-group-addon {
+    background-color: transparent;
+    border-color: transparent;
+    box-shadow: none;
+  }
+
+  .input-group-addon {
+    color: @input-color;
+  }
+}

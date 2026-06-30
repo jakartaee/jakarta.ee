@@ -21,6 +21,7 @@ import scrollSnapCarousel from "./scroll-snap-carousel";
 import { setupRotatingText } from "./rotating-text";
 import { FeaturedStoryPopup } from "@eclipsefdn/solstice-components";
 import fadeGroup from 'eclipsefdn-solstice-assets/js/animations/fade-group';
+import "./learning-hub";
 
 FeaturedStoryPopup.register();
 
