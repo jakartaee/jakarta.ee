@@ -11,9 +11,24 @@ years:
 dir: /about/meeting_minutes/
 items:
   marketing_committee:
+    - url: marketing_committee/minutes-marketing-0528-2026.pdf
+      title: 28 May 2026 (pdf)
+      year: 2026
+    - url: marketing_committee/minutes-marketing-0514-2026.pdf
+      title: 14 May 2026 (pdf)
+      year: 2026
+    - url: marketing_committee/minutes-marketing-0430-2026.pdf
+      title: 30 April 2026 (pdf)
+      year: 2026
+    - url: marketing_committee/minutes-marketing-0319-2026.pdf
+      title: 19 March 2026 (pdf)
+      year: 2026
+    - url: marketing_committee/minutes-marketing-0305-2026.pdf
+      title: 5 March 2026 (pdf)
+      year: 2026
     - url: marketing_committee/minutes-marketing-0219-2026.pdf
       title: 19 February 2026 (pdf)
-      year: 2026 
+      year: 2026
     - url: marketing_committee/minutes-marketing-0205-2026.pdf
       title: 5 February 2026 (pdf)
       year: 2026
@@ -1411,6 +1426,15 @@ items:
       year: 2018
 
   steering_committee:
+    - url: steering_committee/minutes-june-16-2026.pdf
+      title: 16 June 2026 (pdf)
+      year: 2026
+    - url: steering_committee/minutes-june-2-2026.pdf
+      title: 2 June 2026 (pdf)
+      year: 2026
+    - url: steering_committee/minutes-may-5-2026.pdf
+      title: 5 May 2026 (pdf)
+      year: 2026
     - url: steering_committee/minutes-march-24-2026.pdf
       title: 24 March 2026 (pdf)
       year: 2026
