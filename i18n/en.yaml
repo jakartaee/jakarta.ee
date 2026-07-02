@@ -534,6 +534,8 @@ pages-learn-starter-guides-find-release-read-more: Read more
 pages-learn-starter-guides-download-products-title: Download Compatible Products
 pages-learn-starter-guides-download-products-describe: See all Jakarta EE Compatible certified products to help build your cloud native application.
 pages-learn-starter-guides-download-products-read-more: Read more
+pages-learn-overview-course-title: "Jakarta EE Overview Course"
+pages-learn-overview-course-description: "In this course, Jakarta EE Developer Advocate Ivar Grimstad introduces the purpose of Jakarta EE and the specifications you need to understand. He covers key specifications and implementations, containers for different component types, standard deployment units, the Jakarta EE Platform, and the Web and Core Profiles. With practical tips and challenges throughout, this course helps you decide your next steps in Jakarta EE."
 pages-supporters-sponsor-header-description: <p class="fw-500">Become a sponsor of the Jakarta EE Working Group and</p><h2 class="big-text uppercase text-secondary">Empower the Future of Enterprise Java</h2><p class="section-featured-text text-primary">Your organisation will play a pivotal role in shaping the future of open source enterprise Java and ensuring the continued growth and success of the global Java community.</p>
 pages-supporters-sponsor-by-joining-header-title: 'By joining our sponsorship program:'
 pages-supporters-sponsor-by-joining-support: <h3 class="heading-underline"><div class="small">Your</div><div>Support</div></h3><p class="featured-section-cta-item-body">will help us maintain and expand our initiatives.</p>
