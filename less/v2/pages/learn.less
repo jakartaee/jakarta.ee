@@ -209,11 +209,18 @@ main {
 
 jee-callout {
   display: block;
-  border: 1px solid #5ea9ff;
   border-radius: 3rem;
   padding: 3rem;
   color: @brand-primary-dark;
   text-align: left;
+  border: 0;
+  background: linear-gradient(to top right, @white 65%, #cde3ff);
+  background: linear-gradient(in oklch to top right, @white 65%, #cde3ff);
+
+  @media (min-width: @screen-md-min) {
+    border: 1px solid #5ea9ff;
+    background: transparent;
+  }
 
   .jee-callout-icon {
     display: block;
@@ -363,7 +370,8 @@ jee-callout {
   flex-direction: column;
   gap: 3rem;
   padding: 10rem 0 5rem;
-  margin-bottom: 4rem;
+  margin: 0 auto 4rem;
+  max-width: 92.5rem;
 
   @media (min-width: @screen-md-min) {
     flex-direction: row;
@@ -421,13 +429,15 @@ jee-callout {
 }
 
 .learn-overview-course-banner {
-  // Mobile: full viewport width, same height as the card wrapper (no protrusion).
+  // Centered banner, capped at 80rem. Uses 100vw so narrow viewports still get
+  // an edge-to-edge background; the max-width caps wider viewports.
   position: absolute;
   top: 0;
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
   width: 100vw;
+  max-width: 80rem;
   overflow: hidden;
   background: linear-gradient(358deg, #81bbff 27%, #f2f8ff 89%);
   background: linear-gradient(in oklch 358deg, #81bbff 27%, #f2f8ff 89%);
@@ -446,15 +456,11 @@ jee-callout {
     pointer-events: none;
   }
 
-  // Desktop: contained inside the layout container, inset from top/bottom so
-  // the card protrudes above and below the banner.
+  // Desktop: inset from top/bottom so the card protrudes above and below the
+  // banner, and round the corners now that the banner is a bounded strip.
   @media (min-width: @screen-md-min) {
     top: 5rem;
     bottom: 5rem;
-    left: 0;
-    right: 0;
-    width: auto;
-    transform: none;
     border-radius: 3rem;
   }
 }
