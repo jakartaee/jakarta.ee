@@ -362,7 +362,7 @@ jee-callout {
   display: flex;
   flex-direction: column;
   gap: 3rem;
-  padding: 5rem 0;
+  padding: 10rem 0 5rem;
   margin-bottom: 4rem;
 
   @media (min-width: @screen-md-min) {
@@ -404,5 +404,108 @@ jee-callout {
     font-weight: 400;
     line-height: 2.8rem;
     margin: 0;
+  }
+}
+
+.learn-overview-course-enroll {
+  // Mobile: wrapper padding gives the banner vertical breathing room above
+  // and below the card (banner is absolutely positioned to the padding edge,
+  // so it extends past the card top and bottom).
+  position: relative;
+  padding: 3rem 0;
+  margin-bottom: 4rem;
+
+  @media (min-width: @screen-md-min) {
+    padding: 0;
+  }
+}
+
+.learn-overview-course-banner {
+  // Mobile: full viewport width, same height as the card wrapper (no protrusion).
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100vw;
+  overflow: hidden;
+  background: linear-gradient(358deg, #81bbff 27%, #f2f8ff 89%);
+  background: linear-gradient(in oklch 358deg, #81bbff 27%, #f2f8ff 89%);
+
+  // Background image overlay applied via ::before so it can use mix-blend-mode
+  // without dragging card content into the blend.
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url("../images/learn/bg-overview-course.webp");
+    background-size: cover;
+    background-position: center bottom;
+    mix-blend-mode: overlay;
+    opacity: 0.6;
+    pointer-events: none;
+  }
+
+  // Desktop: contained inside the layout container, inset from top/bottom so
+  // the card protrudes above and below the banner.
+  @media (min-width: @screen-md-min) {
+    top: 5rem;
+    bottom: 5rem;
+    left: 0;
+    right: 0;
+    width: auto;
+    transform: none;
+    border-radius: 3rem;
+  }
+}
+
+.learn-overview-course-card {
+  position: relative;
+  z-index: 1;
+  max-width: 40rem;
+  margin: 0 auto;
+  background-color: @white;
+  border-radius: 3rem;
+  box-shadow: 0 4px 37.4px -5px rgba(135, 191, 255, 0.52);
+  padding: 4rem 1rem;
+  text-align: center;
+  font-family: @font-family-heading;
+
+  @media (min-width: @screen-md-min) {
+    padding: 4rem 2rem;
+  }
+
+  .learn-overview-course-instructor-label {
+    font-size: 1.6rem;
+    font-weight: 500;
+    letter-spacing: -0.04em;
+    margin: 0 0 1.5rem;
+  }
+
+  .learn-overview-course-instructor-name {
+    font-size: 3rem;
+    font-weight: 600;
+    letter-spacing: -0.024em;
+    line-height: 1;
+    margin: 0 0 1rem;
+  }
+
+  .learn-overview-course-instructor-title {
+    font-size: 1.6rem;
+    font-weight: 400;
+    letter-spacing: -0.024em;
+    line-height: 1.2;
+    margin: 0 0 3rem;
+  }
+
+  .learn-overview-course-preview {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0 auto 3rem;
+  }
+
+  .learn-overview-course-cta {
+    display: inline-block;
   }
 }
