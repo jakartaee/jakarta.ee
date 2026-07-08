@@ -18,9 +18,9 @@
 {{- $participationFees := i18n "membership-fees-participation-fees" -}}
 
 {{- $levels := slice
-  (dict "titleKey" "membership-level-strategic-title" "descKey" "membership-level-strategic-desc" "price" "\u20ac20k \u2013 \u20ac260k" "class" "card text-primary d-flex flex-column justify-content-between")
-  (dict "titleKey" "membership-level-enterprise-title" "descKey" "membership-level-enterprise-desc" "price" "\u20ac8k \u2013 \u20ac40k" "class" "card text-primary border-primary d-flex flex-column justify-content-between")
-  (dict "titleKey" "membership-level-participant-title" "descKey" "membership-level-participant-desc" "price" "\u20ac0 \u2013 \u20ac15k" "class" "card text-primary d-flex flex-column justify-content-between")
+  (dict "titleKey" "membership-level-strategic-title" "descKey" "membership-level-strategic-desc" "price" "€20k – €260k" "class" "card text-primary d-flex flex-column justify-content-between")
+  (dict "titleKey" "membership-level-enterprise-title" "descKey" "membership-level-enterprise-desc" "price" "€8k – €40k" "class" "card text-primary border-primary d-flex flex-column justify-content-between")
+  (dict "titleKey" "membership-level-participant-title" "descKey" "membership-level-participant-desc" "price" "€0 – €15k" "class" "card text-primary d-flex flex-column justify-content-between")
 -}}
 
 
@@ -83,42 +83,42 @@
             </thead>
             <tbody>
               <tr>
-                <td>> 1$ billion</td>
-                <td>$300,000</td>
-                <td>$50,000</td>
-                <td>$20,000</td>
+                <td>&gt; €1 billion</td>
+                <td>€260,000</td>
+                <td>€40,000</td>
+                <td>€15,000</td>
               </tr>
               <tr>
-                <td>$500 million - 1$ billion</td>
-                <td>$200,000</td>
-                <td>$35,000</td>
-                <td>$15,000</td>
+                <td>€500 million – €1 billion</td>
+                <td>€170,000</td>
+                <td>€25,000</td>
+                <td>€10,000</td>
               </tr>
               <tr>
-                <td>$100 million - $500 million</td>
-                <td>$100,000</td>
-                <td>$20,000</td>
-                <td>$10,000</td>
+                <td>€100 million – €500 million</td>
+                <td>€85,000</td>
+                <td>€15,000</td>
+                <td>€8,000</td>
               </tr>
               <tr>
-                <td>$10 million - $100 million</td>
-                <td>$50,000</td>
-                <td>$10,000</td>
-                <td>$7,500</td>
+                <td>€10 million – €100 million</td>
+                <td>€40,000</td>
+                <td>€8,000</td>
+                <td>€6,000</td>
               </tr>
               <tr>
-                <td>&lt; $10 million</td>
-                <td>$25,000</td>
-                <td>$10,000</td>
-                <td>$5,000</td>
+                <td>&lt;= €10 million</td>
+                <td>€20,000</td>
+                <td>€8,000</td>
+                <td>€4,000</td>
               </tr>
               <tr>
                 <td>
-                  &lt; $1 million and &lt; 10 employees, and Java user groups
+                  &lt; €1 million and &lt; 10 employees, and Java user groups
                 </td>
                 <td>N/A</td>
                 <td>N/A</td>
-                <td>$0</td>
+                <td>€0</td>
               </tr>
             </tbody>
           </table>
@@ -130,7 +130,7 @@
             </h3>
             <div class="membership-fees-row">
               <p class="font-semibold text-base text-primary margin-bottom-10">
-                > 1$ billion
+                &gt; €1 billion
               </p>
               <div class="membership-fees-values grid gap-2">
                 <div class="d-flex flex-col">
@@ -138,27 +138,27 @@
                     class="text-xs font-semibold text-primary text-uppercase"
                     >Strategic</span
                   >
-                  <span class="text-sm font-semibold">$300,000</span>
+                  <span class="text-sm font-semibold">€260,000</span>
                 </div>
                 <div class="d-flex flex-col">
                   <span
                     class="text-xs font-semibold text-primary text-uppercase"
                     >Enterprise</span
                   >
-                  <span class="text-sm font-semibold">$50,000</span>
+                  <span class="text-sm font-semibold">€40,000</span>
                 </div>
                 <div class="d-flex flex-col">
                   <span
                     class="text-xs font-semibold text-primary text-uppercase"
                     >Participant</span
                   >
-                  <span class="text-sm font-semibold">$20,000</span>
+                  <span class="text-sm font-semibold">€15,000</span>
                 </div>
               </div>
             </div>
             <div class="membership-fees-row">
               <p class="font-semibold text-base text-primary margin-bottom-10">
-                $500 million - 1$ billion
+                €500 million – €1 billion
               </p>
               <div class="membership-fees-values grid gap-2">
                 <div class="d-flex flex-col">
@@ -166,27 +166,27 @@
                     class="text-xs font-semibold text-primary text-uppercase"
                     >Strategic</span
                   >
-                  <span class="text-sm font-semibold">$200,000</span>
+                  <span class="text-sm font-semibold">€170,000</span>
                 </div>
                 <div class="d-flex flex-col">
                   <span
                     class="text-xs font-semibold text-primary text-uppercase"
                     >Enterprise</span
                   >
-                  <span class="text-sm font-semibold">$35,000</span>
+                  <span class="text-sm font-semibold">€25,000</span>
                 </div>
                 <div class="d-flex flex-col">
                   <span
                     class="text-xs font-semibold text-primary text-uppercase"
                     >Participant</span
                   >
-                  <span class="text-sm font-semibold">$15,000</span>
+                  <span class="text-sm font-semibold">€10,000</span>
                 </div>
               </div>
             </div>
             <div class="membership-fees-row">
               <p class="font-semibold text-base text-primary margin-bottom-10">
-                $100 million - $500 million
+                €100 million – €500 million
               </p>
               <div class="membership-fees-values grid gap-2">
                 <div class="d-flex flex-col">
@@ -194,27 +194,27 @@
                     class="text-xs font-semibold text-primary text-uppercase"
                     >Strategic</span
                   >
-                  <span class="text-sm font-semibold">$100,000</span>
+                  <span class="text-sm font-semibold">€85,000</span>
                 </div>
                 <div class="d-flex flex-col">
                   <span
                     class="text-xs font-semibold text-primary text-uppercase"
                     >Enterprise</span
                   >
-                  <span class="text-sm font-semibold">$20,000</span>
+                  <span class="text-sm font-semibold">€15,000</span>
                 </div>
                 <div class="d-flex flex-col">
                   <span
                     class="text-xs font-semibold text-primary text-uppercase"
                     >Participant</span
                   >
-                  <span class="text-sm font-semibold">$10,000</span>
+                  <span class="text-sm font-semibold">€8,000</span>
                 </div>
               </div>
             </div>
             <div class="membership-fees-row">
               <p class="font-semibold text-base text-primary margin-bottom-10">
-                $10 million - $100 million
+                €10 million – €100 million
               </p>
               <div class="membership-fees-values grid gap-2">
                 <div class="d-flex flex-col">
@@ -222,27 +222,27 @@
                     class="text-xs font-semibold text-primary text-uppercase"
                     >Strategic</span
                   >
-                  <span class="text-sm font-semibold">$50,000</span>
+                  <span class="text-sm font-semibold">€40,000</span>
                 </div>
                 <div class="d-flex flex-col">
                   <span
                     class="text-xs font-semibold text-primary text-uppercase"
                     >Enterprise</span
                   >
-                  <span class="text-sm font-semibold">$10,000</span>
+                  <span class="text-sm font-semibold">€8,000</span>
                 </div>
                 <div class="d-flex flex-col">
                   <span
                     class="text-xs font-semibold text-primary text-uppercase"
                     >Participant</span
                   >
-                  <span class="text-sm font-semibold">$7,500</span>
+                  <span class="text-sm font-semibold">€6,000</span>
                 </div>
               </div>
             </div>
             <div class="membership-fees-row">
               <p class="font-semibold text-base text-primary margin-bottom-10">
-                &lt; $10 million
+                &lt;= €10 million
               </p>
               <div class="membership-fees-values grid gap-2">
                 <div class="d-flex flex-col">
@@ -250,27 +250,27 @@
                     class="text-xs font-semibold text-primary text-uppercase"
                     >Strategic</span
                   >
-                  <span class="text-sm font-semibold">$25,000</span>
+                  <span class="text-sm font-semibold">€20,000</span>
                 </div>
                 <div class="d-flex flex-col">
                   <span
                     class="text-xs font-semibold text-primary text-uppercase"
                     >Enterprise</span
                   >
-                  <span class="text-sm font-semibold">$10,000</span>
+                  <span class="text-sm font-semibold">€8,000</span>
                 </div>
                 <div class="d-flex flex-col">
                   <span
                     class="text-xs font-semibold text-primary text-uppercase"
                     >Participant</span
                   >
-                  <span class="text-sm font-semibold">$5,000</span>
+                  <span class="text-sm font-semibold">€4,000</span>
                 </div>
               </div>
             </div>
             <div class="membership-fees-row">
               <p class="font-semibold text-base text-primary margin-bottom-10">
-                &lt; $1 million and &lt; 10 employees, and Java user groups
+                &lt; €1 million and &lt; 10 employees, and Java user groups
               </p>
               <div class="membership-fees-values grid gap-2">
                 <div class="d-flex flex-col">
@@ -292,7 +292,7 @@
                     class="text-xs font-semibold text-primary text-uppercase"
                     >Participant</span
                   >
-                  <span class="text-sm font-semibold">$0</span>
+                  <span class="text-sm font-semibold">€0</span>
                 </div>
               </div>
             </div>
