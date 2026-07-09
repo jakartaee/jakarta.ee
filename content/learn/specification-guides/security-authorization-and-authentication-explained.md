@@ -9,6 +9,13 @@ description: >-
 keywords: ["security", "authorization", "authentication", "specification", "spec", "guide", "tutorial"]
 hide_page_title: true
 categories: ["Specification Guides"]
+related_specifications:
+  - name: "Jakarta Security"
+    href: "/specifications/security/"
+  - name: "Jakarta Authorization"
+    href: "/specifications/authorization/"
+  - name: "Jakarta Authentication"
+    href: "/specifications/authentication/"
 ---
 
 Security is a major component of application development.  Jakarta EE provides

@@ -13,13 +13,11 @@ years:
     url: https://vaadin.com/vaadin-create-2026
     location: Barcelona 🇪🇸
     date: Oct 27-28
-    upcoming: true    
 
   - name: dev2next
     url: https://www.dev2next.com/
     location: Lone Tree, CO 🇺🇸
     date: Oct 12-15
-    upcoming: true    
 
   - name: New York Java SIG
     url: https://www.javasig.com
@@ -56,19 +54,17 @@ years:
     url: https://jconfdominicana.org
     location: Santiago 🇩🇴
     date: Jul 17-18
-    upcoming: true    
 
   - name: JakartaOne Dominican Republic
     url: https://jakartaone.jakarta.ee/jakartaone-dominican-republic-2026/
     location: Santiago 🇩🇴
     date: Jul 16
-    upcoming: true    
 
   - name: Code the continuum
     url: https://ceisphere.eu/events/code-continuum
     location: Cagliari 🇮🇹
     date: Jun 31-Jul 1
-    upcoming: true    
+    blog: https://www.agilejava.eu/2026/07/08/code-the-continuum-2026/ 
 
   - name: Cluj Innovation Days + SKILLAB
     url: https://clujinnovationdays.com

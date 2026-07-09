@@ -8,6 +8,13 @@ description: >-
 keywords: ["tutorial", "guide", "specification", "spec", "servlet", "faces", "server pages", "jsp", "views", "html"]
 hide_page_title: true
 categories: ["Specification Guides"]
+related_specifications:
+  - name: "Jakarta Faces"
+    href: "/specifications/faces/"
+  - name: "Jakarta Pages"
+    href: "/specifications/pages/"
+  - name: "Jakarta Contexts and Dependency Injection"
+    href: "/specifications/cdi/"
 ---
 
 The Jakarta EE Platform offers a number of APIs that can be used to create web

@@ -9,6 +9,17 @@ description: >-
 keywords: ["spec", "specification", "guide", "dependency injection", "design pattern", "contexts", "cdi", "scope assignment", "tutorial"]
 hide_page_title: true
 categories: ["Specification Guides"]
+related_specifications:
+  - name: "Jakarta Contexts and Dependency Injection"
+    href: "/specifications/cdi/"
+  - name: "Jakarta Interceptors"
+    href: "/specifications/interceptors/"
+  - name: "Jakarta Enterprise Beans"
+    href: "/specifications/enterprise-beans/"
+  - name: "Jakarta RESTful Web Services"
+    href: "/specifications/restful-ws/"
+  - name: "Jakarta Transactions"
+    href: "/specifications/transactions/"
 ---
 
 Jakarta Dependency Injection provides the ability to make

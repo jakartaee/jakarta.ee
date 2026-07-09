@@ -7,6 +7,8 @@
   {{ partial "sidebars/news" . }}
 {{ else if eq .Section "community" }}
   {{ partial "sidebars/community" . }}
+{{ else if eq .Section "learn" }}
+  {{ partial "sidebars/learn" . }}
 {{ else }}
   {{ partial "sidebars/default" . }}
 {{ end }}
