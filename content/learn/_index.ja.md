@@ -1,5 +1,5 @@
 ---
-title: "Learning Hub"
+title: "Learning hub"
 body_class: "learn-page"
 header_wrapper_class: "header-secondary-bg-img header-learn"
 headline: ~
@@ -8,7 +8,7 @@ custom_jumbotron_class: "col-xs-24"
 custom_jumbotron: |
   <div class="row">
     <div class="col-md-9">
-      <h1>Learning Hub</h1>
+      <h1>Learning hub</h1>
     </div>
     <div class="col-md-15">
       <p>

@@ -340,7 +340,7 @@ jee-callout {
 
   .learn-why-card-excerpt {
     font-family: @font-family-heading;
-    font-size: 2rem;
+    font-size: 1.6rem;
     font-weight: 300;
     letter-spacing: -0.02em;
     color: #2f4a60;
@@ -381,7 +381,6 @@ jee-callout {
 
   .learn-overview-course-heading {
     flex-shrink: 0;
-    text-align: right;
     font-family: @font-family-heading;
     font-size: 4.5rem;
     font-weight: 500;
@@ -391,6 +390,10 @@ jee-callout {
 
     span {
       display: block;
+    }
+
+    @media (min-width: @screen-md-min) {
+      text-align: right;
     }
   }
 
