@@ -401,7 +401,7 @@ jakarta-ee-china-section-index-getlisted-signup: 加入 Jakarta EE 中国社区
 jakarta-ee-china-section-index-memberlist: 成员列表
 pages-specification-jakarta-ee-release-release-page: 发布页面
 pages-specification-jakarta-ee-release-press-release: 发布新闻
-pages-learn-starter-guides-read-guide: 阅读向导
+pages-learn-starter-guides-read-guide: 阅读指南
 pages-learn-starter-guides-learn-title: 学习
 pages-learn-starter-guides-learn-describe: Jakarta EE学习资源的集合
 pages-learn-starter-guides-learn-read-more: 了解更多
@@ -426,3 +426,12 @@ pages-supporters-sponsor-become-a-sponsor: 成为赞助商
 pages-supporters-sponsor-contact-us: 联系我们
 pages-supporters-sponsor-thank-you: 谢谢！
 pages-supporters-sponsor-usage-description: Jakarta EE 成员标志可由战略成员、企业成员、参与成员和个体提交者成员使用，这些成员必须是工作组的当前成员，以标识他们的参与并表达他们对该计划的支持。使用 Jakarta EE 成员标志需遵守 Jakarta EE 商标指南。
+pages-learn-index-guides-heading: 指南
+pages-learn-index-search-placeholder: 查找指南
+pages-learn-index-search-label: 搜索指南
+pages-learn-index-callout-message: 生成 Jakarta EE 项目模板，立即开始构建。
+pages-learn-index-callout-cta: 开始使用
+pages-learn-index-badge-starter: 入门
+pages-learn-index-badge-specs: 规范
+pages-learn-index-no-results-title: 没有指南符合您的筛选条件
+pages-learn-index-no-results-message: 请尝试移除筛选或清除搜索。
