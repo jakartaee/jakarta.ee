@@ -10,15 +10,20 @@
  * SPDX-License-Identifier: EPL-2.0
  */
 
+import { LitElement } from "lit";
+
 /**
  * Root container for the Learning Hub app.
  *
- * State-only custom element — Hugo renders the cards into the light DOM,
- * the host element listens for `jee-search` and `jee-filter-change` events
- * bubbled from descendant search bars / filter checkboxes and filters the
- * cards in place.
+ * Hugo renders the guide cards and the empty-state block into the light DOM
+ * of this element. The component listens for bubbled `jee-search` and
+ * `jee-filter-change` events and reapplies the filter imperatively.
+ *
+ * No template — state lives in plain instance fields, not reactive
+ * properties, because we don't render our own DOM. LitElement's default
+ * `render()` returns `noChange`, so the light-DOM children stay intact.
  */
-export class LearningHub extends HTMLElement {
+export class LearningHub extends LitElement {
   constructor() {
     super();
     this._query = "";
@@ -26,19 +31,13 @@ export class LearningHub extends HTMLElement {
     this._selectedTags = [];
   }
 
+  // Skip shadow DOM: Hugo owns the light-DOM children we filter.
+  createRenderRoot() {
+    return this;
+  }
+
   connectedCallback() {
-    // Arrow functions — capture `this` lexically, no constructor bind dance.
-    this._onSearch = (event) => {
-      const detail = event && event.detail;
-      this._query = detail && detail.value != null ? String(detail.value) : "";
-      this._applyFilters();
-    };
-    this._onFilter = (event) => {
-      const detail = event && event.detail;
-      this._selectedTags =
-        detail && Array.isArray(detail.selected) ? detail.selected : [];
-      this._applyFilters();
-    };
+    super.connectedCallback();
     this.addEventListener("jee-search", this._onSearch);
     this.addEventListener("jee-filter-change", this._onFilter);
     this._applyFilters();
@@ -47,6 +46,7 @@ export class LearningHub extends HTMLElement {
   disconnectedCallback() {
     this.removeEventListener("jee-search", this._onSearch);
     this.removeEventListener("jee-filter-change", this._onFilter);
+    super.disconnectedCallback();
   }
 
   get query() {
@@ -56,6 +56,19 @@ export class LearningHub extends HTMLElement {
   get selectedTags() {
     return [...this._selectedTags];
   }
+
+  _onSearch = (event) => {
+    const detail = event && event.detail;
+    this._query = detail && detail.value != null ? String(detail.value) : "";
+    this._applyFilters();
+  };
+
+  _onFilter = (event) => {
+    const detail = event && event.detail;
+    this._selectedTags =
+      detail && Array.isArray(detail.selected) ? detail.selected : [];
+    this._applyFilters();
+  };
 
   _applyFilters() {
     const query = this._query.trim().toLowerCase();
