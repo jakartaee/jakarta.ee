@@ -54,11 +54,11 @@ export class SearchBar extends LitElement {
     const inputId = this._inputId ??= `jee-search-bar-${++SearchBar._idSeq}`;
     return html`
       <label class="sr-only" for=${inputId}>${this.label}</label>
-      <div class="input-group">
+      <div class="input-group glow">
         <input
           id=${inputId}
           type="search"
-          class="form-control"
+          class="form-control border-transparent"
           placeholder=${this.placeholder}
           .value=${this.value}
           @input=${this._handleInput}

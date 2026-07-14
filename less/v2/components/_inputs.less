@@ -15,18 +15,17 @@
 
 @input-bg: @white;
 @input-color: @brand-primary-dark;
+@input-border: @light-grey;
 @input-radius: 1rem;
 @input-height: 4.4rem;
 @input-padding-x: 2rem;
-@input-shadow: 0 4px 37.4px -5px rgba(135, 191, 255, 0.52);
 
 // Override Bootstrap 3's .form-control so any BS3 input picks up the new
 // look without per-page tweaks.
 .form-control {
   background-color: @input-bg;
-  border: 1px solid transparent;
+  border: 1px solid @input-border;
   border-radius: @input-radius;
-  box-shadow: @input-shadow;
   color: @input-color;
   height: @input-height;
   padding: 0 @input-padding-x;
@@ -36,13 +35,10 @@
 
   &::placeholder {
     color: @input-color;
-    // Browsers dim placeholders to ~54% — we want full brand colour here.
-    opacity: 1;
   }
 
   &:focus {
     border-color: @input-color;
-    box-shadow: @input-shadow;
     outline: 0;
   }
 }
@@ -95,7 +91,6 @@ input[type="checkbox"] {
 .input-group {
   background-color: @input-bg;
   border-radius: @input-radius;
-  box-shadow: @input-shadow;
 
   .form-control,
   .input-group-addon {
