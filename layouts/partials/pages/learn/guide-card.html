@@ -45,7 +45,7 @@
 
 {{ $badge_label := i18n (printf "pages-learn-index-badge-%s" $badge) }}
 {{/* Map the semantic guide type to a brand badge variant. */}}
-{{ $badge_variants := dict "starter" "tertiary" "specs" "secondary" "tutorial" "quaternary" }}
+{{ $badge_variants := dict "starter" "tertiary" "specs" "secondary" "tutorial" "primary" }}
 {{ $badge_variant := index $badge_variants $badge }}
 
 {{ $tag_slugs := slice }}
