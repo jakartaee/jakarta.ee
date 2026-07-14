@@ -12,26 +12,48 @@
   Renders a single guide card on the Learning Hub.
 
   Params:
-    page  — the Page object for the guide.
-    badge — "starter" or "specs". Drives the visible label and which brand
-            badge variant the pill uses.
+    page                    — the Page object for internal guides (optional).
+    href/title/description  — used instead of `page` for external cards
+                              (e.g. tutorials in data/learn/tutorials.yml).
+    tags                    — string slice of `data-tags` values for filtering
+                              (external cards only; internal cards use the
+                              page's `guide_topics`).
+    external                — if true, opens the link in a new tab.
+    badge                   — "starter", "specs", or "tutorial". Drives the
+                              visible label and brand badge variant.
 */}}
 
 {{ $page := .page }}
 {{ $badge := .badge }}
+{{ $external := .external | default false }}
+
+{{ $href := "" }}
+{{ $title := "" }}
+{{ $description := "" }}
+{{ $topics := slice }}
+{{ if $page }}
+  {{ $href = $page.Permalink }}
+  {{ $title = $page.Title }}
+  {{ $description = $page.Params.description }}
+  {{ $topics = $page.Params.guide_topics | default (slice) }}
+{{ else }}
+  {{ $href = .href }}
+  {{ $title = .title }}
+  {{ $description = .description }}
+  {{ $topics = .tags | default (slice) }}
+{{ end }}
+
 {{ $badge_label := i18n (printf "pages-learn-index-badge-%s" $badge) }}
 {{/* Map the semantic guide type to a brand badge variant. */}}
-{{ $badge_variants := dict "starter" "tertiary" "specs" "secondary" }}
+{{ $badge_variants := dict "starter" "tertiary" "specs" "secondary" "tutorial" "quaternary" }}
 {{ $badge_variant := index $badge_variants $badge }}
 
-{{/* `guide_topics` is the section-scoped taxonomy declared in config.toml. */}}
-{{ $topics := $page.Params.guide_topics | default (slice) }}
 {{ $tag_slugs := slice }}
 {{ range $topics }}{{ $tag_slugs = $tag_slugs | append (. | urlize) }}{{ end }}
 {{ $data_tags := delimit ($tag_slugs | uniq) " " }}
 
-<a href="{{ $page.Permalink }}" class="learn-guide-card" data-tags="{{ $data_tags }}">
-  <h3 class="learn-guide-card-title">{{ $page.Title }}</h3>
-  <p class="learn-guide-card-description">{{ $page.Params.description }}</p>
+<a href="{{ $href }}" class="learn-guide-card" data-tags="{{ $data_tags }}"{{ if $external }} target="_blank" rel="noopener"{{ end }}>
+  <h3 class="learn-guide-card-title">{{ $title }}</h3>
+  <p class="learn-guide-card-description">{{ $description }}</p>
   <span class="badge badge-{{ $badge_variant }}">{{ $badge_label }}</span>
 </a>

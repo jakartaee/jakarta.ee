@@ -433,5 +433,7 @@ pages-learn-index-callout-message: 生成 Jakarta EE 项目模板，立即开始
 pages-learn-index-callout-cta: 开始使用
 pages-learn-index-badge-starter: 入门
 pages-learn-index-badge-specs: 规范
+pages-learn-index-badge-tutorial: 教程
+pages-learn-index-filter-tutorial: 教程
 pages-learn-index-no-results-title: 没有指南符合您的筛选条件
 pages-learn-index-no-results-message: 请尝试移除筛选或清除搜索。

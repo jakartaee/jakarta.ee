@@ -38,6 +38,7 @@
               {{ $label := index $labels $term | default ($term | humanize | title) }}
               <li><label><input type="checkbox" value="{{ $term }}"> {{ $label }}</label></li>
             {{ end }}
+            <li><label><input type="checkbox" value="tutorial"> {{ i18n "pages-learn-index-filter-tutorial" }}</label></li>
           </ul>
         </jee-guide-filters>
         <jee-callout
@@ -55,6 +56,15 @@
         {{ end }}
         {{ range $spec_guides }}
           {{ partial "pages/learn/guide-card.html" (dict "page" . "badge" "specs") }}
+        {{ end }}
+        {{ range $.Site.Data.learn.tutorials }}
+          {{ partial "pages/learn/guide-card.html" (dict
+              "href" .href
+              "title" .title
+              "description" .description
+              "tags" (slice "tutorial")
+              "badge" "tutorial"
+              "external" true) }}
         {{ end }}
         <div class="learn-hub-empty" hidden>
           <h3 class="learn-hub-empty-title">{{ i18n "pages-learn-index-no-results-title" }}</h3>
