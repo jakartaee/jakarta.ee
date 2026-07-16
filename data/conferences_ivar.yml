@@ -4,6 +4,11 @@ years:
 - year: 2026
   conferences:
 
+  - name: AI Native Summit
+    url: https://ainativesummit.com
+    location: Bangalore 🇮🇳
+    date: Dec 9-10
+
   - name: JakartaOne Livestream
     url: https://jakartaone.jakarta.ee/jakartaone-livestream-2026/
     location: online 🌐
@@ -92,7 +97,7 @@ years:
 
   - name: University of York (Guest Lecture)
     url: https://www.york.ac.uk
-    location: York 🏴󠁧󠁢󠁥󠁮󠁧󠁿
+    location: York 🇬🇧
     date: May 5
     blog: https://www.agilejava.eu/2026/05/12/university-of-york/
 
