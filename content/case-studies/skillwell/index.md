@@ -3,9 +3,16 @@ title: "Skillwell Simulate"
 seo_title: "Skillwell Simulate case study | Jakarta EE"
 description: "How Skillwell built its enterprise learning simulation platform on Jakarta EE."
 date: 2026-07-16
+eyebrow: "Case Studies / Skillwell Simulate"
 headline: "Skillwell Simulate"
 tagline: "How Skillwell built its enterprise learning simulation platform on Jakarta EE."
-layout: article
+links:
+  [
+    [href: "#", text: "Download the Case Study", class: "btn btn-primary btn-lg", icon: "fa-solid fa-download"],
+  ]
+layout: "article"
+header_wrapper_class: "header-secondary-bg-img article-header"
+jumbotron_class: "col-md-12"
 hide_sidebar: true
 hide_page_title: true
 ---
