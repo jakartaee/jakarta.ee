@@ -1,6 +1,6 @@
 ---
 title: "Skillwell Simulate"
-seo_title: "Skillwell Simulate case study | Jakarta EE"
+seo_title: "Skillwell Simulate case study"
 description: "How Skillwell built its enterprise learning simulation platform on Jakarta EE."
 date: 2026-07-16
 eyebrow: "Case Studies / Skillwell Simulate"
