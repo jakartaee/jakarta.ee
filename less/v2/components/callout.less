@@ -1,0 +1,134 @@
+/**
+ * Copyright (c) 2026 Eclipse Foundation AISBL
+ *
+ * This program and the accompanying materials are made
+ * available under the terms of the Eclipse Public License 2.0
+ * which is available at https://www.eclipse.org/legal/epl-2.0/
+ *
+ * SPDX-License-Identifier: EPL-2.0
+ */
+
+.callout {
+  background: linear-gradient(
+    21deg,
+    @brand-primary-dark-purple,
+    @brand-primary-royal-blue
+  );
+  color: @white;
+  border-radius: @border-radius-base;
+  padding: 2.5rem 2rem;
+  margin: 3rem 0;
+
+  @media (min-width: @screen-md-min) {
+    padding: 4rem;
+  }
+
+  p,
+  li,
+  strong {
+    color: @white;
+  }
+
+  a {
+    color: @brand-secondary-yellow;
+
+    &:hover {
+      color: darken(@brand-secondary-yellow, 10%);
+    }
+  }
+
+  h2, .h2,
+  h3, .h3,
+  h4, .h4 {
+    color: @brand-secondary-yellow;
+    margin: 0 0 1.2rem;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  h2, .h2 {
+    font-size: 2.2rem;
+  }
+
+  ul, ol {
+    list-style: none;
+    padding-left: 2ch;
+    margin: 0;
+  }
+
+  li {
+    position: relative;
+    padding-left: 3rem;
+    margin-bottom: 1rem;
+
+    &::before {
+      content: "\f061";
+      font-family: "Font Awesome 6 Free";
+      font-weight: 900;
+      position: absolute;
+      left: 0;
+      color: @white;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  > :last-child {
+    margin-bottom: 0;
+  }
+}
+
+.callout-quote {
+  position: relative;
+  border-left: none;
+  font-weight: 400;
+  font-size: 1.7rem;
+  padding: 8rem 2rem 2.5rem;
+
+  @media (min-width: @screen-md-min) {
+    padding: 4rem 4rem 4rem 12rem;
+  }
+
+  &::before {
+    content: "\201C";
+    position: absolute;
+    top: 0.5rem;
+    left: 2rem;
+    font-family: sans-serif;
+    font-size: 11rem;
+    line-height: 1;
+    color: @brand-secondary-yellow;
+    font-weight: 700;
+
+    @media (min-width: @screen-md-min) {
+      top: 1.5rem;
+      left: 4rem;
+      font-size: 13rem;
+    }
+  }
+
+  .callout-quote-cite {
+    display: block;
+    font-style: normal;
+    margin-top: 2rem;
+  }
+
+  .callout-quote-name {
+    display: block;
+    color: @brand-secondary-yellow;
+    font-weight: 700;
+    font-size: 1.55rem;
+    line-height: 1.7;
+  }
+
+  .callout-quote-title {
+    display: block;
+    color: @white;
+    font-size: 1.4rem;
+    line-height: 1.7;
+  }
+}

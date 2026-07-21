@@ -66,7 +66,18 @@ Several alternative technologies and architectural approaches were evaluated dur
 
 These decisions were guided by factors such as team expertise, the evolution of the existing system, and the need to meet enterprise-grade requirements around security, transactions, and session management.
 
-<!-- TODO: Key takeaway callout — "Jakarta EE was chosen for:" (6 bulleted items). Dark gradient background, yellow heading, arrow markers. Custom component. -->
+{{< callout >}}
+## Key takeaway
+
+Jakarta EE was chosen for:
+
+- Enterprise-grade reliability, stability, and long-term support
+- Support for complex, stateful applications and multi-tenant deployments
+- Seamless integration with AWS services
+- Scalability and maintainability
+- Commitment to open standards and vendor-neutrality
+- Ecosystem compatibility and reduced migration risk
+{{< /callout >}}
 
 ## Solution
 
@@ -111,7 +122,9 @@ Within the application architecture, **resolving circular dependencies in CDI** 
 
 On the data side, **evolving the database schema with zero downtime** was achieved through Liquibase with tagged migrations, while ensuring secure multi-tenant data isolation demanded robust access control mechanisms at the course level. Additionally, testing a complex, multi-module architecture required **coordinated integration testing** across bounded contexts using tools like Weld-JUnit5 and Cucumber. Finally, managing AI service rate limits and associated costs introduced **operational challenges**, which were mitigated through the use of mock implementations during testing.
 
-<!-- TODO: Pull-quote blockquote — Roberto Gonzalez, Senior Software Engineer, Skillwell Simulate. Dark gradient background, large yellow open-quote glyph, cite attribution. Custom component. -->
+{{< callout_quote author="Roberto Gonzalez" title="Senior Software Engineer, Skillwell Simulate" >}}
+Working with Jakarta EE has been a very positive experience for our team. The ecosystem is backed by extensive documentation and a wealth of learning resources, which makes it easy to get productive quickly. We also found the 'cargo tracker' example application especially valuable – it goes beyond a simple demo and provides a realistic, end-to-end reference that maps well to patterns you can apply in real production applications.
+{{< /callout_quote >}}
 
 ## Outcomes
 
@@ -123,7 +136,16 @@ This has also contributed to improved onboarding, as developers familiar with en
 
 From a business perspective, the platform now supports multi-tenant deployments, seamless LMS integrations, and global delivery, while maintaining high reliability for mission-critical training. Although some trade-offs exist, such as the increasing difficulty of hiring JSF specialists and anticipated namespace migration efforts from javax. to jakarta., the overall investment has proven worthwhile, delivering a stable, scalable, and vendor-independent solution with a lower total cost of ownership and the flexibility to evolve, including the integration of AI capabilities into an established system.
 
-<!-- TODO: Key takeaway callout — "The adoption of Jakarta EE has delivered strong outcomes in terms of:" (4 bulleted items). Same dark gradient/arrow marker style as the earlier takeaway. Custom component. -->
+{{< callout >}}
+## Key takeaway
+
+The adoption of Jakarta EE has delivered strong outcomes in terms of:
+
+- Code quality
+- Maintainability
+- Overall team productivity
+- Long-term sustainability
+{{< /callout >}}
 
 ## Future roadmap
 
