@@ -132,3 +132,40 @@
     line-height: 1.7;
   }
 }
+
+.callout-compare {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin: 3rem 0;
+}
+
+.callout-success,
+.callout-danger {
+  flex: 1 1 20rem;
+  padding: 2rem 2.5rem;
+  border-radius: @border-radius-base;
+  border: 1px solid transparent;
+}
+
+.callout-success {
+  background: @state-success-bg;
+  border-color: @state-success-border;
+
+  .callout-success-title {
+    color: @state-success-text;
+    font-weight: 700;
+    font-size: 1.8rem;
+  }
+}
+
+.callout-danger {
+  background: @state-danger-bg;
+  border-color: @state-danger-border;
+
+  .callout-danger-title {
+    color: @state-danger-text;
+    font-weight: 700;
+    font-size: 1.8rem;
+  }
+}

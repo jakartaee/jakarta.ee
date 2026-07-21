@@ -166,7 +166,18 @@ In the longer term, the platform aims to embrace fully cloud native principles t
 
 ### Advice to organisations considering Jakarta EE
 
-<!-- TODO: Do/Don't panel — two-column layout. Green "Do choose Jakarta EE if:" card and red "Don't choose Jakarta EE if:" card. Custom component. -->
+{{< html >}}
+<div class="callout-compare">
+  <div class="callout-success">
+    <p class="callout-success-title">Do choose Jakarta EE if:</p>
+    <p>You have enterprise requirements (security, transactions), need long-term sustainability (5–10+ years), have a team with Java EE expertise, or require vendor neutrality.</p>
+  </div>
+  <div class="callout-danger">
+    <p class="callout-danger-title">Don't choose Jakarta EE if:</p>
+    <p>You are building a greenfield mobile-first app or are a small startup needing rapid MVP prototyping in weeks.</p>
+  </div>
+</div>
+{{< /html >}}
 
 ## About Skillwell
 
