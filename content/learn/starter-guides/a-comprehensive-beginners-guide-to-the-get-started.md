@@ -9,7 +9,7 @@ description: >-
     EE applications. Learn about version selection, profiles, Java compatibility,
     runtime options, and project structure to kickstart your enterprise Java
     journey.
-tags: ["get started", "tool", "starter", "tutorial", "starter guide"]
+guide_topics: ["platform"]
 hide_page_title: true
 weight: 2
 categories: ["Starter Guides"]

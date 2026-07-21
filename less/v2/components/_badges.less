@@ -1,0 +1,52 @@
+/*!
+ * Copyright (c) 2026 Eclipse Foundation, Inc.
+ *
+ * This program and the accompanying materials are made available under the
+ * terms of the Eclipse Public License v. 2.0 which is available at
+ * http://www.eclipse.org/legal/epl-2.0.
+ *
+ * Contributors:
+ *   Olivier Goulet <olivier.goulet@eclipse-foundation.org>
+ *
+ * SPDX-License-Identifier: EPL-2.0
+*/
+
+@import (reference) '../_variables.less';
+
+// Brand-coloured outline pill badges, used on top of Bootstrap 3's base
+// `.badge` class. Each variant only sets the colour; the shared block sets
+// the outline + shape so any new brand colour can be added in one place by
+// mirroring the pattern below.
+.badge-primary,
+.badge-secondary,
+.badge-tertiary,
+.badge-quaternary,
+.badge-quinary {
+  background-color: transparent;
+  border: 1px solid currentColor;
+  border-radius: 1.3rem;
+  padding: 0.4rem 1.2rem;
+  font-family: @font-family-heading;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.badge-primary {
+  color: @brand-primary;
+}
+
+.badge-secondary {
+  color: @brand-secondary;
+}
+
+.badge-tertiary {
+  color: @brand-tertiary;
+}
+
+.badge-quaternary {
+  color: @brand-quaternary;
+}
+
+.badge-quinary {
+  color: @brand-quinary;
+}

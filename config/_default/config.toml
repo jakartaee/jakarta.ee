@@ -101,6 +101,7 @@ url = "https://www.youtube.com/c/JakartaEE"
 category = "categories"
 tag = "tags"
 news_tags = "news/tags"
+guide_topic = "guide_topics"
 
 [Author]
 name = "Eclipse Foundation"
@@ -114,6 +115,7 @@ linkedin = "company/eclipse-foundation/"
 
 [permalinks]
 news = "/:sections/:year/:month/:day/:slug/"
+guide_topics = "/guide-topics/:slug/"
 
 [blackfriday]
 plainIDAnchors = true

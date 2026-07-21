@@ -1,0 +1,36 @@
+{{/*
+  Copyright (c) 2026 Eclipse Foundation AISBL
+  This program and the accompanying materials are made available under the
+  terms of the Eclipse Public License v. 2.0 which is available at
+  http://www.eclipse.org/legal/epl-2.0.
+
+  Contributors:
+    Olivier Goulet <olivier.goulet@eclipse-foundation.org>
+
+  SPDX-License-Identifier: EPL-2.0
+*/}}
+
+{{ $recent := first 2 (where $.Site.RegularPages "Section" "blogs") }}
+
+<div class="container">
+  <section class="learn-why-section">
+    <h2 class="learn-why-heading">
+      {{ i18n "pages-learn-why-heading-prefix" }} <span class="learn-why-heading-brand">Jakarta EE</span>
+    </h2>
+    <p class="learn-why-subtitle">{{ i18n "pages-learn-why-subtitle" }}</p>
+    <div class="learn-why-cards">
+      {{ range $recent }}
+      <article class="learn-why-card">
+        <h3 class="big-text">{{ .Title }}</h3>
+        <p class="learn-why-card-excerpt">{{ .Summary | plainify }}</p>
+        <a href="{{ .Permalink }}" class="btn btn-outline-secondary learn-why-card-cta">
+          {{ i18n "pages-learn-why-card-cta" }}
+          <svg xmlns="http://www.w3.org/2000/svg" width="9" height="12" viewBox="0 0 9 12" fill="none" aria-hidden="true">
+            <path d="M1.5 1L7.5 6L1.5 11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </article>
+      {{ end }}
+    </div>
+  </section>
+</div>

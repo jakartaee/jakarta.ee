@@ -7,6 +7,7 @@ description: >-
 hide_page_title: true
 weight: 1
 categories: ["Starter Guides"]
+guide_topics: ["restful-web-services"]
 related_specifications:
   - name: "Jakarta RESTful Web Services"
     href: "/specifications/restful-ws/"

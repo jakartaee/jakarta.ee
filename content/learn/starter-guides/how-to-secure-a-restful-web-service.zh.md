@@ -5,7 +5,7 @@ headline: 使用Jakarta EE对RESTful Web服务进行认证保护
 seo_title: 使用Jakarta EE对RESTful Web服务进行认证保护 | Jakarta EE
 description: >-
   本指南向您展示如何使用Jakarta Authentication功能对RESTful服务进行访问认证。
-tags: ['rest', 'api', 'service', '入门', 'authentication', 'auth', 'security']
+guide_topics: ["restful-web-services", "security", "authentication"]
 hide_page_title: true
 weight: 2
 categories: ["Starter Guides"]

@@ -6,7 +6,7 @@ description: >-
   Jakarta EE provides the robust Jakarta Security specification that when
   paired with the Jakarta Authentication and Jakarta Authorization
   specifications, provides APIs that deliver end-to-end security.  
-keywords: ["security", "authorization", "authentication", "specification", "spec", "guide", "tutorial"]
+guide_topics: ["security", "authorization", "authentication"]
 hide_page_title: true
 categories: ["Specification Guides"]
 related_specifications:
