@@ -53,7 +53,15 @@ Overall, this stack is well-matched to the challenge, as it supports stateful, l
 
 **Long-term support** was equally essential, with confidence drawn from the stewardship of Jakarta EE by the Eclipse Foundation and the continued active development of key components such as Weld CDI, Hibernate, and PrimeFaces. Finally, a strong commitment to open standards, including SCORM and AICC for LMS integration, SAML for secure single sign-on, RESTful design principles, and Jakarta EE specifications, ensures interoperability, easier integration with enterprise systems, and access to a broad talent pool of developers with widely transferable skills.
 
-<!-- TODO: Infobox — "Choosing Jakarta EE 8 over newer versions" (3 paragraphs). Custom component. -->
+{{< note >}}
+## Choosing Jakarta EE 8 over newer versions
+
+Skillwell Simulate is built on **Jakarta EE 8 APIs**, a deliberate choice driven by the need for stability, ecosystem compatibility, and reduced migration risk at the time of development. When the platform was initially developed, Java EE 8 represented a mature, production-ready standard with well-established tooling and widespread industry adoption.
+
+Key components such as Weld CDI 3.1 provided a robust and feature-rich dependency injection framework, while JSF 2.3, paired with PrimeFaces, offered strong support for building the complex, interactive user interfaces required by the platform. Additionally, Hibernate 5.x aligned seamlessly with the JPA specifications in Java EE 8, ensuring reliable persistence for the platform's complex data models.
+
+Maintaining Jakarta EE 8 has also avoided the significant overhead associated with migrating to newer versions, particularly the extensive namespace changes from `javax.*` to `jakarta.*`, which would require substantial refactoring across an established codebase. Furthermore, many critical third-party libraries, including the AWS SDK and Spring SAML, continue to provide strong support for Java EE 8 APIs, reinforcing its practicality. The platform is deployed on Apache Tomcat 9 and runs on AWS EC2, leveraging a stable and well-supported runtime environment that aligns with the chosen version.
+{{< /note >}}
 
 ### Alternatives considered
 
@@ -116,7 +124,7 @@ Rather than replacing existing systems, Skillwell integrates with enterprise eco
 
 The migration and integration planning for Skillwell Simulate presented several significant technical challenges, largely driven by the platform's need to balance stateful user experiences with scalable, cloud-based infrastructure.
 
-One of the primary difficulties was **managing session state** across load-balanced AWS environments, requiring the implementation of sticky sessions and rigorous integrity checks to ensure consistency. This was closely tied to the challenge of **maintaining stateful simulations across multiple requests** using @SessionScoped beans. Another challenge was the **Jakarta Faces learning curve**: since Java Server Faces is not mainstream, most new developers lack experience.
+One of the primary difficulties was **managing session state** across load-balanced AWS environments, requiring the implementation of sticky sessions and rigorous integrity checks to ensure consistency. This was closely tied to the challenge of **maintaining stateful simulations across multiple requests** using `@SessionScoped` beans. Another challenge was the **Jakarta Faces learning curve**: since Java Server Faces is not mainstream, most new developers lack experience.
 
 Within the application architecture, **resolving circular dependencies in CDI** required careful design adjustments, including the use of setter injection to break dependency cycles. Integrating modern AI capabilities, such as AWS Bedrock, into a legacy JSF 2.3 interface also required a **clean CDI layer**.
 
@@ -134,7 +142,7 @@ The use of dependency injection, scoped beans, and declarative transaction manag
 
 This has also contributed to improved onboarding, as developers familiar with enterprise Java can quickly become productive, focusing primarily on domain-specific logic rather than learning proprietary frameworks. Modern Java features such as Records, Streams, and the Optional API have further streamlined development, reducing boilerplate and improving code clarity.
 
-From a business perspective, the platform now supports multi-tenant deployments, seamless LMS integrations, and global delivery, while maintaining high reliability for mission-critical training. Although some trade-offs exist, such as the increasing difficulty of hiring JSF specialists and anticipated namespace migration efforts from javax. to jakarta., the overall investment has proven worthwhile, delivering a stable, scalable, and vendor-independent solution with a lower total cost of ownership and the flexibility to evolve, including the integration of AI capabilities into an established system.
+From a business perspective, the platform now supports multi-tenant deployments, seamless LMS integrations, and global delivery, while maintaining high reliability for mission-critical training. Although some trade-offs exist, such as the increasing difficulty of hiring JSF specialists and anticipated namespace migration efforts from `javax.` to `jakarta.`, the overall investment has proven worthwhile, delivering a stable, scalable, and vendor-independent solution with a lower total cost of ownership and the flexibility to evolve, including the integration of AI capabilities into an established system.
 
 {{< callout >}}
 ## Key takeaway
