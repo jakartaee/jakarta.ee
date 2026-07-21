@@ -4,15 +4,20 @@ years:
 - year: 2026
   conferences:
 
+  - name: AI Native Summit
+    url: https://ainativesummit.com
+    location: Bangalore 🇮🇳
+    date: Dec 9-10
+
   - name: JakartaOne Livestream
     url: https://jakartaone.jakarta.ee/jakartaone-livestream-2026/
     location: online 🌐
     date: Dec 1
 
-  - name: Vaadin Create
-    url: https://vaadin.com/vaadin-create-2026
-    location: Barcelona 🇪🇸
-    date: Oct 27-28
+  - name: IBM TexchXchange
+    url: https://www.ibm.com/events/techxchange
+    location: Atlanta, GA 🇺🇸
+    date: Oct 26-29
 
   - name: dev2next
     url: https://www.dev2next.com/
@@ -59,6 +64,7 @@ years:
     url: https://jakartaone.jakarta.ee/jakartaone-dominican-republic-2026/
     location: Santiago 🇩🇴
     date: Jul 16
+    blog: https://www.agilejava.eu/2026/07/17/jakartaone-dominican-republic-2026/
 
   - name: Code the continuum
     url: https://ceisphere.eu/events/code-continuum
@@ -92,7 +98,7 @@ years:
 
   - name: University of York (Guest Lecture)
     url: https://www.york.ac.uk
-    location: York 🏴󠁧󠁢󠁥󠁮󠁧󠁿
+    location: York 🇬🇧
     date: May 5
     blog: https://www.agilejava.eu/2026/05/12/university-of-york/
 
