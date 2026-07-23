@@ -8,7 +8,7 @@ headline: "Skillwell Simulate"
 tagline: "How Skillwell built its enterprise learning simulation platform on Jakarta EE."
 links:
   [
-    [href: "#", text: "Download the Case Study", class: "btn btn-primary btn-lg", icon: "fa-solid fa-download"],
+    [href: "./documents/skillwell-simulate-jakarta-ee-case-study.pdf", text: "Download the Case Study", class: "btn btn-primary btn-lg", icon: "fa-solid fa-download"],
   ]
 layout: "article"
 header_wrapper_class: "header-secondary-bg-img article-header"
