@@ -99,7 +99,25 @@ Upon completion, the platform instantly evaluates performance against predefined
 
 ### Skillwell Simulate system landscape
 
-<!-- TODO: System landscape figure — Structurizr diagram (image + framed white background). Custom component. -->
+{{< html >}}
+<figure class="text-center">
+  <img
+    src="./images/system-landscape-full.webp"
+    srcset="
+      ./images/system-landscape-sm.webp 768w,
+      ./images/system-landscape-full.webp 2768w
+    "
+    sizes="(max-width: 768px) 100vw, 1140px"
+    loading="lazy"
+    decoding="async"
+    alt="Structurizr system landscape diagram. Skillwell Simulate sits at the centre, connected to three user roles (Learner, ETU Customer, ETU User) and to external systems: Degreed via API, an LMS via SCORM/AICC, and Azure via SAML. It exchanges data with a Pull API, Cloud Storage, a Data Analytics System, an Email System, Amazon Bedrock, and Synthesia."
+  />
+  <figcaption>
+    System Architecture including software systems, the users that interact with them and its surrounding environment
+    <a href="./images/system-landscape-full.webp" target="_blank" rel="noopener">View full size</a>
+  </figcaption>
+</figure>
+{{< /html >}}
 
 ### Core components
 
@@ -109,6 +127,26 @@ Upon completion, the platform instantly evaluates performance against predefined
 - **Secure Enterprise Authentication Layer:** A hardened integration gateway to provide secure, federated identity management. This ensures that learners are authenticated via trusted providers like Azure or enterprise LMS/LXPs (Degreed, etc.), maintaining strict access controls and protecting sensitive PII.
 - **Secure Data Storage & Pull API:** All learner activity and simulation data are securely stored in Skillwell's Cloud Storage. Customers can programmatically retrieve this data on a polling schedule via the Pull API, allowing them to feed verified skill data directly into their own internal BI tools.
 - **Automated Communication:** An integrated e-mail system handles high-volume automated messaging for learner notifications and system alerts.
+
+{{< html >}}
+<figure class="text-center">
+  <img
+    src="./images/simulate-containers-full.webp"
+    srcset="
+      ./images/simulate-containers-sm.webp 768w,
+      ./images/simulate-containers-full.webp 3268w
+    "
+    sizes="(max-width: 768px) 100vw, 1140px"
+    loading="lazy"
+    decoding="async"
+    alt="Structurizr container diagram of the Skillwell Simulate platform. Three user roles (Learner, Admin, Author) interact with the platform, which is fronted by a SAML Authentication Service and composed of two Jakarta web applications: an Immersive Simulator that delivers simulations, and a Simulation Builder for authoring. These are backed by a Simulate Database, a Filesystem, an S3 Bucket, a Content Generation Database, and a Scope Database, and integrate outward with Degreed, an LMS, Azure, a Data Analytics System, an Email System, Amazon Bedrock, and Synthesia."
+  />
+  <figcaption>
+    Containers Diagram with focus on the Simulation Builder
+    <a href="./images/simulate-containers-full.webp" target="_blank" rel="noopener">View full size</a>
+  </figcaption>
+</figure>
+{{< /html >}}
 
 ## Implementation & integration
 
