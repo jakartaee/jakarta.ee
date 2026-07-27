@@ -5,7 +5,7 @@ headline: "Jakarta NoSQL and Jakarta Persistence Explained"
 description: >-
   The Jakarta EE ecosystem offers specifications for building database backend
   applications using relational and/or NoSQL databases. 
-keywords: ["spec", "specification", "guide", "nosql", "database", "persistence", "data", "store"]
+guide_topics: ["nosql", "persistence", "data"]
 hide_page_title: true
 categories: ["Specification Guides"]
 related_specifications:

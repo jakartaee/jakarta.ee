@@ -401,22 +401,7 @@ jakarta-ee-china-section-index-getlisted-signup: 加入 Jakarta EE 中国社区
 jakarta-ee-china-section-index-memberlist: 成员列表
 pages-specification-jakarta-ee-release-release-page: 发布页面
 pages-specification-jakarta-ee-release-press-release: 发布新闻
-pages-learn-index-starter-guides-title: 入门向导
-pages-learn-index-starter-guides-description: 开始学习 Jakarta EE 入门向导.
-pages-learn-index-starter-guides-view: 查看入门向导
-pages-learn-index-documentation-title: 文档
-pages-learn-index-documentation-tutorial: Jakarta EE 教程
-pages-learn-index-documentation-first-cup: Jakarta EE 起步
-pages-learn-index-documentation-cargotracker: CargoTracker 示例应用
-pages-learn-index-jakarta-ee-project-title: 生成 Jakarta EE 项目
-pages-learn-index-starter-description: 官方的Eclipse Foundation Starter for Jakarta EE。该Starter使用Maven Archetype生成示例代码，让您快速处理简单的Jakarta EE微服务项目。
-pages-learn-index-starter-start: 开始一个项目
-pages-learn-index-jakarta-ee-overview-course-title: Jakarta EE 概述课程
-pages-learn-index-jakarta-ee-overview-course-instructor: 导师
-pages-learn-index-jakarta-ee-overview-course-instructor-describe: 'Java Champion and Jakarta EE Developer '
-pages-learn-index-jakarta-ee-overview-course-describe: 您是否需要了解Jakarta EE的整体情况？在本课程中，Java Champion和Jakarta EE开发者布道师Ivar Grimstad将指导您了解Jakarta EE的目的和您需要了解的规范。Ivar快速概述了Jakarta EE、其规范和实现、将用于不同组件类型的容器以及用于部署的标准单元。他在Jakarta EE平台上进行了更深入的研究，然后深入到Web概要文件和核心概要文件。本课程包含了有用的提示和实际挑战，可以帮助您决定Jakarta EE之旅的下一步行动。
-pages-learn-index-jakarta-ee-overview-course-enroll: 今天就报名参加我们的课程!
-pages-learn-starter-guides-read-guide: 阅读向导
+pages-learn-starter-guides-read-guide: 阅读指南
 pages-learn-starter-guides-learn-title: 学习
 pages-learn-starter-guides-learn-describe: Jakarta EE学习资源的集合
 pages-learn-starter-guides-learn-read-more: 了解更多
@@ -441,3 +426,14 @@ pages-supporters-sponsor-become-a-sponsor: 成为赞助商
 pages-supporters-sponsor-contact-us: 联系我们
 pages-supporters-sponsor-thank-you: 谢谢！
 pages-supporters-sponsor-usage-description: Jakarta EE 成员标志可由战略成员、企业成员、参与成员和个体提交者成员使用，这些成员必须是工作组的当前成员，以标识他们的参与并表达他们对该计划的支持。使用 Jakarta EE 成员标志需遵守 Jakarta EE 商标指南。
+pages-learn-index-guides-heading: 指南
+pages-learn-index-search-placeholder: 查找指南
+pages-learn-index-search-label: 搜索指南
+pages-learn-index-callout-message: 生成 Jakarta EE 项目模板，立即开始构建。
+pages-learn-index-callout-cta: 开始使用
+pages-learn-index-badge-starter: 入门
+pages-learn-index-badge-specs: 规范
+pages-learn-index-badge-tutorial: 教程
+pages-learn-index-filter-tutorial: 教程
+pages-learn-index-no-results-title: 没有指南符合您的筛选条件
+pages-learn-index-no-results-message: 请尝试移除筛选或清除搜索。

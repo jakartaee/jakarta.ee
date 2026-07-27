@@ -4,7 +4,7 @@ date: 2023-09-22
 headline: "开始使用 Jakarta EE 10 构建 Servlets开始"
 description: >-
   本指南旨在带您了解使用 Jakarta Servlet 构建一个简单的 Servlet 应用程序的过程。
-keywords: ['servlet', '教程', '指南', '应用程序', 'wildfly']
+guide_topics: ["servlets"]
 hide_page_title: true
 categories: ["Starter Guides"]
 ---

@@ -372,3 +372,14 @@ pages-committees-document-download: ドキュメントのダウンロード
 pages-committees-website-guidelines-title: jakarta.ee Webサイトメンテナのガイドライン
 pages-committees-website-guidelines-text: 本ドキュメントでは、Jakarta EEワーキンググループ委員会メンバーでもあるjakarta.ee Webサイトメンテナに選出された方への簡単な概要を説明します。
 pages-committees-website-guidelines-download: ドキュメントのダウンロード
+pages-learn-index-guides-heading: ガイド
+pages-learn-index-search-placeholder: ガイドを検索
+pages-learn-index-search-label: ガイド検索
+pages-learn-index-callout-message: Jakarta EE プロジェクトテンプレートを生成して、すぐに開発を始めましょう。
+pages-learn-index-callout-cta: はじめる
+pages-learn-index-badge-starter: スターター
+pages-learn-index-badge-specs: 仕様
+pages-learn-index-badge-tutorial: チュートリアル
+pages-learn-index-filter-tutorial: チュートリアル
+pages-learn-index-no-results-title: フィルターに一致するガイドがありません
+pages-learn-index-no-results-message: フィルターを外すか、検索をクリアしてください。

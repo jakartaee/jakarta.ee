@@ -14,10 +14,10 @@ years:
     location: online 🌐
     date: Dec 1
 
-  - name: Vaadin Create
-    url: https://vaadin.com/vaadin-create-2026
-    location: Barcelona 🇪🇸
-    date: Oct 27-28
+  - name: IBM TexchXchange
+    url: https://www.ibm.com/events/techxchange
+    location: Atlanta, GA 🇺🇸
+    date: Oct 26-29
 
   - name: dev2next
     url: https://www.dev2next.com/
@@ -59,11 +59,13 @@ years:
     url: https://jconfdominicana.org
     location: Santiago 🇩🇴
     date: Jul 17-18
+    blog: https://www.agilejava.eu/2026/07/24/jconf-dominicana-2026/
 
   - name: JakartaOne Dominican Republic
     url: https://jakartaone.jakarta.ee/jakartaone-dominican-republic-2026/
     location: Santiago 🇩🇴
     date: Jul 16
+    blog: https://www.agilejava.eu/2026/07/17/jakartaone-dominican-republic-2026/
 
   - name: Code the continuum
     url: https://ceisphere.eu/events/code-continuum

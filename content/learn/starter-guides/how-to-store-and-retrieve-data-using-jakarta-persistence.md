@@ -8,6 +8,7 @@ description: >-
 hide_page_title: true
 weight: 2
 categories: ["Starter Guides"]
+guide_topics: ["persistence", "data"]
 related_specifications:
   - name: "Jakarta Persistence"
     href: "/specifications/persistence/"

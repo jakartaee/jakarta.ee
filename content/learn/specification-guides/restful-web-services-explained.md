@@ -5,7 +5,7 @@ headline: "Jakarta RESTful Web Services Explained"
 description: >-
   Jakarta REST is the solution for development of building Representational
   State Transfer web services on the Jakarta EE Platform. 
-keywords: ["spec", "specification", "guide", "rest", "restful", "api", "web services", "http"]
+guide_topics: ["restful-web-services"]
 hide_page_title: true
 categories: ["Specification Guides"]
 related_specifications:

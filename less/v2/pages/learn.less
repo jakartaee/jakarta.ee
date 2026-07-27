@@ -1,5 +1,5 @@
 /*!
- * Copyright (c) 2023 Eclipse Foundation, Inc.
+ * Copyright (c) 2023 Eclipse Foundation AISBL
  *
  * This program and the accompanying materials are made available under the
  * terms of the Eclipse Public License v. 2.0 which is available at
@@ -17,6 +17,9 @@ main {
   h2,
   .h2 {
     margin-top: 0;
+    font-family: @font-family-heading;
+    font-size: 4.5rem;
+    font-weight: 500;
   }
 
   a:not(.btn) {
@@ -32,47 +35,486 @@ main {
 
 }
 
-.column-section {
-  .image-column img {
+.learn-page .featured-jumbotron {
+  text-align: left;
+
+  // Override the flex centering applied by
+  // .header-wrapper .featured-jumbotron-default in components/jumbotron.less.
+  &.featured-jumbotron-default {
+    display: block;
+  }
+}
+
+.header-wrapper.header-learn .featured-jumbotron {
+  background-position: top;
+}
+
+// "Cloud Ready BG" gradient that wraps the Guides section (Figma node 3033:2263).
+// Light bottom-left → blue top-right, interpolated in OKLCH so the blend
+// runs through perceptual mid-tones instead of the muddy sRGB midpoint.
+// sRGB declaration is a fallback for engines that don't accept `in oklch`.
+.learn-guides-section {
+  background: linear-gradient(to top right, #f2f8ff 40%, #81bbff);
+  background: linear-gradient(in oklch to top right, #f2f8ff 40%, #81bbff);
+  border-radius: 3rem;
+  padding: 4rem;
+  margin-top: 1.5rem;
+  margin-bottom: 4rem;
+}
+
+// Learning Hub layout — CSS Grid throughout the app.
+// The header and body share `grid-template-columns` so the heading + sidebar
+// (left col) and search bar + cards (right col) line up.
+@learn-hub-sidebar-width: 22rem;
+@learn-hub-gap: 4rem;
+
+.learn-hub-header,
+.learn-hub-body {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+
+  @media (min-width: @screen-md-min) {
+    grid-template-columns: @learn-hub-sidebar-width 1fr;
+    gap: @learn-hub-gap;
+  }
+}
+
+.learn-hub-header {
+  align-items: center;
+
+  > jee-search-bar {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+
+    @media (min-width: @screen-md-min) {
+      justify-self: end;
+      max-width: 50rem;
+    }
+  }
+}
+
+.learn-hub-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.learn-hub-cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  align-self: start;
+
+  @media (min-width: @screen-sm-min) {
+    grid-template-columns: repeat(2, 1fr);
   }
 
   @media (min-width: @screen-md-min) {
-    // Aligns the descriptions and lists together
-    p {
-      min-height: 4rem;
-    }
-
-    ul {
-      min-height: 30rem;
-    }
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
-.learn-resource-list {
-  list-style: none;
-  padding-left: 0;
-
-  .resource-item {
-    display: flex;
-    align-items: center;
-  }
-}
-
-.generate-project-heading {
+.learn-hub-empty {
+  grid-column-start: 1;
+  grid-column-end: -1;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  height: 100%;
   text-align: center;
-  font-weight: 600;
-  color: @white;
-  background: url('../images/learn/generate.jpg');
-  background-repeat: no-repeat;
+  min-height: 40rem;
+  padding: 4rem 2rem;
+  color: @brand-primary-dark;
+  font-family: @font-family-heading;
+
+  &[hidden] {
+    display: none;
+  }
+
+  .learn-hub-empty-title {
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 0 0 1rem;
+  }
+
+  .learn-hub-empty-message {
+    font-size: 1.6rem;
+    margin: 0;
+  }
+}
+
+.learn-guide-card {
+  // Flex column so the badge can be margin-top: auto'd to the bottom.
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-color: @white;
+  border-radius: 3rem;
+  box-shadow: 0 4px 37.4px -5px rgba(135, 191, 255, 0.52);
+  padding: 2.5rem;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.18s ease-out, box-shadow 0.18s ease-out;
+
+  // `display: flex` above overrides the user-agent `[hidden] { display: none }`
+  // rule — restore the hide behaviour so search/filter toggling works.
+  &[hidden] {
+    display: none;
+  }
+
+  &:hover,
+  &:focus-visible {
+    transform: translateY(-0.4rem);
+    box-shadow: 0 8px 37.4px -5px rgba(135, 191, 255, 0.65);
+  }
+
+  .badge {
+    margin-top: auto;
+    // Don't stretch to the card's full width — keep the pill content-sized.
+    align-self: flex-start;
+  }
+
+  &,
+  &:hover,
+  &:focus,
+  &:visited,
+  &:active {
+    text-decoration: none;
+  }
+
+  .learn-guide-card-title {
+    font-family: @font-family-heading;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 2.2rem;
+    letter-spacing: -0.04em;
+    color: @brand-primary-dark;
+    margin: 0 0 1rem;
+  }
+
+  .learn-guide-card-description {
+    font-family: @font-family-heading;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 2rem;
+    color: #2f4a60;
+    margin: 0 0 2rem;
+    // Three-line clamp matching the mockup's truncated descriptions.
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+}
+
+jee-callout {
+  display: block;
+  border-radius: 3rem;
+  padding: 2rem;
+  color: @brand-primary-dark;
+  text-align: left;
+  border: 0;
+  background: linear-gradient(to top right, @white 65%, #cde3ff);
+  background: linear-gradient(in oklch to top right, @white 65%, #cde3ff);
+
+  @media (min-width: @screen-md-min) {
+    border: 1px solid #5ea9ff;
+    background: transparent;
+  }
+
+  .jee-callout-icon {
+    display: block;
+    width: 6rem;
+    height: 6rem;
+    margin-bottom: 2rem;
+  }
+
+  .jee-callout-message {
+    font-family: @font-family-heading;
+    font-size: 1.6rem;
+    line-height: 2.1rem;
+    letter-spacing: -0.03em;
+    margin: 0 0 2.5rem;
+  }
+
+  // Local tweak on top of `.btn btn-outline-secondary`: keep the chevron
+  // and label on the same line with a small gap.
+  .jee-callout-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 1rem;
+  }
+}
+
+.jee-guide-filters-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+  font-family: @font-family-heading;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: @brand-primary-dark;
+
+  > li {
+    margin-bottom: 1rem;
+  }
+
+  label {
+    // inline-flex lets the label size to its content so only the
+    // checkbox + text combo is clickable — not the trailing whitespace
+    // of the surrounding <li>.
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 1rem;
+    cursor: pointer;
+    font-weight: 500;
+    margin-bottom: 0;
+  }
+
+  input[type="checkbox"] {
+    flex-shrink: 0;
+    margin-top: 0.3rem;
+  }
+
+  i {
+    font-style: italic;
+    font-weight: 400;
+  }
+}
+
+.learn-why-section {
+  background-color: @brand-primary-dark;
+  background-image: url("../images/learn/bg-why-choose.webp");
   background-size: cover;
-  text-shadow: 0px 0px 5px black, 0px 0px 10px black, 0px 0px 20px black;
-  min-height: 36rem;
+  background-position: center;
+  border-radius: 3rem;
+  padding: 3rem 2rem;
+
+  @media (min-width: @screen-md-min) {
+    padding: 6rem 12rem;
+  }
+  margin-top: 5rem;
+  margin-bottom: 4rem;
+}
+
+.learn-why-heading {
+  font-family: @font-family-heading;
+  font-size: 4.5rem;
+  font-weight: 500;
+  letter-spacing: -0.05em;
+  line-height: 6.5rem;
+  color: @white;
+  margin: 0 0 1rem;
+
+  .learn-why-heading-brand {
+    color: #ff7110;
+  }
+}
+
+.learn-why-subtitle {
+  font-family: @font-family-heading;
+  font-size: 2.6rem;
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  color: @white;
+  margin: 0 0 3.5rem;
+}
+
+.learn-why-cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+
+  @media (min-width: @screen-sm-min) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.learn-why-card {
+  background-color: @white;
+  border-radius: 3rem;
+  box-shadow: 0 4px 37.4px -5px rgba(135, 191, 255, 0.52);
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+
+  .learn-why-card-excerpt {
+    font-family: @font-family-heading;
+    font-size: 1.6rem;
+    font-weight: 300;
+    letter-spacing: -0.02em;
+    color: #2f4a60;
+    line-height: 2.6rem;
+    margin: 0 0 3rem;
+    flex: 1;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .learn-why-card-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 1rem;
+    align-self: flex-start;
+
+    svg {
+      flex-shrink: 0;
+    }
+  }
+}
+
+.learn-overview-course {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding: 10rem 0 5rem;
+  margin: 0 auto 4rem;
+  max-width: 92.5rem;
+
+  @media (min-width: @screen-md-min) {
+    flex-direction: row;
+    align-items: center;
+    gap: 5rem;
+  }
+
+  .learn-overview-course-heading {
+    flex-shrink: 0;
+    font-family: @font-family-heading;
+    font-size: 4.5rem;
+    font-weight: 500;
+    letter-spacing: -0.05em;
+    line-height: 1.2;
+    margin: 0;
+
+    span {
+      display: block;
+    }
+
+    @media (min-width: @screen-md-min) {
+      text-align: right;
+    }
+  }
+
+  .learn-overview-course-divider {
+    display: none;
+
+    @media (min-width: @screen-md-min) {
+      display: block;
+      flex-shrink: 0;
+      align-self: stretch;
+      width: 1px;
+      background-color: @brand-primary-light-blue;
+    }
+  }
+
+  .learn-overview-course-description {
+    font-family: @font-family-heading;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 2.8rem;
+    margin: 0;
+  }
+}
+
+.learn-overview-course-enroll {
+  // Mobile: wrapper padding gives the banner vertical breathing room above
+  // and below the card (banner is absolutely positioned to the padding edge,
+  // so it extends past the card top and bottom).
+  position: relative;
+  padding: 3rem 0;
+  margin-bottom: 4rem;
+
+  @media (min-width: @screen-md-min) {
+    padding: 0;
+  }
+}
+
+.learn-overview-course-banner {
+  // Centered banner, capped at 80rem. Uses 100vw so narrow viewports still get
+  // an edge-to-edge background; the max-width caps wider viewports.
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100vw;
+  max-width: 80rem;
+  overflow: hidden;
+  background: linear-gradient(358deg, #81bbff 27%, #f2f8ff 89%);
+  background: linear-gradient(in oklch 358deg, #81bbff 27%, #f2f8ff 89%);
+
+  // Background image overlay applied via ::before so it can use mix-blend-mode
+  // without dragging card content into the blend.
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url("../images/learn/bg-overview-course.webp");
+    background-size: cover;
+    background-position: center bottom;
+    mix-blend-mode: overlay;
+    opacity: 0.6;
+    pointer-events: none;
+  }
+
+  // Desktop: inset from top/bottom so the card protrudes above and below the
+  // banner, and round the corners now that the banner is a bounded strip.
+  @media (min-width: @screen-md-min) {
+    top: 5rem;
+    bottom: 5rem;
+    border-radius: 3rem;
+  }
+}
+
+.learn-overview-course-card {
+  position: relative;
+  z-index: 1;
+  max-width: 40rem;
+  margin: 0 auto;
+  background-color: @white;
+  border-radius: 3rem;
+  box-shadow: 0 4px 37.4px -5px rgba(135, 191, 255, 0.52);
+  padding: 4rem 1rem;
+  text-align: center;
+  font-family: @font-family-heading;
+
+  @media (min-width: @screen-md-min) {
+    padding: 4rem 2rem;
+  }
+
+  .learn-overview-course-instructor-label {
+    font-size: 1.6rem;
+    font-weight: 500;
+    letter-spacing: -0.04em;
+    margin: 0 0 1.5rem;
+  }
+
+  .learn-overview-course-instructor-name {
+    font-size: 3rem;
+    font-weight: 600;
+    letter-spacing: -0.024em;
+    line-height: 1;
+    margin: 0 0 1rem;
+  }
+
+  .learn-overview-course-instructor-title {
+    font-size: 1.6rem;
+    font-weight: 400;
+    letter-spacing: -0.024em;
+    line-height: 1.2;
+    margin: 0 0 3rem;
+  }
+
+  .learn-overview-course-preview {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0 auto 3rem;
+  }
+
+  .learn-overview-course-cta {
+    display: inline-block;
+  }
 }

@@ -28,6 +28,7 @@
     "@eclipsefdn/solstice-components": "0.8.2",
     "eclipsefdn-hugo-solstice-theme": "0.3.2",
     "list.js": "^2.3.1",
+    "lit": "^3.3.3",
     "lodash-es": "^4.17.22"
   },
   "browserslist": "last 5 version, > 0.2%, not dead, IE 11",

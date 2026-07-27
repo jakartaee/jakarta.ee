@@ -6,7 +6,7 @@ description: >-
   The Jakarta EE Platform enables developers to produce
   lightweight, cloud native applications while providing
   maximum developer productivity.
-keywords: ["spec", "specification", "guide", "platform"]
+guide_topics: ["platform"]
 hide_page_title: true
 categories: ["Specification Guides"]
 related_specifications:

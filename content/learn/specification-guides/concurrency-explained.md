@@ -6,7 +6,7 @@ description: >-
   The Jakarta Concurrency specification targets application performance
   and usability by providing a standard API for developing concurrent
   application processes without compromising container integrity
-keywords: ["spec", "specification", "guide", "concurrency", "explained", "tutorial"]
+guide_topics: ["concurrency"]
 hide_page_title: true
 categories: ["Specification Guides"]
 related_specifications:

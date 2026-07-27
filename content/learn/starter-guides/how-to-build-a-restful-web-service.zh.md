@@ -7,6 +7,7 @@ description: >-
 hide_page_title: true
 weight: 1
 categories: ["Starter Guides"]
+guide_topics: ["restful-web-services"]
 ---
 
 这篇博文将向您介绍如何使用 Jakarta EE创建一个 [RESTful web service](https://jakarta.ee/specifications/restful-ws/) 应用程序.

@@ -304,19 +304,6 @@ div.card-panel.panel div.panel-body.panel-body-with-img {
   right: -1px;
 }
 
-.column-section {
-  display: flex;
-  flex-direction: column;
-
-  &-even > * {
-    flex-basis: 100%;
-  }
-
-  @media (min-width: @screen-md-min) {
-    flex-direction: row;
-  }
-}
-
 // Resources
 .newsroom-resources h2 {
   font-size: 18px;
@@ -395,13 +382,6 @@ p:empty {
     min-width: 48rem;
     max-width: unset;
   }
-}
-
-// This workaround was introduced to style a video list without the need of
-// using its JS. Should be removed once the learn page can use the video list
-// widget to fetch latest videos.
-.video-list-container {
-  .eclipsefdn-video-list;
 }
 
 .font-italic {
