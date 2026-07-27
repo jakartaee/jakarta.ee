@@ -113,7 +113,7 @@ Upon completion, the platform instantly evaluates performance against predefined
     alt="Structurizr system landscape diagram. Skillwell Simulate sits at the centre, connected to three user roles (Learner, ETU Customer, ETU User) and to external systems: Degreed via API, an LMS via SCORM/AICC, and Azure via SAML. It exchanges data with a Pull API, Cloud Storage, a Data Analytics System, an Email System, Amazon Bedrock, and Synthesia."
   />
   <figcaption>
-    System Architecture including software systems, the users that interact with them and its surrounding environment
+    System Landscape — ETU System Architecture including software systems, the users that interact with them and its surrounding environment
     <a href="./images/system-landscape-full.webp" target="_blank" rel="noopener">View full size</a>
   </figcaption>
 </figure>
@@ -142,7 +142,7 @@ Upon completion, the platform instantly evaluates performance against predefined
     alt="Structurizr container diagram of the Skillwell Simulate platform. Three user roles (Learner, Admin, Author) interact with the platform, which is fronted by a SAML Authentication Service and composed of two Jakarta web applications: an Immersive Simulator that delivers simulations, and a Simulation Builder for authoring. These are backed by a Simulate Database, a Filesystem, an S3 Bucket, a Content Generation Database, and a Scope Database, and integrate outward with Degreed, an LMS, Azure, a Data Analytics System, an Email System, Amazon Bedrock, and Synthesia."
   />
   <figcaption>
-    Containers Diagram with focus on the Simulation Builder
+    Simulate Platform — Containers Diagram with focus on the Simulation Builder
     <a href="./images/simulate-containers-full.webp" target="_blank" rel="noopener">View full size</a>
   </figcaption>
 </figure>
