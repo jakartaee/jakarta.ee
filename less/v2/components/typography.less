@@ -108,7 +108,8 @@ h6,
 }
 
 .btn.btn-lg {
-  font-size: 16px;
+  font-size: 1.8rem;
+  padding: 1rem 2.5rem;
 }
 
 .featured-text {
@@ -210,5 +211,94 @@ blockquote {
 .text-md-center {
   @media (min-width: @screen-md-min) {
     text-align: center;
+  }
+}
+
+// ========================================
+// Prose
+// ========================================
+
+@prose-heading-color: @brand-primary-dark-purple;
+@prose-strong-color: @prose-heading-color;
+@prose-link-color: @brand-primary-royal-blue;
+@prose-rule-color: @brand-primary-orange;
+@prose-body-color: #1e2230;
+
+.prose {
+  color: @prose-body-color;
+
+  p {
+    margin: 0 0 1.8rem;
+    font-size: 1.7rem;
+    line-height: 1.7;
+  }
+
+  strong {
+    color: @prose-strong-color;
+    font-weight: 700;
+  }
+
+  em {
+    font-style: italic;
+  }
+
+  a {
+    color: @prose-link-color;
+    text-decoration: underline;
+
+    &:hover {
+      color: darken(@prose-link-color, 15%);
+    }
+  }
+
+  h2, .h2,
+  h3, .h3,
+  h4, .h4 {
+    font-family: @font-family-heading;
+    font-weight: 700;
+    color: @prose-heading-color;
+  }
+
+  h2, .h2 {
+    margin: 6.4rem 0 2.2rem;
+    font-size: 3.1rem;
+    line-height: 1.15;
+
+    &::after {
+      content: "";
+      display: block;
+      width: 5.6rem;
+      height: 0.4rem;
+      margin-top: 1.2rem;
+      background-color: @prose-rule-color;
+      border-radius: 0.2rem;
+    }
+  }
+
+  h3, .h3 {
+    margin: 3.6rem 0 1.2rem;
+    font-size: 2.2rem;
+    line-height: 1.15;
+  }
+
+  h4, .h4 {
+    margin: 2.4rem 0 1rem;
+    font-size: 1.8rem;
+    line-height: 1.2;
+  }
+
+  ul, ol {
+    margin: 0 0 1.8rem;
+    padding-left: 2.5rem;
+    font-size: 1.7rem;
+    line-height: 1.7;
+  }
+
+  li {
+    margin-bottom: 1rem;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 }
