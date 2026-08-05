@@ -16,3 +16,4 @@ IFS=$'\n\t'
 
 yarn install --frozen-lockfile
 yarn build
+hugo
