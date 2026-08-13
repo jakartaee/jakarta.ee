@@ -19,6 +19,11 @@ years:
     location: Sydney 🇦🇺
     date: Nov 18-19
    
+  - name: Devoxx Morocco
+    url: https://devoxx.ma/
+    location: Casablanca 🇲🇦
+    date: Nov 4-5
+
   - name: IBM TexchXchange
     url: https://www.ibm.com/events/techxchange
     location: Atlanta, GA 🇺🇸
