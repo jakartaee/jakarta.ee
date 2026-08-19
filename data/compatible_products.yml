@@ -1358,3 +1358,14 @@ sets:
         - version: 5.28.1
           compatibility: 'https://docs.payara.fish/enterprise/docs/jakartaee-certification/5.28.1/tck-results-web-5.28.1.html'
           download_url: 'https://docs.payara.fish/enterprise/docs/jakartaee-certification/5.28.1/tck-results-web-5.28.1.html'
+          
+      - name: SofaEE
+        vendor: Ant Group CO., Ltd
+        image: '/images/compatible_products/sofaee-logo.jpeg'
+        image_width: 195
+        download: 'https://www.sofastack.com/page/sofaEE'
+        versions:
+        - version: 1.0.0
+          compatibility: 'https://www.sofastack.com/web/docs/sofaEETCKResult'
+          download_url: 'https://www.sofastack.com/web/page/sofaEE'
+
