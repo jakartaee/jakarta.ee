@@ -694,6 +694,9 @@ items:
       year: 2018
 
   specification_committee:
+    - url: specification_committee/minutes-specification-august-5-2026.pdf
+      title: 5 August 2026 (pdf)
+      year: 2026
     - url: specification_committee/minutes-specification-july-8-2026.pdf
       title: 8 July 2026 (pdf)
       year: 2026
