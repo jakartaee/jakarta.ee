@@ -84,7 +84,7 @@ sets:
               compatibility: 'https://openliberty.io/certifications/jakartaee/11/platform/26.0.0.5-Java17-TCKResults.html'
               download_url: 'https://public.dhe.ibm.com/ibmdl/export/pub/software/openliberty/runtime/release/26.0.0.5/openliberty-jakartaee11-26.0.0.5.zip'
         - name: Payara Server Community
-          vendor: Payara Services Limited
+          vendor: Azul Systems, Inc
           image: '/images/compatible_products/payara-server-community-logo.svg'
           image_width: 195
           download: 'https://www.payara.fish/downloads/payara-platform-community-edition/'
@@ -92,6 +92,15 @@ sets:
             - version: 7.2025.1.Beta1
               compatibility: 'https://docs.payara.fish/community/docs/Jakarta%20EE%20Certification/7.2025.1.Beta1/7.2025.1.Beta1%20Platform%20TCK%20Results.html'
               download_url: 'https://www.payara.fish/downloads/payara-platform-community-edition/'
+        - name: Payara Server Enterprise
+          vendor: Azul Systems, Inc
+          image: '/images/compatible_products/payara-server-enterprise-logo.svg'
+          image_width: 195
+          download: 'https://www.payara.fish/page/payara-enterprise-downloads/'
+          versions:
+            - version: 7.0.0
+              compatibility: 'https://docs.azul.com/payara/jakarta-ee-certification/7.0.0/7.0.0-platform-tck-results.html'
+              download_url: 'https://nexus.dev.payara.fish/repository/payara-enterprise-evaluations/fish/payara/distributions/payara-enterprise-evaluation/7.0.0-Confused-Rockfish/payara-enterprise-evaluation-7.0.0-Confused-Rockfish.zip'
         - name: InforSuite Application Server
           vendor: Shandong Cvicse Middleware Co.,Ltd.
           image: '/images/compatible_products/inforsuite_logo.svg'
@@ -154,7 +163,7 @@ sets:
               compatibility: 'https://openliberty.io/certifications/jakartaee/11/webprofile/26.0.0.5-Java17-TCKResults.html'
               download_url: 'https://public.dhe.ibm.com/ibmdl/export/pub/software/openliberty/runtime/release/26.0.0.5/openliberty-webProfile11-26.0.0.5.zip'
         - name: Payara Server Community
-          vendor: Payara Services Limited
+          vendor: Azul Systems, Inc
           image: '/images/compatible_products/payara-server-community-logo.svg'
           image_width: 195
           download: 'https://www.payara.fish/downloads/payara-platform-community-edition/'
@@ -218,7 +227,7 @@ sets:
               compatibility: 'https://docs.fujitsu/documents/002474/eap200-ee11core-tck-results.pdf'
               download_url: 'https://www.fujitsu.com/jp/products/software/middleware/business-middleware/middleware/applatform/'
         - name: Payara Server Community
-          vendor: Payara Services Limited
+          vendor: Azul Systems, Inc
           image: '/images/compatible_products/payara-server-community-logo.svg'
           image_width: 195
           download: 'https://www.payara.fish/downloads/payara-platform-community-edition/'
@@ -325,7 +334,7 @@ sets:
               compatibility: 'https://openliberty.io/certifications/jakartaee/10/platform/23.0.0.3-Java11-TCKResults.html'
               download_url: 'https://public.dhe.ibm.com/ibmdl/export/pub/software/openliberty/runtime/release/23.0.0.3/openliberty-jakartaee10-23.0.0.3.zip'
         - name: Payara Server Community
-          vendor: Payara Services Limited
+          vendor: Azul Systems, Inc
           image: '/images/compatible_products/payara-server-community-logo.svg'
           image_width: 195
           download: 'https://www.payara.fish/downloads/payara-platform-community-edition/'
@@ -346,7 +355,7 @@ sets:
               compatibility: 'https://docs.payara.fish/community/docs/6.2022.1.alpha4/Jakarta%20EE%20Certification/6.2022.1.Alpha4/6.2022.1.Alpha4%20Platform%20TCK%20Results.html'
               download_url: 'https://github.com/payara/Payara/releases/tag/payara-server-6.2022.1.Alpha4'
         - name: Payara Server Enterprise
-          vendor: Payara Services Limited
+          vendor: Azul Systems, Inc
           image: '/images/compatible_products/payara-server-enterprise-logo.svg'
           image_width: 195
           download: 'https://www.payara.fish/page/payara-enterprise-downloads/'
@@ -497,7 +506,7 @@ sets:
               compatibility: 'https://openliberty.io/certifications/jakartaee/10/webprofile/23.0.0.3-Java11-TCKResults.html'
               download_url: 'https://public.dhe.ibm.com/ibmdl/export/pub/software/openliberty/runtime/release/23.0.0.3/openliberty-webProfile10-23.0.0.3.zip'
         - name: Payara Server Community
-          vendor: Payara Services Limited
+          vendor: Azul Systems, Inc
           image: '/images/compatible_products/payara-server-community-logo.svg'
           image_width: 195
           download: 'https://www.payara.fish/downloads/payara-platform-community-edition/'
@@ -515,7 +524,7 @@ sets:
               compatibility: 'https://docs.payara.fish/community/docs/6.2022.1/Jakarta%20EE%20Certification/6.2022.1/6.2022.1%20Web%20TCK%20Results.html'
               download_url: 'https://www.payara.fish/downloads/payara-platform-community-edition/'
         - name: Payara Server Enterprise
-          vendor: Payara Services Limited
+          vendor: Azul Systems, Inc
           image: '/images/compatible_products/payara-server-enterprise-logo.svg'
           image_width: 195
           download: 'https://www.payara.fish/page/payara-enterprise-downloads/'
@@ -606,7 +615,7 @@ sets:
               compatibility: 'https://openliberty.io/certifications/jakartaee/10/coreprofile/23.0.0.3-Java11-TCKResults.html'
               download_url: 'https://public.dhe.ibm.com/ibmdl/export/pub/software/openliberty/runtime/release/23.0.0.3/openliberty-microProfile6-23.0.0.3.zip'
         - name: Payara Server Community
-          vendor: Payara Services Limited
+          vendor: Azul Systems, Inc
           image: '/images/compatible_products/payara-server-community-logo.svg'
           image_width: 195
           download: 'https://www.payara.fish/downloads/payara-platform-community-edition/'
@@ -639,7 +648,7 @@ sets:
               compatibility: 'https://docs.payara.fish/community/docs/6.2022.1.alpha3/Jakarta%20EE%20Certification/6.2022.1.Alpha3/6.2022.1.Alpha3%20Core%20TCK%20Results.html'
               download_url: 'https://docs.payara.fish/community/docs/6.2022.1.alpha3/Jakarta%20EE%20Certification/6.2022.1.Alpha3/6.2022.1.Alpha3%20Core%20TCK%20Results.html'
         - name: Payara Server Enterprise
-          vendor: Payara Services Limited
+          vendor: Azul Systems, Inc
           image: '/images/compatible_products/payara-server-enterprise-logo.svg'
           image_width: 195
           download: 'https://www.payara.fish/page/payara-enterprise-downloads/'
@@ -777,7 +786,7 @@ sets:
           compatibility: 'https://managecat.com/tck-test-results'
           download_url: 'https://download.managecat.com/6.1.0/managefish-fullprofile-6.1.0.zip'
       - name: Payara Server Community
-        vendor: Payara Services Limited
+        vendor: Azul Systems, Inc
         image: '/images/compatible_products/payara_server.png'
         image_width: 195
         download: 'https://www.payara.fish/downloads/'
@@ -1059,7 +1068,7 @@ sets:
             compatibility: 'https://www.bessystem.com/certifications/jakartaee/platform8/9.5-TCKResults.html'
             download_url: https://www.bessystem.com/
       - name: Payara Server Enterprise
-        vendor: Payara Services Limited
+        vendor: Azul Systems, Inc
         image: '/images/compatible_products/payara-server-enterprise-logo.svg'
         image_width: 195
         download: 'https://www.payara.fish/downloads/'
@@ -1080,7 +1089,7 @@ sets:
           compatibility: 'https://docs.payara.fish/enterprise/docs/jakartaee-certification/5.28.1/tck-results-full-5.28.1.html'
           download_url: 'https://docs.payara.fish/enterprise/docs/jakartaee-certification/5.28.1/tck-results-full-5.28.1.html'
       - name: Payara Server Community
-        vendor: Payara Services Limited
+        vendor: Azul Systems, Inc
         image: '/images/compatible_products/payara_server.png'
         image_width: 195
         download: 'https://www.payara.fish/downloads/'
@@ -1338,7 +1347,7 @@ sets:
           download_url: 'https://www.ibm.com/cloud/websphere-liberty/profile-tckresults'
 
       - name: Payara Server Enterprise
-        vendor: Payara Services Limited
+        vendor: Azul Systems, Inc
         image: '/images/compatible_products/payara-server-enterprise-logo.svg'
         image_width: 195
         download: 'https://www.payara.fish/downloads/'
