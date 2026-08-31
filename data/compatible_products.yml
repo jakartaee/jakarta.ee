@@ -83,15 +83,15 @@ sets:
             - version: 26.0.0.5 Java 17
               compatibility: 'https://openliberty.io/certifications/jakartaee/11/platform/26.0.0.5-Java17-TCKResults.html'
               download_url: 'https://public.dhe.ibm.com/ibmdl/export/pub/software/openliberty/runtime/release/26.0.0.5/openliberty-jakartaee11-26.0.0.5.zip'
-        - name: Payara Server Community
-          vendor: Payara Services Limited
-          image: '/images/compatible_products/payara-server-community-logo.svg'
+        - name: Azul Payara Community
+          vendor: Azul Systems, Inc
+          image: '/images/compatible_products/azul-payara-community-logo.svg'
           image_width: 195
-          download: 'https://www.payara.fish/downloads/payara-platform-community-edition/'
+          download: 'https://www.azul.com/downloads/azul-payara-community-edition/'
           versions:
             - version: 7.2025.1.Beta1
               compatibility: 'https://docs.payara.fish/community/docs/Jakarta%20EE%20Certification/7.2025.1.Beta1/7.2025.1.Beta1%20Platform%20TCK%20Results.html'
-              download_url: 'https://www.payara.fish/downloads/payara-platform-community-edition/'
+              download_url: 'https://www.azul.com/downloads/azul-payara-community-edition/'
         - name: Azul Payara Community
           vendor: Azul Systems, Inc
           image: '/images/compatible_products/azul-payara-community-logo.svg'
@@ -171,15 +171,15 @@ sets:
             - version: 26.0.0.5 Java 17
               compatibility: 'https://openliberty.io/certifications/jakartaee/11/webprofile/26.0.0.5-Java17-TCKResults.html'
               download_url: 'https://public.dhe.ibm.com/ibmdl/export/pub/software/openliberty/runtime/release/26.0.0.5/openliberty-webProfile11-26.0.0.5.zip'
-        - name: Payara Server Community
-          vendor: Payara Services Limited
-          image: '/images/compatible_products/payara-server-community-logo.svg'
+        - name: Azul Payara Community
+          vendor: Azul Systems, Inc
+          image: '/images/compatible_products/azul-payara-community-logo.svg'
           image_width: 195
-          download: 'https://www.payara.fish/downloads/payara-platform-community-edition/'
+          download: 'https://www.azul.com/downloads/azul-payara-community-edition/'
           versions:
             - version: 7.2025.1.Beta1, Web Profile
               compatibility: 'https://docs.payara.fish/community/docs/Jakarta%20EE%20Certification/7.2025.1.Beta1/7.2025.1.Beta1%20(Web%20Profile)%20Web%20TCK%20Results.html'
-              download_url: 'https://www.payara.fish/downloads/payara-platform-community-edition/'
+              download_url: 'https://www.azul.com/downloads/azul-payara-community-edition/'
         - name: Azul Payara Community
           vendor: Azul Systems, Inc
           image: '/images/compatible_products/azul-payara-community-logo.svg'
@@ -189,6 +189,15 @@ sets:
             - version: 7.2026.5, Web Profile
               compatibility: 'https://docs.azul.com/payara-community/jakarta-ee-certification/7.2026.5/7.2026.5-web-profile-web-tck-results.html'
               download_url: 'https://nexus.payara.fish/repository/payara-community/fish/payara/distributions/payara-web/7.2026.5/payara-web-7.2026.5.zip'
+        - name: Azul Payara
+          vendor: Azul Systems, Inc
+          image: '/images/compatible_products/azul-payara-server-logo.svg'
+          image_width: 200
+          download: 'https://www.azul.com/azul-payara-trial/'
+          versions:
+            - version: 7.0.0, Web Profile
+              compatibility: 'https://docs.azul.com/payara/jakarta-ee-certification/7.0.0/7.0.0-web-profile-web-tck-results.html'
+              download_url: 'https://www.azul.com/azul-payara-trial/'
 
     - title: Jakarta EE 11 Core Profile
       release: "release/11"
@@ -244,15 +253,15 @@ sets:
             - version: 2.0.0
               compatibility: 'https://docs.fujitsu/documents/002474/eap200-ee11core-tck-results.pdf'
               download_url: 'https://www.fujitsu.com/jp/products/software/middleware/business-middleware/middleware/applatform/'
-        - name: Payara Server Community
-          vendor: Payara Services Limited
-          image: '/images/compatible_products/payara-server-community-logo.svg'
+        - name: Azul Payara Community
+          vendor: Azul Systems, Inc
+          image: '/images/compatible_products/azul-payara-community-logo.svg'
           image_width: 195
-          download: 'https://www.payara.fish/downloads/payara-platform-community-edition/'
+          download: 'https://www.azul.com/downloads/azul-payara-community-edition/'
           versions:
             - version: 7.2024.1.Alpha3
               compatibility: 'https://docs.payara.fish/community/docs/Jakarta%20EE%20Certification/7.2024.1.Alpha3/7.2024.1.Alpha3%20Core%20TCK%20Results.html'
-              download_url: 'https://www.payara.fish/downloads/payara-platform-community-edition/'
+              download_url: 'https://www.azul.com/downloads/azul-payara-community-edition/'
 
   - jakartaee_version: 10
     items:
@@ -351,45 +360,45 @@ sets:
             - version: 23.0.0.3, Java 11
               compatibility: 'https://openliberty.io/certifications/jakartaee/10/platform/23.0.0.3-Java11-TCKResults.html'
               download_url: 'https://public.dhe.ibm.com/ibmdl/export/pub/software/openliberty/runtime/release/23.0.0.3/openliberty-jakartaee10-23.0.0.3.zip'
-        - name: Payara Server Community
-          vendor: Payara Services Limited
-          image: '/images/compatible_products/payara-server-community-logo.svg'
+        - name: Azul Payara Community
+          vendor: Azul Systems, Inc
+          image: '/images/compatible_products/azul-payara-community-logo.svg'
           image_width: 195
-          download: 'https://www.payara.fish/downloads/payara-platform-community-edition/'
+          download: 'https://www.azul.com/downloads/azul-payara-community-edition/'
           versions:
             - version: 6.2024.9
               compatibility: 'https://docs.payara.fish/community/docs/Jakarta%20EE%20Certification/6.2024.9/6.2024.9%20Platform%20TCK%20Results.html'
-              download_url: 'https://www.payara.fish/downloads/payara-platform-community-edition/'
+              download_url: 'https://www.azul.com/downloads/azul-payara-community-edition/'
             - version: 6.2023.12
               compatibility: 'https://docs.payara.fish/community/docs/Jakarta%20EE%20Certification/6.2023.12/6.2023.12%20Platform%20TCK%20Results.html'
-              download_url: 'https://www.payara.fish/downloads/payara-platform-community-edition/'
+              download_url: 'https://www.azul.com/downloads/azul-payara-community-edition/'
             - version: 6.2023.7
               compatibility: 'https://docs.payara.fish/community/docs/Jakarta%20EE%20Certification/6.2023.7/6.2023.7%20Platform%20TCK%20Results.html'
-              download_url: 'https://www.payara.fish/downloads/payara-platform-community-edition/'
+              download_url: 'https://www.azul.com/downloads/azul-payara-community-edition/'
             - version: 6.2022.1
               compatibility: 'https://docs.payara.fish/community/docs/6.2022.1/Jakarta%20EE%20Certification/6.2022.1/6.2022.1%20Platform%20TCK%20Results.html'
               download_url: 'https://github.com/payara/Payara/releases/tag/payara-server-6.2022.1'
             - version: 6.2022.1.Alpha4
               compatibility: 'https://docs.payara.fish/community/docs/6.2022.1.alpha4/Jakarta%20EE%20Certification/6.2022.1.Alpha4/6.2022.1.Alpha4%20Platform%20TCK%20Results.html'
               download_url: 'https://github.com/payara/Payara/releases/tag/payara-server-6.2022.1.Alpha4'
-        - name: Payara Server Enterprise
-          vendor: Payara Services Limited
-          image: '/images/compatible_products/payara-server-enterprise-logo.svg'
+        - name: Azul Payara
+          vendor: Azul Systems, Inc
+          image: '/images/compatible_products/azul-payara-server-logo.svg'
           image_width: 195
-          download: 'https://www.payara.fish/page/payara-enterprise-downloads/'
+          download: 'https://www.azul.com/azul-payara-trial/'
           versions:
             - version: 6.18.0
               compatibility: 'https://docs.payara.fish/enterprise/docs/Jakarta%20EE%20Certification/6.18.0/6.18.0%20Platform%20TCK%20Results.html'
-              download_url: 'https://www.payara.fish/page/payara-enterprise-downloads/'
+              download_url: 'https://www.azul.com/azul-payara-trial/'
             - version: 6.9.0, Web Profile
               compatibility: 'https://docs.payara.fish/enterprise/docs/Jakarta%20EE%20Certification/6.9.0/6.9.0%20(Web%20Profile)%20Web%20TCK%20Results.html'
-              download_url: 'https://www.payara.fish/page/payara-enterprise-downloads/'
+              download_url: 'https://www.azul.com/azul-payara-trial/'
             - version: 6.9.0
               compatibility: 'https://docs.payara.fish/enterprise/docs/Jakarta%20EE%20Certification/6.9.0/6.9.0%20Platform%20TCK%20Results.html'
-              download_url: 'https://www.payara.fish/page/payara-enterprise-downloads/'
+              download_url: 'https://www.azul.com/azul-payara-trial/'
             - version: 6.4.0
               compatibility: 'https://docs.payara.fish/enterprise/docs/Jakarta%20EE%20Certification/6.4.0/6.4.0%20Platform%20TCK%20Results.html'
-              download_url: 'https://www.payara.fish/page/payara-enterprise-downloads/'
+              download_url: 'https://www.azul.com/azul-payara-trial/'
         - name: Primeton AppServer
           vendor: Primeton
           image: '/images/compatible_products/primeton_appserver_logo.png'
@@ -523,36 +532,36 @@ sets:
             - version: 23.0.0.3, Java 11
               compatibility: 'https://openliberty.io/certifications/jakartaee/10/webprofile/23.0.0.3-Java11-TCKResults.html'
               download_url: 'https://public.dhe.ibm.com/ibmdl/export/pub/software/openliberty/runtime/release/23.0.0.3/openliberty-webProfile10-23.0.0.3.zip'
-        - name: Payara Server Community
-          vendor: Payara Services Limited
-          image: '/images/compatible_products/payara-server-community-logo.svg'
+        - name: Azul Payara Community
+          vendor: Azul Systems, Inc
+          image: '/images/compatible_products/azul-payara-community-logo.svg'
           image_width: 195
-          download: 'https://www.payara.fish/downloads/payara-platform-community-edition/'
+          download: 'https://www.azul.com/downloads/azul-payara-community-edition/'
           versions:
             - version: 6.2024.9, Web Profile
               compatibility: 'https://docs.payara.fish/community/docs/Jakarta%20EE%20Certification/6.2024.9/6.2024.9%20(Web%20Profile)%20Web%20TCK%20Results.html'
-              download_url: 'https://www.payara.fish/downloads/payara-platform-community-edition/'
+              download_url: 'https://www.azul.com/downloads/azul-payara-community-edition/'
             - version: 6.2023.12, Web Profile
               compatibility: 'https://docs.payara.fish/community/docs/Jakarta%20EE%20Certification/6.2023.12/6.2023.12%20(Web%20Profile)%20Web%20TCK%20Results.html'
-              download_url: 'https://www.payara.fish/downloads/payara-platform-community-edition/'
+              download_url: 'https://www.azul.com/downloads/azul-payara-community-edition/'
             - version: 6.2023.7, Web Profile
               compatibility: 'https://docs.payara.fish/community/docs/Jakarta%20EE%20Certification/6.2023.7/6.2023.7%20(Web%20Profile)%20Web%20TCK%20Results.html'
-              download_url: https://www.payara.fish/downloads/payara-platform-community-edition/
+              download_url: 'https://www.azul.com/downloads/azul-payara-community-edition/'
             - version: 6.2022.1, Web Profile
               compatibility: 'https://docs.payara.fish/community/docs/6.2022.1/Jakarta%20EE%20Certification/6.2022.1/6.2022.1%20Web%20TCK%20Results.html'
-              download_url: 'https://www.payara.fish/downloads/payara-platform-community-edition/'
-        - name: Payara Server Enterprise
-          vendor: Payara Services Limited
-          image: '/images/compatible_products/payara-server-enterprise-logo.svg'
+              download_url: 'https://www.azul.com/downloads/azul-payara-community-edition/'
+        - name: Azul Payara
+          vendor: Azul Systems, Inc
+          image: '/images/compatible_products/azul-payara-server-logo.svg'
           image_width: 195
-          download: 'https://www.payara.fish/page/payara-enterprise-downloads/'
+          download: 'https://www.azul.com/azul-payara-trial/'
           versions:
             - version: 6.18.0, Web Profile
               compatibility: 'https://docs.payara.fish/enterprise/docs/Jakarta%20EE%20Certification/6.18.0/6.18.0%20(Web%20Profile)%20Web%20TCK%20Results.html'
-              download_url: 'https://www.payara.fish/page/payara-enterprise-downloads/'
+              download_url: 'https://www.azul.com/azul-payara-trial/'
             - version: 6.4.0, Web Profile
               compatibility: 'https://docs.payara.fish/enterprise/docs/Jakarta%20EE%20Certification/6.4.0/6.4.0%20(Web%20Profile)%20Web%20TCK%20Results.html'
-              download_url: 'https://www.payara.fish/page/payara-enterprise-downloads/'
+              download_url: 'https://www.azul.com/azul-payara-trial/'
         - name: WildFly
           vendor: Red Hat
           image: '/images/compatible_products/red-hat-wildfly-logo.png'
@@ -632,63 +641,63 @@ sets:
             - version: 23.0.0.3, Java 11
               compatibility: 'https://openliberty.io/certifications/jakartaee/10/coreprofile/23.0.0.3-Java11-TCKResults.html'
               download_url: 'https://public.dhe.ibm.com/ibmdl/export/pub/software/openliberty/runtime/release/23.0.0.3/openliberty-microProfile6-23.0.0.3.zip'
-        - name: Payara Server Community
-          vendor: Payara Services Limited
-          image: '/images/compatible_products/payara-server-community-logo.svg'
+        - name: Azul Payara Community
+          vendor: Azul Systems, Inc
+          image: '/images/compatible_products/azul-payara-community-logo.svg'
           image_width: 195
-          download: 'https://www.payara.fish/downloads/payara-platform-community-edition/'
+          download: 'https://www.azul.com/downloads/azul-payara-community-edition/'
           versions:
             - version: 6.2024.9
               compatibility: 'https://docs.payara.fish/community/docs/Jakarta%20EE%20Certification/6.2024.9/6.2024.9%20Core%20TCK%20Results.html'
-              download_url: 'https://www.payara.fish/downloads/payara-platform-community-edition/'
+              download_url: 'https://www.azul.com/downloads/azul-payara-community-edition/'
             - version: 6.2024.9, Web Profile
               compatibility: 'https://docs.payara.fish/community/docs/Jakarta%20EE%20Certification/6.2024.9/6.2024.9%20(Web%20Profile)%20Web%20TCK%20Results.html'
-              download_url: 'https://www.payara.fish/downloads/payara-platform-community-edition/'
+              download_url: 'https://www.azul.com/downloads/azul-payara-community-edition/'
             - version: 6.2023.12
               compatibility: 'https://docs.payara.fish/community/docs/Jakarta%20EE%20Certification/6.2023.12/6.2023.12%20Core%20TCK%20Results.html'
-              download_url: 'https://www.payara.fish/downloads/payara-platform-community-edition/'
+              download_url: 'https://www.azul.com/downloads/azul-payara-community-edition/'
             - version: 6.2023.12, Web Profile
               compatibility: 'https://docs.payara.fish/community/docs/Jakarta%20EE%20Certification/6.2023.12/6.2023.12%20(Web%20Profile)%20Core%20TCK%20Results.html'
-              download_url: 'https://www.payara.fish/downloads/payara-platform-community-edition/'
+              download_url: 'https://www.azul.com/downloads/azul-payara-community-edition/'
             - version: 6.2023.7
               compatibility: 'https://docs.payara.fish/community/docs/Jakarta%20EE%20Certification/6.2023.7/6.2023.7%20Core%20TCK%20Results.html'
-              download_url: 'https://www.payara.fish/downloads/payara-platform-community-edition/'
+              download_url: 'https://www.azul.com/downloads/azul-payara-community-edition/'
             - version: 6.2023.7, Web Profile
               compatibility: 'https://docs.payara.fish/community/docs/Jakarta%20EE%20Certification/6.2023.7/6.2023.7%20(Web%20Profile)%20Core%20TCK%20Results.html'
-              download_url: 'https://www.payara.fish/downloads/payara-platform-community-edition/'
+              download_url: 'https://www.azul.com/downloads/azul-payara-community-edition/'
             - version: 6.2022.1
               compatibility: 'https://docs.payara.fish/community/docs/6.2022.1/Jakarta%20EE%20Certification/6.2022.1/6.2022.1%20Core%20TCK%20Results.html'
-              download_url: 'https://www.payara.fish/downloads/payara-platform-community-edition/'
+              download_url: 'https://www.azul.com/downloads/azul-payara-community-edition/'
             - version: 6.2022.1, Web Profile
               compatibility: 'https://docs.payara.fish/community/docs/6.2022.1/Jakarta%20EE%20Certification/6.2022.1/6.2022.1%20(Web%20Profile)%20Core%20TCK%20Results.html'
-              download_url: 'https://www.payara.fish/downloads/payara-platform-community-edition/'
+              download_url: 'https://www.azul.com/downloads/azul-payara-community-edition/'
             - version: 6.2022.1.Alpha3
               compatibility: 'https://docs.payara.fish/community/docs/6.2022.1.alpha3/Jakarta%20EE%20Certification/6.2022.1.Alpha3/6.2022.1.Alpha3%20Core%20TCK%20Results.html'
               download_url: 'https://docs.payara.fish/community/docs/6.2022.1.alpha3/Jakarta%20EE%20Certification/6.2022.1.Alpha3/6.2022.1.Alpha3%20Core%20TCK%20Results.html'
-        - name: Payara Server Enterprise
-          vendor: Payara Services Limited
-          image: '/images/compatible_products/payara-server-enterprise-logo.svg'
+        - name: Azul Payara
+          vendor: Azul Systems, Inc
+          image: '/images/compatible_products/azul-payara-server-logo.svg'
           image_width: 195
-          download: 'https://www.payara.fish/page/payara-enterprise-downloads/'
+          download: 'https://www.azul.com/azul-payara-trial/'
           versions:
             - version: 6.18.0
               compatibility: 'https://docs.payara.fish/enterprise/docs/Jakarta%20EE%20Certification/6.18.0/6.18.0%20Core%20TCK%20Results.html'
-              download_url: 'https://www.payara.fish/page/payara-enterprise-downloads/'
+              download_url: 'https://www.azul.com/azul-payara-trial/'
             - version: 6.18.0, Web Profile
               compatibility: 'https://docs.payara.fish/enterprise/docs/Jakarta%20EE%20Certification/6.18.0/6.18.0%20(Web%20Profile)%20Core%20TCK%20Results.html'
-              download_url: 'https://www.payara.fish/page/payara-enterprise-downloads/'
+              download_url: 'https://www.azul.com/azul-payara-trial/'
             - version: 6.9.0, Web Profile
               compatibility: 'https://docs.payara.fish/enterprise/docs/Jakarta%20EE%20Certification/6.9.0/6.9.0%20(Web%20Profile)%20Core%20TCK%20Results.html'
-              download_url: 'https://www.payara.fish/page/payara-enterprise-downloads/'
+              download_url: 'https://www.azul.com/azul-payara-trial/'
             - version: 6.9.0
               compatibility: 'https://docs.payara.fish/enterprise/docs/Jakarta%20EE%20Certification/6.9.0/6.9.0%20Core%20TCK%20Results.html'
-              download_url: 'https://www.payara.fish/page/payara-enterprise-downloads/'
+              download_url: 'https://www.azul.com/azul-payara-trial/'
             - version: 6.4.0
               compatibility: 'https://docs.payara.fish/enterprise/docs/Jakarta%20EE%20Certification/6.4.0/6.4.0%20Core%20TCK%20Results.html'
-              download_url: 'https://www.payara.fish/page/payara-enterprise-downloads/'
+              download_url: 'https://www.azul.com/azul-payara-trial/'
             - version: 6.4.0, Web Profile
               compatibility: 'https://docs.payara.fish/enterprise/docs/Jakarta%20EE%20Certification/6.4.0/6.4.0%20(Web%20Profile)%20Core%20TCK%20Results.html'
-              download_url: 'https://www.payara.fish/page/payara-enterprise-downloads/'
+              download_url: 'https://www.azul.com/azul-payara-trial/'
         - name: WildFly
           vendor: Red Hat
           image: '/images/compatible_products/red-hat-wildfly-logo.png'
@@ -803,11 +812,11 @@ sets:
         - version: 6.1.0
           compatibility: 'https://managecat.com/tck-test-results'
           download_url: 'https://download.managecat.com/6.1.0/managefish-fullprofile-6.1.0.zip'
-      - name: Payara Server Community
-        vendor: Payara Services Limited
-        image: '/images/compatible_products/payara_server.png'
-        image_width: 195
-        download: 'https://www.payara.fish/downloads/'
+      - name: Azul Payara Community
+        vendor: Azul Systems, Inc
+        image: '/images/compatible_products/azul-payara-community-logo.svg'
+        image_width: 200
+        download: 'https://www.azul.com/downloads/azul-payara-community-edition/'
         versions:
         - version: 6.2021.1 Alpha 1
           compatibility: 'https://docs.payara.fish/community/docs/jakartaee-certification/6.2021.1.Alpha1/tck-results-full-6.2021.1.Alpha1.html'
@@ -1085,32 +1094,32 @@ sets:
           - version: 'v9.5'
             compatibility: 'https://www.bessystem.com/certifications/jakartaee/platform8/9.5-TCKResults.html'
             download_url: https://www.bessystem.com/
-      - name: Payara Server Enterprise
-        vendor: Payara Services Limited
-        image: '/images/compatible_products/payara-server-enterprise-logo.svg'
-        image_width: 195
-        download: 'https://www.payara.fish/downloads/'
+      - name: Azul Payara
+        vendor: Azul Systems, Inc
+        image: '/images/compatible_products/azul-payara-server-logo.svg'
+        image_width: 200
+        download: 'https://www.azul.com/azul-payara-trial/'
         versions:
         - version: 5.67.0
           compatibility: 'https://docs.payara.fish/enterprise/docs/5.67.0/Jakarta%20EE%20Certification/5.67.0/5.67.0%20Platform%20TCK%20Results.html'
-          download_url: 'https://www.payara.fish/page/payara-enterprise-downloads/'
+          download_url: 'https://www.azul.com/azul-payara-trial/'
         - version: 5.58.0
           compatibility: 'https://docs.payara.fish/enterprise/docs/5.58.0/Jakarta%20EE%20Certification/5.58.0/5.58.0%20Platform%20TCK%20Results.html'
-          download_url: 'https://www.payara.fish/page/payara-enterprise-downloads/'
+          download_url: 'https://www.azul.com/azul-payara-trial/'
         - version: 5.53.0
           compatibility: 'https://docs.payara.fish/enterprise/docs/5.53.0/Jakarta%20EE%20Certification/5.53.0/5.53.0%20Platform%20TCK%20Results.html'
-          download_url: 'https://www.payara.fish/page/payara-enterprise-downloads/'
+          download_url: 'https://www.azul.com/azul-payara-trial/'
         - version: 5.43.0
           compatibility: 'https://docs.payara.fish/enterprise/docs/Jakarta%20EE%20Certification/5.43.0/5.43.0%20Web%20TCK%20Results.html'
           download_url: 'https://docs.payara.fish/enterprise/docs/Jakarta%20EE%20Certification/5.43.0/5.43.0%20Web%20TCK%20Results.html'
         - version: 5.28.1
           compatibility: 'https://docs.payara.fish/enterprise/docs/jakartaee-certification/5.28.1/tck-results-full-5.28.1.html'
           download_url: 'https://docs.payara.fish/enterprise/docs/jakartaee-certification/5.28.1/tck-results-full-5.28.1.html'
-      - name: Payara Server Community
-        vendor: Payara Services Limited
-        image: '/images/compatible_products/payara_server.png'
-        image_width: 195
-        download: 'https://www.payara.fish/downloads/'
+      - name: Azul Payara Community
+        vendor: Azul Systems, Inc
+        image: '/images/compatible_products/azul-payara-community-logo.svg'
+        image_width: 200
+        download: 'https://www.azul.com/downloads/azul-payara-community-edition/'
         versions:
         - version: 5.2021.4
           compatibility: 'https://docs.payara.fish/community/docs/jakartaee-certification/5.2021.4/tck-results-full-5.2021.4.html'
@@ -1364,21 +1373,21 @@ sets:
           compatibility: 'https://www.ibm.com/cloud/websphere-liberty/profile-tckresults'
           download_url: 'https://www.ibm.com/cloud/websphere-liberty/profile-tckresults'
 
-      - name: Payara Server Enterprise
-        vendor: Payara Services Limited
-        image: '/images/compatible_products/payara-server-enterprise-logo.svg'
-        image_width: 195
-        download: 'https://www.payara.fish/downloads/'
+      - name: Azul Payara
+        vendor: Azul Systems, Inc
+        image: '/images/compatible_products/azul-payara-server-logo.svg'
+        image_width: 200
+        download: 'https://www.azul.com/azul-payara-trial/'
         versions:
         - version: 5.67.0, Web Profile
           compatibility: 'https://docs.payara.fish/enterprise/docs/5.67.0/Jakarta%20EE%20Certification/5.67.0/5.67.0%20Web%20TCK%20Results.html'
-          download_url: 'https://www.payara.fish/page/payara-enterprise-downloads/'
+          download_url: 'https://www.azul.com/azul-payara-trial/'
         - version: 5.58.0, Web Profile
           compatibility: 'https://docs.payara.fish/enterprise/docs/5.58.0/Jakarta%20EE%20Certification/5.58.0/5.58.0%20Web%20TCK%20Results.html'
-          download_url: 'https://www.payara.fish/page/payara-enterprise-downloads/'
+          download_url: 'https://www.azul.com/azul-payara-trial/'
         - version: 5.53.0, Web Profile
           compatibility: 'https://docs.payara.fish/enterprise/docs/5.53.0/Jakarta%20EE%20Certification/5.53.0/5.53.0%20Web%20TCK%20Results.html'
-          download_url: 'https://www.payara.fish/page/payara-enterprise-downloads/'
+          download_url: 'https://www.azul.com/azul-payara-trial/'
         - version: 5.43.0
           compatibility: 'https://docs.payara.fish/enterprise/docs/Jakarta%20EE%20Certification/5.43.0/5.43.0%20Web%20TCK%20Results.html'
           download_url: 'https://docs.payara.fish/enterprise/docs/Jakarta%20EE%20Certification/5.43.0/5.43.0%20Web%20TCK%20Results.html'
