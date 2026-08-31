@@ -1,18 +1,26 @@
 ---
 years:
 
-- year: 2026
+- year: 2027
   conferences:
 
-  - name: AI Native Summit
-    url: https://ainativesummit.com
+  - name: GIDS
+    url: https://developersummit.com/
     location: Bangalore 🇮🇳
-    date: Dec 9-10
+    date: Apr 27-30
+
+- year: 2026
+  conferences:
 
   - name: JakartaOne Livestream
     url: https://jakartaone.jakarta.ee/jakartaone-livestream-2026/
     location: online 🌐
     date: Dec 1
+
+  - name: Brisbane JUG
+    url: 
+    location: Brisbane 🇦🇺
+    date: Nov 23
 
   - name: ChurConf
     url: https://au.churconf.com
