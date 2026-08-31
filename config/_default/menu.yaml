@@ -356,11 +356,17 @@ main:
     parent: "take-part"
     weight: 1
 
+  - identifier: "jakarta-ee-user-groups"
+    name: "Jakarta EE User Groups"
+    pageRef: "/legal/user-group-logo-policy/"
+    parent: "take-part"
+    weight: 2
+
   - identifier: "stay-connected"
     name: "Stay connected"
     pageRef: "/connect/"
     parent: "take-part"
-    weight: 2
+    weight: 3
 
   # Community Content sub-items
   - identifier: "blogs"
