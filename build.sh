@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 # ===========================================================================
 # Copyright (c) 2019 Eclipse Foundation and others.
 #
