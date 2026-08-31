@@ -86,18 +86,12 @@ sets:
         - name: Azul Payara Community
           vendor: Azul Systems, Inc
           image: '/images/compatible_products/azul-payara-community-logo.svg'
-          image_width: 195
+          image_width: 200
           download: 'https://www.azul.com/downloads/azul-payara-community-edition/'
           versions:
             - version: 7.2025.1.Beta1
               compatibility: 'https://docs.payara.fish/community/docs/Jakarta%20EE%20Certification/7.2025.1.Beta1/7.2025.1.Beta1%20Platform%20TCK%20Results.html'
               download_url: 'https://www.azul.com/downloads/azul-payara-community-edition/'
-        - name: Azul Payara Community
-          vendor: Azul Systems, Inc
-          image: '/images/compatible_products/azul-payara-community-logo.svg'
-          image_width: 200
-          download: 'https://www.azul.com/downloads/azul-payara-community-edition/'
-          versions:
             - version: 7.2026.5
               compatibility: 'https://docs.azul.com/payara-community/jakarta-ee-certification/7.2026.5/7.2026.5-platform-tck-results.html'
               download_url: 'https://nexus.payara.fish/repository/payara-community/fish/payara/distributions/payara/7.2026.5/payara-7.2026.5.zip'
@@ -174,18 +168,12 @@ sets:
         - name: Azul Payara Community
           vendor: Azul Systems, Inc
           image: '/images/compatible_products/azul-payara-community-logo.svg'
-          image_width: 195
+          image_width: 200
           download: 'https://www.azul.com/downloads/azul-payara-community-edition/'
           versions:
             - version: 7.2025.1.Beta1, Web Profile
               compatibility: 'https://docs.payara.fish/community/docs/Jakarta%20EE%20Certification/7.2025.1.Beta1/7.2025.1.Beta1%20(Web%20Profile)%20Web%20TCK%20Results.html'
               download_url: 'https://www.azul.com/downloads/azul-payara-community-edition/'
-        - name: Azul Payara Community
-          vendor: Azul Systems, Inc
-          image: '/images/compatible_products/azul-payara-community-logo.svg'
-          image_width: 200
-          download: 'https://www.azul.com/downloads/azul-payara-community-edition/'
-          versions:
             - version: 7.2026.5, Web Profile
               compatibility: 'https://docs.azul.com/payara-community/jakarta-ee-certification/7.2026.5/7.2026.5-web-profile-web-tck-results.html'
               download_url: 'https://nexus.payara.fish/repository/payara-community/fish/payara/distributions/payara-web/7.2026.5/payara-web-7.2026.5.zip'
