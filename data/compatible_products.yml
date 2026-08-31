@@ -95,7 +95,7 @@ sets:
         - name: Azul Payara Community
           vendor: Azul Systems, Inc
           image: '/images/compatible_products/azul-payara-community-logo.svg'
-          image_width: 195
+          image_width: 640
           download: 'https://www.azul.com/downloads/azul-payara-community-edition/'
           versions:
             - version: 7.2026.5
@@ -104,7 +104,7 @@ sets:
         - name: Azul Payara
           vendor: Azul Systems, Inc
           image: '/images/compatible_products/azul-payara-server-logo.svg'
-          image_width: 195
+          image_width: 375
           download: 'https://www.azul.com/azul-payara-trial/'
           versions:
             - version: 7.0.0
@@ -183,7 +183,7 @@ sets:
         - name: Azul Payara Community
           vendor: Azul Systems, Inc
           image: '/images/compatible_products/azul-payara-community-logo.svg'
-          image_width: 195
+          image_width: 640
           download: 'https://www.azul.com/downloads/azul-payara-community-edition/'
           versions:
             - version: 7.2026.5, Web Profile
