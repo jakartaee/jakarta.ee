@@ -20,4 +20,4 @@ IFS=$'\n\t'
 
 yarn install --frozen-lockfile
 yarn build
-hugo
+GOGC=20 hugo
