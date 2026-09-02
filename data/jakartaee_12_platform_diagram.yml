@@ -8,135 +8,117 @@
 
 title: "Jakarta EE 12 Platform"
 
-# Columns define the main sections of the platform
-# Each column can have a title, specifications, and display properties
-columns:
-  # Left Column - Platform specifications
-  - title: ""
-    width: "single" # Options: single, double
+# Specifications are grouped by the profile that introduces them.
+# Visual nesting goes: full_platform → web_profile → core_profile
+# Each `path` resolves a page under /content/specifications/<path>/.
+# `name` is optional and overrides the display name derived from the
+# spec's page title (defaults to title with "Jakarta " prefix and
+# "(under development)" suffix stripped).
+groups:
+  - id: full_platform
+    title: ""
+    width: single
+    grid: false
     specs:
-      - name: "NoSQL 1.1*"
-        status: "new" # Options: updated, not-updated, new
-        url: "/specifications/nosql/1.1/"
-      - name: "Authorization 3.0"
-        status: "not-updated" # Options: updated, not-updated, new
-        url: "/specifications/authorization/3.0/"
-      - name: "Activation 2.1"
-        status: "updated"
-        url: "/specifications/activation/2.1/"
-      - name: "Batch 2.2"
-        status: "updated"
-        url: "/specifications/batch/2.2/"
-      - name: "Connectors 2.2"
-        status: "updated"
-        url: "/specifications/connectors/2.2/"
-      - name: "Mail 2.1"
-        status: "updated"
-        url: "/specifications/mail/2.1/"
-      - name: "Messaging 3.1"
-        status: "not-updated"
-        url: "/specifications/messaging/3.1/"
-      - name: "Enterprise Beans 4.1"
-        status: "updated"
-        url: "/specifications/enterprise-beans/4.1/"
+      - path: nosql/1.1
+        name: "NoSQL 1.1*"
+        status: new
+      - path: authorization/3.0
+        status: not-updated
+      - path: activation/2.1
+        status: updated
+      - path: batch/2.2
+        status: updated
+      - path: connectors/2.2
+        name: "Connectors 2.2"
+        status: updated
+      - path: mail/2.1
+        status: updated
+      - path: messaging/3.1
+        status: not-updated
+      - path: enterprise-beans/4.1
+        status: updated
 
-  # Center Column - Web Profile (wider, two-column layout)
-  - title: "Jakarta EE 12 <strong>Web Profile</strong>"
-    width: "double" # Spans 2 columns
-    grid: true # Enable two-column grid layout for specs
+  - id: web_profile
+    title: "Jakarta EE 12 <strong>Web Profile</strong>"
+    width: double
+    grid: true
     specs:
-      - name: "Query 1.0"
-        status: "new"
-        url: "/specifications/query/1.0/"
-      - name: "Authentication 3.1**"
-        status: "not-updated"
-        url: "/specifications/authentication/3.1/"
-      - name: "Data 1.1"
-        status: "updated"
-        url: "/specifications/data/1.1/"
-      - name: "Concurrency 3.2"
-        status: "updated"
-        url: "/specifications/concurrency/3.2/"
-      - name: "Persistence 4.0"
-        status: "updated"
-        url: "/specifications/persistence/4.0/"
-      - name: "CDI 5.0"
-        status: "updated"
-        url: "/specifications/cdi/5.0/"
-      - name: "Pages 4.1"
-        status: "updated"
-        url: "/specifications/pages/4.1/"
-      - name: "Expression Language 6.1"
-        status: "updated"
-        url: "/specifications/expression-language/6.1/"
-      - name: "WebSocket 2.3"
-        status: "updated"
-        url: "/specifications/websocket/2.3/"
-      - name: "Faces 5.0"
-        status: "updated"
-        url: "/specifications/faces/5.0/"
-      - name: "Validation 4.0"
-        status: "updated"
-        url: "/specifications/bean-validation/4.0/"
-      - name: "Security 5.0"
-        status: "updated"
-        url: "/specifications/security/5.0/"
-      - name: "Debugging Support 2.0"
-        status: "not-updated"
-        url: "/specifications/debugging/2.0/"
-      - name: "Servlet 6.2"
-        status: "updated"
-        url: "/specifications/servlet/6.2/"
-      - name: "Enterprise Beans Lite 4.1"
-        status: "updated"
-        url: "/specifications/enterprise-beans/4.1/"
-      - name: "Standard Tag Library 3.1"
-        status: "updated"
-        url: "/specifications/tags/3.1/"
-      - name: "Transactions 2.1"
-        status: "updated"
-        url: "/specifications/transactions/2.1/"
+      - path: query/1.0
+        status: new
+      - path: authentication/3.1
+        name: "Authentication 3.1**"
+        status: not-updated
+      - path: data/1.1
+        status: updated
+      - path: concurrency/3.2
+        status: updated
+      - path: persistence/4.0
+        status: updated
+      - path: cdi/5.0
+        name: "CDI 5.0"
+        status: updated
+      - path: pages/4.1
+        status: updated
+      - path: expression-language/6.1
+        status: updated
+      - path: websocket/2.3
+        status: updated
+      - path: faces/5.0
+        status: updated
+      - path: bean-validation/4.0
+        status: updated
+      - path: security/5.0
+        status: updated
+      - path: debugging/2.0
+        name: "Debugging Support 2.0"
+        status: not-updated
+      - path: servlet/6.2
+        status: updated
+      - path: enterprise-beans/4.1
+        name: "Enterprise Beans Lite 4.1"
+        status: updated
+      - path: tags/3.1
+        status: updated
+      - path: transactions/2.1
+        status: updated
 
-  # Right Column - Core Profile
-  - title: "Jakarta EE 12 <strong>Core Profile</strong>"
-    width: "single"
+  - id: core_profile
+    title: "Jakarta EE 12 <strong>Core Profile</strong>"
+    width: single
+    grid: false
     specs:
-      - name: "RESTful Web Services 5.0"
-        status: "updated"
-        url: "/specifications/restful-ws/5.0/"
-      - name: "JSON Processing 2.2"
-        status: "updated"
-        url: "/specifications/jsonp/2.2/"
-      - name: "JSON Binding 3.1"
-        status: "updated"
-        url: "/specifications/jsonb/3.1/"
-      - name: "Annotations 3.1"
-        status: "updated"
-        url: "/specifications/annotations/3.1/"
-      - name: "Interceptors 2.2"
-        status: "not-updated"
-        url: "/specifications/interceptors/2.2/"
-      - name: "Dependency Injection 2.0"
-        status: "not-updated"
-        url: "/specifications/dependency-injection/2.0/"
-      - name: "CDI Lite 5.0"
-        status: "updated"
-        url: "/specifications/cdi/5.0/"
+      - path: restful-ws/5.0
+        status: updated
+      - path: jsonp/2.2
+        status: updated
+      - path: jsonb/3.1
+        status: updated
+      - path: annotations/3.1
+        status: updated
+      - path: interceptors/2.2
+        status: not-updated
+      - path: dependency-injection/2.0
+        status: not-updated
+      - path: cdi/5.0
+        name: "CDI Lite 5.0"
+        status: updated
 
 # Legend configuration
 legend:
-  - status: "updated"
-    label: "Updated"
-    box_class: "bg-primary-dark-purple"
-    text_class: "text-white"
-  - status: "not-updated"
-    label: "Not Updated"
-    box_class: "bg-blue-ish-grey"
-    text_class: "text-black"
-  - status: "new"
-    label: "New"
-    box_class: "bg-primary-orange"
-    text_class: "text-white"
+  - status: updated
+    label: Updated
+    box_class: bg-primary-dark-purple
+    text_class: text-white
+  - status: not-updated
+    label: Not Updated
+    box_class: bg-blue-ish-grey
+    text_class: text-black
+  - status: new
+    label: New
+    box_class: bg-primary-orange
+    text_class: text-white
+
 footnotes:
   - "* Candidate for inclusion."
   - "**May or may not be updated as a part of Security 5.0."
