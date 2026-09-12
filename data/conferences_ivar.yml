@@ -42,6 +42,11 @@ years:
     location: Casablanca 🇲🇦
     date: Nov 4-5
 
+  - name: JCON USA
+    url: https://2026.usa.jcon.one/
+    location: Atlanta, GA 🇺🇸
+    date: Oct 26-29
+
   - name: IBM TexchXchange
     url: https://www.ibm.com/events/techxchange
     location: Atlanta, GA 🇺🇸
@@ -71,7 +76,7 @@ years:
     url: https://lp.jetbrains.com/intellij-idea-conf-2026/
     location: online 🌐
     date: Sep 8-9
-    upcoming: true
+    blog: https://www.agilejava.eu/2026/09/12/intellij-idea-conf-2026/
     
   - name: JavaZone
     url: https://2026.javazone.no
