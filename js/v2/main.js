@@ -14,6 +14,7 @@
 import "eclipsefdn-solstice-assets";
 import List from "list.js";
 import "./video-modal";
+import "./components/jee-popover";
 import eclipsefdnSpecificationBadges from "./specification-badges";
 import { setupTopIntersection } from "./top-intersection";
 import setupMobileMegaMenu from "./mobile-mega-menu";
