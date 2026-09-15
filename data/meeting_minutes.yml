@@ -11,6 +11,18 @@ years:
 dir: /about/meeting_minutes/
 items:
   marketing_committee:
+    - url: marketing_committee/minutes-marketing-0806-2026.pdf
+      title: 6 August 2026 (pdf)
+      year: 2026
+    - url: marketing_committee/minutes-marketing-0723-2026.pdf
+      title: 23 July 2026 (pdf)
+      year: 2026
+    - url: marketing_committee/minutes-marketing-0709-2026.pdf
+      title: 9 July 2026 (pdf)
+      year: 2026
+    - url: marketing_committee/minutes-marketing-0611-2026.pdf
+      title: 11 June 2026 (pdf)
+      year: 2026
     - url: marketing_committee/minutes-marketing-0528-2026.pdf
       title: 28 May 2026 (pdf)
       year: 2026
