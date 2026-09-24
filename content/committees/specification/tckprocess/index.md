@@ -134,8 +134,8 @@ Artifacts:
 
 -   Approved binaries will be signed with the GPG key of the Jakarta
     Specification Committee, and then published on download.eclipse.org
-    along with the digital signature of the SHA-256 hash of the final
-    binary, and the SHA-256 hash of the binary as the fingerprint of the
+    along with the digital signature of the SHA-256/SHA-512 hash of the final
+    binary, and the SHA-256/SHA-512 hash of the binary as the fingerprint of the
     TCK.
 
 -   Consumers can use the GPG key of the Jakarta Specification Committee
@@ -350,7 +350,7 @@ via the specification project's issue tracker using the label
 
 -   Specification Name, Version and download URL
 
--   TCK Version, digital SHA-256 fingerprint and download URL
+-   TCK Version, digital SHA-256/SHA-512 fingerprint and download URL
 
 -   Implementation runtime Version(s) tested
 
