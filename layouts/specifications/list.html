@@ -5,6 +5,9 @@
       <div class="row">
         <div class="col-md-18 padding-bottom-30">
     {{ end }}
+    {{ if ne .Page.Params.hide_breadcrumb true }}
+      {{ partial "breadcrumbs.html" . }}
+    {{ end }}
 {{ end }}
 
 {{ define "main" }}
