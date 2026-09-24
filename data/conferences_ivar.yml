@@ -12,6 +12,11 @@ years:
 - year: 2026
   conferences:
 
+  - name: Javafest
+    url: https://javafest.org/#
+    location: Bangalore 🇮🇳 
+    date: Dec 5
+  
   - name: JakartaOne Livestream
     url: https://jakartaone.jakarta.ee/jakartaone-livestream-2026/
     location: online 🌐
