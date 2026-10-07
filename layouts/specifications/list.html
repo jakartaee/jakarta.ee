@@ -1,6 +1,6 @@
 {{ define "main_prefix" }}
 <main>
-  <div class="{{ if (and (isset .Page.Params "container") (ne .Page.Params ""))}}{{ .Page.Params.container }}{{else}}container{{end}}">
+  <div class="{{ if (and (isset .Page.Params "container") (ne .Page.Params ""))}}{{ .Page.Params.container }}{{else}}container{{end}} padding-top-50">
     {{ if ne .Page.Params.hide_sidebar true }}
       <div class="row">
         <div class="col-md-18 padding-bottom-30">
