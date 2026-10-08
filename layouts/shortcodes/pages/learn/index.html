@@ -54,8 +54,24 @@
         {{ range $starter_guides }}
           {{ partial "pages/learn/guide-card.html" (dict "page" . "badge" "starter") }}
         {{ end }}
+        {{/* Videos are listed as spec cards, sorted alongside the spec
+             guides so each video sits next to the guide it relates to. */}}
+        {{ $spec_cards := slice }}
         {{ range $spec_guides }}
-          {{ partial "pages/learn/guide-card.html" (dict "page" . "badge" "specs") }}
+          {{ $spec_cards = $spec_cards | append (dict "sort_key" .Title "page" .) }}
+        {{ end }}
+        {{ range $.Site.Data.learn.videos }}
+          {{ $spec_cards = $spec_cards | append (dict
+              "sort_key" (printf "%s (video)" .title)
+              "title" .title
+              "href" .href
+              "description" .description
+              "tags" .tags
+              "video" true
+              "external" true) }}
+        {{ end }}
+        {{ range sort $spec_cards "sort_key" }}
+          {{ partial "pages/learn/guide-card.html" (merge . (dict "badge" "specs")) }}
         {{ end }}
         {{ range $.Site.Data.learn.tutorials }}
           {{ partial "pages/learn/guide-card.html" (dict

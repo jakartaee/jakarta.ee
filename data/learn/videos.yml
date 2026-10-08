@@ -1,0 +1,16 @@
+- title: "What is the Jakarta EE Platform?"
+  description: "The Jakarta EE Platform enables developers to produce lightweight, cloud native applications of all kinds while providing maximum developer productivity."
+  href: "https://www.youtube.com/watch?v=wK5Uis9QnFU"
+  tags: ["platform"]
+- title: "Jakarta RESTful Web Services Explained"
+  description: "Jakarta EE gives developers a comprehensive set of vendor-neutral, open specifications that are used for developing modern, cloud native Java applications. This video explains Jakarta RESTful Web Services."
+  href: "https://www.youtube.com/watch?v=7mfVyPI360k"
+  tags: ["restful-web-services"]
+- title: "Simplifying Data Access with MySQL and Jakarta Data"
+  description: "This video explores concepts for data access and how the new Jakarta Data specification makes data access simpler than ever for application developers."
+  href: "https://www.youtube.com/watch?v=jFo2ifxwslo"
+  tags: ["data"]
+- title: "Jakarta Persistence Explained"
+  description: "The Jakarta Persistence specification, also known as Jakarta Persistence API or JPA, encompasses a number of APIs that facilitate the creation, reading, updating, and deletion of data within data stores."
+  href: "https://www.youtube.com/watch?v=fzMdP7SxfSw"
+  tags: ["persistence"]

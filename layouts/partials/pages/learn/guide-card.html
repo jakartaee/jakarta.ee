@@ -21,6 +21,8 @@
     external                — if true, opens the link in a new tab.
     badge                   — "starter", "specs", or "tutorial". Drives the
                               visible label and brand badge variant.
+    video                   — if true, appends an italic "(Video)" label
+                              to the title.
 */}}
 
 {{ $page := .page }}
@@ -53,7 +55,7 @@
 {{ $data_tags := delimit ($tag_slugs | uniq) " " }}
 
 <a href="{{ $href }}" class="learn-guide-card" data-tags="{{ $data_tags }}"{{ if $external }} target="_blank" rel="noopener"{{ end }}>
-  <h3 class="learn-guide-card-title">{{ $title }}</h3>
+  <h3 class="learn-guide-card-title">{{ $title }}{{ if .video }} <em>({{ i18n "pages-learn-index-video-label" }})</em>{{ end }}</h3>
   <p class="learn-guide-card-description">{{ $description }}</p>
   <span class="badge badge-{{ $badge_variant }}">{{ $badge_label }}</span>
 </a>
