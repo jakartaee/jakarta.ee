@@ -12,7 +12,12 @@ years:
 - year: 2026
   conferences:
 
-  - name: Javafest
+  - name: Eclipse IDE Meetup
+    url: 
+    location: Bangalore 🇮🇳 
+    date: Dec 8
+
+  - name: JavAIfest
     url: https://javafest.org/#
     location: Bangalore 🇮🇳 
     date: Dec 5
