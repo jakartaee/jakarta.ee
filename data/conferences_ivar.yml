@@ -9,6 +9,11 @@ years:
     location: Bangalore 🇮🇳
     date: Apr 27-30
 
+  - name: Open Community Experience
+    url: https://ocxconf.org/
+    location: Brussels 🇧🇪
+    date: Apr 13-15
+    
 - year: 2026
   conferences:
 
