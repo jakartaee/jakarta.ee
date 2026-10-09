@@ -1,0 +1,529 @@
+/*!
+ * Copyright (c) 2026 Eclipse Foundation AISBL
+ *
+ * This program and the accompanying materials are made available under the
+ * terms of the Eclipse Public License v. 2.0 which is available at
+ * http://www.eclipse.org/legal/epl-2.0.
+ *
+ * SPDX-License-Identifier: EPL-2.0
+*/
+
+// Specifications overview: layouts/specifications/overview.html
+
+@import (reference) '../styles.less';
+
+@spec-card-radius: @border-radius-large;
+@spec-card-shadow: 0 1.2rem 4rem fade(@brand-primary-royal-blue, 18%);
+@spec-touch-target: 4.4rem;
+
+.specifications-overview {
+  color: @brand-secondary-gray;
+
+  h2 {
+    margin: 0 0 1.4rem;
+    font-size: 2.8rem;
+    font-weight: 500;
+    color: @brand-primary-dark;
+
+    @media (min-width: @screen-md-min) {
+      font-size: 3.4rem;
+    }
+  }
+}
+
+// Last section: the fluid page container has no bottom padding
+.specifications-overview .learning-hub-banner {
+  margin-bottom: 3rem;
+}
+
+// Section introductions: navy, unlike the grey card text (as in Figma)
+.specifications-lead-text() {
+  font-size: 1.4rem;
+  line-height: 1.6;
+  color: @brand-primary-dark;
+}
+
+//== Intro
+
+.specifications-intro {
+  padding-bottom: 4rem;
+  text-align: center;
+
+  @media (min-width: @screen-md-min) {
+    h2 {
+      font-size: 4rem;
+    }
+  }
+
+  p {
+    .specifications-lead-text();
+    max-width: 80rem; // Breaks after "(TCK)," as in Figma
+    margin: 0 auto;
+  }
+
+  strong {
+    font-weight: 700;
+  }
+}
+
+//== Diagram
+// Builds on the platform-diagram shortcode styles
+// (components/jakarta-platform-diagram.less): tiles are coloured by profile
+// instead of release status, and each frame is closed at the bottom.
+
+.jakarta-ee-platform-diagram.specifications-diagram {
+  margin-bottom: 6rem;
+
+  .platform-title {
+    font-weight: 500;
+    color: @brand-primary-dark;
+  }
+
+  .platform-frame {
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid @brand-secondary;
+    border-bottom-left-radius: @border-radius-large;
+
+    @media (min-width: @screen-md-min) {
+      padding-bottom: 2rem;
+    }
+  }
+
+  // Two tiles per row on phones, one column per frame from md up
+  .platform-frame-specs {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-content: start;
+    gap: 1rem;
+    padding-right: 1.5rem;
+
+    @media (min-width: @screen-md-min) {
+      grid-template-columns: minmax(0, 1fr);
+      padding-right: 0;
+
+      // Web Profile: two columns filled top to bottom, as in the design.
+      // --rows is set by the template.
+      &.spec-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-template-rows: auto repeat(var(--rows), auto);
+        grid-auto-flow: column;
+      }
+    }
+  }
+
+  .platform-footnotes {
+    max-width: none;
+    margin-top: 2rem;
+  }
+}
+
+.specifications-diagram-standalone {
+  margin-top: 3rem;
+  text-align: center;
+
+  .column-title {
+    .font-semibold;
+    margin-bottom: 0.5rem;
+  }
+
+  .specifications-diagram-standalone-text {
+    margin-bottom: 2rem;
+    font-size: 1.4rem;
+  }
+
+  // Overrides the per-frame column count above
+  .jakarta-ee-platform-diagram.specifications-diagram & .platform-frame-specs {
+    padding-right: 0;
+
+    @media (min-width: @screen-sm-min) {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    @media (min-width: @screen-md-min) {
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+    }
+  }
+}
+
+//== Diagram tiles
+// Scoped to the diagram to win over the shared `.spec-box` styles.
+
+.jakarta-ee-platform-diagram.specifications-diagram {
+  .spec-tile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: @spec-touch-target;
+    border: 0;
+    font-family: inherit;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1.2;
+    color: @brand-primary-dark;
+    background-color: @mist-blue;
+
+    &:focus-visible {
+      outline: 2px solid @brand-primary-royal-blue;
+      outline-offset: 2px;
+    }
+  }
+
+  .spec-tile-header {
+    grid-column: ~"1 / -1"; // Escaped: LESS would divide
+    font-size: 1.8rem;
+    font-weight: 700;
+
+    @media (min-width: @screen-md-min) {
+      font-size: 2.2rem;
+    }
+  }
+
+  .spec-tile-platform {
+    background-color: @powder-blue;
+  }
+
+  .spec-tile-webprofile {
+    background-color: @lavender-blue;
+  }
+
+  .spec-tile-coreprofile {
+    color: @white;
+    background-color: @brand-primary-dark;
+  }
+
+  .spec-tile-standalone {
+    background-color: @mist-blue;
+  }
+
+  // Tile whose pop-up is open (the pop-up is always the tile's next sibling)
+  @spec-tile-open: ~"+ .spec-popover:popover-open";
+
+  .spec-tile:has(@{spec-tile-open}) {
+    color: @white;
+    background-color: @slate-blue;
+  }
+
+  .spec-tile-platform.spec-tile-header:has(@{spec-tile-open}) {
+    background-color: @azure-blue;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .spec-tile {
+      transition: none;
+
+      &:hover,
+      &:focus {
+        transform: none;
+      }
+    }
+  }
+}
+
+//== Pop-ups
+// Bottom sheet on phones. From sm up the pop-up sits next to its tile with
+// CSS anchor positioning; browsers without it show it centred.
+
+.spec-popover {
+  position: fixed;
+  inset: auto 0 0;
+  width: 100%;
+  max-width: none;
+  max-height: 85vh;
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+  border: 0;
+  background: transparent;
+
+  &::backdrop {
+    background-color: fade(@brand-primary-dark, 40%);
+  }
+
+  .spec-card {
+    border-radius: @spec-card-radius @spec-card-radius 0 0;
+    text-align: left;
+  }
+
+  @media (min-width: @screen-sm-min) {
+    inset: 0;
+    width: 38rem;
+    height: fit-content;
+    max-height: none;
+    margin: auto;
+    overflow: visible;
+
+    &::backdrop {
+      background-color: transparent;
+    }
+
+    .spec-card {
+      border-radius: @spec-card-radius;
+      box-shadow: @spec-card-shadow;
+    }
+
+    @supports (position-area: center) {
+      inset: auto;
+      margin: 0 1rem;
+      position-area: right span-bottom;
+      position-try-fallbacks: flip-inline, flip-block, flip-block flip-inline;
+    }
+  }
+}
+
+//== Panels
+
+// Boxed to the page container, with just enough padding around the content
+.specifications-panel {
+  margin-bottom: 4rem;
+  padding: 3rem 1.5rem;
+  border-radius: @border-radius-large;
+  background-image: linear-gradient(180deg, @ice-blue 0%, @sky-blue 100%);
+
+  @media (min-width: @screen-sm-min) {
+    padding: 4rem 3rem;
+  }
+
+  @media (min-width: @screen-md-min) {
+    margin-bottom: 6rem;
+    padding: 6rem 5rem;
+  }
+}
+
+.specifications-panel-individual {
+  background-image: linear-gradient(
+    180deg,
+    @ice-blue 0%,
+    @brand-primary-lighter-blue 100%
+  );
+}
+
+.specifications-panel-text {
+  .specifications-lead-text();
+  max-width: 117rem;
+  margin-bottom: 4rem;
+}
+
+//== Filters
+
+.spec-filters {
+  margin-bottom: 2.8rem;
+
+  // Filtering needs JavaScript: without it every card stays visible
+  jee-spec-filter:not(:defined) & {
+    display: none;
+  }
+}
+
+.spec-filters-label {
+  margin-bottom: 1rem;
+  font-weight: 700;
+  color: @brand-primary-dark;
+}
+
+.spec-filters-controls {
+  display: grid;
+  gap: 1rem;
+
+  @media (min-width: @screen-sm-min) {
+    grid-template-columns: repeat(2, minmax(0, 37.6rem));
+    justify-content: space-between;
+  }
+}
+
+.spec-filters-select {
+  position: relative;
+
+  select {
+    appearance: none;
+    padding-right: 4.4rem;
+    cursor: pointer;
+  }
+
+  i {
+    position: absolute;
+    top: 50%;
+    right: 2rem;
+    transform: translateY(-50%);
+    color: @brand-primary-dark;
+    pointer-events: none;
+  }
+}
+
+.spec-filter-empty {
+  padding: 4rem 2rem;
+  border-radius: @spec-card-radius;
+  background-color: @white;
+  text-align: center;
+  color: @brand-primary-dark;
+
+  &[hidden] {
+    display: none;
+  }
+
+  h3 {
+    margin: 0 0 1rem;
+    font-size: 2rem;
+    font-weight: 600;
+  }
+
+  p {
+    margin: 0;
+    font-size: 1.6rem;
+  }
+}
+
+//== Cards
+
+.spec-card-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 1.6rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  @media (min-width: @screen-sm-min) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  @media (min-width: @screen-md-min) {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    row-gap: 2rem;
+  }
+
+  > li {
+    display: flex;
+
+    &[hidden] {
+      display: none;
+    }
+  }
+}
+
+.spec-card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 2.2rem 2.2rem 2.4rem;
+  border-radius: @spec-card-radius;
+  background-color: @white;
+  color: @brand-secondary-gray;
+}
+
+.spec-card-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.spec-card-close {
+  flex: none;
+  width: @spec-touch-target;
+  height: @spec-touch-target;
+  margin: -1rem -1.2rem 0 0;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: transparent;
+  font-size: 1.8rem;
+  color: @brand-secondary-gray;
+
+  &:hover,
+  &:focus-visible {
+    background-color: @mist-blue;
+  }
+}
+
+.spec-card-title {
+  margin: 2rem 0 1rem;
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1.2;
+  color: @brand-primary-royal-blue;
+}
+
+// Grows so the versions and button line up at the bottom of each row
+.spec-card-summary {
+  flex-grow: 1;
+  max-width: 29rem;
+  margin-bottom: 2rem;
+  font-size: 1.4rem;
+}
+
+.spec-card-versions {
+  display: grid;
+  gap: 0.6rem;
+  margin: 0 0 1.6rem;
+  padding: 0;
+  list-style: none;
+
+  a {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: @brand-primary-dark;
+  }
+
+  // Inline (not inline-block) so the &nbsp; before it keeps it on the
+  // same line as the last word
+  i {
+    display: inline;
+    font-size: 1.1rem;
+  }
+}
+
+.spec-card-more {
+  display: inline-flex;
+  align-items: center;
+  align-self: flex-start;
+  gap: 0.6rem;
+  padding: 0.6rem 1.6rem;
+  font-size: 1.4rem;
+
+  i {
+    font-size: 1.1rem;
+  }
+}
+
+//== Pills (Project, Website, Video Guide)
+// Shape comes from the shared outline badges (components/_badges.less).
+
+// Outlined at rest, filled on hover and focus. Variants are nested under
+// .spec-pills to outrank Bootstrap's `a.badge:hover { color: #fff }`.
+
+.spec-pill-variant(@color; @border: @color) {
+  border-color: @border;
+  color: @color;
+
+  &:hover,
+  &:focus {
+    border-color: @color;
+    background-color: @color;
+    color: @white;
+  }
+}
+
+.spec-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+
+  .badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .spec-pill-project {
+    .spec-pill-variant(@brand-primary-orange-dark; @brand-primary-orange);
+  }
+
+  .spec-pill-website {
+    .spec-pill-variant(@brand-primary-royal-blue);
+  }
+
+  .spec-pill-video {
+    .spec-pill-variant(@azure-blue);
+  }
+}

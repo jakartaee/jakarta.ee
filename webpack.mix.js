@@ -29,6 +29,10 @@ mix.less("./less/v2/pages/sponsor.less", "static/css/sponsor.v2.css");
 mix.less("./less/v2/pages/contribute.less", "static/css/contribute.v2.css");
 mix.less("./less/v2/pages/mentorship.less", "static/css/mentorship.v2.css");
 mix.less("./less/v2/pages/membership.less", "static/css/membership.css");
+mix.less(
+  "./less/v2/pages/specifications.less",
+  "static/css/specifications.v2.css",
+);
 mix.js("js/v2/main.js", "./static/js/solstice.v2.js");
 mix.js(
   "./js/v2/contributor-cards/index.js",

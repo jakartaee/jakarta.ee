@@ -1,0 +1,155 @@
+{{/*
+  Copyright (c) 2026 Eclipse Foundation AISBL
+  This program and the accompanying materials are made available under the
+  terms of the Eclipse Public License v. 2.0 which is available at
+  http://www.eclipse.org/legal/epl-2.0.
+
+  SPDX-License-Identifier: EPL-2.0
+*/}}
+
+{{/*
+  Platform diagram for the specifications overview. Every tile opens the
+  specification's card in a pop-up.
+
+  Reuses the markup and styles of the `platform-diagram` shortcode
+  (less/v2/components/jakarta-platform-diagram.less): each column of the data
+  file is a frame nested inside the previous one. Specifications missing from
+  the data file are listed below the frames as standalone.
+
+  Params:
+    src      - name of the diagram data file
+    specs    - map of spec folder name to specification section page
+    projects - map of project id to Eclipse Projects API entry
+    video    - fallback video guide URL for the Platform and Profiles
+*/}}
+
+{{ $diagram := index site.Data .src }}
+{{ $membership := partialCached "specifications/membership.html" .src .src }}
+{{ $profiles := slice "platform" "webprofile" "coreprofile" }}
+
+{{/* Recursive helper: renders columns[0..N] as nested frames */}}
+{{ define "partials/specifications/diagram-frame" }}
+  {{ $column := index .columns 0 }}
+  {{ $rest := after 1 .columns }}
+  {{ $profile := index .profiles 0 }}
+  {{ $umbrella := index .specs $profile }}
+
+  {{/* Proportional column sizing, same maths as the platform-diagram shortcode */}}
+  {{ $specCols := cond (eq $column.width "double") 2 1 }}
+  {{ $frameCols := 0 }}
+  {{ range $rest }}
+    {{ $frameCols = add $frameCols (cond (eq .width "double") 2 1) }}
+  {{ end }}
+  {{ $depth := 0 }}
+  {{ $grids := 0 }}
+  {{ if gt (len $rest) 1 }}
+    {{ $depth = sub (len $rest) 1 }}
+    {{ range first $depth $rest }}
+      {{ if .grid }}{{ $grids = add $grids 1 }}{{ end }}
+    {{ end }}
+  {{ end }}
+
+  {{/* Tiles sorted by label, without the version: "CDI Lite 5.0" -> "CDI Lite" */}}
+  {{ $tiles := slice }}
+  {{ range $column.specs }}
+    {{ $slug := index (split (strings.Trim .url "/") "/") 1 }}
+    {{ $tiles = $tiles | append (dict
+      "label" (replaceRE `\s+\d+(\.\d+)*` "" .name)
+      "slug" $slug
+    ) }}
+  {{ end }}
+  {{ $tiles = sort $tiles "label" }}
+  {{ $rows := int (math.Ceil (div (float (len $tiles)) 2)) }}
+
+  {{/* Exposes the nesting to assistive tech, named by the header tile */}}
+  <div class="platform-frame" role="group" aria-labelledby="spec-tile-{{ $profile }}">
+    <div
+      class="platform-frame-row"
+      {{ with $rest }}style="--spec-cols: {{ $specCols }}; --frame-cols: {{ $frameCols }}; --depth: {{ $depth }}; --grids: {{ $grids }};"{{ end }}
+    >
+      <div
+        class="platform-frame-specs{{ if $column.grid }} spec-grid{{ end }}"
+        style="--rows: {{ $rows }};"
+      >
+        {{ partial "specifications/tile.html" (dict
+          "id" $profile
+          "label" (strings.TrimPrefix "Jakarta EE " $umbrella.Title)
+          "page" $umbrella
+          "class" (printf "spec-tile-header spec-tile-%s" $profile)
+          "projects" .projects
+          "video" .video
+        ) }}
+        {{ range $tiles }}
+          {{ partial "specifications/tile.html" (dict
+            "id" (printf "%s-%s" $profile .slug)
+            "label" .label
+            "page" (index $.specs .slug)
+            "class" (printf "spec-tile-%s" $profile)
+            "projects" $.projects
+          ) }}
+        {{ end }}
+      </div>
+      {{ with $rest }}
+        {{ template "partials/specifications/diagram-frame" (merge $ (dict
+          "columns" .
+          "profiles" (after 1 $.profiles)
+        )) }}
+      {{ end }}
+    </div>
+  </div>
+{{ end }}
+
+{{/* Standalone: every specification that isn't in a profile */}}
+{{ $standalone := slice }}
+{{ range $slug, $page := .specs }}
+  {{ if and (not (in $profiles $slug)) (not (isset $membership $slug)) }}
+    {{ $standalone = $standalone | append (dict
+      "label" (strings.TrimPrefix "Jakarta " $page.Title)
+      "slug" $slug
+      "page" $page
+    ) }}
+  {{ end }}
+{{ end }}
+
+<div class="jakarta-ee-platform-diagram specifications-diagram">
+  <h3 class="platform-title">{{ $diagram.title }}</h3>
+
+  {{ template "partials/specifications/diagram-frame" (dict
+    "columns" $diagram.columns
+    "profiles" $profiles
+    "specs" .specs
+    "projects" .projects
+    "video" .video
+  ) }}
+
+  {{ with $standalone }}
+    <div class="specifications-diagram-standalone" role="group" aria-labelledby="spec-standalone-title">
+      <h4 class="column-title" id="spec-standalone-title">{{ i18n "layouts-specifications-overview-standalone-title" }}</h4>
+      <p class="specifications-diagram-standalone-text">{{ i18n "layouts-specifications-overview-standalone-text" }}</p>
+      <div class="platform-frame-specs">
+        {{ range sort . "label" }}
+          {{ partial "specifications/tile.html" (dict
+            "id" (printf "standalone-%s" .slug)
+            "label" .label
+            "page" .page
+            "class" "spec-tile-standalone"
+            "projects" $.projects
+          ) }}
+        {{ end }}
+      </div>
+    </div>
+  {{ end }}
+
+  {{ with $diagram.footnotes }}
+    <div class="platform-footnotes">
+      {{ range . }}
+        {{ $marker := "" }}
+        {{ with findRE `^\*+` . }}{{ $marker = index . 0 }}{{ end }}
+        <p class="platform-footnote"{{ with $marker }} id="spec-footnote-{{ len . }}"{{ end }}>
+          {{- with $marker }}<span aria-hidden="true">{{ . }}</span> {{ end -}}
+          {{ strings.TrimLeft "*" . | strings.TrimSpace | safeHTML }}
+        </p>
+      {{ end }}
+    </div>
+  {{ end }}
+</div>

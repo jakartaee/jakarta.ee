@@ -1,0 +1,117 @@
+{{/*
+  Copyright (c) 2026 Eclipse Foundation AISBL
+  This program and the accompanying materials are made available under the
+  terms of the Eclipse Public License v. 2.0 which is available at
+  http://www.eclipse.org/legal/epl-2.0.
+
+  SPDX-License-Identifier: EPL-2.0
+*/}}
+
+{{/*
+  Body of the specifications overview (/specifications/), rendered by
+  layouts/specifications/list.html inside the page container.
+
+  Usage: {{ partial "specifications/overview.html" . }}
+*/}}
+
+{{ $diagram_src := "jakartaee_12_platform_diagram" }}
+{{ $profiles := slice "platform" "webprofile" "coreprofile" }}
+{{ $projects := partialCached "specifications/projects.html" . }}
+{{ $membership := partialCached "specifications/membership.html" $diagram_src $diagram_src }}
+{{ $keywords := site.Data.specification_keywords }}
+{{ $video := .Params.profile_video_guide }}
+
+{{/* Specification section pages, by title and keyed by folder name */}}
+{{ $spec_pages := where .Sections.ByTitle "Params.project_id" "!=" nil }}
+{{ $specs := dict }}
+{{ range $spec_pages }}
+  {{ $specs = merge $specs (dict .File.ContentBaseName .) }}
+{{ end }}
+
+<div class="specifications-overview">
+  <div class="container">
+    <section class="specifications-intro">
+      <h2>{{ i18n "layouts-specifications-overview-title" }}</h2>
+      <p>{{ i18n "layouts-specifications-list-click-to-access-text" | safeHTML }}</p>
+    </section>
+
+    <section>
+      {{ partial "specifications/diagram.html" (dict
+        "src" $diagram_src
+        "specs" $specs
+        "projects" $projects
+        "video" $video
+      ) }}
+    </section>
+
+    <section class="specifications-panel">
+      <h2>{{ i18n "layouts-specifications-list-platform-and-profile-title" }}</h2>
+      <p class="specifications-panel-text">{{ i18n "layouts-specifications-list-platform-and-profile-text" }}</p>
+      <ul class="spec-card-grid" role="list">
+        {{ range $profiles }}
+          {{ with index $specs . }}
+            <li>{{ partial "specifications/card.html" (dict "page" . "projects" $projects "video" $video) }}</li>
+          {{ end }}
+        {{ end }}
+      </ul>
+    </section>
+
+    <section class="specifications-panel specifications-panel-individual">
+      <h2>{{ i18n "layouts-specifications-list-individual-specifications-title" }}</h2>
+      <p class="specifications-panel-text">{{ i18n "layouts-specifications-list-individual-specifications-text" }}</p>
+
+      <jee-spec-filter status-template="{{ i18n "layouts-specifications-overview-results-count" }}">
+        <div class="spec-filters">
+          <p class="spec-filters-label" id="spec-filters-label">{{ i18n "layouts-specifications-overview-filters-label" }}</p>
+          <div class="spec-filters-controls" role="group" aria-labelledby="spec-filters-label">
+            <div class="spec-filters-select">
+              <label class="sr-only" for="spec-profile-filter">{{ i18n "layouts-specifications-overview-profile-label" }}</label>
+              <select id="spec-profile-filter" class="form-control" data-spec-profile-filter>
+                <option value="">{{ i18n "layouts-specifications-overview-profile-all" }}</option>
+                {{ range $profiles }}
+                  {{ with index $specs . }}
+                    <option value="{{ .File.ContentBaseName }}">{{ .Title }}</option>
+                  {{ end }}
+                {{ end }}
+                <option value="standalone">{{ i18n "layouts-specifications-overview-standalone-title" }}</option>
+              </select>
+              <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+            </div>
+            <jee-search-bar
+              placeholder="{{ i18n "layouts-specifications-overview-search-placeholder" }}"
+              label="{{ i18n "layouts-specifications-overview-search-label" }}"
+            ></jee-search-bar>
+          </div>
+        </div>
+
+        <ul class="spec-card-grid" role="list">
+          {{ range $spec_pages }}
+            {{ $slug := .File.ContentBaseName }}
+            {{ if not (in $profiles $slug) }}
+              {{ $search := slice .Title (.Params.summary | default "") (.Params.summary_sixty_char | default "") }}
+              {{ $search = $search | append (index $keywords $slug | default slice) }}
+              <li
+                data-spec-card
+                data-profiles="{{ delimit (index $membership $slug | default (slice "standalone")) " " }}"
+                data-search="{{ delimit $search " " | lower }}"
+              >
+                {{ partial "specifications/card.html" (dict "page" . "projects" $projects) }}
+              </li>
+            {{ end }}
+          {{ end }}
+        </ul>
+
+        <div class="spec-filter-empty" hidden>
+          <h3>{{ i18n "layouts-specifications-overview-no-results-title" }}</h3>
+          <p>{{ i18n "layouts-specifications-overview-no-results-text" }}</p>
+        </div>
+        <p class="sr-only" aria-live="polite" data-spec-filter-status></p>
+      </jee-spec-filter>
+    </section>
+  </div>
+
+  {{/* .row cancels the fluid container's gutters so the banner is full width */}}
+  <div class="row">
+    {{ partial "learning-hub-banner.html" . }}
+  </div>
+</div>

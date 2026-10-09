@@ -1,0 +1,58 @@
+{{/*
+  Copyright (c) 2026 Eclipse Foundation AISBL
+  This program and the accompanying materials are made available under the
+  terms of the Eclipse Public License v. 2.0 which is available at
+  http://www.eclipse.org/legal/epl-2.0.
+
+  SPDX-License-Identifier: EPL-2.0
+*/}}
+
+{{/*
+  Specification card: links, short summary and the two latest versions.
+  Shared by the overview grids and the diagram pop-ups.
+
+  Params:
+    page     - the specification section page
+    projects - map of project id to Eclipse Projects API entry
+    video    - optional fallback video guide URL
+    title_id - optional id for the title, for aria-labelledby
+    popover  - optional popover id; renders a close button for it
+*/}}
+
+{{ $page := .page }}
+{{ $href := $page.Params.redirect_url | default $page.RelPermalink }}
+
+<article class="spec-card">
+  <div class="spec-card-header">
+    {{ partial "specifications/pills.html" (dict "page" $page "projects" .projects "video" .video) }}
+    {{ with .popover }}
+      <button
+        type="button"
+        class="spec-card-close"
+        popovertarget="{{ . }}"
+        popovertargetaction="hide"
+        aria-label="{{ i18n "layouts-specifications-overview-close" }}"
+      >
+        <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+      </button>
+    {{ end }}
+  </div>
+  <h3 class="spec-card-title"{{ with .title_id }} id="{{ . }}"{{ end }}>{{ $page.Title }}</h3>
+  <p class="spec-card-summary">{{ $page.Params.summary_sixty_char | default ($page.Params.summary | truncate 57) }}</p>
+  {{ with first 2 $page.Sections.ByDate.Reverse }}
+    <ul class="spec-card-versions">
+      {{ range . }}
+        <li>
+          {{/* &nbsp; keeps the arrow on the same line as the last word */}}
+          <a href="{{ .Params.redirect_url | default .RelPermalink }}">
+            {{- .Title }}&nbsp;<i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+          </a>
+        </li>
+      {{ end }}
+    </ul>
+  {{ end }}
+  <a class="btn btn-primary spec-card-more" href="{{ $href }}">
+    {{ i18n "layouts-specifications-list-view-more" }}<span class="sr-only"> {{ $page.Title }}</span>
+    <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+  </a>
+</article>
