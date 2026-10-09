@@ -489,16 +489,18 @@
 //== Pills (Project, Website, Video Guide)
 // Shape comes from the shared outline badges (components/_badges.less).
 
-// Variants are nested under .spec-pills to outrank Bootstrap's
-// `a.badge:hover { color: #fff }`.
+// Outlined at rest, filled on hover and focus. Variants are nested under
+// .spec-pills to outrank Bootstrap's `a.badge:hover { color: #fff }`.
 
-.spec-pill-variant(@color; @border: currentColor) {
+.spec-pill-variant(@color; @border: @color) {
   border-color: @border;
+  color: @color;
 
-  &,
   &:hover,
   &:focus {
-    color: @color;
+    border-color: @color;
+    background-color: @color;
+    color: @white;
   }
 }
 
@@ -511,11 +513,6 @@
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
-
-    &:hover,
-    &:focus {
-      text-decoration: underline;
-    }
   }
 
   .spec-pill-project {
