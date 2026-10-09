@@ -8,7 +8,8 @@
 */}}
 
 {{/*
-  Project / Website / Video Guide links for a specification.
+  Project / Website / Video Guide links for a specification. Each link gets
+  the spec title as visually hidden text so its name is unique on the page.
 
   Params:
     page     - the specification section page
@@ -26,21 +27,21 @@
   <div class="spec-pills">
     <a class="badge badge-primary spec-pill-project" href="{{ $project_url }}">
       <i class="fa-regular fa-folder" aria-hidden="true"></i>
-      {{ i18n "layouts-specifications-list-project" }}
+      {{ i18n "layouts-specifications-list-project" }}<span class="sr-only">: {{ $page.Title }}</span>
     </a>
     {{/* Some projects use their project page as website: skip the duplicate. */}}
     {{ with $project }}
       {{ if and .website_url (ne (strings.TrimSuffix "/" .website_url) $project_url) }}
         <a class="badge badge-primary spec-pill-website" href="{{ .website_url }}">
           <i class="fa-solid fa-globe" aria-hidden="true"></i>
-          {{ i18n "layouts-specifications-list-website" }}
+          {{ i18n "layouts-specifications-list-website" }}<span class="sr-only">: {{ $page.Title }}</span>
         </a>
       {{ end }}
     {{ end }}
     {{ with $video }}
       <a class="badge badge-primary spec-pill-video" href="{{ . }}">
         <i class="fa-brands fa-youtube" aria-hidden="true"></i>
-        {{ i18n "layouts-specifications-list-video" }}
+        {{ i18n "layouts-specifications-list-video" }}<span class="sr-only">: {{ $page.Title }}</span>
       </a>
     {{ end }}
   </div>
