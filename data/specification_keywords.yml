@@ -1,0 +1,49 @@
+# Copyright (c) 2026 Eclipse Foundation AISBL
+#
+# This program and the accompanying materials are made
+# available under the terms of the Eclipse Public License 2.0
+# which is available at https://www.eclipse.org/legal/epl-2.0/
+#
+# SPDX-License-Identifier: EPL-2.0
+
+# Extra search terms for the specifications overview filter: former Java EE
+# names, acronyms and JSR numbers people still search for. Keyed by the
+# specification's folder name under content/specifications/.
+activation: [JAF, JavaBeans Activation Framework]
+annotations: [Common Annotations, JSR 250]
+authentication: [JASPIC, JSR 196]
+authorization: [JACC, JSR 115]
+batch: [JBatch, JSR 352]
+bean-validation: [Bean Validation, JSR 380]
+cdi: [CDI, CDI Lite, JSR 365]
+concurrency: [Concurrency Utilities, JSR 236]
+connectors: [JCA, Java Connector Architecture, JSR 322]
+debugging: [JSR 45, SMAP]
+dependency-injection: [JSR 330, "@Inject"]
+deployment: [JSR 88]
+enterprise-beans: [EJB, EJB Lite, Enterprise JavaBeans, JSR 345]
+enterprise-ws: [JSR 109]
+expression-language: [EL, JSR 341]
+faces: [JSF, JavaServer Faces, JSR 372]
+interceptors: [JSR 318]
+jsonb: [JSON-B, JSR 367]
+jsonp: [JSON-P, JSR 374]
+mail: [JavaMail, JSR 919]
+managedbeans: [JSR 316]
+management: [J2EE Management, JSR 77]
+messaging: [JMS, Java Message Service, JSR 343]
+mvc: [Model View Controller, JSR 371]
+pages: [JSP, JavaServer Pages, JSR 245]
+persistence: [JPA, Java Persistence API, JSR 338]
+restful-ws: [JAX-RS, REST, JSR 370]
+security: [JSR 375, Soteria]
+servlet: [JSR 369]
+soap-attachments: [SAAJ, JSR 67]
+tags: [JSTL, JSR 52]
+transactions: [JTA, Java Transaction API, JSR 907]
+web-services-metadata: [JSR 181]
+websocket: [JSR 356]
+xml-binding: [JAXB, JSR 222]
+xml-registries: [JAXR, JSR 93]
+xml-rpc: [JAX-RPC, JSR 101]
+xml-web-services: [JAX-WS, JSR 224]

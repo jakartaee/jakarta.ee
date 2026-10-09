@@ -1,0 +1,47 @@
+{{/*
+  Copyright (c) 2026 Eclipse Foundation AISBL
+  This program and the accompanying materials are made available under the
+  terms of the Eclipse Public License v. 2.0 which is available at
+  http://www.eclipse.org/legal/epl-2.0.
+
+  SPDX-License-Identifier: EPL-2.0
+*/}}
+
+{{/*
+  Project / Website / Video Guide links for a specification.
+
+  Params:
+    page     - the specification section page
+    projects - map of project id to Eclipse Projects API entry
+    video    - optional video guide URL, used when the page has none
+*/}}
+
+{{ $page := .page }}
+{{ $project_id := $page.Params.project_id }}
+{{ $project := index .projects $project_id }}
+{{ $project_url := printf "https://projects.eclipse.org/projects/%s" $project_id }}
+{{ $video := $page.Params.video_guide | default .video }}
+
+{{ if $project_id }}
+  <div class="spec-pills">
+    <a class="badge badge-primary spec-pill-project" href="{{ $project_url }}">
+      <i class="fa-regular fa-folder" aria-hidden="true"></i>
+      {{ i18n "layouts-specifications-list-project" }}
+    </a>
+    {{/* Some projects use their project page as website: skip the duplicate. */}}
+    {{ with $project }}
+      {{ if and .website_url (ne (strings.TrimSuffix "/" .website_url) $project_url) }}
+        <a class="badge badge-primary spec-pill-website" href="{{ .website_url }}">
+          <i class="fa-solid fa-globe" aria-hidden="true"></i>
+          {{ i18n "layouts-specifications-list-website" }}
+        </a>
+      {{ end }}
+    {{ end }}
+    {{ with $video }}
+      <a class="badge badge-primary spec-pill-video" href="{{ . }}">
+        <i class="fa-brands fa-youtube" aria-hidden="true"></i>
+        {{ i18n "layouts-specifications-list-video" }}
+      </a>
+    {{ end }}
+  </div>
+{{ end }}

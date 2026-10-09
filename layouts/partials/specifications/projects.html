@@ -1,0 +1,34 @@
+{{/*
+  Copyright (c) 2026 Eclipse Foundation AISBL
+  This program and the accompanying materials are made available under the
+  terms of the Eclipse Public License v. 2.0 which is available at
+  http://www.eclipse.org/legal/epl-2.0.
+
+  SPDX-License-Identifier: EPL-2.0
+*/}}
+
+{{/*
+  Returns every Jakarta EE specification project from the Eclipse Projects
+  API, keyed by project id. Fetched once per build in a single request and
+  cached by Hugo.
+
+  If the API can't be reached the build still succeeds: an empty map is
+  returned and the cards render without the Website pill.
+
+  Usage: {{ $projects := partialCached "specifications/projects.html" . }}
+*/}}
+
+{{ $url := "https://projects.eclipse.org/api/projects?spec_project_working_group=jakarta-ee&pagesize=100" }}
+{{ $projects := dict }}
+
+{{ with try (resources.GetRemote $url) }}
+  {{ with .Err }}
+    {{ warnf "Could not load specification projects from %s: %s" $url . }}
+  {{ else with .Value }}
+    {{ range . | transform.Unmarshal }}
+      {{ $projects = merge $projects (dict .project_id .) }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+
+{{ return $projects }}

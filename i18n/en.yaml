@@ -409,7 +409,7 @@ pages-resources-white-papers-why-jakarta-ee: Why Jakarta EE Is the Right Choice 
 layouts-specifications-list-website: Website
 layouts-specifications-list-project: Project
 layouts-specifications-list-video: Video Guide
-layouts-specifications-list-click-to-access-text: Click on the specifications below to access the specification document, Javadoc, Technology Compatibility Kit (TCK), and compatible implementation for each release of the specification.
+layouts-specifications-list-click-to-access-text: <strong>Click on the specifications below</strong> to access the specification document, Javadoc, Technology Compatibility Kit (TCK), and compatible implementation for each release of the specification.
 layouts-specifications-list-platform-and-profile-title: Platform and Profile Specifications
 layouts-specifications-list-platform-and-profile-text: The Jakarta EE Platform and Profile specifications are the umbrella specifications for the individual specifications. The Jakarta EE Platform includes most of the individual specifications, while the Profile specifications include the individual specifications for developing web platforms and microservices architectures.
 layouts-specifications-list-view-more: View More
@@ -417,6 +417,21 @@ layouts-specifications-list-individual-specifications-title: Individual Specific
 layouts-specifications-list-individual-specifications-text: Each individual specification describes a standardized way of implementing a particular aspect of an enterprise Java application.
 layouts-specifications-list-jug-spec-adopters-title: JUG Spec Adopters
 layouts-specifications-list-jug-spec-adopters-text: To learn how your JUG can sign-up, check out the <a href="/community/adopt-a-spec">Adopt a Specification</a> program.
+layouts-specifications-overview-title: Specifications Overview
+layouts-specifications-overview-standalone-title: Standalone
+layouts-specifications-overview-standalone-text: Specifications not included in the Platform, Web, or Core Profiles.
+layouts-specifications-overview-close: Close
+layouts-specifications-overview-filters-label: View a specification
+layouts-specifications-overview-profile-label: Filter by profile
+layouts-specifications-overview-profile-all: All specifications
+layouts-specifications-overview-search-label: Search specifications
+layouts-specifications-overview-search-placeholder: Search specification
+layouts-specifications-overview-no-results-title: No specifications match
+layouts-specifications-overview-no-results-text: Try another name, or choose a different profile.
+layouts-specifications-overview-results-count: "{count} specifications shown"
+layouts-partials-learning-hub-banner-title-highlight: Jakarta EE
+layouts-partials-learning-hub-banner-title: Learning hub
+layouts-partials-learning-hub-banner-text: The Jakarta EE Learning hub helps you get productive faster, with <strong>guides, tutorials, and courses</strong> designed to take you from getting started to production-ready.
 pages-compatibility-get-listed-title: Benefits of Getting Listed as a Compatible Product
 pages-compatibility-get-listed-overview: 'There are several benefits associated with completing the process to get listed on the Compatible Products page, including: '
 pages-compatibility-get-listed-customer-confidence-title: Customer Confidence
