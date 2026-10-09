@@ -207,6 +207,17 @@
   .spec-tile-platform.spec-tile-header:has(@{spec-tile-open}) {
     background-color: @azure-blue;
   }
+
+  @media (prefers-reduced-motion: reduce) {
+    .spec-tile {
+      transition: none;
+
+      &:hover,
+      &:focus {
+        transform: none;
+      }
+    }
+  }
 }
 
 //== Pop-ups
@@ -478,6 +489,19 @@
 //== Pills (Project, Website, Video Guide)
 // Shape comes from the shared outline badges (components/_badges.less).
 
+// Variants are nested under .spec-pills to outrank Bootstrap's
+// `a.badge:hover { color: #fff }`.
+
+.spec-pill-variant(@color; @border: currentColor) {
+  border-color: @border;
+
+  &,
+  &:hover,
+  &:focus {
+    color: @color;
+  }
+}
+
 .spec-pills {
   display: flex;
   flex-wrap: wrap;
@@ -493,26 +517,16 @@
       text-decoration: underline;
     }
   }
-}
 
-.spec-pill-variant(@color; @border: currentColor) {
-  border-color: @border;
-
-  &,
-  &:hover,
-  &:focus {
-    color: @color;
+  .spec-pill-project {
+    .spec-pill-variant(@brand-primary-orange-dark; @brand-primary-orange);
   }
-}
 
-.spec-pill-project {
-  .spec-pill-variant(@brand-primary-orange-dark; @brand-primary-orange);
-}
+  .spec-pill-website {
+    .spec-pill-variant(@brand-primary-royal-blue);
+  }
 
-.spec-pill-website {
-  .spec-pill-variant(@brand-primary-royal-blue);
-}
-
-.spec-pill-video {
-  .spec-pill-variant(@azure-blue);
+  .spec-pill-video {
+    .spec-pill-variant(@azure-blue);
+  }
 }

@@ -18,6 +18,10 @@
   The pop-up must stay the tile's next sibling: the active tile style relies
   on `.spec-tile:has(+ .spec-popover:popover-open)`.
 
+  Footnote markers at the end of the label ("NoSQL*") are hidden from screen
+  readers; the tile is described by the matching footnote instead
+  (`spec-footnote-<number of asterisks>`, see diagram.html).
+
   Params:
     id       - unique tile id, also used for the pop-up and anchor names
     label    - tile text
@@ -29,15 +33,20 @@
 
 {{ $popover := printf "spec-popover-%s" .id }}
 {{ $anchor := printf "--spec-tile-%s" .id }}
+{{ $marker := "" }}
+{{ with findRE `\*+$` .label }}{{ $marker = index . 0 }}{{ end }}
+{{ $text := strings.TrimRight "*" .label }}
 
 {{ with .page }}
   <button
     type="button"
+    id="spec-tile-{{ $.id }}"
     class="spec-box spec-tile {{ $.class }}"
     popovertarget="{{ $popover }}"
     style="anchor-name: {{ $anchor | safeCSS }}"
+    {{ with $marker }}aria-describedby="spec-footnote-{{ len . }}"{{ end }}
   >
-    {{ $.label }}
+    {{ $text }}{{ with $marker }}<span aria-hidden="true">{{ . }}</span>{{ end }}
   </button>
   <div
     popover
@@ -56,5 +65,5 @@
     ) }}
   </div>
 {{ else }}
-  <span class="spec-box spec-tile {{ .class }}">{{ .label }}</span>
+  <span class="spec-box spec-tile {{ .class }}">{{ $text }}{{ with $marker }}<span aria-hidden="true">{{ . }}</span>{{ end }}</span>
 {{ end }}

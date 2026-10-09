@@ -61,7 +61,8 @@
   {{ $tiles = sort $tiles "label" }}
   {{ $rows := int (math.Ceil (div (float (len $tiles)) 2)) }}
 
-  <div class="platform-frame">
+  {{/* Exposes the nesting to assistive tech, named by the header tile */}}
+  <div class="platform-frame" role="group" aria-labelledby="spec-tile-{{ $profile }}">
     <div
       class="platform-frame-row"
       {{ with $rest }}style="--spec-cols: {{ $specCols }}; --frame-cols: {{ $frameCols }}; --depth: {{ $depth }}; --grids: {{ $grids }};"{{ end }}
@@ -122,8 +123,8 @@
   ) }}
 
   {{ with $standalone }}
-    <div class="specifications-diagram-standalone">
-      <h4 class="column-title">{{ i18n "layouts-specifications-overview-standalone-title" }}</h4>
+    <div class="specifications-diagram-standalone" role="group" aria-labelledby="spec-standalone-title">
+      <h4 class="column-title" id="spec-standalone-title">{{ i18n "layouts-specifications-overview-standalone-title" }}</h4>
       <p class="specifications-diagram-standalone-text">{{ i18n "layouts-specifications-overview-standalone-text" }}</p>
       <div class="platform-frame-specs">
         {{ range sort . "label" }}
@@ -142,7 +143,12 @@
   {{ with $diagram.footnotes }}
     <div class="platform-footnotes">
       {{ range . }}
-        <p class="platform-footnote">{{ . | safeHTML }}</p>
+        {{ $marker := "" }}
+        {{ with findRE `^\*+` . }}{{ $marker = index . 0 }}{{ end }}
+        <p class="platform-footnote"{{ with $marker }} id="spec-footnote-{{ len . }}"{{ end }}>
+          {{- with $marker }}<span aria-hidden="true">{{ . }}</span> {{ end -}}
+          {{ strings.TrimLeft "*" . | strings.TrimSpace | safeHTML }}
+        </p>
       {{ end }}
     </div>
   {{ end }}
