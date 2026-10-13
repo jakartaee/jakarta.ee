@@ -13,8 +13,11 @@
 
   Reuses the markup and styles of the `platform-diagram` shortcode
   (less/v2/components/jakarta-platform-diagram.less): each column of the data
-  file is a frame nested inside the previous one. Specifications missing from
-  the data file are listed below the frames as standalone.
+  file is a frame nested inside the previous one. The outer frame is the
+  Platform, named by the diagram title; the profiles inside it get a heading,
+  and hovering one greys out everything outside it (see "Profile highlight"
+  in less/v2/pages/specifications.less). Specifications missing from the data
+  file are listed below the frames as standalone.
 
   Params:
     src      - name of the diagram data file
@@ -61,8 +64,15 @@
   {{ $tiles = sort $tiles "label" }}
   {{ $rows := int (math.Ceil (div (float (len $tiles)) 2)) }}
 
-  {{/* Exposes the nesting to assistive tech, named by the header tile */}}
-  <div class="platform-frame" role="group" aria-labelledby="spec-tile-{{ $profile }}">
+  {{/* The Platform is the whole diagram: only the profiles get a heading */}}
+  {{ $is_platform := eq $profile "platform" }}
+
+  {{/* Exposes the nesting to assistive tech, named by the heading */}}
+  <div
+    class="platform-frame"
+    role="group"
+    aria-labelledby="{{ if $is_platform }}spec-diagram-title{{ else }}spec-tile-{{ $profile }}{{ end }}"
+  >
     <div
       class="platform-frame-row"
       {{ with $rest }}style="--spec-cols: {{ $specCols }}; --frame-cols: {{ $frameCols }}; --depth: {{ $depth }}; --grids: {{ $grids }};"{{ end }}
@@ -71,14 +81,16 @@
         class="platform-frame-specs{{ if $column.grid }} spec-grid{{ end }}"
         style="--rows: {{ $rows }};"
       >
-        {{ partial "specifications/tile.html" (dict
-          "id" $profile
-          "label" (strings.TrimPrefix "Jakarta EE " $umbrella.Title)
-          "page" $umbrella
-          "class" (printf "spec-tile-header spec-tile-%s" $profile)
-          "projects" .projects
-          "video" .video
-        ) }}
+        {{ if not $is_platform }}
+          {{ partial "specifications/tile.html" (dict
+            "id" $profile
+            "label" (strings.TrimPrefix "Jakarta EE " $umbrella.Title)
+            "page" $umbrella
+            "class" (printf "spec-tile-group spec-tile-%s" $profile)
+            "projects" .projects
+            "video" .video
+          ) }}
+        {{ end }}
         {{ range $tiles }}
           {{ partial "specifications/tile.html" (dict
             "id" (printf "%s-%s" $profile .slug)
@@ -112,7 +124,27 @@
 {{ end }}
 
 <div class="jakarta-ee-platform-diagram specifications-diagram">
-  <h3 class="platform-title">{{ $diagram.title }}</h3>
+  {{/* The title names the Platform frame and opens the Platform card */}}
+  {{ with index .specs "platform" }}
+    <h3 class="platform-title" id="spec-diagram-title">
+      <button
+        type="button"
+        class="platform-title-button"
+        popovertarget="spec-popover-platform"
+        style="anchor-name: --spec-tile-platform"
+      >
+        {{- $diagram.title -}}
+      </button>
+    </h3>
+    {{ partial "specifications/popover.html" (dict
+      "id" "platform"
+      "page" .
+      "projects" $.projects
+      "video" $.video
+    ) }}
+  {{ else }}
+    <h3 class="platform-title" id="spec-diagram-title">{{ $diagram.title }}</h3>
+  {{ end }}
 
   {{ template "partials/specifications/diagram-frame" (dict
     "columns" $diagram.columns

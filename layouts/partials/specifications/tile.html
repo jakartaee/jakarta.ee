@@ -8,12 +8,8 @@
 */}}
 
 {{/*
-  Diagram tile that opens the specification's card in a pop-up.
-
-  Uses the native Popover API, so opening, closing (Esc, outside click, the
-  close button) and focus handling need no JavaScript. The pop-up is placed
-  next to the tile with CSS anchor positioning, see
-  less/v2/pages/specifications.less.
+  Diagram tile that opens the specification's card in a pop-up
+  (specifications/popover.html).
 
   The pop-up must stay the tile's next sibling: the active tile style relies
   on `.spec-tile:has(+ .spec-popover:popover-open)`.
@@ -26,13 +22,11 @@
     id       - unique tile id, also used for the pop-up and anchor names
     label    - tile text
     page     - the specification section page; plain text tile when missing
-    class    - extra classes (tier colour, header tile)
+    class    - extra classes (tier colour, profile heading)
     projects - map of project id to Eclipse Projects API entry
     video    - optional fallback video guide URL
 */}}
 
-{{ $popover := printf "spec-popover-%s" .id }}
-{{ $anchor := printf "--spec-tile-%s" .id }}
 {{ $marker := "" }}
 {{ with findRE `\*+$` .label }}{{ $marker = index . 0 }}{{ end }}
 {{ $text := strings.TrimRight "*" .label }}
@@ -42,28 +36,18 @@
     type="button"
     id="spec-tile-{{ $.id }}"
     class="spec-box spec-tile {{ $.class }}"
-    popovertarget="{{ $popover }}"
-    style="anchor-name: {{ $anchor | safeCSS }}"
+    popovertarget="spec-popover-{{ $.id }}"
+    style="anchor-name: {{ printf "--spec-tile-%s" $.id | safeCSS }}"
     {{ with $marker }}aria-describedby="spec-footnote-{{ len . }}"{{ end }}
   >
     {{ $text }}{{ with $marker }}<span aria-hidden="true">{{ . }}</span>{{ end }}
   </button>
-  <div
-    popover
-    id="{{ $popover }}"
-    class="spec-popover"
-    role="dialog"
-    aria-labelledby="{{ $popover }}-title"
-    style="position-anchor: {{ $anchor | safeCSS }}"
-  >
-    {{ partial "specifications/card.html" (dict
-      "page" .
-      "projects" $.projects
-      "video" $.video
-      "title_id" (printf "%s-title" $popover)
-      "popover" $popover
-    ) }}
-  </div>
+  {{ partial "specifications/popover.html" (dict
+    "id" $.id
+    "page" .
+    "projects" $.projects
+    "video" $.video
+  ) }}
 {{ else }}
   <span class="spec-box spec-tile {{ .class }}">{{ $text }}{{ with $marker }}<span aria-hidden="true">{{ . }}</span>{{ end }}</span>
 {{ end }}

@@ -15,6 +15,7 @@
 @spec-card-radius: @border-radius-large;
 @spec-card-shadow: 0 1.2rem 4rem fade(@brand-primary-royal-blue, 18%);
 @spec-touch-target: 4.4rem;
+@spec-tile-dimmed: grayscale(1) blur(1px);
 
 .specifications-overview {
   color: @brand-secondary-gray;
@@ -77,6 +78,20 @@
   .platform-title {
     font-weight: 500;
     color: @brand-primary-dark;
+  }
+
+  // Opens the Platform card, but stays a plain title
+  .platform-title-button {
+    padding: 0;
+    border: 0;
+    font: inherit;
+    color: inherit;
+    background: none;
+
+    &:focus-visible {
+      outline: 2px solid @brand-primary-royal-blue;
+      outline-offset: 2px;
+    }
   }
 
   .platform-frame {
@@ -169,16 +184,6 @@
     }
   }
 
-  .spec-tile-header {
-    grid-column: ~"1 / -1"; // Escaped: LESS would divide
-    font-size: 1.8rem;
-    font-weight: 700;
-
-    @media (min-width: @screen-md-min) {
-      font-size: 2.2rem;
-    }
-  }
-
   .spec-tile-platform {
     background-color: @powder-blue;
   }
@@ -204,18 +209,60 @@
     background-color: @slate-blue;
   }
 
-  .spec-tile-platform.spec-tile-header:has(@{spec-tile-open}) {
-    background-color: @azure-blue;
+  // Profile headings name a group of specifications, so they aren't boxed
+  // like one. They still open the profile's card.
+  .spec-tile-group {
+    grid-column: ~"1 / -1"; // Escaped: LESS would divide
+    font-size: 1.8rem;
+    font-weight: 700;
+
+    &,
+    &:hover,
+    &:focus,
+    &:has(@{spec-tile-open}) {
+      color: @brand-primary-dark;
+      background-color: transparent;
+      box-shadow: none;
+      filter: none;
+      transform: none;
+    }
+
+    @media (min-width: @screen-md-min) {
+      font-size: 2.2rem;
+    }
+  }
+
+  //== Profile highlight
+  // While a profile frame is hovered or holds keyboard focus, everything
+  // outside it is greyed out. Hovering the Core Profile also hovers the Web
+  // Profile around it, so each rule only needs to look at the frame nested
+  // right inside: the outer levels follow.
+  .platform-frame {
+    transition: border-color 0.2s ease;
+  }
+
+  .platform-frame-specs:has(+ .platform-frame:hover, + .platform-frame :focus-visible) > .spec-tile {
+    filter: @spec-tile-dimmed;
+  }
+
+  .platform-frame:has(> .platform-frame-row > .platform-frame:hover, > .platform-frame-row > .platform-frame :focus-visible) {
+    border-color: greyscale(@brand-secondary);
+  }
+
+  // Standalone specifications aren't in any profile
+  &:has(.platform-frame .platform-frame:hover, .platform-frame .platform-frame :focus-visible) .spec-tile-standalone {
+    filter: @spec-tile-dimmed;
   }
 
   @media (prefers-reduced-motion: reduce) {
+    .platform-frame,
     .spec-tile {
       transition: none;
+    }
 
-      &:hover,
-      &:focus {
-        transform: none;
-      }
+    .spec-tile:hover,
+    .spec-tile:focus {
+      transform: none;
     }
   }
 }
