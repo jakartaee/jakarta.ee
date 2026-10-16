@@ -1,0 +1,53 @@
+{{/*
+  Copyright (c) 2026 Eclipse Foundation AISBL
+  This program and the accompanying materials are made available under the
+  terms of the Eclipse Public License v. 2.0 which is available at
+  http://www.eclipse.org/legal/epl-2.0.
+
+  SPDX-License-Identifier: EPL-2.0
+*/}}
+
+{{/*
+  Diagram tile that opens the specification's card in a pop-up
+  (specifications/popover.html).
+
+  The pop-up must stay the tile's next sibling: the active tile style relies
+  on `.spec-tile:has(+ .spec-popover:popover-open)`.
+
+  Footnote markers at the end of the label ("NoSQL*") are hidden from screen
+  readers; the tile is described by the matching footnote instead
+  (`spec-footnote-<number of asterisks>`, see diagram.html).
+
+  Params:
+    id       - unique tile id, also used for the pop-up and anchor names
+    label    - tile text
+    page     - the specification section page; plain text tile when missing
+    class    - extra classes (tier colour, profile heading)
+    projects - map of project id to Eclipse Projects API entry
+    video    - optional fallback video guide URL
+*/}}
+
+{{ $marker := "" }}
+{{ with findRE `\*+$` .label }}{{ $marker = index . 0 }}{{ end }}
+{{ $text := strings.TrimRight "*" .label }}
+
+{{ with .page }}
+  <button
+    type="button"
+    id="spec-tile-{{ $.id }}"
+    class="spec-box spec-tile {{ $.class }}"
+    popovertarget="spec-popover-{{ $.id }}"
+    style="anchor-name: {{ printf "--spec-tile-%s" $.id | safeCSS }}"
+    {{ with $marker }}aria-describedby="spec-footnote-{{ len . }}"{{ end }}
+  >
+    {{ $text }}{{ with $marker }}<span aria-hidden="true">{{ . }}</span>{{ end }}
+  </button>
+  {{ partial "specifications/popover.html" (dict
+    "id" $.id
+    "page" .
+    "projects" $.projects
+    "video" $.video
+  ) }}
+{{ else }}
+  <span class="spec-box spec-tile {{ .class }}">{{ $text }}{{ with $marker }}<span aria-hidden="true">{{ . }}</span>{{ end }}</span>
+{{ end }}

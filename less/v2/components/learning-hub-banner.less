@@ -1,0 +1,65 @@
+/*!
+ * Copyright (c) 2026 Eclipse Foundation AISBL
+ *
+ * This program and the accompanying materials are made available under the
+ * terms of the Eclipse Public License v. 2.0 which is available at
+ * http://www.eclipse.org/legal/epl-2.0.
+ *
+ * SPDX-License-Identifier: EPL-2.0
+*/
+
+// Learning hub call to action, see layouts/partials/learning-hub-banner.html
+.learning-hub-banner {
+  padding: 4rem 0;
+  background-color: @brand-primary-light-blue;
+  background-image: @bg-img-secondary-sm;
+  background-position: center;
+  background-size: cover;
+
+  @media (min-width: @screen-md-min) {
+    padding: 8rem 0;
+  }
+
+  @media (min-width: @screen-lg-min) {
+    background-image: @bg-img-secondary;
+  }
+}
+
+.learning-hub-banner-card {
+  padding: 4rem 2rem;
+  border-radius: @border-radius-large;
+  background-color: @white;
+  text-align: center;
+  color: @brand-secondary-gray;
+
+  @media (min-width: @screen-md-min) {
+    padding: 6rem 4rem;
+  }
+
+  p {
+    max-width: 76rem;
+    margin: 1.6rem auto 2.6rem;
+    font-size: 1.4rem;
+    line-height: 1.6;
+    color: @brand-primary-dark;
+  }
+
+  strong {
+    color: @brand-primary-dark;
+  }
+}
+
+.learning-hub-banner-title {
+  margin: 0;
+  font-size: 3rem;
+  font-weight: 500;
+  color: @brand-primary-dark;
+
+  @media (min-width: @screen-md-min) {
+    font-size: 4rem;
+  }
+}
+
+.learning-hub-banner-highlight {
+  color: @brand-primary-orange-dark;
+}
