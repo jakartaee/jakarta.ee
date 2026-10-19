@@ -27,6 +27,8 @@
 */}}
 
 {{ $diagram := index site.Data .src }}
+{{/* "Jakarta EE 12 Platform" -> "Jakarta EE Platform" */}}
+{{ $title := replaceRE `\s+\d+(\.\d+)*` "" $diagram.title }}
 {{ $membership := partialCached "specifications/membership.html" .src .src }}
 {{ $profiles := slice "platform" "webprofile" "coreprofile" }}
 
@@ -133,7 +135,7 @@
         popovertarget="spec-popover-platform"
         style="anchor-name: --spec-tile-platform"
       >
-        {{- $diagram.title -}}
+        {{- $title -}}
       </button>
     </h3>
     {{ partial "specifications/popover.html" (dict
@@ -143,7 +145,7 @@
       "video" $.video
     ) }}
   {{ else }}
-    <h3 class="platform-title" id="spec-diagram-title">{{ $diagram.title }}</h3>
+    <h3 class="platform-title" id="spec-diagram-title">{{ $title }}</h3>
   {{ end }}
 
   {{ template "partials/specifications/diagram-frame" (dict
