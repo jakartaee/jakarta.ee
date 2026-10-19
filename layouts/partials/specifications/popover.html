@@ -1,0 +1,43 @@
+{{/*
+  Copyright (c) 2026 Eclipse Foundation AISBL
+  This program and the accompanying materials are made available under the
+  terms of the Eclipse Public License v. 2.0 which is available at
+  http://www.eclipse.org/legal/epl-2.0.
+
+  SPDX-License-Identifier: EPL-2.0
+*/}}
+
+{{/*
+  Pop-up with a specification's card.
+
+  Uses the native Popover API, so opening, closing (Esc, outside click, the
+  close button) and focus handling need no JavaScript. The button that opens
+  it needs `popovertarget="spec-popover-<id>"` and, to have the pop-up placed
+  next to it with CSS anchor positioning, `anchor-name: --spec-tile-<id>`
+  (see less/v2/pages/specifications.less).
+
+  Params:
+    id       - unique id, shared with the button that opens the pop-up
+    page     - the specification section page
+    projects - map of project id to Eclipse Projects API entry
+    video    - optional fallback video guide URL
+*/}}
+
+{{ $popover := printf "spec-popover-%s" .id }}
+
+<div
+  popover
+  id="{{ $popover }}"
+  class="spec-popover"
+  role="dialog"
+  aria-labelledby="{{ $popover }}-title"
+  style="position-anchor: {{ printf "--spec-tile-%s" .id | safeCSS }}"
+>
+  {{ partial "specifications/card.html" (dict
+    "page" .page
+    "projects" .projects
+    "video" .video
+    "title_id" (printf "%s-title" $popover)
+    "popover" $popover
+  ) }}
+</div>

@@ -1,0 +1,28 @@
+{{/*
+  Copyright (c) 2026 Eclipse Foundation AISBL
+  This program and the accompanying materials are made available under the
+  terms of the Eclipse Public License v. 2.0 which is available at
+  http://www.eclipse.org/legal/epl-2.0.
+
+  SPDX-License-Identifier: EPL-2.0
+*/}}
+
+{{/*
+  Full-width call to action pointing to the Learning hub.
+  Styles: less/v2/components/learning-hub-banner.less
+
+  Usage: {{ partial "learning-hub-banner.html" . }}
+*/}}
+
+<section class="learning-hub-banner">
+  <div class="container">
+    <div class="learning-hub-banner-card">
+      <h2 class="learning-hub-banner-title">
+        <span class="learning-hub-banner-highlight">{{ i18n "layouts-partials-learning-hub-banner-title-highlight" }}</span>
+        {{ i18n "layouts-partials-learning-hub-banner-title" }}
+      </h2>
+      <p>{{ i18n "layouts-partials-learning-hub-banner-text" | safeHTML }}</p>
+      <a class="btn btn-outline-secondary" href="{{ "/learn/" | relLangURL }}">{{ i18n "learn-more" }}</a>
+    </div>
+  </div>
+</section>
