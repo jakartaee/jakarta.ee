@@ -1,0 +1,8 @@
+{{ define "main" }}
+  {{ .Content }}
+  {{ with .Params.authors }}
+    <div class="learn-guide-authors">
+      {{ partial "news/authors" $ }}
+    </div>
+  {{ end }}
+{{ end }}

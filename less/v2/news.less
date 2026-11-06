@@ -245,3 +245,19 @@
     }
   }
 }
+
+.learn-guide-authors .news-authors {
+  .author-image {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    margin-right: 8px;
+  }
+  .authors-names {
+    font-weight: bold;
+    .author-name:not(:last-child)::after {
+      content: ',';
+      display: inline-block;
+    }
+  }
+}
