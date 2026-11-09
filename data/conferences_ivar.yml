@@ -43,7 +43,7 @@ years:
     date: Nov 18-19
 
   - name: Melbourne JUG
-    url: 
+    url: https://www.meetup.com/melbourne-java-jvm-users-group/events/317085908/
     location: Melbourne 🇦🇺
     date: Nov 16
 
@@ -56,6 +56,7 @@ years:
     url: https://devoxx.ma/
     location: Casablanca 🇲🇦
     date: Nov 4-5
+    blog: https://www.agilejava.eu/2026/11/08/devoxx-morocco-2026/
 
   - name: JCON USA
     url: https://2026.usa.jcon.one/
