@@ -33,7 +33,7 @@ years:
     date: Dec 1
 
   - name: Brisbane JUG
-    url: 
+    url: https://www.meetup.com/brisjvm/events/316992106/
     location: Brisbane 🇦🇺
     date: Nov 23
 
@@ -43,7 +43,7 @@ years:
     date: Nov 18-19
 
   - name: Melbourne JUG
-    url: 
+    url: https://www.meetup.com/melbourne-java-jvm-users-group/events/317085908/
     location: Melbourne 🇦🇺
     date: Nov 16
 
@@ -56,16 +56,19 @@ years:
     url: https://devoxx.ma/
     location: Casablanca 🇲🇦
     date: Nov 4-5
+    blog: https://www.agilejava.eu/2026/11/08/devoxx-morocco-2026/
 
   - name: JCON USA
     url: https://2026.usa.jcon.one/
     location: Atlanta, GA 🇺🇸
     date: Oct 26-29
+    blog: https://www.agilejava.eu/2026/10/31/jcon-usa-2026/
 
   - name: IBM TexchXchange
     url: https://www.ibm.com/events/techxchange
     location: Atlanta, GA 🇺🇸
     date: Oct 26-29
+    blog: https://www.agilejava.eu/2026/10/30/ibm-techxchange-2026/
 
   - name: dev2next
     url: https://www.dev2next.com/
