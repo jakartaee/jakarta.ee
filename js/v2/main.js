@@ -39,9 +39,17 @@ document.addEventListener("DOMContentLoaded", function () {
     scrollSnapCarousel(
       ".testimonial-container:not(.join-us-page-testimonials)",
       ".testimonial-item",
+      {
+        autoRotate: true,
+        autoRotateInterval: 3000,
+      },
     );
     scrollSnapCarousel(".news-container", "article", {
       useMutationObserver: true,
+      controls: true,
+    });
+    scrollSnapCarousel(".learn-why-cards", ".learn-why-card", {
+      controls: true,
     });
     scrollSnapCarousel(
       ".testimonial-container.join-us-page-testimonials",

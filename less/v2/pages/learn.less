@@ -320,13 +320,45 @@ jee-callout {
   margin: 0 0 3.5rem;
 }
 
-.learn-why-cards {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 3rem;
+.learn-why-carousel {
+  position: relative;
 
-  @media (min-width: @screen-sm-min) {
-    grid-template-columns: repeat(2, 1fr);
+  .scroll-snap-controls {
+    padding: 0;
+    left: -2.5rem;
+    right: -2.5rem;
+
+    @media (min-width: @screen-md-min) {
+      left: -6rem;
+      right: -6rem;
+    }
+  }
+}
+
+.learn-why-cards {
+  display: flex;
+  gap: 3rem;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none; // Firefox
+  padding-bottom: 3rem; // room for card shadow
+
+  &::-webkit-scrollbar {
+    display: none; // Chrome, Safari, Opera
+  }
+
+  .learn-why-card {
+    // Peek the next card where arrows are hidden
+    flex: 0 0 85%;
+    scroll-snap-align: start;
+
+    @media (min-width: @screen-sm-min) {
+      flex-basis: 45%;
+    }
+
+    @media (min-width: @screen-md-min) {
+      flex-basis: calc((100% - 3rem) / 2);
+    }
   }
 }
 
