@@ -282,7 +282,7 @@ function initWithObserver(selector, itemSelector, options = {}) {
  * @param {boolean} [options.useMutationObserver] - Whether to use mutation observer for deferred initialization
  * @param {boolean} [options.autoRotate] - Whether to enable auto-rotation (passed to createScrollSnapCarousel)
  * @param {number} [options.autoRotateInterval] - Auto-rotation interval (passed to createScrollSnapCarousel)
- * @param {number} [options.controls] - Whether to show navigation controls (passed to createScrollSnapCarousel)
+ * @param {boolean} [options.controls] - Whether to show navigation controls (passed to createScrollSnapCarousel)
  * @returns {void}
  */
 const scrollSnapCarousel = (selector, itemSelector, options = {}) => {
