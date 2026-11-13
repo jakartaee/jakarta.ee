@@ -19,7 +19,7 @@
                               (external cards only; internal cards use the
                               page's `guide_topics`).
     external                — if true, opens the link in a new tab.
-    badge                   — "starter", "specs", or "tutorial". Drives the
+    badge                   — "ai", "starter", "specs", or "tutorial". Drives the
                               visible label and brand badge variant.
     video                   — if true, appends an italic "(Video)" label
                               to the title.
@@ -47,7 +47,7 @@
 
 {{ $badge_label := i18n (printf "pages-learn-index-badge-%s" $badge) }}
 {{/* Map the semantic guide type to a brand badge variant. */}}
-{{ $badge_variants := dict "starter" "tertiary" "specs" "secondary" "tutorial" "primary" }}
+{{ $badge_variants := dict "ai" "primary" "starter" "tertiary" "specs" "secondary" "tutorial" "primary" }}
 {{ $badge_variant := index $badge_variants $badge }}
 
 {{ $tag_slugs := slice }}

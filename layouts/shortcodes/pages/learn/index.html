@@ -27,6 +27,7 @@
                  doesn't read right (acronyms, all-caps, etc.). Anything
                  missing here falls back to `humanize | title`. */}}
             {{ $labels := dict
+              "ai" "AI"
               "cdi" "CDI"
               "nosql" "NoSQL"
               "rest" "REST"
@@ -51,6 +52,10 @@
         {{ $en_pages := where $.Site.AllPages "Lang" "en" }}
         {{ $starter_guides := where $.Site.RegularPages ".Params.categories" "intersect" (slice "Starter Guides") | lang.Merge (where $en_pages ".Params.categories" "intersect" (slice "Starter Guides")) }}
         {{ $spec_guides := where $.Site.RegularPages ".Params.categories" "intersect" (slice "Specification Guides") | lang.Merge (where $en_pages ".Params.categories" "intersect" (slice "Specification Guides")) }}
+        {{ $ai_guides := where $.Site.RegularPages ".Params.categories" "intersect" (slice "AI Guides") | lang.Merge (where $en_pages ".Params.categories" "intersect" (slice "AI Guides")) }}
+        {{ range sort $ai_guides "Date" "desc" }}
+          {{ partial "pages/learn/guide-card.html" (dict "page" . "badge" "ai") }}
+        {{ end }}
         {{ range $starter_guides }}
           {{ partial "pages/learn/guide-card.html" (dict "page" . "badge" "starter") }}
         {{ end }}
