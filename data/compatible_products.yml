@@ -134,6 +134,15 @@ sets:
           - version: 7
             compatibility: 'https://www.tongtech.com/tongweb/tck711.html'
             download_url: 'https://www.tongtech.com/service.html'
+        - name: Oracle WebLogic Server
+          vendor: Oracle Corporation
+          image: '/images/compatible_products/oracle_weblogic_server_26.svg'
+          image_width: 150
+          download: 'https://www.oracle.com/middleware/technologies/weblogic-server-downloads.html'
+          versions:
+            - version: '26.1'
+              compatibility: 'https://www.oracle.com/middleware/technologies/jakartaee_report.html'
+              download_url: 'https://www.oracle.com/middleware/technologies/weblogic-server-downloads.html'
 
     - title: Jakarta EE 11 Web Profile
       release: "release/11"
