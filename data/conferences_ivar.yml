@@ -42,10 +42,11 @@ years:
     location: Brisbane 🇦🇺
     date: Nov 23
 
-  - name: ChurConf
+  - name: ChurConf at Community over Code
     url: https://au.churconf.com
     location: Sydney 🇦🇺
     date: Nov 18-19
+    blog: https://www.agilejava.eu/2026/11/21/churconf-at-community-over-code-2026/
 
   - name: Melbourne JUG
     url: https://www.meetup.com/melbourne-java-jvm-users-group/events/317085908/
