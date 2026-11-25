@@ -365,6 +365,13 @@ via the specification project's issue tracker using the label
 
 -   A statement attesting that all TCK requirements have been met,
     including any compatibility rules
+If there are known test failures, list all accepted TCK challenges where the corresponding tests have not yet been excluded. 
+
+**_NOTE:_** A product may submit a certification request with known test failures only if all of the following conditions are met:
+
+- The failures are covered by corresponding TCK challenges.
+- The TCK challenges have been accepted.
+- A service release that excludes or fixes the affected tests is not yet available.
 
 ### Additional Specification Certification Requirements {#_additional_specification_certification_requirements}
 
